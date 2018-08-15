@@ -97,14 +97,29 @@ let
     enableParallelBuilding = !crossCompiling;
 
     preConfigure = ''
-        substituteInPlace ./Configure --replace '`LC_ALL=C; LANGUAGE=C; export LC_ALL; export LANGUAGE; $date 2>&1`' 'Thu Jan  1 00:00:01 UTC 1970'
-        substituteInPlace ./Configure --replace '$uname -a' '$uname --kernel-name --machine --operating-system'
+      # perl includes the build date, the uname of the build system and the
+      # username of the build user in some files.
+      # We override these to make it build deterministically.
+      # Very much inspired by what Debian did for reproducibility: https://salsa.debian.org/perl-team/interpreter/perl/blob/debian-5.26/debian/config.over
+      # A ticket has been opened upstream to possibly clean some of this up: https://rt.perl.org/Public/Bug/Display.html?id=133452
+      fake_osversion=4.14.0
+      echo "myhostname='nixpkgs'" >config.over
+      ${if stdenv.hostPlatform.isLinux then ''echo "osvers='$fake_osversion'" >>config.over
+      echo "myuname='linux nixpkgs #1 smp nixos $fake_osversion $(date -d "@$SOURCE_DATE_EPOCH") gnulinux'" >>config.over
+      '' else ""}
+      echo "cf_time='$(date -d "@$SOURCE_DATE_EPOCH")'" >>config.over
+      echo "cf_by='nixpkgs'" >>config.over
+      '' + optionalString (!crossCompiling) ''
+        configureFlags="$configureFlags -Dprefix=$out -Dman1dir=$out/share/man/man1 -Dman3dir=$out/share/man/man3"
+      '' + optionalString (stdenv.isAarch32 || stdenv.isMips) ''
+        configureFlagsArray=(-Dldflags="-lm -lrt")
       '' + optionalString stdenv.isDarwin ''
         substituteInPlace hints/darwin.sh --replace "env MACOSX_DEPLOYMENT_TARGET=10.3" ""
       '' + optionalString (!enableThreading) ''
         # We need to do this because the bootstrap doesn't have a static libpthread
         sed -i 's,\(libswanted.*\)pthread,\1,g' Configure
       '';
+    PERL_HASH_SEED="0";
 
     setupHook = ./setup-hook.sh;
 
