@@ -6,13 +6,13 @@
 
 let
   pname = "gitg";
-  version = "3.30.0";
+  version = "3.30.1";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "15qaaz4072lxs16nqr5b65xjyrjqy6ch5bmy1rb288fnzf3aw457";
+    sha256 = "1fz8q1aiql6k740savdjh0vzbyhcflgf94cfdhvzcrrvm929n2ss";
   };
 
   postPatch = ''
