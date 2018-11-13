@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, pkgconfig, go, gobjectIntrospection, libgudev }:
+{ stdenv, fetchFromGitHub, pkgconfig, go, gobjectIntrospection, libgudev, fetchurl }:
 
 stdenv.mkDerivation rec {
   name = "${pname}-${version}";
@@ -11,6 +11,14 @@ stdenv.mkDerivation rec {
     rev = version;
     sha256 = "0yi3lsgkxi8ghz2c7msf2df20jxkvzj8s47slvpzz4m57i82vgzl";
   };
+
+  patches = [
+    # fix: dde-api build error with gobject-introspection 1.58+
+    (fetchurl {
+      url = https://github.com/linuxdeepin/go-gir-generator/commit/a7ab229201e28d1be727f5021b3588fa4a1acf5f.patch;
+      sha256 = "13ywalwkjg8wwvd0pvmc2rv1h38airyvimdn9jfb5wis9xm48401";
+    })
+  ];
 
   nativeBuildInputs = [
     pkgconfig
