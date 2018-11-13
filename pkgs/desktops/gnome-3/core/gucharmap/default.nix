@@ -8,7 +8,7 @@ let
   unicode-data = callPackage ./unicode-data.nix {};
 in stdenv.mkDerivation rec {
   name = "gucharmap-${version}";
-  version = "11.0.2";
+  version = "11.0.3";
 
   outputs = [ "out" "lib" "dev" "devdoc" ];
 
@@ -17,7 +17,7 @@ in stdenv.mkDerivation rec {
     owner = "GNOME";
     repo = "gucharmap";
     rev = version;
-    sha256 = "0gvq7gvg3cim8p4l1qrwclq3z3cax7prskg36fri7iw10qzbzrk3";
+    sha256 = "1a590nxy8jdf6zxh6jdsyvhxyaz94ixx3aa1pj7gicf1aqp26vnh";
   };
 
   nativeBuildInputs = [
