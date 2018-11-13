@@ -5,24 +5,15 @@
 
 let
   pname = "tracker";
-  version = "2.1.5";
+  version = "2.1.6";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   outputs = [ "out" "dev" "devdoc" ];
 
-  # tarball does not contain map files
-  # https://gitlab.gnome.org/GNOME/tracker/merge_requests/30
-  # src = fetchurl {
-  #   url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-  #   sha256 = "07l6fb6i4pfna2y87rydcxbh6sz88kngapw87vf09fbk6xbvfd5j";
-  # };
-  src = fetchFromGitLab {
-    domain = "gitlab.gnome.org";
-    owner = "GNOME";
-    repo = pname;
-    rev = version;
-    sha256 = "1wg3pndd0j8qkzn9ikzqlcww8r3bd89ydf6fi4ng5k93879j2bqw";
+  src = fetchurl {
+    url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
+    sha256 = "143zapq50lggj3mpqg2y4rh1hgnkbn9vgvzpqxr7waiawsmx0awq";
   };
 
   nativeBuildInputs = [
@@ -41,6 +32,14 @@ in stdenv.mkDerivation rec {
     "-Ddbus_services=share/dbus-1/services"
     # TODO: figure out wrapping unit tests, some of them fail on missing gsettings-desktop-schemas
     "-Dfunctional_tests=false"
+  ];
+
+  patches = [
+    # Always generate tracker-sparql.h in time
+    (fetchurl {
+      url = https://gitlab.gnome.org/GNOME/tracker/commit/3cbfaa5b374e615098e60eb4430f108b642ebe76.diff;
+      sha256 = "0smavzvsglpghggrcl8sjflki13nh7pr0jl2yv6ymbf5hr1c4dws";
+    })
   ];
 
   postPatch = ''
