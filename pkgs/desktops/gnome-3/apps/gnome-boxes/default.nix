@@ -9,13 +9,13 @@
 # TODO: ovirt (optional)
 
 let
-  version = "3.30.1";
+  version = "3.30.2";
 in stdenv.mkDerivation rec {
   name = "gnome-boxes-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-boxes/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "0ldkw92yp564gnpa37vni6jx23namvcbsb6d4lcd8zqxbfhk2x5v";
+    sha256 = "1jgs816fy0w8kym3f4ps6a3jcwx5m9ijcs35jx92jqqmkj0y9597";
   };
 
   doCheck = true;
