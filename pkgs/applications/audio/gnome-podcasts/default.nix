@@ -4,12 +4,12 @@
 # TODO: build from git for easier updates
 # rustPlatform.buildRustPackage rec {
 stdenv.mkDerivation rec {
-  version = "0.4.5";
+  version = "0.4.6";
   name = "gnome-podcasts-${version}";
 
   src = fetchurl {
-    url = https://gitlab.gnome.org/World/podcasts/uploads/823f7abee51002ed803da87b31b92981/gnome-podcasts-0.4.5.tar.xz;
-    sha256 = "1fgrn09hk5nfdkg6v31qda05msyzw525spzqxc7y4iw9f7pm80wh";
+    url = https://gitlab.gnome.org/World/podcasts/uploads/e59ac5d618d7daf4c7f33ba72957c466/gnome-podcasts-0.4.6.tar.xz;
+    sha256 = "0g2rk3w251fp5jwbxs5ya1adv8nsgdqjy1vmfg8qqab6qyndhbrc";
   };
 
   # src = fetchFromGitLab {
