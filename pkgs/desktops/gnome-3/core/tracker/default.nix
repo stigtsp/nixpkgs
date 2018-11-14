@@ -30,6 +30,7 @@ in stdenv.mkDerivation rec {
 
   mesonFlags = [
     "-Ddbus_services=share/dbus-1/services"
+    "-Dsystemd_user_services=lib/systemd/user"
     # TODO: figure out wrapping unit tests, some of them fail on missing gsettings-desktop-schemas
     "-Dfunctional_tests=false"
   ];
