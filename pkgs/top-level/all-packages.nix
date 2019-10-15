@@ -9093,6 +9093,14 @@ in
   rakudo = callPackage ../development/interpreters/rakudo {
     inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
   };
+  moarvm = callPackage ../development/interpreters/rakudo/moarvm.nix {
+    inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
+  };
+  nqp = callPackage ../development/interpreters/rakudo/nqp.nix {
+    inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
+  };
+
+
 
   rascal = callPackage ../development/interpreters/rascal { };
 

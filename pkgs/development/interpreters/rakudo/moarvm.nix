@@ -2,26 +2,21 @@
 , CoreServices, ApplicationServices }:
 
 stdenv.mkDerivation rec {
-  pname = "rakudo";
-  version = "2019.07";
+  pname = "moarvm";
+  version = "2019.07.1";
 
   src = fetchurl {
-    url    = "https://github.com/rakudo/rakudo/releases/download/2019.07.1/rakudo-2019.07.1.tar.gz";
-    sha256 = "1xs4hj3hr3v0ixvmv56wffx6jcl2rk5wzsn74cbwlvrzxjaww7fr";
+    url    = "https://github.com/MoarVM/MoarVM/releases/download/2019.07.1/MoarVM-2019.07.1.tar.gz";
+    sha256 = "122rjns4sqs9yn7f34316aygrgj28n0pg3lvjkkfv2dmwrg98g15";
   };
 
   buildInputs = [ icu zlib gmp readline perl ]
     ++ stdenv.lib.optionals stdenv.isDarwin [ CoreServices ApplicationServices ];
   configureScript = "perl ./Configure.pl";
-  configureFlags =
-    [ "--backends=moar"
-      "--gen-moar"
-      "--gen-nqp"
-    ];
 
   meta = with stdenv.lib; {
-    description = "A Perl 6 implementation";
-    homepage    = https://www.rakudo.org;
+    description = "MoarVM (short for Metamodel On A Runtime Virtual Machine) is a runtime built for the 6model object system";
+    homepage    = "https://github.com/MoarVM/MoarVM";
     license     = licenses.artistic2;
     platforms   = platforms.unix;
     maintainers = with maintainers; [ thoughtpolice vrthra ];
