@@ -5019,6 +5019,8 @@ in
 
   mysqltuner = callPackage ../tools/misc/mysqltuner { };
 
+  mysql-utilities = callPackage ../tools/misc/mysql-utilities { };
+
   mytetra = libsForQt5.callPackage ../applications/office/mytetra { };
 
   nabi = callPackage ../tools/inputmethods/nabi { };
