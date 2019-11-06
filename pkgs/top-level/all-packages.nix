@@ -9090,17 +9090,10 @@ in
   };
   racket-minimal = callPackage ../development/interpreters/racket/minimal.nix { };
 
-  rakudo = callPackage ../development/interpreters/rakudo {
-    inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
-  };
-  moarvm = callPackage ../development/interpreters/rakudo/moarvm.nix {
-    inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
-  };
-  nqp = callPackage ../development/interpreters/rakudo/nqp.nix {
-    inherit (darwin.apple_sdk.frameworks) CoreServices ApplicationServices;
-  };
-
-
+  rakudo = callPackage ../development/interpreters/rakudo { };
+  moarvm = callPackage ../development/interpreters/rakudo/moarvm.nix { };
+  nqp = callPackage ../development/interpreters/rakudo/nqp.nix { };
+  zef = callPackage ../development/interpreters/rakudo/zef.nix { };
 
   rascal = callPackage ../development/interpreters/rascal { };
 

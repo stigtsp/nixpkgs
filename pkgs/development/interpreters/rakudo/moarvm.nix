@@ -1,5 +1,4 @@
-{ stdenv, fetchurl, perl, icu, zlib, gmp, readline
-, CoreServices, ApplicationServices }:
+{ stdenv, fetchurl, perl }:
 
 stdenv.mkDerivation rec {
   pname = "moarvm";
@@ -10,15 +9,15 @@ stdenv.mkDerivation rec {
     sha256 = "122rjns4sqs9yn7f34316aygrgj28n0pg3lvjkkfv2dmwrg98g15";
   };
 
-  buildInputs = [ icu zlib gmp readline perl ]
-    ++ stdenv.lib.optionals stdenv.isDarwin [ CoreServices ApplicationServices ];
-  configureScript = "perl ./Configure.pl";
+  buildInputs = [ perl ];
+  doCheck = false; # MoarVM does not come with its own test suite
+
+  configureScript = "${perl}/bin/perl ./Configure.pl";
 
   meta = with stdenv.lib; {
     description = "MoarVM (short for Metamodel On A Runtime Virtual Machine) is a runtime built for the 6model object system";
     homepage    = "https://github.com/MoarVM/MoarVM";
     license     = licenses.artistic2;
     platforms   = platforms.unix;
-    maintainers = with maintainers; [ thoughtpolice vrthra ];
   };
 }

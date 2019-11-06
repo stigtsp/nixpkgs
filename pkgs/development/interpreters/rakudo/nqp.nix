@@ -1,5 +1,4 @@
-{ stdenv, fetchurl, perl, icu, zlib, gmp, readline, moarvm
-, CoreServices, ApplicationServices }:
+{ stdenv, fetchurl, perl, lib, moarvm }:
 
 stdenv.mkDerivation rec {
   pname = "nqp";
@@ -10,16 +9,20 @@ stdenv.mkDerivation rec {
     sha256 = "0912n50psvklxaawd33pr5qz1xdx0migpjd30crhdi8396wfa93k";
   };
 
-  buildInputs = [ icu zlib gmp readline perl ]
-    ++ stdenv.lib.optionals stdenv.isDarwin [ CoreServices ApplicationServices ];
-  configureScript = "perl ./Configure.pl";
-  configureFlags = [ "--backends=moar" "--prefix=${moarvm}" ];
+  buildInputs = [ perl ];
+
+  configureScript = "${perl}/bin/perl ./Configure.pl";
+  configureFlags = [
+    "--backends=moar"
+    "--with-moar=${moarvm}/bin/moar"
+  ];
+
+  doCheck = true;
 
   meta = with stdenv.lib; {
     description = "Not Quite Perl -- a lightweight Raku-like environment for virtual machines";
     homepage    = "https://github.com/perl6/nqp";
     license     = licenses.artistic2;
     platforms   = platforms.unix;
-    maintainers = with maintainers; [ thoughtpolice vrthra ];
   };
 }
