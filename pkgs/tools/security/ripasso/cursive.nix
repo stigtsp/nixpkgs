@@ -1,4 +1,4 @@
-{ stdenv, lib, rustPlatform, fetchFromGitHub, pkgconfig, ncurses, python3, openssl, libgpgerror, gpgme, xorg }:
+{ stdenv, lib, rustPlatform, fetchFromGitHub, pkgconfig, ncurses, python3, openssl, libgpgerror, gpgme, xorg, AppKit, Security }:
 
 with rustPlatform;
 buildRustPackage rec {
@@ -18,7 +18,7 @@ buildRustPackage rec {
   nativeBuildInputs = [ pkgconfig ];
   buildInputs = [
     ncurses python3 openssl libgpgerror gpgme xorg.libxcb
-  ];
+  ] ++ stdenv.lib.optionals stdenv.isDarwin [ AppKit Security];
 
   preFixup = ''
     mkdir -p "$out/man/man1"
