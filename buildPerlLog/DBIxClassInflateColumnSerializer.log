@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/cp0ac4kg35ibd8iqi1a9b6f5zbilln7r-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/1zbgcb8rs228f10nslsfmi8ra6h69gb9-DBIx-Class-InflateColumn-Serializer-0.09.tar.gz
+copying path '/nix/store/1zbgcb8rs228f10nslsfmi8ra6h69gb9-DBIx-Class-InflateColumn-Serializer-0.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cp0ac4kg35ibd8iqi1a9b6f5zbilln7r-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/1zbgcb8rs228f10nslsfmi8ra6h69gb9-DBIx-Class-InflateColumn-Serializer-0.09.tar.gz
+source root is DBIx-Class-InflateColumn-Serializer-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1484415080 of file DBIx-Class-InflateColumn-Serializer-0.09/xt/podcoverage.t
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::Class::InflateColumn::Serializer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBIx/Class/InflateColumn/Serializer/YAML.pm blib/lib/DBIx/Class/InflateColumn/Serializer/YAML.pm
+cp lib/DBIx/Class/InflateColumn/Serializer/JSON.pm blib/lib/DBIx/Class/InflateColumn/Serializer/JSON.pm
+cp lib/DBIx/Class/InflateColumn/Serializer.pm blib/lib/DBIx/Class/InflateColumn/Serializer.pm
+cp lib/DBIx/Class/InflateColumn/Serializer/Storable.pm blib/lib/DBIx/Class/InflateColumn/Serializer/Storable.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001_load.t ...... ok
+t/002_storable.t .. ok
+t/003_json.t ...... ok
+t/004_yaml.t ...... ok
+All tests successful.
+Files=4, Tests=34,  1 wallclock secs ( 0.05 usr  0.03 sys +  0.87 cusr  0.51 csys =  1.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/pkgconfig m4datadir=/nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/aclocal aclocaldir=/nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/perl5/site_perl/5.32.0/DBIx/Class/InflateColumn/Serializer.pm
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/perl5/site_perl/5.32.0/DBIx/Class/InflateColumn/Serializer/Storable.pm
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/perl5/site_perl/5.32.0/DBIx/Class/InflateColumn/Serializer/JSON.pm
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/perl5/site_perl/5.32.0/DBIx/Class/InflateColumn/Serializer/YAML.pm
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/man3/DBIx::Class::InflateColumn::Serializer::JSON.3
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/man3/DBIx::Class::InflateColumn::Serializer::YAML.3
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/man3/DBIx::Class::InflateColumn::Serializer::Storable.3
+Installing /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/man3/DBIx::Class::InflateColumn::Serializer.3
+Appending installation info to /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/man3 to /nix/store/a4wnv38vv8vl4f1qa90mhs941rv4p50b-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09-devdoc/share/man/man3
+Removing empty /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09/lib
+patching script interpreter paths in /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09
+checking for references to /build/ in /nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a4wnv38vv8vl4f1qa90mhs941rv4p50b-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09-devdoc
+gzipping man pages under /nix/store/a4wnv38vv8vl4f1qa90mhs941rv4p50b-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/a4wnv38vv8vl4f1qa90mhs941rv4p50b-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09-devdoc
+checking for references to /build/ in /nix/store/a4wnv38vv8vl4f1qa90mhs941rv4p50b-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09-devdoc...
+/nix/store/1lwycdm219ycb8si5i85b51b7hd5a1h3-perl5.32.0-DBIx-Class-InflateColumn-Serializer-0.09

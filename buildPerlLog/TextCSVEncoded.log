@@ -1,0 +1,85 @@
+these derivations will be built:
+  /nix/store/1fkxw2ychnf1ppa7vdqpwb2lrxwvrxyn-perl5.32.0-Text-CSV-Encoded-0.25.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/64pl5621xpvh7q6sar9x9qinsprkh8ka-Text-CSV-Encoded-0.25.tar.gz
+copying path '/nix/store/64pl5621xpvh7q6sar9x9qinsprkh8ka-Text-CSV-Encoded-0.25.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1fkxw2ychnf1ppa7vdqpwb2lrxwvrxyn-perl5.32.0-Text-CSV-Encoded-0.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/64pl5621xpvh7q6sar9x9qinsprkh8ka-Text-CSV-Encoded-0.25.tar.gz
+source root is Text-CSV-Encoded-0.25
+setting SOURCE_DATE_EPOCH to timestamp 1453979845 of file Text-CSV-Encoded-0.25/xt/release/kwalitee.t
+patching sources
+configuring
+patching ./xt/release/kwalitee.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/pp_05_guess.t...
+patching ./t/pp_06_coder_class.t...
+patching ./t/tests/01_base.t...
+patching ./t/tests/07_coder_check_value_euc-jp.t...
+patching ./t/xs_01_base.t...
+patching ./t/pp_03_file.t...
+patching ./t/xs_03_file.t...
+patching ./t/pp_01_base.t...
+patching ./t/00_pod.t...
+patching ./t/xs_02_code.t...
+patching ./t/pp_02_code.t...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Text::CSV::Encoded
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/CSV/Encoded.pm blib/lib/Text/CSV/Encoded.pm
+cp lib/Text/CSV/Encoded/Coder/Encode.pm blib/lib/Text/CSV/Encoded/Coder/Encode.pm
+cp lib/Text/CSV/Encoded/Coder/Base.pm blib/lib/Text/CSV/Encoded/Coder/Base.pm
+cp lib/Text/CSV/Encoded/Coder/EncodeGuess.pm blib/lib/Text/CSV/Encoded/Coder/EncodeGuess.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_pod.t ................... skipped: Test::Pod 1.00 required for testing POD
+t/01_use.t ................... ok
+t/02_undef.t ................. ok
+t/03_attr_err.t .............. ok
+t/pp_01_base.t ............... ok
+t/pp_02_code.t ............... ok
+t/pp_03_file.t ............... ok
+t/pp_04_uni_but_utf8.t ....... ok
+t/pp_05_guess.t .............. ok
+t/pp_06_coder_class.t ........ ok
+t/pp_07_coder_check_value.t .. ok
+t/xs_01_base.t ............... skipped: Text::CSV_XS can't be loaded.
+t/xs_02_code.t ............... skipped: Text::CSV_XS can't be loaded.
+t/xs_03_file.t ............... skipped: Text::CSV_XS can't be loaded.
+All tests successful.
+Files=14, Tests=134,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.93 cusr  0.19 csys =  1.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/pkgconfig m4datadir=/nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/aclocal aclocaldir=/nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/perl5/site_perl/5.32.0/Text/CSV/Encoded.pm
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/perl5/site_perl/5.32.0/Text/CSV/Encoded/Coder/Encode.pm
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/perl5/site_perl/5.32.0/Text/CSV/Encoded/Coder/EncodeGuess.pm
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/perl5/site_perl/5.32.0/Text/CSV/Encoded/Coder/Base.pm
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/man3/Text::CSV::Encoded::Coder::Encode.3
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/man3/Text::CSV::Encoded::Coder::EncodeGuess.3
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/man3/Text::CSV::Encoded.3
+Installing /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/man3/Text::CSV::Encoded::Coder::Base.3
+Appending installation info to /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/man3 to /nix/store/hmh4hpklnzpmm4cpg93sq9qiv55m2291-perl5.32.0-Text-CSV-Encoded-0.25-devdoc/share/man/man3
+Removing empty /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25/lib
+patching script interpreter paths in /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25
+checking for references to /build/ in /nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hmh4hpklnzpmm4cpg93sq9qiv55m2291-perl5.32.0-Text-CSV-Encoded-0.25-devdoc
+gzipping man pages under /nix/store/hmh4hpklnzpmm4cpg93sq9qiv55m2291-perl5.32.0-Text-CSV-Encoded-0.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hmh4hpklnzpmm4cpg93sq9qiv55m2291-perl5.32.0-Text-CSV-Encoded-0.25-devdoc
+checking for references to /build/ in /nix/store/hmh4hpklnzpmm4cpg93sq9qiv55m2291-perl5.32.0-Text-CSV-Encoded-0.25-devdoc...
+/nix/store/rd6nc3775m0mihmp7vr2lf17d7482qgj-perl5.32.0-Text-CSV-Encoded-0.25

@@ -1,0 +1,93 @@
+these derivations will be built:
+  /nix/store/jf78hhhfg4z3m1djw9ny61x92cxazjgw-perl5.32.0-Log-Handler-0.88.drv
+  /nix/store/6v86jq9q4sz5d52aa3km9qkdmxghiqdp-perl5.32.0-Catalyst-Plugin-Log-Handler-0.08.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/3d8msd6hfwisrlgrls5gzh0znydl3qlf-Catalyst-Plugin-Log-Handler-0.08.tar.gz
+  /nix/store/nci6hl06d0fsvqqf3kqqnnkzdpdakz0m-Log-Handler-0.88.tar.gz
+copying path '/nix/store/3d8msd6hfwisrlgrls5gzh0znydl3qlf-Catalyst-Plugin-Log-Handler-0.08.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nci6hl06d0fsvqqf3kqqnnkzdpdakz0m-Log-Handler-0.88.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jf78hhhfg4z3m1djw9ny61x92cxazjgw-perl5.32.0-Log-Handler-0.88.drv'...
+unpacking sources
+unpacking source archive /nix/store/nci6hl06d0fsvqqf3kqqnnkzdpdakz0m-Log-Handler-0.88.tar.gz
+source root is Log-Handler-0.88
+setting SOURCE_DATE_EPOCH to timestamp 1470666599 of file Log-Handler-0.88/README
+patching sources
+configuring
+patching ./debian/rules...
+patching ./examples/text-csv/log-as-csv-string.pl...
+patching ./examples/category/category.pl...
+patching ./examples/socket/server.pl...
+patching ./examples/socket/client.pl...
+patching ./examples/filter/filter_message.pl...
+patching ./examples/filter/filter_caller.pl...
+patching ./examples/filter/extended_filter.pl...
+patching ./examples/layout/pattern.pl...
+patching ./examples/layout/layout.pl...
+patching ./examples/layout/runtime.pl...
+patching ./examples/logger/myapp.pl...
+patching ./examples/config/example.pl...
+patching ./examples/reload/reload.pl...
+patching ./examples/prepare/prepare.pl...
+patching ./examples/benchmark/benchmark.pl...
+patching ./MANIFEST.SKIP.bak...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Log::Handler
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Config::General is not installed
+    *  Config::Properties is not installed
+    *  DBI is not installed
+    *  Email::Date is not installed
+    *  YAML is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Log-Handler' version '0.88'
+Building Log-Handler
+running tests
+t/000-use.t ...................... ok
+t/001-pod.t ...................... skipped: Test::Pod required for testing POD
+t/002-pod-coverage.t ............. skipped: Test::Pod::Coverage required for testing pod coverage
+t/010-handler.t .................. ok
+t/011-handler-set-pattern.t ...... ok
+t/012-handler-message-pattern.t .. 1/15 hostname() does not accepts arguments (it used to silently discard any provided) at /build/Log-Handler-0.88/blib/lib/Log/Handler/Output.pm line 67.
+# Looks like your test exited with 2 just after 1.
+t/012-handler-message-pattern.t .. Dubious, test returned 2 (wstat 512, 0x200)
+Failed 14/15 subtests
+t/013-handler-priority.t ......... ok
+t/014-handler-reload.t ........... ok
+t/015-handler-filter-caller.t .... ok
+t/015-handler-filter-message.t ... ok
+t/016-handler-alias.t ............ ok
+t/017-handler-special-levels.t ... ok
+t/018-handler-logger.t ........... ok
+t/019-handler-setlevel.t ......... ok
+t/020-output-forward.t ........... ok
+t/030-output-file.t .............. ok
+t/040-output-email.t ............. skipped: No Email::Date installed
+t/045-output-sendmail.t .......... ok
+t/050-output-dbi.t ............... skipped: No DBI installed
+t/060-output-socket.t ............ skipped: Set $ENV{LOG_HANDLER_SOCK_TEST} to 1 to enable this test
+t/090-test-undef.t ............... ok
+t/100-config.t ................... ok
+
+Test Summary Report
+-------------------
+t/012-handler-message-pattern.t (Wstat: 512 Tests: 1 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: Bad plan.  You planned 15 tests but ran 1.
+Files=22, Tests=147,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.50 cusr  0.51 csys =  2.10 CPU)
+Result: FAIL
+Failed 1/22 test programs. 0/147 subtests failed.
+builder for '/nix/store/jf78hhhfg4z3m1djw9ny61x92cxazjgw-perl5.32.0-Log-Handler-0.88.drv' failed with exit code 255
+cannot build derivation '/nix/store/6v86jq9q4sz5d52aa3km9qkdmxghiqdp-perl5.32.0-Catalyst-Plugin-Log-Handler-0.08.drv': 1 dependencies couldn't be built
+error: build of '/nix/store/6v86jq9q4sz5d52aa3km9qkdmxghiqdp-perl5.32.0-Catalyst-Plugin-Log-Handler-0.08.drv' failed

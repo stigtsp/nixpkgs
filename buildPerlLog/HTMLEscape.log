@@ -1,0 +1,151 @@
+these derivations will be built:
+  /nix/store/17d10vxmag3n044q5011gc4lkjwkmr1r-perl5.32.0-Module-Build-Pluggable-0.10.drv
+  /nix/store/kgrk56m05pnfidkn36hs9c87aky6mwfh-perl5.32.0-Module-Build-Pluggable-PPPort-0.04.drv
+  /nix/store/4mzqv9clcdc27908zf2p8br3ykdx48cp-perl5.32.0-HTML-Escape-1.10.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/1jp59svpgfx3h41j481kr87j5y2qasgw-Module-Build-Pluggable-PPPort-0.04.tar.gz
+  /nix/store/hvin44kcfv73p2rphjqzdc2alnr8n3p3-HTML-Escape-1.10.tar.gz
+  /nix/store/l8b3w5j8nh0d1np93fdyx5y579yr3236-Module-Build-Pluggable-0.10.tar.gz
+copying path '/nix/store/hvin44kcfv73p2rphjqzdc2alnr8n3p3-HTML-Escape-1.10.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/1jp59svpgfx3h41j481kr87j5y2qasgw-Module-Build-Pluggable-PPPort-0.04.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/l8b3w5j8nh0d1np93fdyx5y579yr3236-Module-Build-Pluggable-0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/17d10vxmag3n044q5011gc4lkjwkmr1r-perl5.32.0-Module-Build-Pluggable-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/l8b3w5j8nh0d1np93fdyx5y579yr3236-Module-Build-Pluggable-0.10.tar.gz
+source root is Module-Build-Pluggable-0.10
+setting SOURCE_DATE_EPOCH to timestamp 1367916278 of file Module-Build-Pluggable-0.10/xt/02_perlcritic.t
+patching sources
+configuring
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Module-Build-Pluggable' version '0.10'
+Merging cpanfile prereqs to MYMETA.yml
+Merging cpanfile prereqs to MYMETA.json
+Building Module-Build-Pluggable
+running tests
+t/00_compile.t ................... ok
+t/01_simple.t .................... ok
+t/02_requires.t .................. ok
+t/03_add_extra_compiler_flags.t .. ok
+t/04_test_args.t ................. ok
+t/05_ignore_plus.t ............... CONFIGURE at /build/kSf5BUolRv/My/Own/Plugin.pm line 9.
+t/05_ignore_plus.t ............... ok
+All tests successful.
+Files=6, Tests=12,  1 wallclock secs ( 0.03 usr  0.01 sys +  1.10 cusr  0.29 csys =  1.43 CPU)
+Result: PASS
+installing
+Building Module-Build-Pluggable
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Test/Module/Build/Pluggable.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable/Util.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable/Repository.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable/Base.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable/GithubMeta.pm
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3/Module::Build::Pluggable::GithubMeta.3
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3/Module::Build::Pluggable.3
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3/Module::Build::Pluggable::Repository.3
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3/Test::Module::Build::Pluggable.3
+Installing /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3/Module::Build::Pluggable::Base.3
+post-installation fixup
+Moving /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/man3 to /nix/store/z3qx8vc4klaskcv860zf638f04w8qim1-perl5.32.0-Module-Build-Pluggable-0.10-devdoc/share/man/man3
+Removing empty /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10/lib
+patching script interpreter paths in /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10
+checking for references to /build/ in /nix/store/80qm190n2qp2c37dyq8pn0w9w9546h0w-perl5.32.0-Module-Build-Pluggable-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z3qx8vc4klaskcv860zf638f04w8qim1-perl5.32.0-Module-Build-Pluggable-0.10-devdoc
+gzipping man pages under /nix/store/z3qx8vc4klaskcv860zf638f04w8qim1-perl5.32.0-Module-Build-Pluggable-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z3qx8vc4klaskcv860zf638f04w8qim1-perl5.32.0-Module-Build-Pluggable-0.10-devdoc
+checking for references to /build/ in /nix/store/z3qx8vc4klaskcv860zf638f04w8qim1-perl5.32.0-Module-Build-Pluggable-0.10-devdoc...
+building '/nix/store/kgrk56m05pnfidkn36hs9c87aky6mwfh-perl5.32.0-Module-Build-Pluggable-PPPort-0.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/1jp59svpgfx3h41j481kr87j5y2qasgw-Module-Build-Pluggable-PPPort-0.04.tar.gz
+source root is Module-Build-Pluggable-PPPort-0.04
+setting SOURCE_DATE_EPOCH to timestamp 1352082280 of file Module-Build-Pluggable-PPPort-0.04/xt/06_meta_author.t
+patching sources
+configuring
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Module-Build-Pluggable-PPPort' version '0.04'
+Building Module-Build-Pluggable-PPPort
+running tests
+t/00_compile.t .. ok
+t/01_simple.t ... Can't find dist packages without a MANIFEST file
+Run 'Build manifest' to generate one
+
+WARNING: Possible missing or corrupt 'MANIFEST' file.
+Nothing to enter for 'provides' field in metafile.
+Warning: Build.PL has been altered.  You may need to run 'perl Build.PL' again.
+t/01_simple.t ... ok
+All tests successful.
+Files=2, Tests=4,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.35 cusr  0.11 csys =  0.49 CPU)
+Result: PASS
+installing
+Building Module-Build-Pluggable-PPPort
+Installing /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04/lib/perl5/site_perl/5.32.0/Module/Build/Pluggable/PPPort.pm
+Installing /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04/share/man/man3/Module::Build::Pluggable::PPPort.3
+post-installation fixup
+Moving /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04/share/man/man3 to /nix/store/x1mk3c5zgydnii19j5vcdm32df1wvrzx-perl5.32.0-Module-Build-Pluggable-PPPort-0.04-devdoc/share/man/man3
+Removing empty /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04/lib
+patching script interpreter paths in /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04
+checking for references to /build/ in /nix/store/3p4hzy0xrh2966vmbgwfb7akbnr0ffwi-perl5.32.0-Module-Build-Pluggable-PPPort-0.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x1mk3c5zgydnii19j5vcdm32df1wvrzx-perl5.32.0-Module-Build-Pluggable-PPPort-0.04-devdoc
+gzipping man pages under /nix/store/x1mk3c5zgydnii19j5vcdm32df1wvrzx-perl5.32.0-Module-Build-Pluggable-PPPort-0.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x1mk3c5zgydnii19j5vcdm32df1wvrzx-perl5.32.0-Module-Build-Pluggable-PPPort-0.04-devdoc
+checking for references to /build/ in /nix/store/x1mk3c5zgydnii19j5vcdm32df1wvrzx-perl5.32.0-Module-Build-Pluggable-PPPort-0.04-devdoc...
+building '/nix/store/4mzqv9clcdc27908zf2p8br3ykdx48cp-perl5.32.0-HTML-Escape-1.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/hvin44kcfv73p2rphjqzdc2alnr8n3p3-HTML-Escape-1.10.tar.gz
+source root is HTML-Escape-1.10
+setting SOURCE_DATE_EPOCH to timestamp 1458011840 of file HTML-Escape-1.10/xt/02_perlcritic.t
+patching sources
+configuring
+patching ./author/benchmark.pl...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'HTML-Escape' version '1.10'
+cp META.json MYMETA.json
+cp META.yml MYMETA.yml
+Building HTML-Escape
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.10" -DXS_VERSION="1.10" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/HTML/Escape.o lib/HTML/Escape.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/HTML/Escape/Escape.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/HTML/Escape/Escape.so lib/HTML/Escape.o
+running tests
+t/00_compile.t .. ok
+t/01_simple.t ... ok
+t/02_pp.t ....... ok
+All tests successful.
+Files=3, Tests=13,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.17 cusr  0.08 csys =  0.27 CPU)
+Result: PASS
+installing
+Building HTML-Escape
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/HTML/Escape/Escape.so
+Installing /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/HTML/Escape/Escape.bs
+Installing /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/HTML/Escape.pm
+Installing /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/HTML/Escape/PurePerl.pm
+Installing /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/share/man/man3/HTML::Escape.3
+post-installation fixup
+Moving /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/share/man/man3 to /nix/store/9hkhqnbz5rbm11glpsh5fbbm01wvrxqs-perl5.32.0-HTML-Escape-1.10-devdoc/share/man/man3
+Removing empty /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10
+shrinking /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/HTML/Escape/Escape.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10/lib
+patching script interpreter paths in /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10
+checking for references to /build/ in /nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9hkhqnbz5rbm11glpsh5fbbm01wvrxqs-perl5.32.0-HTML-Escape-1.10-devdoc
+gzipping man pages under /nix/store/9hkhqnbz5rbm11glpsh5fbbm01wvrxqs-perl5.32.0-HTML-Escape-1.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9hkhqnbz5rbm11glpsh5fbbm01wvrxqs-perl5.32.0-HTML-Escape-1.10-devdoc
+checking for references to /build/ in /nix/store/9hkhqnbz5rbm11glpsh5fbbm01wvrxqs-perl5.32.0-HTML-Escape-1.10-devdoc...
+/nix/store/yphd0shlf0fj0i2vgdmjwm1zi1vjm8hj-perl5.32.0-HTML-Escape-1.10

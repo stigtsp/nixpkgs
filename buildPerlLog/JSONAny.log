@@ -1,0 +1,130 @@
+these derivations will be built:
+  /nix/store/zplfm28ainljw20kmm2sap23qhxjy3bw-perl5.32.0-JSON-Any-1.39.drv
+building '/nix/store/zplfm28ainljw20kmm2sap23qhxjy3bw-perl5.32.0-JSON-Any-1.39.drv'...
+unpacking sources
+unpacking source archive /nix/store/d9ccmln487bfq13k0i4ybnmq06q7mcj2-JSON-Any-1.39.tar.gz
+source root is JSON-Any-1.39
+setting SOURCE_DATE_EPOCH to timestamp 1433911074 of file JSON-Any-1.39/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for JSON::Any
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/JSON/Any.pm blib/lib/JSON/Any.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ 1/? # Testing JSON::Any 1.39, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                 Want     Have
+#     --------------------- ----- --------
+#     Data::Dumper            any    2.174
+#     ExtUtils::MakeMaker     any     7.44
+#     File::Spec              any     3.78
+#     Storable                any     3.21
+#     Test::Fatal             any    0.014
+#     Test::More              any 1.302175
+#     Test::Requires          any     0.11
+#     Test::Warnings        0.009    0.030
+#     Test::Without::Module   any     0.20
+#     utf8                    any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module   Want Have
+#     -------- ---- ----
+#     Carp      any 1.50
+#     constant  any 1.33
+#     strict    any 1.11
+#     warnings  any 1.47
+#
+# === Other Modules ===
+#
+#     Module              Have
+#     ---------------- -------
+#     Cpanel::JSON::XS missing
+#     JSON             missing
+#     JSON::DWIW       missing
+#     JSON::MaybeXS    missing
+#     JSON::PP            4.04
+#     JSON::Syck       missing
+#     JSON::XS         missing
+#     Pod::Coverage    missing
+#
+t/00-report-prereqs.t .. ok
+t/01-JSON.t ............ skipped: JSON.pm not installed: Couldn't find a JSON package. Need JSON at (eval 8) line 1.
+t/02-JSON-XS.t ......... skipped: JSON::XS not installed: Couldn't find a JSON package. Need JSON::XS at (eval 8) line 1.
+t/03-JSON-DWIW.t ....... skipped: JSON::DWIW not installed: Couldn't find a JSON package. Need JSON::DWIW at (eval 8) line 1.
+t/04-ENV.t ............. skipped: Cpanel::JSON::XS nor JSON::XS are installed
+t/05-JSON-Syck.t ....... skipped: JSON::Syck not installed: Couldn't find a JSON package. Need JSON::Syck at (eval 8) line 1.
+t/06-JSON-PP.t ......... # Testing JSON::PP backend
+t/06-JSON-PP.t ......... ok
+t/07-CPanel-JSON-XS.t .. skipped: Cpanel::JSON::XS not installed: Couldn't find a JSON package. Need Cpanel::JSON::XS at (eval 8) line 1.
+t/10_unicode.t ......... ok
+t/11-string-escape.t ... ok
+t/12-boolean.t ......... ok
+t/13-no-backends.t ..... ok
+t/14-deprecated.t ...... skipped: Test requires module 'JSON::Syck' but it's not found
+All tests successful.
+Files=14, Tests=85,  1 wallclock secs ( 0.05 usr  0.01 sys +  1.01 cusr  0.31 csys =  1.38 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/lib/pkgconfig m4datadir=/nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/share/aclocal aclocaldir=/nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/lib/perl5/site_perl/5.32.0/JSON/Any.pm
+Installing /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/share/man/man3/JSON::Any.3
+Appending installation info to /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/share/man/man3 to /nix/store/d133bk47ygrrjsavr4vxnl043cpq32l6-perl5.32.0-JSON-Any-1.39-devdoc/share/man/man3
+Removing empty /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39/lib
+patching script interpreter paths in /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39
+checking for references to /build/ in /nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d133bk47ygrrjsavr4vxnl043cpq32l6-perl5.32.0-JSON-Any-1.39-devdoc
+gzipping man pages under /nix/store/d133bk47ygrrjsavr4vxnl043cpq32l6-perl5.32.0-JSON-Any-1.39-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d133bk47ygrrjsavr4vxnl043cpq32l6-perl5.32.0-JSON-Any-1.39-devdoc
+checking for references to /build/ in /nix/store/d133bk47ygrrjsavr4vxnl043cpq32l6-perl5.32.0-JSON-Any-1.39-devdoc...
+/nix/store/yhnyd64zdj6f086gf9rzd1p4h1vzfdgr-perl5.32.0-JSON-Any-1.39

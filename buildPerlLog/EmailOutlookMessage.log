@@ -1,0 +1,328 @@
+these derivations will be built:
+  /nix/store/gsrs15lqp9325644358k7nw66jka8j0s-perl5.32.0-OLE-Storage_Lite-0.20.drv
+  /nix/store/v5f9dk8lml9isli4z0s7lmpdsib4lzsi-perl5.32.0-Email-Sender-1.300034.drv
+  /nix/store/1kr9qk0bgy4pr8diqgw0sma5dhx1amc1-perl5.32.0-Email-Outlook-Message-0.919.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/6kya91bicjhqh55d4jivrid8slvsf39j-Email-Sender-1.300034.tar.gz
+  /nix/store/hsnxiih7h198qmj2cx2hbjm1ld3f1yc4-Email-Outlook-Message-0.919.tar.gz
+  /nix/store/w0jdxgzncx0dkixc7yik4v8832f1iibg-OLE-Storage_Lite-0.20.tar.gz
+copying path '/nix/store/hsnxiih7h198qmj2cx2hbjm1ld3f1yc4-Email-Outlook-Message-0.919.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/w0jdxgzncx0dkixc7yik4v8832f1iibg-OLE-Storage_Lite-0.20.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/6kya91bicjhqh55d4jivrid8slvsf39j-Email-Sender-1.300034.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v5f9dk8lml9isli4z0s7lmpdsib4lzsi-perl5.32.0-Email-Sender-1.300034.drv'...
+building '/nix/store/gsrs15lqp9325644358k7nw66jka8j0s-perl5.32.0-OLE-Storage_Lite-0.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/w0jdxgzncx0dkixc7yik4v8832f1iibg-OLE-Storage_Lite-0.20.tar.gz
+source root is OLE-Storage_Lite-0.20
+setting SOURCE_DATE_EPOCH to timestamp 1577972363 of file OLE-Storage_Lite-0.20/MANIFEST
+patching sources
+configuring
+patching ./t/01_date_conversion.t...
+unpacking sources
+unpacking source archive /nix/store/6kya91bicjhqh55d4jivrid8slvsf39j-Email-Sender-1.300034.tar.gz
+source root is Email-Sender-1.300034
+setting SOURCE_DATE_EPOCH to timestamp 1575343323 of file Email-Sender-1.300034/xt/release/changes_has_content.t
+patching sources
+patching script interpreter paths in util
+util/executable: interpreter directive changed from "/usr/bin/perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+util/sendmail: interpreter directive changed from "perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+configuring
+patching ./util/executable...
+patching ./util/sendmail...
+Checking if your kit is complete...
+patching ./xt/release/a-perl-minver.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Looks good
+patching ./t/maildir.t...
+patching ./t/simple-simple.t...
+patching ./t/fail.t...
+patching ./t/smtp-via-rig.t...
+patching ./t/simple-wrapper.t...
+patching ./t/smtp-via-mock.t...
+patching ./t/util-env.t...
+patching ./t/util-fail.t...
+patching ./t/devnull.t...
+patching ./t/test.t...
+patching ./t/trans-prep-email.t...
+Generating a Unix-style Makefile
+Writing Makefile for OLE::Storage_Lite
+patching ./t/fail-multi.t...
+patching ./t/mbox.t...
+Writing MYMETA.yml and MYMETA.json
+patching ./t/util-easy.t...
+patching ./t/print.t...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+cp lib/OLE/Storage_Lite.pm blib/lib/OLE/Storage_Lite.pm
+Manifying 1 pod document
+Generating a Unix-style Makefile
+Writing Makefile for Email::Sender
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+t/00_load.t ............. ok
+t/01_date_conversion.t .. ok
+All tests successful.
+Files=2, Tests=199,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.15 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/lib/pkgconfig m4datadir=/nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/share/aclocal aclocaldir=/nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/lib/perl5/site_perl/5.32.0/OLE/Storage_Lite.pm
+Installing /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/share/man/man3/OLE::Storage_Lite.3
+Appending installation info to /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/share/man/man3 to /nix/store/4yfhsyppqw0nkqj427zgc2mzr0awsz6g-perl5.32.0-OLE-Storage_Lite-0.20-devdoc/share/man/man3
+Removing empty /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20/lib
+patching script interpreter paths in /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20
+checking for references to /build/ in /nix/store/505b709miamf88d5h9yrjr3rhfmhr878-perl5.32.0-OLE-Storage_Lite-0.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4yfhsyppqw0nkqj427zgc2mzr0awsz6g-perl5.32.0-OLE-Storage_Lite-0.20-devdoc
+cp lib/Email/Sender/Manual/QuickStart.pm blib/lib/Email/Sender/Manual/QuickStart.pm
+gzipping man pages under /nix/store/4yfhsyppqw0nkqj427zgc2mzr0awsz6g-perl5.32.0-OLE-Storage_Lite-0.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+cp lib/Email/Sender/Transport/Print.pm blib/lib/Email/Sender/Transport/Print.pm
+patching script interpreter paths in /nix/store/4yfhsyppqw0nkqj427zgc2mzr0awsz6g-perl5.32.0-OLE-Storage_Lite-0.20-devdoc
+cp lib/Email/Sender/Success/Partial.pm blib/lib/Email/Sender/Success/Partial.pm
+cp lib/Email/Sender/Failure/Temporary.pm blib/lib/Email/Sender/Failure/Temporary.pm
+cp lib/Email/Sender/Transport/SMTP.pm blib/lib/Email/Sender/Transport/SMTP.pm
+cp lib/Email/Sender/Failure/Multi.pm blib/lib/Email/Sender/Failure/Multi.pm
+cp lib/Email/Sender.pm blib/lib/Email/Sender.pm
+cp lib/Email/Sender/Transport/Sendmail.pm blib/lib/Email/Sender/Transport/Sendmail.pm
+cp lib/Email/Sender/Transport/DevNull.pm blib/lib/Email/Sender/Transport/DevNull.pm
+cp lib/Email/Sender/Failure/Permanent.pm blib/lib/Email/Sender/Failure/Permanent.pm
+cp lib/Email/Sender/Transport/Maildir.pm blib/lib/Email/Sender/Transport/Maildir.pm
+checking for references to /build/ in /nix/store/4yfhsyppqw0nkqj427zgc2mzr0awsz6g-perl5.32.0-OLE-Storage_Lite-0.20-devdoc...
+cp lib/Email/Sender/Transport/Test.pm blib/lib/Email/Sender/Transport/Test.pm
+cp lib/Email/Sender/Transport/Failable.pm blib/lib/Email/Sender/Transport/Failable.pm
+cp lib/Email/Sender/Transport/Wrapper.pm blib/lib/Email/Sender/Transport/Wrapper.pm
+cp lib/Email/Sender/Transport/Mbox.pm blib/lib/Email/Sender/Transport/Mbox.pm
+cp lib/Email/Sender/Manual.pm blib/lib/Email/Sender/Manual.pm
+cp lib/Email/Sender/Role/HasMessage.pm blib/lib/Email/Sender/Role/HasMessage.pm
+cp lib/Email/Sender/Util.pm blib/lib/Email/Sender/Util.pm
+cp lib/Email/Sender/Transport.pm blib/lib/Email/Sender/Transport.pm
+cp lib/Email/Sender/Success.pm blib/lib/Email/Sender/Success.pm
+cp lib/Email/Sender/Role/CommonSending.pm blib/lib/Email/Sender/Role/CommonSending.pm
+cp lib/Email/Sender/Failure.pm blib/lib/Email/Sender/Failure.pm
+cp lib/Email/Sender/Transport/SMTP/Persistent.pm blib/lib/Email/Sender/Transport/SMTP/Persistent.pm
+cp lib/Email/Sender/Simple.pm blib/lib/Email/Sender/Simple.pm
+Manifying 24 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Capture::Tiny       0.08     0.48
+#     Cwd                  any     3.78
+#     Exporter             any     5.74
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::More          0.96 1.302175
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                           Want     Have
+#     ---------------------------- -------- --------
+#     Carp                              any     1.50
+#     Email::Abstract                 3.006    3.008
+#     Email::Address                    any    1.912
+#     Email::Simple                   1.998    2.216
+#     Fcntl                             any     1.13
+#     File::Basename                    any     2.85
+#     File::Path                       2.06     2.16
+#     File::Spec                        any     3.78
+#     IO::File                         1.11     1.41
+#     IO::Handle                        any     1.42
+#     List::Util                       1.45     1.55
+#     Module::Runtime                   any    0.016
+#     Moo                          2.000000 2.004000
+#     Moo::Role                         any 2.004000
+#     MooX::Types::MooseLike           0.15     0.29
+#     MooX::Types::MooseLike::Base      any     0.29
+#     Net::SMTP                        3.07     3.11
+#     Scalar::Util                      any     1.55
+#     Sub::Exporter                     any    0.987
+#     Sub::Exporter::Util               any    0.987
+#     Sys::Hostname                     any     1.23
+#     Throwable::Error             0.200003 0.200013
+#     Try::Tiny                         any     0.30
+#     strict                            any     1.11
+#     utf8                              any     1.22
+#     warnings                          any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/devnull.t ............ ok
+t/fail-multi.t ......... ok
+t/fail.t ............... ok
+t/maildir.t ............ ok
+t/mbox.t ............... ok
+t/print.t .............. ok
+t/sendmail.t ........... ok
+t/simple-simple.t ...... ok
+t/simple-wrapper.t ..... ok
+t/smtp-via-mock.t ...... skipped: Test::MockObject required to test SMTP transport by mocking
+t/smtp-via-rig.t ....... skipped: set EMAIL_SENDER_SMTPRIGS to run these tests
+t/test.t ............... ok
+t/trans-prep-email.t ... ok
+t/util-easy.t .......... ok
+t/util-env.t ........... ok
+t/util-fail.t .......... ok
+All tests successful.
+Files=18, Tests=130,  5 wallclock secs ( 0.09 usr  0.04 sys +  2.91 cusr  1.92 csys =  4.96 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/pkgconfig m4datadir=/nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/aclocal aclocaldir=/nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/aclocal install
+Manifying 24 pod documents
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Failure.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Manual.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Util.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Success.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Simple.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/DevNull.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Sendmail.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Wrapper.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/SMTP.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Failable.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Print.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Test.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Maildir.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/Mbox.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Transport/SMTP/Persistent.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Manual/QuickStart.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Failure/Permanent.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Failure/Temporary.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Failure/Multi.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Success/Partial.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Role/CommonSending.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/site_perl/5.32.0/Email/Sender/Role/HasMessage.pm
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Failure.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Manual.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Maildir.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Util.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Role::HasMessage.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Failure::Temporary.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Success.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Simple.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Manual::QuickStart.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Mbox.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::DevNull.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::SMTP::Persistent.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Test.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Failure::Multi.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Print.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::SMTP.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Sendmail.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Role::CommonSending.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Success::Partial.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Failure::Permanent.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Wrapper.3
+Installing /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3/Email::Sender::Transport::Failable.3
+Appending installation info to /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/man3 to /nix/store/7w4n4c71rsj4872l8zr07j0f2p1p85ql-perl5.32.0-Email-Sender-1.300034-devdoc/share/man/man3
+Removing empty /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034/lib
+patching script interpreter paths in /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034
+checking for references to /build/ in /nix/store/iwiwzc7i94nmwiq9as5jdvk49r6m1m8d-perl5.32.0-Email-Sender-1.300034...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7w4n4c71rsj4872l8zr07j0f2p1p85ql-perl5.32.0-Email-Sender-1.300034-devdoc
+gzipping man pages under /nix/store/7w4n4c71rsj4872l8zr07j0f2p1p85ql-perl5.32.0-Email-Sender-1.300034-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7w4n4c71rsj4872l8zr07j0f2p1p85ql-perl5.32.0-Email-Sender-1.300034-devdoc
+checking for references to /build/ in /nix/store/7w4n4c71rsj4872l8zr07j0f2p1p85ql-perl5.32.0-Email-Sender-1.300034-devdoc...
+building '/nix/store/1kr9qk0bgy4pr8diqgw0sma5dhx1amc1-perl5.32.0-Email-Outlook-Message-0.919.drv'...
+unpacking sources
+unpacking source archive /nix/store/hsnxiih7h198qmj2cx2hbjm1ld3f1yc4-Email-Outlook-Message-0.919.tar.gz
+source root is Email-Outlook-Message-0.919
+setting SOURCE_DATE_EPOCH to timestamp 1504334283 of file Email-Outlook-Message-0.919/t/pod_coverage.t
+patching sources
+configuring
+patching ./script/msgconvert...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Email::Outlook::Message
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Email-Outlook-Message' version '0.919'
+Building Email-Outlook-Message
+running tests
+t/basics.t .............. ok
+t/gpg_signed.t .......... ok
+t/plain_uc_unsent.t ..... ok
+t/plain_uc_wc_unsent.t .. ok
+t/plain_unsent.t ........ ok
+t/pod_coverage.t ........ skipped: Test::Pod::Coverage required for testing pod coverage
+All tests successful.
+Files=6, Tests=47,  2 wallclock secs ( 0.04 usr  0.02 sys +  0.78 cusr  0.65 csys =  1.49 CPU)
+Result: PASS
+installing
+Building Email-Outlook-Message
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man1/msgconvert.1
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/lib/perl5/site_perl/5.32.0/Email/Outlook/Message.pm
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/lib/perl5/site_perl/5.32.0/Email/Outlook/Message/Attachment.pm
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/lib/perl5/site_perl/5.32.0/Email/Outlook/Message/AddressInfo.pm
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/lib/perl5/site_perl/5.32.0/Email/Outlook/Message/Base.pm
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man3/Email::Outlook::Message::AddressInfo.3
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man3/Email::Outlook::Message::Base.3
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man3/Email::Outlook::Message.3
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man3/Email::Outlook::Message::Attachment.3
+Installing /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/bin/msgconvert
+post-installation fixup
+Moving /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/man3 to /nix/store/j5n8j72xncw9vc7k59qq3lazsmbz3yy7-perl5.32.0-Email-Outlook-Message-0.919-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919
+gzipping man pages under /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/lib  /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919/bin
+patching script interpreter paths in /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919
+checking for references to /build/ in /nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j5n8j72xncw9vc7k59qq3lazsmbz3yy7-perl5.32.0-Email-Outlook-Message-0.919-devdoc
+gzipping man pages under /nix/store/j5n8j72xncw9vc7k59qq3lazsmbz3yy7-perl5.32.0-Email-Outlook-Message-0.919-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j5n8j72xncw9vc7k59qq3lazsmbz3yy7-perl5.32.0-Email-Outlook-Message-0.919-devdoc
+checking for references to /build/ in /nix/store/j5n8j72xncw9vc7k59qq3lazsmbz3yy7-perl5.32.0-Email-Outlook-Message-0.919-devdoc...
+/nix/store/220rzi9wdvw1fpsx8z65zw1hk1b4z6cn-perl5.32.0-Email-Outlook-Message-0.919

@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/nmq0a42h74jnp192y7qkc63gykh3y4xv-perl5.32.0-Config-Properties-1.80.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/ls5rxxl7aqwcrkcm0l9ch03g56avpja4-Config-Properties-1.80.tar.gz
+copying path '/nix/store/ls5rxxl7aqwcrkcm0l9ch03g56avpja4-Config-Properties-1.80.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nmq0a42h74jnp192y7qkc63gykh3y4xv-perl5.32.0-Config-Properties-1.80.drv'...
+unpacking sources
+unpacking source archive /nix/store/ls5rxxl7aqwcrkcm0l9ch03g56avpja4-Config-Properties-1.80.tar.gz
+source root is Config-Properties-1.80
+setting SOURCE_DATE_EPOCH to timestamp 1431602314 of file Config-Properties-1.80/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::Properties
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Config/Properties.pm blib/lib/Config/Properties.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1_parse.t .... ok
+t/2_error.t .... ok
+t/3_valid.t .... ok
+t/4_invalid.t .. ok
+t/5_save.t ..... ok
+t/6_sorted.t ... ok
+t/utf8.t ....... ok
+All tests successful.
+Files=7, Tests=56,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.42 cusr  0.06 csys =  0.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/lib/pkgconfig m4datadir=/nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/share/aclocal aclocaldir=/nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/lib/perl5/site_perl/5.32.0/Config/Properties.pm
+Installing /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/share/man/man3/Config::Properties.3
+Appending installation info to /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/share/man/man3 to /nix/store/bxlf04qr11iy9wk9r8wzifcywlcbk8sq-perl5.32.0-Config-Properties-1.80-devdoc/share/man/man3
+Removing empty /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80/lib
+patching script interpreter paths in /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80
+checking for references to /build/ in /nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bxlf04qr11iy9wk9r8wzifcywlcbk8sq-perl5.32.0-Config-Properties-1.80-devdoc
+gzipping man pages under /nix/store/bxlf04qr11iy9wk9r8wzifcywlcbk8sq-perl5.32.0-Config-Properties-1.80-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bxlf04qr11iy9wk9r8wzifcywlcbk8sq-perl5.32.0-Config-Properties-1.80-devdoc
+checking for references to /build/ in /nix/store/bxlf04qr11iy9wk9r8wzifcywlcbk8sq-perl5.32.0-Config-Properties-1.80-devdoc...
+/nix/store/l8cqbkkd9wsgx2fcxiqb36mzrcyg9zsw-perl5.32.0-Config-Properties-1.80

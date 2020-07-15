@@ -1,0 +1,485 @@
+these derivations will be built:
+  /nix/store/35lppxgsmrs311zp346r1gbc16n4q498-geoip-1.6.12.drv
+  /nix/store/4jmf3bj8zjbdfzcrba0jzy5maspbpkkm-perl5.32.0-Geo-IP-1.51.drv
+these paths will be fetched (0.26 MiB download, 0.84 MiB unpacked):
+  /nix/store/rp2m51d5g4vjgb08m2dfr35lz8jzqg63-source
+  /nix/store/xpym1bqprqcwf4qynarbqk57aqsil4si-Geo-IP-1.51.tar.gz
+copying path '/nix/store/xpym1bqprqcwf4qynarbqk57aqsil4si-Geo-IP-1.51.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rp2m51d5g4vjgb08m2dfr35lz8jzqg63-source' from 'https://cache.nixos.org'...
+building '/nix/store/35lppxgsmrs311zp346r1gbc16n4q498-geoip-1.6.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/rp2m51d5g4vjgb08m2dfr35lz8jzqg63-source
+source root is source
+patching sources
+autoreconfPhase
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin/autoconf --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:9: installing './compile'
+configure.ac:14: installing './config.guess'
+configure.ac:14: installing './config.sub'
+configure.ac:8: installing './install-sh'
+configure.ac:8: installing './missing'
+apps/Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf: Leaving directory `.'
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+./configure: line 7601: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for byte... no
+checking for ushort... yes
+checking for ulong... yes
+checking for u16... no
+checking for u32... no
+checking for off_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking whether byte ordering is bigendian... no
+checking for getopt... yes
+checking for gettimeofday... yes
+checking for pread... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking for vsprintf... yes
+checking for gethostbyname... yes
+checking for gethostbyname_r... yes
+checking for memset... yes
+checking for memchr... yes
+checking for munmap... yes
+checking for strrchr... yes
+checking for socket... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating GeoIP.spec
+config.status: creating geoip.pc
+config.status: creating libGeoIP/Makefile
+config.status: creating apps/Makefile
+config.status: creating man/Makefile
+config.status: creating test/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+ cd . && /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./config.status Makefile
+config.status: creating Makefile
+Making all in libGeoIP
+make[1]: Entering directory '/build/source/libGeoIP'
+ cd .. && /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./config.status libGeoIP/Makefile depfiles
+config.status: creating libGeoIP/Makefile
+config.status: executing depfiles commands
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall   -g -O2 -c -o GeoIP.lo GeoIP.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" "-DPACKAGE_STRING=\"GeoIP 1.6.12\"" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I. -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall -g -O2 -c GeoIP.c  -fPIC -DPIC -o .libs/GeoIP.o
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from GeoIP.h:42,
+                 from GeoIP.c:21:
+In function 'strncpy',
+    inlined from '_get_name_gl' at GeoIP.c:2462:13:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GeoIP.c: In function '_get_name_gl':
+GeoIP.c:2460:35: note: length computed here
+ 2460 |             len = sizeof(char) * (strlen(buf_pointer) + 1);
+      |                                   ^~~~~~~~~~~~~~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from GeoIP.h:42,
+                 from GeoIP.c:21:
+In function 'strncpy',
+    inlined from '_get_name_gl' at GeoIP.c:2453:13:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GeoIP.c: In function '_get_name_gl':
+GeoIP.c:2451:35: note: length computed here
+ 2451 |             len = sizeof(char) * (strlen(buf) + 1);
+      |                                   ^~~~~~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from GeoIP.h:42,
+                 from GeoIP.c:21:
+In function 'strncpy',
+    inlined from 'GeoIP_open' at GeoIP.c:1637:5:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GeoIP.c: In function 'GeoIP_open':
+GeoIP.c:1631:27: note: length computed here
+ 1631 |     len = sizeof(char) * (strlen(filename) + 1);
+      |                           ^~~~~~~~~~~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from GeoIP.h:42,
+                 from GeoIP.c:21:
+In function 'strncpy',
+    inlined from '_get_name_v6_gl' at GeoIP.c:2520:13:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GeoIP.c: In function '_get_name_v6_gl':
+GeoIP.c:2518:35: note: length computed here
+ 2518 |             len = sizeof(char) * (strlen(buf_pointer) + 1);
+      |                                   ^~~~~~~~~~~~~~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from GeoIP.h:42,
+                 from GeoIP.c:21:
+In function 'strncpy',
+    inlined from '_get_name_v6_gl' at GeoIP.c:2511:13:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GeoIP.c: In function '_get_name_v6_gl':
+GeoIP.c:2509:35: note: length computed here
+ 2509 |             len = sizeof(char) * (strlen(buf) + 1);
+      |                                   ^~~~~~~~~~~
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall   -g -O2 -c -o GeoIP_deprecated.lo GeoIP_deprecated.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" "-DPACKAGE_STRING=\"GeoIP 1.6.12\"" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I. -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall -g -O2 -c GeoIP_deprecated.c  -fPIC -DPIC -o .libs/GeoIP_deprecated.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall   -g -O2 -c -o GeoIPCity.lo GeoIPCity.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" "-DPACKAGE_STRING=\"GeoIP 1.6.12\"" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I. -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall -g -O2 -c GeoIPCity.c  -fPIC -DPIC -o .libs/GeoIPCity.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall   -g -O2 -c -o regionName.lo regionName.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" "-DPACKAGE_STRING=\"GeoIP 1.6.12\"" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I. -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall -g -O2 -c regionName.c  -fPIC -DPIC -o .libs/regionName.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall   -g -O2 -c -o timeZone.lo timeZone.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" "-DPACKAGE_STRING=\"GeoIP 1.6.12\"" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I. -DGEOIPDATADIR=\"/var/lib/geoip-databases\" -Wall -g -O2 -c timeZone.c  -fPIC -DPIC -o .libs/timeZone.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2 -no-undefined -version-info 7:12:6  -o libGeoIP.la -rpath /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib GeoIP.lo GeoIP_deprecated.lo GeoIPCity.lo regionName.lo timeZone.lo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/GeoIP.o .libs/GeoIP_deprecated.o .libs/GeoIPCity.o .libs/regionName.o .libs/timeZone.o    -g -O2   -Wl,-soname -Wl,libGeoIP.so.1 -o .libs/libGeoIP.so.1.6.12
+libtool: link: (cd ".libs" && rm -f "libGeoIP.so.1" && ln -s "libGeoIP.so.1.6.12" "libGeoIP.so.1")
+libtool: link: (cd ".libs" && rm -f "libGeoIP.so" && ln -s "libGeoIP.so.1.6.12" "libGeoIP.so")
+libtool: link: ( cd ".libs" && rm -f "libGeoIP.la" && ln -s "../libGeoIP.la" "libGeoIP.la" )
+make[1]: Leaving directory '/build/source/libGeoIP'
+Making all in apps
+make[1]: Entering directory '/build/source/apps'
+ cd .. && /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./config.status apps/Makefile depfiles
+config.status: creating apps/Makefile
+config.status: executing depfiles commands
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSYSCONFDIR=\"/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/etc\" -Wall   -g -O2 -c -o geoiplookup.o geoiplookup.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o geoiplookup geoiplookup.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/geoiplookup geoiplookup.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSYSCONFDIR=\"/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/etc\" -Wall   -g -O2 -c -o geoiplookup6.o geoiplookup6.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o geoiplookup6 geoiplookup6.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/geoiplookup6 geoiplookup6.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+make[1]: Leaving directory '/build/source/apps'
+Making all in test
+make[1]: Entering directory '/build/source/test'
+ cd .. && /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./config.status test/Makefile depfiles
+config.status: creating test/Makefile
+config.status: executing depfiles commands
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o benchmark.o benchmark.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o benchmark benchmark.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/benchmark benchmark.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-region.o test-geoip-region.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-region test-geoip-region.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-region test-geoip-region.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-city.o test-geoip-city.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-city test-geoip-city.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-city test-geoip-city.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-org.o test-geoip-org.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-org test-geoip-org.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-org test-geoip-org.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-domain.o test-geoip-domain.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-domain test-geoip-domain.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-domain test-geoip-domain.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-asnum.o test-geoip-asnum.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-asnum test-geoip-asnum.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-asnum test-geoip-asnum.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-isp.o test-geoip-isp.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-isp test-geoip-isp.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-isp test-geoip-isp.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+gcc -DPACKAGE_NAME=\"GeoIP\" -DPACKAGE_TARNAME=\"GeoIP\" -DPACKAGE_VERSION=\"1.6.12\" -DPACKAGE_STRING=\"GeoIP\ 1.6.12\" -DPACKAGE_BUGREPORT=\"support@maxmind.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"GeoIP\" -DVERSION=\"1.6.12\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -D__EXTENSIONS__=1 -D_ALL_SOURCE=1 -D_GNU_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D_TANDEM_SOURCE=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_USHORT_TYPEDEF=1 -DHAVE_ULONG_TYPEDEF=1 -DLITTLE_ENDIAN_HOST=1 -DHAVE_GETOPT=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_PREAD=1 -DHAVE_VASPRINTF=1 -DHAVE_VSNPRINTF=1 -DHAVE_VSPRINTF=1 -DHAVE_GETHOSTBYNAME=1 -DHAVE_GETHOSTBYNAME_R=1 -DGETHOSTBYNAME_R_RETURNS_INT=1 -DHAVE_MEMSET=1 -DHAVE_MEMCHR=1 -DHAVE_MUNMAP=1 -DHAVE_STRRCHR=1 -DHAVE_SOCKET=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -I.  -I../libGeoIP -DSRCDIR=\"..\" -Wall   -g -O2 -c -o test-geoip-netspeed.o test-geoip-netspeed.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o test-geoip-netspeed test-geoip-netspeed.o ../libGeoIP/libGeoIP.la
+libtool: link: gcc -g -O2 -o .libs/test-geoip-netspeed test-geoip-netspeed.o  ../libGeoIP/.libs/libGeoIP.so -Wl,-rpath -Wl,/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+make[1]: Leaving directory '/build/source/test'
+Making all in man
+make[1]: Entering directory '/build/source/man'
+ cd .. && /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./config.status man/Makefile
+config.status: creating man/Makefile
+rm -f geoiplookup6.1 geoiplookup6.1.tmp
+sed -e 's|DATADIR|/var/lib/geoip-databases|g' -e 's|CONF_DIR|/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/etc|g' './geoiplookup6.1.in' >geoiplookup6.1.tmp
+mv geoiplookup6.1.tmp geoiplookup6.1
+rm -f geoiplookup.1 geoiplookup.1.tmp
+sed -e 's|DATADIR|/var/lib/geoip-databases|g' -e 's|CONF_DIR|/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/etc|g' './geoiplookup.1.in' >geoiplookup.1.tmp
+mv geoiplookup.1.tmp geoiplookup.1
+make[1]: Leaving directory '/build/source/man'
+make[1]: Entering directory '/build/source'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/build/source'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Making install in libGeoIP
+make[1]: Entering directory '/build/source/libGeoIP'
+make[2]: Entering directory '/build/source/libGeoIP'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libGeoIP.la '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libGeoIP.so.1.6.12 /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib/libGeoIP.so.1.6.12
+libtool: install: (cd /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib && { ln -s -f libGeoIP.so.1.6.12 libGeoIP.so.1 || { rm -f libGeoIP.so.1 && ln -s libGeoIP.so.1.6.12 libGeoIP.so.1; }; })
+libtool: install: (cd /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib && { ln -s -f libGeoIP.so.1.6.12 libGeoIP.so || { rm -f libGeoIP.so && ln -s libGeoIP.so.1.6.12 libGeoIP.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libGeoIP.lai /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib/libGeoIP.la
+libtool: finish: PATH="/nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin:/nix/store/jjfyhkjcxp604if6avaif58q31ghchpv-automake-1.16.2/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/y7f5x43mnm7l8idapdspwhh53j5lrhsi-libtool-2.4.6/bin:/nix/store/3r9c3kcbrpyaxnal3kn5dpyfjh0sp379-gnum4-1.4.18/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 GeoIP.h GeoIPCity.h '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/include'
+make[2]: Leaving directory '/build/source/libGeoIP'
+make[1]: Leaving directory '/build/source/libGeoIP'
+Making install in apps
+make[1]: Entering directory '/build/source/apps'
+make[2]: Entering directory '/build/source/apps'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c geoiplookup geoiplookup6 '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/geoiplookup /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin/geoiplookup
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/geoiplookup6 /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin/geoiplookup6
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/source/apps'
+make[1]: Leaving directory '/build/source/apps'
+Making install in test
+make[1]: Entering directory '/build/source/test'
+make[2]: Entering directory '/build/source/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/source/test'
+make[1]: Leaving directory '/build/source/test'
+Making install in man
+make[1]: Entering directory '/build/source/man'
+make[2]: Entering directory '/build/source/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 geoiplookup6.1 geoiplookup.1 '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/share/man/man1'
+make  install-data-hook
+make[3]: Entering directory '/build/source/man'
+cat geoiplookup.1 | sed s,DATADIR,/var/lib/geoip-databases, > /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/share/man/man1/geoiplookup.1
+cat geoiplookup6.1 | sed s,DATADIR,/var/lib/geoip-databases, > /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/share/man/man1/geoiplookup6.1
+make[3]: Leaving directory '/build/source/man'
+make[2]: Leaving directory '/build/source/man'
+make[1]: Leaving directory '/build/source/man'
+make[1]: Entering directory '/build/source'
+make[2]: Entering directory '/build/source'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib/pkgconfig/'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 geoip.pc '/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib/pkgconfig/'
+make[2]: Leaving directory '/build/source'
+make[1]: Leaving directory '/build/source'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12
+shrinking /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib/libGeoIP.so.1.6.12
+shrinking /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin/geoiplookup
+shrinking /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin/geoiplookup6
+gzipping man pages under /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib  /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/bin
+patching script interpreter paths in /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12
+checking for references to /build/ in /nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12...
+building '/nix/store/4jmf3bj8zjbdfzcrba0jzy5maspbpkkm-perl5.32.0-Geo-IP-1.51.drv'...
+unpacking sources
+unpacking source archive /nix/store/xpym1bqprqcwf4qynarbqk57aqsil4si-Geo-IP-1.51.tar.gz
+source root is Geo-IP-1.51
+setting SOURCE_DATE_EPOCH to timestamp 1507766581 of file Geo-IP-1.51/xt/release/meta-json.t
+patching sources
+configuring
+patching ./example/country_v6.pl...
+patching ./example/org.pl...
+patching ./example/city.pl...
+patching ./example/geolite-mirror-simple.pl...
+patching ./example/netspeed.pl...
+patching ./example/region.pl...
+patching ./example/netspeedcell.pl...
+patching ./example/benchmark.pl...
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Geo::IP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Geo/IP.pm blib/lib/Geo/IP.pm
+cp lib/Geo/IP/Record.pod blib/lib/Geo/IP/Record.pod
+cp lib/Geo/IP/Record.pm blib/lib/Geo/IP/Record.pm
+Running Mkbootstrap for IP ()
+chmod 644 "IP.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- IP.bs blib/arch/auto/Geo/IP/IP.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Geo-IP-1.51/typemap'  IP.xs > IP.xsc
+mv IP.xsc IP.c
+cc -c  -I/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.51\" -DXS_VERSION=\"1.51\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DPERL_EXT IP.c
+In file included from IP.xs:8:
+ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from IP.xs:6:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+rm -f blib/arch/auto/Geo/IP/IP.so
+LD_RUN_PATH="/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  IP.o  -o blib/arch/auto/Geo/IP/IP.so  \
+   -L/nix/store/vpdsw1wg5ckndnn2s3qssskw8n2fv96g-geoip-1.6.12/lib -lGeoIP   \
+
+chmod 755 blib/arch/auto/Geo/IP/IP.so
+Manifying 2 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/pkgconfig m4datadir=/nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/aclocal aclocaldir=/nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- IP.bs blib/arch/auto/Geo/IP/IP.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Geo/IP/IP.so
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Geo/IP.pm
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Geo/IP/Record.pm
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Geo/IP/Record.pod
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/man/man3/Geo::IP::Record.3
+Installing /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/man/man3/Geo::IP.3
+Appending installation info to /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/man/man3 to /nix/store/15vqrqp8pcwqdrpc1mxhppffn629lwyf-perl5.32.0-Geo-IP-1.51-devdoc/share/man/man3
+Removing empty /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51
+shrinking /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Geo/IP/IP.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51/lib
+patching script interpreter paths in /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51
+checking for references to /build/ in /nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51...
+shrinking RPATHs of ELF executables and libraries in /nix/store/15vqrqp8pcwqdrpc1mxhppffn629lwyf-perl5.32.0-Geo-IP-1.51-devdoc
+gzipping man pages under /nix/store/15vqrqp8pcwqdrpc1mxhppffn629lwyf-perl5.32.0-Geo-IP-1.51-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/15vqrqp8pcwqdrpc1mxhppffn629lwyf-perl5.32.0-Geo-IP-1.51-devdoc
+checking for references to /build/ in /nix/store/15vqrqp8pcwqdrpc1mxhppffn629lwyf-perl5.32.0-Geo-IP-1.51-devdoc...
+/nix/store/7fcdz0w5vc48196z2cxrx05jn1ay2zr4-perl5.32.0-Geo-IP-1.51

@@ -1,0 +1,1484 @@
+these derivations will be built:
+  /nix/store/kk3wwalvy87mmh9i2ij7wn8hk4iwc4zk-perl5.32.0-YAML-Syck-1.32.drv
+  /nix/store/a9zxgzyjw0c8khlgq528w4p0ly7v3w17-perl5.32.0-Beanstalk-Client-1.07.drv
+these paths will be fetched (0.17 MiB download, 0.17 MiB unpacked):
+  /nix/store/5jqp93bx9qdbi8fshf2dcvhhqqmsz6ri-YAML-Syck-1.32.tar.gz
+  /nix/store/757zi317yrjpihx2n1pi8hl9wrrsmz3d-Beanstalk-Client-1.07.tar.gz
+copying path '/nix/store/757zi317yrjpihx2n1pi8hl9wrrsmz3d-Beanstalk-Client-1.07.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/5jqp93bx9qdbi8fshf2dcvhhqqmsz6ri-YAML-Syck-1.32.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kk3wwalvy87mmh9i2ij7wn8hk4iwc4zk-perl5.32.0-YAML-Syck-1.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/5jqp93bx9qdbi8fshf2dcvhhqqmsz6ri-YAML-Syck-1.32.tar.gz
+source root is YAML-Syck-1.32
+setting SOURCE_DATE_EPOCH to timestamp 1580163500 of file YAML-Syck-1.32/META.json
+patching sources
+configuring
+patching ./t/bug/rt-54167.t...
+patching ./t/bug/rt-49404-double_free.t...
+patching ./t/bug/rt-41141.t...
+patching ./t/yaml-alias.t...
+patching ./t/leak.t...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Devel::Leak 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for YAML::Syck
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/YAML/Loader/Syck.pm blib/lib/YAML/Loader/Syck.pm
+cp lib/JSON/Syck.pm blib/lib/JSON/Syck.pm
+cp lib/YAML/Syck.pm blib/lib/YAML/Syck.pm
+cp lib/YAML/Dumper/Syck.pm blib/lib/YAML/Dumper/Syck.pm
+Running Mkbootstrap for Syck ()
+chmod 644 "Syck.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syck.bs blib/arch/auto/YAML/Syck/Syck.bs 644
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   bytecode.c
+bytecode.re: In function 'sycklex_bytecode_utf8':
+bytecode.re:312:28: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+bytecode.re:312:28: warning: incompatible implicit declaration of built-in function 'strlen'
+bytecode.re:306:1: note: include '<string.h>' or provide a declaration of 'strlen'
+bytecode.re:315:21: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+bytecode.re:315:21: warning: incompatible implicit declaration of built-in function 'free'
+bytecode.re:306:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from bytecode.re:9:
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:326:38: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:326:38: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:326:38: note: in expansion of macro 'S_ALLOC_N'
+bytecode.re:328:21: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+bytecode.re:328:21: warning: incompatible implicit declaration of built-in function 'strcat'
+bytecode.re:328:21: note: include '<string.h>' or provide a declaration of 'strcat'
+bytecode.re:329:21: warning: implicit declaration of function 'strncat' [-Wimplicit-function-declaration]
+bytecode.re:329:21: warning: incompatible implicit declaration of built-in function 'strncat'
+bytecode.re:329:21: note: include '<string.h>' or provide a declaration of 'strncat'
+bytecode.re:330:21: warning: incompatible implicit declaration of built-in function 'free'
+bytecode.re:330:21: note: include '<stdlib.h>' or provide a declaration of 'free'
+bytecode.re:344:25: warning: incompatible implicit declaration of built-in function 'free'
+bytecode.re:344:25: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from bytecode.re:9:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:346:42: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:346:42: note: in expansion of macro 'S_ALLOC_N'
+bytecode.re:348:25: warning: incompatible implicit declaration of built-in function 'strcat'
+bytecode.re:348:25: note: include '<string.h>' or provide a declaration of 'strcat'
+bytecode.re:349:25: warning: incompatible implicit declaration of built-in function 'strncat'
+bytecode.re:349:25: note: include '<string.h>' or provide a declaration of 'strncat'
+In file included from bytecode.re:9:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:354:42: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:354:42: note: in expansion of macro 'S_ALLOC_N'
+syck.h:87:32: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+bytecode.re:356:25: note: in expansion of macro 'S_MEMCPY'
+syck.h:87:32: warning: incompatible implicit declaration of built-in function 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+bytecode.re:356:25: note: in expansion of macro 'S_MEMCPY'
+syck.h:87:32: note: include '<string.h>' or provide a declaration of 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+bytecode.re:356:25: note: in expansion of macro 'S_MEMCPY'
+bytecode.re:357:25: warning: incompatible implicit declaration of built-in function 'free'
+bytecode.re:357:25: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from bytecode.re:9:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:425:17: note: in expansion of macro 'S_ALLOC_N'
+bytecode.re:417:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from bytecode.re:9:
+syck.h:81:46: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:469:6: note: in expansion of macro 'CAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:469:6: note: in expansion of macro 'CAT'
+bytecode.re:469:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+bytecode.re:442:29: warning: implicit declaration of function 'strtod' [-Wimplicit-function-declaration]
+In file included from bytecode.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:446:21: note: in expansion of macro 'CAT'
+bytecode.re:438:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from bytecode.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:451:17: note: in expansion of macro 'CAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:451:17: note: in expansion of macro 'CAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:457:13: note: in expansion of macro 'CAT'
+bytecode.re:456:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from bytecode.re:9:
+bytecode.re: In function 'get_inline':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+bytecode.re:497:17: note: in expansion of macro 'S_ALLOC_N'
+bytecode.re:473:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from bytecode.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+bytecode.re:122:17: note: in expansion of macro 'S_REALLOC_N'
+bytecode.re:515:6: note: in expansion of macro 'CAT'
+bytecode.re:515:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   emitter.c
+In file included from emitter.c:15:
+emitter.c: In function 'syck_base64enc':
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:32:18: note: in expansion of macro 'S_ALLOC_N'
+   32 |     char *buff = S_ALLOC_N(char, len * 4 / 3 + 6);
+      |                  ^~~~~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:32:18: note: in expansion of macro 'S_ALLOC_N'
+   32 |     char *buff = S_ALLOC_N(char, len * 4 / 3 + 6);
+      |                  ^~~~~~~~~
+emitter.c:16:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   15 | #include "syck.h"
+  +++ |+#include <stdlib.h>
+   16 |
+In file included from emitter.c:15:
+emitter.c: In function 'syck_new_emitter':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+emitter.c:115:9: note: in expansion of macro 'S_ALLOC'
+  115 |     e = S_ALLOC( SyckEmitter );
+      |         ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+emitter.c:115:9: note: in expansion of macro 'S_ALLOC'
+  115 |     e = S_ALLOC( SyckEmitter );
+      |         ^~~~~~~
+emitter.c: In function 'syck_st_free_anchors':
+syck.h:82:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:149:5: note: in expansion of macro 'S_FREE'
+  149 |     S_FREE( name );
+      |     ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:149:5: note: in expansion of macro 'S_FREE'
+  149 |     S_FREE( name );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:149:5: note: in expansion of macro 'S_FREE'
+  149 |     S_FREE( name );
+      |     ^~~~~~
+emitter.c: In function 'syck_emitter_pop_level':
+emitter.c:203:5: warning: incompatible implicit declaration of built-in function 'free'
+  203 |     free( e->levels[e->lvl_idx].domain );
+      |     ^~~~
+emitter.c:203:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from emitter.c:15:
+emitter.c: In function 'syck_emitter_add_level':
+syck.h:81:46: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+emitter.c:213:9: note: in expansion of macro 'S_REALLOC_N'
+  213 |         S_REALLOC_N( e->levels, SyckLevel, e->lvl_capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+emitter.c:213:9: note: in expansion of macro 'S_REALLOC_N'
+  213 |         S_REALLOC_N( e->levels, SyckLevel, e->lvl_capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+emitter.c:213:9: note: in expansion of macro 'S_REALLOC_N'
+  213 |         S_REALLOC_N( e->levels, SyckLevel, e->lvl_capa );
+      |         ^~~~~~~~~~~
+emitter.c: In function 'syck_free_emitter':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:264:5: note: in expansion of macro 'S_FREE'
+  264 |     S_FREE( e->levels[0].domain );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:264:5: note: in expansion of macro 'S_FREE'
+  264 |     S_FREE( e->levels[0].domain );
+      |     ^~~~~~
+emitter.c: In function 'syck_emitter_clear':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:278:21: note: in expansion of macro 'S_ALLOC_N'
+  278 |         e->buffer = S_ALLOC_N( char, e->bufsize );
+      |                     ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:278:21: note: in expansion of macro 'S_ALLOC_N'
+  278 |         e->buffer = S_ALLOC_N( char, e->bufsize );
+      |                     ^~~~~~~~~
+emitter.c: In function 'syck_emit':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:377:28: note: in expansion of macro 'S_ALLOC_N'
+  377 |             char *header = S_ALLOC_N( char, 64 );
+      |                            ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:377:28: note: in expansion of macro 'S_ALLOC_N'
+  377 |             char *header = S_ALLOC_N( char, 64 );
+      |                            ^~~~~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:381:13: note: in expansion of macro 'S_FREE'
+  381 |             S_FREE( header );
+      |             ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:381:13: note: in expansion of macro 'S_FREE'
+  381 |             S_FREE( header );
+      |             ^~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:410:24: note: in expansion of macro 'S_ALLOC_N'
+  410 |             char *an = S_ALLOC_N( char, strlen( anchor_name ) + 3 );
+      |                        ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:410:24: note: in expansion of macro 'S_ALLOC_N'
+  410 |             char *an = S_ALLOC_N( char, strlen( anchor_name ) + 3 );
+      |                        ^~~~~~~~~
+emitter.c:420:13: warning: incompatible implicit declaration of built-in function 'free'
+  420 |             free( an );
+      |             ^~~~
+emitter.c:420:13: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from emitter.c:15:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:427:24: note: in expansion of macro 'S_ALLOC_N'
+  427 |             char *an = S_ALLOC_N( char, strlen( anchor_name ) + 2 );
+      |                        ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:427:24: note: in expansion of macro 'S_ALLOC_N'
+  427 |             char *an = S_ALLOC_N( char, strlen( anchor_name ) + 2 );
+      |                        ^~~~~~~~~
+emitter.c:430:13: warning: incompatible implicit declaration of built-in function 'free'
+  430 |             free( an );
+      |             ^~~~
+emitter.c:430:13: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from emitter.c:15:
+emitter.c: In function 'syck_emit_indent':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:510:22: note: in expansion of macro 'S_ALLOC_N'
+  510 |         char *spcs = S_ALLOC_N( char, lvl->spaces + 2 );
+      |                      ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:510:22: note: in expansion of macro 'S_ALLOC_N'
+  510 |         char *spcs = S_ALLOC_N( char, lvl->spaces + 2 );
+      |                      ^~~~~~~~~
+emitter.c:515:9: warning: incompatible implicit declaration of built-in function 'free'
+  515 |         free( spcs );
+      |         ^~~~
+emitter.c:515:9: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from emitter.c:15:
+emitter.c: In function 'syck_emit_item':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:1218:34: note: in expansion of macro 'S_ALLOC_N'
+ 1218 |                     char *spcs = S_ALLOC_N( char, lvl->spaces + 1 );
+      |                                  ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:1218:34: note: in expansion of macro 'S_ALLOC_N'
+ 1218 |                     char *spcs = S_ALLOC_N( char, lvl->spaces + 1 );
+      |                                  ^~~~~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:1223:21: note: in expansion of macro 'S_FREE'
+ 1223 |                     S_FREE( spcs );
+      |                     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+emitter.c:1223:21: note: in expansion of macro 'S_FREE'
+ 1223 |                     S_FREE( spcs );
+      |                     ^~~~~~
+emitter.c: In function 'syck_emitter_mark_node':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:1341:27: note: in expansion of macro 'S_ALLOC_N'
+ 1341 |             anchor_name = S_ALLOC_N( char, strlen( anc ) + 10 );
+      |                           ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+emitter.c:1341:27: note: in expansion of macro 'S_ALLOC_N'
+ 1341 |             anchor_name = S_ALLOC_N( char, strlen( anc ) + 10 );
+      |                           ^~~~~~~~~
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   gram.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   handler.c
+In file included from handler.c:10:
+handler.c: In function 'syck_hdlr_get_anchor':
+syck.h:82:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:93:17: note: in expansion of macro 'S_FREE'
+   93 |                 S_FREE( a );
+      |                 ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:93:17: note: in expansion of macro 'S_FREE'
+   93 |                 S_FREE( a );
+      |                 ^~~~~~
+handler.c:11:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   10 | #include "syck.h"
+  +++ |+#include <stdlib.h>
+   11 |
+In file included from handler.c:10:
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:118:9: note: in expansion of macro 'S_FREE'
+  118 |         S_FREE( a );
+      |         ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:118:9: note: in expansion of macro 'S_FREE'
+  118 |         S_FREE( a );
+      |         ^~~~~~
+handler.c: In function 'syck_add_transfer':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:133:9: note: in expansion of macro 'S_FREE'
+  133 |         S_FREE( n->type_id );
+      |         ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:133:9: note: in expansion of macro 'S_FREE'
+  133 |         S_FREE( n->type_id );
+      |         ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:143:5: note: in expansion of macro 'S_FREE'
+  143 |     S_FREE( uri );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+handler.c:143:5: note: in expansion of macro 'S_FREE'
+  143 |     S_FREE( uri );
+      |     ^~~~~~
+handler.c: In function 'syck_xprivate':
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+handler.c:149:17: note: in expansion of macro 'S_ALLOC_N'
+  149 |     char *uri = S_ALLOC_N( char, type_len + 14 );
+      |                 ^~~~~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+handler.c:149:17: note: in expansion of macro 'S_ALLOC_N'
+  149 |     char *uri = S_ALLOC_N( char, type_len + 14 );
+      |                 ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+handler.c:149:17: note: in expansion of macro 'S_ALLOC_N'
+  149 |     char *uri = S_ALLOC_N( char, type_len + 14 );
+      |                 ^~~~~~~~~
+handler.c:151:5: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  151 |     strcat( uri, "x-private:" );
+      |     ^~~~~~
+handler.c:151:5: warning: incompatible implicit declaration of built-in function 'strcat'
+handler.c:11:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   10 | #include "syck.h"
+  +++ |+#include <string.h>
+   11 |
+handler.c:152:5: warning: implicit declaration of function 'strncat' [-Wimplicit-function-declaration]
+  152 |     strncat( uri, type_id, type_len );
+      |     ^~~~~~~
+handler.c:152:5: warning: incompatible implicit declaration of built-in function 'strncat'
+handler.c:152:5: note: include '<string.h>' or provide a declaration of 'strncat'
+In file included from handler.c:10:
+handler.c: In function 'syck_taguri':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+handler.c:159:17: note: in expansion of macro 'S_ALLOC_N'
+  159 |     char *uri = S_ALLOC_N( char, strlen( domain ) + type_len + 14 );
+      |                 ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+handler.c:159:17: note: in expansion of macro 'S_ALLOC_N'
+  159 |     char *uri = S_ALLOC_N( char, strlen( domain ) + type_len + 14 );
+      |                 ^~~~~~~~~
+handler.c:159:34: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  159 |     char *uri = S_ALLOC_N( char, strlen( domain ) + type_len + 14 );
+      |                                  ^~~~~~
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+handler.c:159:34: warning: incompatible implicit declaration of built-in function 'strlen'
+  159 |     char *uri = S_ALLOC_N( char, strlen( domain ) + type_len + 14 );
+      |                                  ^~~~~~
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+handler.c:159:34: note: include '<string.h>' or provide a declaration of 'strlen'
+  159 |     char *uri = S_ALLOC_N( char, strlen( domain ) + type_len + 14 );
+      |                                  ^~~~~~
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+handler.c:161:5: warning: incompatible implicit declaration of built-in function 'strcat'
+  161 |     strcat( uri, "tag:" );
+      |     ^~~~~~
+handler.c:161:5: note: include '<string.h>' or provide a declaration of 'strcat'
+handler.c:164:5: warning: incompatible implicit declaration of built-in function 'strncat'
+  164 |     strncat( uri, type_id, type_len );
+      |     ^~~~~~~
+handler.c:164:5: note: include '<string.h>' or provide a declaration of 'strncat'
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   implicit.c
+In file included from implicit.re:10:
+implicit.re: In function 'try_tag_implicit':
+syck.h:82:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:36:31: note: in expansion of macro 'S_FREE'
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:36:31: note: in expansion of macro 'S_FREE'
+implicit.re:11:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+implicit.re:39:53: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+implicit.re:39:53: warning: incompatible implicit declaration of built-in function 'strlen'
+implicit.re:11:1: note: include '<string.h>' or provide a declaration of 'strlen'
+implicit.re:41:41: warning: incompatible implicit declaration of built-in function 'strlen'
+implicit.re:41:41: note: include '<string.h>' or provide a declaration of 'strlen'
+implicit.re: In function 'syck_tagcmp':
+implicit.re:138:49: warning: incompatible implicit declaration of built-in function 'strlen'
+implicit.re:125:1: note: include '<string.h>' or provide a declaration of 'strlen'
+implicit.re:140:19: warning: implicit declaration of function 'strstr' [-Wimplicit-function-declaration]
+implicit.re:140:19: warning: incompatible implicit declaration of built-in function 'strstr'
+implicit.re:140:19: note: include '<string.h>' or provide a declaration of 'strstr'
+implicit.re:148:13: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+In file included from implicit.re:10:
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:149:9: note: in expansion of macro 'S_FREE'
+implicit.re:125:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+implicit.re: In function 'syck_type_id_to_uri':
+implicit.re:160:23: warning: incompatible implicit declaration of built-in function 'strlen'
+implicit.re:160:23: note: include '<string.h>' or provide a declaration of 'strlen'
+In file included from implicit.re:10:
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+implicit.re:178:21: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+implicit.re:178:21: note: in expansion of macro 'S_ALLOC_N'
+implicit.re:178:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+implicit.re:182:21: warning: implicit declaration of function 'strncat' [-Wimplicit-function-declaration]
+implicit.re:182:21: warning: incompatible implicit declaration of built-in function 'strncat'
+implicit.re:178:1: note: include '<string.h>' or provide a declaration of 'strncat'
+implicit.re:183:21: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+implicit.re:183:21: warning: incompatible implicit declaration of built-in function 'strcat'
+implicit.re:183:21: note: include '<string.h>' or provide a declaration of 'strcat'
+In file included from implicit.re:10:
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:187:21: note: in expansion of macro 'S_FREE'
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:187:21: note: in expansion of macro 'S_FREE'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+implicit.re:191:21: note: in expansion of macro 'S_ALLOC_N'
+implicit.re:191:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+implicit.re:195:32: warning: incompatible implicit declaration of built-in function 'strncat'
+implicit.re:191:1: note: include '<string.h>' or provide a declaration of 'strncat'
+In file included from implicit.re:10:
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:198:32: note: in expansion of macro 'S_FREE'
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+implicit.re:198:32: note: in expansion of macro 'S_FREE'
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   node.c
+In file included from node.c:10:
+node.c: In function 'syck_alloc_node':
+syck.h:80:30: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:20:9: note: in expansion of macro 'S_ALLOC'
+   20 |     s = S_ALLOC( SyckNode );
+      |         ^~~~~~~
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:20:9: note: in expansion of macro 'S_ALLOC'
+   20 |     s = S_ALLOC( SyckNode );
+      |         ^~~~~~~
+node.c:11:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   10 | #include "syck.h"
+  +++ |+#include <stdlib.h>
+   11 |
+In file included from node.c:10:
+node.c: In function 'syck_free_node':
+syck.h:82:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:36:9: note: in expansion of macro 'S_FREE'
+   36 |         S_FREE( n->type_id );
+      |         ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:36:9: note: in expansion of macro 'S_FREE'
+   36 |         S_FREE( n->type_id );
+      |         ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:36:9: note: in expansion of macro 'S_FREE'
+   36 |         S_FREE( n->type_id );
+      |         ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:41:9: note: in expansion of macro 'S_FREE'
+   41 |         S_FREE( n->anchor );
+      |         ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:41:9: note: in expansion of macro 'S_FREE'
+   41 |         S_FREE( n->anchor );
+      |         ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:44:5: note: in expansion of macro 'S_FREE'
+   44 |     S_FREE( n );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:44:5: note: in expansion of macro 'S_FREE'
+   44 |     S_FREE( n );
+      |     ^~~~~~
+node.c: In function 'syck_alloc_map':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:53:9: note: in expansion of macro 'S_ALLOC'
+   53 |     m = S_ALLOC( struct SyckMap );
+      |         ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:53:9: note: in expansion of macro 'S_ALLOC'
+   53 |     m = S_ALLOC( struct SyckMap );
+      |         ^~~~~~~
+node.c: In function 'syck_alloc_seq':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:72:9: note: in expansion of macro 'S_ALLOC'
+   72 |     s = S_ALLOC( struct SyckSeq );
+      |         ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:72:9: note: in expansion of macro 'S_ALLOC'
+   72 |     s = S_ALLOC( struct SyckSeq );
+      |         ^~~~~~~
+node.c: In function 'syck_alloc_str':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:90:9: note: in expansion of macro 'S_ALLOC'
+   90 |     s = S_ALLOC( struct SyckStr );
+      |         ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+node.c:90:9: note: in expansion of macro 'S_ALLOC'
+   90 |     s = S_ALLOC( struct SyckStr );
+      |         ^~~~~~~
+node.c: In function 'syck_new_str':
+node.c:104:32: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  104 |     return syck_new_str2( str, strlen( str ), style );
+      |                                ^~~~~~
+node.c:104:32: warning: incompatible implicit declaration of built-in function 'strlen'
+node.c:11:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   10 | #include "syck.h"
+  +++ |+#include <string.h>
+   11 |
+In file included from node.c:10:
+node.c: In function 'syck_new_str2':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:113:24: note: in expansion of macro 'S_ALLOC_N'
+  113 |     n->data.str->ptr = S_ALLOC_N( char, len + 1 );
+      |                        ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:113:24: note: in expansion of macro 'S_ALLOC_N'
+  113 |     n->data.str->ptr = S_ALLOC_N( char, len + 1 );
+      |                        ^~~~~~~~~
+node.c:116:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  116 |     memcpy( n->data.str->ptr, str, len );
+      |     ^~~~~~
+node.c:116:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+node.c:116:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+node.c: In function 'syck_replace_str':
+node.c:125:32: warning: incompatible implicit declaration of built-in function 'strlen'
+  125 |     syck_replace_str2( n, str, strlen( str ), style );
+      |                                ^~~~~~
+node.c:125:32: note: include '<string.h>' or provide a declaration of 'strlen'
+In file included from node.c:10:
+node.c: In function 'syck_replace_str2':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:133:9: note: in expansion of macro 'S_FREE'
+  133 |         S_FREE( n->data.str->ptr );
+      |         ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:133:9: note: in expansion of macro 'S_FREE'
+  133 |         S_FREE( n->data.str->ptr );
+      |         ^~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:137:24: note: in expansion of macro 'S_ALLOC_N'
+  137 |     n->data.str->ptr = S_ALLOC_N( char, len + 1 );
+      |                        ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:137:24: note: in expansion of macro 'S_ALLOC_N'
+  137 |     n->data.str->ptr = S_ALLOC_N( char, len + 1 );
+      |                        ^~~~~~~~~
+node.c:140:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+  140 |     memcpy( n->data.str->ptr, str, len );
+      |     ^~~~~~
+node.c:140:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+node.c: In function 'syck_str_blow_away_commas':
+node.c:156:13: warning: implicit declaration of function 'memmove' [-Wimplicit-function-declaration]
+  156 |             memmove( go, go + 1, end - go );
+      |             ^~~~~~~
+node.c:156:13: warning: incompatible implicit declaration of built-in function 'memmove'
+node.c:156:13: note: include '<string.h>' or provide a declaration of 'memmove'
+In file included from node.c:10:
+node.c: In function 'syck_map_empty':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:187:5: note: in expansion of macro 'S_FREE'
+  187 |     S_FREE( n->data.pairs->keys );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:187:5: note: in expansion of macro 'S_FREE'
+  187 |     S_FREE( n->data.pairs->keys );
+      |     ^~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:192:15: note: in expansion of macro 'S_ALLOC_N'
+  192 |     m->keys = S_ALLOC_N( SYMID, m->capa );
+      |               ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:192:15: note: in expansion of macro 'S_ALLOC_N'
+  192 |     m->keys = S_ALLOC_N( SYMID, m->capa );
+      |               ^~~~~~~~~
+node.c: In function 'syck_map_add':
+syck.h:81:46: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:211:9: note: in expansion of macro 'S_REALLOC_N'
+  211 |         S_REALLOC_N( m->keys, SYMID, m->capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:211:9: note: in expansion of macro 'S_REALLOC_N'
+  211 |         S_REALLOC_N( m->keys, SYMID, m->capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:211:9: note: in expansion of macro 'S_REALLOC_N'
+  211 |         S_REALLOC_N( m->keys, SYMID, m->capa );
+      |         ^~~~~~~~~~~
+node.c: In function 'syck_map_update':
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:240:9: note: in expansion of macro 'S_REALLOC_N'
+  240 |         S_REALLOC_N( m1->keys, SYMID, m1->capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:240:9: note: in expansion of macro 'S_REALLOC_N'
+  240 |         S_REALLOC_N( m1->keys, SYMID, m1->capa );
+      |         ^~~~~~~~~~~
+node.c: In function 'syck_seq_empty':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:312:5: note: in expansion of macro 'S_FREE'
+  312 |     S_FREE( n->data.list->items );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:312:5: note: in expansion of macro 'S_FREE'
+  312 |     S_FREE( n->data.list->items );
+      |     ^~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:316:16: note: in expansion of macro 'S_ALLOC_N'
+  316 |     s->items = S_ALLOC_N( SYMID, s->capa );
+      |                ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+node.c:316:16: note: in expansion of macro 'S_ALLOC_N'
+  316 |     s->items = S_ALLOC_N( SYMID, s->capa );
+      |                ^~~~~~~~~
+node.c: In function 'syck_seq_add':
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:334:9: note: in expansion of macro 'S_REALLOC_N'
+  334 |         S_REALLOC_N( s->items, SYMID, s->capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+node.c:334:9: note: in expansion of macro 'S_REALLOC_N'
+  334 |         S_REALLOC_N( s->items, SYMID, s->capa );
+      |         ^~~~~~~~~~~
+node.c: In function 'syck_free_members':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:379:17: note: in expansion of macro 'S_FREE'
+  379 |                 S_FREE( n->data.str->ptr );
+      |                 ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:379:17: note: in expansion of macro 'S_FREE'
+  379 |                 S_FREE( n->data.str->ptr );
+      |                 ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:390:17: note: in expansion of macro 'S_FREE'
+  390 |                 S_FREE( n->data.list->items );
+      |                 ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:390:17: note: in expansion of macro 'S_FREE'
+  390 |                 S_FREE( n->data.list->items );
+      |                 ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:399:17: note: in expansion of macro 'S_FREE'
+  399 |                 S_FREE( n->data.pairs->keys );
+      |                 ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+node.c:399:17: note: in expansion of macro 'S_FREE'
+  399 |                 S_FREE( n->data.pairs->keys );
+      |                 ^~~~~~
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   syck_.c
+syck_.c: In function 'syck_assert':
+syck_.c:26:5: warning: implicit declaration of function 'abort' [-Wimplicit-function-declaration]
+   26 |     abort();
+      |     ^~~~~
+syck_.c:26:5: warning: incompatible implicit declaration of built-in function 'abort'
+syck_.c:13:1: note: include '<stdlib.h>' or provide a declaration of 'abort'
+   12 | #include "syck.h"
+  +++ |+#include <stdlib.h>
+   13 |
+In file included from syck_.c:12:
+syck_.c: In function 'syck_strndup':
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+syck_.c:35:17: note: in expansion of macro 'S_ALLOC_N'
+   35 |     char *new = S_ALLOC_N( char, len + 1 );
+      |                 ^~~~~~~~~
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+syck_.c:35:17: note: in expansion of macro 'S_ALLOC_N'
+   35 |     char *new = S_ALLOC_N( char, len + 1 );
+      |                 ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+syck_.c:35:17: note: in expansion of macro 'S_ALLOC_N'
+   35 |     char *new = S_ALLOC_N( char, len + 1 );
+      |                 ^~~~~~~~~
+syck_.c: In function 'syck_parser_reset_cursor':
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+syck_.c:122:21: note: in expansion of macro 'S_ALLOC_N'
+  122 |         p->buffer = S_ALLOC_N( char, p->bufsize );
+      |                     ^~~~~~~~~
+syck.h:79:34: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+syck_.c:122:21: note: in expansion of macro 'S_ALLOC_N'
+  122 |         p->buffer = S_ALLOC_N( char, p->bufsize );
+      |                     ^~~~~~~~~
+syck_.c: In function 'syck_new_parser':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:159:9: note: in expansion of macro 'S_ALLOC'
+  159 |     p = S_ALLOC( SyckParser );
+      |         ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:159:9: note: in expansion of macro 'S_ALLOC'
+  159 |     p = S_ALLOC( SyckParser );
+      |         ^~~~~~~
+syck_.c: In function 'syck_free_parser':
+syck.h:82:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:244:5: note: in expansion of macro 'S_FREE'
+  244 |     S_FREE( p->levels[0].domain );
+      |     ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:244:5: note: in expansion of macro 'S_FREE'
+  244 |     S_FREE( p->levels[0].domain );
+      |     ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:244:5: note: in expansion of macro 'S_FREE'
+  244 |     S_FREE( p->levels[0].domain );
+      |     ^~~~~~
+syck_.c: In function 'syck_parser_file':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:302:18: note: in expansion of macro 'S_ALLOC'
+  302 |     p->io.file = S_ALLOC( SyckIoFile );
+      |                  ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:302:18: note: in expansion of macro 'S_ALLOC'
+  302 |     p->io.file = S_ALLOC( SyckIoFile );
+      |                  ^~~~~~~
+syck_.c: In function 'syck_parser_str':
+syck.h:80:30: warning: incompatible implicit declaration of built-in function 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:321:17: note: in expansion of macro 'S_ALLOC'
+  321 |     p->io.str = S_ALLOC( SyckIoStr );
+      |                 ^~~~~~~
+syck.h:80:30: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   80 | #define S_ALLOC(type) (type*)malloc(sizeof(type))
+      |                              ^~~~~~
+syck_.c:321:17: note: in expansion of macro 'S_ALLOC'
+  321 |     p->io.str = S_ALLOC( SyckIoStr );
+      |                 ^~~~~~~
+syck_.c: In function 'syck_parser_pop_level':
+syck_.c:356:5: warning: incompatible implicit declaration of built-in function 'free'
+  356 |     free( p->levels[p->lvl_idx].domain );
+      |     ^~~~
+syck_.c:356:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from syck_.c:12:
+syck_.c: In function 'syck_parser_add_level':
+syck.h:81:46: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+syck_.c:366:9: note: in expansion of macro 'S_REALLOC_N'
+  366 |         S_REALLOC_N( p->levels, SyckLevel, p->lvl_capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+syck_.c:366:9: note: in expansion of macro 'S_REALLOC_N'
+  366 |         S_REALLOC_N( p->levels, SyckLevel, p->lvl_capa );
+      |         ^~~~~~~~~~~
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+syck_.c:366:9: note: in expansion of macro 'S_REALLOC_N'
+  366 |         S_REALLOC_N( p->levels, SyckLevel, p->lvl_capa );
+      |         ^~~~~~~~~~~
+syck_.c: In function 'free_any_io':
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:386:17: note: in expansion of macro 'S_FREE'
+  386 |                 S_FREE( p->io.str );
+      |                 ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:386:17: note: in expansion of macro 'S_FREE'
+  386 |                 S_FREE( p->io.str );
+      |                 ^~~~~~
+syck.h:82:19: warning: incompatible implicit declaration of built-in function 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:394:17: note: in expansion of macro 'S_FREE'
+  394 |                 S_FREE( p->io.file );
+      |                 ^~~~~~
+syck.h:82:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+   82 | #define S_FREE(n) free(n); n = NULL;
+      |                   ^~~~
+syck_.c:394:17: note: in expansion of macro 'S_FREE'
+  394 |                 S_FREE( p->io.file );
+      |                 ^~~~~~
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   syck_st.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   token.c
+In file included from token.re:9:
+token.re: In function 'sycklex_yaml_utf8':
+syck.h:79:34: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:528:22: note: in expansion of macro 'S_ALLOC_N'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:528:22: note: in expansion of macro 'S_ALLOC_N'
+token.re:520:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from token.re:9:
+syck.h:81:46: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:565:29: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:565:29: note: in expansion of macro 'QUOTECAT'
+token.re:543:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:572:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:572:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:105:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:630:6: note: in expansion of macro 'QUOTECATS'
+token.re:630:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:87:32: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+token.re:107:13: note: in expansion of macro 'S_MEMCPY'
+token.re:630:6: note: in expansion of macro 'QUOTECATS'
+syck.h:87:32: warning: incompatible implicit declaration of built-in function 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+token.re:107:13: note: in expansion of macro 'S_MEMCPY'
+token.re:630:6: note: in expansion of macro 'QUOTECATS'
+token.re:630:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:105:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:594:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:592:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:87:32: warning: incompatible implicit declaration of built-in function 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+token.re:107:13: note: in expansion of macro 'S_MEMCPY'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:594:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:592:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:105:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:605:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:603:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:87:32: warning: incompatible implicit declaration of built-in function 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+token.re:107:13: note: in expansion of macro 'S_MEMCPY'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:605:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:603:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:105:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:583:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:581:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:87:32: warning: incompatible implicit declaration of built-in function 'memcpy'
+   87 | #define S_MEMCPY(p1,p2,type,n) memcpy((p1), (p2), sizeof(type)*(n))
+      |                                ^~~~~~
+token.re:107:13: note: in expansion of macro 'S_MEMCPY'
+token.re:137:5: note: in expansion of macro 'QUOTECATS'
+token.re:583:29: note: in expansion of macro 'PLAIN_NOT_INL'
+token.re:581:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+In file included from token.re:9:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:641:22: note: in expansion of macro 'S_ALLOC_N'
+token.re:634:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:674:29: note: in expansion of macro 'QUOTECAT'
+token.re:648:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:681:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:681:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:715:6: note: in expansion of macro 'QUOTECAT'
+token.re:715:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:688:6: note: in expansion of macro 'QUOTECAT'
+token.re:688:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:729:22: note: in expansion of macro 'S_ALLOC_N'
+token.re:719:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:765:33: note: in expansion of macro 'QUOTECAT'
+token.re:737:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:772:37: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:772:37: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:823:6: note: in expansion of macro 'QUOTECAT'
+token.re:823:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:782:25: note: in expansion of macro 'QUOTECAT'
+token.re:781:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+token.re:789:30: warning: implicit declaration of function 'strtol' [-Wimplicit-function-declaration]
+token.re:790:25: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+token.re:790:25: warning: incompatible implicit declaration of built-in function 'free'
+token.re:786:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:791:25: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:791:25: note: in expansion of macro 'QUOTECAT'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:834:22: note: in expansion of macro 'S_ALLOC_N'
+token.re:827:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+token.re:845:29: warning: incompatible implicit declaration of built-in function 'free'
+token.re:841:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from token.re:9:
+token.re:856:70: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+token.re:856:70: warning: incompatible implicit declaration of built-in function 'strlen'
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+token.re:841:1: note: include '<string.h>' or provide a declaration of 'strlen'
+token.re:858:29: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+token.re:858:29: warning: incompatible implicit declaration of built-in function 'strcat'
+token.re:858:29: note: include '<string.h>' or provide a declaration of 'strcat'
+token.re:859:29: warning: implicit declaration of function 'strncat' [-Wimplicit-function-declaration]
+token.re:859:29: warning: incompatible implicit declaration of built-in function 'strncat'
+token.re:859:29: note: include '<string.h>' or provide a declaration of 'strncat'
+token.re:860:29: warning: incompatible implicit declaration of built-in function 'free'
+token.re:860:29: note: include '<stdlib.h>' or provide a declaration of 'free'
+token.re:874:33: warning: incompatible implicit declaration of built-in function 'free'
+token.re:874:33: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from token.re:9:
+token.re:876:86: warning: incompatible implicit declaration of built-in function 'strlen'
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+token.re:876:86: note: include '<string.h>' or provide a declaration of 'strlen'
+syck.h:79:55: note: in definition of macro 'S_ALLOC_N'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                                       ^
+token.re:878:33: warning: incompatible implicit declaration of built-in function 'strcat'
+token.re:878:33: note: include '<string.h>' or provide a declaration of 'strcat'
+token.re:879:33: warning: incompatible implicit declaration of built-in function 'strncat'
+token.re:879:33: note: include '<string.h>' or provide a declaration of 'strncat'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:908:6: note: in expansion of macro 'QUOTECAT'
+token.re:908:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:895:25: note: in expansion of macro 'QUOTECAT'
+token.re:894:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+token.re:903:25: warning: incompatible implicit declaration of built-in function 'free'
+token.re:899:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:904:25: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:904:25: note: in expansion of macro 'QUOTECAT'
+syck.h:79:34: warning: incompatible implicit declaration of built-in function 'malloc'
+   79 | #define S_ALLOC_N(type,n) (type*)malloc(sizeof(type)*(n))
+      |                                  ^~~~~~
+token.re:920:22: note: in expansion of macro 'S_ALLOC_N'
+token.re:913:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1011:29: note: in expansion of macro 'QUOTECAT'
+token.re:959:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1018:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1018:33: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1073:6: note: in expansion of macro 'QUOTECAT'
+token.re:1073:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1043:29: note: in expansion of macro 'QUOTECAT'
+token.re:1035:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1060:29: note: in expansion of macro 'QUOTECAT'
+token.re:1054:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+In file included from token.re:9:
+syck.h:81:46: warning: incompatible implicit declaration of built-in function 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1067:29: note: in expansion of macro 'QUOTECAT'
+syck.h:81:46: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   81 | #define S_REALLOC_N(var,type,n) (var)=(type*)realloc((char*)(var),sizeof(type)*(n))
+      |                                              ^~~~~~~
+token.re:94:17: note: in expansion of macro 'S_REALLOC_N'
+token.re:1067:29: note: in expansion of macro 'QUOTECAT'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Syck.xs > Syck.xsc
+mv Syck.xsc Syck.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.32\" -DXS_VERSION=\"1.32\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Syck.c
+rm -f blib/arch/auto/YAML/Syck/Syck.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  bytecode.o emitter.o gram.o handler.o implicit.o node.o syck_.o syck_st.o token.o Syck.o  -o blib/arch/auto/YAML/Syck/Syck.so  \
+      \
+
+chmod 755 blib/arch/auto/YAML/Syck/Syck.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syck.bs blib/arch/auto/YAML/Syck/Syck.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1-basic.t ................. ok
+t/11-loadfile.t ............. ok
+t/12-dumpfile.t ............. ok
+t/2-scalars.t ............... ok
+t/3-objects.t ............... ok
+t/4-perl_tag_scheme.t ....... ok
+t/json-basic.t .............. ok
+t/json-circular-ref.t ....... ok
+t/json-crlf.t ............... ok
+t/json-dumpinto.t ........... ok
+t/json-empty.t .............. ok
+t/json-indent.t ............. ok
+t/json-loadfile.t ........... ok
+t/json-minus.t .............. ok
+t/json-newline.t ............ ok
+t/json-null.t ............... ok
+t/json-numbers.t ............ ok
+t/json-refs.t ............... ok
+t/json-singlequote.t ........ ok
+t/leak.t .................... ok
+t/load-blessed.t ............ ok
+t/yaml-alias.t .............. ok
+t/yaml-blessed-ref.t ........ ok
+t/yaml-dumpinto.t ........... ok
+t/yaml-implicit-warnings.t .. ok
+t/yaml-str-colon-first.t .... ok
+t/yaml-tie.t ................ ok
+t/yaml-utf.t ................ ok
+All tests successful.
+Files=28, Tests=619,  2 wallclock secs ( 0.12 usr  0.02 sys +  1.62 cusr  0.22 csys =  1.98 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/pkgconfig m4datadir=/nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/aclocal aclocaldir=/nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syck.bs blib/arch/auto/YAML/Syck/Syck.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/YAML/Syck/Syck.so
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/JSON/Syck.pm
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/Syck.pm
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/Dumper/Syck.pm
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/Loader/Syck.pm
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/man/man3/JSON::Syck.3
+Installing /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/man/man3/YAML::Syck.3
+Appending installation info to /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/man/man3 to /nix/store/a8296y7qcb38h89vakiss49ajargvf7a-perl5.32.0-YAML-Syck-1.32-devdoc/share/man/man3
+Removing empty /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32
+shrinking /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/YAML/Syck/Syck.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32/lib
+patching script interpreter paths in /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32
+checking for references to /build/ in /nix/store/pkmbs4ly3pkck7a2hxm0mbx9jcgnimhc-perl5.32.0-YAML-Syck-1.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a8296y7qcb38h89vakiss49ajargvf7a-perl5.32.0-YAML-Syck-1.32-devdoc
+gzipping man pages under /nix/store/a8296y7qcb38h89vakiss49ajargvf7a-perl5.32.0-YAML-Syck-1.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/a8296y7qcb38h89vakiss49ajargvf7a-perl5.32.0-YAML-Syck-1.32-devdoc
+checking for references to /build/ in /nix/store/a8296y7qcb38h89vakiss49ajargvf7a-perl5.32.0-YAML-Syck-1.32-devdoc...
+building '/nix/store/a9zxgzyjw0c8khlgq528w4p0ly7v3w17-perl5.32.0-Beanstalk-Client-1.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/757zi317yrjpihx2n1pi8hl9wrrsmz3d-Beanstalk-Client-1.07.tar.gz
+source root is Beanstalk-Client-1.07
+setting SOURCE_DATE_EPOCH to timestamp 1355846963 of file Beanstalk-Client-1.07/SIGNATURE
+patching sources
+configuring
+*** Module::AutoInstall version 1.03
+*** Checking for Perl dependencies...
+[Core Features]
+- IO::Socket::INET      ...loaded. (1.41)
+- Socket                ...loaded. (2.029)
+- YAML::Syck            ...loaded. (1.32)
+- Carp                  ...loaded. (1.50)
+- Class::Accessor::Fast ...loaded. (0.51)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Beanstalk::Client
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Beanstalk/Pool.pm blib/lib/Beanstalk/Pool.pm
+cp lib/Beanstalk/Stats.pm blib/lib/Beanstalk/Stats.pm
+cp lib/Beanstalk/Job.pm blib/lib/Beanstalk/Job.pm
+cp lib/Beanstalk/Client.pm blib/lib/Beanstalk/Client.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00-client.t t/01-job.t t/02-command.t
+t/00-client.t ... ok
+t/01-job.t ...... ok
+t/02-command.t .. ok
+All tests successful.
+Files=3, Tests=74,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.20 cusr  0.05 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/pkgconfig m4datadir=/nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/aclocal aclocaldir=/nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/perl5/site_perl/5.32.0/Beanstalk/Job.pm
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/perl5/site_perl/5.32.0/Beanstalk/Pool.pm
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/perl5/site_perl/5.32.0/Beanstalk/Client.pm
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/perl5/site_perl/5.32.0/Beanstalk/Stats.pm
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/man3/Beanstalk::Client.3
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/man3/Beanstalk::Pool.3
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/man3/Beanstalk::Stats.3
+Installing /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/man3/Beanstalk::Job.3
+Appending installation info to /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/man3 to /nix/store/y2lhixwbwnm9qx7ffzh6hayn6dri76qd-perl5.32.0-Beanstalk-Client-1.07-devdoc/share/man/man3
+Removing empty /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07/lib
+patching script interpreter paths in /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07
+checking for references to /build/ in /nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y2lhixwbwnm9qx7ffzh6hayn6dri76qd-perl5.32.0-Beanstalk-Client-1.07-devdoc
+gzipping man pages under /nix/store/y2lhixwbwnm9qx7ffzh6hayn6dri76qd-perl5.32.0-Beanstalk-Client-1.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y2lhixwbwnm9qx7ffzh6hayn6dri76qd-perl5.32.0-Beanstalk-Client-1.07-devdoc
+checking for references to /build/ in /nix/store/y2lhixwbwnm9qx7ffzh6hayn6dri76qd-perl5.32.0-Beanstalk-Client-1.07-devdoc...
+/nix/store/kiydhlfwjyq263azsw520j3i2sp0sq4y-perl5.32.0-Beanstalk-Client-1.07

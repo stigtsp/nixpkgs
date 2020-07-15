@@ -1,0 +1,96 @@
+these derivations will be built:
+  /nix/store/vqjnfv9sl14xd4d24brnrwrlk9y9svf1-perl5.32.0-Math-BigRat-0.2614.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/6is6km3ld7n4b35xjabx1f1krwf7f47w-Math-BigRat-0.2614.tar.gz
+copying path '/nix/store/6is6km3ld7n4b35xjabx1f1krwf7f47w-Math-BigRat-0.2614.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vqjnfv9sl14xd4d24brnrwrlk9y9svf1-perl5.32.0-Math-BigRat-0.2614.drv'...
+unpacking sources
+unpacking source archive /nix/store/6is6km3ld7n4b35xjabx1f1krwf7f47w-Math-BigRat-0.2614.tar.gz
+source root is Math-BigRat-0.2614
+setting SOURCE_DATE_EPOCH to timestamp 1523988732 of file Math-BigRat-0.2614/SIGNATURE
+patching sources
+configuring
+patching ./MANIFEST.SKIP...
+patching ./t/release-pod.t...
+patching ./t/author-blog-mbr.t...
+patching ./t/big_ap.t...
+patching ./t/bigratpm.t...
+patching ./t/hang.t...
+patching ./t/rt121139.t...
+patching ./t/00sig.t...
+patching ./t/trap.t...
+patching ./t/bigrat.t...
+patching ./t/01load.t...
+patching ./t/bigfltrt.t...
+patching ./t/release-portability.t...
+patching ./t/bitwise.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/requirer.t...
+patching ./t/bigratup.t...
+patching ./t/release-test-version.t...
+patching ./t/release-pod-coverage.t...
+patching ./t/author-relop-mbr.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::BigRat
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/BigRat.pm blib/lib/Math/BigRat.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00sig.t ................. skipped: Set the environment variable TEST_SIGNATURE to enable this test.
+t/01load.t ................ 1/2 #
+# Testing with Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+#
+#      Version Module
+#      ------- ------
+#       0.2614 Math::BigRat
+#     1.999818 Math::BigInt
+#
+t/01load.t ................ ok
+t/author-blog-mbr.t ....... skipped: these tests are for testing by the author
+t/author-relop-mbr.t ...... skipped: these tests are for testing by the author
+t/big_ap.t ................ ok
+t/bigfltrt.t .............. ok
+t/bigrat.t ................ ok
+t/bigratpm.t .............. ok
+t/bigratup.t .............. ok
+t/bitwise.t ............... ok
+t/hang.t .................. ok
+t/release-cpan-changes.t .. skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod.t ........... skipped: these tests are for release candidate testing
+t/release-portability.t ... skipped: these tests are for release candidate testing
+t/release-test-version.t .. skipped: these tests are for release candidate testing
+t/requirer.t .............. ok
+t/rt121139.t .............. ok
+t/trap.t .................. ok
+All tests successful.
+Files=19, Tests=3767,  3 wallclock secs ( 0.35 usr  0.03 sys +  2.43 cusr  0.19 csys =  3.00 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/lib/pkgconfig m4datadir=/nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/share/aclocal aclocaldir=/nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/lib/perl5/site_perl/5.32.0/Math/BigRat.pm
+Installing /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/share/man/man3/Math::BigRat.3
+Appending installation info to /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/share/man/man3 to /nix/store/y3fk2jwmvzlrxw7a3qk7jb44sqgrdrh0-perl5.32.0-Math-BigRat-0.2614-devdoc/share/man/man3
+Removing empty /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614/lib
+patching script interpreter paths in /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614
+checking for references to /build/ in /nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y3fk2jwmvzlrxw7a3qk7jb44sqgrdrh0-perl5.32.0-Math-BigRat-0.2614-devdoc
+gzipping man pages under /nix/store/y3fk2jwmvzlrxw7a3qk7jb44sqgrdrh0-perl5.32.0-Math-BigRat-0.2614-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y3fk2jwmvzlrxw7a3qk7jb44sqgrdrh0-perl5.32.0-Math-BigRat-0.2614-devdoc
+checking for references to /build/ in /nix/store/y3fk2jwmvzlrxw7a3qk7jb44sqgrdrh0-perl5.32.0-Math-BigRat-0.2614-devdoc...
+/nix/store/icm6vkmr18nkmsbs3z82silwliyvh3f0-perl5.32.0-Math-BigRat-0.2614

@@ -1,0 +1,104 @@
+these derivations will be built:
+  /nix/store/dzhzp6d75j7k9y6lhmlws824qyjf21cg-perl5.32.0-Hash-Merge-Simple-0.051.drv
+  /nix/store/58q6bqs2id2kj1xz9p4rp94wcqb0z9sz-perl5.32.0-Config-Onion-1.007.drv
+building '/nix/store/dzhzp6d75j7k9y6lhmlws824qyjf21cg-perl5.32.0-Hash-Merge-Simple-0.051.drv'...
+unpacking sources
+unpacking source archive /nix/store/pgn8f03smzbkb9qglc9sdazsz231mpx5-Hash-Merge-Simple-0.051.tar.gz
+source root is Hash-Merge-Simple-0.051
+setting SOURCE_DATE_EPOCH to timestamp 1291753357 of file Hash-Merge-Simple-0.051/t/9000-bug-41738-merge-with-side-effects.t
+patching sources
+configuring
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Hash::Merge::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Hash/Merge/Simple.pm blib/lib/Hash/Merge/Simple.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ................................. 1/1 # Testing Hash::Merge::Simple 0.051, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ................................. ok
+t/01-basic.t ................................ ok
+t/9000-bug-41738-merge-with-side-effects.t .. ok
+All tests successful.
+Files=3, Tests=15,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.25 cusr  0.13 csys =  0.42 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/lib/pkgconfig m4datadir=/nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/share/aclocal aclocaldir=/nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/lib/perl5/site_perl/5.32.0/Hash/Merge/Simple.pm
+Installing /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/share/man/man3/Hash::Merge::Simple.3
+Appending installation info to /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/share/man/man3 to /nix/store/9m9j1s24903ji6960cm7s31gw5blmb98-perl5.32.0-Hash-Merge-Simple-0.051-devdoc/share/man/man3
+Removing empty /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051/lib
+patching script interpreter paths in /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051
+checking for references to /build/ in /nix/store/crcs16fbnfx2c8pg24nn8hglk7353jnj-perl5.32.0-Hash-Merge-Simple-0.051...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9m9j1s24903ji6960cm7s31gw5blmb98-perl5.32.0-Hash-Merge-Simple-0.051-devdoc
+gzipping man pages under /nix/store/9m9j1s24903ji6960cm7s31gw5blmb98-perl5.32.0-Hash-Merge-Simple-0.051-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9m9j1s24903ji6960cm7s31gw5blmb98-perl5.32.0-Hash-Merge-Simple-0.051-devdoc
+checking for references to /build/ in /nix/store/9m9j1s24903ji6960cm7s31gw5blmb98-perl5.32.0-Hash-Merge-Simple-0.051-devdoc...
+building '/nix/store/58q6bqs2id2kj1xz9p4rp94wcqb0z9sz-perl5.32.0-Config-Onion-1.007.drv'...
+unpacking sources
+unpacking source archive /nix/store/qsp1y145q8b4z1hqbk031i1ik8i1mn32-Config-Onion-1.007.tar.gz
+source root is Config-Onion-1.007
+setting SOURCE_DATE_EPOCH to timestamp 1476353535 of file Config-Onion-1.007/t/conf/withlocal.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::Onion
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Config/Onion/Simple.pm blib/lib/Config/Onion/Simple.pm
+cp lib/Config/Onion.pm blib/lib/Config/Onion.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ......... ok
+t/01-defaults.t ..... ok
+t/02-load.t ......... ok
+t/03-mixed.t ........ ok
+t/04-simple.t ....... ok
+t/05-delete.t ....... ok
+t/author-eol.t ...... skipped: these tests are for testing by the author
+t/author-no-tabs.t .. skipped: these tests are for testing by the author
+All tests successful.
+Files=8, Tests=38,  2 wallclock secs ( 0.04 usr  0.01 sys +  1.01 cusr  0.41 csys =  1.47 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/lib/pkgconfig m4datadir=/nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/aclocal aclocaldir=/nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/lib/perl5/site_perl/5.32.0/Config/Onion.pm
+Installing /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/lib/perl5/site_perl/5.32.0/Config/Onion/Simple.pm
+Installing /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/man/man3/Config::Onion.3
+Installing /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/man/man3/Config::Onion::Simple.3
+Appending installation info to /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/man/man3 to /nix/store/yaxqjxirs6mwknacq91l8im67m5q4h4w-perl5.32.0-Config-Onion-1.007-devdoc/share/man/man3
+Removing empty /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007/lib
+patching script interpreter paths in /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007
+checking for references to /build/ in /nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yaxqjxirs6mwknacq91l8im67m5q4h4w-perl5.32.0-Config-Onion-1.007-devdoc
+gzipping man pages under /nix/store/yaxqjxirs6mwknacq91l8im67m5q4h4w-perl5.32.0-Config-Onion-1.007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yaxqjxirs6mwknacq91l8im67m5q4h4w-perl5.32.0-Config-Onion-1.007-devdoc
+checking for references to /build/ in /nix/store/yaxqjxirs6mwknacq91l8im67m5q4h4w-perl5.32.0-Config-Onion-1.007-devdoc...
+/nix/store/4bs8j63saikzj7lc59sac9kjfvq85gk1-perl5.32.0-Config-Onion-1.007

@@ -1,0 +1,309 @@
+these derivations will be built:
+  /nix/store/n2vkj9a3g7k97g1jxdvww6i3j40zwmjw-perl5.32.0-Crypt-Random-TESHA2-0.01.drv
+  /nix/store/2hqxs7b4j28drqm0ns57a2l1z0x5by6k-perl5.32.0-Crypt-Random-Seed-0.03.drv
+  /nix/store/4hrcb539zanhy4ipyifzzp8c0d4xwk8r-perl5.32.0-Math-Random-ISAAC-1.004.drv
+  /nix/store/4wk6v4g81726659dyakdvpgcvn6l308a-perl5.32.0-Bytes-Random-Secure-0.29.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/8lrygk5ll2a42xnc4mfzzf5lipahph4v-Bytes-Random-Secure-0.29.tar.gz
+  /nix/store/nixx1gf5na7vwbfpy7blb66rq6mil1mj-Crypt-Random-TESHA2-0.01.tar.gz
+  /nix/store/wlnji4kd38grw7yndd6x4f8qiihb33q5-Crypt-Random-Seed-0.03.tar.gz
+  /nix/store/zq5z305gzmgidmz2gws0z04ajxyja6mi-Math-Random-ISAAC-1.004.tar.gz
+copying path '/nix/store/8lrygk5ll2a42xnc4mfzzf5lipahph4v-Bytes-Random-Secure-0.29.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zq5z305gzmgidmz2gws0z04ajxyja6mi-Math-Random-ISAAC-1.004.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/wlnji4kd38grw7yndd6x4f8qiihb33q5-Crypt-Random-Seed-0.03.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nixx1gf5na7vwbfpy7blb66rq6mil1mj-Crypt-Random-TESHA2-0.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4hrcb539zanhy4ipyifzzp8c0d4xwk8r-perl5.32.0-Math-Random-ISAAC-1.004.drv'...
+building '/nix/store/n2vkj9a3g7k97g1jxdvww6i3j40zwmjw-perl5.32.0-Crypt-Random-TESHA2-0.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/zq5z305gzmgidmz2gws0z04ajxyja6mi-Math-Random-ISAAC-1.004.tar.gz
+source root is Math-Random-ISAAC-1.004
+unpacking sources
+unpacking source archive /nix/store/nixx1gf5na7vwbfpy7blb66rq6mil1mj-Crypt-Random-TESHA2-0.01.tar.gz
+setting SOURCE_DATE_EPOCH to timestamp 1297997546 of file Math-Random-ISAAC-1.004/weaver.ini
+source root is Crypt-Random-TESHA2-0.01
+patching sources
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1357926854 of file Crypt-Random-TESHA2-0.01/META.yml
+patching sources
+configuring
+patching ./examples/distribution.pl...
+patching ./examples/benchmark.pl...
+patching ./examples/threads.pl...
+patching ./t/05fallback.t...
+patching ./t/release-kwalitee.t...
+patching ./t/02-export.t...
+patching ./t/release-portability.t...
+patching ./t/93-release-kwalitee.t...
+patching ./t/01compile.t...
+patching ./t/90-release-perlcritic.t...
+patching ./t/06exceptions.t...
+patching ./t/91-release-pod-syntax.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/14-entropy.t...
+patching ./t/03memory.t...
+patching ./t/01-load.t...
+patching ./t/04uniform.t...
+patching ./t/13-timereval.t...
+patching ./t/02sequence.t...
+patching ./t/12-dispersion.t...
+patching ./t/release-dist-manifest.t...
+patching ./t/11-fips140.t...
+patching ./t/release-pod-coverage.t...
+patching ./t/10-functionality.t...
+patching ./t/92-release-pod-coverage.t...
+
+Config: starting initial configuration.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::Random::ISAAC
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Config: gathering...................................................done
+Config: Raw usleep 0-order entropy: 2.90 (23.17 bits per byte).
+Config: choosing 7.00 bits per output byte
+Config: writing configuration.
+Config: configuration complete.
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::Random::TESHA2
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/Random/ISAAC.pm blib/lib/Math/Random/ISAAC.pm
+cp lib/Math/Random/ISAAC/PP.pm blib/lib/Math/Random/ISAAC/PP.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp lib/Crypt/Random/TESHA2.pm blib/lib/Crypt/Random/TESHA2.pm
+cp lib/Crypt/Random/TESHA2/Config.pm blib/lib/Crypt/Random/TESHA2/Config.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01compile.t .............. ok
+t/01-load.t .................. ok
+t/02sequence.t ............. ok
+t/02-export.t ................ ok
+t/03memory.t ............... skipped: Test::LeakTrace required to test memory leaks
+t/04uniform.t .............. skipped: Statistics::Test::RandomWalk not available for testing
+t/10-functionality.t ......... ok
+t/05fallback.t ............. skipped: Test::Without::Module and Math::Random::ISAAC::XS required to test fallback ability
+t/06exceptions.t ........... ok
+t/11-fips140.t ............... # Speed: 12697 bits per second
+t/release-dist-manifest.t .. skipped: these tests are for release candidate testing
+t/release-kwalitee.t ....... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t ... skipped: these tests are for release candidate testing
+t/release-pod-syntax.t ..... skipped: these tests are for release candidate testing
+t/release-portability.t .... skipped: these tests are for release candidate testing
+All tests successful.
+Files=11, Tests=607,  0 wallclock secs ( 0.08 usr  0.00 sys +  0.60 cusr  0.15 csys =  0.83 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/lib/pkgconfig m4datadir=/nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/aclocal aclocaldir=/nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/lib/perl5/site_perl/5.32.0/Math/Random/ISAAC.pm
+Installing /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/lib/perl5/site_perl/5.32.0/Math/Random/ISAAC/PP.pm
+Installing /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/man/man3/Math::Random::ISAAC::PP.3
+Installing /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/man/man3/Math::Random::ISAAC.3
+Appending installation info to /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/man/man3 to /nix/store/vrhv16ksgc243v5sjy40qw3clakc3q2v-perl5.32.0-Math-Random-ISAAC-1.004-devdoc/share/man/man3
+Removing empty /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004/lib
+patching script interpreter paths in /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004
+checking for references to /build/ in /nix/store/98hya7agpwh594z4w2hava0f32ijmjxi-perl5.32.0-Math-Random-ISAAC-1.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vrhv16ksgc243v5sjy40qw3clakc3q2v-perl5.32.0-Math-Random-ISAAC-1.004-devdoc
+gzipping man pages under /nix/store/vrhv16ksgc243v5sjy40qw3clakc3q2v-perl5.32.0-Math-Random-ISAAC-1.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vrhv16ksgc243v5sjy40qw3clakc3q2v-perl5.32.0-Math-Random-ISAAC-1.004-devdoc
+checking for references to /build/ in /nix/store/vrhv16ksgc243v5sjy40qw3clakc3q2v-perl5.32.0-Math-Random-ISAAC-1.004-devdoc...
+t/11-fips140.t ............... ok
+t/12-dispersion.t ............ skipped: these tests are for release candidate testing
+t/13-timereval.t ............. # 13820 calls took 0.011262s to find 10000 unique timer values
+t/13-timereval.t ............. ok
+t/14-entropy.t ............... # 800 values collected.  min: 11  max: 95
+# Raw usleep 0-order entropy: 2.89 bits
+# Configured entropy:         0.88 bits
+# Theoretical entropy per output byte: 8 * 2.89 * (8/7) = 26.5
+t/14-entropy.t ............... ok
+t/90-release-perlcritic.t .... skipped: these tests are for release candidate testing
+t/91-release-pod-syntax.t .... skipped: these tests are for release candidate testing
+t/92-release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/93-release-kwalitee.t ...... skipped: these tests are for release candidate testing
+All tests successful.
+Files=11, Tests=51,  2 wallclock secs ( 0.04 usr  0.01 sys +  0.76 cusr  0.12 csys =  0.93 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/lib/pkgconfig m4datadir=/nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/aclocal aclocaldir=/nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/lib/perl5/site_perl/5.32.0/Crypt/Random/TESHA2.pm
+Installing /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/lib/perl5/site_perl/5.32.0/Crypt/Random/TESHA2/Config.pm
+Installing /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/man/man3/Crypt::Random::TESHA2::Config.3
+Installing /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/man/man3/Crypt::Random::TESHA2.3
+Appending installation info to /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/man/man3 to /nix/store/2kimw4xsgghp308dn38sw78jcqpkgxrl-perl5.32.0-Crypt-Random-TESHA2-0.01-devdoc/share/man/man3
+Removing empty /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01/lib
+patching script interpreter paths in /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01
+checking for references to /build/ in /nix/store/zsfq3w14jyird4yvrgc3kzmhj145nv1h-perl5.32.0-Crypt-Random-TESHA2-0.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2kimw4xsgghp308dn38sw78jcqpkgxrl-perl5.32.0-Crypt-Random-TESHA2-0.01-devdoc
+gzipping man pages under /nix/store/2kimw4xsgghp308dn38sw78jcqpkgxrl-perl5.32.0-Crypt-Random-TESHA2-0.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2kimw4xsgghp308dn38sw78jcqpkgxrl-perl5.32.0-Crypt-Random-TESHA2-0.01-devdoc
+checking for references to /build/ in /nix/store/2kimw4xsgghp308dn38sw78jcqpkgxrl-perl5.32.0-Crypt-Random-TESHA2-0.01-devdoc...
+building '/nix/store/2hqxs7b4j28drqm0ns57a2l1z0x5by6k-perl5.32.0-Crypt-Random-Seed-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/wlnji4kd38grw7yndd6x4f8qiihb33q5-Crypt-Random-Seed-0.03.tar.gz
+source root is Crypt-Random-Seed-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1361036196 of file Crypt-Random-Seed-0.03/META.yml
+patching sources
+configuring
+patching ./examples/brs.pl...
+patching ./t/14-blacklist.t...
+patching ./t/93-release-kwalitee.t...
+patching ./t/94-release-manifest.t...
+patching ./t/03-can.t...
+patching ./t/12-random_values.t...
+patching ./t/90-release-perlcritic.t...
+patching ./t/91-release-pod-syntax.t...
+patching ./t/13-whitelist.t...
+patching ./t/01-load.t...
+patching ./t/11-random_bytes.t...
+patching ./t/92-release-pod-coverage.t...
+patching ./t/04-win32.t...
+patching ./t/02-new.t...
+patching ./t/10-name.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::Random::Seed
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/Random/Seed.pm blib/lib/Crypt/Random/Seed.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-load.t .................. ok
+t/02-new.t ................... ok
+t/03-can.t ................... ok
+t/04-win32.t ................. skipped: This testing is for Win32
+t/10-name.t .................. 1/4 #
+# Default     blocking method: /dev/random
+# Default non-blocking method: /dev/urandom
+t/10-name.t .................. ok
+t/11-random_bytes.t .......... ok
+t/12-random_values.t ......... ok
+t/13-whitelist.t ............. ok
+t/14-blacklist.t ............. ok
+t/90-release-perlcritic.t .... skipped: these tests are for release candidate testing
+t/91-release-pod-syntax.t .... skipped: these tests are for release candidate testing
+t/92-release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/93-release-kwalitee.t ...... skipped: these tests are for release candidate testing
+t/94-release-manifest.t ...... skipped: these tests are for release candidate testing
+All tests successful.
+Files=14, Tests=26,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.64 cusr  0.17 csys =  0.86 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/lib/pkgconfig m4datadir=/nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/share/aclocal aclocaldir=/nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/lib/perl5/site_perl/5.32.0/Crypt/Random/Seed.pm
+Installing /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/share/man/man3/Crypt::Random::Seed.3
+Appending installation info to /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/share/man/man3 to /nix/store/lydq587b2p4lcjh1yc46xn7700pxli5b-perl5.32.0-Crypt-Random-Seed-0.03-devdoc/share/man/man3
+Removing empty /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03/lib
+patching script interpreter paths in /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03
+checking for references to /build/ in /nix/store/nj5in4ag7g3gr383j2j56bzwp71lmy2j-perl5.32.0-Crypt-Random-Seed-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lydq587b2p4lcjh1yc46xn7700pxli5b-perl5.32.0-Crypt-Random-Seed-0.03-devdoc
+gzipping man pages under /nix/store/lydq587b2p4lcjh1yc46xn7700pxli5b-perl5.32.0-Crypt-Random-Seed-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lydq587b2p4lcjh1yc46xn7700pxli5b-perl5.32.0-Crypt-Random-Seed-0.03-devdoc
+checking for references to /build/ in /nix/store/lydq587b2p4lcjh1yc46xn7700pxli5b-perl5.32.0-Crypt-Random-Seed-0.03-devdoc...
+building '/nix/store/4wk6v4g81726659dyakdvpgcvn6l308a-perl5.32.0-Bytes-Random-Secure-0.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/8lrygk5ll2a42xnc4mfzzf5lipahph4v-Bytes-Random-Secure-0.29.tar.gz
+source root is Bytes-Random-Secure-0.29
+setting SOURCE_DATE_EPOCH to timestamp 1436762474 of file Bytes-Random-Secure-0.29/META.yml
+patching sources
+configuring
+patching ./t/05-kwalitee.t...
+patching ./t/00-boilerplate.t...
+patching ./t/01-manifest.t...
+patching ./t/09-changes.t...
+patching ./t/36-shuffle.t...
+patching ./t/04-perlcritic.t...
+patching ./t/03-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Bytes::Random::Secure
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Bytes/Random/Secure.pm blib/lib/Bytes/Random/Secure.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-boilerplate.t .......... ok
+t/01-manifest.t ............. skipped: Author tests not required for installation
+t/02-pod.t .................. skipped: Skip Test::Pod tests unless environment variable RELEASE_TESTING is set.
+t/03-pod-coverage.t ......... skipped: POD Coverage tests only run when RELEASE_TESTING is set, *and*
+t/04-perlcritic.t ........... skipped: Author Test: Set $ENV{RELEASE_TESTING} to a true value to run.
+t/05-kwalitee.t ............. skipped: Author Test: Set $ENV{RELEASE_TESTING} to a true value to run.
+t/06-meta-yaml.t ............ skipped: Author only test: META.yml tests run only if RELEASE_TESTING set.
+t/07-meta-json.t ............ skipped: Author only test: META.json tests run only if RELEASE_TESTING set.
+t/09-changes.t .............. skipped: Author tests skipped.  Set $ENV{RELEASE_TESTING} to run
+t/10-prereqs.t .............. ok
+t/11-load.t ................. 1/1 # Testing Bytes::Random::Secure 0.29, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/11-load.t ................. ok
+t/20-functions.t ............ ok
+t/21-bytes_random_tests.t ... skipped: Statistics::Basic needed for random quality tests.
+t/22-random_string_from.t ... ok
+t/23-string_from_unicode.t .. ok
+t/24-oo_construct.t ......... ok
+t/26-oo_public.t ............ ok
+t/27-fips140-1.t ............ ok
+t/36-shuffle.t .............. ok
+All tests successful.
+Files=19, Tests=207,  1 wallclock secs ( 0.06 usr  0.03 sys +  1.19 cusr  0.34 csys =  1.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/lib/pkgconfig m4datadir=/nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/share/aclocal aclocaldir=/nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/lib/perl5/site_perl/5.32.0/Bytes/Random/Secure.pm
+Installing /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/share/man/man3/Bytes::Random::Secure.3
+Appending installation info to /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/share/man/man3 to /nix/store/bxv969mvd4xw8sv4m83c9dp3yg3chv2d-perl5.32.0-Bytes-Random-Secure-0.29-devdoc/share/man/man3
+Removing empty /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29/lib
+patching script interpreter paths in /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29
+checking for references to /build/ in /nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bxv969mvd4xw8sv4m83c9dp3yg3chv2d-perl5.32.0-Bytes-Random-Secure-0.29-devdoc
+gzipping man pages under /nix/store/bxv969mvd4xw8sv4m83c9dp3yg3chv2d-perl5.32.0-Bytes-Random-Secure-0.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bxv969mvd4xw8sv4m83c9dp3yg3chv2d-perl5.32.0-Bytes-Random-Secure-0.29-devdoc
+checking for references to /build/ in /nix/store/bxv969mvd4xw8sv4m83c9dp3yg3chv2d-perl5.32.0-Bytes-Random-Secure-0.29-devdoc...
+/nix/store/xnva90q56qvlhhjq2z1kgav41wl03cnf-perl5.32.0-Bytes-Random-Secure-0.29

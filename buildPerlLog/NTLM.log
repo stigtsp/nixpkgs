@@ -1,0 +1,88 @@
+these derivations will be built:
+  /nix/store/ka5nx4wa6vrih8d66cqdklff9w3myl4g-perl5.32.0-NTLM-1.09.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/jfca7i89m1pfv74p2pfp9i0516w4m2r7-NTLM-1.09.tar.gz
+copying path '/nix/store/jfca7i89m1pfv74p2pfp9i0516w4m2r7-NTLM-1.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ka5nx4wa6vrih8d66cqdklff9w3myl4g-perl5.32.0-NTLM-1.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/jfca7i89m1pfv74p2pfp9i0516w4m2r7-NTLM-1.09.tar.gz
+source root is NTLM-1.09
+setting SOURCE_DATE_EPOCH to timestamp 1315534265 of file NTLM-1.09/Changes
+patching sources
+configuring
+patching ./NTLM.pm...
+patching ./MD4/MD4.pm...
+patching ./MD4/Makefile.PL...
+patching ./DES/DES.pm...
+patching ./DES/Makefile.PL...
+patching ./t/03_oo.t...
+patching ./t/04_v2.t...
+patching ./t/99_pod.t...
+patching ./t/02_ntlm.t...
+patching ./t/01_load.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Authen::NTLM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp NTLM.pm blib/lib/Authen/NTLM.pm
+make[1]: Entering directory '/build/NTLM-1.09/DES'
+cp DES.pm ../blib/lib/Authen/NTLM/DES.pm
+make[1]: Leaving directory '/build/NTLM-1.09/DES'
+make[1]: Entering directory '/build/NTLM-1.09/MD4'
+cp MD4.pm ../blib/lib/Authen/NTLM/MD4.pm
+make[1]: Leaving directory '/build/NTLM-1.09/MD4'
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+make[1]: Entering directory '/build/NTLM-1.09/DES'
+make[1]: Leaving directory '/build/NTLM-1.09/DES'
+make[1]: Entering directory '/build/NTLM-1.09/MD4'
+make[1]: Leaving directory '/build/NTLM-1.09/MD4'
+make[1]: Entering directory '/build/NTLM-1.09/DES'
+No tests defined for Authen::NTLM::DES extension.
+make[1]: Leaving directory '/build/NTLM-1.09/DES'
+make[1]: Entering directory '/build/NTLM-1.09/MD4'
+No tests defined for Authen::NTLM::MD4 extension.
+make[1]: Leaving directory '/build/NTLM-1.09/MD4'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_load.t .. ok
+t/02_ntlm.t .. ok
+t/03_oo.t .... ok
+t/04_v2.t .... ok
+t/99_pod.t ... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=5, Tests=34,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.29 cusr  0.07 csys =  0.40 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib/pkgconfig m4datadir=/nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/share/aclocal aclocaldir=/nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/share/aclocal install
+make[1]: Entering directory '/build/NTLM-1.09/DES'
+make[1]: Leaving directory '/build/NTLM-1.09/DES'
+make[1]: Entering directory '/build/NTLM-1.09/MD4'
+make[1]: Leaving directory '/build/NTLM-1.09/MD4'
+Manifying 1 pod document
+Installing /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib/perl5/site_perl/5.32.0/Authen/NTLM.pm
+Installing /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib/perl5/site_perl/5.32.0/Authen/NTLM/MD4.pm
+Installing /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib/perl5/site_perl/5.32.0/Authen/NTLM/DES.pm
+Installing /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/share/man/man3/Authen::NTLM.3
+Appending installation info to /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/share/man/man3 to /nix/store/1rr4r1nwwvlxjgif0d76zcsyrys0hl8b-perl5.32.0-NTLM-1.09-devdoc/share/man/man3
+Removing empty /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09/lib
+patching script interpreter paths in /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09
+checking for references to /build/ in /nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1rr4r1nwwvlxjgif0d76zcsyrys0hl8b-perl5.32.0-NTLM-1.09-devdoc
+gzipping man pages under /nix/store/1rr4r1nwwvlxjgif0d76zcsyrys0hl8b-perl5.32.0-NTLM-1.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1rr4r1nwwvlxjgif0d76zcsyrys0hl8b-perl5.32.0-NTLM-1.09-devdoc
+checking for references to /build/ in /nix/store/1rr4r1nwwvlxjgif0d76zcsyrys0hl8b-perl5.32.0-NTLM-1.09-devdoc...
+/nix/store/005d5gy1psmcgmayx225qizjygswihi8-perl5.32.0-NTLM-1.09

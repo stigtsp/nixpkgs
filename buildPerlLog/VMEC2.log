@@ -1,0 +1,417 @@
+these derivations will be built:
+  /nix/store/nx8hd1i0azxqgfpgykvxhk3m8ja52vdc-perl5.32.0-VM-EC2-1.28.drv
+these paths will be fetched (0.34 MiB download, 0.34 MiB unpacked):
+  /nix/store/4mg85fy5bk3mlzxvi0xmd453mks6fm5g-VM-EC2-1.28.tar.gz
+copying path '/nix/store/4mg85fy5bk3mlzxvi0xmd453mks6fm5g-VM-EC2-1.28.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nx8hd1i0azxqgfpgykvxhk3m8ja52vdc-perl5.32.0-VM-EC2-1.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/4mg85fy5bk3mlzxvi0xmd453mks6fm5g-VM-EC2-1.28.tar.gz
+source root is VM-EC2-1.28
+setting SOURCE_DATE_EPOCH to timestamp 1414096743 of file VM-EC2-1.28/t/lib/EC2TestSupport.pm
+patching sources
+configuring
+patching ./Build.PL...
+patching ./bin/migrate-ebs-image.pl...
+patching ./bin/sync_to_snapshot.pl...
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  AWS::Signature4 is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'VM-EC2' version '1.28'
+Building VM-EC2
+running tests
+t/01.describe.t ........ ok
+t/02.keypairs.t ........ ok
+t/03.securitygroup.t ... 1/20 # deleting test security group...
+t/03.securitygroup.t ... ok
+t/04.volume.t .......... ok
+t/05.spot_instance.t ... ok
+t/06.security_token.t .. ok
+t/07.instance.t ........ ok
+t/08.staging.t ......... ok
+t/09.autoscaling.t ..... 1/18 # cleaning up...
+t/09.autoscaling.t ..... ok
+All tests successful.
+Files=9, Tests=195,  4 wallclock secs ( 0.08 usr  0.02 sys +  2.24 cusr  0.93 csys =  3.27 CPU)
+Result: PASS
+installing
+Building VM-EC2
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man1/migrate-ebs-image.pl.1
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Generic.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/BlockDevice.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ElasticAddress.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/KeyPair.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/AccountAttributes.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/AvailabilityZone.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/NetworkInterface.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Region.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ScalingPolicy.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservationSet.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Tag.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Dispatch.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Image.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ASG.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ParmParser.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ProductCode.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/SecurityGroup.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Snapshot.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/LaunchConfiguration.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Error.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/PlacementGroup.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Image/LaunchPermission.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Snapshot/CreateVolumePermission.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/EC2SecurityGroup.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Option.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/AvailabilityZone.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/CharacterSet.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/SecurityGroup.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Snapshot.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Event.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Endpoint.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/PendingModifiedValues.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Parameter.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Subnet.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/IPRange.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/VpcSecurityGroup/Membership.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Engine/Defaults.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Engine/Version.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Instance/OrderableOption.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Reserved/Instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Reserved/RecurringCharge.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Reserved/Instance/Offering.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Parameter/Group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Parameter/Group/Status.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/SecurityGroup/Membership.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Option/Group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Option/Group/Option.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Option/Group/Membership.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Option/Group/Option/Setting.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Subnet/Group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Event/Subscription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/DB/Event/Category.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Security/Token.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Security/Credentials.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Security/Policy.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Security/FederatedUser.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/RouteTable.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/PeeringConnection.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/VpnTunnelTelemetry.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/InternetGateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/VpnGateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/NetworkAcl.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/DhcpOptions.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/Route.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/VpnConnection.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/CustomerGateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/Subnet.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/PeeringConnection/VpcInfo.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/PeeringConnection/StateReason.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/RouteTable/Association.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/VpnGateway/Attachment.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/NetworkAcl/Association.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/NetworkAcl/Entry.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/VPC/InternetGateway/Attachment.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/InstanceState.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Attributes.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/PolicyTypeDescription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Policies.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Listener.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/PolicyDescription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/TagDescription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/BackendServerDescription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/HealthCheck.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/ParmParser.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/PolicyAttribute.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/PolicyAttributeType.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/ListenerDescription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Attributes/CrossZoneLoadBalancing.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Attributes/ConnectionDraining.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Attributes/AccessLog.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Attributes/ConnectionSettings.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Policies/LBCookieStickinessPolicy.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ELB/Policies/AppCookieStickinessPolicy.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/NetworkInterface/Attachment.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/NetworkInterface/Association.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/NetworkInterface/PrivateIpAddress.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/MonitoringState.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/ConsoleOutput.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Metadata.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/PasswordData.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/State.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/IamProfile.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Status.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Set.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Placement.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/StatusItem.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/State/Change.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/State/Reason.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Status/Details.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Instance/Status/Event.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Staging/Manager.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Staging/Server.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Staging/Volume.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Modification.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/ParmParser.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Listing.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Offering.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Listing/PriceSchedule.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Listing/InstanceCount.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Modification/Configuration.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/ReservedInstance/Modification/Result.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/BlockDevice/Attachment.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/BlockDevice/EBS.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/BlockDevice/Mapping.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/BlockDevice/Mapping/EBS.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/SecurityGroup/IpPermission.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/SecurityGroup/GroupPermission.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume/Status.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume/StatusItem.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume/Status/Details.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume/Status/Action.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Volume/Status/Event.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/private_ip.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/elastic_ip.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/elastic_network_interface.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/general.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/customer_gateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/tag.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/subnet.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/monitoring.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/vpn_gateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/internet_gateway.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/vm_export.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/placement_group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/devpay.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/dhcp.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/elastic_load_balancer.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/zone.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/keys.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/ebs.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/vpn.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/network_acl.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/ami.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/autoscaling.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/spot_instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/vpc.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/security_group.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/reserved_instance.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/relational_database_service.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/vm_import.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/security_token.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/route_table.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/REST/windows.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Spot/InstanceRequest.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Spot/DatafeedSubscription.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Spot/Status.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Spot/PriceHistory.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib/perl5/site_perl/5.32.0/VM/EC2/Spot/LaunchSpecification.pm
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::SecurityGroup::IpPermission.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Option::Group::Option.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::AccountAttributes.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ProductCode.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::State.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Listing::InstanceCount.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::LaunchConfiguration.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::SecurityGroup::Membership.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Generic.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Snapshot::CreateVolumePermission.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Error.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Modification::Configuration.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::security_group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::vm_export.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::PeeringConnection.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::VpnTunnelTelemetry.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::reserved_instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Spot::PriceHistory.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Region.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::State::Change.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::InstanceState.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Spot::Status.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Status.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::VpnConnection.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Policies.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Status::Details.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Endpoint.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::SecurityGroup.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Listener.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::ami.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::InternetGateway::Attachment.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Option::Group::Membership.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Listing::PriceSchedule.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::AvailabilityZone.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::devpay.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::monitoring.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Staging::Volume.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Attributes.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::network_acl.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::NetworkInterface::Attachment.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Attributes::AccessLog.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::EC2SecurityGroup.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::TagDescription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::KeyPair.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::StatusItem.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Dispatch.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Security::Token.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Spot::InstanceRequest.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Policies::AppCookieStickinessPolicy.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Image.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::autoscaling.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::customer_gateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Placement.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::BackendServerDescription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::NetworkAcl::Association.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Spot::DatafeedSubscription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::subnet.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::ConsoleOutput.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::PendingModifiedValues.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Engine::Defaults.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::keys.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Event.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Snapshot.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::CharacterSet.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Reserved::Instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::NetworkAcl::Entry.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::BlockDevice::Attachment.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::security_token.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ScalingPolicy.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::PolicyTypeDescription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::general.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::IPRange.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::vpc.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Subnet.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::ListenerDescription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::BlockDevice::Mapping::EBS.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Security::Credentials.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::BlockDevice::Mapping.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Metadata.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Reserved::RecurringCharge.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Security::FederatedUser.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ElasticAddress.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::placement_group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::vpn.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Reserved::Instance::Offering.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Listing.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::ParmParser.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::vm_import.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Snapshot.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Staging::Manager.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::DhcpOptions.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::Subnet.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::PeeringConnection::StateReason.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::private_ip.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::RouteTable.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::PeeringConnection::VpcInfo.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Modification::Result.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::SecurityGroup.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Image::LaunchPermission.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::elastic_ip.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::InternetGateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Set.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::PasswordData.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Modification.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Engine::Version.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Attributes::ConnectionSettings.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::BlockDevice.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::route_table.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::PolicyAttributeType.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Attributes::ConnectionDraining.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Policies::LBCookieStickinessPolicy.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ASG.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::PolicyAttribute.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Option.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::SecurityGroup::GroupPermission.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::spot_instance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::dhcp.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume::StatusItem.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::PolicyDescription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Event::Category.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::elastic_network_interface.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::HealthCheck.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::NetworkInterface::Association.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::NetworkInterface::PrivateIpAddress.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::internet_gateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::NetworkInterface.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::State::Reason.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ELB::Attributes::CrossZoneLoadBalancing.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::BlockDevice::EBS.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Option::Group::Option::Setting.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Option::Group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ParmParser.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::NetworkAcl.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Tag.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::IamProfile.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Staging::Server.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Spot::LaunchSpecification.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume::Status::Action.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::CustomerGateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::VpcSecurityGroup::Membership.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::AvailabilityZone.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::zone.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::RouteTable::Association.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::Status::Event.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Event::Subscription.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Instance::OrderableOption.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume::Status::Event.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::vpn_gateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::relational_database_service.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::ebs.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume::Status.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Subnet::Group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Parameter::Group::Status.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::windows.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::PlacementGroup.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Parameter::Group.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::tag.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservedInstance::Offering.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::Route.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::REST::elastic_load_balancer.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Volume::Status::Details.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::VpnGateway.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::DB::Parameter.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Instance::MonitoringState.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::VPC::VpnGateway::Attachment.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::ReservationSet.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3/VM::EC2::Security::Policy.3
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/bin/migrate-ebs-image.pl
+Installing /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/bin/sync_to_snapshot.pl
+post-installation fixup
+Moving /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/man3 to /nix/store/9vr1s72mfa68jzwmxrh4ibihvf15qwv5-perl5.32.0-VM-EC2-1.28-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28
+gzipping man pages under /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/lib  /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28/bin
+patching script interpreter paths in /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28
+checking for references to /build/ in /nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9vr1s72mfa68jzwmxrh4ibihvf15qwv5-perl5.32.0-VM-EC2-1.28-devdoc
+gzipping man pages under /nix/store/9vr1s72mfa68jzwmxrh4ibihvf15qwv5-perl5.32.0-VM-EC2-1.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9vr1s72mfa68jzwmxrh4ibihvf15qwv5-perl5.32.0-VM-EC2-1.28-devdoc
+checking for references to /build/ in /nix/store/9vr1s72mfa68jzwmxrh4ibihvf15qwv5-perl5.32.0-VM-EC2-1.28-devdoc...
+/nix/store/sysrm8hahcbjf1q87dri0x3wrf62gvqp-perl5.32.0-VM-EC2-1.28

@@ -1,0 +1,360 @@
+these derivations will be built:
+  /nix/store/85wfikj4xbmksydzzdqywkw0i8jg389d-perl5.32.0-Log-Log4perl-1.49.drv
+  /nix/store/6irarz6sib0mwlc2jqd6zx01ki7bv3ja-perl5.32.0-Archive-Tar-Wrapper-0.37.drv
+these paths will be fetched (0.30 MiB download, 0.30 MiB unpacked):
+  /nix/store/0xmf5f4838q8lxz12dnhznzg356s0sfm-Log-Log4perl-1.49.tar.gz
+  /nix/store/kqp96d0xcv9l31pgkz06qlqsrwwyjgki-Archive-Tar-Wrapper-0.37.tar.gz
+copying path '/nix/store/kqp96d0xcv9l31pgkz06qlqsrwwyjgki-Archive-Tar-Wrapper-0.37.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/0xmf5f4838q8lxz12dnhznzg356s0sfm-Log-Log4perl-1.49.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/85wfikj4xbmksydzzdqywkw0i8jg389d-perl5.32.0-Log-Log4perl-1.49.drv'...
+unpacking sources
+unpacking source archive /nix/store/0xmf5f4838q8lxz12dnhznzg356s0sfm-Log-Log4perl-1.49.tar.gz
+source root is Log-Log4perl-1.49
+setting SOURCE_DATE_EPOCH to timestamp 1487657952 of file Log-Log4perl-1.49/META.json
+patching sources
+configuring
+patching ./t/055AppDestroy.t...
+patching ./t/059Wrapper.t...
+patching ./t/042SyncApp.t...
+patching ./t/027Watch4.t...
+patching ./t/043VarSubst.t...
+patching ./t/003Layout-Rr.t...
+patching ./t/056SyncApp2.t...
+patching ./t/024WarnDieCarp.t...
+patching ./lib/Log/Log4perl/Layout/PatternLayout/Multiline.pm...
+patching ./eg/prototype...
+patching ./eg/override_appender...
+patching ./eg/benchmarks/simple...
+patching ./eg/l4p-tmpl...
+patching ./eg/5005it.pl...
+patching ./eg/syslog.pl...
+patching ./eg/newsyslog-test...
+patching ./eg/color...
+patching ./eg/yamlparser...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Log::Log4perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Log/Log4perl/Filter/MDC.pm blib/lib/Log/Log4perl/Filter/MDC.pm
+cp lib/Log/Log4perl/Appender/Limit.pm blib/lib/Log/Log4perl/Appender/Limit.pm
+cp lib/Log/Log4perl/Catalyst.pm blib/lib/Log/Log4perl/Catalyst.pm
+cp lib/Log/Log4perl.pm blib/lib/Log/Log4perl.pm
+cp lib/Log/Log4perl/Appender/Socket.pm blib/lib/Log/Log4perl/Appender/Socket.pm
+cp lib/Log/Log4perl/DateFormat.pm blib/lib/Log/Log4perl/DateFormat.pm
+cp lib/Log/Log4perl/Config/DOMConfigurator.pm blib/lib/Log/Log4perl/Config/DOMConfigurator.pm
+cp lib/Log/Log4perl/Appender/Synchronized.pm blib/lib/Log/Log4perl/Appender/Synchronized.pm
+cp lib/Log/Log4perl/Appender/ScreenColoredLevels.pm blib/lib/Log/Log4perl/Appender/ScreenColoredLevels.pm
+cp lib/Log/Log4perl/FAQ.pm blib/lib/Log/Log4perl/FAQ.pm
+cp lib/Log/Log4perl/Config/Watch.pm blib/lib/Log/Log4perl/Config/Watch.pm
+cp lib/Log/Log4perl/Filter/StringMatch.pm blib/lib/Log/Log4perl/Filter/StringMatch.pm
+cp lib/Log/Log4perl/Appender.pm blib/lib/Log/Log4perl/Appender.pm
+cp lib/Log/Log4perl/Config/PropertyConfigurator.pm blib/lib/Log/Log4perl/Config/PropertyConfigurator.pm
+cp lib/Log/Log4perl/Appender/TestFileCreeper.pm blib/lib/Log/Log4perl/Appender/TestFileCreeper.pm
+cp lib/Log/Log4perl/Filter/LevelRange.pm blib/lib/Log/Log4perl/Filter/LevelRange.pm
+cp lib/Log/Log4perl/Filter/Boolean.pm blib/lib/Log/Log4perl/Filter/Boolean.pm
+cp lib/Log/Log4perl/Config.pm blib/lib/Log/Log4perl/Config.pm
+cp lib/Log/Log4perl/InternalDebug.pm blib/lib/Log/Log4perl/InternalDebug.pm
+cp lib/Log/Log4perl/Appender/RRDs.pm blib/lib/Log/Log4perl/Appender/RRDs.pm
+cp lib/Log/Log4perl/Appender/String.pm blib/lib/Log/Log4perl/Appender/String.pm
+cp lib/Log/Log4perl/Appender/Screen.pm blib/lib/Log/Log4perl/Appender/Screen.pm
+cp lib/Log/Log4perl/Filter.pm blib/lib/Log/Log4perl/Filter.pm
+cp lib/Log/Log4perl/Filter/LevelMatch.pm blib/lib/Log/Log4perl/Filter/LevelMatch.pm
+cp lib/Log/Log4perl/Appender/TestBuffer.pm blib/lib/Log/Log4perl/Appender/TestBuffer.pm
+cp lib/Log/Log4perl/Appender/Buffer.pm blib/lib/Log/Log4perl/Appender/Buffer.pm
+cp lib/Log/Log4perl/Appender/File.pm blib/lib/Log/Log4perl/Appender/File.pm
+cp lib/Log/Log4perl/JavaMap.pm blib/lib/Log/Log4perl/JavaMap.pm
+cp lib/Log/Log4perl/Config/BaseConfigurator.pm blib/lib/Log/Log4perl/Config/BaseConfigurator.pm
+cp lib/Log/Log4perl/Appender/DBI.pm blib/lib/Log/Log4perl/Appender/DBI.pm
+cp lib/Log/Log4perl/Appender/TestArrayBuffer.pm blib/lib/Log/Log4perl/Appender/TestArrayBuffer.pm
+cp lib/Log/Log4perl/JavaMap/ConsoleAppender.pm blib/lib/Log/Log4perl/JavaMap/ConsoleAppender.pm
+cp lib/Log/Log4perl/JavaMap/TestBuffer.pm blib/lib/Log/Log4perl/JavaMap/TestBuffer.pm
+cp lib/Log/Log4perl/Resurrector.pm blib/lib/Log/Log4perl/Resurrector.pm
+cp lib/Log/Log4perl/Layout/SimpleLayout.pm blib/lib/Log/Log4perl/Layout/SimpleLayout.pm
+cp lib/Log/Log4perl/JavaMap/RollingFileAppender.pm blib/lib/Log/Log4perl/JavaMap/RollingFileAppender.pm
+cp lib/Log/Log4perl/Util/Semaphore.pm blib/lib/Log/Log4perl/Util/Semaphore.pm
+cp lib/Log/Log4perl/JavaMap/SyslogAppender.pm blib/lib/Log/Log4perl/JavaMap/SyslogAppender.pm
+cp lib/Log/Log4perl/MDC.pm blib/lib/Log/Log4perl/MDC.pm
+cp lib/Log/Log4perl/Layout.pm blib/lib/Log/Log4perl/Layout.pm
+cp lib/Log/Log4perl/Util.pm blib/lib/Log/Log4perl/Util.pm
+cp lib/Log/Log4perl/NDC.pm blib/lib/Log/Log4perl/NDC.pm
+cp lib/Log/Log4perl/Level.pm blib/lib/Log/Log4perl/Level.pm
+cp lib/Log/Log4perl/Util/TimeTracker.pm blib/lib/Log/Log4perl/Util/TimeTracker.pm
+cp lib/Log/Log4perl/Layout/PatternLayout/Multiline.pm blib/lib/Log/Log4perl/Layout/PatternLayout/Multiline.pm
+cp lib/Log/Log4perl/JavaMap/FileAppender.pm blib/lib/Log/Log4perl/JavaMap/FileAppender.pm
+cp lib/Log/Log4perl/Logger.pm blib/lib/Log/Log4perl/Logger.pm
+cp lib/Log/Log4perl/JavaMap/JDBCAppender.pm blib/lib/Log/Log4perl/JavaMap/JDBCAppender.pm
+cp lib/Log/Log4perl/Layout/NoopLayout.pm blib/lib/Log/Log4perl/Layout/NoopLayout.pm
+cp lib/Log/Log4perl/JavaMap/NTEventLogAppender.pm blib/lib/Log/Log4perl/JavaMap/NTEventLogAppender.pm
+cp lib/Log/Log4perl/Layout/PatternLayout.pm blib/lib/Log/Log4perl/Layout/PatternLayout.pm
+cp eg/l4p-tmpl blib/script/l4p-tmpl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/l4p-tmpl
+Manifying 1 pod document
+Manifying 28 pod documents
+Manifying 23 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001Level.t .............. ok
+t/002Logger.t ............. ok
+t/003Layout-Rr.t .......... ok
+t/003Layout.t ............. ok
+t/004Config.t ............. ok
+t/005Config-Perl.t ........ ok
+t/006Config-Java.t ........ skipped: only with Log::Dispatch
+t/007LogPrio.t ............ ok
+t/008ConfCat.t ............ ok
+t/009Deuce.t .............. ok
+t/010JConsole.t ........... skipped: only with Log::Dispatch
+t/011JFile.t .............. skipped: only with Log::Dispatch
+t/012Deeper.t ............. skipped: only with Log::Dispatch
+t/013Bench.t .............. ok
+t/014ConfErrs.t ........... ok
+t/015fltmsg.t ............. ok
+t/016Export.t ............. ok
+t/017Watch.t .............. ok
+t/018Init.t ............... ok
+t/019Warn.t ............... ok
+t/020Easy.t ............... ok
+t/020Easy2.t .............. ok
+t/021AppThres.t ........... ok
+t/022Wrap.t ............... ok
+t/023Date.t ............... ok
+t/024WarnDieCarp.t ........ ok
+t/025CustLevels.t ......... ok
+t/026FileApp.t ............ ok
+t/027Watch2.t ............. ok
+t/027Watch3.t ............. ok
+t/027Watch4.t ............. ok
+t/028Additivity.t ......... ok
+t/029SysWide.t ............ ok
+t/030LDLevel.t ............ ok
+t/031NDC.t ................ ok
+t/032JRollFile.t .......... skipped: only with Log::Dispatch::FileRotate 1.10
+t/033UsrCspec.t ........... ok
+t/034DBI.t ................ skipped: DBI 1.607 or DBD::CSV 0.33 or SQL::Statement 1.20 not installed, skipping tests
+t/035JDBCAppender.t ....... skipped: only with Log::Dispatch and DBD::CSV 0.33
+t/036JSyslog.t ............ ok
+t/037JWin32Event.t ........ skipped: only with Log::Dispatch::Win32EventLog
+t/038XML-DOM1.t ........... skipped: only with XML::DOM > 1.29
+t/039XML-DOM2.t ........... skipped: only with XML::DOM > 1.29
+t/040Filter.t ............. ok
+t/041SafeEval.t ........... ok
+t/042SyncApp.t ............ skipped: - only with L4P_ALL_TESTS
+t/043VarSubst.t ........... ok
+t/044XML-Filter.t ......... skipped: only with XML::DOM > 1.29
+t/045Composite.t .......... ok
+t/046RRDs.t ............... skipped: (RRDs not installed)
+t/048lwp.t ................ skipped: Only with 2.0 < LWP::UserAgent < 5.822
+t/049Unhide.t ............. ok
+t/050Buffer.t ............. ok
+t/051Extra.t .............. ok
+t/052Utf8.t ............... ok
+t/053Resurrect.t .......... ok
+t/054Subclass.t ........... ok
+t/055AppDestroy.t ......... ok
+t/056SyncApp2.t ........... skipped: - only with L4P_ALL_TESTS
+t/057MsgChomp.t ........... ok
+t/058Warnings.t ........... ok
+t/059Wrapper.t ............ ok
+t/060Initialized.t ........ ok
+t/061Multiline.t .......... ok
+t/062InitHash.t ........... ok
+t/063LoggerRemove.t ....... ok
+t/064RealClass.t .......... ok
+t/065Undef.t .............. ok
+t/066SQLite.t ............. skipped: DBI 1.607 not installed, skipping tests
+t/067Exception.t .......... ok
+t/068MultilineIndented.t .. ok
+t/069MoreMultiline.t ...... ok
+t/070UTCDate.t ............ ok
+All tests successful.
+Files=73, Tests=720, 30 wallclock secs ( 0.20 usr  0.06 sys +  4.68 cusr  0.62 csys =  5.56 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/pkgconfig m4datadir=/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/aclocal aclocaldir=/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/aclocal install
+Manifying 1 pod document
+Manifying 28 pod documents
+Manifying 23 pod documents
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Config.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/NDC.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Resurrector.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Catalyst.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Util.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/DateFormat.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/InternalDebug.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/FAQ.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Level.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/MDC.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Logger.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/FileAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/ConsoleAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/NTEventLogAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/SyslogAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/RollingFileAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/TestBuffer.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/JavaMap/JDBCAppender.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/Buffer.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/Socket.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/DBI.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/ScreenColoredLevels.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/Screen.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/File.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/RRDs.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/Synchronized.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/String.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/TestBuffer.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/TestArrayBuffer.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/TestFileCreeper.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Appender/Limit.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout/PatternLayout.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout/SimpleLayout.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout/NoopLayout.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout/PatternLayout/Multiline.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Config/DOMConfigurator.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Config/PropertyConfigurator.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Config/BaseConfigurator.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Config/Watch.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Util/Semaphore.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Util/TimeTracker.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter/LevelRange.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter/LevelMatch.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter/Boolean.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter/MDC.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Filter/StringMatch.pm
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man1/l4p-tmpl.1
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Layout::PatternLayout.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::ConsoleAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::Buffer.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter::StringMatch.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::RRDs.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::File.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Config.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Catalyst.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::MDC.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Layout::NoopLayout.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::RollingFileAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Util::TimeTracker.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Level.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::Limit.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Util.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Util::Semaphore.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter::LevelMatch.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::JDBCAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::TestFileCreeper.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter::LevelRange.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::Synchronized.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::String.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::TestBuffer.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::ScreenColoredLevels.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::NTEventLogAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Config::DOMConfigurator.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::DateFormat.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Layout::SimpleLayout.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::NDC.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::InternalDebug.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter::MDC.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Config::PropertyConfigurator.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::TestBuffer.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::DBI.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Layout.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Logger.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::TestArrayBuffer.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Filter::Boolean.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::FileAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Resurrector.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::Screen.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::JavaMap::SyslogAppender.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Layout::PatternLayout::Multiline.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Appender::Socket.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Config::BaseConfigurator.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::FAQ.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3/Log::Log4perl::Config::Watch.3
+Installing /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/bin/l4p-tmpl
+Appending installation info to /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/man3 to /nix/store/zcd5l8lhl5fms19kjf8vksxx2yj68yk1-perl5.32.0-Log-Log4perl-1.49-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49
+gzipping man pages under /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib  /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/bin
+patching script interpreter paths in /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49
+/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl/5.32.0/Log/Log4perl/Layout/PatternLayout/Multiline.pm: interpreter directive changed from "/usr/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/w50jb7qslw7yix439lkl2jbgfsl3vjfg-perl5.32.0-Log-Log4perl-1.49...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zcd5l8lhl5fms19kjf8vksxx2yj68yk1-perl5.32.0-Log-Log4perl-1.49-devdoc
+gzipping man pages under /nix/store/zcd5l8lhl5fms19kjf8vksxx2yj68yk1-perl5.32.0-Log-Log4perl-1.49-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zcd5l8lhl5fms19kjf8vksxx2yj68yk1-perl5.32.0-Log-Log4perl-1.49-devdoc
+checking for references to /build/ in /nix/store/zcd5l8lhl5fms19kjf8vksxx2yj68yk1-perl5.32.0-Log-Log4perl-1.49-devdoc...
+building '/nix/store/6irarz6sib0mwlc2jqd6zx01ki7bv3ja-perl5.32.0-Archive-Tar-Wrapper-0.37.drv'...
+unpacking sources
+unpacking source archive /nix/store/kqp96d0xcv9l31pgkz06qlqsrwwyjgki-Archive-Tar-Wrapper-0.37.tar.gz
+source root is Archive-Tar-Wrapper-0.37
+setting SOURCE_DATE_EPOCH to timestamp 1566620115 of file Archive-Tar-Wrapper-0.37/META.yml
+patching sources
+configuring
+patching ./eg/tarflat...
+Checking if your kit is complete...
+Looks good
+Warning: Guessing NAME [Archive-Tar-Wrapper] from current directory name.
+Warning: NAME must be a package name
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Archive::Tar::Wrapper
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Archive/Tar/Wrapper.pm blib/lib/Archive/Tar/Wrapper.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001Basic.t ....... ok
+t/002Mult.t ........ ok
+t/003Dirs.t ........ ok
+t/004Utf8.t ........ ok
+t/005Cwd.t ......... ok
+t/006DirPerms.t .... ok
+t/007bzip.t ........ ok
+t/009compressed.t .. ok
+t/010openbsd.t ..... ok
+t/011remdots.t ..... ok
+t/012tarinfo.t ..... ok
+All tests successful.
+Files=11, Tests=83,  2 wallclock secs ( 0.05 usr  0.01 sys +  1.25 cusr  0.36 csys =  1.67 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/lib/pkgconfig m4datadir=/nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/share/aclocal aclocaldir=/nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/lib/perl5/site_perl/5.32.0/Archive/Tar/Wrapper.pm
+Installing /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/share/man/man3/Archive::Tar::Wrapper.3
+Appending installation info to /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/share/man/man3 to /nix/store/kx7my1nnf7q7wqj02dxrgyp7yy7hcnxx-perl5.32.0-Archive-Tar-Wrapper-0.37-devdoc/share/man/man3
+Removing empty /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37/lib
+patching script interpreter paths in /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37
+checking for references to /build/ in /nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kx7my1nnf7q7wqj02dxrgyp7yy7hcnxx-perl5.32.0-Archive-Tar-Wrapper-0.37-devdoc
+gzipping man pages under /nix/store/kx7my1nnf7q7wqj02dxrgyp7yy7hcnxx-perl5.32.0-Archive-Tar-Wrapper-0.37-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kx7my1nnf7q7wqj02dxrgyp7yy7hcnxx-perl5.32.0-Archive-Tar-Wrapper-0.37-devdoc
+checking for references to /build/ in /nix/store/kx7my1nnf7q7wqj02dxrgyp7yy7hcnxx-perl5.32.0-Archive-Tar-Wrapper-0.37-devdoc...
+/nix/store/sf74ls21awnkvk3sl2y0vrdkr0ryprss-perl5.32.0-Archive-Tar-Wrapper-0.37

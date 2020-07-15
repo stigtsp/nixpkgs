@@ -1,0 +1,100 @@
+these derivations will be built:
+  /nix/store/sdk70jb1r8hqh9bw6lqa9ry0a3dhrh44-perl5.32.0-Pod-Perldoc-3.28.drv
+these paths will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/wp5hrsczdl56imiksjdgwsay6x3z822a-Pod-Perldoc-3.28.tar.gz
+copying path '/nix/store/wp5hrsczdl56imiksjdgwsay6x3z822a-Pod-Perldoc-3.28.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sdk70jb1r8hqh9bw6lqa9ry0a3dhrh44-perl5.32.0-Pod-Perldoc-3.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/wp5hrsczdl56imiksjdgwsay6x3z822a-Pod-Perldoc-3.28.tar.gz
+source root is Pod-Perldoc-3.28
+setting SOURCE_DATE_EPOCH to timestamp 1489626690 of file Pod-Perldoc-3.28/META.yml
+patching sources
+configuring
+patching ./perldoc...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Perldoc
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/Perldoc/ToChecker.pm blib/lib/Pod/Perldoc/ToChecker.pm
+cp lib/Pod/Perldoc/ToNroff.pm blib/lib/Pod/Perldoc/ToNroff.pm
+cp lib/Pod/Perldoc/ToText.pm blib/lib/Pod/Perldoc/ToText.pm
+cp lib/Pod/Perldoc/ToANSI.pm blib/lib/Pod/Perldoc/ToANSI.pm
+cp lib/Pod/Perldoc/ToMan.pm blib/lib/Pod/Perldoc/ToMan.pm
+cp lib/Pod/Perldoc.pm blib/lib/Pod/Perldoc.pm
+cp lib/Pod/Perldoc/ToPod.pm blib/lib/Pod/Perldoc/ToPod.pm
+cp lib/Pod/Perldoc/ToXml.pm blib/lib/Pod/Perldoc/ToXml.pm
+cp lib/Pod/Perldoc/BaseTo.pm blib/lib/Pod/Perldoc/BaseTo.pm
+cp perldoc.pod blib/lib/perldoc.pod
+cp lib/Pod/Perldoc/ToRtf.pm blib/lib/Pod/Perldoc/ToRtf.pm
+cp lib/Pod/Perldoc/ToTk.pm blib/lib/Pod/Perldoc/ToTk.pm
+cp lib/Pod/Perldoc/ToTerm.pm blib/lib/Pod/Perldoc/ToTerm.pm
+cp lib/Pod/Perldoc/GetOptsOO.pm blib/lib/Pod/Perldoc/GetOptsOO.pm
+cp perldoc blib/script/perldoc
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perldoc
+Manifying 1 pod document
+Manifying 14 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/00_load.t ............... ok
+t/01_about_verbose.t ...... ok
+t/02_module_pod_output.t .. ok
+t/man/_get_columns.t ...... ok
+t/pod.t ................... skipped: Pod tests not required for installation.
+All tests successful.
+Files=5, Tests=56,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.34 cusr  0.05 csys =  0.41 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/pkgconfig m4datadir=/nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/aclocal aclocaldir=/nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/aclocal install
+Manifying 1 pod document
+Manifying 14 pod documents
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/perldoc.pod
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToTk.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToText.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToMan.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToChecker.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToPod.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToNroff.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/BaseTo.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToRtf.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToANSI.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToTerm.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToXml.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/site_perl/5.32.0/Pod/Perldoc/GetOptsOO.pm
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man1/perldoc.1
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::perldoc.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToTk.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToANSI.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToChecker.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToXml.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToNroff.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToTerm.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::BaseTo.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToPod.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::GetOptsOO.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToMan.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToRtf.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3/Pod::Perldoc::ToText.3
+Installing /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/bin/perldoc
+Appending installation info to /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/man3 to /nix/store/r85x773l8dja14rhr30mrk3n78w7kr4x-perl5.32.0-Pod-Perldoc-3.28-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28
+gzipping man pages under /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/lib  /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28/bin
+patching script interpreter paths in /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28
+checking for references to /build/ in /nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r85x773l8dja14rhr30mrk3n78w7kr4x-perl5.32.0-Pod-Perldoc-3.28-devdoc
+gzipping man pages under /nix/store/r85x773l8dja14rhr30mrk3n78w7kr4x-perl5.32.0-Pod-Perldoc-3.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r85x773l8dja14rhr30mrk3n78w7kr4x-perl5.32.0-Pod-Perldoc-3.28-devdoc
+checking for references to /build/ in /nix/store/r85x773l8dja14rhr30mrk3n78w7kr4x-perl5.32.0-Pod-Perldoc-3.28-devdoc...
+/nix/store/a4jh4pd8y47qiii6isi52n9vb7355hbc-perl5.32.0-Pod-Perldoc-3.28

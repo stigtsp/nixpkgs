@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/5q41l5lvm7qy1swkb540zlpw6xbazfy3-perl5.32.0-Plack-Middleware-Header-0.04.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/lhyjllkw0vrmi9rqfmwkh82d31v7k3vg-Plack-Middleware-Header-0.04.tar.gz
+copying path '/nix/store/lhyjllkw0vrmi9rqfmwkh82d31v7k3vg-Plack-Middleware-Header-0.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/5q41l5lvm7qy1swkb540zlpw6xbazfy3-perl5.32.0-Plack-Middleware-Header-0.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/lhyjllkw0vrmi9rqfmwkh82d31v7k3vg-Plack-Middleware-Header-0.04.tar.gz
+source root is Plack-Middleware-Header-0.04
+setting SOURCE_DATE_EPOCH to timestamp 1284014518 of file Plack-Middleware-Header-0.04/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Plack::Middleware::Header
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Plack/Middleware/Header.pm blib/lib/Plack/Middleware/Header.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t ........... Possible precedence issue with control flow operator at /build/Plack-Middleware-Header-0.04/inc/Test/Builder.pm line 915.
+t/00_compile.t ........... ok
+t/01_basic.t ............. Possible precedence issue with control flow operator at /build/Plack-Middleware-Header-0.04/inc/Test/Builder.pm line 915.
+t/01_basic.t ............. ok
+t/02_delayed_response.t .. Possible precedence issue with control flow operator at /build/Plack-Middleware-Header-0.04/inc/Test/Builder.pm line 915.
+t/02_delayed_response.t .. ok
+All tests successful.
+Files=3, Tests=7,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.15 cusr  0.09 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/lib/pkgconfig m4datadir=/nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/share/aclocal aclocaldir=/nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/lib/perl5/site_perl/5.32.0/Plack/Middleware/Header.pm
+Installing /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/share/man/man3/Plack::Middleware::Header.3
+Appending installation info to /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/share/man/man3 to /nix/store/q37fxjvvgfpi7wca2qz9cy1avbfpqv4r-perl5.32.0-Plack-Middleware-Header-0.04-devdoc/share/man/man3
+Removing empty /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04/lib
+patching script interpreter paths in /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04
+checking for references to /build/ in /nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q37fxjvvgfpi7wca2qz9cy1avbfpqv4r-perl5.32.0-Plack-Middleware-Header-0.04-devdoc
+gzipping man pages under /nix/store/q37fxjvvgfpi7wca2qz9cy1avbfpqv4r-perl5.32.0-Plack-Middleware-Header-0.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q37fxjvvgfpi7wca2qz9cy1avbfpqv4r-perl5.32.0-Plack-Middleware-Header-0.04-devdoc
+checking for references to /build/ in /nix/store/q37fxjvvgfpi7wca2qz9cy1avbfpqv4r-perl5.32.0-Plack-Middleware-Header-0.04-devdoc...
+/nix/store/3z1r0yazhcqpm6ib2pk8gr4gn9kycc01-perl5.32.0-Plack-Middleware-Header-0.04

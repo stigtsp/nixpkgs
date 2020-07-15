@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/mi9zj6y6zqfkxk4ybg5rpmh4257p3ada-perl5.32.0-Tie-Hash-Indexed-0.05.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/bpy3imgb8rz2v5ix5fy4i43dyd62mcaj-Tie-Hash-Indexed-0.05.tar.gz
+copying path '/nix/store/bpy3imgb8rz2v5ix5fy4i43dyd62mcaj-Tie-Hash-Indexed-0.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mi9zj6y6zqfkxk4ybg5rpmh4257p3ada-perl5.32.0-Tie-Hash-Indexed-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/bpy3imgb8rz2v5ix5fy4i43dyd62mcaj-Tie-Hash-Indexed-0.05.tar.gz
+source root is Tie-Hash-Indexed-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1187961547 of file Tie-Hash-Indexed-0.05/META.yml
+patching sources
+configuring
+Setting license tag...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Tie::Hash::Indexed
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Tie/Hash/Indexed.pm blib/lib/Tie/Hash/Indexed.pm
+Running Mkbootstrap for Indexed ()
+chmod 644 "Indexed.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Indexed.bs blib/arch/auto/Tie/Hash/Indexed/Indexed.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Tie-Hash-Indexed-0.05/typemap'  Indexed.xs > Indexed.xsc
+mv Indexed.xsc Indexed.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.05\" -DXS_VERSION=\"0.05\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG Indexed.c
+Indexed.xs: In function 'XS_Tie__Hash__Indexed_STORABLE_thaw':
+Indexed.xs:621:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+  621 |     Perl_croak(aTHX_ "invalid frozen "
+      |                      ^~~~~~~~~~~~~~~~~
+  622 |                      XSCLASS " object (len=%d)", len);
+      |                                                  ~~~
+      |                                                  |
+      |                                                  STRLEN {aka long unsigned int}
+rm -f blib/arch/auto/Tie/Hash/Indexed/Indexed.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Indexed.o  -o blib/arch/auto/Tie/Hash/Indexed/Indexed.so  \
+      \
+
+chmod 755 blib/arch/auto/Tie/Hash/Indexed/Indexed.so
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib/pkgconfig m4datadir=/nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/share/aclocal aclocaldir=/nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Indexed.bs blib/arch/auto/Tie/Hash/Indexed/Indexed.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Tie/Hash/Indexed/Indexed.so
+Installing /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Tie/Hash/Indexed.pm
+Installing /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/share/man/man3/Tie::Hash::Indexed.3
+Appending installation info to /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/share/man/man3 to /nix/store/qrpmfp8p0gxgf97xfnfyvd7gclr4znlv-perl5.32.0-Tie-Hash-Indexed-0.05-devdoc/share/man/man3
+Removing empty /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05
+shrinking /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Tie/Hash/Indexed/Indexed.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05/lib
+patching script interpreter paths in /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05
+checking for references to /build/ in /nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qrpmfp8p0gxgf97xfnfyvd7gclr4znlv-perl5.32.0-Tie-Hash-Indexed-0.05-devdoc
+gzipping man pages under /nix/store/qrpmfp8p0gxgf97xfnfyvd7gclr4znlv-perl5.32.0-Tie-Hash-Indexed-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qrpmfp8p0gxgf97xfnfyvd7gclr4znlv-perl5.32.0-Tie-Hash-Indexed-0.05-devdoc
+checking for references to /build/ in /nix/store/qrpmfp8p0gxgf97xfnfyvd7gclr4znlv-perl5.32.0-Tie-Hash-Indexed-0.05-devdoc...
+/nix/store/hg8kk3nvj0sfvfpc7hngf7l9j8qr9jal-perl5.32.0-Tie-Hash-Indexed-0.05

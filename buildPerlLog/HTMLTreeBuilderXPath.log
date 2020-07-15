@@ -1,0 +1,130 @@
+these derivations will be built:
+  /nix/store/p2gsjqfv84av110lq5r4fxqf1y6zs7k3-perl5.32.0-XML-XPathEngine-0.14.drv
+  /nix/store/fw0vjif09wrwv3cmqjlha9c51p2x3089-perl5.32.0-HTML-TreeBuilder-XPath-0.14.drv
+building '/nix/store/p2gsjqfv84av110lq5r4fxqf1y6zs7k3-perl5.32.0-XML-XPathEngine-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/q1mi15r600fk32hk02wg2njk06wrl87y-XML-XPathEngine-0.14.tar.gz
+source root is XML-XPathEngine-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1368432375 of file XML-XPathEngine-0.14/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+patching ./t/minidom.pm...
+patching ./t/01_basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::XPathEngine
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/XPathEngine/LocationPath.pm blib/lib/XML/XPathEngine/LocationPath.pm
+cp lib/XML/XPathEngine.pm blib/lib/XML/XPathEngine.pm
+cp lib/XML/XPathEngine/Boolean.pm blib/lib/XML/XPathEngine/Boolean.pm
+cp lib/XML/XPathEngine/Root.pm blib/lib/XML/XPathEngine/Root.pm
+cp lib/XML/XPathEngine/Function.pm blib/lib/XML/XPathEngine/Function.pm
+cp lib/XML/XPathEngine/Expr.pm blib/lib/XML/XPathEngine/Expr.pm
+cp lib/XML/XPathEngine/Number.pm blib/lib/XML/XPathEngine/Number.pm
+cp lib/XML/XPathEngine/NodeSet.pm blib/lib/XML/XPathEngine/NodeSet.pm
+cp lib/XML/XPathEngine/Step.pm blib/lib/XML/XPathEngine/Step.pm
+cp lib/XML/XPathEngine/Variable.pm blib/lib/XML/XPathEngine/Variable.pm
+cp lib/XML/XPathEngine/Literal.pm blib/lib/XML/XPathEngine/Literal.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ....... 1/1 # Testing XML::XPathEngine 0.14, Perl 5.032000, /usr/bin/perl
+t/00-load.t ....... ok
+t/01_basic.t ...... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=4, Tests=39,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.04 csys =  0.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/pkgconfig m4datadir=/nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/aclocal aclocaldir=/nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Function.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Literal.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Boolean.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/NodeSet.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Expr.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Variable.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Root.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/LocationPath.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Step.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/site_perl/5.32.0/XML/XPathEngine/Number.pm
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3/XML::XPathEngine::NodeSet.3
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3/XML::XPathEngine::Number.3
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3/XML::XPathEngine::Literal.3
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3/XML::XPathEngine.3
+Installing /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3/XML::XPathEngine::Boolean.3
+Appending installation info to /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/man3 to /nix/store/czx4mby7zhwfksqa41m8val768l1i417-perl5.32.0-XML-XPathEngine-0.14-devdoc/share/man/man3
+Removing empty /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14/lib
+patching script interpreter paths in /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14
+checking for references to /build/ in /nix/store/xa1dh3zd94p1sf8b1rfaavc8197q2kjl-perl5.32.0-XML-XPathEngine-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/czx4mby7zhwfksqa41m8val768l1i417-perl5.32.0-XML-XPathEngine-0.14-devdoc
+gzipping man pages under /nix/store/czx4mby7zhwfksqa41m8val768l1i417-perl5.32.0-XML-XPathEngine-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/czx4mby7zhwfksqa41m8val768l1i417-perl5.32.0-XML-XPathEngine-0.14-devdoc
+checking for references to /build/ in /nix/store/czx4mby7zhwfksqa41m8val768l1i417-perl5.32.0-XML-XPathEngine-0.14-devdoc...
+building '/nix/store/fw0vjif09wrwv3cmqjlha9c51p2x3089-perl5.32.0-HTML-TreeBuilder-XPath-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/k6vbx80pdvivzbja46xflpkghnm7rhnp-HTML-TreeBuilder-XPath-0.14.tar.gz
+source root is HTML-TreeBuilder-XPath-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1316482587 of file HTML-TreeBuilder-XPath-0.14/META.yml
+patching sources
+configuring
+patching ./t/test_following.t...
+patching ./t/test_preceding.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::TreeBuilder::XPath
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/TreeBuilder/XPath.pm blib/lib/HTML/TreeBuilder/XPath.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/HTML-TreeBuilder-XPath.t .. ok
+t/pod.t ..................... skipping, Test::Pod required
+t/pod.t ..................... ok
+t/pod_coverage.t ............ 1/1 Test::Pod::Coverage 1.00 required for testing POD coverage at t/pod_coverage.t line 6.
+t/pod_coverage.t ............ ok
+t/test_following.t .......... ok
+t/test_preceding.t .......... ok
+All tests successful.
+Files=5, Tests=81,  1 wallclock secs ( 0.04 usr  0.00 sys +  0.33 cusr  0.07 csys =  0.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/lib/pkgconfig m4datadir=/nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/share/aclocal aclocaldir=/nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/lib/perl5/site_perl/5.32.0/HTML/TreeBuilder/XPath.pm
+Installing /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/share/man/man3/HTML::TreeBuilder::XPath.3
+Appending installation info to /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/share/man/man3 to /nix/store/ba8a85s8c0nazzsr3i1q7naf1954lhw1-perl5.32.0-HTML-TreeBuilder-XPath-0.14-devdoc/share/man/man3
+Removing empty /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14/lib
+patching script interpreter paths in /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14
+checking for references to /build/ in /nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ba8a85s8c0nazzsr3i1q7naf1954lhw1-perl5.32.0-HTML-TreeBuilder-XPath-0.14-devdoc
+gzipping man pages under /nix/store/ba8a85s8c0nazzsr3i1q7naf1954lhw1-perl5.32.0-HTML-TreeBuilder-XPath-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ba8a85s8c0nazzsr3i1q7naf1954lhw1-perl5.32.0-HTML-TreeBuilder-XPath-0.14-devdoc
+checking for references to /build/ in /nix/store/ba8a85s8c0nazzsr3i1q7naf1954lhw1-perl5.32.0-HTML-TreeBuilder-XPath-0.14-devdoc...
+/nix/store/zh5n0b41nbhjmxnhyx7vn1a7d7kkkxc2-perl5.32.0-HTML-TreeBuilder-XPath-0.14

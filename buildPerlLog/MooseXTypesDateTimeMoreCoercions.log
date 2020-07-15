@@ -1,0 +1,105 @@
+these derivations will be built:
+  /nix/store/aq902mzpvsw4mv6w0fwf33vry0za7dm4-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/i6772cfvz6ajsafpvl45aj8j0aaxk474-MooseX-Types-DateTime-MoreCoercions-0.15.tar.gz
+copying path '/nix/store/i6772cfvz6ajsafpvl45aj8j0aaxk474-MooseX-Types-DateTime-MoreCoercions-0.15.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/aq902mzpvsw4mv6w0fwf33vry0za7dm4-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15.drv'...
+unpacking sources
+unpacking source archive /nix/store/i6772cfvz6ajsafpvl45aj8j0aaxk474-MooseX-Types-DateTime-MoreCoercions-0.15.tar.gz
+source root is MooseX-Types-DateTime-MoreCoercions-0.15
+setting SOURCE_DATE_EPOCH to timestamp 1439687599 of file MooseX-Types-DateTime-MoreCoercions-0.15/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./t/00-report-prereqs.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Types::DateTime::MoreCoercions
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Types-DateTime-MoreCoercions' version '0.15'
+cp lib/MooseX/Types/DateTime/MoreCoercions.pm blib/lib/MooseX/Types/DateTime/MoreCoercions.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.007 0.039
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::Fatal          any    0.014
+#     Test::More          0.88 1.302175
+#     ok                   any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                    Want   Have
+#     ----------------------- ------ ------
+#     DateTime                0.4302   1.52
+#     DateTime::Duration      0.4302   1.52
+#     DateTimeX::Easy          0.085  0.089
+#     Moose                     0.41 2.2012
+#     MooseX::Types             0.04   0.50
+#     MooseX::Types::DateTime   0.07   0.13
+#     MooseX::Types::Moose      0.04   0.50
+#     Time::Duration::Parse     0.06   0.15
+#     if                         any 0.0608
+#     namespace::clean          0.19   0.27
+#     strict                     any   1.11
+#     warnings                   any   1.47
+#
+# === Other Modules ===
+#
+#     Module                  Have
+#     -------------------- -------
+#     Dist::CheckConflicts    0.11
+#     Pod::Coverage        missing
+#
+t/00-report-prereqs.t .. ok
+t/01_basic.t ........... ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=3, Tests=31,  2 wallclock secs ( 0.07 usr  0.06 sys +  1.35 cusr  0.76 csys =  2.24 CPU)
+Result: PASS
+installing
+Installing /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15/lib/perl5/site_perl/5.32.0/MooseX/Types/DateTime/MoreCoercions.pm
+Installing /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15/share/man/man3/MooseX::Types::DateTime::MoreCoercions.3
+post-installation fixup
+Moving /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15/share/man/man3 to /nix/store/z7dfy0fix3xw0l3ad95bnjvjgb3qhgmf-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15-devdoc/share/man/man3
+Removing empty /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15/lib
+patching script interpreter paths in /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15
+checking for references to /build/ in /nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z7dfy0fix3xw0l3ad95bnjvjgb3qhgmf-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15-devdoc
+gzipping man pages under /nix/store/z7dfy0fix3xw0l3ad95bnjvjgb3qhgmf-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z7dfy0fix3xw0l3ad95bnjvjgb3qhgmf-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15-devdoc
+checking for references to /build/ in /nix/store/z7dfy0fix3xw0l3ad95bnjvjgb3qhgmf-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15-devdoc...
+/nix/store/r43asmh992iqx3dr8jh3xqp61h9ajj14-perl5.32.0-MooseX-Types-DateTime-MoreCoercions-0.15

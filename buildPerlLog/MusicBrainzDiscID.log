@@ -1,0 +1,175 @@
+these derivations will be built:
+  /nix/store/a2h03p94y79li52qlp3pdvw0n1dv9az2-libdiscid-0.6.2.drv
+  /nix/store/lchm1s8p3g1xzvbmkjdzv30fpssi5gs4-perl5.32.0-MusicBrainz-DiscID-0.03.drv
+these paths will be fetched (0.39 MiB download, 0.39 MiB unpacked):
+  /nix/store/md5anhajrwbgdpl7h4shm1n5bqad34sy-MusicBrainz-DiscID-0.03.tar.gz
+  /nix/store/xqlvpl0l2rlbpfqg6mvlps8rnbifvbb5-libdiscid-0.6.2.tar.gz
+copying path '/nix/store/md5anhajrwbgdpl7h4shm1n5bqad34sy-MusicBrainz-DiscID-0.03.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/xqlvpl0l2rlbpfqg6mvlps8rnbifvbb5-libdiscid-0.6.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/a2h03p94y79li52qlp3pdvw0n1dv9az2-libdiscid-0.6.2.drv'...
+unpacking sources
+unpacking source archive /nix/store/xqlvpl0l2rlbpfqg6mvlps8rnbifvbb5-libdiscid-0.6.2.tar.gz
+source root is libdiscid-0.6.2
+setting SOURCE_DATE_EPOCH to timestamp 1485694143 of file libdiscid-0.6.2/versioninfo.rc
+patching sources
+configuring
+fixing cmake files...
+cmake flags: -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_SKIP_BUILD_RPATH=ON -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/share/doc/ -DCMAKE_INSTALL_INFODIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include -DCMAKE_INSTALL_SBINDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_FIND_FRAMEWORK=last -DCMAKE_STRIP=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip -DCMAKE_RANLIB=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/ranlib -DCMAKE_AR=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2
+-- The C compiler identification is GNU 9.3.0
+-- Check for working C compiler: /nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin/gcc
+-- Check for working C compiler: /nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin/gcc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Using discid implementation src/toc.c src/unix.c src/disc_linux.c
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Searching 16 bit integer - Using unsigned short
+-- Check if the system is big endian - little endian
+-- Check size of long
+-- Check size of long - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_CXX_COMPILER
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DOCDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_INFODIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_LOCALEDIR
+    CMAKE_INSTALL_MANDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /build/libdiscid-0.6.2/build
+cmake: enabled parallel building
+building
+build flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Scanning dependencies of target libdiscid
+[  9%] Building C object CMakeFiles/libdiscid.dir/src/disc_linux.c.o
+[ 18%] Building C object CMakeFiles/libdiscid.dir/src/toc.c.o
+[ 27%] Building C object CMakeFiles/libdiscid.dir/src/unix.c.o
+[ 36%] Building C object CMakeFiles/libdiscid.dir/src/base64.c.o
+[ 45%] Building C object CMakeFiles/libdiscid.dir/src/disc.c.o
+[ 54%] Building C object CMakeFiles/libdiscid.dir/src/sha1.c.o
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from /build/libdiscid-0.6.2/src/disc_linux.c:27:
+In function 'strncpy',
+    inlined from 'mb_disc_unix_read_mcn' at /build/libdiscid-0.6.2/src/disc_linux.c:167:3:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 13 bytes from a string of length 13 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'mb_disc_unix_read_isrc' at /build/libdiscid-0.6.2/src/disc_linux.c:239:3:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 12 bytes from a string of length 12 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 63%] Linking C shared library libdiscid.so
+[ 63%] Built target libdiscid
+Scanning dependencies of target discid
+Scanning dependencies of target discisrc
+[ 81%] Building C object CMakeFiles/discid.dir/examples/discid.c.o
+[ 81%] Building C object CMakeFiles/discisrc.dir/examples/discisrc.c.o
+[ 90%] Linking C executable discisrc
+[100%] Linking C executable discid
+[100%] Built target discisrc
+[100%] Built target discid
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+[ 63%] Built target libdiscid
+[ 81%] Built target discid
+[100%] Built target discisrc
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib/libdiscid.so.0.6.2
+-- Installing: /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib/libdiscid.so.0
+-- Installing: /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib/libdiscid.so
+-- Installing: /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib/pkgconfig/libdiscid.pc
+-- Installing: /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include/discid/discid.h
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2
+shrinking /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib/libdiscid.so.0.6.2
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib
+patching script interpreter paths in /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2
+checking for references to /build/ in /nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2...
+building '/nix/store/lchm1s8p3g1xzvbmkjdzv30fpssi5gs4-perl5.32.0-MusicBrainz-DiscID-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/md5anhajrwbgdpl7h4shm1n5bqad34sy-MusicBrainz-DiscID-0.03.tar.gz
+source root is MusicBrainz-DiscID-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1253740366 of file MusicBrainz-DiscID-0.03/t/10discid.t
+patching sources
+configuring
+patching ./Build.PLe...
+patching ./examples/discid.pl...
+patching ./t/10discid.t...
+patching ./t/05pod.t...
+patching ./t/00use.t...
+patching ./Build.PL...
+no configure script, doing nothing
+building
+Found pkg-config version 0.29.2.
+Found libdiscid library version 0.6.2.
+ LIBDISCID_CFLAGS = -I/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include
+ LIBDISCID_LIBS = -L/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib -ldiscid
+Checking prerequisites...
+  recommends:
+    *  Test::Pod is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'MusicBrainz-DiscID' version '0.03'
+Building MusicBrainz-DiscID
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.03" -DXS_VERSION="0.03" -fPIC -I/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/MusicBrainz/DiscID.o lib/MusicBrainz/DiscID.c
+lib/MusicBrainz/DiscID.c: In function 'XS_MusicBrainz__DiscID_discid_get_webservice_url':
+lib/MusicBrainz/DiscID.c:399:2: warning: 'discid_get_webservice_url' is deprecated [-Wdeprecated-declarations]
+  399 |  RETVAL = discid_get_webservice_url(disc);
+      |  ^~~~~~
+In file included from lib/MusicBrainz/DiscID.xs:13:
+/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/include/discid/discid.h:324:42: note: declared here
+  324 | LIBDISCID_API LIBDISCID_DEPRECATED char *discid_get_webservice_url(DiscId *d);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/MusicBrainz/DiscID/DiscID.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/MusicBrainz/DiscID/DiscID.so lib/MusicBrainz/DiscID.o -L/nix/store/rbfqxrljsv51apwxcqszxvlc125spy9m-libdiscid-0.6.2/lib -ldiscid
+installing
+Building MusicBrainz-DiscID
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MusicBrainz/DiscID/DiscID.bs
+Installing /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MusicBrainz/DiscID/DiscID.so
+Installing /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MusicBrainz/DiscID.pm
+Installing /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/share/man/man3/MusicBrainz::DiscID.3
+post-installation fixup
+Moving /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/share/man/man3 to /nix/store/6k7knyjsxbfk4f5zlp2xixbgb2735zmg-perl5.32.0-MusicBrainz-DiscID-0.03-devdoc/share/man/man3
+Removing empty /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03
+shrinking /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MusicBrainz/DiscID/DiscID.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03/lib
+patching script interpreter paths in /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03
+checking for references to /build/ in /nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6k7knyjsxbfk4f5zlp2xixbgb2735zmg-perl5.32.0-MusicBrainz-DiscID-0.03-devdoc
+gzipping man pages under /nix/store/6k7knyjsxbfk4f5zlp2xixbgb2735zmg-perl5.32.0-MusicBrainz-DiscID-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6k7knyjsxbfk4f5zlp2xixbgb2735zmg-perl5.32.0-MusicBrainz-DiscID-0.03-devdoc
+checking for references to /build/ in /nix/store/6k7knyjsxbfk4f5zlp2xixbgb2735zmg-perl5.32.0-MusicBrainz-DiscID-0.03-devdoc...
+/nix/store/akamfcf1mpp8j5qlqgm4sr260q5b6kny-perl5.32.0-MusicBrainz-DiscID-0.03

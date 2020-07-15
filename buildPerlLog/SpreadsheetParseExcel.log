@@ -1,0 +1,159 @@
+these derivations will be built:
+  /nix/store/xm5ggnly0ns86c5lmn76gvzy4ikgd1q7-perl5.32.0-Spreadsheet-ParseExcel-0.65.drv
+these paths will be fetched (0.20 MiB download, 0.20 MiB unpacked):
+  /nix/store/dzd1r8laklybl9pf1kv7jrgab40xvmpk-Spreadsheet-ParseExcel-0.65.tar.gz
+copying path '/nix/store/dzd1r8laklybl9pf1kv7jrgab40xvmpk-Spreadsheet-ParseExcel-0.65.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xm5ggnly0ns86c5lmn76gvzy4ikgd1q7-perl5.32.0-Spreadsheet-ParseExcel-0.65.drv'...
+unpacking sources
+unpacking source archive /nix/store/dzd1r8laklybl9pf1kv7jrgab40xvmpk-Spreadsheet-ParseExcel-0.65.tar.gz
+source root is Spreadsheet-ParseExcel-0.65
+setting SOURCE_DATE_EPOCH to timestamp 1395175520 of file Spreadsheet-ParseExcel-0.65/META.yml
+patching sources
+configuring
+patching ./sample/parse.pl...
+patching ./sample/xls2csv.pl...
+patching ./examples/display_text_table.pl...
+patching ./examples/a_simple_parser.pl...
+patching ./t/01_parse.t...
+patching ./t/43_test2000J.t...
+patching ./t/07_cell_handler.t...
+patching ./t/22_number_format_datetime.t...
+patching ./t/10_error_codes.t...
+patching ./t/92_meta.t...
+patching ./t/24_row_col_sizes.t...
+patching ./t/05_regression.t...
+patching ./t/32_charts.t...
+patching ./t/46_save_parser.t...
+patching ./t/41_test95-97j.t...
+patching ./t/26_localtime2excel.t...
+patching ./t/00_basic.t...
+patching ./t/91_minimumversion.t...
+patching ./t/23_number_format_time.t...
+patching ./t/29_active_sheet.t...
+patching ./t/04_regression.t...
+patching ./t/06_regression.t...
+patching ./t/03_regression.t...
+patching ./t/27_localtime2excel.t...
+patching ./t/21_number_format_user.t...
+patching ./t/90_pod.t...
+patching ./t/11_encryption.t...
+patching ./t/44_oem.t...
+patching ./t/02_parse-dates.t...
+patching ./t/47_hyperlinks.t...
+patching ./t/20_number_format_default.t...
+patching ./t/30_sst_01.t...
+patching ./t/45_oem-2.t...
+patching ./t/28_int2col.t...
+patching ./t/25_decode_rk_numbers.t...
+patching ./t/42_test95-97j-2.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Spreadsheet::ParseExcel
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Spreadsheet/ParseExcel/Utility.pm blib/lib/Spreadsheet/ParseExcel/Utility.pm
+cp lib/Spreadsheet/ParseExcel/Format.pm blib/lib/Spreadsheet/ParseExcel/Format.pm
+cp lib/Spreadsheet/ParseExcel/SaveParser/Worksheet.pm blib/lib/Spreadsheet/ParseExcel/SaveParser/Worksheet.pm
+cp lib/Spreadsheet/ParseExcel/Workbook.pm blib/lib/Spreadsheet/ParseExcel/Workbook.pm
+cp lib/Spreadsheet/ParseExcel.pm blib/lib/Spreadsheet/ParseExcel.pm
+cp lib/Spreadsheet/ParseExcel/SaveParser/Workbook.pm blib/lib/Spreadsheet/ParseExcel/SaveParser/Workbook.pm
+cp lib/Spreadsheet/ParseExcel/Worksheet.pm blib/lib/Spreadsheet/ParseExcel/Worksheet.pm
+cp lib/Spreadsheet/ParseExcel/Dump.pm blib/lib/Spreadsheet/ParseExcel/Dump.pm
+cp lib/Spreadsheet/ParseExcel/Cell.pm blib/lib/Spreadsheet/ParseExcel/Cell.pm
+cp lib/Spreadsheet/ParseExcel/FmtDefault.pm blib/lib/Spreadsheet/ParseExcel/FmtDefault.pm
+cp lib/Spreadsheet/ParseExcel/FmtJapan.pm blib/lib/Spreadsheet/ParseExcel/FmtJapan.pm
+cp lib/Spreadsheet/ParseExcel/Font.pm blib/lib/Spreadsheet/ParseExcel/Font.pm
+cp lib/Spreadsheet/ParseExcel/FmtUnicode.pm blib/lib/Spreadsheet/ParseExcel/FmtUnicode.pm
+cp lib/Spreadsheet/ParseExcel/FmtJapan2.pm blib/lib/Spreadsheet/ParseExcel/FmtJapan2.pm
+cp lib/Spreadsheet/ParseExcel/SaveParser.pm blib/lib/Spreadsheet/ParseExcel/SaveParser.pm
+Manifying 15 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_basic.t ................... ok
+t/01_parse.t ................... ok
+t/02_parse-dates.t ............. ok
+t/03_regression.t .............. ok
+t/04_regression.t .............. ok
+t/05_regression.t .............. ok
+t/06_regression.t .............. ok
+t/07_cell_handler.t ............ ok
+t/10_error_codes.t ............. ok
+t/11_encryption.t .............. ok
+t/20_number_format_default.t ... ok
+t/21_number_format_user.t ...... ok
+t/22_number_format_datetime.t .. ok
+t/23_number_format_time.t ...... ok
+t/24_row_col_sizes.t ........... ok
+t/25_decode_rk_numbers.t ....... ok
+t/26_localtime2excel.t ......... ok
+t/27_localtime2excel.t ......... ok
+t/28_int2col.t ................. ok
+t/29_active_sheet.t ............ ok
+t/30_sst_01.t .................. ok
+t/32_charts.t .................. ok
+t/41_test95-97j.t .............. ok
+t/42_test95-97j-2.t ............ ok
+t/43_test2000J.t ............... ok
+t/44_oem.t ..................... ok
+t/45_oem-2.t ................... ok
+t/46_save_parser.t ............. skipped: Spreadsheet::ParseExcel::SaveParser requires Spreadsheet::WriteExcel
+t/47_hyperlinks.t .............. ok
+t/90_pod.t ..................... skipped: Test::Pod 1.26 not available for testing
+t/91_minimumversion.t .......... skipped: Perl::MinimumVersion 1.20 not available for testing
+t/92_meta.t .................... skipped: Test::CPAN::Meta 0.12 not available for testing
+All tests successful.
+Files=32, Tests=1605,  6 wallclock secs ( 0.20 usr  0.04 sys +  4.86 cusr  0.93 csys =  6.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/pkgconfig m4datadir=/nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/aclocal aclocaldir=/nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/aclocal install
+Manifying 15 pod documents
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Utility.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Worksheet.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Cell.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/FmtJapan.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/FmtJapan2.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Font.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/SaveParser.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Format.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/FmtUnicode.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/FmtDefault.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Dump.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/Workbook.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/SaveParser/Worksheet.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/site_perl/5.32.0/Spreadsheet/ParseExcel/SaveParser/Workbook.pm
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Workbook.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::SaveParser.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::FmtDefault.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::FmtJapan.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Format.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::FmtUnicode.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Cell.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Worksheet.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Dump.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Utility.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::SaveParser::Worksheet.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::FmtJapan2.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::SaveParser::Workbook.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel.3
+Installing /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3/Spreadsheet::ParseExcel::Font.3
+Appending installation info to /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/man3 to /nix/store/crsxskqfs8b7d7dbnc0b1xa18gh8kxzy-perl5.32.0-Spreadsheet-ParseExcel-0.65-devdoc/share/man/man3
+Removing empty /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65/lib
+patching script interpreter paths in /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65
+checking for references to /build/ in /nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65...
+shrinking RPATHs of ELF executables and libraries in /nix/store/crsxskqfs8b7d7dbnc0b1xa18gh8kxzy-perl5.32.0-Spreadsheet-ParseExcel-0.65-devdoc
+gzipping man pages under /nix/store/crsxskqfs8b7d7dbnc0b1xa18gh8kxzy-perl5.32.0-Spreadsheet-ParseExcel-0.65-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/crsxskqfs8b7d7dbnc0b1xa18gh8kxzy-perl5.32.0-Spreadsheet-ParseExcel-0.65-devdoc
+checking for references to /build/ in /nix/store/crsxskqfs8b7d7dbnc0b1xa18gh8kxzy-perl5.32.0-Spreadsheet-ParseExcel-0.65-devdoc...
+/nix/store/hx8gq3arv0q5r8p1c30ac8xq7hp003g0-perl5.32.0-Spreadsheet-ParseExcel-0.65

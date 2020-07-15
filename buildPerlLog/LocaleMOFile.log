@@ -1,0 +1,153 @@
+these derivations will be built:
+  /nix/store/phvxsm3d52ripj7lqw2n0xanh8yjfdrn-perl5.32.0-Test-HexDifferences-1.001.drv
+  /nix/store/j34jxzabx8gkpc65f9ikiaxj4lhhpc34-perl5.32.0-Locale-MO-File-0.09.drv
+building '/nix/store/phvxsm3d52ripj7lqw2n0xanh8yjfdrn-perl5.32.0-Test-HexDifferences-1.001.drv'...
+unpacking sources
+unpacking source archive /nix/store/vk85bvni4x81vjhm4g0wxi7m1c9qrd11-Test-HexDifferences-1.001.tar.gz
+source root is Test-HexDifferences-1.001
+setting SOURCE_DATE_EPOCH to timestamp 1499157825 of file Test-HexDifferences-1.001/META.json
+patching sources
+configuring
+patching ./example/02_dumped_eq_dump_or_diff.t...
+patching ./example/01_eq_or_dump_diff.t...
+patching ./t/11_eq_or_dump_diff.t...
+patching ./t/01_format_iterator.t...
+patching ./t/pod.t...
+patching ./t/pod_coverage.t...
+patching ./t/12_dumped_eq_dump_or_diff.t...
+patching ./t/21_test_examples.t...
+patching ./t/prereq_build.t...
+patching ./t/perl_critic.t...
+patching ./t/03_all_formats.t...
+patching ./t/chars.t...
+patching ./t/02_hex_dump.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::HexDifferences
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/HexDifferences/HexDump.pm blib/lib/Test/HexDifferences/HexDump.pm
+cp lib/Test/HexDifferences.pm blib/lib/Test/HexDifferences.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_format_iterator.t ......... ok
+t/02_hex_dump.t ................ ok
+t/03_all_formats.t ............. ok
+t/11_eq_or_dump_diff.t ......... ok
+t/12_dumped_eq_dump_or_diff.t .. ok
+t/21_test_examples.t ........... skipped: Set $ENV{AUTHOR_TESTING} to run this test.
+t/chars.t ...................... skipped: Author test. Set $ENV{AUTHOR_TESTING} to a true value to run.
+t/perl_critic.t ................ skipped: Test::Perl::Critic required
+t/pod.t ........................ skipped: Test::Pod 1.14 required for testing POD
+t/pod_coverage.t ............... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/prereq_build.t ............... skipped: Author test.  Set $ENV{RELEASE_TESTING} to a true value to run.
+All tests successful.
+Files=11, Tests=73,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.80 cusr  0.35 csys =  1.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/lib/pkgconfig m4datadir=/nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/aclocal aclocaldir=/nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/lib/perl5/site_perl/5.32.0/Test/HexDifferences.pm
+Installing /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/lib/perl5/site_perl/5.32.0/Test/HexDifferences/HexDump.pm
+Installing /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/man/man3/Test::HexDifferences.3
+Installing /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/man/man3/Test::HexDifferences::HexDump.3
+Appending installation info to /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/man/man3 to /nix/store/nbglfj7g03gf99xp7v7jmn3ysssr6l7h-perl5.32.0-Test-HexDifferences-1.001-devdoc/share/man/man3
+Removing empty /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001/lib
+patching script interpreter paths in /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001
+checking for references to /build/ in /nix/store/7npkf6bx6x9wdp12hfid04niz435nak4-perl5.32.0-Test-HexDifferences-1.001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nbglfj7g03gf99xp7v7jmn3ysssr6l7h-perl5.32.0-Test-HexDifferences-1.001-devdoc
+gzipping man pages under /nix/store/nbglfj7g03gf99xp7v7jmn3ysssr6l7h-perl5.32.0-Test-HexDifferences-1.001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nbglfj7g03gf99xp7v7jmn3ysssr6l7h-perl5.32.0-Test-HexDifferences-1.001-devdoc
+checking for references to /build/ in /nix/store/nbglfj7g03gf99xp7v7jmn3ysssr6l7h-perl5.32.0-Test-HexDifferences-1.001-devdoc...
+building '/nix/store/j34jxzabx8gkpc65f9ikiaxj4lhhpc34-perl5.32.0-Locale-MO-File-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/c02cg8anskws2l9n34gcas0k44d5brzi-Locale-MO-File-0.09.tar.gz
+source root is Locale-MO-File-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1545650903 of file Locale-MO-File-0.09/Makefile.PL
+patching sources
+configuring
+patching ./example/13_little_endian_utf-8.pl...
+patching ./example/23_big_endian_utf-8.pl...
+patching ./example/14_little_endian_fh_utf-8.pl...
+patching ./example/21_big_endian.pl...
+patching ./example/11_little_endian.pl...
+patching ./example/22_big_endian_fh.pl...
+patching ./example/24_big_endian_fh_utf-8.pl...
+patching ./example/12_little_endian_fh.pl...
+patching ./t/11_little_endian.t...
+patching ./t/13_little_endian_utf-8.t...
+patching ./t/pod.t...
+patching ./t/03_clear.t...
+patching ./t/pod_coverage.t...
+patching ./t/10_simple_data.t...
+patching ./t/22_test_examples_utf-8.t...
+patching ./t/12_big_endian.t...
+patching ./t/14_big_endian_utf-8.t...
+patching ./t/21_test_examples.t...
+patching ./t/prereq_build.t...
+patching ./t/perl_critic.t...
+patching ./t/chars.t...
+patching ./t/01_use.t...
+patching ./t/02_exceptions.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Locale::MO::File
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Locale/MO/File.pm blib/lib/Locale/MO/File.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t .................. ok
+t/02_exceptions.t ........... ok
+t/03_clear.t ................ ok
+t/10_simple_data.t .......... ok
+t/11_little_endian.t ........ ok
+t/12_big_endian.t ........... ok
+t/13_little_endian_utf-8.t .. ok
+t/14_big_endian_utf-8.t ..... ok
+t/21_test_examples.t ........ skipped: Set $ENV{AUTHOR_TESTING} to run this test.
+t/22_test_examples_utf-8.t .. skipped: Set $ENV{AUTHOR_TESTING} to run this test.
+t/chars.t ................... skipped: Author test. Set $ENV{AUTHOR_TESTING} to a true value to run.
+t/perl_critic.t ............. skipped: Author test. Set $ENV{AUTHOR_TESTING} to a true value to run.
+t/pod.t ..................... skipped: Test::Pod 1.14 required for testing POD
+t/pod_coverage.t ............ skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/prereq_build.t ............ skipped: Author test.  Set $ENV{RELEASE_TESTING} to a true value to run.
+All tests successful.
+Files=15, Tests=60,  5 wallclock secs ( 0.08 usr  0.04 sys +  2.30 cusr  1.95 csys =  4.37 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/lib/pkgconfig m4datadir=/nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/share/aclocal aclocaldir=/nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/lib/perl5/site_perl/5.32.0/Locale/MO/File.pm
+Installing /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/share/man/man3/Locale::MO::File.3
+Appending installation info to /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/share/man/man3 to /nix/store/1qq98lpm1p8vfjjip5b8b6ay75ld4v63-perl5.32.0-Locale-MO-File-0.09-devdoc/share/man/man3
+Removing empty /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09/lib
+patching script interpreter paths in /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09
+checking for references to /build/ in /nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1qq98lpm1p8vfjjip5b8b6ay75ld4v63-perl5.32.0-Locale-MO-File-0.09-devdoc
+gzipping man pages under /nix/store/1qq98lpm1p8vfjjip5b8b6ay75ld4v63-perl5.32.0-Locale-MO-File-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1qq98lpm1p8vfjjip5b8b6ay75ld4v63-perl5.32.0-Locale-MO-File-0.09-devdoc
+checking for references to /build/ in /nix/store/1qq98lpm1p8vfjjip5b8b6ay75ld4v63-perl5.32.0-Locale-MO-File-0.09-devdoc...
+/nix/store/k8vjxspk7bgz4qyw2pj9j1wjpflm2r4b-perl5.32.0-Locale-MO-File-0.09

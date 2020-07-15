@@ -1,0 +1,81 @@
+these derivations will be built:
+  /nix/store/a65839hnvg86hlkzrp2b2fghlmh5a9rp-perl5.32.0-DateTime-Format-ISO8601-0.08.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/2mwl8cpxlrvlc07bgzqhvlhxjfv8z90z-DateTime-Format-ISO8601-0.08.tar.gz
+copying path '/nix/store/2mwl8cpxlrvlc07bgzqhvlhxjfv8z90z-DateTime-Format-ISO8601-0.08.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/a65839hnvg86hlkzrp2b2fghlmh5a9rp-perl5.32.0-DateTime-Format-ISO8601-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/2mwl8cpxlrvlc07bgzqhvlhxjfv8z90z-DateTime-Format-ISO8601-0.08.tar.gz
+source root is DateTime-Format-ISO8601-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1329029093 of file DateTime-Format-ISO8601-0.08/t/99_pod.t
+patching sources
+configuring
+patching ./t/99_pod.t...
+patching ./t/03_base_datetime.t...
+patching ./t/05_cut_off_year.t...
+patching ./t/00_distribution.t...
+patching ./t/04_legacy_year.t...
+patching ./t/01_load.t...
+patching ./t/02_examples.t...
+patching ./t/06_bad_formats.t...
+# running Build.PL --prefix /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Checking prerequisites...
+  recommends:
+    *  File::Find::Rule is not installed
+    *  Test::Distribution is not installed
+    *  Test::Pod is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'DateTime-Format-ISO8601' version '0.08'
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  File::Find::Rule is not installed
+    *  Test::Distribution is not installed
+    *  Test::Pod is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'DateTime-Format-ISO8601' version '0.08'
+Building DateTime-Format-ISO8601
+running tests
+t/00_distribution.t ... skipped: Test::Distribution not installed
+t/01_load.t ........... ok
+t/02_examples.t ....... ok
+t/03_base_datetime.t .. ok
+t/04_legacy_year.t .... ok
+t/05_cut_off_year.t ... ok
+t/06_bad_formats.t .... ok
+t/99_pod.t ............ ok
+All tests successful.
+Files=8, Tests=277,  3 wallclock secs ( 0.06 usr  0.02 sys +  2.64 cusr  0.32 csys =  3.04 CPU)
+Result: PASS
+installing
+Building DateTime-Format-ISO8601
+Installing /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/lib/perl5/site_perl/5.32.0/DateTime/Format/ISO8601.pm
+Installing /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/lib/perl5/site_perl/5.32.0/DateTime/Format/ISO8601.pod
+Installing /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/share/man/man3/DateTime::Format::ISO8601.3
+post-installation fixup
+Moving /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/share/man/man3 to /nix/store/qvq662rpj5pr7iz47xyxflhdz8xpix7d-perl5.32.0-DateTime-Format-ISO8601-0.08-devdoc/share/man/man3
+Removing empty /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08/lib
+patching script interpreter paths in /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08
+checking for references to /build/ in /nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qvq662rpj5pr7iz47xyxflhdz8xpix7d-perl5.32.0-DateTime-Format-ISO8601-0.08-devdoc
+gzipping man pages under /nix/store/qvq662rpj5pr7iz47xyxflhdz8xpix7d-perl5.32.0-DateTime-Format-ISO8601-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qvq662rpj5pr7iz47xyxflhdz8xpix7d-perl5.32.0-DateTime-Format-ISO8601-0.08-devdoc
+checking for references to /build/ in /nix/store/qvq662rpj5pr7iz47xyxflhdz8xpix7d-perl5.32.0-DateTime-Format-ISO8601-0.08-devdoc...
+/nix/store/2f5q5gzdlf48rw8jh0ky3b4qcm54vydh-perl5.32.0-DateTime-Format-ISO8601-0.08

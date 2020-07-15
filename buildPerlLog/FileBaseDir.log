@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/hy2342rfi65by05yy1jh857rnzn1xs7s-perl5.32.0-File-BaseDir-0.08.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/9in2gqfhkwb7mwng5sr6gqrzxmwyzd9i-File-BaseDir-0.08.tar.gz
+copying path '/nix/store/9in2gqfhkwb7mwng5sr6gqrzxmwyzd9i-File-BaseDir-0.08.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hy2342rfi65by05yy1jh857rnzn1xs7s-perl5.32.0-File-BaseDir-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/9in2gqfhkwb7mwng5sr6gqrzxmwyzd9i-File-BaseDir-0.08.tar.gz
+source root is File-BaseDir-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1520903150 of file File-BaseDir-0.08/Makefile.PL
+patching sources
+configuring
+patching ./configure...
+patching ./t/03_icontheme.t...
+patching ./t/03_userdirs.t...
+patching ./Build.PL...
+# running Build.PL --prefix /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-BaseDir' version '0.08'
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-BaseDir' version '0.08'
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-BaseDir' version '0.08'
+Building File-BaseDir
+running tests
+t/01_vars.t ....... ok
+t/02_lookup.t ..... ok
+t/03_OO.t ......... ok
+t/03_icontheme.t .. ok
+t/03_userdirs.t ... skipped: "xdg-user-dir" executable not found. Install package "xdg-user-dirs".
+t/04_pod_ok.t ..... skipped: Test::Pod 1.00 required for testing POD
+t/05_pod_cover.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+All tests successful.
+Files=7, Tests=36,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.42 cusr  0.13 csys =  0.59 CPU)
+Result: PASS
+installing
+Building File-BaseDir
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/lib/perl5/site_perl/5.32.0/File/IconTheme.pm
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/lib/perl5/site_perl/5.32.0/File/BaseDir.pm
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/lib/perl5/site_perl/5.32.0/File/UserDirs.pm
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/share/man/man3/File::BaseDir.3
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/share/man/man3/File::IconTheme.3
+Installing /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/share/man/man3/File::UserDirs.3
+post-installation fixup
+Moving /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/share/man/man3 to /nix/store/xxy995jzbj3v9n5gzmynw3dnchp2c7iw-perl5.32.0-File-BaseDir-0.08-devdoc/share/man/man3
+Removing empty /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08/lib
+patching script interpreter paths in /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08
+checking for references to /build/ in /nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xxy995jzbj3v9n5gzmynw3dnchp2c7iw-perl5.32.0-File-BaseDir-0.08-devdoc
+gzipping man pages under /nix/store/xxy995jzbj3v9n5gzmynw3dnchp2c7iw-perl5.32.0-File-BaseDir-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xxy995jzbj3v9n5gzmynw3dnchp2c7iw-perl5.32.0-File-BaseDir-0.08-devdoc
+checking for references to /build/ in /nix/store/xxy995jzbj3v9n5gzmynw3dnchp2c7iw-perl5.32.0-File-BaseDir-0.08-devdoc...
+/nix/store/q754rclsc7l3v6y6aw8dknx7jjnv1d9a-perl5.32.0-File-BaseDir-0.08

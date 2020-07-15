@@ -1,0 +1,107 @@
+these derivations will be built:
+  /nix/store/9x0b5bhd7sf8fi1k6438z7dnlsvj8wvy-perl5.32.0-Memoize-1.03.drv
+these paths will be fetched (0.05 MiB download, 0.04 MiB unpacked):
+  /nix/store/2mazz3iqa53z0as8g1zkxmj2mywaf7ll-Memoize-1.03.tgz
+copying path '/nix/store/2mazz3iqa53z0as8g1zkxmj2mywaf7ll-Memoize-1.03.tgz' from 'https://cache.nixos.org'...
+building '/nix/store/9x0b5bhd7sf8fi1k6438z7dnlsvj8wvy-perl5.32.0-Memoize-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/2mazz3iqa53z0as8g1zkxmj2mywaf7ll-Memoize-1.03.tgz
+source root is Memoize-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1335129326 of file Memoize-1.03/Memoize.pm
+patching sources
+configuring
+patching ./t/unmemoize.t...
+patching ./t/expmod_n.t...
+patching ./t/tiefeatures.t...
+patching ./t/expire.t...
+patching ./t/normalize.t...
+patching ./t/array_confusion.t...
+patching ./t/speed.t...
+patching ./t/tie_gdbm.t...
+patching ./t/prototype.t...
+patching ./t/tie_sdbm.t...
+patching ./t/flush.t...
+patching ./t/errors.t...
+patching ./t/expmod_t.t...
+patching ./t/array.t...
+patching ./t/expfile.t...
+patching ./t/tie_ndbm.t...
+patching ./t/tie.t...
+patching ./t/tie_storable.t...
+patching ./t/correctness.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Memoize
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Memoize/NDBM_File.pm blib/lib/Memoize/NDBM_File.pm
+cp Memoize/AnyDBM_File.pm blib/lib/Memoize/AnyDBM_File.pm
+cp Memoize/ExpireFile.pm blib/lib/Memoize/ExpireFile.pm
+cp Memoize/Storable.pm blib/lib/Memoize/Storable.pm
+cp Memoize/Expire.pm blib/lib/Memoize/Expire.pm
+cp Memoize/SDBM_File.pm blib/lib/Memoize/SDBM_File.pm
+cp Memoize.pm blib/lib/Memoize.pm
+cp Memoize/ExpireTest.pm blib/lib/Memoize/ExpireTest.pm
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/array.t ............ ok
+t/array_confusion.t .. ok
+t/correctness.t ...... ok
+t/errors.t ........... ok
+t/expfile.t .......... ok
+t/expire.t ........... ok
+t/expmod_n.t ......... ok
+t/expmod_t.t ......... ok
+t/flush.t ............ ok
+t/normalize.t ........ ok
+t/prototype.t ........ ok
+t/speed.t ............ ok
+t/tie.t .............. ok
+t/tie_gdbm.t ......... skipped: (no reason given)
+t/tie_ndbm.t ......... skipped: (no reason given)
+t/tie_sdbm.t ......... ok
+t/tie_storable.t ..... ok
+t/tiefeatures.t ...... ok
+t/unmemoize.t ........ ok
+All tests successful.
+Files=19, Tests=172, 53 wallclock secs ( 0.05 usr  0.02 sys + 16.71 cusr  0.04 csys = 16.82 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/pkgconfig m4datadir=/nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/aclocal aclocaldir=/nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/AnyDBM_File.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/ExpireTest.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/Storable.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/ExpireFile.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/SDBM_File.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/Expire.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/site_perl/5.32.0/Memoize/NDBM_File.pm
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::ExpireTest.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::AnyDBM_File.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::NDBM_File.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::Storable.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::Expire.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::SDBM_File.3
+Installing /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3/Memoize::ExpireFile.3
+Appending installation info to /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/man3 to /nix/store/5a99z83kil951licwplplgzf9g5sbfhb-perl5.32.0-Memoize-1.03-devdoc/share/man/man3
+Removing empty /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03/lib
+patching script interpreter paths in /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03
+checking for references to /build/ in /nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5a99z83kil951licwplplgzf9g5sbfhb-perl5.32.0-Memoize-1.03-devdoc
+gzipping man pages under /nix/store/5a99z83kil951licwplplgzf9g5sbfhb-perl5.32.0-Memoize-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5a99z83kil951licwplplgzf9g5sbfhb-perl5.32.0-Memoize-1.03-devdoc
+checking for references to /build/ in /nix/store/5a99z83kil951licwplplgzf9g5sbfhb-perl5.32.0-Memoize-1.03-devdoc...
+/nix/store/bzagdidfa6rf6lcfacqnsrrp0xq9gvbj-perl5.32.0-Memoize-1.03

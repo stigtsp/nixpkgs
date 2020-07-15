@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/1f2bizripjj7vdfyi4nfl42ynyhrs1lw-perl5.32.0-Inline-0.83.drv
+building '/nix/store/1f2bizripjj7vdfyi4nfl42ynyhrs1lw-perl5.32.0-Inline-0.83.drv'...
+unpacking sources
+unpacking source archive /nix/store/wclxx1wpy21pl1z4m81bhyfnrsk7ci8w-Inline-0.83.tar.gz
+source root is Inline-0.83
+setting SOURCE_DATE_EPOCH to timestamp 1556443845 of file Inline-0.83/xt/ilsm-test.bash
+patching sources
+configuring
+patching ./xt/ilsm-test.bash...
+patching ./t/author-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Inline
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Inline.pod blib/lib/Inline.pod
+cp lib/Inline/MakeMaker/Changes blib/lib/Inline/MakeMaker/Changes
+cp lib/Inline/Support.pod blib/lib/Inline/Support.pod
+cp lib/Inline/denter.pm blib/lib/Inline/denter.pm
+cp lib/Inline/MakeMaker.pm blib/lib/Inline/MakeMaker.pm
+cp lib/Inline/FAQ.pod blib/lib/Inline/FAQ.pod
+cp lib/Inline/API.pod blib/lib/Inline/API.pod
+cp lib/Inline/Foo.pm blib/lib/Inline/Foo.pm
+cp lib/Inline.pm blib/lib/Inline.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000-require-modules.t .. ok
+t/01usages.t ............. ok
+t/02config.t ............. ok
+t/03errors.t ............. ok
+t/04create.t ............. ok
+t/05files.t .............. 1/1 Skipping - couldn't load the Inline::Files module
+t/05files.t .............. ok
+t/06rewrite_config.t ..... ok
+t/07rewrite2_config.t .... ok
+t/08unicode.t ............ ok
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=10, Tests=26,  2 wallclock secs ( 0.04 usr  0.02 sys +  2.12 cusr  0.17 csys =  2.35 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/pkgconfig m4datadir=/nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/aclocal aclocaldir=/nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline.pm
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline.pod
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/denter.pm
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/Support.pod
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/Foo.pm
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/API.pod
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/MakeMaker.pm
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/FAQ.pod
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/site_perl/5.32.0/Inline/MakeMaker/Changes
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/man3/Inline::API.3
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/man3/Inline.3
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/man3/Inline::Support.3
+Installing /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/man3/Inline::FAQ.3
+Appending installation info to /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/man3 to /nix/store/flaw945zchclp6057z57zs9dk6b31a8f-perl5.32.0-Inline-0.83-devdoc/share/man/man3
+Removing empty /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83/lib
+patching script interpreter paths in /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83
+checking for references to /build/ in /nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83...
+shrinking RPATHs of ELF executables and libraries in /nix/store/flaw945zchclp6057z57zs9dk6b31a8f-perl5.32.0-Inline-0.83-devdoc
+gzipping man pages under /nix/store/flaw945zchclp6057z57zs9dk6b31a8f-perl5.32.0-Inline-0.83-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/flaw945zchclp6057z57zs9dk6b31a8f-perl5.32.0-Inline-0.83-devdoc
+checking for references to /build/ in /nix/store/flaw945zchclp6057z57zs9dk6b31a8f-perl5.32.0-Inline-0.83-devdoc...
+/nix/store/c5acwbsxj6mbmnh1nv7blkp1qmixx45d-perl5.32.0-Inline-0.83

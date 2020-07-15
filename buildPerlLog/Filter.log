@@ -1,0 +1,214 @@
+these derivations will be built:
+  /nix/store/w0kw49db7g6xy34dy57g4xilcnz2pfnk-perl5.32.0-Filter-1.59.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/k0pvrjrgsd73byhl9vvz4hxhx5gf1vhh-Filter-1.59.tar.gz
+copying path '/nix/store/k0pvrjrgsd73byhl9vvz4hxhx5gf1vhh-Filter-1.59.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w0kw49db7g6xy34dy57g4xilcnz2pfnk-perl5.32.0-Filter-1.59.drv'...
+unpacking sources
+unpacking source archive /nix/store/k0pvrjrgsd73byhl9vvz4hxhx5gf1vhh-Filter-1.59.tar.gz
+source root is Filter-1.59
+setting SOURCE_DATE_EPOCH to timestamp 1533378813 of file Filter-1.59/SIGNATURE
+patching sources
+configuring
+patching ./decrypt/decr...
+patching ./decrypt/encrypt...
+patching ./examples/filtdef...
+patching ./t/order.t...
+patching ./t/tee.t...
+patching ./t/rt_101033.t...
+patching ./t/sh.t...
+patching ./t/exec.t...
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Writing MYMETA.yml and MYMETA.json
+Writing MYMETA.yml and MYMETA.json
+Writing MYMETA.yml and MYMETA.json
+Warning: LINKTYPE set to '', no longer necessary
+Generating a Unix-style Makefile
+Writing Makefile for Filter::Util::Call
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Filter/cpp.pm blib/lib/Filter/cpp.pm
+cp lib/Filter/m4.pm blib/lib/Filter/m4.pm
+cp lib/Filter/exec.pm blib/lib/Filter/exec.pm
+cp perlfilter.pod blib/lib/Filter/Util/perlfilter.pod
+cp lib/Filter/sh.pm blib/lib/Filter/sh.pm
+make[1]: Entering directory '/build/Filter-1.59/Call'
+cp Call.pm ../blib/lib/Filter/Util/Call.pm
+Running Mkbootstrap for Call ()
+chmod 644 "Call.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Call.bs ../blib/arch/auto/Filter/Util/Call/Call.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Filter-1.59/Call/typemap'  Call.xs > Call.xsc
+mv Call.xsc Call.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.59\" -DXS_VERSION=\"1.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -D_NOT_CORE Call.c
+rm -f ../blib/arch/auto/Filter/Util/Call/Call.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Call.o  -o ../blib/arch/auto/Filter/Util/Call/Call.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Filter/Util/Call/Call.so
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Call'
+make[1]: Entering directory '/build/Filter-1.59/Exec'
+cp Exec.pm ../blib/lib/Filter/Util/Exec.pm
+Running Mkbootstrap for Exec ()
+chmod 644 "Exec.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Exec.bs ../blib/arch/auto/Filter/Util/Exec/Exec.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Exec.xs > Exec.xsc
+mv Exec.xsc Exec.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.59\" -DXS_VERSION=\"1.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Exec.c
+rm -f ../blib/arch/auto/Filter/Util/Exec/Exec.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Exec.o  -o ../blib/arch/auto/Filter/Util/Exec/Exec.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Filter/Util/Exec/Exec.so
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Exec'
+make[1]: Entering directory '/build/Filter-1.59/decrypt'
+cp decrypt.pm ../blib/lib/Filter/decrypt.pm
+Running Mkbootstrap for decrypt ()
+chmod 644 "decrypt.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- decrypt.bs ../blib/arch/auto/Filter/decrypt/decrypt.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  decrypt.xs > decrypt.xsc
+mv decrypt.xsc decrypt.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.59\" -DXS_VERSION=\"1.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DBYPASS decrypt.c
+rm -f ../blib/arch/auto/Filter/decrypt/decrypt.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  decrypt.o  -o ../blib/arch/auto/Filter/decrypt/decrypt.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Filter/decrypt/decrypt.so
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/decrypt'
+make[1]: Entering directory '/build/Filter-1.59/tee'
+cp tee.pm ../blib/lib/Filter/tee.pm
+Running Mkbootstrap for tee ()
+chmod 644 "tee.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- tee.bs ../blib/arch/auto/Filter/tee/tee.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  tee.xs > tee.xsc
+mv tee.xsc tee.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.59\" -DXS_VERSION=\"1.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   tee.c
+rm -f ../blib/arch/auto/Filter/tee/tee.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  tee.o  -o ../blib/arch/auto/Filter/tee/tee.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Filter/tee/tee.so
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/tee'
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+make[1]: Entering directory '/build/Filter-1.59/Call'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Call.bs ../blib/arch/auto/Filter/Util/Call/Call.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Call'
+make[1]: Entering directory '/build/Filter-1.59/Exec'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Exec.bs ../blib/arch/auto/Filter/Util/Exec/Exec.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Exec'
+make[1]: Entering directory '/build/Filter-1.59/decrypt'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- decrypt.bs ../blib/arch/auto/Filter/decrypt/decrypt.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/decrypt'
+make[1]: Entering directory '/build/Filter-1.59/tee'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- tee.bs ../blib/arch/auto/Filter/tee/tee.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/tee'
+make[1]: Entering directory '/build/Filter-1.59/Call'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Call.bs ../blib/arch/auto/Filter/Util/Call/Call.bs 644
+No tests defined for Filter::Util::Call extension.
+make[1]: Leaving directory '/build/Filter-1.59/Call'
+make[1]: Entering directory '/build/Filter-1.59/Exec'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Exec.bs ../blib/arch/auto/Filter/Util/Exec/Exec.bs 644
+No tests defined for Filter::Util::Exec extension.
+make[1]: Leaving directory '/build/Filter-1.59/Exec'
+make[1]: Entering directory '/build/Filter-1.59/decrypt'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- decrypt.bs ../blib/arch/auto/Filter/decrypt/decrypt.bs 644
+No tests defined for Filter::decrypt extension.
+make[1]: Leaving directory '/build/Filter-1.59/decrypt'
+make[1]: Entering directory '/build/Filter-1.59/tee'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- tee.bs ../blib/arch/auto/Filter/tee/tee.bs 644
+No tests defined for Filter::tee extension.
+make[1]: Leaving directory '/build/Filter-1.59/tee'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/call.t .................... ok
+t/cpp.t ..................... ok
+t/decrypt.t ................. ok
+t/exec.t .................... ok
+t/m4.t ...................... skipped: m4 not found on this system.
+t/order.t ................... ok
+t/rt_101033.t ............... ok
+t/rt_54452-rebless.t ........ ok
+t/sh.t ...................... ok
+t/tee.t ..................... ok
+t/z_kwalitee.t .............. skipped: This test is only run for the module author
+t/z_manifest.t .............. skipped: requires a git checkout and a unix for git and diff
+t/z_meta.t .................. skipped: This test is only run for the module author
+t/z_perl_minimum_version.t .. skipped: Author tests not required for installation
+t/z_pod-coverage.t .......... skipped: This test is only run for the module author
+t/z_pod.t ................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=16, Tests=59,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.72 cusr  0.11 csys =  0.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/pkgconfig m4datadir=/nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/aclocal aclocaldir=/nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/aclocal install
+make[1]: Entering directory '/build/Filter-1.59/Call'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Call.bs ../blib/arch/auto/Filter/Util/Call/Call.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Call'
+make[1]: Entering directory '/build/Filter-1.59/Exec'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Exec.bs ../blib/arch/auto/Filter/Util/Exec/Exec.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/Exec'
+make[1]: Entering directory '/build/Filter-1.59/decrypt'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- decrypt.bs ../blib/arch/auto/Filter/decrypt/decrypt.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/decrypt'
+make[1]: Entering directory '/build/Filter-1.59/tee'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- tee.bs ../blib/arch/auto/Filter/tee/tee.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/Filter-1.59/tee'
+Manifying 5 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/decrypt/decrypt.so
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/Util/Exec/Exec.so
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/tee/tee.so
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/sh.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/tee.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/cpp.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/m4.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/exec.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/decrypt.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/Util/perlfilter.pod
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/Util/Exec.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Filter/Util/Call.pm
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::sh.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::cpp.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::m4.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::Util::Call.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::tee.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::decrypt.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::Util::Exec.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::Util::perlfilter.3
+Installing /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3/Filter::exec.3
+Appending installation info to /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/man3 to /nix/store/4qlixrsrvy74laxcz3g6mixzbjh01mxp-perl5.32.0-Filter-1.59-devdoc/share/man/man3
+Removing empty /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59
+shrinking /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/decrypt/decrypt.so
+shrinking /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/Util/Exec/Exec.so
+shrinking /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so
+shrinking /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Filter/tee/tee.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59/lib
+patching script interpreter paths in /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59
+checking for references to /build/ in /nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4qlixrsrvy74laxcz3g6mixzbjh01mxp-perl5.32.0-Filter-1.59-devdoc
+gzipping man pages under /nix/store/4qlixrsrvy74laxcz3g6mixzbjh01mxp-perl5.32.0-Filter-1.59-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4qlixrsrvy74laxcz3g6mixzbjh01mxp-perl5.32.0-Filter-1.59-devdoc
+checking for references to /build/ in /nix/store/4qlixrsrvy74laxcz3g6mixzbjh01mxp-perl5.32.0-Filter-1.59-devdoc...
+/nix/store/104q62as6gmahxx63pcakvhyi7k5202z-perl5.32.0-Filter-1.59

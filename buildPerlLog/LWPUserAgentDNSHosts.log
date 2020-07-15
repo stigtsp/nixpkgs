@@ -1,0 +1,49 @@
+these derivations will be built:
+  /nix/store/w788pyk2nyjls3jdilz50ln0mqj3vfgr-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13.drv
+these paths will be fetched (0.02 MiB download, 0.01 MiB unpacked):
+  /nix/store/ha49k3ib5fzqd40mn8qaxdw0bl33d923-LWP-UserAgent-DNS-Hosts-0.13.tar.gz
+copying path '/nix/store/ha49k3ib5fzqd40mn8qaxdw0bl33d923-LWP-UserAgent-DNS-Hosts-0.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w788pyk2nyjls3jdilz50ln0mqj3vfgr-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/ha49k3ib5fzqd40mn8qaxdw0bl33d923-LWP-UserAgent-DNS-Hosts-0.13.tar.gz
+source root is LWP-UserAgent-DNS-Hosts-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1519639316 of file LWP-UserAgent-DNS-Hosts-0.13/xt/perlcriticrc
+patching sources
+configuring
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'LWP-UserAgent-DNS-Hosts' version '0.13'
+cp lib/LWP/Protocol/http/hosts.pm blib/lib/LWP/Protocol/http/hosts.pm
+cp lib/LWP/UserAgent/DNS/Hosts.pm blib/lib/LWP/UserAgent/DNS/Hosts.pm
+cp lib/LWP/Protocol/https/hosts.pm blib/lib/LWP/Protocol/https/hosts.pm
+running tests
+t/00_compile.t ..... ok
+t/01_register.t .... ok
+t/02_read_hosts.t .. ok
+t/10_http.t ........ LWP::Protocol::https is unavailable. Skip overriding it. at t/10_http.t line 28.
+t/10_http.t ........ ok
+t/11_https.t ....... skipped: disable SSL
+All tests successful.
+Files=5, Tests=9,  2 wallclock secs ( 0.05 usr  0.05 sys +  0.75 cusr  0.59 csys =  1.44 CPU)
+Result: PASS
+installing
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/lib/perl5/site_perl/5.32.0/LWP/UserAgent/DNS/Hosts.pm
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/lib/perl5/site_perl/5.32.0/LWP/Protocol/https/hosts.pm
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/lib/perl5/site_perl/5.32.0/LWP/Protocol/http/hosts.pm
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/share/man/man3/LWP::UserAgent::DNS::Hosts.3
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/share/man/man3/LWP::Protocol::http::hosts.3
+Installing /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/share/man/man3/LWP::Protocol::https::hosts.3
+post-installation fixup
+Moving /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/share/man/man3 to /nix/store/qybvxy9fnsnbh5y75ndrj6fr8dz7pcp9-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13-devdoc/share/man/man3
+Removing empty /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13/lib
+patching script interpreter paths in /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13
+checking for references to /build/ in /nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qybvxy9fnsnbh5y75ndrj6fr8dz7pcp9-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13-devdoc
+gzipping man pages under /nix/store/qybvxy9fnsnbh5y75ndrj6fr8dz7pcp9-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qybvxy9fnsnbh5y75ndrj6fr8dz7pcp9-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13-devdoc
+checking for references to /build/ in /nix/store/qybvxy9fnsnbh5y75ndrj6fr8dz7pcp9-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13-devdoc...
+/nix/store/kx96nmfjdp8yjjcq87758rrd5rbhyrgj-perl5.32.0-LWP-UserAgent-DNS-Hosts-0.13

@@ -1,0 +1,239 @@
+these derivations will be built:
+  /nix/store/47lqq7ngz918y8fbz4jm6d84mv4jsc3z-perl5.32.0-RT-Client-REST-0.60.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/fql3acr0ph86704wy8icp94a6zz72xmc-RT-Client-REST-0.60.tar.gz
+copying path '/nix/store/fql3acr0ph86704wy8icp94a6zz72xmc-RT-Client-REST-0.60.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/47lqq7ngz918y8fbz4jm6d84mv4jsc3z-perl5.32.0-RT-Client-REST-0.60.drv'...
+unpacking sources
+unpacking source archive /nix/store/fql3acr0ph86704wy8icp94a6zz72xmc-RT-Client-REST-0.60.tar.gz
+source root is RT-Client-REST-0.60
+setting SOURCE_DATE_EPOCH to timestamp 1588834973 of file RT-Client-REST-0.60/t/release-unused-vars.t
+patching sources
+configuring
+patching ./examples/create_ticket.pl...
+patching ./examples/show_group.pl...
+patching ./examples/list_transactions_rt.pl...
+patching ./examples/edit_group.pl...
+patching ./examples/show_transaction.pl...
+patching ./examples/comment_on_ticket.pl...
+patching ./examples/edit_ticket.pl...
+patching ./examples/edit_user.pl...
+patching ./examples/take_ticket.pl...
+patching ./examples/show_ticket.pl...
+patching ./examples/report-bug-to-cpan.pl...
+patching ./examples/list_attachments.pl...
+patching ./examples/edit_custom_field.pl...
+patching ./examples/list_tickets.pl...
+patching ./examples/list_transactions.pl...
+patching ./examples/show_links.pl...
+patching ./examples/show_queue.pl...
+patching ./examples/search_tickets.pl...
+patching ./examples/show_user.pl...
+patching ./examples/create_user.pl...
+patching ./examples/show_attachment.pl...
+patching ./t/24-transaction.t...
+patching ./t/25-queue.t...
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/50-forms.t...
+patching ./t/21-user.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/release-kwalitee.t...
+patching ./t/84-attachments-rt127607.t...
+patching ./t/26-group.t...
+patching ./t/author-pod-no404s.t...
+patching ./t/11-server-name.t...
+patching ./t/80-timeout.t...
+patching ./t/35-db.t...
+patching ./t/01-use.t...
+patching ./t/40-search.t...
+patching ./t/20-object.t...
+patching ./t/23-attachment.t...
+patching ./t/82-stringify.t...
+patching ./t/83-attachments.t...
+patching ./t/22-ticket.t...
+patching ./t/86-redirect.t...
+patching ./t/81-submit.t...
+patching ./t/85-attachments-rt127607.t...
+patching ./t/release-distmeta.t...
+patching ./t/60-with-rt.t...
+patching ./t/10-core.t...
+patching ./lib/RT/Client/REST.pm...
+patching ./lib/RT/Client/REST/Attachment.pm...
+patching ./lib/RT/Client/REST/Exception.pm...
+patching ./lib/RT/Client/REST/Object.pm...
+patching ./lib/RT/Client/REST/HTTPClient.pm...
+patching ./lib/RT/Client/REST/Transaction.pm...
+patching ./lib/RT/Client/REST/Object/Exception.pm...
+patching ./lib/RT/Client/REST/Ticket.pm...
+patching ./lib/RT/Client/REST/Queue.pm...
+patching ./lib/RT/Client/REST/User.pm...
+patching ./lib/RT/Client/REST/SearchResult.pm...
+patching ./lib/RT/Client/REST/Forms.pm...
+patching ./lib/RT/Client/REST/Group.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for RT::Client::REST
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'RT-Client-REST' version '0.60'
+Building RT-Client-REST
+running tests
+t/00-compile.t ................. ok
+t/00-report-prereqs.t .......... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want   Have
+#     ------------------- ---- ------
+#     ExtUtils::MakeMaker  any   7.44
+#     Module::Build       0.28 0.4231
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module                                 Want     Have
+#     -------------------------------------- ---- --------
+#     HTTP::Server::Simple                   0.44     0.52
+#     HTTP::Server::Simple::CGI               any    undef
+#     HTTP::Server::Simple::CGI::Environment  any    undef
+#     Module::Build                          0.28   0.4231
+#     Test::Exception                         any     0.43
+#     Test::More                              any 1.302175
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Test::More           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                      Want    Have
+#     --------------------------- ---- -------
+#     DateTime                     any    1.52
+#     DateTime::Format::DateParse  any    0.05
+#     Encode                       any    3.06
+#     Error                        any 0.17029
+#     Exception::Class             any    1.44
+#     Exporter                     any    5.74
+#     HTTP::Cookies                any    6.08
+#     HTTP::Request::Common        any    6.24
+#     LWP                          any    6.45
+#     Params::Validate             any    1.29
+#     URI                          any    1.76
+#     base                         any    2.27
+#     constant                     any    1.33
+#     strict                       any    1.11
+#     vars                         any    1.05
+#     warnings                     any    1.47
+#
+t/00-report-prereqs.t .......... ok
+t/01-use.t ..................... ok
+t/10-core.t .................... ok
+t/11-server-name.t ............. ok
+t/20-object.t .................. ok
+t/21-user.t .................... ok
+t/22-ticket.t .................. ok
+t/23-attachment.t .............. ok
+t/24-transaction.t ............. ok
+t/25-queue.t ................... ok
+t/26-group.t ................... ok
+t/35-db.t ...................... ok
+t/40-search.t .................. ok
+t/50-forms.t ................... ok
+t/60-with-rt.t ................. skipped: these tests are for release candidate testing
+t/80-timeout.t ................. ok
+t/81-submit.t .................. ok
+t/82-stringify.t ............... ok
+t/83-attachments.t ............. Use of uninitialized value $tcp in socket at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 705.
+t/83-attachments.t ............. 1/? Temporary failure in name resolution at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 168.
+t/83-attachments.t ............. ok
+t/84-attachments-rt127607.t .... Use of uninitialized value $tcp in socket at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 705.
+t/84-attachments-rt127607.t .... 1/? Temporary failure in name resolution at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 168.
+t/84-attachments-rt127607.t .... ok
+t/85-attachments-rt127607.t .... Use of uninitialized value $tcp in socket at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 705.
+t/85-attachments-rt127607.t .... 1/? Temporary failure in name resolution at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 168.
+t/85-attachments-rt127607.t .... ok
+t/86-redirect.t ................ ok
+t/author-critic.t .............. skipped: these tests are for testing by the author
+t/author-eof.t ................. skipped: these tests are for testing by the author
+t/author-eol.t ................. skipped: these tests are for testing by the author
+t/author-no-breakpoints.t ...... skipped: these tests are for testing by the author
+t/author-no-tabs.t ............. skipped: these tests are for testing by the author
+t/author-pod-coverage.t ........ skipped: these tests are for testing by the author
+t/author-pod-no404s.t .......... skipped: these tests are for testing by the author
+t/author-pod-spell.t ........... skipped: these tests are for testing by the author
+t/author-pod-syntax.t .......... skipped: these tests are for testing by the author
+t/author-portability.t ......... skipped: these tests are for testing by the author
+t/release-distmeta.t ........... skipped: these tests are for release candidate testing
+t/release-kwalitee.t ........... skipped: these tests are for release candidate testing
+t/release-pause-permissions.t .. skipped: these tests are for release candidate testing
+t/release-test-legal.t ......... skipped: these tests are for release candidate testing
+t/release-unused-vars.t ........ skipped: these tests are for release candidate testing
+All tests successful.
+Files=38, Tests=379, 38 wallclock secs ( 0.21 usr  0.05 sys +  9.64 cusr  8.27 csys = 18.17 CPU)
+Result: PASS
+installing
+Building RT-Client-REST
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Attachment.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Exception.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Object.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/HTTPClient.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Transaction.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Ticket.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Queue.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/User.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/SearchResult.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Forms.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Group.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib/perl5/site_perl/5.32.0/RT/Client/REST/Object/Exception.pm
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Object::Exception.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::SearchResult.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Forms.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::User.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Ticket.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Group.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Object.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Queue.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Attachment.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Transaction.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::Exception.3
+Installing /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3/RT::Client::REST::HTTPClient.3
+post-installation fixup
+Moving /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/man3 to /nix/store/bi38dsspyzl6zq5bfx3qry66hd3qvfgg-perl5.32.0-RT-Client-REST-0.60-devdoc/share/man/man3
+Removing empty /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60/lib
+patching script interpreter paths in /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60
+checking for references to /build/ in /nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bi38dsspyzl6zq5bfx3qry66hd3qvfgg-perl5.32.0-RT-Client-REST-0.60-devdoc
+gzipping man pages under /nix/store/bi38dsspyzl6zq5bfx3qry66hd3qvfgg-perl5.32.0-RT-Client-REST-0.60-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bi38dsspyzl6zq5bfx3qry66hd3qvfgg-perl5.32.0-RT-Client-REST-0.60-devdoc
+checking for references to /build/ in /nix/store/bi38dsspyzl6zq5bfx3qry66hd3qvfgg-perl5.32.0-RT-Client-REST-0.60-devdoc...
+/nix/store/nfyxqck43vxddrlhnqzjbv256b0bba8n-perl5.32.0-RT-Client-REST-0.60

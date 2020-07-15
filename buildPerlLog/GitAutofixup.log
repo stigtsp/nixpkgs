@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/0az10vd7lw2n7sdijhyg1kyhrwnv0l4l-perl5.32.0-App-Git-Autofixup-0.002007.drv
+building '/nix/store/0az10vd7lw2n7sdijhyg1kyhrwnv0l4l-perl5.32.0-App-Git-Autofixup-0.002007.drv'...
+unpacking sources
+unpacking source archive /nix/store/a2zi9mmw9fls3c87k1pq2scbl6gfhvc4-App-Git-Autofixup-0.002007.tar.gz
+source root is App-Git-Autofixup-0.002007
+setting SOURCE_DATE_EPOCH to timestamp 1566247292 of file App-Git-Autofixup-0.002007/META.yml
+patching sources
+configuring
+patching ./git-autofixup...
+patching ./t/autofixup.t...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for App::Git::Autofixup
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/App/Git/Autofixup.pm blib/lib/App/Git/Autofixup.pm
+cp git-autofixup blib/script/git-autofixup
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/git-autofixup
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/autofixup.t .. Can't exec "git": No such file or directory at t/autofixup.t line 28.
+t/autofixup.t .. skipped: git version 1.7.4+ required
+Files=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.06 cusr  0.01 csys =  0.09 CPU)
+Result: NOTESTS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/lib/pkgconfig m4datadir=/nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/aclocal aclocaldir=/nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/lib/perl5/site_perl/5.32.0/App/Git/Autofixup.pm
+Installing /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/man/man1/git-autofixup.1
+Installing /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/man/man3/App::Git::Autofixup.3
+Installing /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/bin/git-autofixup
+Appending installation info to /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/man/man3 to /nix/store/mlc5gq4dwmij4lmb93kpg79vjvid11sr-perl5.32.0-App-Git-Autofixup-0.002007-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007
+gzipping man pages under /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/lib  /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007/bin
+patching script interpreter paths in /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007
+checking for references to /build/ in /nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mlc5gq4dwmij4lmb93kpg79vjvid11sr-perl5.32.0-App-Git-Autofixup-0.002007-devdoc
+gzipping man pages under /nix/store/mlc5gq4dwmij4lmb93kpg79vjvid11sr-perl5.32.0-App-Git-Autofixup-0.002007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mlc5gq4dwmij4lmb93kpg79vjvid11sr-perl5.32.0-App-Git-Autofixup-0.002007-devdoc
+checking for references to /build/ in /nix/store/mlc5gq4dwmij4lmb93kpg79vjvid11sr-perl5.32.0-App-Git-Autofixup-0.002007-devdoc...
+/nix/store/c8zj2knqr5k887nnzb04b269g9nv8vb3-perl5.32.0-App-Git-Autofixup-0.002007

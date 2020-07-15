@@ -1,0 +1,120 @@
+these derivations will be built:
+  /nix/store/mjffwf7wvsnxy3kjg45xn4y8rf2kay0m-perl5.32.0-Math-Calc-Parser-1.005.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/4krn63qqaq0asjyagscim0nsjkvvdkd8-Math-Calc-Parser-1.005.tar.gz
+copying path '/nix/store/4krn63qqaq0asjyagscim0nsjkvvdkd8-Math-Calc-Parser-1.005.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mjffwf7wvsnxy3kjg45xn4y8rf2kay0m-perl5.32.0-Math-Calc-Parser-1.005.drv'...
+unpacking sources
+unpacking source archive /nix/store/4krn63qqaq0asjyagscim0nsjkvvdkd8-Math-Calc-Parser-1.005.tar.gz
+source root is Math-Calc-Parser-1.005
+setting SOURCE_DATE_EPOCH to timestamp 1570570757 of file Math-Calc-Parser-1.005/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::Calc::Parser
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/Calc/Parser.pm blib/lib/Math/Calc/Parser.pm
+cp lib/ath.pm blib/lib/ath.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::More          0.88 1.302175
+#     Test::Needs          any 0.002006
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module         Want   Have
+#     -------------- ---- ------
+#     Carp            any   1.50
+#     Encode         1.50   3.06
+#     Exporter        any   5.74
+#     Filter::Simple  any   0.96
+#     Math::Complex   any 1.5901
+#     POSIX           any   1.94
+#     Scalar::Util    any   1.55
+#
+# === Runtime Recommends ===
+#
+#     Module               Want    Have
+#     -------------------- ---- -------
+#     Math::Random::Secure  any missing
+#
+# === Other Modules ===
+#
+#     Module             Have
+#     -------------- --------
+#     Math::BigFloat 1.999818
+#     Math::BigInt   1.999818
+#     Math::BigRat     0.2614
+#
+t/00-report-prereqs.t .. ok
+t/ath.t ................ ok
+t/bignum.t ............. ok
+t/bigrat.t ............. ok
+t/errors.t ............. ok
+t/eval.t ............... ok
+t/functions.t .......... ok
+t/operators.t .......... ok
+t/parse.t .............. ok
+All tests successful.
+Files=9, Tests=251,  1 wallclock secs ( 0.05 usr  0.02 sys +  1.08 cusr  0.10 csys =  1.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/lib/pkgconfig m4datadir=/nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/aclocal aclocaldir=/nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/lib/perl5/site_perl/5.32.0/ath.pm
+Installing /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/lib/perl5/site_perl/5.32.0/Math/Calc/Parser.pm
+Installing /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/man/man3/ath.3
+Installing /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/man/man3/Math::Calc::Parser.3
+Appending installation info to /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/man/man3 to /nix/store/qk4mlzy2i22jmfnmadiiqcqfmdparly2-perl5.32.0-Math-Calc-Parser-1.005-devdoc/share/man/man3
+Removing empty /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005/lib
+patching script interpreter paths in /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005
+checking for references to /build/ in /nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qk4mlzy2i22jmfnmadiiqcqfmdparly2-perl5.32.0-Math-Calc-Parser-1.005-devdoc
+gzipping man pages under /nix/store/qk4mlzy2i22jmfnmadiiqcqfmdparly2-perl5.32.0-Math-Calc-Parser-1.005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qk4mlzy2i22jmfnmadiiqcqfmdparly2-perl5.32.0-Math-Calc-Parser-1.005-devdoc
+checking for references to /build/ in /nix/store/qk4mlzy2i22jmfnmadiiqcqfmdparly2-perl5.32.0-Math-Calc-Parser-1.005-devdoc...
+/nix/store/2b4lj0w7w9kjzccmsirnx307k4xhq834-perl5.32.0-Math-Calc-Parser-1.005

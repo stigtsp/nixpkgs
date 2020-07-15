@@ -1,0 +1,478 @@
+these derivations will be built:
+  /nix/store/s6wc63ppxvddymi0cvbd62na4k2zjwj1-perl5.32.0-String-Errf-0.008.drv
+  /nix/store/00nbmkq45wn1bsq0lv06inzml8w6qqd0-perl5.32.0-Role-HasMessage-0.006.drv
+  /nix/store/56wxn1wj9fg59jf76fzgn0sd8mdhsmc6-perl5.32.0-MooseX-OneArgNew-0.005.drv
+  /nix/store/y6kvg2nczydgj0wdwnypm6vz0pxnf6pw-perl5.32.0-Role-Identifiable-0.007.drv
+  /nix/store/rq1rhqajnx9iz6r7bkw5rzqzpy17k6r9-perl5.32.0-Config-MVP-2.200011.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/49fbipi59b8n8lkh3vnj0nf50y9gifbm-Role-HasMessage-0.006.tar.gz
+  /nix/store/f42y1zyl1srhx5acm3qk94fb34w10kvz-MooseX-OneArgNew-0.005.tar.gz
+  /nix/store/namhr0cchvvcr92z7q3mh098vwf688zl-Config-MVP-2.200011.tar.gz
+  /nix/store/pfgbsmgxfj32wnp430nd5jsvifvl9krk-Role-Identifiable-0.007.tar.gz
+  /nix/store/vwpqafcfb8xb60i436mdsfw77grkak0n-String-Errf-0.008.tar.gz
+copying path '/nix/store/namhr0cchvvcr92z7q3mh098vwf688zl-Config-MVP-2.200011.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/f42y1zyl1srhx5acm3qk94fb34w10kvz-MooseX-OneArgNew-0.005.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pfgbsmgxfj32wnp430nd5jsvifvl9krk-Role-Identifiable-0.007.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/49fbipi59b8n8lkh3vnj0nf50y9gifbm-Role-HasMessage-0.006.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/vwpqafcfb8xb60i436mdsfw77grkak0n-String-Errf-0.008.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/56wxn1wj9fg59jf76fzgn0sd8mdhsmc6-perl5.32.0-MooseX-OneArgNew-0.005.drv'...
+building '/nix/store/y6kvg2nczydgj0wdwnypm6vz0pxnf6pw-perl5.32.0-Role-Identifiable-0.007.drv'...
+building '/nix/store/s6wc63ppxvddymi0cvbd62na4k2zjwj1-perl5.32.0-String-Errf-0.008.drv'...
+unpacking sources
+unpacking source archive /nix/store/vwpqafcfb8xb60i436mdsfw77grkak0n-String-Errf-0.008.tar.gz
+source root is String-Errf-0.008
+setting SOURCE_DATE_EPOCH to timestamp 1467646645 of file String-Errf-0.008/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+unpacking sources
+unpacking source archive /nix/store/f42y1zyl1srhx5acm3qk94fb34w10kvz-MooseX-OneArgNew-0.005.tar.gz
+source root is MooseX-OneArgNew-0.005
+setting SOURCE_DATE_EPOCH to timestamp 1436925158 of file MooseX-OneArgNew-0.005/xt/release/pod-syntax.t
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/pfgbsmgxfj32wnp430nd5jsvifvl9krk-Role-Identifiable-0.007.tar.gz
+source root is Role-Identifiable-0.007
+setting SOURCE_DATE_EPOCH to timestamp 1381889914 of file Role-Identifiable-0.007/xt/release/pod-syntax.t
+patching ./xt/release/pod-syntax.t...
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./t/00-report-prereqs.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for String::Errf
+Checking if your kit is complete...
+Writing MYMETA.yml and MYMETA.json
+Checking if your kit is complete...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Looks good
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::OneArgNew
+Generating a Unix-style Makefile
+Writing Makefile for Role::Identifiable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/String/Errf.pm blib/lib/String/Errf.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp lib/Role/Identifiable/HasTags.pm blib/lib/Role/Identifiable/HasTags.pm
+cp lib/Role/Identifiable/HasIdent.pm blib/lib/Role/Identifiable/HasIdent.pm
+cp lib/MooseX/OneArgNew.pm blib/lib/MooseX/OneArgNew.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Date::Format         any     2.24
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     JSON::MaybeXS        any 1.004002
+#     Test::More          0.96 1.302175
+#     autodie              any     2.32
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                Want     Have
+#     ----------------- -------- --------
+#     Carp                   any     1.50
+#     Params::Util           any     1.07
+#     Scalar::Util           any     1.55
+#     String::Formatter 0.102081 0.102084
+#     Sub::Exporter          any    0.987
+#     Time::Piece            any   1.3401
+#     parent                 any    0.238
+#     strict                 any     1.11
+#     warnings               any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/bad.t ................ ok
+t/basic.t .............. ok
+All tests successful.
+Files=3, Tests=6,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.45 cusr  0.12 csys =  0.61 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/lib/pkgconfig m4datadir=/nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/share/aclocal aclocaldir=/nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/lib/perl5/site_perl/5.32.0/String/Errf.pm
+Installing /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/share/man/man3/String::Errf.3
+Appending installation info to /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/share/man/man3 to /nix/store/4rhk5fs9kw45qachvg0g4v009vazg9j9-perl5.32.0-String-Errf-0.008-devdoc/share/man/man3
+Removing empty /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008/lib
+patching script interpreter paths in /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008
+checking for references to /build/ in /nix/store/6d3zq5bihkslm15sis8zr04pk3xrfkhx-perl5.32.0-String-Errf-0.008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4rhk5fs9kw45qachvg0g4v009vazg9j9-perl5.32.0-String-Errf-0.008-devdoc
+gzipping man pages under /nix/store/4rhk5fs9kw45qachvg0g4v009vazg9j9-perl5.32.0-String-Errf-0.008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4rhk5fs9kw45qachvg0g4v009vazg9j9-perl5.32.0-String-Errf-0.008-devdoc
+checking for references to /build/ in /nix/store/4rhk5fs9kw45qachvg0g4v009vazg9j9-perl5.32.0-String-Errf-0.008-devdoc...
+building '/nix/store/00nbmkq45wn1bsq0lv06inzml8w6qqd0-perl5.32.0-Role-HasMessage-0.006.drv'...
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Moose                any   2.2012
+#     Test::More          0.96 1.302175
+#     strict               any     1.11
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                       Want   Have
+#     ---------------------------- ---- ------
+#     Moose::Util::TypeConstraints  any 2.2012
+#     MooseX::Role::Parameterized  1.01   1.11
+#     namespace::autoclean          any   0.29
+#
+t/00-report-prereqs.t .. ok
+t/00-compile.t ................ ok
+unpacking sources
+unpacking source archive /nix/store/49fbipi59b8n8lkh3vnj0nf50y9gifbm-Role-HasMessage-0.006.tar.gz
+source root is Role-HasMessage-0.006
+setting SOURCE_DATE_EPOCH to timestamp 1381889428 of file Role-HasMessage-0.006/xt/release/pod-syntax.t
+patching sources
+configuring
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+t/000-report-versions-tiny.t .. #
+Checking if your kit is complete...
+Looks good
+t/basic.t .............. ok
+Generating a Unix-style Makefile
+Writing Makefile for Role::HasMessage
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+#
+# Generated by Dist::Zilla::Plugin::ReportVersions::Tiny v1.10
+# perl: 5.032000 (wanted any version) on linux from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+#
+# ExtUtils::MakeMaker                           => 7.44       (want 6.30)
+# File::Spec                                    => 3.78       (want any version)
+# IO::Handle                                    => 1.42       (want any version)
+# IPC::Open3                                    => 1.21       (want any version)
+# Moose                                         => 2.2012     (want any version)
+# Moose::Role                                   => 2.2012     (want any version)
+# Moose::Util::TypeConstraints                  => 2.2012     (want any version)
+# Test::More                                    => 1.302175   (want 0.96)
+# strict                                        => 1.11       (want any version)
+# warnings                                      => 1.47       (want any version)
+#
+# Thanks for using my code.  I hope it works for you.
+# If not, please try and include this output in the bug report.
+# That will help me reproduce the issue and solve your problem.
+#
+t/000-report-versions-tiny.t .. ok
+t/coerce.t ............. ok
+All tests successful.
+Files=3, Tests=20,  2 wallclock secs ( 0.04 usr  0.02 sys +  0.97 cusr  0.48 csys =  1.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/lib/pkgconfig m4datadir=/nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/share/aclocal aclocaldir=/nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/share/aclocal install
+cp lib/Role/HasMessage/Errf.pm blib/lib/Role/HasMessage/Errf.pm
+cp lib/Role/HasMessage.pm blib/lib/Role/HasMessage.pm
+t/idents.t .................... ok
+All tests successful.
+Files=3, Tests=11,  2 wallclock secs ( 0.05 usr  0.02 sys +  1.13 cusr  0.43 csys =  1.63 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/lib/pkgconfig m4datadir=/nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/aclocal aclocaldir=/nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Installing /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/lib/perl5/site_perl/5.32.0/MooseX/OneArgNew.pm
+Installing /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/share/man/man3/MooseX::OneArgNew.3
+Appending installation info to /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+Installing /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/lib/perl5/site_perl/5.32.0/Role/Identifiable/HasTags.pm
+Installing /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/lib/perl5/site_perl/5.32.0/Role/Identifiable/HasIdent.pm
+Installing /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/man/man3/Role::Identifiable::HasIdent.3
+Installing /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/man/man3/Role::Identifiable::HasTags.3
+Appending installation info to /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/share/man/man3 to /nix/store/zw1mqbi9r2q8faraaynmdyxk87qj4v0r-perl5.32.0-MooseX-OneArgNew-0.005-devdoc/share/man/man3
+Removing empty /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005/lib
+patching script interpreter paths in /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005
+checking for references to /build/ in /nix/store/bmpyznxpgidijsh1xcivbqpn0fi454bx-perl5.32.0-MooseX-OneArgNew-0.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zw1mqbi9r2q8faraaynmdyxk87qj4v0r-perl5.32.0-MooseX-OneArgNew-0.005-devdoc
+post-installation fixup
+gzipping man pages under /nix/store/zw1mqbi9r2q8faraaynmdyxk87qj4v0r-perl5.32.0-MooseX-OneArgNew-0.005-devdoc/share/man/
+Moving /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/man/man3 to /nix/store/m4dpb9cgw4i2dl3ca8kbxs0g62rlryx7-perl5.32.0-Role-Identifiable-0.007-devdoc/share/man/man3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zw1mqbi9r2q8faraaynmdyxk87qj4v0r-perl5.32.0-MooseX-OneArgNew-0.005-devdoc
+Removing empty /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/share/man/ and (possibly) its parents
+checking for references to /build/ in /nix/store/zw1mqbi9r2q8faraaynmdyxk87qj4v0r-perl5.32.0-MooseX-OneArgNew-0.005-devdoc...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007/lib
+patching script interpreter paths in /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007
+checking for references to /build/ in /nix/store/c9866ijn08m4gv9b6jy4w61s6qsgp96b-perl5.32.0-Role-Identifiable-0.007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/m4dpb9cgw4i2dl3ca8kbxs0g62rlryx7-perl5.32.0-Role-Identifiable-0.007-devdoc
+gzipping man pages under /nix/store/m4dpb9cgw4i2dl3ca8kbxs0g62rlryx7-perl5.32.0-Role-Identifiable-0.007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/m4dpb9cgw4i2dl3ca8kbxs0g62rlryx7-perl5.32.0-Role-Identifiable-0.007-devdoc
+checking for references to /build/ in /nix/store/m4dpb9cgw4i2dl3ca8kbxs0g62rlryx7-perl5.32.0-Role-Identifiable-0.007-devdoc...
+t/00-compile.t ................ ok
+t/000-report-versions-tiny.t .. #
+#
+# Generated by Dist::Zilla::Plugin::ReportVersions::Tiny v1.10
+# perl: 5.032000 (wanted any version) on linux from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+#
+# ExtUtils::MakeMaker                           => 7.44       (want 6.30)
+# File::Spec                                    => 3.78       (want any version)
+# IO::Handle                                    => 1.42       (want any version)
+# IPC::Open3                                    => 1.21       (want any version)
+# Moose                                         => 2.2012     (want any version)
+# Moose::Role                                   => 2.2012     (want any version)
+# MooseX::Role::Parameterized                   => 1.11       (want any version)
+# String::Errf                                  => 0.008      (want any version)
+# Test::More                                    => 1.302175   (want 0.96)
+# Try::Tiny                                     => 0.30       (want any version)
+# namespace::clean                              => 0.27       (want any version)
+# strict                                        => 1.11       (want any version)
+# warnings                                      => 1.47       (want any version)
+#
+# Thanks for using my code.  I hope it works for you.
+# If not, please try and include this output in the bug report.
+# That will help me reproduce the issue and solve your problem.
+#
+t/000-report-versions-tiny.t .. ok
+t/message.t ................... ok
+All tests successful.
+Files=3, Tests=8,  2 wallclock secs ( 0.04 usr  0.03 sys +  1.03 cusr  0.42 csys =  1.52 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/lib/pkgconfig m4datadir=/nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/aclocal aclocaldir=/nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/lib/perl5/site_perl/5.32.0/Role/HasMessage.pm
+Installing /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/lib/perl5/site_perl/5.32.0/Role/HasMessage/Errf.pm
+Installing /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/man/man3/Role::HasMessage::Errf.3
+Installing /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/man/man3/Role::HasMessage.3
+Appending installation info to /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/man/man3 to /nix/store/c0mvp2d53j48myarvay3hcj85jcfcr80-perl5.32.0-Role-HasMessage-0.006-devdoc/share/man/man3
+Removing empty /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006/lib
+patching script interpreter paths in /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006
+checking for references to /build/ in /nix/store/xgz9gf96cyqkwi5akpbga3m7wlwbh540-perl5.32.0-Role-HasMessage-0.006...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c0mvp2d53j48myarvay3hcj85jcfcr80-perl5.32.0-Role-HasMessage-0.006-devdoc
+gzipping man pages under /nix/store/c0mvp2d53j48myarvay3hcj85jcfcr80-perl5.32.0-Role-HasMessage-0.006-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/c0mvp2d53j48myarvay3hcj85jcfcr80-perl5.32.0-Role-HasMessage-0.006-devdoc
+checking for references to /build/ in /nix/store/c0mvp2d53j48myarvay3hcj85jcfcr80-perl5.32.0-Role-HasMessage-0.006-devdoc...
+building '/nix/store/rq1rhqajnx9iz6r7bkw5rzqzpy17k6r9-perl5.32.0-Config-MVP-2.200011.drv'...
+unpacking sources
+unpacking source archive /nix/store/namhr0cchvvcr92z7q3mh098vwf688zl-Config-MVP-2.200011.tar.gz
+source root is Config-MVP-2.200011
+setting SOURCE_DATE_EPOCH to timestamp 1524298330 of file Config-MVP-2.200011/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::MVP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Config/MVP/Reader/Hash.pm blib/lib/Config/MVP/Reader/Hash.pm
+cp lib/Config/MVP/Assembler/WithBundles.pm blib/lib/Config/MVP/Assembler/WithBundles.pm
+cp lib/Config/MVP/Reader.pm blib/lib/Config/MVP/Reader.pm
+cp lib/Config/MVP/Reader/Findable/ByExtension.pm blib/lib/Config/MVP/Reader/Findable/ByExtension.pm
+cp lib/Config/MVP/Sequence.pm blib/lib/Config/MVP/Sequence.pm
+cp lib/Config/MVP/Reader/Finder.pm blib/lib/Config/MVP/Reader/Finder.pm
+cp lib/Config/MVP/Assembler.pm blib/lib/Config/MVP/Assembler.pm
+cp lib/Config/MVP/Reader/Findable.pm blib/lib/Config/MVP/Reader/Findable.pm
+cp lib/Config/MVP/Section.pm blib/lib/Config/MVP/Section.pm
+cp lib/Config/MVP.pm blib/lib/Config/MVP.pm
+cp lib/Config/MVP/Error.pm blib/lib/Config/MVP/Error.pm
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                       Want     Have
+#     ---------------------------- ---- --------
+#     Class::Load                  0.17     0.25
+#     Cwd                           any     3.78
+#     File::Spec                    any     3.78
+#     Module::Pluggable::Object     any      5.2
+#     Moose                        0.91   2.2012
+#     Moose::Role                   any   2.2012
+#     Moose::Util::TypeConstraints  any   2.2012
+#     MooseX::OneArgNew             any    0.005
+#     Params::Util                  any     1.07
+#     Role::HasMessage              any    0.006
+#     Role::Identifiable::HasIdent  any    0.007
+#     StackTrace::Auto              any 0.200013
+#     Test::More                   0.96 1.302175
+#     Throwable                     any 0.200013
+#     Tie::IxHash                   any     1.23
+#     Try::Tiny                     any     0.30
+#     overload                      any     1.31
+#     strict                        any     1.11
+#     warnings                      any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+t/final-hooks.t ........ ok
+t/hash.t ............... ok
+t/reader.t ............. ok
+All tests successful.
+Files=5, Tests=53,  3 wallclock secs ( 0.05 usr  0.03 sys +  1.65 cusr  0.78 csys =  2.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/pkgconfig m4datadir=/nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/aclocal aclocaldir=/nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Section.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Reader.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Assembler.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Sequence.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Error.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Reader/Hash.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Reader/Finder.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Reader/Findable.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Reader/Findable/ByExtension.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/site_perl/5.32.0/Config/MVP/Assembler/WithBundles.pm
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Reader.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Reader::Hash.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Reader::Findable::ByExtension.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Sequence.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Section.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Reader::Finder.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Error.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Assembler::WithBundles.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Assembler.3
+Installing /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3/Config::MVP::Reader::Findable.3
+Appending installation info to /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/man3 to /nix/store/2wqa3h55wz0zc6ymimw3r9siylbmascd-perl5.32.0-Config-MVP-2.200011-devdoc/share/man/man3
+Removing empty /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011/lib
+patching script interpreter paths in /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011
+checking for references to /build/ in /nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2wqa3h55wz0zc6ymimw3r9siylbmascd-perl5.32.0-Config-MVP-2.200011-devdoc
+gzipping man pages under /nix/store/2wqa3h55wz0zc6ymimw3r9siylbmascd-perl5.32.0-Config-MVP-2.200011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2wqa3h55wz0zc6ymimw3r9siylbmascd-perl5.32.0-Config-MVP-2.200011-devdoc
+checking for references to /build/ in /nix/store/2wqa3h55wz0zc6ymimw3r9siylbmascd-perl5.32.0-Config-MVP-2.200011-devdoc...
+/nix/store/4v33m7j8cvm03vh7p34ynifgivvh0kaw-perl5.32.0-Config-MVP-2.200011

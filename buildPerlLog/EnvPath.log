@@ -1,0 +1,64 @@
+these derivations will be built:
+  /nix/store/jsrsd1bxgpjxk0q459gm2rjfa39l1gr9-perl5.32.0-Env-Path-0.19.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/iinlbnp8552wrpjsyfxkiv86wcp8krzm-Env-Path-0.19.tar.gz
+copying path '/nix/store/iinlbnp8552wrpjsyfxkiv86wcp8krzm-Env-Path-0.19.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jsrsd1bxgpjxk0q459gm2rjfa39l1gr9-perl5.32.0-Env-Path-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/iinlbnp8552wrpjsyfxkiv86wcp8krzm-Env-Path-0.19.tar.gz
+source root is Env-Path-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1368572797 of file Env-Path-0.19/META.yml
+patching sources
+configuring
+patching ./examples/Whence...
+patching ./envpath...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Env::Path
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Path.pm blib/lib/Env/Path.pm
+cp envpath blib/script/envpath
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/envpath
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+
+1..8
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+ok 7
+ok 8
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/lib/pkgconfig m4datadir=/nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/aclocal aclocaldir=/nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/lib/perl5/site_perl/5.32.0/Env/Path.pm
+Installing /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/man/man1/envpath.1
+Installing /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/man/man3/Env::Path.3
+Installing /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/bin/envpath
+Appending installation info to /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/man/man3 to /nix/store/l6vkj44x03v02myvyc618bfww3hdsan8-perl5.32.0-Env-Path-0.19-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19
+gzipping man pages under /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/lib  /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19/bin
+patching script interpreter paths in /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19
+checking for references to /build/ in /nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l6vkj44x03v02myvyc618bfww3hdsan8-perl5.32.0-Env-Path-0.19-devdoc
+gzipping man pages under /nix/store/l6vkj44x03v02myvyc618bfww3hdsan8-perl5.32.0-Env-Path-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l6vkj44x03v02myvyc618bfww3hdsan8-perl5.32.0-Env-Path-0.19-devdoc
+checking for references to /build/ in /nix/store/l6vkj44x03v02myvyc618bfww3hdsan8-perl5.32.0-Env-Path-0.19-devdoc...
+/nix/store/nj3d4faz8cmgqgxqqixfzvzmz9apzqnv-perl5.32.0-Env-Path-0.19

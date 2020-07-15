@@ -1,0 +1,386 @@
+these derivations will be built:
+  /nix/store/9zkjccd68d72150i63dwdkxcjwzpb1az-perl5.32.0-WWW-Form-UrlEncoded-0.26.drv
+  /nix/store/c905z8ashs5fc1csv6vn0kia6prni20v-perl5.32.0-HTTP-Body-1.22.drv
+  /nix/store/ikd9c507lsx2nb29c4qyf57q4qcvw52k-perl5.32.0-Apache-Test-1.42.drv
+  /nix/store/ywi952r5hlxzv5dbvqnhnn58088sr301-perl5.32.0-Hash-MultiValue-0.16.drv
+  /nix/store/ldpnw1zyr06bc01hnhnjqy3wqn2kvxgc-perl5.32.0-Apache-AuthCookie-3.30.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/v59ckw9q1cci5pspl5hrmw36h4k1rxhl-Apache-AuthCookie-3.30.tar.gz
+copying path '/nix/store/v59ckw9q1cci5pspl5hrmw36h4k1rxhl-Apache-AuthCookie-3.30.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ikd9c507lsx2nb29c4qyf57q4qcvw52k-perl5.32.0-Apache-Test-1.42.drv'...
+building '/nix/store/c905z8ashs5fc1csv6vn0kia6prni20v-perl5.32.0-HTTP-Body-1.22.drv'...
+building '/nix/store/ywi952r5hlxzv5dbvqnhnn58088sr301-perl5.32.0-Hash-MultiValue-0.16.drv'...
+building '/nix/store/9zkjccd68d72150i63dwdkxcjwzpb1az-perl5.32.0-WWW-Form-UrlEncoded-0.26.drv'...
+unpacking sources
+unpacking source archive /nix/store/xq6qr3lgi7b85433c50rbv1g52kl8xzz-Hash-MultiValue-0.16.tar.gz
+source root is Hash-MultiValue-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1424158778 of file Hash-MultiValue-0.16/xt/synopsis.t
+patching sources
+unpacking sources
+configuring
+unpacking source archive /nix/store/yygc2jbdxn94bfcxna8qyfgcsmyzp8dh-WWW-Form-UrlEncoded-0.26.tar.gz
+unpacking sources
+unpacking source archive /nix/store/nkh7ns1h7jkybzl4vzdwpfp5vah2zsaa-Apache-Test-1.42.tar.gz
+source root is WWW-Form-UrlEncoded-0.26
+setting SOURCE_DATE_EPOCH to timestamp 1559889301 of file WWW-Form-UrlEncoded-0.26/t/06_parse_arrayref_pp.t
+patching sources
+source root is Apache-Test-1.42
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1566976328 of file Apache-Test-1.42/t/sok.t
+patching sources
+configuring
+patching ./t/release-pod-syntax.t...
+patching ./t/import.t...
+patching ./tools/benchmark.pl...
+patching ./eg/bench.pl...
+patching ./t/cgi-bin/cookies.pl.PL...
+patching ./eg/bench_build.pl...
+no configure script, doing nothing
+building
+patching ./t/sok.t...
+unpacking sources
+unpacking source archive /nix/store/lryvibk1y352lgj2s2za95336zgnh1nh-HTTP-Body-1.22.tar.gz
+source root is HTTP-Body-1.22
+setting SOURCE_DATE_EPOCH to timestamp 1422503513 of file HTTP-Body-1.22/t/utf8.txt
+patching sources
+configuring
+patching ./scripts/stress.pl...
+patching ./t/07xforms.t...
+patching ./t/05urlencoded.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Hash::MultiValue
+Writing MYMETA.yml and MYMETA.json
+patching ./t/04multipart.t...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+patching ./t/08multipart-suffix.t...
+patching ./t/01use.t...
+patching ./t/09rt88342.t...
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'WWW-Form-UrlEncoded' version '0.26'
+[   info] generating script t/TEST
+[   info] generating script ./t/cgi-bin/cookies.pl
+[   info] generating script ./t/cgi-bin/next_available_port.pl
+Checking if your kit is complete...
+Looks good
+Building WWW-Form-UrlEncoded
+Checking if your kit is complete...
+Generating a Unix-style Makefile
+Writing Makefile for Apache::Test
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Checking for Cwd...ok
+Checking for File::Spec...ok
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for HTTP::Body
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Hash/MultiValue.pm blib/lib/Hash/MultiValue.pm
+running tests
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp lib/Apache/TestMB.pm blib/lib/Apache/TestMB.pm
+cp lib/Apache/TestHandler.pm blib/lib/Apache/TestHandler.pm
+cp lib/Apache/TestHarness.pm blib/lib/Apache/TestHarness.pm
+cp lib/Apache/TestReportPerl.pm blib/lib/Apache/TestReportPerl.pm
+cp lib/Apache/TestSmoke.pm blib/lib/Apache/TestSmoke.pm
+cp lib/Apache/TestBuild.pm blib/lib/Apache/TestBuild.pm
+cp lib/Apache/TestMM.pm blib/lib/Apache/TestMM.pm
+cp lib/Apache/TestTrace.pm blib/lib/Apache/TestTrace.pm
+cp lib/Apache/TestRequest.pm blib/lib/Apache/TestRequest.pm
+cp lib/Apache/Test.pm blib/lib/Apache/Test.pm
+cp lib/Apache/TestSmokePerl.pm blib/lib/Apache/TestSmokePerl.pm
+cp lib/Apache/TestConfigParse.pm blib/lib/Apache/TestConfigParse.pm
+cp lib/Apache/TestConfigParrot.pm blib/lib/Apache/TestConfigParrot.pm
+cp lib/Apache/TestConfigPHP.pm blib/lib/Apache/TestConfigPHP.pm
+cp lib/Apache/TestUtil.pm blib/lib/Apache/TestUtil.pm
+cp lib/Apache/TestRunPHP.pm blib/lib/Apache/TestRunPHP.pm
+cp lib/Apache/TestHarnessPHP.pm blib/lib/Apache/TestHarnessPHP.pm
+cp lib/Apache/TestReport.pm blib/lib/Apache/TestReport.pm
+cp lib/Apache/TestRunParrot.pm blib/lib/Apache/TestRunParrot.pm
+cp lib/Bundle/ApacheTest.pm blib/lib/Bundle/ApacheTest.pm
+cp lib/Apache/TestSSLCA.pm blib/lib/Apache/TestSSLCA.pm
+cp lib/Apache/TestConfigPerl.pm blib/lib/Apache/TestConfigPerl.pm
+cp lib/Apache/TestClient.pm blib/lib/Apache/TestClient.pm
+cp lib/Apache/TestSort.pm blib/lib/Apache/TestSort.pm
+cp lib/Apache/TestRunPerl.pm blib/lib/Apache/TestRunPerl.pm
+cp lib/Apache/TestRun.pm blib/lib/Apache/TestRun.pm
+cp lib/Apache/TestCommon.pm blib/lib/Apache/TestCommon.pm
+cp lib/Apache/TestPerlDB.pm blib/lib/Apache/TestPerlDB.pm
+cp lib/Apache/Test5005compat.pm blib/lib/Apache/Test5005compat.pm
+cp lib/Apache/TestServer.pm blib/lib/Apache/TestServer.pm
+cp lib/Apache/TestConfig.pm blib/lib/Apache/TestConfig.pm
+cp lib/Apache/TestCommonPost.pm blib/lib/Apache/TestCommonPost.pm
+cp lib/Apache/TestConfigC.pm blib/lib/Apache/TestConfigC.pm
+t/00_compile.t ............ ok
+t/00_compile.t .......... ok
+Manifying 15 pod documents
+cp lib/HTTP/Body/OctetStream.pm blib/lib/HTTP/Body/OctetStream.pm
+cp lib/HTTP/Body/XFormsMultipart.pm blib/lib/HTTP/Body/XFormsMultipart.pm
+cp lib/HTTP/Body.pm blib/lib/HTTP/Body.pm
+cp lib/HTTP/Body/MultiPart.pm blib/lib/HTTP/Body/MultiPart.pm
+cp lib/HTTP/Body/XForms.pm blib/lib/HTTP/Body/XForms.pm
+cp lib/HTTP/Body/UrlEncoded.pm blib/lib/HTTP/Body/UrlEncoded.pm
+t/from_mixed.t .......... ok
+t/01_parse.t .............. ok
+Manifying 6 pod documents
+t/hash.t ................ ok
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/multi.t ............... ok
+t/02_parse_pp.t ........... ok
+t/ref.t ................. skipped: No UNIVERSAL::ref
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/pkgconfig m4datadir=/nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/aclocal aclocaldir=/nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/aclocal install
+t/03_build.t .............. ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+t/04_build_pp.t ........... ok
+Manifying 15 pod documents
+t/set.t ................. ok
+t/05_parse_arrayref.t ..... ok
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Bundle/ApacheTest.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestUtil.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestBuild.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestRequest.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestMB.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestSort.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestClient.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestSmoke.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestPerlDB.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestReport.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestTrace.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfigC.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestRun.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/Test.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfigPerl.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/Test5005compat.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestHandler.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestHarnessPHP.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestCommonPost.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestRunPerl.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfig.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestSSLCA.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestMM.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestHarness.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestRunParrot.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfigPHP.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestReportPerl.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestSmokePerl.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfigParrot.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestConfigParse.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestCommon.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestRunPHP.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Apache/TestServer.pm
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestTrace.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestMB.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestRunPerl.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestSmoke.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Bundle::ApacheTest.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::Test.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestUtil.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestRun.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestRunPHP.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestServer.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestHandler.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestRequest.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestReport.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestConfig.3
+Installing /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3/Apache::TestMM.3
+Appending installation info to /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+t/01use.t ............... ok
+t/storable.t ............ ok
+post-installation fixup
+Moving /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/man3 to /nix/store/13yxryamgcq3asg8x1llihd2z9vvkwmi-perl5.32.0-Apache-Test-1.42-devdoc/share/man/man3
+t/06_parse_arrayref_pp.t .. ok
+Removing empty /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/share/man/ and (possibly) its parents
+All tests successful.
+Files=7, Tests=199,  1 wallclock secs ( 0.06 usr  0.01 sys +  0.59 cusr  0.10 csys =  0.76 CPU)
+Result: PASS
+installing
+shrinking RPATHs of ELF executables and libraries in /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42/lib
+patching script interpreter paths in /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42
+checking for references to /build/ in /nix/store/5nl4ckx3gkjwmd99kgmz6nzxba7k9jz4-perl5.32.0-Apache-Test-1.42...
+shrinking RPATHs of ELF executables and libraries in /nix/store/13yxryamgcq3asg8x1llihd2z9vvkwmi-perl5.32.0-Apache-Test-1.42-devdoc
+gzipping man pages under /nix/store/13yxryamgcq3asg8x1llihd2z9vvkwmi-perl5.32.0-Apache-Test-1.42-devdoc/share/man/
+t/threads.t ............. ok
+t/02pod.t ............... skipped: Test::Pod 1.14 required
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/13yxryamgcq3asg8x1llihd2z9vvkwmi-perl5.32.0-Apache-Test-1.42-devdoc
+checking for references to /build/ in /nix/store/13yxryamgcq3asg8x1llihd2z9vvkwmi-perl5.32.0-Apache-Test-1.42-devdoc...
+Building WWW-Form-UrlEncoded
+t/write.t ............... ok
+All tests successful.
+Files=10, Tests=57,  0 wallclock secs ( 0.05 usr  0.01 sys +  0.68 cusr  0.10 csys =  0.84 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/pkgconfig m4datadir=/nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/share/aclocal aclocaldir=/nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/share/aclocal install
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+t/03podcoverage.t ....... skipped: Test::Pod::Coverage 1.04 required
+Installing /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/WWW/Form/UrlEncoded/XS/.keep
+Installing /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/WWW/Form/UrlEncoded.pm
+Installing /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/WWW/Form/UrlEncoded/PP.pm
+Installing /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/share/man/man3/WWW::Form::UrlEncoded::PP.3
+Installing /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/share/man/man3/WWW::Form::UrlEncoded.3
+post-installation fixup
+Moving /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/share/man/man3 to /nix/store/9na33azk9vfx8abdhqq11m55821jzxia-perl5.32.0-WWW-Form-UrlEncoded-0.26-devdoc/share/man/man3
+Removing empty /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib
+patching script interpreter paths in /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26
+checking for references to /build/ in /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9na33azk9vfx8abdhqq11m55821jzxia-perl5.32.0-WWW-Form-UrlEncoded-0.26-devdoc
+gzipping man pages under /nix/store/9na33azk9vfx8abdhqq11m55821jzxia-perl5.32.0-WWW-Form-UrlEncoded-0.26-devdoc/share/man/
+Installing /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/perl5/site_perl/5.32.0/Hash/MultiValue.pm
+Installing /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/share/man/man3/Hash::MultiValue.3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9na33azk9vfx8abdhqq11m55821jzxia-perl5.32.0-WWW-Form-UrlEncoded-0.26-devdoc
+checking for references to /build/ in /nix/store/9na33azk9vfx8abdhqq11m55821jzxia-perl5.32.0-WWW-Form-UrlEncoded-0.26-devdoc...
+Appending installation info to /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/share/man/man3 to /nix/store/pz7giqjidlbm2m6yayn2b96iagkcrl8d-perl5.32.0-Hash-MultiValue-0.16-devdoc/share/man/man3
+Removing empty /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib
+patching script interpreter paths in /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16
+checking for references to /build/ in /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/pz7giqjidlbm2m6yayn2b96iagkcrl8d-perl5.32.0-Hash-MultiValue-0.16-devdoc
+gzipping man pages under /nix/store/pz7giqjidlbm2m6yayn2b96iagkcrl8d-perl5.32.0-Hash-MultiValue-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/pz7giqjidlbm2m6yayn2b96iagkcrl8d-perl5.32.0-Hash-MultiValue-0.16-devdoc
+checking for references to /build/ in /nix/store/pz7giqjidlbm2m6yayn2b96iagkcrl8d-perl5.32.0-Hash-MultiValue-0.16-devdoc...
+t/04critic.t ............ skipped: Critic test only for developers.
+t/04multipart.t ......... ok
+t/05urlencoded.t ........ ok
+t/06octetstream.t ....... ok
+t/07xforms.t ............ ok
+t/08multipart-suffix.t .. ok
+t/09rt88342.t ........... ok
+t/10mixparamcontent.t ... ok
+All tests successful.
+Files=11, Tests=239,  1 wallclock secs ( 0.07 usr  0.02 sys +  1.09 cusr  0.44 csys =  1.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/pkgconfig m4datadir=/nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/aclocal aclocaldir=/nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body/MultiPart.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body/OctetStream.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body/XFormsMultipart.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body/UrlEncoded.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/HTTP/Body/XForms.pm
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body::XFormsMultipart.3
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body::OctetStream.3
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body::XForms.3
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body::UrlEncoded.3
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body.3
+Installing /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3/HTTP::Body::MultiPart.3
+Appending installation info to /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/man3 to /nix/store/nb52jyn52b0dvrd8065lx63sbfpfxlz2-perl5.32.0-HTTP-Body-1.22-devdoc/share/man/man3
+Removing empty /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib
+patching script interpreter paths in /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22
+checking for references to /build/ in /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nb52jyn52b0dvrd8065lx63sbfpfxlz2-perl5.32.0-HTTP-Body-1.22-devdoc
+gzipping man pages under /nix/store/nb52jyn52b0dvrd8065lx63sbfpfxlz2-perl5.32.0-HTTP-Body-1.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nb52jyn52b0dvrd8065lx63sbfpfxlz2-perl5.32.0-HTTP-Body-1.22-devdoc
+checking for references to /build/ in /nix/store/nb52jyn52b0dvrd8065lx63sbfpfxlz2-perl5.32.0-HTTP-Body-1.22-devdoc...
+building '/nix/store/ldpnw1zyr06bc01hnhnjqy3wqn2kvxgc-perl5.32.0-Apache-AuthCookie-3.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/v59ckw9q1cci5pspl5hrmw36h4k1rxhl-Apache-AuthCookie-3.30.tar.gz
+source root is Apache-AuthCookie-3.30
+setting SOURCE_DATE_EPOCH to timestamp 1586878617 of file Apache-AuthCookie-3.30/t/util.t
+patching sources
+configuring
+patching ./scripts/dzil-build...
+patching ./scripts/run-docker-tests...
+patching ./scripts/docker-smoke...
+patching ./scripts/perlbrew-smoke...
+patching ./scripts/docker-shell...
+patching ./t/signature.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-signature.t...
+patching ./t/util.t...
+patching ./t/TEST.PL...
+patching ./t/htdocs/docs/login.pl...
+[   info] generating script t/TEST
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite mod_perl2 1.999022 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Apache::AuthCookie
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Apache/AuthCookie/FAQ.pod blib/lib/Apache/AuthCookie/FAQ.pod
+cp lib/Apache/AuthCookie/Params/Base.pm blib/lib/Apache/AuthCookie/Params/Base.pm
+cp README.apache-2.4.pod blib/lib/Apache/README.apache-2.4.pod
+cp lib/Apache2/AuthCookie.pm blib/lib/Apache2/AuthCookie.pm
+cp lib/Apache2/AuthCookie/Params.pm blib/lib/Apache2/AuthCookie/Params.pm
+cp lib/Apache2/AuthCookie/Base.pm blib/lib/Apache2/AuthCookie/Base.pm
+cp lib/Apache/AuthCookie.pm blib/lib/Apache/AuthCookie.pm
+cp lib/Apache/AuthCookie/Params/CGI.pm blib/lib/Apache/AuthCookie/Params/CGI.pm
+cp lib/Apache/AuthCookie/Params.pm blib/lib/Apache/AuthCookie/Params.pm
+cp lib/Apache/AuthCookie/Util.pm blib/lib/Apache/AuthCookie/Util.pm
+cp lib/Apache2_4/AuthCookie.pm blib/lib/Apache2_4/AuthCookie.pm
+Manifying 11 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/pkgconfig m4datadir=/nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/aclocal aclocaldir=/nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache2/AuthCookie.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache2/AuthCookie/Params.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache2/AuthCookie/Base.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/README.apache-2.4.pod
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie/Util.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie/Params.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie/FAQ.pod
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie/Params/CGI.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache/AuthCookie/Params/Base.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/site_perl/5.32.0/Apache2_4/AuthCookie.pm
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie::Util.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache2::AuthCookie::Base.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie::Params.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::README.apache-2.4.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache2::AuthCookie.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie::Params::CGI.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie::FAQ.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache::AuthCookie::Params::Base.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache2::AuthCookie::Params.3
+Installing /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3/Apache2_4::AuthCookie.3
+Appending installation info to /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/man3 to /nix/store/xlvgswby1dg828qn0y1lbhigmdkmrdal-perl5.32.0-Apache-AuthCookie-3.30-devdoc/share/man/man3
+Removing empty /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30/lib
+patching script interpreter paths in /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30
+checking for references to /build/ in /nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xlvgswby1dg828qn0y1lbhigmdkmrdal-perl5.32.0-Apache-AuthCookie-3.30-devdoc
+gzipping man pages under /nix/store/xlvgswby1dg828qn0y1lbhigmdkmrdal-perl5.32.0-Apache-AuthCookie-3.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xlvgswby1dg828qn0y1lbhigmdkmrdal-perl5.32.0-Apache-AuthCookie-3.30-devdoc
+checking for references to /build/ in /nix/store/xlvgswby1dg828qn0y1lbhigmdkmrdal-perl5.32.0-Apache-AuthCookie-3.30-devdoc...
+/nix/store/fl1jms9d8ls7m52rn9ncf91k1wdvy17b-perl5.32.0-Apache-AuthCookie-3.30

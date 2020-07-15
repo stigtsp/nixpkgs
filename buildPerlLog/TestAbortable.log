@@ -1,0 +1,95 @@
+these derivations will be built:
+  /nix/store/gfj7j5bf3slpka3ad63ax13wia8n7rqg-perl5.32.0-Test-Abortable-0.002.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/yq616b4zmq7nndm9pv5n1x0qfxbjf7qd-Test-Abortable-0.002.tar.gz
+copying path '/nix/store/yq616b4zmq7nndm9pv5n1x0qfxbjf7qd-Test-Abortable-0.002.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gfj7j5bf3slpka3ad63ax13wia8n7rqg-perl5.32.0-Test-Abortable-0.002.drv'...
+unpacking sources
+unpacking source archive /nix/store/yq616b4zmq7nndm9pv5n1x0qfxbjf7qd-Test-Abortable-0.002.tar.gz
+source root is Test-Abortable-0.002
+setting SOURCE_DATE_EPOCH to timestamp 1484589711 of file Test-Abortable-0.002/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Abortable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Abortable.pm blib/lib/Test/Abortable.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Data::Dumper         any    2.174
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#     Test::Needs          any 0.002006
+#     overload             any     1.31
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module            Want     Have
+#     ------------- -------- --------
+#     Sub::Exporter      any    0.987
+#     Test2::API    1.302075 1.302175
+#     strict             any     1.11
+#     warnings           any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/abort.t .............. ok
+t/failures.t ........... skipped: Need failures
+All tests successful.
+Files=3, Tests=6,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.29 cusr  0.09 csys =  0.41 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/lib/pkgconfig m4datadir=/nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/share/aclocal aclocaldir=/nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/lib/perl5/site_perl/5.32.0/Test/Abortable.pm
+Installing /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/share/man/man3/Test::Abortable.3
+Appending installation info to /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/share/man/man3 to /nix/store/416r57rnnj6a5sv9py1a3if3dryrrp07-perl5.32.0-Test-Abortable-0.002-devdoc/share/man/man3
+Removing empty /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002/lib
+patching script interpreter paths in /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002
+checking for references to /build/ in /nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002...
+shrinking RPATHs of ELF executables and libraries in /nix/store/416r57rnnj6a5sv9py1a3if3dryrrp07-perl5.32.0-Test-Abortable-0.002-devdoc
+gzipping man pages under /nix/store/416r57rnnj6a5sv9py1a3if3dryrrp07-perl5.32.0-Test-Abortable-0.002-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/416r57rnnj6a5sv9py1a3if3dryrrp07-perl5.32.0-Test-Abortable-0.002-devdoc
+checking for references to /build/ in /nix/store/416r57rnnj6a5sv9py1a3if3dryrrp07-perl5.32.0-Test-Abortable-0.002-devdoc...
+/nix/store/p542czny04n5040bm9vlj236a0n01wly-perl5.32.0-Test-Abortable-0.002

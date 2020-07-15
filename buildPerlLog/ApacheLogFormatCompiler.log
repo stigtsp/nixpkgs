@@ -1,0 +1,135 @@
+these derivations will be built:
+  /nix/store/r06cvin2627wn4ganafsyk9hnncn01qn-perl5.32.0-Test-MockTime-0.17.drv
+  /nix/store/rzzs1dzxdp36xpwf2yxnprhmc3r869n1-perl5.32.0-POSIX-strftime-Compiler-0.42.drv
+  /nix/store/hj9z5vss4kljzlp8iayjxsfnivfxkbn2-perl5.32.0-Apache-LogFormat-Compiler-0.36.drv
+building '/nix/store/rzzs1dzxdp36xpwf2yxnprhmc3r869n1-perl5.32.0-POSIX-strftime-Compiler-0.42.drv'...
+building '/nix/store/r06cvin2627wn4ganafsyk9hnncn01qn-perl5.32.0-Test-MockTime-0.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/vz8m4c5vg8h4hn7ljpd3i377gsi7sy41-POSIX-strftime-Compiler-0.42.tar.gz
+unpacking sources
+unpacking source archive /nix/store/q7lspyqwbnsip3qv9nzpcbqqrvfwmjj6-Test-MockTime-0.17.tar.gz
+source root is POSIX-strftime-Compiler-0.42
+source root is Test-MockTime-0.17
+setting SOURCE_DATE_EPOCH to timestamp 1468231485 of file POSIX-strftime-Compiler-0.42/t/04_tzset.t
+setting SOURCE_DATE_EPOCH to timestamp 1522562832 of file Test-MockTime-0.17/META.yml
+patching sources
+patching sources
+configuring
+configuring
+patching ./t/prototypes.t...
+patching ./t/string-time.t...
+patching ./t/02_timezone.pl...
+patching ./t/test.t...
+patching ./Makefile.PL...
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+WARNING: the following files are missing in your kit:
+        t/04_tzset.t
+Please inform the author.
+
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::MockTime
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'POSIX-strftime-Compiler' version '0.42'
+cp META.json MYMETA.json
+cp META.yml MYMETA.yml
+Building POSIX-strftime-Compiler
+cp lib/Test/MockTime.pm blib/lib/Test/MockTime.pm
+Manifying 1 pod document
+running tests
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/export.t ....... ok
+t/00_compile.t ... ok
+t/pod.t .......... skipped: Test::Pod 1.00 required for testing POD
+t/prototypes.t ... ok
+t/01_basic.t ..... ok
+t/02_timezone.t .. ok
+t/03_isoweek.t ... ok
+All tests successful.
+Files=4, Tests=375,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.38 cusr  0.09 csys =  0.53 CPU)
+Result: PASS
+installing
+Building POSIX-strftime-Compiler
+Installing /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/lib/perl5/site_perl/5.32.0/POSIX/strftime/Compiler.pm
+Installing /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/share/man/man3/POSIX::strftime::Compiler.3
+post-installation fixup
+Moving /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/share/man/man3 to /nix/store/bc9yhq4ff3fhj7vsdijv1nkczbii47nh-perl5.32.0-POSIX-strftime-Compiler-0.42-devdoc/share/man/man3
+Removing empty /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/lib
+patching script interpreter paths in /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42
+checking for references to /build/ in /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bc9yhq4ff3fhj7vsdijv1nkczbii47nh-perl5.32.0-POSIX-strftime-Compiler-0.42-devdoc
+gzipping man pages under /nix/store/bc9yhq4ff3fhj7vsdijv1nkczbii47nh-perl5.32.0-POSIX-strftime-Compiler-0.42-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bc9yhq4ff3fhj7vsdijv1nkczbii47nh-perl5.32.0-POSIX-strftime-Compiler-0.42-devdoc
+checking for references to /build/ in /nix/store/bc9yhq4ff3fhj7vsdijv1nkczbii47nh-perl5.32.0-POSIX-strftime-Compiler-0.42-devdoc...
+t/string-time.t .. ok
+t/test.t ......... ok
+All tests successful.
+Files=5, Tests=33, 29 wallclock secs ( 0.03 usr  0.00 sys +  0.26 cusr  0.03 csys =  0.32 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/lib/pkgconfig m4datadir=/nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/share/aclocal aclocaldir=/nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/lib/perl5/site_perl/5.32.0/Test/MockTime.pm
+Installing /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/share/man/man3/Test::MockTime.3
+Appending installation info to /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/share/man/man3 to /nix/store/gpx1h8xr8jf9jhsmg3x2a468qd7kicks-perl5.32.0-Test-MockTime-0.17-devdoc/share/man/man3
+Removing empty /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17/lib
+patching script interpreter paths in /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17
+checking for references to /build/ in /nix/store/0wi3f6l8zvpnlscd0k6613ahdffrzlr4-perl5.32.0-Test-MockTime-0.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gpx1h8xr8jf9jhsmg3x2a468qd7kicks-perl5.32.0-Test-MockTime-0.17-devdoc
+gzipping man pages under /nix/store/gpx1h8xr8jf9jhsmg3x2a468qd7kicks-perl5.32.0-Test-MockTime-0.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gpx1h8xr8jf9jhsmg3x2a468qd7kicks-perl5.32.0-Test-MockTime-0.17-devdoc
+checking for references to /build/ in /nix/store/gpx1h8xr8jf9jhsmg3x2a468qd7kicks-perl5.32.0-Test-MockTime-0.17-devdoc...
+building '/nix/store/hj9z5vss4kljzlp8iayjxsfnivfxkbn2-perl5.32.0-Apache-LogFormat-Compiler-0.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/sd4lkhwa0dpr5h55ihacw53fznlcdjlj-Apache-LogFormat-Compiler-0.36.tar.gz
+source root is Apache-LogFormat-Compiler-0.36
+setting SOURCE_DATE_EPOCH to timestamp 1573914849 of file Apache-LogFormat-Compiler-0.36/t/Req2PSGI.pm
+patching sources
+configuring
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Apache-LogFormat-Compiler' version '0.36'
+cp lib/Apache/LogFormat/Compiler.pm blib/lib/Apache/LogFormat/Compiler.pm
+running tests
+t/00_compile.t .. ok
+t/01_basic.t .... ok
+t/02_custom.t ... ok
+t/03_extra.t .... ok
+All tests successful.
+Files=4, Tests=20,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.31 cusr  0.17 csys =  0.53 CPU)
+Result: PASS
+installing
+Installing /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/lib/perl5/site_perl/5.32.0/Apache/LogFormat/Compiler.pm
+Installing /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/share/man/man3/Apache::LogFormat::Compiler.3
+post-installation fixup
+Moving /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/share/man/man3 to /nix/store/bi69rljkzqiyw060w3n0gapfvscjm59z-perl5.32.0-Apache-LogFormat-Compiler-0.36-devdoc/share/man/man3
+Removing empty /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/lib
+patching script interpreter paths in /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36
+checking for references to /build/ in /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bi69rljkzqiyw060w3n0gapfvscjm59z-perl5.32.0-Apache-LogFormat-Compiler-0.36-devdoc
+gzipping man pages under /nix/store/bi69rljkzqiyw060w3n0gapfvscjm59z-perl5.32.0-Apache-LogFormat-Compiler-0.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bi69rljkzqiyw060w3n0gapfvscjm59z-perl5.32.0-Apache-LogFormat-Compiler-0.36-devdoc
+checking for references to /build/ in /nix/store/bi69rljkzqiyw060w3n0gapfvscjm59z-perl5.32.0-Apache-LogFormat-Compiler-0.36-devdoc...
+/nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36

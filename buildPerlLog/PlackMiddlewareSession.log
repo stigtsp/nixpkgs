@@ -1,0 +1,101 @@
+these derivations will be built:
+  /nix/store/m5lr3w2d6fc9nixrac2rxy6jzr54wyw6-perl5.32.0-Plack-Middleware-Session-0.33.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/frlmqc6rb3qysfmsaxj7yasccfdai7g8-Plack-Middleware-Session-0.33.tar.gz
+copying path '/nix/store/frlmqc6rb3qysfmsaxj7yasccfdai7g8-Plack-Middleware-Session-0.33.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m5lr3w2d6fc9nixrac2rxy6jzr54wyw6-perl5.32.0-Plack-Middleware-Session-0.33.drv'...
+unpacking sources
+unpacking source archive /nix/store/frlmqc6rb3qysfmsaxj7yasccfdai7g8-Plack-Middleware-Session-0.33.tar.gz
+source root is Plack-Middleware-Session-0.33
+setting SOURCE_DATE_EPOCH to timestamp 1552173497 of file Plack-Middleware-Session-0.33/t/lib/TestSessionHash.pm
+patching sources
+configuring
+patching ./examples/counter-raw.psgi...
+patching ./t/001a_basic.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/001_basic.t...
+patching ./t/005a_basic_w_cache_store.t...
+patching ./t/004_basic_file_w_customs.t...
+patching ./t/004a_basic_file_w_customs.t...
+patching ./t/006_basic_w_dbi_store.t...
+patching ./t/000_load.t...
+patching ./t/002_basic_w_cookie.t...
+patching ./t/003a_basic_w_file_store.t...
+patching ./t/002a_basic_w_cookie.t...
+patching ./t/003_basic_w_file_store.t...
+patching ./t/005_basic_w_cache_store.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Plack-Middleware-Session' version '0.33'
+cp lib/Plack/Session/Store/Null.pm blib/lib/Plack/Session/Store/Null.pm
+cp lib/Plack/Session/Store/DBI.pm blib/lib/Plack/Session/Store/DBI.pm
+cp lib/Plack/Session/Store/File.pm blib/lib/Plack/Session/Store/File.pm
+cp lib/Plack/Session.pm blib/lib/Plack/Session.pm
+cp lib/Plack/Session/State/Cookie.pm blib/lib/Plack/Session/State/Cookie.pm
+cp lib/Plack/Session/Store/Cache.pm blib/lib/Plack/Session/Store/Cache.pm
+cp lib/Plack/Middleware/Session/Cookie.pm blib/lib/Plack/Middleware/Session/Cookie.pm
+cp lib/Plack/Session/Cleanup.pm blib/lib/Plack/Session/Cleanup.pm
+cp lib/Plack/Middleware/Session.pm blib/lib/Plack/Middleware/Session.pm
+cp lib/Plack/Session/State.pm blib/lib/Plack/Session/State.pm
+cp lib/Plack/Session/Store.pm blib/lib/Plack/Session/Store.pm
+running tests
+t/000_load.t ................... ok
+t/001_basic.t .................. ok
+t/001a_basic.t ................. ok
+t/002_basic_w_cookie.t ......... ok
+t/002a_basic_w_cookie.t ........ ok
+t/003_basic_w_file_store.t ..... ok
+t/003a_basic_w_file_store.t .... ok
+t/004_basic_file_w_customs.t ... skipped: Test requires module 'YAML' but it's not found
+t/004a_basic_file_w_customs.t .. skipped: Test requires module 'YAML' but it's not found
+t/005_basic_w_cache_store.t .... ok
+t/005a_basic_w_cache_store.t ... ok
+t/006_basic_w_dbi_store.t ...... skipped: Test requires module 'DBI' but it's not found
+t/010_middleware.t ............. ok
+t/010a_middleware.t ............ ok
+t/012_streaming.t .............. ok
+t/013_cookiestore.t ............ ok
+t/014_cookie_options.t ......... ok
+t/015_cookie_options_mw.t ...... ok
+t/016_cookiestore_w_customs.t .. skipped: Test requires module 'YAML' but it's not found
+t/author-pod-syntax.t .......... skipped: these tests are for testing by the author
+All tests successful.
+Files=20, Tests=355,  8 wallclock secs ( 0.09 usr  0.07 sys +  3.94 cusr  3.81 csys =  7.91 CPU)
+Result: PASS
+installing
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Middleware/Session.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Middleware/Session/Cookie.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Store.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Cleanup.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/State.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Store/DBI.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Store/File.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Store/Null.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/Store/Cache.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib/perl5/site_perl/5.32.0/Plack/Session/State/Cookie.pm
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::State::Cookie.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Store::DBI.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::State.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Store::Null.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Middleware::Session.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Store::File.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Store::Cache.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Middleware::Session::Cookie.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Cleanup.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session.3
+Installing /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3/Plack::Session::Store.3
+post-installation fixup
+Moving /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/man3 to /nix/store/8by4bcm8pw94v2m2gv49399jj1fbvgds-perl5.32.0-Plack-Middleware-Session-0.33-devdoc/share/man/man3
+Removing empty /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33/lib
+patching script interpreter paths in /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33
+checking for references to /build/ in /nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8by4bcm8pw94v2m2gv49399jj1fbvgds-perl5.32.0-Plack-Middleware-Session-0.33-devdoc
+gzipping man pages under /nix/store/8by4bcm8pw94v2m2gv49399jj1fbvgds-perl5.32.0-Plack-Middleware-Session-0.33-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8by4bcm8pw94v2m2gv49399jj1fbvgds-perl5.32.0-Plack-Middleware-Session-0.33-devdoc
+checking for references to /build/ in /nix/store/8by4bcm8pw94v2m2gv49399jj1fbvgds-perl5.32.0-Plack-Middleware-Session-0.33-devdoc...
+/nix/store/ykw640drk09wvc2mf1wq9jvi7ifhlcwk-perl5.32.0-Plack-Middleware-Session-0.33

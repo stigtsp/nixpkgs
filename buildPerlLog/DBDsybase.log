@@ -1,0 +1,1775 @@
+these derivations will be built:
+  /nix/store/dvrc0rysqm4z0aa1gvh2v85dyk0srq3a-freetds-1.1.42.drv
+  /nix/store/8hv4j6w0w8jyjf5b1pqrhlc08v1yi9k9-perl5.32.0-DBD-Sybase-1.16.drv
+these paths will be fetched (1.51 MiB download, 1.51 MiB unpacked):
+  /nix/store/3g1m3vbi291yz8bskvjim1al5lb3qjqb-DBD-Sybase-1.16.tar.gz
+  /nix/store/40psfz6696hzjn4v9z19i9jirwddqd3w-freetds-1.1.42.tar.bz2
+copying path '/nix/store/3g1m3vbi291yz8bskvjim1al5lb3qjqb-DBD-Sybase-1.16.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/40psfz6696hzjn4v9z19i9jirwddqd3w-freetds-1.1.42.tar.bz2' from 'https://cache.nixos.org'...
+building '/nix/store/dvrc0rysqm4z0aa1gvh2v85dyk0srq3a-freetds-1.1.42.drv'...
+unpacking sources
+unpacking source archive /nix/store/40psfz6696hzjn4v9z19i9jirwddqd3w-freetds-1.1.42.tar.bz2
+source root is freetds-1.1.42
+setting SOURCE_DATE_EPOCH to timestamp 1592125282 of file freetds-1.1.42/doc/userguide/userguide.css
+patching sources
+autoreconfPhase
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin/autoconf --force
+autoreconf: running: /nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:97: installing './compile'
+configure.ac:18: installing './missing'
+src/apps/Makefile.am: installing './depcomp'
+autoreconf: Leaving directory `.'
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gawk... (cached) gawk
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking how to run the C preprocessor... gcc -E
+checking for inline... inline
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+./configure: line 8726: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for library containing dlopen... -ldl
+checking for dlerror... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dld_link in -ldld... no
+checking for windres... no
+checking for ld... ld
+checking if the linker (ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for the common suffixes of directories in the library search path... lib64,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for doxygen... no
+checking for odbc_config... odbc_config
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for library containing tgetent... no
+checking for readline in -lreadline... no
+checking for rl_on_new_line... no
+checking for rl_reset_line_state... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for library containing pthread_condattr_setclock... -lpthread
+checking for pthread_condattr_setclock... yes
+checking for pthread_cond_timedwait_relative_np... no
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct tm.__tm_zone... no
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for unistd.h... (cached) yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for inttypes.h... (cached) yes
+checking winsock2.h usability... no
+checking winsock2.h presence... no
+checking for winsock2.h... no
+checking localcharset.h usability... no
+checking localcharset.h presence... no
+checking for localcharset.h... no
+checking valgrind/memcheck.h usability... no
+checking valgrind/memcheck.h presence... no
+checking for valgrind/memcheck.h... no
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking gnutls/abstract.h usability... no
+checking gnutls/abstract.h presence... no
+checking for gnutls/abstract.h... no
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for windows.h... no
+checking for sql.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking for netdb.h... (cached) yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking roken.h usability... no
+checking roken.h presence... no
+checking for roken.h... no
+checking com_err.h usability... no
+checking com_err.h presence... no
+checking for com_err.h... no
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking whether INADDR_NONE is defined... yes
+checking size of char... 1
+checking size of short... 2
+checking size of long... 8
+checking size of int... 4
+checking size of float... 4
+checking size of double... 8
+checking size of long double... 16
+checking size of long long... 8
+checking size of __int64... 0
+checking size of void *... 8
+checking size of wchar_t... 4
+checking is FIONBIO defined... yes
+checking for socklen_t... yes
+checking whether getopt has optreset support... no
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking whether we can use -Wl,-Bsymbolic... no
+checking whether we can use -static-libgcc... yes
+checking whether memset(0) sets pointers to NULL... yes
+checking for vsnprintf... yes
+checking for _vsnprintf... no
+checking for _vscprintf... no
+checking for gettimeofday... yes
+checking for nl_langinfo... yes
+checking for locale_charset... no
+checking for setenv... yes
+checking for putenv... yes
+checking for getuid... yes
+checking for getpwuid... yes
+checking for getpwuid_r... yes
+checking for fstat... yes
+checking for alarm... yes
+checking for fork... yes
+checking for gethrtime... no
+checking for localtime_r... yes
+checking for setitimer... yes
+checking for eventfd... yes
+checking for _fseeki64... no
+checking for _ftelli64... no
+checking for setrlimit... yes
+checking for pthread_cond_timedwait... yes
+checking for _lock_file... no
+checking for _unlock_file... no
+checking for usleep... yes
+checking for nanosleep... yes
+checking for readdir_r... yes
+checking for inet_ntoa_r... no
+checking for getipnodebyaddr... no
+checking for getipnodebyname... no
+checking for getaddrinfo... yes
+checking for inet_ntop... yes
+checking for gethostname... yes
+checking for poll... yes
+checking for socketpair... yes
+checking for strtok_s... no
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for strtok_r... yes
+checking for readpassphrase... no
+checking for strlcpy... no
+checking for strlcat... no
+checking for basename... yes
+checking for getopt... yes
+checking for strsep... yes
+checking for daemon... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for library containing clock_gettime... none required
+checking if clock_gettime support CLOCK_MONOTONIC... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether malloc_options variable is present... no
+checking compile-time options
+looking for installed odbc driver manager
+checking for SQLConnect in -liodbc... no
+checking for SQLConnect in -lodbc... yes
+checking for sql.h... (cached) yes
+checking for SQLGetPrivateProfileString in -lodbcinst... yes
+checking for SQLSETPOSIROW... yes
+checking for SQLROWSETSIZE... no
+checking for SQLROWOFFSET... no
+checking size of SQLWCHAR... 2
+checking if openssl is wanted... yes
+checking for openssl... yes
+checking for BIO_get_data... yes
+checking for RSA_get0_key... yes
+checking for ASN1_STRING_get0_data... yes
+checking threadsafety... enabled
+checking for which type of gethostbyname_r... six
+checking for which type of getservbyname_r... six
+checking for which type of gethostbyaddr_r... eight
+checking for which type of getpwuid_r... five
+checking for which type of localtime_r... struct
+configure: debug enabled
+checking CFLAGS for gcc -Wdeclaration-after-statement... -Wdeclaration-after-statement
+done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/freetds/version.h
+config.status: creating include/tds_sysdep_public.h
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/freetds/Makefile
+config.status: creating doc/Makefile
+config.status: creating samples/Makefile
+config.status: creating src/Makefile
+config.status: creating src/tds/Makefile
+config.status: creating src/tds/unittests/Makefile
+config.status: creating src/dblib/Makefile
+config.status: creating src/dblib/unittests/Makefile
+config.status: creating src/ctlib/Makefile
+config.status: creating src/ctlib/unittests/Makefile
+config.status: creating src/replacements/Makefile
+config.status: creating src/replacements/unittests/Makefile
+config.status: creating src/utils/Makefile
+config.status: creating src/utils/unittests/Makefile
+config.status: creating src/server/Makefile
+config.status: creating src/pool/Makefile
+config.status: creating src/odbc/Makefile
+config.status: creating src/odbc/unittests/Makefile
+config.status: creating src/apps/Makefile
+config.status: creating src/apps/fisql/Makefile
+config.status: creating freetds.spec
+config.status: creating win32/Makefile
+config.status: creating win32/freetds.nsh
+config.status: creating src/odbc/version.rc
+config.status: creating vms/Makefile
+config.status: creating misc/Makefile
+config.status: creating doc/freebcp.1
+config.status: creating doc/tsql.1
+config.status: creating doc/osql.1
+config.status: creating doc/bsqldb.1
+config.status: creating doc/bsqlodbc.1
+config.status: creating doc/defncopy.1
+config.status: creating doc/datacopy.1
+config.status: creating doc/fisql.1
+config.status: creating doc/freetds.conf.5
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+building
+build flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Making all in include
+make[1]: Entering directory '/build/freetds-1.1.42/include'
+make  all-recursive
+make[2]: Entering directory '/build/freetds-1.1.42/include'
+Making all in freetds
+make[3]: Entering directory '/build/freetds-1.1.42/include/freetds'
+echo '#define FREETDS_SYSCONFDIR "/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc"' >sysconfdir.h
+make[3]: Leaving directory '/build/freetds-1.1.42/include/freetds'
+make[3]: Entering directory '/build/freetds-1.1.42/include'
+make[3]: Leaving directory '/build/freetds-1.1.42/include'
+make[2]: Leaving directory '/build/freetds-1.1.42/include'
+make[1]: Leaving directory '/build/freetds-1.1.42/include'
+Making all in src
+make[1]: Entering directory '/build/freetds-1.1.42/src'
+Making all in utils
+make[2]: Entering directory '/build/freetds-1.1.42/src/utils'
+Making all in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/utils'
+  CC       md4.lo
+  CC       md5.lo
+  CC       des.lo
+  CC       hmac_md5.lo
+  CC       dlist.lo
+  CC       getpassarg.lo
+  CC       sleep.lo
+  CC       tds_cond.lo
+  CC       win_mutex.lo
+  CC       threadsafe.lo
+  CC       bjoern-utf8.lo
+  CC       tdsstring.lo
+  CC       net.lo
+  CCLD     libtdsutils.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/build/freetds-1.1.42/src/utils'
+Making all in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/utils/unittests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/freetds-1.1.42/src/utils/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/utils'
+Making all in replacements
+make[2]: Entering directory '/build/freetds-1.1.42/src/replacements'
+make  all-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/replacements'
+Making all in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/replacements'
+  CC       iconv.lo
+  CC       gettimeofday.lo
+  CC       poll.lo
+  CC       socketpair.lo
+  CC       getaddrinfo.lo
+  CC       readpassphrase.lo
+  CC       strlcpy.lo
+  CC       strlcat.lo
+readpassphrase.c: In function 'tds_readpassphrase':
+readpassphrase.c:164:9: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  164 |   (void)write(output, prompt, strlen(prompt));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+readpassphrase.c:182:9: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  182 |   (void)write(output, "\n", 1);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libreplacements.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+Making all in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+Making all in tds
+make[2]: Entering directory '/build/freetds-1.1.42/src/tds'
+make  all-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/tds'
+Making all in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/tds'
+  CC       mem.lo
+  CC       token.lo
+  CC       util.lo
+  CC       login.lo
+  CC       read.lo
+  CC       write.lo
+  CC       numeric.lo
+  CC       convert.lo
+write.c: In function 'tds_put_string':
+write.c:95:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   95 |  int res;
+      |      ^~~
+read.c: In function 'read_and_convert':
+read.c:290:6: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  290 |  int res;
+      |      ^~~
+  CC       config.lo
+  CC       query.lo
+  CC       iconv.lo
+  CC       locale.lo
+  CC       vstrbuild.lo
+  CC       getmac.lo
+  CC       data.lo
+  CC       net.lo
+  CC       tls.lo
+  CC       tds_checks.lo
+  CC       log.lo
+net.c: In function 'tds_wakeup_send':
+net.c:848:10: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  848 |   (void) write(wakeup->s_signaled, &one, sizeof(one));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       bulk.lo
+  CC       packet.lo
+  CC       stream.lo
+  CC       random.lo
+  CC       sec_negotiate.lo
+  CC       challenge.lo
+  CC       gssapi.lo
+random.c: In function 'tds_random_buffer':
+random.c:59:2: warning: 'RAND_pseudo_bytes' is deprecated [-Wdeprecated-declarations]
+   59 |  if (RAND_pseudo_bytes(out, len) >= 0)
+      |  ^~
+In file included from /nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include/openssl/e_os2.h:13,
+                 from /nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include/openssl/ossl_typ.h:19,
+                 from /nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include/openssl/rand.h:14,
+                 from random.c:36:
+/nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include/openssl/rand.h:44:1: note: declared here
+   44 | DEPRECATEDIN_1_1_0(int RAND_pseudo_bytes(unsigned char *buf, int num))
+      | ^~~~~~~~~~~~~~~~~~
+  CCLD     libtds.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/freetds-1.1.42/src/tds'
+Making all in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/tds/unittests'
+  CC       common.o
+  CC       utf8.o
+  CC       allcolumns.o
+  AR       libcommon.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/freetds-1.1.42/src/tds/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/tds'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/tds'
+Making all in ctlib
+make[2]: Entering directory '/build/freetds-1.1.42/src/ctlib'
+Making all in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/ctlib'
+  CC       ct.lo
+  CC       cs.lo
+  CC       blk.lo
+  CC       ctutil.lo
+ct.c: In function '_ct_get_client_type':
+ct.c:1970:2: warning: enumeration value 'SYBNTEXT' not handled in switch [-Wswitch]
+ 1970 |  switch (type) {
+      |  ^~~~~~
+ct.c:1970:2: warning: enumeration value 'SYBVOID' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBNVARCHAR' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'XSYBVARCHAR' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'XSYBNVARCHAR' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'XSYBNCHAR' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'XSYBVARBINARY' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'XSYBBINARY' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBMSUDT' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBMSXML' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBDATEN' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYB5INT8' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBINTERVAL' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBSENSITIVITY' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBSINT1' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBTIMEN' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBUINTN' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBUNITEXT' not handled in switch [-Wswitch]
+ct.c:1970:2: warning: enumeration value 'SYBXML' not handled in switch [-Wswitch]
+  CCLD     libct.la
+make[3]: Leaving directory '/build/freetds-1.1.42/src/ctlib'
+Making all in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/ctlib/unittests'
+  CC       common.o
+  AR       libcommon.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/build/freetds-1.1.42/src/ctlib/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/ctlib'
+Making all in dblib
+make[2]: Entering directory '/build/freetds-1.1.42/src/dblib'
+Making all in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/dblib'
+  CC       dblib.lo
+  CC       dbutil.lo
+  CC       rpc.lo
+  CC       bcp.lo
+  CC       xact.lo
+  CC       dbpivot.lo
+dbpivot.c: In function 'col_equal':
+dbpivot.c:137:2: warning: enumeration value 'SYBNVARCHAR' not handled in switch [-Wswitch]
+  137 |  switch(pc1->type) {
+      |  ^~~~~~
+dbpivot.c:137:2: warning: enumeration value 'SYBINT8' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBCHAR' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBVARCHAR' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBNVARCHAR' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBNCHAR' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBVARBINARY' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'XSYBBINARY' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUNIQUE' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBVARIANT' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSUDT' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSXML' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSDATE' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSTIME' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSDATETIME2' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBMSDATETIMEOFFSET' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBLONGBINARY' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUINT1' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUINT2' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUINT4' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUINT8' not handled in switch [-Wswitch]
+bcp.c: In function 'bcp_readfmt':
+dbpivot.c:137:2: warning: enumeration value 'SYBBLOB' not handled in switch [-Wswitch]
+bcp.c:1643:8: warning: variable 'lf_version' set but not used [-Wunused-but-set-variable]
+ 1643 |  float lf_version = 0.0;
+      |        ^~~~~~~~~~
+dbpivot.c:137:2: warning: enumeration value 'SYBDATE' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBDATEN' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYB5INT8' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBINTERVAL' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBLONGCHAR' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBSENSITIVITY' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBSINT1' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBTIME' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBTIMEN' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUINTN' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBUNITEXT' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYBXML' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYB5BIGDATETIME' not handled in switch [-Wswitch]
+dbpivot.c:137:2: warning: enumeration value 'SYB5BIGTIME' not handled in switch [-Wswitch]
+dbpivot.c: In function 'col_buffer':
+dbpivot.c:182:2: warning: enumeration value 'SYBNVARCHAR' not handled in switch [-Wswitch]
+  182 |  switch(pcol->type) {
+      |  ^~~~~~
+dbpivot.c:182:2: warning: enumeration value 'SYBINT8' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBCHAR' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBVARCHAR' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBNVARCHAR' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBNCHAR' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBVARBINARY' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'XSYBBINARY' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUNIQUE' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBVARIANT' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSUDT' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSXML' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSDATE' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSTIME' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSDATETIME2' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBMSDATETIMEOFFSET' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBLONGBINARY' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUINT1' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUINT2' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUINT4' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUINT8' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBBLOB' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBDATE' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBDATEN' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYB5INT8' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBINTERVAL' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBLONGCHAR' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBSENSITIVITY' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBSINT1' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBTIME' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBTIMEN' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUINTN' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBUNITEXT' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYBXML' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYB5BIGDATETIME' not handled in switch [-Wswitch]
+dbpivot.c:182:2: warning: enumeration value 'SYB5BIGTIME' not handled in switch [-Wswitch]
+  CCLD     libsybdb.la
+make[3]: Leaving directory '/build/freetds-1.1.42/src/dblib'
+Making all in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/dblib/unittests'
+  CC       common.o
+  AR       libcommon.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/build/freetds-1.1.42/src/dblib/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/dblib'
+Making all in odbc
+make[2]: Entering directory '/build/freetds-1.1.42/src/odbc'
+make  all-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/odbc'
+Making all in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/odbc'
+  CC       odbc.lo
+  CC       connectparams.lo
+  CC       convert_tds2sql.lo
+  CC       descriptor.lo
+  CC       prepare_query.lo
+  CC       odbc_util.lo
+  CC       bcp.lo
+  CC       native.lo
+  CC       sql2tds.lo
+  CC       error.lo
+  CC       odbc_checks.lo
+  CC       sqlwchar.lo
+  CC       odbc_data.lo
+  CCLD     libtdsodbc.la
+make[4]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+Making all in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/odbc/unittests'
+  CC       common.o
+  AR       libcommon.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/freetds-1.1.42/src/odbc/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+Making all in server
+make[2]: Entering directory '/build/freetds-1.1.42/src/server'
+  CC       unittest.o
+  CC       query.lo
+  CC       server.lo
+  CC       login.lo
+  CCLD     libtdssrv.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     tdssrv
+make[2]: Leaving directory '/build/freetds-1.1.42/src/server'
+Making all in pool
+make[2]: Entering directory '/build/freetds-1.1.42/src/pool'
+  CC       config.o
+  CC       main.o
+  CC       member.o
+  CC       user.o
+  CC       util.o
+  CCLD     tdspool
+make[2]: Leaving directory '/build/freetds-1.1.42/src/pool'
+Making all in apps
+make[2]: Entering directory '/build/freetds-1.1.42/src/apps'
+Making all in fisql
+make[3]: Entering directory '/build/freetds-1.1.42/src/apps/fisql'
+  CC       fisql.o
+  CC       terminal.o
+  CC       edit.o
+  CC       handlers.o
+  CC       interrupt.o
+  CCLD     fisql
+make[3]: Leaving directory '/build/freetds-1.1.42/src/apps/fisql'
+make[3]: Entering directory '/build/freetds-1.1.42/src/apps'
+  CC       tsql.o
+  CC       freebcp.o
+  CC       bsqldb.o
+  CC       defncopy.o
+  CC       datacopy.o
+  CC       bsqlodbc-bsqlodbc.o
+defncopy.c: In function 'get_login':
+defncopy.c:669:6: warning: variable 'fdomain' set but not used [-Wunused-but-set-variable]
+  669 |  int fdomain = TRUE;
+      |      ^~~~~~~
+tsql.c: In function 'count_alarm':
+tsql.c:726:2: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  726 |  write(STDERR_FILENO, buf, strlen(buf));
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     freebcp
+  CCLD     defncopy
+  CCLD     datacopy
+  CCLD     bsqlodbc
+  CCLD     tsql
+  CCLD     bsqldb
+make[3]: Leaving directory '/build/freetds-1.1.42/src/apps'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/apps'
+make[2]: Entering directory '/build/freetds-1.1.42/src'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/build/freetds-1.1.42/src'
+make[1]: Leaving directory '/build/freetds-1.1.42/src'
+Making all in doc
+make[1]: Entering directory '/build/freetds-1.1.42/doc'
+if test -h reference; then rm reference; fi
+NAME=`echo dblib.api.body | sed 's/\..*$//'` && \
+sed -ne "/^${NAME}[     ]/ s!!<row><entry>!p" \
+                ./api_status.txt \
+        | sed   -e's![  ][      ]*!</entry> <entry>!g' \
+                -e's!$!</entry></row>!'  > dblib.api.body~
+NAME=`echo ctlib.api.body | sed 's/\..*$//'` && \
+sed -ne "/^${NAME}[     ]/ s!!<row><entry>!p" \
+                ./api_status.txt \
+        | sed   -e's![  ][      ]*!</entry> <entry>!g' \
+                -e's!$!</entry></row>!'  > ctlib.api.body~
+NAME=`echo odbc.api.body | sed 's/\..*$//'` && \
+sed -ne "/^${NAME}[     ]/ s!!<row><entry>!p" \
+                ./api_status.txt \
+        | sed   -e's![  ][      ]*!</entry> <entry>!g' \
+                -e's!$!</entry></row>!'  > odbc.api.body~
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./reference 2>&1
+cd .. && make doxy 2> doc/doxy.log
+mv dblib.api.body~ dblib.api.body
+mv ctlib.api.body~ ctlib.api.body
+mv odbc.api.body~ odbc.api.body
+make[2]: Entering directory '/build/freetds-1.1.42'
+echo 'Doxygen not installed; reference manual not built.'
+NAME=`echo ctlib.api.xml | sed 's/\..*$//'` && \
+HEAD='<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' && \
+if [ ${NAME} = dblib ]; then \
+        HEAD=`echo '<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' \
+                | sed 's!<entry>Function</entry>!<entry>Microsoft name</entry><entry>Sybase name</entry>!'`; \
+fi && \
+BODY=`cat ctlib.api.body` && \
+printf '<table id="%s.api"> <title>&%s; API Implementation Summary</title>\n <!-- table heading -->\n %s\n <tbody>\n %s\n </tbody></tgroup></table>\n' ${NAME} ${NAME} "${HEAD}" "${BODY}"  > ctlib.api.xml~
+NAME=`echo dblib.api.xml | sed 's/\..*$//'` && \
+HEAD='<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' && \
+if [ ${NAME} = dblib ]; then \
+        HEAD=`echo '<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' \
+                | sed 's!<entry>Function</entry>!<entry>Microsoft name</entry><entry>Sybase name</entry>!'`; \
+fi && \
+BODY=`cat dblib.api.body` && \
+printf '<table id="%s.api"> <title>&%s; API Implementation Summary</title>\n <!-- table heading -->\n %s\n <tbody>\n %s\n </tbody></tgroup></table>\n' ${NAME} ${NAME} "${HEAD}" "${BODY}"  > dblib.api.xml~
+NAME=`echo odbc.api.xml | sed 's/\..*$//'` && \
+HEAD='<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' && \
+if [ ${NAME} = dblib ]; then \
+        HEAD=`echo '<tgroup cols="4"><thead><row> <entry>Category</entry> <entry>Function</entry> <entry>Status</entry> <entry>Comments</entry> </row></thead> ' \
+                | sed 's!<entry>Function</entry>!<entry>Microsoft name</entry><entry>Sybase name</entry>!'`; \
+fi && \
+BODY=`cat odbc.api.body` && \
+printf '<table id="%s.api"> <title>&%s; API Implementation Summary</title>\n <!-- table heading -->\n %s\n <tbody>\n %s\n </tbody></tgroup></table>\n' ${NAME} ${NAME} "${HEAD}" "${BODY}"  > odbc.api.xml~
+Doxygen not installed; reference manual not built.
+make[2]: Leaving directory '/build/freetds-1.1.42'
+if test -r ././reference/index.html -a ! reference/index.html ; then \
+        cp -R ././reference .; \
+fi
+if test ! -r reference/index.html ; then \
+        cd ./reference && \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/reference/">www.freetds.org</a> </html>' > .index.html &&  \
+        mv .index.html index.html; \
+fi
+mv ctlib.api.xml~ ctlib.api.xml
+mv odbc.api.xml~ odbc.api.xml
+mv dblib.api.xml~ dblib.api.xml
+if test -h userguide; then rm userguide; fi
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./userguide 2>&1
+touch ./userguide/t.htm
+rm -rf ./userguide/*
+if ! xmlto --version > /dev/null 2> /dev/null ; then \
+        if test -r ././userguide \
+           -a ! -r ./userguide ; then \
+                cp -R ././userguide .; \
+        fi; \
+fi
+test -r /build/freetds-1.1.42/doc/userguide.xml
+test -r userguide.xml || ln -s ./userguide.xml userguide.xml
+test -r userguide_desc.xml || ln -s ./userguide_desc.xml userguide_desc.xml
+(cd ./userguide && \
+if xmlto --version > /dev/null 2> /dev/null ; then \
+        xmlto -m ../userguide.xsl xhtml ../userguide.xml; \
+        cp /build/freetds-1.1.42/doc/userguide.css .; \
+fi)
+if test ! -r userguide/index.html ; then \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/userguide/">www.freetds.org</a> </html>' > .index.html && mv .index.html userguide/index.html; \
+fi
+test -f ./userguide/index.html
+make[1]: Leaving directory '/build/freetds-1.1.42/doc'
+Making all in samples
+make[1]: Entering directory '/build/freetds-1.1.42/samples'
+rm -f unixodbc.freetds.driver.template unixodbc.freetds.driver.template.tmp
+sed -e 's,@datadir\@,/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/freetds,g' -e 's,@libdir\@,/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib,g' -e 's,@prefix\@,/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42,g' unixodbc.freetds.driver.template.in >unixodbc.freetds.driver.template.tmp
+mv unixodbc.freetds.driver.template.tmp unixodbc.freetds.driver.template
+make[1]: Leaving directory '/build/freetds-1.1.42/samples'
+Making all in win32
+make[1]: Entering directory '/build/freetds-1.1.42/win32'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/freetds-1.1.42/win32'
+Making all in vms
+make[1]: Entering directory '/build/freetds-1.1.42/vms'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/freetds-1.1.42/vms'
+Making all in misc
+make[1]: Entering directory '/build/freetds-1.1.42/misc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/freetds-1.1.42/misc'
+make[1]: Entering directory '/build/freetds-1.1.42'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/build/freetds-1.1.42'
+if test ! -f PWD; then cp ./PWD.in PWD; fi
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Making install in include
+make[1]: Entering directory '/build/freetds-1.1.42/include'
+Making install in freetds
+make[2]: Entering directory '/build/freetds-1.1.42/include/freetds'
+make[3]: Entering directory '/build/freetds-1.1.42/include/freetds'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/freetds-1.1.42/include/freetds'
+make[2]: Leaving directory '/build/freetds-1.1.42/include/freetds'
+make[2]: Entering directory '/build/freetds-1.1.42/include'
+make[3]: Entering directory '/build/freetds-1.1.42/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 bkpublic.h cspublic.h cstypes.h ctpublic.h sqldb.h sqlfront.h sybdb.h sybfront.h syberror.h odbcss.h '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 tds_sysdep_public.h '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include'
+make[3]: Leaving directory '/build/freetds-1.1.42/include'
+make[2]: Leaving directory '/build/freetds-1.1.42/include'
+make[1]: Leaving directory '/build/freetds-1.1.42/include'
+Making install in src
+make[1]: Entering directory '/build/freetds-1.1.42/src'
+Making install in utils
+make[2]: Entering directory '/build/freetds-1.1.42/src/utils'
+Making install in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/utils'
+make[4]: Entering directory '/build/freetds-1.1.42/src/utils'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/utils'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/utils'
+Making install in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/utils/unittests'
+make[4]: Entering directory '/build/freetds-1.1.42/src/utils/unittests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/utils/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/utils/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/utils'
+Making install in replacements
+make[2]: Entering directory '/build/freetds-1.1.42/src/replacements'
+make  install-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/replacements'
+Making install in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/replacements'
+make[5]: Entering directory '/build/freetds-1.1.42/src/replacements'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+Making install in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[5]: Entering directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/replacements/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/replacements'
+Making install in tds
+make[2]: Entering directory '/build/freetds-1.1.42/src/tds'
+make  install-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/tds'
+Making install in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/tds'
+make[5]: Entering directory '/build/freetds-1.1.42/src/tds'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/tds'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/tds'
+Making install in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/tds/unittests'
+make[5]: Entering directory '/build/freetds-1.1.42/src/tds/unittests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/tds/unittests'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/tds/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/tds'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/tds'
+Making install in ctlib
+make[2]: Entering directory '/build/freetds-1.1.42/src/ctlib'
+Making install in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/ctlib'
+make[4]: Entering directory '/build/freetds-1.1.42/src/ctlib'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libct.la '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libct.so.4.0.0 /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libct.so.4.0.0
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libct.so.4.0.0 libct.so.4 || { rm -f libct.so.4 && ln -s libct.so.4.0.0 libct.so.4; }; })
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libct.so.4.0.0 libct.so || { rm -f libct.so && ln -s libct.so.4.0.0 libct.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libct.lai /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libct.la
+libtool: finish: PATH="/nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin:/nix/store/jjfyhkjcxp604if6avaif58q31ghchpv-automake-1.16.2/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/y7f5x43mnm7l8idapdspwhh53j5lrhsi-libtool-2.4.6/bin:/nix/store/3r9c3kcbrpyaxnal3kn5dpyfjh0sp379-gnum4-1.4.18/bin:/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/sz9p2xiw9x2lgaanxrayqqlk56p7df0f-openssl-1.1.1g-bin/bin:/nix/store/37l188xhyblqvi6vmk0fzfybv2kj28h7-unixODBC-2.3.7/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/ctlib'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/ctlib'
+Making install in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/ctlib/unittests'
+make[4]: Entering directory '/build/freetds-1.1.42/src/ctlib/unittests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/ctlib/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/ctlib/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/ctlib'
+Making install in dblib
+make[2]: Entering directory '/build/freetds-1.1.42/src/dblib'
+Making install in .
+make[3]: Entering directory '/build/freetds-1.1.42/src/dblib'
+make[4]: Entering directory '/build/freetds-1.1.42/src/dblib'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libsybdb.la '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libsybdb.so.5.1.0 /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libsybdb.so.5.1.0
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libsybdb.so.5.1.0 libsybdb.so.5 || { rm -f libsybdb.so.5 && ln -s libsybdb.so.5.1.0 libsybdb.so.5; }; })
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libsybdb.so.5.1.0 libsybdb.so || { rm -f libsybdb.so && ln -s libsybdb.so.5.1.0 libsybdb.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libsybdb.lai /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libsybdb.la
+libtool: finish: PATH="/nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin:/nix/store/jjfyhkjcxp604if6avaif58q31ghchpv-automake-1.16.2/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/y7f5x43mnm7l8idapdspwhh53j5lrhsi-libtool-2.4.6/bin:/nix/store/3r9c3kcbrpyaxnal3kn5dpyfjh0sp379-gnum4-1.4.18/bin:/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/sz9p2xiw9x2lgaanxrayqqlk56p7df0f-openssl-1.1.1g-bin/bin:/nix/store/37l188xhyblqvi6vmk0fzfybv2kj28h7-unixODBC-2.3.7/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/dblib'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/dblib'
+Making install in unittests
+make[3]: Entering directory '/build/freetds-1.1.42/src/dblib/unittests'
+make[4]: Entering directory '/build/freetds-1.1.42/src/dblib/unittests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/dblib/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/dblib/unittests'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/dblib'
+Making install in odbc
+make[2]: Entering directory '/build/freetds-1.1.42/src/odbc'
+make  install-recursive
+make[3]: Entering directory '/build/freetds-1.1.42/src/odbc'
+Making install in .
+make[4]: Entering directory '/build/freetds-1.1.42/src/odbc'
+make[5]: Entering directory '/build/freetds-1.1.42/src/odbc'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libtdsodbc.la '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libtdsodbc.so.0.0.0 /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libtdsodbc.so.0.0.0
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libtdsodbc.so.0.0.0 libtdsodbc.so.0 || { rm -f libtdsodbc.so.0 && ln -s libtdsodbc.so.0.0.0 libtdsodbc.so.0; }; })
+libtool: install: (cd /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib && { ln -s -f libtdsodbc.so.0.0.0 libtdsodbc.so || { rm -f libtdsodbc.so && ln -s libtdsodbc.so.0.0.0 libtdsodbc.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libtdsodbc.lai /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libtdsodbc.la
+libtool: finish: PATH="/nix/store/qyg37phd1p44xl5w1z84gv7bnkjx50px-autoconf-2.69/bin:/nix/store/jjfyhkjcxp604if6avaif58q31ghchpv-automake-1.16.2/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/y7f5x43mnm7l8idapdspwhh53j5lrhsi-libtool-2.4.6/bin:/nix/store/3r9c3kcbrpyaxnal3kn5dpyfjh0sp379-gnum4-1.4.18/bin:/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/sz9p2xiw9x2lgaanxrayqqlk56p7df0f-openssl-1.1.1g-bin/bin:/nix/store/37l188xhyblqvi6vmk0fzfybv2kj28h7-unixODBC-2.3.7/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+Making install in unittests
+make[4]: Entering directory '/build/freetds-1.1.42/src/odbc/unittests'
+make[5]: Entering directory '/build/freetds-1.1.42/src/odbc/unittests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/freetds-1.1.42/src/odbc/unittests'
+make[4]: Leaving directory '/build/freetds-1.1.42/src/odbc/unittests'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/odbc'
+Making install in server
+make[2]: Entering directory '/build/freetds-1.1.42/src/server'
+make[3]: Entering directory '/build/freetds-1.1.42/src/server'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/freetds-1.1.42/src/server'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/server'
+Making install in pool
+make[2]: Entering directory '/build/freetds-1.1.42/src/pool'
+make[3]: Entering directory '/build/freetds-1.1.42/src/pool'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c tdspool '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c tdspool /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/tdspool
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../mkinstalldirs /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc
+mkdir -p -- /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc
+if test ! -f /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/pool.conf; then \
+        /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./pool.conf /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/pool.conf; \
+fi
+make[3]: Leaving directory '/build/freetds-1.1.42/src/pool'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/pool'
+Making install in apps
+make[2]: Entering directory '/build/freetds-1.1.42/src/apps'
+Making install in fisql
+make[3]: Entering directory '/build/freetds-1.1.42/src/apps/fisql'
+make[4]: Entering directory '/build/freetds-1.1.42/src/apps/fisql'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c fisql '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/fisql /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/fisql
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/apps/fisql'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/apps/fisql'
+make[3]: Entering directory '/build/freetds-1.1.42/src/apps'
+make[4]: Entering directory '/build/freetds-1.1.42/src/apps'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c tsql freebcp bsqldb defncopy datacopy bsqlodbc '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c tsql /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/tsql
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/freebcp /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/freebcp
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/bsqldb /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/bsqldb
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/defncopy /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/defncopy
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/datacopy /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/datacopy
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c bsqlodbc /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/bsqlodbc
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c osql '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin'
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/freetds-1.1.42/src/apps'
+make[3]: Leaving directory '/build/freetds-1.1.42/src/apps'
+make[2]: Leaving directory '/build/freetds-1.1.42/src/apps'
+make[2]: Entering directory '/build/freetds-1.1.42/src'
+make[3]: Entering directory '/build/freetds-1.1.42/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/freetds-1.1.42/src'
+make[2]: Leaving directory '/build/freetds-1.1.42/src'
+make[1]: Leaving directory '/build/freetds-1.1.42/src'
+Making install in doc
+make[1]: Entering directory '/build/freetds-1.1.42/doc'
+if test -h reference; then rm reference; fi
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./reference 2>&1
+cd .. && make doxy 2> doc/doxy.log
+make[2]: Entering directory '/build/freetds-1.1.42'
+echo 'Doxygen not installed; reference manual not built.'
+Doxygen not installed; reference manual not built.
+make[2]: Leaving directory '/build/freetds-1.1.42'
+if test -r ././reference/index.html -a ! reference/index.html ; then \
+        cp -R ././reference .; \
+fi
+if test ! -r reference/index.html ; then \
+        cd ./reference && \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/reference/">www.freetds.org</a> </html>' > .index.html &&  \
+        mv .index.html index.html; \
+fi
+if test -h userguide; then rm userguide; fi
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./userguide 2>&1
+touch ./userguide/t.htm
+rm -rf ./userguide/*
+if ! xmlto --version > /dev/null 2> /dev/null ; then \
+        if test -r ././userguide \
+           -a ! -r ./userguide ; then \
+                cp -R ././userguide .; \
+        fi; \
+fi
+test -r /build/freetds-1.1.42/doc/userguide.xml
+test -r userguide.xml || ln -s ./userguide.xml userguide.xml
+test -r userguide_desc.xml || ln -s ./userguide_desc.xml userguide_desc.xml
+(cd ./userguide && \
+if xmlto --version > /dev/null 2> /dev/null ; then \
+        xmlto -m ../userguide.xsl xhtml ../userguide.xml; \
+        cp /build/freetds-1.1.42/doc/userguide.css .; \
+fi)
+if test ! -r userguide/index.html ; then \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/userguide/">www.freetds.org</a> </html>' > .index.html && mv .index.html userguide/index.html; \
+fi
+test -f ./userguide/index.html
+make[2]: Entering directory '/build/freetds-1.1.42/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/userguide  2>&1
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/reference  2>&1
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/images  2>&1
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/images/callouts  2>&1
+if test -h reference; then rm reference; fi
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./reference 2>&1
+cd .. && make doxy 2> doc/doxy.log
+make[3]: Entering directory '/build/freetds-1.1.42'
+echo 'Doxygen not installed; reference manual not built.'
+Doxygen not installed; reference manual not built.
+make[3]: Leaving directory '/build/freetds-1.1.42'
+if test -r ././reference/index.html -a ! reference/index.html ; then \
+        cp -R ././reference .; \
+fi
+if test ! -r reference/index.html ; then \
+        cd ./reference && \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/reference/">www.freetds.org</a> </html>' > .index.html &&  \
+        mv .index.html index.html; \
+fi
+if test -h userguide; then rm userguide; fi
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ./userguide 2>&1
+touch ./userguide/t.htm
+rm -rf ./userguide/*
+if ! xmlto --version > /dev/null 2> /dev/null ; then \
+        if test -r ././userguide \
+           -a ! -r ./userguide ; then \
+                cp -R ././userguide .; \
+        fi; \
+fi
+test -r /build/freetds-1.1.42/doc/userguide.xml
+test -r userguide.xml || ln -s ./userguide.xml userguide.xml
+test -r userguide_desc.xml || ln -s ./userguide_desc.xml userguide_desc.xml
+(cd ./userguide && \
+if xmlto --version > /dev/null 2> /dev/null ; then \
+        xmlto -m ../userguide.xsl xhtml ../userguide.xml; \
+        cp /build/freetds-1.1.42/doc/userguide.css .; \
+fi)
+if test ! -r userguide/index.html ; then \
+        echo '<html> <P>at <a HREF="http://www.freetds.org/userguide/">www.freetds.org</a> </html>' > .index.html && mv .index.html userguide/index.html; \
+fi
+test -f ./userguide/index.html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p . 2>&1
+if test -r ./userguide ; then d=.; else d="."; fi; \
+find $d/./userguide \( -type f -o -type l \) \
+        -exec /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 {} /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/userguide ';'
+if test -r ./reference ; then d=.; else d="."; fi; \
+find $d/./reference \( -type f -o -type l \) \
+        -exec /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 {} /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/reference ';'
+cd . && find images -name \*.gif \
+        -exec  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 {} /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/doc/freetds/{} ';'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 freebcp.1 tsql.1 osql.1 bsqldb.1 bsqlodbc.1 defncopy.1 datacopy.1 fisql.1 '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/man/man5'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 freetds.conf.5 '/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/man/man5'
+make[2]: Leaving directory '/build/freetds-1.1.42/doc'
+make[1]: Leaving directory '/build/freetds-1.1.42/doc'
+Making install in samples
+make[1]: Entering directory '/build/freetds-1.1.42/samples'
+make[2]: Entering directory '/build/freetds-1.1.42/samples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/freetds-1.1.42/samples'
+make[1]: Leaving directory '/build/freetds-1.1.42/samples'
+Making install in win32
+make[1]: Entering directory '/build/freetds-1.1.42/win32'
+make[2]: Entering directory '/build/freetds-1.1.42/win32'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/freetds-1.1.42/win32'
+make[1]: Leaving directory '/build/freetds-1.1.42/win32'
+Making install in vms
+make[1]: Entering directory '/build/freetds-1.1.42/vms'
+make[2]: Entering directory '/build/freetds-1.1.42/vms'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/freetds-1.1.42/vms'
+make[1]: Leaving directory '/build/freetds-1.1.42/vms'
+Making install in misc
+make[1]: Entering directory '/build/freetds-1.1.42/misc'
+make[2]: Entering directory '/build/freetds-1.1.42/misc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/freetds-1.1.42/misc'
+make[1]: Leaving directory '/build/freetds-1.1.42/misc'
+make[1]: Entering directory '/build/freetds-1.1.42'
+make[2]: Entering directory '/build/freetds-1.1.42'
+make[2]: Nothing to be done for 'install-exec-am'.
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./mkinstalldirs /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc
+if test ! -f /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/freetds.conf; then \
+        /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./freetds.conf /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/freetds.conf; \
+fi
+if test ! -f /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/locales.conf; then \
+        /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./locales.conf /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/etc/locales.conf; \
+fi
+make[2]: Leaving directory '/build/freetds-1.1.42'
+make[1]: Leaving directory '/build/freetds-1.1.42'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libct.so.4.0.0
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libtdsodbc.so.0.0.0
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib/libsybdb.so.5.1.0
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/bsqlodbc
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/bsqldb
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/tdspool
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/fisql
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/freebcp
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/tsql
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/defncopy
+shrinking /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/datacopy
+gzipping man pages under /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib  /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin
+patching script interpreter paths in /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42
+/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/bin/osql: interpreter directive changed from " /bin/sh" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/sh"
+checking for references to /build/ in /nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42...
+building '/nix/store/8hv4j6w0w8jyjf5b1pqrhlc08v1yi9k9-perl5.32.0-DBD-Sybase-1.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/3g1m3vbi291yz8bskvjim1al5lb3qjqb-DBD-Sybase-1.16.tar.gz
+source root is DBD-Sybase-1.16
+setting SOURCE_DATE_EPOCH to timestamp 1505053978 of file DBD-Sybase-1.16/META.yml
+patching sources
+configuring
+patching ./t/base.t...
+patching ./t/login.t...
+patching ./t/main.t...
+patching ./t/fail.t...
+patching ./t/thread.t...
+patching ./t/nsql.t...
+patching ./t/place.t...
+patching ./t/autocommit.t...
+patching ./t/utf8.t...
+patching ./t/xblob.t...
+patching ./t/exec.t...
+patching ./eg/dbschema.pl...
+patching ./eg/Show.cgi...
+patching ./eg/check-space.pl...
+Unknown Client Library version - assuming FreeTDS.
+
+By default DBD::Sybase 1.05 and later use the 'CHAINED' mode (where available)
+when 'AutoCommit' is turned off. Versions 1.04 and older instead managed
+the transactions explicitly with a 'BEGIN TRAN' before the first DML
+statement. Using the 'CHAINED' mode is preferable as it is the way that
+Sybase implements AutoCommit handling for both its ODBC and JDBC drivers.
+
+Use 'CHAINED' mode by default (Y/N) [Y]:
+Running in threaded mode - looking for _r libraries...
+
+***NOTE***
+There is an incompatibility between perl (5.8.x or later) built in threaded
+mode and Sybase's threaded libraries, which means that signals delivered to
+the perl process result in a segment violation.
+
+I suggest building DBD::Sybase with the normal libraries in this case to get
+reasonable behavior for signal handling.
+
+Use the threaded (lib..._r) libraries [N]:
+OK - I'll use the normal libs
+
+Running in 64bit mode - looking for '64' libraries...
+BLK api NOT available.
+The DBD::Sybase module need access to a Sybase server to run the tests.
+To clear an entry please enter 'undef'
+Sybase server to use (default: SYBASE): User ID to log in to Sybase (default: sa): Password (default: undef): Sybase database to use on SYBASE (default: undef):
+* Writing login information, including password, to file PWD.
+
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lcs
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lsybtcl
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lcomn
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lintl
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lblk
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -ldl
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+Using DBI 1.643 (for perl 5.032000 on x86_64-linux-thread-multi) installed in /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/
+Generating a Unix-style Makefile
+Writing Makefile for DBD::Sybase
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp dbd-sybase.pod blib/lib/DBD/dbd-sybase.pod
+cp Sybase.pm blib/lib/DBD/Sybase.pm
+Running Mkbootstrap for Sybase ()
+chmod 644 "Sybase.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Sybase.bs blib/arch/auto/DBD/Sybase/Sybase.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -p -e "s/~DRIVER~/Sybase/g" /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/Driver.xst > Sybase.xsi
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Sybase.xs > Sybase.xsc
+mv Sybase.xsc Sybase.c
+cc -c  -I/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include -DSYB_LP64 -DNO_BLK=1 -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.16\" -DXS_VERSION=\"1.16\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Sybase.c
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/DBIXS.h:23,
+                 from Sybase.h:16,
+                 from Sybase.xs:14:
+Sybase.xs: In function 'XS_DBD__Sybase__db_ping':
+Sybase.xs:83:32: warning: implicit declaration of function 'syb_ping' [-Wimplicit-function-declaration]
+   83 |     ST(0) = sv_2mortal(newSViv(syb_ping(dbh, imp_dbh)));
+      |                                ^~~~~~~~
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:557:46: note: in definition of macro 'sv_2mortal'
+  557 | #define sv_2mortal(a)  Perl_sv_2mortal(aTHX_ a)
+      |                                              ^
+Sybase.xs:83:24: note: in expansion of macro 'newSViv'
+   83 |     ST(0) = sv_2mortal(newSViv(syb_ping(dbh, imp_dbh)));
+      |                        ^~~~~~~
+Sybase.xs: In function 'XS_DBD__Sybase__st_cancel':
+Sybase.xs:95:13: warning: implicit declaration of function 'syb_st_cancel' [-Wimplicit-function-declaration]
+   95 |     ST(0) = syb_st_cancel(sth, imp_sth) ? &PL_sv_yes : &PL_sv_no;
+      |             ^~~~~~~~~~~~~
+cc -c  -I/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/include -DSYB_LP64 -DNO_BLK=1 -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.16\" -DXS_VERSION=\"1.16\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   dbdimp.c
+dbdimp.c: In function 'cslibmsg_cb':
+dbdimp.c:227:32: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  227 |    "Message number: LAYER = (%ld) ORIGIN = (%ld) ",
+      |                              ~~^
+      |                                |
+      |                                long int
+      |                              %d
+dbdimp.c:227:47: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  227 |    "Message number: LAYER = (%ld) ORIGIN = (%ld) ",
+      |                                             ~~^
+      |                                               |
+      |                                               long int
+      |                                             %d
+dbdimp.c:229:48: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  229 |  PerlIO_printf(PerlIO_stderr(), "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                                              ~~^
+      |                                                |
+      |                                                long int
+      |                                              %d
+dbdimp.c:229:63: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  229 |  PerlIO_printf(PerlIO_stderr(), "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                                                             ~~^
+      |                                                               |
+      |                                                               long int
+      |                                                             %d
+dbdimp.c: In function 'clientmsg_cb':
+dbdimp.c:315:29: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  315 |   sprintf(buff, "LAYER = (%ld) ORIGIN = (%ld) ",
+      |                           ~~^
+      |                             |
+      |                             long int
+      |                           %d
+dbdimp.c:315:44: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  315 |   sprintf(buff, "LAYER = (%ld) ORIGIN = (%ld) ",
+      |                                          ~~^
+      |                                            |
+      |                                            long int
+      |                                          %d
+dbdimp.c:318:32: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  318 |   sprintf(buff, "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                              ~~^
+      |                                |
+      |                                long int
+      |                              %d
+dbdimp.c:318:47: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  318 |   sprintf(buff, "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                                             ~~^
+      |                                               |
+      |                                               long int
+      |                                             %d
+dbdimp.c:371:46: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  371 |   PerlIO_printf(PerlIO_stderr(), "LAYER = (%ld) ORIGIN = (%ld) ",
+      |                                            ~~^
+      |                                              |
+      |                                              long int
+      |                                            %d
+dbdimp.c:371:61: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  371 |   PerlIO_printf(PerlIO_stderr(), "LAYER = (%ld) ORIGIN = (%ld) ",
+      |                                                           ~~^
+      |                                                             |
+      |                                                             long int
+      |                                                           %d
+dbdimp.c:373:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  373 |   PerlIO_printf(PerlIO_stderr(), "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                                               ~~^
+      |                                                 |
+      |                                                 long int
+      |                                               %d
+dbdimp.c:373:64: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+  373 |   PerlIO_printf(PerlIO_stderr(), "SEVERITY = (%ld) NUMBER = (%ld)\n",
+      |                                                              ~~^
+      |                                                                |
+      |                                                                long int
+      |                                                              %d
+dbdimp.c: In function 'servermsg_cb':
+dbdimp.c:403:71: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_MSGNUM' {aka 'int'} [-Wformat=]
+  403 |      PerlIO_printf(DBIc_LOGPIO(imp_dbh),"    servermsg_cb -> number=%ld severity=%ld ",
+      |                                                                     ~~^
+      |                                                                       |
+      |                                                                       long int
+      |                                                                     %d
+  404 |      srvmsg->msgnumber, srvmsg->severity);
+      |      ~~~~~~~~~~~~~~~~~
+      |            |
+      |            CS_MSGNUM {aka int}
+dbdimp.c:403:84: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  403 |      PerlIO_printf(DBIc_LOGPIO(imp_dbh),"    servermsg_cb -> number=%ld severity=%ld ",
+      |                                                                                  ~~^
+      |                                                                                    |
+      |                                                                                    long int
+      |                                                                                  %d
+  404 |      srvmsg->msgnumber, srvmsg->severity);
+      |                         ~~~~~~~~~~~~~~~~
+      |                               |
+      |                               CS_INT {aka int}
+dbdimp.c:405:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  405 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "state=%ld line=%ld ",
+      |                                               ~~^
+      |                                                 |
+      |                                                 long int
+      |                                               %d
+  406 |      srvmsg->state, srvmsg->line);
+      |      ~~~~~~~~~~~~~
+      |            |
+      |            CS_INT {aka int}
+dbdimp.c:405:58: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  405 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "state=%ld line=%ld ",
+      |                                                        ~~^
+      |                                                          |
+      |                                                          long int
+      |                                                        %d
+  406 |      srvmsg->state, srvmsg->line);
+      |                     ~~~~~~~~~~~~
+      |                           |
+      |                           CS_INT {aka int}
+dbdimp.c:539:27: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_MSGNUM' {aka 'int'} [-Wformat=]
+  539 |   sprintf(buff, "number=%ld severity=%ld ",
+      |                         ~~^
+      |                           |
+      |                           long int
+      |                         %d
+  540 |     srvmsg->msgnumber, srvmsg->severity);
+      |     ~~~~~~~~~~~~~~~~~
+      |           |
+      |           CS_MSGNUM {aka int}
+dbdimp.c:539:40: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  539 |   sprintf(buff, "number=%ld severity=%ld ",
+      |                                      ~~^
+      |                                        |
+      |                                        long int
+      |                                      %d
+  540 |     srvmsg->msgnumber, srvmsg->severity);
+      |                        ~~~~~~~~~~~~~~~~
+      |                              |
+      |                              CS_INT {aka int}
+dbdimp.c:542:26: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  542 |   sprintf(buff, "state=%ld line=%ld",
+      |                        ~~^
+      |                          |
+      |                          long int
+      |                        %d
+  543 |     srvmsg->state, srvmsg->line);
+      |     ~~~~~~~~~~~~~
+      |           |
+      |           CS_INT {aka int}
+dbdimp.c:542:35: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  542 |   sprintf(buff, "state=%ld line=%ld",
+      |                                 ~~^
+      |                                   |
+      |                                   long int
+      |                                 %d
+  543 |     srvmsg->state, srvmsg->line);
+      |                    ~~~~~~~~~~~~
+      |                          |
+      |                          CS_INT {aka int}
+dbdimp.c:579:66: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_MSGNUM' {aka 'int'} [-Wformat=]
+  579 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "Server message: number=%ld severity=%ld ",
+      |                                                                ~~^
+      |                                                                  |
+      |                                                                  long int
+      |                                                                %d
+  580 |      srvmsg->msgnumber, srvmsg->severity);
+      |      ~~~~~~~~~~~~~~~~~
+      |            |
+      |            CS_MSGNUM {aka int}
+dbdimp.c:579:79: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  579 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "Server message: number=%ld severity=%ld ",
+      |                                                                             ~~^
+      |                                                                               |
+      |                                                                               long int
+      |                                                                             %d
+  580 |      srvmsg->msgnumber, srvmsg->severity);
+      |                         ~~~~~~~~~~~~~~~~
+      |                               |
+      |                               CS_INT {aka int}
+dbdimp.c:581:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  581 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "state=%ld line=%ld ",
+      |                                               ~~^
+      |                                                 |
+      |                                                 long int
+      |                                               %d
+  582 |      srvmsg->state, srvmsg->line);
+      |      ~~~~~~~~~~~~~
+      |            |
+      |            CS_INT {aka int}
+dbdimp.c:581:58: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'CS_INT' {aka 'int'} [-Wformat=]
+  581 |    PerlIO_printf(DBIc_LOGPIO(imp_dbh), "state=%ld line=%ld ",
+      |                                                        ~~^
+      |                                                          |
+      |                                                          long int
+      |                                                        %d
+  582 |      srvmsg->state, srvmsg->line);
+      |                     ~~~~~~~~~~~~
+      |                           |
+      |                           CS_INT {aka int}
+dbdimp.c: In function 'syb_db_opentran':
+dbdimp.c:2049:34: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'imp_dbh_t *' {aka 'struct imp_dbh_st *'} [-Wformat=]
+ 2049 |  sprintf(imp_dbh->tranName, "DBI%x", imp_dbh);
+      |                                 ~^   ~~~~~~~
+      |                                  |   |
+      |                                  |   imp_dbh_t * {aka struct imp_dbh_st *}
+      |                                  unsigned int
+dbdimp.c: In function 'syb_alloc_cmd':
+dbdimp.c:2612:41: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'CS_COMMAND *' {aka 'struct _cs_command *'} [-Wformat=]
+ 2612 |     "    syb_alloc_cmd() -> CS_COMMAND %x for CS_CONNECTION %x\n",
+      |                                        ~^
+      |                                         |
+      |                                         unsigned int
+ 2613 |     cmd, connection);
+      |     ~~~
+      |     |
+      |     CS_COMMAND * {aka struct _cs_command *}
+dbdimp.c:2612:62: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'CS_CONNECTION *' {aka 'struct _cs_connection *'} [-Wformat=]
+ 2612 |     "    syb_alloc_cmd() -> CS_COMMAND %x for CS_CONNECTION %x\n",
+      |                                                             ~^
+      |                                                              |
+      |                                                              unsigned int
+ 2613 |     cmd, connection);
+      |          ~~~~~~~~~~
+      |          |
+      |          CS_CONNECTION * {aka struct _cs_connection *}
+dbdimp.c: In function 'cmd_execute':
+dbdimp.c:3815:55: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'CS_COMMAND *' {aka 'struct _cs_command *'} [-Wformat=]
+ 3815 |       "    cmd_execute() -> ct_command() failed (cmd=%x, statement=%s, imp_sth=%x)\n",
+      |                                                      ~^
+      |                                                       |
+      |                                                       unsigned int
+ 3816 |       imp_sth->cmd, imp_sth->statement, imp_sth);
+      |       ~~~~~~~~~~~~
+      |              |
+      |              CS_COMMAND * {aka struct _cs_command *}
+dbdimp.c:3815:81: warning: format '%x' expects argument of type 'unsigned int', but argument 5 has type 'imp_sth_t *' {aka 'struct imp_sth_st *'} [-Wformat=]
+ 3815 |       "    cmd_execute() -> ct_command() failed (cmd=%x, statement=%s, imp_sth=%x)\n",
+      |                                                                                ~^
+      |                                                                                 |
+      |                                                                                 unsigned int
+ 3816 |       imp_sth->cmd, imp_sth->statement, imp_sth);
+      |                                         ~~~~~~~
+      |                                         |
+      |                                         imp_sth_t * {aka struct imp_sth_st *}
+dbdimp.c: In function 'syb_st_destroy':
+dbdimp.c:4440:37: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'imp_sth_t *' {aka 'struct imp_sth_st *'} [-Wformat=]
+ 4440 |     "    syb_st_destroy: called on %x...\n", imp_sth);
+      |                                    ~^        ~~~~~~~
+      |                                     |        |
+      |                                     |        imp_sth_t * {aka struct imp_sth_st *}
+      |                                     unsigned int
+dbdimp.c:4475:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'CS_COMMAND *' {aka 'struct _cs_command *'} [-Wformat=]
+ 4475 |      "    ct_cmd_drop() -> CS_COMMAND %x\n", imp_sth->cmd);
+      |                                       ~^     ~~~~~~~~~~~~
+      |                                        |            |
+      |                                        unsigned int CS_COMMAND * {aka struct _cs_command *}
+dbdimp.c: In function '_dbd_rebind_ph':
+dbdimp.c:5294:41: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long int' [-Wformat=]
+ 5294 |     "       bind %s <== '%.100s' (size %d, ok %d)\n", phs->name,
+      |                                        ~^
+      |                                         |
+      |                                         int
+      |                                        %ld
+ 5295 |     phs->sv_buf, (long) phs->maxlen, SvOK(phs->sv) ? 1 : 0);
+      |                  ~~~~~~~~~~~~~~~~~~
+      |                  |
+      |                  long int
+dbdimp.c:5299:56: warning: format '%d' expects argument of type 'int', but argument 6 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+ 5299 |     "       datafmt: type=%d, name=%s, status=%d, len=%d\n",
+      |                                                       ~^
+      |                                                        |
+      |                                                        int
+      |                                                       %ld
+ 5300 |     phs->datafmt.datatype, phs->datafmt.name, phs->datafmt.status,
+ 5301 |     value_len);
+      |     ~~~~~~~~~
+      |     |
+      |     STRLEN {aka long unsigned int}
+dbdimp.c: In function 'fetch_data':
+dbdimp.c:5528:34: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'CS_INT' {aka 'int'} [-Wformat=]
+ 5528 |    sprintf(buff, "Error on row %ld.\n", row_count);
+      |                                ~~^      ~~~~~~~~~
+      |                                  |      |
+      |                                  |      CS_INT {aka int}
+      |                                  long int
+      |                                %d
+dbdimp.c: In function 'syb_db_connect':
+dbdimp.c:1601:27: warning: '%s' directive writing up to 259 bytes into a region of size 250 [-Wformat-overflow=]
+ 1601 |  sprintf(statement, "use [%s]", db);
+      |                           ^~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perlio.h:41,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/iperlsys.h:50,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:3876,
+                 from /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/DBIXS.h:23,
+                 from Sybase.h:16,
+                 from dbdimp.c:11:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 7 and 266 bytes into a destination of size 255
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f blib/arch/auto/DBD/Sybase/Sybase.so
+LD_RUN_PATH="/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib" cc  -L/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Sybase.o dbdimp.o  -o blib/arch/auto/DBD/Sybase/Sybase.so  \
+   -L/nix/store/rmw1abnbbijfb988nnwfl0kw0qki0br5-freetds-1.1.42/lib -lct   \
+
+chmod 755 blib/arch/auto/DBD/Sybase/Sybase.so
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/pkgconfig m4datadir=/nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/share/aclocal aclocaldir=/nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Sybase.bs blib/arch/auto/DBD/Sybase/Sybase.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBD/Sybase/Sybase.so
+Installing /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DBD/dbd-sybase.pod
+Installing /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DBD/Sybase.pm
+Installing /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/share/man/man3/DBD::Sybase.3
+Appending installation info to /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/share/man/man3 to /nix/store/0ngggwl5m5ipfkkb9izads6gr6zqq1pr-perl5.32.0-DBD-Sybase-1.16-devdoc/share/man/man3
+Removing empty /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16
+shrinking /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBD/Sybase/Sybase.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16/lib
+patching script interpreter paths in /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16
+checking for references to /build/ in /nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0ngggwl5m5ipfkkb9izads6gr6zqq1pr-perl5.32.0-DBD-Sybase-1.16-devdoc
+gzipping man pages under /nix/store/0ngggwl5m5ipfkkb9izads6gr6zqq1pr-perl5.32.0-DBD-Sybase-1.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0ngggwl5m5ipfkkb9izads6gr6zqq1pr-perl5.32.0-DBD-Sybase-1.16-devdoc
+checking for references to /build/ in /nix/store/0ngggwl5m5ipfkkb9izads6gr6zqq1pr-perl5.32.0-DBD-Sybase-1.16-devdoc...
+/nix/store/0prr87pkimqizg2mdn10x0vda433mz34-perl5.32.0-DBD-Sybase-1.16

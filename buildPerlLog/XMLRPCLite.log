@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/bmk1wgwjm7ghy7m7ajzqcjdjji57xpcg-perl5.32.0-XMLRPC-Lite-0.717.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/f2776jnxmg3p7jpqrlgshbs7619mip92-XMLRPC-Lite-0.717.tar.gz
+copying path '/nix/store/f2776jnxmg3p7jpqrlgshbs7619mip92-XMLRPC-Lite-0.717.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bmk1wgwjm7ghy7m7ajzqcjdjji57xpcg-perl5.32.0-XMLRPC-Lite-0.717.drv'...
+unpacking sources
+unpacking source archive /nix/store/f2776jnxmg3p7jpqrlgshbs7619mip92-XMLRPC-Lite-0.717.tar.gz
+source root is XMLRPC-Lite-0.717
+setting SOURCE_DATE_EPOCH to timestamp 1368853879 of file XMLRPC-Lite-0.717/MANIFEST
+patching sources
+configuring
+patching ./t/07-xmlrpc_payload.t...
+patching ./t/26-xmlrpc.t...
+patching ./t/37-mod_xmlrpc.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Warning: NAME must be a package name
+Generating a Unix-style Makefile
+Writing Makefile for XMLRPC-Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Apache/XMLRPC/Lite.pm blib/lib/Apache/XMLRPC/Lite.pm
+cp lib/XMLRPC/Lite.pm blib/lib/XMLRPC/Lite.pm
+cp lib/XMLRPC/Test.pm blib/lib/XMLRPC/Test.pm
+cp lib/XMLRPC/Transport/POP3.pm blib/lib/XMLRPC/Transport/POP3.pm
+cp lib/XMLRPC/Transport/TCP.pm blib/lib/XMLRPC/Transport/TCP.pm
+cp lib/XMLRPC/Transport/HTTP.pm blib/lib/XMLRPC/Transport/HTTP.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/07-xmlrpc_payload.t .. ok
+All tests successful.
+Files=1, Tests=8,  0 wallclock secs ( 0.03 usr  0.04 sys +  0.09 cusr  0.06 csys =  0.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/pkgconfig m4datadir=/nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/aclocal aclocaldir=/nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/Apache/XMLRPC/Lite.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/XMLRPC/Test.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/XMLRPC/Lite.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/XMLRPC/Transport/POP3.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/XMLRPC/Transport/HTTP.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/site_perl/5.32.0/XMLRPC/Transport/TCP.pm
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/XMLRPC::Transport::HTTP.3
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/XMLRPC::Lite.3
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/XMLRPC::Transport::TCP.3
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/XMLRPC::Transport::POP3.3
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/XMLRPC::Test.3
+Installing /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3/Apache::XMLRPC::Lite.3
+Appending installation info to /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/man3 to /nix/store/ysb6wk4w43m6bwhiwnwlrlfqikjifbaw-perl5.32.0-XMLRPC-Lite-0.717-devdoc/share/man/man3
+Removing empty /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717/lib
+patching script interpreter paths in /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717
+checking for references to /build/ in /nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ysb6wk4w43m6bwhiwnwlrlfqikjifbaw-perl5.32.0-XMLRPC-Lite-0.717-devdoc
+gzipping man pages under /nix/store/ysb6wk4w43m6bwhiwnwlrlfqikjifbaw-perl5.32.0-XMLRPC-Lite-0.717-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ysb6wk4w43m6bwhiwnwlrlfqikjifbaw-perl5.32.0-XMLRPC-Lite-0.717-devdoc
+checking for references to /build/ in /nix/store/ysb6wk4w43m6bwhiwnwlrlfqikjifbaw-perl5.32.0-XMLRPC-Lite-0.717-devdoc...
+/nix/store/gcglzya04smy8j2287ykpj41hg0q0vvg-perl5.32.0-XMLRPC-Lite-0.717

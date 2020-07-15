@@ -1,0 +1,88 @@
+these derivations will be built:
+  /nix/store/cgmkb1sb69vsdp40rcpwy5h0z4h8mw17-perl5.32.0-Net-OpenID-Common-1.20.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/ann2wpyymbrri2f43zsbx7wv2ipdp2y8-Net-OpenID-Common-1.20.tar.gz
+copying path '/nix/store/ann2wpyymbrri2f43zsbx7wv2ipdp2y8-Net-OpenID-Common-1.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cgmkb1sb69vsdp40rcpwy5h0z4h8mw17-perl5.32.0-Net-OpenID-Common-1.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/ann2wpyymbrri2f43zsbx7wv2ipdp2y8-Net-OpenID-Common-1.20.tar.gz
+source root is Net-OpenID-Common-1.20
+setting SOURCE_DATE_EPOCH to timestamp 1454895409 of file Net-OpenID-Common-1.20/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/07-htmlparse.t...
+patching ./t/05-eq.t...
+patching ./t/01-use-urifetch.t...
+patching ./t/06-int2bytes.t...
+patching ./t/00-use-indirectmessage.t...
+patching ./t/03-use-common.t...
+patching ./t/04-messages.t...
+patching ./t/02-use-yadis.t...
+patching ./t/release-pod-syntax.t...
+patching ./lib/Net/OpenID/URIFetch.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::OpenID::Common
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/OpenID/Extension.pm blib/lib/Net/OpenID/Extension.pm
+cp lib/Net/OpenID/ExtensionMessage.pm blib/lib/Net/OpenID/ExtensionMessage.pm
+cp lib/Net/OpenID/Yadis/Service.pm blib/lib/Net/OpenID/Yadis/Service.pm
+cp lib/Net/OpenID/URIFetch.pm blib/lib/Net/OpenID/URIFetch.pm
+cp lib/Net/OpenID/IndirectMessage.pm blib/lib/Net/OpenID/IndirectMessage.pm
+cp lib/Net/OpenID/Common.pm blib/lib/Net/OpenID/Common.pm
+cp lib/Net/OpenID/Yadis.pm blib/lib/Net/OpenID/Yadis.pm
+cp lib/Net/OpenID/Extension/SimpleRegistration.pm blib/lib/Net/OpenID/Extension/SimpleRegistration.pm
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-use-indirectmessage.t .. ok
+t/01-use-urifetch.t ......... ok
+t/02-use-yadis.t ............ ok
+t/03-use-common.t ........... ok
+t/04-messages.t ............. ok
+t/05-eq.t ................... ok
+t/06-int2bytes.t ............ ok
+t/07-htmlparse.t ............ ok
+t/release-pod-syntax.t ...... skipped: these tests are for release candidate testing
+All tests successful.
+Files=9, Tests=2110,  7 wallclock secs ( 0.27 usr  0.04 sys +  6.35 cusr  1.23 csys =  7.89 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/pkgconfig m4datadir=/nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/aclocal aclocaldir=/nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/URIFetch.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/Extension.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/ExtensionMessage.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/Common.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/Yadis.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/IndirectMessage.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/Extension/SimpleRegistration.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/site_perl/5.32.0/Net/OpenID/Yadis/Service.pm
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::ExtensionMessage.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::URIFetch.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::Yadis::Service.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::Yadis.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::Extension::SimpleRegistration.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::Extension.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::IndirectMessage.3
+Installing /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3/Net::OpenID::Common.3
+Appending installation info to /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/man3 to /nix/store/gjspvlziikplw6jn6rh05vpxnq0pzpp7-perl5.32.0-Net-OpenID-Common-1.20-devdoc/share/man/man3
+Removing empty /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20/lib
+patching script interpreter paths in /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20
+checking for references to /build/ in /nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gjspvlziikplw6jn6rh05vpxnq0pzpp7-perl5.32.0-Net-OpenID-Common-1.20-devdoc
+gzipping man pages under /nix/store/gjspvlziikplw6jn6rh05vpxnq0pzpp7-perl5.32.0-Net-OpenID-Common-1.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gjspvlziikplw6jn6rh05vpxnq0pzpp7-perl5.32.0-Net-OpenID-Common-1.20-devdoc
+checking for references to /build/ in /nix/store/gjspvlziikplw6jn6rh05vpxnq0pzpp7-perl5.32.0-Net-OpenID-Common-1.20-devdoc...
+/nix/store/lnzhnbg6j22s9m54r97bjnd5d82yy3hn-perl5.32.0-Net-OpenID-Common-1.20

@@ -1,0 +1,86 @@
+these derivations will be built:
+  /nix/store/amsbhb8hsd9izqnhw456gd08l5jhnx7j-perl5.32.0-Time-Piece-1.3401.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/1lk3hlbnzms5lrr45z0fr2lsqx3z4c6n-Time-Piece-1.3401.tar.gz
+copying path '/nix/store/1lk3hlbnzms5lrr45z0fr2lsqx3z4c6n-Time-Piece-1.3401.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/amsbhb8hsd9izqnhw456gd08l5jhnx7j-perl5.32.0-Time-Piece-1.3401.drv'...
+unpacking sources
+unpacking source archive /nix/store/1lk3hlbnzms5lrr45z0fr2lsqx3z4c6n-Time-Piece-1.3401.tar.gz
+source root is Time-Piece-1.3401
+setting SOURCE_DATE_EPOCH to timestamp 1586212851 of file Time-Piece-1.3401/META.yml
+patching sources
+configuring
+patching ./t/06subclass.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Time::Piece
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Piece.pm blib/lib/Time/Piece.pm
+cp Seconds.pm blib/lib/Time/Seconds.pm
+Running Mkbootstrap for Piece ()
+chmod 644 "Piece.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Piece.bs blib/arch/auto/Time/Piece/Piece.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Piece.xs > Piece.xsc
+mv Piece.xsc Piece.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3401\" -DXS_VERSION=\"1.3401\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Piece.c
+rm -f blib/arch/auto/Time/Piece/Piece.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Piece.o  -o blib/arch/auto/Time/Piece/Piece.so  \
+      \
+
+chmod 755 blib/arch/auto/Time/Piece/Piece.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Piece.bs blib/arch/auto/Time/Piece/Piece.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01base.t ...... ok
+t/02core.t ...... ok
+t/02core_dst.t .. ok
+t/03compare.t ... ok
+t/04mjd.t ....... ok
+t/05overload.t .. ok
+t/06large.t ..... ok
+t/06subclass.t .. ok
+t/07arith.t ..... ok
+t/08truncate.t .. ok
+t/09locales.t ... ok
+t/10overload.t .. ok
+t/99legacy.t .... ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/06large.t   (Wstat: 0 Tests: 250 Failed: 0)
+  TODO passed:   1-250
+Files=13, Tests=691,  1 wallclock secs ( 0.08 usr  0.01 sys +  0.72 cusr  0.09 csys =  0.90 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/pkgconfig m4datadir=/nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/aclocal aclocaldir=/nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Piece.bs blib/arch/auto/Time/Piece/Piece.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so
+Installing /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Time/Piece.pm
+Installing /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Time/Seconds.pm
+Installing /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/man/man3/Time::Piece.3
+Installing /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/man/man3/Time::Seconds.3
+Appending installation info to /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/man/man3 to /nix/store/4710765iffgws1ybjryah3f7l6kk6ww0-perl5.32.0-Time-Piece-1.3401-devdoc/share/man/man3
+Removing empty /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401
+shrinking /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401/lib
+patching script interpreter paths in /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401
+checking for references to /build/ in /nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4710765iffgws1ybjryah3f7l6kk6ww0-perl5.32.0-Time-Piece-1.3401-devdoc
+gzipping man pages under /nix/store/4710765iffgws1ybjryah3f7l6kk6ww0-perl5.32.0-Time-Piece-1.3401-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4710765iffgws1ybjryah3f7l6kk6ww0-perl5.32.0-Time-Piece-1.3401-devdoc
+checking for references to /build/ in /nix/store/4710765iffgws1ybjryah3f7l6kk6ww0-perl5.32.0-Time-Piece-1.3401-devdoc...
+/nix/store/1injc3j9zmv5n0f7pys58rqbzsppghdl-perl5.32.0-Time-Piece-1.3401

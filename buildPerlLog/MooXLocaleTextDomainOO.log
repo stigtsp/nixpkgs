@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/0rn0maik716ppnl24lv57snw9mxs3i8j-perl5.32.0-MooX-Locale-TextDomain-OO-0.001.drv
+building '/nix/store/0rn0maik716ppnl24lv57snw9mxs3i8j-perl5.32.0-MooX-Locale-TextDomain-OO-0.001.drv'...
+unpacking sources
+unpacking source archive /nix/store/fm4a33vx7cbpnrn87chas0n9jacc6mg6-MooX-Locale-TextDomain-OO-0.001.tar.gz
+source root is MooX-Locale-TextDomain-OO-0.001
+setting SOURCE_DATE_EPOCH to timestamp 1496307215 of file MooX-Locale-TextDomain-OO-0.001/META.yml
+patching sources
+configuring
+patching ./t/00-load.t...
+patching ./t/01-rough.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooX::Locale::TextDomain::OO
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooX/Locale/TextDomain/OO.pm blib/lib/MooX/Locale/TextDomain/OO.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t xt/*.t
+t/00-load.t ... 1/? # Testing MooX::Locale::TextDomain::OO 0.001, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ... ok
+t/01-rough.t .. ok
+All tests successful.
+Files=2, Tests=10,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.47 cusr  0.42 csys =  0.95 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/lib/pkgconfig m4datadir=/nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/share/aclocal aclocaldir=/nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/lib/perl5/site_perl/5.32.0/MooX/Locale/TextDomain/OO.pm
+Installing /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/share/man/man3/MooX::Locale::TextDomain::OO.3
+Appending installation info to /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/share/man/man3 to /nix/store/i3dcf5lp9c83hlix52ydw97phnlszr29-perl5.32.0-MooX-Locale-TextDomain-OO-0.001-devdoc/share/man/man3
+Removing empty /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001/lib
+patching script interpreter paths in /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001
+checking for references to /build/ in /nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/i3dcf5lp9c83hlix52ydw97phnlszr29-perl5.32.0-MooX-Locale-TextDomain-OO-0.001-devdoc
+gzipping man pages under /nix/store/i3dcf5lp9c83hlix52ydw97phnlszr29-perl5.32.0-MooX-Locale-TextDomain-OO-0.001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/i3dcf5lp9c83hlix52ydw97phnlszr29-perl5.32.0-MooX-Locale-TextDomain-OO-0.001-devdoc
+checking for references to /build/ in /nix/store/i3dcf5lp9c83hlix52ydw97phnlszr29-perl5.32.0-MooX-Locale-TextDomain-OO-0.001-devdoc...
+/nix/store/g8j0shl3kyadxnqb82gs4giwz9z2idj4-perl5.32.0-MooX-Locale-TextDomain-OO-0.001

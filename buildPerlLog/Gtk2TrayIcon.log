@@ -1,0 +1,141 @@
+these derivations will be built:
+  /nix/store/ynfiajh5jjqz3s393w7mbmazi19swgwi-perl5.32.0-Gtk2-TrayIcon-0.06.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/5dixxd1q3zm1fdkv6pnda9dyc78ddmk7-Gtk2-TrayIcon-0.06.tar.gz
+copying path '/nix/store/5dixxd1q3zm1fdkv6pnda9dyc78ddmk7-Gtk2-TrayIcon-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ynfiajh5jjqz3s393w7mbmazi19swgwi-perl5.32.0-Gtk2-TrayIcon-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/5dixxd1q3zm1fdkv6pnda9dyc78ddmk7-Gtk2-TrayIcon-0.06.tar.gz
+source root is Gtk2-TrayIcon-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1179180195 of file Gtk2-TrayIcon-0.06/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: '-pthread'
+Generating a Unix-style Makefile
+Writing Makefile for Gtk2::TrayIcon
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp /build/Gtk2-TrayIcon-0.06/build/trayicon.typemap blib/arch/Gtk2/TrayIcon/Install/trayicon.typemap
+cp build/IFiles.pm blib/arch/Gtk2/TrayIcon/Install/Files.pm
+cp build/trayicon-autogen.h blib/arch/Gtk2/TrayIcon/Install/trayicon-autogen.h
+cp TrayIcon.pm blib/lib/Gtk2/TrayIcon.pm
+Running Mkbootstrap for TrayIcon ()
+chmod 644 "TrayIcon.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- TrayIcon.bs blib/arch/auto/Gtk2/TrayIcon/TrayIcon.bs 644
+[ XS TrayIcon.xs ]
+mv TrayIcon.xsc TrayIcon.c
+[ CC TrayIcon.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:33,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from TrayIcon.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from TrayIcon.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:126,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from TrayIcon.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: 'GTimeVal' is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/galloca.h:32,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib.h:30,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from TrayIcon.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
+  547 | struct _GTimeVal
+      |        ^~~~~~~~~
+[ CC eggtrayicon.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtksocket.h:33,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkplug.h:34,
+                 from eggtrayicon.h:24,
+                 from eggtrayicon.c:25:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:34,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtksocket.h:33,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkplug.h:34,
+                 from eggtrayicon.h:24,
+                 from eggtrayicon.c:25:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+rm -f blib/arch/auto/Gtk2/TrayIcon/TrayIcon.so
+[ LD blib/arch/auto/Gtk2/TrayIcon/TrayIcon.so ]
+chmod 755 blib/arch/auto/Gtk2/TrayIcon/TrayIcon.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- TrayIcon.bs blib/arch/auto/Gtk2/TrayIcon/TrayIcon.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/load.t .. skipped: Gtk2->init_check failed, probably unable to open DISPLAY
+Files=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.07 cusr  0.02 csys =  0.12 CPU)
+Result: NOTESTS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/gsettings-schemas/perl5.32.0-Gtk2-TrayIcon-0.06/glib-2.0/schemas/ pkgconfigdir=/nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/pkgconfig m4datadir=/nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/aclocal aclocaldir=/nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- TrayIcon.bs blib/arch/auto/Gtk2/TrayIcon/TrayIcon.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/TrayIcon/Install/trayicon-autogen.h
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/TrayIcon/Install/Files.pm
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/TrayIcon/Install/trayicon.typemap
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Gtk2/TrayIcon/TrayIcon.so
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/TrayIcon.pm
+Installing /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/man/man3/Gtk2::TrayIcon.3
+Appending installation info to /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+dropIconThemeCache
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/man/man3 to /nix/store/vwp3pfs0w8gn884gi1hcmnbqnbm4bcfh-perl5.32.0-Gtk2-TrayIcon-0.06-devdoc/share/man/man3
+Removing empty /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06
+shrinking /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Gtk2/TrayIcon/TrayIcon.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06/lib
+patching script interpreter paths in /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06
+checking for references to /build/ in /nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vwp3pfs0w8gn884gi1hcmnbqnbm4bcfh-perl5.32.0-Gtk2-TrayIcon-0.06-devdoc
+gzipping man pages under /nix/store/vwp3pfs0w8gn884gi1hcmnbqnbm4bcfh-perl5.32.0-Gtk2-TrayIcon-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vwp3pfs0w8gn884gi1hcmnbqnbm4bcfh-perl5.32.0-Gtk2-TrayIcon-0.06-devdoc
+checking for references to /build/ in /nix/store/vwp3pfs0w8gn884gi1hcmnbqnbm4bcfh-perl5.32.0-Gtk2-TrayIcon-0.06-devdoc...
+/nix/store/8wqvkif4p266b33m2z5fq09gz9g49wzg-perl5.32.0-Gtk2-TrayIcon-0.06

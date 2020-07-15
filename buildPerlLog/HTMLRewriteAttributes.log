@@ -1,0 +1,76 @@
+these derivations will be built:
+  /nix/store/am057zalc45a94jxl2n8rsx0av3w1wcv-perl5.32.0-HTML-RewriteAttributes-0.05.drv
+building '/nix/store/am057zalc45a94jxl2n8rsx0av3w1wcv-perl5.32.0-HTML-RewriteAttributes-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/d348fy10yk3jyl0nw13ma10lf3j7mbkx-HTML-RewriteAttributes-0.05.tar.gz
+source root is HTML-RewriteAttributes-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1350944056 of file HTML-RewriteAttributes-0.05/SIGNATURE
+patching sources
+configuring
+patching ./t/000-synopsis.t...
+patching ./t/004-misc.t...
+patching ./t/002-resources.t...
+patching ./t/021-import.t...
+patching ./t/020-inline-css.t...
+patching ./t/003-links.t...
+patching ./t/023-import-comment.t...
+patching ./t/022-import-off.t...
+patching ./t/005-links-code.t...
+patching ./t/001-basic.t...
+patching ./lib/HTML/RewriteAttributes.pm...
+patching ./lib/HTML/RewriteAttributes/Links.pm...
+patching ./lib/HTML/RewriteAttributes/Resources.pm...
+Cannot determine perl version info from lib/HTML/RewriteAttributes.pm
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::RewriteAttributes
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/RewriteAttributes/Links.pm blib/lib/HTML/RewriteAttributes/Links.pm
+cp lib/HTML/RewriteAttributes/Resources.pm blib/lib/HTML/RewriteAttributes/Resources.pm
+cp lib/HTML/RewriteAttributes.pm blib/lib/HTML/RewriteAttributes.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/000-synopsis.t ........ ok
+t/001-basic.t ........... ok
+t/002-resources.t ....... ok
+t/003-links.t ........... ok
+t/004-misc.t ............ ok
+t/005-links-code.t ...... ok
+t/010-resolvelink.t ..... ok
+t/020-inline-css.t ...... ok
+t/021-import.t .......... ok
+t/022-import-off.t ...... ok
+t/023-import-comment.t .. ok
+All tests successful.
+Files=11, Tests=29,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.63 cusr  0.24 csys =  0.93 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib/pkgconfig m4datadir=/nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/aclocal aclocaldir=/nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib/perl5/site_perl/5.32.0/HTML/RewriteAttributes.pm
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib/perl5/site_perl/5.32.0/HTML/RewriteAttributes/Links.pm
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib/perl5/site_perl/5.32.0/HTML/RewriteAttributes/Resources.pm
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/man/man3/HTML::RewriteAttributes::Links.3
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/man/man3/HTML::RewriteAttributes.3
+Installing /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/man/man3/HTML::RewriteAttributes::Resources.3
+Appending installation info to /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/man/man3 to /nix/store/4wnlgvrm8fxrix9iyv0fm2akqaiq9qnp-perl5.32.0-HTML-RewriteAttributes-0.05-devdoc/share/man/man3
+Removing empty /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05/lib
+patching script interpreter paths in /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05
+checking for references to /build/ in /nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4wnlgvrm8fxrix9iyv0fm2akqaiq9qnp-perl5.32.0-HTML-RewriteAttributes-0.05-devdoc
+gzipping man pages under /nix/store/4wnlgvrm8fxrix9iyv0fm2akqaiq9qnp-perl5.32.0-HTML-RewriteAttributes-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4wnlgvrm8fxrix9iyv0fm2akqaiq9qnp-perl5.32.0-HTML-RewriteAttributes-0.05-devdoc
+checking for references to /build/ in /nix/store/4wnlgvrm8fxrix9iyv0fm2akqaiq9qnp-perl5.32.0-HTML-RewriteAttributes-0.05-devdoc...
+/nix/store/dz2msqljv5dg2h3l9821wxa18pz1502p-perl5.32.0-HTML-RewriteAttributes-0.05

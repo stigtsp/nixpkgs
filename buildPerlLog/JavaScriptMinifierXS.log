@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/pzbybkp00i2r8gchq0ccpiby82xj3k4a-perl5.32.0-JavaScript-Minifier-XS-0.11.drv
+building '/nix/store/pzbybkp00i2r8gchq0ccpiby82xj3k4a-perl5.32.0-JavaScript-Minifier-XS-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/p8v9mlwkmdp96jinawcgxzylfbdyi05s-JavaScript-Minifier-XS-0.11.tar.gz
+source root is JavaScript-Minifier-XS-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1422406368 of file JavaScript-Minifier-XS-0.11/xt/test-compile.t
+patching sources
+configuring
+patching ./xt/test-compile.t...
+patching ./xt/leaks.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for JavaScript::Minifier::XS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'JavaScript-Minifier-XS' version '0.11'
+Building JavaScript-Minifier-XS
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.11" -DXS_VERSION="0.11" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/JavaScript/Minifier/XS.o lib/JavaScript/Minifier/XS.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/JavaScript/Minifier/XS/XS.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/JavaScript/Minifier/XS/XS.so lib/JavaScript/Minifier/XS.o
+running tests
+t/01-loads.t ................ ok
+t/02-minify.t ............... ok
+t/03-minifies-to-nothing.t .. ok
+t/04-not-javascript.t ....... ok
+All tests successful.
+Files=4, Tests=20,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.19 cusr  0.04 csys =  0.25 CPU)
+Result: PASS
+installing
+Building JavaScript-Minifier-XS
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/JavaScript/Minifier/XS/XS.bs
+Installing /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/JavaScript/Minifier/XS/XS.so
+Installing /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/JavaScript/Minifier/XS.pm
+Installing /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/share/man/man3/JavaScript::Minifier::XS.3
+post-installation fixup
+Moving /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/share/man/man3 to /nix/store/670vpby5nglfvf7csmbr63fkw8lyyiph-perl5.32.0-JavaScript-Minifier-XS-0.11-devdoc/share/man/man3
+Removing empty /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11
+shrinking /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/JavaScript/Minifier/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11/lib
+patching script interpreter paths in /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11
+checking for references to /build/ in /nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/670vpby5nglfvf7csmbr63fkw8lyyiph-perl5.32.0-JavaScript-Minifier-XS-0.11-devdoc
+gzipping man pages under /nix/store/670vpby5nglfvf7csmbr63fkw8lyyiph-perl5.32.0-JavaScript-Minifier-XS-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/670vpby5nglfvf7csmbr63fkw8lyyiph-perl5.32.0-JavaScript-Minifier-XS-0.11-devdoc
+checking for references to /build/ in /nix/store/670vpby5nglfvf7csmbr63fkw8lyyiph-perl5.32.0-JavaScript-Minifier-XS-0.11-devdoc...
+/nix/store/4skgz1p60wjh0y2iwzaryq7imhmx70ph-perl5.32.0-JavaScript-Minifier-XS-0.11

@@ -1,0 +1,89 @@
+these derivations will be built:
+  /nix/store/xy1fzmc01cjxl8i0q1b2ja99fwbs0c8q-perl5.32.0-Math-Geometry-Voronoi-1.3.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/in4f0zqz9056irrgzb7iryx7ppi3abxj-Math-Geometry-Voronoi-1.3.tar.gz
+copying path '/nix/store/in4f0zqz9056irrgzb7iryx7ppi3abxj-Math-Geometry-Voronoi-1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xy1fzmc01cjxl8i0q1b2ja99fwbs0c8q-perl5.32.0-Math-Geometry-Voronoi-1.3.drv'...
+unpacking sources
+unpacking source archive /nix/store/in4f0zqz9056irrgzb7iryx7ppi3abxj-Math-Geometry-Voronoi-1.3.tar.gz
+source root is Math-Geometry-Voronoi-1.3
+setting SOURCE_DATE_EPOCH to timestamp 1247338370 of file Math-Geometry-Voronoi-1.3/META.yml
+patching sources
+configuring
+patching ./examples/voronoi.cgi...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::Geometry::Voronoi
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/Geometry/Voronoi.pm blib/lib/Math/Geometry/Voronoi.pm
+cp leak-test.pl blib/lib/Math/Geometry/leak-test.pl
+Running Mkbootstrap for Voronoi ()
+chmod 644 "Voronoi.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Voronoi.bs blib/arch/auto/Math/Geometry/Voronoi/Voronoi.bs 644
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   voronoi_main.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   edgelist.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   heap.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   geometry.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   memory.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   output.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   voronoi_core.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Voronoi.xs > Voronoi.xsc
+Please specify prototyping behavior for Voronoi.xs (see perlxs manual)
+mv Voronoi.xsc Voronoi.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.3\" -DXS_VERSION=\"1.3\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Voronoi.c
+In file included from Voronoi.xs:5:
+ppport.h:231: warning: "PERL_UNUSED_DECL" redefined
+  231 | #  define PERL_UNUSED_DECL
+      |
+In file included from Voronoi.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:435: note: this is the location of the previous definition
+  435 | #  define PERL_UNUSED_DECL __attribute__unused__
+      |
+Voronoi.xs: In function 'XS_Math__Geometry__Voronoi_compute_voronoi_xs':
+Voronoi.xs:52:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'ssize_t' {aka 'long int'} [-Wformat=]
+   52 |       croak("Points array must be an array of arrays with 2 values not %d!", av_len(av));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f blib/arch/auto/Math/Geometry/Voronoi/Voronoi.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  voronoi_main.o edgelist.o heap.o geometry.o memory.o output.o voronoi_core.o Voronoi.o  -o blib/arch/auto/Math/Geometry/Voronoi/Voronoi.so  \
+      \
+
+chmod 755 blib/arch/auto/Math/Geometry/Voronoi/Voronoi.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Voronoi.bs blib/arch/auto/Math/Geometry/Voronoi/Voronoi.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00basic.t .. ok
+t/02real.t ... ok
+All tests successful.
+Files=2, Tests=303,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.25 cusr  0.05 csys =  0.35 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/pkgconfig m4datadir=/nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/share/aclocal aclocaldir=/nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Voronoi.bs blib/arch/auto/Math/Geometry/Voronoi/Voronoi.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Geometry/Voronoi/Voronoi.so
+Installing /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Geometry/Voronoi.pm
+Installing /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Geometry/leak-test.pl
+Installing /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/share/man/man3/Math::Geometry::Voronoi.3
+Appending installation info to /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/share/man/man3 to /nix/store/hh64645v09mb7mzch4j48wk3sc934qgd-perl5.32.0-Math-Geometry-Voronoi-1.3-devdoc/share/man/man3
+Removing empty /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3
+shrinking /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Geometry/Voronoi/Voronoi.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3/lib
+patching script interpreter paths in /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3
+checking for references to /build/ in /nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hh64645v09mb7mzch4j48wk3sc934qgd-perl5.32.0-Math-Geometry-Voronoi-1.3-devdoc
+gzipping man pages under /nix/store/hh64645v09mb7mzch4j48wk3sc934qgd-perl5.32.0-Math-Geometry-Voronoi-1.3-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hh64645v09mb7mzch4j48wk3sc934qgd-perl5.32.0-Math-Geometry-Voronoi-1.3-devdoc
+checking for references to /build/ in /nix/store/hh64645v09mb7mzch4j48wk3sc934qgd-perl5.32.0-Math-Geometry-Voronoi-1.3-devdoc...
+/nix/store/v8p0jfxwkp83j7fsfgzd5xgfmn4d2x46-perl5.32.0-Math-Geometry-Voronoi-1.3

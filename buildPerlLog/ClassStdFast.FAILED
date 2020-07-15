@@ -1,0 +1,241 @@
+these derivations will be built:
+  /nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv
+  /nix/store/3yk8sj0ay5arv9qk7hnmy7ydrxngrrla-perl5.32.0-Test-Pod-Coverage-1.10.drv
+  /nix/store/gp8vyaixppaaq32jmk3gnhixbg0vi4ma-perl5.32.0-Class-Std-Fast-0.0.8.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/wnmc7i4bx4qzc5zw5pwgaf624k4y490c-Class-Std-Fast-v0.0.8.tar.gz
+copying path '/nix/store/wnmc7i4bx4qzc5zw5pwgaf624k4y490c-Class-Std-Fast-v0.0.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv'...
+unpacking sources
+unpacking source archive /nix/store/5icwdxpkg6as293w5g03vvmzyj2518cz-Pod-Coverage-0.23.tar.gz
+source root is Pod-Coverage-0.23
+setting SOURCE_DATE_EPOCH to timestamp 1367414003 of file Pod-Coverage-0.23/META.yml
+patching sources
+configuring
+patching ./examples/check_installed...
+patching ./examples/script-covered...
+patching ./t/05parentage.t...
+patching ./t/02simple.t...
+patching ./t/04cvgv.t...
+patching ./t/01compile.t...
+patching ./t/03import.t...
+patching ./t/09whitespace.t...
+patching ./t/08tie.t...
+patching ./t/06trustme.t...
+patching ./bin/pod_cover...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Pod::Find 0.21 not found.
+Warning: prerequisite Pod::Parser 1.13 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Coverage
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/Coverage.pm blib/lib/Pod/Coverage.pm
+cp lib/Pod/Coverage/CountParents.pm blib/lib/Pod/Coverage/CountParents.pm
+cp lib/Pod/Coverage/Overloader.pm blib/lib/Pod/Coverage/Overloader.pm
+cp lib/Pod/Coverage/ExportOnly.pm blib/lib/Pod/Coverage/ExportOnly.pm
+cp bin/pod_cover blib/script/pod_cover
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pod_cover
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01compile.t ..... 1/4
+#   Failed test 'use Pod::Coverage;'
+#   at t/01compile.t line 4.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/01compile.t line 4.
+# BEGIN failed--compilation aborted at t/01compile.t line 4.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/01compile.t line 5.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/01compile.t line 5.
+# BEGIN failed--compilation aborted at t/01compile.t line 5.
+
+#   Failed test 'use Pod::Coverage::Overloader;'
+#   at t/01compile.t line 6.
+#     Tried to use 'Pod::Coverage::Overloader'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/Overloader.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/Overloader.pm line 3.
+# Compilation failed in require at t/01compile.t line 6.
+# BEGIN failed--compilation aborted at t/01compile.t line 6.
+
+#   Failed test 'use Pod::Coverage::CountParents;'
+#   at t/01compile.t line 7.
+#     Tried to use 'Pod::Coverage::CountParents'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# Compilation failed in require at t/01compile.t line 7.
+# BEGIN failed--compilation aborted at t/01compile.t line 7.
+# Looks like you failed 4 tests of 4.
+t/01compile.t ..... Dubious, test returned 4 (wstat 1024, 0x400)
+Failed 4/4 subtests
+t/02simple.t ...... 1/36
+#   Failed test 'use Pod::Coverage;'
+#   at t/02simple.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/02simple.t line 7.
+# BEGIN failed--compilation aborted at t/02simple.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/02simple.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/02simple.t line 8.
+# BEGIN failed--compilation aborted at t/02simple.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/02simple.t line 11.
+# Looks like your test exited with 255 just after 2.
+t/02simple.t ...... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 36/36 subtests
+t/03import.t ...... 1/3
+#   Failed test 'Simple2 works correctly in import form'
+#   at t/03import.t line 7.
+#          got: ''
+#     expected: 'Simple2 has a Pod::Coverage rating of 0.75
+# 'naked' is uncovered'
+
+#   Failed test 'Simple7 import form'
+#   at t/03import.t line 9.
+#          got: ''
+#     expected: 'Simple7 has a Pod::Coverage rating of 0
+# The following are uncovered: bar, foo'
+
+#   Failed test 'Simple7 import form, implicit package'
+#   at t/03import.t line 11.
+#          got: ''
+#     expected: 'Simple7 has a Pod::Coverage rating of 0
+# The following are uncovered: bar, foo'
+# Looks like you failed 3 tests of 3.
+t/03import.t ...... Dubious, test returned 3 (wstat 768, 0x300)
+Failed 3/3 subtests
+t/04cvgv.t ........ Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+Compilation failed in require at t/04cvgv.t line 4.
+BEGIN failed--compilation aborted at t/04cvgv.t line 4.
+# Looks like your test exited with 2 before it could output anything.
+t/04cvgv.t ........ Dubious, test returned 2 (wstat 512, 0x200)
+Failed 4/4 subtests
+t/05parentage.t ... 1/5
+#   Failed test 'use Pod::Coverage::CountParents;'
+#   at t/05parentage.t line 8.
+#     Tried to use 'Pod::Coverage::CountParents'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# Compilation failed in require at t/05parentage.t line 8.
+# BEGIN failed--compilation aborted at t/05parentage.t line 8.
+Can't locate object method "new" via package "Pod::Coverage::CountParents" at t/05parentage.t line 11.
+# Looks like your test exited with 255 just after 1.
+t/05parentage.t ... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 5/5 subtests
+t/06trustme.t ..... 1/10
+#   Failed test 'use Pod::Coverage;'
+#   at t/06trustme.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/06trustme.t line 7.
+# BEGIN failed--compilation aborted at t/06trustme.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/06trustme.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/06trustme.t line 8.
+# BEGIN failed--compilation aborted at t/06trustme.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/06trustme.t line 11.
+# Looks like your test exited with 255 just after 2.
+t/06trustme.t ..... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 10/10 subtests
+t/07pod.t ......... skipped: Test::Pod 1.00 required for testing POD
+t/08tie.t ......... 1/4
+#   Failed test 'use Pod::Coverage;'
+#   at t/08tie.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/08tie.t line 7.
+# BEGIN failed--compilation aborted at t/08tie.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/08tie.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/08tie.t line 8.
+# BEGIN failed--compilation aborted at t/08tie.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/08tie.t line 11.
+# Looks like your test exited with 255 just after 2.
+t/08tie.t ......... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 4/4 subtests
+t/09whitespace.t .. 1/3
+#   Failed test 'use Pod::Coverage;'
+#   at t/09whitespace.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/09whitespace.t line 7.
+# BEGIN failed--compilation aborted at t/09whitespace.t line 7.
+Can't locate object method "new" via package "Pod::Coverage" at t/09whitespace.t line 10.
+# Looks like your test exited with 255 just after 1.
+t/09whitespace.t .. Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 3/3 subtests
+
+Test Summary Report
+-------------------
+t/01compile.t   (Wstat: 1024 Tests: 4 Failed: 4)
+  Failed tests:  1-4
+  Non-zero exit status: 4
+t/02simple.t    (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 36 tests but ran 2.
+t/03import.t    (Wstat: 768 Tests: 3 Failed: 3)
+  Failed tests:  1-3
+  Non-zero exit status: 3
+t/04cvgv.t      (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: Bad plan.  You planned 4 tests but ran 0.
+t/05parentage.t (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 5 tests but ran 1.
+t/06trustme.t   (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 10 tests but ran 2.
+t/08tie.t       (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/09whitespace.t (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 3 tests but ran 1.
+Files=9, Tests=15,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.48 cusr  0.08 csys =  0.60 CPU)
+Result: FAIL
+Failed 8/9 test programs. 15/15 subtests failed.
+make: *** [Makefile:879: test_dynamic] Error 255
+builder for '/nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv' failed with exit code 2
+cannot build derivation '/nix/store/3yk8sj0ay5arv9qk7hnmy7ydrxngrrla-perl5.32.0-Test-Pod-Coverage-1.10.drv': 1 dependencies couldn't be built
+cannot build derivation '/nix/store/gp8vyaixppaaq32jmk3gnhixbg0vi4ma-perl5.32.0-Class-Std-Fast-0.0.8.drv': 1 dependencies couldn't be built
+error: build of '/nix/store/gp8vyaixppaaq32jmk3gnhixbg0vi4ma-perl5.32.0-Class-Std-Fast-0.0.8.drv' failed

@@ -1,0 +1,418 @@
+these derivations will be built:
+  /nix/store/0aw290j2h76aann5hpffyqnqxb7s9si8-perl5.32.0-syntax-0.004.drv
+  /nix/store/na2zgb3d9s4v8sr71mkavp0m79w4grxj-perl5.32.0-Syntax-Keyword-Junction-0.003008.drv
+  /nix/store/arlm74gf51lsq49w530f40nj20rjm3xk-perl5.32.0-Moose-Autobox-0.16.drv
+  /nix/store/wgfh25rlvj50qihkwn9kbpszg48xs2i1-perl5.32.0-Test-CPAN-Meta-JSON-0.16.drv
+  /nix/store/kgidrra8lqmh12gzwr229w4r8yppkdbl-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.drv
+building '/nix/store/wgfh25rlvj50qihkwn9kbpszg48xs2i1-perl5.32.0-Test-CPAN-Meta-JSON-0.16.drv'...
+building '/nix/store/0aw290j2h76aann5hpffyqnqxb7s9si8-perl5.32.0-syntax-0.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/sgn2abw23hs6p2xx2s5zw7qwx7jcphnk-Test-CPAN-Meta-JSON-0.16.tar.gz
+source root is Test-CPAN-Meta-JSON-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1420970565 of file Test-CPAN-Meta-JSON-0.16/t/samples/24-META.json
+patching sources
+configuring
+patching ./examples/96metatest.t...
+patching ./examples/97metatest.t...
+unpacking sources
+unpacking source archive /nix/store/l6ia46ayv8905pxlbai0vlx7vhp2fwss-syntax-0.004.tar.gz
+source root is syntax-0.004
+setting SOURCE_DATE_EPOCH to timestamp 1337366838 of file syntax-0.004/weaver.ini
+patching sources
+configuring
+patching ./t/96metatest.t...
+patching ./t/91podcover.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/94metatest.t...
+patching ./t/12metaversion.t...
+patching ./t/13metaversion.t...
+patching ./t/basic.t...
+patching ./t/10metaversion.t...
+patching ./t/release-distmeta.t...
+patching ./t/20metaversion.t...
+patching ./t/90podtest.t...
+patching ./t/95changedate.t...
+patching ./t/97metatest.t...
+patching ./t/05metaspec.t...
+patching ./t/11metaversion.t...
+patching ./t/02metafiles.t...
+patching ./t/01use.t...
+patching ./t/14metaversion.t...
+patching ./t/04metatester.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Checking if your kit is complete...
+Looks good
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::CPAN::Meta::JSON
+Generating a Unix-style Makefile
+Writing Makefile for syntax
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/CPAN/Meta/JSON.pm blib/lib/Test/CPAN/Meta/JSON.pm
+cp lib/Test/CPAN/Meta/JSON/Version.pm blib/lib/Test/CPAN/Meta/JSON/Version.pm
+Manifying 2 pod documents
+cp lib/syntax.pm blib/lib/syntax.pm
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/basic.t ............... ok
+t/02metafiles.t .... ok
+t/release-distmeta.t .... skipped: these tests are for release candidate testing
+t/04metatester.t ... ok
+t/release-eol.t ......... skipped: these tests are for release candidate testing
+t/05metaspec.t ..... ok
+t/release-no-tabs.t ..... skipped: these tests are for release candidate testing
+t/10metaversion.t .. ok
+t/11metaversion.t .. ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=5, Tests=4,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.34 cusr  0.20 csys =  0.58 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/lib/pkgconfig m4datadir=/nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/share/aclocal aclocaldir=/nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/share/aclocal install
+t/12metaversion.t .. ok
+Manifying 1 pod document
+Installing /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/lib/perl5/site_perl/5.32.0/syntax.pm
+Installing /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/share/man/man3/syntax.3
+t/13metaversion.t .. ok
+Appending installation info to /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/share/man/man3 to /nix/store/0js1pm4pp4dfz5wqw6jwqdnrh4riizg8-perl5.32.0-syntax-0.004-devdoc/share/man/man3
+Removing empty /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004/lib
+patching script interpreter paths in /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004
+checking for references to /build/ in /nix/store/097vg4b0v7za8a4893l3cm0gx3xapwfb-perl5.32.0-syntax-0.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0js1pm4pp4dfz5wqw6jwqdnrh4riizg8-perl5.32.0-syntax-0.004-devdoc
+gzipping man pages under /nix/store/0js1pm4pp4dfz5wqw6jwqdnrh4riizg8-perl5.32.0-syntax-0.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0js1pm4pp4dfz5wqw6jwqdnrh4riizg8-perl5.32.0-syntax-0.004-devdoc
+checking for references to /build/ in /nix/store/0js1pm4pp4dfz5wqw6jwqdnrh4riizg8-perl5.32.0-syntax-0.004-devdoc...
+building '/nix/store/na2zgb3d9s4v8sr71mkavp0m79w4grxj-perl5.32.0-Syntax-Keyword-Junction-0.003008.drv'...
+t/14metaversion.t .. ok
+t/20metaversion.t .. ok
+unpacking sources
+unpacking source archive /nix/store/dsv0yk4qxnma4p5v486d3imb6w6sw8ka-Syntax-Keyword-Junction-0.003008.tar.gz
+source root is Syntax-Keyword-Junction-0.003008
+setting SOURCE_DATE_EPOCH to timestamp 1404695317 of file Syntax-Keyword-Junction-0.003008/t/syntax.t
+patching sources
+configuring
+patching ./t/syntax.t...
+patching ./t/release-pod-syntax.t...
+t/90podtest.t ...... skipped: Test::Pod 1.00 required for testing POD
+t/91podcover.t ..... skipped: Test::Pod::Coverage 0.08 required for testing POD coverage
+Checking if your kit is complete...
+Looks good
+t/94metatest.t ..... skipped: Test::CPAN::Meta required for testing META.yml
+Generating a Unix-style Makefile
+Writing Makefile for Syntax::Keyword::Junction
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+t/95changedate.t ... ok
+t/96metatest.t ..... ok
+t/97metatest.t ..... ok
+All tests successful.
+Files=16, Tests=843,  1 wallclock secs ( 0.10 usr  0.02 sys +  1.19 cusr  0.25 csys =  1.56 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/lib/pkgconfig m4datadir=/nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/aclocal aclocaldir=/nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/aclocal install
+cp lib/Syntax/Keyword/Junction/None.pm blib/lib/Syntax/Keyword/Junction/None.pm
+Manifying 2 pod documents
+cp lib/Syntax/Feature/Junction.pm blib/lib/Syntax/Feature/Junction.pm
+cp lib/Syntax/Keyword/Junction.pm blib/lib/Syntax/Keyword/Junction.pm
+cp lib/Syntax/Keyword/Junction/Base.pm blib/lib/Syntax/Keyword/Junction/Base.pm
+cp lib/Syntax/Keyword/Junction/Any.pm blib/lib/Syntax/Keyword/Junction/Any.pm
+cp lib/Syntax/Keyword/Junction/One.pm blib/lib/Syntax/Keyword/Junction/One.pm
+cp lib/Syntax/Keyword/Junction/All.pm blib/lib/Syntax/Keyword/Junction/All.pm
+Installing /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/lib/perl5/site_perl/5.32.0/Test/CPAN/Meta/JSON.pm
+Installing /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/lib/perl5/site_perl/5.32.0/Test/CPAN/Meta/JSON/Version.pm
+Installing /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/man/man3/Test::CPAN::Meta::JSON.3
+Installing /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/man/man3/Test::CPAN::Meta::JSON::Version.3
+Appending installation info to /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+Manifying 7 pod documents
+post-installation fixup
+Moving /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/man/man3 to /nix/store/hldh991jl4vl44nqi3ivqaf7bpkx0mil-perl5.32.0-Test-CPAN-Meta-JSON-0.16-devdoc/share/man/man3
+Removing empty /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16/lib
+patching script interpreter paths in /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16
+checking for references to /build/ in /nix/store/v3yhl9qm7vg4yhvcfpdkwq1jqlvdnwd9-perl5.32.0-Test-CPAN-Meta-JSON-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hldh991jl4vl44nqi3ivqaf7bpkx0mil-perl5.32.0-Test-CPAN-Meta-JSON-0.16-devdoc
+gzipping man pages under /nix/store/hldh991jl4vl44nqi3ivqaf7bpkx0mil-perl5.32.0-Test-CPAN-Meta-JSON-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hldh991jl4vl44nqi3ivqaf7bpkx0mil-perl5.32.0-Test-CPAN-Meta-JSON-0.16-devdoc
+running tests
+checking for references to /build/ in /nix/store/hldh991jl4vl44nqi3ivqaf7bpkx0mil-perl5.32.0-Test-CPAN-Meta-JSON-0.16-devdoc...
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t .............. ok
+t/all.t ................. ok
+t/any.t ................. ok
+t/import_tags.t ......... ok
+t/join.t ................ ok
+t/no_import.t ........... ok
+t/none.t ................ ok
+t/one.t ................. ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+t/smartmatch.t .......... skipped: Test requires module 'Sub::Exporter' but it's not found
+t/syntax.t .............. skipped: Test requires module 'Sub::Exporter' but it's not found
+All tests successful.
+Files=11, Tests=378,  2 wallclock secs ( 0.07 usr  0.02 sys +  0.74 cusr  0.51 csys =  1.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/pkgconfig m4datadir=/nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/aclocal aclocaldir=/nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/aclocal install
+Manifying 7 pod documents
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction/One.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction/Any.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction/None.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction/All.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Keyword/Junction/Base.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/site_perl/5.32.0/Syntax/Feature/Junction.pm
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction::Base.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction::One.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction::Any.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction::None.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Feature::Junction.3
+Installing /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3/Syntax::Keyword::Junction::All.3
+Appending installation info to /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/man3 to /nix/store/j26qlj6p7yhmrfgaljabzgv4k9pmmbpz-perl5.32.0-Syntax-Keyword-Junction-0.003008-devdoc/share/man/man3
+Removing empty /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008/lib
+patching script interpreter paths in /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008
+checking for references to /build/ in /nix/store/730m89vch1x7flvjhw811ylglh0kfzg6-perl5.32.0-Syntax-Keyword-Junction-0.003008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j26qlj6p7yhmrfgaljabzgv4k9pmmbpz-perl5.32.0-Syntax-Keyword-Junction-0.003008-devdoc
+gzipping man pages under /nix/store/j26qlj6p7yhmrfgaljabzgv4k9pmmbpz-perl5.32.0-Syntax-Keyword-Junction-0.003008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j26qlj6p7yhmrfgaljabzgv4k9pmmbpz-perl5.32.0-Syntax-Keyword-Junction-0.003008-devdoc
+checking for references to /build/ in /nix/store/j26qlj6p7yhmrfgaljabzgv4k9pmmbpz-perl5.32.0-Syntax-Keyword-Junction-0.003008-devdoc...
+building '/nix/store/arlm74gf51lsq49w530f40nj20rjm3xk-perl5.32.0-Moose-Autobox-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/bjpgp7j2pzf6vi90xfnwfnjvpjiy8n9r-Moose-Autobox-0.16.tar.gz
+source root is Moose-Autobox-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1462239228 of file Moose-Autobox-0.16/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/tic_tac_toe.pl...
+patching ./examples/units/bytes.pl...
+patching ./examples/units/time.pl...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Moose::Autobox
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Moose-Autobox' version '0.16'
+cp lib/Moose/Autobox/Hash.pm blib/lib/Moose/Autobox/Hash.pm
+cp lib/Moose/Autobox/List.pm blib/lib/Moose/Autobox/List.pm
+cp lib/Moose/Autobox.pm blib/lib/Moose/Autobox.pm
+cp lib/Moose/Autobox/Item.pm blib/lib/Moose/Autobox/Item.pm
+cp lib/Moose/Autobox/Code.pm blib/lib/Moose/Autobox/Code.pm
+cp lib/Moose/Autobox/Defined.pm blib/lib/Moose/Autobox/Defined.pm
+cp lib/Moose/Autobox/Array.pm blib/lib/Moose/Autobox/Array.pm
+cp lib/Moose/Autobox/Ref.pm blib/lib/Moose/Autobox/Ref.pm
+cp lib/Moose/Autobox/Value.pm blib/lib/Moose/Autobox/Value.pm
+cp lib/Moose/Autobox/String.pm blib/lib/Moose/Autobox/String.pm
+cp lib/Moose/Autobox/Undef.pm blib/lib/Moose/Autobox/Undef.pm
+cp lib/Moose/Autobox/Scalar.pm blib/lib/Moose/Autobox/Scalar.pm
+cp lib/Moose/Autobox/Indexed.pm blib/lib/Moose/Autobox/Indexed.pm
+cp lib/Moose/Autobox/Number.pm blib/lib/Moose/Autobox/Number.pm
+running tests
+t/00-report-prereqs.t ...... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     ---------------- ---- --------
+#     File::Spec        any     3.78
+#     Module::Metadata  any 1.000037
+#     Test::Exception   any     0.43
+#     Test::More        any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     Carp                             any     1.50
+#     Data::Dumper                     any    2.174
+#     List::MoreUtils                 0.07    0.428
+#     Moose                           0.42   2.2012
+#     Moose::Role                      any   2.2012
+#     Moose::Util                      any   2.2012
+#     Scalar::Util                     any     1.55
+#     Syntax::Keyword::Junction::All   any 0.003008
+#     Syntax::Keyword::Junction::Any   any 0.003008
+#     Syntax::Keyword::Junction::None  any 0.003008
+#     Syntax::Keyword::Junction::One   any 0.003008
+#     autobox                         2.23   v3.0.1
+#     metaclass                        any   2.2012
+#     namespace::autoclean             any     0.29
+#     parent                           any    0.238
+#     strict                           any     1.11
+#     warnings                         any     1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Pod::Coverage missing
+#
+t/00-report-prereqs.t ...... ok
+t/000_load.t ............... ok
+t/001_basic.t .............. ok
+t/002_role_hierarchy.t ..... ok
+t/003_p6_example.t ......... ok
+t/004_list_compressions.t .. 1/4 Redundant argument in sprintf at /build/Moose-Autobox-0.16/blib/lib/Moose/Autobox/Array.pm line 56.
+t/004_list_compressions.t .. ok
+t/005_string.t ............. ok
+t/006_y_combinator.t ....... ok
+t/007_base.t ............... ok
+t/008_flatten.t ............ ok
+t/009_number.t ............. ok
+t/010_each.t ............... ok
+t/011_each_n_values.t ...... ok
+t/012_first_last.t ......... ok
+t/zzz-check-breaks.t ....... ok
+All tests successful.
+Files=15, Tests=208,  6 wallclock secs ( 0.08 usr  0.05 sys +  4.06 cusr  1.94 csys =  6.13 CPU)
+Result: PASS
+installing
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Defined.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Undef.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Ref.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Hash.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/List.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Indexed.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Item.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Value.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/String.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Code.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Array.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Scalar.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib/perl5/site_perl/5.32.0/Moose/Autobox/Number.pm
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Hash.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Item.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Defined.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Ref.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::String.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Indexed.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Scalar.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Undef.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Number.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::List.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Value.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Code.3
+Installing /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3/Moose::Autobox::Array.3
+post-installation fixup
+Moving /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/man3 to /nix/store/hhqlrvmal6s6lv96dpwinamdy4jpxfkn-perl5.32.0-Moose-Autobox-0.16-devdoc/share/man/man3
+Removing empty /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16/lib
+patching script interpreter paths in /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16
+checking for references to /build/ in /nix/store/f1dnr51jsi3nj9rxc46q1p1q1gidp2f2-perl5.32.0-Moose-Autobox-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hhqlrvmal6s6lv96dpwinamdy4jpxfkn-perl5.32.0-Moose-Autobox-0.16-devdoc
+gzipping man pages under /nix/store/hhqlrvmal6s6lv96dpwinamdy4jpxfkn-perl5.32.0-Moose-Autobox-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hhqlrvmal6s6lv96dpwinamdy4jpxfkn-perl5.32.0-Moose-Autobox-0.16-devdoc
+checking for references to /build/ in /nix/store/hhqlrvmal6s6lv96dpwinamdy4jpxfkn-perl5.32.0-Moose-Autobox-0.16-devdoc...
+building '/nix/store/kgidrra8lqmh12gzwr229w4r8yppkdbl-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/307rq5dk2bmfvwp528f079hlxzjlyq3v-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.tar.gz
+source root is Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004
+setting SOURCE_DATE_EPOCH to timestamp 1426988069 of file Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::CPAN::Meta::JSON
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-CPAN-Meta-JSON' version '0.004'
+Building Dist-Zilla-Plugin-Test-CPAN-Meta-JSON
+running tests
+t/00-compile.t .. ok
+t/01-prune.t .... ok
+All tests successful.
+Files=2, Tests=3,  4 wallclock secs ( 0.05 usr  0.04 sys +  1.80 cusr  1.52 csys =  3.41 CPU)
+Result: PASS
+installing
+Building Dist-Zilla-Plugin-Test-CPAN-Meta-JSON
+Installing /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/CPAN/Meta/JSON.pm
+Installing /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/share/man/man3/Dist::Zilla::Plugin::Test::CPAN::Meta::JSON.3
+post-installation fixup
+Moving /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/share/man/man3 to /nix/store/y5j7skn660ad6liyy488ws58bvnpmwjk-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004-devdoc/share/man/man3
+Removing empty /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004/lib
+patching script interpreter paths in /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004
+checking for references to /build/ in /nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y5j7skn660ad6liyy488ws58bvnpmwjk-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004-devdoc
+gzipping man pages under /nix/store/y5j7skn660ad6liyy488ws58bvnpmwjk-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y5j7skn660ad6liyy488ws58bvnpmwjk-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004-devdoc
+checking for references to /build/ in /nix/store/y5j7skn660ad6liyy488ws58bvnpmwjk-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004-devdoc...
+/nix/store/mcz7151x44xxf9pqvbi7nqfrxx08ajx0-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004

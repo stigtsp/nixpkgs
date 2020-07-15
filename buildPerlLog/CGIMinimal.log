@@ -1,0 +1,124 @@
+these derivations will be built:
+  /nix/store/2fkdsyqkab1xagcqs73fz3q24zdb64vn-perl5.32.0-CGI-Minimal-1.30.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/vrxqflhw3bapdnkv5b5zq4iq71a7bylb-CGI-Minimal-1.30.tar.gz
+copying path '/nix/store/vrxqflhw3bapdnkv5b5zq4iq71a7bylb-CGI-Minimal-1.30.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2fkdsyqkab1xagcqs73fz3q24zdb64vn-perl5.32.0-CGI-Minimal-1.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/vrxqflhw3bapdnkv5b5zq4iq71a7bylb-CGI-Minimal-1.30.tar.gz
+source root is CGI-Minimal-1.30
+setting SOURCE_DATE_EPOCH to timestamp 1592209259 of file CGI-Minimal-1.30/t/99_pod.t
+patching sources
+configuring
+patching ./examples/simple_math.cgi...
+patching ./examples/fcgi_example.fpl...
+patching ./examples/hello_world.cgi...
+patching ./examples/calling_parms.cgi...
+patching ./examples/cli_testing.pl...
+patching ./t/03_misc.t...
+patching ./t/04_modify_parameters.t...
+patching ./t/08_decode_hybrid_form.t...
+patching ./t/07_commandline.t...
+patching ./t/01_decode_form.t...
+patching ./t/09_decode_hybrid_form_mixed_data.t...
+patching ./t/06_mod_perl1.t...
+patching ./t/02_encodings.t...
+patching ./t/05_preload.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CGI::Minimal
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'CGI-Minimal' version '1.30'
+Building CGI-Minimal
+running tests
+t/01_decode_form.t ....................
+    decode application/x-www-form-urlencoded    - ok
+    decode application/sgml-form-urlencoded     - ok
+    decode repeated parameter options           - ok
+    raw buffer                                  - ok
+    no parameters                               - ok
+    detect form truncation                      - ok
+    decode multipart/form-data                  - ok
+    decode ordinary POST form data              - ok
+t/01_decode_form.t .................... ok
+t/02_encodings.t ......................
+    html escaping                               - ok
+t/02_encodings.t ...................... 1/2     url encoding                                - ok
+t/02_encodings.t ...................... ok
+t/03_misc.t ...........................
+    generate calling parms table                - ok
+    generate RFC 1123 date                      - ok
+t/03_misc.t ........................... ok
+t/04_modify_parameters.t ..............
+    set standard parameter values               - ok
+    delete standard parameters                  - ok
+    set multipart parameter values              - ok
+    delete multipart parameters                 - ok
+t/04_modify_parameters.t .............. ok
+t/05_preload.t ........................
+    preload decode application/x-www-form-urlencoded    - ok
+    preload decode application/sgml-form-urlencoded     - ok
+    preload decode multipart/form-data                  - ok
+    preload detect form truncation                      - ok
+t/05_preload.t ........................ ok
+t/06_mod_perl1.t ...................... 1/5
+    no parameters                               - ok
+    decode application/x-www-form-urlencoded    - ok
+    decode application/sgml-form-urlencoded     - ok
+    decode repeated parameter options           - ok
+    raw buffer                                  - ok
+t/06_mod_perl1.t ...................... ok
+t/07_commandline.t ....................
+t/07_commandline.t .................... 1/1     decode from command line                    - ok
+t/07_commandline.t .................... ok
+t/08_decode_hybrid_form.t .............
+    decode application/x-www-form-urlencoded    - ok
+    decode application/sgml-form-urlencoded     - ok
+    decode repeated parameter options           - ok
+    raw buffer                                  - ok
+    no parameters                               - ok
+    detect form truncation                      - ok
+    decode multipart/form-data                  - ok
+    decode ordinary POST form data              - ok
+t/08_decode_hybrid_form.t ............. ok
+t/09_decode_hybrid_form_mixed_data.t ..
+    decode application/x-www-form-urlencoded    - ok
+    decode application/sgml-form-urlencoded     - ok
+    decode repeated parameter options           - ok
+    raw buffer                                  - ok
+    no parameters                               - ok
+    detect form truncation                      - ok
+    decode multipart/form-data                  - ok
+    decode ordinary POST form data              - ok
+t/09_decode_hybrid_form_mixed_data.t .. ok
+t/97_distribution.t ................... skipped: Test::Distribution not installed
+t/98_pod_coverage.t ................... skipped: To enable POD coverage test set TEST_POD_COVERAGE=1
+t/99_pod.t ............................ skipped: To enable POD test set TEST_POD=1
+All tests successful.
+Files=12, Tests=42,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.50 cusr  0.07 csys =  0.62 CPU)
+Result: PASS
+installing
+Building CGI-Minimal
+Installing /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/lib/perl5/site_perl/5.32.0/CGI/Minimal.pm
+Installing /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/lib/perl5/site_perl/5.32.0/CGI/Minimal.pod
+Installing /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/lib/perl5/site_perl/5.32.0/CGI/Minimal/Multipart.pm
+Installing /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/lib/perl5/site_perl/5.32.0/CGI/Minimal/Misc.pm
+Installing /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/share/man/man3/CGI::Minimal.3
+post-installation fixup
+Moving /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/share/man/man3 to /nix/store/l5bhfv80cpyq62p26krknxlx03f1pbvx-perl5.32.0-CGI-Minimal-1.30-devdoc/share/man/man3
+Removing empty /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30/lib
+patching script interpreter paths in /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30
+checking for references to /build/ in /nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l5bhfv80cpyq62p26krknxlx03f1pbvx-perl5.32.0-CGI-Minimal-1.30-devdoc
+gzipping man pages under /nix/store/l5bhfv80cpyq62p26krknxlx03f1pbvx-perl5.32.0-CGI-Minimal-1.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l5bhfv80cpyq62p26krknxlx03f1pbvx-perl5.32.0-CGI-Minimal-1.30-devdoc
+checking for references to /build/ in /nix/store/l5bhfv80cpyq62p26krknxlx03f1pbvx-perl5.32.0-CGI-Minimal-1.30-devdoc...
+/nix/store/sc8zg2zpzs6m93kal7sm0yrg4fwvjjb6-perl5.32.0-CGI-Minimal-1.30

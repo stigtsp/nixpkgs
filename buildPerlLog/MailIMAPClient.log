@@ -1,0 +1,133 @@
+these derivations will be built:
+  /nix/store/g04mx4xzskkh0hdjp2nmbkr5zqm7dn5q-perl5.32.0-Mail-IMAPClient-3.42.drv
+these paths will be fetched (0.18 MiB download, 0.18 MiB unpacked):
+  /nix/store/yyyx3smpypz0mi6dqrxxzhis0j4h20g3-Mail-IMAPClient-3.42.tar.gz
+copying path '/nix/store/yyyx3smpypz0mi6dqrxxzhis0j4h20g3-Mail-IMAPClient-3.42.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g04mx4xzskkh0hdjp2nmbkr5zqm7dn5q-perl5.32.0-Mail-IMAPClient-3.42.drv'...
+unpacking sources
+unpacking source archive /nix/store/yyyx3smpypz0mi6dqrxxzhis0j4h20g3-Mail-IMAPClient-3.42.tar.gz
+source root is Mail-IMAPClient-3.42
+setting SOURCE_DATE_EPOCH to timestamp 1550969622 of file Mail-IMAPClient-3.42/META.yml
+patching sources
+configuring
+patching ./prepare_dist...
+patching ./examples/build_ldif.pl...
+patching ./examples/find_dup_msgs.pl...
+patching ./examples/cyrus_expunge.pl...
+patching ./examples/copy_folder.pl...
+patching ./examples/cleanTest.pl...
+patching ./examples/populate_mailbox.pl...
+patching ./examples/cyrus_expire.pl...
+patching ./examples/imtestExample.pl...
+patching ./examples/migrate_mail2.pl...
+patching ./examples/imap_to_mbox.pl...
+patching ./examples/sharedFolder.pl...
+patching ./examples/idle.pl...
+patching ./examples/build_dist.pl...
+patching ./examples/migrate_mbox.pl...
+patching ./t/bodystructure.t...
+patching ./t/quota.t...
+patching ./t/pod.t...
+patching ./t/fetch_hash.t...
+patching ./t/thread.t...
+patching ./t/basic.t...
+patching ./t/messageset.t...
+patching ./t/body_string.t...
+patching ./t/simple.t...
+The following optional modules were not found:
+        Authen::NTLM for Authmechanism 'NTLM'
+        Authen::SASL for Authmechanism 'DIGEST-MD5'
+        Digest::HMAC_MD5 for Authmechanism 'CRAM-MD5'
+        IO::Socket::SSL for SSL enabled connections (Ssl => 1)
+        Test::Pod for Pod tests
+Optional modules are available from any CPAN mirror, reference:
+  https://metacpan.org/
+  https://www.cpan.org/modules/by-module/
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::IMAPClient
+Writing MYMETA.yml and MYMETA.json
+
+(OPTIONAL) For extended tests during 'make test', create a file
+'test.txt' in the top level directory of this distribution (the same
+directory as the Makefile.PL, etc.).  This file must contain an IMAP
+server name or IP (server=...), a user account (user=...), and a
+password (passed=...).  A port (port=....) and an authentication
+mechanism to be used (authmechanism=...) can also be specified.
+
+Example:
+
+--- BEGIN: test.txt ---
+server=localhost
+user=mytestuser
+passed=mypassword
+port=143
+--- END: test.txt ---
+
+NOTE: When testing is completed, be sure to remove test.txt (either by
+hand or by 'make clean').
+
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/IMAPClient/BodyStructure/Parse.pm blib/lib/Mail/IMAPClient/BodyStructure/Parse.pm
+cp lib/Mail/IMAPClient/BodyStructure.pm blib/lib/Mail/IMAPClient/BodyStructure.pm
+cp lib/Mail/IMAPClient.pm blib/lib/Mail/IMAPClient.pm
+cp lib/Mail/IMAPClient/Thread.pod blib/lib/Mail/IMAPClient/Thread.pod
+cp lib/Mail/IMAPClient.pod blib/lib/Mail/IMAPClient.pod
+cp lib/Mail/IMAPClient/MessageSet.pm blib/lib/Mail/IMAPClient/MessageSet.pm
+cp lib/Mail/IMAPClient/BodyStructure/Parse.grammar blib/lib/Mail/IMAPClient/BodyStructure/Parse.grammar
+cp lib/Mail/IMAPClient/Thread.grammar blib/lib/Mail/IMAPClient/Thread.grammar
+cp lib/Mail/IMAPClient/BodyStructure/Parse.pod blib/lib/Mail/IMAPClient/BodyStructure/Parse.pod
+cp lib/Mail/IMAPClient/Thread.pm blib/lib/Mail/IMAPClient/Thread.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t .......... skipped: test parameters not provided in test.txt
+t/body_string.t .... ok
+t/bodystructure.t .. ok
+t/fetch_hash.t ..... ok
+t/messageset.t ..... ok
+t/pod.t ............ skipped: Test::Pod 1.00 required for testing POD
+t/quota.t .......... skipped: test parameters not provided in test.txt
+t/simple.t ......... ok
+t/thread.t ......... ok
+All tests successful.
+Files=9, Tests=107,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.80 cusr  0.14 csys =  1.00 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/pkgconfig m4datadir=/nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/aclocal aclocaldir=/nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient.pm
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient.pod
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/Thread.grammar
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/Thread.pod
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/Thread.pm
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/BodyStructure.pm
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/MessageSet.pm
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/BodyStructure/Parse.pod
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/BodyStructure/Parse.pm
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/site_perl/5.32.0/Mail/IMAPClient/BodyStructure/Parse.grammar
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3/Mail::IMAPClient::MessageSet.3
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3/Mail::IMAPClient::Thread.3
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3/Mail::IMAPClient.3
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3/Mail::IMAPClient::BodyStructure::Parse.3
+Installing /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3/Mail::IMAPClient::BodyStructure.3
+Appending installation info to /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/man3 to /nix/store/42lrv6iw5l6d5wsk2n9bs5cv49z7h0xg-perl5.32.0-Mail-IMAPClient-3.42-devdoc/share/man/man3
+Removing empty /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42/lib
+patching script interpreter paths in /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42
+checking for references to /build/ in /nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42...
+shrinking RPATHs of ELF executables and libraries in /nix/store/42lrv6iw5l6d5wsk2n9bs5cv49z7h0xg-perl5.32.0-Mail-IMAPClient-3.42-devdoc
+gzipping man pages under /nix/store/42lrv6iw5l6d5wsk2n9bs5cv49z7h0xg-perl5.32.0-Mail-IMAPClient-3.42-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/42lrv6iw5l6d5wsk2n9bs5cv49z7h0xg-perl5.32.0-Mail-IMAPClient-3.42-devdoc
+checking for references to /build/ in /nix/store/42lrv6iw5l6d5wsk2n9bs5cv49z7h0xg-perl5.32.0-Mail-IMAPClient-3.42-devdoc...
+/nix/store/yrq59bkminp8kznk7hjak5nrvlq4p5q4-perl5.32.0-Mail-IMAPClient-3.42

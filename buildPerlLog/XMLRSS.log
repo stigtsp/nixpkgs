@@ -1,0 +1,130 @@
+these derivations will be built:
+  /nix/store/p4vvpjyl19s62bdz98aq5ik6630z7r2s-perl5.32.0-XML-RSS-1.61.drv
+these paths will be fetched (0.13 MiB download, 0.12 MiB unpacked):
+  /nix/store/2nf99n74np8pwvci15xjv0x16masmrb5-XML-RSS-1.61.tar.gz
+copying path '/nix/store/2nf99n74np8pwvci15xjv0x16masmrb5-XML-RSS-1.61.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p4vvpjyl19s62bdz98aq5ik6630z7r2s-perl5.32.0-XML-RSS-1.61.drv'...
+unpacking sources
+unpacking source archive /nix/store/2nf99n74np8pwvci15xjv0x16masmrb5-XML-RSS-1.61.tar.gz
+source root is XML-RSS-1.61
+setting SOURCE_DATE_EPOCH to timestamp 1566636852 of file XML-RSS-1.61/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./keep-out/scripts/code-gen/gen-pod-for-as_rss.pl...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/rss2html.pl...
+patching ./examples/convert.pl...
+patching ./examples/0.91/create_rss_0.91.pl...
+patching ./examples/0.91/create_rss_0.91_full.pl...
+patching ./examples/create_rss_multiple.pl...
+patching ./examples/0.9/create_rss.pl...
+patching ./examples/update_rss.pl...
+patching ./examples/1.0/create_rss_1.0.pl...
+patching ./examples/1.0/update_rss_1.0.pl...
+patching ./examples/rss_info.pl...
+patching ./t/2.0-parse-self.t...
+patching ./t/1.0-gen-errors-on-missing-fields.t...
+patching ./t/1.0-parse-2.t...
+patching ./t/2.0-permalink.t...
+patching ./t/xml-header.t...
+patching ./t/charset1.t...
+patching ./t/2.0-parse-2.t...
+patching ./t/style-trailing-space.t...
+patching ./t/add-item-insert-vs-append.t...
+patching ./t/rss2-gt-encoding.t...
+patching ./t/1.0-to-2.0.t...
+patching ./t/2.0-modules.t...
+patching ./t/test-generated-items.t...
+patching ./t/cpan-changes.t...
+patching ./t/2.0-wo-title.t...
+patching ./t/0.9-strict.t...
+patching ./t/save-while-in-taint-mode.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::RSS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'XML-RSS' version '1.61'
+Building XML-RSS
+running tests
+t/0.9-generate.t ...................... ok
+t/0.9-parse.t ......................... ok
+t/0.9-strict.t ........................ ok
+t/0.91-parse.t ........................ ok
+t/00-compile.t ........................ ok
+t/1.0-gen-errors-on-missing-fields.t .. ok
+t/1.0-generate.t ...................... ok
+t/1.0-parse-2.t ....................... ok
+t/1.0-parse-exotic.t .................. ok
+t/1.0-parse.t ......................... ok
+t/1.0-to-2.0.t ........................ ok
+t/2.0-generate.t ...................... ok
+t/2.0-modules.t ....................... ok
+t/2.0-parse-2.t ....................... ok
+t/2.0-parse-cloud.t ................... ok
+t/2.0-parse-self.t .................... ok
+t/2.0-parse.t ......................... ok
+t/2.0-permalink.t ..................... ok
+t/2.0-wo-title.t ...................... ok
+t/add-item-insert-vs-append.t ......... ok
+t/auto_add_modules.t .................. ok
+t/charset1.t .......................... skipped: Test::Differences required
+t/cpan-changes.t ...................... skipped: Test::CPAN::Changes required for this test
+t/enclosures-multi.t .................. ok
+t/enclosures.t ........................ ok
+t/enclosures2.t ....................... ok
+t/encode-output.t ..................... ok
+t/encoding.t .......................... ok
+t/guid.t .............................. ok
+t/load.t .............................. ok
+t/pod-coverage.t ...................... skipped: Test::Pod::Coverage required for testing pod coverage
+t/pod.t ............................... skipped: Test::Pod 1.00 required for testing POD
+t/render-upon-init.t .................. ok
+t/rss2-gt-encoding.t .................. skipped: Test::Differences required
+t/save-while-in-taint-mode.t .......... ok
+t/style-trailing-space.t .............. skipped: Test::TrailingSpace required for trailing space test.
+t/subcategory.t ....................... skipped: Test::Differences required
+t/test-generated-items.t .............. ok
+t/version.t ........................... ok
+t/xml-base.t .......................... ok
+t/xml-header.t ........................ ok
+All tests successful.
+Files=41, Tests=448, 28 wallclock secs ( 0.25 usr  0.06 sys + 15.85 cusr 11.56 csys = 27.72 CPU)
+Result: PASS
+installing
+Building XML-RSS
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/V2_0.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/V0_9.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/V0_91.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/V1_0.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/Base.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/Roles/ModulesElems.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib/perl5/site_perl/5.32.0/XML/RSS/Private/Output/Roles/ImageDims.pm
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::V2_0.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::Roles::ImageDims.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::Base.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::V1_0.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::Roles::ModulesElems.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::V0_9.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS::Private::Output::V0_91.3
+Installing /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3/XML::RSS.3
+post-installation fixup
+Moving /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/man3 to /nix/store/0ah1510x7ddmjjwzswp8pv010jibf9zc-perl5.32.0-XML-RSS-1.61-devdoc/share/man/man3
+Removing empty /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61/lib
+patching script interpreter paths in /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61
+checking for references to /build/ in /nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0ah1510x7ddmjjwzswp8pv010jibf9zc-perl5.32.0-XML-RSS-1.61-devdoc
+gzipping man pages under /nix/store/0ah1510x7ddmjjwzswp8pv010jibf9zc-perl5.32.0-XML-RSS-1.61-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0ah1510x7ddmjjwzswp8pv010jibf9zc-perl5.32.0-XML-RSS-1.61-devdoc
+checking for references to /build/ in /nix/store/0ah1510x7ddmjjwzswp8pv010jibf9zc-perl5.32.0-XML-RSS-1.61-devdoc...
+/nix/store/0gmyscj9y1shcxm94kgnvy1qcslxzk12-perl5.32.0-XML-RSS-1.61

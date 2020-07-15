@@ -1,0 +1,127 @@
+these derivations will be built:
+  /nix/store/p8nb2cygf1jd7kpsqc6qvzd01fmwh58i-perl5.32.0-Test-Synopsis-0.16.drv
+  /nix/store/x7ml1xsrqv247kd9b2v9s3x336vwncqp-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007.drv
+building '/nix/store/p8nb2cygf1jd7kpsqc6qvzd01fmwh58i-perl5.32.0-Test-Synopsis-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/yjmh2kn2rcjraa3hm1zahry1n9aq9kzp-Test-Synopsis-0.16.tar.gz
+source root is Test-Synopsis-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1558710461 of file Test-Synopsis-0.16/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Synopsis
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Synopsis.pm blib/lib/Test/Synopsis.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ...................... ok
+t/01-fail-if-SYNOPSIS-has-errors.t .. ok
+t/02-END-token-errors.t ............. ok
+t/03-end-in-pod.t ................... ok
+t/04-HEREDOC.t ...................... ok
+t/05-multi-chunks-clash.t ........... ok
+t/05-multi-files-clash.t ............ ok
+t/06-for.t .......................... ok
+t/07-nopod.t ........................ ok
+t/08-plain-text-in-pod.t ............ ok
+t/09-synopsis.t ..................... ok
+t/10-in-pod-skip.t .................. ok
+t/11-DATA-in-pod.t .................. ok
+t/12-DATA-token-errors.t ............ ok
+All tests successful.
+Files=14, Tests=17,  2 wallclock secs ( 0.04 usr  0.01 sys +  1.15 cusr  0.14 csys =  1.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/lib/pkgconfig m4datadir=/nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/share/aclocal aclocaldir=/nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/lib/perl5/site_perl/5.32.0/Test/Synopsis.pm
+Installing /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/share/man/man3/Test::Synopsis.3
+Appending installation info to /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/share/man/man3 to /nix/store/nqnvd7dnvgz1y7y4rbjfbwzmpxgm7sf0-perl5.32.0-Test-Synopsis-0.16-devdoc/share/man/man3
+Removing empty /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16/lib
+patching script interpreter paths in /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16
+checking for references to /build/ in /nix/store/ad13pc0rq1xgbw28p53da7s44mww49vx-perl5.32.0-Test-Synopsis-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nqnvd7dnvgz1y7y4rbjfbwzmpxgm7sf0-perl5.32.0-Test-Synopsis-0.16-devdoc
+gzipping man pages under /nix/store/nqnvd7dnvgz1y7y4rbjfbwzmpxgm7sf0-perl5.32.0-Test-Synopsis-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nqnvd7dnvgz1y7y4rbjfbwzmpxgm7sf0-perl5.32.0-Test-Synopsis-0.16-devdoc
+checking for references to /build/ in /nix/store/nqnvd7dnvgz1y7y4rbjfbwzmpxgm7sf0-perl5.32.0-Test-Synopsis-0.16-devdoc...
+building '/nix/store/x7ml1xsrqv247kd9b2v9s3x336vwncqp-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007.drv'...
+unpacking sources
+unpacking source archive /nix/store/4skdvr19zzjc7509wy0j3xarvhr7j175-Dist-Zilla-Plugin-Test-Synopsis-2.000007.tar.gz
+source root is Dist-Zilla-Plugin-Test-Synopsis-2.000007
+setting SOURCE_DATE_EPOCH to timestamp 1465636259 of file Dist-Zilla-Plugin-Test-Synopsis-2.000007/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./xt/author/portability.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Synopsis
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Dist/Zilla/Plugin/SynopsisTests.pm blib/lib/Dist/Zilla/Plugin/SynopsisTests.pm
+cp lib/Dist/Zilla/Plugin/Test/Synopsis.pm blib/lib/Dist/Zilla/Plugin/Test/Synopsis.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .. ok
+t/deprecated.t .. ok
+t/everything.t .. ok
+All tests successful.
+Files=3, Tests=5,  6 wallclock secs ( 0.10 usr  0.10 sys +  3.27 cusr  2.59 csys =  6.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/lib/pkgconfig m4datadir=/nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/aclocal aclocaldir=/nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/SynopsisTests.pm
+Installing /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/Synopsis.pm
+Installing /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/man/man3/Dist::Zilla::Plugin::SynopsisTests.3
+Installing /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/man/man3/Dist::Zilla::Plugin::Test::Synopsis.3
+Appending installation info to /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/man/man3 to /nix/store/cwlk6qswg58zscw8m7jla9k9kcfpg0n2-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007-devdoc/share/man/man3
+Removing empty /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007/lib
+patching script interpreter paths in /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007
+checking for references to /build/ in /nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cwlk6qswg58zscw8m7jla9k9kcfpg0n2-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007-devdoc
+gzipping man pages under /nix/store/cwlk6qswg58zscw8m7jla9k9kcfpg0n2-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cwlk6qswg58zscw8m7jla9k9kcfpg0n2-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007-devdoc
+checking for references to /build/ in /nix/store/cwlk6qswg58zscw8m7jla9k9kcfpg0n2-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007-devdoc...
+/nix/store/b6kk16q6zr7ddw5m5kvmwh7aga1rpwzi-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007

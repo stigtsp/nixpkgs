@@ -1,0 +1,562 @@
+these derivations will be built:
+  /nix/store/cshzxqqp667jchfxnjf5819abkv8ynj9-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006.drv
+  /nix/store/iz10yvq4bvr9d9vs5jy77xyk1q6klkpa-perl5.32.0-MooseX-Has-Sugar-1.000006.drv
+  /nix/store/srd72lb2x9v9nyzvmbfnv5p6s4m34bh5-perl5.32.0-Pod-Markdown-3.200.drv
+  /nix/store/wbx2lpijzj7b1c6489vi3h7a11315yd1-perl5.32.0-Pod-Markdown-Github-0.04.drv
+  /nix/store/wqmxsr6xm69bf9nhhprqxarj9kjwifgj-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/06q7lw1nnk9j75x3zyqw678v9s6xirsn-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250.tar.gz
+  /nix/store/fblx2irsrpzhlkq5axibw5w8ccfkz3xb-Pod-Markdown-Github-0.04.tar.gz
+  /nix/store/fz0jrzwjs1ri1pbh5s80f9v2ljzqgj4x-Dist-Zilla-Role-FileWatcher-0.006.tar.gz
+  /nix/store/h16w9yy3z25ar5arbsgfkxawmkrfvzpj-MooseX-Has-Sugar-1.000006.tar.gz
+copying path '/nix/store/06q7lw1nnk9j75x3zyqw678v9s6xirsn-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/h16w9yy3z25ar5arbsgfkxawmkrfvzpj-MooseX-Has-Sugar-1.000006.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/fz0jrzwjs1ri1pbh5s80f9v2ljzqgj4x-Dist-Zilla-Role-FileWatcher-0.006.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/fblx2irsrpzhlkq5axibw5w8ccfkz3xb-Pod-Markdown-Github-0.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/srd72lb2x9v9nyzvmbfnv5p6s4m34bh5-perl5.32.0-Pod-Markdown-3.200.drv'...
+unpacking sources
+unpacking source archive /nix/store/65s4h7lnmqqdxc8ymj44ir9plpdwycqg-Pod-Markdown-3.200.tar.gz
+source root is Pod-Markdown-3.200
+setting SOURCE_DATE_EPOCH to timestamp 1570638983 of file Pod-Markdown-3.200/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+patching ./bin/pod2markdown...
+building '/nix/store/iz10yvq4bvr9d9vs5jy77xyk1q6klkpa-perl5.32.0-MooseX-Has-Sugar-1.000006.drv'...
+Checking if your kit is complete...
+Looks good
+unpacking sources
+unpacking source archive /nix/store/h16w9yy3z25ar5arbsgfkxawmkrfvzpj-MooseX-Has-Sugar-1.000006.tar.gz
+source root is MooseX-Has-Sugar-1.000006
+setting SOURCE_DATE_EPOCH to timestamp 1488551721 of file MooseX-Has-Sugar-1.000006/xt/release/minimum-version.t
+patching sources
+configuring
+building '/nix/store/cshzxqqp667jchfxnjf5819abkv8ynj9-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006.drv'...
+patching ./maint/perlcritic.rc.gen.pl...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/critic.t...
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Markdown
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./benchmark/bench_return.pl...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Has::Sugar
+cp lib/Pod/Perldoc/ToMarkdown.pm blib/lib/Pod/Perldoc/ToMarkdown.pm
+cp lib/Pod/Markdown.pm blib/lib/Pod/Markdown.pm
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp bin/pod2markdown blib/script/pod2markdown
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pod2markdown
+Manifying 1 pod document
+Manifying 2 pod documents
+cp lib/MooseX/Has/Sugar/Saccharin.pm blib/lib/MooseX/Has/Sugar/Saccharin.pm
+cp lib/MooseX/Has/Sugar.pm blib/lib/MooseX/Has/Sugar.pm
+cp lib/MooseX/Has/Sugar/Minimal.pm blib/lib/MooseX/Has/Sugar/Minimal.pm
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/00-compile/*.t
+t/00-compile/lib_MooseX_Has_Sugar_Minimal_pm.t .... ok
+t/00-compile/lib_MooseX_Has_Sugar_pm.t ............ ok
+t/00-compile/lib_MooseX_Has_Sugar_Saccharin_pm.t .. ok
+t/00-compile.t ......... ok
+unpacking sources
+unpacking source archive /nix/store/fz0jrzwjs1ri1pbh5s80f9v2ljzqgj4x-Dist-Zilla-Role-FileWatcher-0.006.tar.gz
+source root is Dist-Zilla-Role-FileWatcher-0.006
+setting SOURCE_DATE_EPOCH to timestamp 1435441953 of file Dist-Zilla-Role-FileWatcher-0.006/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/mojibake.t...
+t/00-report-prereqs.t ............................. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Recommends ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker 7.00 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::Fatal          any    0.014
+#     Test::More           any 1.302175
+#     lib                  any     0.65
+#     namespace::clean     any     0.27
+#
+# === Test Recommends ===
+#
+#     Module                   Want     Have
+#     -------------------- -------- --------
+#     CPAN::Meta           2.120900 2.150010
+#     ExtUtils::MakeMaker      7.00     7.44
+#     Moose                     any  missing
+#     MooseX::Types::Moose      any  missing
+#     Test::More               0.99 1.302175
+#
+# === Runtime Requires ===
+#
+#     Module                     Want     Have
+#     -------------------------- ---- --------
+#     Carp                        any     1.50
+#     Sub::Exporter::Progressive  any 0.001013
+#     strict                      any     1.11
+#     warnings                    any     1.47
+#
+patching ./xt/release/pod-syntax.t...
+t/00-report-prereqs.t ............................. ok
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     Exporter               any     5.74
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     File::Spec::Functions  any     3.78
+#     File::Temp             any   0.2309
+#     IO::Handle             any     1.42
+#     IPC::Open3             any     1.21
+#     Symbol                 any     1.08
+#     Test::Differences      any     0.67
+#     Test::More            0.88 1.302175
+#     lib                    any     0.65
+#     utf8                   any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module               Want  Have
+#     -------------------- ---- -----
+#     Encode                any  3.06
+#     Getopt::Long          any  2.51
+#     Pod::Simple          3.27  3.40
+#     Pod::Simple::Methody  any  3.40
+#     Pod::Usage            any  1.69
+#     URI::Escape           any  3.31
+#     parent                any 0.238
+#     strict                any  1.11
+#     warnings              any  1.47
+#
+# === Runtime Recommends ===
+#
+#     Module         Want    Have
+#     -------------- ---- -------
+#     HTML::Entities  any missing
+#
+patching ./xt/release/minimum-version.t...
+t/00-report-prereqs.t .. ok
+patching ./t/00-report-prereqs.t...
+t/04_values.t ..................................... ok
+t/back-compat.t ........ ok
+t/05_is.t ......................................... skipped: Test requires module 'Moose' but it's not found
+t/basic.t .............. ok
+t/06_attr_required.t .............................. skipped: Test requires module 'Moose' but it's not found
+Congratulations, your toolchain understands 'configure_requires'!
+
+t/codes.t .............. ok
+t/07_attr_lazy_build.t ............................ skipped: Test requires module 'Moose' but it's not found
+t/encoding.t ........... ok
+t/08_saccharin.t .................................. skipped: Test requires module 'Moose' but it's not found
+Checking if your kit is complete...
+Looks good
+t/09_saccharin.t .................................. ok
+t/entities.t ........... ok
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Role::FileWatcher
+t/10_saccharin.t .................................. skipped: Test requires module 'Moose' but it's not found
+All tests successful.
+Files=11, Tests=21,  1 wallclock secs ( 0.06 usr  0.03 sys +  0.76 cusr  0.35 csys =  1.20 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib/pkgconfig m4datadir=/nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/aclocal aclocaldir=/nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/aclocal install
+t/escape.t ............. ok
+Manifying 3 pod documents
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib/perl5/site_perl/5.32.0/MooseX/Has/Sugar.pm
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib/perl5/site_perl/5.32.0/MooseX/Has/Sugar/Saccharin.pm
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib/perl5/site_perl/5.32.0/MooseX/Has/Sugar/Minimal.pm
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/man/man3/MooseX::Has::Sugar::Minimal.3
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/man/man3/MooseX::Has::Sugar::Saccharin.3
+Installing /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/man/man3/MooseX::Has::Sugar.3
+Appending installation info to /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/man/man3 to /nix/store/v6jfcmfmv1k8ajjs2v289jiyi2ayc164-perl5.32.0-MooseX-Has-Sugar-1.000006-devdoc/share/man/man3
+t/formats.t ............ ok
+Removing empty /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006/lib
+patching script interpreter paths in /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006
+checking for references to /build/ in /nix/store/fh21wvcgkin0j3zajsip72i83bcrr9kg-perl5.32.0-MooseX-Has-Sugar-1.000006...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v6jfcmfmv1k8ajjs2v289jiyi2ayc164-perl5.32.0-MooseX-Has-Sugar-1.000006-devdoc
+gzipping man pages under /nix/store/v6jfcmfmv1k8ajjs2v289jiyi2ayc164-perl5.32.0-MooseX-Has-Sugar-1.000006-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v6jfcmfmv1k8ajjs2v289jiyi2ayc164-perl5.32.0-MooseX-Has-Sugar-1.000006-devdoc
+checking for references to /build/ in /nix/store/v6jfcmfmv1k8ajjs2v289jiyi2ayc164-perl5.32.0-MooseX-Has-Sugar-1.000006-devdoc...
+t/links.t .............. ok
+t/lists.t .............. ok
+Creating new 'Build' script for 'Dist-Zilla-Role-FileWatcher' version '0.006'
+t/meta.t ............... ok
+t/misc.t ............... ok
+t/nested.t ............. ok
+t/new.t ................ ok
+cp lib/Dist/Zilla/Role/FileWatcher.pm blib/lib/Dist/Zilla/Role/FileWatcher.pm
+cp lib/Dist/Zilla/Role/File/ChangeNotification.pm blib/lib/Dist/Zilla/Role/File/ChangeNotification.pm
+t/perldoc.t ............ ok
+running tests
+t/pod2markdown.t ....... ok
+t/verbatim.t ........... ok
+All tests successful.
+Files=18, Tests=332,  3 wallclock secs ( 0.10 usr  0.03 sys +  2.80 cusr  0.58 csys =  3.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/lib/pkgconfig m4datadir=/nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/aclocal aclocaldir=/nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/lib/perl5/site_perl/5.32.0/Pod/Markdown.pm
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/lib/perl5/site_perl/5.32.0/Pod/Perldoc/ToMarkdown.pm
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man/man1/pod2markdown.1
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man/man3/Pod::Perldoc::ToMarkdown.3
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man/man3/Pod::Markdown.3
+Installing /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/bin/pod2markdown
+Appending installation info to /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man/man3 to /nix/store/r2nl8h3x387laqycj6b3lppnpvhj29ab-perl5.32.0-Pod-Markdown-3.200-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200
+gzipping man pages under /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/lib  /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200/bin
+patching script interpreter paths in /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200
+checking for references to /build/ in /nix/store/d20wwmy96k7pq2n59lxs5cbgz49m544j-perl5.32.0-Pod-Markdown-3.200...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r2nl8h3x387laqycj6b3lppnpvhj29ab-perl5.32.0-Pod-Markdown-3.200-devdoc
+gzipping man pages under /nix/store/r2nl8h3x387laqycj6b3lppnpvhj29ab-perl5.32.0-Pod-Markdown-3.200-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r2nl8h3x387laqycj6b3lppnpvhj29ab-perl5.32.0-Pod-Markdown-3.200-devdoc
+checking for references to /build/ in /nix/store/r2nl8h3x387laqycj6b3lppnpvhj29ab-perl5.32.0-Pod-Markdown-3.200-devdoc...
+building '/nix/store/wbx2lpijzj7b1c6489vi3h7a11315yd1-perl5.32.0-Pod-Markdown-Github-0.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/fblx2irsrpzhlkq5axibw5w8ccfkz3xb-Pod-Markdown-Github-0.04.tar.gz
+source root is Pod-Markdown-Github-0.04
+setting SOURCE_DATE_EPOCH to timestamp 1548395481 of file Pod-Markdown-Github-0.04/t/pod2github.t
+patching sources
+configuring
+patching ./bin/pod2github...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Markdown::Github
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/Markdown/Github.pm blib/lib/Pod/Markdown/Github.pm
+cp bin/pod2github blib/script/pod2github
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pod2github
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/main.t ........ ok
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.039 0.039
+#
+# === Test Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     Dist::Zilla::File::InMemory      any    6.015
+#     Dist::Zilla::Role::FileGatherer  any    6.015
+#     Dist::Zilla::Role::FileMunger    any    6.015
+#     ExtUtils::MakeMaker              any     7.44
+#     File::Spec                       any     3.78
+#     Module::Runtime                  any    0.016
+#     Moose                            any   2.2012
+#     Moose::Util::TypeConstraints     any   2.2012
+#     Path::Tiny                       any    0.114
+#     Test::DZil                       any    6.015
+#     Test::Deep                       any    1.130
+#     Test::Fatal                      any    0.014
+#     Test::More                      0.88 1.302175
+#     if                               any   0.0608
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                   Want     Have
+#     -------------------- -------- --------
+#     Digest::MD5               any  2.55_01
+#     Dist::Zilla          4.300039    6.015
+#     Encode                    any     3.06
+#     Moose::Role               any   2.2012
+#     Safe::Isa                 any 1.000010
+#     namespace::autoclean      any     0.29
+#     strict                    any     1.11
+#     warnings                  any     1.47
+#
+# === Other Modules ===
+#
+#     Module                    Have
+#     --------------------- --------
+#     CPAN::Meta::Validator 2.150010
+#     Pod::Coverage          missing
+#
+t/00-report-prereqs.t .... ok
+t/pod2github.t .. ok
+All tests successful.
+Files=2, Tests=24,  2 wallclock secs ( 0.03 usr  0.01 sys +  0.87 cusr  0.31 csys =  1.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/lib/pkgconfig m4datadir=/nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/aclocal aclocaldir=/nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/lib/perl5/site_perl/5.32.0/Pod/Markdown/Github.pm
+Installing /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/man/man1/pod2github.1
+Installing /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/man/man3/Pod::Markdown::Github.3
+Installing /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/bin/pod2github
+Appending installation info to /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/man/man3 to /nix/store/fklck4fdlrrdbkb7g9jlwzf43s0vj8wx-perl5.32.0-Pod-Markdown-Github-0.04-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04
+gzipping man pages under /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/lib  /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04/bin
+patching script interpreter paths in /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04
+checking for references to /build/ in /nix/store/2ll8sabhjin43581sswyxx2483ixnywp-perl5.32.0-Pod-Markdown-Github-0.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fklck4fdlrrdbkb7g9jlwzf43s0vj8wx-perl5.32.0-Pod-Markdown-Github-0.04-devdoc
+gzipping man pages under /nix/store/fklck4fdlrrdbkb7g9jlwzf43s0vj8wx-perl5.32.0-Pod-Markdown-Github-0.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fklck4fdlrrdbkb7g9jlwzf43s0vj8wx-perl5.32.0-Pod-Markdown-Github-0.04-devdoc
+checking for references to /build/ in /nix/store/fklck4fdlrrdbkb7g9jlwzf43s0vj8wx-perl5.32.0-Pod-Markdown-Github-0.04-devdoc...
+t/01-basic.t ............. ok
+t/02-double-change.t ..... ok
+t/03-default-callback.t .. ok
+t/04-plugin-watch.t ...... ok
+t/05-plugin-lock.t ....... ok
+t/06-two-watchers.t ...... ok
+t/zzz-check-breaks.t ..... ok
+All tests successful.
+Files=8, Tests=17, 13 wallclock secs ( 0.11 usr  0.14 sys +  7.81 cusr  5.49 csys = 13.55 CPU)
+Result: PASS
+installing
+Installing /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/lib/perl5/site_perl/5.32.0/Dist/Zilla/Role/FileWatcher.pm
+Installing /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/lib/perl5/site_perl/5.32.0/Dist/Zilla/Role/File/ChangeNotification.pm
+Installing /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/share/man/man3/Dist::Zilla::Role::File::ChangeNotification.3
+Installing /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/share/man/man3/Dist::Zilla::Role::FileWatcher.3
+post-installation fixup
+Moving /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/share/man/man3 to /nix/store/11zp5cb5mgj2fgr4qspjxwp3039na69c-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006-devdoc/share/man/man3
+Removing empty /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006/lib
+patching script interpreter paths in /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006
+checking for references to /build/ in /nix/store/4v7m6dsxb0xsrp6rlfl640gqfdcy8693-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006...
+shrinking RPATHs of ELF executables and libraries in /nix/store/11zp5cb5mgj2fgr4qspjxwp3039na69c-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006-devdoc
+gzipping man pages under /nix/store/11zp5cb5mgj2fgr4qspjxwp3039na69c-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/11zp5cb5mgj2fgr4qspjxwp3039na69c-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006-devdoc
+checking for references to /build/ in /nix/store/11zp5cb5mgj2fgr4qspjxwp3039na69c-perl5.32.0-Dist-Zilla-Role-FileWatcher-0.006-devdoc...
+building '/nix/store/wqmxsr6xm69bf9nhhprqxarj9kjwifgj-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250.drv'...
+unpacking sources
+unpacking source archive /nix/store/06q7lw1nnk9j75x3zyqw678v9s6xirsn-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250.tar.gz
+source root is Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250
+setting SOURCE_DATE_EPOCH to timestamp 1479629985 of file Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/weaver.ini
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/readmeinroot.t...
+patching ./t/too-soon.t...
+patching ./t/other-path.t...
+patching ./t/release-has-version.t...
+patching ./t/latin1.t...
+patching ./t/release-portability.t...
+patching ./t/000-report-versions.t...
+patching ./t/inside-bundle.t...
+patching ./t/readmeinbuild.t...
+patching ./t/prune-root-from-build.t...
+patching ./t/00-load.t...
+patching ./t/basic.t...
+patching ./t/utf8.t...
+patching ./t/multi-readme.t...
+patching ./t/error-on-prune.t...
+patching ./corpus/dist/DZT_Latin1/bin/sample...
+patching ./corpus/dist/DZT/bin/sample...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::ReadmeAnyFromPod
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Dist/Zilla/Plugin/ReadmeAnyFromPod.pm blib/lib/Dist/Zilla/Plugin/ReadmeAnyFromPod.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............. ok
+t/00-load.t ................ 1/1 # Testing Dist::Zilla::Plugin::ReadmeAnyFromPod 0.163250, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ................ ok
+t/000-report-versions.t .... # Testing with Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/000-report-versions.t .... 1/? #     Carp version is 1.50
+t/000-report-versions.t .... 2/? #     Dist::Zilla::File::InMemory version is 6.015
+#     Dist::Zilla::Role::AfterBuild version is 6.015
+#     Dist::Zilla::Role::AfterRelease version is 6.015
+#     Dist::Zilla::Role::FileGatherer version is 6.015
+#     Dist::Zilla::Role::FileMunger version is 6.015
+#     Dist::Zilla::Role::FilePruner version is 6.015
+#     Dist::Zilla::Role::FileWatcher version is 0.006
+#     Dist::Zilla::Role::PPI version is 6.015
+#     Dist::Zilla::Role::PluginBundle::Easy version is 6.015
+#     Encode version is 3.06
+#     ExtUtils::MakeMaker version is 7.44
+#     File::Spec version is 3.78
+#     IO::Handle version is 1.42
+#     IPC::Open3 version is 1.21
+#     List::Util version is 1.55
+#     Moose version is 2.2012
+#     Moose::Util::TypeConstraints version is 2.2012
+#     MooseX::Has::Sugar version is 1.000006
+#     PPI::Document version is 1.270
+#     Path::Tiny version is 0.114
+#     Pod::Markdown version is 3.200
+#     Pod::Markdown::Github version is 0.04
+#     Pod::Simple::HTML version is 3.40
+#     Pod::Simple::Text version is 3.40
+#     Scalar::Util version is 1.55
+#     Test::DZil version is 6.015
+#     Test::Deep version is 1.130
+#     Test::Fatal version is 0.014
+#     Test::More version is 1.302175
+#     Test::Most version is 0.37
+t/000-report-versions.t .... 32/? #     Test::Requires version is 0.11
+#     autodie version is 2.32
+#     blib version is 1.07
+#     lib version is 0.65
+#     strict version is 1.11
+#     utf8 version is 1.22
+#     warnings version is 1.47
+t/000-report-versions.t .... ok
+t/author-critic.t .......... skipped: these tests are for testing by the author
+t/author-pod-coverage.t .... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ...... skipped: these tests are for testing by the author
+t/basic.t .................. ok
+t/error-on-prune.t ......... ok
+t/inside-bundle.t .......... ok
+t/latin1.t ................. ok
+t/multi-readme.t ........... ok
+t/other-path.t ............. ok
+t/phase.t .................. ok
+t/prune-root-from-build.t .. ok
+t/readmeinbuild.t .......... ok
+t/readmeinroot.t ........... ok
+t/release-has-version.t .... skipped: these tests are for release candidate testing
+t/release-kwalitee.t ....... skipped: these tests are for release candidate testing
+t/release-portability.t .... skipped: these tests are for release candidate testing
+t/release-unused-vars.t .... skipped: these tests are for release candidate testing
+t/too-soon.t ............... skipped: Test requires module 'Dist::Zilla::Plugin::PodWeaver' but it's not found
+t/utf8.t ................... ok
+All tests successful.
+Files=22, Tests=401, 41 wallclock secs ( 0.32 usr  0.12 sys + 21.01 cusr 19.90 csys = 41.35 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/lib/pkgconfig m4datadir=/nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/share/aclocal aclocaldir=/nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/ReadmeAnyFromPod.pm
+Installing /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/share/man/man3/Dist::Zilla::Plugin::ReadmeAnyFromPod.3
+Appending installation info to /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/share/man/man3 to /nix/store/iphs4blzxq2ya2m5nz5nficnd07i1rqn-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250-devdoc/share/man/man3
+Removing empty /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250/lib
+patching script interpreter paths in /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250
+checking for references to /build/ in /nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250...
+shrinking RPATHs of ELF executables and libraries in /nix/store/iphs4blzxq2ya2m5nz5nficnd07i1rqn-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250-devdoc
+gzipping man pages under /nix/store/iphs4blzxq2ya2m5nz5nficnd07i1rqn-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/iphs4blzxq2ya2m5nz5nficnd07i1rqn-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250-devdoc
+checking for references to /build/ in /nix/store/iphs4blzxq2ya2m5nz5nficnd07i1rqn-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250-devdoc...
+/nix/store/k4dkgy494n6wc7ryvx8va715mw843h1s-perl5.32.0-Dist-Zilla-Plugin-ReadmeAnyFromPod-0.163250

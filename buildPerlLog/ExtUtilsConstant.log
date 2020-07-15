@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/zzg4fvrh1d3rmnv9lpak5klikfg0c2g8-perl5.32.0-ExtUtils-Constant-0.25.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/qmx7mx1pmx6bby6zjrkygklg6jj1f397-ExtUtils-Constant-0.25.tar.gz
+copying path '/nix/store/qmx7mx1pmx6bby6zjrkygklg6jj1f397-ExtUtils-Constant-0.25.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zzg4fvrh1d3rmnv9lpak5klikfg0c2g8-perl5.32.0-ExtUtils-Constant-0.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/qmx7mx1pmx6bby6zjrkygklg6jj1f397-ExtUtils-Constant-0.25.tar.gz
+source root is ExtUtils-Constant-0.25
+setting SOURCE_DATE_EPOCH to timestamp 1524030741 of file ExtUtils-Constant-0.25/META.yml
+patching sources
+configuring
+patching ./examples/perl_keyword.pl...
+patching ./examples/perl_regcomp_posix_keyword.pl...
+patching ./t/Constant.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::Constant
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/ExtUtils/Constant/XS.pm blib/lib/ExtUtils/Constant/XS.pm
+cp lib/ExtUtils/Constant/ProxySubs.pm blib/lib/ExtUtils/Constant/ProxySubs.pm
+cp lib/ExtUtils/Constant/Utils.pm blib/lib/ExtUtils/Constant/Utils.pm
+cp lib/ExtUtils/Constant/Base.pm blib/lib/ExtUtils/Constant/Base.pm
+cp lib/ExtUtils/Constant/Aaargh56Hash.pm blib/lib/ExtUtils/Constant/Aaargh56Hash.pm
+cp lib/ExtUtils/Constant.pm blib/lib/ExtUtils/Constant.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Constant.t .. ok
+All tests successful.
+Files=1, Tests=302,  5 wallclock secs ( 0.04 usr  0.01 sys +  4.81 cusr  1.01 csys =  5.87 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/pkgconfig m4datadir=/nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/aclocal aclocaldir=/nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant/ProxySubs.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant/XS.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant/Aaargh56Hash.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant/Base.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/site_perl/5.32.0/ExtUtils/Constant/Utils.pm
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/man3/ExtUtils::Constant::Utils.3
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/man3/ExtUtils::Constant::Base.3
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/man3/ExtUtils::Constant::XS.3
+Installing /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/man3/ExtUtils::Constant.3
+Appending installation info to /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/man3 to /nix/store/jdyh4697skqp6w6lys1c7djdra1s58vw-perl5.32.0-ExtUtils-Constant-0.25-devdoc/share/man/man3
+Removing empty /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25/lib
+patching script interpreter paths in /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25
+checking for references to /build/ in /nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jdyh4697skqp6w6lys1c7djdra1s58vw-perl5.32.0-ExtUtils-Constant-0.25-devdoc
+gzipping man pages under /nix/store/jdyh4697skqp6w6lys1c7djdra1s58vw-perl5.32.0-ExtUtils-Constant-0.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jdyh4697skqp6w6lys1c7djdra1s58vw-perl5.32.0-ExtUtils-Constant-0.25-devdoc
+checking for references to /build/ in /nix/store/jdyh4697skqp6w6lys1c7djdra1s58vw-perl5.32.0-ExtUtils-Constant-0.25-devdoc...
+/nix/store/x56m6ixy27kjp1ap41i39j0z1dsjz0g6-perl5.32.0-ExtUtils-Constant-0.25

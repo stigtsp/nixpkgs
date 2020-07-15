@@ -1,0 +1,110 @@
+these derivations will be built:
+  /nix/store/j1zw37cr6rk636phx1d95ys6qivhdp78-perl5.32.0-Switch-2.17.drv
+  /nix/store/4hc3xkj96h0zhbxbk9s72bbv2k825svy-perl5.32.0-CGI-Compile-0.24.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/d4x9cn5d33441djisw9k8q93fzqsk14g-Switch-2.17.tar.gz
+  /nix/store/df83d0bx0rccjjhskhpfsaz2jrq5c3d3-CGI-Compile-0.24.tar.gz
+copying path '/nix/store/df83d0bx0rccjjhskhpfsaz2jrq5c3d3-CGI-Compile-0.24.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/d4x9cn5d33441djisw9k8q93fzqsk14g-Switch-2.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j1zw37cr6rk636phx1d95ys6qivhdp78-perl5.32.0-Switch-2.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/d4x9cn5d33441djisw9k8q93fzqsk14g-Switch-2.17.tar.gz
+source root is Switch-2.17
+setting SOURCE_DATE_EPOCH to timestamp 1395145707 of file Switch-2.17/META.json
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Switch
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Switch.pm blib/lib/Switch.pm
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/lib/pkgconfig m4datadir=/nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/share/aclocal aclocaldir=/nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/lib/perl5/site_perl/5.32.0/Switch.pm
+Installing /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/share/man/man3/Switch.3
+Appending installation info to /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/share/man/man3 to /nix/store/kmcv1diw9bhzag7727008pny9bc1lrh9-perl5.32.0-Switch-2.17-devdoc/share/man/man3
+Removing empty /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17/lib
+patching script interpreter paths in /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17
+checking for references to /build/ in /nix/store/v6m9ipr4cpl0wdxq2588dd1c23c5a5si-perl5.32.0-Switch-2.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kmcv1diw9bhzag7727008pny9bc1lrh9-perl5.32.0-Switch-2.17-devdoc
+gzipping man pages under /nix/store/kmcv1diw9bhzag7727008pny9bc1lrh9-perl5.32.0-Switch-2.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kmcv1diw9bhzag7727008pny9bc1lrh9-perl5.32.0-Switch-2.17-devdoc
+checking for references to /build/ in /nix/store/kmcv1diw9bhzag7727008pny9bc1lrh9-perl5.32.0-Switch-2.17-devdoc...
+building '/nix/store/4hc3xkj96h0zhbxbk9s72bbv2k825svy-perl5.32.0-CGI-Compile-0.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/df83d0bx0rccjjhskhpfsaz2jrq5c3d3-CGI-Compile-0.24.tar.gz
+source root is CGI-Compile-0.24
+setting SOURCE_DATE_EPOCH to timestamp 1580392800 of file CGI-Compile-0.24/t/warnings.t
+patching sources
+configuring
+patching ./t/alarm.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/exit-code.t...
+patching ./t/end.cgi...
+patching ./t/eval-my-variables.t...
+patching ./t/return-val.t...
+patching ./t/end_crlf.cgi...
+patching ./t/switch.cgi...
+patching ./t/source.t...
+patching ./t/symbols.t...
+patching ./t/data.cgi...
+patching ./t/race-conditions.t...
+patching ./t/data_crlf.cgi...
+patching ./t/warnings.cgi...
+patching ./t/local-SIG.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'CGI-Compile' version '0.24'
+cp lib/CGI/Compile.pm blib/lib/CGI/Compile.pm
+running tests
+t/00_compile.t ......... ok
+t/alarm.t .............. ok
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+t/chained_exit.t ....... ok
+t/chdir.t .............. ok
+t/coderef_args.t ....... ok
+t/compile.t ............ ok
+t/data_end.t ........... ok
+t/eval-my-variables.t .. ok
+t/exit-code.t .......... ok
+t/exit.t ............... ok
+t/local-SIG.t .......... ok
+t/psgi.t ............... skipped: Test requires module 'CGI::Emulate::PSGI' but it's not found
+t/race-conditions.t .... ok
+t/return-val.t ......... ok
+t/source.t ............. ok
+t/source_filter.t ...... ok
+t/symbols.t ............ ok
+t/warnings.t ........... ok
+All tests successful.
+Files=19, Tests=3733, 12 wallclock secs ( 0.53 usr  0.05 sys + 26.38 cusr 23.70 csys = 50.66 CPU)
+Result: PASS
+installing
+Installing /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24/lib/perl5/site_perl/5.32.0/CGI/Compile.pm
+Installing /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24/share/man/man3/CGI::Compile.3
+post-installation fixup
+Moving /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24/share/man/man3 to /nix/store/yi8942jcjrdfirjrsz23jh927gpkvaac-perl5.32.0-CGI-Compile-0.24-devdoc/share/man/man3
+Removing empty /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24/lib
+patching script interpreter paths in /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24
+checking for references to /build/ in /nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yi8942jcjrdfirjrsz23jh927gpkvaac-perl5.32.0-CGI-Compile-0.24-devdoc
+gzipping man pages under /nix/store/yi8942jcjrdfirjrsz23jh927gpkvaac-perl5.32.0-CGI-Compile-0.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yi8942jcjrdfirjrsz23jh927gpkvaac-perl5.32.0-CGI-Compile-0.24-devdoc
+checking for references to /build/ in /nix/store/yi8942jcjrdfirjrsz23jh927gpkvaac-perl5.32.0-CGI-Compile-0.24-devdoc...
+/nix/store/gy4gsagyvs70i15g836iizpqhibl9ib4-perl5.32.0-CGI-Compile-0.24

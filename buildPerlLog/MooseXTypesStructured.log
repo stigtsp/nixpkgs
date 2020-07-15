@@ -1,0 +1,159 @@
+these derivations will be built:
+  /nix/store/f6jff7jy0s4cip1dkl3kf16svqsyf9vr-perl5.32.0-MooseX-Types-Structured-0.36.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/z3wws0wqa9npl85v0zvamcbh7qblb2ps-MooseX-Types-Structured-0.36.tar.gz
+copying path '/nix/store/z3wws0wqa9npl85v0zvamcbh7qblb2ps-MooseX-Types-Structured-0.36.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f6jff7jy0s4cip1dkl3kf16svqsyf9vr-perl5.32.0-MooseX-Types-Structured-0.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/z3wws0wqa9npl85v0zvamcbh7qblb2ps-MooseX-Types-Structured-0.36.tar.gz
+source root is MooseX-Types-Structured-0.36
+setting SOURCE_DATE_EPOCH to timestamp 1494371314 of file MooseX-Types-Structured-0.36/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Types::Structured
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Types-Structured' version '0.36'
+cp lib/MooseX/Meta/TypeCoercion/Structured/Optional.pm blib/lib/MooseX/Meta/TypeCoercion/Structured/Optional.pm
+cp lib/MooseX/Meta/TypeCoercion/Structured.pm blib/lib/MooseX/Meta/TypeCoercion/Structured.pm
+cp lib/MooseX/Types/Structured/MessageStack.pm blib/lib/MooseX/Types/Structured/MessageStack.pm
+cp lib/MooseX/Meta/TypeConstraint/Structured/Optional.pm blib/lib/MooseX/Meta/TypeConstraint/Structured/Optional.pm
+cp lib/MooseX/Types/Structured.pm blib/lib/MooseX/Types/Structured.pm
+cp lib/MooseX/Meta/TypeConstraint/Structured.pm blib/lib/MooseX/Meta/TypeConstraint/Structured.pm
+cp lib/MooseX/Types/Structured/OverflowHandler.pm blib/lib/MooseX/Types/Structured/OverflowHandler.pm
+running tests
+t/00-load.t .................... ok
+t/00-report-prereqs.t .......... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Test Requires ===
+#
+#     Module               Want     Have
+#     -------------------- ---- --------
+#     Data::Dumper          any    2.174
+#     DateTime              any     1.52
+#     File::Spec            any     3.78
+#     Module::Metadata      any 1.000037
+#     MooseX::Types::Moose  any     0.50
+#     Test::Fatal           any    0.014
+#     Test::More           0.88 1.302175
+#     Test::Needs           any 0.002006
+#     strict                any     1.11
+#     warnings              any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Test Suggests ===
+#
+#     Module                  Want Have
+#     ----------------------- ---- ----
+#     MooseX::Types::DateTime  any 0.13
+#
+# === Runtime Requires ===
+#
+#     Module                                        Want   Have
+#     -------------------------------------------- ----- ------
+#     Devel::PartialDump                            0.13   0.20
+#     Moose                                          any 2.2012
+#     Moose::Meta::TypeCoercion                      any 2.2012
+#     Moose::Meta::TypeConstraint                    any 2.2012
+#     Moose::Meta::TypeConstraint::Parameterizable   any 2.2012
+#     Moose::Util::TypeConstraints                  1.06 2.2012
+#     MooseX::Types                                 0.22   0.50
+#     Scalar::Util                                   any   1.55
+#     Sub::Exporter                                0.982  0.987
+#     if                                             any 0.0608
+#     namespace::clean                              0.19   0.27
+#     overload                                       any   1.31
+#
+# === Other Modules ===
+#
+#     Module                  Have
+#     -------------------- -------
+#     Dist::CheckConflicts    0.11
+#     JSON::PP                4.04
+#     Sub::Name               0.26
+#     YAML                 missing
+#     autodie                 2.32
+#
+t/00-report-prereqs.t .......... ok
+t/01-basic.t ................... ok
+t/02-tuple.t ................... ok
+t/03-dict.t .................... ok
+t/04-combined.t ................ ok
+t/04-map.t ..................... ok
+t/05-advanced.t ................ ok
+t/06-api.t ..................... ok
+t/07-coerce.t .................. ok
+t/08-examples.t ................ ok
+t/09-optional.t ................ ok
+t/10-recursion.t ............... ok
+t/11-overflow.t ................ ok
+t/12-error.t ................... ok
+t/13-deeper_error.t ............ ok
+t/14-fully-qualified.t ......... ok
+t/bug-incorrect-message.t ...... ok
+t/bug-is-subtype.t ............. ok
+t/bug-mixed-stringy.t .......... ok
+t/bug-optional.t ............... ok
+t/regressions/01-is_type_of.t .. ok
+t/zzz-check-breaks.t ........... ok
+All tests successful.
+Files=23, Tests=362, 12 wallclock secs ( 0.11 usr  0.07 sys +  7.94 cusr  3.66 csys = 11.78 CPU)
+Result: PASS
+installing
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Types/Structured.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Types/Structured/OverflowHandler.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Types/Structured/MessageStack.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Meta/TypeConstraint/Structured.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Meta/TypeConstraint/Structured/Optional.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Meta/TypeCoercion/Structured.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib/perl5/site_perl/5.32.0/MooseX/Meta/TypeCoercion/Structured/Optional.pm
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Types::Structured::MessageStack.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Types::Structured.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Meta::TypeCoercion::Structured.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Meta::TypeCoercion::Structured::Optional.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Meta::TypeConstraint::Structured::Optional.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Types::Structured::OverflowHandler.3
+Installing /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3/MooseX::Meta::TypeConstraint::Structured.3
+post-installation fixup
+Moving /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/man3 to /nix/store/2xs2f858r5b2afld6757jmnq9msp5l6s-perl5.32.0-MooseX-Types-Structured-0.36-devdoc/share/man/man3
+Removing empty /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36/lib
+patching script interpreter paths in /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36
+checking for references to /build/ in /nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2xs2f858r5b2afld6757jmnq9msp5l6s-perl5.32.0-MooseX-Types-Structured-0.36-devdoc
+gzipping man pages under /nix/store/2xs2f858r5b2afld6757jmnq9msp5l6s-perl5.32.0-MooseX-Types-Structured-0.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2xs2f858r5b2afld6757jmnq9msp5l6s-perl5.32.0-MooseX-Types-Structured-0.36-devdoc
+checking for references to /build/ in /nix/store/2xs2f858r5b2afld6757jmnq9msp5l6s-perl5.32.0-MooseX-Types-Structured-0.36-devdoc...
+/nix/store/wfdnl6swmh2hwc831xdas3rdvvsqfl7x-perl5.32.0-MooseX-Types-Structured-0.36

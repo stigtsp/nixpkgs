@@ -1,0 +1,621 @@
+these derivations will be built:
+  /nix/store/wr5dhgzq2j0p02jri9aylfxklqiv2xm9-perl5.32.0-Test-Roo-1.004.drv
+  /nix/store/qvrgrwbv5nn1dqry5z5iadbzli9la0pz-perl5.32.0-DBIx-Introspector-0.001005.drv
+  /nix/store/xj5sl4lb6a0cryxw9wqzz5slyab5aww6-perl5.32.0-Text-Brew-0.02.drv
+  /nix/store/a6yllxh0x4a1hyvkf75p4nvlk5740axm-perl5.32.0-DBIx-Class-Helpers-2.036000.drv
+these paths will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/l09il0y7vjvwpal88x2169g601qywgvj-Test-Roo-1.004.tar.gz
+  /nix/store/q8pv2qy4axcncw1cjd9pdn6liwa6igj4-DBIx-Class-Helpers-2.036000.tar.gz
+  /nix/store/w2k3hmwbl3hhfc4rg83f2qqhlwfyx3zd-DBIx-Introspector-0.001005.tar.gz
+  /nix/store/xb0g5d60wz5i66vjy280wjhdwsvb2ki5-Text-Brew-0.02.tar.gz
+copying path '/nix/store/q8pv2qy4axcncw1cjd9pdn6liwa6igj4-DBIx-Class-Helpers-2.036000.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/w2k3hmwbl3hhfc4rg83f2qqhlwfyx3zd-DBIx-Introspector-0.001005.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/xb0g5d60wz5i66vjy280wjhdwsvb2ki5-Text-Brew-0.02.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/l09il0y7vjvwpal88x2169g601qywgvj-Test-Roo-1.004.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wr5dhgzq2j0p02jri9aylfxklqiv2xm9-perl5.32.0-Test-Roo-1.004.drv'...
+building '/nix/store/xj5sl4lb6a0cryxw9wqzz5slyab5aww6-perl5.32.0-Text-Brew-0.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/xb0g5d60wz5i66vjy280wjhdwsvb2ki5-Text-Brew-0.02.tar.gz
+source root is Text-Brew-0.02
+setting SOURCE_DATE_EPOCH to timestamp 1112456290 of file Text-Brew-0.02/META.yml
+patching sources
+configuring
+unpacking sources
+patching ./t/pod.t...
+unpacking source archive /nix/store/l09il0y7vjvwpal88x2169g601qywgvj-Test-Roo-1.004.tar.gz
+source root is Test-Roo-1.004
+setting SOURCE_DATE_EPOCH to timestamp 1407271128 of file Test-Roo-1.004/xt/release/test-version.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Brew
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Roo
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Brew.pm blib/lib/Text/Brew.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .. 1/1 # Testing Text::Brew 0.02, Perl 5.008005, /usr/bin/perl
+t/00-load.t .. ok
+cp lib/Test/Roo/Class.pm blib/lib/Test/Roo/Class.pm
+cp lib/Test/Roo/Role.pm blib/lib/Test/Roo/Role.pm
+cp lib/Test/Roo.pm blib/lib/Test/Roo.pm
+cp lib/Test/Roo/Cookbook.pm blib/lib/Test/Roo/Cookbook.pm
+t/basic.t .... ok
+Manifying 4 pod documents
+t/pod.t ...... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=3, Tests=17,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.15 cusr  0.02 csys =  0.21 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/lib/pkgconfig m4datadir=/nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/share/aclocal aclocaldir=/nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/share/aclocal install
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+Installing /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/lib/perl5/site_perl/5.32.0/Text/Brew.pm
+Installing /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/share/man/man3/Text::Brew.3
+Appending installation info to /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/share/man/man3 to /nix/store/y1yl1dkgr2wb4adijaqyn90r8xn6bzfq-perl5.32.0-Text-Brew-0.02-devdoc/share/man/man3
+Removing empty /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02/lib
+patching script interpreter paths in /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02
+checking for references to /build/ in /nix/store/nf0psrpxh7rm82shpbgppbl6yckvcvzr-perl5.32.0-Text-Brew-0.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y1yl1dkgr2wb4adijaqyn90r8xn6bzfq-perl5.32.0-Text-Brew-0.02-devdoc
+gzipping man pages under /nix/store/y1yl1dkgr2wb4adijaqyn90r8xn6bzfq-perl5.32.0-Text-Brew-0.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y1yl1dkgr2wb4adijaqyn90r8xn6bzfq-perl5.32.0-Text-Brew-0.02-devdoc
+checking for references to /build/ in /nix/store/y1yl1dkgr2wb4adijaqyn90r8xn6bzfq-perl5.32.0-Text-Brew-0.02-devdoc...
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker 6.17 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Capture::Tiny       0.12     0.48
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::More          0.96 1.302175
+#     lib                  any     0.65
+#     strict               any     1.11
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                           Want     Have
+#     ---------------------------- -------- --------
+#     Moo                          1.000008 2.004000
+#     MooX::Types::MooseLike::Base      any     0.29
+#     Sub::Install                      any    0.928
+#     Test::More                       0.96 1.302175
+#     strictures                        any 2.000006
+#
+# === Runtime Recommends ===
+#
+#     Module                Want    Have
+#     --------------------- ---- -------
+#     bareword::filehandles  any missing
+#     indirect               any missing
+#     multidimensional       any missing
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+t/each_test.t .......... ok
+t/exceptions.t ......... ok
+t/multi.t .............. ok
+t/object.t ............. ok
+t/ordering.t ........... ok
+t/role-multi.t ......... ok
+t/role.t ............... ok
+t/setup-teardown.t ..... ok
+t/test-more-args.t ..... ok
+t/top-test.t ........... ok
+All tests successful.
+Files=12, Tests=21,  2 wallclock secs ( 0.06 usr  0.02 sys +  1.79 cusr  0.71 csys =  2.58 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/pkgconfig m4datadir=/nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/aclocal aclocaldir=/nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/perl5/site_perl/5.32.0/Test/Roo.pm
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/perl5/site_perl/5.32.0/Test/Roo/Cookbook.pm
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/perl5/site_perl/5.32.0/Test/Roo/Role.pm
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/perl5/site_perl/5.32.0/Test/Roo/Class.pm
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/man3/Test::Roo::Role.3
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/man3/Test::Roo.3
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/man3/Test::Roo::Class.3
+Installing /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/man3/Test::Roo::Cookbook.3
+Appending installation info to /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/man3 to /nix/store/83jas1gppy0wdd5nl1rsr1hky5wr0wy2-perl5.32.0-Test-Roo-1.004-devdoc/share/man/man3
+Removing empty /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004/lib
+patching script interpreter paths in /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004
+checking for references to /build/ in /nix/store/cl9kjmhwfbqp6j1z0sf9rlypys0fmf09-perl5.32.0-Test-Roo-1.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/83jas1gppy0wdd5nl1rsr1hky5wr0wy2-perl5.32.0-Test-Roo-1.004-devdoc
+gzipping man pages under /nix/store/83jas1gppy0wdd5nl1rsr1hky5wr0wy2-perl5.32.0-Test-Roo-1.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/83jas1gppy0wdd5nl1rsr1hky5wr0wy2-perl5.32.0-Test-Roo-1.004-devdoc
+checking for references to /build/ in /nix/store/83jas1gppy0wdd5nl1rsr1hky5wr0wy2-perl5.32.0-Test-Roo-1.004-devdoc...
+building '/nix/store/qvrgrwbv5nn1dqry5z5iadbzli9la0pz-perl5.32.0-DBIx-Introspector-0.001005.drv'...
+unpacking sources
+unpacking source archive /nix/store/w2k3hmwbl3hhfc4rg83f2qqhlwfyx3zd-DBIx-Introspector-0.001005.tar.gz
+source root is DBIx-Introspector-0.001005
+setting SOURCE_DATE_EPOCH to timestamp 1422575272 of file DBIx-Introspector-0.001005/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/fresh.t...
+patching ./t/dsn.t...
+patching ./t/eg.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::Introspector
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBIx/Introspector.pm blib/lib/DBIx/Introspector.pm
+cp lib/DBIx/Introspector/Driver.pm blib/lib/DBIx/Introspector/Driver.pm
+cp lib/DBIx/Introspector/Advent.pod blib/lib/DBIx/Introspector/Advent.pod
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t ............... ok
+t/dsn.t ................. ok
+t/eg.t .................. ok
+t/fresh.t ............... ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=5, Tests=17,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.51 cusr  0.32 csys =  0.89 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib/pkgconfig m4datadir=/nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/aclocal aclocaldir=/nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib/perl5/site_perl/5.32.0/DBIx/Introspector.pm
+Installing /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib/perl5/site_perl/5.32.0/DBIx/Introspector/Advent.pod
+Installing /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib/perl5/site_perl/5.32.0/DBIx/Introspector/Driver.pm
+Installing /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/man/man3/DBIx::Introspector::Advent.3
+Installing /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/man/man3/DBIx::Introspector.3
+Appending installation info to /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/man/man3 to /nix/store/q7bfdz3y6zv3kss444zhardcy4zncdk2-perl5.32.0-DBIx-Introspector-0.001005-devdoc/share/man/man3
+Removing empty /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005/lib
+patching script interpreter paths in /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005
+checking for references to /build/ in /nix/store/0h66siy4kbwrlsia2sb5sikbgzpsv1hj-perl5.32.0-DBIx-Introspector-0.001005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q7bfdz3y6zv3kss444zhardcy4zncdk2-perl5.32.0-DBIx-Introspector-0.001005-devdoc
+gzipping man pages under /nix/store/q7bfdz3y6zv3kss444zhardcy4zncdk2-perl5.32.0-DBIx-Introspector-0.001005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q7bfdz3y6zv3kss444zhardcy4zncdk2-perl5.32.0-DBIx-Introspector-0.001005-devdoc
+checking for references to /build/ in /nix/store/q7bfdz3y6zv3kss444zhardcy4zncdk2-perl5.32.0-DBIx-Introspector-0.001005-devdoc...
+building '/nix/store/a6yllxh0x4a1hyvkf75p4nvlk5740axm-perl5.32.0-DBIx-Class-Helpers-2.036000.drv'...
+unpacking sources
+unpacking source archive /nix/store/q8pv2qy4axcncw1cjd9pdn6liwa6igj4-DBIx-Class-Helpers-2.036000.tar.gz
+source root is DBIx-Class-Helpers-2.036000
+setting SOURCE_DATE_EPOCH to timestamp 1585430207 of file DBIx-Class-Helpers-2.036000/t/lib/VerifySchema/ResultSet/B.pm
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/ResultSet/Bare.t...
+patching ./t/ResultSet/RemoveColumns.t...
+patching ./t/ResultSet/Shortcut/HasRows.t...
+patching ./t/ResultSet/Shortcut/HRI.t...
+patching ./t/ResultSet/Shortcut/Distinct.t...
+patching ./t/ResultSet/Shortcut/Search/Null.t...
+patching ./t/ResultSet/Shortcut/Search/NotNull.t...
+patching ./t/ResultSet/Shortcut/Search/Like.t...
+patching ./t/ResultSet/Shortcut/Search/NotLike.t...
+patching ./t/ResultSet/Shortcut/Search/Base.t...
+patching ./t/ResultSet/Shortcut/Prefetch.t...
+patching ./t/ResultSet/Shortcut/Limit.t...
+patching ./t/ResultSet/Shortcut/ResultsExist.t...
+patching ./t/ResultSet/Shortcut/Columns.t...
+patching ./t/ResultSet/Shortcut/AddColumns.t...
+patching ./t/ResultSet/Shortcut/OrderByMagic.t...
+patching ./t/ResultSet/Shortcut/Rows.t...
+patching ./t/ResultSet/Shortcut/GroupBy.t...
+patching ./t/ResultSet/Shortcut/OrderBy.t...
+patching ./t/ResultSet/Shortcut/LimitedPage.t...
+patching ./t/ResultSet/DateMethods1/pg.t...
+patching ./t/ResultSet/DateMethods1/mysql.t...
+patching ./t/ResultSet/DateMethods1/sqlite.t...
+patching ./t/ResultSet/DateMethods1/bugs.t...
+patching ./t/ResultSet/DateMethods1/oracle.t...
+patching ./t/ResultSet/DateMethods1/mssql.t...
+patching ./t/ResultSet/CorrelateRelationship.t...
+patching ./t/ResultSet/Random.t...
+patching ./t/ResultSet/NoColumns.t...
+patching ./t/ResultSet/SearchOr.t...
+patching ./t/ResultSet/RemoveColumns/_resolved_attrs.t...
+patching ./t/ResultSet/ResultClassDWIM.t...
+patching ./t/ResultSet/OneRow.t...
+patching ./t/ResultSet/Me.t...
+patching ./t/ResultSet/Explain.t...
+patching ./t/ResultSet/IgnoreWantarray.t...
+patching ./t/ResultSet/Errors.t...
+patching ./t/ResultSet/SetOperations.t...
+patching ./t/Schema/DidYouMean.t...
+patching ./t/Schema/LintContents.t...
+patching ./t/Row/NumifyGet.t...
+patching ./t/Row/OnColumnMissing.t...
+patching ./t/Row/ProxyResultSetUpdate.t...
+patching ./t/Row/ToJSON.t...
+patching ./t/Row/StorageValues.t...
+patching ./t/Row/SelfResultSet.t...
+patching ./t/Row/SubClass.t...
+patching ./t/Row/ProxyResultSetMethod.t...
+patching ./t/Row/CleanResultSet.t...
+patching ./t/Row/RelationshipDWIM.t...
+patching ./t/Row/OnColumnChange.t...
+patching ./t/Row/JoinTable.t...
+patching ./t/ResultClass/Tee.t...
+patching ./t/utilities.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::Class::Helpers
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBIx/Class/Helper/ResultSet/DateMethods1/Announcement.pod blib/lib/DBIx/Class/Helper/ResultSet/DateMethods1/Announcement.pod
+cp lib/DBIx/Class/Helper/Random.pm blib/lib/DBIx/Class/Helper/Random.pm
+cp lib/DBIx/Class/Helper/ResultSet/ResultClassDWIM.pm blib/lib/DBIx/Class/Helper/ResultSet/ResultClassDWIM.pm
+cp lib/DBIx/Class/Helper/ResultSet/CorrelateRelationship.pm blib/lib/DBIx/Class/Helper/ResultSet/CorrelateRelationship.pm
+cp lib/DBIx/Class/Helper/ResultSet/Me.pm blib/lib/DBIx/Class/Helper/ResultSet/Me.pm
+cp lib/DBIx/Class/Helper/ResultSet/OneRow.pm blib/lib/DBIx/Class/Helper/ResultSet/OneRow.pm
+cp lib/DBIx/Class/Helper/ResultClass/Tee.pm blib/lib/DBIx/Class/Helper/ResultClass/Tee.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/AddColumns.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/AddColumns.pm
+cp lib/DBIx/Class/Helper/ResultSet/Errors.pm blib/lib/DBIx/Class/Helper/ResultSet/Errors.pm
+cp lib/DBIx/Class/Helper/ResultSet/DateMethods1.pm blib/lib/DBIx/Class/Helper/ResultSet/DateMethods1.pm
+cp lib/DBIx/Class/Helper/ResultSet/IgnoreWantarray.pm blib/lib/DBIx/Class/Helper/ResultSet/IgnoreWantarray.pm
+cp lib/DBIx/Class/Helper/IgnoreWantarray.pm blib/lib/DBIx/Class/Helper/IgnoreWantarray.pm
+cp lib/DBIx/Class/Helper/ResultSet/RemoveColumns.pm blib/lib/DBIx/Class/Helper/ResultSet/RemoveColumns.pm
+cp lib/DBIx/Class/Helper/ResultSet.pm blib/lib/DBIx/Class/Helper/ResultSet.pm
+cp lib/DBIx/Class/Helper/ResultSet/Random.pm blib/lib/DBIx/Class/Helper/ResultSet/Random.pm
+cp lib/DBIx/Class/Helper/ResultSet/Explain.pm blib/lib/DBIx/Class/Helper/ResultSet/Explain.pm
+cp lib/DBIx/Class/Helper/ResultSet/NoColumns.pm blib/lib/DBIx/Class/Helper/ResultSet/NoColumns.pm
+cp lib/DBIx/Class/Helper/ResultSet/SetOperations.pm blib/lib/DBIx/Class/Helper/ResultSet/SetOperations.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Columns.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Columns.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/GroupBy.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/GroupBy.pm
+cp lib/DBIx/Class/Helper/ResultSet/Bare.pm blib/lib/DBIx/Class/Helper/ResultSet/Bare.pm
+cp lib/DBIx/Class/Helper/JoinTable.pm blib/lib/DBIx/Class/Helper/JoinTable.pm
+cp lib/DBIx/Class/Helper/ResultSet/AutoRemoveColumns.pm blib/lib/DBIx/Class/Helper/ResultSet/AutoRemoveColumns.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Distinct.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Distinct.pm
+cp lib/DBIx/Class/Helper/ResultSet/SearchOr.pm blib/lib/DBIx/Class/Helper/ResultSet/SearchOr.pm
+cp lib/DBIx/Class/Helper/Row/NumifyGet.pm blib/lib/DBIx/Class/Helper/Row/NumifyGet.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/OrderByMagic.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/OrderByMagic.pm
+cp lib/DBIx/Class/Helper/ResultSet/Util.pm blib/lib/DBIx/Class/Helper/ResultSet/Util.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Like.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Like.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/HasRows.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/HasRows.pm
+cp lib/DBIx/Class/Helper/ResultSet/Union.pm blib/lib/DBIx/Class/Helper/ResultSet/Union.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/OrderBy.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/OrderBy.pm
+cp lib/DBIx/Class/Helper/Row/JoinTable.pm blib/lib/DBIx/Class/Helper/Row/JoinTable.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/LimitedPage.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/LimitedPage.pm
+cp lib/DBIx/Class/Helper/Row/OnColumnChange.pm blib/lib/DBIx/Class/Helper/Row/OnColumnChange.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Rows.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Rows.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/ResultsExist.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/ResultsExist.pm
+cp lib/DBIx/Class/Helper/Row/CleanResultSet.pm blib/lib/DBIx/Class/Helper/Row/CleanResultSet.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Null.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Null.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Base.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/Base.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Limit.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Limit.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotNull.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotNull.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/HRI.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/HRI.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Prefetch.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Prefetch.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotLike.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotLike.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Page.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Page.pm
+cp lib/DBIx/Class/Helper/ResultSet/VirtualView.pm blib/lib/DBIx/Class/Helper/ResultSet/VirtualView.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/Search.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/Search.pm
+cp lib/DBIx/Class/Helper/ResultSet/Shortcut/RemoveColumns.pm blib/lib/DBIx/Class/Helper/ResultSet/Shortcut/RemoveColumns.pm
+cp lib/DBIx/Class/Helper/VirtualView.pm blib/lib/DBIx/Class/Helper/VirtualView.pm
+cp lib/DBIx/Class/Helper/Row/RelationshipDWIM.pm blib/lib/DBIx/Class/Helper/Row/RelationshipDWIM.pm
+cp lib/DBIx/Class/Helper/Row/ToJSON.pm blib/lib/DBIx/Class/Helper/Row/ToJSON.pm
+cp lib/DBIx/Class/Helper/Schema/LintContents.pm blib/lib/DBIx/Class/Helper/Schema/LintContents.pm
+cp lib/DBIx/Class/Helper/Schema/DidYouMean.pm blib/lib/DBIx/Class/Helper/Schema/DidYouMean.pm
+cp lib/DBIx/Class/Helper/SubClass.pm blib/lib/DBIx/Class/Helper/SubClass.pm
+cp lib/DBIx/Class/Helper/Row/ProxyResultSetUpdate.pm blib/lib/DBIx/Class/Helper/Row/ProxyResultSetUpdate.pm
+cp lib/DBIx/Class/Helper/Row/SubClass.pm blib/lib/DBIx/Class/Helper/Row/SubClass.pm
+cp lib/DBIx/Class/Helper/Row/StorageValues.pm blib/lib/DBIx/Class/Helper/Row/StorageValues.pm
+cp lib/DBIx/Class/Helpers/Util.pm blib/lib/DBIx/Class/Helpers/Util.pm
+cp lib/DBIx/Class/Helper/Schema/Verifier/RelationshipColumnName.pm blib/lib/DBIx/Class/Helper/Schema/Verifier/RelationshipColumnName.pm
+cp lib/DBIx/Class/Helper/Row/ProxyResultSetMethod.pm blib/lib/DBIx/Class/Helper/Row/ProxyResultSetMethod.pm
+cp lib/DBIx/Class/Helper/Schema/Verifier.pm blib/lib/DBIx/Class/Helper/Schema/Verifier.pm
+cp lib/DBIx/Class/Helper/Row/OnColumnMissing.pm blib/lib/DBIx/Class/Helper/Row/OnColumnMissing.pm
+cp lib/DBIx/Class/Helper/Schema/DateTime.pm blib/lib/DBIx/Class/Helper/Schema/DateTime.pm
+cp lib/DBIx/Class/Helpers.pm blib/lib/DBIx/Class/Helpers.pm
+cp lib/DBIx/Class/Helper/Schema/Verifier/ColumnInfo.pm blib/lib/DBIx/Class/Helper/Schema/Verifier/ColumnInfo.pm
+cp lib/DBIx/Class/Helper/Schema/Verifier/C3.pm blib/lib/DBIx/Class/Helper/Schema/Verifier/C3.pm
+cp lib/DBIx/Class/Helper/Schema/Verifier/Parent.pm blib/lib/DBIx/Class/Helper/Schema/Verifier/Parent.pm
+cp lib/DBIx/Class/Helper/Row/SelfResultSet.pm blib/lib/DBIx/Class/Helper/Row/SelfResultSet.pm
+cp lib/DBIx/Class/Helper/Schema/QuoteNames.pm blib/lib/DBIx/Class/Helper/Schema/QuoteNames.pm
+cp lib/DBIx/Class/Helper/Schema/GenerateSource.pm blib/lib/DBIx/Class/Helper/Schema/GenerateSource.pm
+Manifying 23 pod documents
+Manifying 20 pod documents
+Manifying 24 pod documents
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/ResultClass/*.t t/ResultSet/*.t t/ResultSet/DateMethods1/*.t t/ResultSet/RemoveColumns/*.t t/ResultSet/Shortcut/*.t t/ResultSet/Shortcut/Search/*.t t/Row/*.t t/Schema/*.t t/Schema/Verifier/*.t
+t/author-pod-syntax.t ........................ skipped: these tests are for testing by the author
+t/bug-1.t .................................... ok
+t/ResultClass/Tee.t .......................... ok
+t/ResultSet/Bare.t ........................... ok
+t/ResultSet/CorrelateRelationship.t .......... ok
+t/ResultSet/DateMethods1/bugs.t .............. ok
+t/ResultSet/DateMethods1/mssql.t ............. ok
+t/ResultSet/DateMethods1/mysql.t ............. ok
+t/ResultSet/DateMethods1/oracle.t ............ ok
+t/ResultSet/DateMethods1/pg.t ................ ok
+t/ResultSet/DateMethods1/sqlite.t ............ ok
+t/ResultSet/Errors.t ......................... ok
+t/ResultSet/Explain.t ........................ ok
+t/ResultSet/IgnoreWantarray.t ................ ok
+t/ResultSet/Me.t ............................. ok
+t/ResultSet/NoColumns.t ...................... ok
+t/ResultSet/OneRow.t ......................... ok
+t/ResultSet/Random.t ......................... ok
+t/ResultSet/RemoveColumns.t .................. ok
+t/ResultSet/RemoveColumns/_resolved_attrs.t .. ok
+t/ResultSet/ResultClassDWIM.t ................ ok
+t/ResultSet/SearchOr.t ....................... ok
+t/ResultSet/SetOperations.t .................. ok
+t/ResultSet/Shortcut/AddColumns.t ............ ok
+t/ResultSet/Shortcut/Columns.t ............... ok
+t/ResultSet/Shortcut/Distinct.t .............. ok
+t/ResultSet/Shortcut/GroupBy.t ............... ok
+t/ResultSet/Shortcut/HasRows.t ............... ok
+t/ResultSet/Shortcut/HRI.t ................... ok
+t/ResultSet/Shortcut/Limit.t ................. ok
+t/ResultSet/Shortcut/LimitedPage.t ........... ok
+t/ResultSet/Shortcut/OrderBy.t ............... ok
+t/ResultSet/Shortcut/OrderByMagic.t .......... ok
+t/ResultSet/Shortcut/Prefetch.t .............. ok
+t/ResultSet/Shortcut/RemoveColumns.t ......... ok
+t/ResultSet/Shortcut/ResultsExist.t .......... ok
+t/ResultSet/Shortcut/Rows.t .................. ok
+t/ResultSet/Shortcut/Search/Base.t ........... ok
+t/ResultSet/Shortcut/Search/Like.t ........... ok
+t/ResultSet/Shortcut/Search/NotLike.t ........ ok
+t/ResultSet/Shortcut/Search/NotNull.t ........ ok
+t/ResultSet/Shortcut/Search/Null.t ........... ok
+t/Row/CleanResultSet.t ....................... ok
+t/Row/JoinTable.t ............................ ok
+t/Row/NumifyGet.t ............................ ok
+t/Row/OnColumnChange.t ....................... ok
+t/Row/OnColumnMissing.t ...................... ok
+t/Row/ProxyResultSetMethod.t ................. ok
+t/Row/ProxyResultSetUpdate.t ................. ok
+t/Row/RelationshipDWIM.t ..................... ok
+t/Row/SelfResultSet.t ........................ ok
+t/Row/StorageValues.t ........................ ok
+t/Row/SubClass.t ............................. ok
+t/Row/ToJSON.t ............................... ok
+t/Schema/DateTime.t .......................... ok
+t/Schema/DidYouMean.t ........................ ok
+t/Schema/GenerateSource.t .................... ok
+t/Schema/LintContents.t ...................... ok
+t/Schema/Verifier.t .......................... ok
+t/Schema/Verifier/C3.t ....................... ok
+t/Schema/Verifier/ColumnInfo.t ............... ok
+t/Schema/Verifier/Parent.t ................... ok
+t/Schema/Verifier/RelationshipColumnName.t ... ok
+t/utilities.t ................................ ok
+All tests successful.
+Files=64, Tests=230, 32 wallclock secs ( 0.46 usr  0.13 sys + 21.62 cusr  9.05 csys = 31.26 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/pkgconfig m4datadir=/nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/aclocal aclocaldir=/nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/aclocal install
+Manifying 23 pod documents
+Manifying 20 pod documents
+Manifying 24 pod documents
+Manifying 5 pod documents
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helpers.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helpers/Util.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/IgnoreWantarray.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/JoinTable.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/VirtualView.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Random.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/SubClass.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/CorrelateRelationship.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/RemoveColumns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Me.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Union.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/NoColumns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/IgnoreWantarray.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/AutoRemoveColumns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/DateMethods1.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/ResultClassDWIM.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Util.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Bare.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Explain.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/OneRow.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/VirtualView.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/SearchOr.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/SetOperations.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Errors.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Random.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/RemoveColumns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/HRI.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Rows.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/AddColumns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/GroupBy.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/ResultsExist.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/OrderBy.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/OrderByMagic.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Distinct.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/LimitedPage.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/HasRows.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Page.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Prefetch.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Limit.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Columns.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search/Like.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotLike.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search/Null.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search/NotNull.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/Shortcut/Search/Base.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultSet/DateMethods1/Announcement.pod
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/DidYouMean.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/Verifier.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/LintContents.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/DateTime.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/QuoteNames.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/GenerateSource.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/Verifier/Parent.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/Verifier/C3.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/Verifier/ColumnInfo.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Schema/Verifier/RelationshipColumnName.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/SelfResultSet.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/ToJSON.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/JoinTable.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/RelationshipDWIM.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/ProxyResultSetMethod.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/ProxyResultSetUpdate.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/OnColumnChange.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/NumifyGet.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/StorageValues.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/OnColumnMissing.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/CleanResultSet.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/Row/SubClass.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/site_perl/5.32.0/DBIx/Class/Helper/ResultClass/Tee.pm
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::DateTime.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::VirtualView.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::ResultsExist.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::JoinTable.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::Verifier::C3.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::DateMethods1::Announcement.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::ProxyResultSetMethod.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::QuoteNames.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::RemoveColumns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::GroupBy.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::SelfResultSet.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::SearchOr.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::IgnoreWantarray.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::DateMethods1.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::HasRows.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::CleanResultSet.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::VirtualView.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search::NotLike.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Limit.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::CorrelateRelationship.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helpers.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Page.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Union.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Random.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Errors.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::AutoRemoveColumns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Explain.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Prefetch.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::ProxyResultSetUpdate.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::ToJSON.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::GenerateSource.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::Verifier::Parent.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::RelationshipDWIM.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::Verifier::RelationshipColumnName.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helpers::Util.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::ResultClassDWIM.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::OnColumnChange.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Bare.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::HRI.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Columns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::RemoveColumns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::OrderByMagic.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Rows.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::SetOperations.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::OnColumnMissing.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::SubClass.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::SubClass.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::NumifyGet.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::NoColumns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::JoinTable.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Me.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::OneRow.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Distinct.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search::Null.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Row::StorageValues.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::DidYouMean.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::OrderBy.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Util.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::Verifier.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::AddColumns.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search::NotNull.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::LimitedPage.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Random.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search::Base.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::Verifier::ColumnInfo.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::Schema::LintContents.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultSet::Shortcut::Search::Like.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::ResultClass::Tee.3
+Installing /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3/DBIx::Class::Helper::IgnoreWantarray.3
+Appending installation info to /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/man3 to /nix/store/f3h4826ic6m24dafigq511xzq2pzsv8h-perl5.32.0-DBIx-Class-Helpers-2.036000-devdoc/share/man/man3
+Removing empty /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000/lib
+patching script interpreter paths in /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000
+checking for references to /build/ in /nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/f3h4826ic6m24dafigq511xzq2pzsv8h-perl5.32.0-DBIx-Class-Helpers-2.036000-devdoc
+gzipping man pages under /nix/store/f3h4826ic6m24dafigq511xzq2pzsv8h-perl5.32.0-DBIx-Class-Helpers-2.036000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/f3h4826ic6m24dafigq511xzq2pzsv8h-perl5.32.0-DBIx-Class-Helpers-2.036000-devdoc
+checking for references to /build/ in /nix/store/f3h4826ic6m24dafigq511xzq2pzsv8h-perl5.32.0-DBIx-Class-Helpers-2.036000-devdoc...
+/nix/store/lv2sywj371szz7jqsjmpp92c62rzd7rf-perl5.32.0-DBIx-Class-Helpers-2.036000

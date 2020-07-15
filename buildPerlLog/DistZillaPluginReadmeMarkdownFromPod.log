@@ -1,0 +1,81 @@
+these derivations will be built:
+  /nix/store/jv5269fl19g9255nff6mrvh6gnmr9cd9-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/552p9dbgh4my6hbv1i9xwx7lkhbqiv6a-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140.tar.gz
+copying path '/nix/store/552p9dbgh4my6hbv1i9xwx7lkhbqiv6a-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jv5269fl19g9255nff6mrvh6gnmr9cd9-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140.drv'...
+unpacking sources
+unpacking source archive /nix/store/552p9dbgh4my6hbv1i9xwx7lkhbqiv6a-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140.tar.gz
+source root is Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140
+setting SOURCE_DATE_EPOCH to timestamp 1398309203 of file Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/weaver.ini
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/main.t...
+patching ./t/release-has-version.t...
+patching ./t/release-portability.t...
+patching ./t/000-report-versions.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/release-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::ReadmeMarkdownFromPod
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Dist/Zilla/Plugin/ReadmeMarkdownFromPod.pm blib/lib/Dist/Zilla/Plugin/ReadmeMarkdownFromPod.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............ ok
+t/000-report-versions.t ... # Testing with Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/000-report-versions.t ... 1/? #     Carp version is 1.50
+#     Dist::Zilla::Plugin::ReadmeAnyFromPod version is 0.163250
+t/000-report-versions.t ... 3/? #     ExtUtils::MakeMaker version is 7.44
+#     File::Spec version is 3.78
+#     IO::Handle version is 1.42
+#     IPC::Open3 version is 1.21
+#     Moose version is 2.2012
+#     Scalar::Util version is 1.55
+#     Test::DZil version is 6.015
+#     Test::More version is 1.302175
+#     Test::Most version is 0.37
+#     autodie version is 2.32
+#     strict version is 1.11
+#     warnings version is 1.47
+t/000-report-versions.t ... ok
+t/author-critic.t ......... skipped: these tests are for testing by the author
+t/main.t .................. ok
+t/release-has-version.t ... skipped: these tests are for release candidate testing
+t/release-kwalitee.t ...... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .... skipped: these tests are for release candidate testing
+t/release-portability.t ... skipped: these tests are for release candidate testing
+t/release-unused-vars.t ... skipped: these tests are for release candidate testing
+All tests successful.
+Files=10, Tests=20, 13 wallclock secs ( 0.17 usr  0.11 sys +  5.25 cusr  7.06 csys = 12.59 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/lib/pkgconfig m4datadir=/nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/share/aclocal aclocaldir=/nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/ReadmeMarkdownFromPod.pm
+Installing /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/share/man/man3/Dist::Zilla::Plugin::ReadmeMarkdownFromPod.3
+Appending installation info to /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/share/man/man3 to /nix/store/1y7548bm008y4j31i5xbnn0iqsway3pf-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140-devdoc/share/man/man3
+Removing empty /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140/lib
+patching script interpreter paths in /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140
+checking for references to /build/ in /nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1y7548bm008y4j31i5xbnn0iqsway3pf-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140-devdoc
+gzipping man pages under /nix/store/1y7548bm008y4j31i5xbnn0iqsway3pf-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1y7548bm008y4j31i5xbnn0iqsway3pf-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140-devdoc
+checking for references to /build/ in /nix/store/1y7548bm008y4j31i5xbnn0iqsway3pf-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140-devdoc...
+/nix/store/qiy0yjbf2vnxs0n6f3hf9ayw3rk47s5n-perl5.32.0-Dist-Zilla-Plugin-ReadmeMarkdownFromPod-0.141140

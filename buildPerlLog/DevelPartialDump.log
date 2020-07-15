@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/5awd8ks2fzj5j2yw4vnphhicacqlmc1h-perl5.32.0-Devel-PartialDump-0.20.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/2z8j8kbvmxknvfg4jlv1zc5xcy06k3lf-Devel-PartialDump-0.20.tar.gz
+copying path '/nix/store/2z8j8kbvmxknvfg4jlv1zc5xcy06k3lf-Devel-PartialDump-0.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/5awd8ks2fzj5j2yw4vnphhicacqlmc1h-perl5.32.0-Devel-PartialDump-0.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/2z8j8kbvmxknvfg4jlv1zc5xcy06k3lf-Devel-PartialDump-0.20.tar.gz
+source root is Devel-PartialDump-0.20
+setting SOURCE_DATE_EPOCH to timestamp 1499315705 of file Devel-PartialDump-0.20/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Devel::PartialDump
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Devel/PartialDump.pm blib/lib/Devel/PartialDump.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module               Want     Have
+#     ------------------- ----- --------
+#     ExtUtils::MakeMaker   any     7.44
+#     File::Spec            any     3.78
+#     Test::More           0.96 1.302175
+#     Test::Warnings      0.009    0.030
+#     if                    any   0.0608
+#     ok                    any 1.302175
+#     overload              any     1.31
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module           Want  Have
+#     ---------------- ---- -----
+#     Carp              any  1.50
+#     Class::Tiny       any 1.006
+#     Scalar::Util      any  1.55
+#     Sub::Exporter     any 0.987
+#     namespace::clean 0.19  0.27
+#     strict            any  1.11
+#     warnings          any  1.47
+#
+# === Other Modules ===
+#
+#     Module       Have
+#     --------- -------
+#     JSON::PP     4.04
+#     Sub::Name missing
+#     YAML      missing
+#     autodie      2.32
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+t/exports.t ............ ok
+t/objects.t ............ ok
+All tests successful.
+Files=4, Tests=28,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.46 cusr  0.16 csys =  0.67 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/lib/pkgconfig m4datadir=/nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/share/aclocal aclocaldir=/nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/lib/perl5/site_perl/5.32.0/Devel/PartialDump.pm
+Installing /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/share/man/man3/Devel::PartialDump.3
+Appending installation info to /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/share/man/man3 to /nix/store/vsld9clpz0wirbgmbl37iavp2jqx0pvq-perl5.32.0-Devel-PartialDump-0.20-devdoc/share/man/man3
+Removing empty /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20/lib
+patching script interpreter paths in /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20
+checking for references to /build/ in /nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vsld9clpz0wirbgmbl37iavp2jqx0pvq-perl5.32.0-Devel-PartialDump-0.20-devdoc
+gzipping man pages under /nix/store/vsld9clpz0wirbgmbl37iavp2jqx0pvq-perl5.32.0-Devel-PartialDump-0.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vsld9clpz0wirbgmbl37iavp2jqx0pvq-perl5.32.0-Devel-PartialDump-0.20-devdoc
+checking for references to /build/ in /nix/store/vsld9clpz0wirbgmbl37iavp2jqx0pvq-perl5.32.0-Devel-PartialDump-0.20-devdoc...
+/nix/store/pgcb2dyy96qdzy9bj8mj1w178g23fqmb-perl5.32.0-Devel-PartialDump-0.20

@@ -1,0 +1,75 @@
+these derivations will be built:
+  /nix/store/ya4769s3h3f7rp4mmp5d13zam6vhs7m5-perl5.32.0-Crypt-ECB-2.22.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/cpjx4fzr0j2h2lp5b05snahp0g86yj35-Crypt-ECB-2.22.tar.gz
+copying path '/nix/store/cpjx4fzr0j2h2lp5b05snahp0g86yj35-Crypt-ECB-2.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ya4769s3h3f7rp4mmp5d13zam6vhs7m5-perl5.32.0-Crypt-ECB-2.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/cpjx4fzr0j2h2lp5b05snahp0g86yj35-Crypt-ECB-2.22.tar.gz
+source root is Crypt-ECB-2.22
+setting SOURCE_DATE_EPOCH to timestamp 1589817629 of file Crypt-ECB-2.22/META.json
+patching sources
+configuring
+patching ./t/35-keychange.t...
+patching ./t/30-start-crypt-finish.t...
+patching ./t/80-preexisting.t...
+patching ./t/25-decryption.t...
+patching ./t/15-sanity.t...
+patching ./t/40-padding.t...
+patching ./t/20-encryption.t...
+patching ./t/45-padding-custom.t...
+patching ./t/60-substrings+nulls.t...
+patching ./t/50-padding-fullblock.t...
+patching ./t/10-options.t...
+patching ./t/90-funcstyle.t...
+patching ./t/85-preexisting-xtea.t...
+patching ./eg/ecb.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::ECB
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp ECB.pm blib/lib/Crypt/ECB.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10-options.t ............. ok
+t/15-sanity.t .............. ok
+t/20-encryption.t .......... ok
+t/25-decryption.t .......... ok
+t/30-start-crypt-finish.t .. ok
+t/35-keychange.t ........... ok
+t/40-padding.t ............. ok
+t/45-padding-custom.t ...... ok
+t/50-padding-fullblock.t ... ok
+t/60-substrings+nulls.t .... ok
+t/80-preexisting.t ......... ok
+t/85-preexisting-xtea.t .... ok
+t/90-funcstyle.t ........... ok
+All tests successful.
+Files=13, Tests=52712,  5 wallclock secs ( 3.05 usr  0.16 sys +  5.10 cusr  0.24 csys =  8.55 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/lib/pkgconfig m4datadir=/nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/share/aclocal aclocaldir=/nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/lib/perl5/site_perl/5.32.0/Crypt/ECB.pm
+Installing /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/share/man/man3/Crypt::ECB.3
+Appending installation info to /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/share/man/man3 to /nix/store/40xsla7pbn19a9hr3dg7awfjnjcydxm1-perl5.32.0-Crypt-ECB-2.22-devdoc/share/man/man3
+Removing empty /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22/lib
+patching script interpreter paths in /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22
+checking for references to /build/ in /nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/40xsla7pbn19a9hr3dg7awfjnjcydxm1-perl5.32.0-Crypt-ECB-2.22-devdoc
+gzipping man pages under /nix/store/40xsla7pbn19a9hr3dg7awfjnjcydxm1-perl5.32.0-Crypt-ECB-2.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/40xsla7pbn19a9hr3dg7awfjnjcydxm1-perl5.32.0-Crypt-ECB-2.22-devdoc
+checking for references to /build/ in /nix/store/40xsla7pbn19a9hr3dg7awfjnjcydxm1-perl5.32.0-Crypt-ECB-2.22-devdoc...
+/nix/store/3c0zmlb5326z992vgvb3iamjki1xz4z5-perl5.32.0-Crypt-ECB-2.22

@@ -1,0 +1,162 @@
+these derivations will be built:
+  /nix/store/m63z9z06l1i5jhwa2b4c014k1hxyb9cr-perl5.32.0-BerkeleyDB-0.63.drv
+these paths will be fetched (0.20 MiB download, 0.20 MiB unpacked):
+  /nix/store/nfan7z88i6dm0yrwzdqybcavc1275nlw-BerkeleyDB-0.63.tar.gz
+copying path '/nix/store/nfan7z88i6dm0yrwzdqybcavc1275nlw-BerkeleyDB-0.63.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m63z9z06l1i5jhwa2b4c014k1hxyb9cr-perl5.32.0-BerkeleyDB-0.63.drv'...
+unpacking sources
+unpacking source archive /nix/store/nfan7z88i6dm0yrwzdqybcavc1275nlw-BerkeleyDB-0.63.tar.gz
+source root is BerkeleyDB-0.63
+setting SOURCE_DATE_EPOCH to timestamp 1563714150 of file BerkeleyDB-0.63/META.yml
+patching sources
+configuring
+patching ./mkconsts.pl...
+patching ./dbinfo...
+patching ./mkpod...
+patching ./t/cds.t...
+patching ./t/subdb.t...
+patching ./t/db-4.x.t...
+patching ./t/db-3.0.t...
+patching ./t/txn.t...
+patching ./t/db-3.1.t...
+patching ./t/heap.t...
+patching ./t/destroy.t...
+patching ./t/examples.t...
+patching ./t/db-3.2.t...
+patching ./t/blob.t...
+patching ./t/mldbm.t...
+patching ./t/examples.t.T...
+patching ./t/btree.t...
+patching ./t/recno.t...
+patching ./t/db-3.3.t...
+patching ./t/db-4.6.t...
+patching ./t/db-4.8.t...
+patching ./t/hash.t...
+patching ./t/db-4.4.t...
+patching ./t/examples3.t...
+patching ./t/encode.t...
+patching ./t/examples3.t.T...
+patching ./t/db-4.3.t...
+patching ./t/join.t...
+patching ./t/encrypt.t...
+patching ./t/env.t...
+patching ./t/strict.t...
+patching ./t/filter.t...
+patching ./t/queue.t...
+patching ./t/db-4.7.t...
+patching ./t/unknown.t...
+patching ./Makefile.PL...
+patching ./scan.pl...
+Parsing config.in...
+Looks Good.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for BerkeleyDB
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+perl ./mkpod
+    Processing t/examples.t.T -> t/examples.t
+    Processing t/examples3.t.T -> t/examples3.t
+    BerkeleyDB.pod.P -> BerkeleyDB.pod
+cp BerkeleyDB.pm blib/lib/BerkeleyDB.pm
+cp mkconsts.pl blib/lib/mkconsts.pl
+cp scan.pl blib/lib/scan.pl
+cp BerkeleyDB.pod blib/lib/BerkeleyDB.pod
+cp BerkeleyDB/Hash.pm blib/lib/BerkeleyDB/Hash.pm
+cp BerkeleyDB/Btree.pm blib/lib/BerkeleyDB/Btree.pm
+Running Mkbootstrap for BerkeleyDB ()
+chmod 644 "BerkeleyDB.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- BerkeleyDB.bs blib/arch/auto/BerkeleyDB/BerkeleyDB.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/BerkeleyDB-0.63/typemap'  BerkeleyDB.xs > BerkeleyDB.xsc
+Warning: Found a 'CODE' section which seems to be using 'RETVAL' but no 'OUTPUT' section. in BerkeleyDB.xs, line 5936
+Warning: Found a 'CODE' section which seems to be using 'RETVAL' but no 'OUTPUT' section. in BerkeleyDB.xs, line 5964
+mv BerkeleyDB.xsc BerkeleyDB.c
+cc -c  -I/nix/store/79z0z2nswfjwi768wffyi4rrhl068clc-db-5.3.28-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.63\" -DXS_VERSION=\"0.63\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   BerkeleyDB.c
+rm -f blib/arch/auto/BerkeleyDB/BerkeleyDB.so
+LD_RUN_PATH="/nix/store/8gwy47q4rznnmgh95jmpqc94kbh9vqc6-db-5.3.28/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  BerkeleyDB.o  -o blib/arch/auto/BerkeleyDB/BerkeleyDB.so  \
+   -L/nix/store/8gwy47q4rznnmgh95jmpqc94kbh9vqc6-db-5.3.28/lib -ldb   \
+
+chmod 755 blib/arch/auto/BerkeleyDB/BerkeleyDB.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- BerkeleyDB.bs blib/arch/auto/BerkeleyDB/BerkeleyDB.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000prereq.t .. 1/1 #
+#
+# BerkeleyDB version            0.63
+# BerkeleyDB::DB_VERSION_STRING Berkeley DB 5.3.28: (September  9, 2013)
+# BerkeleyDB::db_version        5.3
+# BerkeleyDB::db_ver            5.003028
+#
+t/000prereq.t .. ok
+t/blob.t ....... skipped: this needs Berkeley DB 6.x.x or better
+t/btree.t ...... ok
+t/cds.t ........ ok
+t/db-3.0.t ..... ok
+t/db-3.1.t ..... ok
+t/db-3.2.t ..... ok
+t/db-3.3.t ..... ok
+t/db-4.3.t ..... ok
+t/db-4.4.t ..... ok
+t/db-4.6.t ..... ok
+t/db-4.7.t ..... ok
+t/db-4.8.t ..... ok
+t/db-4.x.t ..... ok
+t/destroy.t .... ok
+t/encode.t ..... ok
+t/encrypt.t .... ok
+t/env.t ........ ok
+t/examples.t ... ok
+t/examples3.t .. ok
+t/filter.t ..... ok
+t/hash.t ....... ok
+t/heap.t ....... ok
+t/join.t ....... ok
+t/meta-json.t .. skipped: Test::CPAN::Meta::JSON required for testing META.json
+t/meta-yaml.t .. skipped: Test::CPAN::Meta required for testing META.yml
+t/mldbm.t ...... skipped: MLDBM is not installed on this system.
+t/pod.t ........ skipped: Test::Pod 1.00 required for testing POD
+t/queue.t ...... ok
+t/recno.t ...... ok
+t/sequence.t ... ok
+t/strict.t ..... ok
+t/subdb.t ...... ok
+t/txn.t ........ ok
+t/unknown.t .... ok
+All tests successful.
+Files=35, Tests=1871,  3 wallclock secs ( 0.18 usr  0.04 sys +  1.37 cusr  0.21 csys =  1.80 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/pkgconfig m4datadir=/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/share/aclocal aclocaldir=/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- BerkeleyDB.bs blib/arch/auto/BerkeleyDB/BerkeleyDB.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/BerkeleyDB/BerkeleyDB.so
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/mkconsts.pl
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/BerkeleyDB.pm
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/BerkeleyDB.pod
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/scan.pl
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/BerkeleyDB/Hash.pm
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/BerkeleyDB/Btree.pm
+Installing /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/share/man/man3/BerkeleyDB.3
+Appending installation info to /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/share/man/man3 to /nix/store/hjm4ad1avvjyhwras9n8s6zpw6axd9y4-perl5.32.0-BerkeleyDB-0.63-devdoc/share/man/man3
+Removing empty /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63
+shrinking /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/BerkeleyDB/BerkeleyDB.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib
+patching script interpreter paths in /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63
+/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/mkconsts.pl: interpreter directive changed from "/usr/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hjm4ad1avvjyhwras9n8s6zpw6axd9y4-perl5.32.0-BerkeleyDB-0.63-devdoc
+gzipping man pages under /nix/store/hjm4ad1avvjyhwras9n8s6zpw6axd9y4-perl5.32.0-BerkeleyDB-0.63-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hjm4ad1avvjyhwras9n8s6zpw6axd9y4-perl5.32.0-BerkeleyDB-0.63-devdoc
+checking for references to /build/ in /nix/store/hjm4ad1avvjyhwras9n8s6zpw6axd9y4-perl5.32.0-BerkeleyDB-0.63-devdoc...
+/nix/store/rrh8jhazmdzzznbcafmlz9gwrym0fzjx-perl5.32.0-BerkeleyDB-0.63

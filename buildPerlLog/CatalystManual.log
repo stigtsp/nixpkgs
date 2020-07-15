@@ -1,0 +1,150 @@
+these derivations will be built:
+  /nix/store/x6cad5iil6wb9g8hba545ia7dqkwaqni-perl5.32.0-Catalyst-Manual-5.9010.drv
+these paths will be fetched (0.17 MiB download, 0.17 MiB unpacked):
+  /nix/store/ywi5j51aws9vmcpabw2lc15dws0z93sd-Catalyst-Manual-5.9010.tar.gz
+copying path '/nix/store/ywi5j51aws9vmcpabw2lc15dws0z93sd-Catalyst-Manual-5.9010.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x6cad5iil6wb9g8hba545ia7dqkwaqni-perl5.32.0-Catalyst-Manual-5.9010.drv'...
+unpacking sources
+unpacking source archive /nix/store/ywi5j51aws9vmcpabw2lc15dws0z93sd-Catalyst-Manual-5.9010.tar.gz
+source root is Catalyst-Manual-5.9010
+setting SOURCE_DATE_EPOCH to timestamp 1556230753 of file Catalyst-Manual-5.9010/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Manual
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Manual/Deployment/lighttpd/FastCGI.pod blib/lib/Catalyst/Manual/Deployment/lighttpd/FastCGI.pod
+cp lib/Catalyst/Manual/Tutorial/08_Testing.pod blib/lib/Catalyst/Manual/Tutorial/08_Testing.pod
+cp lib/Catalyst/Manual/Tutorial.pod blib/lib/Catalyst/Manual/Tutorial.pod
+cp lib/Catalyst/Manual/DevelopmentProcess.pod blib/lib/Catalyst/Manual/DevelopmentProcess.pod
+cp lib/Catalyst/Manual/Intro.pod blib/lib/Catalyst/Manual/Intro.pod
+cp lib/Catalyst/Manual/Components.pod blib/lib/Catalyst/Manual/Components.pod
+cp lib/Catalyst/Manual/Deployment/IIS/FastCGI.pod blib/lib/Catalyst/Manual/Deployment/IIS/FastCGI.pod
+cp lib/Catalyst/Manual/Tutorial/05_Authentication.pod blib/lib/Catalyst/Manual/Tutorial/05_Authentication.pod
+cp lib/Catalyst/Manual/About.pod blib/lib/Catalyst/Manual/About.pod
+cp lib/Catalyst/Manual/Tutorial/07_Debugging.pod blib/lib/Catalyst/Manual/Tutorial/07_Debugging.pod
+cp lib/Catalyst/Manual/Tutorial/02_CatalystBasics.pod blib/lib/Catalyst/Manual/Tutorial/02_CatalystBasics.pod
+cp lib/Catalyst/Manual/Deployment/DevelopmentServer.pod blib/lib/Catalyst/Manual/Deployment/DevelopmentServer.pod
+cp lib/Catalyst/Manual/Actions.pod blib/lib/Catalyst/Manual/Actions.pod
+cp lib/Catalyst/Manual/Tutorial/03_MoreCatalystBasics.pod blib/lib/Catalyst/Manual/Tutorial/03_MoreCatalystBasics.pod
+cp lib/Catalyst/Manual/Deployment/SharedHosting.pod blib/lib/Catalyst/Manual/Deployment/SharedHosting.pod
+cp lib/Catalyst/Manual.pm blib/lib/Catalyst/Manual.pm
+cp lib/Catalyst/Manual/Tutorial/06_Authorization.pod blib/lib/Catalyst/Manual/Tutorial/06_Authorization.pod
+cp lib/Catalyst/Manual/CatalystAndMoose.pod blib/lib/Catalyst/Manual/CatalystAndMoose.pod
+cp lib/Catalyst/Manual/Deployment/nginx/FastCGI.pod blib/lib/Catalyst/Manual/Deployment/nginx/FastCGI.pod
+cp lib/Catalyst/Manual/Internals.pod blib/lib/Catalyst/Manual/Internals.pod
+cp lib/Catalyst/Manual/ExtendingCatalyst.pod blib/lib/Catalyst/Manual/ExtendingCatalyst.pod
+cp lib/Catalyst/Manual/Deployment/Apache/mod_perl.pod blib/lib/Catalyst/Manual/Deployment/Apache/mod_perl.pod
+cp lib/Catalyst/Manual/Deployment/FastCGI.pod blib/lib/Catalyst/Manual/Deployment/FastCGI.pod
+cp lib/Catalyst/Manual/Cookbook.pod blib/lib/Catalyst/Manual/Cookbook.pod
+cp lib/Catalyst/Manual/Tutorial/01_Intro.pod blib/lib/Catalyst/Manual/Tutorial/01_Intro.pod
+cp lib/Catalyst/Manual/Deployment.pod blib/lib/Catalyst/Manual/Deployment.pod
+cp lib/Catalyst/Manual/Tutorial/04_BasicCRUD.pod blib/lib/Catalyst/Manual/Tutorial/04_BasicCRUD.pod
+cp lib/Catalyst/Manual/Deployment/Apache/FastCGI.pod blib/lib/Catalyst/Manual/Deployment/Apache/FastCGI.pod
+cp lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormFu.pod blib/lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormFu.pod
+cp lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormBuilder.pod blib/lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormBuilder.pod
+cp lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD.pod blib/lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD.pod
+cp lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormHandler.pod blib/lib/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormHandler.pod
+cp lib/Catalyst/Manual/Tutorial/10_Appendices.pod blib/lib/Catalyst/Manual/Tutorial/10_Appendices.pod
+cp lib/Catalyst/Manual/WritingPlugins.pod blib/lib/Catalyst/Manual/WritingPlugins.pod
+Manifying 25 pod documents
+Manifying 9 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-use.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.04 cusr  0.00 csys =  0.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/pkgconfig m4datadir=/nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/aclocal aclocaldir=/nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/aclocal install
+Manifying 25 pod documents
+Manifying 9 pod documents
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual.pm
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Intro.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/WritingPlugins.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Cookbook.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Internals.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/DevelopmentProcess.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/About.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Components.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/CatalystAndMoose.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/ExtendingCatalyst.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Actions.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/06_Authorization.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/10_Appendices.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/03_MoreCatalystBasics.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/05_Authentication.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/08_Testing.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/04_BasicCRUD.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/07_Debugging.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/09_AdvancedCRUD.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/01_Intro.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/02_CatalystBasics.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormBuilder.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormHandler.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Tutorial/09_AdvancedCRUD/09_FormFu.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/DevelopmentServer.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/FastCGI.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/SharedHosting.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/nginx/FastCGI.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/lighttpd/FastCGI.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/IIS/FastCGI.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/Apache/FastCGI.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/site_perl/5.32.0/Catalyst/Manual/Deployment/Apache/mod_perl.pod
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::07_Debugging.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::09_AdvancedCRUD::09_FormFu.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::03_MoreCatalystBasics.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::04_BasicCRUD.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::Apache::FastCGI.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::CatalystAndMoose.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::ExtendingCatalyst.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::nginx::FastCGI.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Intro.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::DevelopmentProcess.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::08_Testing.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Internals.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::DevelopmentServer.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Actions.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::06_Authorization.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::Apache::mod_perl.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::lighttpd::FastCGI.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Cookbook.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::09_AdvancedCRUD::09_FormHandler.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::WritingPlugins.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::About.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::01_Intro.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::SharedHosting.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::09_AdvancedCRUD::09_FormBuilder.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::05_Authentication.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::FastCGI.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::09_AdvancedCRUD.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::02_CatalystBasics.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Components.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Deployment::IIS::FastCGI.3
+Installing /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3/Catalyst::Manual::Tutorial::10_Appendices.3
+Appending installation info to /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/man3 to /nix/store/4m069692km93n5c8q4v7f8550zbwxi3q-perl5.32.0-Catalyst-Manual-5.9010-devdoc/share/man/man3
+Removing empty /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010/lib
+patching script interpreter paths in /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010
+checking for references to /build/ in /nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4m069692km93n5c8q4v7f8550zbwxi3q-perl5.32.0-Catalyst-Manual-5.9010-devdoc
+gzipping man pages under /nix/store/4m069692km93n5c8q4v7f8550zbwxi3q-perl5.32.0-Catalyst-Manual-5.9010-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4m069692km93n5c8q4v7f8550zbwxi3q-perl5.32.0-Catalyst-Manual-5.9010-devdoc
+checking for references to /build/ in /nix/store/4m069692km93n5c8q4v7f8550zbwxi3q-perl5.32.0-Catalyst-Manual-5.9010-devdoc...
+/nix/store/pkgpgxqbjx9y8azchmfvym3c7c2mkswq-perl5.32.0-Catalyst-Manual-5.9010

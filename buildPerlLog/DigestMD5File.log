@@ -1,0 +1,49 @@
+these derivations will be built:
+  /nix/store/yi8s8j2x34m7r6881h4bvzwplcy8r71w-perl5.32.0-Digest-MD5-File-0.08.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/08r2b5ab43s4xwm2yhhjv0s2cna0n58k-Digest-MD5-File-0.08.tar.gz
+copying path '/nix/store/08r2b5ab43s4xwm2yhhjv0s2cna0n58k-Digest-MD5-File-0.08.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yi8s8j2x34m7r6881h4bvzwplcy8r71w-perl5.32.0-Digest-MD5-File-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/08r2b5ab43s4xwm2yhhjv0s2cna0n58k-Digest-MD5-File-0.08.tar.gz
+source root is Digest-MD5-File-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1333570086 of file Digest-MD5-File-0.08/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Digest::MD5::File
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp File.pm blib/lib/Digest/MD5/File.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1.t .. ok
+All tests successful.
+Files=1, Tests=6,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.11 cusr  0.06 csys =  0.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/lib/pkgconfig m4datadir=/nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/share/aclocal aclocaldir=/nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/lib/perl5/site_perl/5.32.0/Digest/MD5/File.pm
+Installing /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/share/man/man3/Digest::MD5::File.3
+Appending installation info to /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/share/man/man3 to /nix/store/mf9ijh2ira92jxl008nj78xd88viwm65-perl5.32.0-Digest-MD5-File-0.08-devdoc/share/man/man3
+Removing empty /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08/lib
+patching script interpreter paths in /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08
+checking for references to /build/ in /nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mf9ijh2ira92jxl008nj78xd88viwm65-perl5.32.0-Digest-MD5-File-0.08-devdoc
+gzipping man pages under /nix/store/mf9ijh2ira92jxl008nj78xd88viwm65-perl5.32.0-Digest-MD5-File-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mf9ijh2ira92jxl008nj78xd88viwm65-perl5.32.0-Digest-MD5-File-0.08-devdoc
+checking for references to /build/ in /nix/store/mf9ijh2ira92jxl008nj78xd88viwm65-perl5.32.0-Digest-MD5-File-0.08-devdoc...
+/nix/store/y0ls2pfi3m6c0hrqh80hkc2kvlgb4xvw-perl5.32.0-Digest-MD5-File-0.08

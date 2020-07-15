@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/kr3b90adai4iz2qlp0hpdn0cghsgd9r3-perl5.32.0-Lingua-Translit-0.28.drv
+building '/nix/store/kr3b90adai4iz2qlp0hpdn0cghsgd9r3-perl5.32.0-Lingua-Translit-0.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/b9lf597cg4c27gg9x525njcm83d5kk5m-Lingua-Translit-0.28.tar.gz
+source root is Lingua-Translit-0.28
+setting SOURCE_DATE_EPOCH to timestamp 1508144169 of file Lingua-Translit-0.28/META.yml
+patching sources
+configuring
+patching ./translit...
+patching ./xml/xml2dump.pl...
+patching ./tools/substitute_tables.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Lingua::Translit
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Lingua/Translit.pm blib/lib/Lingua/Translit.pm
+cp lib/Lingua/Translit/Tables.pm blib/lib/Lingua/Translit/Tables.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" tools/substitute_tables.pl blib/lib/Lingua/Translit/Tables.pm
+blib/lib/Lingua/Translit/Tables.pm: substituted tables: 139148 bytes.
+cp translit blib/script/translit
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/translit
+Manifying 1 pod document
+Manifying 2 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/lib/pkgconfig m4datadir=/nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/aclocal aclocaldir=/nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/lib/perl5/site_perl/5.32.0/Lingua/Translit.pm
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/lib/perl5/site_perl/5.32.0/Lingua/Translit/Tables.pm
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man/man1/translit.1
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man/man3/Lingua::Translit.3
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man/man3/Lingua::Translit::Tables.3
+Installing /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/bin/translit
+Appending installation info to /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man/man3 to /nix/store/101qz7sbmgq2vgg6xqj5r3fhm6mncp5n-perl5.32.0-Lingua-Translit-0.28-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28
+gzipping man pages under /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/lib  /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28/bin
+patching script interpreter paths in /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28
+checking for references to /build/ in /nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/101qz7sbmgq2vgg6xqj5r3fhm6mncp5n-perl5.32.0-Lingua-Translit-0.28-devdoc
+gzipping man pages under /nix/store/101qz7sbmgq2vgg6xqj5r3fhm6mncp5n-perl5.32.0-Lingua-Translit-0.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/101qz7sbmgq2vgg6xqj5r3fhm6mncp5n-perl5.32.0-Lingua-Translit-0.28-devdoc
+checking for references to /build/ in /nix/store/101qz7sbmgq2vgg6xqj5r3fhm6mncp5n-perl5.32.0-Lingua-Translit-0.28-devdoc...
+/nix/store/l3fajzy1p949rbmrvi3q3ybw7h8i8v62-perl5.32.0-Lingua-Translit-0.28

@@ -1,0 +1,121 @@
+these derivations will be built:
+  /nix/store/dhlc2kx8rzwz654939n5iwk4mi3wjn9p-perl5.32.0-Test-Vars-0.014.drv
+  /nix/store/g4x72hzsq9mhd032ca1yr4iwb3ga242s-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.drv
+building '/nix/store/dhlc2kx8rzwz654939n5iwk4mi3wjn9p-perl5.32.0-Test-Vars-0.014.drv'...
+unpacking sources
+unpacking source archive /nix/store/j7hdgvm9cvc6ignq6d4xi1gnk0d6w35s-Test-Vars-0.014.tar.gz
+source root is Test-Vars-0.014
+setting SOURCE_DATE_EPOCH to timestamp 1491951766 of file Test-Vars-0.014/xt/04_synopsis.t
+patching sources
+configuring
+patching ./example/test_more.t...
+patching ./example/cpan.t...
+patching ./example/math-bigint.t...
+patching ./xt/02_pod.t...
+patching ./xt/03_pod-coverage.t...
+patching ./xt/04_synopsis.t...
+patching ./t/07_stub_sub_bug.t...
+patching ./t/06_vars_ok_self.t...
+patching ./t/02_no_warnings.t...
+patching ./t/03_warned.t...
+patching ./t/00_load.t...
+patching ./t/04_ignores.t...
+patching ./t/09_array_slice.t...
+patching ./t/08_undef_aux_list.t...
+patching ./t/01_all_vars_ok_self.t...
+patching ./t/05_test_vars.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Test-Vars' version '0.014'
+cp lib/Test/Vars.pm blib/lib/Test/Vars.pm
+running tests
+t/00_load.t .............. 1/1 # Testing Test::Vars/0.014
+t/00_load.t .............. ok
+t/01_all_vars_ok_self.t .. ok
+t/02_no_warnings.t ....... 1/? # Test::Vars ignores CompileError.pm because: Intentional compile error.
+# Test::Vars ignores ImplicitTopic.pm because: Can't use global $_ in "my" at t/lib/ImplicitTopic.pm line 6, near "my $_ "
+t/02_no_warnings.t ....... ok
+t/03_warned.t ............ ok
+t/04_ignores.t ........... ok
+t/05_test_vars.t ......... ok
+t/06_vars_ok_self.t ...... ok
+t/07_stub_sub_bug.t ...... skipped: This test requires Moose::Role
+t/08_undef_aux_list.t .... skipped: This test requires Test::Output
+t/09_array_slice.t ....... skipped: This test requires Moose::Role
+All tests successful.
+Files=10, Tests=63,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.87 cusr  0.39 csys =  1.32 CPU)
+Result: PASS
+installing
+Installing /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014/lib/perl5/site_perl/5.32.0/Test/Vars.pm
+Installing /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014/share/man/man3/Test::Vars.3
+post-installation fixup
+Moving /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014/share/man/man3 to /nix/store/9gvgxqw64cb3slmw8jnna9jbhgnhah0a-perl5.32.0-Test-Vars-0.014-devdoc/share/man/man3
+Removing empty /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014/lib
+patching script interpreter paths in /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014
+checking for references to /build/ in /nix/store/1bqlpa00x5qxpd5ipp3kar90z9ripcrd-perl5.32.0-Test-Vars-0.014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9gvgxqw64cb3slmw8jnna9jbhgnhah0a-perl5.32.0-Test-Vars-0.014-devdoc
+gzipping man pages under /nix/store/9gvgxqw64cb3slmw8jnna9jbhgnhah0a-perl5.32.0-Test-Vars-0.014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9gvgxqw64cb3slmw8jnna9jbhgnhah0a-perl5.32.0-Test-Vars-0.014-devdoc
+checking for references to /build/ in /nix/store/9gvgxqw64cb3slmw8jnna9jbhgnhah0a-perl5.32.0-Test-Vars-0.014-devdoc...
+building '/nix/store/g4x72hzsq9mhd032ca1yr4iwb3ga242s-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.drv'...
+unpacking sources
+unpacking source archive /nix/store/wwnjckz2pkp6lpvn9s6s371ihj5jlb29-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.tar.gz
+source root is Dist-Zilla-Plugin-Test-UnusedVars-2.000007
+setting SOURCE_DATE_EPOCH to timestamp 1421958954 of file Dist-Zilla-Plugin-Test-UnusedVars-2.000007/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::UnusedVars
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-UnusedVars' version '2.000007'
+Building Dist-Zilla-Plugin-Test-UnusedVars
+running tests
+t/00-compile.t .... ok
+t/deprecated.t .... ok
+t/file-list.t ..... ok
+t/test-created.t .. ok
+All tests successful.
+Files=4, Tests=8,  8 wallclock secs ( 0.06 usr  0.05 sys +  4.22 cusr  3.55 csys =  7.88 CPU)
+Result: PASS
+installing
+Building Dist-Zilla-Plugin-Test-UnusedVars
+Installing /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/UnusedVarsTests.pm
+Installing /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/UnusedVars.pm
+Installing /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/share/man/man3/Dist::Zilla::Plugin::UnusedVarsTests.3
+Installing /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/share/man/man3/Dist::Zilla::Plugin::Test::UnusedVars.3
+post-installation fixup
+Moving /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/share/man/man3 to /nix/store/1qgjkxbkbx610xclysj1hdcc07rlh3lz-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007-devdoc/share/man/man3
+Removing empty /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007/lib
+patching script interpreter paths in /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007
+checking for references to /build/ in /nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1qgjkxbkbx610xclysj1hdcc07rlh3lz-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007-devdoc
+gzipping man pages under /nix/store/1qgjkxbkbx610xclysj1hdcc07rlh3lz-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1qgjkxbkbx610xclysj1hdcc07rlh3lz-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007-devdoc
+checking for references to /build/ in /nix/store/1qgjkxbkbx610xclysj1hdcc07rlh3lz-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007-devdoc...
+/nix/store/z8saqc4dnbd6zdznx315f5z2h19b146c-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007

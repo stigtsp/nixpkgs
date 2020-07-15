@@ -1,0 +1,320 @@
+these derivations will be built:
+  /nix/store/w2x0h48r2wcwrjbhhfx43wcc199glga3-perl5.32.0-Set-Object-1.40.drv
+  /nix/store/gdgjva7w6vsd6x98pbs9f62fix81g8pw-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09.drv
+  /nix/store/h3al3d0i1n4jsp9mpf1x8x8ipngf6r9j-perl5.32.0-Class-Throwable-0.13.drv
+  /nix/store/rigflhs5pixjgs8krcjm944acn4jb44b-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16.drv
+these paths will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/jvglqlcdrslpj5s9l2v9hwdwvq6r2s2x-Catalyst-Plugin-Authorization-ACL-0.16.tar.gz
+  /nix/store/pjhlh2h6a3x69czjhdjiz4bdnzn2lzsm-Catalyst-Plugin-Authorization-Roles-0.09.tar.gz
+  /nix/store/vfz1700lrixrib52xkp1dqyzs35gqfv9-Class-Throwable-0.13.tar.gz
+  /nix/store/xf9raaka8f66cg7b47r54043yx56f7rk-Set-Object-1.40.tar.gz
+copying path '/nix/store/jvglqlcdrslpj5s9l2v9hwdwvq6r2s2x-Catalyst-Plugin-Authorization-ACL-0.16.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/vfz1700lrixrib52xkp1dqyzs35gqfv9-Class-Throwable-0.13.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pjhlh2h6a3x69czjhdjiz4bdnzn2lzsm-Catalyst-Plugin-Authorization-Roles-0.09.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/xf9raaka8f66cg7b47r54043yx56f7rk-Set-Object-1.40.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w2x0h48r2wcwrjbhhfx43wcc199glga3-perl5.32.0-Set-Object-1.40.drv'...
+building '/nix/store/h3al3d0i1n4jsp9mpf1x8x8ipngf6r9j-perl5.32.0-Class-Throwable-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/xf9raaka8f66cg7b47r54043yx56f7rk-Set-Object-1.40.tar.gz
+unpacking sources
+source root is Set-Object-1.40
+unpacking source archive /nix/store/vfz1700lrixrib52xkp1dqyzs35gqfv9-Class-Throwable-0.13.tar.gz
+source root is Class-Throwable-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1579420133 of file Set-Object-1.40/SIGNATURE
+patching sources
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1423076658 of file Class-Throwable-0.13/MANIFEST
+patching sources
+configuring
+patching ./t/10_Class_Throwable_test.t...
+patching ./t/40_Class_Throwable_misc_test.t...
+patching ./t/pod.t...
+patching ./t/misc/leaktrace.t...
+patching ./t/pod_coverage.t...
+patching ./t/misc/undef.t...
+patching ./t/30_Class_Throwable_inline_exceptions_test.t...
+patching ./t/misc/manifest.t...
+patching ./t/35_Class_Throwable_sub_class_test.t...
+patching ./t/50_Class_Throwable_retrofit_test.t...
+patching ./t/misc/pod.t...
+patching ./t/20_Class_Throwable_subException_test.t...
+patching ./t/misc/pod_coverage.t...
+patching ./t/misc/leaks.t...
+patching ./t/object/abuse.t...
+patching ./t/object/properties.t...
+patching ./t/object/flags.t...
+patching ./t/object/set_subclass.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Throwable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Set::Object
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Throwable.pm blib/lib/Class/Throwable.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp Changes.pod blib/lib/Set/Changes.pod
+cp lib/Set/Object.pm blib/lib/Set/Object.pm
+AutoSplitting blib/lib/Set/Object.pm (blib/lib/auto/Set/Object)
+cp lib/Set/Object/Weak.pm blib/lib/Set/Object/Weak.pm
+Running Mkbootstrap for Object ()
+chmod 644 "Object.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Object.bs blib/arch/auto/Set/Object/Object.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Set-Object-1.40/typemap'  Object.xs > Object.xsc
+mv Object.xsc Object.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.40\" -DXS_VERSION=\"1.40\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Object.c
+t/10_Class_Throwable_test.t .................... ok
+t/20_Class_Throwable_subException_test.t ....... ok
+t/30_Class_Throwable_inline_exceptions_test.t .. ok
+t/35_Class_Throwable_sub_class_test.t .......... ok
+t/40_Class_Throwable_misc_test.t ............... Bareword found where operator expected at (eval 9) line 1, near "@+::ISA"
+        (Missing operator before ::ISA?)
+t/40_Class_Throwable_misc_test.t ............... ok
+t/50_Class_Throwable_retrofit_test.t ........... no_plan takes no arguments at t/50_Class_Throwable_retrofit_test.t line 6.
+t/50_Class_Throwable_retrofit_test.t ........... ok
+t/pod.t ........................................ skipped: Test::Pod 1.14 required for testing POD
+t/pod_coverage.t ............................... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+All tests successful.
+Files=8, Tests=75,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.42 cusr  0.07 csys =  0.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/pkgconfig m4datadir=/nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/share/aclocal aclocaldir=/nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/perl5/site_perl/5.32.0/Class/Throwable.pm
+Installing /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/share/man/man3/Class::Throwable.3
+Appending installation info to /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/share/man/man3 to /nix/store/i3p824p37q9k99x79d8bfxcshlnvhgdj-perl5.32.0-Class-Throwable-0.13-devdoc/share/man/man3
+Removing empty /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib
+patching script interpreter paths in /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13
+checking for references to /build/ in /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/i3p824p37q9k99x79d8bfxcshlnvhgdj-perl5.32.0-Class-Throwable-0.13-devdoc
+gzipping man pages under /nix/store/i3p824p37q9k99x79d8bfxcshlnvhgdj-perl5.32.0-Class-Throwable-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/i3p824p37q9k99x79d8bfxcshlnvhgdj-perl5.32.0-Class-Throwable-0.13-devdoc
+checking for references to /build/ in /nix/store/i3p824p37q9k99x79d8bfxcshlnvhgdj-perl5.32.0-Class-Throwable-0.13-devdoc...
+rm -f blib/arch/auto/Set/Object/Object.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Object.o  -o blib/arch/auto/Set/Object/Object.so  \
+      \
+
+chmod 755 blib/arch/auto/Set/Object/Object.so
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Object.bs blib/arch/auto/Set/Object/Object.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/ingy/arrayref.t t/misc/kwalitee.t t/misc/leaks.t t/misc/leaktrace.t t/misc/manifest.t t/misc/meta.t t/misc/more_leaks.t t/misc/perl_minimum_version.t t/misc/pod.t t/misc/pod_coverage.t t/misc/segfault.t t/misc/threads.t t/misc/undef.t t/object/abuse.t t/object/clear.t t/object/difference.t t/object/equal.t t/object/flags.t t/object/includes.t t/object/insert.t t/object/intersection.t t/object/magic.t t/object/members.t t/object/properties.t t/object/refcount.t t/object/remove.t t/object/set_subclass.t t/object/storable.t t/object/subsuper.t t/object/symmetric_difference.t t/object/union.t t/object/weakref.t t/scalar/basic.t t/scalar/basic_overload.t t/scalar/boolean.t t/scalar/clear.t t/scalar/compare.t t/scalar/custom_display.t t/scalar/difference.t t/scalar/each.t t/scalar/has.t t/scalar/intersection.t t/scalar/member.t t/scalar/misc.t t/scalar/rt131354.t t/scalar/set_set.t t/scalar/storable.t t/scalar/symmdiff.t t/scalar/union.t t/scalar/unique.t
+t/ingy/arrayref.t ................ ok
+t/misc/kwalitee.t ................ skipped: This test is only run for the module author
+t/misc/leaks.t ................... ok
+t/misc/leaktrace.t ............... skipped: require Test::LeakTrace
+t/misc/manifest.t ................ skipped: Author tests not required for installation
+t/misc/meta.t .................... skipped: This test is only run for the module author
+t/misc/more_leaks.t .............. skipped: Test::LeakTrace missing
+t/misc/perl_minimum_version.t .... skipped: Author tests not required for installation
+t/misc/pod.t ..................... skipped: Test::Pod 1.00 required for testing POD
+t/misc/pod_coverage.t ............ skipped: Test::Pod::Coverage required for testing POD coverage
+t/misc/segfault.t ................ ok
+t/misc/threads.t ................. Attempt to free nonexistent shared string '3', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '4', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '5', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '6', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '7', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '8', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+Attempt to free nonexistent shared string '9', Perl interpreter: 0xff6550 at t/misc/threads.t line 56.
+t/misc/threads.t ................. 1/2 Unbalanced string table refcount: (1) for "8" during global destruction.
+Unbalanced string table refcount: (1) for "7" during global destruction.
+Unbalanced string table refcount: (1) for "3" during global destruction.
+Unbalanced string table refcount: (1) for "4" during global destruction.
+Unbalanced string table refcount: (1) for "5" during global destruction.
+Unbalanced string table refcount: (1) for "6" during global destruction.
+Unbalanced string table refcount: (1) for "9" during global destruction.
+t/misc/threads.t ................. ok
+t/misc/undef.t ................... ok
+t/object/abuse.t ................. ok
+t/object/clear.t ................. ok
+t/object/difference.t ............ ok
+t/object/equal.t ................. ok
+t/object/flags.t ................. ok
+t/object/includes.t .............. ok
+t/object/insert.t ................ ok
+t/object/intersection.t .......... ok
+t/object/magic.t ................. ok
+t/object/members.t ............... ok
+t/object/properties.t ............ ok
+t/object/refcount.t .............. ok
+t/object/remove.t ................ ok
+t/object/set_subclass.t .......... ok
+t/object/storable.t .............. ok
+t/object/subsuper.t .............. ok
+t/object/symmetric_difference.t .. ok
+t/object/union.t ................. ok
+t/object/weakref.t ............... ok
+t/scalar/basic.t ................. ok
+t/scalar/basic_overload.t ........ ok
+t/scalar/boolean.t ............... ok
+t/scalar/clear.t ................. ok
+t/scalar/compare.t ............... ok
+t/scalar/custom_display.t ........ ok
+t/scalar/difference.t ............ ok
+t/scalar/each.t .................. skipped: TO-DO
+t/scalar/has.t ................... ok
+t/scalar/intersection.t .......... ok
+t/scalar/member.t ................ ok
+t/scalar/misc.t .................. ok
+t/scalar/rt131354.t .............. ok
+t/scalar/set_set.t ............... ok
+t/scalar/storable.t .............. ok
+t/scalar/symmdiff.t .............. ok
+t/scalar/union.t ................. ok
+t/scalar/unique.t ................ ok
+All tests successful.
+Files=50, Tests=455,  2 wallclock secs ( 0.11 usr  0.05 sys +  1.71 cusr  0.29 csys =  2.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/pkgconfig m4datadir=/nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/aclocal aclocaldir=/nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Object.bs blib/arch/auto/Set/Object/Object.bs 644
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Set/Object/Object.so
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Set/Object/autosplit.ix
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Set/Object.pm
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Set/Object/Weak.pm
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/man/man3/Set::Changes.3
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/man/man3/Set::Object.3
+Installing /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/man/man3/Set::Object::Weak.3
+Appending installation info to /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/man/man3 to /nix/store/68xghphdainkbldskf4r07d1da30cn63-perl5.32.0-Set-Object-1.40-devdoc/share/man/man3
+Removing empty /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40
+shrinking /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Set/Object/Object.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib
+patching script interpreter paths in /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40
+checking for references to /build/ in /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40...
+shrinking RPATHs of ELF executables and libraries in /nix/store/68xghphdainkbldskf4r07d1da30cn63-perl5.32.0-Set-Object-1.40-devdoc
+gzipping man pages under /nix/store/68xghphdainkbldskf4r07d1da30cn63-perl5.32.0-Set-Object-1.40-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/68xghphdainkbldskf4r07d1da30cn63-perl5.32.0-Set-Object-1.40-devdoc
+checking for references to /build/ in /nix/store/68xghphdainkbldskf4r07d1da30cn63-perl5.32.0-Set-Object-1.40-devdoc...
+building '/nix/store/gdgjva7w6vsd6x98pbs9f62fix81g8pw-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/pjhlh2h6a3x69czjhdjiz4bdnzn2lzsm-Catalyst-Plugin-Authorization-Roles-0.09.tar.gz
+source root is Catalyst-Plugin-Authorization-Roles-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1304081401 of file Catalyst-Plugin-Authorization-Roles-0.09/MANIFEST
+patching sources
+configuring
+patching ./t/hash_user.t...
+patching ./lib/Catalyst/Plugin/Authorization/Roles.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::Authorization::Roles
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/Authorization/Roles.pm blib/lib/Catalyst/Plugin/Authorization/Roles.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02pod.t .......... skipped: Test::Pod 1.14 required
+t/03podcoverage.t .. skipped: Test::Pod::Coverage 1.04 required
+t/basic.t .......... ok
+t/hash_user.t ...... ok
+All tests successful.
+Files=5, Tests=43,  4 wallclock secs ( 0.10 usr  0.07 sys +  1.58 cusr  1.71 csys =  3.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/pkgconfig m4datadir=/nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/share/aclocal aclocaldir=/nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/Authorization/Roles.pm
+Installing /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/share/man/man3/Catalyst::Plugin::Authorization::Roles.3
+Appending installation info to /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/share/man/man3 to /nix/store/lfb1gjmhj402z36hj5fgys5xaa6dxyvd-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09-devdoc/share/man/man3
+Removing empty /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib
+patching script interpreter paths in /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09
+checking for references to /build/ in /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lfb1gjmhj402z36hj5fgys5xaa6dxyvd-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09-devdoc
+gzipping man pages under /nix/store/lfb1gjmhj402z36hj5fgys5xaa6dxyvd-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lfb1gjmhj402z36hj5fgys5xaa6dxyvd-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09-devdoc
+checking for references to /build/ in /nix/store/lfb1gjmhj402z36hj5fgys5xaa6dxyvd-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09-devdoc...
+building '/nix/store/rigflhs5pixjgs8krcjm944acn4jb44b-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/jvglqlcdrslpj5s9l2v9hwdwvq6r2s2x-Catalyst-Plugin-Authorization-ACL-0.16.tar.gz
+source root is Catalyst-Plugin-Authorization-ACL-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1400138207 of file Catalyst-Plugin-Authorization-ACL-0.16/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/more_live_app.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/lib/ACLTestApp/Controller/Zoo.pm...
+patching ./t/lib/ACLTestApp/Controller/LionCage.pm...
+patching ./t/lib/ACLTestApp/Controller/Zoo/Penguins.pm...
+patching ./t/lib/ACLTestApp/Controller/Auth.pm...
+patching ./t/live_app.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::Authorization::ACL
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/Authorization/ACL/Engine.pm blib/lib/Catalyst/Plugin/Authorization/ACL/Engine.pm
+cp lib/Catalyst/Plugin/Authorization/ACL.pm blib/lib/Catalyst/Plugin/Authorization/ACL.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .......... ok
+t/live_app.t ............ skipped: A bunch of plugins are required for this test... Look in the source if you really care... Can't locate Test/WWW/Mechanize.pm in @INC (you may need to install the Test::WWW::Mechanize module) (@INC contains: t/lib /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib/perl5/site_perl /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/perl5/site_perl/5.32.0 /nix/store/z5h6s00p0pzsjbd0qqmsb2cfgig9pvbp-perl5.32.0-Class-Throwable-0.13/lib/perl5/site_perl /nix/store/pvllfzz7yr4j6rw6358fxsxfl74nf96b-perl5.32.0-HTML-Tree-5.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/pvllfzz7yr4j6rw6358fxsxfl74nf96b-perl5.32.0-HTML-Tree-5.07/lib/perl5/site_perl/5.32.0 /nix/store/pvllfzz7yr4j6rw6358fxsxfl74nf96b-perl5.32.0-HTML-Tree-5.07/lib/perl5/site_perl /nix/store/7lc8yy9k7v31isn6fa7g1acb60f50dda-perl5.32.0-HTML-Form-6.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7lc8yy9k7v31isn6fa7g1acb60f50dda-perl5.32.0-HTML-Form-6.07/lib/perl5/site_perl/5.32.0 /nix/store/7lc8yy9k7v31isn6fa7g1acb60f50dda-perl5.32.0-HTML-Form-6.07/lib/perl5/site_perl /nix/store/xsvdbf92d27nrfg0s4qpaqhafgmg8gfv-perl5.32.0-WWW-Mechanize-2.00/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/xsvdbf92d27nrfg0s4qpaqhafgmg8gfv-perl5.32.0-WWW-Mechanize-2.00/lib/perl5/site_perl/5.32.0 /nix/store/xsvdbf92d27nrfg0s4qpaqhafgmg8gfv-perl5.32.0-WWW-Mechanize-2.00/lib/perl5/site_perl /nix/store/bvj6x81qd4mj354zvdvbrjm9lpr5ycc6-perl5.32.0-Test-WWW-Mechanize-Catalyst-0.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/bvj6x81qd4mj354zvdvbrjm9lpr5ycc6-perl5.32.0-Test-WWW-Mechanize-Catalyst-0.62/lib/perl5/site_perl/5.32.0 /nix/store/bvj6x81qd4mj354zvdvbrjm9lpr5ycc6-perl5.32.0-Test-WWW-Mechanize-Catalyst-0.62/lib/perl5/site_perl /nix/store/vlz0b6nz1c472r5hdxsnlpfisybkmg1s-perl5.32.0-Catalyst-Plugin-Session-State-Cookie-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/vlz0b6nz1c472r5hdxsnlpfisybkmg1s-perl5.32.0-Catalyst-Plugin-Session-State-Cookie-0.17/lib/perl5/site_perl/5.32.0 /nix/store/vlz0b6nz1c472r5hdxsnlpfisybkmg1s-perl5.32.0-Catalyst-Plugin-Session-State-Cookie-0.17/lib/perl5/site_perl /nix/store/594zvmnyzsdxfm094xhrjccgkyqi8zp7-perl5.32.0-UNIVERSAL-isa-1.20171012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/594zvmnyzsdxfm094xhrjccgkyqi8zp7-perl5.32.0-UNIVERSAL-isa-1.20171012/lib/perl5/site_perl/5.32.0 /nix/store/594zvmnyzsdxfm094xhrjccgkyqi8zp7-perl5.32.0-UNIVERSAL-isa-1.20171012/lib/perl5/site_perl /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl/5.32.0 /nix/store/w8jmxjvsd9mmw2qx17570ps427q04wa7-perl5.32.0-Set-Object-1.40/lib/perl5/site_perl /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/perl5/site_perl/5.32.0 /nix/store/0qfvh9jlaf7dnyapq3w6cnwr0pwwfq4n-perl5.32.0-Catalyst-Plugin-Authorization-Roles-0.09/lib/perl5/site_perl /nix/store/x50c384xkx38sidvlizbjl1405dfpfj8-perl5.32.0-Object-Signature-1.08/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/x50c384xkx38sidvlizbjl1405dfpfj8-perl5.32.0-Object-Signature-1.08/lib/perl5/site_perl/5.32.0 /nix/store/x50c384xkx38sidvlizbjl1405dfpfj8-perl5.32.0-Object-Signature-1.08/lib/perl5/site_perl /nix/store/v72q7czqqqpf001whvripa0lynbpv13i-perl5.32.0-URI-ws-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/v72q7czqqqpf001whvripa0lynbpv13i-perl5.32.0-URI-ws-0.03/lib/perl5/site_perl/5.32.0 /nix/store/v72q7czqqqpf001whvripa0lynbpv13i-perl5.32.0-URI-ws-0.03/lib/perl5/site_perl /nix/store/bvpiif5jf9ic3qqpxyqdfb87y2z65mq9-perl5.32.0-Tree-Simple-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/bvpiif5jf9ic3qqpxyqdfb87y2z65mq9-perl5.32.0-Tree-Simple-1.33/lib/perl5/site_perl/5.32.0 /nix/store/bvpiif5jf9ic3qqpxyqdfb87y2z65mq9-perl5.32.0-Tree-Simple-1.33/lib/perl5/site_perl /nix/store/qzyhgv1kka9ar8cg2n53xryha1h2hf5f-perl5.32.0-Tree-Simple-VisitorFactory-0.15/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/qzyhgv1kka9ar8cg2n53xryha1h2hf5f-perl5.32.0-Tree-Simple-VisitorFactory-0.15/lib/perl5/site_perl/5.32.0 /nix/store/qzyhgv1kka9ar8cg2n53xryha1h2hf5f-perl5.32.0-Tree-Simple-VisitorFactory-0.15/lib/perl5/site_perl /nix/store/byamphlz8d3q1l0vqkc5yc25k798cg7m-perl5.32.0-MIME-Charset-1.012.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/byamphlz8d3q1l0vqkc5yc25k798cg7m-perl5.32.0-MIME-Charset-1.012.2/lib/perl5/site_perl/5.32.0 /nix/store/byamphlz8d3q1l0vqkc5yc25k798cg7m-perl5.32.0-MIME-Charset-1.012.2/lib/perl5/site_perl /nix/store/9l16xb0a511xx56fnqx3v2qxpji7hix7-perl5.32.0-Unicode-LineBreak-2019.001/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/9l16xb0a511xx56fnqx3v2qxpji7hix7-perl5.32.0-Unicode-LineBreak-2019.001/lib/perl5/site_perl/5.32.0 /nix/store/9l16xb0a511xx56fnqx3v2qxpji7hix7-perl5.32.0-Unicode-LineBreak-2019.001/lib/perl5/site_perl /nix/store/8vc1ynljxmqml3dziaf238hd51b42isi-perl5.32.0-Text-SimpleTable-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/8vc1ynljxmqml3dziaf238hd51b42isi-perl5.32.0-Text-SimpleTable-2.07/lib/perl5/site_perl/5.32.0 /nix/store/8vc1ynljxmqml3dziaf238hd51b42isi-perl5.32.0-Text-SimpleTable-2.07/lib/perl5/site_perl /nix/store/fpj4524mrp769zhrbrrjdvfq77d0vksf-perl5.32.0-Task-Weaken-1.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fpj4524mrp769zhrbrrjdvfq77d0vksf-perl5.32.0-Task-Weaken-1.06/lib/perl5/site_perl/5.32.0 /nix/store/fpj4524mrp769zhrbrrjdvfq77d0vksf-perl5.32.0-Task-Weaken-1.06/lib/perl5/site_perl /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/perl5/site_perl/5.32.0 /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/perl5/site_perl /nix/store/b5wb71kvfbk0innfyc78b15aip9as7cj-perl5.32.0-Safe-Isa-1.000010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/b5wb71kvfbk0innfyc78b15aip9as7cj-perl5.32.0-Safe-Isa-1.000010/lib/perl5/site_perl/5.32.0 /nix/store/b5wb71kvfbk0innfyc78b15aip9as7cj-perl5.32.0-Safe-Isa-1.000010/lib/perl5/site_perl /nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl/5.32.0 /nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl /nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl/5.32.0 /nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl /nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl/5.32.0 /nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl /nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl/5.32.0 /nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl /nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl/5.32.0 /nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl /nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl/5.32.0 /nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl /nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl/5.32.0 /nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl /nix/store/pf5z3p5fcy46qf9sqcyz0hbfqijf2rzn-perl5.32.0-Plack-Test-ExternalServer-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/pf5z3p5fcy46qf9sqcyz0hbfqijf2rzn-perl5.32.0-Plack-Test-ExternalServer-0.02/lib/perl5/site_perl/5.32.0 /nix/store/pf5z3p5fcy46qf9sqcyz0hbfqijf2rzn-perl5.32.0-Plack-Test-ExternalServer-0.02/lib/perl5/site_perl /nix/store/l0x2yv48q4n8smnr0mlik7fhpm4ybdzv-perl5.32.0-Plack-Middleware-ReverseProxy-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/l0x2yv48q4n8smnr0mlik7fhpm4ybdzv-perl5.32.0-Plack-Middleware-ReverseProxy-0.16/lib/perl5/site_perl/5.32.0 /nix/store/l0x2yv48q4n8smnr0mlik7fhpm4ybdzv-perl5.32.0-Plack-Middleware-ReverseProxy-0.16/lib/perl5/site_perl /nix/store/bnb415qzsn4w4hjj7bjim55lqzfg218a-perl5.32.0-Plack-Middleware-RemoveRedundantBody-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/bnb415qzsn4w4hjj7bjim55lqzfg218a-perl5.32.0-Plack-Middleware-RemoveRedundantBody-0.09/lib/perl5/site_perl/5.32.0 /nix/store/bnb415qzsn4w4hjj7bjim55lqzfg218a-perl5.32.0-Plack-Middleware-RemoveRedundantBody-0.09/lib/perl5/site_perl /nix/store/flcrkksq0zj8ni5wlfi8dk2jmz0l7wkb-perl5.32.0-Plack-Middleware-MethodOverride-0.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/flcrkksq0zj8ni5wlfi8dk2jmz0l7wkb-perl5.32.0-Plack-Middleware-MethodOverride-0.20/lib/perl5/site_perl/5.32.0 /nix/store/flcrkksq0zj8ni5wlfi8dk2jmz0l7wkb-perl5.32.0-Plack-Middleware-MethodOverride-0.20/lib/perl5/site_perl /nix/store/4w22rzrkh4y4vh5xwqhcdcba6csps7wp-perl5.32.0-HTTP-Headers-Fast-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/4w22rzrkh4y4vh5xwqhcdcba6csps7wp-perl5.32.0-HTTP-Headers-Fast-0.22/lib/perl5/site_perl/5.32.0 /nix/store/4w22rzrkh4y4vh5xwqhcdcba6csps7wp-perl5.32.0-HTTP-Headers-Fast-0.22/lib/perl5/site_perl /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl/5.32.0 /nix/store/js4lgkq8k2x7l39hpqbjdms2lwpjxpmm-perl5.32.0-WWW-Form-UrlEncoded-0.26/lib/perl5/site_perl /nix/store/ml4fgd2ir82sqlqpdw49cvbmvh7saivr-perl5.32.0-Stream-Buffered-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/ml4fgd2ir82sqlqpdw49cvbmvh7saivr-perl5.32.0-Stream-Buffered-0.03/lib/perl5/site_perl/5.32.0 /nix/store/ml4fgd2ir82sqlqpdw49cvbmvh7saivr-perl5.32.0-Stream-Buffered-0.03/lib/perl5/site_perl /nix/store/3nb4xq337kxps58hljmyidhf2y3dqyks-perl5.32.0-JSON-MaybeXS-1.004002/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/3nb4xq337kxps58hljmyidhf2y3dqyks-perl5.32.0-JSON-MaybeXS-1.004002/lib/perl5/site_perl/5.32.0 /nix/store/3nb4xq337kxps58hljmyidhf2y3dqyks-perl5.32.0-JSON-MaybeXS-1.004002/lib/perl5/site_perl /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/perl5/site_perl/5.32.0 /nix/store/7ndrckwwz5sd20vyli8hw68625nv1fyy-perl5.32.0-Hash-MultiValue-0.16/lib/perl5/site_perl /nix/store/9c3zvxrqyc1f8jzl54d6n94wgyxrnd7f-perl5.32.0-HTTP-MultiPartParser-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/9c3zvxrqyc1f8jzl54d6n94wgyxrnd7f-perl5.32.0-HTTP-MultiPartParser-0.02/lib/perl5/site_perl/5.32.0 /nix/store/9c3zvxrqyc1f8jzl54d6n94wgyxrnd7f-perl5.32.0-HTTP-MultiPartParser-0.02/lib/perl5/site_perl /nix/store/pph7mlzdkwi9683b1iwfypl97za04fy6-perl5.32.0-HTTP-Entity-Parser-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/pph7mlzdkwi9683b1iwfypl97za04fy6-perl5.32.0-HTTP-Entity-Parser-0.22/lib/perl5/site_perl/5.32.0 /nix/store/pph7mlzdkwi9683b1iwfypl97za04fy6-perl5.32.0-HTTP-Entity-Parser-0.22/lib/perl5/site_perl /nix/store/zy8x9r2zas94a9i316agbslm90rdsm33-perl5.32.0-Filesys-Notify-Simple-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/zy8x9r2zas94a9i316agbslm90rdsm33-perl5.32.0-Filesys-Notify-Simple-0.14/lib/perl5/site_perl/5.32.0 /nix/store/zy8x9r2zas94a9i316agbslm90rdsm33-perl5.32.0-Filesys-Notify-Simple-0.14/lib/perl5/site_perl /nix/store/cbpyi2a7py0siyds9mgn7d9bvwvg2d3f-perl5.32.0-Class-Inspector-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/cbpyi2a7py0siyds9mgn7d9bvwvg2d3f-perl5.32.0-Class-Inspector-1.36/lib/perl5/site_perl/5.32.0 /nix/store/cbpyi2a7py0siyds9mgn7d9bvwvg2d3f-perl5.32.0-Class-Inspector-1.36/lib/perl5/site_perl /nix/store/jyh6dm8kfpdpf4yvcxjc5w00r7lycdxp-perl5.32.0-File-ShareDir-1.116/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/jyh6dm8kfpdpf4yvcxjc5w00r7lycdxp-perl5.32.0-File-ShareDir-1.116/lib/perl5/site_perl/5.32.0 /nix/store/jyh6dm8kfpdpf4yvcxjc5w00r7lycdxp-perl5.32.0-File-ShareDir-1.116/lib/perl5/site_perl /nix/store/m8g5001g9v8b0fnx4xvnf0rrrnh351pc-perl5.32.0-Devel-StackTrace-AsHTML-0.15/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/m8g5001g9v8b0fnx4xvnf0rrrnh351pc-perl5.32.0-Devel-StackTrace-AsHTML-0.15/lib/perl5/site_perl/5.32.0 /nix/store/m8g5001g9v8b0fnx4xvnf0rrrnh351pc-perl5.32.0-Devel-StackTrace-AsHTML-0.15/lib/perl5/site_perl /nix/store/9kjw6wv61zplngfbg4rnqd1rwmhjji5d-perl5.32.0-Cookie-Baker-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/9kjw6wv61zplngfbg4rnqd1rwmhjji5d-perl5.32.0-Cookie-Baker-0.11/lib/perl5/site_perl/5.32.0 /nix/store/9kjw6wv61zplngfbg4rnqd1rwmhjji5d-perl5.32.0-Cookie-Baker-0.11/lib/perl5/site_perl /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/lib/perl5/site_perl/5.32.0 /nix/store/wfcbyvgv6czp83wan3h3gw5v0jmlrq5q-perl5.32.0-POSIX-strftime-Compiler-0.42/lib/perl5/site_perl /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/lib/perl5/site_perl/5.32.0 /nix/store/c6brpd25dkcphxi6c7d6k7i6pa8lzzly-perl5.32.0-Apache-LogFormat-Compiler-0.36/lib/perl5/site_perl /nix/store/6dmpi78z6h3ysp10aydg201lswjfjsdx-perl5.32.0-Plack-1.0047/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/6dmpi78z6h3ysp10aydg201lswjfjsdx-perl5.32.0-Plack-1.0047/lib/perl5/site_perl/5.32.0 /nix/store/6dmpi78z6h3ysp10aydg201lswjfjsdx-perl5.32.0-Plack-1.0047/lib/perl5/site_perl /nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl/5.32.0 /nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl /nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl/5.32.0 /nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl /nix/store/iz6n7rzq3am1hap00y3h8n31ajkv19h7-perl5.32.0-Plack-Middleware-FixMissingBodyInRedirect-0.12/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/iz6n7rzq3am1hap00y3h8n31ajkv19h7-perl5.32.0-Plack-Middleware-FixMissingBodyInRedirect-0.12/lib/perl5/site_perl/5.32.0 /nix/store/iz6n7rzq3am1hap00y3h8n31ajkv19h7-perl5.32.0-Plack-Middleware-FixMissingBodyInRedirect-0.12/lib/perl5/site_perl /nix/store/yk6m0427xpmwzxkswn7vjy69vnlm24hr-perl5.32.0-PerlIO-utf8_strict-0.007/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/yk6m0427xpmwzxkswn7vjy69vnlm24hr-perl5.32.0-PerlIO-utf8_strict-0.007/lib/perl5/site_perl/5.32.0 /nix/store/yk6m0427xpmwzxkswn7vjy69vnlm24hr-perl5.32.0-PerlIO-utf8_strict-0.007/lib/perl5/site_perl /nix/store/aq7mqrbgz0s67zwg505jm940j2wsgszy-perl5.32.0-Path-Class-0.37/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/aq7mqrbgz0s67zwg505jm940j2wsgszy-perl5.32.0-Path-Class-0.37/lib/perl5/site_perl/5.32.0 /nix/store/aq7mqrbgz0s67zwg505jm940j2wsgszy-perl5.32.0-Path-Class-0.37/lib/perl5/site_perl /nix/store/n30fg115fbk9ps3z3gfwziypdnjf70y2-perl5.32.0-aliased-0.34/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/n30fg115fbk9ps3z3gfwziypdnjf70y2-perl5.32.0-aliased-0.34/lib/perl5/site_perl/5.32.0 /nix/store/n30fg115fbk9ps3z3gfwziypdnjf70y2-perl5.32.0-aliased-0.34/lib/perl5/site_perl /nix/store/cbyas9i28bgfhpv6d55xphksi1hhpfd0-perl5.32.0-MooseX-Role-WithOverloading-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/cbyas9i28bgfhpv6d55xphksi1hhpfd0-perl5.32.0-MooseX-Role-WithOverloading-0.17/lib/perl5/site_perl/5.32.0 /nix/store/cbyas9i28bgfhpv6d55xphksi1hhpfd0-perl5.32.0-MooseX-Role-WithOverloading-0.17/lib/perl5/site_perl /nix/store/c8mnpz9fdjj23qixrq3bd6grnsv9qybf-perl5.32.0-Sub-Exporter-ForMethods-0.100052/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/c8mnpz9fdjj23qixrq3bd6grnsv9qybf-perl5.32.0-Sub-Exporter-ForMethods-0.100052/lib/perl5/site_perl/5.32.0 /nix/store/c8mnpz9fdjj23qixrq3bd6grnsv9qybf-perl5.32.0-Sub-Exporter-ForMethods-0.100052/lib/perl5/site_perl /nix/store/gqbisi08nyipgd99qj9pzgjc57md1cr7-perl5.32.0-Carp-Clan-6.08/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/gqbisi08nyipgd99qj9pzgjc57md1cr7-perl5.32.0-Carp-Clan-6.08/lib/perl5/site_perl/5.32.0 /nix/store/gqbisi08nyipgd99qj9pzgjc57md1cr7-perl5.32.0-Carp-Clan-6.08/lib/perl5/site_perl /nix/store/6nzc4xiqjdyf7fj8nrdqckpp024jh2kn-perl5.32.0-MooseX-Types-0.50/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/6nzc4xiqjdyf7fj8nrdqckpp024jh2kn-perl5.32.0-MooseX-Types-0.50/lib/perl5/site_perl/5.32.0 /nix/store/6nzc4xiqjdyf7fj8nrdqckpp024jh2kn-perl5.32.0-MooseX-Types-0.50/lib/perl5/site_perl /nix/store/6g4z8i4mv5qdgk23lck1lx4dh23bi3bm-perl5.32.0-MooseX-MethodAttributes-0.31/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/6g4z8i4mv5qdgk23lck1lx4dh23bi3bm-perl5.32.0-MooseX-MethodAttributes-0.31/lib/perl5/site_perl/5.32.0 /nix/store/6g4z8i4mv5qdgk23lck1lx4dh23bi3bm-perl5.32.0-MooseX-MethodAttributes-0.31/lib/perl5/site_perl /nix/store/dwf2z7bvycp9wj7jlvcvvibd5f0i0hfw-perl5.32.0-namespace-autoclean-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/dwf2z7bvycp9wj7jlvcvvibd5f0i0hfw-perl5.32.0-namespace-autoclean-0.29/lib/perl5/site_perl/5.32.0 /nix/store/dwf2z7bvycp9wj7jlvcvvibd5f0i0hfw-perl5.32.0-namespace-autoclean-0.29/lib/perl5/site_perl /nix/store/0a1bhdz5k9q4jrqpw821nvcgfq4rdjrc-perl5.32.0-MooseX-Role-Parameterized-1.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/0a1bhdz5k9q4jrqpw821nvcgfq4rdjrc-perl5.32.0-MooseX-Role-Parameterized-1.11/lib/perl5/site_perl/5.32.0 /nix/store/0a1bhdz5k9q4jrqpw821nvcgfq4rdjrc-perl5.32.0-MooseX-Role-Parameterized-1.11/lib/perl5/site_perl /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0 /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl/5.32.0 /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl /nix/store/xdcwcpxwrfs4pp6wy5cxd8b70si6484p-perl5.32.0-MooseX-Getopt-0.74/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/xdcwcpxwrfs4pp6wy5cxd8b70si6484p-perl5.32.0-MooseX-Getopt-0.74/lib/perl5/site_perl/5.32.0 /nix/store/xdcwcpxwrfs4pp6wy5cxd8b70si6484p-perl5.32.0-MooseX-Getopt-0.74/lib/perl5/site_perl /nix/store/3jq24k8sy57g532sn5hcnkd7x4xz1a7d-perl5.32.0-B-Hooks-EndOfScope-0.24/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/3jq24k8sy57g532sn5hcnkd7x4xz1a7d-perl5.32.0-B-Hooks-EndOfScope-0.24/lib/perl5/site_perl/5.32.0 /nix/store/3jq24k8sy57g532sn5hcnkd7x4xz1a7d-perl5.32.0-B-Hooks-EndOfScope-0.24/lib/perl5/site_perl /nix/store/s6d770gvkcdqkyg4m7p3k2fli82qrkav-perl5.32.0-namespace-clean-0.27/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/s6d770gvkcdqkyg4m7p3k2fli82qrkav-perl5.32.0-namespace-clean-0.27/lib/perl5/site_perl/5.32.0 /nix/store/s6d770gvkcdqkyg4m7p3k2fli82qrkav-perl5.32.0-namespace-clean-0.27/lib/perl5/site_perl /nix/store/jxhha4bz5i653j0pdqi7pk2jh29l3262-perl5.32.0-Sub-Exporter-0.987/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/jxhha4bz5i653j0pdqi7pk2jh29l3262-perl5.32.0-Sub-Exporter-0.987/lib/perl5/site_perl/5.32.0 /nix/store/jxhha4bz5i653j0pdqi7pk2jh29l3262-perl5.32.0-Sub-Exporter-0.987/lib/perl5/site_perl /nix/store/x98p96d400kwrh25rdxq8a9jlvgckfks-perl5.32.0-Package-Stash-XS-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/x98p96d400kwrh25rdxq8a9jlvgckfks-perl5.32.0-Package-Stash-XS-0.29/lib/perl5/site_perl/5.32.0 /nix/store/x98p96d400kwrh25rdxq8a9jlvgckfks-perl5.32.0-Package-Stash-XS-0.29/lib/perl5/site_perl /nix/store/nmkbj6sg5222fbj6j8bgvkw3fngxiwjn-perl5.32.0-Sub-Name-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/nmkbj6sg5222fbj6j8bgvkw3fngxiwjn-perl5.32.0-Sub-Name-0.26/lib/perl5/site_perl/5.32.0 /nix/store/nmkbj6sg5222fbj6j8bgvkw3fngxiwjn-perl5.32.0-Sub-Name-0.26/lib/perl5/site_perl /nix/store/q7pv962q04yxaplxjgv9sfbdm573izm9-perl5.32.0-Package-DeprecationManager-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/q7pv962q04yxaplxjgv9sfbdm573izm9-perl5.32.0-Package-DeprecationManager-0.17/lib/perl5/site_perl/5.32.0 /nix/store/q7pv962q04yxaplxjgv9sfbdm573izm9-perl5.32.0-Package-DeprecationManager-0.17/lib/perl5/site_perl /nix/store/kmwskacpzcach8d9hh9l18i7q443q5h7-perl5.32.0-Module-Runtime-Conflicts-0.003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/kmwskacpzcach8d9hh9l18i7q443q5h7-perl5.32.0-Module-Runtime-Conflicts-0.003/lib/perl5/site_perl/5.32.0 /nix/store/kmwskacpzcach8d9hh9l18i7q443q5h7-perl5.32.0-Module-Runtime-Conflicts-0.003/lib/perl5/site_perl /nix/store/7ic8vg52bz4y49v3m8m0kassb2bx61cd-perl5.32.0-Eval-Closure-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7ic8vg52bz4y49v3m8m0kassb2bx61cd-perl5.32.0-Eval-Closure-0.14/lib/perl5/site_perl/5.32.0 /nix/store/7ic8vg52bz4y49v3m8m0kassb2bx61cd-perl5.32.0-Eval-Closure-0.14/lib/perl5/site_perl /nix/store/vw08fc5bkqqyj6cawwfxs1339bs15hj0-perl5.32.0-Devel-StackTrace-2.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/vw08fc5bkqqyj6cawwfxs1339bs15hj0-perl5.32.0-Devel-StackTrace-2.04/lib/perl5/site_perl/5.32.0 /nix/store/vw08fc5bkqqyj6cawwfxs1339bs15hj0-perl5.32.0-Devel-StackTrace-2.04/lib/perl5/site_perl /nix/store/y630mycigrpn29l4z4qdpr586br72xaf-perl5.32.0-Sub-Identify-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/y630mycigrpn29l4z4qdpr586br72xaf-perl5.32.0-Sub-Identify-0.14/lib/perl5/site_perl/5.32.0 /nix/store/y630mycigrpn29l4z4qdpr586br72xaf-perl5.32.0-Sub-Identify-0.14/lib/perl5/site_perl /nix/store/jvzyvcbqqnmfs8vgbqdvvlrzx6743310-perl5.32.0-Devel-OverloadInfo-0.005/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/jvzyvcbqqnmfs8vgbqdvvlrzx6743310-perl5.32.0-Devel-OverloadInfo-0.005/lib/perl5/site_perl/5.32.0 /nix/store/jvzyvcbqqnmfs8vgbqdvvlrzx6743310-perl5.32.0-Devel-OverloadInfo-0.005/lib/perl5/site_perl /nix/store/mhbp82xykbnv92l9dpapj5w9qc6faxfc-perl5.32.0-Sub-Exporter-Progressive-0.001013/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/mhbp82xykbnv92l9dpapj5w9qc6faxfc-perl5.32.0-Sub-Exporter-Progressive-0.001013/lib/perl5/site_perl/5.32.0 /nix/store/mhbp82xykbnv92l9dpapj5w9qc6faxfc-perl5.32.0-Sub-Exporter-Progressive-0.001013/lib/perl5/site_perl /nix/store/gf760cgzdg96viici9asg19w1x9n73py-perl5.32.0-Devel-GlobalDestruction-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/gf760cgzdg96viici9asg19w1x9n73py-perl5.32.0-Devel-GlobalDestruction-0.14/lib/perl5/site_perl/5.32.0 /nix/store/gf760cgzdg96viici9asg19w1x9n73py-perl5.32.0-Devel-GlobalDestruction-0.14/lib/perl5/site_perl /nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl/5.32.0 /nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl /nix/store/4p5i7190agrf7xpplfxmgi4r3f8idww9-perl5.32.0-Module-Implementation-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/4p5i7190agrf7xpplfxmgi4r3f8idww9-perl5.32.0-Module-Implementation-0.09/lib/perl5/site_perl/5.32.0 /nix/store/4p5i7190agrf7xpplfxmgi4r3f8idww9-perl5.32.0-Module-Implementation-0.09/lib/perl5/site_perl /nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl/5.32.0 /nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl /nix/store/s0m0fx0k6fw1irrv9v8hpdycd7vqfxqk-perl5.32.0-Dist-CheckConflicts-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/s0m0fx0k6fw1irrv9v8hpdycd7vqfxqk-perl5.32.0-Dist-CheckConflicts-0.11/lib/perl5/site_perl/5.32.0 /nix/store/s0m0fx0k6fw1irrv9v8hpdycd7vqfxqk-perl5.32.0-Dist-CheckConflicts-0.11/lib/perl5/site_perl /nix/store/h36px8aaq0bdaby414fb5y6iz5v6gbw6-perl5.32.0-Package-Stash-0.38/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/h36px8aaq0bdaby414fb5y6iz5v6gbw6-perl5.32.0-Package-Stash-0.38/lib/perl5/site_perl/5.32.0 /nix/store/h36px8aaq0bdaby414fb5y6iz5v6gbw6-perl5.32.0-Package-Stash-0.38/lib/perl5/site_perl /nix/store/p64m9isj5vx7s9kqvdys8ky3pm9cnva8-perl5.32.0-Sub-Install-0.928/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/p64m9isj5vx7s9kqvdys8ky3pm9cnva8-perl5.32.0-Sub-Install-0.928/lib/perl5/site_perl/5.32.0 /nix/store/p64m9isj5vx7s9kqvdys8ky3pm9cnva8-perl5.32.0-Sub-Install-0.928/lib/perl5/site_perl /nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl/5.32.0 /nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl /nix/store/xm7xfzp86zbj8pf39xvcf6sjq2nigyh6-perl5.32.0-Data-OptList-0.110/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/xm7xfzp86zbj8pf39xvcf6sjq2nigyh6-perl5.32.0-Data-OptList-0.110/lib/perl5/site_perl/5.32.0 /nix/store/xm7xfzp86zbj8pf39xvcf6sjq2nigyh6-perl5.32.0-Data-OptList-0.110/lib/perl5/site_perl /nix/store/xqwnvcrwldppdim2wz6d1aczbln4j7yd-perl5.32.0-Class-Load-0.25/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/xqwnvcrwldppdim2wz6d1aczbln4j7yd-perl5.32.0-Class-Load-0.25/lib/perl5/site_perl/5.32.0 /nix/store/xqwnvcrwldppdim2wz6d1aczbln4j7yd-perl5.32.0-Class-Load-0.25/lib/perl5/site_perl /nix/store/y1knlm05kynl2s83w0c002pggdl5461w-perl5.32.0-Class-Load-XS-0.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/y1knlm05kynl2s83w0c002pggdl5461w-perl5.32.0-Class-Load-XS-0.10/lib/perl5/site_perl/5.32.0 /nix/store/y1knlm05kynl2s83w0c002pggdl5461w-perl5.32.0-Class-Load-XS-0.10/lib/perl5/site_perl /nix/store/fwbwzfmg1nk3hfab5gjgcckcg4pck39h-perl5.32.0-Moose-2.2012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fwbwzfmg1nk3hfab5gjgcckcg4pck39h-perl5.32.0-Moose-2.2012/lib/perl5/site_perl/5.32.0 /nix/store/fwbwzfmg1nk3hfab5gjgcckcg4pck39h-perl5.32.0-Moose-2.2012/lib/perl5/site_perl /nix/store/1sn0p1l2yr5fbqyywprkq7adh7af7ix3-perl5.32.0-MooseX-Emulate-Class-Accessor-Fast-0.009032/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/1sn0p1l2yr5fbqyywprkq7adh7af7ix3-perl5.32.0-MooseX-Emulate-Class-Accessor-Fast-0.009032/lib/perl5/site_perl/5.32.0 /nix/store/1sn0p1l2yr5fbqyywprkq7adh7af7ix3-perl5.32.0-MooseX-Emulate-Class-Accessor-Fast-0.009032/lib/perl5/site_perl /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0 /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0 /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl /nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl/5.32.0 /nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl /nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl/5.32.0 /nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl /nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl/5.32.0 /nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl /nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl/5.32.0 /nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl /nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl/5.32.0 /nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl /nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl/5.32.0 /nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl /nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl/5.32.0 /nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl /nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl/5.32.0 /nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl /nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl/5.32.0 /nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl/5.32.0 /nix/store/l40s27ks050v0n3f30dvvlkm70jqa125-perl5.32.0-HTTP-Body-1.22/lib/perl5/site_perl /nix/store/1d6ir3bamrjs3b39hwxqbp5dz9lrj8zd-perl5.32.0-Data-Dump-1.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/1d6ir3bamrjs3b39hwxqbp5dz9lrj8zd-perl5.32.0-Data-Dump-1.23/lib/perl5/site_perl/5.32.0 /nix/store/1d6ir3bamrjs3b39hwxqbp5dz9lrj8zd-perl5.32.0-Data-Dump-1.23/lib/perl5/site_perl /nix/store/6vzwmab3bnkmy4i1v7zin2ykjkg7dgdm-perl5.32.0-MRO-Compat-0.13/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/6vzwmab3bnkmy4i1v7zin2ykjkg7dgdm-perl5.32.0-MRO-Compat-0.13/lib/perl5/site_perl/5.32.0 /nix/store/6vzwmab3bnkmy4i1v7zin2ykjkg7dgdm-perl5.32.0-MRO-Compat-0.13/lib/perl5/site_perl /nix/store/p2d6gfwqiq6klghci5l04j867rwx1mvv-perl5.32.0-Class-C3-Adopt-NEXT-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/p2d6gfwqiq6klghci5l04j867rwx1mvv-perl5.32.0-Class-C3-Adopt-NEXT-0.14/lib/perl5/site_perl/5.32.0 /nix/store/p2d6gfwqiq6klghci5l04j867rwx1mvv-perl5.32.0-Class-C3-Adopt-NEXT-0.14/lib/perl5/site_perl /nix/store/szaqq11dllbkgyh90qqgz4k8f81xraj2-perl5.32.0-CGI-Struct-1.21/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/szaqq11dllbkgyh90qqgz4k8f81xraj2-perl5.32.0-CGI-Struct-1.21/lib/perl5/site_perl/5.32.0 /nix/store/szaqq11dllbkgyh90qqgz4k8f81xraj2-perl5.32.0-CGI-Struct-1.21/lib/perl5/site_perl /nix/store/335p0qxqk2d59bgv3pj6lrb081w3qcsp-perl5.32.0-IO-Stringy-2.113/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/335p0qxqk2d59bgv3pj6lrb081w3qcsp-perl5.32.0-IO-Stringy-2.113/lib/perl5/site_perl/5.32.0 /nix/store/335p0qxqk2d59bgv3pj6lrb081w3qcsp-perl5.32.0-IO-Stringy-2.113/lib/perl5/site_perl /nix/store/alyf7m1zman1jahr0k6kp14hz6kc7hl6-perl5.32.0-CGI-Simple-1.25/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/alyf7m1zman1jahr0k6kp14hz6kc7hl6-perl5.32.0-CGI-Simple-1.25/lib/perl5/site_perl/5.32.0 /nix/store/alyf7m1zman1jahr0k6kp14hz6kc7hl6-perl5.32.0-CGI-Simple-1.25/lib/perl5/site_perl /nix/store/vlqs9sgh4x036dwy8cvm3d7d7ilkcicg-perl5.32.0-Catalyst-Runtime-5.90126/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/vlqs9sgh4x036dwy8cvm3d7d7ilkcicg-perl5.32.0-Catalyst-Runtime-5.90126/lib/perl5/site_perl/5.32.0 /nix/store/vlqs9sgh4x036dwy8cvm3d7d7ilkcicg-perl5.32.0-Catalyst-Runtime-5.90126/lib/perl5/site_perl /nix/store/2dpmbh362dhcz31xilma5bmpn3a9s4yz-perl5.32.0-Catalyst-Plugin-Session-0.41/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/2dpmbh362dhcz31xilma5bmpn3a9s4yz-perl5.32.0-Catalyst-Plugin-Session-0.41/lib/perl5/site_perl/5.32.0 /nix/store/2dpmbh362dhcz31xilma5bmpn3a9s4yz-perl5.32.0-Catalyst-Plugin-Session-0.41/lib/perl5/site_perl /nix/store/6c9fl9k0i7mzh15irw91h25nlbmm40wr-perl5.32.0-Catalyst-Plugin-Authentication-0.10023/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/6c9fl9k0i7mzh15irw91h25nlbmm40wr-perl5.32.0-Catalyst-Plugin-Authentication-0.10023/lib/perl5/site_perl/5.32.0 /nix/store/6c9fl9k0i7mzh15irw91h25nlbmm40wr-perl5.32.0-Catalyst-Plugin-Authentication-0.10023/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Catalyst-Plugin-Authorization-ACL-0.16/blib/lib /build/Catalyst-Plugin-Authorization-ACL-0.16/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /nix/store/bvj6x81qd4mj354zvdvbrjm9lpr5ycc6-perl5.32.0-Test-WWW-Mechanize-Catalyst-0.62/lib/perl5/site_perl/5.32.0/Test/WWW/Mechanize/Catalyst.pm line 10.
+t/more_live_app.t ....... skipped: Test::WWW::Mechanize::Catalyst required
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=4, Tests=2,  3 wallclock secs ( 0.09 usr  0.08 sys +  1.43 cusr  1.33 csys =  2.93 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib/pkgconfig m4datadir=/nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/aclocal aclocaldir=/nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/Authorization/ACL.pm
+Installing /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/Authorization/ACL/Engine.pm
+Installing /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/man/man3/Catalyst::Plugin::Authorization::ACL::Engine.3
+Installing /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/man/man3/Catalyst::Plugin::Authorization::ACL.3
+Appending installation info to /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/man/man3 to /nix/store/x90qqqysyxg2y2d8mbc3vm92mnxyrp1w-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16-devdoc/share/man/man3
+Removing empty /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16/lib
+patching script interpreter paths in /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16
+checking for references to /build/ in /nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x90qqqysyxg2y2d8mbc3vm92mnxyrp1w-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16-devdoc
+gzipping man pages under /nix/store/x90qqqysyxg2y2d8mbc3vm92mnxyrp1w-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x90qqqysyxg2y2d8mbc3vm92mnxyrp1w-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16-devdoc
+checking for references to /build/ in /nix/store/x90qqqysyxg2y2d8mbc3vm92mnxyrp1w-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16-devdoc...
+/nix/store/p2d6bv66l13d2b4qsl725ny075mr3xjj-perl5.32.0-Catalyst-Plugin-Authorization-ACL-0.16

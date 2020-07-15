@@ -1,0 +1,159 @@
+these derivations will be built:
+  /nix/store/lnvc6xndwwvkk7ap7jifrc9izckqn94l-perl5.32.0-Digest-SHA3-1.04.drv
+  /nix/store/8yq0n7lpy7g5dr7kq10k925m507awc6v-perl5.32.0-Crypt-PBKDF2-0.161520.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/blvmqgcnmnbywg8yql1mycid28z2fpj6-Crypt-PBKDF2-0.161520.tar.gz
+  /nix/store/z5nbh3c1brbavp44jxb0jfpibbw6m9bq-Digest-SHA3-1.04.tar.gz
+copying path '/nix/store/blvmqgcnmnbywg8yql1mycid28z2fpj6-Crypt-PBKDF2-0.161520.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/z5nbh3c1brbavp44jxb0jfpibbw6m9bq-Digest-SHA3-1.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lnvc6xndwwvkk7ap7jifrc9izckqn94l-perl5.32.0-Digest-SHA3-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/z5nbh3c1brbavp44jxb0jfpibbw6m9bq-Digest-SHA3-1.04.tar.gz
+source root is Digest-SHA3-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1524266932 of file Digest-SHA3-1.04/sha3sum
+patching sources
+configuring
+patching ./sha3sum...
+patching ./examples/dups3...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Digest::SHA3
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Digest/SHA3.pm blib/lib/Digest/SHA3.pm
+Running Mkbootstrap for SHA3 ()
+chmod 644 "SHA3.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SHA3.bs blib/arch/auto/Digest/SHA3/SHA3.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Digest-SHA3-1.04/typemap'  SHA3.xs > SHA3.xsc
+mv SHA3.xsc SHA3.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.04\" -DXS_VERSION=\"1.04\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   SHA3.c
+rm -f blib/arch/auto/Digest/SHA3/SHA3.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  SHA3.o  -o blib/arch/auto/Digest/SHA3/SHA3.so  \
+      \
+
+chmod 755 blib/arch/auto/Digest/SHA3/SHA3.so
+cp sha3sum blib/script/sha3sum
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/sha3sum
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SHA3.bs blib/arch/auto/Digest/SHA3/SHA3.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/allfcns.t ....... ok
+t/bit-sha3-224.t .. ok
+t/bit-sha3-256.t .. ok
+t/bit-sha3-384.t .. ok
+t/bit-sha3-512.t .. ok
+t/bit-shake128.t .. ok
+t/bit-shake256.t .. ok
+t/bitorder.t ...... ok
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/podcover.t ...... skipped: Test::Pod::Coverage 0.08 required
+t/sha3-224.t ...... ok
+t/sha3-256.t ...... ok
+t/sha3-384.t ...... ok
+t/sha3-512.t ...... ok
+All tests successful.
+Files=14, Tests=32,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.19 cusr  0.04 csys =  0.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib/pkgconfig m4datadir=/nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/aclocal aclocaldir=/nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SHA3.bs blib/arch/auto/Digest/SHA3/SHA3.bs 644
+Manifying 1 pod document
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Digest/SHA3/SHA3.so
+Installing /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Digest/SHA3.pm
+Installing /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/man/man1/sha3sum.1
+Installing /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/man/man3/Digest::SHA3.3
+Installing /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/bin/sha3sum
+Appending installation info to /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/man/man3 to /nix/store/abqx8321brrmr53wq921iskmgnl936wm-perl5.32.0-Digest-SHA3-1.04-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04
+shrinking /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Digest/SHA3/SHA3.so
+gzipping man pages under /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/lib  /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04/bin
+patching script interpreter paths in /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04
+checking for references to /build/ in /nix/store/jfifwnkshp3km0hs90fgbka900hsfa1r-perl5.32.0-Digest-SHA3-1.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/abqx8321brrmr53wq921iskmgnl936wm-perl5.32.0-Digest-SHA3-1.04-devdoc
+gzipping man pages under /nix/store/abqx8321brrmr53wq921iskmgnl936wm-perl5.32.0-Digest-SHA3-1.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/abqx8321brrmr53wq921iskmgnl936wm-perl5.32.0-Digest-SHA3-1.04-devdoc
+checking for references to /build/ in /nix/store/abqx8321brrmr53wq921iskmgnl936wm-perl5.32.0-Digest-SHA3-1.04-devdoc...
+building '/nix/store/8yq0n7lpy7g5dr7kq10k925m507awc6v-perl5.32.0-Crypt-PBKDF2-0.161520.drv'...
+unpacking sources
+unpacking source archive /nix/store/blvmqgcnmnbywg8yql1mycid28z2fpj6-Crypt-PBKDF2-0.161520.tar.gz
+source root is Crypt-PBKDF2-0.161520
+setting SOURCE_DATE_EPOCH to timestamp 1464720901 of file Crypt-PBKDF2-0.161520/t/06-length-limit.t
+patching sources
+configuring
+patching ./t/04-params.t...
+patching ./t/06-length-limit.t...
+patching ./t/05-crypt-ldap.t...
+patching ./t/02-validate.t...
+patching ./t/01-raeburn.t...
+patching ./t/03-clone.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::PBKDF2
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/PBKDF2/Hash/DigestHMAC.pm blib/lib/Crypt/PBKDF2/Hash/DigestHMAC.pm
+cp lib/Crypt/PBKDF2/Hash/HMACSHA2.pm blib/lib/Crypt/PBKDF2/Hash/HMACSHA2.pm
+cp lib/Crypt/PBKDF2/Hash/HMACSHA1.pm blib/lib/Crypt/PBKDF2/Hash/HMACSHA1.pm
+cp lib/Crypt/PBKDF2/Hash/HMACSHA3.pm blib/lib/Crypt/PBKDF2/Hash/HMACSHA3.pm
+cp lib/Crypt/PBKDF2.pm blib/lib/Crypt/PBKDF2.pm
+cp lib/Crypt/PBKDF2/Hash.pm blib/lib/Crypt/PBKDF2/Hash.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-raeburn.t ....... ok
+t/02-validate.t ...... ok
+t/03-clone.t ......... ok
+t/04-params.t ........ ok
+t/05-crypt-ldap.t .... ok
+t/06-length-limit.t .. ok
+All tests successful.
+Files=6, Tests=4050,  3 wallclock secs ( 0.36 usr  0.06 sys +  2.23 cusr  0.72 csys =  3.37 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/pkgconfig m4datadir=/nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/aclocal aclocaldir=/nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2/Hash.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2/Hash/HMACSHA3.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2/Hash/HMACSHA1.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2/Hash/HMACSHA2.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/site_perl/5.32.0/Crypt/PBKDF2/Hash/DigestHMAC.pm
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2::Hash.3
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2::Hash::HMACSHA2.3
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2::Hash::HMACSHA1.3
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2::Hash::DigestHMAC.3
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2.3
+Installing /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3/Crypt::PBKDF2::Hash::HMACSHA3.3
+Appending installation info to /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/man3 to /nix/store/rsblxr5hjbjdax2gis0djf79pgih43ql-perl5.32.0-Crypt-PBKDF2-0.161520-devdoc/share/man/man3
+Removing empty /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520/lib
+patching script interpreter paths in /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520
+checking for references to /build/ in /nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rsblxr5hjbjdax2gis0djf79pgih43ql-perl5.32.0-Crypt-PBKDF2-0.161520-devdoc
+gzipping man pages under /nix/store/rsblxr5hjbjdax2gis0djf79pgih43ql-perl5.32.0-Crypt-PBKDF2-0.161520-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rsblxr5hjbjdax2gis0djf79pgih43ql-perl5.32.0-Crypt-PBKDF2-0.161520-devdoc
+checking for references to /build/ in /nix/store/rsblxr5hjbjdax2gis0djf79pgih43ql-perl5.32.0-Crypt-PBKDF2-0.161520-devdoc...
+/nix/store/4636jzbid48r8ni80xpir3dnq4i149hb-perl5.32.0-Crypt-PBKDF2-0.161520

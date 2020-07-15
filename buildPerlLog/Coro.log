@@ -1,0 +1,525 @@
+these derivations will be built:
+  /nix/store/362lscngmpq33vrfavqyz8blzhkxhbrl-perl5.32.0-Guard-1.023.drv
+  /nix/store/bvy7vak533f864kgqlnmvf58dxyvcfvf-perl5.32.0-Coro-6.55.drv
+these paths will be fetched (0.19 MiB download, 0.19 MiB unpacked):
+  /nix/store/5q650f6hmqwdxcvxkymzqyvadyrp2a2d-Coro-6.55.tar.gz
+copying path '/nix/store/5q650f6hmqwdxcvxkymzqyvadyrp2a2d-Coro-6.55.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/362lscngmpq33vrfavqyz8blzhkxhbrl-perl5.32.0-Guard-1.023.drv'...
+unpacking sources
+unpacking source archive /nix/store/l44m0j2cbvj1pajqylljchpyvdi2va02-Guard-1.023.tar.gz
+source root is Guard-1.023
+setting SOURCE_DATE_EPOCH to timestamp 1416507227 of file Guard-1.023/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Guard
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Guard.pm blib/lib/Guard.pm
+Running Mkbootstrap for Guard ()
+chmod 644 "Guard.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Guard.bs blib/arch/auto/Guard/Guard.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Guard.xs > Guard.xsc
+mv Guard.xsc Guard.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.023\" -DXS_VERSION=\"1.023\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Guard.c
+rm -f blib/arch/auto/Guard/Guard.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Guard.o  -o blib/arch/auto/Guard/Guard.so  \
+      \
+
+chmod 755 blib/arch/auto/Guard/Guard.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Guard.bs blib/arch/auto/Guard/Guard.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t .... ok
+t/01_scoped.t .. ok
+t/02_guard.t ... ok
+t/03_die.t ..... ok
+All tests successful.
+Files=4, Tests=33,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.01 cusr  0.00 csys =  0.04 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/pkgconfig m4datadir=/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/share/aclocal aclocaldir=/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Guard.bs blib/arch/auto/Guard/Guard.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Guard/Guard.so
+Installing /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Guard.pm
+Installing /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/share/man/man3/Guard.3
+Appending installation info to /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/share/man/man3 to /nix/store/0jy689bxv64ry34rvv6k4f90s2n0jsa9-perl5.32.0-Guard-1.023-devdoc/share/man/man3
+Removing empty /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023
+shrinking /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Guard/Guard.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib
+patching script interpreter paths in /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023
+checking for references to /build/ in /nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0jy689bxv64ry34rvv6k4f90s2n0jsa9-perl5.32.0-Guard-1.023-devdoc
+gzipping man pages under /nix/store/0jy689bxv64ry34rvv6k4f90s2n0jsa9-perl5.32.0-Guard-1.023-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0jy689bxv64ry34rvv6k4f90s2n0jsa9-perl5.32.0-Guard-1.023-devdoc
+checking for references to /build/ in /nix/store/0jy689bxv64ry34rvv6k4f90s2n0jsa9-perl5.32.0-Guard-1.023-devdoc...
+building '/nix/store/bvy7vak533f864kgqlnmvf58dxyvcfvf-perl5.32.0-Coro-6.55.drv'...
+unpacking sources
+unpacking source archive /nix/store/5q650f6hmqwdxcvxkymzqyvadyrp2a2d-Coro-6.55.tar.gz
+source root is Coro-6.55
+setting SOURCE_DATE_EPOCH to timestamp 1563550765 of file Coro-6.55/README
+patching sources
+configuring
+patching ./Coro/jit-x86-unix.pl...
+patching ./Coro/jit-amd64-unix.pl...
+patching ./eg/event...
+patching ./eg/prodcons3...
+patching ./eg/prodcons1...
+patching ./eg/prodcons2...
+patching ./eg/dns...
+patching ./eg/bench...
+patching ./eg/lwp...
+patching ./eg/readline...
+patching ./eg/myhttpd...
+
+***
+*** Canary::Stability COMPATIBILITY AND SUPPORT CHECK
+*** =================================================
+***
+*** Hi!
+***
+*** I do my best to provide predictable and reliable software.
+***
+*** However, in recent releases, P5P (who maintain perl) have been
+*** introducing regressions that are sometimes subtle and at other times
+*** catastrophic, often for personal preferences with little or no concern
+*** for existing code, most notably CPAN.
+***
+*** For this reason, it has become very hard for me to maintain the level
+*** of reliability and support I have committed myself to in the past, at
+*** least with some perl versions: I simply can't keep up working around new
+*** bugs or gratituous incompatibilities, and in turn you might suffer from
+*** unanticipated problems.
+***
+*** Therefore I have introduced a support and compatibility check, the results
+*** of which follow below, together with a FAQ and some recommendations.
+***
+*** This check is just to let you know that there might be a risk, so you can
+*** make judgement calls on how to proceed - it will not keep the module from
+*** installing or working.
+***
+*** The stability canary says: (nothing, it was driven away by harsh weather)
+***
+*** It seems you are running perl version 5.032000, likely the "official" or
+*** "standard" version. While there is nothing wrong with doing that,
+*** standard perl versions 5.022 and up are not supported by Coro.
+*** While this might be fatal, it might also be all right - if you run into
+*** problems, you might want to downgrade your perl or switch to the
+*** stability branch.
+***
+*** If everything works fine, you can ignore this message.
+***
+***
+*** Stability canary mini-FAQ:
+***
+*** Do I need to do anything?
+***    With luck, no. While some distributions are known to fail
+***    already, most should probably work. This message is here
+***    to alert you that your perl is not supported by Coro,
+***    and if things go wrong, you either need to downgrade, or
+***    sidegrade to the stability variant of your perl version,
+***    or simply live with the consequences.
+***
+*** What is this canary thing?
+***    It's purpose is to check support status of Coro with
+***    respect to your perl version.
+***
+*** What is this "stability branch"?
+***    It's a branch or fork of the official perl, by schmorp, to
+***    improve stability and compatibility with existing modules.
+***
+*** How can I skip this prompt on automated installs?
+***    Set PERL_CANARY_STABILITY_NOPROMPT=1 in your environment.
+***    More info is in the Canary::Stability manpage.
+***
+*** Long version of this FAQ: http://stableperl.schmorp.de/faq.html
+*** Stability Branch homepage: http://stableperl.schmorp.de/
+***
+
+Continue anyways?  [y] y
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+*** Event not found, not building Event support.
+
+
+*** EV not found, not building EV support.
+
+Checking if your kit is complete...
+Looks good
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro has a number of configuration options. Due to its maturity, the
+defaults that Coro chooses are usually fine, so you can decide to skip
+these questions. Only if something went wrong you should select 'n'
+here and manually configure Coro, and, of course, report this to the
+maintainer :)
+
+Skip further questions and use defaults (y/n)? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro can use a number of methods to implement coroutines at the C
+level. The default chosen is based on your current confguration and is
+correct in most cases, but you still can chose between these alternatives:
+
+u  The unix 'ucontext.h' functions are relatively new and not implemented
+   or well-tested in older unices. They allow very fast coroutine creation
+   and reasonably fast switching. They are, however, usually slower than
+   the other alternatives due to an extra syscall done by swapcontext. And
+   while nominally most portable (it's the only POSIX-standardised
+   interface for coroutines), ucontext functions are, as usual, broken on
+   most/all BSDs.
+
+s  If the ucontext functions are not working or you don't want
+   to use them for other reasons you can try a workaround using
+   setjmp/longjmp/sigaltstack (also standard unix functions). Coroutine
+   creation is rather slow, but switching is very fast (often much faster
+   than with the ucontext functions). Unfortunately, glibc-2.1 and
+   below don't even feature a working sigaltstack. You cannot use this
+   implementation if some other code uses SIGUSR2 or you plan to create
+   coroutines from an alternative signal stack, as both are being used for
+   coroutine creation.
+
+a  Handcoded assembly. This is the fastest and most compatible method,
+   with the least side effects, if it works, that is. It has been tested
+   on GNU/Linux x86 and x86_64 systems and should work on all x86/x86_64
+   systems using the SVR ELF ABI (it is also reported to be working on
+   Strawberry Perl for Windows using MinGW). This is the recommended
+   method on supported platforms. When it doesn't work, use another
+   method, such as (s)etjmp/longjmp.
+
+l  GNU/Linux. Very old GNU/Linux systems (glibc-2.1 and below) need
+   this hack. Since it is very linux-specific it is also quite fast and
+   recommended even for newer versions; when it works, that is (currently
+   x86 and a few others only. If it compiles, it's usually ok). Newer
+   glibc versions (>= 2.5) stop working with this implementation however.
+
+i  IRIX. For some reason, SGI really does not like to follow POSIX (does
+   that surprise you?), so this workaround might be needed (it's fast),
+   although [s] and [u] should also work now.
+
+w  Microsoft Windows. Try this on Microsoft Windows when using Cygwin or
+   the MSVC compilers (e.g. ActiveState Perl, but see "a" for Strawberry
+   Perl), although, as there is no standard on how to do this under
+   windows, different environments might work differently. Doh.
+
+f  Microsoft Windows. Try this on Microsoft Windows if w fails. It is slower
+   and uses a lot more memory, but should be working all the time.
+
+p  Use pthread API. Try to avoid this option, it was only created to
+   make a point about the programming language shootout. It is unlikely
+   to work with perls that have windows process emulation enabled ("perl
+   threads"). It is also likely the slowest method of implementing
+   coroutines. It might work fine as a last resort, however, as the
+   pthread API is slightly better tested than ucontext functions for
+   example. Of course, not on BSDs, who usually have very broken pthread
+   implementations.
+
+Coro tries hard to come up with a suitable default for most systems,
+so pressing return at the prompt usually does the right thing. If you
+experience problems (e.g. make test fails) then you should experiment with
+this setting.
+
+Use which implementation,
+<s>etjmp, <u>ctx, <a>sm, <i>rix, <l>inux, <p>threads, <w>indows, <f>iber? [a] a
+
+Using handcoded assembler implementation
+
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Per-context stack size factor: Depending on your settings, Coro tries to
+share the C stacks is creates as much as possible, but sometimes it needs
+to allocate a new one. This setting controls the maximum size that gets
+allocated, and should not be set too high, as memory and address space
+still is wasted even if it's not fully used. The value entered will be
+multiplied by sizeof(void *), which is usually 4 on 32-bit systems, and 8
+on 64-bit systems.
+
+A setting of 16384 (the default) therefore corresponds to a 64k..128k
+stack, which usually is ample space (you might even want to try 8192 or
+lower if your program creates many coroutines).
+
+On systems supporting mmap and dynamic memory management, the actual
+memory usually gets allocated on demand, but with many large stacks you
+can still run out of address space on your typical 32 bit platform (not to
+forget the pagetables).
+
+Some perls (mostly threaded ones and perl compiled under linux 2.6) and
+some programs (inefficient regexes can use a lot of stack space) may
+need much, much more: If Coro segfaults with weird backtraces (e.g. in a
+function prologue) or in t/10_bugs.t, you might want to increase this to
+65536 or more.
+
+The default should be fine, and can be changed at runtime with
+Coro::State::cctx_stacksize.
+
+C stack size factor? [16384] 16384
+using a stacksize of 16384 * sizeof(void*)
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro can optionally put a guard area before each stack segment: When the
+stack is too small and the access is not too far outside the stack (i.e.
+within the guard area), then the program will safely segfault instead of
+running into other data. The cost is some additional overhead with is
+usually negligible, and extra use of address space.
+
+The guard area size currently needs to be specified in pages (typical
+pagesizes are 4k and 8k). The guard area is only enabled on a few
+hardcoded architectures and is ignored on others. The actual preprocessor
+expression disables this feature if:
+
+   !__i386 && !__x86_64 && !__powerpc && !__m68k
+   && !__alpha && !__mips && !__sparc64
+
+The default, as usual, should be just fine.
+
+Number of guard pages (0 disables)? [4] 4
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro can tell valgrind about its stacks and so reduce spurious warnings
+where valgrind would otherwise complain about possible stack switches.
+
+Enabling this does not incur noticable runtime or memory overhead, but it
+requires that you have the <valgrind/valgrind.h> header file available.
+
+Valgrind support is completely optional, so disabling it is the safe
+choice.
+
+Enable valgrind support (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro can use (or even trick) some perl functions into doing what it needs
+instead of relying on (some) of its own functions. This might increase
+chances that it compiles and works, but it could just as well result in
+memory leaks, crashes or silent data corruption. It certainly does result
+in slightly slower speed and higher memory consumption, though, so YOU
+SHOULD ENABLE THIS OPTION ONLY AS A LAST RESORT.
+
+Prefer perl functions over coro functions (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro can use a simple JIT compiler to compile a part of the thread switch
+function at runtime. On perls with windows process emulation (most!),
+this results in a 50% speed improvement. On sane perls, the gain is much
+less, usually around 5%. If you enable this option, then the JIT will
+be enabled, on compatible operating systems and CPUs (currently only
+x86/amd64 on certain unix clones). Otherwise, it will be disabled. It
+should be safe to leave on - this setting is only here so you can switch
+it off in case of problems.
+
+Note that some broken kernels (often calling themselves "hardened") break
+all JIT generation by manipulating some system calls. If you get bus
+errors or segmentation faults immediately when the JIT is enabled but not
+without, then note that disabling the JIT only fixes some symptoms, not
+the underlying problem, and you might run into other problems later.
+
+Try to use the JIT compiler, if available? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Coro has experimental support for cloning states. This can be used
+to implement a scheme-like call/cc. However, this doesn't add to the
+expressiveness in general, and is likely perl-version specific (and perl
+5.12 deliberately removed support for it). As such, it is disabled by
+default.  Enable it when you want to play around with it, but note that it
+isn't supported, and unlikely ever will be. It exists mainly to prove that
+it could be done - if only it were useful for something.
+
+Implement Coro::State->clone method (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Coro
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Coro/RWLock.pm blib/lib/Coro/RWLock.pm
+cp Coro/Handle.pm blib/lib/Coro/Handle.pm
+cp Coro/Select.pm blib/lib/Coro/Select.pm
+cp Coro/Debug.pm blib/lib/Coro/Debug.pm
+cp Coro/AIO.pm blib/lib/Coro/AIO.pm
+cp Coro/Signal.pm blib/lib/Coro/Signal.pm
+cp Coro/AnyEvent.pm blib/lib/Coro/AnyEvent.pm
+cp Coro/Storable.pm blib/lib/Coro/Storable.pm
+cp Coro/CoroAPI.h blib/lib/Coro/CoroAPI.h
+cp Coro/State.pm blib/lib/Coro/State.pm
+cp Coro/Socket.pm blib/lib/Coro/Socket.pm
+cp Coro.pm blib/lib/Coro.pm
+cp Coro/Semaphore.pm blib/lib/Coro/Semaphore.pm
+cp Coro/Channel.pm blib/lib/Coro/Channel.pm
+cp Coro/SemaphoreSet.pm blib/lib/Coro/SemaphoreSet.pm
+cp Coro/Timer.pm blib/lib/Coro/Timer.pm
+cp Coro/Specific.pm blib/lib/Coro/Specific.pm
+cp Coro/LWP.pm blib/lib/Coro/LWP.pm
+cp Coro/jit-amd64-unix.pl blib/lib/Coro/jit-amd64-unix.pl
+cp Coro/Util.pm blib/lib/Coro/Util.pm
+cp Coro/BDB.pm blib/lib/Coro/BDB.pm
+cp Coro/jit-x86-unix.pl blib/lib/Coro/jit-x86-unix.pl
+cp Coro/MakeMaker.pm blib/lib/Coro/MakeMaker.pm
+make[1]: Entering directory '/build/Coro-6.55/Coro'
+Skip ../blib/lib/Coro/jit-amd64-unix.pl (unchanged)
+cp Intro.pod ../blib/lib/Coro/Intro.pod
+Skip ../blib/lib/Coro/AIO.pm (unchanged)
+Skip ../blib/lib/Coro/SemaphoreSet.pm (unchanged)
+Skip ../blib/lib/Coro/MakeMaker.pm (unchanged)
+Skip ../blib/lib/Coro/State.pm (unchanged)
+Skip ../blib/lib/Coro/Signal.pm (unchanged)
+Skip ../blib/lib/Coro/Timer.pm (unchanged)
+Skip ../blib/lib/Coro/Semaphore.pm (unchanged)
+Skip ../blib/lib/Coro/BDB.pm (unchanged)
+Skip ../blib/lib/Coro/Channel.pm (unchanged)
+Skip ../blib/lib/Coro/Debug.pm (unchanged)
+Skip ../blib/lib/Coro/AnyEvent.pm (unchanged)
+Skip ../blib/lib/Coro/Select.pm (unchanged)
+Skip ../blib/lib/Coro/jit-x86-unix.pl (unchanged)
+Skip ../blib/lib/Coro/Socket.pm (unchanged)
+Skip ../blib/lib/Coro/Util.pm (unchanged)
+Skip ../blib/lib/Coro/RWLock.pm (unchanged)
+Skip ../blib/lib/Coro/Storable.pm (unchanged)
+Skip ../blib/lib/Coro/LWP.pm (unchanged)
+Skip ../blib/lib/Coro/Handle.pm (unchanged)
+Skip ../blib/lib/Coro/Specific.pm (unchanged)
+Running Mkbootstrap for State ()
+chmod 644 "State.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- State.bs ../blib/arch/auto/Coro/State/State.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Coro-6.55/Coro/typemap'  State.xs > State.xsc
+Warning: Aliases 'is_zombie' and 'is_destroyed' have identical values in State.xs, line 3889
+mv State.xsc State.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"6.55\" -DXS_VERSION=\"6.55\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DCORO_ASM -DCORO_STACKSIZE=16384 -DCORO_GUARDPAGES=4 -DCORO_JIT=1 State.c
+rm -f ../blib/arch/auto/Coro/State/State.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  State.o  -o ../blib/arch/auto/Coro/State/State.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Coro/State/State.so
+Manifying 20 pod documents
+make[1]: Leaving directory '/build/Coro-6.55/Coro'
+Manifying 20 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+make[1]: Entering directory '/build/Coro-6.55/Coro'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- State.bs ../blib/arch/auto/Coro/State/State.bs 644
+Manifying 20 pod documents
+make[1]: Leaving directory '/build/Coro-6.55/Coro'
+make[1]: Entering directory '/build/Coro-6.55/Coro'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- State.bs ../blib/arch/auto/Coro/State/State.bs 644
+No tests defined for Coro::State extension.
+make[1]: Leaving directory '/build/Coro-6.55/Coro'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_basic.t .......... ok
+t/01_process.t ........ ok
+t/02_channel.t ........ ok
+t/03_channel.t ........ ok
+t/04_rwlock.t ......... ok
+t/05_specific.t ....... ok
+t/06_prio.t ........... ok
+t/07_eval.t ........... ok
+t/08_join.t ........... ok
+t/10_bugs.t ........... ok
+t/11_deadlock.t ....... ok
+t/12_exit.t ........... ok
+t/13_diewarn.t ........ ok
+t/14_load.t ........... ok
+t/15_semaphore.t ...... ok
+t/16_signal.t ......... ok
+t/17_rouse.t .......... ok
+t/18_winder.t ......... ok
+t/19_handle.t ......... ok
+t/20_mutual_cancel.t .. ok
+All tests successful.
+Files=20, Tests=206,  0 wallclock secs ( 0.07 usr  0.02 sys +  0.31 cusr  0.08 csys =  0.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/pkgconfig m4datadir=/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/aclocal aclocaldir=/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/aclocal install
+make[1]: Entering directory '/build/Coro-6.55/Coro'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- State.bs ../blib/arch/auto/Coro/State/State.bs 644
+Manifying 20 pod documents
+make[1]: Leaving directory '/build/Coro-6.55/Coro'
+Manifying 20 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Coro/State/State.so
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Intro.pod
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Semaphore.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Specific.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Debug.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Signal.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Socket.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/LWP.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/AIO.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/CoroAPI.h
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/jit-x86-unix.pl
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Util.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Channel.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/AnyEvent.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Storable.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Handle.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/BDB.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/jit-amd64-unix.pl
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/State.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Select.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/MakeMaker.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/RWLock.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/Timer.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/SemaphoreSet.pm
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::MakeMaker.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Debug.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Semaphore.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Select.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Timer.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::LWP.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::SemaphoreSet.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::AnyEvent.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Intro.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Util.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Storable.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Handle.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Channel.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::State.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::AIO.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Signal.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Specific.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::BDB.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::Socket.3
+Installing /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3/Coro::RWLock.3
+Appending installation info to /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/man3 to /nix/store/s5ddy92s37aqms3k3p70c4pbmjdba83q-perl5.32.0-Coro-6.55-devdoc/share/man/man3
+Removing empty /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55
+shrinking /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Coro/State/State.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib
+patching script interpreter paths in /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55
+/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/jit-x86-unix.pl: interpreter directive changed from "/opt/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl"
+/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Coro/jit-amd64-unix.pl: interpreter directive changed from "/opt/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl -I/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl -I/nix/store/kjaazr3yayngl5nn30wv7gyqamc253gf-perl5.32.0-Guard-1.023/lib/perl5/site_perl -I/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl -I/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55...
+shrinking RPATHs of ELF executables and libraries in /nix/store/s5ddy92s37aqms3k3p70c4pbmjdba83q-perl5.32.0-Coro-6.55-devdoc
+gzipping man pages under /nix/store/s5ddy92s37aqms3k3p70c4pbmjdba83q-perl5.32.0-Coro-6.55-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/s5ddy92s37aqms3k3p70c4pbmjdba83q-perl5.32.0-Coro-6.55-devdoc
+checking for references to /build/ in /nix/store/s5ddy92s37aqms3k3p70c4pbmjdba83q-perl5.32.0-Coro-6.55-devdoc...
+/nix/store/ds6cn8pz59641c52cfhpg5dpgy3ay33l-perl5.32.0-Coro-6.55

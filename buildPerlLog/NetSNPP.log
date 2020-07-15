@@ -1,0 +1,52 @@
+these derivations will be built:
+  /nix/store/9fznbsha4n90715bwykm6klglyxp9mqf-perl5.32.0-Net-SNPP-1.17.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/rzdwp2wpxkk2x16z5mhbai8370vlz1lw-Net-SNPP-1.17.tar.gz
+copying path '/nix/store/rzdwp2wpxkk2x16z5mhbai8370vlz1lw-Net-SNPP-1.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9fznbsha4n90715bwykm6klglyxp9mqf-perl5.32.0-Net-SNPP-1.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/rzdwp2wpxkk2x16z5mhbai8370vlz1lw-Net-SNPP-1.17.tar.gz
+source root is Net-SNPP-1.17
+setting SOURCE_DATE_EPOCH to timestamp 1081448601 of file Net-SNPP-1.17/META.yml
+patching sources
+configuring
+patching ./t/use.t...
+patching ./t/server.t...
+patching ./bin/send_two_way.pl...
+patching ./bin/check_two_way.pl...
+patching ./bin/snppd.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::SNPP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/SNPP.pm blib/lib/Net/SNPP.pm
+cp lib/Net/SNPP/Server.pm blib/lib/Net/SNPP/Server.pm
+cp lib/Net/SNPP/HylaFAX.pm blib/lib/Net/SNPP/HylaFAX.pm
+Manifying 2 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib/pkgconfig m4datadir=/nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/aclocal aclocaldir=/nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib/perl5/site_perl/5.32.0/Net/SNPP.pm
+Installing /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib/perl5/site_perl/5.32.0/Net/SNPP/Server.pm
+Installing /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib/perl5/site_perl/5.32.0/Net/SNPP/HylaFAX.pm
+Installing /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/man/man3/Net::SNPP.3
+Installing /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/man/man3/Net::SNPP::Server.3
+Appending installation info to /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/man/man3 to /nix/store/glxvq82gkcm6xcj5krpv191v47i4iwbq-perl5.32.0-Net-SNPP-1.17-devdoc/share/man/man3
+Removing empty /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17/lib
+patching script interpreter paths in /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17
+checking for references to /build/ in /nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/glxvq82gkcm6xcj5krpv191v47i4iwbq-perl5.32.0-Net-SNPP-1.17-devdoc
+gzipping man pages under /nix/store/glxvq82gkcm6xcj5krpv191v47i4iwbq-perl5.32.0-Net-SNPP-1.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/glxvq82gkcm6xcj5krpv191v47i4iwbq-perl5.32.0-Net-SNPP-1.17-devdoc
+checking for references to /build/ in /nix/store/glxvq82gkcm6xcj5krpv191v47i4iwbq-perl5.32.0-Net-SNPP-1.17-devdoc...
+/nix/store/zgi24i2d9sip4agmqb2dfwqpjizxbq1c-perl5.32.0-Net-SNPP-1.17

@@ -1,0 +1,2261 @@
+these derivations will be built:
+  /nix/store/kkkwvfv0y6f2i463k48ch0cq0c9bndsa-perl5.32.0-Module-Signature-0.83.drv
+  /nix/store/b6h9fskw66an2yjilma5pd0dg7ybgb85-perl5.32.0-CPAN-Checksums-2.12.drv
+  /nix/store/wpdr1kf9fjblmmcji15pz954pw7wmb4c-perl5.32.0-YAML-LibYAML-0.82.drv
+  /nix/store/wr60c1s9y57hzkf0230wv6y4qhvl7bg3-perl5.32.0-Expect-1.35.drv
+  /nix/store/689mn24hnpdg2q0r3wciana7mbwyvc1g-perl5.32.0-CPAN-2.28.drv
+these paths will be fetched (0.97 MiB download, 0.97 MiB unpacked):
+  /nix/store/9fgily3khs7r49av1438wr4zm3ialr1h-CPAN-Checksums-2.12.tar.gz
+  /nix/store/bb79bjka907kkhn8x7hkn0ni9jv0kyh2-Module-Signature-0.83.tar.gz
+  /nix/store/k7zgrixs462lc0kyd258vlqigxr19414-Expect-1.35.tar.gz
+  /nix/store/lh7l9nhym0qmpc540zjw3rilshxiyzj9-CPAN-2.28.tar.gz
+copying path '/nix/store/lh7l9nhym0qmpc540zjw3rilshxiyzj9-CPAN-2.28.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/k7zgrixs462lc0kyd258vlqigxr19414-Expect-1.35.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9fgily3khs7r49av1438wr4zm3ialr1h-CPAN-Checksums-2.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wpdr1kf9fjblmmcji15pz954pw7wmb4c-perl5.32.0-YAML-LibYAML-0.82.drv'...
+copying path '/nix/store/bb79bjka907kkhn8x7hkn0ni9jv0kyh2-Module-Signature-0.83.tar.gz' from 'https://cache.nixos.org'...
+unpacking sources
+unpacking source archive /nix/store/iz1qb6mia5h16h6ri0cga23bv2g0gzsh-YAML-LibYAML-0.82.tar.gz
+source root is YAML-LibYAML-0.82
+setting SOURCE_DATE_EPOCH to timestamp 1588444754 of file YAML-LibYAML-0.82/t/yaml_tests.yaml
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./LibYAML/update.sh...
+building '/nix/store/wr60c1s9y57hzkf0230wv6y4qhvl7bg3-perl5.32.0-Expect-1.35.drv'...
+unpacking sources
+unpacking source archive /nix/store/k7zgrixs462lc0kyd258vlqigxr19414-Expect-1.35.tar.gz
+Checking if your kit is complete...
+source root is Expect-1.35
+setting SOURCE_DATE_EPOCH to timestamp 1495134559 of file Expect-1.35/META.yml
+patching sources
+configuring
+Looks good
+patching ./tutorial/3.A.debugging...
+patching ./tutorial/2.A.ftp...
+patching ./tutorial/2.B.rlogin...
+patching ./tutorial/6.A.smtp-verify...
+patching ./tutorial/4.A.top...
+patching ./tutorial/5.A.top...
+patching ./tutorial/6.B.modem-init...
+patching ./tutorial/5.B.top...
+patching ./examples/ssh.pl...
+building '/nix/store/kkkwvfv0y6f2i463k48ch0cq0c9bndsa-perl5.32.0-Module-Signature-0.83.drv'...
+patching ./examples/kibitz/kibitz...
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for YAML::LibYAML
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+unpacking sources
+unpacking source archive /nix/store/bb79bjka907kkhn8x7hkn0ni9jv0kyh2-Module-Signature-0.83.tar.gz
+source root is Module-Signature-0.83
+setting SOURCE_DATE_EPOCH to timestamp 1535531631 of file Module-Signature-0.83/SIGNATURE
+patching sources
+configuring
+patching ./script/cpansign...
+Checking if your kit is complete...
+patching ./t/2-cygwin.t...
+patching ./t/0-signature.t...
+patching ./t/1-basic.t...
+patching ./t/wrap.pl...
+Looks good
+patching ./t/3-verify.t...
+Generating a Unix-style Makefile
+Writing Makefile for Expect
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/YAML/XS.pm blib/lib/YAML/XS.pm
+cp lib/YAML/LibYAML.pm blib/lib/YAML/LibYAML.pm
+cp lib/YAML/LibYAML.pod blib/lib/YAML/LibYAML.pod
+cp lib/YAML/XS.pod blib/lib/YAML/XS.pod
+make[1]: Entering directory '/build/YAML-LibYAML-0.82/LibYAML'
+Looking for GNU Privacy Guard (gpg), a cryptographic signature tool...
+gpg not found.
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Crypt::OpenPGP 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Module::Signature
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/YAML/XS/LibYAML.pm ../blib/lib/YAML/XS/LibYAML.pm
+Running Mkbootstrap for LibYAML ()
+chmod 644 "LibYAML.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H api.c
+cp lib/Expect.pm blib/lib/Expect.pm
+Manifying 1 pod document
+cp lib/Module/Signature.pm blib/lib/Module/Signature.pm
+cp script/cpansign blib/script/cpansign
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cpansign
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H dumper.c
+Manifying 1 pod document
+t/01-test.t .......     # Basic tests...
+t/01-test.t ....... 1/14     # Testing exec failure...
+Manifying 1 pod document
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H emitter.c
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/0-signature.t .. skipped: Set the environment variable TEST_SIGNATURE to enable this test.
+t/1-basic.t ...... ok
+t/2-cygwin.t ..... skipped: Cygwin only tests
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H loader.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H parser.c
+t/3-verify.t ..... ok
+All tests successful.
+Files=4, Tests=8,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.61 cusr  0.20 csys =  0.86 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/lib/pkgconfig m4datadir=/nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/aclocal aclocaldir=/nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/aclocal install
+t/01-test.t ....... 2/14     # Testing exp_continue...
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/lib/perl5/site_perl/5.32.0/Module/Signature.pm
+Installing /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/man/man1/cpansign.1
+Installing /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/man/man3/Module::Signature.3
+Installing /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/bin/cpansign
+Appending installation info to /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H perl_libyaml.c
+post-installation fixup
+Moving /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/man/man3 to /nix/store/ymkad1jbzn9f83z65n79f6p7dpfmf8pi-perl5.32.0-Module-Signature-0.83-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83
+gzipping man pages under /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/lib  /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83/bin
+patching script interpreter paths in /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83
+checking for references to /build/ in /nix/store/5z6mkscm9jzhx1x8hmn8ry4vwp7qg072-perl5.32.0-Module-Signature-0.83...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ymkad1jbzn9f83z65n79f6p7dpfmf8pi-perl5.32.0-Module-Signature-0.83-devdoc
+gzipping man pages under /nix/store/ymkad1jbzn9f83z65n79f6p7dpfmf8pi-perl5.32.0-Module-Signature-0.83-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ymkad1jbzn9f83z65n79f6p7dpfmf8pi-perl5.32.0-Module-Signature-0.83-devdoc
+checking for references to /build/ in /nix/store/ymkad1jbzn9f83z65n79f6p7dpfmf8pi-perl5.32.0-Module-Signature-0.83-devdoc...
+building '/nix/store/b6h9fskw66an2yjilma5pd0dg7ybgb85-perl5.32.0-CPAN-Checksums-2.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/9fgily3khs7r49av1438wr4zm3ialr1h-CPAN-Checksums-2.12.tar.gz
+source root is CPAN-Checksums-2.12
+setting SOURCE_DATE_EPOCH to timestamp 1465871968 of file CPAN-Checksums-2.12/SIGNATURE
+patching sources
+configuring
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CPAN::Checksums
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CPAN/Checksums.pm blib/lib/CPAN/Checksums.pm
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perlio.h:41,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/iperlsys.h:50,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:3876,
+                 from ./perl_libyaml.h:9,
+                 from perl_libyaml.c:1:
+In function 'printf',
+    inlined from 'xxx_local_patches' at perl_libyaml.c:1282:5:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H reader.c
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H scanner.c
+t/00signature.t .. skipped: Cannot connect to the keyserver
+t/52podcover.t ... skipped: Test::Pod::Coverage 0.18 required for testing pod coverage
+t/pod.t .......... skipped: Test::Pod 1.00 required for testing POD
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H writer.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  LibYAML.xs > LibYAML.xsc
+mv LibYAML.xsc LibYAML.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_CONFIG_H LibYAML.c
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perlio.h:41,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/iperlsys.h:50,
+                 from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:3876,
+                 from ./perl_libyaml.h:9,
+                 from LibYAML.xs:1:
+In function 'printf',
+    inlined from 'xxx_local_patches_xs' at LibYAML.xs:4:31:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  api.o dumper.o emitter.o loader.o parser.o perl_libyaml.o reader.o scanner.o writer.o LibYAML.o  -o ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so  \
+      \
+
+chmod 755 ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so
+Manifying 1 pod document
+make[1]: Leaving directory '/build/YAML-LibYAML-0.82/LibYAML'
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+make[1]: Entering directory '/build/YAML-LibYAML-0.82/LibYAML'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/YAML-LibYAML-0.82/LibYAML'
+make[1]: Entering directory '/build/YAML-LibYAML-0.82/LibYAML'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-I../blib/lib" "-I../blib/arch" test.pl
+1..1
+ok 1 - Tests for libyaml extension are all defined at the top level
+make[1]: Leaving directory '/build/YAML-LibYAML-0.82/LibYAML'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000-require-modules.t .. ok
+t/alias.t ................ ok
+t/api.t .................. ok
+t/ascii.t ................ ok
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/binary.t ............... ok
+t/blessed.t .............. ok
+t/boolean-boolean.t ...... skipped: boolean not installed
+t/boolean-invalid.t ...... ok
+t/boolean-jsonpp.t ....... ok
+t/boolean.t .............. ok
+t/updatedir.t .... ok
+All tests successful.
+Files=4, Tests=21,  3 wallclock secs ( 0.03 usr  0.01 sys +  0.36 cusr  0.11 csys =  0.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/lib/pkgconfig m4datadir=/nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/share/aclocal aclocaldir=/nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/share/aclocal install
+t/bug-pvf.t .............. ok
+Manifying 1 pod document
+Installing /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/lib/perl5/site_perl/5.32.0/CPAN/Checksums.pm
+Installing /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/share/man/man3/CPAN::Checksums.3
+t/bug-stack.t ............ ok
+Appending installation info to /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/share/man/man3 to /nix/store/8pndzfz608q4siqk8h9sjg16ncn7mz6k-perl5.32.0-CPAN-Checksums-2.12-devdoc/share/man/man3
+Removing empty /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12/lib
+patching script interpreter paths in /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12
+checking for references to /build/ in /nix/store/jx9gwa24fnwyws7vh8nj15dg71nx3ph6-perl5.32.0-CPAN-Checksums-2.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8pndzfz608q4siqk8h9sjg16ncn7mz6k-perl5.32.0-CPAN-Checksums-2.12-devdoc
+gzipping man pages under /nix/store/8pndzfz608q4siqk8h9sjg16ncn7mz6k-perl5.32.0-CPAN-Checksums-2.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8pndzfz608q4siqk8h9sjg16ncn7mz6k-perl5.32.0-CPAN-Checksums-2.12-devdoc
+checking for references to /build/ in /nix/store/8pndzfz608q4siqk8h9sjg16ncn7mz6k-perl5.32.0-CPAN-Checksums-2.12-devdoc...
+t/code.t ................. ok
+t/dump-heuristics.t ...... ok
+t/dump-int.t ............. ok
+t/dump.t ................. ok
+t/empty.t ................ ok
+t/error.t ................ ok
+t/file.t ................. ok
+t/glob.t ................. ok
+t/indent.t ............... ok
+t/io-handle.t ............ ok
+t/leak.t ................. ok
+t/libyaml-version.t ...... # libyaml version = 0.2.4
+t/libyaml-version.t ...... ok
+t/load-blessed.t ......... ok
+t/load.t ................. ok
+t/load_standard_tags.t ... ok
+t/loadfile-empty.t ....... ok
+t/long_plain_wrap.t ...... skipped: Failing test. Not yet implemented
+t/01-test.t ....... 3/14     # number of timeout calls in 5 sec: 4
+t/01-test.t ....... 4/14     # timeout shouldn't destroy accum contents
+t/magic.t ................ ok
+t/native.t ............... ok
+t/null.t ................. ok
+t/numbers.t .............. ok
+t/path-class.t ........... ok
+t/pl_sv_undef.t .......... ok
+t/private.t .............. ok
+t/quote.t ................ ok
+t/ref-scalar.t ........... ok
+t/regexp.t ............... ok
+t/string_nulls.t ......... ok
+t/tags.t ................. ok
+t/tied.t ................. ok
+t/utf8.t ................. ok
+All tests successful.
+Files=44, Tests=357,  4 wallclock secs ( 0.12 usr  0.03 sys +  2.97 cusr  0.36 csys =  3.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/pkgconfig m4datadir=/nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/aclocal aclocaldir=/nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/aclocal install
+make[1]: Entering directory '/build/YAML-LibYAML-0.82/LibYAML'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/build/YAML-LibYAML-0.82/LibYAML'
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/XS.pm
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/LibYAML.pm
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/XS.pod
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/LibYAML.pod
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/man/man3/YAML::LibYAML.3
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/man/man3/YAML::XS.3
+Installing /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/man/man3/YAML::XS::LibYAML.3
+Appending installation info to /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/man/man3 to /nix/store/s60c6rqa2w7cj6nysav79mj82x48cwsg-perl5.32.0-YAML-LibYAML-0.82-devdoc/share/man/man3
+Removing empty /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82
+shrinking /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82/lib
+patching script interpreter paths in /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82
+checking for references to /build/ in /nix/store/sf1kwnf2w8xgbq97gwma35qiw7wf3fdw-perl5.32.0-YAML-LibYAML-0.82...
+shrinking RPATHs of ELF executables and libraries in /nix/store/s60c6rqa2w7cj6nysav79mj82x48cwsg-perl5.32.0-YAML-LibYAML-0.82-devdoc
+gzipping man pages under /nix/store/s60c6rqa2w7cj6nysav79mj82x48cwsg-perl5.32.0-YAML-LibYAML-0.82-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/s60c6rqa2w7cj6nysav79mj82x48cwsg-perl5.32.0-YAML-LibYAML-0.82-devdoc
+checking for references to /build/ in /nix/store/s60c6rqa2w7cj6nysav79mj82x48cwsg-perl5.32.0-YAML-LibYAML-0.82-devdoc...
+t/01-test.t ....... 5/14     # Testing -notransfer...
+t/01-test.t ....... 6/14     # Testing raw reversing...
+    # isatty($exp): YES
+    # Called: 3
+    # Elapsed time: 6  delay by expect: 4.5
+    # Elapsed time: 5  delay by expect: 3.9
+    # Elapsed time: 6  delay by expect: 4.3
+    # Called: 3
+t/01-test.t ....... 7/14     # Check if the raw pty can handle large chunks of text at once
+    # ------------------------------------------------------------------------------
+    #   The following tests check system-dependend behaviour, so even if some fail,
+    #   Expect might still be perfectly usable for you!
+    # ------------------------------------------------------------------------------
+    # Length: 512
+    # Good, your raw pty can handle lines of at least 512 bytes at a time.
+    # Status: match
+t/01-test.t ....... 8/14     # Check if the default pty can handle large chunks of text at once
+    # ------------------------------------------------------------------------------
+    #   The following tests check system-dependend behaviour, so even if some fail,
+    #   Expect might still be perfectly usable for you!
+    # ------------------------------------------------------------------------------
+    # Length: 164
+    # Good, your default pty can handle lines of at least 164 bytes at a time.
+    # Status: match
+t/01-test.t ....... 9/14     # Testing controlling terminal...
+    # Checking if exit status is returned correctly...
+    # soft_close: 0x2A00
+t/01-test.t ....... 11/14     # Checking if signal exit status is returned correctly...
+    # soft_close: 0x000F
+t/01-test.t ....... 12/14 #
+# Checking if EOF on pty slave is correctly reported to master...
+# (this fails on about 50% of the supported systems, so don't panic!
+#  Expect will work anyway!)
+#
+t/01-test.t ....... ok
+t/02-bc.t ......... skipped: See https://rt.cpan.org/Ticket/Display.html?id=98495
+t/03-log.t ........ # Test created for https://rt.cpan.org/Ticket/Display.html?id=62359 related to clear_accum
+t/03-log.t ........ ok
+t/04-multiline.t .. ok
+t/10-internal.t ... ok
+t/11-calc.t ....... 1/22 # SPACE
+t/11-calc.t ....... ok
+All tests successful.
+Files=6, Tests=97, 64 wallclock secs ( 0.05 usr  0.01 sys +  0.54 cusr  0.14 csys =  0.74 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/lib/pkgconfig m4datadir=/nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/share/aclocal aclocaldir=/nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/lib/perl5/site_perl/5.32.0/Expect.pm
+Installing /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/share/man/man3/Expect.3
+Appending installation info to /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/share/man/man3 to /nix/store/3189j3cv26x5g85x0lzbkbhria9zihq6-perl5.32.0-Expect-1.35-devdoc/share/man/man3
+Removing empty /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35/lib
+patching script interpreter paths in /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35
+checking for references to /build/ in /nix/store/s00lhb2y868j1nnvsf9aq8cqaplpgyz1-perl5.32.0-Expect-1.35...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3189j3cv26x5g85x0lzbkbhria9zihq6-perl5.32.0-Expect-1.35-devdoc
+gzipping man pages under /nix/store/3189j3cv26x5g85x0lzbkbhria9zihq6-perl5.32.0-Expect-1.35-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3189j3cv26x5g85x0lzbkbhria9zihq6-perl5.32.0-Expect-1.35-devdoc
+checking for references to /build/ in /nix/store/3189j3cv26x5g85x0lzbkbhria9zihq6-perl5.32.0-Expect-1.35-devdoc...
+building '/nix/store/689mn24hnpdg2q0r3wciana7mbwyvc1g-perl5.32.0-CPAN-2.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/lh7l9nhym0qmpc540zjw3rilshxiyzj9-CPAN-2.28.tar.gz
+source root is CPAN-2.28
+setting SOURCE_DATE_EPOCH to timestamp 1592024004 of file CPAN-2.28/SIGNATURE
+patching sources
+configuring
+patching ./scripts/cpan...
+patching ./scripts/cpan-mirrors...
+patching ./t/31sessions.t...
+patching ./t/02nox.t...
+patching ./t/97-process_setup_options.t...
+patching ./t/97-run.t...
+patching ./t/11mirroredby.t...
+patching ./t/97-return_values.t...
+patching ./t/01loadme.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CPAN
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CPAN/HTTP/Credentials.pm blib/lib/CPAN/HTTP/Credentials.pm
+cp lib/CPAN/Nox.pm blib/lib/CPAN/Nox.pm
+cp lib/CPAN/Prompt.pm blib/lib/CPAN/Prompt.pm
+cp lib/CPAN/Mirrors.pm blib/lib/CPAN/Mirrors.pm
+cp lib/CPAN/Kwalify/distroprefs.dd blib/lib/CPAN/Kwalify/distroprefs.dd
+cp lib/CPAN/DeferredCode.pm blib/lib/CPAN/DeferredCode.pm
+cp lib/CPAN.pm blib/lib/CPAN.pm
+cp lib/CPAN/Index.pm blib/lib/CPAN/Index.pm
+cp lib/CPAN/HTTP/Client.pm blib/lib/CPAN/HTTP/Client.pm
+cp lib/CPAN/FTP/netrc.pm blib/lib/CPAN/FTP/netrc.pm
+cp lib/CPAN/Exception/RecursiveDependency.pm blib/lib/CPAN/Exception/RecursiveDependency.pm
+cp lib/CPAN/Module.pm blib/lib/CPAN/Module.pm
+cp lib/CPAN/Exception/blocked_urllist.pm blib/lib/CPAN/Exception/blocked_urllist.pm
+cp lib/CPAN/HandleConfig.pm blib/lib/CPAN/HandleConfig.pm
+cp lib/CPAN/CacheMgr.pm blib/lib/CPAN/CacheMgr.pm
+cp lib/CPAN/Admin.pm blib/lib/CPAN/Admin.pm
+cp lib/CPAN/Exception/yaml_not_installed.pm blib/lib/CPAN/Exception/yaml_not_installed.pm
+cp lib/CPAN/InfoObj.pm blib/lib/CPAN/InfoObj.pm
+cp lib/App/Cpan.pm blib/lib/App/Cpan.pm
+cp lib/CPAN/Plugin.pm blib/lib/CPAN/Plugin.pm
+cp lib/CPAN/Version.pm blib/lib/CPAN/Version.pm
+cp lib/CPAN/Bundle.pm blib/lib/CPAN/Bundle.pm
+cp lib/CPAN/URL.pm blib/lib/CPAN/URL.pm
+cp lib/CPAN/Distrostatus.pm blib/lib/CPAN/Distrostatus.pm
+cp lib/CPAN/FTP.pm blib/lib/CPAN/FTP.pm
+cp lib/CPAN/Kwalify.pm blib/lib/CPAN/Kwalify.pm
+cp lib/CPAN/FirstTime.pm blib/lib/CPAN/FirstTime.pm
+cp lib/CPAN/API/HOWTO.pod blib/lib/CPAN/API/HOWTO.pod
+cp lib/CPAN/Author.pm blib/lib/CPAN/Author.pm
+cp lib/CPAN/Kwalify/distroprefs.yml blib/lib/CPAN/Kwalify/distroprefs.yml
+cp lib/CPAN/Queue.pm blib/lib/CPAN/Queue.pm
+cp lib/CPAN/Debug.pm blib/lib/CPAN/Debug.pm
+cp lib/CPAN/LWP/UserAgent.pm blib/lib/CPAN/LWP/UserAgent.pm
+cp lib/CPAN/Distroprefs.pm blib/lib/CPAN/Distroprefs.pm
+cp lib/CPAN/Exception/yaml_process_error.pm blib/lib/CPAN/Exception/yaml_process_error.pm
+cp lib/CPAN/Plugin/Specfile.pm blib/lib/CPAN/Plugin/Specfile.pm
+cp lib/CPAN/Shell.pm blib/lib/CPAN/Shell.pm
+cp lib/CPAN/Distribution.pm blib/lib/CPAN/Distribution.pm
+cp lib/CPAN/Tarzip.pm blib/lib/CPAN/Tarzip.pm
+cp lib/CPAN/Complete.pm blib/lib/CPAN/Complete.pm
+cp scripts/cpan blib/script/cpan
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cpan
+cp scripts/cpan-mirrors blib/script/cpan-mirrors
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cpan-mirrors
+Manifying 2 pod documents
+Manifying 16 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00signature.t ............... skipped: External program 'gpg' not found
+t/01loadme.t .................. ok
+t/02nox.t ..................... ok
+t/03pkgs.t .................... ok
+t/04clean_load.t .............. ok
+t/10version.t ................. ok
+t/11mirroredby.t .............. ok
+t/12cpan.t .................... ok
+t/13tarzip.t .................. ok
+t/14forkbomb.t ................ skipped: test only run when called with --doit
+t/30shell.t ................... ok
+t/31sessions.t ................ 1/96 # cmd[o conf /*list/]expect[Cannot parse]actual[Cannot parse commandline: Quantifier follows nothing in regex; marked by <-- HERE in m/* <-- HERE list/ at (eval 19) line 1, <> line 1.
+# ]
+# cmd[notest test CPAN::Test::Dummy::Perl5::Build::DepeFails]expect[Running\sBuild\sfor[\s\S]+Skipping test because of notest pragma[\s\S]+Skipping test because of notest pragma[\s\S]+]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running test for module 'CPAN::Test::Dummy::Perl5::Build::DepeFails'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# DONE
+# CPAN: Archive::Tar loaded ok (v2.36)
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/t/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/MANIFEST
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/Test/Dummy/Perl5/Build/
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/lib/CPAN/Test/Dummy/Perl5/Build/DepeFails.pm
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/META.yml
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/Changes
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/README
+# CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02/Build.PL
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# CPAN: Module::Build loaded ok (v0.4231)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build-DepeFails' version '1.02'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+# ----        Unsatisfied dependencies detected during        ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Build::Fails [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz ok
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/t/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/MANIFEST
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/META.yml
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/Changes
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/Test/Dummy/Perl5/Build/
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/lib/CPAN/Test/Dummy/Perl5/Build/Fails.pm
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/README
+# CPAN-Test-Dummy-Perl5-Build-Fails-1.03/Build.PL
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build-Fails' version '1.03'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Building CPAN-Test-Dummy-Perl5-Build-Fails
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Skipping test because of notest pragma
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+#   Has already been prepared
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+# Building CPAN-Test-Dummy-Perl5-Build-DepeFails
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+#   ./Build -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-DepeFails-1.02.tar.gz
+#   Skipping test because of notest pragma
+# ]
+t/31sessions.t ................ 5/96 # cmd[o conf recommends_policy 1]expect[.]actual[    recommends_policy  [1]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+t/31sessions.t ................ 7/96 # cmd[test CPAN::Test::Dummy::Perl5::Make::OptionalPrereq]expect[Running\smake\sfor\sA/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq[\s\S]+Circular.+?requires,optional[\s\S]+00_load.t.+?ok[\s\S]+Running\smake\sfor\sA/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq[\s\S]+00_load.t.+?ok[\s\S]+]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::OptionalPrereq'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: Archive::Tar loaded ok (v2.36)
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/OptionalPrereq.pm
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/META.json
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/META.yml
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/Changes
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/t/
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00/README
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::OptionalPrereq
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+# ----          Unsatisfied dependencies detected during          ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::CircularPrereq [requires,optional]
+#     CPAN::Test::Dummy::Perl5::Make::NotExistingPrereq [requires,optional]
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/OptionalPrereq.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/OptionalPrereq.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0'
+# Warning: Configuration not saved.
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   make test -- OK
+# Warning: optional module 'CPAN::Test::Dummy::Perl5::Make::NotExistingPrereq' not known. Skipping.
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::CircularPrereq'
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/lib to PERL5LIB for 'get'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz ok
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/CircularPrereq.pm
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/META.json
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/META.yml
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/Changes
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/t/
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00/README
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/lib to PERL5LIB for 'prepare'
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::CircularPrereq
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/lib to PERL5LIB for 'make'
+# ----          Unsatisfied dependencies detected during          ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::OptionalPrereq [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::OptionalPrereq'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   Has already been made
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00.tar.gz
+#   Has already been tested successfully
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+#   Has already been prepared
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/lib to PERL5LIB for 'make'
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/CircularPrereq.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/CircularPrereq.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+#   make -- OK
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-OptionalPrereq-1.00-0/blib/lib to PERL5LIB for 'test'
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=3,  0 wallclock secs ( 0.03 usr +  0.04 sys =  0.07 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircularPrereq-1.00.tar.gz
+#   make test -- OK
+# ]
+# cmd[make CPAN::Test::Dummy::Perl5::Make::ConfReq]expect[make(?:\.exe)? -- OK]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running make for module 'CPAN::Test::Dummy::Perl5::Make::ConfReq'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: Archive::Tar loaded ok (v2.36)
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/lib/CPAN/Test/Dummy/Perl5/Make/ConfReq.pm
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/t/
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/Changes
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/README
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00/META.yml
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# ----       Unsatisfied dependencies detected during      ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make [build_requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# CPAN-Test-Dummy-Perl5-Make-1.05/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-1.05/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/CpanTestDummies.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/Changes
+# CPAN-Test-Dummy-Perl5-Make-1.05/README
+# CPAN-Test-Dummy-Perl5-Make-1.05/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-1.05/META.yml
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0'
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make test -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0/blib/lib to PERL5LIB for 'prepare'
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::ConfReq
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-0/blib/lib to PERL5LIB for 'make'
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/ConfReq.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/ConfReq.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   make -- OK
+# ]
+t/31sessions.t ................ 10/96 # cmd[test CPAN::Test::Dummy::Perl5::Make]expect[00_load.t\b.*\bok]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: Archive::Tar loaded ok (v2.36)
+# CPAN-Test-Dummy-Perl5-Make-1.05/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-1.05/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/CpanTestDummies.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/Changes
+# CPAN-Test-Dummy-Perl5-Make-1.05/README
+# CPAN-Test-Dummy-Perl5-Make-1.05/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-1.05/META.yml
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make test -- OK
+# ]
+t/31sessions.t ................ 12/96 # cmd[test CPAN::Test::Dummy::Perl5::Make]expect[Has already been tested successfully]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been tested successfully
+# ]
+# cmd[! print $::tmp_build_dir=CPAN::Shell->expand('Module','CPAN::Test::Dummy::Perl5::Make')->distribution->{build_dir}, $/]expect[.]actual[/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1]
+# cmd[! use File::Path qw(rmtree); rmtree $::tmp_build_dir, 0; print 'rmtreeed',$/]expect[rmtreeed]actual[rmtreeed]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[00_load.t\b.*\bok]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# CPAN-Test-Dummy-Perl5-Make-1.05/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-1.05/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/CpanTestDummies.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/Changes
+# CPAN-Test-Dummy-Perl5-Make-1.05/README
+# CPAN-Test-Dummy-Perl5-Make-1.05/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-1.05/META.yml
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make test -- OK
+# ]
+# cmd[force test CPAN::Test::Dummy::Perl5::Make]expect[00_load.t\b.*\bok]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+# Prepending /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1/blib/arch /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1/blib/lib to PERL5LIB for 'test'
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.03 usr +  0.04 sys =  0.07 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-1'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make test -- OK
+# ]
+# cmd[o conf connect_to_internet_ok 0]expect[.]actual[    connect_to_internet_ok [0]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf urllist pop]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf urllist]expect[urllist\s+Type.+all configuration items]actual[    urllist
+# Type 'o conf' to view all configuration items
+#
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[Client not fully configured]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# Client not fully configured, please proceed with configuring.
+#
+# You have not configured a urllist and do not allow connections to the
+# internet to get a list of mirrors.  If you wish to get a list of CPAN
+# mirrors to pick from, use this command
+#
+#     o conf init connect_to_internet_ok urllist
+#
+# If you do not wish to get a list of mirrors and would prefer to set
+# your urllist manually, use just this command instead
+#
+#     o conf init urllist
+#
+# ]
+# cmd[o conf init urllist
+# n
+# n
+# http://cpan.example.com/
+#
+# ]expect[enter your CPAN[\s\S]+Enter another URL[\s\S]+New urllist\s+http://cpan.example.com/]actual[
+# Now you need to choose your CPAN mirror sites.  You can let me
+# pick mirrors for you, you can select them from a list or you
+# can enter them by hand.
+#
+# Would you like me to automatically choose some CPAN mirror
+# sites for you? (This means connecting to the Internet) [yes]
+#
+# Would you like to pick from the CPAN mirror list? [yes]
+# Now you can enter your own CPAN URLs by hand. A local CPAN mirror can be
+# listed using a 'file:' URL like 'file:///path/to/cpan/'
+#
+# CPAN.pm needs at least one URL where it can fetch CPAN files from.
+#
+# Please enter your CPAN site: []
+# Enter another URL or ENTER to quit: []
+# New urllist
+#   http://cpan.example.com/
+#
+# Please remember to call 'o conf commit' to make the config permanent!
+# ]
+# cmd[d    /CPAN-Test-Dummy-Perl5-Make-1/]expect[Distribution id = A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Distribution id = A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#     CPAN_USERID  ANDK (Andreas CpanTest König <nospam@nospam>)
+#     CONTAINSMODS CPAN::Test::Dummy::Perl5::Make
+#
+# ]
+t/31sessions.t ................ 25/96 # cmd[test /CPAN-Test-Dummy-Perl5-Make-1/]expect[test -- OK]actual[CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: Archive::Tar loaded ok (v2.36)
+# CPAN-Test-Dummy-Perl5-Make-1.05/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/
+# CPAN-Test-Dummy-Perl5-Make-1.05/t/00_load.t
+# CPAN-Test-Dummy-Perl5-Make-1.05/MANIFEST
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/Bundle/CpanTestDummies.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/
+# CPAN-Test-Dummy-Perl5-Make-1.05/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# CPAN-Test-Dummy-Perl5-Make-1.05/Changes
+# CPAN-Test-Dummy-Perl5-Make-1.05/README
+# CPAN-Test-Dummy-Perl5-Make-1.05/Makefile.PL
+# CPAN-Test-Dummy-Perl5-Make-1.05/META.yml
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-2'
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-2'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-2'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-2'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   make test -- OK
+# ]
+# cmd[test /CPAN-Test-Dummy-Perl5/]expect[Sorry, test with a regular]actual[Sorry, test with a regular expression is only supported when unambiguous.
+# Rejecting argument '/CPAN-Test-Dummy-Perl5/'
+# ]
+# cmd[o conf connect_to_internet_ok 0]expect[.]actual[    connect_to_internet_ok [0]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf urllist ONE TWO THREE FOUR]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf init urllist
+# n
+# y
+# t
+# 8
+# 4 2
+# ]expect[New urllist\s+FOUR\s+TWO]actual[
+# Now you need to choose your CPAN mirror sites.  You can let me
+# pick mirrors for you, you can select them from a list or you
+# can enter them by hand.
+#
+# Would you like me to automatically choose some CPAN mirror
+# sites for you? (This means connecting to the Internet) [yes]
+# Current urllist
+#   ONE
+#   TWO
+#   THREE
+#   FOUR
+#
+# Would you like to edit the urllist or pick new mirrors from a list? [yes]
+# Found a cached mirror list as of Wed Jul 15 02:54:25 2020
+#
+# If you'd like to just use the cached copy, answer 'yes', below.
+# If you'd like an updated copy of the mirror list, answer 'no' and
+# I'll get a fresh one from the Internet.
+#
+# Shall I use the cached mirror list? [yes]
+# First, pick a nearby continent and country by typing in the number(s)
+# in front of the item(s) you want to select. You can pick several of
+# each, separated by spaces. Then, you will be presented with a list of
+# URLs of CPAN mirrors in the countries you selected, along with
+# previously selected URLs. Select some of those URLs, or just keep the
+# old list. Finally, you will be prompted for any extra URLs -- file:,
+# ftp:, or http: -- that host a CPAN mirror.
+#
+# You should select more than one (just in case the first isn't available).
+#
+# (1) Africa
+# (2) Asia
+# (3) Central America
+# (4) Europe
+# (5) North America
+# (6) Oceania
+# (7) South America
+# (8) (edit previous picks)
+# Select your continent (or several nearby continents) [8]
+# (1) ONE (previous pick)
+# (2) TWO (previous pick)
+# (3) THREE (previous pick)
+# (4) FOUR (previous pick)
+# Select as many URLs as you like (by number),
+# put them on one line, separated by blanks, hyphenated ranges allowed
+#  e.g. '1 4 5' or '7 1-4 8'
+# (or just hit ENTER to keep your previous picks) [1 2 3 4]
+# Now you can enter your own CPAN URLs by hand. A local CPAN mirror can be
+# listed using a 'file:' URL like 'file:///path/to/cpan/'
+#
+# Enter another URL or ENTER to quit: []
+# New urllist
+#   FOUR
+#   TWO
+#
+# Please remember to call 'o conf commit' to make the config permanent!
+# ]
+# cmd[dump $::x=4*6+1]expect[= 25;]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# CPAN: File::Which loaded ok (v1.23)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# CPAN: Data::Dumper loaded ok (v2.174)
+# $VAR1 = 25;
+# ]
+t/31sessions.t ................ 33/96 # cmd[dump $::x=40*6+1]expect[= 241;]actual[$VAR1 = 241;
+# ]
+# cmd[dump $::x=40*60+1]expect[= 2401;]actual[$VAR1 = 2401;
+# ]
+# cmd[o conf init]expect[commit: wrote]actual[
+# CPAN.pm requires configuration, but most of it can be done automatically.
+# If you answer 'no' below, you will enter an interactive dialog for each
+# configuration option instead.
+#
+# Would you like to configure as much as possible automatically? [yes] yes
+#
+#  <install_help>
+#
+# Warning: You do not have write permission for Perl library directories.
+#
+# To install modules, you need to configure a local Perl library directory or
+# escalate your privileges.  CPAN can help you by bootstrapping the local::lib
+# module or by configuring itself to use 'sudo' (if available).  You may also
+# resolve this problem manually if you need to customize your setup.
+#
+# What approach do you want?  (Choose 'local::lib', 'sudo' or 'manual')
+#  [local::lib] local::lib
+#
+# Your 'urllist' is already configured. Type 'o conf init urllist' to change it.
+#
+# Autoconfiguration complete.
+#
+# Attempting to bootstrap local::lib...
+#
+# Writing /build/CPAN-2.28/t/CPAN/MyConfig_1924.pm for bootstrap...
+# Unknown config variable '7yYQS7'
+# commit: wrote '/build/CPAN-2.28/t/CPAN/MyConfig_1924.pm'
+# Error bootstrapping local::lib:
+# From the CPAN Shell, you might try 'look local::lib' and
+# run 'perl Makefile --bootstrap' and see if that is successful.  Then
+# restart your CPAN client
+#
+# Unknown config variable '7yYQS7'
+# commit: wrote '/build/CPAN-2.28/t/CPAN/MyConfig_1924.pm'
+#
+# You can re-run configuration any time with 'o conf init' in the CPAN shell
+# ]
+# cmd[o conf patch ' ']expect[.]actual[    patch              [ ]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[t/00_load.+ok]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+# CPAN: CPAN::Kwalify loaded ok (v5.50)
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+# Warning: Configuration not saved.
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# ]
+# cmd[get CPAN::Test::Dummy::Perl5::Make]expect[Has already been unwrapped]actual[Running get for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+# ]
+# cmd[make CPAN::Test::Dummy::Perl5::Make]expect[(?sx:Has.already.been.unwrapped.*
+#                                                   Has.already.been.made)]actual[Running make for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[(?sx:Has.already.been.unwrapped.*
+#                                                   Has.already.been.made.*
+#                                                   Has.already.been.tested.successfully)]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been tested successfully
+# ]
+# cmd[force test CPAN::Test::Dummy::Perl5::Make]expect[t/00_load.+ok]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  1 wallclock secs ( 0.04 usr +  0.05 sys =  0.09 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Build::Fails]expect[(?i:t/00_load.+FAILED)]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz ok
+# CPAN: Module::Build loaded ok (v0.4231)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build-Fails' version '1.03'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Building CPAN-Test-Dummy-Perl5-Build-Fails
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build -- OK
+# Running Build test for ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# t/00_load.t ..
+# Failed 1/2 subtests
+#
+# Test Summary Report
+# -------------------
+# t/00_load.t (Wstat: 0 Tests: 2 Failed: 1)
+#   Failed test:  2
+# Files=1, Tests=2,  0 wallclock secs ( 0.02 usr +  0.01 sys =  0.03 CPU)
+# Result: FAIL
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build test -- NOT OK
+# //hint// to see the cpan-testers results for installing this module, try:
+#   reports ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Failed during this command:
+#  ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz: make_test NO
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Build::Fails]expect[(?i:t/00_load.+FAILED)]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-1
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been made
+# Running Build test for ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# t/00_load.t ..
+# Failed 1/2 subtests
+#
+# Test Summary Report
+# -------------------
+# t/00_load.t (Wstat: 0 Tests: 2 Failed: 1)
+#   Failed test:  2
+# Files=1, Tests=2,  0 wallclock secs ( 0.02 usr +  0.02 sys =  0.04 CPU)
+# Result: FAIL
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build test -- NOT OK
+# //hint// to see the cpan-testers results for installing this module, try:
+#   reports ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Failed during this command:
+#  ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz: make_test NO
+# ]
+# cmd[get CPAN::Test::Dummy::Perl5::Build::Fails]expect[Has already been unwrapped]actual[Running get for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-1
+# ]
+# cmd[make CPAN::Test::Dummy::Perl5::Build::Fails]expect[(?sx:Has.already.been.unwrapped.*
+#                                                   Has.already.been.made)]actual[Running make for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-1
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been made
+# ]
+# cmd[force get CPAN::Test::Dummy::Perl5::Build::Fails]expect[(?sx:security.checks.disabled
+#                          |Checksum.for.*CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz.ok)]actual[Running get for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz ok
+# ]
+# cmd[o conf build_dir_reuse 1]expect[build_dir_reuse]actual[    build_dir_reuse    [1]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf commit]expect[commit: wrote]actual[Unknown config variable '7yYQS7'
+# commit: wrote '/build/CPAN-2.28/t/CPAN/MyConfig_1924.pm'
+# ]
+# cmd[get CPAN::Test::Dummy::Perl5::Make]expect[Has already been unwrapped]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# Reading 11 yaml files from /build/CPAN-2.28/t/dot-cpan-1924/build/
+# ...............................................................DONE
+# Restored the state of 6 (in 0.0507 secs)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running get for module 'CPAN::Test::Dummy::Perl5::Make'
+# CPAN: CPAN::Kwalify loaded ok (v5.50)
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# prerequisite module[ExtUtils::MakeMaker] not known
+# ]
+t/31sessions.t ................ 51/96 # cmd[make CPAN/Test/Dummy/Perl5/Make.pm]expect[(?sx:Has.already.been.unwrapped.*
+#                                                   Has.already.been.made)]actual[prerequisite module[ExtUtils::MakeMaker] not known
+# Running make for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+# prerequisite module[ExtUtils::MakeMaker] not known
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[(?sx:Has.already.been.unwrapped.*
+#                                                   Has.already.been.made.*
+#                                                   Has.already.been.tested.successfully)]actual[prerequisite module[ExtUtils::MakeMaker] not known
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been tested successfully
+# prerequisite module[ExtUtils::MakeMaker] not known
+# ]
+# cmd[get CPAN::Test::Dummy::Perl5::Build::Fails]expect[Has already been unwrapped]actual[Running get for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-2
+# ]
+# cmd[make CPAN::Test::Dummy::Perl5::Build::Fails]expect[Has.already.been.unwrapped]actual[Running make for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-2
+# CPAN: Module::Build loaded ok (v0.4231)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build-Fails' version '1.03'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Building CPAN-Test-Dummy-Perl5-Build-Fails
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build -- OK
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Build::Fails]expect[(?i:t/00_load.+FAILED)]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-2
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   Has already been made
+# Running Build test for ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# t/00_load.t ..
+# Failed 1/2 subtests
+#
+# Test Summary Report
+# -------------------
+# t/00_load.t (Wstat: 0 Tests: 2 Failed: 1)
+#   Failed test:  2
+# Files=1, Tests=2,  0 wallclock secs ( 0.02 usr +  0.02 sys =  0.04 CPU)
+# Result: FAIL
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build test -- NOT OK
+# //hint// to see the cpan-testers results for installing this module, try:
+#   reports ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Failed during this command:
+#  ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz: make_test NO
+# ]
+# cmd[o conf dontload_list push YAML]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list push YAML::Syck]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list push Parse::CPAN::Meta]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list push CPAN::Meta]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf commit]expect[commit: wrote]actual[commit: wrote '/build/CPAN-2.28/t/CPAN/MyConfig_1924.pm'
+# ]
+# cmd[get CPAN::Test::Dummy::Perl5::Make]expect[(?sx:
+#                      not.installed,.falling.back.*
+#                      will.not.store.persistent.state)]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running get for module 'CPAN::Test::Dummy::Perl5::Make'
+# CPAN: Data::Dumper loaded ok (v2.174)
+# 'YAML' not installed, falling back to Data::Dumper and Storable to read prefs '/build/CPAN-2.28/t/dot-cpan-1924/prefs'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# Warning (usually harmless): 'YAML' not installed, cannot parse '/build/CPAN-2.28/t/dot-cpan-1924/FTPstats.yml'
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# 'YAML' not installed, will not store persistent state
+# ]
+t/31sessions.t ................ 63/96 # cmd[make CPAN::Test::Dummy::Perl5::Make]expect[Falling back to other methods to determine prerequisites]actual[Running make for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4/META.yml' is not a HASH reference. Cannot use it.
+# Could not read metadata file. Falling back to other methods to determine prerequisites
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make]expect[All tests successful]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# ]
+# cmd[clean CPAN::Test::Dummy::Perl5::Make]expect[clean.*-- OK]actual[Running clean for module 'CPAN::Test::Dummy::Perl5::Make'
+# Running make clean for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+# rm -f \
+#   Make.bso Make.def \
+#   Make.exp Make.x \
+#    blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/extralibs.all \
+#   blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/extralibs.ld Makefile.aperl \
+#   *.a *.o \
+#   *perl.core MYMETA.json \
+#   MYMETA.yml blibdirs.ts \
+#   core core.*perl.*.? \
+#   core.[0-9] core.[0-9][0-9] \
+#   core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+#   core.[0-9][0-9][0-9][0-9][0-9] libMake.def \
+#   mon.out perl \
+#   perl perl.exe \
+#   perlmain.c pm_to_blib \
+#   pm_to_blib.ts so_locations \
+#   tmon.out
+# rm -rf \
+#   blib
+# mv Makefile Makefile.old > /dev/null 2>&1
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-4'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make clean -- OK
+# ]
+# cmd[dump $::x=4*6+1]expect[= 25;]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# CPAN: Data::Dumper loaded ok (v2.174)
+# $VAR1 = 25;
+# ]
+t/31sessions.t ................ 68/96 # cmd[test CPAN::Test::Dummy::Perl5::Make::CircDepeOne]expect[(?xs:
+#   Running.test.for.module.+CPAN::Test::Dummy::Perl5::Make::CircDepeOne.+
+#   CPAN::Test::Dummy::Perl5::Make::CircDepeThree.+\[requires\].+
+#   CPAN::Test::Dummy::Perl5::Make::CircDepeTwo.+\[requires\].+
+#   CPAN::Test::Dummy::Perl5::Make::CircDepeOne.+\[requires\].+
+#   Recursive.dependency.detected
+# )]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make::CircDepeOne'
+# 'YAML' not installed, falling back to Data::Dumper and Storable to read prefs '/build/CPAN-2.28/t/dot-cpan-1924/prefs'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# Warning (usually harmless): 'YAML' not installed, cannot parse '/build/CPAN-2.28/t/dot-cpan-1924/FTPstats.yml'
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# 'YAML' not installed, will not store persistent state
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::CircDepeOne
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Could not read metadata file. Falling back to other methods to determine prerequisites
+# ----         Unsatisfied dependencies detected during        ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::CircDepeThree [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::CircDepeThree'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz ok
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::CircDepeThree
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# ----          Unsatisfied dependencies detected during         ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::CircDepeTwo [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::CircDepeTwo'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz ok
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::CircDepeTwo
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# ----         Unsatisfied dependencies detected during        ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::CircDepeOne [requires]
+#
+# Recursive dependency detected:
+#     CPAN::Test::Dummy::Perl5::Make::CircDepeOne (have: N/A; want: 1.00)
+#  => ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+#  => CPAN::Test::Dummy::Perl5::Make::CircDepeThree (have: N/A; requires: 0)
+#  => ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+#  => CPAN::Test::Dummy::Perl5::Make::CircDepeTwo (have: N/A; requires: 0)
+#  => ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz
+#  => CPAN::Test::Dummy::Perl5::Make::CircDepeOne (have: N/A; requires: 0).
+# Cannot resolve.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz
+#   [depend] -- NOT OK
+#
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz
+#   Could not make: cannot resolve circular dependency
+#
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz
+#   Could not make: cannot resolve circular dependency
+#
+# Failed during this command:
+#  ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeOne-1.00.tar.gz: make NO cannot resolve circular dependency
+#  ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeThree-1.00.tar.gz: make NO cannot resolve circular dependency
+#  ANDK/CPAN-Test-Dummy-Perl5-Make-CircDepeTwo-1.00.tar.gz: make NO cannot resolve circular dependency
+# ]
+# cmd[dump $::x=4*6+1]expect[= 25;]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# CPAN: Data::Dumper loaded ok (v2.174)
+# $VAR1 = 25;
+# ]
+t/31sessions.t ................ 71/96 # cmd[test CPAN::Test::Dummy::Perl5::Make::UnsatPrereq]expect[(?xs:
+#   Warning:.+?
+#   Prerequisite.+?
+#   CPAN::Test::Dummy::Perl5::Make.+?
+#   99999999.99.+?
+#   not[ ]available[ ]according[ ]to[ ]the[ ]ind
+# )]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make::UnsatPrereq'
+# 'YAML' not installed, falling back to Data::Dumper and Storable to read prefs '/build/CPAN-2.28/t/dot-cpan-1924/prefs'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# Warning (usually harmless): 'YAML' not installed, cannot parse '/build/CPAN-2.28/t/dot-cpan-1924/FTPstats.yml'
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# 'YAML' not installed, will not store persistent state
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::UnsatPrereq
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Could not read metadata file. Falling back to other methods to determine prerequisites
+# ----         Unsatisfied dependencies detected during        ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz ok
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5/META.yml' is not a HASH reference. Cannot use it.
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5/META.yml' is not a HASH reference. Cannot use it.
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5'
+# cp lib/Bundle/CpanTestDummies.pm blib/lib/Bundle/CpanTestDummies.pm
+# cp lib/CPAN/Test/Dummy/Perl5/Make.pm blib/lib/CPAN/Test/Dummy/Perl5/Make.pm
+# Manifying 2 pod documents
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.03 sys =  0.07 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-5'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+#   Has already been prepared
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0/META.yml' is not a HASH reference. Cannot use it.
+# Warning: Prerequisite 'CPAN::Test::Dummy::Perl5::Make => 99999999.99' for 'A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz' seems not available according to the indices
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/UnsatPrereq.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/UnsatPrereq.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr +  0.04 sys =  0.08 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-UnsatPrereq-1.00.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# ]
+# cmd[dump $::x=4*6+1]expect[= 25;]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# CPAN: Data::Dumper loaded ok (v2.174)
+# $VAR1 = 25;
+# ]
+t/31sessions.t ................ 74/96 # cmd[o conf halt_on_failure 1]expect[1]actual[    halt_on_failure    [1]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Build::Fails CPAN::Test::Dummy::Perl5::Make::Failearly]expect[FAIL]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Build::Fails'
+# 'YAML' not installed, falling back to Data::Dumper and Storable to read prefs '/build/CPAN-2.28/t/dot-cpan-1924/prefs'
+# CPAN: Digest::SHA loaded ok (v6.02)
+# Warning (usually harmless): 'YAML' not installed, cannot parse '/build/CPAN-2.28/t/dot-cpan-1924/FTPstats.yml'
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# 'YAML' not installed, will not store persistent state
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-3/META.yml' is not a HASH reference. Cannot use it.
+# CPAN: Module::Build loaded ok (v0.4231)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build-Fails' version '1.03'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# The content of '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-Fails-1.03-3/META.yml' is not a HASH reference. Cannot use it.
+# Could not read metadata file. Falling back to other methods to determine prerequisites
+# Building CPAN-Test-Dummy-Perl5-Build-Fails
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build -- OK
+# Running Build test for ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# t/00_load.t ..
+# Failed 1/2 subtests
+#
+# Test Summary Report
+# -------------------
+# t/00_load.t (Wstat: 0 Tests: 2 Failed: 1)
+#   Failed test:  2
+# Files=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.01 cusr  0.01 csys =  0.05 CPU)
+# Result: FAIL
+# Warning: Configuration not saved.
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+#   ./Build test -- NOT OK
+# //hint// to see the cpan-testers results for installing this module, try:
+#   reports ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz
+# Stopping: 'test' failed for 'CPAN::Test::Dummy::Perl5::Build::Fails'.
+# Failed during this command:
+#  ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz: make_test NO
+# ]
+# cmd[failed]expect[(?x:Failed \s during \s this \s session: \s+
+#                                \S+ Build-Fails \S+: \s+ make_test \s+ NO \s*\z)]actual[Failed during this session:
+#  ANDK/CPAN-Test-Dummy-Perl5-Build-Fails-1.03.tar.gz: make_test NO
+# ]
+# cmd[o conf dontload_list pop]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list pop]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list pop]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf dontload_list pop]expect[.]actual[Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[o conf commit]expect[commit: wrote]actual[commit: wrote '/build/CPAN-2.28/t/CPAN/MyConfig_1924.pm'
+# ]
+# cmd[dump $::x=6*6+9]expect[= 45;]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# Reading 11 yaml files from /build/CPAN-2.28/t/dot-cpan-1924/build/
+# ...............................................................DONE
+# Restored the state of 6 (in 0.0545 secs)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# CPAN: Data::Dumper loaded ok (v2.174)
+# $VAR1 = 45;
+# ]
+t/31sessions.t ................ 84/96 # cmd[o conf build_dir]expect[build_dir]actual[    build_dir          [/build/CPAN-2.28/t/dot-cpan-1924/build]
+# Type 'o conf' to view all configuration items
+#
+# ]
+# cmd[o conf prefs_dir '/build/CPAN-2.28/t/dot-cpan-1924/prefs']expect[(?m:prefs_dir.+prefs)]actual[    prefs_dir          [/build/CPAN-2.28/t/dot-cpan-1924/prefs]
+# Please use 'o conf commit' to make the config permanent!
+#
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make::Features]expect[(?sx:Builds.rice.+
+#           ANDK/CPAN-Test-Dummy-Perl5-Build-\d.+
+#           \./Build[ ]test[ ]--[ ]OK.+
+#           ANDK/CPAN-Test-Dummy-Perl5-Make-Features-\d.+
+#           make\S*[ ]test[ ]--[ ]OK)]actual[Running test for module 'CPAN::Test::Dummy::Perl5::Make::Features'
+# CPAN: CPAN::Kwalify loaded ok (v5.50)
+#
+# ______________________ D i s t r o P r e f s ______________________
+#                      TestDistroPrefsFile.yml[0]
+# CPAN: Digest::SHA loaded ok (v6.02)
+# CPAN: Compress::Zlib loaded ok (v2.093)
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz ok
+# Scanning cache /build/CPAN-2.28/t/dot-cpan-1924/build for sizes
+# ............................................................................DONE
+# CPAN: CPAN::Meta::Requirements loaded ok (v2.140)
+# CPAN: Parse::CPAN::Meta loaded ok (v2.150010)
+# Found the demanded feature 'rice' that is accompanied by this description:
+# Builds rice
+#
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::Features
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+# Found the demanded feature 'rice' that is accompanied by this description:
+# Builds rice
+#
+# CPAN: Module::CoreList loaded ok (v5.20200620)
+# ----       Unsatisfied dependencies detected during       ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Build [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Build'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz ok
+# CPAN: Module::Build loaded ok (v0.4231)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz with Build.PL
+# Created MYMETA.yml and MYMETA.json
+# Creating new 'Build' script for 'CPAN-Test-Dummy-Perl5-Build' version '1.03'
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build.PL -- OK
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+# ----   Unsatisfied dependencies detected during   ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz ----
+#     CPAN::Test::Dummy::Perl5::Make::Zip [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::Zip'
+# Checksum for /build/CPAN-2.28/t/CPAN/authors/id/A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip ok
+# CPAN: Archive::Zip loaded ok (v1.68)
+# Configuring A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip with Makefile.PL
+# Checking if your kit is complete...
+# Looks good
+# Generating a Unix-style Makefile
+# Writing Makefile for CPAN::Test::Dummy::Perl5::Make::Zip
+# Writing MYMETA.yml and MYMETA.json
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+#   /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Makefile.PL -- OK
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+# ----   Unsatisfied dependencies detected during   ----
+# ---- ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip ----
+#     CPAN::Test::Dummy::Perl5::Make [requires]
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been made
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   Has already been tested successfully
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Zip-1.03-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+#   Has already been prepared
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Zip-1.03-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/Zip.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/Zip.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Zip-1.03-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Zip-1.03-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.04 usr  0.04 sys +  0.01 cusr  0.00 csys =  0.09 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Zip-1.03-0'
+# Warning: Configuration not saved.
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Zip-1.03.zip
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Build-1.03-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+#   Has already been prepared
+# Running Build for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+# Building CPAN-Test-Dummy-Perl5-Build
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+#   ./Build -- OK
+# Running Build test for ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.00 cusr  0.01 csys =  0.04 CPU)
+# Result: PASS
+#   ANDK/CPAN-Test-Dummy-Perl5-Build-1.03.tar.gz
+#   ./Build test -- OK
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Features-1.06-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+#   Has already been prepared
+# Running make for A/AN/ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+# Found the demanded feature 'rice' that is accompanied by this description:
+# Builds rice
+#
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Features-1.06-0'
+# cp lib/CPAN/Test/Dummy/Perl5/Make/Features.pm blib/lib/CPAN/Test/Dummy/Perl5/Make/Features.pm
+# Manifying 1 pod document
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Features-1.06-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make -- OK
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Features-1.06-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.03 usr +  0.04 sys =  0.07 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-Features-1.06-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-Features-1.06.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# ]
+# cmd[test CPAN::Test::Dummy::Perl5::Make::ConfReq]expect[test.*-- OK]actual[CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# Reading 14 yaml files from /build/CPAN-2.28/t/dot-cpan-1924/build/
+# ............................................................................DONE
+# Restored the state of 9 (in 0.0689 secs)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+# Running test for module 'CPAN::Test::Dummy::Perl5::Make::ConfReq'
+# CPAN: CPAN::Kwalify loaded ok (v5.50)
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   Has already been unwrapped into directory /build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   Has already been prepared
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   Has already been made
+# Running make test for ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+# PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# t/00_load.t .. ok
+# All tests successful.
+# Files=1, Tests=2,  0 wallclock secs ( 0.03 usr +  0.04 sys =  0.07 CPU)
+# Result: PASS
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+# Lockfile removed.
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make test -- OK
+# CPAN: CPAN::Meta loaded ok (v2.150010)
+# prerequisite module[ExtUtils::MakeMaker] not known
+# ]
+t/31sessions.t ................ 89/96 # cmd[clean CPAN::Test::Dummy::Perl5::Make::ConfReq]expect[clean.*-- OK]actual[Running clean for module 'CPAN::Test::Dummy::Perl5::Make::ConfReq'
+# Running make clean for ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+# rm -f \
+#   ConfReq.bso ConfReq.def \
+#   ConfReq.exp ConfReq.x \
+#    blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/ConfReq/extralibs.all \
+#   blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/ConfReq/extralibs.ld Makefile.aperl \
+#   *.a *.o \
+#   *perl.core MYMETA.json \
+#   MYMETA.yml blibdirs.ts \
+#   core core.*perl.*.? \
+#   core.[0-9] core.[0-9][0-9] \
+#   core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+#   core.[0-9][0-9][0-9][0-9][0-9] libConfReq.def \
+#   mon.out perl \
+#   perl perl.exe \
+#   perlmain.c pm_to_blib \
+#   pm_to_blib.ts so_locations \
+#   tmon.out
+# rm -rf \
+#   blib
+# mv Makefile Makefile.old > /dev/null 2>&1
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00-0'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-ConfReq-1.00.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make clean -- OK
+# ]
+# cmd[clean CPAN::Test::Dummy::Perl5::Make]expect[clean.*-- OK]actual[Running clean for module 'CPAN::Test::Dummy::Perl5::Make'
+# Running make clean for ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+# make[1]: Entering directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+# rm -f \
+#   Make.bso Make.def \
+#   Make.exp Make.x \
+#    blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/extralibs.all \
+#   blib/arch/auto/CPAN/Test/Dummy/Perl5/Make/extralibs.ld Makefile.aperl \
+#   *.a *.o \
+#   *perl.core MYMETA.json \
+#   MYMETA.yml blibdirs.ts \
+#   core core.*perl.*.? \
+#   core.[0-9] core.[0-9][0-9] \
+#   core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+#   core.[0-9][0-9][0-9][0-9][0-9] libMake.def \
+#   mon.out perl \
+#   perl perl.exe \
+#   perlmain.c pm_to_blib \
+#   pm_to_blib.ts so_locations \
+#   tmon.out
+# rm -rf \
+#   blib
+# mv Makefile Makefile.old > /dev/null 2>&1
+# make[1]: Leaving directory '/build/CPAN-2.28/t/dot-cpan-1924/build/CPAN-Test-Dummy-Perl5-Make-1.05-3'
+#   ANDK/CPAN-Test-Dummy-Perl5-Make-1.05.tar.gz
+#   /nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin/make clean -- OK
+# ]
+# cmd[ls ANDK/patches]expect[-SADAHIRO-]actual[CPAN: Text::Glob loaded ok (v0.11)
+# CPAN: LWP::UserAgent loaded ok (v6.45)
+# CPAN: URI::URL loaded ok (v5.04)
+# CPAN: YAML loaded ok (v1.30)
+# Reading '/build/CPAN-2.28/t/CPAN/authors/01mailrc.txt'
+# Reading 14 yaml files from /build/CPAN-2.28/t/dot-cpan-1924/build/
+# ..................................................................DONE
+# Restored the state of 8 (in 0.0706 secs)
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/02packages.details.txt'
+#   Database was generated on Tue, 03 Feb 1970 03:17:06 GMT
+# Warning: This index file is 18424 days old.
+#   Please check the host you chose as your CPAN mirror for staleness.
+#   I'll continue but problems seem likely to happen.
+# ............................................................................DONE
+# Reading '/build/CPAN-2.28/t/CPAN/modules/03modlist.data'
+# ............................................................................DONE
+#      367 2006-11-03 ANDK/patches/Coro-2.1-ANDK-01.patch.gz
+#      606 2006-10-23 ANDK/patches/DBI-1.52-SMPETERS-01.patch
+#     2514 2006-10-30 ANDK/patches/File-Slurp-9999.12-ANDK-02.patch
+#     1800 2006-11-03 ANDK/patches/Parse-RecDescent-1.94-SADAHIRO-01.patch.gz
+#      377 2006-10-22 ANDK/patches/Template-Toolkit-2.15-ANDK-01.patch.gz
+# ]
+t/31sessions.t ................ 93/96 # cmd[ls ANDK/patches/]expect[-SADAHIRO-]actual[     367 2006-11-03 ANDK/patches/Coro-2.1-ANDK-01.patch.gz
+#      606 2006-10-23 ANDK/patches/DBI-1.52-SMPETERS-01.patch
+#     2514 2006-10-30 ANDK/patches/File-Slurp-9999.12-ANDK-02.patch
+#     1800 2006-11-03 ANDK/patches/Parse-RecDescent-1.94-SADAHIRO-01.patch.gz
+#      377 2006-10-22 ANDK/patches/Template-Toolkit-2.15-ANDK-01.patch.gz
+# ]
+# cmd[ls ANDK/pa*/*SADA*]expect[-SADAHIRO-]actual[    1800 2006-11-03 ANDK/patches/Parse-RecDescent-1.94-SADAHIRO-01.patch.gz
+# ]
+# cmd[ls ANDK/patches/*SADA*]expect[-SADAHIRO-]actual[    1800 2006-11-03 ANDK/patches/Parse-RecDescent-1.94-SADAHIRO-01.patch.gz
+# ]
+t/31sessions.t ................ ok
+t/41distribution.t ............ ok
+t/42distroprefs.t ............. ok
+t/43distroprefspref.t ......... ok
+t/44cpanmeta.t ................ ok
+t/50pod.t ..................... skipped: Test::Pod 1.00 required for testing POD
+t/51pod.t ..................... ok
+t/52podcover.t ................ skipped: Test::Pod::Coverage 0.18 required for testing pod coverage
+t/60credentials.t ............. ok
+t/70_critic.t ................. skipped: Test::Perl::Critic only run when AUTHOR_TEST set
+t/71_minimumversion.t ......... skipped: running MinimumVersion test only run when AUTHOR_TEST set
+t/97-compile.t ................ ok
+t/97-cpanpm_output_hook.t ..... ok
+t/97-expand_filenames.t ....... ok
+t/97-install_hack.t ........... ok
+t/97-mock.t ................... ok
+t/97-process_options.t ........ ok
+t/97-process_setup_options.t .. ok
+t/97-return_values.t .......... ok
+t/97-run.t .................... # will run '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -Mblib blib/script/cpan -y 2>&1'
+t/97-run.t .................... 1/32 # will run '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -Mblib blib/script/cpan -h 2>&1'
+t/97-run.t .................... ok
+All tests successful.
+Files=31, Tests=1065, 111 wallclock secs ( 0.51 usr  0.08 sys + 55.06 cusr 29.63 csys = 85.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/pkgconfig m4datadir=/nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/aclocal aclocaldir=/nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/aclocal install
+Manifying 2 pod documents
+Manifying 16 pod documents
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/App/Cpan.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Debug.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Kwalify.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Bundle.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/URL.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/FTP.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Shell.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Distroprefs.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Complete.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Prompt.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/CacheMgr.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Plugin.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Distrostatus.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Distribution.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Admin.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Tarzip.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Queue.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Author.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/FirstTime.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/InfoObj.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/DeferredCode.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Version.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Module.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Mirrors.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/HandleConfig.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Nox.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Index.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Exception/blocked_urllist.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Exception/RecursiveDependency.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Exception/yaml_process_error.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Exception/yaml_not_installed.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Kwalify/distroprefs.dd
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Kwalify/distroprefs.yml
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/LWP/UserAgent.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/FTP/netrc.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/API/HOWTO.pod
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/Plugin/Specfile.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/HTTP/Credentials.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/site_perl/5.32.0/CPAN/HTTP/Client.pm
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man1/cpan.1
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man1/cpan-mirrors.1
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Nox.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Tarzip.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::HandleConfig.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Version.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::FirstTime.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Kwalify.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::API::HOWTO.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Mirrors.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Queue.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Admin.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Distroprefs.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Plugin::Specfile.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Debug.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/CPAN::Plugin.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3/App::Cpan.3
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/bin/cpan
+Installing /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/bin/cpan-mirrors
+Appending installation info to /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/man3 to /nix/store/cbqihnzakcmfqv5lb6f986bxrjkvmgll-perl5.32.0-CPAN-2.28-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28
+gzipping man pages under /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/lib  /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28/bin
+patching script interpreter paths in /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28
+checking for references to /build/ in /nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cbqihnzakcmfqv5lb6f986bxrjkvmgll-perl5.32.0-CPAN-2.28-devdoc
+gzipping man pages under /nix/store/cbqihnzakcmfqv5lb6f986bxrjkvmgll-perl5.32.0-CPAN-2.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cbqihnzakcmfqv5lb6f986bxrjkvmgll-perl5.32.0-CPAN-2.28-devdoc
+checking for references to /build/ in /nix/store/cbqihnzakcmfqv5lb6f986bxrjkvmgll-perl5.32.0-CPAN-2.28-devdoc...
+/nix/store/xx2z8416dniq2lbfz6r0hn5vi23qgk4w-perl5.32.0-CPAN-2.28

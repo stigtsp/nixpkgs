@@ -1,0 +1,63 @@
+these derivations will be built:
+  /nix/store/hlzayspmgh8cn4cjnpn2y3rz4qlpcg3v-perl5.32.0-MooX-0.101.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/2csz96gadgxbh081536m87bl9a8s46va-MooX-0.101.tar.gz
+copying path '/nix/store/2csz96gadgxbh081536m87bl9a8s46va-MooX-0.101.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hlzayspmgh8cn4cjnpn2y3rz4qlpcg3v-perl5.32.0-MooX-0.101.drv'...
+unpacking sources
+unpacking source archive /nix/store/2csz96gadgxbh081536m87bl9a8s46va-MooX-0.101.tar.gz
+source root is MooX-0.101
+setting SOURCE_DATE_EPOCH to timestamp 1336503401 of file MooX-0.101/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/02-importparams.t...
+patching ./t/03-nonmoox.t...
+patching ./t/01-simple.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/00-load.t...
+patching ./t/10-simple-with-role.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooX
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooX.pm blib/lib/MooX.pm
+cp lib/MooX/Role.pm blib/lib/MooX/Role.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .............. ok
+t/01-simple.t ............ ok
+t/02-importparams.t ...... ok
+t/03-nonmoox.t ........... ok
+t/10-simple-with-role.t .. ok
+t/release-pod-syntax.t ... skipped: these tests are for release candidate testing
+All tests successful.
+Files=6, Tests=9,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.49 cusr  0.28 csys =  0.82 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/lib/pkgconfig m4datadir=/nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/aclocal aclocaldir=/nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/lib/perl5/site_perl/5.32.0/MooX.pm
+Installing /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/lib/perl5/site_perl/5.32.0/MooX/Role.pm
+Installing /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/man/man3/MooX.3
+Installing /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/man/man3/MooX::Role.3
+Appending installation info to /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/man/man3 to /nix/store/gbscpn4p55p44g78rq83rrpmlrnv53wa-perl5.32.0-MooX-0.101-devdoc/share/man/man3
+Removing empty /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101/lib
+patching script interpreter paths in /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101
+checking for references to /build/ in /nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gbscpn4p55p44g78rq83rrpmlrnv53wa-perl5.32.0-MooX-0.101-devdoc
+gzipping man pages under /nix/store/gbscpn4p55p44g78rq83rrpmlrnv53wa-perl5.32.0-MooX-0.101-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gbscpn4p55p44g78rq83rrpmlrnv53wa-perl5.32.0-MooX-0.101-devdoc
+checking for references to /build/ in /nix/store/gbscpn4p55p44g78rq83rrpmlrnv53wa-perl5.32.0-MooX-0.101-devdoc...
+/nix/store/q72h2shqirkhnmszslfk8wxb0lmk090w-perl5.32.0-MooX-0.101

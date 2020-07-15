@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/6f6yabisfrbl0lh4w016m0xl5i4wqwcy-perl5.32.0-Getopt-Long-2.51.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/3dg5xvkv27pmxgjlwcvslh2vvr760xs6-Getopt-Long-2.51.tar.gz
+copying path '/nix/store/3dg5xvkv27pmxgjlwcvslh2vvr760xs6-Getopt-Long-2.51.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6f6yabisfrbl0lh4w016m0xl5i4wqwcy-perl5.32.0-Getopt-Long-2.51.drv'...
+unpacking sources
+unpacking source archive /nix/store/3dg5xvkv27pmxgjlwcvslh2vvr760xs6-Getopt-Long-2.51.tar.gz
+source root is Getopt-Long-2.51
+setting SOURCE_DATE_EPOCH to timestamp 1565622517 of file Getopt-Long-2.51/META.yml
+patching sources
+configuring
+patching ./examples/skel3.pl...
+patching ./examples/skel2.pl...
+patching ./examples/parsetime.pl...
+patching ./examples/skel4.pl...
+patching ./examples/skel1.pl...
+patching ./t/gol-xargv.t...
+patching ./t/gol-compat.t...
+patching ./t/gol-linkage.t...
+patching ./t/gol-oo.t...
+patching ./t/gol-xstring.t...
+patching ./t/gol-basic.t...
+patching ./lib/Getopt/Long.pm...
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Getopt::Long
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Getopt/Long.pm blib/lib/Getopt/Long.pm
+cp lib/newgetopt.pl blib/lib/newgetopt.pl
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/gol-basic.t .... ok
+t/gol-compat.t ... ok
+t/gol-linkage.t .. ok
+t/gol-oo.t ....... ok
+t/gol-xargv.t .... ok
+t/gol-xstring.t .. ok
+All tests successful.
+Files=6, Tests=93,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.06 cusr  0.02 csys =  0.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/lib/pkgconfig m4datadir=/nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/share/aclocal aclocaldir=/nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/lib/perl5/site_perl/5.32.0/newgetopt.pl
+Installing /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/lib/perl5/site_perl/5.32.0/Getopt/Long.pm
+Installing /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/share/man/man3/Getopt::Long.3
+Appending installation info to /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/share/man/man3 to /nix/store/5b98dyaz37fzk0sq9pw3hxy4v2cd17rd-perl5.32.0-Getopt-Long-2.51-devdoc/share/man/man3
+Removing empty /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51/lib
+patching script interpreter paths in /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51
+checking for references to /build/ in /nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5b98dyaz37fzk0sq9pw3hxy4v2cd17rd-perl5.32.0-Getopt-Long-2.51-devdoc
+gzipping man pages under /nix/store/5b98dyaz37fzk0sq9pw3hxy4v2cd17rd-perl5.32.0-Getopt-Long-2.51-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5b98dyaz37fzk0sq9pw3hxy4v2cd17rd-perl5.32.0-Getopt-Long-2.51-devdoc
+checking for references to /build/ in /nix/store/5b98dyaz37fzk0sq9pw3hxy4v2cd17rd-perl5.32.0-Getopt-Long-2.51-devdoc...
+/nix/store/gwbzm2wiybxx487xm3llcxysf7yw080z-perl5.32.0-Getopt-Long-2.51

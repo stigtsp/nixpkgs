@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/2y0dd52dsgpibbqh6i77dkh6s52h0blx-perl5.32.0-Email-Address-List-0.06.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/0rs0838ldz2dgsylqrihfin5d8mvni5m-Email-Address-List-0.06.tar.gz
+copying path '/nix/store/0rs0838ldz2dgsylqrihfin5d8mvni5m-Email-Address-List-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2y0dd52dsgpibbqh6i77dkh6s52h0blx-perl5.32.0-Email-Address-List-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/0rs0838ldz2dgsylqrihfin5d8mvni5m-Email-Address-List-0.06.tar.gz
+source root is Email-Address-List-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1548795593 of file Email-Address-List-0.06/SIGNATURE
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Email::Address::List
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Email/Address/List.pm blib/lib/Email/Address/List.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/basics.t ............... ok
+t/invalid.t .............. ok
+t/pathological.t ......... ok
+t/random.combinations.t .. 1/? # srand is 45825
+t/random.combinations.t .. ok
+t/single.suit.t .......... ok
+All tests successful.
+Files=5, Tests=2115,  1 wallclock secs ( 0.16 usr  0.02 sys +  0.76 cusr  0.07 csys =  1.01 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/lib/pkgconfig m4datadir=/nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/share/aclocal aclocaldir=/nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/lib/perl5/site_perl/5.32.0/Email/Address/List.pm
+Installing /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/share/man/man3/Email::Address::List.3
+Appending installation info to /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/share/man/man3 to /nix/store/1n435s704vwg1a0hdwzbzl8x33phb0dn-perl5.32.0-Email-Address-List-0.06-devdoc/share/man/man3
+Removing empty /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06/lib
+patching script interpreter paths in /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06
+checking for references to /build/ in /nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1n435s704vwg1a0hdwzbzl8x33phb0dn-perl5.32.0-Email-Address-List-0.06-devdoc
+gzipping man pages under /nix/store/1n435s704vwg1a0hdwzbzl8x33phb0dn-perl5.32.0-Email-Address-List-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1n435s704vwg1a0hdwzbzl8x33phb0dn-perl5.32.0-Email-Address-List-0.06-devdoc
+checking for references to /build/ in /nix/store/1n435s704vwg1a0hdwzbzl8x33phb0dn-perl5.32.0-Email-Address-List-0.06-devdoc...
+/nix/store/idc81b3awl6yskzdhsv1xwnn7jhls7b5-perl5.32.0-Email-Address-List-0.06

@@ -1,0 +1,89 @@
+these derivations will be built:
+  /nix/store/q86i6pn7lgh97fjnakwyg27a43zbx4kk-perl5.32.0-Monitoring-Plugin-0.40.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/kdcvj5jwqz3wmipgfmlkvz79fajmiw78-Monitoring-Plugin-0.40.tar.gz
+copying path '/nix/store/kdcvj5jwqz3wmipgfmlkvz79fajmiw78-Monitoring-Plugin-0.40.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q86i6pn7lgh97fjnakwyg27a43zbx4kk-perl5.32.0-Monitoring-Plugin-0.40.drv'...
+unpacking sources
+unpacking source archive /nix/store/kdcvj5jwqz3wmipgfmlkvz79fajmiw78-Monitoring-Plugin-0.40.tar.gz
+source root is Monitoring-Plugin-0.40
+setting SOURCE_DATE_EPOCH to timestamp 1532549749 of file Monitoring-Plugin-0.40/META.yml
+patching sources
+configuring
+patching ./t/check_stuff.pl...
+patching ./t/check_stuff.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Monitoring::Plugin
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Monitoring/Plugin/Range.pm blib/lib/Monitoring/Plugin/Range.pm
+cp lib/Monitoring/Plugin/Getopt.pm blib/lib/Monitoring/Plugin/Getopt.pm
+cp lib/Monitoring/Plugin/Performance.pm blib/lib/Monitoring/Plugin/Performance.pm
+cp lib/Monitoring/Plugin.pm blib/lib/Monitoring/Plugin.pm
+cp lib/Monitoring/Plugin/ExitResult.pm blib/lib/Monitoring/Plugin/ExitResult.pm
+cp lib/Monitoring/Plugin/Functions.pm blib/lib/Monitoring/Plugin/Functions.pm
+cp lib/Monitoring/Plugin/Threshold.pm blib/lib/Monitoring/Plugin/Threshold.pm
+cp lib/Monitoring/Plugin/Config.pm blib/lib/Monitoring/Plugin/Config.pm
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/check_stuff.t ....................... ok
+t/Monitoring-Plugin-01.t .............. ok
+t/Monitoring-Plugin-02.t .............. ok
+t/Monitoring-Plugin-03.t .............. ok
+t/Monitoring-Plugin-04.t .............. ok
+t/Monitoring-Plugin-05.t .............. ok
+t/Monitoring-Plugin-Functions-01.t .... ok
+t/Monitoring-Plugin-Functions-02.t .... ok
+t/Monitoring-Plugin-Functions-03.t .... ok
+t/Monitoring-Plugin-Functions-04.t .... ok
+t/Monitoring-Plugin-Getopt-01.t ....... ok
+t/Monitoring-Plugin-Getopt-02.t ....... ok
+t/Monitoring-Plugin-Getopt-03.t ....... ok
+t/Monitoring-Plugin-Getopt-04.t ....... ok
+t/Monitoring-Plugin-Performance-02.t .. ok
+t/Monitoring-Plugin-Performance.t ..... ok
+t/Monitoring-Plugin-Range.t ........... ok
+t/Monitoring-Plugin-Threshold.t ....... ok
+All tests successful.
+Files=18, Tests=1002,  5 wallclock secs ( 0.12 usr  0.02 sys +  3.94 cusr  0.65 csys =  4.73 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/pkgconfig m4datadir=/nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/aclocal aclocaldir=/nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Config.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Threshold.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Functions.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Performance.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Getopt.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/Range.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/site_perl/5.32.0/Monitoring/Plugin/ExitResult.pm
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Performance.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::ExitResult.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Getopt.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Threshold.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Range.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Functions.3
+Installing /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3/Monitoring::Plugin::Config.3
+Appending installation info to /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/man3 to /nix/store/msqfwpxdw4m6myw8fxrdaa09p4z6ya11-perl5.32.0-Monitoring-Plugin-0.40-devdoc/share/man/man3
+Removing empty /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40/lib
+patching script interpreter paths in /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40
+checking for references to /build/ in /nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40...
+shrinking RPATHs of ELF executables and libraries in /nix/store/msqfwpxdw4m6myw8fxrdaa09p4z6ya11-perl5.32.0-Monitoring-Plugin-0.40-devdoc
+gzipping man pages under /nix/store/msqfwpxdw4m6myw8fxrdaa09p4z6ya11-perl5.32.0-Monitoring-Plugin-0.40-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/msqfwpxdw4m6myw8fxrdaa09p4z6ya11-perl5.32.0-Monitoring-Plugin-0.40-devdoc
+checking for references to /build/ in /nix/store/msqfwpxdw4m6myw8fxrdaa09p4z6ya11-perl5.32.0-Monitoring-Plugin-0.40-devdoc...
+/nix/store/71xscmibkxrqras1j687pqgxf1y43r3x-perl5.32.0-Monitoring-Plugin-0.40

@@ -1,0 +1,73 @@
+these derivations will be built:
+  /nix/store/6kgbybmizhlniqdx468xc0immsic6wjz-perl5.32.0-Data-Page-Pageset-1.02.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/6wq8pf95yhgyw99qaklbqzpvqxqvsrip-Data-Page-Pageset-1.02.tar.gz
+copying path '/nix/store/6wq8pf95yhgyw99qaklbqzpvqxqvsrip-Data-Page-Pageset-1.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6kgbybmizhlniqdx468xc0immsic6wjz-perl5.32.0-Data-Page-Pageset-1.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/6wq8pf95yhgyw99qaklbqzpvqxqvsrip-Data-Page-Pageset-1.02.tar.gz
+source root is Data-Page-Pageset-1.02
+setting SOURCE_DATE_EPOCH to timestamp 1103956432 of file Data-Page-Pageset-1.02/t/pod.t
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+patching ./t/01.main.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Page::Pageset
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Data-Page-Pageset' version '1.02'
+Building Data-Page-Pageset
+running tests
+t/00.load.t ....... 1/1 # Testing Data::Page::Pageset 1.02
+t/00.load.t ....... ok
+t/01.main.t ....... Subroutine Test2::API::Instance::ipc redefined at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Test2/API/Instance.pm line 58.
+Subroutine Test2::API::Instance::formatter redefined at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Test2/API/Instance.pm line 58.
+Subroutine set_todo redefined at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Test2/Event/Ok.pm line 23.
+Subroutine set_subevents redefined at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Test2/Event/Subtest.pm line 22.
+------------------------------
+total_entries: 1024
+entries_per_page: 25
+current_page: 13
+pages_per_set: 6
+max_pagesets: 3
+Output: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15-28 29-41
+------------------------------
+total_entries: 1024
+entries_per_page: 25
+current_page: 13
+pages_per_set: 6
+max_pagesets: [undef]
+Output: 1-6 7-12 13 14 15 16 17 18 19-24 25-30 31-36 37-41
+------------------------------
+Argument "ok" isn't numeric in addition (+) at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Test/Builder.pm line 647.
+t/01.main.t ....... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=4, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.25 cusr  0.13 csys =  0.41 CPU)
+Result: PASS
+installing
+Building Data-Page-Pageset
+Installing /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/lib/perl5/site_perl/5.32.0/Data/Page/Pageset.pm
+Installing /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/lib/perl5/site_perl/5.32.0/Data/Page/Pageset/Chunk.pm
+Installing /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/share/man/man3/Data::Page::Pageset.3
+post-installation fixup
+Moving /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/share/man/man3 to /nix/store/wyr70bgsbqi6n845hzwh6ws20rqnd0vd-perl5.32.0-Data-Page-Pageset-1.02-devdoc/share/man/man3
+Removing empty /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02/lib
+patching script interpreter paths in /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02
+checking for references to /build/ in /nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wyr70bgsbqi6n845hzwh6ws20rqnd0vd-perl5.32.0-Data-Page-Pageset-1.02-devdoc
+gzipping man pages under /nix/store/wyr70bgsbqi6n845hzwh6ws20rqnd0vd-perl5.32.0-Data-Page-Pageset-1.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wyr70bgsbqi6n845hzwh6ws20rqnd0vd-perl5.32.0-Data-Page-Pageset-1.02-devdoc
+checking for references to /build/ in /nix/store/wyr70bgsbqi6n845hzwh6ws20rqnd0vd-perl5.32.0-Data-Page-Pageset-1.02-devdoc...
+/nix/store/brlv56fhp99b8hcqvby54xsdmhprs6jd-perl5.32.0-Data-Page-Pageset-1.02

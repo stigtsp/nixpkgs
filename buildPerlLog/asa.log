@@ -1,0 +1,106 @@
+these derivations will be built:
+  /nix/store/7kx8iha5fc4vii55x6vhagwggp9f569m-perl5.32.0-asa-1.04.drv
+building '/nix/store/7kx8iha5fc4vii55x6vhagwggp9f569m-perl5.32.0-asa-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/zg1kxc66nfgwz7k3nspv55lwsdy29hy0-asa-1.04.tar.gz
+source root is asa-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1564458730 of file asa-1.04/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/usage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for asa
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/asa.pm blib/lib/asa.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More           any 1.302175
+#     base                 any     2.27
+#     vars                 any     1.05
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module Want Have
+#     ------ ---- ----
+#     Carp    any 1.50
+#     strict  any 1.11
+#
+# === Other Modules ===
+#
+#     Module             Have
+#     --------------- -------
+#     Encode             3.06
+#     File::Temp       0.2309
+#     JSON::PP           4.04
+#     Module::Runtime missing
+#     Pod::Coverage   missing
+#     Sub::Name       missing
+#     YAML            missing
+#     autodie            2.32
+#
+t/00-report-prereqs.t .. ok
+t/usage.t .............. ok
+All tests successful.
+Files=2, Tests=19,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.24 cusr  0.02 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/lib/pkgconfig m4datadir=/nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/share/aclocal aclocaldir=/nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/lib/perl5/site_perl/5.32.0/asa.pm
+Installing /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/share/man/man3/asa.3
+Appending installation info to /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/share/man/man3 to /nix/store/0nn6xqls3mj36h2g2r2rck02d2dm11wz-perl5.32.0-asa-1.04-devdoc/share/man/man3
+Removing empty /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04/lib
+patching script interpreter paths in /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04
+checking for references to /build/ in /nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0nn6xqls3mj36h2g2r2rck02d2dm11wz-perl5.32.0-asa-1.04-devdoc
+gzipping man pages under /nix/store/0nn6xqls3mj36h2g2r2rck02d2dm11wz-perl5.32.0-asa-1.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0nn6xqls3mj36h2g2r2rck02d2dm11wz-perl5.32.0-asa-1.04-devdoc
+checking for references to /build/ in /nix/store/0nn6xqls3mj36h2g2r2rck02d2dm11wz-perl5.32.0-asa-1.04-devdoc...
+/nix/store/lals498zbqv4cfm3r1av324qijdih7p5-perl5.32.0-asa-1.04

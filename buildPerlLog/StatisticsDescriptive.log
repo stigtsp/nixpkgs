@@ -1,0 +1,88 @@
+these derivations will be built:
+  /nix/store/g8945gw70liy9qvjscbfxwv6gi7si3vh-perl5.32.0-Statistics-Descriptive-3.0702.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/20c2f046m5d1z2n98gdzx989g9gy4k50-Statistics-Descriptive-3.0702.tar.gz
+copying path '/nix/store/20c2f046m5d1z2n98gdzx989g9gy4k50-Statistics-Descriptive-3.0702.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g8945gw70liy9qvjscbfxwv6gi7si3vh-perl5.32.0-Statistics-Descriptive-3.0702.drv'...
+unpacking sources
+unpacking source archive /nix/store/20c2f046m5d1z2n98gdzx989g9gy4k50-Statistics-Descriptive-3.0702.tar.gz
+source root is Statistics-Descriptive-3.0702
+setting SOURCE_DATE_EPOCH to timestamp 1540491115 of file Statistics-Descriptive-3.0702/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./scripts/tag-release.pl...
+patching ./scripts/bump-version-number.pl...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/statistical-analysis.pl...
+patching ./t/boilerplate.t...
+patching ./t/median_absolute_deviation.t...
+patching ./t/outliers.t...
+patching ./t/smoother_weightedexponential.t...
+patching ./t/descr.t...
+patching ./t/smoother_exponential.t...
+patching ./t/smoother.t...
+patching ./t/quantile.t...
+patching ./t/00-load.t...
+patching ./t/summary.t...
+patching ./t/freq_distribution-1-rt-34999.t...
+patching ./t/mode.t...
+patching ./t/descr_smooth_methods.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Statistics::Descriptive
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Statistics-Descriptive' version '3.0702'
+Building Statistics-Descriptive
+running tests
+t/00-compile.t .................... ok
+t/00-load.t ....................... 1/1 # Testing Statistics::Descriptive 3.0702, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....................... ok
+t/boilerplate.t ................... ok
+t/descr.t ......................... ok
+t/descr_smooth_methods.t .......... ok
+t/freq_distribution-1-rt-34999.t .. ok
+t/median_absolute_deviation.t ..... ok
+t/mode.t .......................... ok
+t/outliers.t ...................... ok
+t/quantile.t ...................... ok
+t/smoother.t ...................... ok
+t/smoother_exponential.t .......... ok
+t/smoother_weightedexponential.t .. ok
+t/summary.t ....................... ok
+All tests successful.
+Files=14, Tests=132,  2 wallclock secs ( 0.06 usr  0.01 sys +  0.97 cusr  0.36 csys =  1.40 CPU)
+Result: PASS
+installing
+Building Statistics-Descriptive
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive/Smoother.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive/Full.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive/Sparse.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive/Smoother/Exponential.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib/perl5/site_perl/5.32.0/Statistics/Descriptive/Smoother/Weightedexponential.pm
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive::Sparse.3
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive::Full.3
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive::Smoother.3
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive::Smoother::Exponential.3
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive::Smoother::Weightedexponential.3
+Installing /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3/Statistics::Descriptive.3
+post-installation fixup
+Moving /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/man3 to /nix/store/x0vj2w8y363x4skbs8qsm05qmkx47i23-perl5.32.0-Statistics-Descriptive-3.0702-devdoc/share/man/man3
+Removing empty /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702/lib
+patching script interpreter paths in /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702
+checking for references to /build/ in /nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x0vj2w8y363x4skbs8qsm05qmkx47i23-perl5.32.0-Statistics-Descriptive-3.0702-devdoc
+gzipping man pages under /nix/store/x0vj2w8y363x4skbs8qsm05qmkx47i23-perl5.32.0-Statistics-Descriptive-3.0702-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x0vj2w8y363x4skbs8qsm05qmkx47i23-perl5.32.0-Statistics-Descriptive-3.0702-devdoc
+checking for references to /build/ in /nix/store/x0vj2w8y363x4skbs8qsm05qmkx47i23-perl5.32.0-Statistics-Descriptive-3.0702-devdoc...
+/nix/store/cyhm088cs51vnnl0njjnabibq2qrcj65-perl5.32.0-Statistics-Descriptive-3.0702

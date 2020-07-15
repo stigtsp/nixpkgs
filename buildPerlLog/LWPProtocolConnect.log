@@ -1,0 +1,72 @@
+these derivations will be built:
+  /nix/store/4xl4xhn6zk9i1nh78di6rjxgibcw0d3n-perl5.32.0-LWP-Protocol-connect-6.09.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/idyzakr4pqd4hqspl93cyf76ms6xkyzk-LWP-Protocol-connect-6.09.tar.gz
+copying path '/nix/store/idyzakr4pqd4hqspl93cyf76ms6xkyzk-LWP-Protocol-connect-6.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4xl4xhn6zk9i1nh78di6rjxgibcw0d3n-perl5.32.0-LWP-Protocol-connect-6.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/idyzakr4pqd4hqspl93cyf76ms6xkyzk-LWP-Protocol-connect-6.09.tar.gz
+source root is LWP-Protocol-connect-6.09
+setting SOURCE_DATE_EPOCH to timestamp 1389097712 of file LWP-Protocol-connect-6.09/t/use.t
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/author-http.t...
+patching ./t/use.t...
+patching ./t/author-proxy-auth.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/author-google.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LWP::Protocol::connect
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LWP/Protocol/http/connect.pm blib/lib/LWP/Protocol/http/connect.pm
+cp lib/LWP/Protocol/connect.pm blib/lib/LWP/Protocol/connect.pm
+cp lib/LWP/Protocol/http/connect/Socket.pm blib/lib/LWP/Protocol/http/connect/Socket.pm
+cp lib/URI/connect.pm blib/lib/URI/connect.pm
+cp lib/LWP/Protocol/connect/Socket/Base.pm blib/lib/LWP/Protocol/connect/Socket/Base.pm
+cp lib/LWP/Protocol/https/connect/Socket.pm blib/lib/LWP/Protocol/https/connect/Socket.pm
+cp lib/LWP/Protocol/https/connect.pm blib/lib/LWP/Protocol/https/connect.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/author-critic.t ....... skipped: these tests are for testing by the author
+t/author-google.t ....... skipped: these tests are for testing by the author
+t/author-http.t ......... skipped: these tests are for testing by the author
+t/author-proxy-auth.t ... skipped: these tests are for testing by the author
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+t/use.t ................. ok
+All tests successful.
+Files=6, Tests=1,  2 wallclock secs ( 0.04 usr  0.02 sys +  0.59 cusr  0.67 csys =  1.32 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/pkgconfig m4datadir=/nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/share/aclocal aclocaldir=/nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/connect.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/connect/Socket/Base.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/https/connect.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/https/connect/Socket.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/http/connect.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/LWP/Protocol/http/connect/Socket.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/site_perl/5.32.0/URI/connect.pm
+Installing /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/share/man/man3/LWP::Protocol::connect.3
+Appending installation info to /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/share/man/man3 to /nix/store/b0ixk0wn2zhw7z7p6q2pcv44zyvrbk6z-perl5.32.0-LWP-Protocol-connect-6.09-devdoc/share/man/man3
+Removing empty /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09/lib
+patching script interpreter paths in /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09
+checking for references to /build/ in /nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b0ixk0wn2zhw7z7p6q2pcv44zyvrbk6z-perl5.32.0-LWP-Protocol-connect-6.09-devdoc
+gzipping man pages under /nix/store/b0ixk0wn2zhw7z7p6q2pcv44zyvrbk6z-perl5.32.0-LWP-Protocol-connect-6.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b0ixk0wn2zhw7z7p6q2pcv44zyvrbk6z-perl5.32.0-LWP-Protocol-connect-6.09-devdoc
+checking for references to /build/ in /nix/store/b0ixk0wn2zhw7z7p6q2pcv44zyvrbk6z-perl5.32.0-LWP-Protocol-connect-6.09-devdoc...
+/nix/store/ljwvny6m90sc5n7bcws4qy6qp2hw2712-perl5.32.0-LWP-Protocol-connect-6.09

@@ -1,0 +1,72 @@
+these derivations will be built:
+  /nix/store/03nxfamacaiwmnljirn8n7ihcimbshbd-perl5.32.0-Font-AFM-1.20.drv
+building '/nix/store/03nxfamacaiwmnljirn8n7ihcimbshbd-perl5.32.0-Font-AFM-1.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/3k67d1xwnkyjm48mdrss8qzmrfdssmq5-Font-AFM-1.20.tar.gz
+source root is Font-AFM-1.20
+setting SOURCE_DATE_EPOCH to timestamp 1212562168 of file Font-AFM-1.20/META.yml
+patching sources
+configuring
+patching ./make_metrics...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Font::AFM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Font/Metrics/HelveticaOblique.pm blib/lib/Font/Metrics/HelveticaOblique.pm
+cp lib/Font/Metrics/TimesBoldItalic.pm blib/lib/Font/Metrics/TimesBoldItalic.pm
+cp AFM.pm blib/lib/Font/AFM.pm
+cp lib/Font/Metrics/CourierBoldOblique.pm blib/lib/Font/Metrics/CourierBoldOblique.pm
+cp lib/Font/Metrics/TimesBold.pm blib/lib/Font/Metrics/TimesBold.pm
+cp lib/Font/Metrics/HelveticaBold.pm blib/lib/Font/Metrics/HelveticaBold.pm
+cp lib/Font/Metrics/TimesRoman.pm blib/lib/Font/Metrics/TimesRoman.pm
+cp lib/Font/Metrics/Courier.pm blib/lib/Font/Metrics/Courier.pm
+cp lib/Font/Metrics/CourierOblique.pm blib/lib/Font/Metrics/CourierOblique.pm
+cp lib/Font/Metrics/HelveticaBoldOblique.pm blib/lib/Font/Metrics/HelveticaBoldOblique.pm
+cp lib/Font/Metrics/TimesItalic.pm blib/lib/Font/Metrics/TimesItalic.pm
+cp lib/Font/Metrics/CourierBold.pm blib/lib/Font/Metrics/CourierBold.pm
+cp lib/Font/Metrics/Helvetica.pm blib/lib/Font/Metrics/Helvetica.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/afm.t .... skipped: Can't find required font
+t/times.t .. ok
+All tests successful.
+Files=2, Tests=2,  0 wallclock secs ( 0.02 usr +  0.00 sys =  0.02 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/pkgconfig m4datadir=/nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/share/aclocal aclocaldir=/nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/AFM.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/HelveticaOblique.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/HelveticaBoldOblique.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/TimesBoldItalic.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/TimesItalic.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/Helvetica.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/TimesBold.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/Courier.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/TimesRoman.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/CourierBoldOblique.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/CourierBold.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/HelveticaBold.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/site_perl/5.32.0/Font/Metrics/CourierOblique.pm
+Installing /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/share/man/man3/Font::AFM.3
+Appending installation info to /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/share/man/man3 to /nix/store/rhkh0x7nbs65bi9jvb39g9ij4pnj46fn-perl5.32.0-Font-AFM-1.20-devdoc/share/man/man3
+Removing empty /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20/lib
+patching script interpreter paths in /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20
+checking for references to /build/ in /nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rhkh0x7nbs65bi9jvb39g9ij4pnj46fn-perl5.32.0-Font-AFM-1.20-devdoc
+gzipping man pages under /nix/store/rhkh0x7nbs65bi9jvb39g9ij4pnj46fn-perl5.32.0-Font-AFM-1.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rhkh0x7nbs65bi9jvb39g9ij4pnj46fn-perl5.32.0-Font-AFM-1.20-devdoc
+checking for references to /build/ in /nix/store/rhkh0x7nbs65bi9jvb39g9ij4pnj46fn-perl5.32.0-Font-AFM-1.20-devdoc...
+/nix/store/06qzdnbj5kmb0yadqcgdazya0z44da0a-perl5.32.0-Font-AFM-1.20

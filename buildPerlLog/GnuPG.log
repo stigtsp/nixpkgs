@@ -1,0 +1,1129 @@
+these derivations will be built:
+  /nix/store/f5gq0hhic7mfrcdglys93g4qngpb4g0v-gnupg-1.4.23.drv
+  /nix/store/ncm5h3i6af26fimziw3a533aklzwp0ag-perl5.32.0-GnuPG-0.19.drv
+building '/nix/store/f5gq0hhic7mfrcdglys93g4qngpb4g0v-gnupg-1.4.23.drv'...
+unpacking sources
+unpacking source archive /nix/store/69588rasi6hp12kdl350zfx4i5bx7jqd-gnupg-1.4.23.tar.bz2
+source root is gnupg-1.4.23
+setting SOURCE_DATE_EPOCH to timestamp 1528706916 of file gnupg-1.4.23/gnupg.spec
+patching sources
+configuring
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23
+configure: WARNING: unrecognized options: --disable-static
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+configure: autobuild project... gnupg
+configure: autobuild revision... 1.4.23
+./configure: line 3408: hostname: command not found
+configure: autobuild timestamp... 20200715-043442
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking which random module to use... default
+checking whether use of /dev/random is requested... yes
+checking whether assembler modules are requested... yes
+checking whether SELinux support is requested... no
+checking whether the new iconv based code is requested... yes
+checking whether to allocate extra secure memory... no
+checking whether OpenPGP card support is requested... yes
+checking whether gpg-agent support is requested... yes
+checking whether to enable the RSA public key algorithm... yes
+checking whether to enable the IDEA cipher... yes
+checking whether to enable the CAST5 cipher... yes
+checking whether to enable the BLOWFISH cipher... yes
+checking whether to enable the AES ciphers... yes
+checking whether to enable the TWOFISH cipher... yes
+checking whether to enable the CAMELLIA cipher... yes
+checking whether to enable the SHA-224 and SHA-256 digests... yes
+checking whether to enable the SHA-384 and SHA-512 digests... yes
+checking whether to enable the BZIP2 compression algorithm... yes
+checking whether to enable external program execution... yes
+checking whether to enable photo ID viewing... yes
+checking whether to use a fixed photo ID viewer... no
+checking whether to enable external keyserver helpers... yes
+checking whether LDAP keyserver support is requested... yes
+checking whether HKP keyserver support is requested... yes
+checking whether finger key fetching support is requested... yes
+checking whether generic object key fetching support is requested... yes
+checking whether email keyserver support is requested... no
+checking whether keyserver exec-path is enabled... yes
+checking whether the included zlib is requested... no
+checking for the size of the key and uid cache... 4096
+checking whether use of capabilities is requested... no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make sets $(MAKE)... (cached) yes
+checking whether build environment is sane... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking how to run the C preprocessor... gcc -E
+checking for ranlib... ranlib
+checking for ar... ar
+checking for perl... no
+checking for strerror in -lcposix... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for gawk... (cached) gawk
+checking for tar... /nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin/tar
+checking whether /nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin/tar speaks USTAR... yes
+checking for cc for build... gcc
+checking for BSD-compatible nm... nm
+checking command to parse nm output... no
+checking for _ prefix in compiled symbols... no
+checking for gethostbyname... yes
+checking for setsockopt... yes
+checking for library containing res_query... no
+checking for library containing __res_query... -lresolv
+checking for library containing dn_expand... no
+checking for library containing __dn_expand... none required
+checking for library containing dn_skipname... no
+checking for library containing __dn_skipname... none required
+checking whether the resolver is usable... yes
+checking whether LDAP via "-lldap" is present and sane... no
+checking whether I can make LDAP be sane with lber.h... no
+checking whether LDAP via "-lldap -llber" is present and sane... no
+checking whether I can make LDAP be sane with lber.h... no
+checking whether LDAP via "-lldap -llber -lresolv" is present and sane... no
+checking whether I can make LDAP be sane with lber.h... no
+checking whether LDAP via "-lwldap32" is present and sane... no
+checking whether I can make LDAP be sane with lber.h... no
+checking for gawk... (cached) gawk
+checking for curl-config... no
+checking whether libcurl is usable... no
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking whether we are using the GNU C Library 2 or newer... yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for inline... inline
+checking for size_t... yes
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... yes
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking whether imported symbols can be declared weak... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for multithread API to use... posix
+checking for pthread_rwlock_t... yes
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for uselocale... yes
+checking for argz_count... yes
+checking for argz_stringify... yes
+checking for argz_next... yes
+checking for __fsetlocking... yes
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking for bison... no
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... yes
+checking whether we are using the GNU C Library >= 2.1 or uClibc... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for symlink... yes
+checking for working fcntl.h... yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for ptrdiff_t... yes
+checking features.h usability... yes
+checking features.h presence... yes
+checking for features.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for fwprintf... yes
+checking for newlocale... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for snprintf... yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for strchr... yes
+checking for library containing dlopen... -ldl
+checking for ANSI C header files... (cached) yes
+checking for unistd.h... (cached) yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... (cached) inline
+checking for working volatile... yes
+checking for size_t... (cached) yes
+checking for mode_t... yes
+checking return type of signal handlers... void
+checking whether sys_siglist is declared... yes
+checking endianess... little
+checking for byte typedef... no
+checking for ushort typedef... yes
+checking for ulong typedef... yes
+checking for u16 typedef... no
+checking for u32 typedef... no
+checking size of unsigned short... 2
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of unsigned long long... 8
+checking whether time.h and sys/time.h may both be included... yes
+checking size of time_t... 8
+checking whether time_t is unsigned... no
+checking for inttypes.h... (cached) yes
+checking for UINT64_C... yes
+checking size of uint64_t... 8
+checking whether getpagesize is declared... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for vprintf... yes
+checking for _doprnt... no
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for strerror... yes
+checking for stpcpy... (cached) yes
+checking for strlwr... no
+checking for tcgetattr... yes
+checking for strtoul... (cached) yes
+checking for mmap... yes
+checking for sysconf... yes
+checking for strcasecmp... (cached) yes
+checking for strncasecmp... yes
+checking for ctermid... yes
+checking for times... yes
+checking for unsetenv... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for memmove... yes
+checking for gettimeofday... yes
+checking for getrusage... yes
+checking for setrlimit... yes
+checking for clock_gettime... yes
+checking for atexit... yes
+checking for raise... yes
+checking for getpagesize... (cached) yes
+checking for strftime... yes
+checking for nl_langinfo... yes
+checking for setlocale... (cached) yes
+checking for waitpid... yes
+checking for wait4... yes
+checking for sigaction... yes
+checking for sigprocmask... yes
+checking for rand... yes
+checking for pipe... yes
+checking for stat... yes
+checking for getaddrinfo... yes
+checking for fcntl... yes
+checking for ftruncate... yes
+checking for inet_ntop... yes
+checking for mkdtemp... yes
+checking for timegm... yes
+checking for isascii... yes
+checking for memrchr... yes
+checking for strsep... yes
+checking for struct sigaction... yes
+checking for sigset_t... yes
+checking for getopt... yes
+checking for gethrtime... no
+checking for mlock... yes
+checking for sysconf... (cached) yes
+checking for getpagesize... (cached) yes
+checking whether mlock is broken... no
+checking for sys/stat.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking if mkdir takes one argument... no
+configure: checking system features for estream-printf
+checking for stdint.h... (cached) yes
+checking for long long int... (cached) yes
+checking for long double... yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for ptrdiff_t... (cached) yes
+checking size of unsigned long... (cached) 8
+checking size of void *... 8
+checking for nl_langinfo and THOUSANDS_SEP... yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/shm.h usability... yes
+checking sys/shm.h presence... yes
+checking for sys/shm.h... yes
+checking whether IPC_RMID allowes subsequent attaches... yes
+checking whether SHM_LOCK is available... yes
+checking for random device... yes
+checking for mpi assembler functions... done
+checking whether regular expression support is requested... yes
+checking whether the included regex lib is requested... no
+checking for regcomp... yes
+checking whether your system's regexp library is broken... no
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+checking for bzlib.h... yes
+checking for BZ2_bzCompressInit in -lbz2... yes
+checking for libusb-config... no
+checking whether libusb is present and sane... no
+checking whether readline via "-lreadline" is present and sane... yes
+checking if gcc supports -Wno-pointer-sign... yes
+checking dependency style of gcc... none
+checking whether non excutable stack support is requested... no
+checking whether assembler supports --noexecstack option... yes
+checking that generated files are newer than configure... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating m4/Makefile
+config.status: creating intl/Makefile
+config.status: creating po/Makefile.in
+config.status: creating util/Makefile
+config.status: creating mpi/Makefile
+config.status: creating cipher/Makefile
+config.status: creating g10/Makefile
+config.status: creating keyserver/Makefile
+config.status: creating keyserver/gpgkeys_mailto
+config.status: creating keyserver/gpgkeys_test
+config.status: creating doc/Makefile
+config.status: creating tools/Makefile
+config.status: creating tools/gpg-zip
+config.status: creating zlib/Makefile
+config.status: creating bzlib/Makefile
+config.status: creating checks/Makefile
+config.status: creating config.h
+config.status: linking mpi/generic/mpih-add1.c to mpi/mpih-add1.c
+config.status: linking mpi/generic/mpih-mul1.c to mpi/mpih-mul1.c
+config.status: linking mpi/generic/mpih-mul2.c to mpi/mpih-mul2.c
+config.status: linking mpi/generic/mpih-mul3.c to mpi/mpih-mul3.c
+config.status: linking mpi/generic/mpih-lshift.c to mpi/mpih-lshift.c
+config.status: linking mpi/generic/mpih-rshift.c to mpi/mpih-rshift.c
+config.status: linking mpi/generic/mpih-sub1.c to mpi/mpih-sub1.c
+config.status: linking mpi/generic/mpi-asm-defs.h to mpi/mpi-asm-defs.h
+config.status: linking zlib/zlib.h to zlib.h
+config.status: linking zlib/zconf.h to zconf.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: WARNING: unrecognized options: --disable-static
+
+                Version info:   gnupg 1.4.23
+                Configured for: GNU/Linux (x86_64-pc-linux-gnu)
+
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+make  all-recursive
+make[1]: Entering directory '/build/gnupg-1.4.23'
+Making all in m4
+make[2]: Entering directory '/build/gnupg-1.4.23/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/m4'
+Making all in intl
+make[2]: Entering directory '/build/gnupg-1.4.23/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/intl'
+Making all in zlib
+make[2]: Entering directory '/build/gnupg-1.4.23/zlib'
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o adler32.o adler32.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o compress.o compress.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o crc32.o crc32.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o uncompr.o uncompr.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o deflate.o deflate.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o trees.o trees.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o zutil.o zutil.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o inflate.o inflate.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o infblock.o infblock.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o inftrees.o inftrees.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o infcodes.o infcodes.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o infutil.o infutil.c
+gcc -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wno-pointer-sign -c -o inffast.o inffast.c
+rm -f libzlib.a
+ar cru libzlib.a adler32.o compress.o crc32.o uncompr.o deflate.o trees.o zutil.o inflate.o infblock.o inftrees.o infcodes.o infutil.o inffast.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libzlib.a
+make[2]: Leaving directory '/build/gnupg-1.4.23/zlib'
+Making all in util
+make[2]: Entering directory '/build/gnupg-1.4.23/util'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o logger.o logger.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o fileutil.o fileutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o miscutil.o miscutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o strgutil.o strgutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o ttyio.o ttyio.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o argparse.o argparse.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o memory.o memory.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o secmem.o secmem.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o errors.o errors.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o iobuf.o iobuf.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o dotlock.o dotlock.c
+dotlock.c: In function 'use_hardlinks_p':
+dotlock.c:591:10: warning: ignoring return value of 'link', declared with attribute warn_unused_result [-Wunused-result]
+  591 |   (void) link (tname, lname);
+      |          ^~~~~~~~~~~~~~~~~~~
+dotlock.c: In function 'dotlock_take_unix':
+dotlock.c:1016:14: warning: ignoring return value of 'link', declared with attribute warn_unused_result [-Wunused-result]
+ 1016 |       (void) link (h->tname, h->lockname);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o http.o http.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o pka.o pka.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o membuf.o membuf.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o cert.o cert.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o convert.o convert.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o estream-printf.o estream-printf.c
+estream-printf.c: In function 'pr_integer':
+estream-printf.c:783:1: note: the ABI of passing union with long double has changed in GCC 4.4
+  783 | pr_integer (estream_printf_out_t outfnc, void *outfncarg,
+      | ^~~~~~~~~~
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o compat.o compat.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o srv.o srv.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-buffer.o assuan-buffer.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-client.o assuan-client.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-errors.o assuan-errors.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-logging.o assuan-logging.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-socket-connect.o assuan-socket-connect.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-connect.o assuan-connect.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-socket.o assuan-socket.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o assuan-util.o assuan-util.c
+rm -f libutil.a
+ar cru libutil.a logger.o fileutil.o miscutil.o strgutil.o ttyio.o argparse.o memory.o secmem.o errors.o iobuf.o dotlock.o http.o pka.o membuf.o cert.o convert.o estream-printf.o compat.o srv.o   assuan-buffer.o assuan-client.o assuan-errors.o assuan-logging.o assuan-socket-connect.o assuan-connect.o assuan-socket.o assuan-util.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libutil.a
+rm -f libcompat.a
+ar cru libcompat.a compat.o srv.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libcompat.a
+make[2]: Leaving directory '/build/gnupg-1.4.23/util'
+Making all in mpi
+make[2]: Entering directory '/build/gnupg-1.4.23/mpi'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-add.o mpi-add.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-bit.o mpi-bit.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-cmp.o mpi-cmp.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-div.o mpi-div.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-gcd.o mpi-gcd.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-inline.o mpi-inline.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-inv.o mpi-inv.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-mul.o mpi-mul.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-pow.o mpi-pow.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-mpow.o mpi-mpow.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpi-scan.o mpi-scan.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpicoder.o mpicoder.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-cmp.o mpih-cmp.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-div.o mpih-div.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-mul.o mpih-mul.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpiutil.o mpiutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-mul1.o mpih-mul1.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-mul2.o mpih-mul2.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-mul3.o mpih-mul3.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-add1.o mpih-add1.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-sub1.o mpih-sub1.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-lshift.o mpih-lshift.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include   -g -O2 -Wall -Wno-pointer-sign -c -o mpih-rshift.o mpih-rshift.c
+rm -f libmpi.a
+ar cru libmpi.a mpi-add.o mpi-bit.o mpi-cmp.o mpi-div.o mpi-gcd.o mpi-inline.o mpi-inv.o mpi-mul.o mpi-pow.o mpi-mpow.o mpi-scan.o mpicoder.o mpih-cmp.o mpih-div.o mpih-mul.o mpiutil.o mpih-mul1.o mpih-mul2.o mpih-mul3.o mpih-add1.o mpih-sub1.o mpih-lshift.o mpih-rshift.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libmpi.a
+make[2]: Leaving directory '/build/gnupg-1.4.23/mpi'
+Making all in cipher
+make[2]: Entering directory '/build/gnupg-1.4.23/cipher'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o cipher.o cipher.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o pubkey.o pubkey.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o md.o md.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o dynload.o dynload.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o des.o des.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o twofish.o twofish.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o blowfish.o blowfish.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o cast5.o cast5.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o rijndael.o rijndael.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o camellia.o camellia.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o camellia-glue.o camellia-glue.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o idea.o idea.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o elgamal.o elgamal.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o rsa.o rsa.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o primegen.o primegen.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o random.o random.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o dsa.o dsa.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o smallprime.o smallprime.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o md5.o md5.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o rmd160.o rmd160.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o sha1.o sha1.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o sha256.o sha256.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o rndlinux.o rndlinux.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../intl -I../mpi -I../mpi -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o sha512.o sha512.c
+rm -f libcipher.a
+ar cru libcipher.a cipher.o pubkey.o md.o dynload.o des.o twofish.o blowfish.o cast5.o rijndael.o camellia.o camellia-glue.o idea.o elgamal.o rsa.o primegen.o random.o dsa.o smallprime.o md5.o rmd160.o sha1.o sha256.o rndlinux.o    sha512.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libcipher.a
+make[2]: Leaving directory '/build/gnupg-1.4.23/cipher'
+Making all in tools
+make[2]: Entering directory '/build/gnupg-1.4.23/tools'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o gpgsplit.o gpgsplit.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpgsplit gpgsplit.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a     ../zlib/libzlib.a -lbz2
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o mpicalc.o mpicalc.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o mpicalc mpicalc.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o bftest.o bftest.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o bftest bftest.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a      -ldl   -lreadline
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o clean-sat.o clean-sat.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o clean-sat clean-sat.o
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o mk-tdata.o mk-tdata.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o mk-tdata mk-tdata.o
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o shmtest.o shmtest.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o shmtest shmtest.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a     -lreadline
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\""   -g -O2 -Wall -Wno-pointer-sign -c -o make-dns-cert.o make-dns-cert.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o make-dns-cert make-dns-cert.o
+make[2]: Leaving directory '/build/gnupg-1.4.23/tools'
+Making all in g10
+make[2]: Entering directory '/build/gnupg-1.4.23/g10'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o gpg.o gpg.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o build-packet.o build-packet.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o compress.o compress.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o compress-bz2.o compress-bz2.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o free-packet.o free-packet.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o getkey.o getkey.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keydb.o keydb.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keyring.o keyring.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o seskey.o seskey.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o kbnode.o kbnode.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o mainproc.o mainproc.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o armor.o armor.c
+armor.c: In function 'armor_filter':
+armor.c:1240:17: warning: 'radbuf[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1240 |   c = bintoasc[(*radbuf>>2)&077];
+      |                 ^~~~~~~
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o mdfilter.o mdfilter.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o textfilter.o textfilter.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o progress.o progress.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o misc.o misc.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o openfile.o openfile.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keyid.o keyid.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o parse-packet.o parse-packet.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o status.o status.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o plaintext.o plaintext.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o sig-check.o sig-check.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keylist.o keylist.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o signal.o signal.c
+signal.c: In function 'got_fatal_signal':
+signal.c:98:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   98 |     write(2, "\n", 1 );
+      |     ^~~~~~~~~~~~~~~~~~
+signal.c:99:33: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   99 |     s = log_get_name(); if( s ) write(2, s, strlen(s) );
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+signal.c:100:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  100 |     write(2, ": ", 2 );
+      |     ^~~~~~~~~~~~~~~~~~
+signal.c:104:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  104 |     write (2, s, strlen(s) );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+signal.c:115:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  115 |     write(2, " caught ... exiting\n", 20 );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o cardglue.o cardglue.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o tlv.o tlv.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o card-util.o card-util.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o app-openpgp.o app-openpgp.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o iso7816.o iso7816.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o apdu.o apdu.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o ccid-driver.o ccid-driver.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o pkclist.o pkclist.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o skclist.o skclist.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o pubkey-enc.o pubkey-enc.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o passphrase.o passphrase.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o seckey-cert.o seckey-cert.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o encr-data.o encr-data.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o cipher.o cipher.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o encode.o encode.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o sign.o sign.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o verify.o verify.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o revoke.o revoke.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o decrypt.o decrypt.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keyedit.o keyedit.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o dearmor.o dearmor.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o import.o import.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o export.o export.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o trustdb.o trustdb.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o tdbdump.o tdbdump.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o tdbio.o tdbio.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o delkey.o delkey.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keygen.o keygen.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o pipemode.o pipemode.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o helptext.o helptext.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o keyserver.o keyserver.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o photoid.o photoid.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o exec.o exec.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpg gpg.o build-packet.o compress.o compress-bz2.o free-packet.o getkey.o keydb.o keyring.o seskey.o kbnode.o mainproc.o armor.o mdfilter.o textfilter.o progress.o misc.o openfile.o keyid.o parse-packet.o status.o plaintext.o sig-check.o keylist.o signal.o cardglue.o tlv.o card-util.o app-openpgp.o iso7816.o apdu.o ccid-driver.o pkclist.o skclist.o pubkey-enc.o passphrase.o seckey-cert.o encr-data.o cipher.o encode.o sign.o verify.o revoke.o decrypt.o keyedit.o dearmor.o import.o export.o trustdb.o tdbdump.o tdbio.o delkey.o keygen.o pipemode.o helptext.o keyserver.o photoid.o exec.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a  -lresolv    ../zlib/libzlib.a -lbz2  -lreadline -ldl
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl -DLOCALEDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale\"" -DGNUPG_LIBEXECDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg\"" -DGNUPG_DATADIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg\"" -DGNUPG_LIBDIR="\"/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/gnupg\""   -g -O2 -Wall -Wno-pointer-sign -c -o gpgv.o gpgv.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpgv gpgv.o build-packet.o compress.o compress-bz2.o free-packet.o getkey.o keydb.o keyring.o seskey.o kbnode.o mainproc.o armor.o mdfilter.o textfilter.o progress.o misc.o openfile.o keyid.o parse-packet.o status.o plaintext.o sig-check.o keylist.o signal.o verify.o ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a  -lresolv    ../zlib/libzlib.a -lbz2
+make[2]: Leaving directory '/build/gnupg-1.4.23/g10'
+Making all in keyserver
+make[2]: Entering directory '/build/gnupg-1.4.23/keyserver'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_hkp-gpgkeys_hkp.o `test -f 'gpgkeys_hkp.c' || echo './'`gpgkeys_hkp.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_hkp-ksutil.o `test -f 'ksutil.c' || echo './'`ksutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_hkp-curl-shim.o `test -f 'curl-shim.c' || echo './'`curl-shim.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpgkeys_hkp gpgkeys_hkp-gpgkeys_hkp.o gpgkeys_hkp-ksutil.o gpgkeys_hkp-curl-shim.o  ../util/libutil.a  -lresolv
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_finger-gpgkeys_finger.o `test -f 'gpgkeys_finger.c' || echo './'`gpgkeys_finger.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_finger-ksutil.o `test -f 'ksutil.c' || echo './'`ksutil.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpgkeys_finger gpgkeys_finger-gpgkeys_finger.o gpgkeys_finger-ksutil.o ../util/libutil.a
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_curl-gpgkeys_curl.o `test -f 'gpgkeys_curl.c' || echo './'`gpgkeys_curl.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_curl-ksutil.o `test -f 'ksutil.c' || echo './'`ksutil.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../intl   -g -O2 -Wall -Wno-pointer-sign -c -o gpgkeys_curl-curl-shim.o `test -f 'curl-shim.c' || echo './'`curl-shim.c
+gcc  -g -O2 -Wall -Wno-pointer-sign   -o gpgkeys_curl gpgkeys_curl-gpgkeys_curl.o gpgkeys_curl-ksutil.o gpgkeys_curl-curl-shim.o  ../util/libutil.a  -lresolv
+make[2]: Leaving directory '/build/gnupg-1.4.23/keyserver'
+Making all in po
+make[2]: Entering directory '/build/gnupg-1.4.23/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/po'
+Making all in doc
+make[2]: Entering directory '/build/gnupg-1.4.23/doc'
+gcc -o yat2m ./yat2m.c
+for file in gpg.texi gpgv.texi ; do \
+              ./yat2m -I . -D gpgone --release "GnuPG 1.4.23" --source "GNU Privacy Guard 1.4" --store \
+          `test -f '$file' || echo './'`$file ; done
+yat2m: writing 'gpg.1'
+yat2m: writing 'gpgv.1'
+make[2]: Leaving directory '/build/gnupg-1.4.23/doc'
+Making all in checks
+make[2]: Entering directory '/build/gnupg-1.4.23/checks'
+echo '#!/bin/sh' >./gpg_dearmor
+echo "../g10/gpg --no-options --no-greeting \
+             --no-secmem-warning --batch --dearmor" >>./gpg_dearmor
+chmod 755 ./gpg_dearmor
+./gpg_dearmor > ./pubring.gpg < ./pubring.asc
+./gpg_dearmor > ./secring.gpg < ./secring.asc
+./gpg_dearmor > ./plain-1 < ./plain-1o.asc
+./gpg_dearmor > ./plain-2 < ./plain-2o.asc
+./gpg_dearmor > ./plain-3 < ./plain-3o.asc
+./gpg_dearmor > ./pubring.pkr < ./pubring.pkr.asc
+./gpg_dearmor > ./secring.skr < ./secring.skr.asc
+../tools/mk-tdata   500  >data-500
+../tools/mk-tdata  9000  >data-9000
+../tools/mk-tdata 32000  >data-32000
+../tools/mk-tdata 80000  >data-80000
+cat ./../doc/HACKING \
+    ./../doc/DETAILS \
+    ./../doc/FAQ         >plain-large
+../g10/gpg --homedir . --quiet --yes --no-permission-warning --import ./pubdemo.asc
+echo '# Do not edit - created by the Makefile.      -*- sh -*-' \
+               > defs-config.inc
+echo enable_selinux_hacks=no >> defs-config.inc
+make[2]: Leaving directory '/build/gnupg-1.4.23/checks'
+make[2]: Entering directory '/build/gnupg-1.4.23'
+make[2]: Leaving directory '/build/gnupg-1.4.23'
+make[1]: Leaving directory '/build/gnupg-1.4.23'
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y check
+Making check in m4
+make[1]: Entering directory '/build/gnupg-1.4.23/m4'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/m4'
+Making check in intl
+make[1]: Entering directory '/build/gnupg-1.4.23/intl'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/intl'
+Making check in zlib
+make[1]: Entering directory '/build/gnupg-1.4.23/zlib'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/zlib'
+Making check in util
+make[1]: Entering directory '/build/gnupg-1.4.23/util'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/util'
+Making check in mpi
+make[1]: Entering directory '/build/gnupg-1.4.23/mpi'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/mpi'
+Making check in cipher
+make[1]: Entering directory '/build/gnupg-1.4.23/cipher'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/cipher'
+Making check in tools
+make[1]: Entering directory '/build/gnupg-1.4.23/tools'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/tools'
+Making check in g10
+make[1]: Entering directory '/build/gnupg-1.4.23/g10'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/g10'
+Making check in keyserver
+make[1]: Entering directory '/build/gnupg-1.4.23/keyserver'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/keyserver'
+Making check in po
+make[1]: Entering directory '/build/gnupg-1.4.23/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/po'
+Making check in doc
+make[1]: Entering directory '/build/gnupg-1.4.23/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/gnupg-1.4.23/doc'
+Making check in checks
+make[1]: Entering directory '/build/gnupg-1.4.23/checks'
+make  check-TESTS
+make[2]: Entering directory '/build/gnupg-1.4.23/checks'
+gpg (GnuPG) 1.4.23
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: .
+Supported algorithms:
+Pubkey: RSA, RSA-E, RSA-S, ELG-E, DSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
+        CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: MD5, SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+PASS: version.test
+PASS: mds.test
+PASS: decrypt.test
+PASS: decrypt-dsa.test
+MD5 SHA1 RIPEMD160 SHA256 SHA384 SHA512 SHA224 | PASS: sigs.test
+PASS: sigs-dsa.test
+IDEA 3DES CAST5 BLOWFISH AES AES192 AES256 TWOFISH CAMELLIA128 CAMELLIA192 CAMELLIA256 | PASS: encrypt.test
+IDEA 3DES CAST5 BLOWFISH AES AES192 AES256 TWOFISH CAMELLIA128 CAMELLIA192 CAMELLIA256 | PASS: encrypt-dsa.test
+PASS: seat.test
+PASS: clearsig.test
+PASS: encryptp.test
+PASS: detach.test
+PASS: armsigs.test
+PASS: armencrypt.test
+PASS: armencryptp.test
+PASS: signencrypt.test
+PASS: signencrypt-dsa.test
+PASS: armsignencrypt.test
+PASS: armdetach.test
+PASS: armdetachm.test
+PASS: detachm.test
+PASS: genkey1024.test
+IDEA 3DES CAST5 BLOWFISH AES AES192 AES256 TWOFISH CAMELLIA128 CAMELLIA192 CAMELLIA256 | PASS: conventional.test
+IDEA 3DES CAST5 BLOWFISH AES AES192 AES256 TWOFISH CAMELLIA128 CAMELLIA192 CAMELLIA256 | PASS: conventional-mdc.test
+PASS: multisig.test
+PASS: verify.test
+PASS: armor.test
+===================
+All 27 tests passed
+===================
+make[2]: Leaving directory '/build/gnupg-1.4.23/checks'
+make[1]: Leaving directory '/build/gnupg-1.4.23/checks'
+make[1]: Entering directory '/build/gnupg-1.4.23'
+make[1]: Leaving directory '/build/gnupg-1.4.23'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Making install in m4
+make[1]: Entering directory '/build/gnupg-1.4.23/m4'
+make[2]: Entering directory '/build/gnupg-1.4.23/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/m4'
+make[1]: Leaving directory '/build/gnupg-1.4.23/m4'
+Making install in intl
+make[1]: Entering directory '/build/gnupg-1.4.23/intl'
+if { test "gnupg" = "gettext-runtime" || test "gnupg" = "gettext-tools"; } \
+   && test 'no' = yes; then \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/include; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libintl.h /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/include/libintl.h; \
+  @LIBTOOL@ --mode=install \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libintl.a /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libintl.a; \
+  if test "@RELOCATABLE@" = yes; then \
+    dependencies=`sed -n -e 's,^dependency_libs=\(.*\),\1,p' < /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libintl.la | sed -e "s,^',," -e "s,'\$,,"`; \
+    if test -n "$dependencies"; then \
+      rm -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libintl.la; \
+    fi; \
+  fi; \
+else \
+  : ; \
+fi
+if test "gnupg" = "gettext-tools" \
+   && test 'no' = no \
+   && test yes != no; then \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib; \
+  @LIBTOOL@ --mode=install \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libgnuintl.a /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libgnuintl.a; \
+  rm -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/preloadable_libintl.so; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libgnuintl.so /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/preloadable_libintl.so; \
+  @LIBTOOL@ --mode=uninstall \
+    rm -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/libgnuintl.a; \
+else \
+  : ; \
+fi
+if test 'no' = yes; then \
+  if test yes = no; then \
+    case 'linux-gnu' in \
+      darwin[56]*) \
+        need_charset_alias=true ;; \
+      darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+        need_charset_alias=false ;; \
+      *) \
+        need_charset_alias=true ;; \
+    esac; \
+  else \
+    need_charset_alias=false; \
+  fi; \
+  if $need_charset_alias; then \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib; \
+  fi; \
+  temp=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/t-charset.alias; \
+  dest=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/charset.alias; \
+  if test -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/charset.alias; then \
+    orig=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/lib/charset.alias; \
+    sed -f ref-add.sed $orig > $temp; \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $temp $dest; \
+    rm -f $temp; \
+  else \
+    if $need_charset_alias; then \
+      orig=charset.alias; \
+      sed -f ref-add.sed $orig > $temp; \
+      /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $temp $dest; \
+      rm -f $temp; \
+    fi; \
+  fi; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale; \
+  test -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/locale.alias \
+    && orig=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/locale.alias \
+    || orig=./locale.alias; \
+  temp=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/t-locale.alias; \
+  dest=/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/locale.alias; \
+  sed -f ref-add.sed $orig > $temp; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $temp $dest; \
+  rm -f $temp; \
+else \
+  : ; \
+fi
+if test "gnupg" = "gettext-tools"; then \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 VERSION /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl/VERSION; \
+  dists="COPYING.LIB Makefile.in config.charset locale.alias ref-add.sin ref-del.sin export.h libintl.rc gmo.h gettextP.h hash-string.h loadinfo.h plural-exp.h eval-plural.h localcharset.h lock.h relocatable.h tsearch.h tsearch.c verify.h xsize.h printf-args.h printf-args.c printf-parse.h wprintf-parse.h printf-parse.c vasnprintf.h vasnwprintf.h vasnprintf.c os2compat.h libgnuintl.in.h bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c hash-string.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c dcigettext.c dcngettext.c dngettext.c ngettext.c plural.y plural-exp.c localcharset.c threadlib.c lock.c relocatable.c langprefs.c localename.c log.c printf.c setlocale.c version.c xsize.c osdep.c os2compat.c intl-exports.c intl-compat.c"; \
+  for file in $dists; do \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./$file \
+                    /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl/$file; \
+  done; \
+  chmod a+x /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl/config.charset; \
+  dists="plural.c"; \
+  for file in $dists; do \
+    if test -f $file; then dir=.; else dir=.; fi; \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $dir/$file \
+                    /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl/$file; \
+  done; \
+  dists="xopen-msg.sed linux-msg.sed po2tbl.sed.in cat-compat.c COPYING.LIB-2 COPYING.LIB-2.0 COPYING.LIB-2.1 gettext.h libgettext.h plural-eval.c libgnuintl.h libgnuintl.h_vms Makefile.vms libgnuintl.h.msvc-static libgnuintl.h.msvc-shared Makefile.msvc"; \
+  for file in $dists; do \
+    rm -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/intl/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gnupg-1.4.23/intl'
+Making install in zlib
+make[1]: Entering directory '/build/gnupg-1.4.23/zlib'
+make[2]: Entering directory '/build/gnupg-1.4.23/zlib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/zlib'
+make[1]: Leaving directory '/build/gnupg-1.4.23/zlib'
+Making install in util
+make[1]: Entering directory '/build/gnupg-1.4.23/util'
+make[2]: Entering directory '/build/gnupg-1.4.23/util'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/util'
+make[1]: Leaving directory '/build/gnupg-1.4.23/util'
+Making install in mpi
+make[1]: Entering directory '/build/gnupg-1.4.23/mpi'
+make[2]: Entering directory '/build/gnupg-1.4.23/mpi'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/mpi'
+make[1]: Leaving directory '/build/gnupg-1.4.23/mpi'
+Making install in cipher
+make[1]: Entering directory '/build/gnupg-1.4.23/cipher'
+make[2]: Entering directory '/build/gnupg-1.4.23/cipher'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/cipher'
+make[1]: Leaving directory '/build/gnupg-1.4.23/cipher'
+Making install in tools
+make[1]: Entering directory '/build/gnupg-1.4.23/tools'
+make[2]: Entering directory '/build/gnupg-1.4.23/tools'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c gpgsplit '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c gpg-zip '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/tools'
+make[1]: Leaving directory '/build/gnupg-1.4.23/tools'
+Making install in g10
+make[1]: Entering directory '/build/gnupg-1.4.23/g10'
+make[2]: Entering directory '/build/gnupg-1.4.23/g10'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c gpg gpgv '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin'
+make  install-exec-hook
+make[3]: Entering directory '/build/gnupg-1.4.23/g10'
+make[3]: Leaving directory '/build/gnupg-1.4.23/g10'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 options.skel '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg'
+make[2]: Leaving directory '/build/gnupg-1.4.23/g10'
+make[1]: Leaving directory '/build/gnupg-1.4.23/g10'
+Making install in keyserver
+make[1]: Entering directory '/build/gnupg-1.4.23/keyserver'
+make[2]: Entering directory '/build/gnupg-1.4.23/keyserver'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg'
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c gpgkeys_hkp gpgkeys_finger gpgkeys_curl '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/keyserver'
+make[1]: Leaving directory '/build/gnupg-1.4.23/keyserver'
+Making install in po
+make[1]: Entering directory '/build/gnupg-1.4.23/po'
+installing en@quot.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/en@quot/LC_MESSAGES/gnupg.mo
+installing en@boldquot.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/en@boldquot/LC_MESSAGES/gnupg.mo
+installing be.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/be/LC_MESSAGES/gnupg.mo
+installing ca.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/ca/LC_MESSAGES/gnupg.mo
+installing cs.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/cs/LC_MESSAGES/gnupg.mo
+installing da.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/da/LC_MESSAGES/gnupg.mo
+installing de.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/de/LC_MESSAGES/gnupg.mo
+installing eo.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/eo/LC_MESSAGES/gnupg.mo
+installing el.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/el/LC_MESSAGES/gnupg.mo
+installing es.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/es/LC_MESSAGES/gnupg.mo
+installing et.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/et/LC_MESSAGES/gnupg.mo
+installing fi.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/fi/LC_MESSAGES/gnupg.mo
+installing fr.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/fr/LC_MESSAGES/gnupg.mo
+installing gl.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/gl/LC_MESSAGES/gnupg.mo
+installing hu.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/hu/LC_MESSAGES/gnupg.mo
+installing id.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/id/LC_MESSAGES/gnupg.mo
+installing it.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/it/LC_MESSAGES/gnupg.mo
+installing ja.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/ja/LC_MESSAGES/gnupg.mo
+installing nb.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/nb/LC_MESSAGES/gnupg.mo
+installing nl.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/nl/LC_MESSAGES/gnupg.mo
+installing pl.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/pl/LC_MESSAGES/gnupg.mo
+installing pt_BR.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/pt_BR/LC_MESSAGES/gnupg.mo
+installing pt.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/pt/LC_MESSAGES/gnupg.mo
+installing ro.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/ro/LC_MESSAGES/gnupg.mo
+installing ru.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/ru/LC_MESSAGES/gnupg.mo
+installing sk.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/sk/LC_MESSAGES/gnupg.mo
+installing sv.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/sv/LC_MESSAGES/gnupg.mo
+installing tr.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/tr/LC_MESSAGES/gnupg.mo
+installing uk.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/uk/LC_MESSAGES/gnupg.mo
+installing zh_TW.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/zh_TW/LC_MESSAGES/gnupg.mo
+installing zh_CN.gmo as /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/locale/zh_CN/LC_MESSAGES/gnupg.mo
+if test "gnupg" = "gettext-tools"; then \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./$file \
+                    /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/gnupg-1.4.23/po'
+Making install in doc
+make[1]: Entering directory '/build/gnupg-1.4.23/doc'
+make[2]: Entering directory '/build/gnupg-1.4.23/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/info'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./gnupg1.info '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/info'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 gpg.1 gpgv.1 gpg-zip.1 '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 FAQ '/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/gnupg'
+make[2]: Leaving directory '/build/gnupg-1.4.23/doc'
+make[1]: Leaving directory '/build/gnupg-1.4.23/doc'
+Making install in checks
+make[1]: Entering directory '/build/gnupg-1.4.23/checks'
+../g10/gpg --homedir . --quiet --yes --no-permission-warning --import ./pubdemo.asc
+echo '# Do not edit - created by the Makefile.      -*- sh -*-' \
+               > defs-config.inc
+echo enable_selinux_hacks=no >> defs-config.inc
+make[2]: Entering directory '/build/gnupg-1.4.23/checks'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23/checks'
+make[1]: Leaving directory '/build/gnupg-1.4.23/checks'
+make[1]: Entering directory '/build/gnupg-1.4.23'
+make[2]: Entering directory '/build/gnupg-1.4.23'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/gnupg-1.4.23'
+make[1]: Leaving directory '/build/gnupg-1.4.23'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg/gpgkeys_hkp
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg/gpgkeys_curl
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec/gnupg/gpgkeys_finger
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin/gpgv
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin/gpgsplit
+shrinking /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin/gpg
+gzipping man pages under /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/libexec  /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin
+patching script interpreter paths in /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23
+/nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23/bin/gpg-zip: interpreter directive changed from "/bin/sh" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/sh"
+checking for references to /build/ in /nix/store/hcha1lv516nzb44wg2b3js3gnjm4l8cb-gnupg-1.4.23...
+building '/nix/store/ncm5h3i6af26fimziw3a533aklzwp0ag-perl5.32.0-GnuPG-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/2pvswhvf2l5zi4hcgjzpkfcggb32xqn8-GnuPG-0.19.tar.gz
+source root is GnuPG-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1334510270 of file GnuPG-0.19/META.yml
+patching sources
+configuring
+patching ./gpgmailtunl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for GnuPG
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp GnuPG/Tie/Decrypt.pm blib/lib/GnuPG/Tie/Decrypt.pm
+cp GnuPG/Tie/Sign.pm blib/lib/GnuPG/Tie/Sign.pm
+cp GnuPG/Tie/ClearSign.pm blib/lib/GnuPG/Tie/ClearSign.pm
+cp GnuPG.pm blib/lib/GnuPG.pm
+cp GnuPG/Tie/Encrypt.pm blib/lib/GnuPG/Tie/Encrypt.pm
+cp GnuPG/Tie.pm blib/lib/GnuPG/Tie.pm
+cp gpgmailtunl blib/script/gpgmailtunl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/gpgmailtunl
+Manifying 1 pod document
+Manifying 2 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/pkgconfig m4datadir=/nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/aclocal aclocaldir=/nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG/Tie.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG/Tie/Decrypt.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG/Tie/Encrypt.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG/Tie/ClearSign.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/site_perl/5.32.0/GnuPG/Tie/Sign.pm
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man/man1/gpgmailtunl.1
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man/man3/GnuPG.3
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man/man3/GnuPG::Tie.3
+Installing /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/bin/gpgmailtunl
+Appending installation info to /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man/man3 to /nix/store/cdszn6kgmi92slbn3ssbf2q6ny8dzzdf-perl5.32.0-GnuPG-0.19-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19
+gzipping man pages under /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/lib  /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19/bin
+patching script interpreter paths in /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19
+checking for references to /build/ in /nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cdszn6kgmi92slbn3ssbf2q6ny8dzzdf-perl5.32.0-GnuPG-0.19-devdoc
+gzipping man pages under /nix/store/cdszn6kgmi92slbn3ssbf2q6ny8dzzdf-perl5.32.0-GnuPG-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cdszn6kgmi92slbn3ssbf2q6ny8dzzdf-perl5.32.0-GnuPG-0.19-devdoc
+checking for references to /build/ in /nix/store/cdszn6kgmi92slbn3ssbf2q6ny8dzzdf-perl5.32.0-GnuPG-0.19-devdoc...
+/nix/store/4ncmpqxhvs6y2f536pmcy1zjq805l7q3-perl5.32.0-GnuPG-0.19

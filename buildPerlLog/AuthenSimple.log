@@ -1,0 +1,80 @@
+these derivations will be built:
+  /nix/store/x95l5yfcbi7mr55sxvw97qksir5z9qp4-perl5.32.0-Authen-Simple-0.5.drv
+building '/nix/store/x95l5yfcbi7mr55sxvw97qksir5z9qp4-perl5.32.0-Authen-Simple-0.5.drv'...
+unpacking sources
+unpacking source archive /nix/store/2skly9356jv57x315lg1k5r588biwaxa-Authen-Simple-0.5.tar.gz
+source root is Authen-Simple-0.5
+setting SOURCE_DATE_EPOCH to timestamp 1334854778 of file Authen-Simple-0.5/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./t/04log.t...
+patching ./t/07callback.t...
+patching ./t/09password.t...
+patching ./t/05adapter.t...
+patching ./t/08simple.t...
+patching ./t/06cache.t...
+Cannot determine perl version info from lib/Authen/Simple.pm
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Authen/Simple/Log.pm blib/lib/Authen/Simple/Log.pm
+cp lib/Authen/Simple/Password.pm blib/lib/Authen/Simple/Password.pm
+cp lib/Authen/Simple/Adapter.pm blib/lib/Authen/Simple/Adapter.pm
+cp lib/Authen/Simple.pm blib/lib/Authen/Simple.pm
+cp lib/Authen/Simple/Apache.pm blib/lib/Authen/Simple/Apache.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/01use.t ....... ok
+t/04log.t ....... ok
+t/05adapter.t ... ok
+t/06cache.t ..... ok
+t/07callback.t .. ok
+t/08simple.t .... ok
+t/09password.t .. 1/16 Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+Use of uninitialized value in string eq at /build/Authen-Simple-0.5/blib/lib/Authen/Simple/Password.pm line 25.
+t/09password.t .. ok
+All tests successful.
+Files=7, Tests=54,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.44 cusr  0.17 csys =  0.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/pkgconfig m4datadir=/nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/aclocal aclocaldir=/nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/site_perl/5.32.0/Authen/Simple.pm
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/site_perl/5.32.0/Authen/Simple/Password.pm
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/site_perl/5.32.0/Authen/Simple/Apache.pm
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/site_perl/5.32.0/Authen/Simple/Log.pm
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/site_perl/5.32.0/Authen/Simple/Adapter.pm
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3/Authen::Simple::Password.3
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3/Authen::Simple.3
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3/Authen::Simple::Log.3
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3/Authen::Simple::Adapter.3
+Installing /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3/Authen::Simple::Apache.3
+Appending installation info to /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/man3 to /nix/store/pbc2xfwncljvgmci82mirc7c852fy4kh-perl5.32.0-Authen-Simple-0.5-devdoc/share/man/man3
+Removing empty /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5/lib
+patching script interpreter paths in /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5
+checking for references to /build/ in /nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5...
+shrinking RPATHs of ELF executables and libraries in /nix/store/pbc2xfwncljvgmci82mirc7c852fy4kh-perl5.32.0-Authen-Simple-0.5-devdoc
+gzipping man pages under /nix/store/pbc2xfwncljvgmci82mirc7c852fy4kh-perl5.32.0-Authen-Simple-0.5-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/pbc2xfwncljvgmci82mirc7c852fy4kh-perl5.32.0-Authen-Simple-0.5-devdoc
+checking for references to /build/ in /nix/store/pbc2xfwncljvgmci82mirc7c852fy4kh-perl5.32.0-Authen-Simple-0.5-devdoc...
+/nix/store/2x4w01xldqfbnmr2p5gmmxgkb4h14k1k-perl5.32.0-Authen-Simple-0.5

@@ -1,0 +1,118 @@
+these derivations will be built:
+  /nix/store/1jysbyg74z3ymsd8qlkrmzh8d5f1pwn7-perl5.32.0-Cache-Memcached-Fast-0.26.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/a67h0hblz3a85nfhjr463p0d7lpig7f3-Cache-Memcached-Fast-0.26.tar.gz
+copying path '/nix/store/a67h0hblz3a85nfhjr463p0d7lpig7f3-Cache-Memcached-Fast-0.26.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1jysbyg74z3ymsd8qlkrmzh8d5f1pwn7-perl5.32.0-Cache-Memcached-Fast-0.26.drv'...
+unpacking sources
+unpacking source archive /nix/store/a67h0hblz3a85nfhjr463p0d7lpig7f3-Cache-Memcached-Fast-0.26.tar.gz
+source root is Cache-Memcached-Fast-0.26
+setting SOURCE_DATE_EPOCH to timestamp 1585238155 of file Cache-Memcached-Fast-0.26/typemap
+patching sources
+configuring
+patching ./script/c-m-compat.pl...
+patching ./script/ketama-distr.pl...
+patching ./script/benchmark.pl...
+patching ./src/gencrc32.pl...
+patching ./src/genparser.pl...
+patching ./t/malformed.t...
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Cache::Memcached::Fast
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cache/Memcached/Fast.pm blib/lib/Cache/Memcached/Fast.pm
+cd src && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26" PASTHRU_DEFINE=' ' PASTHRU_INC=' '
+make[1]: Entering directory '/build/Cache-Memcached-Fast-0.26/src'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" genparser.pl reply.kw parse_keyword.c parse_keyword.h
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   parse_keyword.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" gencrc32.pl compute_crc32.c compute_crc32.h
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   compute_crc32.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   array.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   client.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   connect.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   dispatch_key.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   poll_select.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   socket_posix.c
+ar cr libclient.a parse_keyword.o compute_crc32.o array.o client.o connect.o dispatch_key.o poll_select.o socket_posix.o
+: libclient.a
+make[1]: Leaving directory '/build/Cache-Memcached-Fast-0.26/src'
+make[1]: Entering directory '/build/Cache-Memcached-Fast-0.26/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Cache-Memcached-Fast-0.26/src'
+Running Mkbootstrap for Fast ()
+chmod 644 "Fast.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Fast.bs blib/arch/auto/Cache/Memcached/Fast/Fast.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cache-Memcached-Fast-0.26/typemap'  Fast.xs > Fast.xsc
+mv Fast.xsc Fast.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.26\" -DXS_VERSION=\"0.26\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Fast.c
+rm -f blib/arch/auto/Cache/Memcached/Fast/Fast.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Fast.o  -o blib/arch/auto/Cache/Memcached/Fast/Fast.so src/libclient.a \
+      \
+
+chmod 755 blib/arch/auto/Cache/Memcached/Fast/Fast.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Fast.bs blib/arch/auto/Cache/Memcached/Fast/Fast.bs 644
+make[1]: Entering directory '/build/Cache-Memcached-Fast-0.26/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Cache-Memcached-Fast-0.26/src'
+make[1]: Entering directory '/build/Cache-Memcached-Fast-0.26/src'
+No tests defined for Cache::Memcached::Fast::libclient extension.
+make[1]: Leaving directory '/build/Cache-Memcached-Fast-0.26/src'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ......... 1/1 # Testing Cache::Memcached::Fast 0.26, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ......... ok
+t/01-connect.t ...... skipped: No server is running at localhost:11211, 127.0.0.1:11211
+t/02-isa.t .......... skipped: Not connected
+t/big_value.t ....... skipped: Not connected
+t/commands.t ........ skipped: Not connected
+t/errors.t .......... ok
+t/hash_namespace.t .. skipped: Not connected
+t/key_ref.t ......... skipped: Not connected
+t/magic.t ........... skipped: Not connected
+t/malformed.t ....... skipped: Not connected
+t/namespace.t ....... skipped: Not connected
+t/noreply.t ......... skipped: Not connected
+t/nowait.t .......... skipped: Not connected
+t/pod-coverage.t .... skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ............. skipped: Test::Pod 1.22 required for testing POD
+t/serialize.t ....... skipped: Not connected
+t/threads.t ......... skipped: Not connected
+t/utf8-downgrade.t .. skipped: Not connected
+t/utf8.t ............ skipped: Not connected
+All tests successful.
+Files=19, Tests=5,  2 wallclock secs ( 0.05 usr  0.01 sys +  1.37 cusr  0.21 csys =  1.64 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib/pkgconfig m4datadir=/nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/share/aclocal aclocaldir=/nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/share/aclocal install
+make[1]: Entering directory '/build/Cache-Memcached-Fast-0.26/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Cache-Memcached-Fast-0.26/src'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Fast.bs blib/arch/auto/Cache/Memcached/Fast/Fast.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cache/Memcached/Fast/Fast.so
+Installing /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cache/Memcached/Fast.pm
+Installing /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/share/man/man3/Cache::Memcached::Fast.3
+Appending installation info to /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/share/man/man3 to /nix/store/qw3sqcs3d1ghin46nnynkjpdlw754zsc-perl5.32.0-Cache-Memcached-Fast-0.26-devdoc/share/man/man3
+Removing empty /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26
+shrinking /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cache/Memcached/Fast/Fast.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26/lib
+patching script interpreter paths in /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26
+checking for references to /build/ in /nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qw3sqcs3d1ghin46nnynkjpdlw754zsc-perl5.32.0-Cache-Memcached-Fast-0.26-devdoc
+gzipping man pages under /nix/store/qw3sqcs3d1ghin46nnynkjpdlw754zsc-perl5.32.0-Cache-Memcached-Fast-0.26-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qw3sqcs3d1ghin46nnynkjpdlw754zsc-perl5.32.0-Cache-Memcached-Fast-0.26-devdoc
+checking for references to /build/ in /nix/store/qw3sqcs3d1ghin46nnynkjpdlw754zsc-perl5.32.0-Cache-Memcached-Fast-0.26-devdoc...
+/nix/store/alxj98wc09957sjrsfv6sypylzyn07rf-perl5.32.0-Cache-Memcached-Fast-0.26

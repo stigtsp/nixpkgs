@@ -1,0 +1,103 @@
+these derivations will be built:
+  /nix/store/9yxydndaka8sfaif777lzphqxrrw5040-perl5.32.0-Log-Contextual-0.008001.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/zgyf9japcamp02l56nz0hsgfi192k711-Log-Contextual-0.008001.tar.gz
+copying path '/nix/store/zgyf9japcamp02l56nz0hsgfi192k711-Log-Contextual-0.008001.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9yxydndaka8sfaif777lzphqxrrw5040-perl5.32.0-Log-Contextual-0.008001.drv'...
+unpacking sources
+unpacking source archive /nix/store/zgyf9japcamp02l56nz0hsgfi192k711-Log-Contextual-0.008001.tar.gz
+source root is Log-Contextual-0.008001
+setting SOURCE_DATE_EPOCH to timestamp 1516382097 of file Log-Contextual-0.008001/t/yell-loudly.t
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/perltidy.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Log::Contextual
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Log/Contextual/Role/Router/WithLogger.pm blib/lib/Log/Contextual/Role/Router/WithLogger.pm
+cp lib/Log/Contextual/Router.pm blib/lib/Log/Contextual/Router.pm
+cp lib/Log/Contextual/Easy/Package.pm blib/lib/Log/Contextual/Easy/Package.pm
+cp lib/Log/Contextual/Role/Router/SetLogger.pm blib/lib/Log/Contextual/Role/Router/SetLogger.pm
+cp lib/Log/Contextual/WarnLogger.pm blib/lib/Log/Contextual/WarnLogger.pm
+cp lib/Log/Contextual/SimpleLogger.pm blib/lib/Log/Contextual/SimpleLogger.pm
+cp lib/Log/Contextual/Role/Router.pm blib/lib/Log/Contextual/Role/Router.pm
+cp lib/Log/Contextual/TeeLogger.pm blib/lib/Log/Contextual/TeeLogger.pm
+cp lib/Log/Contextual.pm blib/lib/Log/Contextual.pm
+cp lib/Log/Contextual/Easy/Default.pm blib/lib/Log/Contextual/Easy/Default.pm
+cp lib/Log/Contextual/Role/Router/HasLogger.pm blib/lib/Log/Contextual/Role/Router/HasLogger.pm
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/arg.t ..................... ok
+t/author-pod-syntax.t ....... skipped: these tests are for testing by the author
+t/base.t .................... ok
+t/caller.t .................. ok
+t/default_import.t .......... ok
+t/default_logger.t .......... ok
+t/dlog.t .................... ok
+t/easy.t .................... ok
+t/eg.t ...................... ok
+t/has_logger.t .............. ok
+t/inherit.t ................. ok
+t/log-with-levels.t ......... ok
+t/log.t ..................... ok
+t/log4perl.t ................ skipped: Log::Log4perl 1.29 not installed
+t/package_logger.t .......... ok
+t/perltidy.t ................ skipped: Set TIDY_TESTING if you want to run this test
+t/router_api.t .............. ok
+t/rt83267-begin.t ........... ok
+t/rt83267.t ................. ok
+t/simplelogger.t ............ ok
+t/warnlogger-with-levels.t .. ok
+t/warnlogger.t .............. ok
+t/yell-loudly.t ............. ok
+All tests successful.
+Files=23, Tests=335,  3 wallclock secs ( 0.09 usr  0.03 sys +  2.18 cusr  0.88 csys =  3.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/pkgconfig m4datadir=/nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/aclocal aclocaldir=/nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/TeeLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/SimpleLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Router.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/WarnLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Easy/Package.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Easy/Default.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Role/Router.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Role/Router/SetLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Role/Router/HasLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/site_perl/5.32.0/Log/Contextual/Role/Router/WithLogger.pm
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Role::Router.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Router.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::WarnLogger.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::SimpleLogger.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Easy::Default.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::TeeLogger.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Role::Router::SetLogger.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Role::Router::WithLogger.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Easy::Package.3
+Installing /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3/Log::Contextual::Role::Router::HasLogger.3
+Appending installation info to /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/man3 to /nix/store/mbbi7861dmsdvkabi4i4c5qfyw1a56d6-perl5.32.0-Log-Contextual-0.008001-devdoc/share/man/man3
+Removing empty /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001/lib
+patching script interpreter paths in /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001
+checking for references to /build/ in /nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mbbi7861dmsdvkabi4i4c5qfyw1a56d6-perl5.32.0-Log-Contextual-0.008001-devdoc
+gzipping man pages under /nix/store/mbbi7861dmsdvkabi4i4c5qfyw1a56d6-perl5.32.0-Log-Contextual-0.008001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mbbi7861dmsdvkabi4i4c5qfyw1a56d6-perl5.32.0-Log-Contextual-0.008001-devdoc
+checking for references to /build/ in /nix/store/mbbi7861dmsdvkabi4i4c5qfyw1a56d6-perl5.32.0-Log-Contextual-0.008001-devdoc...
+/nix/store/z3fg21c0an0di7ndxn7hm9y3lz5kr40p-perl5.32.0-Log-Contextual-0.008001

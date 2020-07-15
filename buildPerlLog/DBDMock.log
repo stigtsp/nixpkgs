@@ -1,0 +1,102 @@
+these derivations will be built:
+  /nix/store/5axbd17l0ai5vaw5n8nyylz11ia8ba0m-perl5.32.0-DBD-Mock-1.55.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/zv6bn204rqj4j1r6l4znl7gp4zm707zz-DBD-Mock-1.55.tar.gz
+copying path '/nix/store/zv6bn204rqj4j1r6l4znl7gp4zm707zz-DBD-Mock-1.55.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/5axbd17l0ai5vaw5n8nyylz11ia8ba0m-perl5.32.0-DBD-Mock-1.55.drv'...
+unpacking sources
+unpacking source archive /nix/store/zv6bn204rqj4j1r6l4znl7gp4zm707zz-DBD-Mock-1.55.tar.gz
+source root is DBD-Mock-1.55
+setting SOURCE_DATE_EPOCH to timestamp 1577715637 of file DBD-Mock-1.55/t/bug_117162.t
+patching sources
+configuring
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'DBD-Mock' version '1.55'
+cp lib/DBD/Mock/dr.pm blib/lib/DBD/Mock/dr.pm
+cp lib/DBD/Mock.pm blib/lib/DBD/Mock.pm
+cp lib/DBD/Mock/StatementTrack.pm blib/lib/DBD/Mock/StatementTrack.pm
+cp lib/DBD/Mock/Pool/db.pm blib/lib/DBD/Mock/Pool/db.pm
+cp lib/DBD/Mock/StatementTrack/Iterator.pm blib/lib/DBD/Mock/StatementTrack/Iterator.pm
+cp lib/DBD/Mock/Pool.pm blib/lib/DBD/Mock/Pool.pm
+cp lib/DBD/Mock/st.pm blib/lib/DBD/Mock/st.pm
+cp lib/DBD/Mock/db.pm blib/lib/DBD/Mock/db.pm
+cp lib/DBD/Mock/Session.pm blib/lib/DBD/Mock/Session.pm
+running tests
+t/000_basic.t .......................... ok
+t/001_db_handle.t ...................... ok
+t/002_dr_handle.t ...................... ok
+t/003_db_can_connect.t ................. ok
+t/004_misc_mock_attr.t ................. ok
+t/005_db_parser.t ...................... ok
+t/006_prepare_cached.t ................. ok
+t/007_mock_attribute_aliases.t ......... ok
+t/008_db_connect_cached.t .............. ok
+t/009_info.t ........................... ok
+t/010_rollback.t ....................... ok
+t/011_st_execute_empty.t ............... ok
+t/012_st_handle.t ...................... ok
+t/013_st_execute_bound_params.t ........ ok
+t/014_st_execute_pass_params.t ......... ok
+t/015_st_fetch_records.t ............... ok
+t/016_mock_add_resultset_test.t ........ ok
+t/017_st_can_connect.t ................. ok
+t/018_mock_statement_track.t ........... ok
+t/019_mock_statement_track_iterator.t .. ok
+t/020_db_pool.t ........................ ok
+t/021_DBD_Mock_Session.t ............... ok
+t/022_DBD_Mock_Session_bound_params.t .. ok
+t/023_statement_failure.t .............. ok
+t/024_selcol_fetchhash.t ............... ok
+t/025_mock_last_insert_id.t ............ ok
+t/026_st_bind_col.t .................... ok
+t/027_named_parameters.t ............... ok
+t/028_bind_columns.t ................... ok
+t/029_multiple_prepare_statements.t .... ok
+t/030_st_execute_array.t ............... ok
+t/031_setup_callbacks.t ................ ok
+t/032_selectall_arrayref.t ............. ok
+t/033_table_info.t ..................... ok
+t/998_pod.t ............................ skipped: Test::Pod 1.14 required for testing POD
+t/999_pod_coverage.t ................... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/bug_015602.t ......................... ok
+t/bug_066815.t ......................... ok
+t/bug_071438.t ......................... ok
+t/bug_082243.t ......................... ok
+t/bug_117162.t ......................... ok
+All tests successful.
+Files=41, Tests=794,  4 wallclock secs ( 0.14 usr  0.05 sys +  2.87 cusr  0.93 csys =  3.99 CPU)
+Result: PASS
+installing
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/dr.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/Pool.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/Session.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/st.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/StatementTrack.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/db.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/Pool/db.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib/perl5/site_perl/5.32.0/DBD/Mock/StatementTrack/Iterator.pm
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::st.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::StatementTrack.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::db.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::Pool::db.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::dr.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::Pool.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::StatementTrack::Iterator.3
+Installing /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3/DBD::Mock::Session.3
+post-installation fixup
+Moving /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/man3 to /nix/store/y6v9fgvpv0c03kjap7dl0sn4cmmsa96a-perl5.32.0-DBD-Mock-1.55-devdoc/share/man/man3
+Removing empty /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55/lib
+patching script interpreter paths in /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55
+checking for references to /build/ in /nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y6v9fgvpv0c03kjap7dl0sn4cmmsa96a-perl5.32.0-DBD-Mock-1.55-devdoc
+gzipping man pages under /nix/store/y6v9fgvpv0c03kjap7dl0sn4cmmsa96a-perl5.32.0-DBD-Mock-1.55-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y6v9fgvpv0c03kjap7dl0sn4cmmsa96a-perl5.32.0-DBD-Mock-1.55-devdoc
+checking for references to /build/ in /nix/store/y6v9fgvpv0c03kjap7dl0sn4cmmsa96a-perl5.32.0-DBD-Mock-1.55-devdoc...
+/nix/store/plz13gxs0m2452mjh8h89mnf0ci8c4c3-perl5.32.0-DBD-Mock-1.55

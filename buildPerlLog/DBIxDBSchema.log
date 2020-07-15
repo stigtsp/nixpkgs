@@ -1,0 +1,89 @@
+these derivations will be built:
+  /nix/store/10fh2r8bzmy5zawjvy6dj0r4fq38ng2j-perl5.32.0-DBIx-DBSchema-0.45.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/dh2gp786lmbk5kckhxfm06saagr0pvq6-DBIx-DBSchema-0.45.tar.gz
+copying path '/nix/store/dh2gp786lmbk5kckhxfm06saagr0pvq6-DBIx-DBSchema-0.45.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/10fh2r8bzmy5zawjvy6dj0r4fq38ng2j-perl5.32.0-DBIx-DBSchema-0.45.drv'...
+unpacking sources
+unpacking source archive /nix/store/dh2gp786lmbk5kckhxfm06saagr0pvq6-DBIx-DBSchema-0.45.tar.gz
+source root is DBIx-DBSchema-0.45
+setting SOURCE_DATE_EPOCH to timestamp 1430975920 of file DBIx-DBSchema-0.45/META.yml
+patching sources
+configuring
+patching ./t/mysql-text-default.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::DBSchema
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp DBSchema/DBD.pm blib/lib/DBIx/DBSchema/DBD.pm
+cp DBSchema/Column.pm blib/lib/DBIx/DBSchema/Column.pm
+cp DBSchema/Table.pm blib/lib/DBIx/DBSchema/Table.pm
+cp DBSchema.pm blib/lib/DBIx/DBSchema.pm
+cp DBSchema/DBD/mysql.pm blib/lib/DBIx/DBSchema/DBD/mysql.pm
+cp DBSchema/DBD/SQLite.pm blib/lib/DBIx/DBSchema/DBD/SQLite.pm
+cp DBSchema/DBD/Oracle.pm blib/lib/DBIx/DBSchema/DBD/Oracle.pm
+cp DBSchema/Index.pm blib/lib/DBIx/DBSchema/Index.pm
+cp DBSchema/_util.pm blib/lib/DBIx/DBSchema/_util.pm
+cp DBSchema/DBD/Pg.pm blib/lib/DBIx/DBSchema/DBD/Pg.pm
+cp DBSchema/DBD/Sybase.pm blib/lib/DBIx/DBSchema/DBD/Sybase.pm
+cp DBSchema/ForeignKey.pm blib/lib/DBIx/DBSchema/ForeignKey.pm
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/load-mysql.t .......... ok
+t/load-oracle.t ......... ok
+t/load-pg.t ............. ok
+t/load-sqlite.t ......... ok
+t/load-sybase.t ......... ok
+t/load.t ................ ok
+t/mysql-text-default.t .. 1/2 # Generated: bar LONGTEXT NOT NULL
+t/mysql-text-default.t .. ok
+All tests successful.
+Files=7, Tests=8,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.11 cusr  0.02 csys =  0.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/pkgconfig m4datadir=/nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/aclocal aclocaldir=/nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/Table.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/Column.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/_util.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/ForeignKey.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/Index.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD/mysql.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD/Pg.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD/Sybase.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD/Oracle.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/site_perl/5.32.0/DBIx/DBSchema/DBD/SQLite.pm
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD::mysql.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::ForeignKey.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::Column.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD::Oracle.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD::Pg.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD::Sybase.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::Index.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::Table.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema.3
+Installing /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3/DBIx::DBSchema::DBD::SQLite.3
+Appending installation info to /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/man3 to /nix/store/sj417y9dgshnhqnldpxlvi4qxi6467dm-perl5.32.0-DBIx-DBSchema-0.45-devdoc/share/man/man3
+Removing empty /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45/lib
+patching script interpreter paths in /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45
+checking for references to /build/ in /nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sj417y9dgshnhqnldpxlvi4qxi6467dm-perl5.32.0-DBIx-DBSchema-0.45-devdoc
+gzipping man pages under /nix/store/sj417y9dgshnhqnldpxlvi4qxi6467dm-perl5.32.0-DBIx-DBSchema-0.45-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sj417y9dgshnhqnldpxlvi4qxi6467dm-perl5.32.0-DBIx-DBSchema-0.45-devdoc
+checking for references to /build/ in /nix/store/sj417y9dgshnhqnldpxlvi4qxi6467dm-perl5.32.0-DBIx-DBSchema-0.45-devdoc...
+/nix/store/sjql0jd1n9hkh3g2x98yndjy8h5z247d-perl5.32.0-DBIx-DBSchema-0.45

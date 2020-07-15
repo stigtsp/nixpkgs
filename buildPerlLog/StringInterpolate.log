@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/fgp53sgpi830yah775fggs1gaq6kj4q9-perl5.32.0-String-Interpolate-0.32.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/zz1wfjmd75mr98y67snbnbkd5b147d28-String-Interpolate-0.32.tar.gz
+copying path '/nix/store/zz1wfjmd75mr98y67snbnbkd5b147d28-String-Interpolate-0.32.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fgp53sgpi830yah775fggs1gaq6kj4q9-perl5.32.0-String-Interpolate-0.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/zz1wfjmd75mr98y67snbnbkd5b147d28-String-Interpolate-0.32.tar.gz
+source root is String-Interpolate-0.32
+setting SOURCE_DATE_EPOCH to timestamp 1435525622 of file String-Interpolate-0.32/t/interpolate.t
+patching sources
+configuring
+patching ./t/interpolate.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for String::Interpolate
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/String/Interpolate.pm blib/lib/String/Interpolate.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/interpolate.t .. ok
+All tests successful.
+Files=1, Tests=28,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/lib/pkgconfig m4datadir=/nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/share/aclocal aclocaldir=/nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/lib/perl5/site_perl/5.32.0/String/Interpolate.pm
+Installing /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/share/man/man3/String::Interpolate.3
+Appending installation info to /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/share/man/man3 to /nix/store/8hvmi508pr8fmz4zgdpqvyy1zm7b1vfc-perl5.32.0-String-Interpolate-0.32-devdoc/share/man/man3
+Removing empty /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32/lib
+patching script interpreter paths in /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32
+checking for references to /build/ in /nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8hvmi508pr8fmz4zgdpqvyy1zm7b1vfc-perl5.32.0-String-Interpolate-0.32-devdoc
+gzipping man pages under /nix/store/8hvmi508pr8fmz4zgdpqvyy1zm7b1vfc-perl5.32.0-String-Interpolate-0.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8hvmi508pr8fmz4zgdpqvyy1zm7b1vfc-perl5.32.0-String-Interpolate-0.32-devdoc
+checking for references to /build/ in /nix/store/8hvmi508pr8fmz4zgdpqvyy1zm7b1vfc-perl5.32.0-String-Interpolate-0.32-devdoc...
+/nix/store/4fwga342vmvvsl3mzicp1bzn656xxffa-perl5.32.0-String-Interpolate-0.32

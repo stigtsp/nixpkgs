@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/74n6fmq1l3xi6sw4kbcyipxzc7lkxlry-perl5.32.0-Term-Shell-0.11.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/0d1wh04whfzab0vr6g3m8sbcjar7mh18-Term-Shell-0.11.tar.gz
+copying path '/nix/store/0d1wh04whfzab0vr6g3m8sbcjar7mh18-Term-Shell-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/74n6fmq1l3xi6sw4kbcyipxzc7lkxlry-perl5.32.0-Term-Shell-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/0d1wh04whfzab0vr6g3m8sbcjar7mh18-Term-Shell-0.11.tar.gz
+source root is Term-Shell-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1556627598 of file Term-Shell-0.11/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./scripts/tag-release.pl...
+patching ./scripts/bump-version-number.pl...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/psh.pl...
+patching ./examples/old-test.pl...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Term-Shell' version '0.11'
+Building Term-Shell
+running tests
+t/00-compile.t ... ok
+t/01require.t .... ok
+t/02default.t .... ok
+t/03catchsmry.t .. Use of uninitialized value $maxlines in numeric lt (<) at /build/Term-Shell-0.11/blib/lib/Term/Shell.pm line 183.
+Use of uninitialized value $maxlines in numeric eq (==) at /build/Term-Shell-0.11/blib/lib/Term/Shell.pm line 183.
+t/03catchsmry.t .. ok
+All tests successful.
+Files=4, Tests=9,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.28 cusr  0.08 csys =  0.38 CPU)
+Result: PASS
+installing
+Building Term-Shell
+Installing /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11/lib/perl5/site_perl/5.32.0/Term/Shell.pm
+Installing /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11/share/man/man3/Term::Shell.3
+post-installation fixup
+Moving /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11/share/man/man3 to /nix/store/w0lwbx0jlqz9aksixp9fh3rg2wg3cpll-perl5.32.0-Term-Shell-0.11-devdoc/share/man/man3
+Removing empty /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11/lib
+patching script interpreter paths in /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11
+checking for references to /build/ in /nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/w0lwbx0jlqz9aksixp9fh3rg2wg3cpll-perl5.32.0-Term-Shell-0.11-devdoc
+gzipping man pages under /nix/store/w0lwbx0jlqz9aksixp9fh3rg2wg3cpll-perl5.32.0-Term-Shell-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/w0lwbx0jlqz9aksixp9fh3rg2wg3cpll-perl5.32.0-Term-Shell-0.11-devdoc
+checking for references to /build/ in /nix/store/w0lwbx0jlqz9aksixp9fh3rg2wg3cpll-perl5.32.0-Term-Shell-0.11-devdoc...
+/nix/store/prwvxf2skzcgvm0xhcvf4kfm6ckpf4fg-perl5.32.0-Term-Shell-0.11

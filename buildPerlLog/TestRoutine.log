@@ -1,0 +1,155 @@
+these derivations will be built:
+  /nix/store/vg4h7bs1451bv1fbjvj4v3b54xnwifk4-perl5.32.0-Test-Routine-0.027.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/fpq7jy0sj26lxkf5njl4973vyq9wsm6n-Test-Routine-0.027.tar.gz
+copying path '/nix/store/fpq7jy0sj26lxkf5njl4973vyq9wsm6n-Test-Routine-0.027.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vg4h7bs1451bv1fbjvj4v3b54xnwifk4-perl5.32.0-Test-Routine-0.027.drv'...
+unpacking sources
+unpacking source archive /nix/store/fpq7jy0sj26lxkf5njl4973vyq9wsm6n-Test-Routine-0.027.tar.gz
+source root is Test-Routine-0.027
+setting SOURCE_DATE_EPOCH to timestamp 1535334039 of file Test-Routine-0.027/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/mxms.t...
+patching ./t/todo/mxrp.t...
+patching ./t/demo/01-demo.t...
+patching ./t/demo/05-multiple.t...
+patching ./t/test-traits.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Routine
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Routine/Test.pm blib/lib/Test/Routine/Test.pm
+cp lib/Test/Routine.pm blib/lib/Test/Routine.pm
+cp lib/Test/Routine/Runner.pm blib/lib/Test/Routine/Runner.pm
+cp lib/Test/Routine/Test/Role.pm blib/lib/Test/Routine/Test/Role.pm
+cp lib/Test/Routine/Util.pm blib/lib/Test/Routine/Util.pm
+cp lib/Test/Routine/Manual/Demo.pm blib/lib/Test/Routine/Manual/Demo.pm
+cp lib/Test/Routine/Compositor.pm blib/lib/Test/Routine/Compositor.pm
+cp lib/Test/Routine/Common.pm blib/lib/Test/Routine/Common.pm
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/demo/*.t t/todo/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     Math::Trig             any     1.23
+#     Test::Builder::Tester  any 1.302175
+#     Test::Fatal            any    0.014
+#     Test::Moose            any   2.2012
+#     Test::More            0.96 1.302175
+#     lib                    any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                           Want     Have
+#     ---------------------------- -------- --------
+#     Carp                              any     1.50
+#     Class::Load                       any     0.25
+#     Moose                             any   2.2012
+#     Moose::Exporter                   any   2.2012
+#     Moose::Meta::Class                any   2.2012
+#     Moose::Meta::Method               any   2.2012
+#     Moose::Role                       any   2.2012
+#     Moose::Util                       any   2.2012
+#     Moose::Util::TypeConstraints      any   2.2012
+#     Params::Util                      any     1.07
+#     Scalar::Util                      any     1.55
+#     Sub::Exporter                     any    0.987
+#     Sub::Exporter::Util               any    0.987
+#     Test2::API                   1.302045 1.302175
+#     Test::Abortable                 0.002    0.002
+#     Test::More                       0.96 1.302175
+#     Try::Tiny                         any     0.30
+#     namespace::autoclean              any     0.29
+#     namespace::clean                  any     0.27
+#     strict                            any     1.11
+#     warnings                          any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/abort.t .............. ok
+t/demo/01-demo.t ....... ok
+t/demo/02-simple.t ..... ok
+t/demo/03-advice.t ..... ok
+t/demo/04-misc.t ....... ok
+t/demo/05-multiple.t ... ok
+t/dupe.t ............... ok
+t/method-filter.t ...... ok
+t/mxms.t ............... skipped: This test requires MooseX::Method::Signatures
+t/test-traits.t ........ ok
+t/todo/mxrp.t .......... skipped: Test::Routine and MXRP not yet compatible
+t/unsafe-name.t ........ ok
+All tests successful.
+Files=13, Tests=27,  5 wallclock secs ( 0.08 usr  0.04 sys +  3.32 cusr  1.63 csys =  5.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/pkgconfig m4datadir=/nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/aclocal aclocaldir=/nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Util.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Common.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Test.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Compositor.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Runner.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Test/Role.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/site_perl/5.32.0/Test/Routine/Manual/Demo.pm
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Manual::Demo.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Runner.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Util.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Common.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Compositor.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Test::Role.3
+Installing /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3/Test::Routine::Test.3
+Appending installation info to /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/man3 to /nix/store/941qzl7fah11k6826l8aannpc45j6cqz-perl5.32.0-Test-Routine-0.027-devdoc/share/man/man3
+Removing empty /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027/lib
+patching script interpreter paths in /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027
+checking for references to /build/ in /nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027...
+shrinking RPATHs of ELF executables and libraries in /nix/store/941qzl7fah11k6826l8aannpc45j6cqz-perl5.32.0-Test-Routine-0.027-devdoc
+gzipping man pages under /nix/store/941qzl7fah11k6826l8aannpc45j6cqz-perl5.32.0-Test-Routine-0.027-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/941qzl7fah11k6826l8aannpc45j6cqz-perl5.32.0-Test-Routine-0.027-devdoc
+checking for references to /build/ in /nix/store/941qzl7fah11k6826l8aannpc45j6cqz-perl5.32.0-Test-Routine-0.027-devdoc...
+/nix/store/bxbdj7hibzjdp51k0rgcby78pj418dwl-perl5.32.0-Test-Routine-0.027

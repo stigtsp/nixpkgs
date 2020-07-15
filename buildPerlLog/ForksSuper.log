@@ -1,0 +1,193 @@
+these derivations will be built:
+  /nix/store/ls45pqwm88xyjascyr05hb9pbkfd6z61-perl5.32.0-Forks-Super-0.97.drv
+these paths will be fetched (0.38 MiB download, 0.38 MiB unpacked):
+  /nix/store/2clfywb4dldl7waw52mka7yirz5i5ymz-Forks-Super-0.97.tar.gz
+copying path '/nix/store/2clfywb4dldl7waw52mka7yirz5i5ymz-Forks-Super-0.97.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ls45pqwm88xyjascyr05hb9pbkfd6z61-perl5.32.0-Forks-Super-0.97.drv'...
+unpacking sources
+unpacking source archive /nix/store/2clfywb4dldl7waw52mka7yirz5i5ymz-Forks-Super-0.97.tar.gz
+source root is Forks-Super-0.97
+setting SOURCE_DATE_EPOCH to timestamp 1539043809 of file Forks-Super-0.97/MANIFEST
+patching sources
+configuring
+patching ./examples/forked_harness.pl...
+patching ./t/00-use.t...
+patching ./t/external-daemon.pl...
+patching ./t/spawner-and-counter.pl...
+patching ./t/external-command.pl...
+patching ./t/forked_harness.pl...
+patching ./bundle/Sys-CpuAffinity/t/00-load.t...
+patching ./bundle/Sys-CpuLoadX/t/00-load.t...
+--------------------------------------------------
+Running builder for submodules/Sys-CpuAffinity
+
+
+Sys::CpuAffinity is a module for manipulating the CPU affinities
+of processes. If Sys::CpuAffinity is available, Forks::Super can
+use it to set the CPU affinities of the background processes
+it launches. Without Sys::CpuAffinity, this feature will not
+be available.
+
+Installation of this module is entirely optional. The  Module::Build
+module is required to install this module. The installation of
+Forks::Super will proceed even if the installation of Sys::CpuAffinity
+is unsuccessful.
+
+Do you want to attempt to install Sys::CpuAffinity v1.12? [y] y
+
+This module requires Module::Build to install itself.
+  Install Module::Build now from CPAN? [y] y
+mkdir /homeless-shelter: Permission denied at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/CPAN/HandleConfig.pm line 601.
+--------------------------------------------------
+Running builder for submodules/Sys-CpuLoadX
+
+
+The Sys::CpuLoadX module provides a (cross-fingers) portable way
+to access your system's current CPU load. The Forks::Super module
+can use this information to decide whether your system is too
+busy to launch more background processes. Without Sys::CpuLoadX,
+Forks::Super will not make use of CPU load information.
+
+Installation of this module is entirely optional. The  Module::Build
+module is required to install this module. The installation of
+Forks::Super will proceed even if the installation of Sys::CpuLoadX
+is unsuccessful.
+
+Do you want to attempt to install Sys::CpuLoadX v0.04? [y] y
+
+This module requires Module::Build to install itself.
+  Install Module::Build now from CPAN? [y] y
+mkdir /homeless-shelter: Permission denied at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/CPAN/HandleConfig.pm line 601.
+--------------------------------------------------
+Gathering information on current system linux.5.032000
+and creating Forks::Super::SysInfo package.
+Creating  Forks/Super/SysInfo.pm  file
+SysInfo.pm.PL: creating system-limits file.
+
+
+system-limits.PL complete
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Forks::Super
+Writing MYMETA.yml and MYMETA.json
+
+
+"Makefile.PL" complete. After you run "make", you can run "make test"
+to run the Forks::Super unit tests in series, or "make fasttest" to use
+the Forks::Super framework to run the tests in parallel.
+
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Forks/Super/Debug.pm blib/lib/Forks/Super/Debug.pm
+cp lib/Forks/Super/Job/Callback.pm blib/lib/Forks/Super/Job/Callback.pm
+cp lib/Forks/Super/LazyEval.pm blib/lib/Forks/Super/LazyEval.pm
+cp lib/Forks/Super/Sync.pm blib/lib/Forks/Super/Sync.pm
+cp lib/Forks/Super/Job/Timeout.pm blib/lib/Forks/Super/Job/Timeout.pm
+cp lib/Forks/Super/Tie/IPCSocketHandle.pm blib/lib/Forks/Super/Tie/IPCSocketHandle.pm
+cp lib/Signals/XSIG.pm blib/lib/Signals/XSIG.pm
+cp lib/Signals/XSIG/Default.pm blib/lib/Signals/XSIG/Default.pm
+cp lib/Forks/Super/Sync/IPCSemaphore.pm blib/lib/Forks/Super/Sync/IPCSemaphore.pm
+cp lib/Forks/Super/Util.pm blib/lib/Forks/Super/Util.pm
+cp lib/Forks/Super/Tie/IPCPipeHandle.pm blib/lib/Forks/Super/Tie/IPCPipeHandle.pm
+cp lib/Forks/Super/Sync/Win32Mutex.pm blib/lib/Forks/Super/Sync/Win32Mutex.pm
+cp lib/Forks/Super/LazyEval/BackgroundArray.pm blib/lib/Forks/Super/LazyEval/BackgroundArray.pm
+cp lib/Forks/Super/Job.pm blib/lib/Forks/Super/Job.pm
+cp lib/Signals/XSIG/TieArray56.pm blib/lib/Signals/XSIG/TieArray56.pm
+cp lib/Forks/Super/Job/OS.pm blib/lib/Forks/Super/Job/OS.pm
+cp lib/Forks/Super/Deferred.pm blib/lib/Forks/Super/Deferred.pm
+cp lib/Forks/Super/Sync/Win32.pm blib/lib/Forks/Super/Sync/Win32.pm
+cp lib/Forks/Super/Wait.pm blib/lib/Forks/Super/Wait.pm
+cp lib/Forks/Super/Job/OS/Win32.pm blib/lib/Forks/Super/Job/OS/Win32.pm
+cp lib/Forks/Super/Tie/Enum.pm blib/lib/Forks/Super/Tie/Enum.pm
+cp lib/Forks/Super/Tie/IPCDupSTDIN.pm blib/lib/Forks/Super/Tie/IPCDupSTDIN.pm
+cp lib/Forks/Super/Sync/Semaphlock.pm blib/lib/Forks/Super/Sync/Semaphlock.pm
+cp lib/Forks/Super.pm blib/lib/Forks/Super.pm
+cp lib/Forks/Super/Sigchld.pm blib/lib/Forks/Super/Sigchld.pm
+cp lib/Forks/Super/Job/Emulate.pm blib/lib/Forks/Super/Job/Emulate.pm
+cp lib/Forks/Super/Job/OS/Cygwin.pm blib/lib/Forks/Super/Job/OS/Cygwin.pm
+cp lib/Forks/Super/Tie/IPCFileHandle.pm blib/lib/Forks/Super/Tie/IPCFileHandle.pm
+cp spike-pma.pl blib/lib/Forks/spike-pma.pl
+cp lib/Forks/Super/Config.pm blib/lib/Forks/Super/Config.pm
+cp lib/Forks/Super/Job/Ipc.pm blib/lib/Forks/Super/Job/Ipc.pm
+cp lib/Forks/Super/LazyEval/BackgroundScalar.pm blib/lib/Forks/Super/LazyEval/BackgroundScalar.pm
+cp lib/Forks/Super/SysInfo.pm blib/lib/Forks/Super/SysInfo.pm
+Manifying 26 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/pkgconfig m4datadir=/nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/aclocal aclocaldir=/nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/aclocal install
+Manifying 26 pod documents
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Signals/XSIG.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Signals/XSIG/TieArray56.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Signals/XSIG/Default.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/spike-pma.pl
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Debug.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Config.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Deferred.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/LazyEval.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Util.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sigchld.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Wait.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sync.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/SysInfo.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sync/Semaphlock.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sync/Win32Mutex.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sync/IPCSemaphore.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Sync/Win32.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/Timeout.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/Ipc.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/Callback.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/OS.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/Emulate.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/OS/Cygwin.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Job/OS/Win32.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Tie/IPCDupSTDIN.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Tie/IPCSocketHandle.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Tie/IPCPipeHandle.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Tie/IPCFileHandle.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/Tie/Enum.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/LazyEval/BackgroundArray.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/site_perl/5.32.0/Forks/Super/LazyEval/BackgroundScalar.pm
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::OS::Win32.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sync::Semaphlock.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Deferred.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Tie::Enum.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::LazyEval.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::Timeout.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sync::Win32.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Signals::XSIG::Default.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sigchld.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sync.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Signals::XSIG.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::LazyEval::BackgroundScalar.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Debug.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Wait.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::OS.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::Callback.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Config.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sync::IPCSemaphore.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::Emulate.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::Ipc.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Sync::Win32Mutex.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Util.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::LazyEval::BackgroundArray.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job::OS::Cygwin.3
+Installing /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3/Forks::Super::Job.3
+Appending installation info to /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/man3 to /nix/store/xwyhq777xmkw7hv6rs7zhm0bp0bgfkgr-perl5.32.0-Forks-Super-0.97-devdoc/share/man/man3
+Removing empty /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97/lib
+patching script interpreter paths in /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97
+checking for references to /build/ in /nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xwyhq777xmkw7hv6rs7zhm0bp0bgfkgr-perl5.32.0-Forks-Super-0.97-devdoc
+gzipping man pages under /nix/store/xwyhq777xmkw7hv6rs7zhm0bp0bgfkgr-perl5.32.0-Forks-Super-0.97-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xwyhq777xmkw7hv6rs7zhm0bp0bgfkgr-perl5.32.0-Forks-Super-0.97-devdoc
+checking for references to /build/ in /nix/store/xwyhq777xmkw7hv6rs7zhm0bp0bgfkgr-perl5.32.0-Forks-Super-0.97-devdoc...
+/nix/store/q6jj4zxrlmmd6j53whcznndx4ljp33yl-perl5.32.0-Forks-Super-0.97

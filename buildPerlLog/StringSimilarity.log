@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/16k58qx6sj8p6d1lbj7kv32bpdwg302k-perl5.32.0-String-Similarity-1.04.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/s08n758jsvsy9zpzmwbgh27238v7i17j-String-Similarity-1.04.tar.gz
+copying path '/nix/store/s08n758jsvsy9zpzmwbgh27238v7i17j-String-Similarity-1.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/16k58qx6sj8p6d1lbj7kv32bpdwg302k-perl5.32.0-String-Similarity-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/s08n758jsvsy9zpzmwbgh27238v7i17j-String-Similarity-1.04.tar.gz
+source root is String-Similarity-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1246628899 of file String-Similarity-1.04/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for String::Similarity
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Similarity.pm blib/lib/String/Similarity.pm
+Running Mkbootstrap for Similarity ()
+chmod 644 "Similarity.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Similarity.bs blib/arch/auto/String/Similarity/Similarity.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Similarity.xs > Similarity.xsc
+mv Similarity.xsc Similarity.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.04\" -DXS_VERSION=\"1.04\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Similarity.c
+rm -f blib/arch/auto/String/Similarity/Similarity.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Similarity.o  -o blib/arch/auto/String/Similarity/Similarity.so  \
+      \
+
+chmod 755 blib/arch/auto/String/Similarity/Similarity.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Similarity.bs blib/arch/auto/String/Similarity/Similarity.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t .. ok
+All tests successful.
+Files=1, Tests=10,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.01 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib/pkgconfig m4datadir=/nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/share/aclocal aclocaldir=/nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Similarity.bs blib/arch/auto/String/Similarity/Similarity.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/String/Similarity/Similarity.so
+Installing /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/String/Similarity.pm
+Installing /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/share/man/man3/String::Similarity.3
+Appending installation info to /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/share/man/man3 to /nix/store/p0hfjdkflg057hla7iiwjq187x5d7cl7-perl5.32.0-String-Similarity-1.04-devdoc/share/man/man3
+Removing empty /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04
+shrinking /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/String/Similarity/Similarity.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04/lib
+patching script interpreter paths in /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04
+checking for references to /build/ in /nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/p0hfjdkflg057hla7iiwjq187x5d7cl7-perl5.32.0-String-Similarity-1.04-devdoc
+gzipping man pages under /nix/store/p0hfjdkflg057hla7iiwjq187x5d7cl7-perl5.32.0-String-Similarity-1.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/p0hfjdkflg057hla7iiwjq187x5d7cl7-perl5.32.0-String-Similarity-1.04-devdoc
+checking for references to /build/ in /nix/store/p0hfjdkflg057hla7iiwjq187x5d7cl7-perl5.32.0-String-Similarity-1.04-devdoc...
+/nix/store/s1qfz56vlarp41z3yjd6vpf2py9afga9-perl5.32.0-String-Similarity-1.04

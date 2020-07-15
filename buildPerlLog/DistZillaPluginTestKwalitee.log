@@ -1,0 +1,109 @@
+these derivations will be built:
+  /nix/store/5qf2hqmn8pf0nmvf1mka4z8njx49w89s-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12.drv
+building '/nix/store/5qf2hqmn8pf0nmvf1mka4z8njx49w89s-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/830rw7z9kcllhxcams8kk9259zggg7mv-Dist-Zilla-Plugin-Test-Kwalitee-2.12.tar.gz
+source root is Dist-Zilla-Plugin-Test-Kwalitee-2.12
+setting SOURCE_DATE_EPOCH to timestamp 1443585590 of file Dist-Zilla-Plugin-Test-Kwalitee-2.12/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Kwalitee
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-Kwalitee' version '2.12'
+cp lib/Dist/Zilla/Plugin/Test/Kwalitee.pm blib/lib/Dist/Zilla/Plugin/Test/Kwalitee.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::pushd          any    1.016
+#     Path::Tiny           any    0.114
+#     Test::DZil           any    6.015
+#     Test::Deep           any    1.130
+#     Test::Fatal          any    0.014
+#     Test::Kwalitee      1.21     1.28
+#     Test::More          0.88 1.302175
+#     if                   any   0.0608
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                              Want     Have
+#     ------------------------------- -------- --------
+#     Data::Section                      0.004 0.200007
+#     Dist::Zilla                     4.300039    6.015
+#     Dist::Zilla::File::InMemory          any    6.015
+#     Dist::Zilla::Role::FileGatherer      any    6.015
+#     Dist::Zilla::Role::PrereqSource      any    6.015
+#     Dist::Zilla::Role::TextTemplate      any    6.015
+#     Moose                                any   2.2012
+#     Sub::Exporter::ForMethods            any 0.100052
+#     namespace::autoclean                 any     0.29
+#     strict                               any     1.11
+#     warnings                             any     1.47
+#
+# === Other Modules ===
+#
+#     Module                      Have
+#     ----------------------- --------
+#     CPAN::Meta::Validator   2.150010
+#     Module::CPANTS::Analyse     1.01
+#     Pod::Coverage            missing
+#
+t/00-report-prereqs.t .. ok
+t/01-basic.t ........... ok
+t/02-filename.t ........ ok
+t/prereqs.t ............ ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=5, Tests=14,  8 wallclock secs ( 0.11 usr  0.14 sys +  4.53 cusr  3.81 csys =  8.59 CPU)
+Result: PASS
+installing
+Installing /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/Kwalitee.pm
+Installing /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12/share/man/man3/Dist::Zilla::Plugin::Test::Kwalitee.3
+post-installation fixup
+Moving /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12/share/man/man3 to /nix/store/zh3ahxnmdpivvl3avxlsa59l47fj2nxj-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12-devdoc/share/man/man3
+Removing empty /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12/lib
+patching script interpreter paths in /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12
+checking for references to /build/ in /nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zh3ahxnmdpivvl3avxlsa59l47fj2nxj-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12-devdoc
+gzipping man pages under /nix/store/zh3ahxnmdpivvl3avxlsa59l47fj2nxj-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zh3ahxnmdpivvl3avxlsa59l47fj2nxj-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12-devdoc
+checking for references to /build/ in /nix/store/zh3ahxnmdpivvl3avxlsa59l47fj2nxj-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12-devdoc...
+/nix/store/6bpc75i7pqlkcfggvwkryyv9z7p507d7-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12

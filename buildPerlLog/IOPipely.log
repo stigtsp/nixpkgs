@@ -1,0 +1,75 @@
+these derivations will be built:
+  /nix/store/gc19q2bchxfnl4s23nwk3bl3ppf1ms21-perl5.32.0-IO-Pipely-0.005.drv
+building '/nix/store/gc19q2bchxfnl4s23nwk3bl3ppf1ms21-perl5.32.0-IO-Pipely-0.005.drv'...
+unpacking sources
+unpacking source archive /nix/store/icmgrqfl97a3a17fyjc0kv3yk8hq7w03-IO-Pipely-0.005.tar.gz
+source root is IO-Pipely-0.005
+setting SOURCE_DATE_EPOCH to timestamp 1376312922 of file IO-Pipely-0.005/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/02-pod-no404s.t...
+patching ./t/13-pipely-twoway.t...
+patching ./t/00-info-perl.t...
+patching ./t/12-pipely-oneway.t...
+patching ./t/000-report-versions.t...
+patching ./t/11-pipely-base.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/release-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::Pipely
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/Pipely.pm blib/lib/IO/Pipely.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-info-perl.t .......... # Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl on linux
+t/00-info-perl.t .......... ok
+t/000-report-versions.t ... # Testing with Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/000-report-versions.t ... 1/? #     Carp version is 1.50
+#     Exporter version is 5.74
+t/000-report-versions.t ... 3/? #     ExtUtils::MakeMaker version is 7.44
+#     Fcntl version is 1.13
+#     IO::Socket version is 1.43
+#     Scalar::Util version is 1.55
+#     Symbol version is 1.08
+#     Test::More version is 1.302175
+#     base version is 2.27
+#     strict version is 1.11
+#     warnings version is 1.47
+t/000-report-versions.t ... ok
+t/01-test-pod.t ........... skipped: RELEASE_TESTING environment variable is not true.
+t/02-pod-no404s.t ......... skipped: RUN_NETWORK_TESTS environment variable is not true.
+t/11-pipely-base.t ........ skipped: not implemented yet
+t/12-pipely-oneway.t ...... ok
+t/13-pipely-twoway.t ...... ok
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .... skipped: these tests are for release candidate testing
+All tests successful.
+Files=9, Tests=23,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.52 cusr  0.07 csys =  0.63 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/lib/pkgconfig m4datadir=/nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/share/aclocal aclocaldir=/nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/lib/perl5/site_perl/5.32.0/IO/Pipely.pm
+Installing /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/share/man/man3/IO::Pipely.3
+Appending installation info to /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/share/man/man3 to /nix/store/zchrl0qdmrjm8v18qjvwh0gs2fb3kq03-perl5.32.0-IO-Pipely-0.005-devdoc/share/man/man3
+Removing empty /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005/lib
+patching script interpreter paths in /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005
+checking for references to /build/ in /nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zchrl0qdmrjm8v18qjvwh0gs2fb3kq03-perl5.32.0-IO-Pipely-0.005-devdoc
+gzipping man pages under /nix/store/zchrl0qdmrjm8v18qjvwh0gs2fb3kq03-perl5.32.0-IO-Pipely-0.005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zchrl0qdmrjm8v18qjvwh0gs2fb3kq03-perl5.32.0-IO-Pipely-0.005-devdoc
+checking for references to /build/ in /nix/store/zchrl0qdmrjm8v18qjvwh0gs2fb3kq03-perl5.32.0-IO-Pipely-0.005-devdoc...
+/nix/store/y87lig5cmdp5m97cy8ppyxnclqz2yrwl-perl5.32.0-IO-Pipely-0.005

@@ -1,0 +1,543 @@
+these derivations will be built:
+  /nix/store/2rwd7l7y4mg1x4hnlgpw0gcfccyj05nh-perl5.32.0-Term-ProgressBar-2.22.drv
+  /nix/store/nyrc2fk2by8fqbpr692kxhm4j9y6icmy-perl5.32.0-Term-ProgressBar-Quiet-0.31.drv
+  /nix/store/v17ph5z7m3p8f0bmhpy2bfknqksyy29p-perl5.32.0-Term-ProgressBar-Simple-0.03.drv
+  /nix/store/zg2kmfpl3mry5mm2qmr9x4chjgq16bpp-perl5.32.0-Test-LoadAllModules-0.022.drv
+  /nix/store/b7c1brg4k81nnwzwsjrypih64g10845r-perl5.32.0-Net-Amazon-S3-0.89.drv
+these paths will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/0msywrlaf5ywcacbmc1dp65b3q2cbln9-Term-ProgressBar-Simple-0.03.tar.gz
+  /nix/store/bcgmm8rzvjg4kk2x2iydfq4wf1r0g3xz-Term-ProgressBar-Quiet-0.31.tar.gz
+  /nix/store/k68kyd38iqbrppvw7vkw9qwpw612p05y-Test-LoadAllModules-0.022.tar.gz
+  /nix/store/vynzin4c3jdpjyynh6bmnx7limb9k396-Net-Amazon-S3-0.89.tar.gz
+  /nix/store/ybs6mh59lp8l9kfgwc5798z69hc1qh8j-Term-ProgressBar-2.22.tar.gz
+copying path '/nix/store/vynzin4c3jdpjyynh6bmnx7limb9k396-Net-Amazon-S3-0.89.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/0msywrlaf5ywcacbmc1dp65b3q2cbln9-Term-ProgressBar-Simple-0.03.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/k68kyd38iqbrppvw7vkw9qwpw612p05y-Test-LoadAllModules-0.022.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bcgmm8rzvjg4kk2x2iydfq4wf1r0g3xz-Term-ProgressBar-Quiet-0.31.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ybs6mh59lp8l9kfgwc5798z69hc1qh8j-Term-ProgressBar-2.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2rwd7l7y4mg1x4hnlgpw0gcfccyj05nh-perl5.32.0-Term-ProgressBar-2.22.drv'...
+building '/nix/store/zg2kmfpl3mry5mm2qmr9x4chjgq16bpp-perl5.32.0-Test-LoadAllModules-0.022.drv'...
+unpacking sources
+unpacking sources
+unpacking source archive /nix/store/ybs6mh59lp8l9kfgwc5798z69hc1qh8j-Term-ProgressBar-2.22.tar.gz
+unpacking source archive /nix/store/k68kyd38iqbrppvw7vkw9qwpw612p05y-Test-LoadAllModules-0.022.tar.gz
+source root is Term-ProgressBar-2.22
+source root is Test-LoadAllModules-0.022
+setting SOURCE_DATE_EPOCH to timestamp 1526115687 of file Term-ProgressBar-2.22/META.yml
+patching sources
+setting SOURCE_DATE_EPOCH to timestamp 1368876053 of file Test-LoadAllModules-0.022/inc/Module/Install/WriteAll.pm
+configuring
+patching sources
+configuring
+patching ./examples/powers3...
+patching ./examples/powers...
+patching ./examples/smooth_bar.pl...
+patching ./examples/powers4...
+patching ./examples/simple_use.pl...
+patching ./examples/powers5...
+patching ./examples/stdinorfile.pl...
+patching ./examples/powers2...
+patching ./t/bug_123466.t...
+Checking if your kit is complete...
+Cannot determine perl version info from lib/Test/LoadAllModules.pm
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::ProgressBar
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::LoadAllModules
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Term/ProgressBar/IO.pm blib/lib/Term/ProgressBar/IO.pm
+cp lib/Term/ProgressBar.pm blib/lib/Term/ProgressBar.pm
+cp lib/Test/LoadAllModules.pm blib/lib/Test/LoadAllModules.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t .. Possible precedence issue with control flow operator at /build/Test-LoadAllModules-0.022/inc/Test/Builder.pm line 917.
+t/00_compile.t .. ok
+t/01_basic.t .... Possible precedence issue with control flow operator at /build/Test-LoadAllModules-0.022/inc/Test/Builder.pm line 917.
+t/01_basic.t .... ok
+t/02_term_progressbar_io.t .. ok   1
+t/02_except.t ... Possible precedence issue with control flow operator at /build/Test-LoadAllModules-0.022/inc/Test/Builder.pm line 917.
+t/02_except.t ... ok
+t/03_lib.t ...... Possible precedence issue with control flow operator at /build/Test-LoadAllModules-0.022/inc/Test/Builder.pm line 917.
+t/03_lib.t ...... ok
+All tests successful.
+Files=4, Tests=5,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.15 cusr  0.03 csys =  0.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/lib/pkgconfig m4datadir=/nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/share/aclocal aclocaldir=/nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/share/aclocal install
+t/bug_123466.t .............. [Wed Jul 15 06:05:48 2020] :   0%
+[Wed Jul 15 06:05:48 2020] :  40%
+t/bug_123466.t .............. ok
+Manifying 1 pod document
+Installing /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/lib/perl5/site_perl/5.32.0/Test/LoadAllModules.pm
+Installing /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/share/man/man3/Test::LoadAllModules.3
+Appending installation info to /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/share/man/man3 to /nix/store/8aya4bsdwhic7q3afbfi5n79iwpga87x-perl5.32.0-Test-LoadAllModules-0.022-devdoc/share/man/man3
+Removing empty /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022/lib
+patching script interpreter paths in /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022
+checking for references to /build/ in /nix/store/1l3lhhrqy4ys7hdkgmn946bp2lb0wc4r-perl5.32.0-Test-LoadAllModules-0.022...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8aya4bsdwhic7q3afbfi5n79iwpga87x-perl5.32.0-Test-LoadAllModules-0.022-devdoc
+gzipping man pages under /nix/store/8aya4bsdwhic7q3afbfi5n79iwpga87x-perl5.32.0-Test-LoadAllModules-0.022-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8aya4bsdwhic7q3afbfi5n79iwpga87x-perl5.32.0-Test-LoadAllModules-0.022-devdoc
+checking for references to /build/ in /nix/store/8aya4bsdwhic7q3afbfi5n79iwpga87x-perl5.32.0-Test-LoadAllModules-0.022-devdoc...
+t/compat.t .................. # create a bar
+t/compat.t .................. 1/10 # do half the stuff and check half the bar has printed
+t/compat.t .................. ok
+t/eta-linear.t .............. ok
+t/lessthanzero.t ............ ok
+t/name.t .................... ok
+t/silent.t .................. ok
+t/v1-message.t .............. ok
+t/v2-message.t .............. ok
+t/v2-mobile.t ............... ok
+t/v2-simple.t ............... ok
+t/zero.t .................... ok
+All tests successful.
+Files=12, Tests=143, 12 wallclock secs ( 0.06 usr  0.02 sys +  1.21 cusr  0.37 csys =  1.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/lib/pkgconfig m4datadir=/nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/aclocal aclocaldir=/nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/lib/perl5/site_perl/5.32.0/Term/ProgressBar.pm
+Installing /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/lib/perl5/site_perl/5.32.0/Term/ProgressBar/IO.pm
+Installing /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/man/man3/Term::ProgressBar::IO.3
+Installing /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/man/man3/Term::ProgressBar.3
+Appending installation info to /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/man/man3 to /nix/store/i090dmhyc21afl4a2ck2jpclm3h09wq6-perl5.32.0-Term-ProgressBar-2.22-devdoc/share/man/man3
+Removing empty /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22/lib
+patching script interpreter paths in /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22
+checking for references to /build/ in /nix/store/nkcgbhk6j622p53i0wvmnj092k91w5zn-perl5.32.0-Term-ProgressBar-2.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/i090dmhyc21afl4a2ck2jpclm3h09wq6-perl5.32.0-Term-ProgressBar-2.22-devdoc
+gzipping man pages under /nix/store/i090dmhyc21afl4a2ck2jpclm3h09wq6-perl5.32.0-Term-ProgressBar-2.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/i090dmhyc21afl4a2ck2jpclm3h09wq6-perl5.32.0-Term-ProgressBar-2.22-devdoc
+checking for references to /build/ in /nix/store/i090dmhyc21afl4a2ck2jpclm3h09wq6-perl5.32.0-Term-ProgressBar-2.22-devdoc...
+building '/nix/store/nyrc2fk2by8fqbpr692kxhm4j9y6icmy-perl5.32.0-Term-ProgressBar-Quiet-0.31.drv'...
+unpacking sources
+unpacking source archive /nix/store/bcgmm8rzvjg4kk2x2iydfq4wf1r0g3xz-Term-ProgressBar-Quiet-0.31.tar.gz
+source root is Term-ProgressBar-Quiet-0.31
+setting SOURCE_DATE_EPOCH to timestamp 1197389253 of file Term-ProgressBar-Quiet-0.31/META.yml
+patching sources
+configuring
+patching ./t/pod.t...
+patching ./t/simple.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::ProgressBar::Quiet
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Term/ProgressBar/Quiet.pm blib/lib/Term/ProgressBar/Quiet.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/pod.t ..... skipped: Test::Pod 1.14 required for testing POD
+t/simple.t .. ok
+All tests successful.
+Files=2, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.13 cusr  0.05 csys =  0.20 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/lib/pkgconfig m4datadir=/nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/share/aclocal aclocaldir=/nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/lib/perl5/site_perl/5.32.0/Term/ProgressBar/Quiet.pm
+Installing /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/share/man/man3/Term::ProgressBar::Quiet.3
+Appending installation info to /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/share/man/man3 to /nix/store/frvnw3bpq21z2pgav71yiw6kj1dfw9aq-perl5.32.0-Term-ProgressBar-Quiet-0.31-devdoc/share/man/man3
+Removing empty /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31/lib
+patching script interpreter paths in /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31
+checking for references to /build/ in /nix/store/iy4010l8qhlmrmfvpkq5fwdmdfbsc9h2-perl5.32.0-Term-ProgressBar-Quiet-0.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/frvnw3bpq21z2pgav71yiw6kj1dfw9aq-perl5.32.0-Term-ProgressBar-Quiet-0.31-devdoc
+gzipping man pages under /nix/store/frvnw3bpq21z2pgav71yiw6kj1dfw9aq-perl5.32.0-Term-ProgressBar-Quiet-0.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/frvnw3bpq21z2pgav71yiw6kj1dfw9aq-perl5.32.0-Term-ProgressBar-Quiet-0.31-devdoc
+checking for references to /build/ in /nix/store/frvnw3bpq21z2pgav71yiw6kj1dfw9aq-perl5.32.0-Term-ProgressBar-Quiet-0.31-devdoc...
+building '/nix/store/v17ph5z7m3p8f0bmhpy2bfknqksyy29p-perl5.32.0-Term-ProgressBar-Simple-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/0msywrlaf5ywcacbmc1dp65b3q2cbln9-Term-ProgressBar-Simple-0.03.tar.gz
+source root is Term-ProgressBar-Simple-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1235479300 of file Term-ProgressBar-Simple-0.03/META.yml
+patching sources
+configuring
+patching ./t/basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::ProgressBar::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Term/ProgressBar/Simple.pm blib/lib/Term/ProgressBar/Simple.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t ......... # Testing simple ++ increment
+t/basic.t ......... 1/5 # Testing ++ increment with early exit
+# Testing += increment
+t/basic.t ......... 3/5 # Testing message
+t/basic.t ......... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage > 1.00 required
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=3, Tests=5,  4 wallclock secs ( 0.02 usr  0.01 sys +  0.40 cusr  0.06 csys =  0.49 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/lib/pkgconfig m4datadir=/nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/share/aclocal aclocaldir=/nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/lib/perl5/site_perl/5.32.0/Term/ProgressBar/Simple.pm
+Installing /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/share/man/man3/Term::ProgressBar::Simple.3
+Appending installation info to /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/share/man/man3 to /nix/store/34k5rajl0bjayxk4cwd9qcxix4gh2y90-perl5.32.0-Term-ProgressBar-Simple-0.03-devdoc/share/man/man3
+Removing empty /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03/lib
+patching script interpreter paths in /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03
+checking for references to /build/ in /nix/store/45cvxz372yj1z5bbc13zmc7iz26m9czy-perl5.32.0-Term-ProgressBar-Simple-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/34k5rajl0bjayxk4cwd9qcxix4gh2y90-perl5.32.0-Term-ProgressBar-Simple-0.03-devdoc
+gzipping man pages under /nix/store/34k5rajl0bjayxk4cwd9qcxix4gh2y90-perl5.32.0-Term-ProgressBar-Simple-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/34k5rajl0bjayxk4cwd9qcxix4gh2y90-perl5.32.0-Term-ProgressBar-Simple-0.03-devdoc
+checking for references to /build/ in /nix/store/34k5rajl0bjayxk4cwd9qcxix4gh2y90-perl5.32.0-Term-ProgressBar-Simple-0.03-devdoc...
+building '/nix/store/b7c1brg4k81nnwzwsjrypih64g10845r-perl5.32.0-Net-Amazon-S3-0.89.drv'...
+unpacking sources
+unpacking source archive /nix/store/vynzin4c3jdpjyynh6bmnx7limb9k396-Net-Amazon-S3-0.89.tar.gz
+source root is Net-Amazon-S3-0.89
+setting SOURCE_DATE_EPOCH to timestamp 1581452900 of file Net-Amazon-S3-0.89/t/signature-v4-with-security-token.t
+patching sources
+configuring
+patching ./examples/backup_cpan.pl...
+patching ./t/01api.t...
+patching ./t/03token.t...
+patching ./t/00use.t...
+patching ./t/02client.t...
+patching ./bin/s3cl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Amazon::S3
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/Amazon/S3/HTTPRequest.pm blib/lib/Net/Amazon/S3/HTTPRequest.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header.pm
+cp lib/Net/Amazon/S3/Request/PutPart.pm blib/lib/Net/Amazon/S3/Request/PutPart.pm
+cp lib/Net/Amazon/S3/Request/AbortMultipartUpload.pm blib/lib/Net/Amazon/S3/Request/AbortMultipartUpload.pm
+cp lib/Net/Amazon/S3/Request/InitiateMultipartUpload.pm blib/lib/Net/Amazon/S3/Request/InitiateMultipartUpload.pm
+cp lib/Net/Amazon/S3/Request/CreateBucket.pm blib/lib/Net/Amazon/S3/Request/CreateBucket.pm
+cp lib/Net/Amazon/S3/Request/CompleteMultipartUpload.pm blib/lib/Net/Amazon/S3/Request/CompleteMultipartUpload.pm
+cp lib/Net/Amazon/S3/Request/Bucket.pm blib/lib/Net/Amazon/S3/Request/Bucket.pm
+cp lib/Net/Amazon/S3/Features.pod blib/lib/Net/Amazon/S3/Features.pod
+cp lib/Net/Amazon/S3.pm blib/lib/Net/Amazon/S3.pm
+cp lib/Net/Amazon/S3/Request/ListAllMyBuckets.pm blib/lib/Net/Amazon/S3/Request/ListAllMyBuckets.pm
+cp lib/Net/Amazon/S3/Client/Bucket.pm blib/lib/Net/Amazon/S3/Client/Bucket.pm
+cp lib/Net/Amazon/S3/Client.pm blib/lib/Net/Amazon/S3/Client.pm
+cp lib/Net/Amazon/S3/Bucket.pm blib/lib/Net/Amazon/S3/Bucket.pm
+cp lib/Net/Amazon/S3/Request/ListBucket.pm blib/lib/Net/Amazon/S3/Request/ListBucket.pm
+cp lib/Net/Amazon/S3/Request/DeleteMultiObject.pm blib/lib/Net/Amazon/S3/Request/DeleteMultiObject.pm
+cp lib/Net/Amazon/S3/Request/ListParts.pm blib/lib/Net/Amazon/S3/Request/ListParts.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Acl_short.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Acl_short.pm
+cp lib/Net/Amazon/S3/Request/PutObject.pm blib/lib/Net/Amazon/S3/Request/PutObject.pm
+cp lib/Net/Amazon/S3/Request.pm blib/lib/Net/Amazon/S3/Request.pm
+cp lib/Net/Amazon/S3/Request/GetBucketAccessControl.pm blib/lib/Net/Amazon/S3/Request/GetBucketAccessControl.pm
+cp lib/Net/Amazon/S3/Request/Object.pm blib/lib/Net/Amazon/S3/Request/Object.pm
+cp lib/Net/Amazon/S3/Request/GetBucketLocationConstraint.pm blib/lib/Net/Amazon/S3/Request/GetBucketLocationConstraint.pm
+cp lib/Net/Amazon/S3/Request/DeleteBucket.pm blib/lib/Net/Amazon/S3/Request/DeleteBucket.pm
+cp lib/Net/Amazon/S3/Request/GetObject.pm blib/lib/Net/Amazon/S3/Request/GetObject.pm
+cp lib/Net/Amazon/S3/Request/DeleteObject.pm blib/lib/Net/Amazon/S3/Request/DeleteObject.pm
+cp lib/Net/Amazon/S3/Request/GetObjectAccessControl.pm blib/lib/Net/Amazon/S3/Request/GetObjectAccessControl.pm
+cp lib/Net/Amazon/S3/Client/Object.pm blib/lib/Net/Amazon/S3/Client/Object.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_md5.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_md5.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Action/Location.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Action/Location.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Method.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Method.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Upload_id.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Upload_id.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_length.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_length.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_type.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Content_type.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Method/PUT.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Method/PUT.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Method/POST.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Method/POST.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Action/Uploads.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Action/Uploads.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Max_keys.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Max_keys.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Action.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Action.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Action/Delete.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Action/Delete.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Delimiter.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Delimiter.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Method/GET.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Method/GET.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Action/Acl.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Action/Acl.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Part_number.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Part_number.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Method/DELETE.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Method/DELETE.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Prefix.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Prefix.pm
+cp lib/Net/Amazon/S3/Request/Service.pm blib/lib/Net/Amazon/S3/Request/Service.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Encryption.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Encryption.pm
+cp lib/Net/Amazon/S3/Request/Role/Query/Param/Marker.pm blib/lib/Net/Amazon/S3/Request/Role/Query/Param/Marker.pm
+cp lib/Net/Amazon/S3/Request/Role/HTTP/Header/Copy_source.pm blib/lib/Net/Amazon/S3/Request/Role/HTTP/Header/Copy_source.pm
+cp lib/Net/Amazon/S3/Request/SetObjectAccessControl.pm blib/lib/Net/Amazon/S3/Request/SetObjectAccessControl.pm
+cp lib/Net/Amazon/S3/Signature/V4Implementation.pm blib/lib/Net/Amazon/S3/Signature/V4Implementation.pm
+cp lib/Net/Amazon/S3/Signature/V4.pm blib/lib/Net/Amazon/S3/Signature/V4.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/Delete.pm blib/lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/Delete.pm
+cp lib/Shared/Examples/Net/Amazon/S3.pm blib/lib/Shared/Examples/Net/Amazon/S3.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Client.pm blib/lib/Shared/Examples/Net/Amazon/S3/Client.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/List.pm blib/lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/List.pm
+cp lib/Net/Amazon/S3/Role/Bucket.pm blib/lib/Net/Amazon/S3/Role/Bucket.pm
+cp lib/Shared/Examples/Net/Amazon/S3/API.pm blib/lib/Shared/Examples/Net/Amazon/S3/API.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Create.pm blib/lib/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Create.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Request.pm blib/lib/Shared/Examples/Net/Amazon/S3/Request.pm
+cp lib/Net/Amazon/S3/Signature.pm blib/lib/Net/Amazon/S3/Signature.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Operation/Service/Buckets/List.pm blib/lib/Shared/Examples/Net/Amazon/S3/Operation/Service/Buckets/List.pm
+cp lib/Shared/Examples/Net/Amazon/S3/Error.pm blib/lib/Shared/Examples/Net/Amazon/S3/Error.pm
+cp lib/Net/Amazon/S3/Signature/V2.pm blib/lib/Net/Amazon/S3/Signature/V2.pm
+cp lib/Net/Amazon/S3/Request/SetBucketAccessControl.pm blib/lib/Net/Amazon/S3/Request/SetBucketAccessControl.pm
+cp lib/Shared/Examples/Net/Amazon/S3/ACL.pm blib/lib/Shared/Examples/Net/Amazon/S3/ACL.pm
+cp bin/s3cl blib/script/s3cl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/s3cl
+Manifying 1 pod document
+Manifying 26 pod documents
+Manifying 20 pod documents
+Manifying 22 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00use.t ................................... ok
+t/01api.t ................................... skipped: Testing this module for real costs money. Enable it by setting true value to env variable AMAZON_S3_EXPENSIVE_TESTS
+t/02client.t ................................ skipped: Testing this module for real costs money.
+t/03token.t ................................. skipped: Need these vars in ENV: AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY_SECRET, AWS_ACCESS_TOKEN
+t/api-bucket-acl-get.t ...................... ok
+t/api-bucket-acl-set.t ...................... ok
+t/api-bucket-create.t ....................... ok
+t/api-bucket-delete.t ....................... ok
+t/api-bucket-objects-delete.t ............... ok
+t/api-bucket-objects-list.t ................. ok
+t/api-object-acl-get.t ...................... ok
+t/api-object-acl-set.t ...................... ok
+t/api-object-create.t ....................... ok
+t/api-object-delete.t ....................... ok
+t/api-object-fetch.t ........................ ok
+t/api-object-head.t ......................... ok
+t/api-service-buckets-list.t ................ ok
+t/client-bucket-acl-get.t ................... ok
+t/client-bucket-create.t .................... ok
+t/client-bucket-delete.t .................... ok
+t/client-bucket-objects-delete.t ............ ok
+t/client-bucket-objects-list.t .............. ok
+t/client-object-create.t .................... ok
+t/client-object-delete.t .................... ok
+t/client-object-fetch.t ..................... ok
+t/client-service-buckets-list.t ............. ok
+t/query-string-authentication-uri.t ......... ok
+t/request-abort-multipart-upload.t .......... ok
+t/request-complete-multipart-upload.t ....... ok
+t/request-create-bucket.t ................... ok
+t/request-delete-bucket.t ................... ok
+t/request-delete-multi-object.t ............. ok
+t/request-delete-object.t ................... ok
+t/request-get-bucket-access-control.t ....... ok
+t/request-get-bucket-location-constraint.t .. ok
+t/request-get-object-access-control.t ....... ok
+t/request-get-object.t ...................... ok
+t/request-initiate-multipart-upload.t ....... ok
+t/request-list-all-buckets.t ................ ok
+t/request-list-bucket.t ..................... ok
+t/request-list-parts.t ...................... ok
+t/request-put-object.t ...................... ok
+t/request-put-part.t ........................ ok
+t/request-set-bucket-access-control.t ....... ok
+t/request-set-object-access-control.t ....... ok
+t/request.t ................................. ok
+t/signature-v4-with-security-token.t ........ ok
+All tests successful.
+Files=47, Tests=199, 80 wallclock secs ( 0.54 usr  0.14 sys + 50.32 cusr 29.05 csys = 80.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/pkgconfig m4datadir=/nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/aclocal aclocaldir=/nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/aclocal install
+Manifying 1 pod document
+Manifying 26 pod documents
+Manifying 20 pod documents
+Manifying 22 pod documents
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Features.pod
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Client.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/HTTPRequest.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Bucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Signature.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Signature/V4.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Signature/V2.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Signature/V4Implementation.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/ListParts.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Object.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/AbortMultipartUpload.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/SetObjectAccessControl.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/InitiateMultipartUpload.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/CreateBucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/GetObjectAccessControl.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/DeleteMultiObject.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/GetObject.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/DeleteObject.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/PutPart.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Service.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/SetBucketAccessControl.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/PutObject.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/CompleteMultipartUpload.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/ListBucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Bucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/GetBucketLocationConstraint.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/GetBucketAccessControl.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/ListAllMyBuckets.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/DeleteBucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Action.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Action/Acl.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Action/Uploads.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Action/Delete.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Action/Location.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Upload_id.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Part_number.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Max_keys.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Prefix.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Marker.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/Query/Param/Delimiter.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Method.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Content_type.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Encryption.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Copy_source.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Content_md5.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Content_length.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Header/Acl_short.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Method/DELETE.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Method/GET.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Method/PUT.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Request/Role/HTTP/Method/POST.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Client/Object.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Client/Bucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Net/Amazon/S3/Role/Bucket.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/ACL.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/API.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Request.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Client.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Error.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Operation/Service/Buckets/List.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Create.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/List.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/site_perl/5.32.0/Shared/Examples/Net/Amazon/S3/Operation/Bucket/Objects/Delete.pm
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man1/s3cl.1
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Operation::Bucket::Objects::Delete.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Bucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::CompleteMultipartUpload.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::API.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Delimiter.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Acl_short.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Operation::Bucket::Create.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Client::Object.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Action::Location.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::ACL.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Bucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::GetBucketAccessControl.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Request.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::InitiateMultipartUpload.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::AbortMultipartUpload.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Method::PUT.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Signature.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Client.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::CreateBucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::PutPart.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::GetObject.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Client.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Encryption.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Max_keys.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::GetBucketLocationConstraint.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::HTTPRequest.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Content_length.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Upload_id.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Copy_source.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Object.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Signature::V4.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Operation::Service::Buckets::List.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Action::Acl.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Prefix.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Method.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::ListAllMyBuckets.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::SetBucketAccessControl.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Client::Bucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::PutObject.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Method::POST.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::DeleteBucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Content_md5.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::SetObjectAccessControl.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Features.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::ListParts.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Error.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::GetObjectAccessControl.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::ListBucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Signature::V4Implementation.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Marker.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Method::GET.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Action.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Method::DELETE.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Param::Part_number.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Service.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::DeleteMultiObject.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::HTTP::Header::Content_type.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Action::Uploads.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Shared::Examples::Net::Amazon::S3::Operation::Bucket::Objects::List.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Role::Bucket.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::DeleteObject.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Signature::V2.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3/Net::Amazon::S3::Request::Role::Query::Action::Delete.3
+Installing /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/bin/s3cl
+Appending installation info to /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/man3 to /nix/store/ggi224chxypggx61lma2fh8vpbw7k3b2-perl5.32.0-Net-Amazon-S3-0.89-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89
+gzipping man pages under /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/lib  /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89/bin
+patching script interpreter paths in /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89
+checking for references to /build/ in /nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ggi224chxypggx61lma2fh8vpbw7k3b2-perl5.32.0-Net-Amazon-S3-0.89-devdoc
+gzipping man pages under /nix/store/ggi224chxypggx61lma2fh8vpbw7k3b2-perl5.32.0-Net-Amazon-S3-0.89-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ggi224chxypggx61lma2fh8vpbw7k3b2-perl5.32.0-Net-Amazon-S3-0.89-devdoc
+checking for references to /build/ in /nix/store/ggi224chxypggx61lma2fh8vpbw7k3b2-perl5.32.0-Net-Amazon-S3-0.89-devdoc...
+/nix/store/fngkks4sb56qsw6g3j6cmw5xlvsfzja9-perl5.32.0-Net-Amazon-S3-0.89

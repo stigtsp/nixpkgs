@@ -1,0 +1,57 @@
+these derivations will be built:
+  /nix/store/6lpr020qlj0jbn9zk4wgk7si3bv8gsm3-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/7cicqwahyhhfg3innks35jzfmzsjxqh0-Catalyst-Plugin-Session-Store-FastMmap-0.16.tar.gz
+copying path '/nix/store/7cicqwahyhhfg3innks35jzfmzsjxqh0-Catalyst-Plugin-Session-Store-FastMmap-0.16.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6lpr020qlj0jbn9zk4wgk7si3bv8gsm3-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/7cicqwahyhhfg3innks35jzfmzsjxqh0-Catalyst-Plugin-Session-Store-FastMmap-0.16.tar.gz
+source root is Catalyst-Plugin-Session-Store-FastMmap-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1328002097 of file Catalyst-Plugin-Session-Store-FastMmap-0.16/META.yml
+patching sources
+configuring
+patching ./t/lib/SessionStoreTest/Controller/Root.pm...
+patching ./t/lib/SessionStoreTest.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::Session::Store::FastMmap
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/Session/Store/FastMmap.pm blib/lib/Catalyst/Plugin/Session/Store/FastMmap.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... 1/1 # testing Catalyst::Plugin::Session::Store::FastMmap version 0.16
+t/01use.t .......... ok
+t/02pod.t .......... skipped: Test::Pod 1.14 required
+t/03podcoverage.t .. skipped: Test::Pod::Coverage 1.04 required
+t/basic.t .......... 1/20 [warn] Action methods (create_session, recover_session, after_session) found defined in your application class, SessionStoreTest. This is deprecated, please move them into a Root controller.
+[warn] Action methods (create_session, recover_session) found defined in your application class, SessionStoreTest2. This is deprecated, please move them into a Root controller.
+t/basic.t .......... ok
+All tests successful.
+Files=4, Tests=21,  3 wallclock secs ( 0.09 usr  0.07 sys +  1.43 cusr  1.07 csys =  2.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/lib/pkgconfig m4datadir=/nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/share/aclocal aclocaldir=/nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/Session/Store/FastMmap.pm
+Installing /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/share/man/man3/Catalyst::Plugin::Session::Store::FastMmap.3
+Appending installation info to /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/share/man/man3 to /nix/store/9ahx842vvq74fi7n756kv3b61v32x4b1-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16-devdoc/share/man/man3
+Removing empty /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16/lib
+patching script interpreter paths in /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16
+checking for references to /build/ in /nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9ahx842vvq74fi7n756kv3b61v32x4b1-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16-devdoc
+gzipping man pages under /nix/store/9ahx842vvq74fi7n756kv3b61v32x4b1-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9ahx842vvq74fi7n756kv3b61v32x4b1-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16-devdoc
+checking for references to /build/ in /nix/store/9ahx842vvq74fi7n756kv3b61v32x4b1-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16-devdoc...
+/nix/store/a3grmz2vvwggiki96n2sp50sybr1h14z-perl5.32.0-Catalyst-Plugin-Session-Store-FastMmap-0.16

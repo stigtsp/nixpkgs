@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/7ibrj418w4g3api4qwbqz2nawihg92z4-perl5.32.0-File-Zglob-0.11.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/3rl1c568sjrzikjyv3hmpkwy1pjgz3yk-File-Zglob-0.11.tar.gz
+copying path '/nix/store/3rl1c568sjrzikjyv3hmpkwy1pjgz3yk-File-Zglob-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7ibrj418w4g3api4qwbqz2nawihg92z4-perl5.32.0-File-Zglob-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/3rl1c568sjrzikjyv3hmpkwy1pjgz3yk-File-Zglob-0.11.tar.gz
+source root is File-Zglob-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1339739152 of file File-Zglob-0.11/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./author/test.pl...
+patching ./author/benchmark.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Zglob
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/Zglob.pm blib/lib/File/Zglob.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t
+t/00_compile.t ............... ok
+t/02_glob_prepare_pattern.t .. ok
+t/03_zglob.t ................. ok
+t/04_dotdot.t ................ ok
+All tests successful.
+Files=4, Tests=20,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.21 cusr  0.02 csys =  0.26 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/lib/pkgconfig m4datadir=/nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/share/aclocal aclocaldir=/nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/lib/perl5/site_perl/5.32.0/File/Zglob.pm
+Installing /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/share/man/man3/File::Zglob.3
+Appending installation info to /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/share/man/man3 to /nix/store/yi5q83kk84540avd325jn348466g6inc-perl5.32.0-File-Zglob-0.11-devdoc/share/man/man3
+Removing empty /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11/lib
+patching script interpreter paths in /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11
+checking for references to /build/ in /nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yi5q83kk84540avd325jn348466g6inc-perl5.32.0-File-Zglob-0.11-devdoc
+gzipping man pages under /nix/store/yi5q83kk84540avd325jn348466g6inc-perl5.32.0-File-Zglob-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yi5q83kk84540avd325jn348466g6inc-perl5.32.0-File-Zglob-0.11-devdoc
+checking for references to /build/ in /nix/store/yi5q83kk84540avd325jn348466g6inc-perl5.32.0-File-Zglob-0.11-devdoc...
+/nix/store/1saf74gpqa6rwlraxm38l6px9jim6ddp-perl5.32.0-File-Zglob-0.11

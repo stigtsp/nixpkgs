@@ -1,0 +1,91 @@
+these derivations will be built:
+  /nix/store/r5mcbh0x97as9p68gc82bnfz0nh7mff2-perl5.32.0-CPAN-Changes-0.400002.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/vaamnda2nq9h6wplsk6wcaj33saal5w2-CPAN-Changes-0.400002.tar.gz
+copying path '/nix/store/vaamnda2nq9h6wplsk6wcaj33saal5w2-CPAN-Changes-0.400002.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/r5mcbh0x97as9p68gc82bnfz0nh7mff2-perl5.32.0-CPAN-Changes-0.400002.drv'...
+unpacking sources
+unpacking source archive /nix/store/vaamnda2nq9h6wplsk6wcaj33saal5w2-CPAN-Changes-0.400002.tar.gz
+source root is CPAN-Changes-0.400002
+setting SOURCE_DATE_EPOCH to timestamp 1434911997 of file CPAN-Changes-0.400002/README
+patching sources
+configuring
+patching ./bin/tidy_changelog...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CPAN::Changes
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CPAN/Changes/Group.pm blib/lib/CPAN/Changes/Group.pm
+cp lib/CPAN/Changes.pm blib/lib/CPAN/Changes.pm
+cp lib/Test/CPAN/Changes.pm blib/lib/Test/CPAN/Changes.pm
+cp lib/CPAN/Changes/Spec.pod blib/lib/CPAN/Changes/Spec.pod
+cp lib/CPAN/Changes/Release.pm blib/lib/CPAN/Changes/Release.pm
+cp bin/tidy_changelog blib/script/tidy_changelog
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tidy_changelog
+Manifying 1 pod document
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/delete_empty_groups.t ............... ok
+t/dist-zilla-changes.t ................ ok
+t/moo_lazy_subclass.t ................. skipped: Moo required for this test
+t/read_basic.t ........................ ok
+t/read_different-indentation.t ........ ok
+t/read_dist-zilla.t ................... ok
+t/read_encoded.t ...................... ok
+t/read_group-brackets.t ............... ok
+t/read_group.t ........................ ok
+t/read_line-continuation.t ............ ok
+t/read_multiple_releases.t ............ ok
+t/read_no-leading-space-for-change.t .. ok
+t/read_no_date.t ...................... ok
+t/read_preamble.t ..................... ok
+t/read_space-before-date.t ............ ok
+t/read_timestamp.t .................... ok
+t/read_unknown_date.t ................. ok
+t/read_version-date-separator.t ....... ok
+t/rt90605.t ........................... ok
+t/self.t .............................. ok
+t/serialize.t ......................... ok
+t/sort_groups.t ....................... ok
+t/valid_dates.t ....................... ok
+All tests successful.
+Files=23, Tests=277,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.30 cusr  0.23 csys =  1.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/pkgconfig m4datadir=/nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/aclocal aclocaldir=/nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/aclocal install
+Manifying 1 pod document
+Manifying 5 pod documents
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/site_perl/5.32.0/Test/CPAN/Changes.pm
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/site_perl/5.32.0/CPAN/Changes.pm
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/site_perl/5.32.0/CPAN/Changes/Spec.pod
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/site_perl/5.32.0/CPAN/Changes/Release.pm
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/site_perl/5.32.0/CPAN/Changes/Group.pm
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man1/tidy_changelog.1
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3/CPAN::Changes::Release.3
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3/CPAN::Changes::Group.3
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3/CPAN::Changes::Spec.3
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3/CPAN::Changes.3
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3/Test::CPAN::Changes.3
+Installing /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/bin/tidy_changelog
+Appending installation info to /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/man3 to /nix/store/bfsiqp4vyhi94zqb2ndwi7x026km4q66-perl5.32.0-CPAN-Changes-0.400002-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002
+gzipping man pages under /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/lib  /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002/bin
+patching script interpreter paths in /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002
+checking for references to /build/ in /nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bfsiqp4vyhi94zqb2ndwi7x026km4q66-perl5.32.0-CPAN-Changes-0.400002-devdoc
+gzipping man pages under /nix/store/bfsiqp4vyhi94zqb2ndwi7x026km4q66-perl5.32.0-CPAN-Changes-0.400002-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bfsiqp4vyhi94zqb2ndwi7x026km4q66-perl5.32.0-CPAN-Changes-0.400002-devdoc
+checking for references to /build/ in /nix/store/bfsiqp4vyhi94zqb2ndwi7x026km4q66-perl5.32.0-CPAN-Changes-0.400002-devdoc...
+/nix/store/adf21z8mwwk60kdpbmpshd3sc0xkjdns-perl5.32.0-CPAN-Changes-0.400002

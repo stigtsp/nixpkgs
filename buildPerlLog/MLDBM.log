@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/jnk5dk8bmx1489iajgwfkn3gfgpf5qy4-perl5.32.0-MLDBM-2.05.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/dxylkap0243xswf3kk25yzhy8sc2qy7n-MLDBM-2.05.tar.gz
+copying path '/nix/store/dxylkap0243xswf3kk25yzhy8sc2qy7n-MLDBM-2.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jnk5dk8bmx1489iajgwfkn3gfgpf5qy4-perl5.32.0-MLDBM-2.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/dxylkap0243xswf3kk25yzhy8sc2qy7n-MLDBM-2.05.tar.gz
+source root is MLDBM-2.05
+setting SOURCE_DATE_EPOCH to timestamp 1361438698 of file MLDBM-2.05/META.yml
+patching sources
+configuring
+patching ./t/dumper.t...
+patching ./t/storable_dbfile.t...
+patching ./t/freezethaw.t...
+patching ./t/storable.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MLDBM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'MLDBM' version '2.05'
+Building MLDBM
+running tests
+t/compare.t .......... ok
+t/dumper.t ........... ok
+t/freezethaw.t ....... skipped: Optional module (FreezeThaw) not installed
+t/storable.t ......... ok
+t/storable_dbfile.t .. skipped: Optional module (DB_File,Storable) not installed
+All tests successful.
+Files=5, Tests=19,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.15 cusr  0.04 csys =  0.21 CPU)
+Result: PASS
+installing
+Building MLDBM
+Installing /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/lib/perl5/site_perl/5.32.0/MLDBM.pm
+Installing /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/lib/perl5/site_perl/5.32.0/MLDBM/Serializer/FreezeThaw.pm
+Installing /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/lib/perl5/site_perl/5.32.0/MLDBM/Serializer/Storable.pm
+Installing /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/lib/perl5/site_perl/5.32.0/MLDBM/Serializer/Data/Dumper.pm
+Installing /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/share/man/man3/MLDBM.3
+post-installation fixup
+Moving /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/share/man/man3 to /nix/store/n7jzys3fs6zp060q39dl11k1hg7p59y2-perl5.32.0-MLDBM-2.05-devdoc/share/man/man3
+Removing empty /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05/lib
+patching script interpreter paths in /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05
+checking for references to /build/ in /nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n7jzys3fs6zp060q39dl11k1hg7p59y2-perl5.32.0-MLDBM-2.05-devdoc
+gzipping man pages under /nix/store/n7jzys3fs6zp060q39dl11k1hg7p59y2-perl5.32.0-MLDBM-2.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n7jzys3fs6zp060q39dl11k1hg7p59y2-perl5.32.0-MLDBM-2.05-devdoc
+checking for references to /build/ in /nix/store/n7jzys3fs6zp060q39dl11k1hg7p59y2-perl5.32.0-MLDBM-2.05-devdoc...
+/nix/store/xq9w0xy2yl4d7l936j1bx56gnfpq1z73-perl5.32.0-MLDBM-2.05

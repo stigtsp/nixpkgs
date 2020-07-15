@@ -1,0 +1,87 @@
+these derivations will be built:
+  /nix/store/gfbmj6i1cmp9an0xihrxagi0nnvxm87i-perl5.32.0-XML-Mini-1.38.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/g6h4kkx12bgz8527215kmpy2l9a3hcrn-XML-Mini-1.38.tar.gz
+copying path '/nix/store/g6h4kkx12bgz8527215kmpy2l9a3hcrn-XML-Mini-1.38.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gfbmj6i1cmp9an0xihrxagi0nnvxm87i-perl5.32.0-XML-Mini-1.38.drv'...
+unpacking sources
+unpacking source archive /nix/store/g6h4kkx12bgz8527215kmpy2l9a3hcrn-XML-Mini-1.38.tar.gz
+source root is XML-Mini-1.38
+setting SOURCE_DATE_EPOCH to timestamp 1202170252 of file XML-Mini-1.38/META.yml
+patching sources
+configuring
+patching ./INSTALL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::Mini
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/Mini.pm blib/lib/XML/Mini.pm
+cp lib/XML/Mini/Element/CData.pm blib/lib/XML/Mini/Element/CData.pm
+cp lib/XML/Mini/Element/DocType.pm blib/lib/XML/Mini/Element/DocType.pm
+cp lib/XML/Mini/TreeComponent.pm blib/lib/XML/Mini/TreeComponent.pm
+cp lib/XML/Mini/Element.pm blib/lib/XML/Mini/Element.pm
+cp lib/XML/Mini/Element/Header.pm blib/lib/XML/Mini/Element/Header.pm
+cp lib/XML/Mini/Node.pm blib/lib/XML/Mini/Node.pm
+cp lib/XML/Mini/Document.pm blib/lib/XML/Mini/Document.pm
+cp lib/XML/Mini/Element/Entity.pm blib/lib/XML/Mini/Element/Entity.pm
+cp lib/XML/Mini/Element/Comment.pm blib/lib/XML/Mini/Element/Comment.pm
+Manifying 10 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01parseable.t .... ok
+t/02parsexml.t ..... ok
+t/03genxml.t ....... ok
+t/04crossnested.t .. ok
+t/05parsefunc.t .... ok
+t/06getelem.t ...... ok
+t/07ToFromHash.t ... ok
+t/08voicexml.t ..... ok
+t/09invalidxml.t ... 1/2 XML::Mini LOG MESSAGE:Found unmatched tags in your XML... titi
+t/09invalidxml.t ... ok
+t/10removechild.t .. ok
+All tests successful.
+Files=10, Tests=180,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.77 cusr  0.05 csys =  0.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/pkgconfig m4datadir=/nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/aclocal aclocaldir=/nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/aclocal install
+Manifying 10 pod documents
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Document.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/TreeComponent.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Node.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element/Header.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element/DocType.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element/CData.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element/Entity.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/site_perl/5.32.0/XML/Mini/Element/Comment.pm
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element::CData.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Document.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element::Header.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::TreeComponent.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Node.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element::Entity.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element::Comment.3
+Installing /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3/XML::Mini::Element::DocType.3
+Appending installation info to /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/man3 to /nix/store/gh8xsyc62wq13408imz8cck7251hcnfm-perl5.32.0-XML-Mini-1.38-devdoc/share/man/man3
+Removing empty /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38/lib
+patching script interpreter paths in /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38
+checking for references to /build/ in /nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gh8xsyc62wq13408imz8cck7251hcnfm-perl5.32.0-XML-Mini-1.38-devdoc
+gzipping man pages under /nix/store/gh8xsyc62wq13408imz8cck7251hcnfm-perl5.32.0-XML-Mini-1.38-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gh8xsyc62wq13408imz8cck7251hcnfm-perl5.32.0-XML-Mini-1.38-devdoc
+checking for references to /build/ in /nix/store/gh8xsyc62wq13408imz8cck7251hcnfm-perl5.32.0-XML-Mini-1.38-devdoc...
+/nix/store/hwzxamhs1jfagzil9sgr9rraac80zfhb-perl5.32.0-XML-Mini-1.38

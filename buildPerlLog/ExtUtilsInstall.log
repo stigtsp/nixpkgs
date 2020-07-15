@@ -1,0 +1,70 @@
+these derivations will be built:
+  /nix/store/4rghfiwnd0ah572hfcc4h05wyjzbp0ix-perl5.32.0-ExtUtils-Install-2.14.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/mh34pyj7hxgnpyr35dp17lr00gr5wbh3-ExtUtils-Install-2.14.tar.gz
+copying path '/nix/store/mh34pyj7hxgnpyr35dp17lr00gr5wbh3-ExtUtils-Install-2.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4rghfiwnd0ah572hfcc4h05wyjzbp0ix-perl5.32.0-ExtUtils-Install-2.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/mh34pyj7hxgnpyr35dp17lr00gr5wbh3-ExtUtils-Install-2.14.tar.gz
+source root is ExtUtils-Install-2.14
+setting SOURCE_DATE_EPOCH to timestamp 1495968787 of file ExtUtils-Install-2.14/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/Installed.t...
+patching ./t/can_write_dir.t...
+patching ./t/InstallWithMM.t...
+patching ./t/Packlist.t...
+patching ./t/pod.t...
+patching ./t/Install.t...
+patching ./t/Installapi2.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::Install
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/ExtUtils/Installed.pm blib/lib/ExtUtils/Installed.pm
+cp lib/ExtUtils/Packlist.pm blib/lib/ExtUtils/Packlist.pm
+cp lib/ExtUtils/Install.pm blib/lib/ExtUtils/Install.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Ilib" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/can_write_dir.t .. ok
+t/Install.t ........ ok
+t/Installapi2.t .... ok
+t/Installed.t ...... ok
+t/InstallWithMM.t .. ok
+t/Packlist.t ....... ok
+t/pod-coverage.t ... skipped: Skipping author tests. Set AUTHOR_TESTING=1 to run them.
+t/pod.t ............ skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=8, Tests=267,  2 wallclock secs ( 0.05 usr  0.01 sys +  1.43 cusr  0.26 csys =  1.75 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib/pkgconfig m4datadir=/nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/aclocal aclocaldir=/nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib/perl5/site_perl/5.32.0/ExtUtils/Install.pm
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib/perl5/site_perl/5.32.0/ExtUtils/Installed.pm
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib/perl5/site_perl/5.32.0/ExtUtils/Packlist.pm
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/man/man3/ExtUtils::Installed.3
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/man/man3/ExtUtils::Install.3
+Installing /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/man/man3/ExtUtils::Packlist.3
+Appending installation info to /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/man/man3 to /nix/store/r6dv1a1hawkc79qkcjqykvwk5fkgp95v-perl5.32.0-ExtUtils-Install-2.14-devdoc/share/man/man3
+Removing empty /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14/lib
+patching script interpreter paths in /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14
+checking for references to /build/ in /nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r6dv1a1hawkc79qkcjqykvwk5fkgp95v-perl5.32.0-ExtUtils-Install-2.14-devdoc
+gzipping man pages under /nix/store/r6dv1a1hawkc79qkcjqykvwk5fkgp95v-perl5.32.0-ExtUtils-Install-2.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r6dv1a1hawkc79qkcjqykvwk5fkgp95v-perl5.32.0-ExtUtils-Install-2.14-devdoc
+checking for references to /build/ in /nix/store/r6dv1a1hawkc79qkcjqykvwk5fkgp95v-perl5.32.0-ExtUtils-Install-2.14-devdoc...
+/nix/store/a2hbjh4v50nxgl6kiyigap1qwjd245ir-perl5.32.0-ExtUtils-Install-2.14

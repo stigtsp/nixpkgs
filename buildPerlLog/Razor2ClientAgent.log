@@ -1,0 +1,165 @@
+these derivations will be built:
+  /nix/store/ddsdz17m2mjxygjz6zqryzixrz3min73-perl5.32.0-Razor2-Client-Agent-2.86.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/mmzlv2h52ygg8gwc9wzamjd3svnr8smz-Razor2-Client-Agent-2.86.tar.gz
+copying path '/nix/store/mmzlv2h52ygg8gwc9wzamjd3svnr8smz-Razor2-Client-Agent-2.86.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ddsdz17m2mjxygjz6zqryzixrz3min73-perl5.32.0-Razor2-Client-Agent-2.86.drv'...
+unpacking sources
+unpacking source archive /nix/store/mmzlv2h52ygg8gwc9wzamjd3svnr8smz-Razor2-Client-Agent-2.86.tar.gz
+source root is Razor2-Client-Agent-2.86
+setting SOURCE_DATE_EPOCH to timestamp 1559602401 of file Razor2-Client-Agent-2.86/META.yml
+patching sources
+configuring
+patching ./t/basic.t...
+patching ./lib/Razor2/Signature/Ephemeral.pm...
+patching ./lib/Razor2/Signature/Whiplash.pm...
+patching ./lib/Razor2/Errorhandler.pm...
+patching ./lib/Razor2/Client/Agent.pm...
+patching ./lib/Razor2/Client/Config.pm...
+patching ./lib/Razor2/Client/Core.pm...
+patching ./lib/Razor2/Client/Version.pm...
+patching ./bin/razor-check...
+patching ./bin/razor-report...
+patching ./bin/razor-revoke...
+patching ./bin/razor-admin...
+patching ./bin/razor-client...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Razor2::Preproc::deHTMLxs
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Razor2/Engine/VR8.pm blib/lib/Razor2/Engine/VR8.pm
+cp lib/Razor2/Syslog.pm blib/lib/Razor2/Syslog.pm
+AutoSplitting blib/lib/Razor2/Syslog.pm (blib/lib/auto/Razor2/Syslog)
+cp lib/Razor2/Client/Version.pm blib/lib/Razor2/Client/Version.pm
+cp lib/Razor2/Signature/Ephemeral.pm blib/lib/Razor2/Signature/Ephemeral.pm
+cp lib/Razor2/Client/Core.pm blib/lib/Razor2/Client/Core.pm
+cp lib/Razor2/Preproc/deBase64.pm blib/lib/Razor2/Preproc/deBase64.pm
+cp lib/Razor2/Preproc/deHTML.pm blib/lib/Razor2/Preproc/deHTML.pm
+cp lib/Razor2/Preproc/deNewline.pm blib/lib/Razor2/Preproc/deNewline.pm
+cp lib/Razor2/Preproc/deHTML_comment.pm blib/lib/Razor2/Preproc/deHTML_comment.pm
+cp lib/Razor2/Preproc/deQP.pm blib/lib/Razor2/Preproc/deQP.pm
+cp lib/Razor2/Preproc/Manager.pm blib/lib/Razor2/Preproc/Manager.pm
+cp lib/Razor2/Errorhandler.pm blib/lib/Razor2/Errorhandler.pm
+cp lib/Razor2/Logger.pm blib/lib/Razor2/Logger.pm
+cp lib/Razor2/Client/Config.pm blib/lib/Razor2/Client/Config.pm
+cp lib/Razor2/String.pm blib/lib/Razor2/String.pm
+cp lib/Razor2/Preproc/enBase64.pm blib/lib/Razor2/Preproc/enBase64.pm
+cp lib/Razor2/Signature/Whiplash.pm blib/lib/Razor2/Signature/Whiplash.pm
+cp lib/Razor2/Preproc/deHTMLxs.pm blib/lib/Razor2/Preproc/deHTMLxs.pm
+AutoSplitting blib/lib/Razor2/Preproc/deHTMLxs.pm (blib/lib/auto/Razor2/Preproc/deHTMLxs)
+cp lib/Razor2/Client/Agent.pm blib/lib/Razor2/Client/Agent.pm
+cp lib/Razor2/Client/Engine.pm blib/lib/Razor2/Client/Engine.pm
+Running Mkbootstrap for deHTMLxs ()
+chmod 644 "deHTMLxs.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- deHTMLxs.bs blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.bs 644
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.86\" -DXS_VERSION=\"2.86\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   _deHTMLxs.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Razor2-Client-Agent-2.86/typemap'  deHTMLxs.xs > deHTMLxs.xsc
+mv deHTMLxs.xsc deHTMLxs.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.86\" -DXS_VERSION=\"2.86\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   deHTMLxs.c
+rm -f blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  _deHTMLxs.o deHTMLxs.o  -o blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.so  \
+      \
+
+chmod 755 blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.so
+cp bin/razor-admin blib/script/razor-admin
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/razor-admin
+cp bin/razor-check blib/script/razor-check
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/razor-check
+cp bin/razor-client blib/script/razor-client
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/razor-client
+cp bin/razor-report blib/script/razor-report
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/razor-report
+cp bin/razor-revoke blib/script/razor-revoke
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/razor-revoke
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" -e pod2man "--" \
+docs/razor-agent.conf.pod \
+blib/man5/razor-agent.conf.5 \
+docs/razor-agents.pod \
+blib/man5/razor-agents.5 \
+docs/razor-whitelist.pod \
+blib/man5/razor-whitelist.5
+Manifying 3 pod documents
+Manifying 4 pod documents
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- deHTMLxs.bs blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t .. ok
+All tests successful.
+Files=1, Tests=9,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.05 cusr  0.01 csys =  0.09 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/pkgconfig m4datadir=/nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/aclocal aclocaldir=/nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- deHTMLxs.bs blib/arch/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" -e pod2man "--" \
+docs/razor-agent.conf.pod \
+blib/man5/razor-agent.conf.5 \
+docs/razor-agents.pod \
+blib/man5/razor-agents.5 \
+docs/razor-whitelist.pod \
+blib/man5/razor-whitelist.5
+Manifying 3 pod documents
+Manifying 4 pod documents
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.so
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Razor2/Syslog/autosplit.ix
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Razor2/Preproc/deHTMLxs/autosplit.ix
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Syslog.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Errorhandler.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/String.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Logger.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Signature/Ephemeral.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Signature/Whiplash.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Engine/VR8.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Client/Agent.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Client/Config.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Client/Core.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Client/Engine.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Client/Version.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/Manager.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deHTML_comment.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deQP.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deHTMLxs.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deBase64.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/enBase64.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deNewline.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Razor2/Preproc/deHTML.pm
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man1/razor-check.1
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man1/razor-revoke.1
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man1/razor-report.1
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man1/razor-admin.1
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man3/Razor2::Errorhandler.3
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man3/Razor2::Preproc::deHTMLxs.3
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man3/Razor2::Syslog.3
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man5/razor-agents.5
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man5/razor-agent.conf.5
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man5/razor-whitelist.5
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin/razor-check
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin/razor-report
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin/razor-revoke
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin/razor-admin
+Installing /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin/razor-client
+Appending installation info to /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/man3 to /nix/store/lh2qdj629zi27hn1abmp8fz0b1wm99iv-perl5.32.0-Razor2-Client-Agent-2.86-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86
+shrinking /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Razor2/Preproc/deHTMLxs/deHTMLxs.so
+gzipping man pages under /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/lib  /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86/bin
+patching script interpreter paths in /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86
+checking for references to /build/ in /nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lh2qdj629zi27hn1abmp8fz0b1wm99iv-perl5.32.0-Razor2-Client-Agent-2.86-devdoc
+gzipping man pages under /nix/store/lh2qdj629zi27hn1abmp8fz0b1wm99iv-perl5.32.0-Razor2-Client-Agent-2.86-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lh2qdj629zi27hn1abmp8fz0b1wm99iv-perl5.32.0-Razor2-Client-Agent-2.86-devdoc
+checking for references to /build/ in /nix/store/lh2qdj629zi27hn1abmp8fz0b1wm99iv-perl5.32.0-Razor2-Client-Agent-2.86-devdoc...
+/nix/store/rwrphzfw4kcar7mf0zqqhhmm0f533yr3-perl5.32.0-Razor2-Client-Agent-2.86

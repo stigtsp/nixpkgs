@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/zvacwmb08bgry56wijc3fysn5pm4rlzi-perl5.32.0-Catalyst-Plugin-StackTrace-0.12.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/10d58h7x13c504vask9myfxdqrx4v7wj-Catalyst-Plugin-StackTrace-0.12.tar.gz
+copying path '/nix/store/10d58h7x13c504vask9myfxdqrx4v7wj-Catalyst-Plugin-StackTrace-0.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zvacwmb08bgry56wijc3fysn5pm4rlzi-perl5.32.0-Catalyst-Plugin-StackTrace-0.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/10d58h7x13c504vask9myfxdqrx4v7wj-Catalyst-Plugin-StackTrace-0.12.tar.gz
+source root is Catalyst-Plugin-StackTrace-0.12
+setting SOURCE_DATE_EPOCH to timestamp 1342102498 of file Catalyst-Plugin-StackTrace-0.12/MANIFEST
+patching sources
+configuring
+patching ./t/04trace.t...
+patching ./t/06verbose2.t...
+patching ./t/05verbose1.t...
+patching ./t/08die_handler.t...
+patching ./t/07reverse.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::StackTrace
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/StackTrace.pm blib/lib/Catalyst/Plugin/StackTrace.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02pod.t .......... skipped: Test::Pod 1.14 required
+t/03podcoverage.t .. skipped: Test::Pod::Coverage 1.04 required
+t/04critic.t ....... skipped: Critic test only for developers.
+t/04trace.t ........ Term::Size::Any is not installed, can't autodetect terminal column width
+Trouble trying to detect your terminal size, looking at $ENV{COLUMNS}
+Cannot determine desired terminal width, using default of 80 columns
+t/04trace.t ........ ok
+t/05verbose1.t ..... Term::Size::Any is not installed, can't autodetect terminal column width
+Trouble trying to detect your terminal size, looking at $ENV{COLUMNS}
+Cannot determine desired terminal width, using default of 80 columns
+t/05verbose1.t ..... ok
+t/06verbose2.t ..... Term::Size::Any is not installed, can't autodetect terminal column width
+Trouble trying to detect your terminal size, looking at $ENV{COLUMNS}
+Cannot determine desired terminal width, using default of 80 columns
+t/06verbose2.t ..... ok
+t/07reverse.t ...... Term::Size::Any is not installed, can't autodetect terminal column width
+Trouble trying to detect your terminal size, looking at $ENV{COLUMNS}
+Cannot determine desired terminal width, using default of 80 columns
+t/07reverse.t ...... ok
+t/08die_handler.t .. Term::Size::Any is not installed, can't autodetect terminal column width
+Trouble trying to detect your terminal size, looking at $ENV{COLUMNS}
+Cannot determine desired terminal width, using default of 80 columns
+t/08die_handler.t .. ok
+All tests successful.
+Files=9, Tests=27,  7 wallclock secs ( 0.11 usr  0.08 sys +  4.28 cusr  2.46 csys =  6.93 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/lib/pkgconfig m4datadir=/nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/share/aclocal aclocaldir=/nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/StackTrace.pm
+Installing /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/share/man/man3/Catalyst::Plugin::StackTrace.3
+Appending installation info to /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/share/man/man3 to /nix/store/q1x1j32vbbajlk6y8lq2xsc9b4i4hsbc-perl5.32.0-Catalyst-Plugin-StackTrace-0.12-devdoc/share/man/man3
+Removing empty /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12/lib
+patching script interpreter paths in /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12
+checking for references to /build/ in /nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q1x1j32vbbajlk6y8lq2xsc9b4i4hsbc-perl5.32.0-Catalyst-Plugin-StackTrace-0.12-devdoc
+gzipping man pages under /nix/store/q1x1j32vbbajlk6y8lq2xsc9b4i4hsbc-perl5.32.0-Catalyst-Plugin-StackTrace-0.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q1x1j32vbbajlk6y8lq2xsc9b4i4hsbc-perl5.32.0-Catalyst-Plugin-StackTrace-0.12-devdoc
+checking for references to /build/ in /nix/store/q1x1j32vbbajlk6y8lq2xsc9b4i4hsbc-perl5.32.0-Catalyst-Plugin-StackTrace-0.12-devdoc...
+/nix/store/r2jpp56ngmqcx3qpmjvp78nn13y1pkhw-perl5.32.0-Catalyst-Plugin-StackTrace-0.12

@@ -1,0 +1,68 @@
+these derivations will be built:
+  /nix/store/2jyp93v803x20shlkm5jxpw0f03kmwa5-perl5.32.0-MooseX-Has-Options-0.003.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/y3v94026wnx7p1ags70n8mrcnlba2ac4-MooseX-Has-Options-0.003.tar.gz
+copying path '/nix/store/y3v94026wnx7p1ags70n8mrcnlba2ac4-MooseX-Has-Options-0.003.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2jyp93v803x20shlkm5jxpw0f03kmwa5-perl5.32.0-MooseX-Has-Options-0.003.drv'...
+unpacking sources
+unpacking source archive /nix/store/y3v94026wnx7p1ags70n8mrcnlba2ac4-MooseX-Has-Options-0.003.tar.gz
+source root is MooseX-Has-Options-0.003
+setting SOURCE_DATE_EPOCH to timestamp 1352743605 of file MooseX-Has-Options-0.003/weaver.ini
+patching sources
+configuring
+patching ./t/00-compile.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/author-pod-spell.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Has::Options
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooseX/Has/Options/Handler/NoInit.pm blib/lib/MooseX/Has/Options/Handler/NoInit.pm
+cp lib/MooseX/Has/Options/Handler/NativeTypes.pm blib/lib/MooseX/Has/Options/Handler/NativeTypes.pm
+cp lib/MooseX/Has/Options/Handler/Accessors.pm blib/lib/MooseX/Has/Options/Handler/Accessors.pm
+cp lib/MooseX/Has/Options.pm blib/lib/MooseX/Has/Options.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .......... ok
+t/01-basic.t ............ ok
+t/02-meta.t ............. ok
+t/03-extensions.t ....... ok
+t/author-pod-spell.t .... skipped: these tests are for testing by the author
+t/release-eol.t ......... skipped: these tests are for release candidate testing
+t/release-no-tabs.t ..... skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=8, Tests=16,  3 wallclock secs ( 0.06 usr  0.04 sys +  1.63 cusr  1.27 csys =  3.00 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/pkgconfig m4datadir=/nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/aclocal aclocaldir=/nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/perl5/site_perl/5.32.0/MooseX/Has/Options.pm
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/perl5/site_perl/5.32.0/MooseX/Has/Options/Handler/NativeTypes.pm
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/perl5/site_perl/5.32.0/MooseX/Has/Options/Handler/Accessors.pm
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/perl5/site_perl/5.32.0/MooseX/Has/Options/Handler/NoInit.pm
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/man3/MooseX::Has::Options.3
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/man3/MooseX::Has::Options::Handler::Accessors.3
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/man3/MooseX::Has::Options::Handler::NativeTypes.3
+Installing /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/man3/MooseX::Has::Options::Handler::NoInit.3
+Appending installation info to /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/man3 to /nix/store/zcpyb0nv84c9g6z1h9bhgz6kkchv1cv5-perl5.32.0-MooseX-Has-Options-0.003-devdoc/share/man/man3
+Removing empty /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003/lib
+patching script interpreter paths in /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003
+checking for references to /build/ in /nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zcpyb0nv84c9g6z1h9bhgz6kkchv1cv5-perl5.32.0-MooseX-Has-Options-0.003-devdoc
+gzipping man pages under /nix/store/zcpyb0nv84c9g6z1h9bhgz6kkchv1cv5-perl5.32.0-MooseX-Has-Options-0.003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zcpyb0nv84c9g6z1h9bhgz6kkchv1cv5-perl5.32.0-MooseX-Has-Options-0.003-devdoc
+checking for references to /build/ in /nix/store/zcpyb0nv84c9g6z1h9bhgz6kkchv1cv5-perl5.32.0-MooseX-Has-Options-0.003-devdoc...
+/nix/store/bmqlyyckviz1d15yi4rjpxxjyfg99la0-perl5.32.0-MooseX-Has-Options-0.003

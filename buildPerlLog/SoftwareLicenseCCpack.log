@@ -1,0 +1,220 @@
+these derivations will be built:
+  /nix/store/yq0algkhcb94wp412fywqls2gb2wl22w-perl5.32.0-Test-CheckDeps-0.010.drv
+  /nix/store/hi2bzy5c9zgn26ls5irfjn7miw9a81bb-perl5.32.0-Software-License-CCpack-1.11.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/npilsjivfmy0dqhb8bvzxms4is0v4isr-Software-License-CCpack-1.11.tar.gz
+  /nix/store/r3hh5zzry284lyz6cc1gank1v785z4b3-Test-CheckDeps-0.010.tar.gz
+copying path '/nix/store/npilsjivfmy0dqhb8bvzxms4is0v4isr-Software-License-CCpack-1.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/r3hh5zzry284lyz6cc1gank1v785z4b3-Test-CheckDeps-0.010.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yq0algkhcb94wp412fywqls2gb2wl22w-perl5.32.0-Test-CheckDeps-0.010.drv'...
+unpacking sources
+unpacking source archive /nix/store/r3hh5zzry284lyz6cc1gank1v785z4b3-Test-CheckDeps-0.010.tar.gz
+source root is Test-CheckDeps-0.010
+setting SOURCE_DATE_EPOCH to timestamp 1381335057 of file Test-CheckDeps-0.010/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/release-pod-syntax.t...
+patching ./t/10-basics.t...
+patching ./t/release-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::CheckDeps
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/CheckDeps.pm blib/lib/Test/CheckDeps.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............ ok
+t/10-basics.t ............. ok
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .... skipped: these tests are for release candidate testing
+All tests successful.
+Files=4, Tests=14,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.32 cusr  0.07 csys =  0.42 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/lib/pkgconfig m4datadir=/nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/share/aclocal aclocaldir=/nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/lib/perl5/site_perl/5.32.0/Test/CheckDeps.pm
+Installing /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/share/man/man3/Test::CheckDeps.3
+Appending installation info to /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/share/man/man3 to /nix/store/zl7bfrzm9dlvnyj3ak0hzp5z44fpl1zw-perl5.32.0-Test-CheckDeps-0.010-devdoc/share/man/man3
+Removing empty /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010/lib
+patching script interpreter paths in /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010
+checking for references to /build/ in /nix/store/zz9sp3ssg3ij93z2bcy4wawcjvmrhb15-perl5.32.0-Test-CheckDeps-0.010...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zl7bfrzm9dlvnyj3ak0hzp5z44fpl1zw-perl5.32.0-Test-CheckDeps-0.010-devdoc
+gzipping man pages under /nix/store/zl7bfrzm9dlvnyj3ak0hzp5z44fpl1zw-perl5.32.0-Test-CheckDeps-0.010-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zl7bfrzm9dlvnyj3ak0hzp5z44fpl1zw-perl5.32.0-Test-CheckDeps-0.010-devdoc
+checking for references to /build/ in /nix/store/zl7bfrzm9dlvnyj3ak0hzp5z44fpl1zw-perl5.32.0-Test-CheckDeps-0.010-devdoc...
+building '/nix/store/hi2bzy5c9zgn26ls5irfjn7miw9a81bb-perl5.32.0-Software-License-CCpack-1.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/npilsjivfmy0dqhb8bvzxms4is0v4isr-Software-License-CCpack-1.11.tar.gz
+source root is Software-License-CCpack-1.11
+setting SOURCE_DATE_EPOCH to timestamp 1413734393 of file Software-License-CCpack-1.11/lib/Software/License/CC_BY_ND_NC_1_0.pm
+patching sources
+configuring
+patching ./cc-pdmark.sh...
+patching ./cc-license.sh...
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/check-manifest.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Software::License::CCpack
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Software/License/CC_BY_NC_ND_4_0.pm blib/lib/Software/License/CC_BY_NC_ND_4_0.pm
+cp lib/Software/License/CC_BY_2_0.pm blib/lib/Software/License/CC_BY_2_0.pm
+cp lib/Software/License/CCpack.pm blib/lib/Software/License/CCpack.pm
+cp lib/Software/License/CC_BY_ND_3_0.pm blib/lib/Software/License/CC_BY_ND_3_0.pm
+cp lib/Software/License/CC_BY_NC_SA_4_0.pm blib/lib/Software/License/CC_BY_NC_SA_4_0.pm
+cp lib/Software/License/CC_BY_4_0.pm blib/lib/Software/License/CC_BY_4_0.pm
+cp lib/Software/License/CC_BY_1_0.pm blib/lib/Software/License/CC_BY_1_0.pm
+cp lib/Software/License/CC_BY_NC_ND_2_0.pm blib/lib/Software/License/CC_BY_NC_ND_2_0.pm
+cp lib/Software/License/CC_BY_3_0.pm blib/lib/Software/License/CC_BY_3_0.pm
+cp lib/Software/License/CC_BY_NC_SA_1_0.pm blib/lib/Software/License/CC_BY_NC_SA_1_0.pm
+cp lib/Software/License/CC_BY_NC_3_0.pm blib/lib/Software/License/CC_BY_NC_3_0.pm
+cp lib/Software/License/CC_BY_SA_1_0.pm blib/lib/Software/License/CC_BY_SA_1_0.pm
+cp lib/Software/License/CC_BY_SA_2_0.pm blib/lib/Software/License/CC_BY_SA_2_0.pm
+cp lib/Software/License/CC_BY_NC_SA_2_0.pm blib/lib/Software/License/CC_BY_NC_SA_2_0.pm
+cp lib/Software/License/CC_BY_NC_2_0.pm blib/lib/Software/License/CC_BY_NC_2_0.pm
+cp lib/Software/License/CC_BY_NC_4_0.pm blib/lib/Software/License/CC_BY_NC_4_0.pm
+cp lib/Software/License/CC_BY_ND_4_0.pm blib/lib/Software/License/CC_BY_ND_4_0.pm
+cp lib/Software/License/CC_BY_NC_ND_3_0.pm blib/lib/Software/License/CC_BY_NC_ND_3_0.pm
+cp lib/Software/License/CC_BY_NC_SA_3_0.pm blib/lib/Software/License/CC_BY_NC_SA_3_0.pm
+cp lib/Software/License/CC_BY_NC_1_0.pm blib/lib/Software/License/CC_BY_NC_1_0.pm
+cp lib/Software/License/CC_BY_ND_2_0.pm blib/lib/Software/License/CC_BY_ND_2_0.pm
+cp lib/Software/License/CC_BY_SA_3_0.pm blib/lib/Software/License/CC_BY_SA_3_0.pm
+cp lib/Software/License/CC_PDM_1_0.pm blib/lib/Software/License/CC_PDM_1_0.pm
+cp lib/Software/License/CC_BY_ND_1_0.pm blib/lib/Software/License/CC_BY_ND_1_0.pm
+cp lib/Software/License/CC_BY_ND_NC_1_0.pm blib/lib/Software/License/CC_BY_ND_NC_1_0.pm
+cp lib/Software/License/CC_BY_SA_4_0.pm blib/lib/Software/License/CC_BY_SA_4_0.pm
+Manifying 26 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-check-deps.t ...... ok
+t/00-compile.t ......... ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     --------------- ----- --------
+#     Test::CheckDeps 0.010    0.010
+#     Test::More       0.94 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module            Want     Have
+#     ----------------- ---- --------
+#     Software::License  any 0.103014
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+All tests successful.
+Files=4, Tests=356,  2 wallclock secs ( 0.06 usr  0.02 sys +  1.71 cusr  0.67 csys =  2.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/pkgconfig m4datadir=/nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/aclocal aclocaldir=/nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/aclocal install
+Manifying 26 pod documents
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_ND_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_ND_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_SA_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_PDM_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_SA_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_SA_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_ND_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_SA_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_ND_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_SA_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_SA_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_ND_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_ND_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_4_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_ND_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_ND_NC_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_SA_1_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_NC_3_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CC_BY_SA_2_0.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/site_perl/5.32.0/Software/License/CCpack.pm
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_ND_NC_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_ND_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_SA_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_ND_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_SA_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_SA_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_SA_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_SA_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_SA_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CCpack.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_ND_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_ND_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_ND_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_ND_1_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_3_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_NC_SA_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_ND_2_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_SA_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_BY_4_0.3
+Installing /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3/Software::License::CC_PDM_1_0.3
+Appending installation info to /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/man3 to /nix/store/l0ng6rliw4l8xkm4m8md4r4n0i6jjdnq-perl5.32.0-Software-License-CCpack-1.11-devdoc/share/man/man3
+Removing empty /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11/lib
+patching script interpreter paths in /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11
+checking for references to /build/ in /nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l0ng6rliw4l8xkm4m8md4r4n0i6jjdnq-perl5.32.0-Software-License-CCpack-1.11-devdoc
+gzipping man pages under /nix/store/l0ng6rliw4l8xkm4m8md4r4n0i6jjdnq-perl5.32.0-Software-License-CCpack-1.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l0ng6rliw4l8xkm4m8md4r4n0i6jjdnq-perl5.32.0-Software-License-CCpack-1.11-devdoc
+checking for references to /build/ in /nix/store/l0ng6rliw4l8xkm4m8md4r4n0i6jjdnq-perl5.32.0-Software-License-CCpack-1.11-devdoc...
+/nix/store/7qm83ggi85qabmjzp0pxiqh57cvbdcgd-perl5.32.0-Software-License-CCpack-1.11

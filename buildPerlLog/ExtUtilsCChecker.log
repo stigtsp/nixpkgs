@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/78g2ffm8s5dfxywx3gq82jbfqn9j7mnj-perl5.32.0-ExtUtils-CChecker-0.10.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/zay9yv8hplpksksj4a57ag4sai44jlar-ExtUtils-CChecker-0.10.tar.gz
+copying path '/nix/store/zay9yv8hplpksksj4a57ag4sai44jlar-ExtUtils-CChecker-0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/78g2ffm8s5dfxywx3gq82jbfqn9j7mnj-perl5.32.0-ExtUtils-CChecker-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/zay9yv8hplpksksj4a57ag4sai44jlar-ExtUtils-CChecker-0.10.tar.gz
+source root is ExtUtils-CChecker-0.10
+setting SOURCE_DATE_EPOCH to timestamp 1432923373 of file ExtUtils-CChecker-0.10/t/99pod.t
+patching sources
+configuring
+patching ./t/01run.t...
+patching ./t/05defines_to.t...
+patching ./t/99pod.t...
+patching ./t/04module_build.t...
+patching ./t/02assert.t...
+patching ./t/00use.t...
+patching ./t/03accessors.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::CChecker
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'ExtUtils-CChecker' version '0.10'
+Building ExtUtils-CChecker
+running tests
+t/00use.t ........... ok
+t/01run.t ........... 1/6 test-85-1.c:1:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'bar'
+    1 | int foo bar splot
+      |         ^~~
+test-85-1.c:1:9: error: unknown type name 'bar'
+t/01run.t ........... ok
+t/02assert.t ........ 1/2 test-165-1.c:1:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'bar'
+    1 | int foo bar splot
+      |         ^~~
+test-165-1.c:1:9: error: unknown type name 'bar'
+t/02assert.t ........ ok
+t/03accessors.t ..... ok
+t/04module_build.t .. ok
+t/05defines_to.t .... ok
+t/99pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=7, Tests=24,  1 wallclock secs ( 0.03 usr  0.01 sys +  1.06 cusr  0.31 csys =  1.41 CPU)
+Result: PASS
+installing
+Building ExtUtils-CChecker
+Installing /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10/lib/perl5/site_perl/5.32.0/ExtUtils/CChecker.pm
+Installing /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10/share/man/man3/ExtUtils::CChecker.3
+post-installation fixup
+Moving /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10/share/man/man3 to /nix/store/415s7pkg8nwavihlphy2yb14kk20zbwf-perl5.32.0-ExtUtils-CChecker-0.10-devdoc/share/man/man3
+Removing empty /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10/lib
+patching script interpreter paths in /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10
+checking for references to /build/ in /nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/415s7pkg8nwavihlphy2yb14kk20zbwf-perl5.32.0-ExtUtils-CChecker-0.10-devdoc
+gzipping man pages under /nix/store/415s7pkg8nwavihlphy2yb14kk20zbwf-perl5.32.0-ExtUtils-CChecker-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/415s7pkg8nwavihlphy2yb14kk20zbwf-perl5.32.0-ExtUtils-CChecker-0.10-devdoc
+checking for references to /build/ in /nix/store/415s7pkg8nwavihlphy2yb14kk20zbwf-perl5.32.0-ExtUtils-CChecker-0.10-devdoc...
+/nix/store/cy32n76mn0af5j97wgl15phzcafqmhqq-perl5.32.0-ExtUtils-CChecker-0.10

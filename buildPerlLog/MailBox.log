@@ -1,0 +1,1019 @@
+these derivations will be built:
+  /nix/store/xrv635prxx56wlkmlq17knxfjqj0d5hf-perl5.32.0-User-Identity-0.99.drv
+  /nix/store/llbq72im6xjydggnbpafas13xamczqd7-perl5.32.0-Mail-Message-3.009.drv
+  /nix/store/hawkkawng7jxdjkwmpyw51jyjj9ybzi8-perl5.32.0-Mail-Transport-3.004.drv
+  /nix/store/j8lxkcsbh231p3g5r1jvlkgid9qbpk36-perl5.32.0-Mail-Box-3.008.drv
+these paths will be fetched (0.57 MiB download, 0.57 MiB unpacked):
+  /nix/store/4bzjaf80sssh2dqhk02rxkcdgnx2bpk2-Mail-Box-3.008.tar.gz
+  /nix/store/p6my2g3f72w3b495wqj8swv63vajamhl-Mail-Transport-3.004.tar.gz
+  /nix/store/svs8b7krbhlxcgfirgs3sj2gxbwd4wqa-User-Identity-0.99.tar.gz
+  /nix/store/y9fjp9z4ms6v7grxc5lgpbgcch0ykibm-Mail-Message-3.009.tar.gz
+copying path '/nix/store/4bzjaf80sssh2dqhk02rxkcdgnx2bpk2-Mail-Box-3.008.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/p6my2g3f72w3b495wqj8swv63vajamhl-Mail-Transport-3.004.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/y9fjp9z4ms6v7grxc5lgpbgcch0ykibm-Mail-Message-3.009.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/svs8b7krbhlxcgfirgs3sj2gxbwd4wqa-User-Identity-0.99.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xrv635prxx56wlkmlq17knxfjqj0d5hf-perl5.32.0-User-Identity-0.99.drv'...
+unpacking sources
+unpacking source archive /nix/store/svs8b7krbhlxcgfirgs3sj2gxbwd4wqa-User-Identity-0.99.tar.gz
+source root is User-Identity-0.99
+setting SOURCE_DATE_EPOCH to timestamp 1516781682 of file User-Identity-0.99/META.yml
+patching sources
+configuring
+patching ./xt/99pod.t...
+patching ./t/30col.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for User::Identity
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/User/Identity/System.pm blib/lib/User/Identity/System.pm
+cp lib/User/Identity/Collection/Systems.pod blib/lib/User/Identity/Collection/Systems.pod
+cp lib/User/Identity.pm blib/lib/User/Identity.pm
+cp lib/User/Identity/Archive/Plain.pod blib/lib/User/Identity/Archive/Plain.pod
+cp lib/User/Identity/Archive.pm blib/lib/User/Identity/Archive.pm
+cp lib/User/Identity/Collection/Emails.pod blib/lib/User/Identity/Collection/Emails.pod
+cp lib/User/Identity/Location.pm blib/lib/User/Identity/Location.pm
+cp lib/Mail/Identity.pm blib/lib/Mail/Identity.pm
+cp lib/User/Identity/Collection.pm blib/lib/User/Identity/Collection.pm
+cp lib/User/Identity/Collection/Locations.pm blib/lib/User/Identity/Collection/Locations.pm
+cp lib/User/Identity/Collection/Locations.pod blib/lib/User/Identity/Collection/Locations.pod
+cp lib/User/Identity/Collection/Systems.pm blib/lib/User/Identity/Collection/Systems.pm
+cp lib/User/Identity/Archive.pod blib/lib/User/Identity/Archive.pod
+cp lib/User/Identity/Collection/Users.pod blib/lib/User/Identity/Collection/Users.pod
+cp lib/User/Identity/Collection/Emails.pm blib/lib/User/Identity/Collection/Emails.pm
+cp lib/User/Identity/Archive/Plain.pm blib/lib/User/Identity/Archive/Plain.pm
+cp lib/User/Identity/Collection.pod blib/lib/User/Identity/Collection.pod
+cp lib/User/Identity.pod blib/lib/User/Identity.pod
+cp lib/User/Identity/Item.pm blib/lib/User/Identity/Item.pm
+cp lib/User/Identity/System.pod blib/lib/User/Identity/System.pod
+cp lib/User/Identity/Location.pod blib/lib/User/Identity/Location.pod
+cp lib/User/Identity/Item.pod blib/lib/User/Identity/Item.pod
+cp lib/User/Identity/Collection/Users.pm blib/lib/User/Identity/Collection/Users.pm
+cp lib/Mail/Identity.pod blib/lib/Mail/Identity.pod
+Manifying 12 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10userid.t .. ok
+t/20loc.t ..... ok
+t/30col.t ..... ok
+All tests successful.
+Files=3, Tests=114,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.15 cusr  0.02 csys =  0.21 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/pkgconfig m4datadir=/nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/aclocal aclocaldir=/nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/aclocal install
+Manifying 12 pod documents
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/Mail/Identity.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/Mail/Identity.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/System.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Item.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Archive.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Location.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/System.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Item.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Archive.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Location.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Archive/Plain.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Archive/Plain.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Emails.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Locations.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Users.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Locations.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Systems.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Emails.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Systems.pm
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/site_perl/5.32.0/User/Identity/Collection/Users.pod
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Archive::Plain.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Collection::Emails.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::System.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Collection::Locations.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/Mail::Identity.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Collection.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Location.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Item.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Collection::Users.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Collection::Systems.3
+Installing /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3/User::Identity::Archive.3
+Appending installation info to /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/man3 to /nix/store/51kbwca01s1z8l5f5frxcdgh6yy74935-perl5.32.0-User-Identity-0.99-devdoc/share/man/man3
+Removing empty /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99/lib
+patching script interpreter paths in /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99
+checking for references to /build/ in /nix/store/hg3sw9qx4xnn4l5bn167n6hazvvz5v5p-perl5.32.0-User-Identity-0.99...
+shrinking RPATHs of ELF executables and libraries in /nix/store/51kbwca01s1z8l5f5frxcdgh6yy74935-perl5.32.0-User-Identity-0.99-devdoc
+gzipping man pages under /nix/store/51kbwca01s1z8l5f5frxcdgh6yy74935-perl5.32.0-User-Identity-0.99-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/51kbwca01s1z8l5f5frxcdgh6yy74935-perl5.32.0-User-Identity-0.99-devdoc
+checking for references to /build/ in /nix/store/51kbwca01s1z8l5f5frxcdgh6yy74935-perl5.32.0-User-Identity-0.99-devdoc...
+building '/nix/store/llbq72im6xjydggnbpafas13xamczqd7-perl5.32.0-Mail-Message-3.009.drv'...
+unpacking sources
+unpacking source archive /nix/store/y9fjp9z4ms6v7grxc5lgpbgcch0ykibm-Mail-Message-3.009.tar.gz
+source root is Mail-Message-3.009
+setting SOURCE_DATE_EPOCH to timestamp 1581085351 of file Mail-Message-3.009/META.yml
+patching sources
+configuring
+patching ./xt/99pod.t...
+patching ./t/315encode-body.t...
+patching ./t/103field-wrap.t...
+patching ./t/405msg-forward.t...
+patching ./t/010reporter-errors.t...
+patching ./t/303body-multip.t...
+patching ./t/320bodyconv-textaf.t...
+patching ./t/119fieldu-auth.t...
+patching ./t/502parser-nested.t...
+patching ./t/406msg-rebuild.t...
+patching ./t/102field-flex.t...
+patching ./t/001use.t...
+patching ./t/201head-partial.t...
+patching ./t/110fieldu-full.t...
+patching ./t/204head-spamgroup.t...
+patching ./t/402msg-reply.t...
+patching ./t/101field-fast.t...
+patching ./t/314encode-charset.t...
+patching ./t/117fieldu-addr.t...
+patching ./t/313encode-seven.t...
+patching ./t/111fieldu-full_ru.t...
+patching ./t/112fieldu-attr.t...
+patching ./t/312encode-quoted.t...
+patching ./t/118fieldu-uri.t...
+patching ./t/421msgconv-mimeent.t...
+patching ./t/100field-cfws.t...
+patching ./t/114fieldu-struct.t...
+patching ./t/301body-string.t...
+patching ./t/403msg-bounce.t...
+patching ./t/012reporter-callback.t...
+patching ./t/120fieldu-dkim.t...
+patching ./t/323bodyconv-htmltxt.t...
+patching ./t/401msg-replsubj.t...
+patching ./t/115fieldu-parse.t...
+patching ./t/113fieldu-unstr.t...
+patching ./t/302body-lines.t...
+patching ./t/500parser-field.t...
+patching ./t/116fieldu-userid.t...
+patching ./t/420msgconv-mailint.t...
+patching ./t/310encode-base64.t...
+patching ./t/203head-listgroup.t...
+patching ./t/501parser-readmp.t...
+patching ./t/400msg-stripsig.t...
+patching ./t/011reporter-reports.t...
+patching ./t/200head-create.t...
+patching ./t/300body-file.t...
+patching ./t/321bodyconv-html.t...
+patching ./t/423msgconv-emabs.t...
+patching ./t/311encode-eight.t...
+patching ./t/422msgconv-emsimp.t...
+patching ./t/202head-resentgroup.t...
+patching ./t/404msg-forwsubj.t...
+patching ./t/322bodyconv-htmlps.t...
+patching ./t/407msg-clone.t...
+    Date::Format version 2.24 is ok (required is 0)
+    Date::Parse version 2.33 is ok (required is 0)
+    Encode version 3.06 is ok (required is 2.26)
+    File::Spec version 3.78 is ok (required is 0.7)
+    IO::Scalar version 2.113 is ok (required is 0)
+    MIME::Base64 version 3.15 is ok (required is 0)
+    MIME::Types version 2.17 is ok (required is 1.004)
+    Mail::Address version 2.21 is ok (required is 2.17)
+    Scalar::Util version 1.55 is ok (required is 1.13)
+    Sys::Hostname version 1.23 is ok (required is 0)
+    Test::More version 1.302175 is ok (required is 0.47)
+    Time::Zone version 2.24 is ok (required is 0)
+    URI version 1.76 is ok (required is 1.23)
+    User::Identity version 0.99 is ok (required is 0.94)
+**** Optional HTML::FormatText is not installed
+**** Optional HTML::TreeBuilder is not installed
+**** Optional MIME::Entity is not installed
+**** Found optional Mail::Internet version 2.21 (at least 2.01 required)
+**** Found optional Net::Domain version 3.11 (any version will do)
+**** Found optional Time::HiRes version 1.9764 (at least 1.51 required)
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::Message
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/Box/Parser.pm blib/lib/Mail/Box/Parser.pm
+cp lib/Mail/Box/FastScalar.pod blib/lib/Mail/Box/FastScalar.pod
+cp lib/Mail/Message/Body/File.pod blib/lib/Mail/Message/Body/File.pod
+cp lib/Mail/Message/Construct/Rebuild.pm blib/lib/Mail/Message/Construct/Rebuild.pm
+cp lib/Mail/Message/Body/String.pm blib/lib/Mail/Message/Body/String.pm
+cp lib/Mail/Box/Parser/Perl.pod blib/lib/Mail/Box/Parser/Perl.pod
+cp lib/Mail/Message/Construct/Forward.pm blib/lib/Mail/Message/Construct/Forward.pm
+cp lib/Mail/Message/Body/Nested.pod blib/lib/Mail/Message/Body/Nested.pod
+cp lib/Mail/Message/Body/Lines.pod blib/lib/Mail/Message/Body/Lines.pod
+cp lib/Mail/Message/Construct/Build.pod blib/lib/Mail/Message/Construct/Build.pod
+cp lib/Mail/Message/Body/File.pm blib/lib/Mail/Message/Body/File.pm
+cp lib/Mail/Message/Body.pm blib/lib/Mail/Message/Body.pm
+cp lib/Mail/Box/Parser.pod blib/lib/Mail/Box/Parser.pod
+cp lib/Mail/Message/Body/Construct.pm blib/lib/Mail/Message/Body/Construct.pm
+cp lib/Mail/Box/FastScalar.pm blib/lib/Mail/Box/FastScalar.pm
+cp lib/Mail/Message/Body/String.pod blib/lib/Mail/Message/Body/String.pod
+cp lib/Mail/Message/Construct/Bounce.pm blib/lib/Mail/Message/Construct/Bounce.pm
+cp lib/Mail/Message/Construct/Bounce.pod blib/lib/Mail/Message/Construct/Bounce.pod
+cp lib/Mail/Message/Construct.pm blib/lib/Mail/Message/Construct.pm
+cp lib/Mail/Message/Body/Nested.pm blib/lib/Mail/Message/Body/Nested.pm
+cp lib/Mail/Message/Body/Multipart.pod blib/lib/Mail/Message/Body/Multipart.pod
+cp lib/Mail/Message.pod blib/lib/Mail/Message.pod
+cp lib/Mail/Message/Body/Construct.pod blib/lib/Mail/Message/Body/Construct.pod
+cp lib/Mail/Message/Construct/Forward.pod blib/lib/Mail/Message/Construct/Forward.pod
+cp lib/Mail/Box/Parser/Perl.pm blib/lib/Mail/Box/Parser/Perl.pm
+cp lib/Mail/Message/Body/Multipart.pm blib/lib/Mail/Message/Body/Multipart.pm
+cp lib/Mail/Message/Body/Lines.pm blib/lib/Mail/Message/Body/Lines.pm
+cp lib/Mail/Message/Construct/Read.pm blib/lib/Mail/Message/Construct/Read.pm
+cp lib/Mail/Message/Body/Encode.pod blib/lib/Mail/Message/Body/Encode.pod
+cp lib/Mail/Message/Construct.pod blib/lib/Mail/Message/Construct.pod
+cp lib/Mail/Message/Body.pod blib/lib/Mail/Message/Body.pod
+cp lib/Mail/Message/Body/Encode.pm blib/lib/Mail/Message/Body/Encode.pm
+cp lib/Mail/Message/Construct/Read.pod blib/lib/Mail/Message/Construct/Read.pod
+cp lib/Mail/Message.pm blib/lib/Mail/Message.pm
+cp lib/Mail/Message/Construct/Build.pm blib/lib/Mail/Message/Construct/Build.pm
+cp lib/Mail/Message/Field/AddrGroup.pod blib/lib/Mail/Message/Field/AddrGroup.pod
+cp lib/Mail/Message/Field/Address.pm blib/lib/Mail/Message/Field/Address.pm
+cp lib/Mail/Message/Convert/Html.pod blib/lib/Mail/Message/Convert/Html.pod
+cp lib/Mail/Message/Field/AddrGroup.pm blib/lib/Mail/Message/Field/AddrGroup.pm
+cp lib/Mail/Message/Field/Attribute.pm blib/lib/Mail/Message/Field/Attribute.pm
+cp lib/Mail/Message/Field.pm blib/lib/Mail/Message/Field.pm
+cp lib/Mail/Message/Convert/HtmlFormatText.pod blib/lib/Mail/Message/Convert/HtmlFormatText.pod
+cp lib/Mail/Message/Construct/Reply.pm blib/lib/Mail/Message/Construct/Reply.pm
+cp lib/Mail/Message/Field/Attribute.pod blib/lib/Mail/Message/Field/Attribute.pod
+cp lib/Mail/Message/Convert/Html.pm blib/lib/Mail/Message/Convert/Html.pm
+cp lib/Mail/Message/Field/Addresses.pod blib/lib/Mail/Message/Field/Addresses.pod
+cp lib/Mail/Message/Construct/Text.pod blib/lib/Mail/Message/Construct/Text.pod
+cp lib/Mail/Message/Convert/HtmlFormatText.pm blib/lib/Mail/Message/Convert/HtmlFormatText.pm
+cp lib/Mail/Message/Convert/EmailSimple.pm blib/lib/Mail/Message/Convert/EmailSimple.pm
+cp lib/Mail/Message/Construct/Reply.pod blib/lib/Mail/Message/Construct/Reply.pod
+cp lib/Mail/Message/Field.pod blib/lib/Mail/Message/Field.pod
+cp lib/Mail/Message/Field/Address.pod blib/lib/Mail/Message/Field/Address.pod
+cp lib/Mail/Message/Convert/MimeEntity.pod blib/lib/Mail/Message/Convert/MimeEntity.pod
+cp lib/Mail/Message/Convert/EmailSimple.pod blib/lib/Mail/Message/Convert/EmailSimple.pod
+cp lib/Mail/Message/Convert/MailInternet.pod blib/lib/Mail/Message/Convert/MailInternet.pod
+cp lib/Mail/Message/Convert.pod blib/lib/Mail/Message/Convert.pod
+cp lib/Mail/Message/Field/Addresses.pm blib/lib/Mail/Message/Field/Addresses.pm
+cp lib/Mail/Message/Convert/HtmlFormatPS.pm blib/lib/Mail/Message/Convert/HtmlFormatPS.pm
+cp lib/Mail/Message/Convert/TextAutoformat.pod blib/lib/Mail/Message/Convert/TextAutoformat.pod
+cp lib/Mail/Message/Convert/HtmlFormatPS.pod blib/lib/Mail/Message/Convert/HtmlFormatPS.pod
+cp lib/Mail/Message/Convert/TextAutoformat.pm blib/lib/Mail/Message/Convert/TextAutoformat.pm
+cp lib/Mail/Message/Convert/MimeEntity.pm blib/lib/Mail/Message/Convert/MimeEntity.pm
+cp lib/Mail/Message/Construct/Text.pm blib/lib/Mail/Message/Construct/Text.pm
+cp lib/Mail/Message/Construct/Rebuild.pod blib/lib/Mail/Message/Construct/Rebuild.pod
+cp lib/Mail/Message/Convert/MailInternet.pm blib/lib/Mail/Message/Convert/MailInternet.pm
+cp lib/Mail/Message/Convert.pm blib/lib/Mail/Message/Convert.pm
+cp lib/Mail/Message/Head/ListGroup.pod blib/lib/Mail/Message/Head/ListGroup.pod
+cp lib/Mail/Message/Part.pod blib/lib/Mail/Message/Part.pod
+cp lib/Mail/Message/Head.pm blib/lib/Mail/Message/Head.pm
+cp lib/Mail/Message/Part.pm blib/lib/Mail/Message/Part.pm
+cp lib/Mail/Message/Field/Structured.pm blib/lib/Mail/Message/Field/Structured.pm
+cp lib/Mail/Message/Field/Unstructured.pod blib/lib/Mail/Message/Field/Unstructured.pod
+cp lib/Mail/Message/Field/AuthResults.pod blib/lib/Mail/Message/Field/AuthResults.pod
+cp lib/Mail/Message/Head/ResentGroup.pm blib/lib/Mail/Message/Head/ResentGroup.pm
+cp lib/Mail/Message/Field/DKIM.pod blib/lib/Mail/Message/Field/DKIM.pod
+cp lib/Mail/Message/Field/Fast.pod blib/lib/Mail/Message/Field/Fast.pod
+cp lib/Mail/Message/Head/ResentGroup.pod blib/lib/Mail/Message/Head/ResentGroup.pod
+cp lib/Mail/Message/Head/FieldGroup.pm blib/lib/Mail/Message/Head/FieldGroup.pm
+cp lib/Mail/Message/Head/SpamGroup.pod blib/lib/Mail/Message/Head/SpamGroup.pod
+cp lib/Mail/Message/Field/Full.pod blib/lib/Mail/Message/Field/Full.pod
+cp lib/Mail/Message/Head/Partial.pm blib/lib/Mail/Message/Head/Partial.pm
+cp lib/Mail/Message/Field/Structured.pod blib/lib/Mail/Message/Field/Structured.pod
+cp lib/Mail/Message/Field/Fast.pm blib/lib/Mail/Message/Field/Fast.pm
+cp lib/Mail/Message/Field/Full.pm blib/lib/Mail/Message/Field/Full.pm
+cp lib/Mail/Message/Field/Date.pm blib/lib/Mail/Message/Field/Date.pm
+cp lib/Mail/Message/Field/Flex.pm blib/lib/Mail/Message/Field/Flex.pm
+cp lib/Mail/Message/Head/SpamGroup.pm blib/lib/Mail/Message/Head/SpamGroup.pm
+cp lib/Mail/Message/Field/AuthResults.pm blib/lib/Mail/Message/Field/AuthResults.pm
+cp lib/Mail/Message/Field/URIs.pm blib/lib/Mail/Message/Field/URIs.pm
+cp lib/Mail/Message/Head/FieldGroup.pod blib/lib/Mail/Message/Head/FieldGroup.pod
+cp lib/Mail/Message/Head/Partial.pod blib/lib/Mail/Message/Head/Partial.pod
+cp lib/Mail/Message/Field/Date.pod blib/lib/Mail/Message/Field/Date.pod
+cp lib/Mail/Message/Field/DKIM.pm blib/lib/Mail/Message/Field/DKIM.pm
+cp lib/Mail/Message/Field/URIs.pod blib/lib/Mail/Message/Field/URIs.pod
+cp lib/Mail/Message/Head/Complete.pm blib/lib/Mail/Message/Head/Complete.pm
+cp lib/Mail/Message/Head/Complete.pod blib/lib/Mail/Message/Head/Complete.pod
+cp lib/Mail/Message/Head/ListGroup.pm blib/lib/Mail/Message/Head/ListGroup.pm
+cp lib/Mail/Message/Head.pod blib/lib/Mail/Message/Head.pod
+cp lib/Mail/Message/Field/Flex.pod blib/lib/Mail/Message/Field/Flex.pod
+cp lib/Mail/Message/Field/Unstructured.pm blib/lib/Mail/Message/Field/Unstructured.pm
+cp lib/Mail/Message/Replace/MailHeader.pm blib/lib/Mail/Message/Replace/MailHeader.pm
+cp lib/Mail/Message/TransferEnc/SevenBit.pm blib/lib/Mail/Message/TransferEnc/SevenBit.pm
+cp lib/Mail/Message/TransferEnc/Base64.pod blib/lib/Mail/Message/TransferEnc/Base64.pod
+cp lib/Mail/Message/TransferEnc.pm blib/lib/Mail/Message/TransferEnc.pm
+cp lib/Mail/Reporter.pm blib/lib/Mail/Reporter.pm
+cp lib/Mail/Message/TransferEnc/Binary.pod blib/lib/Mail/Message/TransferEnc/Binary.pod
+cp lib/Mail/Message/TransferEnc/SevenBit.pod blib/lib/Mail/Message/TransferEnc/SevenBit.pod
+cp lib/Mail/Message/TransferEnc/EightBit.pod blib/lib/Mail/Message/TransferEnc/EightBit.pod
+cp lib/Mail/Message/Replace/MailInternet.pod blib/lib/Mail/Message/Replace/MailInternet.pod
+cp lib/Mail/Message/TransferEnc.pod blib/lib/Mail/Message/TransferEnc.pod
+cp lib/Mail/Message/TransferEnc/Binary.pm blib/lib/Mail/Message/TransferEnc/Binary.pm
+cp lib/Mail/Message/Replace/MailHeader.pod blib/lib/Mail/Message/Replace/MailHeader.pod
+cp lib/Mail/Message/Test.pm blib/lib/Mail/Message/Test.pm
+cp lib/Mail/Message/TransferEnc/QuotedPrint.pod blib/lib/Mail/Message/TransferEnc/QuotedPrint.pod
+cp lib/Mail/Message/TransferEnc/QuotedPrint.pm blib/lib/Mail/Message/TransferEnc/QuotedPrint.pm
+cp lib/Mail/Message/Replace/MailInternet.pm blib/lib/Mail/Message/Replace/MailInternet.pm
+cp lib/Mail/Message/TransferEnc/Base64.pm blib/lib/Mail/Message/TransferEnc/Base64.pm
+cp lib/Mail/Reporter.pod blib/lib/Mail/Reporter.pod
+cp lib/Mail/Message/TransferEnc/EightBit.pm blib/lib/Mail/Message/TransferEnc/EightBit.pm
+Manifying 29 pod documents
+Manifying 28 pod documents
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001use.t ................ Mail::Box not installed
+Mail::Box::Manager not installed
+Mail::Transfer not installed
+t/001use.t ................ ok
+t/010reporter-errors.t .... ok
+t/011reporter-reports.t ... ok
+t/012reporter-callback.t .. ok
+t/100field-cfws.t ......... ok
+t/101field-fast.t ......... ok
+t/102field-flex.t ......... ok
+t/103field-wrap.t ......... ok
+t/110fieldu-full.t ........ ok
+t/111fieldu-full_ru.t ..... ok
+t/112fieldu-attr.t ........ ok
+t/113fieldu-unstr.t ....... ok
+t/114fieldu-struct.t ...... ok
+t/115fieldu-parse.t ....... ok
+t/116fieldu-userid.t ...... ok
+t/117fieldu-addr.t ........ ok
+t/118fieldu-uri.t ......... ok
+t/119fieldu-auth.t ........ ok
+t/120fieldu-dkim.t ........ ok
+t/200head-create.t ........ ok
+t/201head-partial.t ....... ok
+t/202head-resentgroup.t ... ok
+t/203head-listgroup.t ..... skipped: requires Mail::Box::Mbox.
+t/204head-spamgroup.t ..... skipped: these tests need Mail::Box::Mbox
+t/300body-file.t .......... ok
+t/301body-string.t ........ ok
+t/302body-lines.t ......... ok
+t/303body-multip.t ........ ok
+t/310encode-base64.t ...... ok
+t/311encode-eight.t ....... ok
+t/312encode-quoted.t ...... ok
+t/313encode-seven.t ....... ok
+t/314encode-charset.t ..... ok
+t/315encode-body.t ........ ok
+t/320bodyconv-textaf.t .... skipped: requires Text::Autoformat.
+t/321bodyconv-html.t ...... ok
+t/322bodyconv-htmlps.t .... skipped: requires HTML::FormatPS.
+t/323bodyconv-htmltxt.t ... skipped: requires HTML::FormatText.
+t/400msg-stripsig.t ....... ok
+t/401msg-replsubj.t ....... ok
+t/402msg-reply.t .......... ok
+t/403msg-bounce.t ......... ok
+t/404msg-forwsubj.t ....... ok
+t/405msg-forward.t ........ ok
+t/406msg-rebuild.t ........ ok
+t/407msg-clone.t .......... ok
+t/420msgconv-mailint.t .... ok
+t/421msgconv-mimeent.t .... skipped: requires MIME::Entity.
+t/422msgconv-emsimp.t ..... skipped: requires Email::Simple.
+t/423msgconv-emabs.t ...... skipped: requires Email::Abstract.
+t/500parser-field.t ....... ok
+t/501parser-readmp.t ...... ok
+t/502parser-nested.t ...... ok
+All tests successful.
+Files=53, Tests=1438, 10 wallclock secs ( 0.21 usr  0.06 sys +  6.52 cusr  2.80 csys =  9.59 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/pkgconfig m4datadir=/nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/aclocal aclocaldir=/nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/aclocal install
+Manifying 29 pod documents
+Manifying 28 pod documents
+Manifying 2 pod documents
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Reporter.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Reporter.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/Parser.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/FastScalar.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/FastScalar.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/Parser.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/Parser/Perl.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Box/Parser/Perl.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Part.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Test.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Part.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/MailInternet.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/EmailSimple.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/HtmlFormatPS.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/MimeEntity.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/HtmlFormatPS.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/HtmlFormatText.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/Html.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/EmailSimple.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/Html.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/TextAutoformat.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/MimeEntity.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/MailInternet.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/TextAutoformat.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Convert/HtmlFormatText.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/ListGroup.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Complete.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/SpamGroup.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/ListGroup.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Partial.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Complete.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/SpamGroup.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/FieldGroup.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Partial.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/ResentGroup.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/FieldGroup.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Head/ResentGroup.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/URIs.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Date.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Flex.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Unstructured.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Address.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/AuthResults.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Attribute.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Unstructured.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Fast.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Date.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/AddrGroup.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/AuthResults.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Flex.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Address.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Full.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Addresses.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/AddrGroup.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/URIs.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Structured.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Addresses.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/DKIM.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Full.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/DKIM.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Structured.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Attribute.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Field/Fast.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/Binary.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/Binary.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/QuotedPrint.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/QuotedPrint.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/SevenBit.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/Base64.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/Base64.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/EightBit.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/SevenBit.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/TransferEnc/EightBit.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Replace/MailInternet.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Replace/MailHeader.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Replace/MailHeader.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Replace/MailInternet.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Reply.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Read.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Bounce.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Forward.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Build.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Bounce.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Rebuild.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Text.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Build.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Reply.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Rebuild.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Read.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Text.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Construct/Forward.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Encode.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/String.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Construct.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Encode.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Multipart.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Lines.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/File.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Nested.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/File.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Lines.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Nested.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/String.pm
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Construct.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Multipart.pod
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::Complete.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Box::FastScalar.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc::SevenBit.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::File.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc::Binary.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Reporter.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::Construct.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Unstructured.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::Lines.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::ListGroup.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Rebuild.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Fast.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::AuthResults.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::String.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Forward.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::DKIM.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::MailInternet.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Address.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::TextAutoformat.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc::Base64.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Part.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Full.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Attribute.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::URIs.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Read.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::Encode.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::AddrGroup.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Box::Parser.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::Partial.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Structured.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Text.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Bounce.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::Multipart.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc::QuotedPrint.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Build.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::FieldGroup.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::ResentGroup.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Head::SpamGroup.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::EmailSimple.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Construct::Reply.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::MimeEntity.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Replace::MailInternet.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Date.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::Html.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::TransferEnc::EightBit.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Flex.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Box::Parser::Perl.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Replace::MailHeader.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Body::Nested.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Field::Addresses.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::HtmlFormatPS.3
+Installing /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3/Mail::Message::Convert::HtmlFormatText.3
+Appending installation info to /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/man3 to /nix/store/lqryqqf8zxnsi4rzjxbm5fdgh1ldraa2-perl5.32.0-Mail-Message-3.009-devdoc/share/man/man3
+Removing empty /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009/lib
+patching script interpreter paths in /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009
+checking for references to /build/ in /nix/store/q98nqiciq92vch2630nspbjwxqpifp3d-perl5.32.0-Mail-Message-3.009...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lqryqqf8zxnsi4rzjxbm5fdgh1ldraa2-perl5.32.0-Mail-Message-3.009-devdoc
+gzipping man pages under /nix/store/lqryqqf8zxnsi4rzjxbm5fdgh1ldraa2-perl5.32.0-Mail-Message-3.009-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lqryqqf8zxnsi4rzjxbm5fdgh1ldraa2-perl5.32.0-Mail-Message-3.009-devdoc
+checking for references to /build/ in /nix/store/lqryqqf8zxnsi4rzjxbm5fdgh1ldraa2-perl5.32.0-Mail-Message-3.009-devdoc...
+building '/nix/store/hawkkawng7jxdjkwmpyw51jyjj9ybzi8-perl5.32.0-Mail-Transport-3.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/p6my2g3f72w3b495wqj8swv63vajamhl-Mail-Transport-3.004.tar.gz
+source root is Mail-Transport-3.004
+setting SOURCE_DATE_EPOCH to timestamp 1556868580 of file Mail-Transport-3.004/META.yml
+patching sources
+configuring
+patching ./xt/99pod.t...
+patching ./t/001use.t...
+    Carp version 1.50 is ok (required is 0)
+    Errno version 1.3 is ok (required is 0)
+    File::Spec version 3.78 is ok (required is 0.7)
+    IO::Socket version 1.43 is ok (required is 0)
+    List::Util version 1.55 is ok (required is 0)
+    Mail::Reporter version 3.009 is ok (required is 3)
+    Net::SMTP version 3.11 is ok (required is 0)
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::Transport
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/Transport/Mailx.pm blib/lib/Mail/Transport/Mailx.pm
+cp lib/Mail/Transport/Receive.pm blib/lib/Mail/Transport/Receive.pm
+cp lib/Mail/Transport/Mailx.pod blib/lib/Mail/Transport/Mailx.pod
+cp lib/Mail/Transport/Exim.pod blib/lib/Mail/Transport/Exim.pod
+cp lib/Mail/Transport/Qmail.pm blib/lib/Mail/Transport/Qmail.pm
+cp lib/Mail/Transport/Sendmail.pm blib/lib/Mail/Transport/Sendmail.pm
+cp lib/Mail/Transport/SMTP.pod blib/lib/Mail/Transport/SMTP.pod
+cp lib/Mail/Transport/SMTP.pm blib/lib/Mail/Transport/SMTP.pm
+cp lib/Mail/Transport/Qmail.pod blib/lib/Mail/Transport/Qmail.pod
+cp lib/Mail/Transport/Send.pm blib/lib/Mail/Transport/Send.pm
+cp lib/Mail/Transport/Send.pod blib/lib/Mail/Transport/Send.pod
+cp lib/Mail/Transport/Sendmail.pod blib/lib/Mail/Transport/Sendmail.pod
+cp lib/Mail/Transport.pod blib/lib/Mail/Transport.pod
+cp lib/Mail/Transport/Exim.pm blib/lib/Mail/Transport/Exim.pm
+cp lib/Mail/Transport.pm blib/lib/Mail/Transport.pm
+cp lib/Mail/Transport/Receive.pod blib/lib/Mail/Transport/Receive.pod
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001use.t .. Mail::Box not installed
+Mail::Box::Manager not installed
+Mail::Message version 3.009
+t/001use.t .. ok
+All tests successful.
+Files=1, Tests=8,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.14 cusr  0.06 csys =  0.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/pkgconfig m4datadir=/nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/aclocal aclocaldir=/nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Send.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Mailx.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Exim.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Sendmail.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Sendmail.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Qmail.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Receive.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/SMTP.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Receive.pm
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Qmail.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Mailx.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/SMTP.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Exim.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/site_perl/5.32.0/Mail/Transport/Send.pod
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Exim.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Sendmail.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Receive.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Send.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::SMTP.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Qmail.3
+Installing /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3/Mail::Transport::Mailx.3
+Appending installation info to /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/man3 to /nix/store/gcya94v22q36m80ah4ibs1yf3wz51rvr-perl5.32.0-Mail-Transport-3.004-devdoc/share/man/man3
+Removing empty /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004/lib
+patching script interpreter paths in /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004
+checking for references to /build/ in /nix/store/2byl50y6mr94xq05y2ahzdgn4r4x9jn0-perl5.32.0-Mail-Transport-3.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gcya94v22q36m80ah4ibs1yf3wz51rvr-perl5.32.0-Mail-Transport-3.004-devdoc
+gzipping man pages under /nix/store/gcya94v22q36m80ah4ibs1yf3wz51rvr-perl5.32.0-Mail-Transport-3.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gcya94v22q36m80ah4ibs1yf3wz51rvr-perl5.32.0-Mail-Transport-3.004-devdoc
+checking for references to /build/ in /nix/store/gcya94v22q36m80ah4ibs1yf3wz51rvr-perl5.32.0-Mail-Transport-3.004-devdoc...
+building '/nix/store/j8lxkcsbh231p3g5r1jvlkgid9qbpk36-perl5.32.0-Mail-Box-3.008.drv'...
+unpacking sources
+unpacking source archive /nix/store/4bzjaf80sssh2dqhk02rxkcdgnx2bpk2-Mail-Box-3.008.tar.gz
+source root is Mail-Box-3.008
+setting SOURCE_DATE_EPOCH to timestamp 1570203405 of file Mail-Box-3.008/META.yml
+patching sources
+configuring
+patching ./scripts/lsmail...
+patching ./scripts/takemail...
+patching ./scripts/mailbox2html...
+patching ./xt/99pod.t...
+patching ./examples/build.pl...
+patching ./examples/strip-spam-markup.pl...
+patching ./examples/send.pl...
+patching ./examples/grep.pl...
+patching ./examples/takelarge.pl...
+patching ./examples/open.pl...
+patching ./examples/strip-attachments.pl...
+patching ./examples/smaller.pl...
+patching ./examples/multipart.pl...
+patching ./examples/reply.pl...
+patching ./examples/unpack.pl...
+patching ./t/220search-grep.t...
+patching ./t/301manager-urlopen.t...
+patching ./t/300manager-open.t...
+patching ./t/200folder-copyto.t...
+patching ./t/104mbox-create.t...
+patching ./t/405locking-multi.t...
+patching ./t/001use.t...
+patching ./t/502parser-bodys.t...
+patching ./t/202folder-tiehash.t...
+patching ./t/505parser-bodymp.t...
+patching ./t/107mbox-update.t...
+patching ./t/121maildir-write.t...
+patching ./t/110mh-read.t...
+patching ./t/105mbox-thread.t...
+patching ./t/404locking-mutt.t...
+patching ./t/120maildir-read.t...
+patching ./t/210threads-single.t...
+patching ./t/503parser-bodyl.t...
+patching ./t/102mbox-delay.t...
+patching ./t/010platform-crlf.t...
+patching ./t/302manager-user.t...
+patching ./t/303manager-collect.t...
+patching ./t/123maildir-destruct.t...
+patching ./t/122maildir-append.t...
+patching ./t/401locking-flock.t...
+patching ./t/103mbox-append.t...
+patching ./t/201folder-tieary.t...
+patching ./t/230msg-destruct.t...
+patching ./t/400locking-dotlock.t...
+patching ./t/106mbox-inplace.t...
+patching ./t/113mh-create.t...
+patching ./t/114mh-thread.t...
+patching ./t/112mh-append.t...
+patching ./t/115mh-seqs.t...
+patching ./t/111mh-write.t...
+patching ./t/504parser-bodyd.t...
+patching ./t/501parser-head.t...
+patching ./t/100mbox-read.t...
+patching ./t/500parser-bodyf.t...
+patching ./t/403locking-posix.t...
+patching ./t/101mbox-write.t...
+patching ./t/402locking-nfslock.t...
+    Carp version 1.50 is ok (required is 0)
+    Cwd version 3.78 is ok (required is 0)
+    Date::Parse version 2.33 is ok (required is 0)
+    Devel::GlobalDestruction version 0.14 is ok (required is 0.09)
+    Errno version 1.3 is ok (required is 0)
+    Fcntl version 1.13 is ok (required is 0)
+    File::Basename version 2.85 is ok (required is 0)
+    File::Compare version 1.1006 is ok (required is 0)
+    File::Copy version 2.34 is ok (required is 0)
+    File::Remove version 1.58 is ok (required is 0.2)
+    File::Spec version 3.78 is ok (required is 0.7)
+    File::Temp version 0.2309 is ok (required is 0)
+    IO::Scalar version 2.113 is ok (required is 0)
+    Mail::Message version 3.009 is ok (required is 3.008)
+    Mail::Transport version 3.004 is ok (required is 3.003)
+    Object::Realize::Later version 0.21 is ok (required is 0.19)
+    POSIX version 1.94 is ok (required is 0)
+    Scalar::Util version 1.55 is ok (required is 1.13)
+    Sys::Hostname version 1.23 is ok (required is 0)
+    Test::More version 1.302175 is ok (required is 0.47)
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::Box
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/Box/Locker/FcntlLock.pod blib/lib/Mail/Box/Locker/FcntlLock.pod
+cp lib/Mail/Box/MH/Labels.pod blib/lib/Mail/Box/MH/Labels.pod
+cp lib/Mail/Box/Locker/Multi.pm blib/lib/Mail/Box/Locker/Multi.pm
+cp lib/Mail/Box/Identity.pod blib/lib/Mail/Box/Identity.pod
+cp lib/Mail/Box/MH.pm blib/lib/Mail/Box/MH.pm
+cp lib/Mail/Box/Locker.pm blib/lib/Mail/Box/Locker.pm
+cp lib/Mail/Box/Locker/Mutt.pm blib/lib/Mail/Box/Locker/Mutt.pm
+cp lib/Mail/Box.pm blib/lib/Mail/Box.pm
+cp lib/Mail/Box/Locker/DotLock.pm blib/lib/Mail/Box/Locker/DotLock.pm
+cp lib/Mail/Box/Locker/POSIX.pod blib/lib/Mail/Box/Locker/POSIX.pod
+cp lib/Mail/Box/Locker/Mutt.pod blib/lib/Mail/Box/Locker/Mutt.pod
+cp lib/Mail/Box/Locker/NFS.pm blib/lib/Mail/Box/Locker/NFS.pm
+cp lib/Mail/Box.pod blib/lib/Mail/Box.pod
+cp lib/Mail/Box-Index.pod blib/lib/Mail/Box-Index.pod
+cp lib/Mail/Box/Locker.pod blib/lib/Mail/Box/Locker.pod
+cp lib/Mail/Box/Dir.pm blib/lib/Mail/Box/Dir.pm
+cp lib/Mail/Box/Collection.pm blib/lib/Mail/Box/Collection.pm
+cp lib/Mail/Box/Locker/DotLock.pod blib/lib/Mail/Box/Locker/DotLock.pod
+cp lib/Mail/Box/File.pod blib/lib/Mail/Box/File.pod
+cp lib/Mail/Box/Locker/Multi.pod blib/lib/Mail/Box/Locker/Multi.pod
+cp lib/Mail/Box/MH/Index.pod blib/lib/Mail/Box/MH/Index.pod
+cp lib/Mail/Box/Locker/FcntlLock.pm blib/lib/Mail/Box/Locker/FcntlLock.pm
+cp lib/Mail/Box-Cookbook.pod blib/lib/Mail/Box-Cookbook.pod
+cp lib/Mail/Box/MH/Index.pm blib/lib/Mail/Box/MH/Index.pm
+cp lib/Mail/Box/File/Message.pm blib/lib/Mail/Box/File/Message.pm
+cp lib/Mail/Box/Collection.pod blib/lib/Mail/Box/Collection.pod
+cp lib/Mail/Box/MH/Message.pm blib/lib/Mail/Box/MH/Message.pm
+cp lib/Mail/Box/Locker/Flock.pod blib/lib/Mail/Box/Locker/Flock.pod
+cp lib/Mail/Box/File/Message.pod blib/lib/Mail/Box/File/Message.pod
+cp lib/Mail/Box/File.pm blib/lib/Mail/Box/File.pm
+cp lib/Mail/Box/Dir.pod blib/lib/Mail/Box/Dir.pod
+cp lib/Mail/Box/Locker/NFS.pod blib/lib/Mail/Box/Locker/NFS.pod
+cp lib/Mail/Box/MH/Labels.pm blib/lib/Mail/Box/MH/Labels.pm
+cp lib/Mail/Box/Identity.pm blib/lib/Mail/Box/Identity.pm
+cp lib/Mail/Box/Dir/Message.pm blib/lib/Mail/Box/Dir/Message.pm
+cp lib/Mail/Box/Locker/POSIX.pm blib/lib/Mail/Box/Locker/POSIX.pm
+cp lib/Mail/Box/Locker/Flock.pm blib/lib/Mail/Box/Locker/Flock.pm
+cp lib/Mail/Box/Dir/Message.pod blib/lib/Mail/Box/Dir/Message.pod
+cp lib/Mail/Box-Overview.pod blib/lib/Mail/Box-Overview.pod
+cp lib/Mail/Box/MH.pod blib/lib/Mail/Box/MH.pod
+cp lib/Mail/Box/MH/Message.pod blib/lib/Mail/Box/MH/Message.pod
+cp lib/Mail/Box/Manager.pm blib/lib/Mail/Box/Manager.pm
+cp lib/Mail/Box/Message.pod blib/lib/Mail/Box/Message.pod
+cp lib/Mail/Box/Mbox/Message.pm blib/lib/Mail/Box/Mbox/Message.pm
+cp lib/Mail/Box/Tie/ARRAY.pm blib/lib/Mail/Box/Tie/ARRAY.pm
+cp lib/Mail/Box/Manage/User.pm blib/lib/Mail/Box/Manage/User.pm
+cp lib/Mail/Box/Test.pm blib/lib/Mail/Box/Test.pm
+cp lib/Mail/Box/Message/Destructed.pm blib/lib/Mail/Box/Message/Destructed.pm
+cp lib/Mail/Box/Search/SpamAssassin.pm blib/lib/Mail/Box/Search/SpamAssassin.pm
+cp lib/Mail/Box/Search/Grep.pod blib/lib/Mail/Box/Search/Grep.pod
+cp lib/Mail/Box/Tie/HASH.pod blib/lib/Mail/Box/Tie/HASH.pod
+cp lib/Mail/Box/Manage/User.pod blib/lib/Mail/Box/Manage/User.pod
+cp lib/Mail/Box/Tie/ARRAY.pod blib/lib/Mail/Box/Tie/ARRAY.pod
+cp lib/Mail/Box/Thread/Node.pod blib/lib/Mail/Box/Thread/Node.pod
+cp lib/Mail/Box/Tie/HASH.pm blib/lib/Mail/Box/Tie/HASH.pm
+cp lib/Mail/Box/Maildir.pm blib/lib/Mail/Box/Maildir.pm
+cp lib/Mail/Box/Thread/Manager.pod blib/lib/Mail/Box/Thread/Manager.pod
+cp lib/Mail/Box/Message/Destructed.pod blib/lib/Mail/Box/Message/Destructed.pod
+cp lib/Mail/Box/Thread/Manager.pm blib/lib/Mail/Box/Thread/Manager.pm
+cp lib/Mail/Box/Search.pm blib/lib/Mail/Box/Search.pm
+cp lib/Mail/Message/Dummy.pm blib/lib/Mail/Message/Dummy.pm
+cp lib/Mail/Box/Search/SpamAssassin.pod blib/lib/Mail/Box/Search/SpamAssassin.pod
+cp lib/Mail/Box/Net/Message.pod blib/lib/Mail/Box/Net/Message.pod
+cp lib/Mail/Box/Maildir/Message.pod blib/lib/Mail/Box/Maildir/Message.pod
+cp lib/Mail/Box/Net.pod blib/lib/Mail/Box/Net.pod
+cp lib/Mail/Box/Maildir/Message.pm blib/lib/Mail/Box/Maildir/Message.pm
+cp lib/Mail/Box/Search.pod blib/lib/Mail/Box/Search.pod
+cp lib/Mail/Box/Mbox.pm blib/lib/Mail/Box/Mbox.pm
+cp lib/Mail/Box/Tie.pm blib/lib/Mail/Box/Tie.pm
+cp lib/Mail/Box/Search/Grep.pm blib/lib/Mail/Box/Search/Grep.pm
+cp lib/Mail/Box/Tie.pod blib/lib/Mail/Box/Tie.pod
+cp lib/Mail/Box/Net.pm blib/lib/Mail/Box/Net.pm
+cp lib/Mail/Box/Net/Message.pm blib/lib/Mail/Box/Net/Message.pm
+cp lib/Mail/Box/Mbox.pod blib/lib/Mail/Box/Mbox.pod
+cp lib/Mail/Box/Maildir.pod blib/lib/Mail/Box/Maildir.pod
+cp lib/Mail/Message/Body/Delayed.pm blib/lib/Mail/Message/Body/Delayed.pm
+cp lib/Mail/Box/Manager.pod blib/lib/Mail/Box/Manager.pod
+cp lib/Mail/Box/Message.pm blib/lib/Mail/Box/Message.pm
+cp lib/Mail/Box/Mbox/Message.pod blib/lib/Mail/Box/Mbox/Message.pod
+cp lib/Mail/Message/Body/Delayed.pod blib/lib/Mail/Message/Body/Delayed.pod
+cp lib/Mail/Box/Thread/Node.pm blib/lib/Mail/Box/Thread/Node.pm
+cp lib/Mail/Server.pm blib/lib/Mail/Server.pm
+cp lib/Mail/Message/Wrapper/SpamAssassin.pm blib/lib/Mail/Message/Wrapper/SpamAssassin.pm
+cp lib/Mail/Message/Head/Delayed.pm blib/lib/Mail/Message/Head/Delayed.pm
+cp lib/Mail/Message/Head/Delayed.pod blib/lib/Mail/Message/Head/Delayed.pod
+cp lib/Mail/Message/Dummy.pod blib/lib/Mail/Message/Dummy.pod
+cp lib/Mail/Server.pod blib/lib/Mail/Server.pod
+cp lib/Mail/Message/Head/Subset.pm blib/lib/Mail/Message/Head/Subset.pm
+cp lib/Mail/Message/Wrapper/SpamAssassin.pod blib/lib/Mail/Message/Wrapper/SpamAssassin.pod
+cp lib/Mail/Message/Head/Subset.pod blib/lib/Mail/Message/Head/Subset.pod
+Manifying 35 pod documents
+Manifying 11 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/pkgconfig m4datadir=/nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/aclocal aclocaldir=/nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/aclocal install
+Manifying 35 pod documents
+Manifying 11 pod documents
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box-Cookbook.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Server.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Server.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box-Index.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box-Overview.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Collection.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Collection.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Manager.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Manager.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Net.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Identity.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Test.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/File.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Dir.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Mbox.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/File.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Maildir.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Identity.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Mbox.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Maildir.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Net.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Dir.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Labels.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Index.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Labels.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/MH/Index.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/File/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/File/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Maildir/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Maildir/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Net/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Net/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Dir/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Dir/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search/Grep.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search/SpamAssassin.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search/SpamAssassin.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Search/Grep.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie/ARRAY.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie/HASH.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie/HASH.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Tie/ARRAY.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Thread/Manager.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Thread/Manager.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Thread/Node.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Thread/Node.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Manage/User.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Manage/User.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Flock.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/NFS.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/DotLock.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/POSIX.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Flock.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Multi.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Mutt.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Mutt.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/Multi.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/FcntlLock.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/POSIX.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/NFS.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/DotLock.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Locker/FcntlLock.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Mbox/Message.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Mbox/Message.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Message/Destructed.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Box/Message/Destructed.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Dummy.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Dummy.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Subset.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Delayed.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Subset.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Head/Delayed.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Wrapper/SpamAssassin.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Wrapper/SpamAssassin.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Delayed.pm
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/site_perl/5.32.0/Mail/Message/Body/Delayed.pod
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Net::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::MH::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::Multi.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Message::Head::Delayed.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Server.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Search::Grep.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::MH::Labels.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Maildir::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::POSIX.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Mbox.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::Flock.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::Mutt.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Thread::Manager.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::DotLock.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Dir::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::MH::Index.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Mbox::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Search.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::FcntlLock.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Manager.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Maildir.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Message::Destructed.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Tie::HASH.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker::NFS.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Message::Body::Delayed.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::MH.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Message::Head::Subset.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Collection.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::File.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::File::Message.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box-Index.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Manage::User.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box-Cookbook.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Identity.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Thread::Node.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Net.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Tie.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Message::Wrapper::SpamAssassin.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Search::SpamAssassin.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box-Overview.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Tie::ARRAY.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Dir.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Box::Locker.3
+Installing /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3/Mail::Message::Dummy.3
+Appending installation info to /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/man3 to /nix/store/irhk30b3crcg82anc85f0bhmp9viccb0-perl5.32.0-Mail-Box-3.008-devdoc/share/man/man3
+Removing empty /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008/lib
+patching script interpreter paths in /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008
+checking for references to /build/ in /nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/irhk30b3crcg82anc85f0bhmp9viccb0-perl5.32.0-Mail-Box-3.008-devdoc
+gzipping man pages under /nix/store/irhk30b3crcg82anc85f0bhmp9viccb0-perl5.32.0-Mail-Box-3.008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/irhk30b3crcg82anc85f0bhmp9viccb0-perl5.32.0-Mail-Box-3.008-devdoc
+checking for references to /build/ in /nix/store/irhk30b3crcg82anc85f0bhmp9viccb0-perl5.32.0-Mail-Box-3.008-devdoc...
+/nix/store/v3lscdxqq2iz8h3wzx37ix6nmay6d3n4-perl5.32.0-Mail-Box-3.008

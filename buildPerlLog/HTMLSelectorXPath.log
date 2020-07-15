@@ -1,0 +1,59 @@
+these derivations will be built:
+  /nix/store/2p2lrwbaslqypamf7i187n9qc3jrpyc2-perl5.32.0-HTML-Selector-XPath-0.25.drv
+building '/nix/store/2p2lrwbaslqypamf7i187n9qc3jrpyc2-perl5.32.0-HTML-Selector-XPath-0.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/kr2czpg6ly2h4nc5n51rgbvg7raddqvp-HTML-Selector-XPath-0.25.tar.gz
+source root is HTML-Selector-XPath-0.25
+setting SOURCE_DATE_EPOCH to timestamp 1541232206 of file HTML-Selector-XPath-0.25/META.yml
+patching sources
+configuring
+patching ./xt/99-changes.t...
+patching ./xt/99-test-prerequisites.t...
+patching ./xt/99-compile.t...
+patching ./xt/meta-lint.t...
+patching ./xt/99-versions.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::Selector::XPath
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/Selector/XPath.pm blib/lib/HTML/Selector/XPath.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t ....... ok
+t/01_xpath.t ......... ok
+t/02_html.t .......... skipped: HTML::TreeBuilder::XPath is not installed.
+t/03_xpath_root.t .... ok
+t/04_subclass.t ...... ok
+t/05_xpath_prefix.t .. ok
+t/06_rt114261.t ...... ok
+t/07_rt114345.t ...... ok
+t/99_pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=9, Tests=146,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.58 cusr  0.12 csys =  0.76 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/lib/pkgconfig m4datadir=/nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/share/aclocal aclocaldir=/nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/lib/perl5/site_perl/5.32.0/HTML/Selector/XPath.pm
+Installing /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/share/man/man3/HTML::Selector::XPath.3
+Appending installation info to /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/share/man/man3 to /nix/store/drs46mcgn3zh2lfj3784dwhy1xhqkz1x-perl5.32.0-HTML-Selector-XPath-0.25-devdoc/share/man/man3
+Removing empty /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25/lib
+patching script interpreter paths in /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25
+checking for references to /build/ in /nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/drs46mcgn3zh2lfj3784dwhy1xhqkz1x-perl5.32.0-HTML-Selector-XPath-0.25-devdoc
+gzipping man pages under /nix/store/drs46mcgn3zh2lfj3784dwhy1xhqkz1x-perl5.32.0-HTML-Selector-XPath-0.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/drs46mcgn3zh2lfj3784dwhy1xhqkz1x-perl5.32.0-HTML-Selector-XPath-0.25-devdoc
+checking for references to /build/ in /nix/store/drs46mcgn3zh2lfj3784dwhy1xhqkz1x-perl5.32.0-HTML-Selector-XPath-0.25-devdoc...
+/nix/store/w4s1bmlrpkc0dbimwp75kiinn83dxlbn-perl5.32.0-HTML-Selector-XPath-0.25

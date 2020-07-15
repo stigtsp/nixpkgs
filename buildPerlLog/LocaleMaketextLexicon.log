@@ -1,0 +1,136 @@
+these derivations will be built:
+  /nix/store/wj9cldafwz0z36q87jqffa0jqkqs89kq-perl5.32.0-Locale-Maketext-Lexicon-1.00.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/ijm30cdd2j7pc050ps30kz13ilralaw6-Locale-Maketext-Lexicon-1.00.tar.gz
+copying path '/nix/store/ijm30cdd2j7pc050ps30kz13ilralaw6-Locale-Maketext-Lexicon-1.00.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wj9cldafwz0z36q87jqffa0jqkqs89kq-perl5.32.0-Locale-Maketext-Lexicon-1.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/ijm30cdd2j7pc050ps30kz13ilralaw6-Locale-Maketext-Lexicon-1.00.tar.gz
+source root is Locale-Maketext-Lexicon-1.00
+setting SOURCE_DATE_EPOCH to timestamp 1394103747 of file Locale-Maketext-Lexicon-1.00/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./script/xgettext.pl...
+patching ./t/preload.t...
+patching ./t/5-extract.t...
+patching ./t/52-extractpluginselection.t...
+patching ./t/6-gettext.t...
+patching ./t/3-big-endian.t...
+patching ./t/51-perlextract.t...
+patching ./t/55-runextract.t...
+patching ./t/1-basic.t...
+patching ./t/7-roundtrip.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/61-badcharset.t...
+patching ./t/2-lmg.t...
+patching ./t/8-plugin-args.t...
+patching ./t/4-encodings.t...
+patching ./t/9-bug-import-for-subclasses.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Locale::Maketext::Lexicon
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Locale/Maketext/Lexicon/Auto.pm blib/lib/Locale/Maketext/Lexicon/Auto.pm
+cp lib/Locale/Maketext/Extract/Run.pm blib/lib/Locale/Maketext/Extract/Run.pm
+cp lib/Locale/Maketext/Extract/Plugin/Haml.pm blib/lib/Locale/Maketext/Extract/Plugin/Haml.pm
+cp lib/Locale/Maketext/Extract/Plugin/Perl.pm blib/lib/Locale/Maketext/Extract/Plugin/Perl.pm
+cp lib/Locale/Maketext/Extract/Plugin/Mason.pm blib/lib/Locale/Maketext/Extract/Plugin/Mason.pm
+cp lib/Locale/Maketext/Extract/Plugin/TT2.pm blib/lib/Locale/Maketext/Extract/Plugin/TT2.pm
+cp lib/Locale/Maketext/Extract/Plugin/FormFu.pm blib/lib/Locale/Maketext/Extract/Plugin/FormFu.pm
+cp lib/Locale/Maketext/Extract/Plugin/PPI.pm blib/lib/Locale/Maketext/Extract/Plugin/PPI.pm
+cp lib/Locale/Maketext/Lexicon.pm blib/lib/Locale/Maketext/Lexicon.pm
+cp lib/Locale/Maketext/Lexicon/Tie.pm blib/lib/Locale/Maketext/Lexicon/Tie.pm
+cp lib/Locale/Maketext/Lexicon/Gettext.pm blib/lib/Locale/Maketext/Lexicon/Gettext.pm
+cp lib/Locale/Maketext/Extract/Plugin/Base.pm blib/lib/Locale/Maketext/Extract/Plugin/Base.pm
+cp lib/Locale/Maketext/Extract/Plugin/TextTemplate.pm blib/lib/Locale/Maketext/Extract/Plugin/TextTemplate.pm
+cp lib/Locale/Maketext/Extract/Plugin/Generic.pm blib/lib/Locale/Maketext/Extract/Plugin/Generic.pm
+cp lib/Locale/Maketext/Extract/Plugin/YAML.pm blib/lib/Locale/Maketext/Extract/Plugin/YAML.pm
+cp lib/Locale/Maketext/Lexicon/Msgcat.pm blib/lib/Locale/Maketext/Lexicon/Msgcat.pm
+cp lib/Locale/Maketext/Extract.pm blib/lib/Locale/Maketext/Extract.pm
+cp script/xgettext.pl blib/script/xgettext.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/xgettext.pl
+Manifying 1 pod document
+Manifying 17 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1-basic.t ...................... ok
+t/2-lmg.t ........................ ok
+t/3-big-endian.t ................. ok
+t/4-encodings.t .................. ok
+t/5-extract.t .................... ok
+t/51-perlextract.t ............... ok
+t/52-extractpluginselection.t .... ok
+t/55-runextract.t ................ ok
+t/6-gettext.t .................... ok
+t/61-badcharset.t ................ ok
+t/7-roundtrip.t .................. ok
+t/8-plugin-args.t ................ ok
+t/9-bug-import-for-subclasses.t .. ok
+t/91-pod_test.t .................. skipped: Test::Pod 1.00 required for testing POD
+t/preload.t ...................... ok
+t/release-eol.t .................. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t ........... skipped: these tests are for release candidate testing
+All tests successful.
+Files=17, Tests=323,  1 wallclock secs ( 0.07 usr  0.02 sys +  0.96 cusr  0.13 csys =  1.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/pkgconfig m4datadir=/nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/aclocal aclocaldir=/nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/aclocal install
+Manifying 1 pod document
+Manifying 17 pod documents
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Lexicon.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Lexicon/Msgcat.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Lexicon/Auto.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Lexicon/Tie.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Lexicon/Gettext.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Run.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/PPI.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/Mason.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/Haml.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/Generic.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/TextTemplate.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/FormFu.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/Base.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/TT2.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/Perl.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/site_perl/5.32.0/Locale/Maketext/Extract/Plugin/YAML.pm
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man1/xgettext.pl.1
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Lexicon::Gettext.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::Base.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::TT2.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Lexicon::Auto.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::FormFu.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::YAML.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Run.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Lexicon.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::Perl.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Lexicon::Tie.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Lexicon::Msgcat.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::Haml.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::TextTemplate.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::PPI.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::Mason.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3/Locale::Maketext::Extract::Plugin::Generic.3
+Installing /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/bin/xgettext.pl
+Appending installation info to /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/man3 to /nix/store/q4xdr6zpixxbm9hzr5440nlcqifnjszv-perl5.32.0-Locale-Maketext-Lexicon-1.00-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00
+gzipping man pages under /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/lib  /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00/bin
+patching script interpreter paths in /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00
+checking for references to /build/ in /nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q4xdr6zpixxbm9hzr5440nlcqifnjszv-perl5.32.0-Locale-Maketext-Lexicon-1.00-devdoc
+gzipping man pages under /nix/store/q4xdr6zpixxbm9hzr5440nlcqifnjszv-perl5.32.0-Locale-Maketext-Lexicon-1.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q4xdr6zpixxbm9hzr5440nlcqifnjszv-perl5.32.0-Locale-Maketext-Lexicon-1.00-devdoc
+checking for references to /build/ in /nix/store/q4xdr6zpixxbm9hzr5440nlcqifnjszv-perl5.32.0-Locale-Maketext-Lexicon-1.00-devdoc...
+/nix/store/ckzi20f75sij122664d7sa47drr74461-perl5.32.0-Locale-Maketext-Lexicon-1.00

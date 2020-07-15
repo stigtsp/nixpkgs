@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/vckbimbqn18kq83ll1pgvsy1lw2gzwaw-perl5.32.0-Net-CIDR-Lite-0.21.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/jv7bqmwalsy63d15lqpmdixjjmzz9gs4-Net-CIDR-Lite-0.21.tar.gz
+copying path '/nix/store/jv7bqmwalsy63d15lqpmdixjjmzz9gs4-Net-CIDR-Lite-0.21.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vckbimbqn18kq83ll1pgvsy1lw2gzwaw-perl5.32.0-Net-CIDR-Lite-0.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/jv7bqmwalsy63d15lqpmdixjjmzz9gs4-Net-CIDR-Lite-0.21.tar.gz
+source root is Net-CIDR-Lite-0.21
+setting SOURCE_DATE_EPOCH to timestamp 1269563762 of file Net-CIDR-Lite-0.21/META.yml
+patching sources
+configuring
+patching ./t/pod.t...
+patching ./t/podcov.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::CIDR::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Lite.pm blib/lib/Net/CIDR/Lite.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/base.t .... ok
+t/more.t .... ok
+t/pod.t ..... skipped: Test::Pod 1.00 required for testing POD
+t/podcov.t .. skipped: Test::Pod::Coverage required for testing pod coverage
+All tests successful.
+Files=4, Tests=41,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.11 cusr  0.02 csys =  0.15 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/lib/pkgconfig m4datadir=/nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/share/aclocal aclocaldir=/nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/lib/perl5/site_perl/5.32.0/Net/CIDR/Lite.pm
+Installing /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/share/man/man3/Net::CIDR::Lite.3
+Appending installation info to /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/share/man/man3 to /nix/store/bmj99jwy5si0yrzgdncw7dav958wafb3-perl5.32.0-Net-CIDR-Lite-0.21-devdoc/share/man/man3
+Removing empty /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21/lib
+patching script interpreter paths in /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21
+checking for references to /build/ in /nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bmj99jwy5si0yrzgdncw7dav958wafb3-perl5.32.0-Net-CIDR-Lite-0.21-devdoc
+gzipping man pages under /nix/store/bmj99jwy5si0yrzgdncw7dav958wafb3-perl5.32.0-Net-CIDR-Lite-0.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bmj99jwy5si0yrzgdncw7dav958wafb3-perl5.32.0-Net-CIDR-Lite-0.21-devdoc
+checking for references to /build/ in /nix/store/bmj99jwy5si0yrzgdncw7dav958wafb3-perl5.32.0-Net-CIDR-Lite-0.21-devdoc...
+/nix/store/ysp8cpzb90wil4dh0lvcqc99f4xnr670-perl5.32.0-Net-CIDR-Lite-0.21

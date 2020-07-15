@@ -1,0 +1,161 @@
+these derivations will be built:
+  /nix/store/rm13dxjw62l44iknjxxqk7x5i124psj3-perl5.32.0-GDTextUtil-0.86.drv
+  /nix/store/41i7zkk6i7amk4kjbq1607zsvy3k0z6a-perl5.32.0-GDGraph-1.54.drv
+these paths will be fetched (0.21 MiB download, 0.21 MiB unpacked):
+  /nix/store/7wdi5i4ay5gl4pxpz6xp13w60pfiyawa-GDGraph-1.54.tar.gz
+  /nix/store/nrk2399zis9yim014rlzn4hsq4k4g81a-GDTextUtil-0.86.tar.gz
+copying path '/nix/store/7wdi5i4ay5gl4pxpz6xp13w60pfiyawa-GDGraph-1.54.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nrk2399zis9yim014rlzn4hsq4k4g81a-GDTextUtil-0.86.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rm13dxjw62l44iknjxxqk7x5i124psj3-perl5.32.0-GDTextUtil-0.86.drv'...
+unpacking sources
+unpacking source archive /nix/store/nrk2399zis9yim014rlzn4hsq4k4g81a-GDTextUtil-0.86.tar.gz
+source root is GDTextUtil-0.86
+setting SOURCE_DATE_EPOCH to timestamp 1055984368 of file GDTextUtil-0.86/t/lib.pl
+patching sources
+configuring
+patching ./demo/GDWrap.pl...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for GD::Text
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Text.pm blib/lib/GD/Text.pm
+cp Text/Align.pm blib/lib/GD/Text/Align.pm
+cp Text/Wrap.pm blib/lib/GD/Text/Wrap.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/align.t .. ok
+t/text.t ... ok
+t/wrap.t ... ok
+All tests successful.
+Files=3, Tests=55,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.19 cusr  0.02 csys =  0.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib/pkgconfig m4datadir=/nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/aclocal aclocaldir=/nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib/perl5/site_perl/5.32.0/GD/Text.pm
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib/perl5/site_perl/5.32.0/GD/Text/Align.pm
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib/perl5/site_perl/5.32.0/GD/Text/Wrap.pm
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/man/man3/GD::Text::Wrap.3
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/man/man3/GD::Text.3
+Installing /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/man/man3/GD::Text::Align.3
+Appending installation info to /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/man/man3 to /nix/store/7h2br40gpn6mk9ff8j8k1hglhb7cyfs7-perl5.32.0-GDTextUtil-0.86-devdoc/share/man/man3
+Removing empty /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86/lib
+patching script interpreter paths in /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86
+checking for references to /build/ in /nix/store/xlb49lhqm2alsa4mbb37a7g5g9qyhz4l-perl5.32.0-GDTextUtil-0.86...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7h2br40gpn6mk9ff8j8k1hglhb7cyfs7-perl5.32.0-GDTextUtil-0.86-devdoc
+gzipping man pages under /nix/store/7h2br40gpn6mk9ff8j8k1hglhb7cyfs7-perl5.32.0-GDTextUtil-0.86-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7h2br40gpn6mk9ff8j8k1hglhb7cyfs7-perl5.32.0-GDTextUtil-0.86-devdoc
+checking for references to /build/ in /nix/store/7h2br40gpn6mk9ff8j8k1hglhb7cyfs7-perl5.32.0-GDTextUtil-0.86-devdoc...
+building '/nix/store/41i7zkk6i7amk4kjbq1607zsvy3k0z6a-perl5.32.0-GDGraph-1.54.drv'...
+unpacking sources
+unpacking source archive /nix/store/7wdi5i4ay5gl4pxpz6xp13w60pfiyawa-GDGraph-1.54.tar.gz
+source root is GDGraph-1.54
+setting SOURCE_DATE_EPOCH to timestamp 1479730978 of file GDGraph-1.54/META.yml
+patching sources
+configuring
+patching ./samples/sample1B.pl...
+patching ./samples/make_index.pl...
+patching ./samples/sample1A.pl...
+patching ./t/bugfixes.t...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for GD::Graph
+Writing MYMETA.yml and MYMETA.json
+
+The automatic tests for GDGraph are not really a solid workout of the
+library. The best way to test the package is to run the examples
+before installing it.  You can run the examples in the samples
+directory with `make samples` or by going into that directory, and
+just running `make`.
+If that fails, please read samples/Makefile.
+UPDATE: Running the examples is part of the test procedure now. You
+are still encouraged to run check them out to learn from them and
+to see the ouput images.
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Graph/utils.pm blib/lib/GD/Graph/utils.pm
+cp Graph/hbars.pm blib/lib/GD/Graph/hbars.pm
+cp Graph/bars.pm blib/lib/GD/Graph/bars.pm
+cp Graph/FAQ.pod blib/lib/GD/Graph/FAQ.pod
+cp Graph/Data.pm blib/lib/GD/Graph/Data.pm
+cp Graph/lines.pm blib/lib/GD/Graph/lines.pm
+cp Graph.pm blib/lib/GD/Graph.pm
+cp Graph/axestype.pm blib/lib/GD/Graph/axestype.pm
+cp Graph/Error.pm blib/lib/GD/Graph/Error.pm
+cp Graph/linespoints.pm blib/lib/GD/Graph/linespoints.pm
+cp Graph/pie.pm blib/lib/GD/Graph/pie.pm
+cp Graph/colour.pm blib/lib/GD/Graph/colour.pm
+cp Graph/area.pm blib/lib/GD/Graph/area.pm
+cp Graph/points.pm blib/lib/GD/Graph/points.pm
+cp Graph/mixed.pm blib/lib/GD/Graph/mixed.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/axestype.t ................... ok
+t/bugfixes.t ................... 1/33 GD Error: libgd was not built with xpm support
+t/bugfixes.t ................... ok
+t/colour.t ..................... ok
+t/data.t ....................... ok
+t/error.t ...................... ok
+t/samples.t .................... ok
+t/tickets/73185-div-by-zero.t .. ok
+t/use.t ........................ ok
+All tests successful.
+Files=8, Tests=194,  1 wallclock secs ( 0.06 usr  0.01 sys +  0.70 cusr  0.13 csys =  0.90 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/pkgconfig m4datadir=/nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/aclocal aclocaldir=/nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/bars.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/hbars.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/area.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/axestype.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/points.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/mixed.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/utils.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/pie.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/linespoints.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/colour.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/Data.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/lines.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/Error.pm
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/site_perl/5.32.0/GD/Graph/FAQ.pod
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph::Data.3
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph::colour.3
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph::hbars.3
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph::Error.3
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph::FAQ.3
+Installing /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3/GD::Graph.3
+Appending installation info to /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/man3 to /nix/store/x5s3ihf3zi69kcyhm0d2wv06r2ch8k3p-perl5.32.0-GDGraph-1.54-devdoc/share/man/man3
+Removing empty /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54/lib
+patching script interpreter paths in /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54
+checking for references to /build/ in /nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x5s3ihf3zi69kcyhm0d2wv06r2ch8k3p-perl5.32.0-GDGraph-1.54-devdoc
+gzipping man pages under /nix/store/x5s3ihf3zi69kcyhm0d2wv06r2ch8k3p-perl5.32.0-GDGraph-1.54-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x5s3ihf3zi69kcyhm0d2wv06r2ch8k3p-perl5.32.0-GDGraph-1.54-devdoc
+checking for references to /build/ in /nix/store/x5s3ihf3zi69kcyhm0d2wv06r2ch8k3p-perl5.32.0-GDGraph-1.54-devdoc...
+/nix/store/yhmhcz73lihz7szzwvpsf0srd9i3cyrh-perl5.32.0-GDGraph-1.54

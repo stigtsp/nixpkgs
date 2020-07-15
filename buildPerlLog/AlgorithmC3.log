@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/qa9qvmplhi2y26i88v892fsmpla00dd9-perl5.32.0-Algorithm-C3-0.10.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/pq1c99gachgr6r78cjhcfaqxw2rzspbm-Algorithm-C3-0.10.tar.gz
+copying path '/nix/store/pq1c99gachgr6r78cjhcfaqxw2rzspbm-Algorithm-C3-0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qa9qvmplhi2y26i88v892fsmpla00dd9-perl5.32.0-Algorithm-C3-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/pq1c99gachgr6r78cjhcfaqxw2rzspbm-Algorithm-C3-0.10.tar.gz
+source root is Algorithm-C3-0.10
+setting SOURCE_DATE_EPOCH to timestamp 1408148423 of file Algorithm-C3-0.10/README
+patching sources
+configuring
+patching ./xt/pod.t...
+patching ./xt/pod_coverage.t...
+patching ./t/006_complex_merge.t...
+patching ./t/005_order_disagreement.t...
+patching ./t/008_cached_merge_unordered.t...
+patching ./t/011_infinite_loop.t...
+patching ./t/000_load.t...
+patching ./t/001_merge.t...
+patching ./t/007_cached_merge.t...
+patching ./t/003_merge.t...
+patching ./t/004_merge.t...
+patching ./t/002_merge.t...
+patching ./t/010_complex_merge_classless.t...
+patching ./t/009_dbic_merge.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Algorithm::C3
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Algorithm/C3.pm blib/lib/Algorithm/C3.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000_load.t ..................... ok
+t/001_merge.t .................... ok
+t/002_merge.t .................... ok
+t/003_merge.t .................... ok
+t/004_merge.t .................... ok
+t/005_order_disagreement.t ....... ok
+t/006_complex_merge.t ............ ok
+t/007_cached_merge.t ............. ok
+t/008_cached_merge_unordered.t ... ok
+t/009_dbic_merge.t ............... ok
+t/010_complex_merge_classless.t .. ok
+t/011_infinite_loop.t ............ ok
+All tests successful.
+Files=12, Tests=77,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.58 cusr  0.09 csys =  0.73 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/lib/pkgconfig m4datadir=/nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/share/aclocal aclocaldir=/nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/lib/perl5/site_perl/5.32.0/Algorithm/C3.pm
+Installing /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/share/man/man3/Algorithm::C3.3
+Appending installation info to /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/share/man/man3 to /nix/store/vzdkqs033cl05a4dsvq2aipamcrp4rc6-perl5.32.0-Algorithm-C3-0.10-devdoc/share/man/man3
+Removing empty /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10/lib
+patching script interpreter paths in /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10
+checking for references to /build/ in /nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vzdkqs033cl05a4dsvq2aipamcrp4rc6-perl5.32.0-Algorithm-C3-0.10-devdoc
+gzipping man pages under /nix/store/vzdkqs033cl05a4dsvq2aipamcrp4rc6-perl5.32.0-Algorithm-C3-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vzdkqs033cl05a4dsvq2aipamcrp4rc6-perl5.32.0-Algorithm-C3-0.10-devdoc
+checking for references to /build/ in /nix/store/vzdkqs033cl05a4dsvq2aipamcrp4rc6-perl5.32.0-Algorithm-C3-0.10-devdoc...
+/nix/store/k0vzqnwqqrfw8a4vvg0rigzlwdmh1wvx-perl5.32.0-Algorithm-C3-0.10

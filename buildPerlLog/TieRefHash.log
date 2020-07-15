@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/9bdb13s7m85qjihj20qmippz9v3gi2dp-perl5.32.0-Tie-RefHash-1.39.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/9skq3wqzag5b2dkqmxmjpc6sqd8hnm3m-Tie-RefHash-1.39.tar.gz
+copying path '/nix/store/9skq3wqzag5b2dkqmxmjpc6sqd8hnm3m-Tie-RefHash-1.39.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9bdb13s7m85qjihj20qmippz9v3gi2dp-perl5.32.0-Tie-RefHash-1.39.drv'...
+unpacking sources
+unpacking source archive /nix/store/9skq3wqzag5b2dkqmxmjpc6sqd8hnm3m-Tie-RefHash-1.39.tar.gz
+source root is Tie-RefHash-1.39
+setting SOURCE_DATE_EPOCH to timestamp 1298654870 of file Tie-RefHash-1.39/META.yml
+patching sources
+configuring
+patching ./t/threaded.t...
+patching ./t/storable.t...
+patching ./t/refhash.t...
+patching ./t/rebless.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Tie::RefHash
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Tie/RefHash.pm blib/lib/Tie/RefHash.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/rebless.t ... ok
+t/refhash.t ... ok
+t/storable.t .. ok
+t/threaded.t .. ok
+All tests successful.
+Files=4, Tests=97,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.13 cusr  0.01 csys =  0.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/lib/pkgconfig m4datadir=/nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/share/aclocal aclocaldir=/nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/lib/perl5/site_perl/5.32.0/Tie/RefHash.pm
+Installing /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/share/man/man3/Tie::RefHash.3
+Appending installation info to /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/share/man/man3 to /nix/store/sy4f7a0w0a49a0hjh235ya8ishl61y46-perl5.32.0-Tie-RefHash-1.39-devdoc/share/man/man3
+Removing empty /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39/lib
+patching script interpreter paths in /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39
+checking for references to /build/ in /nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sy4f7a0w0a49a0hjh235ya8ishl61y46-perl5.32.0-Tie-RefHash-1.39-devdoc
+gzipping man pages under /nix/store/sy4f7a0w0a49a0hjh235ya8ishl61y46-perl5.32.0-Tie-RefHash-1.39-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sy4f7a0w0a49a0hjh235ya8ishl61y46-perl5.32.0-Tie-RefHash-1.39-devdoc
+checking for references to /build/ in /nix/store/sy4f7a0w0a49a0hjh235ya8ishl61y46-perl5.32.0-Tie-RefHash-1.39-devdoc...
+/nix/store/xh7b4aw231awrzb9h2n4v1crb7cdpaxb-perl5.32.0-Tie-RefHash-1.39

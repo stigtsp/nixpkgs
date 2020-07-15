@@ -1,0 +1,641 @@
+these derivations will be built:
+  /nix/store/z5b8jvnxq4qll9y7dnp6k352pbr1q706-perl5.32.0-Test-Run-0.0304.drv
+  /nix/store/7zj3j8r0l44w2dv4pxzpdl0ijj7bmfyg-perl5.32.0-Test-Run-CmdLine-0.0131.drv
+  /nix/store/0a3i7yr6qmhidhhbm0rjpchph1axr8mn-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125.drv
+  /nix/store/0i35rchx2kcswcrn63blb9fc3iknf0x1-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124.drv
+  /nix/store/3js9ykm979aa71vfxshwj2g994qbi92a-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202.drv
+  /nix/store/5iispbvw5m87yiijfkv7hk1qw735ia50-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124.drv
+  /nix/store/kwngr7f0kv2cf46gbh05rsv033pm6yh5-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5.drv
+  /nix/store/1vf9p3lahl9mm7v0ndhba9l09yl558gf-perl5.32.0-Task-Test-Run-AllPlugins-0.0105.drv
+building '/nix/store/z5b8jvnxq4qll9y7dnp6k352pbr1q706-perl5.32.0-Test-Run-0.0304.drv'...
+unpacking sources
+unpacking source archive /nix/store/290a7rwvyz6fxajqbylp01wfsv265br7-Test-Run-0.0304.tar.gz
+source root is Test-Run-0.0304
+setting SOURCE_DATE_EPOCH to timestamp 1450005120 of file Test-Run-0.0304/t/version.t
+patching sources
+configuring
+patching ./scripts/bump-version-number.pl...
+patching ./examples/mini_harness.plx...
+patching ./t/pod-coverage.t...
+patching ./t/test-harness.t...
+patching ./t/hierarchy.t...
+patching ./t/00compile.t...
+patching ./t/unit-test-run-trap-obj-2.t...
+patching ./t/inc_taint.t...
+patching ./t/switches.t...
+patching ./t/test-failure-report.t...
+patching ./t/sample-tests/invalid-perl...
+patching ./t/sample-tests/inc_taint...
+patching ./t/sample-tests/taint_warn...
+patching ./t/sample-tests/with-myhello...
+patching ./t/sample-tests/test_more_fail.t...
+patching ./t/sample-tests/with-myhello-and-myfoo...
+patching ./t/sample-tests/taint...
+patching ./t/sample-tests/shbang_misparse...
+patching ./t/sample-tests/leak-file.t...
+patching ./t/sample-tests/skipall...
+patching ./t/sample-tests/segfault...
+patching ./t/sample-tests/no_output...
+patching ./t/version.t...
+patching ./t/unit-format-self.t...
+patching ./t/unit-plugger.t...
+patching ./t/output.t...
+patching ./t/unit-test-run-trap-obj-1.t...
+patching ./t/unit-reg-plugable-helper.t...
+patching ./t/style-trailing-space.t...
+patching ./t/data/interpreters/wrong-mini-ok.pl...
+patching ./t/unit-struct.t...
+patching ./t/t-r-core-assert-unit.t...
+patching ./t/unit-errors.t...
+patching ./t/harness.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run' version '0.0304'
+Building Test-Run
+running tests
+t/00compile.t ................. 1/1 # Testing Test::Run::Obj 0.0304 under Perl 5.032000 and Test::More 0.42
+t/00compile.t ................. ok
+t/01unit-event-wrapper.t ...... ok
+t/accumulate.t ................ ok
+t/base.t ...................... ok
+t/harness.t ................... ok
+t/hierarchy.t ................. ok
+t/inc_taint.t ................. ok
+t/leaked-dir.t ................ ok
+t/nonumbers.t ................. ok
+t/ok.t ........................ ok
+t/output.t .................... ok
+t/pluggable-helpers.t ......... ok
+t/pod-coverage.t .............. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ....................... skipped: Test::Pod 1.00 required for testing POD
+t/style-trailing-space.t ...... skipped: Test::TrailingSpace required for trailing space test.
+t/switches.t .................. ok
+t/t-r-base-plugger.t .......... ok
+t/t-r-core-assert-unit.t ...... ok
+t/test-failure-report.t ....... ok
+t/test-harness.t .............. 36/182 echo: write error: Broken pipe
+t/test-harness.t .............. ok
+t/undef-warnings.t ............ ok
+t/unit-errors.t ............... ok
+t/unit-format-self.t .......... ok
+t/unit-plugger.t .............. ok
+t/unit-reg-plugable-helper.t .. ok
+t/unit-struct.t ............... ok
+t/unit-test-run-trap-obj-1.t .. ok
+t/unit-test-run-trap-obj-2.t .. ok
+t/version.t ................... ok
+All tests successful.
+Files=29, Tests=270, 19 wallclock secs ( 0.13 usr  0.05 sys + 12.39 cusr  6.65 csys = 19.22 CPU)
+Result: PASS
+installing
+Building Test-Run
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Output.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Assert.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Core.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Core_GplArt.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Iface.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps_GplArt.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Base.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Sprintf/Named/FromAccessors.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Trap/Obj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Base/Plugger.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Base/Struct.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Base/PlugHelpers.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps/StrapsDetailsObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps/EventWrapper.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps/StrapsTotalsObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Straps/Base.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/CmdLine/Output.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Class/Hierarchy.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/FailedObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/CanonFailedObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/TotObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/IntOrUnknown.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/TestObj.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib/perl5/site_perl/5.32.0/Test/Run/Obj/Error.pm
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::CanonFailedObj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Base::Struct.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps_GplArt.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps::Base.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps::EventWrapper.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Assert.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Core.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Trap::Obj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Plugin::CmdLine::Output.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Base::PlugHelpers.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Class::Hierarchy.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Output.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Sprintf::Named::FromAccessors.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Base::Plugger.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::IntOrUnknown.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps::StrapsDetailsObj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Base.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::TestObj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Core_GplArt.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::Error.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps::StrapsTotalsObj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Straps.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::FailedObj.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Iface.3
+Installing /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3/Test::Run::Obj::TotObj.3
+post-installation fixup
+Moving /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/man3 to /nix/store/7mpwy485myigmf08f60498vz9iwhxg6a-perl5.32.0-Test-Run-0.0304-devdoc/share/man/man3
+Removing empty /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304/lib
+patching script interpreter paths in /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304
+checking for references to /build/ in /nix/store/ibrmb7a71wrg9falnlf9hv9n7fs7yqak-perl5.32.0-Test-Run-0.0304...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7mpwy485myigmf08f60498vz9iwhxg6a-perl5.32.0-Test-Run-0.0304-devdoc
+gzipping man pages under /nix/store/7mpwy485myigmf08f60498vz9iwhxg6a-perl5.32.0-Test-Run-0.0304-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7mpwy485myigmf08f60498vz9iwhxg6a-perl5.32.0-Test-Run-0.0304-devdoc
+checking for references to /build/ in /nix/store/7mpwy485myigmf08f60498vz9iwhxg6a-perl5.32.0-Test-Run-0.0304-devdoc...
+building '/nix/store/7zj3j8r0l44w2dv4pxzpdl0ijj7bmfyg-perl5.32.0-Test-Run-CmdLine-0.0131.drv'...
+unpacking sources
+unpacking source archive /nix/store/1ggbhs7lzix68v3bg2k0h9wcd7xf95nk-Test-Run-CmdLine-0.0131.tar.gz
+source root is Test-Run-CmdLine-0.0131
+setting SOURCE_DATE_EPOCH to timestamp 1453289720 of file Test-Run-CmdLine-0.0131/t/test-libs/lib2/MyFoo.pm
+patching sources
+configuring
+patching ./scripts/tag-release.pl...
+patching ./scripts/bump-version-number.pl...
+patching ./examples/eumm-and-test-manifest/MyModule/t/boilerplate.t...
+patching ./examples/eumm-and-test-manifest/MyModule/t/pod.t...
+patching ./examples/eumm-and-test-manifest/MyModule/t/00-load.t...
+patching ./t/pod-coverage.t...
+patching ./t/09-yaml-args.t...
+patching ./t/03-prove.t...
+patching ./t/pod.t...
+patching ./t/sample-tests/uppercase-t-flag.t...
+patching ./t/sample-tests/test-dir1/mytest.t...
+patching ./t/sample-tests/test-dir1/test1.t...
+patching ./t/sample-tests/test-dir1/test2.t...
+patching ./t/sample-tests/test-dir1/footest.wrd...
+patching ./t/sample-tests/ext-test-dir/open.wrd...
+patching ./t/sample-tests/ext-test-dir/foo.my...
+patching ./t/sample-tests/ext-test-dir/myfile.pl...
+patching ./t/sample-tests/ext-test-dir/bar.my...
+patching ./t/sample-tests/ext-test-dir/one-ok.t...
+patching ./t/sample-tests/ext-test-dir/hello.pl...
+patching ./t/sample-tests/with-lib/t/mytest.t...
+patching ./t/sample-tests/with-myhello...
+patching ./t/sample-tests/with-blib/t/mytest.t...
+patching ./t/sample-tests/with-myhello-and-myfoo...
+patching ./t/sample-tests/recurse-dir/e.t...
+patching ./t/sample-tests/recurse-dir/c/y.t...
+patching ./t/sample-tests/recurse-dir/c/a.t...
+patching ./t/sample-tests/recurse-dir/c/b/h.t...
+patching ./t/sample-tests/recurse-dir/b.t...
+patching ./t/sample-tests/recurse-dir/z.t...
+patching ./t/sample-tests/recurse-dir/a.t...
+patching ./t/sample-tests/recurse-dir/i/sb.t...
+patching ./t/sample-tests/recurse-dir/i/sa.t...
+patching ./t/sample-tests/recurse-dir/i/r.t...
+patching ./t/sample-tests/one-ok.t...
+patching ./t/sample-tests/leak-file.t...
+patching ./t/sample-tests/no-t-flags.t...
+patching ./t/sample-tests/bad.t...
+patching ./t/sample-tests/lowercase-t-flag.t...
+patching ./t/sample-tests/several-oks.t...
+patching ./t/01-class-name.t...
+patching ./t/02-run.t...
+patching ./t/04-t-r-cl-iface.t...
+patching ./t/style-trailing-space.t...
+patching ./t/00-load.t...
+patching ./t/08-collect-plugins.t...
+patching ./t/05-prove-cl-process.t...
+patching ./t/07-trap-prove-app.t...
+patching ./t/cpan-changes.t...
+patching ./bin/runprove...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run::CmdLine
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-CmdLine' version '0.0131'
+Building Test-Run-CmdLine
+running tests
+t/00-load.t ............... 1/1 # Testing Test::Run::CmdLine 0.0131, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/01-class-name.t ......... ok
+t/02-run.t ................ ok
+t/03-prove.t .............. ok
+t/04-t-r-cl-iface.t ....... ok
+t/05-prove-cl-process.t ... ok
+t/07-trap-prove-app.t ..... ok
+t/08-collect-plugins.t .... ok
+t/09-yaml-args.t .......... ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=13, Tests=68, 53 wallclock secs ( 0.08 usr  0.03 sys + 34.04 cusr 18.64 csys = 52.79 CPU)
+Result: PASS
+installing
+Building Test-Run-CmdLine
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man1/runprove.1
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Prove.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Iface.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Trap/Prove.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Trap/ProveApp.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Prove/App.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Drivers/Default.pm
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Iface.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Trap::Prove.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Drivers::Default.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Prove::App.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Prove.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3/Test::Run::CmdLine::Trap::ProveApp.3
+Installing /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/bin/runprove
+post-installation fixup
+Moving /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/man3 to /nix/store/5lrbc5s5rr0855vs9izvvgpzfhjz8h5x-perl5.32.0-Test-Run-CmdLine-0.0131-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131
+gzipping man pages under /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/lib  /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131/bin
+patching script interpreter paths in /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131
+checking for references to /build/ in /nix/store/lwmzjli54c5zzcc8xpg6aksg30s03j4b-perl5.32.0-Test-Run-CmdLine-0.0131...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5lrbc5s5rr0855vs9izvvgpzfhjz8h5x-perl5.32.0-Test-Run-CmdLine-0.0131-devdoc
+gzipping man pages under /nix/store/5lrbc5s5rr0855vs9izvvgpzfhjz8h5x-perl5.32.0-Test-Run-CmdLine-0.0131-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5lrbc5s5rr0855vs9izvvgpzfhjz8h5x-perl5.32.0-Test-Run-CmdLine-0.0131-devdoc
+checking for references to /build/ in /nix/store/5lrbc5s5rr0855vs9izvvgpzfhjz8h5x-perl5.32.0-Test-Run-CmdLine-0.0131-devdoc...
+building '/nix/store/0i35rchx2kcswcrn63blb9fc3iknf0x1-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124.drv'...
+building '/nix/store/kwngr7f0kv2cf46gbh05rsv033pm6yh5-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5.drv'...
+building '/nix/store/5iispbvw5m87yiijfkv7hk1qw735ia50-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124.drv'...
+building '/nix/store/3js9ykm979aa71vfxshwj2g994qbi92a-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202.drv'...
+building '/nix/store/0a3i7yr6qmhidhhbm0rjpchph1axr8mn-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125.drv'...
+unpacking sources
+unpacking source archive /nix/store/0xg3yyz2bqi642996sq3zkq864w3p28n-Test-Run-Plugin-BreakOnFailure-v0.0.5.tar.gz
+source root is Test-Run-Plugin-BreakOnFailure-v0.0.5
+setting SOURCE_DATE_EPOCH to timestamp 1433086588 of file Test-Run-Plugin-BreakOnFailure-v0.0.5/t/style-trailing-space.t
+patching sources
+configuring
+patching ./Dist/tag-release.pl...
+unpacking sources
+unpacking source archive /nix/store/7yac20ybqyiyw30isifap6262lb93p4y-Test-Run-Plugin-AlternateInterpreters-0.0124.tar.gz
+patching ./t/pod-coverage.t...
+source root is Test-Run-Plugin-AlternateInterpreters-0.0124
+patching ./t/02-cmdline-run.t...
+setting SOURCE_DATE_EPOCH to timestamp 1433084136 of file Test-Run-Plugin-AlternateInterpreters-0.0124/t/style-trailing-space.t
+patching ./t/boilerplate.t...
+patching sources
+configuring
+unpacking sources
+patching ./t/pod.t...
+unpacking source archive /nix/store/q13gxv0bcj4p6zrjldr0a92dgvgphpz6-Test-Run-Plugin-TrimDisplayedFilenames-0.0125.tar.gz
+source root is Test-Run-Plugin-TrimDisplayedFilenames-0.0125
+patching ./t/sample-tests/one-fail.t...
+patching ./t/sample-tests/one-ok.t...
+setting SOURCE_DATE_EPOCH to timestamp 1434697994 of file Test-Run-Plugin-TrimDisplayedFilenames-0.0125/t/style-trailing-space.t
+patching sources
+configuring
+patching ./t/sample-tests/several-oks.t...
+patching ./t/pod-coverage.t...
+patching ./t/01-run.t...
+patching ./t/02-cmdline-run.t...
+patching ./t/style-trailing-space.t...
+patching ./t/boilerplate.t...
+patching ./t/00-load.t...
+patching ./t/pod.t...
+patching ./t/data/interpreters/mini-ok.pl...
+patching ./scripts/tag-release.pl...
+patching ./t/data/interpreters/cat.pl...
+patching ./scripts/bump-version-number.pl...
+patching ./t/sample-tests/one-fail.t...
+patching ./t/pod-coverage.t...
+patching ./t/sample-tests/one-ok.t...
+patching ./t/cpan-changes.t...
+patching ./t/02-cmdline-run.t...
+patching ./t/sample-tests/several-oks.t...
+patching ./t/boilerplate.t...
+patching ./t/01-run.t...
+patching ./t/pod.t...
+patching ./t/style-trailing-space.t...
+patching ./t/sample-tests/really-really-really-long-dir-name/one-ok.t...
+patching ./t/00-load.t...
+patching ./t/sample-tests/really-really-really-long-dir-name/several-oks.t...
+patching ./t/data/interpreters/mini-ok.pl...
+patching ./t/data/interpreters/cat.pl...
+patching ./t/sample-tests/one-fail.t...
+patching ./t/cpan-changes.t...
+patching ./t/sample-tests/one-ok.t...
+patching ./t/sample-tests/several-oks.t...
+unpacking sources
+patching ./t/01-run.t...
+unpacking source archive /nix/store/8k7cizavnnn0ap93jdn004y2xz5qgq84-Test-Run-Plugin-ColorFileVerdicts-0.0124.tar.gz
+patching ./t/style-trailing-space.t...
+unpacking sources
+source root is Test-Run-Plugin-ColorFileVerdicts-0.0124
+unpacking source archive /nix/store/4nyz3hzsgrnl1932dqk6vbvrbm5qyf7s-Test-Run-Plugin-ColorSummary-0.0202.tar.gz
+patching ./t/00-load.t...
+source root is Test-Run-Plugin-ColorSummary-0.0202
+patching ./t/data/interpreters/mini-ok.pl...
+setting SOURCE_DATE_EPOCH to timestamp 1433266702 of file Test-Run-Plugin-ColorFileVerdicts-0.0124/t/style-trailing-space.t
+patching ./t/data/interpreters/cat.pl...
+patching sources
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1450006731 of file Test-Run-Plugin-ColorSummary-0.0202/t/style-trailing-space.t
+patching sources
+patching ./t/cpan-changes.t...
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/02-cmdline-run.t...
+patching ./t/pod-coverage.t...
+patching ./t/boilerplate.t...
+patching ./t/02-cmdline-run.t...
+patching ./t/03-inheritance-problems.t...
+patching ./t/pod.t...
+patching ./t/pod.t...
+patching ./t/sample-tests/one-fail.t...
+patching ./t/sample-tests/one-fail.t...
+patching ./t/sample-tests/one-ok.t...
+patching ./t/sample-tests/one-ok.t...
+patching ./t/sample-tests/several-oks.t...
+patching ./t/sample-tests/several-oks.t...
+patching ./t/01-run.t...
+patching ./t/01-run.t...
+patching ./t/style-trailing-space.t...
+patching ./t/style-trailing-space.t...
+patching ./t/00-load.t...
+patching ./t/cpan-changes.t...
+patching ./t/00-load.t...
+patching ./t/cpan-changes.t...
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+Checking if your kit is complete...
+Checking if your kit is complete...
+Looks good
+Looks good
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run::Plugin::AlternateInterpreters
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run::Plugin::TrimDisplayedFilenames
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-Plugin-ColorSummary' version '0.0202'
+Writing MYMETA.yml and MYMETA.json
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run::Plugin::BreakOnFailure
+Writing MYMETA.yml and MYMETA.json
+Looks good
+no configure script, doing nothing
+building
+Generating a Unix-style Makefile
+Writing Makefile for Test::Run::Plugin::ColorFileVerdicts
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-Plugin-TrimDisplayedFilenames' version '0.0125'
+Building Test-Run-Plugin-ColorSummary
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-Plugin-AlternateInterpreters' version '0.0124'
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-Plugin-BreakOnFailure' version 'v0.0.5'
+running tests
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Run-Plugin-ColorFileVerdicts' version '0.0124'
+Building Test-Run-Plugin-TrimDisplayedFilenames
+Building Test-Run-Plugin-AlternateInterpreters
+Building Test-Run-Plugin-BreakOnFailure
+running tests
+running tests
+Building Test-Run-Plugin-ColorFileVerdicts
+running tests
+running tests
+t/00-load.t ............... ok
+t/00-load.t ............... 1/1 # Testing Test::Run::Plugin::AlternateInterpreters 0.0124, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/00-load.t ............... 1/1 # Testing Test::Run::Plugin::TrimDisplayedFilenames 0.0125, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/00-load.t ............... 1/1 # Testing Test::Run::Plugin::BreakOnFailure 0.0.5, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/00-load.t .................. 1/1 # Testing Test::Run::Plugin::ColorFileVerdicts 0.0124, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .................. ok
+t/01-run.t ................ ok
+t/01-run.t ................ ok
+t/01-run.t ................ ok
+t/01-run.t ................ ok
+t/02-cmdline-run.t ........ ok
+t/01-run.t ................... ok
+t/boilerplate.t ........... ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=8, Tests=7,  9 wallclock secs ( 0.08 usr  0.04 sys +  5.14 cusr  4.25 csys =  9.51 CPU)
+Result: PASS
+installing
+Building Test-Run-Plugin-AlternateInterpreters
+t/02-cmdline-run.t ........ ok
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/AlternateInterpreters.pm
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/AlternateInterpreters/Straps/AltIntrPlugin.pm
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Plugin/AlternateInterpreters.pm
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/share/man/man3/Test::Run::Plugin::AlternateInterpreters.3
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/share/man/man3/Test::Run::Plugin::AlternateInterpreters::Straps::AltIntrPlugin.3
+Installing /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/share/man/man3/Test::Run::CmdLine::Plugin::AlternateInterpreters.3
+post-installation fixup
+Moving /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/share/man/man3 to /nix/store/azkzn60nvkq1rdzgb0vz9zyvlp51fr4v-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124-devdoc/share/man/man3
+Removing empty /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124/lib
+patching script interpreter paths in /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124
+checking for references to /build/ in /nix/store/02k6ccri15rf642s3hfnf04q3diczzjl-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124...
+shrinking RPATHs of ELF executables and libraries in /nix/store/azkzn60nvkq1rdzgb0vz9zyvlp51fr4v-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124-devdoc
+gzipping man pages under /nix/store/azkzn60nvkq1rdzgb0vz9zyvlp51fr4v-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/azkzn60nvkq1rdzgb0vz9zyvlp51fr4v-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124-devdoc
+checking for references to /build/ in /nix/store/azkzn60nvkq1rdzgb0vz9zyvlp51fr4v-perl5.32.0-Test-Run-Plugin-AlternateInterpreters-0.0124-devdoc...
+t/02-cmdline-run.t ........ ok
+t/boilerplate.t ........... ok
+t/boilerplate.t ........... ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=8, Tests=8, 12 wallclock secs ( 0.08 usr  0.03 sys +  6.86 cusr  4.92 csys = 11.89 CPU)
+Result: PASS
+installing
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+Building Test-Run-Plugin-BreakOnFailure
+Installing /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/BreakOnFailure.pm
+Installing /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Plugin/BreakOnFailure.pm
+Installing /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/share/man/man3/Test::Run::Plugin::BreakOnFailure.3
+Installing /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/share/man/man3/Test::Run::CmdLine::Plugin::BreakOnFailure.3
+post-installation fixup
+Moving /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/share/man/man3 to /nix/store/6pvsybsjwkf5waw6nknw8g7dxw2h899h-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5-devdoc/share/man/man3
+Removing empty /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5/lib
+patching script interpreter paths in /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5
+checking for references to /build/ in /nix/store/7ps0gxy3bx0kan9sd71janma4ifp6d4d-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6pvsybsjwkf5waw6nknw8g7dxw2h899h-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5-devdoc
+gzipping man pages under /nix/store/6pvsybsjwkf5waw6nknw8g7dxw2h899h-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6pvsybsjwkf5waw6nknw8g7dxw2h899h-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5-devdoc
+checking for references to /build/ in /nix/store/6pvsybsjwkf5waw6nknw8g7dxw2h899h-perl5.32.0-Test-Run-Plugin-BreakOnFailure-0.0.5-devdoc...
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=8, Tests=14, 12 wallclock secs ( 0.08 usr  0.03 sys +  7.31 cusr  5.20 csys = 12.62 CPU)
+Result: PASS
+installing
+Building Test-Run-Plugin-TrimDisplayedFilenames
+Installing /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/TrimDisplayedFilenames.pm
+Installing /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Plugin/TrimDisplayedFilenames.pm
+Installing /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/share/man/man3/Test::Run::CmdLine::Plugin::TrimDisplayedFilenames.3
+Installing /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/share/man/man3/Test::Run::Plugin::TrimDisplayedFilenames.3
+post-installation fixup
+Moving /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/share/man/man3 to /nix/store/9k1waksflmh53py2wrj2yg8ahfix9z1m-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125-devdoc/share/man/man3
+Removing empty /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125/lib
+patching script interpreter paths in /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125
+checking for references to /build/ in /nix/store/rbv40p1fp8n4395islzbb01kylicpmxc-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9k1waksflmh53py2wrj2yg8ahfix9z1m-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125-devdoc
+gzipping man pages under /nix/store/9k1waksflmh53py2wrj2yg8ahfix9z1m-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9k1waksflmh53py2wrj2yg8ahfix9z1m-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125-devdoc
+checking for references to /build/ in /nix/store/9k1waksflmh53py2wrj2yg8ahfix9z1m-perl5.32.0-Test-Run-Plugin-TrimDisplayedFilenames-0.0125-devdoc...
+t/02-cmdline-run.t ........ ok
+t/02-cmdline-run.t ........... ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=7, Tests=10, 15 wallclock secs ( 0.08 usr  0.03 sys +  9.84 cusr  5.63 csys = 15.58 CPU)
+Result: PASS
+installing
+Building Test-Run-Plugin-ColorSummary
+t/03-inheritance-problems.t .. ok
+Installing /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/ColorSummary.pm
+Installing /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Plugin/ColorSummary.pm
+Installing /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/share/man/man3/Test::Run::Plugin::ColorSummary.3
+Installing /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/share/man/man3/Test::Run::CmdLine::Plugin::ColorSummary.3
+post-installation fixup
+Moving /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/share/man/man3 to /nix/store/6aavkrygn2x063qy0ksan1j8vcd68igc-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202-devdoc/share/man/man3
+Removing empty /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202/lib
+patching script interpreter paths in /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202
+checking for references to /build/ in /nix/store/zpysfhgj7aj0vbwi3v0k8yqpkbr5vpbw-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6aavkrygn2x063qy0ksan1j8vcd68igc-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202-devdoc
+gzipping man pages under /nix/store/6aavkrygn2x063qy0ksan1j8vcd68igc-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6aavkrygn2x063qy0ksan1j8vcd68igc-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202-devdoc
+checking for references to /build/ in /nix/store/6aavkrygn2x063qy0ksan1j8vcd68igc-perl5.32.0-Test-Run-Plugin-ColorSummary-0.0202-devdoc...
+t/boilerplate.t .............. ok
+t/cpan-changes.t ............. skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t ............. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ...................... skipped: Test::Pod 1.14 required for testing POD
+t/style-trailing-space.t ..... skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=9, Tests=13, 17 wallclock secs ( 0.07 usr  0.05 sys + 10.18 cusr  6.68 csys = 16.98 CPU)
+Result: PASS
+installing
+Building Test-Run-Plugin-ColorFileVerdicts
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/ColorFileVerdicts.pm
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/ColorFileVerdicts/ColorBase.pm
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/Plugin/ColorFileVerdicts/CanonFailedObj.pm
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/lib/perl5/site_perl/5.32.0/Test/Run/CmdLine/Plugin/ColorFileVerdicts.pm
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/man3/Test::Run::Plugin::ColorFileVerdicts::CanonFailedObj.3
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/man3/Test::Run::Plugin::ColorFileVerdicts::ColorBase.3
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/man3/Test::Run::CmdLine::Plugin::ColorFileVerdicts.3
+Installing /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/man3/Test::Run::Plugin::ColorFileVerdicts.3
+post-installation fixup
+Moving /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/man3 to /nix/store/37k0d19cixxjjwya3zyyiaf5h9qr074l-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124-devdoc/share/man/man3
+Removing empty /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124/lib
+patching script interpreter paths in /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124
+checking for references to /build/ in /nix/store/qmyg9grkhgp0l67av414s7waczm3564b-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124...
+shrinking RPATHs of ELF executables and libraries in /nix/store/37k0d19cixxjjwya3zyyiaf5h9qr074l-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124-devdoc
+gzipping man pages under /nix/store/37k0d19cixxjjwya3zyyiaf5h9qr074l-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/37k0d19cixxjjwya3zyyiaf5h9qr074l-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124-devdoc
+checking for references to /build/ in /nix/store/37k0d19cixxjjwya3zyyiaf5h9qr074l-perl5.32.0-Test-Run-Plugin-ColorFileVerdicts-0.0124-devdoc...
+building '/nix/store/1vf9p3lahl9mm7v0ndhba9l09yl558gf-perl5.32.0-Task-Test-Run-AllPlugins-0.0105.drv'...
+unpacking sources
+unpacking source archive /nix/store/cq6xvx19923py5manxc9hnqik10pvnak-Task-Test-Run-AllPlugins-0.0105.tar.gz
+source root is Task-Test-Run-AllPlugins-0.0105
+setting SOURCE_DATE_EPOCH to timestamp 1450005421 of file Task-Test-Run-AllPlugins-0.0105/t/style-trailing-space.t
+patching sources
+configuring
+patching ./t/pod.t...
+patching ./t/style-trailing-space.t...
+patching ./t/00-load.t...
+patching ./t/cpan-changes.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Task::Test::Run::AllPlugins
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Task-Test-Run-AllPlugins' version '0.0105'
+Building Task-Test-Run-AllPlugins
+running tests
+t/00-load.t ............... 1/1 # Testing Task::Test::Run::AllPlugins 0.0105, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.22 required for testing POD
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=5, Tests=1,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.73 cusr  0.88 csys =  1.68 CPU)
+Result: PASS
+installing
+Building Task-Test-Run-AllPlugins
+Installing /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105/lib/perl5/site_perl/5.32.0/Task/Test/Run/AllPlugins.pm
+Installing /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105/share/man/man3/Task::Test::Run::AllPlugins.3
+post-installation fixup
+Moving /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105/share/man/man3 to /nix/store/gyasf46sh86b2dfvsjs1f5p5ywxh0ars-perl5.32.0-Task-Test-Run-AllPlugins-0.0105-devdoc/share/man/man3
+Removing empty /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105/lib
+patching script interpreter paths in /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105
+checking for references to /build/ in /nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gyasf46sh86b2dfvsjs1f5p5ywxh0ars-perl5.32.0-Task-Test-Run-AllPlugins-0.0105-devdoc
+gzipping man pages under /nix/store/gyasf46sh86b2dfvsjs1f5p5ywxh0ars-perl5.32.0-Task-Test-Run-AllPlugins-0.0105-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gyasf46sh86b2dfvsjs1f5p5ywxh0ars-perl5.32.0-Task-Test-Run-AllPlugins-0.0105-devdoc
+checking for references to /build/ in /nix/store/gyasf46sh86b2dfvsjs1f5p5ywxh0ars-perl5.32.0-Task-Test-Run-AllPlugins-0.0105-devdoc...
+/nix/store/054wa1wyc03fjw4939qkc7by4469sz44-perl5.32.0-Task-Test-Run-AllPlugins-0.0105

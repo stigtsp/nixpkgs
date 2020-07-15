@@ -1,0 +1,172 @@
+these derivations will be built:
+  /nix/store/xw4zhk8qi3hj95k7n418r8mrbcnd5szk-perl5.32.0-File-Util-4.161950.drv
+these paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/n57a6wyzwjyb4gs88x88ab3jfs8f176g-File-Util-4.161950.tar.gz
+copying path '/nix/store/n57a6wyzwjyb4gs88x88ab3jfs8f176g-File-Util-4.161950.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xw4zhk8qi3hj95k7n418r8mrbcnd5szk-perl5.32.0-File-Util-4.161950.drv'...
+unpacking sources
+unpacking source archive /nix/store/n57a6wyzwjyb4gs88x88ab3jfs8f176g-File-Util-4.161950.tar.gz
+source root is File-Util-4.161950
+setting SOURCE_DATE_EPOCH to timestamp 1468370146 of file File-Util-4.161950/xt/release/synopsis.t
+patching sources
+configuring
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./performance/profile_listdir.pl...
+patching ./performance/profile_listdir_vs_file-find-rule.pl...
+patching ./performance/bench_load_time.pl...
+patching ./performance/bench_listdir.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Util
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Unicode::UTF8 is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-Util' version '4.161950'
+Building File-Util
+running tests
+t/00-compile.t .................. ok
+t/00-report-prereqs.t ........... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want   Have
+#     ------------------- ---- ------
+#     ExtUtils::MakeMaker  any   7.44
+#     Module::Build       0.28 0.4231
+#
+# === Build Requires ===
+#
+#     Module        Want   Have
+#     ------------- ---- ------
+#     Module::Build 0.28 0.4231
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     AutoLoader           any     5.74
+#     Config               any 5.032000
+#     Cwd                  any     3.78
+#     Exporter             any     5.74
+#     ExtUtils::MakeMaker  any     7.44
+#     Fcntl                any     1.13
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Module::Build       0.28   0.4231
+#     Scalar::Util         any     1.55
+#     Test                 any     1.31
+#     Test::More           any 1.302175
+#     Test::NoWarnings     any     1.04
+#     blib                1.01     1.07
+#     utf8                 any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module       Want Have
+#     ------------ ---- ----
+#     Exporter      any 5.74
+#     Fcntl         any 1.13
+#     Scalar::Util  any 1.55
+#     constant      any 1.33
+#     lib           any 0.65
+#     strict        any 1.11
+#     subs          any 1.03
+#     vars          any 1.05
+#     warnings      any 1.47
+#
+# === Runtime Recommends ===
+#
+#     Module        Want    Have
+#     ------------- ---- -------
+#     Unicode::UTF8 0.58 missing
+#
+t/00-report-prereqs.t ........... ok
+t/001_canuseit.t ................ ok
+t/002_isa.t ..................... ok
+t/003_can.t ..................... ok
+t/004_portable.t ................ ok
+t/005_ftests.t .................. ok
+t/006_io.t ...................... ok
+t/007_flock.t ................... ok
+t/008_export_ok.t ............... ok
+t/009_empty_subclass.t .......... ok
+t/010_unicode.t ................. ok
+t/011_abspaths.t ................ ok
+t/012_atomize_path.t ............ ok
+t/013_interface_classic.t ....... ok
+t/014_interface_modern.t ........ ok
+t/015_destroy.t ................. ok
+t/016_new.t ..................... ok
+t/017_make_dir_list_dir.t ....... ok
+t/018_list_dir_advancedmatch.t .. ok
+t/019_load_dir.t ................ ok
+t/020_write_file.t .............. ok
+t/021_list_dir_regression.t ..... ok
+All tests successful.
+Files=23, Tests=415,  2 wallclock secs ( 0.08 usr  0.02 sys +  1.75 cusr  0.39 csys =  2.24 CPU)
+Result: PASS
+installing
+Building File-Util
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Exception.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Cookbook.pod
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Manual.pod
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Definitions.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Exception/Diagnostic.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Exception/Standard.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Manual/Examples.pod
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Interface/Classic.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib/perl5/site_perl/5.32.0/File/Util/Interface/Modern.pm
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Cookbook.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Manual::Examples.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Exception.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Exception::Standard.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Interface::Classic.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Manual.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Exception::Diagnostic.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Definitions.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util::Interface::Modern.3
+Installing /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3/File::Util.3
+post-installation fixup
+Moving /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/man3 to /nix/store/6phmdnkjnzhxz2p4manxf9gh3bwlpvpj-perl5.32.0-File-Util-4.161950-devdoc/share/man/man3
+Removing empty /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950/lib
+patching script interpreter paths in /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950
+checking for references to /build/ in /nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6phmdnkjnzhxz2p4manxf9gh3bwlpvpj-perl5.32.0-File-Util-4.161950-devdoc
+gzipping man pages under /nix/store/6phmdnkjnzhxz2p4manxf9gh3bwlpvpj-perl5.32.0-File-Util-4.161950-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6phmdnkjnzhxz2p4manxf9gh3bwlpvpj-perl5.32.0-File-Util-4.161950-devdoc
+checking for references to /build/ in /nix/store/6phmdnkjnzhxz2p4manxf9gh3bwlpvpj-perl5.32.0-File-Util-4.161950-devdoc...
+/nix/store/76rrdcxs8na7wx56yj011cxcc84f640c-perl5.32.0-File-Util-4.161950

@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/znl9ifr6g7nqc897zq4zqxmapnsczrpf-perl5.32.0-boolean-0.46.drv
+building '/nix/store/znl9ifr6g7nqc897zq4zqxmapnsczrpf-perl5.32.0-boolean-0.46.drv'...
+unpacking sources
+unpacking source archive /nix/store/50cpv9h0c9a2nfxhhdlmv70w9ghn1d8f-boolean-0.46.tar.gz
+source root is boolean-0.46
+setting SOURCE_DATE_EPOCH to timestamp 1467998076 of file boolean-0.46/t/threads.t
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for boolean
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/boolean.pm blib/lib/boolean.pm
+cp lib/boolean.pod blib/lib/boolean.pod
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000-compile-modules.t .. ok
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/boolean.t .............. ok
+t/export.t ............... ok
+t/json.t ................. ok
+t/threads.t .............. ok
+All tests successful.
+Files=6, Tests=97,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.36 cusr  0.05 csys =  0.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/lib/pkgconfig m4datadir=/nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/share/aclocal aclocaldir=/nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/lib/perl5/site_perl/5.32.0/boolean.pod
+Installing /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/lib/perl5/site_perl/5.32.0/boolean.pm
+Installing /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/share/man/man3/boolean.3
+Appending installation info to /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/share/man/man3 to /nix/store/c6ac32j4y234036n78va58rjmrmr9lrf-perl5.32.0-boolean-0.46-devdoc/share/man/man3
+Removing empty /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46/lib
+patching script interpreter paths in /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46
+checking for references to /build/ in /nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c6ac32j4y234036n78va58rjmrmr9lrf-perl5.32.0-boolean-0.46-devdoc
+gzipping man pages under /nix/store/c6ac32j4y234036n78va58rjmrmr9lrf-perl5.32.0-boolean-0.46-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/c6ac32j4y234036n78va58rjmrmr9lrf-perl5.32.0-boolean-0.46-devdoc
+checking for references to /build/ in /nix/store/c6ac32j4y234036n78va58rjmrmr9lrf-perl5.32.0-boolean-0.46-devdoc...
+/nix/store/027syjaxxjrygswfplgq8qz9bhycsw3c-perl5.32.0-boolean-0.46

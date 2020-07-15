@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/kjhyiijwihpfrpvq11c52gqa0fh93lf2-perl5.32.0-Net-CIDR-0.20.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/jnvcvgnljlmjk5vmaj7kxj2xym988g35-Net-CIDR-0.20.tar.gz
+copying path '/nix/store/jnvcvgnljlmjk5vmaj7kxj2xym988g35-Net-CIDR-0.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kjhyiijwihpfrpvq11c52gqa0fh93lf2-perl5.32.0-Net-CIDR-0.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/jnvcvgnljlmjk5vmaj7kxj2xym988g35-Net-CIDR-0.20.tar.gz
+source root is Net-CIDR-0.20
+setting SOURCE_DATE_EPOCH to timestamp 1555465437 of file Net-CIDR-0.20/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::CIDR
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/CIDR.pm blib/lib/Net/CIDR.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" Net-CIDR.spec.PL Net-CIDR.spec
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/test.t .. ok
+All tests successful.
+Files=1, Tests=14,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/lib/pkgconfig m4datadir=/nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/share/aclocal aclocaldir=/nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/lib/perl5/site_perl/5.32.0/Net/CIDR.pm
+Installing /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/share/man/man3/Net::CIDR.3
+Appending installation info to /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/share/man/man3 to /nix/store/4k0v6y1rpaji889ldpvslxi446zics89-perl5.32.0-Net-CIDR-0.20-devdoc/share/man/man3
+Removing empty /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20/lib
+patching script interpreter paths in /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20
+checking for references to /build/ in /nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4k0v6y1rpaji889ldpvslxi446zics89-perl5.32.0-Net-CIDR-0.20-devdoc
+gzipping man pages under /nix/store/4k0v6y1rpaji889ldpvslxi446zics89-perl5.32.0-Net-CIDR-0.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4k0v6y1rpaji889ldpvslxi446zics89-perl5.32.0-Net-CIDR-0.20-devdoc
+checking for references to /build/ in /nix/store/4k0v6y1rpaji889ldpvslxi446zics89-perl5.32.0-Net-CIDR-0.20-devdoc...
+/nix/store/93wnbaa3zqkdbbqyifpn0l4ssdxfbx7g-perl5.32.0-Net-CIDR-0.20

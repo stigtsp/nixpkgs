@@ -1,0 +1,62 @@
+these derivations will be built:
+  /nix/store/wcnywd4pgg0a063ncwc5zrbd1vr5z7d7-perl5.32.0-App-cpanminus-1.7044.drv
+these paths will be fetched (0.30 MiB download, 0.30 MiB unpacked):
+  /nix/store/yx2h67h0xc8z8wlv9bph8v4mvrk06hhl-App-cpanminus-1.7044.tar.gz
+copying path '/nix/store/yx2h67h0xc8z8wlv9bph8v4mvrk06hhl-App-cpanminus-1.7044.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wcnywd4pgg0a063ncwc5zrbd1vr5z7d7-perl5.32.0-App-cpanminus-1.7044.drv'...
+unpacking sources
+unpacking source archive /nix/store/yx2h67h0xc8z8wlv9bph8v4mvrk06hhl-App-cpanminus-1.7044.tar.gz
+source root is App-cpanminus-1.7044
+setting SOURCE_DATE_EPOCH to timestamp 1524138876 of file App-cpanminus-1.7044/t/happy_cpantesters.t
+patching sources
+configuring
+patching ./t/happy_cpantesters.t...
+patching ./bin/cpanm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for App::cpanminus
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/App/cpanminus.pm blib/lib/App/cpanminus.pm
+cp lib/App/cpanminus/fatscript.pm blib/lib/App/cpanminus/fatscript.pm
+cp bin/cpanm blib/script/cpanm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cpanm
+Manifying 1 pod document
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/happy_cpantesters.t .. 1/1 # App::cpanminus/1.7044
+t/happy_cpantesters.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.05 cusr  0.00 csys =  0.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/lib/pkgconfig m4datadir=/nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/aclocal aclocaldir=/nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/lib/perl5/site_perl/5.32.0/App/cpanminus.pm
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/lib/perl5/site_perl/5.32.0/App/cpanminus/fatscript.pm
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man/man1/cpanm.1
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man/man3/App::cpanminus::fatscript.3
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man/man3/App::cpanminus.3
+Installing /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/bin/cpanm
+Appending installation info to /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man/man3 to /nix/store/jaf9m1g7dransgkwfd35nd2n0f7is3rs-perl5.32.0-App-cpanminus-1.7044-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044
+gzipping man pages under /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/lib  /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044/bin
+patching script interpreter paths in /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044
+checking for references to /build/ in /nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jaf9m1g7dransgkwfd35nd2n0f7is3rs-perl5.32.0-App-cpanminus-1.7044-devdoc
+gzipping man pages under /nix/store/jaf9m1g7dransgkwfd35nd2n0f7is3rs-perl5.32.0-App-cpanminus-1.7044-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jaf9m1g7dransgkwfd35nd2n0f7is3rs-perl5.32.0-App-cpanminus-1.7044-devdoc
+checking for references to /build/ in /nix/store/jaf9m1g7dransgkwfd35nd2n0f7is3rs-perl5.32.0-App-cpanminus-1.7044-devdoc...
+/nix/store/x3k0jlrqvq8mzz96kjwgbd8pg4idnzw7-perl5.32.0-App-cpanminus-1.7044

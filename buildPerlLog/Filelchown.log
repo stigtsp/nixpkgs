@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/0i696fyy11r61yhrg1yrwgwya9yg6p3f-perl5.32.0-File-lchown-0.02.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/krjyj82pfqvhg26xgm88yhnf9m6pxxzk-File-lchown-0.02.tar.gz
+copying path '/nix/store/krjyj82pfqvhg26xgm88yhnf9m6pxxzk-File-lchown-0.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0i696fyy11r61yhrg1yrwgwya9yg6p3f-perl5.32.0-File-lchown-0.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/krjyj82pfqvhg26xgm88yhnf9m6pxxzk-File-lchown-0.02.tar.gz
+source root is File-lchown-0.02
+setting SOURCE_DATE_EPOCH to timestamp 1267489010 of file File-lchown-0.02/t/99pod.t
+patching sources
+configuring
+patching ./t/02lutimes.t...
+patching ./t/01lchown.t...
+patching ./t/99pod.t...
+patching ./t/00use.t...
+# running Build.PL --prefix /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+test-53-1.c: In function 'main':
+test-53-1.c:4:6: warning: implicit declaration of function 'lutimes' [-Wimplicit-function-declaration]
+    4 |   if(lutimes(".", NULL) != 0)
+      |      ^~~~~~~
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-lchown' version '0.02'
+no configure script, doing nothing
+building
+test-121-1.c: In function 'main':
+test-121-1.c:4:6: warning: implicit declaration of function 'lutimes' [-Wimplicit-function-declaration]
+    4 |   if(lutimes(".", NULL) != 0)
+      |      ^~~~~~~
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-lchown' version '0.02'
+Building File-lchown
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.02" -DXS_VERSION="0.02" -fPIC -DHAVE_LUTIMES -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/File/lchown.o lib/File/lchown.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/File/lchown/lchown.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/File/lchown/lchown.so lib/File/lchown.o
+running tests
+t/00use.t ...... ok
+t/01lchown.t ... ok
+t/02lutimes.t .. ok
+t/99pod.t ...... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=4, Tests=9,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.20 cusr  0.08 csys =  0.31 CPU)
+Result: PASS
+installing
+Building File-lchown
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/lchown/lchown.bs
+Installing /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/lchown/lchown.so
+Installing /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/lchown.pm
+Installing /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/share/man/man3/File::lchown.3
+post-installation fixup
+Moving /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/share/man/man3 to /nix/store/xg5kabhfc4zddb2qc93m5l60r34r5kj7-perl5.32.0-File-lchown-0.02-devdoc/share/man/man3
+Removing empty /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02
+shrinking /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/lchown/lchown.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02/lib
+patching script interpreter paths in /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02
+checking for references to /build/ in /nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xg5kabhfc4zddb2qc93m5l60r34r5kj7-perl5.32.0-File-lchown-0.02-devdoc
+gzipping man pages under /nix/store/xg5kabhfc4zddb2qc93m5l60r34r5kj7-perl5.32.0-File-lchown-0.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xg5kabhfc4zddb2qc93m5l60r34r5kj7-perl5.32.0-File-lchown-0.02-devdoc
+checking for references to /build/ in /nix/store/xg5kabhfc4zddb2qc93m5l60r34r5kj7-perl5.32.0-File-lchown-0.02-devdoc...
+/nix/store/k45rifc9g6ifhv01kzsxa43zj1116yyg-perl5.32.0-File-lchown-0.02

@@ -1,0 +1,650 @@
+these derivations will be built:
+  /nix/store/bjcirkqjvpq469ggrip9rga0x8gpkn9l-perl5.32.0-Params-Validate-1.29.drv
+  /nix/store/gwbncxymsmmy7x3vf9r675h6m44rfhis-perl5.32.0-Getopt-Long-Descriptive-0.105.drv
+  /nix/store/lha8ayqyp86jyap6ml1sn4xm8702h61q-perl5.32.0-IO-TieCombine-1.005.drv
+  /nix/store/rzfkvvr045zslqp7a71gw08c1cxqfsmr-perl5.32.0-String-RewritePrefix-0.008.drv
+  /nix/store/1m7rs75lkv6sxaz66ivqh10jxf630l6m-perl5.32.0-App-Cmd-0.331.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/8y7k28vmcp9c62cmyacfs10dh7hi3d91-App-Cmd-0.331.tar.gz
+  /nix/store/ss1mjlj63dr4k96bm1h219pxybd4m0v5-String-RewritePrefix-0.008.tar.gz
+copying path '/nix/store/8y7k28vmcp9c62cmyacfs10dh7hi3d91-App-Cmd-0.331.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ss1mjlj63dr4k96bm1h219pxybd4m0v5-String-RewritePrefix-0.008.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lha8ayqyp86jyap6ml1sn4xm8702h61q-perl5.32.0-IO-TieCombine-1.005.drv'...
+building '/nix/store/bjcirkqjvpq469ggrip9rga0x8gpkn9l-perl5.32.0-Params-Validate-1.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/bii9k925zs7ql7xa53hplkd17kfxqv89-IO-TieCombine-1.005.tar.gz
+source root is IO-TieCombine-1.005
+setting SOURCE_DATE_EPOCH to timestamp 1446257892 of file IO-TieCombine-1.005/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/basic.t...
+unpacking sources
+unpacking source archive /nix/store/ylr934a0axajf85236859ir51kbfzfx2-Params-Validate-1.29.tar.gz
+source root is Params-Validate-1.29
+setting SOURCE_DATE_EPOCH to timestamp 1497204246 of file Params-Validate-1.29/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+building '/nix/store/rzfkvvr045zslqp7a71gw08c1cxqfsmr-perl5.32.0-String-RewritePrefix-0.008.drv'...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pp-31-incorrect-spelling.t...
+patching ./xt/author/synopsis.t...
+Checking if your kit is complete...
+patching ./xt/author/pp-29-taint-mode.t...
+patching ./xt/author/pp-19-untaint.t...
+Looks good
+patching ./t/00-report-prereqs.t...
+unpacking sources
+unpacking source archive /nix/store/ss1mjlj63dr4k96bm1h219pxybd4m0v5-String-RewritePrefix-0.008.tar.gz
+source root is String-RewritePrefix-0.008
+setting SOURCE_DATE_EPOCH to timestamp 1579986632 of file String-RewritePrefix-0.008/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./t/29-taint-mode.t...
+patching ./xt/author/pod-syntax.t...
+Generating a Unix-style Makefile
+Writing Makefile for IO::TieCombine
+patching ./t/00-report-prereqs.t...
+patching ./t/31-incorrect-spelling.t...
+patching ./t/19-untaint.t...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for String::RewritePrefix
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/TieCombine/Handle.pm blib/lib/IO/TieCombine/Handle.pm
+cp lib/IO/TieCombine/Scalar.pm blib/lib/IO/TieCombine/Scalar.pm
+cp lib/IO/TieCombine.pm blib/lib/IO/TieCombine.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Params-Validate' version '1.29'
+cp lib/String/RewritePrefix.pm blib/lib/String/RewritePrefix.pm
+Manifying 1 pod document
+Building Params-Validate
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module   Want Have
+#     -------- ---- ----
+#     Carp      any 1.50
+#     Symbol    any 1.08
+#     strict    any 1.11
+#     warnings  any 1.47
+#
+t/00-report-prereqs.t .. ok
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.29" -DXS_VERSION="1.29" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Params/Validate/XS.o lib/Params/Validate/XS.c
+t/basic.t .............. ok
+All tests successful.
+Files=2, Tests=7,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.22 cusr  0.03 csys =  0.27 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib/pkgconfig m4datadir=/nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/aclocal aclocaldir=/nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib/perl5/site_perl/5.32.0/IO/TieCombine.pm
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib/perl5/site_perl/5.32.0/IO/TieCombine/Handle.pm
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib/perl5/site_perl/5.32.0/IO/TieCombine/Scalar.pm
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/man/man3/IO::TieCombine::Handle.3
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/man/man3/IO::TieCombine.3
+Installing /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/man/man3/IO::TieCombine::Scalar.3
+Appending installation info to /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/man/man3 to /nix/store/51pavwy9vl8c4v8xb81zjln61dxkh92b-perl5.32.0-IO-TieCombine-1.005-devdoc/share/man/man3
+Removing empty /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005/lib
+patching script interpreter paths in /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005
+checking for references to /build/ in /nix/store/f6xy27dgn10k5kj4i9q2mp6rg6fy202q-perl5.32.0-IO-TieCombine-1.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/51pavwy9vl8c4v8xb81zjln61dxkh92b-perl5.32.0-IO-TieCombine-1.005-devdoc
+gzipping man pages under /nix/store/51pavwy9vl8c4v8xb81zjln61dxkh92b-perl5.32.0-IO-TieCombine-1.005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/51pavwy9vl8c4v8xb81zjln61dxkh92b-perl5.32.0-IO-TieCombine-1.005-devdoc
+checking for references to /build/ in /nix/store/51pavwy9vl8c4v8xb81zjln61dxkh92b-perl5.32.0-IO-TieCombine-1.005-devdoc...
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module         Want  Have
+#     ------------- ----- -----
+#     Carp            any  1.50
+#     Sub::Exporter 0.972 0.987
+#     strict          any  1.11
+#     warnings        any  1.47
+#
+t/00-report-prereqs.t .. ok
+In file included from lib/Params/Validate/XS.xs:12:
+c/ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from lib/Params/Validate/XS.xs:4:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+t/basic.t .............. ok
+t/rewrite_sub.t ........ ok
+All tests successful.
+Files=3, Tests=39,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.33 cusr  0.08 csys =  0.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/pkgconfig m4datadir=/nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/share/aclocal aclocaldir=/nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/perl5/site_perl/5.32.0/String/RewritePrefix.pm
+Installing /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/share/man/man3/String::RewritePrefix.3
+Appending installation info to /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/share/man/man3 to /nix/store/r8ilcwz83y4gc61594vdc28jwrpkmzbk-perl5.32.0-String-RewritePrefix-0.008-devdoc/share/man/man3
+Removing empty /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008/lib
+patching script interpreter paths in /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008
+checking for references to /build/ in /nix/store/9pr4xfcv9m7whjd5y6zgxzlmc49a6lw6-perl5.32.0-String-RewritePrefix-0.008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r8ilcwz83y4gc61594vdc28jwrpkmzbk-perl5.32.0-String-RewritePrefix-0.008-devdoc
+gzipping man pages under /nix/store/r8ilcwz83y4gc61594vdc28jwrpkmzbk-perl5.32.0-String-RewritePrefix-0.008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r8ilcwz83y4gc61594vdc28jwrpkmzbk-perl5.32.0-String-RewritePrefix-0.008-devdoc
+checking for references to /build/ in /nix/store/r8ilcwz83y4gc61594vdc28jwrpkmzbk-perl5.32.0-String-RewritePrefix-0.008-devdoc...
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Params/Validate/XS/XS.bs')
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Params/Validate/XS/XS.so lib/Params/Validate/XS.o
+running tests
+t/00-report-prereqs.t ........ #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module        Want   Have
+#     ------------- ---- ------
+#     Module::Build 0.28 0.4231
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module             Want     Have
+#     ------------------ ---- --------
+#     ExtUtils::CBuilder  any 0.280234
+#     Module::Build      0.28   0.4231
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Devel::Peek          any     1.28
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     Test::Requires       any     0.11
+#     Tie::Array           any     1.07
+#     Tie::Hash            any     1.05
+#     base                 any     2.27
+#     lib                  any     0.65
+#     overload             any     1.31
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                 Want Have
+#     ---------------------- ---- ----
+#     Carp                    any 1.50
+#     Exporter                any 5.74
+#     Module::Implementation  any 0.09
+#     Scalar::Util           1.10 1.55
+#     XSLoader                any 0.30
+#     strict                  any 1.11
+#     vars                    any 1.05
+#     warnings                any 1.47
+#
+t/00-report-prereqs.t ........ ok
+t/01-validate.t .............. ok
+t/02-noop.t .................. ok
+t/04-defaults.t .............. ok
+t/05-noop_default.t .......... ok
+t/06-options.t ............... ok
+t/07-with.t .................. ok
+t/08-noop_with.t ............. ok
+t/09-regex.t ................. ok
+t/10-noop_regex.t ............ ok
+t/11-cb.t .................... ok
+t/12-noop_cb.t ............... ok
+t/13-taint.t ................. ok
+t/14-no_validate.t ........... ok
+t/15-case.t .................. ok
+t/16-normalize.t ............. ok
+t/17-callbacks.t ............. ok
+t/18-depends.t ............... ok
+t/19-untaint.t ............... skipped: Test requires module 'Test::Taint' but it's not found
+t/21-can.t ................... ok
+t/22-overload-can-bug.t ...... ok
+t/23-readonly.t .............. skipped: Test requires module 'Readonly' but it's not found
+t/24-tied.t .................. ok
+t/25-undef-regex.t ........... ok
+t/26-isa.t ................... ok
+t/27-string-as-type.t ........ ok
+t/28-readonly-return.t ....... ok
+t/29-taint-mode.t ............ skipped: Test requires module 'Test::Taint' but it's not found
+t/30-hashref-alteration.t .... ok
+t/31-incorrect-spelling.t .... skipped: Spec validation is disabled for now
+t/32-regex-as-value.t ........ ok
+t/33-keep-errsv.t ............ ok
+t/34-recursive-validation.t .. ok
+t/35-default-xs-bug.t ........ ok
+t/36-large-arrays.t .......... ok
+t/37-exports.t ............... ok
+t/38-callback-message.t ...... ok
+t/39-reentrant.t ............. ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/34-recursive-validation.t (Wstat: 0 Tests: 1 Failed: 0)
+  TODO passed:   1
+Files=38, Tests=2512,  3 wallclock secs ( 0.27 usr  0.04 sys +  2.77 cusr  0.77 csys =  3.85 CPU)
+Result: PASS
+installing
+Building Params-Validate
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.bs
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/ValidateXS.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/ValidatePP.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/Validate.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/Validate/XS.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/Validate/PP.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Params/Validate/Constants.pm
+Installing /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/share/man/man3/Params::Validate.3
+post-installation fixup
+Moving /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/share/man/man3 to /nix/store/d6cijan1gzp6b5yz0jyjqf4mrm7cmbal-perl5.32.0-Params-Validate-1.29-devdoc/share/man/man3
+Removing empty /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29
+shrinking /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29/lib
+patching script interpreter paths in /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29
+checking for references to /build/ in /nix/store/rhnywcr3vdds3yrn1mh3gz5972mrr58h-perl5.32.0-Params-Validate-1.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d6cijan1gzp6b5yz0jyjqf4mrm7cmbal-perl5.32.0-Params-Validate-1.29-devdoc
+gzipping man pages under /nix/store/d6cijan1gzp6b5yz0jyjqf4mrm7cmbal-perl5.32.0-Params-Validate-1.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d6cijan1gzp6b5yz0jyjqf4mrm7cmbal-perl5.32.0-Params-Validate-1.29-devdoc
+checking for references to /build/ in /nix/store/d6cijan1gzp6b5yz0jyjqf4mrm7cmbal-perl5.32.0-Params-Validate-1.29-devdoc...
+building '/nix/store/gwbncxymsmmy7x3vf9r675h6m44rfhis-perl5.32.0-Getopt-Long-Descriptive-0.105.drv'...
+unpacking sources
+unpacking source archive /nix/store/nfh3fs9xpnwqshlsz6pv4fx7b9nwkxb3-Getopt-Long-Descriptive-0.105.tar.gz
+source root is Getopt-Long-Descriptive-0.105
+setting SOURCE_DATE_EPOCH to timestamp 1582670439 of file Getopt-Long-Descriptive-0.105/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/descriptive.t...
+patching ./t/shortcircuit.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Getopt::Long::Descriptive
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Getopt/Long/Descriptive.pm blib/lib/Getopt/Long/Descriptive.pm
+cp lib/Getopt/Long/Descriptive/Opts.pm blib/lib/Getopt/Long/Descriptive/Opts.pm
+cp lib/Getopt/Long/Descriptive/Usage.pm blib/lib/Getopt/Long/Descriptive/Usage.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                    Want     Have
+#     ------------------------ ----- --------
+#     CPAN::Meta::Check        0.011    0.014
+#     CPAN::Meta::Requirements   any    2.140
+#     ExtUtils::MakeMaker        any     7.44
+#     File::Spec                 any     3.78
+#     Test::Fatal                any    0.014
+#     Test::More                0.96 1.302175
+#     Test::Warnings           0.005    0.030
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Carp                  any  1.50
+#     File::Basename        any  2.85
+#     Getopt::Long         2.33  2.51
+#     List::Util            any  1.55
+#     Params::Validate     0.97  1.29
+#     Scalar::Util          any  1.55
+#     Sub::Exporter       0.972 0.987
+#     Sub::Exporter::Util   any 0.987
+#     overload              any  1.31
+#     strict                any  1.11
+#     warnings              any  1.47
+#
+t/00-report-prereqs.t .. ok
+t/descriptive.t ........ ok
+t/shortcircuit.t ....... ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=4, Tests=74,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.50 cusr  0.26 csys =  0.81 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/pkgconfig m4datadir=/nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/aclocal aclocaldir=/nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl/5.32.0/Getopt/Long/Descriptive.pm
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl/5.32.0/Getopt/Long/Descriptive/Opts.pm
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/site_perl/5.32.0/Getopt/Long/Descriptive/Usage.pm
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/man/man3/Getopt::Long::Descriptive.3
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/man/man3/Getopt::Long::Descriptive::Usage.3
+Installing /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/man/man3/Getopt::Long::Descriptive::Opts.3
+Appending installation info to /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/man/man3 to /nix/store/hiqkp69p0lv47rqjkdlchp3fpsmbirmk-perl5.32.0-Getopt-Long-Descriptive-0.105-devdoc/share/man/man3
+Removing empty /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105/lib
+patching script interpreter paths in /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105
+checking for references to /build/ in /nix/store/ina9i945dhmgjfizafw3cj8q2ybh32nh-perl5.32.0-Getopt-Long-Descriptive-0.105...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hiqkp69p0lv47rqjkdlchp3fpsmbirmk-perl5.32.0-Getopt-Long-Descriptive-0.105-devdoc
+gzipping man pages under /nix/store/hiqkp69p0lv47rqjkdlchp3fpsmbirmk-perl5.32.0-Getopt-Long-Descriptive-0.105-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hiqkp69p0lv47rqjkdlchp3fpsmbirmk-perl5.32.0-Getopt-Long-Descriptive-0.105-devdoc
+checking for references to /build/ in /nix/store/hiqkp69p0lv47rqjkdlchp3fpsmbirmk-perl5.32.0-Getopt-Long-Descriptive-0.105-devdoc...
+building '/nix/store/1m7rs75lkv6sxaz66ivqh10jxf630l6m-perl5.32.0-App-Cmd-0.331.drv'...
+unpacking sources
+unpacking source archive /nix/store/8y7k28vmcp9c62cmyacfs10dh7hi3d91-App-Cmd-0.331.tar.gz
+source root is App-Cmd-0.331
+setting SOURCE_DATE_EPOCH to timestamp 1468785376 of file App-Cmd-0.331/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/abbrev.t...
+patching ./t/callback.t...
+patching ./t/simple-args.t...
+patching ./t/version.t...
+patching ./t/tester-exit.t...
+patching ./t/simple-help.t...
+patching ./t/simple-require.t...
+patching ./t/subdispatch.t...
+patching ./t/00-load.t...
+patching ./t/tester-exit.helper.pl...
+patching ./t/setup-inner.t...
+patching ./t/basic.t...
+patching ./t/setup.t...
+patching ./t/setup-nocmd.t...
+patching ./t/capture-ext.t...
+patching ./t/simple-use.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for App::Cmd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/App/Cmd/Subdispatch.pm blib/lib/App/Cmd/Subdispatch.pm
+cp lib/App/Cmd/Tester/CaptureExternal.pm blib/lib/App/Cmd/Tester/CaptureExternal.pm
+cp lib/App/Cmd/Simple.pm blib/lib/App/Cmd/Simple.pm
+cp lib/App/Cmd/Command/version.pm blib/lib/App/Cmd/Command/version.pm
+cp lib/App/Cmd/Tester.pm blib/lib/App/Cmd/Tester.pm
+cp lib/App/Cmd.pm blib/lib/App/Cmd.pm
+cp lib/App/Cmd/Plugin.pm blib/lib/App/Cmd/Plugin.pm
+cp lib/App/Cmd/Tutorial.pod blib/lib/App/Cmd/Tutorial.pod
+cp lib/App/Cmd/ArgProcessor.pm blib/lib/App/Cmd/ArgProcessor.pm
+cp lib/App/Cmd/Setup.pm blib/lib/App/Cmd/Setup.pm
+cp lib/App/Cmd/Command/help.pm blib/lib/App/Cmd/Command/help.pm
+cp lib/App/Cmd/Command/commands.pm blib/lib/App/Cmd/Command/commands.pm
+cp lib/App/Cmd/Subdispatch/DashedStyle.pm blib/lib/App/Cmd/Subdispatch/DashedStyle.pm
+cp lib/App/Cmd/Command.pm blib/lib/App/Cmd/Command.pm
+Manifying 14 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ 1/5 # Testing App::Cmd 0.331
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Data::Dumper         any    2.174
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     IPC::Cmd             any     1.04
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     base                 any     2.27
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                     Want  Have
+#     ------------------------- ----- -----
+#     Capture::Tiny              0.13  0.48
+#     Carp                        any  1.50
+#     Class::Load                0.06  0.25
+#     Data::OptList               any 0.110
+#     File::Basename              any  2.85
+#     Getopt::Long               2.39  2.51
+#     Getopt::Long::Descriptive 0.084 0.105
+#     IO::TieCombine              any 1.005
+#     Module::Pluggable::Object   any   5.2
+#     Pod::Usage                 1.61  1.69
+#     String::RewritePrefix       any 0.008
+#     Sub::Exporter               any 0.987
+#     Sub::Exporter::Util         any 0.987
+#     Sub::Install                any 0.928
+#     Text::Abbrev                any  1.02
+#     constant                    any  1.33
+#     parent                      any 0.238
+#     strict                      any  1.11
+#     warnings                    any  1.47
+#
+t/00-report-prereqs.t .. ok
+t/abbrev.t ............. ok
+t/basic.t .............. ok
+t/callback.t ........... ok
+t/capture-ext.t ........ ok
+t/setup-broken.t ....... ok
+t/setup-ignored.t ...... ok
+t/setup-inner.t ........ ok
+t/setup-nocmd.t ........ ok
+t/setup.t .............. ok
+t/simple-args.t ........ ok
+t/simple-help.t ........ ok
+t/simple-require.t ..... ok
+t/simple-use.t ......... ok
+t/subdispatch.t ........ ok
+t/tester-exit.t ........ ok
+t/version.t ............ ok
+All tests successful.
+Files=18, Tests=81,  4 wallclock secs ( 0.07 usr  0.02 sys +  2.57 cusr  1.68 csys =  4.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/pkgconfig m4datadir=/nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/aclocal aclocaldir=/nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/aclocal install
+Manifying 14 pod documents
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Setup.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Subdispatch.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/ArgProcessor.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Plugin.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Command.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Tester.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Tutorial.pod
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Simple.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Command/version.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Command/help.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Command/commands.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Tester/CaptureExternal.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/site_perl/5.32.0/App/Cmd/Subdispatch/DashedStyle.pm
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Subdispatch::DashedStyle.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Tutorial.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Command.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Plugin.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Tester.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Command::help.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::ArgProcessor.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Subdispatch.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Simple.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Tester::CaptureExternal.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Command::commands.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Command::version.3
+Installing /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3/App::Cmd::Setup.3
+Appending installation info to /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/man3 to /nix/store/8w2vbgvan3viqcyb668cmyln355dhzm1-perl5.32.0-App-Cmd-0.331-devdoc/share/man/man3
+Removing empty /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331/lib
+patching script interpreter paths in /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331
+checking for references to /build/ in /nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8w2vbgvan3viqcyb668cmyln355dhzm1-perl5.32.0-App-Cmd-0.331-devdoc
+gzipping man pages under /nix/store/8w2vbgvan3viqcyb668cmyln355dhzm1-perl5.32.0-App-Cmd-0.331-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8w2vbgvan3viqcyb668cmyln355dhzm1-perl5.32.0-App-Cmd-0.331-devdoc
+checking for references to /build/ in /nix/store/8w2vbgvan3viqcyb668cmyln355dhzm1-perl5.32.0-App-Cmd-0.331-devdoc...
+/nix/store/jjlj2yf58iy5f9mnz9xz703k9fzbr373-perl5.32.0-App-Cmd-0.331

@@ -1,0 +1,139 @@
+these derivations will be built:
+  /nix/store/rfwvk8m3n96nbvwvnxm0n2bq7mpi3qcj-perl5.32.0-RPC-XML-0.80.drv
+these paths will be fetched (0.20 MiB download, 0.20 MiB unpacked):
+  /nix/store/f7js4sh3bfryx9w28sdbcdmin39aw0xb-RPC-XML-0.80.tar.gz
+copying path '/nix/store/f7js4sh3bfryx9w28sdbcdmin39aw0xb-RPC-XML-0.80.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rfwvk8m3n96nbvwvnxm0n2bq7mpi3qcj-perl5.32.0-RPC-XML-0.80.drv'...
+unpacking sources
+unpacking source archive /nix/store/f7js4sh3bfryx9w28sdbcdmin39aw0xb-RPC-XML-0.80.tar.gz
+source root is RPC-XML-0.80
+setting SOURCE_DATE_EPOCH to timestamp 1462738506 of file RPC-XML-0.80/MANIFEST
+patching sources
+configuring
+patching ./xt/05_critic.t...
+patching ./xt/02_pod_coverage.t...
+patching ./xt/04_minimumversion.t...
+patching ./xt/01_pod.t...
+patching ./xt/03_meta.t...
+patching ./t/20_xml_parser.t...
+patching ./t/70_compression_detect.t...
+patching ./t/90_rt58323_push_parser.t...
+patching ./t/90_rt54183_sigpipe.t...
+patching ./t/30_procedure.t...
+patching ./t/35_namespaces.t...
+patching ./t/90_rt50013_parser_bugs.t...
+patching ./t/15_serialize.t...
+patching ./t/60_net_server.t...
+patching ./t/51_client_with_host_header.t...
+patching ./t/50_client.t...
+patching ./t/90_rt54494_blessed_refs.t...
+patching ./t/40_server_xmllibxml.t...
+patching ./t/29_parserfactory.t...
+patching ./t/00_load.t...
+patching ./t/11_base64_fh.t...
+patching ./t/12_nil.t...
+patching ./t/14_datetime_iso8601.t...
+patching ./t/21_xml_libxml.t...
+patching ./t/41_server_hang.t...
+patching ./t/10_data.t...
+patching ./t/90_rt58065_allow_nil.t...
+patching ./t/13_no_deep_recursion.t...
+patching ./t/25_parser_negative.t...
+patching ./t/40_server.t...
+patching ./etc/make_method...
+@@@@@
+        XML::LibXML not found
+
+        You may ignore the warnings about XML::LibXML not being present, if
+        you plan only to use the XML::Parser-based parsing engine. The use
+        of XML::LibXML is completely optional.
+@@@@@
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for RPC::XML
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=lib/Apache/RPC/status
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/identity
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/introspection
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/listMethods
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/methodHelp
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/methodSignature
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/multicall
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" etc/make_method --base=methods/status
+cp lib/RPC/XML/Parser/XMLLibXML.pm blib/lib/RPC/XML/Parser/XMLLibXML.pm
+cp lib/RPC/XML/ParserFactory.pm blib/lib/RPC/XML/ParserFactory.pm
+cp methods/introspection.xpl blib/lib/RPC/XML/introspection.xpl
+cp methods/status.xpl blib/lib/RPC/XML/status.xpl
+cp lib/RPC/XML.pm blib/lib/RPC/XML.pm
+cp methods/methodHelp.xpl blib/lib/RPC/XML/methodHelp.xpl
+cp methods/listMethods.xpl blib/lib/RPC/XML/listMethods.xpl
+cp lib/Apache/RPC/Server.pm blib/lib/Apache/RPC/Server.pm
+cp lib/RPC/XML/Parser.pm blib/lib/RPC/XML/Parser.pm
+cp methods/identity.xpl blib/lib/RPC/XML/identity.xpl
+cp lib/Apache/RPC/Status.pm blib/lib/Apache/RPC/Status.pm
+cp lib/RPC/XML/Server.pm blib/lib/RPC/XML/Server.pm
+cp methods/multicall.xpl blib/lib/RPC/XML/multicall.xpl
+cp methods/methodSignature.xpl blib/lib/RPC/XML/methodSignature.xpl
+cp lib/RPC/XML/Procedure.pm blib/lib/RPC/XML/Procedure.pm
+cp lib/Apache/RPC/status.xpl blib/lib/Apache/RPC/status.xpl
+cp lib/RPC/XML/Parser/XMLParser.pm blib/lib/RPC/XML/Parser/XMLParser.pm
+cp lib/RPC/XML/Client.pm blib/lib/RPC/XML/Client.pm
+cp etc/make_method blib/script/make_method
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/make_method
+Manifying 1 pod document
+Manifying 10 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/pkgconfig m4datadir=/nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/aclocal aclocaldir=/nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/aclocal install
+Manifying 1 pod document
+Manifying 10 pod documents
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/Apache/RPC/status.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/Apache/RPC/Server.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/Apache/RPC/Status.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Parser.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/identity.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/status.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Procedure.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/introspection.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/multicall.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Server.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/methodSignature.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Client.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/ParserFactory.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/listMethods.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/methodHelp.xpl
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Parser/XMLParser.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/site_perl/5.32.0/RPC/XML/Parser/XMLLibXML.pm
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man1/make_method.1
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Server.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Client.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::ParserFactory.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Parser::XMLParser.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Procedure.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/Apache::RPC::Status.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/Apache::RPC::Server.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Parser::XMLLibXML.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3/RPC::XML::Parser.3
+Installing /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/bin/make_method
+Appending installation info to /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/man3 to /nix/store/g043a5749gp81771np372cxk8xql4s9y-perl5.32.0-RPC-XML-0.80-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80
+gzipping man pages under /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/lib  /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80/bin
+patching script interpreter paths in /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80
+checking for references to /build/ in /nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80...
+shrinking RPATHs of ELF executables and libraries in /nix/store/g043a5749gp81771np372cxk8xql4s9y-perl5.32.0-RPC-XML-0.80-devdoc
+gzipping man pages under /nix/store/g043a5749gp81771np372cxk8xql4s9y-perl5.32.0-RPC-XML-0.80-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/g043a5749gp81771np372cxk8xql4s9y-perl5.32.0-RPC-XML-0.80-devdoc
+checking for references to /build/ in /nix/store/g043a5749gp81771np372cxk8xql4s9y-perl5.32.0-RPC-XML-0.80-devdoc...
+/nix/store/yr1jcq3y0hcdfdf6ic65la6xvf72l0ig-perl5.32.0-RPC-XML-0.80

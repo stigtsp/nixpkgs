@@ -1,0 +1,85 @@
+these derivations will be built:
+  /nix/store/2p408z0wi0jl5p2zv31v9wya8n82c7l8-perl5.32.0-Plack-App-Proxy-0.29.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/wi33gim7iaqlavwr1zz1gscbrm5r086l-Plack-App-Proxy-0.29.tar.gz
+copying path '/nix/store/wi33gim7iaqlavwr1zz1gscbrm5r086l-Plack-App-Proxy-0.29.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2p408z0wi0jl5p2zv31v9wya8n82c7l8-perl5.32.0-Plack-App-Proxy-0.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/wi33gim7iaqlavwr1zz1gscbrm5r086l-Plack-App-Proxy-0.29.tar.gz
+source root is Plack-App-Proxy-0.29
+setting SOURCE_DATE_EPOCH to timestamp 1377962847 of file Plack-App-Proxy-0.29/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Plack::App::Proxy
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Plack/Middleware/Proxy/AddVia.pm blib/lib/Plack/Middleware/Proxy/AddVia.pm
+cp lib/Plack/App/Proxy/Backend/AnyEvent/HTTP.pm blib/lib/Plack/App/Proxy/Backend/AnyEvent/HTTP.pm
+cp lib/Plack/Middleware/Proxy/Connect.pm blib/lib/Plack/Middleware/Proxy/Connect.pm
+cp lib/Plack/App/Proxy/Backend.pm blib/lib/Plack/App/Proxy/Backend.pm
+cp lib/Plack/Middleware/Proxy/RewriteLocation.pm blib/lib/Plack/Middleware/Proxy/RewriteLocation.pm
+cp lib/Plack/App/Proxy/Backend/LWP.pm blib/lib/Plack/App/Proxy/Backend/LWP.pm
+cp lib/Plack/Middleware/Proxy/LoadBalancer.pm blib/lib/Plack/Middleware/Proxy/LoadBalancer.pm
+cp lib/Plack/App/Proxy/Test.pm blib/lib/Plack/App/Proxy/Test.pm
+cp lib/Plack/App/Proxy.pm blib/lib/Plack/App/Proxy.pm
+Manifying 9 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/00-load.t ......................... 1/1 # Testing Plack::App::Proxy 0.29, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ......................... ok
+t/basic.t ........................... ok
+t/deflate.t ......................... skipped: Test requires module 'Plack::Middleware::Deflater' but it's not found
+t/filter_headers.t .................. ok
+t/middleware/addvia.t ............... ok
+t/middleware/connect.t .............. Use of uninitialized value $remote in pattern match (m//) at t/middleware/connect.t line 50.
+t/middleware/connect.t .............. ok
+t/middleware/loadbalancer.t ......... ok
+t/middleware/rewrite-auto_guess.t ... ok
+t/middleware/rewrite-guess_fails.t .. ok
+t/middleware/rewrite.t .............. ok
+t/status.t .......................... ok
+All tests successful.
+Files=11, Tests=155,  9 wallclock secs ( 0.10 usr  0.04 sys +  4.85 cusr  3.68 csys =  8.67 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/pkgconfig m4datadir=/nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/aclocal aclocaldir=/nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/aclocal install
+Manifying 9 pod documents
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/App/Proxy.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/App/Proxy/Backend.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/App/Proxy/Test.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/App/Proxy/Backend/LWP.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/App/Proxy/Backend/AnyEvent/HTTP.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/Middleware/Proxy/AddVia.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/Middleware/Proxy/Connect.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/Middleware/Proxy/LoadBalancer.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/site_perl/5.32.0/Plack/Middleware/Proxy/RewriteLocation.pm
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::App::Proxy.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::Middleware::Proxy::AddVia.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::App::Proxy::Test.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::App::Proxy::Backend::LWP.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::App::Proxy::Backend::AnyEvent::HTTP.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::Middleware::Proxy::RewriteLocation.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::Middleware::Proxy::LoadBalancer.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::App::Proxy::Backend.3
+Installing /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3/Plack::Middleware::Proxy::Connect.3
+Appending installation info to /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/man3 to /nix/store/7lg2z57bcx4m7pwbd4qbr7m0dd0l6aya-perl5.32.0-Plack-App-Proxy-0.29-devdoc/share/man/man3
+Removing empty /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29/lib
+patching script interpreter paths in /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29
+checking for references to /build/ in /nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7lg2z57bcx4m7pwbd4qbr7m0dd0l6aya-perl5.32.0-Plack-App-Proxy-0.29-devdoc
+gzipping man pages under /nix/store/7lg2z57bcx4m7pwbd4qbr7m0dd0l6aya-perl5.32.0-Plack-App-Proxy-0.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7lg2z57bcx4m7pwbd4qbr7m0dd0l6aya-perl5.32.0-Plack-App-Proxy-0.29-devdoc
+checking for references to /build/ in /nix/store/7lg2z57bcx4m7pwbd4qbr7m0dd0l6aya-perl5.32.0-Plack-App-Proxy-0.29-devdoc...
+/nix/store/dc2a9djmgj40nfv08pyclwmbr9xf7p13-perl5.32.0-Plack-App-Proxy-0.29

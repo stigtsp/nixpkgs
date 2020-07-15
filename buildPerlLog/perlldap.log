@@ -1,0 +1,331 @@
+these derivations will be built:
+  /nix/store/95bpvkf6svf8zvnnja5zq1vs2nhhgkk3-perl5.32.0-perl-ldap-0.66.drv
+these paths will be fetched (0.30 MiB download, 0.30 MiB unpacked):
+  /nix/store/8h5gcc6r4xl67lwrid86ap5p7gwbqmyb-perl-ldap-0.66.tar.gz
+copying path '/nix/store/8h5gcc6r4xl67lwrid86ap5p7gwbqmyb-perl-ldap-0.66.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/95bpvkf6svf8zvnnja5zq1vs2nhhgkk3-perl5.32.0-perl-ldap-0.66.drv'...
+unpacking sources
+unpacking source archive /nix/store/8h5gcc6r4xl67lwrid86ap5p7gwbqmyb-perl-ldap-0.66.tar.gz
+source root is perl-ldap-0.66
+setting SOURCE_DATE_EPOCH to timestamp 1555406928 of file perl-ldap-0.66/SIGNATURE
+patching sources
+configuring
+patching ./install-nomake...
+patching ./t/03schema.t...
+patching ./t/48url.t...
+patching ./t/00ldif-entry.t...
+patching ./t/72postread.t...
+patching ./t/01canon_dn.t...
+patching ./t/60cancel.t...
+patching ./t/73assert.t...
+patching ./t/04refloop.t...
+patching ./t/46ssl.t...
+patching ./t/49lwp.t...
+patching ./t/02filter.t...
+patching ./t/71preread.t...
+patching ./t/07filtermatch.t...
+patching ./t/74matchedvalues.t...
+patching ./t/44schema.t...
+patching ./t/43modify.t...
+patching ./t/47ipc.t...
+patching ./t/40connect.t...
+patching ./t/08time.t...
+patching ./t/45dse.t...
+patching ./t/70sortctrl.t...
+patching ./t/41populate.t...
+patching ./t/05dsml.t...
+patching ./t/10ldif-controls.t...
+patching ./t/09ldif-http-url.t...
+patching ./t/06constant.t...
+patching ./t/42search.t...
+patching ./contrib/ldifuniq.pl...
+patching ./contrib/tklkup...
+patching ./contrib/ldapmodify.pl...
+patching ./contrib/schema2ad.pl...
+patching ./contrib/ldifdiff.pl...
+patching ./contrib/ldifsort.pl...
+patching ./contrib/printMembers.pl...
+patching ./contrib/recursive-ldap-delete.pl...
+patching ./contrib/LWPsearch.pl...
+patching ./contrib/isMember.pl...
+patching ./contrib/jpegLoad.pl...
+patching ./contrib/simple-proxy.pl...
+patching ./contrib/jpegDisplay.pl...
+patching ./bin/ldapmodrdn...
+patching ./bin/ldapsearch...
+patching ./bin/ldapdelete...
+*** Module::AutoInstall version 1.19
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More        ...loaded. (1.302175)
+- File::Basename    ...loaded. (2.85)
+- File::Compare     ...loaded. (1.1006)
+- File::Path        ...loaded. (2.16)
+- IO::File          ...loaded. (1.41)
+- Text::Soundex     ...loaded. (3.05)
+- MIME::Base64      ...loaded. (3.15)
+- Convert::ASN1     ...loaded. (0.27 >= 0.2)
+[IPv6 support]
+- IO::Socket::INET6 ...missing.
+[LDAPS support]
+- IO::Socket::SSL   ...missing. (would need 1.26)
+[SASL authentication]
+- Authen::SASL      ...missing. (would need 2.00)
+- Digest::MD5       ...loaded. (2.55_01)
+- Digest::HMAC_MD5  ...missing.
+- GSSAPI            ...missing.
+[LDAP URLs]
+- URI::ldap         ...missing. (would need 1.1)
+[Time conversion functions]
+- Time::Local       ...loaded. (1.28)
+[Read/Write DSML files]
+- XML::SAX::Writer  ...missing.
+- XML::SAX::Base    ...missing.
+[Extended URL support when reading LDIFs]
+- LWP               ...missing.
+[LWP support for the LDAP protocol family]
+- LWP::Protocol     ...missing.
+- LWP::MediaTypes   ...missing.
+- HTTP::Negotiate   ...missing.
+- HTTP::Response    ...missing.
+- HTTP::Status      ...missing.
+- JSON              ...missing.
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::LDAP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LWP/Protocol/ldaps.pm blib/lib/LWP/Protocol/ldaps.pm
+cp lib/Net/LDAP/Control/Sort.pm blib/lib/Net/LDAP/Control/Sort.pm
+cp lib/Net/LDAP/ASN.pm blib/lib/Net/LDAP/ASN.pm
+cp lib/LWP/Protocol/ldap.pm blib/lib/LWP/Protocol/ldap.pm
+cp lib/Net/LDAP/Control/SyncRequest.pm blib/lib/Net/LDAP/Control/SyncRequest.pm
+cp lib/Net/LDAP/Examples.pod blib/lib/Net/LDAP/Examples.pod
+cp lib/Net/LDAP/Control.pm blib/lib/Net/LDAP/Control.pm
+cp lib/Net/LDAP/Control/VLVResponse.pm blib/lib/Net/LDAP/Control/VLVResponse.pm
+cp lib/Net/LDAP/Constant.pm blib/lib/Net/LDAP/Constant.pm
+cp lib/Net/LDAP/Extension/SetPassword.pm blib/lib/Net/LDAP/Extension/SetPassword.pm
+cp lib/Net/LDAP/Control/PostRead.pm blib/lib/Net/LDAP/Control/PostRead.pm
+cp lib/Net/LDAP/Control/EntryChange.pm blib/lib/Net/LDAP/Control/EntryChange.pm
+cp lib/Net/LDAP/Control/PreRead.pm blib/lib/Net/LDAP/Control/PreRead.pm
+cp lib/Net/LDAP/Extension/Cancel.pm blib/lib/Net/LDAP/Extension/Cancel.pm
+cp lib/Net/LDAP/Control/PasswordPolicy.pm blib/lib/Net/LDAP/Control/PasswordPolicy.pm
+cp lib/Net/LDAP.pm blib/lib/Net/LDAP.pm
+cp lib/Net/LDAP/Control/Relax.pm blib/lib/Net/LDAP/Control/Relax.pm
+cp lib/LWP/Protocol/ldapi.pm blib/lib/LWP/Protocol/ldapi.pm
+cp lib/Net/LDAP/Entry.pod blib/lib/Net/LDAP/Entry.pod
+cp lib/Net/LDAP/Control/MatchedValues.pm blib/lib/Net/LDAP/Control/MatchedValues.pm
+cp lib/Net/LDAP/Control/DontUseCopy.pm blib/lib/Net/LDAP/Control/DontUseCopy.pm
+cp lib/Net/LDAP.pod blib/lib/Net/LDAP.pod
+cp lib/Net/LDAP/DSML.pm blib/lib/Net/LDAP/DSML.pm
+cp lib/Net/LDAP/Control/ManageDsaIT.pm blib/lib/Net/LDAP/Control/ManageDsaIT.pm
+cp lib/Net/LDAP/Control/PersistentSearch.pm blib/lib/Net/LDAP/Control/PersistentSearch.pm
+cp lib/Net/LDAP/Control/VLV.pm blib/lib/Net/LDAP/Control/VLV.pm
+cp lib/Net/LDAP/Control/ProxyAuth.pm blib/lib/Net/LDAP/Control/ProxyAuth.pm
+cp lib/Net/LDAP/Control/Paged.pm blib/lib/Net/LDAP/Control/Paged.pm
+cp lib/Net/LDAP/Control/Assertion.pm blib/lib/Net/LDAP/Control/Assertion.pm
+cp lib/Net/LDAP/Bind.pm blib/lib/Net/LDAP/Bind.pm
+cp lib/Bundle/Net/LDAP.pm blib/lib/Bundle/Net/LDAP.pm
+cp lib/Net/LDAP/Control/SyncDone.pm blib/lib/Net/LDAP/Control/SyncDone.pm
+cp lib/Net/LDAP/Entry.pm blib/lib/Net/LDAP/Entry.pm
+cp lib/Net/LDAP/Extension.pm blib/lib/Net/LDAP/Extension.pm
+cp lib/Net/LDAP/Control/SyncState.pm blib/lib/Net/LDAP/Control/SyncState.pm
+cp lib/Net/LDAP/Extension/Refresh.pm blib/lib/Net/LDAP/Extension/Refresh.pm
+cp lib/Net/LDAP/Control/SortResult.pm blib/lib/Net/LDAP/Control/SortResult.pm
+cp lib/Net/LDAP/FilterMatch.pm blib/lib/Net/LDAP/FilterMatch.pm
+cp lib/Net/LDAP/Reference.pod blib/lib/Net/LDAP/Reference.pod
+cp lib/Net/LDAP/Extra/AD.pm blib/lib/Net/LDAP/Extra/AD.pm
+cp lib/Net/LDAP/Search.pm blib/lib/Net/LDAP/Search.pm
+cp lib/Net/LDAP/Search.pod blib/lib/Net/LDAP/Search.pod
+cp lib/Net/LDAP/Extra.pm blib/lib/Net/LDAP/Extra.pm
+cp lib/Net/LDAP/Extra/eDirectory.pm blib/lib/Net/LDAP/Extra/eDirectory.pm
+cp lib/Net/LDAP/Extension/WhoAmI.pm blib/lib/Net/LDAP/Extension/WhoAmI.pm
+cp lib/Net/LDAP/Intermediate.pm blib/lib/Net/LDAP/Intermediate.pm
+cp lib/Net/LDAPI.pm blib/lib/Net/LDAPI.pm
+cp lib/Net/LDAP/Filter.pm blib/lib/Net/LDAP/Filter.pm
+cp lib/Net/LDAP/Filter.pod blib/lib/Net/LDAP/Filter.pod
+cp lib/Net/LDAP/Security.pod blib/lib/Net/LDAP/Security.pod
+cp lib/Net/LDAPS.pm blib/lib/Net/LDAPS.pm
+cp lib/Net/LDAP/RootDSE.pm blib/lib/Net/LDAP/RootDSE.pm
+cp lib/Net/LDAP/RFC.pod blib/lib/Net/LDAP/RFC.pod
+cp lib/Net/LDAP/LDIF.pm blib/lib/Net/LDAP/LDIF.pm
+cp lib/Net/LDAP/Intermediate/SyncInfo.pm blib/lib/Net/LDAP/Intermediate/SyncInfo.pm
+cp lib/Net/LDAP/LDIF.pod blib/lib/Net/LDAP/LDIF.pod
+cp lib/Net/LDAP/FAQ.pod blib/lib/Net/LDAP/FAQ.pod
+cp lib/Net/LDAP/Schema.pm blib/lib/Net/LDAP/Schema.pm
+cp lib/Net/LDAP/Schema.pod blib/lib/Net/LDAP/Schema.pod
+cp lib/Net/LDAP/Message.pm blib/lib/Net/LDAP/Message.pm
+cp lib/Net/LDAP/Message.pod blib/lib/Net/LDAP/Message.pod
+cp lib/Net/LDAP/Util.pm blib/lib/Net/LDAP/Util.pm
+Manifying 31 pod documents
+Manifying 21 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00ldif-entry.t t/01canon_dn.t t/02filter.t t/03schema.t t/04refloop.t t/05dsml.t t/06constant.t t/07filtermatch.t t/08time.t t/09ldif-http-url.t t/10ldif-controls.t t/40connect.t t/41populate.t t/42search.t t/43modify.t t/44schema.t t/45dse.t t/46ssl.t t/47ipc.t t/48url.t t/49lwp.t t/60cancel.t t/70sortctrl.t t/71preread.t t/72postread.t t/73assert.t t/74matchedvalues.t
+t/00ldif-entry.t ..... ok
+t/01canon_dn.t ....... ok
+t/02filter.t ......... ok
+t/03schema.t ......... ok
+t/04refloop.t ........ ok
+t/05dsml.t ........... skipped: XML::SAX::Base and XML::SAX::Writer need to be installed
+t/06constant.t ....... ok
+t/07filtermatch.t .... ok
+t/08time.t ........... ok
+t/09ldif-http-url.t .. skipped: LWP::UserAgent module not installed or HTTP_JPEG_URL, HTTP_TEXT_URL not set
+t/10ldif-controls.t .. ok
+t/40connect.t ........ skipped: no server
+t/41populate.t ....... skipped: no server
+t/42search.t ......... skipped: no server
+t/43modify.t ......... skipped: no server
+t/44schema.t ......... skipped: no server
+t/45dse.t ............ skipped: no server
+t/46ssl.t ............ skipped: no server
+t/47ipc.t ............ skipped: no server
+t/48url.t ............ skipped: no server
+t/49lwp.t ............ skipped: no server
+t/60cancel.t ......... skipped: no server
+t/70sortctrl.t ....... skipped: no server
+t/71preread.t ........ skipped: no server
+t/72postread.t ....... skipped: no server
+t/73assert.t ......... skipped: no server
+t/74matchedvalues.t .. skipped: no server
+All tests successful.
+Files=27, Tests=774,  3 wallclock secs ( 0.11 usr  0.03 sys +  2.97 cusr  0.70 csys =  3.81 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/pkgconfig m4datadir=/nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/aclocal aclocaldir=/nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/aclocal install
+Manifying 31 pod documents
+Manifying 21 pod documents
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/LWP/Protocol/ldapi.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/LWP/Protocol/ldaps.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/LWP/Protocol/ldap.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAPS.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAPI.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/DSML.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Schema.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Bind.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Search.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extension.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/LDIF.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Search.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Entry.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Schema.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Util.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/RFC.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Reference.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/FilterMatch.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Constant.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Message.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/RootDSE.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Filter.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Examples.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Filter.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Message.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Security.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extra.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Intermediate.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/ASN.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/FAQ.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Entry.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/LDIF.pod
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extra/AD.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extra/eDirectory.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extension/SetPassword.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extension/Cancel.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extension/WhoAmI.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Extension/Refresh.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Intermediate/SyncInfo.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/Sort.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/SyncRequest.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/ManageDsaIT.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/Paged.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/VLVResponse.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/Relax.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/EntryChange.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/VLV.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/PersistentSearch.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/ProxyAuth.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/DontUseCopy.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/PreRead.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/Assertion.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/SyncState.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/SyncDone.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/PostRead.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/SortResult.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/MatchedValues.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Net/LDAP/Control/PasswordPolicy.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/site_perl/5.32.0/Bundle/Net/LDAP.pm
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::PostRead.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::Assertion.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Util.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extra::AD.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::DontUseCopy.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::LDIF.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::VLVResponse.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::SyncState.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAPI.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::SyncRequest.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::DSML.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/LWP::Protocol::ldaps.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extension::SetPassword.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/LWP::Protocol::ldapi.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::SyncDone.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extension::WhoAmI.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::PreRead.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Intermediate::SyncInfo.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::RFC.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Examples.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAPS.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::PasswordPolicy.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Constant.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::FilterMatch.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::VLV.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::Paged.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extension::Cancel.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::EntryChange.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Intermediate.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::Relax.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::PersistentSearch.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::ProxyAuth.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Search.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Security.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Message.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/LWP::Protocol::ldap.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::ManageDsaIT.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extra.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::SortResult.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::Sort.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Bundle::Net::LDAP.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extension::Refresh.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Schema.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Entry.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Filter.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Extra::eDirectory.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Reference.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::FAQ.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::Control::MatchedValues.3
+Installing /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3/Net::LDAP::RootDSE.3
+Appending installation info to /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/man3 to /nix/store/gbfm97drzi2sbydly99slf60z22qsx23-perl5.32.0-perl-ldap-0.66-devdoc/share/man/man3
+Removing empty /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66/lib
+patching script interpreter paths in /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66
+checking for references to /build/ in /nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gbfm97drzi2sbydly99slf60z22qsx23-perl5.32.0-perl-ldap-0.66-devdoc
+gzipping man pages under /nix/store/gbfm97drzi2sbydly99slf60z22qsx23-perl5.32.0-perl-ldap-0.66-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gbfm97drzi2sbydly99slf60z22qsx23-perl5.32.0-perl-ldap-0.66-devdoc
+checking for references to /build/ in /nix/store/gbfm97drzi2sbydly99slf60z22qsx23-perl5.32.0-perl-ldap-0.66-devdoc...
+/nix/store/2nncgc9v2f4w4w947z160yifcaikq74b-perl5.32.0-perl-ldap-0.66

@@ -1,0 +1,152 @@
+these derivations will be built:
+  /nix/store/6d3sphjhd62z0b46f8x4gh4dihw9dva0-perl5.32.0-GSSAPI-0.28.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/rb7cwr4pabmgqagf7jgs2ip2zr5afp7m-GSSAPI-0.28.tar.gz
+copying path '/nix/store/rb7cwr4pabmgqagf7jgs2ip2zr5afp7m-GSSAPI-0.28.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6d3sphjhd62z0b46f8x4gh4dihw9dva0-perl5.32.0-GSSAPI-0.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/rb7cwr4pabmgqagf7jgs2ip2zr5afp7m-GSSAPI-0.28.tar.gz
+source root is GSSAPI-0.28
+setting SOURCE_DATE_EPOCH to timestamp 1275579219 of file GSSAPI-0.28/META.yml
+patching sources
+configuring
+patching ./examples/gss-server.pl...
+patching ./examples/getcred_hostbased.pl...
+patching ./examples/gss-client.pl...
+patching ./t/1constants.t...
+patching ./t/indicatemechs.t...
+patching ./t/importnames.t...
+patching ./t/checkoids.t...
+patching ./t/2status.t...
+patching ./t/test.t...
+patching ./t/inquire_cred.t...
+
+ Welcome to GSSAPI.pm setup!
+
+ (Makefile.PL Version 0.03)
+
+ run "perl Makefile.PL --help" to see further installation options
+
+
+----------------------------------------------------------
+ Searching krb5-config command...
+
+ using krb5-config command '/nix/store/5j38izlyc5rhr4grgydd0rsgwr94rm71-krb5-1.18-dev/bin/krb5-config'.
+
+----------------------------------------------------------
+ using GSSAPI implementation
+ Kerberos 5 release 1.18
+
+
+----------------------------------------------------------
+ Adding from your Perlinstallation ($Config{lddlflags}) to LDDLFLAGS
+
+ -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong
+
+----------------------------------------------------------
+ Bypassing to LDDLFLAGS
+
+ -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -Wl,--enable-new-dtags -Wl,-rpath -Wl,/nix/store/19m30jd7anly33zxgdq8swhz6lpzlcn2-krb5-1.18/lib
+
+----------------------------------------------------------
+ Using LIBS
+
+ -L/nix/store/19m30jd7anly33zxgdq8swhz6lpzlcn2-krb5-1.18/lib -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err
+
+----------------------------------------------------------
+ Using INC includeconfiguration
+
+ -I/nix/store/5j38izlyc5rhr4grgydd0rsgwr94rm71-krb5-1.18-dev/include
+
+
+----------------------------------------------------------
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for GSSAPI
+Invalid LICENSE value 'perl' ignored
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp GSSAPI/OID.pm blib/lib/GSSAPI/OID.pm
+cp GSSAPI/OID/Set.pm blib/lib/GSSAPI/OID/Set.pm
+cp GSSAPI.pm blib/lib/GSSAPI.pm
+cp GSSAPI/Status.pm blib/lib/GSSAPI/Status.pm
+Running Mkbootstrap for GSSAPI ()
+chmod 644 "GSSAPI.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GSSAPI.bs blib/arch/auto/GSSAPI/GSSAPI.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/GSSAPI-0.28/typemap'  GSSAPI.xs > GSSAPI.xsc
+mv GSSAPI.xsc GSSAPI.c
+cc -c  -I/nix/store/5j38izlyc5rhr4grgydd0rsgwr94rm71-krb5-1.18-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.28\" -DXS_VERSION=\"0.28\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   GSSAPI.c
+rm -f blib/arch/auto/GSSAPI/GSSAPI.so
+LD_RUN_PATH="/nix/store/19m30jd7anly33zxgdq8swhz6lpzlcn2-krb5-1.18/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -Wl,--enable-new-dtags -Wl,-rpath -Wl,/nix/store/19m30jd7anly33zxgdq8swhz6lpzlcn2-krb5-1.18/lib  GSSAPI.o  -o blib/arch/auto/GSSAPI/GSSAPI.so  \
+   -L/nix/store/19m30jd7anly33zxgdq8swhz6lpzlcn2-krb5-1.18/lib -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err   \
+
+chmod 755 blib/arch/auto/GSSAPI/GSSAPI.so
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GSSAPI.bs blib/arch/auto/GSSAPI/GSSAPI.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1constants.t ..... ok
+t/2status.t ........ ok
+t/checkoids.t ...... ok
+t/importnames.t .... ok
+t/indicatemechs.t .. 1/5 # Kerberos 5, SPNEGO
+t/indicatemechs.t .. ok
+t/inquire_cred.t ... #
+#
+# No error: acquire_cred() failed, maybe because you have to run kinit first.
+# Errormessage from your GSSAPI-implementation is:
+#
+# "Unspecified GSS failure.  Minor code may provide more information
+# No Kerberos credentials available (default cache: FILE:/tmp/krb5cc_1000)
+# "
+# run kinit to get a TGT and retry this test (just skipping now).
+#
+t/inquire_cred.t ... 1/6        (in cleanup) oidset has no value at t/inquire_cred.t line 32.
+t/inquire_cred.t ... ok
+t/pod.t ............ skipped: Test::Pod 1.00 required for testing POD
+t/test.t ........... ok
+t/zbugfixes.t ...... 1/3 #
+#
+#  if you want to run tests that do a realworld *use* of your GSSAPI
+#  start a kinit and try to run
+#
+# ./examples/getcred_hostbased.pl
+#
+t/zbugfixes.t ...... ok
+All tests successful.
+Files=9, Tests=148,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.51 cusr  0.06 csys =  0.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/pkgconfig m4datadir=/nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/aclocal aclocaldir=/nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GSSAPI.bs blib/arch/auto/GSSAPI/GSSAPI.bs 644
+Manifying 4 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/GSSAPI/GSSAPI.so
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/GSSAPI.pm
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/GSSAPI/OID.pm
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/GSSAPI/Status.pm
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/GSSAPI/OID/Set.pm
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/man3/GSSAPI::OID.3
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/man3/GSSAPI.3
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/man3/GSSAPI::Status.3
+Installing /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/man3/GSSAPI::OID::Set.3
+Appending installation info to /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/man3 to /nix/store/vbb8f5sfgqnnvc1hr3kng13bl35arn0v-perl5.32.0-GSSAPI-0.28-devdoc/share/man/man3
+Removing empty /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28
+shrinking /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/GSSAPI/GSSAPI.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28/lib
+patching script interpreter paths in /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28
+checking for references to /build/ in /nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vbb8f5sfgqnnvc1hr3kng13bl35arn0v-perl5.32.0-GSSAPI-0.28-devdoc
+gzipping man pages under /nix/store/vbb8f5sfgqnnvc1hr3kng13bl35arn0v-perl5.32.0-GSSAPI-0.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vbb8f5sfgqnnvc1hr3kng13bl35arn0v-perl5.32.0-GSSAPI-0.28-devdoc
+checking for references to /build/ in /nix/store/vbb8f5sfgqnnvc1hr3kng13bl35arn0v-perl5.32.0-GSSAPI-0.28-devdoc...
+/nix/store/x8bnnk0c1gdj0l92cscrp2vpcmxqwmqb-perl5.32.0-GSSAPI-0.28

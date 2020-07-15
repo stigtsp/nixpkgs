@@ -1,0 +1,173 @@
+these derivations will be built:
+  /nix/store/rbg6p0did65rilv46fw4ag2l2i99srzq-perl5.32.0-MooseX-Daemonize-0.22.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/6iixg9smfdk50svvc1qaym54bh4n88wr-MooseX-Daemonize-0.22.tar.gz
+copying path '/nix/store/6iixg9smfdk50svvc1qaym54bh4n88wr-MooseX-Daemonize-0.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rbg6p0did65rilv46fw4ag2l2i99srzq-perl5.32.0-MooseX-Daemonize-0.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/6iixg9smfdk50svvc1qaym54bh4n88wr-MooseX-Daemonize-0.22.tar.gz
+source root is MooseX-Daemonize-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1575681954 of file MooseX-Daemonize-0.22/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./lab/dec.pl...
+*** WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING ***
+
+If you're seeing this warning, your toolchain is really, really old* and
+you'll almost certainly have problems installing CPAN modules from this
+century. But never fear, dear user, for we have the technology to fix this!
+
+If you're using CPAN.pm to install things, then you can upgrade it using:
+
+    cpan CPAN
+
+If you're using CPANPLUS to install things, then you can upgrade it using:
+
+    cpanp CPANPLUS
+
+If you're using cpanminus, you shouldn't be seeing this message in the first
+place, so please file an issue on github.
+
+If you're using a packaging tool through a unix distribution, this issue
+should be reported to the package manager.
+
+If you're installing manually, please retrain your fingers to run Build.PL
+when present instead of Makefile.PL.
+
+This public service announcement was brought to you by the Perl Toolchain
+Gang, the irc.perl.org #toolchain IRC channel, and the number 42.
+
+----
+
+* Alternatively, you are doing something overly clever, in which case you
+should consider setting the 'prefer_installer' config option in CPAN.pm, or
+'prefer_makefile' in CPANPLUS, to 'mb" and '0' respectively.
+
+You can also silence this warning for future installations by setting the
+PERL_MM_FALLBACK_SILENCE_WARNING environment variable.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Daemonize
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Daemonize' version '0.22'
+cp lib/MooseX/Daemonize/Core.pm blib/lib/MooseX/Daemonize/Core.pm
+cp lib/MooseX/Daemonize/Pid/File.pm blib/lib/MooseX/Daemonize/Pid/File.pm
+cp lib/Test/MooseX/Daemonize.pm blib/lib/Test/MooseX/Daemonize.pm
+cp lib/MooseX/Daemonize.pm blib/lib/MooseX/Daemonize.pm
+cp lib/MooseX/Daemonize/WithPidFile.pm blib/lib/MooseX/Daemonize/WithPidFile.pm
+cp lib/MooseX/Daemonize/Pid.pm blib/lib/MooseX/Daemonize/Pid.pm
+running tests
+t/00-load.t .............. 1/1 # Testing MooseX::Daemonize 0.22
+t/00-load.t .............. ok
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Devel::AssertOS       any  1.21
+#     Devel::CheckOS       1.63  1.83
+#     ExtUtils::MakeMaker   any  7.44
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     File::Spec             any     3.78
+#     File::Spec::Functions  any     3.78
+#     File::Temp             any   0.2309
+#     Module::Metadata       any 1.000037
+#     Test::Fatal            any    0.014
+#     Test::Moose            any   2.2012
+#     Test::More            0.88 1.302175
+#     constant               any     1.33
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                        Want     Have
+#     ----------------------------- ---- --------
+#     File::Path                    2.08     2.16
+#     Moose                          any   2.2012
+#     Moose::Role                    any   2.2012
+#     Moose::Util::TypeConstraints   any   2.2012
+#     MooseX::Getopt                 any     0.74
+#     MooseX::Getopt::OptionTypeMap  any     0.74
+#     MooseX::Types::Path::Class     any     0.09
+#     POSIX                          any     1.94
+#     Sub::Exporter                  any    0.987
+#     Test::Builder                  any 1.302175
+#     namespace::autoclean           any     0.29
+#     strict                         any     1.11
+#     warnings                       any     1.47
+#
+# === Other Modules ===
+#
+#     Module             Have
+#     --------------- -------
+#     Encode             3.06
+#     File::Temp       0.2309
+#     JSON::PP           4.04
+#     Module::Runtime   0.016
+#     Pod::Coverage   missing
+#     Sub::Name          0.26
+#     YAML            missing
+#     autodie            2.32
+#
+t/00-report-prereqs.t .... ok
+t/01-filecreate.t ........ ok
+t/02-stdout.t ............ 2/? # Warning: unable to close filehandle $out properly: Bad file descriptor during global destruction. (unrecognised)
+# Warning: unable to close filehandle properly: Bad file descriptor during global destruction. (unrecognised)
+# Warning: unable to close filehandle properly: Bad file descriptor during global destruction. (unrecognised)
+t/02-stdout.t ............ ok
+t/10-pidfile.t ........... 1/25 # assigning the non-existent pid 135
+t/10-pidfile.t ........... ok
+t/20-core.t .............. ok
+t/21-core-back-compat.t .. ok
+t/30-with-pid-file.t ..... ok
+t/zzz-check-breaks.t ..... ok
+All tests successful.
+Files=9, Tests=94, 20 wallclock secs ( 0.06 usr  0.05 sys +  3.29 cusr  1.59 csys =  4.99 CPU)
+Result: PASS
+installing
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/Test/MooseX/Daemonize.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/MooseX/Daemonize.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/MooseX/Daemonize/Pid.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/MooseX/Daemonize/Core.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/MooseX/Daemonize/WithPidFile.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib/perl5/site_perl/5.32.0/MooseX/Daemonize/Pid/File.pm
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/MooseX::Daemonize::Core.3
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/MooseX::Daemonize.3
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/MooseX::Daemonize::Pid::File.3
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/MooseX::Daemonize::Pid.3
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/MooseX::Daemonize::WithPidFile.3
+Installing /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3/Test::MooseX::Daemonize.3
+post-installation fixup
+Moving /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/man3 to /nix/store/zn6acwjmda8a921zx574284znfxggjzl-perl5.32.0-MooseX-Daemonize-0.22-devdoc/share/man/man3
+Removing empty /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22/lib
+patching script interpreter paths in /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22
+checking for references to /build/ in /nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zn6acwjmda8a921zx574284znfxggjzl-perl5.32.0-MooseX-Daemonize-0.22-devdoc
+gzipping man pages under /nix/store/zn6acwjmda8a921zx574284znfxggjzl-perl5.32.0-MooseX-Daemonize-0.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zn6acwjmda8a921zx574284znfxggjzl-perl5.32.0-MooseX-Daemonize-0.22-devdoc
+checking for references to /build/ in /nix/store/zn6acwjmda8a921zx574284znfxggjzl-perl5.32.0-MooseX-Daemonize-0.22-devdoc...
+/nix/store/a8gm4719iz3a6q74fgs80zdhszxv0byh-perl5.32.0-MooseX-Daemonize-0.22

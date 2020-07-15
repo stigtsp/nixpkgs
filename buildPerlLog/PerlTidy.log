@@ -1,0 +1,123 @@
+these derivations will be built:
+  /nix/store/983kx1pqn2rh64vqf01mcilkwm1924wh-perl5.32.0-Perl-Tidy-20200110.drv
+building '/nix/store/983kx1pqn2rh64vqf01mcilkwm1924wh-perl5.32.0-Perl-Tidy-20200110.drv'...
+unpacking sources
+unpacking source archive /nix/store/94rpbxr86hyx9cmy2kxfpqp09yb1vbd5-Perl-Tidy-20200110.tar.gz
+source root is Perl-Tidy-20200110
+setting SOURCE_DATE_EPOCH to timestamp 1578583390 of file Perl-Tidy-20200110/META.yml
+patching sources
+configuring
+patching ./pm2pl...
+patching ./examples/perlmask.pl...
+patching ./examples/perltidyrc_dump.pl...
+patching ./examples/perllinetype.pl...
+patching ./examples/delete_ending_blank_lines.pl...
+patching ./examples/perlxmltok.pl...
+patching ./examples/perlcomment.pl...
+patching ./examples/perltidy_okw.pl...
+patching ./examples/bbtidy.pl...
+patching ./examples/ex_mp.pl...
+patching ./examples/filter_example.pl...
+patching ./examples/break_long_quotes.pl...
+patching ./examples/find_naughty.pl...
+patching ./bin/perltidy...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Perl::Tidy
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Perl/Tidy/FileWriter.pm blib/lib/Perl/Tidy/FileWriter.pm
+cp lib/Perl/Tidy/VerticalAligner/Alignment.pm blib/lib/Perl/Tidy/VerticalAligner/Alignment.pm
+cp lib/Perl/Tidy.pod blib/lib/Perl/Tidy.pod
+cp lib/Perl/Tidy.pm blib/lib/Perl/Tidy.pm
+cp lib/Perl/Tidy/LineSink.pm blib/lib/Perl/Tidy/LineSink.pm
+cp lib/Perl/Tidy/IOScalarArray.pm blib/lib/Perl/Tidy/IOScalarArray.pm
+cp lib/Perl/Tidy/LineSource.pm blib/lib/Perl/Tidy/LineSource.pm
+cp lib/Perl/Tidy/Debugger.pm blib/lib/Perl/Tidy/Debugger.pm
+cp lib/Perl/Tidy/IOScalar.pm blib/lib/Perl/Tidy/IOScalar.pm
+cp lib/Perl/Tidy/VerticalAligner/Line.pm blib/lib/Perl/Tidy/VerticalAligner/Line.pm
+cp lib/Perl/Tidy/IndentationItem.pm blib/lib/Perl/Tidy/IndentationItem.pm
+cp lib/Perl/Tidy/VerticalAligner.pm blib/lib/Perl/Tidy/VerticalAligner.pm
+cp lib/Perl/Tidy/Logger.pm blib/lib/Perl/Tidy/Logger.pm
+cp lib/Perl/Tidy/Tokenizer.pm blib/lib/Perl/Tidy/Tokenizer.pm
+cp lib/Perl/Tidy/Formatter.pm blib/lib/Perl/Tidy/Formatter.pm
+cp lib/Perl/Tidy/Diagnostics.pm blib/lib/Perl/Tidy/Diagnostics.pm
+cp lib/Perl/Tidy/DevNull.pm blib/lib/Perl/Tidy/DevNull.pm
+cp lib/Perl/Tidy/HtmlWriter.pm blib/lib/Perl/Tidy/HtmlWriter.pm
+cp lib/Perl/Tidy/LineBuffer.pm blib/lib/Perl/Tidy/LineBuffer.pm
+cp bin/perltidy blib/script/perltidy
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perltidy
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/snippets1.t ... ok
+t/snippets10.t .. ok
+t/snippets11.t .. ok
+t/snippets12.t .. ok
+t/snippets13.t .. ok
+t/snippets14.t .. ok
+t/snippets15.t .. ok
+t/snippets16.t .. ok
+t/snippets2.t ... ok
+t/snippets3.t ... ok
+t/snippets4.t ... ok
+t/snippets5.t ... ok
+t/snippets6.t ... ok
+t/snippets7.t ... ok
+t/snippets8.t ... ok
+t/snippets9.t ... ok
+t/test-eol.t .... ok
+t/test.t ........ ok
+t/testsa.t ...... ok
+t/testss.t ...... ok
+t/testwide.t .... ok
+All tests successful.
+Files=21, Tests=323, 22 wallclock secs ( 0.11 usr  0.03 sys + 21.28 cusr  0.33 csys = 21.75 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/pkgconfig m4datadir=/nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/aclocal aclocaldir=/nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy.pod
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/VerticalAligner.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/DevNull.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/Debugger.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/IOScalar.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/IndentationItem.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/Diagnostics.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/LineBuffer.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/Tokenizer.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/FileWriter.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/LineSource.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/Formatter.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/LineSink.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/HtmlWriter.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/IOScalarArray.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/Logger.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/VerticalAligner/Line.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/site_perl/5.32.0/Perl/Tidy/VerticalAligner/Alignment.pm
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/man/man1/perltidy.1
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/man/man3/Perl::Tidy.3
+Installing /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/bin/perltidy
+Appending installation info to /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/man/man3 to /nix/store/0p5mwd23y3dxy2r2xfp7j6bp8k0b84qr-perl5.32.0-Perl-Tidy-20200110-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110
+gzipping man pages under /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/lib  /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110/bin
+patching script interpreter paths in /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110
+checking for references to /build/ in /nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0p5mwd23y3dxy2r2xfp7j6bp8k0b84qr-perl5.32.0-Perl-Tidy-20200110-devdoc
+gzipping man pages under /nix/store/0p5mwd23y3dxy2r2xfp7j6bp8k0b84qr-perl5.32.0-Perl-Tidy-20200110-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0p5mwd23y3dxy2r2xfp7j6bp8k0b84qr-perl5.32.0-Perl-Tidy-20200110-devdoc
+checking for references to /build/ in /nix/store/0p5mwd23y3dxy2r2xfp7j6bp8k0b84qr-perl5.32.0-Perl-Tidy-20200110-devdoc...
+/nix/store/xkiiski2csfsglyl0v6m9kwhrh2dr6z6-perl5.32.0-Perl-Tidy-20200110

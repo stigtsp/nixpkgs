@@ -1,0 +1,557 @@
+these derivations will be built:
+  /nix/store/vjnxlkabixhrx09wcwq876zc456x6brn-perl5.32.0-Template-Toolkit-3.008.drv
+  /nix/store/gzrn4k8zmi5v6iklkw22hsjk1w9am12v-perl5.32.0-Autodia-2.14.drv
+these paths will be fetched (0.57 MiB download, 0.57 MiB unpacked):
+  /nix/store/cx500g5sly7rnf8agjclmpv1l91anwnl-Template-Toolkit-3.008.tar.gz
+  /nix/store/drkb379krndxdf8jkv6a5wqwwyd2ikbq-Autodia-2.14.tar.gz
+copying path '/nix/store/drkb379krndxdf8jkv6a5wqwwyd2ikbq-Autodia-2.14.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/cx500g5sly7rnf8agjclmpv1l91anwnl-Template-Toolkit-3.008.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vjnxlkabixhrx09wcwq876zc456x6brn-perl5.32.0-Template-Toolkit-3.008.drv'...
+unpacking sources
+unpacking source archive /nix/store/cx500g5sly7rnf8agjclmpv1l91anwnl-Template-Toolkit-3.008.tar.gz
+source root is Template-Toolkit-3.008
+setting SOURCE_DATE_EPOCH to timestamp 1585589965 of file Template-Toolkit-3.008/META.yml
+patching sources
+configuring
+patching ./parser/yc...
+patching ./t/zz-plugin-leak-gh-213.t...
+patching ./t/zz-pmv.t...
+patching ./t/string.t...
+patching ./t/context.t...
+patching ./t/trace_vars.t...
+patching ./t/zz-plugin-leak-rt-46691.t...
+patching ./bin/tpage...
+patching ./bin/ttree...
+patching ./bin/tt2inst...
+patching ./bin/tt-bench.pl...
+patching ./Makefile.PL...
+
+                    Template Toolkit Version 3.008
+                    =============================
+
+Using Unix defaults.
+Run 'perl Makefile.PL TT_HELP' for a summary of options.
+
+
+Template::Stash::XS
+-------------------
+
+The Template::Stash module is a core part of the Template Toolkit,
+implementing the magic for accessing data using the dot notation.
+
+There is a high speed version, Template::Stash::XS, written in C.
+This makes the Template Toolkit run about twice as fast as when using
+the regular Template::Stash written in Perl.  If you've got a C
+compiler on your system then you can elect to have the XS Stash built.
+You can also specify that you want to use the XS Stash by default.
+
+Note that as of version 2.15 the XS Stash now supports access to tied
+hashes and arrays.
+
+See 'perldoc Template::Config' for further details.
+
+Do you want to build the XS Stash module? [y] y
+Do you want to use the XS Stash by default? [y] y
+
+Checking if your kit is complete...
+Looks good
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Template
+Writing MYMETA.yml and MYMETA.json
+
+Configuration complete.  You should now run 'make', 'make test' and
+then 'make install'.   See the README file for further information.
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Template/Plugin/Assert.pm blib/lib/Template/Plugin/Assert.pm
+cp lib/Template/Plugin/File.pm blib/lib/Template/Plugin/File.pm
+cp lib/Template/Plugin/Date.pm blib/lib/Template/Plugin/Date.pm
+cp lib/Template/Plugin.pm blib/lib/Template/Plugin.pm
+cp lib/Template/Plugin/Datafile.pm blib/lib/Template/Plugin/Datafile.pm
+cp lib/Template/Plugin/Image.pm blib/lib/Template/Plugin/Image.pm
+cp lib/Template/Modules.pod blib/lib/Template/Modules.pod
+cp lib/Template/Parser.pm blib/lib/Template/Parser.pm
+cp lib/Template/Namespace/Constants.pm blib/lib/Template/Namespace/Constants.pm
+cp lib/Template/Manual/Variables.pod blib/lib/Template/Manual/Variables.pod
+cp lib/Template/Plugin/Directory.pm blib/lib/Template/Plugin/Directory.pm
+cp lib/Template/Manual/Views.pod blib/lib/Template/Manual/Views.pod
+cp lib/Template/Manual/Plugins.pod blib/lib/Template/Manual/Plugins.pod
+cp lib/Template/Constants.pm blib/lib/Template/Constants.pm
+cp lib/Template/Directive.pm blib/lib/Template/Directive.pm
+cp lib/Template/FAQ.pod blib/lib/Template/FAQ.pod
+cp lib/Template/Plugin/CGI.pm blib/lib/Template/Plugin/CGI.pm
+cp lib/Template/Plugin/Filter.pm blib/lib/Template/Plugin/Filter.pm
+cp lib/Template/Manual/Config.pod blib/lib/Template/Manual/Config.pod
+cp lib/Template/Manual/Internals.pod blib/lib/Template/Manual/Internals.pod
+cp lib/Template/Base.pm blib/lib/Template/Base.pm
+cp lib/Template/Config.pm blib/lib/Template/Config.pm
+cp lib/Template/Filters.pm blib/lib/Template/Filters.pm
+cp lib/Template/Manual/Directives.pod blib/lib/Template/Manual/Directives.pod
+cp lib/Template/Manual/VMethods.pod blib/lib/Template/Manual/VMethods.pod
+cp lib/Template.pm blib/lib/Template.pm
+cp lib/Template/Plugin/HTML.pm blib/lib/Template/Plugin/HTML.pm
+cp lib/Template/Manual.pod blib/lib/Template/Manual.pod
+cp lib/Template/Manual/Filters.pod blib/lib/Template/Manual/Filters.pod
+cp lib/Template/Grammar.pm blib/lib/Template/Grammar.pm
+cp lib/Template/Plugin/Format.pm blib/lib/Template/Plugin/Format.pm
+cp lib/Template/Exception.pm blib/lib/Template/Exception.pm
+cp lib/Template/Iterator.pm blib/lib/Template/Iterator.pm
+cp lib/Template/Manual/Syntax.pod blib/lib/Template/Manual/Syntax.pod
+cp lib/Template/Manual/Credits.pod blib/lib/Template/Manual/Credits.pod
+cp lib/Template/Manual/Intro.pod blib/lib/Template/Manual/Intro.pod
+cp lib/Template/Plugin/Dumper.pm blib/lib/Template/Plugin/Dumper.pm
+cp lib/Template/Context.pm blib/lib/Template/Context.pm
+cp lib/Template/Document.pm blib/lib/Template/Document.pm
+cp lib/Template/Plugin/URL.pm blib/lib/Template/Plugin/URL.pm
+cp lib/Template/Plugin/View.pm blib/lib/Template/Plugin/View.pm
+cp lib/Template/Plugin/Pod.pm blib/lib/Template/Plugin/Pod.pm
+cp lib/Template/Stash/Context.pm blib/lib/Template/Stash/Context.pm
+cp lib/Template/Plugin/Iterator.pm blib/lib/Template/Plugin/Iterator.pm
+cp lib/Template/Plugin/Table.pm blib/lib/Template/Plugin/Table.pm
+cp lib/Template/Plugins.pm blib/lib/Template/Plugins.pm
+cp lib/Template/Tools.pod blib/lib/Template/Tools.pod
+cp lib/Template/Tools/tpage.pod blib/lib/Template/Tools/tpage.pod
+cp lib/Template/Tutorial.pod blib/lib/Template/Tutorial.pod
+cp lib/Template/Stash/XS.pm blib/lib/Template/Stash/XS.pm
+cp lib/Template/VMethods.pm blib/lib/Template/VMethods.pm
+cp lib/Template/Plugin/Scalar.pm blib/lib/Template/Plugin/Scalar.pm
+cp lib/Template/Test.pm blib/lib/Template/Test.pm
+cp lib/Template/Plugin/Math.pm blib/lib/Template/Plugin/Math.pm
+cp lib/Template/Service.pm blib/lib/Template/Service.pm
+cp lib/Template/Toolkit.pm blib/lib/Template/Toolkit.pm
+cp lib/Template/Plugin/Procedural.pm blib/lib/Template/Plugin/Procedural.pm
+cp lib/Template/Tutorial/Web.pod blib/lib/Template/Tutorial/Web.pod
+cp lib/Template/Stash.pm blib/lib/Template/Stash.pm
+cp lib/Template/View.pm blib/lib/Template/View.pm
+cp lib/Template/Plugin/String.pm blib/lib/Template/Plugin/String.pm
+cp lib/Template/Tools/ttree.pod blib/lib/Template/Tools/ttree.pod
+cp lib/Template/Provider.pm blib/lib/Template/Provider.pm
+cp lib/Template/Plugin/Wrap.pm blib/lib/Template/Plugin/Wrap.pm
+cp lib/Template/Tutorial/Datafile.pod blib/lib/Template/Tutorial/Datafile.pod
+make[1]: Entering directory '/build/Template-Toolkit-3.008/xs'
+Running Mkbootstrap for XS ()
+chmod 644 "XS.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs ../blib/arch/auto/Template/Stash/XS/XS.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Stash.xs > Stash.xsc
+mv Stash.xsc Stash.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"3.008\" -DXS_VERSION=\"3.008\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Stash.c
+rm -f ../blib/arch/auto/Template/Stash/XS/XS.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Stash.o  -o ../blib/arch/auto/Template/Stash/XS/XS.so  \
+      \
+
+chmod 755 ../blib/arch/auto/Template/Stash/XS/XS.so
+make[1]: Leaving directory '/build/Template-Toolkit-3.008/xs'
+cp bin/tpage blib/script/tpage
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tpage
+cp bin/ttree blib/script/ttree
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ttree
+Manifying 2 pod documents
+Manifying 34 pod documents
+Manifying 31 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+make[1]: Entering directory '/build/Template-Toolkit-3.008/xs'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs ../blib/arch/auto/Template/Stash/XS/XS.bs 644
+make[1]: Leaving directory '/build/Template-Toolkit-3.008/xs'
+make[1]: Entering directory '/build/Template-Toolkit-3.008/xs'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs ../blib/arch/auto/Template/Stash/XS/XS.bs 644
+No tests defined for Template::Stash::XS extension.
+make[1]: Leaving directory '/build/Template-Toolkit-3.008/xs'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/anycase.t t/args.t t/assert.t t/base.t t/binop.t t/block.t t/block_duplicate.t t/blocks.t t/capture.t t/case.t t/cgi.t t/chomp.t t/compile1.t t/compile2.t t/compile3.t t/compile4.t t/compile5.t t/config.t t/constants.t t/context.t t/datafile.t t/date.t t/date_offset.t t/debug.t t/directive.t t/directry.t t/document.t t/dumper.t t/error.t t/evalperl.t t/exception.t t/factory.t t/file.t t/fileline.t t/filter.t t/foreach.t t/format.t t/html.t t/image.t t/include.t t/iterator.t t/leak.t t/list.t t/macro.t t/math.t t/math_rand.t t/mtime-zero.t t/object.t t/outline.t t/output.t t/parser.t t/parser2.t t/plugins.t t/plusfile.t t/pod.t t/prefix.t t/proc.t t/process-relative.t t/process.t t/process_dir.t t/provider.t t/ref.t t/scalar.t t/service.t t/skel.t t/stash-xs-unicode.t t/stash-xs.t t/stash.t t/stashc.t t/stop.t t/strcat.t t/strict.t t/string.t t/switch.t t/table.t t/tags.t t/template.t t/text.t t/throw.t t/tiedhash.t t/trace_vars.t t/try.t t/unicode.t t/url.t t/vars.t t/varsv1.t t/view.t t/while.t t/wrap.t t/wrapper.t t/zz-plugin-cycle.t t/zz-plugin-leak-gh-213.t t/zz-plugin-leak-rt-46691.t t/zz-plugin-leak.t t/zz-pmv.t t/zz-pod-coverage.t t/zz-pod-kwalitee.t t/zz-stash-xs-leak.t t/zz-url2.t t/vmethods/hash.t t/vmethods/list.t t/vmethods/replace.t t/vmethods/text.t
+t/compile1.t ................. ok
+t/compile2.t ................. ok
+t/compile3.t ................. ok
+t/compile4.t ................. ok
+t/compile5.t ................. ok
+t/anycase.t .................. ok
+t/args.t ..................... ok
+t/assert.t ................... ok
+t/base.t ..................... ok
+t/binop.t .................... ok
+t/block.t .................... ok
+t/block_duplicate.t .......... ok
+t/blocks.t ................... ok
+t/capture.t .................. ok
+t/case.t ..................... ok
+t/cgi.t ...................... ok
+t/chomp.t .................... ok
+t/config.t ................... ok
+t/constants.t ................ ok
+t/context.t .................. ok
+t/datafile.t ................. ok
+t/date.t ..................... ok
+t/date_offset.t .............. ok
+t/debug.t .................... ok
+t/directive.t ................ ok
+t/directry.t ................. ok
+t/document.t ................. ok
+t/dumper.t ................... ok
+t/error.t .................... ok
+t/evalperl.t ................. ok
+t/exception.t ................ ok
+t/factory.t .................. ok
+t/file.t ..................... ok
+t/fileline.t ................. ok
+t/filter.t ................... ok
+t/foreach.t .................. ok
+t/format.t ................... ok
+t/html.t ..................... ok
+t/image.t .................... skipped: Neither Image::Info nor Image::Size installed
+t/include.t .................. ok
+t/iterator.t ................. ok
+t/leak.t ..................... ok
+t/list.t ..................... ok
+t/macro.t .................... ok
+t/math.t ..................... ok
+t/math_rand.t ................ ok
+t/mtime-zero.t ............... ok
+t/object.t ................... ok
+t/outline.t .................. ok
+t/output.t ................... ok
+t/parser.t ................... ok
+t/parser2.t .................. ok
+t/plugins.t .................. ok
+t/plusfile.t ................. ok
+t/pod.t ...................... skipped: Pod::POM not installed
+t/prefix.t ................... ok
+t/proc.t ..................... ok
+t/process-relative.t ......... ok
+t/process.t .................. ok
+t/process_dir.t .............. ok
+t/provider.t ................. ok
+t/ref.t ...................... ok
+t/scalar.t ................... ok
+t/service.t .................. ok
+t/skel.t ..................... ok
+t/stash-xs-unicode.t ......... ok
+t/stash-xs.t ................. ok
+t/stash.t .................... ok
+t/stashc.t ................... ok
+t/stop.t ..................... ok
+t/strcat.t ................... ok
+t/strict.t ................... ok
+t/string.t ................... ok
+t/switch.t ................... ok
+t/table.t .................... ok
+t/tags.t ..................... ok
+t/template.t ................. ok
+t/text.t ..................... ok
+t/throw.t .................... ok
+t/tiedhash.t ................. ok
+t/trace_vars.t ............... ok
+t/try.t ...................... ok
+t/unicode.t .................. ok
+t/url.t ...................... ok
+t/vars.t ..................... ok
+t/varsv1.t ................... ok
+t/view.t ..................... ok
+t/vmethods/hash.t ............ ok
+t/vmethods/list.t ............ ok
+t/vmethods/replace.t ......... ok
+t/vmethods/text.t ............ ok
+t/while.t .................... ok
+t/wrap.t ..................... ok
+t/wrapper.t .................. ok
+t/zz-plugin-cycle.t .......... ok
+t/zz-plugin-leak-gh-213.t .... skipped: Broken on older perls. We need to sort this out once everything is passing
+t/zz-plugin-leak-rt-46691.t .. ok
+t/zz-plugin-leak.t ........... skipped: Internal test for developer, add the --dev flag to run
+t/zz-pmv.t ................... skipped: These aren't the tests you're looking for... move along
+t/zz-pod-coverage.t .......... skipped: Author tests not required for installation
+t/zz-pod-kwalitee.t .......... skipped: Author tests not required for installation
+t/zz-stash-xs-leak.t ......... skipped: Internal test for developer, add the --dev flag to run
+t/zz-url2.t .................. skipped: We can't agree on the right joint for the URL plugin
+All tests successful.
+Files=103, Tests=2927, 19 wallclock secs ( 0.44 usr  0.10 sys +  6.39 cusr  0.83 csys =  7.76 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/pkgconfig m4datadir=/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/aclocal aclocaldir=/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/aclocal install
+make[1]: Entering directory '/build/Template-Toolkit-3.008/xs'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs ../blib/arch/auto/Template/Stash/XS/XS.bs 644
+make[1]: Leaving directory '/build/Template-Toolkit-3.008/xs'
+Manifying 2 pod documents
+Manifying 34 pod documents
+Manifying 31 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Template/Stash/XS/XS.so
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Config.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Exception.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Provider.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Parser.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Context.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Grammar.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Directive.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tools.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugins.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Iterator.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Test.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Service.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/VMethods.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Stash.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tutorial.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Filters.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/View.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Toolkit.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Document.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Base.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/FAQ.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Modules.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Constants.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/URL.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Math.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Table.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Assert.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Dumper.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Date.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Iterator.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/File.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Image.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/CGI.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Pod.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Filter.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Format.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/HTML.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Procedural.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Datafile.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/String.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/View.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Scalar.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Directory.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Plugin/Wrap.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Stash/XS.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Stash/Context.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Intro.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Variables.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Config.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Views.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Internals.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Plugins.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Filters.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Syntax.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/VMethods.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Credits.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Manual/Directives.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tutorial/Datafile.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tutorial/Web.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Namespace/Constants.pm
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tools/ttree.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Template/Tools/tpage.pod
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man1/tpage.1
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man1/ttree.1
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Provider.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::URL.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::VMethods.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Views.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tools.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tools::tpage.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Context.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Scalar.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugins.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Toolkit.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Variables.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Directive.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Modules.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Pod.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Math.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Table.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Constants.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tools::ttree.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::File.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::HTML.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Filter.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::View.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Procedural.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Config.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Dumper.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tutorial::Web.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Plugins.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Namespace::Constants.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Directory.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Stash.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Stash::XS.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Syntax.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Iterator.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Image.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Date.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Filters.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::FAQ.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Stash::Context.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::View.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Grammar.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Base.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Iterator.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Credits.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Document.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Format.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Parser.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Test.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Datafile.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::VMethods.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Intro.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Exception.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Assert.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Service.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tutorial.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::String.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Directives.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Config.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::Wrap.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Manual::Internals.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Tutorial::Datafile.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Plugin::CGI.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3/Template::Filters.3
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/bin/tpage
+Installing /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/bin/ttree
+Appending installation info to /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/man3 to /nix/store/4jsp10s6r6jjf1qxbs7kn58ccq04j6sc-perl5.32.0-Template-Toolkit-3.008-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008
+shrinking /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Template/Stash/XS/XS.so
+gzipping man pages under /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib  /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/bin
+patching script interpreter paths in /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008
+checking for references to /build/ in /nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4jsp10s6r6jjf1qxbs7kn58ccq04j6sc-perl5.32.0-Template-Toolkit-3.008-devdoc
+gzipping man pages under /nix/store/4jsp10s6r6jjf1qxbs7kn58ccq04j6sc-perl5.32.0-Template-Toolkit-3.008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4jsp10s6r6jjf1qxbs7kn58ccq04j6sc-perl5.32.0-Template-Toolkit-3.008-devdoc
+checking for references to /build/ in /nix/store/4jsp10s6r6jjf1qxbs7kn58ccq04j6sc-perl5.32.0-Template-Toolkit-3.008-devdoc...
+building '/nix/store/gzrn4k8zmi5v6iklkw22hsjk1w9am12v-perl5.32.0-Autodia-2.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/drkb379krndxdf8jkv6a5wqwwyd2ikbq-Autodia-2.14.tar.gz
+source root is Autodia-2.14
+setting SOURCE_DATE_EPOCH to timestamp 1306353234 of file Autodia-2.14/META.yml
+patching sources
+configuring
+patching ./autodia.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Autodia
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Autodia/Handler/SQL.pm blib/lib/Autodia/Handler/SQL.pm
+cp lib/Autodia/Diagram/Dependancy.pm blib/lib/Autodia/Diagram/Dependancy.pm
+cp lib/Autodia/Handler/python.pm blib/lib/Autodia/Handler/python.pm
+cp lib/Autodia/Handler/Torque.pm blib/lib/Autodia/Handler/Torque.pm
+cp lib/Autodia/Handler/Mason.pm blib/lib/Autodia/Handler/Mason.pm
+cp lib/Autodia/Diagram/Inheritance.pm blib/lib/Autodia/Diagram/Inheritance.pm
+cp lib/Autodia/Handler/DBI.pm blib/lib/Autodia/Handler/DBI.pm
+cp lib/Autodia/Diagram.pm blib/lib/Autodia/Diagram.pm
+cp lib/Autodia/Diagram/Component.pm blib/lib/Autodia/Diagram/Component.pm
+cp lib/Autodia/Handler.pm blib/lib/Autodia/Handler.pm
+cp lib/Autodia/Diagram/Object.pm blib/lib/Autodia/Diagram/Object.pm
+cp lib/Autodia/Handler/ASP.pm blib/lib/Autodia/Handler/ASP.pm
+cp lib/Autodia/Handler/Cpp.pm blib/lib/Autodia/Handler/Cpp.pm
+cp lib/Autodia/Handler/dia.pm blib/lib/Autodia/Handler/dia.pm
+cp lib/Autodia/Handler/DBI_SQLT.pm blib/lib/Autodia/Handler/DBI_SQLT.pm
+cp lib/Autodia/Handler/CSharp.pm blib/lib/Autodia/Handler/CSharp.pm
+cp lib/Autodia/Handler/umbrello.pm blib/lib/Autodia/Handler/umbrello.pm
+cp lib/Autodia.pm blib/lib/Autodia.pm
+cp autodia.pl blib/lib/autodia.pl
+cp lib/Autodia/Handler/PHP.pm blib/lib/Autodia/Handler/PHP.pm
+cp lib/Autodia/Diagram/Realization.pm blib/lib/Autodia/Diagram/Realization.pm
+cp lib/Autodia/Handler/Perl.pm blib/lib/Autodia/Handler/Perl.pm
+cp lib/Autodia/Diagram/Class.pm blib/lib/Autodia/Diagram/Class.pm
+cp lib/Autodia/Diagram/Superclass.pm blib/lib/Autodia/Diagram/Superclass.pm
+cp lib/Autodia/Diagram/Relation.pm blib/lib/Autodia/Diagram/Relation.pm
+cp autodia.pl blib/script/autodia.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/autodia.pl
+Manifying 1 pod document
+Manifying 23 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/autodia.t .. checking Autodia.pm
+t/autodia.t .. 1/? checking classes
+checking handlers..
+t/autodia.t .. ok
+t/pod.t ...... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=2, Tests=10,  1 wallclock secs ( 0.04 usr  0.03 sys +  0.22 cusr  0.16 csys =  0.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/pkgconfig m4datadir=/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/aclocal aclocaldir=/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/aclocal install
+Manifying 1 pod document
+Manifying 23 pod documents
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/autodia.pl
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Object.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Superclass.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Class.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Component.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Inheritance.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Relation.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Dependancy.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Diagram/Realization.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/ASP.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/Mason.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/DBI.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/DBI_SQLT.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/PHP.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/Torque.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/CSharp.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/dia.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/Cpp.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/umbrello.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/SQL.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/python.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/Autodia/Handler/Perl.pm
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man1/autodia.pl.1
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::dia.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::Mason.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::CSharp.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::DBI.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::SQL.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Inheritance.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::PHP.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::umbrello.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::Torque.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Superclass.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::ASP.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Dependancy.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Object.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::Cpp.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Component.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Realization.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/autodia.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Diagram::Class.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::Perl.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3/Autodia::Handler::DBI_SQLT.3
+Installing /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/bin/autodia.pl
+Appending installation info to /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/man3 to /nix/store/ri4szili94xq49j8ldsn33grgxsqsjzx-perl5.32.0-Autodia-2.14-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14
+gzipping man pages under /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib  /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/bin
+patching script interpreter paths in /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14
+/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl/5.32.0/autodia.pl: interpreter directive changed from "/usr/bin/perl -w -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -w -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/x1hr77649a2ljlfkcvs4rypk1mcqaqd5-perl5.32.0-Template-Toolkit-3.008/lib/perl5/site_perl -I/nix/store/i3rs0fis1wh98jwwdy63qkn9z44217ws-perl5.32.0-AppConfig-1.71/lib/perl5/site_perl -I/nix/store/bzb48wx2ffza7yc0hclg07mqz5cwr45w-perl5.32.0-XML-Simple-2.25/lib/perl5/site_perl -I/nix/store/4y057g0fpkhrgzxba8hxmq98d7j0al39-perl5.32.0-XML-SAX-Expat-0.51/lib/perl5/site_perl -I/nix/store/8nmxh1y6383r1nq5cy77cw2lab5hfwab-perl5.32.0-XML-Parser-2.44/lib/perl5/site_perl -I/nix/store/mrhb5m2aia30y7ayv39l98kx3x25sp0s-perl5.32.0-libwww-perl-6.45/lib/perl5/site_perl -I/nix/store/ap6986vlj7vjfd172k6hcmscrqbjgc76-perl5.32.0-File-Listing-6.04/lib/perl5/site_perl -I/nix/store/bpgp35kbgc1njzar81kyzpf0w26dg637-perl5.32.0-HTTP-Date-6.05/lib/perl5/site_perl -I/nix/store/1ka9b1bxipfk17w885znblgih0k5g1ic-perl5.32.0-TimeDate-2.33/lib/perl5/site_perl -I/nix/store/3hbmifni74115mg290q0nj17xw6vbh9n-perl5.32.0-Time-Local-1.30/lib/perl5/site_perl -I/nix/store/xfjj9s0rwkchc69qrpicj59a9vvg1vx9-perl5.32.0-HTML-Parser-3.72/lib/perl5/site_perl -I/nix/store/08ajrvbxl8iqbb0szrgcvg1msc5nm10l-perl5.32.0-HTML-Tagset-3.20/lib/perl5/site_perl -I/nix/store/9icgdxdg52r4h1i0cbvblv8g0gf56mbx-perl5.32.0-HTTP-Cookies-6.08/lib/perl5/site_perl -I/nix/store/kyhhrpmz7rmmwxsxqd1ldfglikg48w8p-perl5.32.0-HTTP-Message-6.24/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/85g415s6clcw3y4vnwigmwh615l1f1sq-perl5.32.0-Encode-3.06/lib/perl5/site_perl -I/nix/store/h964bh6ddhg3kj12x4drgm2mcdfcn6ac-perl5.32.0-Encode-Locale-1.05/lib/perl5/site_perl -I/nix/store/74hkmami35179qpzx9z0hpsa1y87kb8k-perl5.32.0-IO-HTML-1.001/lib/perl5/site_perl -I/nix/store/m8c52hqamd7031nmsb50303xg83c92wa-perl5.32.0-LWP-MediaTypes-6.04/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/ypyll85r71lqvqc548rqddb3l4hm3g01-perl5.32.0-HTTP-Daemon-6.01/lib/perl5/site_perl -I/nix/store/if8vd3id5b3z2cyc6ckmzbpnkxqfzq0i-perl5.32.0-HTTP-Negotiate-6.01/lib/perl5/site_perl -I/nix/store/l6q8y1jhrbaam81v8il9bk1gd2wh71xp-perl5.32.0-Net-HTTP-6.19/lib/perl5/site_perl -I/nix/store/g3f5ak08lfvggp9vjcvrjfyrrsvqnw4s-perl5.32.0-Try-Tiny-0.30/lib/perl5/site_perl -I/nix/store/2s5k0yd311rl6z9xybbf769m6ganpvcw-perl5.32.0-WWW-RobotRules-6.02/lib/perl5/site_perl -I/nix/store/n9xx25zpdzzrq2kz2qf6dm3jlj8xxbhc-perl5.32.0-XML-SAX-1.02/lib/perl5/site_perl -I/nix/store/z7fklmjz3j8sjpn7zfadqxrjh4fdcrhc-perl5.32.0-XML-NamespaceSupport-1.12/lib/perl5/site_perl -I/nix/store/a77cvz421lpm1ylg0fvl1a1mviwwd4sw-perl5.32.0-XML-SAX-Base-1.09/lib/perl5/site_perl -I/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ri4szili94xq49j8ldsn33grgxsqsjzx-perl5.32.0-Autodia-2.14-devdoc
+gzipping man pages under /nix/store/ri4szili94xq49j8ldsn33grgxsqsjzx-perl5.32.0-Autodia-2.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ri4szili94xq49j8ldsn33grgxsqsjzx-perl5.32.0-Autodia-2.14-devdoc
+checking for references to /build/ in /nix/store/ri4szili94xq49j8ldsn33grgxsqsjzx-perl5.32.0-Autodia-2.14-devdoc...
+/nix/store/q8100q21f67jlpfx8nkvmsrdm5cj5szi-perl5.32.0-Autodia-2.14

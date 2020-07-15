@@ -1,0 +1,120 @@
+these derivations will be built:
+  /nix/store/0j8kxy6yjdg6w90xmyw942ggg58przwm-perl5.32.0-Term-Size-Perl-0.031.drv
+  /nix/store/qrmvbb2mvgkrqgdkfw652b2q29x03cfm-perl5.32.0-Term-Size-Any-0.002.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/i3sch7v3ykbdsx6bxg3988fw79qaisbh-Term-Size-Any-0.002.tar.gz
+  /nix/store/k1ngswl2mj6j06c4g9i0lx1g8nrd0ddd-Term-Size-Perl-0.031.tar.gz
+copying path '/nix/store/i3sch7v3ykbdsx6bxg3988fw79qaisbh-Term-Size-Any-0.002.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/k1ngswl2mj6j06c4g9i0lx1g8nrd0ddd-Term-Size-Perl-0.031.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0j8kxy6yjdg6w90xmyw942ggg58przwm-perl5.32.0-Term-Size-Perl-0.031.drv'...
+unpacking sources
+unpacking source archive /nix/store/k1ngswl2mj6j06c4g9i0lx1g8nrd0ddd-Term-Size-Perl-0.031.tar.gz
+source root is Term-Size-Perl-0.031
+setting SOURCE_DATE_EPOCH to timestamp 1518635374 of file Term-Size-Perl-0.031/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::Size::Perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" inc/Probe.pm
+inc/Probe.pm: writing C probe... inc/Probe.pm: error writing to 'probe.c': Inappropriate ioctl for device
+ok
+inc/Probe.pm: compiling C probe... cc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o probe.o probe.c
+ok
+inc/Probe.pm: linking C probe... cc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o probe probe.o
+ok
+inc/Probe.pm: running C probe... ok
+inc/Probe.pm: writing 'Params.pm'... inc/Probe.pm: error writing to 'Params.pm': Inappropriate ioctl for device
+ok
+cp Params.pm blib/lib/Term/Size/Perl/Params.pm
+cp Perl.pm blib/lib/Term/Size/Perl.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_use.t ........... 1/1 # Testing Term::Size::Perl 0.031, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00_use.t ........... ok
+t/01_basic.t ......... ok
+t/98_pod-coverage.t .. skipped: These tests are for release candidate testing
+t/99_pod.t ........... skipped: These tests are for release candidate testing
+All tests successful.
+Files=4, Tests=18,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.17 cusr  0.03 csys =  0.23 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/lib/pkgconfig m4datadir=/nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/aclocal aclocaldir=/nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/lib/perl5/site_perl/5.32.0/Term/Size/Perl.pm
+Installing /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/lib/perl5/site_perl/5.32.0/Term/Size/Perl/Params.pm
+Installing /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/man/man3/Term::Size::Perl.3
+Installing /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/man/man3/Term::Size::Params.3
+Appending installation info to /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/man/man3 to /nix/store/6f66j77mmzz0wfmmska4ggmvb4zak0ks-perl5.32.0-Term-Size-Perl-0.031-devdoc/share/man/man3
+Removing empty /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031/lib
+patching script interpreter paths in /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031
+checking for references to /build/ in /nix/store/zxlz6gx97n1nifz1i72s36d4ijrmcc7c-perl5.32.0-Term-Size-Perl-0.031...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6f66j77mmzz0wfmmska4ggmvb4zak0ks-perl5.32.0-Term-Size-Perl-0.031-devdoc
+gzipping man pages under /nix/store/6f66j77mmzz0wfmmska4ggmvb4zak0ks-perl5.32.0-Term-Size-Perl-0.031-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6f66j77mmzz0wfmmska4ggmvb4zak0ks-perl5.32.0-Term-Size-Perl-0.031-devdoc
+checking for references to /build/ in /nix/store/6f66j77mmzz0wfmmska4ggmvb4zak0ks-perl5.32.0-Term-Size-Perl-0.031-devdoc...
+building '/nix/store/qrmvbb2mvgkrqgdkfw652b2q29x03cfm-perl5.32.0-Term-Size-Any-0.002.drv'...
+unpacking sources
+unpacking source archive /nix/store/i3sch7v3ykbdsx6bxg3988fw79qaisbh-Term-Size-Any-0.002.tar.gz
+source root is Term-Size-Any-0.002
+setting SOURCE_DATE_EPOCH to timestamp 1334931223 of file Term-Size-Any-0.002/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::Size::Any
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Term/Size/Any.pm blib/lib/Term/Size/Any.pm
+cp lib/Term/Size/Any.pod blib/lib/Term/Size/Any.pod
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t ........... 1/1 # Testing Term::Size::Any 0.002, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/01use.t ........... ok
+t/02basic.t ......... ok
+t/05perl.t .......... ok
+t/08win32.t ......... skipped: Term::Size::Win32 not found
+t/98pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/99pod.t ........... skipped: Test::Pod 1.18 required for testing POD
+All tests successful.
+Files=6, Tests=35,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.32 cusr  0.08 csys =  0.43 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/lib/pkgconfig m4datadir=/nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/share/aclocal aclocaldir=/nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/lib/perl5/site_perl/5.32.0/Term/Size/Any.pod
+Installing /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/lib/perl5/site_perl/5.32.0/Term/Size/Any.pm
+Installing /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/share/man/man3/Term::Size::Any.3
+Appending installation info to /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/share/man/man3 to /nix/store/zcwqjyavljj4vq0ahhrarlilqk2qsd1q-perl5.32.0-Term-Size-Any-0.002-devdoc/share/man/man3
+Removing empty /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002/lib
+patching script interpreter paths in /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002
+checking for references to /build/ in /nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zcwqjyavljj4vq0ahhrarlilqk2qsd1q-perl5.32.0-Term-Size-Any-0.002-devdoc
+gzipping man pages under /nix/store/zcwqjyavljj4vq0ahhrarlilqk2qsd1q-perl5.32.0-Term-Size-Any-0.002-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zcwqjyavljj4vq0ahhrarlilqk2qsd1q-perl5.32.0-Term-Size-Any-0.002-devdoc
+checking for references to /build/ in /nix/store/zcwqjyavljj4vq0ahhrarlilqk2qsd1q-perl5.32.0-Term-Size-Any-0.002-devdoc...
+/nix/store/9cckaa8nwahskfyb00wxk0wgcjvdsf80-perl5.32.0-Term-Size-Any-0.002

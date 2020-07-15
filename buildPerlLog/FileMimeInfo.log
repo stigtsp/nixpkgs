@@ -1,0 +1,70 @@
+these derivations will be built:
+  /nix/store/iwwhiz3xi38nblqnn2gn8c8clj1mynhq-perl5.32.0-File-MimeInfo-0.29.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/rrw03b4kwbq0imp5rjhldqz7b141rwin-File-MimeInfo-0.29.tar.gz
+copying path '/nix/store/rrw03b4kwbq0imp5rjhldqz7b141rwin-File-MimeInfo-0.29.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/iwwhiz3xi38nblqnn2gn8c8clj1mynhq-perl5.32.0-File-MimeInfo-0.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/rrw03b4kwbq0imp5rjhldqz7b141rwin-File-MimeInfo-0.29.tar.gz
+source root is File-MimeInfo-0.29
+setting SOURCE_DATE_EPOCH to timestamp 1533463030 of file File-MimeInfo-0.29/META.yml
+patching sources
+configuring
+patching ./mimetype...
+patching ./mimeopen...
+patching ./t/magic/application_x-perl.txt...
+patching ./t/magic/application_x-perl...
+patching ./t/09_no404s.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::MimeInfo
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/MimeInfo/Applications.pm blib/lib/File/MimeInfo/Applications.pm
+cp lib/File/MimeInfo/Rox.pm blib/lib/File/MimeInfo/Rox.pm
+cp lib/File/MimeInfo/Cookbook.pod blib/lib/File/MimeInfo/Cookbook.pod
+cp lib/File/MimeInfo/Magic.pm blib/lib/File/MimeInfo/Magic.pm
+cp lib/File/MimeInfo.pm blib/lib/File/MimeInfo.pm
+cp mimeopen blib/script/mimeopen
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mimeopen
+cp mimetype blib/script/mimetype
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mimetype
+Manifying 2 pod documents
+Manifying 5 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/pkgconfig m4datadir=/nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/aclocal aclocaldir=/nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/aclocal install
+Manifying 2 pod documents
+Manifying 5 pod documents
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/site_perl/5.32.0/File/MimeInfo.pm
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/site_perl/5.32.0/File/MimeInfo/Cookbook.pod
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/site_perl/5.32.0/File/MimeInfo/Rox.pm
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/site_perl/5.32.0/File/MimeInfo/Applications.pm
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/site_perl/5.32.0/File/MimeInfo/Magic.pm
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man1/mimeopen.1
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man1/mimetype.1
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3/File::MimeInfo::Magic.3
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3/File::MimeInfo::Applications.3
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3/File::MimeInfo::Cookbook.3
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3/File::MimeInfo::Rox.3
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3/File::MimeInfo.3
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/bin/mimetype
+Installing /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/bin/mimeopen
+Appending installation info to /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/man3 to /nix/store/g8rqm9sgz0cykr7vafzpfymn8l4k2nia-perl5.32.0-File-MimeInfo-0.29-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29
+gzipping man pages under /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/lib  /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29/bin
+patching script interpreter paths in /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29
+checking for references to /build/ in /nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/g8rqm9sgz0cykr7vafzpfymn8l4k2nia-perl5.32.0-File-MimeInfo-0.29-devdoc
+gzipping man pages under /nix/store/g8rqm9sgz0cykr7vafzpfymn8l4k2nia-perl5.32.0-File-MimeInfo-0.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/g8rqm9sgz0cykr7vafzpfymn8l4k2nia-perl5.32.0-File-MimeInfo-0.29-devdoc
+checking for references to /build/ in /nix/store/g8rqm9sgz0cykr7vafzpfymn8l4k2nia-perl5.32.0-File-MimeInfo-0.29-devdoc...
+/nix/store/0wjj0a816f81hh325z8f8lk1rbxq282i-perl5.32.0-File-MimeInfo-0.29

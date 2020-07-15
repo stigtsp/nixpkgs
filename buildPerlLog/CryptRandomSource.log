@@ -1,0 +1,174 @@
+these derivations will be built:
+  /nix/store/vzq1pwr5fw7cnmpjickdisf2cjpc4mnz-perl5.32.0-Crypt-Random-Source-0.14.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/sr90wa9cykxzapjggwzbzsinank6xwc8-Crypt-Random-Source-0.14.tar.gz
+copying path '/nix/store/sr90wa9cykxzapjggwzbzsinank6xwc8-Crypt-Random-Source-0.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vzq1pwr5fw7cnmpjickdisf2cjpc4mnz-perl5.32.0-Crypt-Random-Source-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/sr90wa9cykxzapjggwzbzsinank6xwc8-Crypt-Random-Source-0.14.tar.gz
+source root is Crypt-Random-Source-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1523329058 of file Crypt-Random-Source-0.14/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./xt/author/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+*** WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING ***
+
+If you're seeing this warning, your toolchain is really, really old* and
+you'll almost certainly have problems installing CPAN modules from this
+century. But never fear, dear user, for we have the technology to fix this!
+
+If you're using CPAN.pm to install things, then you can upgrade it using:
+
+    cpan CPAN
+
+If you're using CPANPLUS to install things, then you can upgrade it using:
+
+    cpanp CPANPLUS
+
+If you're using cpanminus, you shouldn't be seeing this message in the first
+place, so please file an issue on github.
+
+If you're using a packaging tool through a unix distribution, this issue
+should be reported to the package manager.
+
+If you're installing manually, please retrain your fingers to run Build.PL
+when present instead of Makefile.PL.
+
+This public service announcement was brought to you by the Perl Toolchain
+Gang, the irc.perl.org #toolchain IRC channel, and the number 42.
+
+----
+
+* Alternatively, you are doing something overly clever, in which case you
+should consider setting the 'prefer_installer' config option in CPAN.pm, or
+'prefer_makefile' in CPANPLUS, to 'mb" and '0' respectively.
+
+You can also silence this warning for future installations by setting the
+PERL_MM_FALLBACK_SILENCE_WARNING environment variable.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::Random::Source
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Crypt-Random-Source' version '0.14'
+cp lib/Crypt/Random/Source/Base/File.pm blib/lib/Crypt/Random/Source/Base/File.pm
+cp lib/Crypt/Random/Source/Base/RandomDevice.pm blib/lib/Crypt/Random/Source/Base/RandomDevice.pm
+cp lib/Crypt/Random/Source/Base.pm blib/lib/Crypt/Random/Source/Base.pm
+cp lib/Crypt/Random/Source/Strong/devrandom.pm blib/lib/Crypt/Random/Source/Strong/devrandom.pm
+cp lib/Crypt/Random/Source/Base/Proc.pm blib/lib/Crypt/Random/Source/Base/Proc.pm
+cp lib/Crypt/Random/Source/Weak/devurandom.pm blib/lib/Crypt/Random/Source/Weak/devurandom.pm
+cp lib/Crypt/Random/Source.pm blib/lib/Crypt/Random/Source.pm
+cp lib/Crypt/Random/Source/Weak.pm blib/lib/Crypt/Random/Source/Weak.pm
+cp lib/Crypt/Random/Source/Factory.pm blib/lib/Crypt/Random/Source/Factory.pm
+cp lib/Crypt/Random/Source/Strong.pm blib/lib/Crypt/Random/Source/Strong.pm
+cp lib/Crypt/Random/Source/Base/Handle.pm blib/lib/Crypt/Random/Source/Base/Handle.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     ExtUtils::MakeMaker   any  7.44
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     ---------------- ---- --------
+#     File::Spec        any     3.78
+#     IO::Select        any     1.42
+#     Module::Metadata  any 1.000037
+#     Test::Fatal       any    0.014
+#     Test::More       0.88 1.302175
+#     ok                any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module               Want     Have
+#     ---------------- -------- --------
+#     Capture::Tiny        0.08     0.48
+#     Carp                  any     1.50
+#     File::Spec            any     3.78
+#     IO::File             1.14     1.41
+#     IO::Handle            any     1.42
+#     Module::Find          any     0.15
+#     Module::Runtime       any    0.016
+#     Moo              1.002000 2.004000
+#     Sub::Exporter         any    0.987
+#     Types::Standard       any 1.010002
+#     namespace::clean     0.11     0.27
+#     strict                any     1.11
+#     warnings              any     1.47
+#
+# === Other Modules ===
+#
+#     Module       Have
+#     --------- -------
+#     Encode       3.06
+#     JSON::PP     4.04
+#     Sub::Name missing
+#     YAML      missing
+#     autodie      2.32
+#
+t/00-report-prereqs.t .. ok
+t/blocking.t ........... ok
+t/dev_random.t ......... ok
+t/factory.t ............ ok
+t/proc.t ............... ok
+t/reread.t ............. ok
+t/sugar.t .............. ok
+All tests successful.
+Files=7, Tests=48,  2 wallclock secs ( 0.05 usr  0.03 sys +  1.08 cusr  0.40 csys =  1.56 CPU)
+Result: PASS
+installing
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Strong.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Weak.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Base.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Factory.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Weak/devurandom.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Base/RandomDevice.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Base/Proc.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Base/File.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Base/Handle.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib/perl5/site_perl/5.32.0/Crypt/Random/Source/Strong/devrandom.pm
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Weak::devurandom.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Base::File.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Base::Proc.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Weak.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Base::Handle.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Base::RandomDevice.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Strong.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Base.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Factory.3
+Installing /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3/Crypt::Random::Source::Strong::devrandom.3
+post-installation fixup
+Moving /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/man3 to /nix/store/mcmx4wv9y6d6iv9nijfabp38bmylcan4-perl5.32.0-Crypt-Random-Source-0.14-devdoc/share/man/man3
+Removing empty /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14/lib
+patching script interpreter paths in /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14
+checking for references to /build/ in /nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mcmx4wv9y6d6iv9nijfabp38bmylcan4-perl5.32.0-Crypt-Random-Source-0.14-devdoc
+gzipping man pages under /nix/store/mcmx4wv9y6d6iv9nijfabp38bmylcan4-perl5.32.0-Crypt-Random-Source-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mcmx4wv9y6d6iv9nijfabp38bmylcan4-perl5.32.0-Crypt-Random-Source-0.14-devdoc
+checking for references to /build/ in /nix/store/mcmx4wv9y6d6iv9nijfabp38bmylcan4-perl5.32.0-Crypt-Random-Source-0.14-devdoc...
+/nix/store/s90a6w8lsjnfd88lr9n5d5r8mmk567ww-perl5.32.0-Crypt-Random-Source-0.14

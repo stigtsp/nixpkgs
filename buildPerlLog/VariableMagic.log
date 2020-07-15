@@ -1,0 +1,149 @@
+these derivations will be built:
+  /nix/store/1bwkdpklpjdcgc870cv1xzw9bjv2alqb-perl5.32.0-Variable-Magic-0.62.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/25d1q35syj4pzxp0bbx72wgwqckacpa9-Variable-Magic-0.62.tar.gz
+copying path '/nix/store/25d1q35syj4pzxp0bbx72wgwqckacpa9-Variable-Magic-0.62.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1bwkdpklpjdcgc870cv1xzw9bjv2alqb-perl5.32.0-Variable-Magic-0.62.drv'...
+unpacking sources
+unpacking source archive /nix/store/25d1q35syj4pzxp0bbx72wgwqckacpa9-Variable-Magic-0.62.tar.gz
+source root is Variable-Magic-0.62
+setting SOURCE_DATE_EPOCH to timestamp 1509812844 of file Variable-Magic-0.62/README
+patching sources
+configuring
+patching ./samples/magic.pl...
+patching ./samples/copy.pl...
+patching ./samples/vm_vs_tie.pl...
+patching ./samples/synopsis.pl...
+patching ./samples/uvar.pl...
+patching ./t/50-return.t...
+patching ./t/33-code.t...
+patching ./t/41-clone.t...
+patching ./t/02-constants.t...
+patching ./t/10-simple.t...
+patching ./t/13-data.t...
+patching ./t/23-clear.t...
+patching ./t/24-free.t...
+patching ./t/40-threads.t...
+patching ./t/17-ctl.t...
+patching ./t/22-len.t...
+patching ./t/80-leaks.t...
+patching ./t/09-load-threads.t...
+patching ./t/11-multiple.t...
+patching ./t/31-array.t...
+patching ./t/20-get.t...
+patching ./t/32-hash.t...
+patching ./t/18-opinfo.t...
+patching ./t/14-callbacks.t...
+patching ./t/35-stash.t...
+patching ./t/34-glob.t...
+patching ./t/16-huf.t...
+patching ./t/25-copy.t...
+patching ./t/00-load.t...
+patching ./t/30-scalar.t...
+patching ./t/21-set.t...
+patching ./t/01-import.t...
+patching ./t/28-uvar.t...
+patching ./t/27-local.t...
+patching ./t/15-self.t...
+Checking if this is ActiveState Perl 5.8.8 build 822 or higher... no
+Checking if this is gcc 3.4 on Windows trying to link against an import library... no
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Variable::Magic
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Variable/Magic.pm blib/lib/Variable/Magic.pm
+Running Mkbootstrap for Magic ()
+chmod 644 "Magic.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Magic.bs blib/arch/auto/Variable/Magic/Magic.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Magic.xs > Magic.xsc
+mv Magic.xsc Magic.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.62\" -DXS_VERSION=\"0.62\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Magic.c
+rm -f blib/arch/auto/Variable/Magic/Magic.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Magic.o  -o blib/arch/auto/Variable/Magic/Magic.so  \
+      \
+
+chmod 755 blib/arch/auto/Variable/Magic/Magic.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Magic.bs blib/arch/auto/Variable/Magic/Magic.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .......... 1/1 # Testing Variable::Magic 0.62, Perl 5.032000 (no patchlevel), /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .......... ok
+t/01-import.t ........ ok
+t/02-constants.t ..... ok
+t/09-load-threads.t .. # Using threads 2.25
+# Using threads::shared 1.61
+t/09-load-threads.t .. ok
+t/10-simple.t ........ ok
+t/11-multiple.t ...... ok
+t/13-data.t .......... ok
+t/14-callbacks.t ..... ok
+t/15-self.t .......... # According to Config::Perl::V version 0.32, this is NOT a debugging perl
+# Not testing global destruction
+t/15-self.t .......... ok
+t/16-huf.t ........... # Using Hash::Util::FieldHash 1.20
+t/16-huf.t ........... ok
+t/17-ctl.t ........... # Using IO::Handle 1.42
+# Using IO::Select 1.42
+# Using IPC::Open3 1.21
+t/17-ctl.t ........... ok
+t/18-opinfo.t ........ ok
+t/20-get.t ........... ok
+t/21-set.t ........... ok
+t/22-len.t ........... ok
+t/23-clear.t ......... ok
+t/24-free.t .......... ok
+t/25-copy.t .......... 1/48 # Using Tie::Array 1.07
+# Using Tie::Hash 1.05
+t/25-copy.t .......... ok
+t/27-local.t ......... ok
+t/28-uvar.t .......... 1/75 # Using Tie::Hash 1.05
+t/28-uvar.t .......... ok
+t/30-scalar.t ........ 1/76 # Using Tie::Array 1.07
+t/30-scalar.t ........ ok
+t/31-array.t ......... ok
+t/32-hash.t .......... ok
+t/33-code.t .......... ok
+t/34-glob.t .......... # Using Symbol 1.08
+t/34-glob.t .......... ok
+t/35-stash.t ......... ok
+t/40-threads.t ....... # Using threads 2.25
+# Using threads::shared 1.61
+t/40-threads.t ....... ok
+t/41-clone.t ......... # Using threads 2.25
+# Using threads::shared 1.61
+t/41-clone.t ......... ok
+t/50-return.t ........ ok
+t/80-leaks.t ......... ok
+All tests successful.
+Files=30, Tests=1598,  3 wallclock secs ( 0.18 usr  0.03 sys +  2.42 cusr  0.32 csys =  2.95 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib/pkgconfig m4datadir=/nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/share/aclocal aclocaldir=/nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Magic.bs blib/arch/auto/Variable/Magic/Magic.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Variable/Magic/Magic.so
+Installing /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Variable/Magic.pm
+Installing /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/share/man/man3/Variable::Magic.3
+Appending installation info to /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/share/man/man3 to /nix/store/ccg05gp0rs1xkvkms04qdifx801n67h0-perl5.32.0-Variable-Magic-0.62-devdoc/share/man/man3
+Removing empty /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62
+shrinking /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Variable/Magic/Magic.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62/lib
+patching script interpreter paths in /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62
+checking for references to /build/ in /nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ccg05gp0rs1xkvkms04qdifx801n67h0-perl5.32.0-Variable-Magic-0.62-devdoc
+gzipping man pages under /nix/store/ccg05gp0rs1xkvkms04qdifx801n67h0-perl5.32.0-Variable-Magic-0.62-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ccg05gp0rs1xkvkms04qdifx801n67h0-perl5.32.0-Variable-Magic-0.62-devdoc
+checking for references to /build/ in /nix/store/ccg05gp0rs1xkvkms04qdifx801n67h0-perl5.32.0-Variable-Magic-0.62-devdoc...
+/nix/store/4kls4bslxq3zqw4bc9cnw5xx54n7pnbn-perl5.32.0-Variable-Magic-0.62

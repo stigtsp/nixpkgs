@@ -1,0 +1,108 @@
+these derivations will be built:
+  /nix/store/09j0993ili352rs31xasidfgfxqs0ypp-perl5.32.0-Math-Round-0.07.drv
+  /nix/store/8jcj102vs1h5gsr1p6p9ras5fh4vl331-perl5.32.0-Data-SpreadPagination-0.1.2.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/gs3b4fv1cbvpxwnlhimm1xjj5x8vab7r-Math-Round-0.07.tar.gz
+  /nix/store/wb3s5qlqmxj6ba243hsjcfrh3qhqhlv0-Data-SpreadPagination-0.1.2.tar.gz
+copying path '/nix/store/wb3s5qlqmxj6ba243hsjcfrh3qhqhlv0-Data-SpreadPagination-0.1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/gs3b4fv1cbvpxwnlhimm1xjj5x8vab7r-Math-Round-0.07.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/09j0993ili352rs31xasidfgfxqs0ypp-perl5.32.0-Math-Round-0.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/gs3b4fv1cbvpxwnlhimm1xjj5x8vab7r-Math-Round-0.07.tar.gz
+source root is Math-Round-0.07
+setting SOURCE_DATE_EPOCH to timestamp 1420218148 of file Math-Round-0.07/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::Round
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Round.pm blib/lib/Math/Round.pm
+AutoSplitting blib/lib/Math/Round.pm (blib/lib/auto/Math/Round)
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..11
+ok 1
+round............ok 2
+round_even.......ok 3
+round_odd........ok 4
+round_rand.......ok 5
+nearest..........ok 6
+nearest_ceil.....ok 7
+nearest_floor....ok 8
+nearest_rand.....ok 9
+nlowmult.........ok 10
+nhimult..........ok 11
+All tests successful.
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/lib/pkgconfig m4datadir=/nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/share/aclocal aclocaldir=/nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/lib/perl5/site_perl/5.32.0/Math/Round.pm
+Installing /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/lib/perl5/site_perl/5.32.0/auto/Math/Round/autosplit.ix
+Installing /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/share/man/man3/Math::Round.3
+Appending installation info to /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/share/man/man3 to /nix/store/r1lr6w5cvyb2j1pjk7sv9ifhrkhri9nk-perl5.32.0-Math-Round-0.07-devdoc/share/man/man3
+Removing empty /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07/lib
+patching script interpreter paths in /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07
+checking for references to /build/ in /nix/store/31hsvjdxpv8pz709i527x8gg8ip94kw1-perl5.32.0-Math-Round-0.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r1lr6w5cvyb2j1pjk7sv9ifhrkhri9nk-perl5.32.0-Math-Round-0.07-devdoc
+gzipping man pages under /nix/store/r1lr6w5cvyb2j1pjk7sv9ifhrkhri9nk-perl5.32.0-Math-Round-0.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r1lr6w5cvyb2j1pjk7sv9ifhrkhri9nk-perl5.32.0-Math-Round-0.07-devdoc
+checking for references to /build/ in /nix/store/r1lr6w5cvyb2j1pjk7sv9ifhrkhri9nk-perl5.32.0-Math-Round-0.07-devdoc...
+building '/nix/store/8jcj102vs1h5gsr1p6p9ras5fh4vl331-perl5.32.0-Data-SpreadPagination-0.1.2.drv'...
+unpacking sources
+unpacking source archive /nix/store/wb3s5qlqmxj6ba243hsjcfrh3qhqhlv0-Data-SpreadPagination-0.1.2.tar.gz
+source root is Data-SpreadPagination-0.1.2
+setting SOURCE_DATE_EPOCH to timestamp 1090240153 of file Data-SpreadPagination-0.1.2/lib/Data/SpreadPagination.pm
+patching sources
+configuring
+patching ./t/main.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::SpreadPagination
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/SpreadPagination.pm blib/lib/Data/SpreadPagination.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/main.t .. ok
+t/pod.t ... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=2, Tests=318,  0 wallclock secs ( 0.04 usr  0.00 sys +  0.14 cusr  0.04 csys =  0.22 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/lib/pkgconfig m4datadir=/nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/share/aclocal aclocaldir=/nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/lib/perl5/site_perl/5.32.0/Data/SpreadPagination.pm
+Installing /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/share/man/man3/Data::SpreadPagination.3
+Appending installation info to /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/share/man/man3 to /nix/store/yk4dp1lbv8b14439xhv9bsgdhzialp84-perl5.32.0-Data-SpreadPagination-0.1.2-devdoc/share/man/man3
+Removing empty /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2/lib
+patching script interpreter paths in /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2
+checking for references to /build/ in /nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yk4dp1lbv8b14439xhv9bsgdhzialp84-perl5.32.0-Data-SpreadPagination-0.1.2-devdoc
+gzipping man pages under /nix/store/yk4dp1lbv8b14439xhv9bsgdhzialp84-perl5.32.0-Data-SpreadPagination-0.1.2-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yk4dp1lbv8b14439xhv9bsgdhzialp84-perl5.32.0-Data-SpreadPagination-0.1.2-devdoc
+checking for references to /build/ in /nix/store/yk4dp1lbv8b14439xhv9bsgdhzialp84-perl5.32.0-Data-SpreadPagination-0.1.2-devdoc...
+/nix/store/77dzklpf8hxrma0f1lahk5bj6pgw6crw-perl5.32.0-Data-SpreadPagination-0.1.2

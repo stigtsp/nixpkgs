@@ -1,0 +1,723 @@
+these derivations will be built:
+  /nix/store/1dbf8qkgxh83nfpjcz9m361cszprnrmc-perl5.32.0-File-ChangeNotify-0.31.drv
+  /nix/store/dai6a8m3nl2yarq513lqzk7jig7574zj-perl5.32.0-Config-General-2.63.drv
+  /nix/store/mddxgf34rr0si9j0b0925ib5q0nc06z0-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34.drv
+  /nix/store/n07f58qml6mmxlh3cq84qlkdivzpbqqd-perl5.32.0-Catalyst-Devel-1.40.drv
+these paths will be fetched (0.22 MiB download, 0.22 MiB unpacked):
+  /nix/store/ar8d88v33cxlnbb37whd6599sfkm4nzv-Config-General-2.63.tar.gz
+  /nix/store/c9sp47rpsc7k7nxbpgvz1lxarna01gzi-File-ChangeNotify-0.31.tar.gz
+  /nix/store/hgac7dhpbs10grpx5glyha3ia35f22z1-Catalyst-Devel-1.40.tar.gz
+  /nix/store/nlb1q0d7j0fpgjr7a0nf65cfynqf6p16-Catalyst-Plugin-ConfigLoader-0.34.tar.gz
+copying path '/nix/store/hgac7dhpbs10grpx5glyha3ia35f22z1-Catalyst-Devel-1.40.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nlb1q0d7j0fpgjr7a0nf65cfynqf6p16-Catalyst-Plugin-ConfigLoader-0.34.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/c9sp47rpsc7k7nxbpgvz1lxarna01gzi-File-ChangeNotify-0.31.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ar8d88v33cxlnbb37whd6599sfkm4nzv-Config-General-2.63.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mddxgf34rr0si9j0b0925ib5q0nc06z0-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34.drv'...
+building '/nix/store/1dbf8qkgxh83nfpjcz9m361cszprnrmc-perl5.32.0-File-ChangeNotify-0.31.drv'...
+building '/nix/store/dai6a8m3nl2yarq513lqzk7jig7574zj-perl5.32.0-Config-General-2.63.drv'...
+unpacking sources
+unpacking source archive /nix/store/ar8d88v33cxlnbb37whd6599sfkm4nzv-Config-General-2.63.tar.gz
+source root is Config-General-2.63
+setting SOURCE_DATE_EPOCH to timestamp 1469772654 of file Config-General-2.63/META.yml
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/c9sp47rpsc7k7nxbpgvz1lxarna01gzi-File-ChangeNotify-0.31.tar.gz
+source root is File-ChangeNotify-0.31
+setting SOURCE_DATE_EPOCH to timestamp 1547052549 of file File-ChangeNotify-0.31/xt/release/try-load.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::General
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::ChangeNotify
+cp General/Interpolated.pm blib/lib/Config/General/Interpolated.pm
+cp General/Extended.pm blib/lib/Config/General/Extended.pm
+cp General.pm blib/lib/Config/General.pm
+Manifying 3 pod documents
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+unpacking sources
+unpacking source archive /nix/store/nlb1q0d7j0fpgjr7a0nf65cfynqf6p16-Catalyst-Plugin-ConfigLoader-0.34.tar.gz
+source root is Catalyst-Plugin-ConfigLoader-0.34
+setting SOURCE_DATE_EPOCH to timestamp 1397659025 of file Catalyst-Plugin-ConfigLoader-0.34/MANIFEST
+patching sources
+configuring
+t/run.t .. ok
+All tests successful.
+Files=1, Tests=78,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.14 cusr  0.01 csys =  0.17 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib/pkgconfig m4datadir=/nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/aclocal aclocaldir=/nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/aclocal install
+Manifying 3 pod documents
+cp lib/File/ChangeNotify/Watcher/KQueue.pm blib/lib/File/ChangeNotify/Watcher/KQueue.pm
+cp lib/File/ChangeNotify/Watcher/Default.pm blib/lib/File/ChangeNotify/Watcher/Default.pm
+cp lib/File/ChangeNotify/Watcher/Inotify.pm blib/lib/File/ChangeNotify/Watcher/Inotify.pm
+cp lib/File/ChangeNotify/Event.pm blib/lib/File/ChangeNotify/Event.pm
+cp lib/File/ChangeNotify/Watcher.pm blib/lib/File/ChangeNotify/Watcher.pm
+cp lib/File/ChangeNotify.pm blib/lib/File/ChangeNotify.pm
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib/perl5/site_perl/5.32.0/Config/General.pm
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib/perl5/site_perl/5.32.0/Config/General/Interpolated.pm
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib/perl5/site_perl/5.32.0/Config/General/Extended.pm
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/man/man3/Config::General.3
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/man/man3/Config::General::Interpolated.3
+Installing /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/man/man3/Config::General::Extended.3
+Appending installation info to /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/man/man3 to /nix/store/wb53n2dq9pbvkacjbi03aqbmg7jypn8p-perl5.32.0-Config-General-2.63-devdoc/share/man/man3
+Removing empty /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63/lib
+patching script interpreter paths in /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63
+checking for references to /build/ in /nix/store/v25kpkscwl59zm7fygzjpxbn6vdl32q7-perl5.32.0-Config-General-2.63...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wb53n2dq9pbvkacjbi03aqbmg7jypn8p-perl5.32.0-Config-General-2.63-devdoc
+gzipping man pages under /nix/store/wb53n2dq9pbvkacjbi03aqbmg7jypn8p-perl5.32.0-Config-General-2.63-devdoc/share/man/
+Manifying 6 pod documents
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wb53n2dq9pbvkacjbi03aqbmg7jypn8p-perl5.32.0-Config-General-2.63-devdoc
+checking for references to /build/ in /nix/store/wb53n2dq9pbvkacjbi03aqbmg7jypn8p-perl5.32.0-Config-General-2.63-devdoc...
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::ConfigLoader
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                    Want     Have
+#     --------------------- -------- --------
+#     Exporter                   any     5.74
+#     ExtUtils::MakeMaker        any     7.44
+#     File::Path                 any     2.16
+#     File::Spec                 any     3.78
+#     File::Temp                 any   0.2309
+#     FindBin                    any     1.51
+#     Test2::V0                  any 0.000130
+#     Test::More            1.302015 1.302175
+#     Test::Requires             any     0.11
+#     Test::Without::Module      any     0.20
+#     base                       any     2.27
+#     lib                        any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                     Want     Have
+#     ------------------------- ----- --------
+#     Carp                        any     1.50
+#     Fcntl                       any     1.13
+#     File::Find                  any     1.37
+#     File::Spec                  any     3.78
+#     Module::Pluggable::Object   any      5.2
+#     Module::Runtime             any    0.016
+#     Moo                       1.006 2.004000
+#     Moo::Role                   any 2.004000
+#     Time::HiRes                 any   1.9764
+#     Type::Utils                 any 1.010002
+#     Types::Standard             any 1.010002
+#     namespace::autoclean        any     0.29
+#     strict                      any     1.11
+#     warnings                    any     1.47
+#
+# === Runtime Suggests ===
+#
+#     Module          Want    Have
+#     --------------- ---- -------
+#     IO::KQueue       any missing
+#     Linux::Inotify2  1.2 missing
+#
+t/00-report-prereqs.t .. ok
+t/all.t ................ 1/?             # Creating /build/b5c7PyPnXY/whatever
+            # Modifying /build/b5c7PyPnXY/whatever
+            # Deleting /build/b5c7PyPnXY/whatever
+            # Creating /build/DxodfRFH0i/whatever
+            # Modifying /build/DxodfRFH0i/whatever
+            # Deleting /build/DxodfRFH0i/whatever
+            # Creating /build/DxodfRFH0i/another
+            # Modifying /build/DxodfRFH0i/another
+            # Creating /build/mul1MQpkg8/not-included
+            # Modifying /build/mul1MQpkg8/not-included
+            # Deleting /build/mul1MQpkg8/not-included
+            # Creating /build/mul1MQpkg8/foo.txt
+            # Creating /build/KT1dP9sZhT/subdir2/whatever
+            # Creating /build/aCO1exKeiV/file.txt-tmp
+                # Creating /build/JChuq6puOJ/will-chmod
+                # Creating /build/JChuq6puOJ/will-modify-content
+                # Modifying /build/JChuq6puOJ/will-modify-content
+                # Creating /build/CJWc7SOquK/subdir1/will-chmod
+                # Creating /build/CJWc7SOquK/subdir2/will-chmod
+                # Creating /build/K6fcS5LI6T/will-modify-content
+                # Modifying /build/K6fcS5LI6T/will-modify-content
+                # Creating /build/4Wbqy4sDuh/subdir1/will-modify-content
+                # Creating /build/4Wbqy4sDuh/subdir2/will-modify-content
+                # Modifying /build/4Wbqy4sDuh/subdir1/will-modify-content
+                # Modifying /build/4Wbqy4sDuh/subdir2/will-modify-content
+            # Creating /build/7VVeyhkWSe/whatever
+            # Modifying /build/7VVeyhkWSe/whatever
+            # Deleting /build/7VVeyhkWSe/whatever
+            # Creating /build/3TBSbGO5iX/whatever
+            # Modifying /build/3TBSbGO5iX/whatever
+            # Deleting /build/3TBSbGO5iX/whatever
+            # Creating /build/3TBSbGO5iX/another
+            # Modifying /build/3TBSbGO5iX/another
+            # Creating /build/3YqJJhLMo2/not-included
+            # Modifying /build/3YqJJhLMo2/not-included
+            # Deleting /build/3YqJJhLMo2/not-included
+            # Creating /build/3YqJJhLMo2/foo.txt
+            # Creating /build/zh7L_6y6UU/subdir2/whatever
+            # Creating /build/1XRB1iv1EX/file.txt-tmp
+                # Creating /build/DubyHMHDt9/will-chmod
+                # Creating /build/DubyHMHDt9/will-modify-content
+                # Modifying /build/DubyHMHDt9/will-modify-content
+                # Creating /build/LuYh95CqdV/subdir1/will-chmod
+                # Creating /build/LuYh95CqdV/subdir2/will-chmod
+                # Creating /build/YkZ1u23BQG/will-modify-content
+                # Modifying /build/YkZ1u23BQG/will-modify-content
+                # Creating /build/F5ljznr_Nt/subdir1/will-modify-content
+                # Creating /build/F5ljznr_Nt/subdir2/will-modify-content
+                # Modifying /build/F5ljznr_Nt/subdir1/will-modify-content
+                # Modifying /build/F5ljznr_Nt/subdir2/will-modify-content
+            # Creating /build/DGR25ULL3h/include
+            # Creating /build/DGR25ULL3h/ignored-dir/foo
+            # Creating /build/DGR25ULL3h/foo.ignore
+            # Creating /build/3FoQAUtPlt/file
+            # Deleting /build/3FoQAUtPlt/file
+            # Creating /build/3FoQAUtPlt/file
+t/all.t ................ ok
+cp lib/Catalyst/Plugin/ConfigLoader.pm blib/lib/Catalyst/Plugin/ConfigLoader.pm
+cp lib/Catalyst/Plugin/ConfigLoader/Manual.pod blib/lib/Catalyst/Plugin/ConfigLoader/Manual.pod
+t/excluded-dirs.t ...... ok
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/instantiate-twice.t .. ok
+All tests successful.
+Files=4, Tests=10,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.93 cusr  0.29 csys =  1.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/pkgconfig m4datadir=/nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/aclocal aclocaldir=/nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify/Watcher.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify/Event.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify/Watcher/Inotify.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify/Watcher/KQueue.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/site_perl/5.32.0/File/ChangeNotify/Watcher/Default.pm
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify::Watcher::Inotify.3
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify::Watcher.3
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify::Watcher::KQueue.3
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify::Event.3
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify.3
+Installing /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3/File::ChangeNotify::Watcher::Default.3
+Appending installation info to /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/man3 to /nix/store/vv2kv4h59ca9izfzik5zw4lr4qvnw0if-perl5.32.0-File-ChangeNotify-0.31-devdoc/share/man/man3
+Removing empty /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31/lib
+patching script interpreter paths in /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31
+checking for references to /build/ in /nix/store/2z53rlfkz3dlzsvh5x5508b81z2hlj4y-perl5.32.0-File-ChangeNotify-0.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vv2kv4h59ca9izfzik5zw4lr4qvnw0if-perl5.32.0-File-ChangeNotify-0.31-devdoc
+gzipping man pages under /nix/store/vv2kv4h59ca9izfzik5zw4lr4qvnw0if-perl5.32.0-File-ChangeNotify-0.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vv2kv4h59ca9izfzik5zw4lr4qvnw0if-perl5.32.0-File-ChangeNotify-0.31-devdoc
+checking for references to /build/ in /nix/store/vv2kv4h59ca9izfzik5zw4lr4qvnw0if-perl5.32.0-File-ChangeNotify-0.31-devdoc...
+t/01-use.t .................. ok
+t/10-live_auto.t ............ ok
+t/20-mock_load.t ............ ok
+t/21-mock_load_env.t ........ ok
+t/22-suffix_env.t ........... ok
+t/23-path_env.t ............. ok
+t/24-mock-shortappname.t .... ok
+t/25-setting-config-file.t .. ok
+t/98-pod_coverage.t ......... skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+t/99-pod.t .................. skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=10, Tests=52, 10 wallclock secs ( 0.15 usr  0.10 sys +  5.79 cusr  3.37 csys =  9.41 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/lib/pkgconfig m4datadir=/nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/aclocal aclocaldir=/nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/ConfigLoader.pm
+Installing /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/ConfigLoader/Manual.pod
+Installing /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/man/man3/Catalyst::Plugin::ConfigLoader::Manual.3
+Installing /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/man/man3/Catalyst::Plugin::ConfigLoader.3
+Appending installation info to /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/man/man3 to /nix/store/3ak07hxy0yqqv36x174m37y5c3gj1ibr-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34-devdoc/share/man/man3
+Removing empty /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34/lib
+patching script interpreter paths in /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34
+checking for references to /build/ in /nix/store/qa44x9jvysq4szqlwbg2zblgqmr5z97r-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3ak07hxy0yqqv36x174m37y5c3gj1ibr-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34-devdoc
+gzipping man pages under /nix/store/3ak07hxy0yqqv36x174m37y5c3gj1ibr-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3ak07hxy0yqqv36x174m37y5c3gj1ibr-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34-devdoc
+checking for references to /build/ in /nix/store/3ak07hxy0yqqv36x174m37y5c3gj1ibr-perl5.32.0-Catalyst-Plugin-ConfigLoader-0.34-devdoc...
+building '/nix/store/n07f58qml6mmxlh3cq84qlkdivzpbqqd-perl5.32.0-Catalyst-Devel-1.40.drv'...
+unpacking sources
+unpacking source archive /nix/store/hgac7dhpbs10grpx5glyha3ia35f22z1-Catalyst-Devel-1.40.tar.gz
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+tar: Ignoring unknown extended header keyword 'SCHILY.dev'
+tar: Ignoring unknown extended header keyword 'SCHILY.ino'
+tar: Ignoring unknown extended header keyword 'SCHILY.nlink'
+source root is Catalyst-Devel-1.40
+setting SOURCE_DATE_EPOCH to timestamp 1582846786 of file Catalyst-Devel-1.40/MANIFEST
+patching sources
+configuring
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Subroutine author_requires redefined at inc/Module/Install/AuthorRequires.pm line 14.
+Subroutine authority redefined at inc/Module/Install/Authority.pm line 9.
+Name "main::NULL" used only once: possible typo at Makefile.PL line 57.
+Cannot determine perl version info from lib/Catalyst/Devel.pm
+*** Module::AutoInstall version 1.19
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More                             ...loaded. (1.302175 >= 0.94)
+- Test::Fatal                            ...loaded. (0.014 >= 0.003)
+- ExtUtils::MakeMaker                    ...loaded. (7.44 >= 6.11)
+- Moose                                  ...loaded. (2.2012)
+- MooseX::Emulate::Class::Accessor::Fast ...loaded. (0.009032)
+- File::ShareDir                         ...loaded. (1.116)
+- namespace::clean                       ...loaded. (0.27)
+- namespace::autoclean                   ...loaded. (0.29)
+- Catalyst                               ...loaded. (5.90126 >= 5.90001)
+- Catalyst::Action::RenderView           ...loaded. (0.16 >= 0.10)
+- Catalyst::Plugin::Static::Simple       ...loaded. (0.36 >= 0.28)
+- Catalyst::Plugin::ConfigLoader         ...loaded. (0.34 >= 0.30)
+- Config::General                        ...loaded. (2.63 >= 2.42)
+- File::ChangeNotify                     ...loaded. (0.31 >= 0.07)
+- File::Copy::Recursive                  ...loaded. (0.45)
+- Path::Class                            ...loaded. (0.37 >= 0.09)
+- Template                               ...loaded. (3.008 >= 2.14)
+- MooseX::Daemonize                      ...missing.
+- Starman                                ...missing.
+- Module::Install                        ...loaded. (1.19 >= 1.02)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite MooseX::Daemonize 0 not found.
+Warning: prerequisite Starman 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Devel
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Devel.pm blib/lib/Catalyst/Devel.pm
+cp lib/Catalyst/Restarter.pm blib/lib/Catalyst/Restarter.pm
+cp lib/Catalyst/Helper.pm blib/lib/Catalyst/Helper.pm
+cp lib/Catalyst/Restarter/Forking.pm blib/lib/Catalyst/Restarter/Forking.pm
+cp lib/Module/Install/Catalyst.pm blib/lib/Module/Install/Catalyst.pm
+cp lib/Catalyst/Restarter/Win32.pm blib/lib/Catalyst/Restarter/Win32.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/01use.t t/back_compat.t t/generated_app.t t/get_sharedir_file.t t/optional_http-server-restart.t t/render_file_contents.t t/render_share_dir_file.t
+t/01use.t ......................... ok
+t/back_compat.t ................... ok
+t/generated_app.t ................. skipped: These tests require IPC::Run3
+t/get_sharedir_file.t ............. ok
+t/optional_http-server-restart.t .. skipped: set TEST_HTTP to enable this test
+t/render_file_contents.t .......... ok
+t/render_share_dir_file.t ......... ok
+All tests successful.
+Files=7, Tests=15,  5 wallclock secs ( 0.13 usr  0.09 sys +  2.87 cusr  2.39 csys =  5.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/pkgconfig m4datadir=/nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/aclocal aclocaldir=/nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Catalyst/Devel.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Catalyst/Restarter.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Catalyst/Helper.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Catalyst/Restarter/Forking.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Catalyst/Restarter/Win32.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/myapp.psgi.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/Changes.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/myapp.conf.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/Makefile.PL.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/README.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/favicon.ico.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_88x31_built.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_120x50_powered.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/catalyst_logo.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_120x50_built.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_120x50_built_shadow.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_120x50_powered_shadow.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_88x31_built_shadow.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_88x31_powered_shadow.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/root/static/images/btn_88x31_powered.png.bin
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/script/myapp_create.pl.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/script/myapp_cgi.pl.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/script/myapp_server.pl.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/script/myapp_fastcgi.pl.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/script/myapp_test.pl.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/t/01app.t.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/t/comptest.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/t/03podcoverage.t.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/t/02pod.t.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/lib/MyApp.pm.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/lib/MyApp/Controller/Root.pm.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/auto/share/dist/Catalyst-Devel/lib/Helper/compclass.pm.tt
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/site_perl/5.32.0/Module/Install/Catalyst.pm
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Catalyst::Restarter::Forking.3
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Catalyst::Restarter.3
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Catalyst::Devel.3
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Module::Install::Catalyst.3
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Catalyst::Helper.3
+Installing /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3/Catalyst::Restarter::Win32.3
+Appending installation info to /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/man3 to /nix/store/lxnw1h6gj04kp65q0vzv237mgnwhqqiv-perl5.32.0-Catalyst-Devel-1.40-devdoc/share/man/man3
+Removing empty /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40/lib
+patching script interpreter paths in /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40
+checking for references to /build/ in /nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lxnw1h6gj04kp65q0vzv237mgnwhqqiv-perl5.32.0-Catalyst-Devel-1.40-devdoc
+gzipping man pages under /nix/store/lxnw1h6gj04kp65q0vzv237mgnwhqqiv-perl5.32.0-Catalyst-Devel-1.40-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lxnw1h6gj04kp65q0vzv237mgnwhqqiv-perl5.32.0-Catalyst-Devel-1.40-devdoc
+checking for references to /build/ in /nix/store/lxnw1h6gj04kp65q0vzv237mgnwhqqiv-perl5.32.0-Catalyst-Devel-1.40-devdoc...
+/nix/store/91agk741xhvh38xfn2pqzghpabvg02zb-perl5.32.0-Catalyst-Devel-1.40

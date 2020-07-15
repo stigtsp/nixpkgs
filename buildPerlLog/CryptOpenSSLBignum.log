@@ -1,0 +1,145 @@
+these derivations will be built:
+  /nix/store/4g3pjnv5jw2bax2xckyr3gjl413a1rzv-perl5.32.0-Crypt-OpenSSL-Bignum-0.09.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/ciffa1frvq9mxk07ilyywyw20iwvi726-Crypt-OpenSSL-Bignum-0.09.tar.gz
+copying path '/nix/store/ciffa1frvq9mxk07ilyywyw20iwvi726-Crypt-OpenSSL-Bignum-0.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4g3pjnv5jw2bax2xckyr3gjl413a1rzv-perl5.32.0-Crypt-OpenSSL-Bignum-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/ciffa1frvq9mxk07ilyywyw20iwvi726-Crypt-OpenSSL-Bignum-0.09.tar.gz
+source root is Crypt-OpenSSL-Bignum-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1512155598 of file Crypt-OpenSSL-Bignum-0.09/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lcrypto
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::OpenSSL::Bignum
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Bignum.pm blib/lib/Crypt/OpenSSL/Bignum.pm
+cp Bignum/CTX.pm blib/lib/Crypt/OpenSSL/Bignum/CTX.pm
+Running Mkbootstrap for Bignum ()
+chmod 644 "Bignum.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Bignum.bs blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Crypt-OpenSSL-Bignum-0.09/typemap'  Bignum.xs > Bignum.xsc
+Please specify prototyping behavior for Bignum.xs (see perlxs manual)
+mv Bignum.xsc Bignum.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.09\" -DXS_VERSION=\"0.09\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DPERL5 -DOPENSSL_NO_KRB5 Bignum.c
+rm -f blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Bignum.o  -o blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.so  \
+      \
+
+chmod 755 blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Bignum.bs blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..67
+# Running under perl version 5.032000 for linux
+# Current time local: Wed Jul 15 02:57:41 2020
+# Current time GMT:   Wed Jul 15 02:57:41 2020
+# Using Test.pm version 1.31
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+ok 7
+ok 8
+ok 9
+ok 10
+ok 11
+ok 12
+ok 13
+ok 14
+ok 15
+ok 16
+ok 17
+ok 18
+ok 19
+ok 20
+ok 21
+ok 22
+ok 23
+ok 24
+ok 25
+ok 26
+ok 27
+ok 28
+ok 29
+ok 30
+ok 31
+ok 32
+ok 33
+ok 34
+ok 35
+ok 36
+ok 37
+ok 38
+ok 39
+ok 40
+ok 41
+ok 42
+ok 43
+ok 44
+ok 45
+ok 46
+ok 47
+ok 48
+ok 49
+ok 50
+ok 51
+ok 52
+ok 53
+ok 54
+ok 55
+ok 56
+ok 57
+ok 58
+ok 59
+ok 60
+ok 61
+ok 62
+ok 63
+ok 64
+ok 65
+ok 66
+ok 67
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/pkgconfig m4datadir=/nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/aclocal aclocaldir=/nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Bignum.bs blib/arch/auto/Crypt/OpenSSL/Bignum/Bignum.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/OpenSSL/Bignum/Bignum.so
+Installing /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/OpenSSL/Bignum.pm
+Installing /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/OpenSSL/Bignum/CTX.pm
+Installing /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/man/man3/Crypt::OpenSSL::Bignum::CTX.3
+Installing /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/man/man3/Crypt::OpenSSL::Bignum.3
+Appending installation info to /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/man/man3 to /nix/store/1a02dnhjj0zjh3m15cv7n2ymxhsxsymc-perl5.32.0-Crypt-OpenSSL-Bignum-0.09-devdoc/share/man/man3
+Removing empty /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09
+shrinking /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/OpenSSL/Bignum/Bignum.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09/lib
+patching script interpreter paths in /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09
+checking for references to /build/ in /nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1a02dnhjj0zjh3m15cv7n2ymxhsxsymc-perl5.32.0-Crypt-OpenSSL-Bignum-0.09-devdoc
+gzipping man pages under /nix/store/1a02dnhjj0zjh3m15cv7n2ymxhsxsymc-perl5.32.0-Crypt-OpenSSL-Bignum-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1a02dnhjj0zjh3m15cv7n2ymxhsxsymc-perl5.32.0-Crypt-OpenSSL-Bignum-0.09-devdoc
+checking for references to /build/ in /nix/store/1a02dnhjj0zjh3m15cv7n2ymxhsxsymc-perl5.32.0-Crypt-OpenSSL-Bignum-0.09-devdoc...
+/nix/store/mbrmn228npj3xwjaqmfpkrp983yqrn35-perl5.32.0-Crypt-OpenSSL-Bignum-0.09

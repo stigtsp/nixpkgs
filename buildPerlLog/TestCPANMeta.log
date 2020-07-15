@@ -1,0 +1,73 @@
+these derivations will be built:
+  /nix/store/xmr3ipw02d6gzs8165fbd5sasarfr95z-perl5.32.0-Test-CPAN-Meta-0.25.drv
+building '/nix/store/xmr3ipw02d6gzs8165fbd5sasarfr95z-perl5.32.0-Test-CPAN-Meta-0.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/clkpg2h7h19ljg5h4m0g9367a1mkvrp2-Test-CPAN-Meta-0.25.tar.gz
+source root is Test-CPAN-Meta-0.25
+setting SOURCE_DATE_EPOCH to timestamp 1430896531 of file Test-CPAN-Meta-0.25/t/samples/multibyte.yml
+patching sources
+configuring
+patching ./examples/94metatest.t...
+patching ./examples/98metatest.t...
+patching ./t/96metatest.t...
+patching ./t/91podcover.t...
+patching ./t/94metatest.t...
+patching ./t/98metatest.t...
+patching ./t/03metaversion.t...
+patching ./t/90podtest.t...
+patching ./t/95changedate.t...
+patching ./t/05metaspec.t...
+patching ./t/02metafiles.t...
+patching ./t/01use.t...
+patching ./t/04metatester.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::CPAN::Meta
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/CPAN/Meta.pm blib/lib/Test/CPAN/Meta.pm
+cp lib/Test/CPAN/Meta/Version.pm blib/lib/Test/CPAN/Meta/Version.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02metafiles.t .... ok
+t/03metaversion.t .. ok
+t/04metatester.t ... ok
+t/05metaspec.t ..... ok
+t/90podtest.t ...... skipped: Test::Pod 1.00 required for testing POD
+t/91podcover.t ..... skipped: Test::Pod::Coverage 0.08 required for testing POD coverage
+t/94metatest.t ..... ok
+t/95changedate.t ... ok
+t/96metatest.t ..... skipped: Test::CPAN::Meta::JSON required for testing META.json files
+t/98metatest.t ..... ok
+All tests successful.
+Files=11, Tests=233,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.68 cusr  0.11 csys =  0.85 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/lib/pkgconfig m4datadir=/nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/aclocal aclocaldir=/nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/lib/perl5/site_perl/5.32.0/Test/CPAN/Meta.pm
+Installing /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/lib/perl5/site_perl/5.32.0/Test/CPAN/Meta/Version.pm
+Installing /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/man/man3/Test::CPAN::Meta.3
+Installing /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/man/man3/Test::CPAN::Meta::Version.3
+Appending installation info to /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/man/man3 to /nix/store/6iggzv99pnif5dms8c47hsqx2dpsg9j1-perl5.32.0-Test-CPAN-Meta-0.25-devdoc/share/man/man3
+Removing empty /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25/lib
+patching script interpreter paths in /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25
+checking for references to /build/ in /nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6iggzv99pnif5dms8c47hsqx2dpsg9j1-perl5.32.0-Test-CPAN-Meta-0.25-devdoc
+gzipping man pages under /nix/store/6iggzv99pnif5dms8c47hsqx2dpsg9j1-perl5.32.0-Test-CPAN-Meta-0.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6iggzv99pnif5dms8c47hsqx2dpsg9j1-perl5.32.0-Test-CPAN-Meta-0.25-devdoc
+checking for references to /build/ in /nix/store/6iggzv99pnif5dms8c47hsqx2dpsg9j1-perl5.32.0-Test-CPAN-Meta-0.25-devdoc...
+/nix/store/fbwsln2adjd972cfb7508xvckyiiwail-perl5.32.0-Test-CPAN-Meta-0.25

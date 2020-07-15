@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/kz5qdiahqw8fvxbi0kqf6mdrk2pjac2h-perl5.32.0-File-Tail-1.3.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/i1f8vl6hgzjf6s7cavsgqh4s44qbysci-File-Tail-1.3.tar.gz
+copying path '/nix/store/i1f8vl6hgzjf6s7cavsgqh4s44qbysci-File-Tail-1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kz5qdiahqw8fvxbi0kqf6mdrk2pjac2h-perl5.32.0-File-Tail-1.3.drv'...
+unpacking sources
+unpacking source archive /nix/store/i1f8vl6hgzjf6s7cavsgqh4s44qbysci-File-Tail-1.3.tar.gz
+source root is File-Tail-1.3
+setting SOURCE_DATE_EPOCH to timestamp 1438519751 of file File-Tail-1.3/META.yml
+patching sources
+configuring
+patching ./select_demo...
+patching ./logwatch...
+
+File::Tail will be installed without debugging information.
+This information isn't usefull unless you intend to tinker
+with the code. To install with debugging enabled, use:
+perl Makefile.PL LOGIT
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Tail
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Tail.pm blib/lib/File/Tail.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10open.t ......... ok
+t/20tail.t ......... ok
+t/30name_change.t .. ok
+All tests successful.
+Files=3, Tests=15, 65 wallclock secs ( 0.03 usr  0.00 sys +  0.06 cusr  0.01 csys =  0.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/lib/pkgconfig m4datadir=/nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/share/aclocal aclocaldir=/nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/lib/perl5/site_perl/5.32.0/File/Tail.pm
+Installing /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/share/man/man3/File::Tail.3
+Appending installation info to /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/share/man/man3 to /nix/store/mjpr87vk9a45369prgd3z5azcgif3yjj-perl5.32.0-File-Tail-1.3-devdoc/share/man/man3
+Removing empty /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3/lib
+patching script interpreter paths in /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3
+checking for references to /build/ in /nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mjpr87vk9a45369prgd3z5azcgif3yjj-perl5.32.0-File-Tail-1.3-devdoc
+gzipping man pages under /nix/store/mjpr87vk9a45369prgd3z5azcgif3yjj-perl5.32.0-File-Tail-1.3-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mjpr87vk9a45369prgd3z5azcgif3yjj-perl5.32.0-File-Tail-1.3-devdoc
+checking for references to /build/ in /nix/store/mjpr87vk9a45369prgd3z5azcgif3yjj-perl5.32.0-File-Tail-1.3-devdoc...
+/nix/store/7jx52nkybaqz470zm1gqkcxri8p7wfpb-perl5.32.0-File-Tail-1.3

@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/60sz5hk45b8a7y69p51pn202fn6fncff-perl5.32.0-Crypt-RandPasswd-0.06.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/ywkbacfnja8dhhxh2kgg0ibmr2p2pmx8-Crypt-RandPasswd-0.06.tar.gz
+copying path '/nix/store/ywkbacfnja8dhhxh2kgg0ibmr2p2pmx8-Crypt-RandPasswd-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/60sz5hk45b8a7y69p51pn202fn6fncff-perl5.32.0-Crypt-RandPasswd-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/ywkbacfnja8dhhxh2kgg0ibmr2p2pmx8-Crypt-RandPasswd-0.06.tar.gz
+source root is Crypt-RandPasswd-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1400798281 of file Crypt-RandPasswd-0.06/MANIFEST
+patching sources
+configuring
+patching ./t/02-letters.t...
+patching ./t/01-word.t...
+patching ./t/03-chars.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::RandPasswd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/RandPasswd.pm blib/lib/Crypt/RandPasswd.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-word.t ..... ok
+t/02-letters.t .. ok
+t/03-chars.t .... ok
+All tests successful.
+Files=3, Tests=60,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.53 cusr  0.02 csys =  0.57 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/lib/pkgconfig m4datadir=/nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/share/aclocal aclocaldir=/nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/lib/perl5/site_perl/5.32.0/Crypt/RandPasswd.pm
+Installing /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/share/man/man3/Crypt::RandPasswd.3
+Appending installation info to /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/share/man/man3 to /nix/store/a91fsnrjqzx896pm1z0qn2nkgy3sb8n5-perl5.32.0-Crypt-RandPasswd-0.06-devdoc/share/man/man3
+Removing empty /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06/lib
+patching script interpreter paths in /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06
+checking for references to /build/ in /nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a91fsnrjqzx896pm1z0qn2nkgy3sb8n5-perl5.32.0-Crypt-RandPasswd-0.06-devdoc
+gzipping man pages under /nix/store/a91fsnrjqzx896pm1z0qn2nkgy3sb8n5-perl5.32.0-Crypt-RandPasswd-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/a91fsnrjqzx896pm1z0qn2nkgy3sb8n5-perl5.32.0-Crypt-RandPasswd-0.06-devdoc
+checking for references to /build/ in /nix/store/a91fsnrjqzx896pm1z0qn2nkgy3sb8n5-perl5.32.0-Crypt-RandPasswd-0.06-devdoc...
+/nix/store/r0jh3aknyjnxgwhvzpfcq9l07bhivypy-perl5.32.0-Crypt-RandPasswd-0.06

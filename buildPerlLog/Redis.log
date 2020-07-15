@@ -1,0 +1,127 @@
+these derivations will be built:
+  /nix/store/jqdzc90jy8a3lwnlz2dmj9qq8lsg6yf3-perl5.32.0-Redis-1.996.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/f9q4fyr1661r3xsinm5n6ciy47aj5hyz-Redis-1.996.tar.gz
+copying path '/nix/store/f9q4fyr1661r3xsinm5n6ciy47aj5hyz-Redis-1.996.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jqdzc90jy8a3lwnlz2dmj9qq8lsg6yf3-perl5.32.0-Redis-1.996.drv'...
+unpacking sources
+unpacking source archive /nix/store/f9q4fyr1661r3xsinm5n6ciy47aj5hyz-Redis-1.996.tar.gz
+source root is Redis-1.996
+setting SOURCE_DATE_EPOCH to timestamp 1583421451 of file Redis-1.996/tools/html_doc_scrapper.pl
+patching sources
+configuring
+patching ./scripts/publish.pl...
+patching ./scripts/redis-benchmark.pl...
+patching ./t/04-pipeline.t...
+patching ./t/42-client_cmds.t...
+patching ./t/44-no-unicode-bug.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/05-nonblock.t...
+patching ./t/07-reconnect.t...
+patching ./t/11-timeout.t...
+patching ./t/01-basic.t...
+patching ./t/30-scripts.t...
+patching ./t/08-unix-socket.t...
+patching ./t/10-tie-list.t...
+patching ./t/20-tie-hash.t...
+patching ./t/06-on-connect.t...
+patching ./t/release-distmeta.t...
+patching ./t/02-responses.t...
+patching ./t/03-pubsub.t...
+patching ./tools/benchmarks/readline_vs_sysread_vs_recv/client-recv.pl...
+patching ./tools/benchmarks/readline_vs_sysread_vs_recv/client-readline.pl...
+patching ./tools/benchmarks/readline_vs_sysread_vs_recv/server-generator.pl...
+patching ./tools/benchmarks/readline_vs_sysread_vs_recv/client-sysread.pl...
+patching ./tools/benchmarks/readline_vs_sysread_vs_recv/run.pl...
+*** WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING ***
+
+If you're seeing this warning, your toolchain is really, really old* and
+you'll almost certainly have problems installing CPAN modules from this
+century. But never fear, dear user, for we have the technology to fix this!
+
+If you're using CPAN.pm to install things, then you can upgrade it using:
+
+    cpan CPAN
+
+If you're using CPANPLUS to install things, then you can upgrade it using:
+
+    cpanp CPANPLUS
+
+If you're using cpanminus, you shouldn't be seeing this message in the first
+place, so please file an issue on github.
+
+If you're using a packaging tool through a unix distribution, this issue
+should be reported to the package manager.
+
+If you're installing manually, please retrain your fingers to run Build.PL
+when present instead of Makefile.PL.
+
+This public service announcement was brought to you by the Perl Toolchain
+Gang, the irc.perl.org #toolchain IRC channel, and the number 42.
+
+----
+
+* Alternatively, you are doing something overly clever, in which case you
+should consider setting the 'prefer_installer' config option in CPAN.pm, or
+'prefer_makefile' in CPANPLUS, to 'mb" and '0' respectively.
+
+You can also silence this warning for future installations by setting the
+PERL_MM_FALLBACK_SILENCE_WARNING environment variable.
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Redis
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Redis' version '1.996'
+cp lib/Redis/List.pm blib/lib/Redis/List.pm
+cp lib/Redis/Hash.pm blib/lib/Redis/Hash.pm
+cp lib/Redis.pm blib/lib/Redis.pm
+cp lib/Redis/Sentinel.pm blib/lib/Redis/Sentinel.pm
+running tests
+t/00-compile.t ........... ok
+t/01-basic.t ............. skipped: Could not find binary redis-server
+t/02-responses.t ......... skipped: Could not find binary redis-server
+t/03-pubsub.t ............ skipped: Could not find binary redis-server
+t/04-pipeline.t .......... skipped: Could not find binary redis-server
+t/05-nonblock.t .......... skipped: Could not find binary redis-server
+t/06-on-connect.t ........ skipped: Could not find binary redis-server
+t/07-reconnect.t ......... skipped: Could not find binary redis-server
+t/08-unix-socket.t ....... skipped: Define ENV TEST_REDIS_SERVER_SOCK_PATH to test UNIX socket support
+t/10-tie-list.t .......... skipped: Could not find binary redis-server
+t/11-timeout.t ........... ok
+t/20-tie-hash.t .......... skipped: Could not find binary redis-server
+t/30-scripts.t ........... skipped: Could not find binary redis-server
+t/42-client_cmds.t ....... skipped: Could not find binary redis-server
+t/44-no-unicode-bug.t .... skipped: Could not find binary redis-server
+t/50-fork_safe.t ......... skipped: Could not find binary redis-server
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/release-distmeta.t ..... skipped: these tests are for release candidate testing
+All tests successful.
+Files=18, Tests=7,  5 wallclock secs ( 0.05 usr  0.03 sys +  2.94 cusr  1.17 csys =  4.19 CPU)
+Result: PASS
+installing
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/lib/perl5/site_perl/5.32.0/Redis.pm
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/lib/perl5/site_perl/5.32.0/Redis/Hash.pm
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/lib/perl5/site_perl/5.32.0/Redis/List.pm
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/lib/perl5/site_perl/5.32.0/Redis/Sentinel.pm
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/man3/Redis::Hash.3
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/man3/Redis::List.3
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/man3/Redis::Sentinel.3
+Installing /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/man3/Redis.3
+post-installation fixup
+Moving /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/man3 to /nix/store/02fhagn7qyib94gxnlrkn81xvfvvgc7c-perl5.32.0-Redis-1.996-devdoc/share/man/man3
+Removing empty /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996/lib
+patching script interpreter paths in /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996
+checking for references to /build/ in /nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996...
+shrinking RPATHs of ELF executables and libraries in /nix/store/02fhagn7qyib94gxnlrkn81xvfvvgc7c-perl5.32.0-Redis-1.996-devdoc
+gzipping man pages under /nix/store/02fhagn7qyib94gxnlrkn81xvfvvgc7c-perl5.32.0-Redis-1.996-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/02fhagn7qyib94gxnlrkn81xvfvvgc7c-perl5.32.0-Redis-1.996-devdoc
+checking for references to /build/ in /nix/store/02fhagn7qyib94gxnlrkn81xvfvvgc7c-perl5.32.0-Redis-1.996-devdoc...
+/nix/store/9k0732kfr08zh2ki3jpy84j9k3rzn6jk-perl5.32.0-Redis-1.996

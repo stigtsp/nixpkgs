@@ -1,0 +1,78 @@
+these derivations will be built:
+  /nix/store/vbb23yr4h0w7f2a8ls5chyi738lsw37y-perl5.32.0-Encode-Detect-1.01.drv
+these paths will be fetched (0.16 MiB download, 0.17 MiB unpacked):
+  /nix/store/5sbh8sbn1d85c82ibx1cdmqmslidrssw-Encode-Detect-1.01.tar.gz
+copying path '/nix/store/5sbh8sbn1d85c82ibx1cdmqmslidrssw-Encode-Detect-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vbb23yr4h0w7f2a8ls5chyi738lsw37y-perl5.32.0-Encode-Detect-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/5sbh8sbn1d85c82ibx1cdmqmslidrssw-Encode-Detect-1.01.tar.gz
+source root is Encode-Detect-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1211920511 of file Encode-Detect-1.01/typemap
+patching sources
+configuring
+# running Build.PL --prefix /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Encode-Detect' version '1.01'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Encode-Detect' version '1.01'
+Building Encode-Detect
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/CharDistribution.o src/CharDistribution.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/JpCntx.o src/JpCntx.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangBulgarianModel.o src/LangBulgarianModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangCyrillicModel.o src/LangCyrillicModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangGreekModel.o src/LangGreekModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangHebrewModel.o src/LangHebrewModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangHungarianModel.o src/LangHungarianModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/LangThaiModel.o src/LangThaiModel.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsBig5Prober.o src/nsBig5Prober.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsCharSetProber.o src/nsCharSetProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsEUCJPProber.o src/nsEUCJPProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsEUCKRProber.o src/nsEUCKRProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsEUCTWProber.o src/nsEUCTWProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsEscCharsetProber.o src/nsEscCharsetProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsEscSM.o src/nsEscSM.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsGB2312Prober.o src/nsGB2312Prober.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsHebrewProber.o src/nsHebrewProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsLatin1Prober.o src/nsLatin1Prober.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsMBCSGroupProber.o src/nsMBCSGroupProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsMBCSSM.o src/nsMBCSSM.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsSBCSGroupProber.o src/nsSBCSGroupProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsSBCharSetProber.o src/nsSBCharSetProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsSJISProber.o src/nsSJISProber.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsUTF8Prober.o src/nsUTF8Prober.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/nsUniversalDetector.o src/nsUniversalDetector.cpp
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.01" -DXS_VERSION="1.01" -fPIC -x c++ -Iinclude -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Encode/Detect/Detector.o lib/Encode/Detect/Detector.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Encode/Detect/Detector/Detector.bs')
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Encode/Detect/Detector/Detector.so lib/Encode/Detect/Detector.o src/CharDistribution.o src/JpCntx.o src/LangBulgarianModel.o src/LangCyrillicModel.o src/LangGreekModel.o src/LangHebrewModel.o src/LangHungarianModel.o src/LangThaiModel.o src/nsBig5Prober.o src/nsCharSetProber.o src/nsEUCJPProber.o src/nsEUCKRProber.o src/nsEUCTWProber.o src/nsEscCharsetProber.o src/nsEscSM.o src/nsGB2312Prober.o src/nsHebrewProber.o src/nsLatin1Prober.o src/nsMBCSGroupProber.o src/nsMBCSSM.o src/nsSBCSGroupProber.o src/nsSBCharSetProber.o src/nsSJISProber.o src/nsUTF8Prober.o src/nsUniversalDetector.o -lstdc++
+running tests
+t/base.t ...... ok
+t/encoding.t .. ok
+All tests successful.
+Files=2, Tests=13,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.03 csys =  0.15 CPU)
+Result: PASS
+installing
+Building Encode-Detect
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Encode/Detect/Detector/Detector.so
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Encode/Detect/Detector/Detector.bs
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Encode/Detect.pm
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Encode/Detect/Detector.pm
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/share/man/man3/Encode::Detect::Detector.3
+Installing /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/share/man/man3/Encode::Detect.3
+post-installation fixup
+Moving /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/share/man/man3 to /nix/store/rw0vxb8zky28n3ydxgxzllib9fdbc535-perl5.32.0-Encode-Detect-1.01-devdoc/share/man/man3
+Removing empty /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01
+shrinking /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Encode/Detect/Detector/Detector.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01/lib
+patching script interpreter paths in /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01
+checking for references to /build/ in /nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rw0vxb8zky28n3ydxgxzllib9fdbc535-perl5.32.0-Encode-Detect-1.01-devdoc
+gzipping man pages under /nix/store/rw0vxb8zky28n3ydxgxzllib9fdbc535-perl5.32.0-Encode-Detect-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rw0vxb8zky28n3ydxgxzllib9fdbc535-perl5.32.0-Encode-Detect-1.01-devdoc
+checking for references to /build/ in /nix/store/rw0vxb8zky28n3ydxgxzllib9fdbc535-perl5.32.0-Encode-Detect-1.01-devdoc...
+/nix/store/5s46vf2kb6djgaq7sgz2l9zf98n12rj4-perl5.32.0-Encode-Detect-1.01

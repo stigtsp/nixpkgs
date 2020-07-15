@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/9ffzwmm8n419dbvias8101yd31jhl5bg-perl5.32.0-Modern-Perl-1.20200211.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/0xdmzwjl6lv87n1w5jv14kmymwknhl2y-Modern-Perl-1.20200211.tar.gz
+copying path '/nix/store/0xdmzwjl6lv87n1w5jv14kmymwknhl2y-Modern-Perl-1.20200211.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9ffzwmm8n419dbvias8101yd31jhl5bg-perl5.32.0-Modern-Perl-1.20200211.drv'...
+unpacking sources
+unpacking source archive /nix/store/0xdmzwjl6lv87n1w5jv14kmymwknhl2y-Modern-Perl-1.20200211.tar.gz
+source root is Modern-Perl-1.20200211
+setting SOURCE_DATE_EPOCH to timestamp 1581392037 of file Modern-Perl-1.20200211/t/year_imports.t
+patching sources
+configuring
+patching ./t/base.t...
+patching ./t/regressions.t...
+patching ./t/unimport.t...
+patching ./t/year_imports.t...
+patching ./t/odern.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Modern::Perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Modern/Perl.pm blib/lib/Modern/Perl.pm
+cp lib/odern/Perl.pm blib/lib/odern/Perl.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/base.t .......... ok
+t/odern.t ......... ok
+t/regressions.t ... ok
+t/unimport.t ...... ok
+t/year_imports.t .. ok
+All tests successful.
+Files=5, Tests=127,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.26 cusr  0.05 csys =  0.35 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/lib/pkgconfig m4datadir=/nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/aclocal aclocaldir=/nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/lib/perl5/site_perl/5.32.0/odern/Perl.pm
+Installing /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/lib/perl5/site_perl/5.32.0/Modern/Perl.pm
+Installing /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/man/man3/Modern::Perl.3
+Installing /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/man/man3/odern::Perl.3
+Appending installation info to /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/man/man3 to /nix/store/2z8sziasnp6iwmsn90s5zglql0bmh0hs-perl5.32.0-Modern-Perl-1.20200211-devdoc/share/man/man3
+Removing empty /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211/lib
+patching script interpreter paths in /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211
+checking for references to /build/ in /nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2z8sziasnp6iwmsn90s5zglql0bmh0hs-perl5.32.0-Modern-Perl-1.20200211-devdoc
+gzipping man pages under /nix/store/2z8sziasnp6iwmsn90s5zglql0bmh0hs-perl5.32.0-Modern-Perl-1.20200211-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2z8sziasnp6iwmsn90s5zglql0bmh0hs-perl5.32.0-Modern-Perl-1.20200211-devdoc
+checking for references to /build/ in /nix/store/2z8sziasnp6iwmsn90s5zglql0bmh0hs-perl5.32.0-Modern-Perl-1.20200211-devdoc...
+/nix/store/mp7291md17hlzrhhz2j5vld151qxszm1-perl5.32.0-Modern-Perl-1.20200211

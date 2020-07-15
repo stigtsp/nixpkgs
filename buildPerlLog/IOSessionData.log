@@ -1,0 +1,42 @@
+these derivations will be built:
+  /nix/store/cfgf8qvjy8gv2dmx0wpr1xlgvcmzkj99-perl5.32.0-IO-SessionData-1.03.drv
+building '/nix/store/cfgf8qvjy8gv2dmx0wpr1xlgvcmzkj99-perl5.32.0-IO-SessionData-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/cq5sssqv2gqp8jzr4nm0ap2k5ifabjpy-IO-SessionData-1.03.tar.gz
+source root is IO-SessionData-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1369288328 of file IO-SessionData-1.03/META.yml
+patching sources
+configuring
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::SessionData
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/SessionData.pm blib/lib/IO/SessionData.pm
+cp lib/IO/SessionSet.pm blib/lib/IO/SessionSet.pm
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/SessionData.t .. ok
+t/SessionSet.t ... ok
+All tests successful.
+Files=2, Tests=15,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qiy3cinsk0hccp836lrq839c8c9i1asg-perl5.32.0-IO-SessionData-1.03-dev/lib/pkgconfig m4datadir=/nix/store/qiy3cinsk0hccp836lrq839c8c9i1asg-perl5.32.0-IO-SessionData-1.03-dev/share/aclocal aclocaldir=/nix/store/qiy3cinsk0hccp836lrq839c8c9i1asg-perl5.32.0-IO-SessionData-1.03-dev/share/aclocal install
+Installing /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03/lib/perl5/site_perl/5.32.0/IO/SessionSet.pm
+Installing /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03/lib/perl5/site_perl/5.32.0/IO/SessionData.pm
+Appending installation info to /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03/lib
+patching script interpreter paths in /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03
+checking for references to /build/ in /nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03...
+find: '/nix/store/qiy3cinsk0hccp836lrq839c8c9i1asg-perl5.32.0-IO-SessionData-1.03-dev': No such file or directory
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+/nix/store/dk34625yqgvsw11qls61gka9cxjvsknk-perl5.32.0-IO-SessionData-1.03

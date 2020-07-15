@@ -1,0 +1,75 @@
+these derivations will be built:
+  /nix/store/n3ffaiv2rfgvrlp88d9aak3srwjidrhx-perl5.32.0-Smart-Comments-1.06.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/kkaqjdahs1bmx466dgq34pwjxif4qn6r-Smart-Comments-1.06.tar.gz
+copying path '/nix/store/kkaqjdahs1bmx466dgq34pwjxif4qn6r-Smart-Comments-1.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n3ffaiv2rfgvrlp88d9aak3srwjidrhx-perl5.32.0-Smart-Comments-1.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/kkaqjdahs1bmx466dgq34pwjxif4qn6r-Smart-Comments-1.06.tar.gz
+source root is Smart-Comments-1.06
+setting SOURCE_DATE_EPOCH to timestamp 1445722174 of file Smart-Comments-1.06/t/while_num.t
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Smart::Comments
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Smart/Comments.pm blib/lib/Smart/Comments.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00.load.t ................. 1/1 # Testing Smart::Comments 1.06
+t/00.load.t ................. ok
+t/assert.t .................. ok
+t/brackets.t ................ ok
+t/c_like_for_loop.t ......... ok
+t/check.t ................... ok
+t/confirm.t ................. ok
+t/ensure.t .................. ok
+t/ENV_0.t ................... ok
+t/ENV_1.t ................... ok
+t/ENV_str.t ................. ok
+t/insist.t .................. ok
+t/labelled_perlish_loop.t ... ok
+t/message.t ................. ok
+t/perlish_for.t ............. ok
+t/perlish_for_percentage.t .. ok
+t/pod-coverage.t ............ skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ..................... skipped: Test::Pod 1.14 required for testing POD
+t/require.t ................. ok
+t/selective.t ............... ok
+t/simple_perlish_for.t ...... ok
+t/var.t ..................... ok
+t/verify.t .................. ok
+t/while.t ................... ok
+t/while_num.t ............... ok
+All tests successful.
+Files=24, Tests=119,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.45 cusr  0.21 csys =  1.75 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/lib/pkgconfig m4datadir=/nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/share/aclocal aclocaldir=/nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/lib/perl5/site_perl/5.32.0/Smart/Comments.pm
+Installing /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/share/man/man3/Smart::Comments.3
+Appending installation info to /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/share/man/man3 to /nix/store/460q5qjppgjvhqvrcacr7dn8rmxwnvir-perl5.32.0-Smart-Comments-1.06-devdoc/share/man/man3
+Removing empty /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06/lib
+patching script interpreter paths in /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06
+checking for references to /build/ in /nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/460q5qjppgjvhqvrcacr7dn8rmxwnvir-perl5.32.0-Smart-Comments-1.06-devdoc
+gzipping man pages under /nix/store/460q5qjppgjvhqvrcacr7dn8rmxwnvir-perl5.32.0-Smart-Comments-1.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/460q5qjppgjvhqvrcacr7dn8rmxwnvir-perl5.32.0-Smart-Comments-1.06-devdoc
+checking for references to /build/ in /nix/store/460q5qjppgjvhqvrcacr7dn8rmxwnvir-perl5.32.0-Smart-Comments-1.06-devdoc...
+/nix/store/05p92jvp4pg2pig1zwx7wp9a9kv66a6g-perl5.32.0-Smart-Comments-1.06

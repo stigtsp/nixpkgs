@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/mzkdmaiixr5wbgj0qf7gyvk4p5k2g5bp-perl5.32.0-Log-Journald-0.30.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/hgl01b3vw7pil9v2n5a418n44bif6qbs-Log-Journald-0.30.tar.gz
+copying path '/nix/store/hgl01b3vw7pil9v2n5a418n44bif6qbs-Log-Journald-0.30.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mzkdmaiixr5wbgj0qf7gyvk4p5k2g5bp-perl5.32.0-Log-Journald-0.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/hgl01b3vw7pil9v2n5a418n44bif6qbs-Log-Journald-0.30.tar.gz
+source root is Log-Journald-0.30
+setting SOURCE_DATE_EPOCH to timestamp 1511430950 of file Log-Journald-0.30/t/Log-Journald.t
+patching sources
+configuring
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Log-Journald' version '0.30'
+Building Log-Journald
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.30" -DXS_VERSION="0.30" -fPIC -I/nix/store/572ly644vincdv18c7xa40556n1kqk42-systemd-245.6-dev/include -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Log/Journald.o lib/Log/Journald.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Log/Journald/Journald.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Log/Journald/Journald.so lib/Log/Journald.o -L/nix/store/z6crb7ci2k5lh7r6dmmvkqw9zp2h71lx-systemd-245.6-lib/lib -lsystemd
+running tests
+t/Log-Journald.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.04 cusr  0.01 csys =  0.06 CPU)
+Result: PASS
+installing
+Building Log-Journald
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Log/Journald/Journald.bs
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Log/Journald/Journald.so
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Log/Journald.pm
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Log/Dispatch/Journald.pm
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Log/Log4perl/Appender/Journald.pm
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/share/man/man3/Log::Journald.3
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/share/man/man3/Log::Log4perl::Appender::Journald.3
+Installing /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/share/man/man3/Log::Dispatch::Journald.3
+post-installation fixup
+Moving /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/share/man/man3 to /nix/store/v2jb5xsikma4rmi0w04bavaw30vb62cz-perl5.32.0-Log-Journald-0.30-devdoc/share/man/man3
+Removing empty /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30
+shrinking /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Log/Journald/Journald.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30/lib
+patching script interpreter paths in /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30
+checking for references to /build/ in /nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v2jb5xsikma4rmi0w04bavaw30vb62cz-perl5.32.0-Log-Journald-0.30-devdoc
+gzipping man pages under /nix/store/v2jb5xsikma4rmi0w04bavaw30vb62cz-perl5.32.0-Log-Journald-0.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v2jb5xsikma4rmi0w04bavaw30vb62cz-perl5.32.0-Log-Journald-0.30-devdoc
+checking for references to /build/ in /nix/store/v2jb5xsikma4rmi0w04bavaw30vb62cz-perl5.32.0-Log-Journald-0.30-devdoc...
+/nix/store/97k94kc5j5pd64s38m4p0x41pm6zc6cq-perl5.32.0-Log-Journald-0.30

@@ -1,0 +1,123 @@
+these derivations will be built:
+  /nix/store/wpg8p5njr15zl63sgcm3c0bagnwnq2ay-perl5.32.0-Mail-Sender-0.903.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/174fll19hipamf1lywc3880x3sp9fxrc-Mail-Sender-0.903.tar.gz
+copying path '/nix/store/174fll19hipamf1lywc3880x3sp9fxrc-Mail-Sender-0.903.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wpg8p5njr15zl63sgcm3c0bagnwnq2ay-perl5.32.0-Mail-Sender-0.903.drv'...
+unpacking sources
+unpacking source archive /nix/store/174fll19hipamf1lywc3880x3sp9fxrc-Mail-Sender-0.903.tar.gz
+source root is Mail-Sender-0.903
+setting SOURCE_DATE_EPOCH to timestamp 1479393964 of file Mail-Sender-0.903/xt/release/kwalitee.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::Sender
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/Sender.pm blib/lib/Mail/Sender.pm
+cp lib/Mail/Sender/CType/Win32.pm blib/lib/Mail/Sender/CType/Win32.pm
+cp lib/Mail/Sender/CType/Ext.pm blib/lib/Mail/Sender/CType/Ext.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" Config.PL Config
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ Mail::Sender is deprecated and you should look to Email::Sender instead at t/00-load.t line 6.
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.88 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module            Want  Have
+#     ----------------- ---- -----
+#     Carp               any  1.50
+#     Encode             any  3.06
+#     Exporter           any  5.74
+#     File::Basename     any  2.85
+#     IO::Handle         any  1.42
+#     IO::Socket::INET   any  1.41
+#     MIME::Base64       any  3.15
+#     MIME::QuotedPrint  any  3.13
+#     Socket             any 2.029
+#     Symbol             any  1.08
+#     Tie::Handle        any   4.2
+#     Time::Local        any  1.28
+#     base               any  2.27
+#     strict             any  1.11
+#     warnings           any  1.47
+#
+# === Runtime Recommends ===
+#
+#     Module           Want    Have
+#     ---------------- ---- -------
+#     Authen::NTLM      any missing
+#     Digest::HMAC_MD5  any missing
+#     IO::Socket::SSL   any missing
+#     Mozilla::CA       any missing
+#     Net::SSLeay       any missing
+#
+t/00-report-prereqs.t .. ok
+t/01-create-object.t ... Mail::Sender is deprecated and you should look to Email::Sender instead at t/01-create-object.t line 3.
+t/01-create-object.t ... ok
+All tests successful.
+Files=3, Tests=178,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.32 cusr  0.04 csys =  0.38 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib/pkgconfig m4datadir=/nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/aclocal aclocaldir=/nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib/perl5/site_perl/5.32.0/Mail/Sender.pm
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib/perl5/site_perl/5.32.0/Mail/Sender/CType/Ext.pm
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib/perl5/site_perl/5.32.0/Mail/Sender/CType/Win32.pm
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/man/man3/Mail::Sender::CType::Ext.3
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/man/man3/Mail::Sender::CType::Win32.3
+Installing /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/man/man3/Mail::Sender.3
+Appending installation info to /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/man/man3 to /nix/store/qjzl5wc977lr81lkpisdf6qkp3yfh105-perl5.32.0-Mail-Sender-0.903-devdoc/share/man/man3
+Removing empty /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903/lib
+patching script interpreter paths in /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903
+checking for references to /build/ in /nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qjzl5wc977lr81lkpisdf6qkp3yfh105-perl5.32.0-Mail-Sender-0.903-devdoc
+gzipping man pages under /nix/store/qjzl5wc977lr81lkpisdf6qkp3yfh105-perl5.32.0-Mail-Sender-0.903-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qjzl5wc977lr81lkpisdf6qkp3yfh105-perl5.32.0-Mail-Sender-0.903-devdoc
+checking for references to /build/ in /nix/store/qjzl5wc977lr81lkpisdf6qkp3yfh105-perl5.32.0-Mail-Sender-0.903-devdoc...
+/nix/store/mps6slv7yxyn4pzlqc9f1icjnysm7xgq-perl5.32.0-Mail-Sender-0.903

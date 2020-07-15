@@ -1,0 +1,105 @@
+these derivations will be built:
+  /nix/store/8i4rpkl0dh1ba266xrs851vl8iv9jjxj-perl5.32.0-MooseX-Types-DateTime-0.13.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/f1yjxlm1j61a8zwavl1y0xjim251mxwd-MooseX-Types-DateTime-0.13.tar.gz
+copying path '/nix/store/f1yjxlm1j61a8zwavl1y0xjim251mxwd-MooseX-Types-DateTime-0.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8i4rpkl0dh1ba266xrs851vl8iv9jjxj-perl5.32.0-MooseX-Types-DateTime-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/f1yjxlm1j61a8zwavl1y0xjim251mxwd-MooseX-Types-DateTime-0.13.tar.gz
+source root is MooseX-Types-DateTime-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1444001897 of file MooseX-Types-DateTime-0.13/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Types::DateTime
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Types-DateTime' version '0.13'
+cp lib/MooseX/Types/DateTime.pm blib/lib/MooseX/Types/DateTime.pm
+running tests
+t/00-report-prereqs.t ... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module                       Want     Have
+#     ---------------------------- ---- --------
+#     ExtUtils::MakeMaker           any     7.44
+#     File::Spec                    any     3.78
+#     Locale::Maketext              any     1.29
+#     Moose::Util::TypeConstraints  any   2.2012
+#     Test::Fatal                   any    0.014
+#     Test::More                   0.88 1.302175
+#     ok                            any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                 Want   Have
+#     -------------------- ------ ------
+#     DateTime             0.4302   1.52
+#     DateTime::Duration   0.4302   1.52
+#     DateTime::Locale     0.4001   1.25
+#     DateTime::TimeZone     0.95   2.39
+#     Moose                  0.41 2.2012
+#     MooseX::Types          0.30   0.50
+#     MooseX::Types::Moose   0.30   0.50
+#     if                      any 0.0608
+#     namespace::clean       0.19   0.27
+#     strict                  any   1.11
+#     warnings                any   1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Pod::Coverage missing
+#
+t/00-report-prereqs.t ... ok
+t/01_basic.t ............ ok
+t/06-fully-qualified.t .. ok
+t/zzz-check-breaks.t .... ok
+All tests successful.
+Files=4, Tests=27,  2 wallclock secs ( 0.06 usr  0.05 sys +  1.38 cusr  0.61 csys =  2.10 CPU)
+Result: PASS
+installing
+Installing /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13/lib/perl5/site_perl/5.32.0/MooseX/Types/DateTime.pm
+Installing /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13/share/man/man3/MooseX::Types::DateTime.3
+post-installation fixup
+Moving /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13/share/man/man3 to /nix/store/642bkvwdfmmxd3jw33393316rg74j1md-perl5.32.0-MooseX-Types-DateTime-0.13-devdoc/share/man/man3
+Removing empty /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13/lib
+patching script interpreter paths in /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13
+checking for references to /build/ in /nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/642bkvwdfmmxd3jw33393316rg74j1md-perl5.32.0-MooseX-Types-DateTime-0.13-devdoc
+gzipping man pages under /nix/store/642bkvwdfmmxd3jw33393316rg74j1md-perl5.32.0-MooseX-Types-DateTime-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/642bkvwdfmmxd3jw33393316rg74j1md-perl5.32.0-MooseX-Types-DateTime-0.13-devdoc
+checking for references to /build/ in /nix/store/642bkvwdfmmxd3jw33393316rg74j1md-perl5.32.0-MooseX-Types-DateTime-0.13-devdoc...
+/nix/store/n0kk86chfzm0zzjrh6d80120ma9nmzag-perl5.32.0-MooseX-Types-DateTime-0.13

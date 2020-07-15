@@ -1,0 +1,52 @@
+these derivations will be built:
+  /nix/store/ppbk63m0sq4l0pw01793ay25k42dakc9-perl5.32.0-File-Grep-0.02.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/w0k3pl7l0v9q4cydbixgi9s95i819h67-File-Grep-0.02.tar.gz
+copying path '/nix/store/w0k3pl7l0v9q4cydbixgi9s95i819h67-File-Grep-0.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ppbk63m0sq4l0pw01793ay25k42dakc9-perl5.32.0-File-Grep-0.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/w0k3pl7l0v9q4cydbixgi9s95i819h67-File-Grep-0.02.tar.gz
+source root is File-Grep-0.02
+setting SOURCE_DATE_EPOCH to timestamp 1126930917 of file File-Grep-0.02/META.yml
+patching sources
+configuring
+patching ./Grep.pm...
+patching ./t/grep.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Grep
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Grep.pm blib/lib/File/Grep.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/grep.t .. ok
+All tests successful.
+Files=1, Tests=11,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.04 cusr  0.01 csys =  0.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/pkgconfig m4datadir=/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/share/aclocal aclocaldir=/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/perl5/site_perl/5.32.0/File/Grep.pm
+Installing /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/share/man/man3/File::Grep.3
+Appending installation info to /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/share/man/man3 to /nix/store/00xagfv8g6m37xl4j9h06aa3iv21x4vp-perl5.32.0-File-Grep-0.02-devdoc/share/man/man3
+Removing empty /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib
+patching script interpreter paths in /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02
+/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/perl5/site_perl/5.32.0/File/Grep.pm: interpreter directive changed from "/usr/bin/perl -w -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -w -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/00xagfv8g6m37xl4j9h06aa3iv21x4vp-perl5.32.0-File-Grep-0.02-devdoc
+gzipping man pages under /nix/store/00xagfv8g6m37xl4j9h06aa3iv21x4vp-perl5.32.0-File-Grep-0.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/00xagfv8g6m37xl4j9h06aa3iv21x4vp-perl5.32.0-File-Grep-0.02-devdoc
+checking for references to /build/ in /nix/store/00xagfv8g6m37xl4j9h06aa3iv21x4vp-perl5.32.0-File-Grep-0.02-devdoc...
+/nix/store/apmd7y2qj14w6cazwxclfama7ia21ixc-perl5.32.0-File-Grep-0.02

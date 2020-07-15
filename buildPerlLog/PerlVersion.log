@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/d6lg6hwsfc6rkw4vkkgw9qlfwkl7f8r4-perl5.32.0-Perl-Version-1.013.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/n3d9mpn6cx11lxsnl8aasqyrmgqs0r2m-Perl-Version-1.013.tar.gz
+copying path '/nix/store/n3d9mpn6cx11lxsnl8aasqyrmgqs0r2m-Perl-Version-1.013.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/d6lg6hwsfc6rkw4vkkgw9qlfwkl7f8r4-perl5.32.0-Perl-Version-1.013.drv'...
+unpacking sources
+unpacking source archive /nix/store/n3d9mpn6cx11lxsnl8aasqyrmgqs0r2m-Perl-Version-1.013.tar.gz
+source root is Perl-Version-1.013
+setting SOURCE_DATE_EPOCH to timestamp 1392238596 of file Perl-Version-1.013/META.json
+patching sources
+configuring
+patching ./examples/perl-reversion...
+patching ./t/pod-coverage.t...
+patching ./t/20.compare.t...
+patching ./t/30.vstring.t...
+patching ./t/manifest.t...
+patching ./t/40.perl-reversion.t...
+patching ./t/10.regression.t...
+patching ./t/pod.t...
+patching ./t/05.misc.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Perl::Version
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Perl/Version.pm blib/lib/Perl/Version.pm
+cp examples/perl-reversion blib/script/perl-reversion
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perl-reversion
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00.load.t ............ 1/1 # Testing Perl::Version 1.013
+t/00.load.t ............ ok
+t/05.misc.t ............ ok
+t/10.regression.t ...... ok
+t/20.compare.t ......... ok
+t/30.vstring.t ......... ok
+t/40.perl-reversion.t .. ok
+t/manifest.t ........... skipped: No MANIFEST.SKIP
+t/pod-coverage.t ....... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ................ skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=9, Tests=1085,  3 wallclock secs ( 0.10 usr  0.01 sys +  2.95 cusr  0.59 csys =  3.65 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/lib/pkgconfig m4datadir=/nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/aclocal aclocaldir=/nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/lib/perl5/site_perl/5.32.0/Perl/Version.pm
+Installing /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/man/man1/perl-reversion.1
+Installing /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/man/man3/Perl::Version.3
+Installing /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/bin/perl-reversion
+Appending installation info to /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/man/man3 to /nix/store/31p6zmlzx1jy6847xp7il5n67c1nrzqz-perl5.32.0-Perl-Version-1.013-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013
+gzipping man pages under /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/lib  /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013/bin
+patching script interpreter paths in /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013
+checking for references to /build/ in /nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013...
+shrinking RPATHs of ELF executables and libraries in /nix/store/31p6zmlzx1jy6847xp7il5n67c1nrzqz-perl5.32.0-Perl-Version-1.013-devdoc
+gzipping man pages under /nix/store/31p6zmlzx1jy6847xp7il5n67c1nrzqz-perl5.32.0-Perl-Version-1.013-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/31p6zmlzx1jy6847xp7il5n67c1nrzqz-perl5.32.0-Perl-Version-1.013-devdoc
+checking for references to /build/ in /nix/store/31p6zmlzx1jy6847xp7il5n67c1nrzqz-perl5.32.0-Perl-Version-1.013-devdoc...
+/nix/store/lgqd1gvgc5j76pnh5kjqgma453zj080p-perl5.32.0-Perl-Version-1.013

@@ -1,0 +1,79 @@
+these derivations will be built:
+  /nix/store/91c03yx0xdnaq26hkq06csahs9k17q25-perl5.32.0-Crypt-Curve25519-0.06.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/c5lr2xq1k6ln99a5j2ll2fgfbsjb98fg-Crypt-Curve25519-0.06.tar.gz
+  /nix/store/pxs7aphkbwz169c9d1fg5kw9kckxp50m-Crypt-Curve25519-0.60.0-fmul-fixedvar.patch?id=cec727ad614986ca1e6b9468eea7f1a5a9183382
+copying path '/nix/store/c5lr2xq1k6ln99a5j2ll2fgfbsjb98fg-Crypt-Curve25519-0.06.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pxs7aphkbwz169c9d1fg5kw9kckxp50m-Crypt-Curve25519-0.60.0-fmul-fixedvar.patch?id=cec727ad614986ca1e6b9468eea7f1a5a9183382' from 'https://cache.nixos.org'...
+building '/nix/store/91c03yx0xdnaq26hkq06csahs9k17q25-perl5.32.0-Crypt-Curve25519-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/c5lr2xq1k6ln99a5j2ll2fgfbsjb98fg-Crypt-Curve25519-0.06.tar.gz
+source root is Crypt-Curve25519-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1491434750 of file Crypt-Curve25519-0.06/xt/release/portability.t
+patching sources
+applying patch /nix/store/pxs7aphkbwz169c9d1fg5kw9kckxp50m-Crypt-Curve25519-0.60.0-fmul-fixedvar.patch?id=cec727ad614986ca1e6b9468eea7f1a5a9183382
+patching file curve25519-donna-c64.c
+patching file curve25519-donna.c
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::Curve25519
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/Curve25519.pm blib/lib/Crypt/Curve25519.pm
+Running Mkbootstrap for Curve25519 ()
+chmod 644 "Curve25519.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curve25519.bs blib/arch/auto/Crypt/Curve25519/Curve25519.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Crypt-Curve25519-0.06/typemap'  Curve25519.xs > Curve25519.xsc
+mv Curve25519.xsc Curve25519.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.06\" -DXS_VERSION=\"0.06\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_X64=1 Curve25519.c
+rm -f blib/arch/auto/Crypt/Curve25519/Curve25519.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Curve25519.o  -o blib/arch/auto/Crypt/Curve25519/Curve25519.so  \
+      \
+
+chmod 755 blib/arch/auto/Crypt/Curve25519/Curve25519.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curve25519.bs blib/arch/auto/Crypt/Curve25519/Curve25519.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........ ok
+t/01-exceptions.t ..... ok
+t/02-synopsis-proc.t .. ok
+t/03-synopsis-oo.t .... ok
+t/04-proc-vs-oo.t ..... ok
+t/05-primitive.t ...... ok
+t/Crypt-Curve25519.t .. ok
+All tests successful.
+Files=7, Tests=10028,  4 wallclock secs ( 0.86 usr  0.07 sys +  3.41 cusr  0.10 csys =  4.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib/pkgconfig m4datadir=/nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/share/aclocal aclocaldir=/nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curve25519.bs blib/arch/auto/Crypt/Curve25519/Curve25519.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/Curve25519/Curve25519.so
+Installing /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/Curve25519.pm
+Installing /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/share/man/man3/Crypt::Curve25519.3
+Appending installation info to /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/share/man/man3 to /nix/store/q7xcfc60y9kycv4pyv31k9x9hbf4jy9q-perl5.32.0-Crypt-Curve25519-0.06-devdoc/share/man/man3
+Removing empty /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06
+shrinking /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/Curve25519/Curve25519.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06/lib
+patching script interpreter paths in /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06
+checking for references to /build/ in /nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q7xcfc60y9kycv4pyv31k9x9hbf4jy9q-perl5.32.0-Crypt-Curve25519-0.06-devdoc
+gzipping man pages under /nix/store/q7xcfc60y9kycv4pyv31k9x9hbf4jy9q-perl5.32.0-Crypt-Curve25519-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q7xcfc60y9kycv4pyv31k9x9hbf4jy9q-perl5.32.0-Crypt-Curve25519-0.06-devdoc
+checking for references to /build/ in /nix/store/q7xcfc60y9kycv4pyv31k9x9hbf4jy9q-perl5.32.0-Crypt-Curve25519-0.06-devdoc...
+/nix/store/x4snaiw3pn98kn1d82jqn4gda3nb3q13-perl5.32.0-Crypt-Curve25519-0.06

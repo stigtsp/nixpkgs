@@ -1,0 +1,93 @@
+these derivations will be built:
+  /nix/store/nq12lcwh3gsq4y6qdxd044g8sqsk94gs-perl5.32.0-Regexp-IPv6-0.03.drv
+  /nix/store/d50fv6cc631k15x21j70jnni6dc49x23-perl5.32.0-Net-Whois-IP-1.19.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/9xkibijkapzf4hhy4sxvbvb6c869yjzp-Regexp-IPv6-0.03.tar.gz
+  /nix/store/qv5mvl9wk6dczinbv4dmz37y7wbrg7ki-Net-Whois-IP-1.19.tar.gz
+copying path '/nix/store/qv5mvl9wk6dczinbv4dmz37y7wbrg7ki-Net-Whois-IP-1.19.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9xkibijkapzf4hhy4sxvbvb6c869yjzp-Regexp-IPv6-0.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nq12lcwh3gsq4y6qdxd044g8sqsk94gs-perl5.32.0-Regexp-IPv6-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/9xkibijkapzf4hhy4sxvbvb6c869yjzp-Regexp-IPv6-0.03.tar.gz
+source root is Regexp-IPv6-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1265367577 of file Regexp-IPv6-0.03/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Regexp::IPv6
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Regexp/IPv6.pm blib/lib/Regexp/IPv6.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Regexp-IPv6.t .. ok
+All tests successful.
+Files=1, Tests=198,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.05 cusr  0.00 csys =  0.08 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/lib/pkgconfig m4datadir=/nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/share/aclocal aclocaldir=/nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/lib/perl5/site_perl/5.32.0/Regexp/IPv6.pm
+Installing /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/share/man/man3/Regexp::IPv6.3
+Appending installation info to /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/share/man/man3 to /nix/store/9lg7qzv77l7g1c8610cw0p88ld4d1dh8-perl5.32.0-Regexp-IPv6-0.03-devdoc/share/man/man3
+Removing empty /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03/lib
+patching script interpreter paths in /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03
+checking for references to /build/ in /nix/store/fxaa16cbypv6lq93pmg99xs3s22hz3dv-perl5.32.0-Regexp-IPv6-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9lg7qzv77l7g1c8610cw0p88ld4d1dh8-perl5.32.0-Regexp-IPv6-0.03-devdoc
+gzipping man pages under /nix/store/9lg7qzv77l7g1c8610cw0p88ld4d1dh8-perl5.32.0-Regexp-IPv6-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9lg7qzv77l7g1c8610cw0p88ld4d1dh8-perl5.32.0-Regexp-IPv6-0.03-devdoc
+checking for references to /build/ in /nix/store/9lg7qzv77l7g1c8610cw0p88ld4d1dh8-perl5.32.0-Regexp-IPv6-0.03-devdoc...
+building '/nix/store/d50fv6cc631k15x21j70jnni6dc49x23-perl5.32.0-Net-Whois-IP-1.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/qv5mvl9wk6dczinbv4dmz37y7wbrg7ki-Net-Whois-IP-1.19.tar.gz
+source root is Net-Whois-IP-1.19
+setting SOURCE_DATE_EPOCH to timestamp 1452203845 of file Net-Whois-IP-1.19/META.yml
+patching sources
+configuring
+patching ./t/test2.pl...
+patching ./t/test3.pl...
+patching ./t/test1.t...
+patching ./t/testx.t...
+patching ./t/test.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Whois::IP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp IP.pm blib/lib/Net/Whois/IP.pm
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/lib/pkgconfig m4datadir=/nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/share/aclocal aclocaldir=/nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/lib/perl5/site_perl/5.32.0/Net/Whois/IP.pm
+Installing /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/share/man/man3/Net::Whois::IP.3
+Appending installation info to /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/share/man/man3 to /nix/store/1x5gk185wrwy60k4pqq24c8imlwp61m9-perl5.32.0-Net-Whois-IP-1.19-devdoc/share/man/man3
+Removing empty /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19/lib
+patching script interpreter paths in /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19
+checking for references to /build/ in /nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1x5gk185wrwy60k4pqq24c8imlwp61m9-perl5.32.0-Net-Whois-IP-1.19-devdoc
+gzipping man pages under /nix/store/1x5gk185wrwy60k4pqq24c8imlwp61m9-perl5.32.0-Net-Whois-IP-1.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1x5gk185wrwy60k4pqq24c8imlwp61m9-perl5.32.0-Net-Whois-IP-1.19-devdoc
+checking for references to /build/ in /nix/store/1x5gk185wrwy60k4pqq24c8imlwp61m9-perl5.32.0-Net-Whois-IP-1.19-devdoc...
+/nix/store/p2bq263gr2bxaw545wm0vzyamv25g0hc-perl5.32.0-Net-Whois-IP-1.19

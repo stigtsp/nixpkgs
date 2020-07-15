@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/mbxk92i1ja2ai07mgn903yr4alayphai-perl5.32.0-MIME-EncWords-1.014.3.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/i4ajbr1yk0ad0dm7kv2bfkzxi6wjhy78-MIME-EncWords-1.014.3.tar.gz
+copying path '/nix/store/i4ajbr1yk0ad0dm7kv2bfkzxi6wjhy78-MIME-EncWords-1.014.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mbxk92i1ja2ai07mgn903yr4alayphai-perl5.32.0-MIME-EncWords-1.014.3.drv'...
+unpacking sources
+unpacking source archive /nix/store/i4ajbr1yk0ad0dm7kv2bfkzxi6wjhy78-MIME-EncWords-1.014.3.tar.gz
+source root is MIME-EncWords-1.014.3
+setting SOURCE_DATE_EPOCH to timestamp 1411797734 of file MIME-EncWords-1.014.3/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MIME::EncWords
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Encode/MIME/EncWords.pm blib/lib/Encode/MIME/EncWords.pm
+cp lib/POD2/JA/Encode/MIME/EncWords.pod blib/lib/POD2/JA/Encode/MIME/EncWords.pod
+cp lib/POD2/JA/MIME/EncWords.pod blib/lib/POD2/JA/MIME/EncWords.pod
+cp lib/MIME/EncWords/Defaults.pm.sample blib/lib/MIME/EncWords/Defaults.pm.sample
+cp lib/MIME/EncWords.pm blib/lib/MIME/EncWords.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01decode.t ............................ ok
+t/02encode.t ............................ ok
+t/03Encode-MIME-EncWords.t .............. ok
+t/04Encode-MIME-EncWords-ISO_2022_JP.t .. ok
+t/05encode_utf.t ........................ ok
+t/pod.t ................................. skipped: Test::Pod 1.00 or later required for testing POD
+All tests successful.
+Files=6, Tests=148,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.36 cusr  0.05 csys =  0.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/pkgconfig m4datadir=/nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/aclocal aclocaldir=/nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/site_perl/5.32.0/MIME/EncWords.pm
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/site_perl/5.32.0/MIME/EncWords/Defaults.pm.sample
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/site_perl/5.32.0/POD2/JA/MIME/EncWords.pod
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/site_perl/5.32.0/POD2/JA/Encode/MIME/EncWords.pod
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/site_perl/5.32.0/Encode/MIME/EncWords.pm
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/man3/Encode::MIME::EncWords.3
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/man3/POD2::JA::Encode::MIME::EncWords.3
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/man3/MIME::EncWords.3
+Installing /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/man3/POD2::JA::MIME::EncWords.3
+Appending installation info to /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/man3 to /nix/store/w70rrk472xl2bfyz7hlh35rmvznffcz4-perl5.32.0-MIME-EncWords-1.014.3-devdoc/share/man/man3
+Removing empty /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3/lib
+patching script interpreter paths in /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3
+checking for references to /build/ in /nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3...
+shrinking RPATHs of ELF executables and libraries in /nix/store/w70rrk472xl2bfyz7hlh35rmvznffcz4-perl5.32.0-MIME-EncWords-1.014.3-devdoc
+gzipping man pages under /nix/store/w70rrk472xl2bfyz7hlh35rmvznffcz4-perl5.32.0-MIME-EncWords-1.014.3-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/w70rrk472xl2bfyz7hlh35rmvznffcz4-perl5.32.0-MIME-EncWords-1.014.3-devdoc
+checking for references to /build/ in /nix/store/w70rrk472xl2bfyz7hlh35rmvznffcz4-perl5.32.0-MIME-EncWords-1.014.3-devdoc...
+/nix/store/25b39m4hdw0fjkdggr18s2lhrlq9d3h8-perl5.32.0-MIME-EncWords-1.014.3

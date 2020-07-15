@@ -1,0 +1,84 @@
+these derivations will be built:
+  /nix/store/c8rfs0vb2anyllwyg2wm4d9cgms22016-perl5.32.0-CGI-Cookie-XS-0.18.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/4zw4sqhvwx8lwm8wyy7lir46hns1g1gr-CGI-Cookie-XS-0.18.tar.gz
+copying path '/nix/store/4zw4sqhvwx8lwm8wyy7lir46hns1g1gr-CGI-Cookie-XS-0.18.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/c8rfs0vb2anyllwyg2wm4d9cgms22016-perl5.32.0-CGI-Cookie-XS-0.18.drv'...
+unpacking sources
+unpacking source archive /nix/store/4zw4sqhvwx8lwm8wyy7lir46hns1g1gr-CGI-Cookie-XS-0.18.tar.gz
+source root is CGI-Cookie-XS-0.18
+setting SOURCE_DATE_EPOCH to timestamp 1251898560 of file CGI-Cookie-XS-0.18/inc/Test/More.pm
+patching sources
+configuring
+*** Module::AutoInstall version 1.03
+*** Checking for Perl dependencies...
+[Core Features]
+- Filter::Util::Call ...loaded. (1.59)
+- Filter::Util::Call ...loaded. (1.59)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CGI::Cookie::XS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CGI/Cookie/XS.pm blib/lib/CGI/Cookie/XS.pm
+Running Mkbootstrap for XS ()
+chmod 644 "XS.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/CGI/Cookie/XS/XS.bs 644
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g3   -DVERSION=\"0.18\" -DXS_VERSION=\"0.18\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   util.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  XS.xs > XS.xsc
+mv XS.xsc XS.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g3   -DVERSION=\"0.18\" -DXS_VERSION=\"0.18\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   XS.c
+rm -f blib/arch/auto/CGI/Cookie/XS/XS.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  util.o XS.o  -o blib/arch/auto/CGI/Cookie/XS/XS.so  \
+      \
+
+chmod 755 blib/arch/auto/CGI/Cookie/XS/XS.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/CGI/Cookie/XS/XS.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/01-sanity.t t/02-overflow.t t/03-bug.t t/99-pod-coverage.t t/99-pod.t
+t/01-sanity.t ........ Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+t/01-sanity.t ........ ok
+t/02-overflow.t ...... ok
+t/03-bug.t ........... Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+Redundant argument in sprintf at /build/CGI-Cookie-XS-0.18/inc/Spiffy.pm line 225.
+t/03-bug.t ........... ok
+t/99-pod-coverage.t .. skipped: Test::Pod::Coverage required for testing POD coverage
+t/99-pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=5, Tests=25,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib/pkgconfig m4datadir=/nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/share/aclocal aclocaldir=/nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/CGI/Cookie/XS/XS.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/CGI/Cookie/XS/XS.so
+Installing /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/CGI/Cookie/XS.pm
+Installing /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/share/man/man3/CGI::Cookie::XS.3
+Appending installation info to /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/share/man/man3 to /nix/store/bz1005fhmv59z9clpk2ck6w6bbyzwi36-perl5.32.0-CGI-Cookie-XS-0.18-devdoc/share/man/man3
+Removing empty /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18
+shrinking /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/CGI/Cookie/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18/lib
+patching script interpreter paths in /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18
+checking for references to /build/ in /nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bz1005fhmv59z9clpk2ck6w6bbyzwi36-perl5.32.0-CGI-Cookie-XS-0.18-devdoc
+gzipping man pages under /nix/store/bz1005fhmv59z9clpk2ck6w6bbyzwi36-perl5.32.0-CGI-Cookie-XS-0.18-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bz1005fhmv59z9clpk2ck6w6bbyzwi36-perl5.32.0-CGI-Cookie-XS-0.18-devdoc
+checking for references to /build/ in /nix/store/bz1005fhmv59z9clpk2ck6w6bbyzwi36-perl5.32.0-CGI-Cookie-XS-0.18-devdoc...
+/nix/store/7h1sf54qghgcxziif943np7q7b11ba9a-perl5.32.0-CGI-Cookie-XS-0.18

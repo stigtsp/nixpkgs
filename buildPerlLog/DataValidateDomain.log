@@ -1,0 +1,93 @@
+these derivations will be built:
+  /nix/store/nzcdflfcjj973ipghjvwqxxi3bcknnck-perl5.32.0-Data-Validate-Domain-0.14.drv
+building '/nix/store/nzcdflfcjj973ipghjvwqxxi3bcknnck-perl5.32.0-Data-Validate-Domain-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/bpp2qaljccva1l9w0d9ghkfxhwh4zigv-Data-Validate-Domain-0.14.tar.gz
+source root is Data-Validate-Domain-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1471831910 of file Data-Validate-Domain-0.14/xt/release/tidyall.t
+patching sources
+configuring
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Validate::Domain
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/Validate/Domain.pm blib/lib/Data/Validate/Domain.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t ..... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                  Want     Have
+#     ------------------- -------- --------
+#     ExtUtils::MakeMaker      any     7.44
+#     File::Spec               any     3.78
+#     Test2::Plugin::UTF8      any 0.000130
+#     Test::More          1.302015 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module           Want Have
+#     ---------------- ---- ----
+#     Exporter          any 5.74
+#     Net::Domain::TLD 1.74 1.75
+#     strict            any 1.11
+#     warnings          any 1.47
+#
+t/00-report-prereqs.t ..... ok
+t/Data-Validate-Domain.t .. ok
+All tests successful.
+Files=2, Tests=82,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.26 cusr  0.05 csys =  0.35 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/lib/pkgconfig m4datadir=/nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/share/aclocal aclocaldir=/nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/lib/perl5/site_perl/5.32.0/Data/Validate/Domain.pm
+Installing /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/share/man/man3/Data::Validate::Domain.3
+Appending installation info to /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/share/man/man3 to /nix/store/sk64630zkbyy7a6p3prfawzblfd9cs4d-perl5.32.0-Data-Validate-Domain-0.14-devdoc/share/man/man3
+Removing empty /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14/lib
+patching script interpreter paths in /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14
+checking for references to /build/ in /nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sk64630zkbyy7a6p3prfawzblfd9cs4d-perl5.32.0-Data-Validate-Domain-0.14-devdoc
+gzipping man pages under /nix/store/sk64630zkbyy7a6p3prfawzblfd9cs4d-perl5.32.0-Data-Validate-Domain-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sk64630zkbyy7a6p3prfawzblfd9cs4d-perl5.32.0-Data-Validate-Domain-0.14-devdoc
+checking for references to /build/ in /nix/store/sk64630zkbyy7a6p3prfawzblfd9cs4d-perl5.32.0-Data-Validate-Domain-0.14-devdoc...
+/nix/store/nfmr83y4ay2q2fdhcbzifb324vlb1bgd-perl5.32.0-Data-Validate-Domain-0.14

@@ -1,0 +1,181 @@
+these derivations will be built:
+  /nix/store/gbhldrpmmi347x0zljl1xwbbz301wbp0-perl5.32.0-Sort-Naturally-1.03.drv
+  /nix/store/7q1c3sg2mlnbg42sva4wypvj7j83nxm9-perl5.32.0-Data-Printer-0.40.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/3zk94hy8c85bg1f8h1ww6mp81finxy7l-Sort-Naturally-1.03.tar.gz
+  /nix/store/856w6khiqb868k62h3w39hh8rpszq6xs-Data-Printer-0.40.tar.gz
+copying path '/nix/store/856w6khiqb868k62h3w39hh8rpszq6xs-Data-Printer-0.40.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3zk94hy8c85bg1f8h1ww6mp81finxy7l-Sort-Naturally-1.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gbhldrpmmi347x0zljl1xwbbz301wbp0-perl5.32.0-Sort-Naturally-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/3zk94hy8c85bg1f8h1ww6mp81finxy7l-Sort-Naturally-1.03.tar.gz
+source root is Sort-Naturally-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1334134125 of file Sort-Naturally-1.03/META.json
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sort::Naturally
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Sort/Naturally.pm blib/lib/Sort/Naturally.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_about_verbose.t .. ok
+t/01_old_junk.t ....... ok
+All tests successful.
+Files=2, Tests=23,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/lib/pkgconfig m4datadir=/nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/share/aclocal aclocaldir=/nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/lib/perl5/site_perl/5.32.0/Sort/Naturally.pm
+Installing /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/share/man/man3/Sort::Naturally.3
+Appending installation info to /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/share/man/man3 to /nix/store/i0rr5plndm9qrry6yalyk3nkcin5m5hn-perl5.32.0-Sort-Naturally-1.03-devdoc/share/man/man3
+Removing empty /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03/lib
+patching script interpreter paths in /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03
+checking for references to /build/ in /nix/store/4z24rr5hwqcjp2ycj5bp68j82iabn4rx-perl5.32.0-Sort-Naturally-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/i0rr5plndm9qrry6yalyk3nkcin5m5hn-perl5.32.0-Sort-Naturally-1.03-devdoc
+gzipping man pages under /nix/store/i0rr5plndm9qrry6yalyk3nkcin5m5hn-perl5.32.0-Sort-Naturally-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/i0rr5plndm9qrry6yalyk3nkcin5m5hn-perl5.32.0-Sort-Naturally-1.03-devdoc
+checking for references to /build/ in /nix/store/i0rr5plndm9qrry6yalyk3nkcin5m5hn-perl5.32.0-Sort-Naturally-1.03-devdoc...
+building '/nix/store/7q1c3sg2mlnbg42sva4wypvj7j83nxm9-perl5.32.0-Data-Printer-0.40.drv'...
+unpacking sources
+unpacking source archive /nix/store/856w6khiqb868k62h3w39hh8rpszq6xs-Data-Printer-0.40.tar.gz
+source root is Data-Printer-0.40
+setting SOURCE_DATE_EPOCH to timestamp 1501636176 of file Data-Printer-0.40/META.json
+patching sources
+configuring
+patching ./examples/try_me.pl...
+patching ./t/00-load.t...
+patching ./t/04-multiline2.t...
+patching ./t/26.2-tainted_rc.t...
+patching ./t/26-tainted.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Printer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/Printer/Filter.pm blib/lib/Data/Printer/Filter.pm
+cp lib/Data/Printer/Filter/Digest.pm blib/lib/Data/Printer/Filter/Digest.pm
+cp lib/Data/Printer.pm blib/lib/Data/Printer.pm
+cp lib/DDP.pm blib/lib/DDP.pm
+cp lib/Data/Printer/Filter/DateTime.pm blib/lib/Data/Printer/Filter/DateTime.pm
+cp lib/Data/Printer/Filter/DB.pm blib/lib/Data/Printer/Filter/DB.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ................. # Beginning Data::Printer tests in linux with Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+Use of uninitialized value in subroutine entry at /build/Data-Printer-0.40/blib/lib/Data/Printer.pm line 1049.
+t/00-load.t ................. 1/1 # Testing Data::Printer 0.40
+t/00-load.t ................. ok
+t/00.2-begin_load.t ......... ok
+t/01-p.t .................... ok
+t/02-colors.t ............... ok
+t/02.2-autocolor.t .......... skipped: IO::Pty::Easy required for auto-colored tests
+t/03-conf.t ................. ok
+t/03-conf_not_ref.t ......... ok
+t/04-multiline.t ............ ok
+t/04-multiline2.t ........... ok
+t/05-obj.t .................. ok
+t/06-obj2.t ................. ok
+t/07-sort.t ................. ok
+t/08-deparse.t .............. ok
+t/09-alias.t ................ ok
+t/10-filter.t ............... ok
+t/11-aliased_with_filter.t .. ok
+t/12-filter_class.t ......... ok
+t/13-filter_datetime.t ...... ok
+t/13.2-filter_db.t .......... skipped: DBI not available
+t/13.3-filter_digest.t ...... ok
+t/14-local_conf.t ........... ok
+t/15-rc_file.t .............. ok
+t/16-rc_file2.t ............. ok
+t/16.2-rc_overwrite.t ....... ok
+t/16.3-rc_env.t ............. ok
+t/16.4-rc_env2.t ............ ok
+t/16.5-rc_env3.t ............ ok
+t/17-parallel.t ............. ok
+t/18-class_method.t ......... ok
+t/19-tied.t ................. ok
+t/20-handles.t .............. ok
+t/21-ddp.t .................. ok
+t/22-class_method.t ......... ok
+t/23-caller_info.t .......... ok
+t/24-no_prototypes.t ........ ok
+t/25-weak.t ................. ok
+t/26-tainted.t .............. ok
+t/26.2-tainted_rc.t ......... *** WARNING *** taint mode on: skipping rc file '/tmp/1nmJqn8NGJ/my_home/.dataprinter'.
+t/26.2-tainted_rc.t ......... ok
+t/26.7-unicode.t ............ ok
+t/27-pass_through.t ......... skipped: Capture::Tiny not found
+t/27.2-pass_through.t ....... skipped: Capture::Tiny not found
+t/27.3-pass_through-DDP.t ... skipped: Capture::Tiny not found
+t/27.4-pass_through-DDP.t ... skipped: Capture::Tiny not found
+t/28-void_return.t .......... skipped: Capture::Tiny not found
+t/29-output.t ............... skipped: Capture::Tiny not found
+t/30-print_escapes.t ........ ok
+t/31-bad_parameters.t ....... ok
+t/32-quote_keys.t ........... ok
+t/33-end_separator.t ........ ok
+t/33-separator.t ............ ok
+t/34-show_readonly.t ........ ok
+t/35-vstrings.t ............. ok
+t/36-valign.t ............... ok
+t/37-format.t ............... ok
+t/38-lvalue.t ............... ok
+t/39-seen_override.t ........ ok
+t/40-escape_chars.t ......... ok
+t/41-yaml.t ................. skipped: YAML::Syck not found.
+t/42-alignment.t ............ ok
+t/43-_is_number.t ........... ok
+t/44-number-colors.t ........ ok
+t/45-np.t ................... ok
+All tests successful.
+Files=62, Tests=334,  9 wallclock secs ( 0.18 usr  0.07 sys +  6.22 cusr  2.63 csys =  9.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/pkgconfig m4datadir=/nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/aclocal aclocaldir=/nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/DDP.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer/Filter.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer/Filter/DB.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer/Filter/DateTime.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer/Filter/Digest.pm
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/DDP.3
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/Data::Printer::Filter::DB.3
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/Data::Printer::Filter::DateTime.3
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/Data::Printer::Filter.3
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/Data::Printer.3
+Installing /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3/Data::Printer::Filter::Digest.3
+Appending installation info to /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/man3 to /nix/store/qkhhk4mc4pjcv6vdllhylrchc3qh5bq6-perl5.32.0-Data-Printer-0.40-devdoc/share/man/man3
+Removing empty /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib
+patching script interpreter paths in /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40
+checking for references to /build/ in /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qkhhk4mc4pjcv6vdllhylrchc3qh5bq6-perl5.32.0-Data-Printer-0.40-devdoc
+gzipping man pages under /nix/store/qkhhk4mc4pjcv6vdllhylrchc3qh5bq6-perl5.32.0-Data-Printer-0.40-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qkhhk4mc4pjcv6vdllhylrchc3qh5bq6-perl5.32.0-Data-Printer-0.40-devdoc
+checking for references to /build/ in /nix/store/qkhhk4mc4pjcv6vdllhylrchc3qh5bq6-perl5.32.0-Data-Printer-0.40-devdoc...
+/nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40

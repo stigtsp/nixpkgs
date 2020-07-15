@@ -1,0 +1,426 @@
+these derivations will be built:
+  /nix/store/4c7yyrj0kp5i9w7x43lm28xvj9hhq5ig-zookeeper-3.4.13.drv
+  /nix/store/8cf412crbsz18hfgd0gp03f1bsfacb4j-zookeeper_mt-3.4.13.drv
+  /nix/store/hh86kdgcrx1c36srf29ldsi8yab3i943-perl5.32.0-Net-ZooKeeper-0.41.drv
+these paths will be fetched (35.37 MiB download, 35.51 MiB unpacked):
+  /nix/store/3gv8v5ma5hhb9gclq18z99g3f0j4zyn2-zookeeper-3.4.13.tar.gz
+  /nix/store/a7vfnmkdjbf4q6ak2rsy1dq2zxl3sqhj-Net-ZooKeeper-0.41.tar.gz
+copying path '/nix/store/a7vfnmkdjbf4q6ak2rsy1dq2zxl3sqhj-Net-ZooKeeper-0.41.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3gv8v5ma5hhb9gclq18z99g3f0j4zyn2-zookeeper-3.4.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4c7yyrj0kp5i9w7x43lm28xvj9hhq5ig-zookeeper-3.4.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/3gv8v5ma5hhb9gclq18z99g3f0j4zyn2-zookeeper-3.4.13.tar.gz
+source root is zookeeper-3.4.13
+setting SOURCE_DATE_EPOCH to timestamp 1530402044 of file zookeeper-3.4.13/dist-maven/zookeeper-3.4.13.pom.asc
+installing
+patching script interpreter paths in /nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin
+/nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin/zkServer.sh: interpreter directive changed from "/usr/bin/env bash" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash"
+/nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin/zkCli.sh: interpreter directive changed from "/usr/bin/env bash" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash"
+/nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin/zkEnv.sh: interpreter directive changed from "/usr/bin/env bash" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash"
+/nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin/zkCleanup.sh: interpreter directive changed from "/usr/bin/env bash" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash"
+building '/nix/store/8cf412crbsz18hfgd0gp03f1bsfacb4j-zookeeper_mt-3.4.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/3gv8v5ma5hhb9gclq18z99g3f0j4zyn2-zookeeper-3.4.13.tar.gz
+source root is zookeeper-3.4.13/src/c
+setting SOURCE_DATE_EPOCH to timestamp 1530291894 of file zookeeper-3.4.13/src/c/tests/zkServer.sh
+patching sources
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13
+checking for doxygen... no
+checking for perl... no
+checking for dot... no
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for cppunit-config... no
+checking for Cppunit - version >= 1.10.2... no
+checking for generated/zookeeper.jute.c... yes
+checking for generated/zookeeper.jute.h... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking whether ln -s works... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+./configure: line 9258: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... ld
+checking if the linker (ld) is GNU ld... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether to enable gcov... no
+checking for pthread_mutex_lock in -lpthread... yes
+configure: building with SyncAPI support
+checking for ANSI C header files... (cached) yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking for nfds_t... yes
+checking whether to enable ipv6... no
+checking for getcwd... yes
+checking for gethostbyname... yes
+checking for gethostname... yes
+checking for getlogin... yes
+checking for getpwuid_r... yes
+checking for gettimeofday... yes
+checking for getuid... yes
+checking for memmove... yes
+checking for memset... yes
+checking for poll... yes
+checking for socket... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strtol... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+make  all-am
+make[1]: Entering directory '/build/zookeeper-3.4.13/src/c'
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o zookeeper.lo `test -f 'src/zookeeper.c' || echo './'`src/zookeeper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/zookeeper.c  -fPIC -DPIC -o .libs/zookeeper.o
+src/zookeeper.c: In function 'format_endpoint_info':
+src/zookeeper.c:3506:21: warning: '%d' directive writing between 1 and 5 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+ 3506 |     sprintf(buf,"%s:%d",addrstr,ntohs(port));
+      |                     ^~
+src/zookeeper.c:3506:17: note: directive argument in the range [0, 65535]
+ 3506 |     sprintf(buf,"%s:%d",addrstr,ntohs(port));
+      |                 ^~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from ./include/zookeeper.h:35,
+                 from src/zookeeper.c:28:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 3 and 134 bytes into a destination of size 128
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o recordio.lo `test -f 'src/recordio.c' || echo './'`src/recordio.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/recordio.c  -fPIC -DPIC -o .libs/recordio.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o zookeeper.jute.lo `test -f 'generated/zookeeper.jute.c' || echo './'`generated/zookeeper.jute.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c generated/zookeeper.jute.c  -fPIC -DPIC -o .libs/zookeeper.jute.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o zk_log.lo `test -f 'src/zk_log.c' || echo './'`src/zk_log.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/zk_log.c  -fPIC -DPIC -o .libs/zk_log.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o zk_hashtable.lo `test -f 'src/zk_hashtable.c' || echo './'`src/zk_hashtable.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/zk_hashtable.c  -fPIC -DPIC -o .libs/zk_hashtable.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o st_adaptor.lo `test -f 'src/st_adaptor.c' || echo './'`src/st_adaptor.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/st_adaptor.c  -fPIC -DPIC -o .libs/st_adaptor.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -Wall -Werror  -g -O2 -D_GNU_SOURCE   -o libzkst.la  zookeeper.lo recordio.lo zookeeper.jute.lo zk_log.lo zk_hashtable.lo st_adaptor.lo -lm
+libtool: link: ar cru .libs/libzkst.a .libs/zookeeper.o .libs/recordio.o .libs/zookeeper.jute.o .libs/zk_log.o .libs/zk_hashtable.o .libs/st_adaptor.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libzkst.a
+libtool: link: ( cd ".libs" && rm -f "libzkst.la" && ln -s "../libzkst.la" "libzkst.la" )
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o hashtable_itr.lo `test -f 'src/hashtable/hashtable_itr.c' || echo './'`src/hashtable/hashtable_itr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/hashtable/hashtable_itr.c  -fPIC -DPIC -o .libs/hashtable_itr.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o hashtable.lo `test -f 'src/hashtable/hashtable.c' || echo './'`src/hashtable/hashtable.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -Wall -Werror -g -O2 -D_GNU_SOURCE -c src/hashtable/hashtable.c  -fPIC -DPIC -o .libs/hashtable.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -Wall -Werror  -g -O2 -D_GNU_SOURCE   -o libhashtable.la  hashtable_itr.lo hashtable.lo
+libtool: link: ar cru .libs/libhashtable.a .libs/hashtable_itr.o .libs/hashtable.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libhashtable.a
+libtool: link: ( cd ".libs" && rm -f "libhashtable.la" && ln -s "../libhashtable.la" "libhashtable.la" )
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -Wall -Werror  -g -O2 -D_GNU_SOURCE -no-undefined -version-info 2  -export-symbols-regex '(zoo_|zookeeper_|zhandle|Z|format_log_message|log_message|logLevel|deallocate_|allocate_|zerror|is_unrecoverable)'  -o libzookeeper_st.la -rpath /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib  libzkst.la libhashtable.la
+libtool: link: nm   ./.libs/libzkst.a ./.libs/libhashtable.a | sed -n -e 's/^.*[         ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[         ][      ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed 's/.* //' | sort | uniq > .libs/libzookeeper_st.exp
+libtool: link: /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E -e "(zoo_|zookeeper_|zhandle|Z|format_log_message|log_message|logLevel|deallocate_|allocate_|zerror|is_unrecoverable)" ".libs/libzookeeper_st.exp" > ".libs/libzookeeper_st.expT"
+libtool: link: mv -f ".libs/libzookeeper_st.expT" ".libs/libzookeeper_st.exp"
+libtool: link: echo "{ global:" > .libs/libzookeeper_st.ver
+libtool: link:  cat .libs/libzookeeper_st.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libzookeeper_st.ver
+libtool: link:  echo "local: *; };" >> .libs/libzookeeper_st.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  -Wl,--whole-archive ./.libs/libzkst.a ./.libs/libhashtable.a -Wl,--no-whole-archive  -lm  -g -O2   -Wl,-soname -Wl,libzookeeper_st.so.2 -Wl,-version-script -Wl,.libs/libzookeeper_st.ver -o .libs/libzookeeper_st.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libzookeeper_st.so.2" && ln -s "libzookeeper_st.so.2.0.0" "libzookeeper_st.so.2")
+libtool: link: (cd ".libs" && rm -f "libzookeeper_st.so" && ln -s "libzookeeper_st.so.2.0.0" "libzookeeper_st.so")
+libtool: link: ( cd ".libs" && rm -f "libzookeeper_st.la" && ln -s "../libzookeeper_st.la" "libzookeeper_st.la" )
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-zookeeper.lo `test -f 'src/zookeeper.c' || echo './'`src/zookeeper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c src/zookeeper.c  -fPIC -DPIC -o .libs/libzkmt_la-zookeeper.o
+src/zookeeper.c: In function 'format_endpoint_info':
+src/zookeeper.c:3506:21: warning: '%d' directive writing between 1 and 5 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+ 3506 |     sprintf(buf,"%s:%d",addrstr,ntohs(port));
+      |                     ^~
+src/zookeeper.c:3506:17: note: directive argument in the range [0, 65535]
+ 3506 |     sprintf(buf,"%s:%d",addrstr,ntohs(port));
+      |                 ^~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from ./include/zookeeper.h:35,
+                 from src/zookeeper.c:28:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 3 and 134 bytes into a destination of size 128
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-recordio.lo `test -f 'src/recordio.c' || echo './'`src/recordio.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c src/recordio.c  -fPIC -DPIC -o .libs/libzkmt_la-recordio.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-zookeeper.jute.lo `test -f 'generated/zookeeper.jute.c' || echo './'`generated/zookeeper.jute.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c generated/zookeeper.jute.c  -fPIC -DPIC -o .libs/libzkmt_la-zookeeper.jute.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-zk_log.lo `test -f 'src/zk_log.c' || echo './'`src/zk_log.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c src/zk_log.c  -fPIC -DPIC -o .libs/libzkmt_la-zk_log.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-zk_hashtable.lo `test -f 'src/zk_hashtable.c' || echo './'`src/zk_hashtable.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c src/zk_hashtable.c  -fPIC -DPIC -o .libs/libzkmt_la-zk_hashtable.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o libzkmt_la-mt_adaptor.lo `test -f 'src/mt_adaptor.c' || echo './'`src/mt_adaptor.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./include -I./tests -I./generated -DTHREADED -g -O2 -D_GNU_SOURCE -c src/mt_adaptor.c  -fPIC -DPIC -o .libs/libzkmt_la-mt_adaptor.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -DTHREADED -g -O2 -D_GNU_SOURCE   -o libzkmt.la  libzkmt_la-zookeeper.lo libzkmt_la-recordio.lo libzkmt_la-zookeeper.jute.lo libzkmt_la-zk_log.lo libzkmt_la-zk_hashtable.lo libzkmt_la-mt_adaptor.lo -lm
+libtool: link: ar cru .libs/libzkmt.a .libs/libzkmt_la-zookeeper.o .libs/libzkmt_la-recordio.o .libs/libzkmt_la-zookeeper.jute.o .libs/libzkmt_la-zk_log.o .libs/libzkmt_la-zk_hashtable.o .libs/libzkmt_la-mt_adaptor.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libzkmt.a
+libtool: link: ( cd ".libs" && rm -f "libzkmt.la" && ln -s "../libzkmt.la" "libzkmt.la" )
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -Wall -Werror  -g -O2 -D_GNU_SOURCE -no-undefined -version-info 2  -export-symbols-regex '(zoo_|zookeeper_|zhandle|Z|format_log_message|log_message|logLevel|deallocate_|allocate_|zerror|is_unrecoverable)'  -o libzookeeper_mt.la -rpath /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib  libzkmt.la libhashtable.la -lpthread
+libtool: link: nm   ./.libs/libzkmt.a ./.libs/libhashtable.a | sed -n -e 's/^.*[         ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[         ][      ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed 's/.* //' | sort | uniq > .libs/libzookeeper_mt.exp
+libtool: link: /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E -e "(zoo_|zookeeper_|zhandle|Z|format_log_message|log_message|logLevel|deallocate_|allocate_|zerror|is_unrecoverable)" ".libs/libzookeeper_mt.exp" > ".libs/libzookeeper_mt.expT"
+libtool: link: mv -f ".libs/libzookeeper_mt.expT" ".libs/libzookeeper_mt.exp"
+libtool: link: echo "{ global:" > .libs/libzookeeper_mt.ver
+libtool: link:  cat .libs/libzookeeper_mt.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libzookeeper_mt.ver
+libtool: link:  echo "local: *; };" >> .libs/libzookeeper_mt.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  -Wl,--whole-archive ./.libs/libzkmt.a ./.libs/libhashtable.a -Wl,--no-whole-archive  -lm -lpthread  -g -O2   -Wl,-soname -Wl,libzookeeper_mt.so.2 -Wl,-version-script -Wl,.libs/libzookeeper_mt.ver -o .libs/libzookeeper_mt.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libzookeeper_mt.so.2" && ln -s "libzookeeper_mt.so.2.0.0" "libzookeeper_mt.so.2")
+libtool: link: (cd ".libs" && rm -f "libzookeeper_mt.so" && ln -s "libzookeeper_mt.so.2.0.0" "libzookeeper_mt.so")
+libtool: link: ( cd ".libs" && rm -f "libzookeeper_mt.la" && ln -s "../libzookeeper_mt.la" "libzookeeper_mt.la" )
+gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -Wall -Werror  -g -O2 -D_GNU_SOURCE -c -o cli.o `test -f 'src/cli.c' || echo './'`src/cli.c
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from src/cli.c:31:
+In function 'strncpy',
+    inlined from 'main' at src/cli.c:559:9:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 1024 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -Wall -Werror  -g -O2 -D_GNU_SOURCE   -o cli_st cli.o libzookeeper_st.la
+libtool: link: gcc -Wall -Werror -g -O2 -D_GNU_SOURCE -o .libs/cli_st cli.o  ./.libs/libzookeeper_st.so -Wl,-rpath -Wl,/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib
+gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o cli_mt-cli.o `test -f 'src/cli.c' || echo './'`src/cli.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -DTHREADED -g -O2 -D_GNU_SOURCE   -o cli_mt cli_mt-cli.o libzookeeper_mt.la
+libtool: link: gcc -DTHREADED -g -O2 -D_GNU_SOURCE -o .libs/cli_mt cli_mt-cli.o  ./.libs/libzookeeper_mt.so -Wl,-rpath -Wl,/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib
+gcc -DHAVE_CONFIG_H -I.  -I./include -I./tests -I./generated   -DTHREADED -g -O2 -D_GNU_SOURCE -c -o load_gen-load_gen.o `test -f 'src/load_gen.c' || echo './'`src/load_gen.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool  --tag=CC   --mode=link gcc -DTHREADED -g -O2 -D_GNU_SOURCE   -o load_gen load_gen-load_gen.o libzookeeper_mt.la
+libtool: link: gcc -DTHREADED -g -O2 -D_GNU_SOURCE -o .libs/load_gen load_gen-load_gen.o  ./.libs/libzookeeper_mt.so -Wl,-rpath -Wl,/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib
+make[1]: Leaving directory '/build/zookeeper-3.4.13/src/c'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+make[1]: Entering directory '/build/zookeeper-3.4.13/src/c'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libzookeeper_st.la libzookeeper_mt.la '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libzookeeper_st.so.2.0.0 /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_st.so.2.0.0
+libtool: install: (cd /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib && { ln -s -f libzookeeper_st.so.2.0.0 libzookeeper_st.so.2 || { rm -f libzookeeper_st.so.2 && ln -s libzookeeper_st.so.2.0.0 libzookeeper_st.so.2; }; })
+libtool: install: (cd /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib && { ln -s -f libzookeeper_st.so.2.0.0 libzookeeper_st.so || { rm -f libzookeeper_st.so && ln -s libzookeeper_st.so.2.0.0 libzookeeper_st.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libzookeeper_st.lai /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_st.la
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libzookeeper_mt.so.2.0.0 /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_mt.so.2.0.0
+libtool: install: (cd /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib && { ln -s -f libzookeeper_mt.so.2.0.0 libzookeeper_mt.so.2 || { rm -f libzookeeper_mt.so.2 && ln -s libzookeeper_mt.so.2.0.0 libzookeeper_mt.so.2; }; })
+libtool: install: (cd /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib && { ln -s -f libzookeeper_mt.so.2.0.0 libzookeeper_mt.so || { rm -f libzookeeper_mt.so && ln -s libzookeeper_mt.so.2.0.0 libzookeeper_mt.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libzookeeper_mt.lai /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_mt.la
+libtool: finish: PATH="/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/f9379f5bwm9c6n92gnsbr4acmdq7vnv1-zookeeper-3.4.13/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c cli_st cli_mt load_gen '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cli_st /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/cli_st
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cli_mt /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/cli_mt
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/load_gen /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/load_gen
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/include/zookeeper'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 include/zookeeper.h include/zookeeper_version.h include/zookeeper_log.h include/proto.h include/recordio.h generated/zookeeper.jute.h '/nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/include/zookeeper'
+make[1]: Leaving directory '/build/zookeeper-3.4.13/src/c'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13
+shrinking /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_st.so.2.0.0
+shrinking /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib/libzookeeper_mt.so.2.0.0
+shrinking /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/load_gen
+shrinking /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/cli_st
+shrinking /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin/cli_mt
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/lib  /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13/bin
+patching script interpreter paths in /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13
+checking for references to /build/ in /nix/store/h6icm7rzvk2msc1mifav8qfbn9zl1r49-zookeeper_mt-3.4.13...
+building '/nix/store/hh86kdgcrx1c36srf29ldsi8yab3i943-perl5.32.0-Net-ZooKeeper-0.41.drv'...
+unpacking sources
+unpacking source archive /nix/store/a7vfnmkdjbf4q6ak2rsy1dq2zxl3sqhj-Net-ZooKeeper-0.41.tar.gz
+source root is Net-ZooKeeper-0.41
+setting SOURCE_DATE_EPOCH to timestamp 1434591375 of file Net-ZooKeeper-0.41/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lzookeeper_mt
+Generating a Unix-style Makefile
+Writing Makefile for Net::ZooKeeper
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp ZooKeeper.pm blib/lib/Net/ZooKeeper.pm
+Running Mkbootstrap for ZooKeeper ()
+chmod 644 "ZooKeeper.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ZooKeeper.bs blib/arch/auto/Net/ZooKeeper/ZooKeeper.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Net-ZooKeeper-0.41/typemap'  ZooKeeper.xs > ZooKeeper.xsc
+mv ZooKeeper.xsc ZooKeeper.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.41\" -DXS_VERSION=\"0.41\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   ZooKeeper.c
+rm -f blib/arch/auto/Net/ZooKeeper/ZooKeeper.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  ZooKeeper.o  -o blib/arch/auto/Net/ZooKeeper/ZooKeeper.so  \
+      \
+
+chmod 755 blib/arch/auto/Net/ZooKeeper/ZooKeeper.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ZooKeeper.bs blib/arch/auto/Net/ZooKeeper/ZooKeeper.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10_invalid.t .... 1/107 # no ZooKeeper hostnames specified in ZK_TEST_HOSTS env var, using localhost:2181
+# no ZooKeeper path specified in ZK_TEST_PATH env var, using root path
+t/10_invalid.t .... ok
+t/15_thread.t ..... ok
+t/20_tie.t ........ ok
+t/22_stat_tie.t ... ok
+t/24_watch_tie.t .. ok
+t/30_connect.t .... ok
+t/35_log.t ........ ok
+t/40_basic.t ...... ok
+t/45_class.t ...... ok
+t/50_access.t ..... ok
+t/60_watch.t ...... ok
+All tests successful.
+Files=11, Tests=463,  3 wallclock secs ( 0.07 usr  0.01 sys +  0.68 cusr  0.09 csys =  0.85 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib/pkgconfig m4datadir=/nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/share/aclocal aclocaldir=/nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ZooKeeper.bs blib/arch/auto/Net/ZooKeeper/ZooKeeper.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/ZooKeeper/ZooKeeper.so
+Installing /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/ZooKeeper.pm
+Installing /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/share/man/man3/Net::ZooKeeper.3
+Appending installation info to /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/share/man/man3 to /nix/store/hv930kdxyh2vqjyrrhjv5gkmjrfq845m-perl5.32.0-Net-ZooKeeper-0.41-devdoc/share/man/man3
+Removing empty /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41
+shrinking /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/ZooKeeper/ZooKeeper.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41/lib
+patching script interpreter paths in /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41
+checking for references to /build/ in /nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hv930kdxyh2vqjyrrhjv5gkmjrfq845m-perl5.32.0-Net-ZooKeeper-0.41-devdoc
+gzipping man pages under /nix/store/hv930kdxyh2vqjyrrhjv5gkmjrfq845m-perl5.32.0-Net-ZooKeeper-0.41-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hv930kdxyh2vqjyrrhjv5gkmjrfq845m-perl5.32.0-Net-ZooKeeper-0.41-devdoc
+checking for references to /build/ in /nix/store/hv930kdxyh2vqjyrrhjv5gkmjrfq845m-perl5.32.0-Net-ZooKeeper-0.41-devdoc...
+/nix/store/84793pa3yw3xxidygcjgj767d8372sjr-perl5.32.0-Net-ZooKeeper-0.41

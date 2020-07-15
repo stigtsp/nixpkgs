@@ -1,0 +1,49 @@
+these derivations will be built:
+  /nix/store/swn1l8p0mhr6hvfxnfz5psdj58l9rglj-perl5.32.0-Cache-Simple-TimedExpiry-0.27.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/bwlmk84ypd520i78yq6hzbr1r4lpg6qa-Cache-Simple-TimedExpiry-0.27.tar.gz
+copying path '/nix/store/bwlmk84ypd520i78yq6hzbr1r4lpg6qa-Cache-Simple-TimedExpiry-0.27.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/swn1l8p0mhr6hvfxnfz5psdj58l9rglj-perl5.32.0-Cache-Simple-TimedExpiry-0.27.drv'...
+unpacking sources
+unpacking source archive /nix/store/bwlmk84ypd520i78yq6hzbr1r4lpg6qa-Cache-Simple-TimedExpiry-0.27.tar.gz
+source root is Cache-Simple-TimedExpiry-0.27
+setting SOURCE_DATE_EPOCH to timestamp 1164060439 of file Cache-Simple-TimedExpiry-0.27/SIGNATURE
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cache::Simple::TimedExpiry
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cache/Simple/TimedExpiry.pm blib/lib/Cache/Simple/TimedExpiry.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01basic.t .. ok
+All tests successful.
+Files=1, Tests=27, 19 wallclock secs ( 0.02 usr  0.00 sys +  0.04 cusr  0.01 csys =  0.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/lib/pkgconfig m4datadir=/nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/share/aclocal aclocaldir=/nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/lib/perl5/site_perl/5.32.0/Cache/Simple/TimedExpiry.pm
+Installing /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/share/man/man3/Cache::Simple::TimedExpiry.3
+Appending installation info to /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/share/man/man3 to /nix/store/rkvb9lynvhgb4gafxvrw1k78iywsrrd0-perl5.32.0-Cache-Simple-TimedExpiry-0.27-devdoc/share/man/man3
+Removing empty /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27/lib
+patching script interpreter paths in /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27
+checking for references to /build/ in /nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rkvb9lynvhgb4gafxvrw1k78iywsrrd0-perl5.32.0-Cache-Simple-TimedExpiry-0.27-devdoc
+gzipping man pages under /nix/store/rkvb9lynvhgb4gafxvrw1k78iywsrrd0-perl5.32.0-Cache-Simple-TimedExpiry-0.27-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rkvb9lynvhgb4gafxvrw1k78iywsrrd0-perl5.32.0-Cache-Simple-TimedExpiry-0.27-devdoc
+checking for references to /build/ in /nix/store/rkvb9lynvhgb4gafxvrw1k78iywsrrd0-perl5.32.0-Cache-Simple-TimedExpiry-0.27-devdoc...
+/nix/store/6aqfmbs5z111g7wd5a5cbvzz8cfw12j5-perl5.32.0-Cache-Simple-TimedExpiry-0.27

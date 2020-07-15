@@ -1,0 +1,202 @@
+these derivations will be built:
+  /nix/store/q2i7sn21z4jfawgfxkxc3f4sv9xpvkz6-perl5.32.0-Proc-ProcessTable-0.59.drv
+  /nix/store/d9ad7rpkibgsx62ijqqm4kckfzqgxjd3-perl5.32.0-Proc-Find-0.051.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/ksmafs063yylw26p5kkhv4mnrxn7gwnm-Proc-Find-0.051.tar.gz
+  /nix/store/l34zky7iazy0007h644ryzipr0wjldky-Proc-ProcessTable-0.59.tar.gz
+copying path '/nix/store/ksmafs063yylw26p5kkhv4mnrxn7gwnm-Proc-Find-0.051.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/l34zky7iazy0007h644ryzipr0wjldky-Proc-ProcessTable-0.59.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q2i7sn21z4jfawgfxkxc3f4sv9xpvkz6-perl5.32.0-Proc-ProcessTable-0.59.drv'...
+unpacking sources
+unpacking source archive /nix/store/l34zky7iazy0007h644ryzipr0wjldky-Proc-ProcessTable-0.59.tar.gz
+source root is Proc-ProcessTable-0.59
+setting SOURCE_DATE_EPOCH to timestamp 1561059210 of file Proc-ProcessTable-0.59/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/manifest.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+patching ./contrib/ppt_profile.pl...
+patching ./contrib/pswait...
+patching ./contrib/ppt_profile_plot.R...
+patching ./contrib/pctcpu_example.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Proc::ProcessTable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Proc/Killall.pm blib/lib/Proc/Killall.pm
+cp lib/Proc/Killfam.pm blib/lib/Proc/Killfam.pm
+cp lib/Proc/ProcessTable/Process.pm blib/lib/Proc/ProcessTable/Process.pm
+AutoSplitting blib/lib/Proc/ProcessTable/Process.pm (blib/lib/auto/Proc/ProcessTable/Process)
+cp lib/Proc/ProcessTable.pm blib/lib/Proc/ProcessTable.pm
+Running Mkbootstrap for ProcessTable ()
+chmod 644 "ProcessTable.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ProcessTable.bs blib/arch/auto/Proc/ProcessTable/ProcessTable.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  ProcessTable.xs > ProcessTable.xsc
+mv ProcessTable.xsc ProcessTable.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.59\" -DXS_VERSION=\"0.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   ProcessTable.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.59\" -DXS_VERSION=\"0.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   OS.c
+OS.c: In function 'OS_get_table':
+OS.c:670:5: warning: 'readdir_r' is deprecated [-Wdeprecated-declarations]
+  670 |     while(readdir_r(dir, dir_ent, &dir_result) == 0 && dir_result) {
+      |     ^~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/features.h:465,
+                 from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/ctype.h:25,
+                 from OS.c:5:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/dirent.h:189:12: note: declared here
+  189 | extern int __REDIRECT (readdir_r,
+      |            ^~~~~~~~~~
+rm -f blib/arch/auto/Proc/ProcessTable/ProcessTable.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  OS.o ProcessTable.o  -o blib/arch/auto/Proc/ProcessTable/ProcessTable.so  \
+      \
+
+chmod 755 blib/arch/auto/Proc/ProcessTable/ProcessTable.so
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ProcessTable.bs blib/arch/auto/Proc/ProcessTable/ProcessTable.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............................. 1/1 # Testing Proc::ProcessTable 0.59, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............................. ok
+t/01-instiantied_object_only_methods.t .. ok
+t/bugfix-106571_odd_process_name.t ...... 1/? Can't exec "ps": No such file or directory at t/bugfix-106571_odd_process_name.t line 17.
+t/bugfix-106571_odd_process_name.t ...... ok
+t/bugfix-51470_cmndline_mod_error.t ..... 1/? Can't exec "ps": No such file or directory at t/bugfix-51470_cmndline_mod_error.t line 17.
+t/bugfix-51470_cmndline_mod_error.t ..... ok
+t/bugfix-61946_odd_process_name.t ....... 1/? Can't exec "ps": No such file or directory at t/bugfix-61946_odd_process_name.t line 17.
+t/bugfix-61946_odd_process_name.t ....... ok
+t/manifest.t ............................ skipped: Author tests not required for installation
+t/openbsd-size-rss.t .................... skipped: OpenBSD-specific tests
+t/pod-coverage.t ........................ skipped: Author tests not required for installation
+t/pod.t ................................. skipped: Author tests not required for installation
+t/process.t ............................. --------------------------------
+uid:  1000
+gid:  100
+pid:  335
+fname:  perl
+ppid:  321
+pgrp:  1
+sess:  1
+ttynum:  0
+flags:  0
+minflt:  2596
+cminflt:  0
+majflt:  0
+cmajflt:  0
+utime:  50000
+stime:  10000
+cutime:  0
+cstime:  0
+priority:  20
+start:  1594797742
+size:  17551360
+rss:  14737408
+wchan:  0
+time:  60000
+ctime:  0
+state:  run
+euid:  1000
+suid:  1000
+fuid:  1000
+egid:  100
+sgid:  100
+fgid:  100
+pctcpu:    6.00
+pctmem:  0.09
+cmndline:  /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl t/process.t
+exec:  /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+cwd:  /build/Proc-ProcessTable-0.59
+cmdline:  "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl","t/process.t"
+environ:  "PERL_DL_NONLAZY=1","HOST_PATH=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin","propagatedBuildInputs=","stdenv=/nix/store/1963w33chfgymcp92szbh2gax9hzsllb-stdenv-linux","_=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl","TZ=UTC","version=0.59","fullperl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0","OLDPWD=/build","out=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59","AUTOMATED_TESTING=1","src=/nix/store/l34zky7iazy0007h644ryzipr0wjldky-Proc-ProcessTable-0.59.tar.gz","MAKE_TERMOUT=true","VERBOSE=y","CONFIG_SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash","buildInputs=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0","builder=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash","MFLAGS=","CC=cc","READELF=readelf","STRIP=strip","depsBuildTarget=","OBJCOPY=objcopy","NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1","NIX_LOG_FD=2","propagatedNativeBuildInputs=","devdoc=/nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc","depsTargetTarget=","system=x86_64-linux","PWD=/build/Proc-ProcessTable-0.59","PERL_USE_UNSAFE_INC=1","HOME=/homeless-shelter","TMP=/build","strictDeps=","checkTarget=test","pname=perl5.32.0-Proc-ProcessTable","NIX_ENFORCE_NO_NATIVE=1","RANLIB=:","OBJDUMP=objdump","AS=as","AR=ar","SSL_CERT_FILE=/no-cert-file.crt","NIX_CC=/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0","depsBuildBuild=","NIX_STORE=/nix/store","outputs=out devdoc","configureFlags=--prefix=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59         --bindir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/bin --sbindir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/sbin         --includedir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/include --oldincludedir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/include         --mandir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man --infodir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/info         --docdir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/doc/perl5.32.0-Proc-ProcessTable         --libdir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib --libexecdir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/libexec         --localedir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/locale         ","PERL_AUTOINSTALL=--skipdeps","TMPDIR=/build","name=perl5.32.0-Proc-ProcessTable-0.59","doInstallCheck=","doCheck=1","NIX_BINTOOLS=/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1","NM=nm","depsHostHostPropagated=","CXX=g++","depsBuildBuildPropagated=","TERM=xterm-256color","SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash","MAKEOVERRIDES=${-*-command-variables-*-}","NIX_LDFLAGS=-rpath /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib64 -rpath /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib ","TEMPDIR=/build","shell=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash","NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1","NIX_HARDENING_ENABLE=fortify stackprotector pic strictoverflow format relro bindnow","PERL5LIB=/build/Proc-ProcessTable-0.59/blib/lib:/build/Proc-ProcessTable-0.59/blib/arch:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl","NIX_INDENT_MAKE=1","MAKELEVEL=1","NIX_SSL_CERT_FILE=/no-cert-file.crt","SHLVL=2","MAKE_TERMERR=true","NIX_BUILD_CORES=8","SOURCE_DATE_EPOCH=1561059210","TEMP=/build","STRINGS=strings","depsHostHost=","PATH=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin","NIX_BUILD_TOP=/build","depsBuildTargetPropagated=","NIX_ENFORCE_PURITY=1","MAKEFLAGS= -- VERBOSE=y SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash","SIZE=size","nativeBuildInputs=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0","LD=cc","patches=","depsTargetTargetPropagated=","HARNESS_ACTIVE=1","HARNESS_VERSION=3.42","TAP_VERSION=13"
+tracer:  0
+t/process.t ............................. ok
+All tests successful.
+Files=10, Tests=12,  3 wallclock secs ( 0.04 usr  0.01 sys +  0.50 cusr  0.10 csys =  0.65 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/pkgconfig m4datadir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/aclocal aclocaldir=/nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ProcessTable.bs blib/arch/auto/Proc/ProcessTable/ProcessTable.bs 644
+Manifying 4 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Proc/ProcessTable/ProcessTable.so
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Proc/ProcessTable/Process/autosplit.ix
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Proc/ProcessTable.pm
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Proc/Killfam.pm
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Proc/Killall.pm
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Proc/ProcessTable/Process.pm
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/man3/Proc::Killfam.3
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/man3/Proc::Killall.3
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/man3/Proc::ProcessTable::Process.3
+Installing /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/man3/Proc::ProcessTable.3
+Appending installation info to /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/man3 to /nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc/share/man/man3
+Removing empty /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59
+shrinking /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Proc/ProcessTable/ProcessTable.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59/lib
+patching script interpreter paths in /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59
+checking for references to /build/ in /nix/store/5k7sm3b37ad7fp3jgxsd7llprqw1ncc0-perl5.32.0-Proc-ProcessTable-0.59...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc
+gzipping man pages under /nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc
+checking for references to /build/ in /nix/store/0h7a5s17jshb63h5bsr8fyj304qvdyjw-perl5.32.0-Proc-ProcessTable-0.59-devdoc...
+building '/nix/store/d9ad7rpkibgsx62ijqqm4kckfzqgxjd3-perl5.32.0-Proc-Find-0.051.drv'...
+unpacking sources
+unpacking source archive /nix/store/ksmafs063yylw26p5kkhv4mnrxn7gwnm-Proc-Find-0.051.tar.gz
+source root is Proc-Find-0.051
+setting SOURCE_DATE_EPOCH to timestamp 1574496273 of file Proc-Find-0.051/weaver.ini
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/01-basics.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Proc::Find
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Proc/Find.pm blib/lib/Proc/Find.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ........... ok
+t/01-basics.t ............ ok
+t/author-critic.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=5,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.10 cusr  0.04 csys =  0.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/lib/pkgconfig m4datadir=/nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/share/aclocal aclocaldir=/nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/lib/perl5/site_perl/5.32.0/Proc/Find.pm
+Installing /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/share/man/man3/Proc::Find.3
+Appending installation info to /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/share/man/man3 to /nix/store/1pzzq33jq421bbq5df3yl6v8rhpbbjji-perl5.32.0-Proc-Find-0.051-devdoc/share/man/man3
+Removing empty /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051/lib
+patching script interpreter paths in /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051
+checking for references to /build/ in /nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1pzzq33jq421bbq5df3yl6v8rhpbbjji-perl5.32.0-Proc-Find-0.051-devdoc
+gzipping man pages under /nix/store/1pzzq33jq421bbq5df3yl6v8rhpbbjji-perl5.32.0-Proc-Find-0.051-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1pzzq33jq421bbq5df3yl6v8rhpbbjji-perl5.32.0-Proc-Find-0.051-devdoc
+checking for references to /build/ in /nix/store/1pzzq33jq421bbq5df3yl6v8rhpbbjji-perl5.32.0-Proc-Find-0.051-devdoc...
+/nix/store/1wsks2vlnac0c4fkj54nsngs1s9q6xdn-perl5.32.0-Proc-Find-0.051

@@ -1,0 +1,153 @@
+these derivations will be built:
+  /nix/store/l4pvi0paacqapknarnlaaca7pvwckk6g-perl5.32.0-HTML-Formatter-2.16.drv
+building '/nix/store/l4pvi0paacqapknarnlaaca7pvwckk6g-perl5.32.0-HTML-Formatter-2.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/jj0s6kzf390cj1xz2sw276mhqxy95l4y-HTML-Formatter-2.16.tar.gz
+source root is HTML-Formatter-2.16
+setting SOURCE_DATE_EPOCH to timestamp 1481101969 of file HTML-Formatter-2.16/t/support/generate_results.pl
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/release-has-version.t...
+patching ./t/release-minimum-version.t...
+patching ./t/release-distmeta.t...
+patching ./t/support/generate_results.pl...
+patching ./t/author-synopsis.t...
+patching ./t/release-dist-manifest.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::Formatter
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/FormatRTF.pm blib/lib/HTML/FormatRTF.pm
+cp lib/HTML/Formatter.pm blib/lib/HTML/Formatter.pm
+cp lib/HTML/FormatText.pm blib/lib/HTML/FormatText.pm
+cp lib/HTML/FormatPS.pm blib/lib/HTML/FormatPS.pm
+cp lib/HTML/FormatMarkdown.pm blib/lib/HTML/FormatMarkdown.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............... ok
+t/00-report-prereqs.t ........ #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Slurper        any    0.012
+#     File::Spec           any     3.78
+#     FindBin              any     1.51
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Test::More          0.96 1.302175
+#     Test::Warnings       any    0.030
+#     blib                1.01     1.07
+#     bytes                any     1.07
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                              Want  Have
+#     ----------------------------------- ---- -----
+#     Carp                                 any  1.50
+#     Data::Dumper                         any 2.174
+#     Encode                               any  3.06
+#     Font::Metrics::Courier               any undef
+#     Font::Metrics::CourierBold           any undef
+#     Font::Metrics::CourierBoldOblique    any undef
+#     Font::Metrics::CourierOblique        any undef
+#     Font::Metrics::Helvetica             any undef
+#     Font::Metrics::HelveticaBold         any undef
+#     Font::Metrics::HelveticaBoldOblique  any undef
+#     Font::Metrics::HelveticaOblique      any undef
+#     Font::Metrics::TimesBold             any undef
+#     Font::Metrics::TimesBoldItalic       any undef
+#     Font::Metrics::TimesItalic           any undef
+#     Font::Metrics::TimesRoman            any undef
+#     HTML::Element                       3.15  5.07
+#     HTML::TreeBuilder                    any  5.07
+#     IO::File                             any  1.41
+#     base                                 any  2.27
+#     integer                              any  1.01
+#     parent                               any 0.238
+#     strict                               any  1.11
+#     utf8                                 any  1.22
+#     warnings                             any  1.47
+#
+t/00-report-prereqs.t ........ ok
+t/01_ps.t .................... ok
+t/02_rtf.t ................... ok
+t/03_text.t .................. ok
+t/04_md.t .................... ok
+t/author-critic.t ............ skipped: these tests are for testing by the author
+t/author-eol.t ............... skipped: these tests are for testing by the author
+t/author-no-tabs.t ........... skipped: these tests are for testing by the author
+t/author-pod-spell.t ......... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ........ skipped: these tests are for testing by the author
+t/author-portability.t ....... skipped: these tests are for testing by the author
+t/author-synopsis.t .......... skipped: these tests are for testing by the author
+t/release-dist-manifest.t .... skipped: these tests are for release candidate testing
+t/release-distmeta.t ......... skipped: these tests are for release candidate testing
+t/release-has-version.t ...... skipped: these tests are for release candidate testing
+t/release-minimum-version.t .. skipped: these tests are for release candidate testing
+t/release-unused-vars.t ...... skipped: these tests are for release candidate testing
+t/rt111783.t ................. ok
+t/rt69426.t .................. ok
+All tests successful.
+Files=20, Tests=94,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.97 cusr  0.30 csys =  1.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/pkgconfig m4datadir=/nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/aclocal aclocaldir=/nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/site_perl/5.32.0/HTML/FormatMarkdown.pm
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/site_perl/5.32.0/HTML/FormatRTF.pm
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/site_perl/5.32.0/HTML/Formatter.pm
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/site_perl/5.32.0/HTML/FormatText.pm
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/site_perl/5.32.0/HTML/FormatPS.pm
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3/HTML::FormatRTF.3
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3/HTML::FormatText.3
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3/HTML::FormatMarkdown.3
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3/HTML::Formatter.3
+Installing /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3/HTML::FormatPS.3
+Appending installation info to /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/man3 to /nix/store/d93w32800jxdxxdxywjmid7z9c04vci9-perl5.32.0-HTML-Formatter-2.16-devdoc/share/man/man3
+Removing empty /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16/lib
+patching script interpreter paths in /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16
+checking for references to /build/ in /nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d93w32800jxdxxdxywjmid7z9c04vci9-perl5.32.0-HTML-Formatter-2.16-devdoc
+gzipping man pages under /nix/store/d93w32800jxdxxdxywjmid7z9c04vci9-perl5.32.0-HTML-Formatter-2.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d93w32800jxdxxdxywjmid7z9c04vci9-perl5.32.0-HTML-Formatter-2.16-devdoc
+checking for references to /build/ in /nix/store/d93w32800jxdxxdxywjmid7z9c04vci9-perl5.32.0-HTML-Formatter-2.16-devdoc...
+/nix/store/79f5qlb4yqbipydpwxprzprsvjk3pmx4-perl5.32.0-HTML-Formatter-2.16

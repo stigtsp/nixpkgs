@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/m5rww400nlba1b5897sjrx9bls9ykl65-perl5.32.0-HTML-StripScripts-Parser-1.03.drv
+building '/nix/store/m5rww400nlba1b5897sjrx9bls9ykl65-perl5.32.0-HTML-StripScripts-Parser-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/xk977163ib74q04amp7qjvqvk4z463vn-HTML-StripScripts-Parser-1.03.tar.gz
+source root is HTML-StripScripts-Parser-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1257416652 of file HTML-StripScripts-Parser-1.03/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::StripScripts::Parser
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Parser.pm blib/lib/HTML/StripScripts/Parser.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10basic.t ......... ok
+t/20script.t ........ ok
+t/50flow.t .......... ok
+t/70xss.t ........... ok
+t/80pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/81pod_coverage.t .. skipped: Test::Pod::Coverage required for testing POD coverage
+All tests successful.
+Files=6, Tests=217,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.34 cusr  0.09 csys =  0.47 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/lib/pkgconfig m4datadir=/nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/share/aclocal aclocaldir=/nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/lib/perl5/site_perl/5.32.0/HTML/StripScripts/Parser.pm
+Installing /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/share/man/man3/HTML::StripScripts::Parser.3
+Appending installation info to /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/share/man/man3 to /nix/store/ab6q2mkyh6jn8bvlc8nkkkvyaq7bsgd1-perl5.32.0-HTML-StripScripts-Parser-1.03-devdoc/share/man/man3
+Removing empty /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03/lib
+patching script interpreter paths in /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03
+checking for references to /build/ in /nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ab6q2mkyh6jn8bvlc8nkkkvyaq7bsgd1-perl5.32.0-HTML-StripScripts-Parser-1.03-devdoc
+gzipping man pages under /nix/store/ab6q2mkyh6jn8bvlc8nkkkvyaq7bsgd1-perl5.32.0-HTML-StripScripts-Parser-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ab6q2mkyh6jn8bvlc8nkkkvyaq7bsgd1-perl5.32.0-HTML-StripScripts-Parser-1.03-devdoc
+checking for references to /build/ in /nix/store/ab6q2mkyh6jn8bvlc8nkkkvyaq7bsgd1-perl5.32.0-HTML-StripScripts-Parser-1.03-devdoc...
+/nix/store/r3y5p11fxf231hik0xby3bzha3q81msh-perl5.32.0-HTML-StripScripts-Parser-1.03

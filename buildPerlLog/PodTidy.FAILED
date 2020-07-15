@@ -1,0 +1,92 @@
+these derivations will be built:
+  /nix/store/m5c2pw1z6blrx7nh42p8ybfzv12ymmhr-perl5.32.0-Test-Cmd-1.09.drv
+  /nix/store/vp2sfacrryv9w2m7f7bnb22cmzdz63gw-perl5.32.0-Pod-Wrap-0.01.drv
+  /nix/store/nil56ynk9shi85iiynmyazvmi2l235j5-perl5.32.0-Pod-Tidy-0.10.drv
+building '/nix/store/vp2sfacrryv9w2m7f7bnb22cmzdz63gw-perl5.32.0-Pod-Wrap-0.01.drv'...
+building '/nix/store/m5c2pw1z6blrx7nh42p8ybfzv12ymmhr-perl5.32.0-Test-Cmd-1.09.drv'...
+unpacking sources
+unpacking sources
+unpacking source archive /nix/store/9vhm5k9bza3w42vwipnb1y00p3k18m8v-Test-Cmd-1.09.tar.gz
+unpacking source archive /nix/store/pyr9x3519zzprffwgc3anvmk27bkbbgb-Pod-Wrap-0.01.tar.gz
+source root is Pod-Wrap-0.01
+source root is Test-Cmd-1.09
+setting SOURCE_DATE_EPOCH to timestamp 1073565665 of file Pod-Wrap-0.01/SIGNATURE
+setting SOURCE_DATE_EPOCH to timestamp 1445773731 of file Test-Cmd-1.09/t/writable.t
+patching sources
+patching sources
+configuring
+configuring
+patching ./scripts/podwrap...
+patching ./t/deparse_cmp.t...
+patching ./lib/Pod/Wrap.pm...
+patching ./Build.PL...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Pod::Parser 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Wrap
+Checking if your kit is complete...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Cmd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking prerequisites...
+  requires:
+    !  Pod::Parser is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Pod-Wrap' version '0.01'
+Building Pod-Wrap
+cp lib/Test/Cmd/Common.pm blib/lib/Test/Cmd/Common.pm
+cp lib/Test/Cmd.pm blib/lib/Test/Cmd.pm
+running tests
+Manifying 2 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/lib/pkgconfig m4datadir=/nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/aclocal aclocaldir=/nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/lib/perl5/site_perl/5.32.0/Test/Cmd.pm
+Installing /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/lib/perl5/site_perl/5.32.0/Test/Cmd/Common.pm
+Installing /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/man/man3/Test::Cmd::Common.3
+Installing /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/man/man3/Test::Cmd.3
+Appending installation info to /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/man/man3 to /nix/store/lpli8hrhq68vnlj89i3h3fn6njxs6f11-perl5.32.0-Test-Cmd-1.09-devdoc/share/man/man3
+Removing empty /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09
+t/deparse_cmp.t .. Base class package "Pod::Parser" is empty.
+    (Perhaps you need to 'use' the module which defines that package first,
+    or make that module available in @INC (@INC contains: /nix/store/gbmk2qcpf8gh99gyxlzm2ij4n98xkpnv-perl5.32.0-Pod-Wrap-0.01/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Wrap-0.01/blib/lib /build/Pod-Wrap-0.01/blib/arch /nix/store/gbmk2qcpf8gh99gyxlzm2ij4n98xkpnv-perl5.32.0-Pod-Wrap-0.01/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl/5.32.0 /nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl /nix/store/gbmk2qcpf8gh99gyxlzm2ij4n98xkpnv-perl5.32.0-Pod-Wrap-0.01/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .).
+ at /build/Pod-Wrap-0.01/blib/lib/Pod/Wrap.pm line 10.
+BEGIN failed--compilation aborted at /build/Pod-Wrap-0.01/blib/lib/Pod/Wrap.pm line 10.
+Compilation failed in require at t/deparse_cmp.t line 46.
+BEGIN failed--compilation aborted at t/deparse_cmp.t line 46.
+t/deparse_cmp.t .. Dubious, test returned 2 (wstat 512, 0x200)
+No subtests run
+
+Test Summary Report
+-------------------
+t/deparse_cmp.t (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: No plan found in TAP output
+Files=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)
+Result: FAIL
+Failed 1/1 test programs. 0/0 subtests failed.
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09/lib
+patching script interpreter paths in /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09
+checking for references to /build/ in /nix/store/wpkf7alfc6shx63wjz8zwc4qsd72xfbi-perl5.32.0-Test-Cmd-1.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lpli8hrhq68vnlj89i3h3fn6njxs6f11-perl5.32.0-Test-Cmd-1.09-devdoc
+builder for '/nix/store/vp2sfacrryv9w2m7f7bnb22cmzdz63gw-perl5.32.0-Pod-Wrap-0.01.drv' failed with exit code 2
+cannot build derivation '/nix/store/nil56ynk9shi85iiynmyazvmi2l235j5-perl5.32.0-Pod-Tidy-0.10.drv': 1 dependencies couldn't be built
+error: build of '/nix/store/nil56ynk9shi85iiynmyazvmi2l235j5-perl5.32.0-Pod-Tidy-0.10.drv' failed

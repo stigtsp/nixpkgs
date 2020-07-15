@@ -1,0 +1,102 @@
+these derivations will be built:
+  /nix/store/b5ayb2f2v6jck1knska5cyrywyb0cy7i-perl5.32.0-Sys-Syslog-0.36.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/7lrzvbg99m3q3zi1cyv5p31r4y8kmxab-Sys-Syslog-0.36.tar.gz
+copying path '/nix/store/7lrzvbg99m3q3zi1cyv5p31r4y8kmxab-Sys-Syslog-0.36.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/b5ayb2f2v6jck1knska5cyrywyb0cy7i-perl5.32.0-Sys-Syslog-0.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/7lrzvbg99m3q3zi1cyv5p31r4y8kmxab-Sys-Syslog-0.36.tar.gz
+source root is Sys-Syslog-0.36
+setting SOURCE_DATE_EPOCH to timestamp 1571697366 of file Sys-Syslog-0.36/META.yml
+patching sources
+configuring
+patching ./win32/compile.pl...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./t/cpan-rt-55151.t...
+patching ./t/pod.t...
+patching ./t/distchk.t...
+patching ./t/syslog.t...
+patching ./t/podspell.t...
+patching ./t/constants.t...
+patching ./t/cpan-rt-21866.t...
+patching ./t/cpan-rt-25488.t...
+patching ./t/podcover.t...
+patching ./t/data-validation.t...
+patching ./t/portfs.t...
+patching ./t/facilities-routing.t...
+patching ./t/00-load.t...
+patching ./t/cpan-rt-21516.t...
+patching ./t/cpan-rt-49877.pl...
+patching ./t/cpan-rt-64287.t...
+patching ./t/syslog-inet-udp.t...
+patching ./eg/syslog.pl...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Sys::Syslog
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Syslog.pm blib/lib/Sys/Syslog.pm
+Running Mkbootstrap for Syslog ()
+chmod 644 "Syslog.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syslog.bs blib/arch/auto/Sys/Syslog/Syslog.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Syslog.xs > Syslog.xsc
+mv Syslog.xsc Syslog.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.36\" -DXS_VERSION=\"0.36\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_PPPORT_H Syslog.c
+rm -f blib/arch/auto/Sys/Syslog/Syslog.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Syslog.o  -o blib/arch/auto/Sys/Syslog/Syslog.so  \
+      \
+
+chmod 755 blib/arch/auto/Sys/Syslog/Syslog.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syslog.bs blib/arch/auto/Sys/Syslog/Syslog.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............. 1/1 # Testing Sys::Syslog 0.36, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............. ok
+t/constants.t ........... ok
+t/cpan-rt-21516.t ....... ok
+t/cpan-rt-21866.t ....... skipped: Test::NoWarnings not available
+t/cpan-rt-25488.t ....... skipped: Test::NoWarnings not available
+t/cpan-rt-55151.t ....... ok
+t/cpan-rt-64287.t ....... ok
+t/data-validation.t ..... skipped: POE is not available
+t/distchk.t ............. skipped: Test::Distribution required for checking distribution
+t/facilities-routing.t .. skipped: POE is not available
+t/pod.t ................. skipped: Test::Pod v1.14 required for testing POD
+t/podcover.t ............ skipped: Test::Pod::Coverage 1.06 required for testing POD coverage
+t/podspell.t ............ skipped: Pod spelling: for maintainer only
+t/portfs.t .............. skipped: Test::Portability::Files required for testing filenames portability
+t/syslog-inet-udp.t ..... ok
+t/syslog.t .............. ok
+All tests successful.
+Files=16, Tests=340,  1 wallclock secs ( 0.07 usr  0.01 sys +  0.91 cusr  0.14 csys =  1.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib/pkgconfig m4datadir=/nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/share/aclocal aclocaldir=/nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Syslog.bs blib/arch/auto/Sys/Syslog/Syslog.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so
+Installing /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sys/Syslog.pm
+Installing /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/share/man/man3/Sys::Syslog.3
+Appending installation info to /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/share/man/man3 to /nix/store/d7hf9zal5qyxckxl0qlnci038q3czqwf-perl5.32.0-Sys-Syslog-0.36-devdoc/share/man/man3
+Removing empty /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36
+shrinking /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36/lib
+patching script interpreter paths in /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36
+checking for references to /build/ in /nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d7hf9zal5qyxckxl0qlnci038q3czqwf-perl5.32.0-Sys-Syslog-0.36-devdoc
+gzipping man pages under /nix/store/d7hf9zal5qyxckxl0qlnci038q3czqwf-perl5.32.0-Sys-Syslog-0.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d7hf9zal5qyxckxl0qlnci038q3czqwf-perl5.32.0-Sys-Syslog-0.36-devdoc
+checking for references to /build/ in /nix/store/d7hf9zal5qyxckxl0qlnci038q3czqwf-perl5.32.0-Sys-Syslog-0.36-devdoc...
+/nix/store/p4y289ry1m4y8rfcapg0qpz077ms1lmg-perl5.32.0-Sys-Syslog-0.36

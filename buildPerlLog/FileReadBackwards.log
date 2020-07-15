@@ -1,0 +1,52 @@
+these derivations will be built:
+  /nix/store/fga8srz0l4jg8j7hfyp4l1vz00yrigg4-perl5.32.0-File-ReadBackwards-1.05.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/66wmy3nn9nigxd9yxc7y61va9m37i6ca-File-ReadBackwards-1.05.tar.gz
+copying path '/nix/store/66wmy3nn9nigxd9yxc7y61va9m37i6ca-File-ReadBackwards-1.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fga8srz0l4jg8j7hfyp4l1vz00yrigg4-perl5.32.0-File-ReadBackwards-1.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/66wmy3nn9nigxd9yxc7y61va9m37i6ca-File-ReadBackwards-1.05.tar.gz
+source root is File-ReadBackwards-1.05
+setting SOURCE_DATE_EPOCH to timestamp 1307434033 of file File-ReadBackwards-1.05/META.yml
+patching sources
+configuring
+patching ./t/large_file.t...
+patching ./t/bw.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::ReadBackwards
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp ReadBackwards.pm blib/lib/File/ReadBackwards.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/bw.t .......... ok
+t/large_file.t .. ok
+All tests successful.
+Files=2, Tests=173,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.26 cusr  0.02 csys =  0.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/lib/pkgconfig m4datadir=/nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/share/aclocal aclocaldir=/nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/lib/perl5/site_perl/5.32.0/File/ReadBackwards.pm
+Installing /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/share/man/man3/File::ReadBackwards.3
+Appending installation info to /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/share/man/man3 to /nix/store/j35dkrh3bx241wgw43dpf9ahdh23aj4w-perl5.32.0-File-ReadBackwards-1.05-devdoc/share/man/man3
+Removing empty /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05/lib
+patching script interpreter paths in /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05
+checking for references to /build/ in /nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j35dkrh3bx241wgw43dpf9ahdh23aj4w-perl5.32.0-File-ReadBackwards-1.05-devdoc
+gzipping man pages under /nix/store/j35dkrh3bx241wgw43dpf9ahdh23aj4w-perl5.32.0-File-ReadBackwards-1.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j35dkrh3bx241wgw43dpf9ahdh23aj4w-perl5.32.0-File-ReadBackwards-1.05-devdoc
+checking for references to /build/ in /nix/store/j35dkrh3bx241wgw43dpf9ahdh23aj4w-perl5.32.0-File-ReadBackwards-1.05-devdoc...
+/nix/store/z26b2gxx2i6x605ib0pxfg33qsgf5yn2-perl5.32.0-File-ReadBackwards-1.05

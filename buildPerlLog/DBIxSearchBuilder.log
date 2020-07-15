@@ -1,0 +1,228 @@
+these derivations will be built:
+  /nix/store/dh49yg96y51shbjfszjqh44gnvxsyyq2-perl5.32.0-Want-0.29.drv
+  /nix/store/yaspgnr49yw1kjvd16ljgw84s572n12a-perl5.32.0-DBIx-SearchBuilder-1.67.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/g2xjhzkja89nrk389yacz4504iw02h7y-DBIx-SearchBuilder-1.67.tar.gz
+copying path '/nix/store/g2xjhzkja89nrk389yacz4504iw02h7y-DBIx-SearchBuilder-1.67.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dh49yg96y51shbjfszjqh44gnvxsyyq2-perl5.32.0-Want-0.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/wip68k5viyy3fh6p0jfvg9z5w08cmakg-Want-0.29.tar.gz
+source root is Want-0.29
+setting SOURCE_DATE_EPOCH to timestamp 1456461768 of file Want-0.29/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Want
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Want.pm blib/lib/Want.pm
+Running Mkbootstrap for Want ()
+chmod 644 "Want.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Want.bs blib/arch/auto/Want/Want.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Want.xs > Want.xsc
+mv Want.xsc Want.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.29\" -DXS_VERSION=\"0.29\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Want.c
+rm -f blib/arch/auto/Want/Want.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Want.o  -o blib/arch/auto/Want/Want.so  \
+      \
+
+chmod 755 blib/arch/auto/Want/Want.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Want.bs blib/arch/auto/Want/Want.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/all.t ....... ok
+t/assign.t .... ok
+t/boolean.t ... ok
+t/damian.t .... ok
+t/err.t ....... ok
+t/methcall.t .. ok
+t/object.t .... ok
+t/threads.t ... ok
+All tests successful.
+Files=8, Tests=148,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.12 cusr  0.02 csys =  0.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib/pkgconfig m4datadir=/nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/share/aclocal aclocaldir=/nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Want.bs blib/arch/auto/Want/Want.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Want/Want.so
+Installing /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Want.pm
+Installing /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/share/man/man3/Want.3
+Appending installation info to /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/share/man/man3 to /nix/store/rbfhpi8cysqi2p7d3vgjky2d8qka9wzj-perl5.32.0-Want-0.29-devdoc/share/man/man3
+Removing empty /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29
+shrinking /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Want/Want.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29/lib
+patching script interpreter paths in /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29
+checking for references to /build/ in /nix/store/z8dfg2m1qlxb4adfvpqky7g9cv43kh1r-perl5.32.0-Want-0.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rbfhpi8cysqi2p7d3vgjky2d8qka9wzj-perl5.32.0-Want-0.29-devdoc
+gzipping man pages under /nix/store/rbfhpi8cysqi2p7d3vgjky2d8qka9wzj-perl5.32.0-Want-0.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rbfhpi8cysqi2p7d3vgjky2d8qka9wzj-perl5.32.0-Want-0.29-devdoc
+checking for references to /build/ in /nix/store/rbfhpi8cysqi2p7d3vgjky2d8qka9wzj-perl5.32.0-Want-0.29-devdoc...
+building '/nix/store/yaspgnr49yw1kjvd16ljgw84s572n12a-perl5.32.0-DBIx-SearchBuilder-1.67.drv'...
+unpacking sources
+unpacking source archive /nix/store/g2xjhzkja89nrk389yacz4504iw02h7y-DBIx-SearchBuilder-1.67.tar.gz
+source root is DBIx-SearchBuilder-1.67
+setting SOURCE_DATE_EPOCH to timestamp 1468869145 of file DBIx-SearchBuilder-1.67/SIGNATURE
+patching sources
+configuring
+patching ./t/01records.t...
+patching ./t/02records_dt_interval.t...
+patching ./t/03versions.t...
+patching ./t/02records_integers.t...
+patching ./t/02distinct_values.t...
+patching ./t/01searches.t...
+patching ./t/20set_edge_cases.t...
+patching ./t/utils.pl...
+patching ./t/02records_datetime.t...
+patching ./t/02order_outer.t...
+patching ./t/01nocap_api.t...
+patching ./t/03rebless.t...
+patching ./t/11schema_records.t...
+patching ./t/02records_cachable.t...
+patching ./t/03cud_from_select.t...
+patching ./t/02searches_joins.t...
+patching ./t/03compatibility.t...
+patching ./t/02searches_function.t...
+patching ./t/02null_order.t...
+patching ./t/02records_object.t...
+patching ./t/01basics.t...
+patching ./t/03transactions.t...
+patching ./t/10schema.t...
+patching ./ex/create_tables.pl...
+Cannot determine perl version info from lib/DBIx/SearchBuilder.pm
+*** Module::AutoInstall version 1.16
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More                 ...loaded. (1.302175 >= 0.52)
+- DBD::SQLite                ...loaded. (1.64)
+- File::Temp                 ...loaded. (0.2309)
+- DBI                        ...loaded. (1.643)
+- Want                       ...loaded. (0.29)
+- Encode                     ...loaded. (3.06 >= 1.99)
+- Class::ReturnValue         ...loaded. (0.55 >= 0.4)
+- Cache::Simple::TimedExpiry ...loaded. (0.27 >= 0.21)
+- Clone                      ...loaded. (0.45)
+- Scalar::Util               ...loaded. (1.55)
+[Lower case API]
+- capitalization             ...loaded. (0.03 >= 0.03)
+[Schema generation]
+- DBIx::DBSchema             ...loaded. (0.45)
+- Class::Accessor            ...loaded. (0.51)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::SearchBuilder
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBIx/SearchBuilder/Unique.pm blib/lib/DBIx/SearchBuilder/Unique.pm
+cp lib/DBIx/SearchBuilder/SchemaGenerator.pm blib/lib/DBIx/SearchBuilder/SchemaGenerator.pm
+cp lib/DBIx/SearchBuilder/Handle/mysql.pm blib/lib/DBIx/SearchBuilder/Handle/mysql.pm
+cp lib/DBIx/SearchBuilder/Union.pm blib/lib/DBIx/SearchBuilder/Union.pm
+cp lib/DBIx/SearchBuilder/Handle/SQLite.pm blib/lib/DBIx/SearchBuilder/Handle/SQLite.pm
+cp lib/DBIx/SearchBuilder/Record/Cachable.pm blib/lib/DBIx/SearchBuilder/Record/Cachable.pm
+cp lib/DBIx/SearchBuilder/Handle/Oracle.pm blib/lib/DBIx/SearchBuilder/Handle/Oracle.pm
+cp lib/DBIx/SearchBuilder/Util.pm blib/lib/DBIx/SearchBuilder/Util.pm
+cp lib/DBIx/SearchBuilder/Handle/Informix.pm blib/lib/DBIx/SearchBuilder/Handle/Informix.pm
+cp lib/DBIx/SearchBuilder/Handle/Sybase.pm blib/lib/DBIx/SearchBuilder/Handle/Sybase.pm
+cp lib/DBIx/SearchBuilder/Handle/mysqlPP.pm blib/lib/DBIx/SearchBuilder/Handle/mysqlPP.pm
+cp lib/DBIx/SearchBuilder/Record.pm blib/lib/DBIx/SearchBuilder/Record.pm
+cp lib/DBIx/SearchBuilder/Handle/Pg.pm blib/lib/DBIx/SearchBuilder/Handle/Pg.pm
+cp lib/DBIx/SearchBuilder.pm blib/lib/DBIx/SearchBuilder.pm
+cp lib/DBIx/SearchBuilder/Handle/ODBC.pm blib/lib/DBIx/SearchBuilder/Handle/ODBC.pm
+cp lib/DBIx/SearchBuilder/Handle.pm blib/lib/DBIx/SearchBuilder/Handle.pm
+Manifying 16 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00.load.t t/01basics.t t/01nocap_api.t t/01records.t t/01searches.t t/02distinct_values.t t/02null_order.t t/02order_outer.t t/02records_cachable.t t/02records_datetime.t t/02records_dt_interval.t t/02records_integers.t t/02records_object.t t/02searches_function.t t/02searches_joins.t t/03compatibility.t t/03cud_from_select.t t/03rebless.t t/03transactions.t t/03versions.t t/10schema.t t/11schema_records.t t/20set_edge_cases.t t/pod.t
+t/00.load.t ................ ok
+t/01basics.t ............... ok
+t/01nocap_api.t ............ ok
+t/01records.t .............. ok
+t/01searches.t ............. ok
+t/02distinct_values.t ...... ok
+t/02null_order.t ........... ok
+t/02order_outer.t .......... ok
+t/02records_cachable.t ..... ok
+t/02records_datetime.t ..... ok
+t/02records_dt_interval.t .. ok
+t/02records_integers.t ..... ok
+t/02records_object.t ....... ok
+t/02searches_function.t .... ok
+t/02searches_joins.t ....... ok
+t/03compatibility.t ........ ok
+t/03cud_from_select.t ...... ok
+t/03rebless.t .............. ok
+t/03transactions.t ......... ok
+t/03versions.t ............. ok
+t/10schema.t ............... ok
+t/11schema_records.t ....... ok
+t/20set_edge_cases.t ....... ok
+t/pod.t .................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=24, Tests=726,  6 wallclock secs ( 0.14 usr  0.03 sys +  3.39 cusr  1.97 csys =  5.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/pkgconfig m4datadir=/nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/aclocal aclocaldir=/nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/aclocal install
+Manifying 16 pod documents
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Union.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Util.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/SchemaGenerator.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Record.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Unique.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/mysql.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/Pg.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/Sybase.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/Oracle.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/SQLite.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/Informix.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/mysqlPP.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Handle/ODBC.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/site_perl/5.32.0/DBIx/SearchBuilder/Record/Cachable.pm
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::Sybase.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::Oracle.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::ODBC.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::mysqlPP.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Record::Cachable.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::Pg.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Util.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::Informix.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Unique.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Union.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::mysql.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Handle::SQLite.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::SchemaGenerator.3
+Installing /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3/DBIx::SearchBuilder::Record.3
+Appending installation info to /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/man3 to /nix/store/nd95z4q4g1qss1mpwkdn5jkkfs9a35d4-perl5.32.0-DBIx-SearchBuilder-1.67-devdoc/share/man/man3
+Removing empty /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67/lib
+patching script interpreter paths in /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67
+checking for references to /build/ in /nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nd95z4q4g1qss1mpwkdn5jkkfs9a35d4-perl5.32.0-DBIx-SearchBuilder-1.67-devdoc
+gzipping man pages under /nix/store/nd95z4q4g1qss1mpwkdn5jkkfs9a35d4-perl5.32.0-DBIx-SearchBuilder-1.67-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nd95z4q4g1qss1mpwkdn5jkkfs9a35d4-perl5.32.0-DBIx-SearchBuilder-1.67-devdoc
+checking for references to /build/ in /nix/store/nd95z4q4g1qss1mpwkdn5jkkfs9a35d4-perl5.32.0-DBIx-SearchBuilder-1.67-devdoc...
+/nix/store/2r1f8hyzjk423rd3syrbi42pcriaix88-perl5.32.0-DBIx-SearchBuilder-1.67

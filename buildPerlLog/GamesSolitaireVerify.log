@@ -1,0 +1,138 @@
+these derivations will be built:
+  /nix/store/kbmnhh0qd4hn5vrp7fnqgzibx7nvljkn-perl5.32.0-Games-Solitaire-Verify-0.2403.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/p2ldndb958y722yfq4flkg03v7k3nyxg-Games-Solitaire-Verify-0.2403.tar.gz
+copying path '/nix/store/p2ldndb958y722yfq4flkg03v7k3nyxg-Games-Solitaire-Verify-0.2403.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kbmnhh0qd4hn5vrp7fnqgzibx7nvljkn-perl5.32.0-Games-Solitaire-Verify-0.2403.drv'...
+unpacking sources
+unpacking source archive /nix/store/p2ldndb958y722yfq4flkg03v7k3nyxg-Games-Solitaire-Verify-0.2403.tar.gz
+source root is Games-Solitaire-Verify-0.2403
+setting SOURCE_DATE_EPOCH to timestamp 1588520782 of file Games-Solitaire-Verify-0.2403/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./build-ctags.sh...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./script/tag-release.pl...
+patching ./script/bump-version-number.pl...
+patching ./script/to_javascript.pl...
+patching ./script/MY_FAT_PACKER_AUTOMATOR.bash...
+patching ./script/play-and-verify-klondike...
+patching ./script/convert-patsolve-to-fc-solve-solution...
+patching ./script/convert-shirl-hart-solver-to-fc-solve-solution...
+patching ./examples/dbm_fc_solver_solution_translation.pl...
+patching ./examples/expand-moves-driver.pl...
+patching ./examples/benchmark.pl...
+patching ./t/card.t...
+patching ./t/move.t...
+patching ./t/expand-solution.t...
+patching ./t/verify-moves.t...
+patching ./t/solution.t...
+patching ./t/golf.t...
+patching ./t/base-class.t...
+patching ./t/00-load.t...
+patching ./t/state.t...
+patching ./t/column.t...
+patching ./t/horne-autoplay-board.t...
+patching ./t/from-shirl-hart-solver.t...
+patching ./t/from-patsolve.t...
+patching ./t/exception-newline.t...
+patching ./bin/expand-solitaire-multi-card-moves...
+patching ./bin/verify-solitaire-solution...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Games-Solitaire-Verify' version '0.2403'
+Building Games-Solitaire-Verify
+running tests
+t/00-compile.t .............. ok
+t/00-load.t ................. 1/4 # Testing Games::Solitaire::Verify 0.2403, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ................. ok
+t/base-class.t .............. ok
+t/card.t .................... ok
+t/column.t .................. ok
+t/exception-newline.t ....... skipped: Failed to load Test::Trap . Skipping.
+t/expand-solution.t ......... ok
+t/from-patsolve.t ........... ok
+t/from-shirl-hart-solver.t .. ok
+t/golf.t .................... ok
+t/horne-autoplay-board.t .... ok
+t/move.t .................... ok
+t/solution.t ................ ok
+t/state.t ................... ok
+t/verify-moves.t ............ ok
+All tests successful.
+Files=15, Tests=352,  5 wallclock secs ( 0.09 usr  0.02 sys +  3.24 cusr  1.78 csys =  5.13 CPU)
+Result: PASS
+installing
+Building Games-Solitaire-Verify
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man1/verify-solitaire-solution.1
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man1/expand-solitaire-multi-card-moves.1
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/KlondikeTalon.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Freecells.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Exception.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Solution.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Card.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/HorneAutomovePrune.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/FromOtherSolversBase.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/VariantParams.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Column.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Golf.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/VariantsMap.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Move.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/State.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Foundations.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Base.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/State/LaxParser.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/App/CmdLine.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/App/Golf.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/App/CmdLine/From_Patsolve.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/App/CmdLine/From_ShirlHartSolver.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/App/CmdLine/Expand.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Solution/Base.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Solution/ExpandMultiCardMoves.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib/perl5/site_perl/5.32.0/Games/Solitaire/Verify/Solution/ExpandMultiCardMoves/Lax.pm
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Foundations.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Exception.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::App::CmdLine::From_ShirlHartSolver.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Golf.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::KlondikeTalon.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Solution::ExpandMultiCardMoves::Lax.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Solution::ExpandMultiCardMoves.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Column.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::VariantsMap.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::State.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Card.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::FromOtherSolversBase.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Base.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::HorneAutomovePrune.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Solution::Base.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::App::CmdLine::Expand.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Freecells.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::App::CmdLine::From_Patsolve.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::State::LaxParser.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Move.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::Solution.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::VariantParams.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::App::CmdLine.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3/Games::Solitaire::Verify::App::Golf.3
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/bin/expand-solitaire-multi-card-moves
+Installing /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/bin/verify-solitaire-solution
+post-installation fixup
+Moving /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/man3 to /nix/store/mwf513syn2j0pf8d9cqd6dgmwifykx9q-perl5.32.0-Games-Solitaire-Verify-0.2403-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403
+gzipping man pages under /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/lib  /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403/bin
+patching script interpreter paths in /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403
+checking for references to /build/ in /nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mwf513syn2j0pf8d9cqd6dgmwifykx9q-perl5.32.0-Games-Solitaire-Verify-0.2403-devdoc
+gzipping man pages under /nix/store/mwf513syn2j0pf8d9cqd6dgmwifykx9q-perl5.32.0-Games-Solitaire-Verify-0.2403-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mwf513syn2j0pf8d9cqd6dgmwifykx9q-perl5.32.0-Games-Solitaire-Verify-0.2403-devdoc
+checking for references to /build/ in /nix/store/mwf513syn2j0pf8d9cqd6dgmwifykx9q-perl5.32.0-Games-Solitaire-Verify-0.2403-devdoc...
+/nix/store/6d12f6lj83vhp7p61br6l1nd6zwxpgaw-perl5.32.0-Games-Solitaire-Verify-0.2403

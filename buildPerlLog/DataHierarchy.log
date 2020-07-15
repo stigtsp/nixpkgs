@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/9cidh7ams11f0rlm3jc359bmlq9s4y90-perl5.32.0-Data-Hierarchy-0.34.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/wfifri37drb42s53mpmb2fhs48f42scg-Data-Hierarchy-0.34.tar.gz
+copying path '/nix/store/wfifri37drb42s53mpmb2fhs48f42scg-Data-Hierarchy-0.34.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9cidh7ams11f0rlm3jc359bmlq9s4y90-perl5.32.0-Data-Hierarchy-0.34.drv'...
+unpacking sources
+unpacking source archive /nix/store/wfifri37drb42s53mpmb2fhs48f42scg-Data-Hierarchy-0.34.tar.gz
+source root is Data-Hierarchy-0.34
+setting SOURCE_DATE_EPOCH to timestamp 1162706052 of file Data-Hierarchy-0.34/META.yml
+patching sources
+configuring
+patching ./t/2basic-with-sep.t...
+patching ./t/5relative.t...
+patching ./t/6wrappers.t...
+patching ./t/3store-vs-store_recursively.t...
+patching ./t/4merge.t...
+patching ./t/1basic.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Hierarchy
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Hierarchy.pm blib/lib/Data/Hierarchy.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1basic.t ....................... ok
+t/2basic-with-sep.t .............. ok
+t/3store-vs-store_recursively.t .. ok
+t/4merge.t ....................... ok
+t/5relative.t .................... ok
+t/6wrappers.t .................... ok
+All tests successful.
+Files=6, Tests=159,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.36 cusr  0.10 csys =  0.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/lib/pkgconfig m4datadir=/nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/share/aclocal aclocaldir=/nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/lib/perl5/site_perl/5.32.0/Data/Hierarchy.pm
+Installing /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/share/man/man3/Data::Hierarchy.3
+Appending installation info to /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/share/man/man3 to /nix/store/zzy1xrpqnp9r5arsqlj6vgyxh3qmygp7-perl5.32.0-Data-Hierarchy-0.34-devdoc/share/man/man3
+Removing empty /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34/lib
+patching script interpreter paths in /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34
+checking for references to /build/ in /nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zzy1xrpqnp9r5arsqlj6vgyxh3qmygp7-perl5.32.0-Data-Hierarchy-0.34-devdoc
+gzipping man pages under /nix/store/zzy1xrpqnp9r5arsqlj6vgyxh3qmygp7-perl5.32.0-Data-Hierarchy-0.34-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zzy1xrpqnp9r5arsqlj6vgyxh3qmygp7-perl5.32.0-Data-Hierarchy-0.34-devdoc
+checking for references to /build/ in /nix/store/zzy1xrpqnp9r5arsqlj6vgyxh3qmygp7-perl5.32.0-Data-Hierarchy-0.34-devdoc...
+/nix/store/x3r9igmyagm60lzbr8s08halhynyvssx-perl5.32.0-Data-Hierarchy-0.34

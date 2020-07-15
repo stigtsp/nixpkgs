@@ -1,0 +1,92 @@
+these derivations will be built:
+  /nix/store/75h86yf3591pr2xz3z0yn75bg5zmbhwk-perl5.32.0-Proc-WaitStat-1.00.drv
+  /nix/store/kf9aci09zp8is04ckvinnpw6w389n4kp-perl5.32.0-mime-construct-1.11.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/5z4zw08ychshlyqk6l5zc7zghzllh4rm-Proc-WaitStat-1.00.tar.gz
+  /nix/store/v89sv18g847l8qq48gsy1n3glss8miih-mime-construct-1.11.tar.gz
+copying path '/nix/store/v89sv18g847l8qq48gsy1n3glss8miih-mime-construct-1.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/5z4zw08ychshlyqk6l5zc7zghzllh4rm-Proc-WaitStat-1.00.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/75h86yf3591pr2xz3z0yn75bg5zmbhwk-perl5.32.0-Proc-WaitStat-1.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/5z4zw08ychshlyqk6l5zc7zghzllh4rm-Proc-WaitStat-1.00.tar.gz
+source root is Proc-WaitStat-1.00
+setting SOURCE_DATE_EPOCH to timestamp 940524237 of file Proc-WaitStat-1.00/t/waitstat.t
+patching sources
+configuring
+patching ./t/waitstat.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Proc::WaitStat
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp WaitStat.pm blib/lib/Proc/WaitStat.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/waitstat.t .. Name "main::TRUE" used only once: possible typo at t/waitstat.t line 63.
+t/waitstat.t .. ok
+All tests successful.
+Files=1, Tests=20,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.01 cusr  0.00 csys =  0.04 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/lib/pkgconfig m4datadir=/nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/share/aclocal aclocaldir=/nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/lib/perl5/site_perl/5.32.0/Proc/WaitStat.pm
+Installing /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/share/man/man3/Proc::WaitStat.3
+Appending installation info to /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/share/man/man3 to /nix/store/cwxw42k8ig4lf0wk03caspjhq5bnqw82-perl5.32.0-Proc-WaitStat-1.00-devdoc/share/man/man3
+Removing empty /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00/lib
+patching script interpreter paths in /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00
+checking for references to /build/ in /nix/store/hk6i2d33ivxdynrxdvsihms5sqmncq6x-perl5.32.0-Proc-WaitStat-1.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cwxw42k8ig4lf0wk03caspjhq5bnqw82-perl5.32.0-Proc-WaitStat-1.00-devdoc
+gzipping man pages under /nix/store/cwxw42k8ig4lf0wk03caspjhq5bnqw82-perl5.32.0-Proc-WaitStat-1.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cwxw42k8ig4lf0wk03caspjhq5bnqw82-perl5.32.0-Proc-WaitStat-1.00-devdoc
+checking for references to /build/ in /nix/store/cwxw42k8ig4lf0wk03caspjhq5bnqw82-perl5.32.0-Proc-WaitStat-1.00-devdoc...
+building '/nix/store/kf9aci09zp8is04ckvinnpw6w389n4kp-perl5.32.0-mime-construct-1.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/v89sv18g847l8qq48gsy1n3glss8miih-mime-construct-1.11.tar.gz
+source root is mime-construct-1.11
+setting SOURCE_DATE_EPOCH to timestamp 1277316467 of file mime-construct-1.11/debian/TODO
+patching sources
+configuring
+patching ./debian/rules...
+patching ./mime-construct...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite MIME::Types 0 not found.
+Warning: NAME must be a package name
+Generating a Unix-style Makefile
+Writing Makefile for mime-construct
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp mime-construct blib/script/mime-construct
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mime-construct
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+No tests defined for mime-construct extension.
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Manifying 1 pod document
+Installing /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/share/man/man1/mime-construct.1
+Installing /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/bin/mime-construct
+Appending installation info to /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11
+gzipping man pages under /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/lib  /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11/bin
+patching script interpreter paths in /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11
+checking for references to /build/ in /nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11...
+/nix/store/az3fx55xh7nvxk2pgp6rniz7874ajgja-perl5.32.0-mime-construct-1.11

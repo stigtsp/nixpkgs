@@ -1,0 +1,109 @@
+these derivations will be built:
+  /nix/store/sci1a1cgmdq2x3ldq7yzbmnlxj3fq1si-perl5.32.0-Tie-Cycle-1.225.drv
+  /nix/store/fasm840mqz0p19fr6hcv9zmyk86a388a-perl5.32.0-Business-ISMN-1.201.drv
+these paths will be fetched (0.03 MiB download, 0.02 MiB unpacked):
+  /nix/store/0nr9zhpcdk5a4mnjv0hzq7fgnqpd2525-Business-ISMN-1.201.tar.gz
+  /nix/store/9bzl6pvk749s4lyx6i5kqjrdyyf9sz2d-Tie-Cycle-1.225.tar.gz
+copying path '/nix/store/0nr9zhpcdk5a4mnjv0hzq7fgnqpd2525-Business-ISMN-1.201.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9bzl6pvk749s4lyx6i5kqjrdyyf9sz2d-Tie-Cycle-1.225.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sci1a1cgmdq2x3ldq7yzbmnlxj3fq1si-perl5.32.0-Tie-Cycle-1.225.drv'...
+unpacking sources
+unpacking source archive /nix/store/9bzl6pvk749s4lyx6i5kqjrdyyf9sz2d-Tie-Cycle-1.225.tar.gz
+source root is Tie-Cycle-1.225
+setting SOURCE_DATE_EPOCH to timestamp 1499622597 of file Tie-Cycle-1.225/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Tie::Cycle
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Tie/Cycle.pm blib/lib/Tie/Cycle.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/cycle.t ......... ok
+t/load.t .......... ok
+t/one.t ........... ok
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/pod_coverage.t .. skipped: Test::Pod::Coverage required for testing POD
+All tests successful.
+Files=5, Tests=13,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.03 csys =  0.30 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/lib/pkgconfig m4datadir=/nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/share/aclocal aclocaldir=/nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/lib/perl5/site_perl/5.32.0/Tie/Cycle.pm
+Installing /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/share/man/man3/Tie::Cycle.3
+Appending installation info to /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/share/man/man3 to /nix/store/6y6nclc891z0gd6mvb7w9ssb6z9b7b1p-perl5.32.0-Tie-Cycle-1.225-devdoc/share/man/man3
+Removing empty /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225/lib
+patching script interpreter paths in /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225
+checking for references to /build/ in /nix/store/spyggzqf90dladb4sicyx1fkr97ghgs5-perl5.32.0-Tie-Cycle-1.225...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6y6nclc891z0gd6mvb7w9ssb6z9b7b1p-perl5.32.0-Tie-Cycle-1.225-devdoc
+gzipping man pages under /nix/store/6y6nclc891z0gd6mvb7w9ssb6z9b7b1p-perl5.32.0-Tie-Cycle-1.225-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6y6nclc891z0gd6mvb7w9ssb6z9b7b1p-perl5.32.0-Tie-Cycle-1.225-devdoc
+checking for references to /build/ in /nix/store/6y6nclc891z0gd6mvb7w9ssb6z9b7b1p-perl5.32.0-Tie-Cycle-1.225-devdoc...
+building '/nix/store/fasm840mqz0p19fr6hcv9zmyk86a388a-perl5.32.0-Business-ISMN-1.201.drv'...
+unpacking sources
+unpacking source archive /nix/store/0nr9zhpcdk5a4mnjv0hzq7fgnqpd2525-Business-ISMN-1.201.tar.gz
+source root is Business-ISMN-1.201
+setting SOURCE_DATE_EPOCH to timestamp 1539876494 of file Business-ISMN-1.201/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Business::ISMN
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Business/ISMN.pm blib/lib/Business/ISMN.pm
+cp lib/Business/ISMN/Data.pm blib/lib/Business/ISMN/Data.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/ismn.t .......... 1/19
+Checking ISMNs... (this may take a bit)
+t/ismn.t .......... ok
+t/load.t .......... ok
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/pod_coverage.t .. skipped: Test::Pod::Coverage required for testing POD
+All tests successful.
+Files=4, Tests=21,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.18 cusr  0.04 csys =  0.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/lib/pkgconfig m4datadir=/nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/aclocal aclocaldir=/nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/lib/perl5/site_perl/5.32.0/Business/ISMN.pm
+Installing /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/lib/perl5/site_perl/5.32.0/Business/ISMN/Data.pm
+Installing /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/man/man3/Business::ISMN.3
+Installing /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/man/man3/Business::ISMN::Data.3
+Appending installation info to /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/man/man3 to /nix/store/84f7c756x4hd9044p4f5169f0ndhv5pi-perl5.32.0-Business-ISMN-1.201-devdoc/share/man/man3
+Removing empty /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201/lib
+patching script interpreter paths in /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201
+checking for references to /build/ in /nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201...
+shrinking RPATHs of ELF executables and libraries in /nix/store/84f7c756x4hd9044p4f5169f0ndhv5pi-perl5.32.0-Business-ISMN-1.201-devdoc
+gzipping man pages under /nix/store/84f7c756x4hd9044p4f5169f0ndhv5pi-perl5.32.0-Business-ISMN-1.201-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/84f7c756x4hd9044p4f5169f0ndhv5pi-perl5.32.0-Business-ISMN-1.201-devdoc
+checking for references to /build/ in /nix/store/84f7c756x4hd9044p4f5169f0ndhv5pi-perl5.32.0-Business-ISMN-1.201-devdoc...
+/nix/store/bsncvaq7f86n9mf93barjy6f4gdw3dx7-perl5.32.0-Business-ISMN-1.201

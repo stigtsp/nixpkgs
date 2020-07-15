@@ -1,0 +1,41 @@
+these derivations will be built:
+  /nix/store/vckx5f2v7yywgkkgdinjd2536ivh2d0j-perl5.32.0-Growl-GNTP-0.21.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/vpfgiwgxs84j2560579l9vz9xda0s85m-Growl-GNTP-0.21.tar.gz
+copying path '/nix/store/vpfgiwgxs84j2560579l9vz9xda0s85m-Growl-GNTP-0.21.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vckx5f2v7yywgkkgdinjd2536ivh2d0j-perl5.32.0-Growl-GNTP-0.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/vpfgiwgxs84j2560579l9vz9xda0s85m-Growl-GNTP-0.21.tar.gz
+source root is Growl-GNTP-0.21
+setting SOURCE_DATE_EPOCH to timestamp 1460132026 of file Growl-GNTP-0.21/xt/perlcriticrc
+patching sources
+configuring
+patching ./t/01_simple.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Growl-GNTP' version '0.21'
+cp lib/Growl/GNTP.pm blib/lib/Growl/GNTP.pm
+running tests
+t/00_compile.t .. ok
+t/01_simple.t ... IO::Socket::INET: connect: Connection refused at /build/Growl-GNTP-0.21/blib/lib/Growl/GNTP.pm line 46.
+t/01_simple.t ... ok
+All tests successful.
+Files=2, Tests=2,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.15 cusr  0.05 csys =  0.24 CPU)
+Result: PASS
+installing
+Installing /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21/lib/perl5/site_perl/5.32.0/Growl/GNTP.pm
+Installing /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21/share/man/man3/Growl::GNTP.3
+post-installation fixup
+Moving /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21/share/man/man3 to /nix/store/xfi5ap40yikzpynnamwc2vkn5dh0x87j-perl5.32.0-Growl-GNTP-0.21-devdoc/share/man/man3
+Removing empty /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21/lib
+patching script interpreter paths in /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21
+checking for references to /build/ in /nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xfi5ap40yikzpynnamwc2vkn5dh0x87j-perl5.32.0-Growl-GNTP-0.21-devdoc
+gzipping man pages under /nix/store/xfi5ap40yikzpynnamwc2vkn5dh0x87j-perl5.32.0-Growl-GNTP-0.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xfi5ap40yikzpynnamwc2vkn5dh0x87j-perl5.32.0-Growl-GNTP-0.21-devdoc
+checking for references to /build/ in /nix/store/xfi5ap40yikzpynnamwc2vkn5dh0x87j-perl5.32.0-Growl-GNTP-0.21-devdoc...
+/nix/store/h18pzv2y1l60b3741gpmy38gvyyvfwsy-perl5.32.0-Growl-GNTP-0.21

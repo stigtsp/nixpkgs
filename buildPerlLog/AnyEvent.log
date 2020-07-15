@@ -1,0 +1,429 @@
+these derivations will be built:
+  /nix/store/b5m5zyyc13chjlzcca8b0hzfhjb3cx9b-perl5.32.0-Canary-Stability-2013.drv
+  /nix/store/8hbz7ai8l5l9jrdknkwchvwf7k8a2nf4-perl5.32.0-AnyEvent-7.17.drv
+building '/nix/store/b5m5zyyc13chjlzcca8b0hzfhjb3cx9b-perl5.32.0-Canary-Stability-2013.drv'...
+unpacking sources
+unpacking source archive /nix/store/xniabw1a2zkdw2ns6gf3dzb0dm1znjdm-Canary-Stability-2013.tar.gz
+source root is Canary-Stability-2013
+setting SOURCE_DATE_EPOCH to timestamp 1555929591 of file Canary-Stability-2013/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Canary::Stability
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Stability.pm blib/lib/Canary/Stability.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.02 usr +  0.01 sys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/pkgconfig m4datadir=/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/share/aclocal aclocaldir=/nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/site_perl/5.32.0/Canary/Stability.pm
+Installing /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/share/man/man3/Canary::Stability.3
+Appending installation info to /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/share/man/man3 to /nix/store/kgn7f18v1dx1xz4y8bzwfb7bahh6ryf1-perl5.32.0-Canary-Stability-2013-devdoc/share/man/man3
+Removing empty /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013/lib
+patching script interpreter paths in /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013
+checking for references to /build/ in /nix/store/5l3mmlp3x554jjf79377hfx8q2vinnin-perl5.32.0-Canary-Stability-2013...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kgn7f18v1dx1xz4y8bzwfb7bahh6ryf1-perl5.32.0-Canary-Stability-2013-devdoc
+gzipping man pages under /nix/store/kgn7f18v1dx1xz4y8bzwfb7bahh6ryf1-perl5.32.0-Canary-Stability-2013-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kgn7f18v1dx1xz4y8bzwfb7bahh6ryf1-perl5.32.0-Canary-Stability-2013-devdoc
+checking for references to /build/ in /nix/store/kgn7f18v1dx1xz4y8bzwfb7bahh6ryf1-perl5.32.0-Canary-Stability-2013-devdoc...
+building '/nix/store/8hbz7ai8l5l9jrdknkwchvwf7k8a2nf4-perl5.32.0-AnyEvent-7.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/kjq59f6x7q2203jabfvy2mgk54rsw2kw-AnyEvent-7.17.tar.gz
+source root is AnyEvent-7.17
+setting SOURCE_DATE_EPOCH to timestamp 1568769047 of file AnyEvent-7.17/README
+patching sources
+configuring
+patching ./mktest...
+patching ./util/gen_uts46data...
+patching ./util/tst_uts46data...
+patching ./constants.pl.PL...
+patching ./t/80_ssltest.t...
+patching ./t/handle/01_readline.t...
+patching ./t/handle/03_http_req.t...
+patching ./t/handle/02_write.t...
+patching ./t/handle/04_listen.t...
+patching ./t/io_common...
+patching ./eg/connect...
+patching ./eg/listen...
+patching ./eg/bench2...
+patching ./eg/bench...
+patching ./eg/runbench...
+patching ./eg/runbench2...
+patching ./eg/handle...
+
+***
+*** Canary::Stability COMPATIBILITY AND SUPPORT CHECK
+*** =================================================
+***
+*** Hi!
+***
+*** I do my best to provide predictable and reliable software.
+***
+*** However, in recent releases, P5P (who maintain perl) have been
+*** introducing regressions that are sometimes subtle and at other times
+*** catastrophic, often for personal preferences with little or no concern
+*** for existing code, most notably CPAN.
+***
+*** For this reason, it has become very hard for me to maintain the level
+*** of reliability and support I have committed myself to in the past, at
+*** least with some perl versions: I simply can't keep up working around new
+*** bugs or gratituous incompatibilities, and in turn you might suffer from
+*** unanticipated problems.
+***
+*** Therefore I have introduced a support and compatibility check, the results
+*** of which follow below, together with a FAQ and some recommendations.
+***
+*** This check is just to let you know that there might be a risk, so you can
+*** make judgement calls on how to proceed - it will not keep the module from
+*** installing or working.
+***
+*** The stability canary says: (nothing, it was driven away by harsh weather)
+***
+*** It seems you are running perl version 5.032000, likely the "official" or
+*** "standard" version. While there is nothing wrong with doing that,
+*** standard perl versions 5.022 and up are not supported by AnyEvent.
+*** While this might be fatal, it might also be all right - if you run into
+*** problems, you might want to downgrade your perl or switch to the
+*** stability branch.
+***
+*** If everything works fine, you can ignore this message.
+***
+***
+*** Stability canary mini-FAQ:
+***
+*** Do I need to do anything?
+***    With luck, no. While some distributions are known to fail
+***    already, most should probably work. This message is here
+***    to alert you that your perl is not supported by AnyEvent,
+***    and if things go wrong, you either need to downgrade, or
+***    sidegrade to the stability variant of your perl version,
+***    or simply live with the consequences.
+***
+*** What is this canary thing?
+***    It's purpose is to check support status of AnyEvent with
+***    respect to your perl version.
+***
+*** What is this "stability branch"?
+***    It's a branch or fork of the official perl, by schmorp, to
+***    improve stability and compatibility with existing modules.
+***
+*** How can I skip this prompt on automated installs?
+***    Set PERL_CANARY_STABILITY_NOPROMPT=1 in your environment.
+***    More info is in the Canary::Stability manpage.
+***
+*** Long version of this FAQ: http://stableperl.schmorp.de/faq.html
+*** Stability Branch homepage: http://stableperl.schmorp.de/
+***
+
+Continue anyways?  [y] y
+
+***
+*** The EV module is recommended for even better performance, unless you
+*** have to use one of the other adaptors (Event, Glib, Tk, etc.).
+*** The Async::Interrupt module is highly recommended to efficiently avoid
+*** race conditions in/with other event loops.
+***
+*** This module does not have ANY dependencies, even if it might look
+*** otherwise. If you are building a distribution package or have
+*** difficulties installing this package due to dependencies, report this
+*** to the packager as a bug.
+***
+*** This module is guaranteed to stay 100% pure-perl, full-featured
+*** and performant, even without any of the optional modules.
+***
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for AnyEvent
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/AnyEvent/Impl/Qt.pm blib/lib/AnyEvent/Impl/Qt.pm
+cp lib/AnyEvent/Impl/UV.pm blib/lib/AnyEvent/Impl/UV.pm
+cp lib/AnyEvent/Impl/EventLib.pm blib/lib/AnyEvent/Impl/EventLib.pm
+cp lib/AnyEvent/Impl/Cocoa.pm blib/lib/AnyEvent/Impl/Cocoa.pm
+cp lib/AnyEvent/FAQ.pod blib/lib/AnyEvent/FAQ.pod
+cp lib/AnyEvent/Impl/IOAsync.pm blib/lib/AnyEvent/Impl/IOAsync.pm
+cp lib/AnyEvent/Impl/Glib.pm blib/lib/AnyEvent/Impl/Glib.pm
+cp lib/AnyEvent/IO/IOAIO.pm blib/lib/AnyEvent/IO/IOAIO.pm
+cp lib/AnyEvent/Log.pm blib/lib/AnyEvent/Log.pm
+cp lib/AnyEvent/TLS.pm blib/lib/AnyEvent/TLS.pm
+cp lib/AnyEvent/Util/uts46data.pl blib/lib/AnyEvent/Util/uts46data.pl
+cp lib/AnyEvent/DNS.pm blib/lib/AnyEvent/DNS.pm
+cp lib/AnyEvent/constants.pl blib/arch/AnyEvent/constants.pl
+cp lib/AnyEvent/Socket.pm blib/lib/AnyEvent/Socket.pm
+cp lib/AnyEvent/Impl/Event.pm blib/lib/AnyEvent/Impl/Event.pm
+cp lib/AnyEvent/Util/idna.pl blib/lib/AnyEvent/Util/idna.pl
+cp lib/AnyEvent/Impl/Irssi.pm blib/lib/AnyEvent/Impl/Irssi.pm
+cp lib/AnyEvent/IO/Perl.pm blib/lib/AnyEvent/IO/Perl.pm
+cp lib/AnyEvent/Intro.pod blib/lib/AnyEvent/Intro.pod
+cp lib/AnyEvent/Handle.pm blib/lib/AnyEvent/Handle.pm
+cp lib/AnyEvent/Strict.pm blib/lib/AnyEvent/Strict.pm
+cp lib/AnyEvent/Impl/Tk.pm blib/lib/AnyEvent/Impl/Tk.pm
+cp lib/AnyEvent/Impl/Perl.pm blib/lib/AnyEvent/Impl/Perl.pm
+cp lib/AE.pm blib/lib/AE.pm
+cp lib/AnyEvent.pm blib/lib/AnyEvent.pm
+cp lib/AnyEvent/Impl/EV.pm blib/lib/AnyEvent/Impl/EV.pm
+cp lib/AnyEvent/Impl/POE.pm blib/lib/AnyEvent/Impl/POE.pm
+cp lib/AnyEvent/Impl/FLTK.pm blib/lib/AnyEvent/Impl/FLTK.pm
+cp lib/AnyEvent/Loop.pm blib/lib/AnyEvent/Loop.pm
+cp lib/AnyEvent/Util.pm blib/lib/AnyEvent/Util.pm
+cp lib/AnyEvent/IO.pm blib/lib/AnyEvent/IO.pm
+cp lib/AnyEvent/Debug.pm blib/lib/AnyEvent/Debug.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" constants.pl.PL constants.pl
+Manifying 29 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+Skip blib/lib/AnyEvent/Util/uts46data.pl (unchanged)
+Skip blib/lib/AnyEvent/IO/IOAIO.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Tk.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Irssi.pm (unchanged)
+Skip blib/lib/AnyEvent/Log.pm (unchanged)
+Skip blib/lib/AnyEvent/Debug.pm (unchanged)
+Skip blib/lib/AnyEvent/Socket.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Event.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/UV.pm (unchanged)
+Skip blib/lib/AnyEvent/TLS.pm (unchanged)
+Skip blib/lib/AnyEvent/Strict.pm (unchanged)
+cp lib/AnyEvent/constants.pl blib/arch/AnyEvent/constants.pl
+Skip blib/lib/AE.pm (unchanged)
+Skip blib/lib/AnyEvent/Util.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Perl.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/FLTK.pm (unchanged)
+Skip blib/lib/AnyEvent/Util/idna.pl (unchanged)
+Skip blib/lib/AnyEvent/Impl/EventLib.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/EV.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Cocoa.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Glib.pm (unchanged)
+Skip blib/lib/AnyEvent/FAQ.pod (unchanged)
+Skip blib/lib/AnyEvent.pm (unchanged)
+Skip blib/lib/AnyEvent/Intro.pod (unchanged)
+Skip blib/lib/AnyEvent/Impl/POE.pm (unchanged)
+Skip blib/lib/AnyEvent/Handle.pm (unchanged)
+Skip blib/lib/AnyEvent/IO.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/IOAsync.pm (unchanged)
+Skip blib/lib/AnyEvent/Loop.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Qt.pm (unchanged)
+Skip blib/lib/AnyEvent/IO/Perl.pm (unchanged)
+Skip blib/lib/AnyEvent/DNS.pm (unchanged)
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" constants.pl.PL constants.pl
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/handle/*.t
+t/00_load.t ................ ok
+t/01_basic.t ............... ok
+t/02_signals.t ............. ok
+t/03_child.t ............... ok
+t/04_condvar.t ............. ok
+t/05_dns.t ................. ok
+t/06_socket.t .............. ok
+t/07_io.t .................. ok
+t/08_idna.t ................ ok
+t/09_multi.t ............... ok
+t/10_loadall.t ............. ok
+t/11_io_perl.t ............. ok
+t/12_io_ioaio.t ............ skipped: AnyEvent::IO::IOAIO not loadable
+t/13_weaken.t .............. ok
+t/61_fltk_01_basic.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_02_signals.t ..... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_03_child.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_04_condvar.t ..... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_05_dns.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_07_io.t .......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/61_fltk_09_multi.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_01_basic.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_02_signals.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_03_child.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_04_condvar.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_05_dns.t ........ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_07_io.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/62_cocoa_09_multi.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_01_basic.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_02_signals.t ..... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_03_child.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_04_condvar.t ..... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_05_dns.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_07_io.t .......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/64_glib_09_multi.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_01_basic.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_02_signals.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_03_child.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_04_condvar.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_05_dns.t ........ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_07_io.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/65_event_09_multi.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_01_basic.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_02_signals.t .. skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_03_child.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_04_condvar.t .. skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_05_dns.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_07_io.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/66_ioasync_09_multi.t .... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_01_basic.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_02_signals.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_03_child.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_04_condvar.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_05_dns.t ........... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_07_io.t ............ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/67_tk_09_multi.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_01_basic.t ........ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_02_signals.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_03_child.t ........ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_04_condvar.t ...... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_05_dns.t .......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_07_io.t ........... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/68_poe_09_multi.t ........ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_01_basic.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_02_signals.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_03_child.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_04_condvar.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_05_dns.t ........... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_07_io.t ............ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/69_ev_09_multi.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_01_basic.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_02_signals.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_03_child.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_04_condvar.t ....... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_05_dns.t ........... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_07_io.t ............ skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/70_uv_09_multi.t ......... skipped: PERL_ANYEVENT_LOOP_TESTS not true
+t/80_ssltest.t ............. skipped: no usable Net::SSLeay
+t/81_hosts.t ............... ok
+t/handle/01_readline.t ..... ok
+t/handle/02_write.t ........ ok
+t/handle/03_http_req.t ..... skipped: PERL_ANYEVENT_NET_TESTS environment variable not set
+t/handle/04_listen.t ....... ok
+All tests successful.
+Files=83, Tests=257, 101 wallclock secs ( 0.17 usr  0.06 sys +  1.27 cusr  0.28 csys =  1.78 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/pkgconfig m4datadir=/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/aclocal aclocaldir=/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/aclocal install
+Skip blib/lib/AnyEvent/Impl/EventLib.pm (unchanged)
+Skip blib/lib/AnyEvent/TLS.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Qt.pm (unchanged)
+Skip blib/lib/AnyEvent/Log.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Perl.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Tk.pm (unchanged)
+Skip blib/lib/AnyEvent/IO/IOAIO.pm (unchanged)
+Skip blib/lib/AnyEvent/Loop.pm (unchanged)
+Skip blib/lib/AnyEvent/Handle.pm (unchanged)
+Skip blib/lib/AnyEvent/Util/idna.pl (unchanged)
+Skip blib/lib/AnyEvent/Impl/POE.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Cocoa.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/IOAsync.pm (unchanged)
+Skip blib/lib/AnyEvent.pm (unchanged)
+Skip blib/lib/AE.pm (unchanged)
+Skip blib/lib/AnyEvent/FAQ.pod (unchanged)
+Skip blib/lib/AnyEvent/DNS.pm (unchanged)
+Skip blib/lib/AnyEvent/Strict.pm (unchanged)
+Skip blib/lib/AnyEvent/Util.pm (unchanged)
+Skip blib/lib/AnyEvent/Debug.pm (unchanged)
+Skip blib/lib/AnyEvent/IO.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/UV.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/FLTK.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/EV.pm (unchanged)
+Skip blib/lib/AnyEvent/IO/Perl.pm (unchanged)
+Skip blib/lib/AnyEvent/Impl/Glib.pm (unchanged)
+Skip blib/lib/AnyEvent/Intro.pod (unchanged)
+Skip blib/lib/AnyEvent/Impl/Irssi.pm (unchanged)
+Skip blib/lib/AnyEvent/Socket.pm (unchanged)
+Skip blib/arch/AnyEvent/constants.pl (unchanged)
+Skip blib/lib/AnyEvent/Util/uts46data.pl (unchanged)
+Skip blib/lib/AnyEvent/Impl/Event.pm (unchanged)
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" constants.pl.PL constants.pl
+Manifying 29 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/constants.pl
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AE.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Intro.pod
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Debug.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Socket.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Strict.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/DNS.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Util.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Log.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Loop.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Handle.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/TLS.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/IO.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/FAQ.pod
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/IO/IOAIO.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/IO/Perl.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Util/uts46data.pl
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Util/idna.pl
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Cocoa.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/UV.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Tk.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/POE.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/EV.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/EventLib.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/FLTK.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Glib.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Event.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Qt.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/IOAsync.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Irssi.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/Impl/Perl.pm
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Event.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Perl.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Irssi.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AE.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Util.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Log.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::FLTK.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Cocoa.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Intro.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::IO::IOAIO.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::IO::Perl.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::POE.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::EventLib.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Loop.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Tk.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Strict.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Socket.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::UV.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::IOAsync.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::DNS.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Glib.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::Qt.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::IO.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Debug.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::FAQ.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Impl::EV.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::Handle.3
+Installing /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3/AnyEvent::TLS.3
+Appending installation info to /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/man3 to /nix/store/7qlxwvb34rxgfnjp1b3h2649a82d1804-perl5.32.0-AnyEvent-7.17-devdoc/share/man/man3
+Removing empty /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17/lib
+patching script interpreter paths in /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17
+checking for references to /build/ in /nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7qlxwvb34rxgfnjp1b3h2649a82d1804-perl5.32.0-AnyEvent-7.17-devdoc
+gzipping man pages under /nix/store/7qlxwvb34rxgfnjp1b3h2649a82d1804-perl5.32.0-AnyEvent-7.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7qlxwvb34rxgfnjp1b3h2649a82d1804-perl5.32.0-AnyEvent-7.17-devdoc
+checking for references to /build/ in /nix/store/7qlxwvb34rxgfnjp1b3h2649a82d1804-perl5.32.0-AnyEvent-7.17-devdoc...
+/nix/store/b2pwzfdp5xql5snzfp0yak2hql1gz0sw-perl5.32.0-AnyEvent-7.17

@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/kvq8dn6fz4iamnq973160mx87ndzawdy-perl5.32.0-Template-Plugin-Class-0.14.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/8n96g4q8a445g0xx3w9sz8ghifs0l2hz-Template-Plugin-Class-0.14.tar.gz
+copying path '/nix/store/8n96g4q8a445g0xx3w9sz8ghifs0l2hz-Template-Plugin-Class-0.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kvq8dn6fz4iamnq973160mx87ndzawdy-perl5.32.0-Template-Plugin-Class-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/8n96g4q8a445g0xx3w9sz8ghifs0l2hz-Template-Plugin-Class-0.14.tar.gz
+source root is Template-Plugin-Class-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1241531482 of file Template-Plugin-Class-0.14/META.yml
+patching sources
+configuring
+patching ./t/class.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Template::Plugin::Class
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Template/Plugin/Class.pm blib/lib/Template/Plugin/Class.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/class.t .. ok
+All tests successful.
+Files=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.02 sys +  0.09 cusr  0.02 csys =  0.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/lib/pkgconfig m4datadir=/nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/share/aclocal aclocaldir=/nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/lib/perl5/site_perl/5.32.0/Template/Plugin/Class.pm
+Installing /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/share/man/man3/Template::Plugin::Class.3
+Appending installation info to /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/share/man/man3 to /nix/store/4q2ajzj4vpm2hrdvaf86m1md5862vzh1-perl5.32.0-Template-Plugin-Class-0.14-devdoc/share/man/man3
+Removing empty /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14/lib
+patching script interpreter paths in /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14
+checking for references to /build/ in /nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4q2ajzj4vpm2hrdvaf86m1md5862vzh1-perl5.32.0-Template-Plugin-Class-0.14-devdoc
+gzipping man pages under /nix/store/4q2ajzj4vpm2hrdvaf86m1md5862vzh1-perl5.32.0-Template-Plugin-Class-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4q2ajzj4vpm2hrdvaf86m1md5862vzh1-perl5.32.0-Template-Plugin-Class-0.14-devdoc
+checking for references to /build/ in /nix/store/4q2ajzj4vpm2hrdvaf86m1md5862vzh1-perl5.32.0-Template-Plugin-Class-0.14-devdoc...
+/nix/store/0g4rsqg5msrqm4fnwaw0vdibpgbx2m23-perl5.32.0-Template-Plugin-Class-0.14

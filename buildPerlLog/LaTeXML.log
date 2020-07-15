@@ -1,0 +1,1495 @@
+these derivations will be built:
+  /nix/store/a8jnv1gj4i6bawaacwasmwwiy8cksxd4-hook.drv
+  /nix/store/z7x2cqpvn70n5c9vmkc6jz6hxryb6662-perl5.32.0-XML-LibXSLT-1.99.drv
+  /nix/store/cvi0kd53f2lx25ddwhsj8777z5d0xj6f-perl5.32.0-LaTeXML-0.8.4.drv
+building '/nix/store/a8jnv1gj4i6bawaacwasmwwiy8cksxd4-hook.drv'...
+building '/nix/store/z7x2cqpvn70n5c9vmkc6jz6hxryb6662-perl5.32.0-XML-LibXSLT-1.99.drv'...
+unpacking sources
+unpacking source archive /nix/store/ryvflyhkqr37ab8mpf7fqirbblkw9cri-XML-LibXSLT-1.99.tar.gz
+source root is XML-LibXSLT-1.99
+setting SOURCE_DATE_EPOCH to timestamp 1579193776 of file XML-LibXSLT-1.99/META.yml
+patching sources
+configuring
+patching ./scripts/tag-release.pl...
+patching ./t/xml-grammar-failures.t...
+patching ./t/pod.t...
+patching ./t/style-trailing-space.t...
+patching ./t/cpan-changes.t...
+running pkg-config libxslt... ok
+looking for -lxslt... yes
+looking for -lexslt... yes
+running pkg-config libexslt... ok
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lz
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+Generating a Unix-style Makefile
+Writing Makefile for XML::LibXSLT
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp LibXSLT.pm blib/lib/XML/LibXSLT.pm
+Running Mkbootstrap for LibXSLT ()
+chmod 644 "LibXSLT.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibXSLT.bs blib/arch/auto/XML/LibXSLT/LibXSLT.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/XML-LibXSLT-1.99/typemap'  LibXSLT.xs > LibXSLT.xsc
+mv LibXSLT.xsc LibXSLT.c
+cc -c  -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2 -I/nix/store/p1syc8n8sqnyqny525ba6wqfflwr8hpc-libxslt-1.1.34-dev/include -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2 -I/nix/store/p1syc8n8sqnyqny525ba6wqfflwr8hpc-libxslt-1.1.34-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.99\" -DXS_VERSION=\"1.99\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_BLANK -DHAVE_BLANK -DHAVE_EXSLT LibXSLT.c
+cc -c  -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2 -I/nix/store/p1syc8n8sqnyqny525ba6wqfflwr8hpc-libxslt-1.1.34-dev/include -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2 -I/nix/store/p1syc8n8sqnyqny525ba6wqfflwr8hpc-libxslt-1.1.34-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.99\" -DXS_VERSION=\"1.99\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_BLANK -DHAVE_BLANK -DHAVE_EXSLT perl-libxml-mm.c
+rm -f blib/arch/auto/XML/LibXSLT/LibXSLT.so
+LD_RUN_PATH="/nix/store/h3ggvixxasksb091a7bdwzbppn55v7vd-libxslt-1.1.34/lib:/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  LibXSLT.o perl-libxml-mm.o  -o blib/arch/auto/XML/LibXSLT/LibXSLT.so  \
+   -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -L/nix/store/h3ggvixxasksb091a7bdwzbppn55v7vd-libxslt-1.1.34/lib -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -lxslt -lxml2 -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -L/nix/store/h3ggvixxasksb091a7bdwzbppn55v7vd-libxslt-1.1.34/lib -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -lexslt -lxml2   \
+
+chmod 755 blib/arch/auto/XML/LibXSLT/LibXSLT.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibXSLT.bs blib/arch/auto/XML/LibXSLT/LibXSLT.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01basic.t ............... ok
+t/02dromeds.t ............. ok
+t/03input.t ............... 1/28 I/O warning : failed to load external entity "not-found.xml"
+t/03input.t ............... ok
+t/04params.t .............. ok
+t/05quick.t ............... ok
+t/06entities.t ............ ok
+t/06output.t .............. ok
+t/07blankdoc.t ............ ok
+t/08literal.t ............. ok
+t/09exslt.t ............... ok
+t/10functions.t ........... ok
+t/11utf8.t ................ ok
+t/12import.t .............. ok
+t/13error.t ............... ok
+t/14security.t ............ ok
+t/15misc.t ................ ok
+t/cpan-changes.t .......... skipped: Test::CPAN::Changes required for this test
+t/pod.t ................... skipped: Test::Pod 1.14 required for testing POD
+t/rt71345_a.t ............. ok
+t/rt71345_b.t ............. ok
+t/style-trailing-space.t .. skipped: Test::TrailingSpace required for trailing space test.
+t/xml-grammar-failures.t .. ok
+All tests successful.
+Files=22, Tests=244,  2 wallclock secs ( 0.08 usr  0.02 sys +  1.73 cusr  0.51 csys =  2.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib/pkgconfig m4datadir=/nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/share/aclocal aclocaldir=/nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibXSLT.bs blib/arch/auto/XML/LibXSLT/LibXSLT.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/XML/LibXSLT/LibXSLT.so
+Installing /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/XML/LibXSLT.pm
+Installing /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/share/man/man3/XML::LibXSLT.3
+Appending installation info to /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/share/man/man3 to /nix/store/r1vwsk2bb1504dm7815xkawrbc9mph74-perl5.32.0-XML-LibXSLT-1.99-devdoc/share/man/man3
+Removing empty /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99
+shrinking /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/XML/LibXSLT/LibXSLT.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99/lib
+patching script interpreter paths in /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99
+checking for references to /build/ in /nix/store/gqljia9x8i8l2qjlmhr8kqr8gcb527hr-perl5.32.0-XML-LibXSLT-1.99...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r1vwsk2bb1504dm7815xkawrbc9mph74-perl5.32.0-XML-LibXSLT-1.99-devdoc
+gzipping man pages under /nix/store/r1vwsk2bb1504dm7815xkawrbc9mph74-perl5.32.0-XML-LibXSLT-1.99-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r1vwsk2bb1504dm7815xkawrbc9mph74-perl5.32.0-XML-LibXSLT-1.99-devdoc
+checking for references to /build/ in /nix/store/r1vwsk2bb1504dm7815xkawrbc9mph74-perl5.32.0-XML-LibXSLT-1.99-devdoc...
+building '/nix/store/cvi0kd53f2lx25ddwhsj8777z5d0xj6f-perl5.32.0-LaTeXML-0.8.4.drv'...
+unpacking sources
+unpacking source archive /nix/store/slng39x5xw60l2j4zykxdbhpjbrljpfh-LaTeXML-0.8.4.tar.gz
+source root is LaTeXML-0.8.4
+setting SOURCE_DATE_EPOCH to timestamp 1561692123 of file LaTeXML-0.8.4/META.yml
+patching sources
+configuring
+patching ./bin/latexml...
+patching ./bin/latexmlfind...
+patching ./bin/latexmlmath...
+patching ./bin/latexmlpost...
+patching ./bin/latexmlc...
+Can't exec "kpsewhich": No such file or directory at Makefile.PL line 206.
+Warning: no TeX installation found.
+  TeX is NOT required, but LaTeXML will have limited functionality.
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Pod::Parser 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for LaTeXML
+Writing MYMETA.yml and MYMETA.json
+=======================================================
+| If you plan on developing code, please consider using
+| the git pre-commit hook to assure style compliant code.
+| To install:
+|    ln -s ../../tools/pre-commit .git/hooks
+=======================================================
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LaTeXML/Common/Color/hsb.pm blib/lib/LaTeXML/Common/Color/hsb.pm
+cp lib/LaTeXML/Core/Definition.pm blib/lib/LaTeXML/Core/Definition.pm
+cp lib/LaTeXML/Common/Model.pm blib/lib/LaTeXML/Common/Model.pm
+cp lib/LaTeXML/Common/Model/RelaxNG.pm blib/lib/LaTeXML/Common/Model/RelaxNG.pm
+cp lib/LaTeXML/Common/XML/Parser.pm blib/lib/LaTeXML/Common/XML/Parser.pm
+cp lib/LaTeXML/Common/XML/XPath.pm blib/lib/LaTeXML/Common/XML/XPath.pm
+cp lib/LaTeXML/Common/XML/XSLT.pm blib/lib/LaTeXML/Common/XML/XSLT.pm
+cp lib/LaTeXML/Core.pm blib/lib/LaTeXML/Core.pm
+cp lib/LaTeXML/Core/Array.pm blib/lib/LaTeXML/Core/Array.pm
+cp lib/LaTeXML/Common/Locator.pm blib/lib/LaTeXML/Common/Locator.pm
+cp lib/LaTeXML/Core/Definition/CharDef.pm blib/lib/LaTeXML/Core/Definition/CharDef.pm
+cp lib/LaTeXML/Core/Definition/Constructor/Compiler.pm blib/lib/LaTeXML/Core/Definition/Constructor/Compiler.pm
+cp lib/LaTeXML/Common/Model/DTD.pm blib/lib/LaTeXML/Common/Model/DTD.pm
+cp lib/LaTeXML/Common/Color/cmy.pm blib/lib/LaTeXML/Common/Color/cmy.pm
+cp lib/LaTeXML/Common/Object.pm blib/lib/LaTeXML/Common/Object.pm
+cp lib/LaTeXML/Common/XML.pm blib/lib/LaTeXML/Common/XML.pm
+cp lib/LaTeXML/Core/Box.pm blib/lib/LaTeXML/Core/Box.pm
+cp lib/LaTeXML/Common/Color.pm blib/lib/LaTeXML/Common/Color.pm
+cp lib/LaTeXML/Core/Comment.pm blib/lib/LaTeXML/Core/Comment.pm
+cp lib/LaTeXML/Core/Definition/Constructor.pm blib/lib/LaTeXML/Core/Definition/Constructor.pm
+cp lib/LaTeXML/Common/Color/gray.pm blib/lib/LaTeXML/Common/Color/gray.pm
+cp lib/LaTeXML/Common/Number.pm blib/lib/LaTeXML/Common/Number.pm
+cp lib/LaTeXML/Core/Definition/Conditional.pm blib/lib/LaTeXML/Core/Definition/Conditional.pm
+cp lib/LaTeXML/Common/Glue.pm blib/lib/LaTeXML/Common/Glue.pm
+cp lib/LaTeXML/Core/Alignment.pm blib/lib/LaTeXML/Core/Alignment.pm
+cp lib/LaTeXML/Common/Dimension.pm blib/lib/LaTeXML/Common/Dimension.pm
+cp lib/LaTeXML/Common/Float.pm blib/lib/LaTeXML/Common/Float.pm
+cp lib/LaTeXML/Common/Error.pm blib/lib/LaTeXML/Common/Error.pm
+cp lib/LaTeXML/Core/Alignment/Template.pm blib/lib/LaTeXML/Core/Alignment/Template.pm
+cp lib/LaTeXML/Common/XML/RelaxNG.pm blib/lib/LaTeXML/Common/XML/RelaxNG.pm
+cp lib/LaTeXML/Common/Config.pm blib/lib/LaTeXML/Common/Config.pm
+cp lib/LaTeXML.pm blib/lib/LaTeXML.pm
+cp lib/LaTeXML/Common/Font.pm blib/lib/LaTeXML/Common/Font.pm
+cp lib/LaTeXML/Common/Color/Derived.pm blib/lib/LaTeXML/Common/Color/Derived.pm
+cp lib/LaTeXML/Common/Color/rgb.pm blib/lib/LaTeXML/Common/Color/rgb.pm
+cp lib/LaTeXML/Common/Color/cmyk.pm blib/lib/LaTeXML/Common/Color/cmyk.pm
+cp lib/LaTeXML/Core/Mouth/https.pm blib/lib/LaTeXML/Core/Mouth/https.pm
+cp lib/LaTeXML/Core/Token.pm blib/lib/LaTeXML/Core/Token.pm
+cp lib/LaTeXML/Core/State.pm blib/lib/LaTeXML/Core/State.pm
+cp lib/LaTeXML/Core/Mouth.pm blib/lib/LaTeXML/Core/Mouth.pm
+cp lib/LaTeXML/Package/LaTeX.pool.ltxml blib/lib/LaTeXML/Package/LaTeX.pool.ltxml
+cp lib/LaTeXML/Core/Document.pm blib/lib/LaTeXML/Core/Document.pm
+cp lib/LaTeXML/Core/Definition/Register.pm blib/lib/LaTeXML/Core/Definition/Register.pm
+cp lib/LaTeXML/Core/Stomach.pm blib/lib/LaTeXML/Core/Stomach.pm
+cp lib/LaTeXML/Package.pm blib/lib/LaTeXML/Package.pm
+cp lib/LaTeXML/Package/IEEEtran.cls.ltxml blib/lib/LaTeXML/Package/IEEEtran.cls.ltxml
+cp lib/LaTeXML/Package/JHEP2.cls.ltxml blib/lib/LaTeXML/Package/JHEP2.cls.ltxml
+cp lib/LaTeXML/Package/JHEP.cls.ltxml blib/lib/LaTeXML/Package/JHEP.cls.ltxml
+cp lib/LaTeXML/MathParser.pm blib/lib/LaTeXML/MathParser.pm
+cp lib/LaTeXML/Core/Definition/Expandable.pm blib/lib/LaTeXML/Core/Definition/Expandable.pm
+cp lib/LaTeXML/Core/Gullet.pm blib/lib/LaTeXML/Core/Gullet.pm
+cp lib/LaTeXML/LaTeXML.catalog blib/lib/LaTeXML/LaTeXML.catalog
+cp lib/LaTeXML/Core/List.pm blib/lib/LaTeXML/Core/List.pm
+cp lib/LaTeXML/Core/Mouth/file.pm blib/lib/LaTeXML/Core/Mouth/file.pm
+cp lib/LaTeXML/Core/Parameters.pm blib/lib/LaTeXML/Core/Parameters.pm
+cp lib/LaTeXML/Global.pm blib/lib/LaTeXML/Global.pm
+cp lib/LaTeXML/Core/Definition/Primitive.pm blib/lib/LaTeXML/Core/Definition/Primitive.pm
+cp lib/LaTeXML/Core/Parameter.pm blib/lib/LaTeXML/Core/Parameter.pm
+cp lib/LaTeXML/Package/JHEP3.cls.ltxml blib/lib/LaTeXML/Package/JHEP3.cls.ltxml
+cp lib/LaTeXML/Core/PairList.pm blib/lib/LaTeXML/Core/PairList.pm
+cp lib/LaTeXML/Core/MuGlue.pm blib/lib/LaTeXML/Core/MuGlue.pm
+cp lib/LaTeXML/Core/Rewrite.pm blib/lib/LaTeXML/Core/Rewrite.pm
+cp lib/LaTeXML/Core/Mouth/http.pm blib/lib/LaTeXML/Core/Mouth/http.pm
+cp lib/LaTeXML/Package/AmSTeX.pool.ltxml blib/lib/LaTeXML/Package/AmSTeX.pool.ltxml
+cp lib/LaTeXML/Core/Tokens.pm blib/lib/LaTeXML/Core/Tokens.pm
+cp lib/LaTeXML/Core/Mouth/Binding.pm blib/lib/LaTeXML/Core/Mouth/Binding.pm
+cp lib/LaTeXML/Core/Pair.pm blib/lib/LaTeXML/Core/Pair.pm
+cp lib/LaTeXML/Core/MuDimension.pm blib/lib/LaTeXML/Core/MuDimension.pm
+cp lib/LaTeXML/Core/KeyVal.pm blib/lib/LaTeXML/Core/KeyVal.pm
+cp lib/LaTeXML/Package/BibTeX.pool.ltxml blib/lib/LaTeXML/Package/BibTeX.pool.ltxml
+cp lib/LaTeXML/Core/KeyVals.pm blib/lib/LaTeXML/Core/KeyVals.pm
+cp lib/LaTeXML/Core/Whatsit.pm blib/lib/LaTeXML/Core/Whatsit.pm
+cp lib/LaTeXML/Package/aa_support.sty.ltxml blib/lib/LaTeXML/Package/aa_support.sty.ltxml
+cp lib/LaTeXML/Package/aipcheck.tex.ltxml blib/lib/LaTeXML/Package/aipcheck.tex.ltxml
+cp lib/LaTeXML/Package/ae.sty.ltxml blib/lib/LaTeXML/Package/ae.sty.ltxml
+cp lib/LaTeXML/Package/aas_macros.sty.ltxml blib/lib/LaTeXML/Package/aas_macros.sty.ltxml
+cp lib/LaTeXML/Package/accents.sty.ltxml blib/lib/LaTeXML/Package/accents.sty.ltxml
+cp lib/LaTeXML/Package/acronym.sty.ltxml blib/lib/LaTeXML/Package/acronym.sty.ltxml
+cp lib/LaTeXML/Package/PoS.cls.ltxml blib/lib/LaTeXML/Package/PoS.cls.ltxml
+cp lib/LaTeXML/Package/OmniBus.cls.ltxml blib/lib/LaTeXML/Package/OmniBus.cls.ltxml
+cp lib/LaTeXML/Package/TeX.pool.ltxml blib/lib/LaTeXML/Package/TeX.pool.ltxml
+cp lib/LaTeXML/Package/a0poster.cls.ltxml blib/lib/LaTeXML/Package/a0poster.cls.ltxml
+cp lib/LaTeXML/Package/aipproc.cls.ltxml blib/lib/LaTeXML/Package/aipproc.cls.ltxml
+cp lib/LaTeXML/Package/aaspp.sty.ltxml blib/lib/LaTeXML/Package/aaspp.sty.ltxml
+cp lib/LaTeXML/Package/algorithmicx.sty.ltxml blib/lib/LaTeXML/Package/algorithmicx.sty.ltxml
+cp lib/LaTeXML/Package/algc.sty.ltxml blib/lib/LaTeXML/Package/algc.sty.ltxml
+cp lib/LaTeXML/Package/algorithm2e.sty.ltxml blib/lib/LaTeXML/Package/algorithm2e.sty.ltxml
+cp lib/LaTeXML/Package/aasms.sty.ltxml blib/lib/LaTeXML/Package/aasms.sty.ltxml
+cp lib/LaTeXML/Package/a4wide.sty.ltxml blib/lib/LaTeXML/Package/a4wide.sty.ltxml
+cp lib/LaTeXML/Package/algcompatible.sty.ltxml blib/lib/LaTeXML/Package/algcompatible.sty.ltxml
+cp lib/LaTeXML/Package/aastex.sty.ltxml blib/lib/LaTeXML/Package/aastex.sty.ltxml
+cp lib/LaTeXML/Package/aas_support.sty.ltxml blib/lib/LaTeXML/Package/aas_support.sty.ltxml
+cp lib/LaTeXML/Package/acmart.cls.ltxml blib/lib/LaTeXML/Package/acmart.cls.ltxml
+cp lib/LaTeXML/Package/a0size.sty.ltxml blib/lib/LaTeXML/Package/a0size.sty.ltxml
+cp lib/LaTeXML/Package/aecompl.sty.ltxml blib/lib/LaTeXML/Package/aecompl.sty.ltxml
+cp lib/LaTeXML/Package/algmatlab.sty.ltxml blib/lib/LaTeXML/Package/algmatlab.sty.ltxml
+cp lib/LaTeXML/Package/algorithm.sty.ltxml blib/lib/LaTeXML/Package/algorithm.sty.ltxml
+cp lib/LaTeXML/Package/a4.sty.ltxml blib/lib/LaTeXML/Package/a4.sty.ltxml
+cp lib/LaTeXML/Package/afterpage.sty.ltxml blib/lib/LaTeXML/Package/afterpage.sty.ltxml
+cp lib/LaTeXML/Package/aa.cls.ltxml blib/lib/LaTeXML/Package/aa.cls.ltxml
+cp lib/LaTeXML/Package/algorithmic.sty.ltxml blib/lib/LaTeXML/Package/algorithmic.sty.ltxml
+cp lib/LaTeXML/Package/aastex.cls.ltxml blib/lib/LaTeXML/Package/aastex.cls.ltxml
+cp lib/LaTeXML/Package/amsbsy.sty.ltxml blib/lib/LaTeXML/Package/amsbsy.sty.ltxml
+cp lib/LaTeXML/Package/amsbook.cls.ltxml blib/lib/LaTeXML/Package/amsbook.cls.ltxml
+cp lib/LaTeXML/Package/algpascal.sty.ltxml blib/lib/LaTeXML/Package/algpascal.sty.ltxml
+cp lib/LaTeXML/Package/amsrefs.sty.ltxml blib/lib/LaTeXML/Package/amsrefs.sty.ltxml
+cp lib/LaTeXML/Package/amstex.tex.ltxml blib/lib/LaTeXML/Package/amstex.tex.ltxml
+cp lib/LaTeXML/Package/amsgen.sty.ltxml blib/lib/LaTeXML/Package/amsgen.sty.ltxml
+cp lib/LaTeXML/Package/applemac.def.ltxml blib/lib/LaTeXML/Package/applemac.def.ltxml
+cp lib/LaTeXML/Package/ams_core.cls.ltxml blib/lib/LaTeXML/Package/ams_core.cls.ltxml
+cp lib/LaTeXML/Package/amscd.sty.ltxml blib/lib/LaTeXML/Package/amscd.sty.ltxml
+cp lib/LaTeXML/Package/amssymb.sty.ltxml blib/lib/LaTeXML/Package/amssymb.sty.ltxml
+cp lib/LaTeXML/Package/alltt.sty.ltxml blib/lib/LaTeXML/Package/alltt.sty.ltxml
+cp lib/LaTeXML/Package/algpseudocode.sty.ltxml blib/lib/LaTeXML/Package/algpseudocode.sty.ltxml
+cp lib/LaTeXML/Package/amsb.fontmap.ltxml blib/lib/LaTeXML/Package/amsb.fontmap.ltxml
+cp lib/LaTeXML/Package/amsxtra.sty.ltxml blib/lib/LaTeXML/Package/amsxtra.sty.ltxml
+cp lib/LaTeXML/Package/amsart.cls.ltxml blib/lib/LaTeXML/Package/amsart.cls.ltxml
+cp lib/LaTeXML/Package/amsopn.sty.ltxml blib/lib/LaTeXML/Package/amsopn.sty.ltxml
+cp lib/LaTeXML/Package/amstex.sty.ltxml blib/lib/LaTeXML/Package/amstex.sty.ltxml
+cp lib/LaTeXML/Package/attachfile.sty.ltxml blib/lib/LaTeXML/Package/attachfile.sty.ltxml
+cp lib/LaTeXML/Package/amsfonts.sty.ltxml blib/lib/LaTeXML/Package/amsfonts.sty.ltxml
+cp lib/LaTeXML/Package/article.cls.ltxml blib/lib/LaTeXML/Package/article.cls.ltxml
+cp lib/LaTeXML/Package/amsproc.cls.ltxml blib/lib/LaTeXML/Package/amsproc.cls.ltxml
+cp lib/LaTeXML/Package/amsppt.sty.ltxml blib/lib/LaTeXML/Package/amsppt.sty.ltxml
+cp lib/LaTeXML/Package/apjfonts.sty.ltxml blib/lib/LaTeXML/Package/apjfonts.sty.ltxml
+cp lib/LaTeXML/Package/amsmath.sty.ltxml blib/lib/LaTeXML/Package/amsmath.sty.ltxml
+cp lib/LaTeXML/Package/amsa.fontmap.ltxml blib/lib/LaTeXML/Package/amsa.fontmap.ltxml
+cp lib/LaTeXML/Package/array.sty.ltxml blib/lib/LaTeXML/Package/array.sty.ltxml
+cp lib/LaTeXML/Package/appendix.sty.ltxml blib/lib/LaTeXML/Package/appendix.sty.ltxml
+cp lib/LaTeXML/Package/amstext.sty.ltxml blib/lib/LaTeXML/Package/amstext.sty.ltxml
+cp lib/LaTeXML/Package/amsthm.sty.ltxml blib/lib/LaTeXML/Package/amsthm.sty.ltxml
+cp lib/LaTeXML/Package/ams_support.sty.ltxml blib/lib/LaTeXML/Package/ams_support.sty.ltxml
+cp lib/LaTeXML/Package/bbm.sty.ltxml blib/lib/LaTeXML/Package/bbm.sty.ltxml
+cp lib/LaTeXML/Package/cmbright.sty.ltxml blib/lib/LaTeXML/Package/cmbright.sty.ltxml
+cp lib/LaTeXML/Package/bbold.sty.ltxml blib/lib/LaTeXML/Package/bbold.sty.ltxml
+cp lib/LaTeXML/Package/charter.sty.ltxml blib/lib/LaTeXML/Package/charter.sty.ltxml
+cp lib/LaTeXML/Package/book.cls.ltxml blib/lib/LaTeXML/Package/book.cls.ltxml
+cp lib/LaTeXML/Package/beton.sty.ltxml blib/lib/LaTeXML/Package/beton.sty.ltxml
+cp lib/LaTeXML/Package/cleveref.sty.ltxml blib/lib/LaTeXML/Package/cleveref.sty.ltxml
+cp lib/LaTeXML/Package/blindtext.sty.ltxml blib/lib/LaTeXML/Package/blindtext.sty.ltxml
+cp lib/LaTeXML/Package/chngcntr.sty.ltxml blib/lib/LaTeXML/Package/chngcntr.sty.ltxml
+cp lib/LaTeXML/Package/booktabs.sty.ltxml blib/lib/LaTeXML/Package/booktabs.sty.ltxml
+cp lib/LaTeXML/Package/calrsfs.sty.ltxml blib/lib/LaTeXML/Package/calrsfs.sty.ltxml
+cp lib/LaTeXML/Package/balance.sty.ltxml blib/lib/LaTeXML/Package/balance.sty.ltxml
+cp lib/LaTeXML/Package/cases.sty.ltxml blib/lib/LaTeXML/Package/cases.sty.ltxml
+cp lib/LaTeXML/Package/citesort.sty.ltxml blib/lib/LaTeXML/Package/citesort.sty.ltxml
+cp lib/LaTeXML/Package/bibunits.sty.ltxml blib/lib/LaTeXML/Package/bibunits.sty.ltxml
+cp lib/LaTeXML/Package/authblk.sty.ltxml blib/lib/LaTeXML/Package/authblk.sty.ltxml
+cp lib/LaTeXML/Package/braket.sty.ltxml blib/lib/LaTeXML/Package/braket.sty.ltxml
+cp lib/LaTeXML/Package/babel.def.ltxml blib/lib/LaTeXML/Package/babel.def.ltxml
+cp lib/LaTeXML/Package/bookman.sty.ltxml blib/lib/LaTeXML/Package/bookman.sty.ltxml
+cp lib/LaTeXML/Package/ccfonts.sty.ltxml blib/lib/LaTeXML/Package/ccfonts.sty.ltxml
+cp lib/LaTeXML/Package/cancel.sty.ltxml blib/lib/LaTeXML/Package/cancel.sty.ltxml
+cp lib/LaTeXML/Package/chapterbib.sty.ltxml blib/lib/LaTeXML/Package/chapterbib.sty.ltxml
+cp lib/LaTeXML/Package/avant.sty.ltxml blib/lib/LaTeXML/Package/avant.sty.ltxml
+cp lib/LaTeXML/Package/breakurl.sty.ltxml blib/lib/LaTeXML/Package/breakurl.sty.ltxml
+cp lib/LaTeXML/Package/chancery.sty.ltxml blib/lib/LaTeXML/Package/chancery.sty.ltxml
+cp lib/LaTeXML/Package/circuitikz.sty.ltxml blib/lib/LaTeXML/Package/circuitikz.sty.ltxml
+cp lib/LaTeXML/Package/bm.sty.ltxml blib/lib/LaTeXML/Package/bm.sty.ltxml
+cp lib/LaTeXML/Package/calc.sty.ltxml blib/lib/LaTeXML/Package/calc.sty.ltxml
+cp lib/LaTeXML/Package/cite.sty.ltxml blib/lib/LaTeXML/Package/cite.sty.ltxml
+cp lib/LaTeXML/Package/caption.sty.ltxml blib/lib/LaTeXML/Package/caption.sty.ltxml
+cp lib/LaTeXML/Package/babel.sty.ltxml blib/lib/LaTeXML/Package/babel.sty.ltxml
+cp lib/LaTeXML/Package/comment.sty.ltxml blib/lib/LaTeXML/Package/comment.sty.ltxml
+cp lib/LaTeXML/Package/cropmark.sty.ltxml blib/lib/LaTeXML/Package/cropmark.sty.ltxml
+cp lib/LaTeXML/Package/crop.sty.ltxml blib/lib/LaTeXML/Package/crop.sty.ltxml
+cp lib/LaTeXML/Package/epsf.sty.ltxml blib/lib/LaTeXML/Package/epsf.sty.ltxml
+cp lib/LaTeXML/Package/enumerate.sty.ltxml blib/lib/LaTeXML/Package/enumerate.sty.ltxml
+cp lib/LaTeXML/Package/enumitem.sty.ltxml blib/lib/LaTeXML/Package/enumitem.sty.ltxml
+cp lib/LaTeXML/Package/elsart.sty.ltxml blib/lib/LaTeXML/Package/elsart.sty.ltxml
+cp lib/LaTeXML/Package/colordvi.sty.ltxml blib/lib/LaTeXML/Package/colordvi.sty.ltxml
+cp lib/LaTeXML/Package/emulateapj5.sty.ltxml blib/lib/LaTeXML/Package/emulateapj5.sty.ltxml
+cp lib/LaTeXML/Package/cp852.def.ltxml blib/lib/LaTeXML/Package/cp852.def.ltxml
+cp lib/LaTeXML/Package/deluxetable.sty.ltxml blib/lib/LaTeXML/Package/deluxetable.sty.ltxml
+cp lib/LaTeXML/Package/concmath.sty.ltxml blib/lib/LaTeXML/Package/concmath.sty.ltxml
+cp lib/LaTeXML/Package/csquotes.def.ltxml blib/lib/LaTeXML/Package/csquotes.def.ltxml
+cp lib/LaTeXML/Package/eTeX.pool.ltxml blib/lib/LaTeXML/Package/eTeX.pool.ltxml
+cp lib/LaTeXML/Package/emulateapj.cls.ltxml blib/lib/LaTeXML/Package/emulateapj.cls.ltxml
+cp lib/LaTeXML/Package/dcolumn.sty.ltxml blib/lib/LaTeXML/Package/dcolumn.sty.ltxml
+cp lib/LaTeXML/Package/emulateapj.sty.ltxml blib/lib/LaTeXML/Package/emulateapj.sty.ltxml
+cp lib/LaTeXML/Package/dsfont.sty.ltxml blib/lib/LaTeXML/Package/dsfont.sty.ltxml
+cp lib/LaTeXML/Package/endnotes.sty.ltxml blib/lib/LaTeXML/Package/endnotes.sty.ltxml
+cp lib/LaTeXML/Package/empheq.sty.ltxml blib/lib/LaTeXML/Package/empheq.sty.ltxml
+cp lib/LaTeXML/Package/elsart.cls.ltxml blib/lib/LaTeXML/Package/elsart.cls.ltxml
+cp lib/LaTeXML/Package/epigraph.sty.ltxml blib/lib/LaTeXML/Package/epigraph.sty.ltxml
+cp lib/LaTeXML/Package/courier.sty.ltxml blib/lib/LaTeXML/Package/courier.sty.ltxml
+cp lib/LaTeXML/Package/elsart_support.sty.ltxml blib/lib/LaTeXML/Package/elsart_support.sty.ltxml
+cp lib/LaTeXML/Package/doublespace.sty.ltxml blib/lib/LaTeXML/Package/doublespace.sty.ltxml
+cp lib/LaTeXML/Package/elsarticle.cls.ltxml blib/lib/LaTeXML/Package/elsarticle.cls.ltxml
+cp lib/LaTeXML/Package/color.sty.ltxml blib/lib/LaTeXML/Package/color.sty.ltxml
+cp lib/LaTeXML/Package/colortbl.sty.ltxml blib/lib/LaTeXML/Package/colortbl.sty.ltxml
+cp lib/LaTeXML/Package/csquotes.sty.ltxml blib/lib/LaTeXML/Package/csquotes.sty.ltxml
+cp lib/LaTeXML/Package/ellipsis.sty.ltxml blib/lib/LaTeXML/Package/ellipsis.sty.ltxml
+cp lib/LaTeXML/Package/flushend.sty.ltxml blib/lib/LaTeXML/Package/flushend.sty.ltxml
+cp lib/LaTeXML/Package/float.sty.ltxml blib/lib/LaTeXML/Package/float.sty.ltxml
+cp lib/LaTeXML/Package/epsf.tex.ltxml blib/lib/LaTeXML/Package/epsf.tex.ltxml
+cp lib/LaTeXML/Package/etoolbox.sty.ltxml blib/lib/LaTeXML/Package/etoolbox.sty.ltxml
+cp lib/LaTeXML/Package/eulervm.sty.ltxml blib/lib/LaTeXML/Package/eulervm.sty.ltxml
+cp lib/LaTeXML/Package/epsfig.sty.ltxml blib/lib/LaTeXML/Package/epsfig.sty.ltxml
+cp lib/LaTeXML/Package/fourier.sty.ltxml blib/lib/LaTeXML/Package/fourier.sty.ltxml
+cp lib/LaTeXML/Package/fancyhdr.sty.ltxml blib/lib/LaTeXML/Package/fancyhdr.sty.ltxml
+cp lib/LaTeXML/Package/eucal.sty.ltxml blib/lib/LaTeXML/Package/eucal.sty.ltxml
+cp lib/LaTeXML/Package/fancyheadings.sty.ltxml blib/lib/LaTeXML/Package/fancyheadings.sty.ltxml
+cp lib/LaTeXML/Package/eufrak.sty.ltxml blib/lib/LaTeXML/Package/eufrak.sty.ltxml
+cp lib/LaTeXML/Package/flafter.sty.ltxml blib/lib/LaTeXML/Package/flafter.sty.ltxml
+cp lib/LaTeXML/Package/fleqn.sty.ltxml blib/lib/LaTeXML/Package/fleqn.sty.ltxml
+cp lib/LaTeXML/Package/fixltx2e.sty.ltxml blib/lib/LaTeXML/Package/fixltx2e.sty.ltxml
+cp lib/LaTeXML/Package/fix-cm.sty.ltxml blib/lib/LaTeXML/Package/fix-cm.sty.ltxml
+cp lib/LaTeXML/Package/epstopdf.sty.ltxml blib/lib/LaTeXML/Package/epstopdf.sty.ltxml
+cp lib/LaTeXML/Package/euscript.sty.ltxml blib/lib/LaTeXML/Package/euscript.sty.ltxml
+cp lib/LaTeXML/Package/flowchart.sty.ltxml blib/lib/LaTeXML/Package/flowchart.sty.ltxml
+cp lib/LaTeXML/Package/floatflt.sty.ltxml blib/lib/LaTeXML/Package/floatflt.sty.ltxml
+cp lib/LaTeXML/Package/floatfig.sty.ltxml blib/lib/LaTeXML/Package/floatfig.sty.ltxml
+cp lib/LaTeXML/Package/footmisc.sty.ltxml blib/lib/LaTeXML/Package/footmisc.sty.ltxml
+cp lib/LaTeXML/Package/floatpag.sty.ltxml blib/lib/LaTeXML/Package/floatpag.sty.ltxml
+cp lib/LaTeXML/Package/euler.sty.ltxml blib/lib/LaTeXML/Package/euler.sty.ltxml
+cp lib/LaTeXML/Package/fontspec.sty.ltxml blib/lib/LaTeXML/Package/fontspec.sty.ltxml
+cp lib/LaTeXML/Package/etex.sty.ltxml blib/lib/LaTeXML/Package/etex.sty.ltxml
+cp lib/LaTeXML/Package/footnote.sty.ltxml blib/lib/LaTeXML/Package/footnote.sty.ltxml
+cp lib/LaTeXML/Package/fontenc.sty.ltxml blib/lib/LaTeXML/Package/fontenc.sty.ltxml
+cp lib/LaTeXML/Package/exscale.sty.ltxml blib/lib/LaTeXML/Package/exscale.sty.ltxml
+cp lib/LaTeXML/Package/eurosym.sty.ltxml blib/lib/LaTeXML/Package/eurosym.sty.ltxml
+cp lib/LaTeXML/Package/esint.sty.ltxml blib/lib/LaTeXML/Package/esint.sty.ltxml
+cp lib/LaTeXML/Package/ifxetex.sty.ltxml blib/lib/LaTeXML/Package/ifxetex.sty.ltxml
+cp lib/LaTeXML/Package/gen-p-l.cls.ltxml blib/lib/LaTeXML/Package/gen-p-l.cls.ltxml
+cp lib/LaTeXML/Package/import.sty.ltxml blib/lib/LaTeXML/Package/import.sty.ltxml
+cp lib/LaTeXML/Package/hyperref.sty.ltxml blib/lib/LaTeXML/Package/hyperref.sty.ltxml
+cp lib/LaTeXML/Package/geometry.sty.ltxml blib/lib/LaTeXML/Package/geometry.sty.ltxml
+cp lib/LaTeXML/Package/helvet.sty.ltxml blib/lib/LaTeXML/Package/helvet.sty.ltxml
+cp lib/LaTeXML/Package/hhline.sty.ltxml blib/lib/LaTeXML/Package/hhline.sty.ltxml
+cp lib/LaTeXML/Package/ifthen.sty.ltxml blib/lib/LaTeXML/Package/ifthen.sty.ltxml
+cp lib/LaTeXML/Package/ifpdf.sty.ltxml blib/lib/LaTeXML/Package/ifpdf.sty.ltxml
+cp lib/LaTeXML/Package/icml.sty.ltxml blib/lib/LaTeXML/Package/icml.sty.ltxml
+cp lib/LaTeXML/Package/ieeeconf.cls.ltxml blib/lib/LaTeXML/Package/ieeeconf.cls.ltxml
+cp lib/LaTeXML/Package/fullpage.sty.ltxml blib/lib/LaTeXML/Package/fullpage.sty.ltxml
+cp lib/LaTeXML/Package/gen-j-l.cls.ltxml blib/lib/LaTeXML/Package/gen-j-l.cls.ltxml
+cp lib/LaTeXML/Package/indentfirst.sty.ltxml blib/lib/LaTeXML/Package/indentfirst.sty.ltxml
+cp lib/LaTeXML/Package/german.sty.ltxml blib/lib/LaTeXML/Package/german.sty.ltxml
+cp lib/LaTeXML/Package/gen-m-l.cls.ltxml blib/lib/LaTeXML/Package/gen-m-l.cls.ltxml
+cp lib/LaTeXML/Package/gensymb.sty.ltxml blib/lib/LaTeXML/Package/gensymb.sty.ltxml
+cp lib/LaTeXML/Package/icml_support.sty.ltxml blib/lib/LaTeXML/Package/icml_support.sty.ltxml
+cp lib/LaTeXML/Package/grffile.sty.ltxml blib/lib/LaTeXML/Package/grffile.sty.ltxml
+cp lib/LaTeXML/Package/framed.sty.ltxml blib/lib/LaTeXML/Package/framed.sty.ltxml
+cp lib/LaTeXML/Package/hyperxmp.sty.ltxml blib/lib/LaTeXML/Package/hyperxmp.sty.ltxml
+cp lib/LaTeXML/Package/ifluatex.sty.ltxml blib/lib/LaTeXML/Package/ifluatex.sty.ltxml
+cp lib/LaTeXML/Package/french.ldf.ltxml blib/lib/LaTeXML/Package/french.ldf.ltxml
+cp lib/LaTeXML/Package/html.sty.ltxml blib/lib/LaTeXML/Package/html.sty.ltxml
+cp lib/LaTeXML/Package/graphicx.sty.ltxml blib/lib/LaTeXML/Package/graphicx.sty.ltxml
+cp lib/LaTeXML/Package/here.sty.ltxml blib/lib/LaTeXML/Package/here.sty.ltxml
+cp lib/LaTeXML/Package/inputenc.sty.ltxml blib/lib/LaTeXML/Package/inputenc.sty.ltxml
+cp lib/LaTeXML/Package/ifvtex.sty.ltxml blib/lib/LaTeXML/Package/ifvtex.sty.ltxml
+cp lib/LaTeXML/Package/graphics.sty.ltxml blib/lib/LaTeXML/Package/graphics.sty.ltxml
+cp lib/LaTeXML/Package/frenchb.ldf.ltxml blib/lib/LaTeXML/Package/frenchb.ldf.ltxml
+cp lib/LaTeXML/Package/iopams.sty.ltxml blib/lib/LaTeXML/Package/iopams.sty.ltxml
+cp lib/LaTeXML/Package/listingsutf8.sty.ltxml blib/lib/LaTeXML/Package/listingsutf8.sty.ltxml
+cp lib/LaTeXML/Package/makecell.sty.ltxml blib/lib/LaTeXML/Package/makecell.sty.ltxml
+cp lib/LaTeXML/Package/lastpage.sty.ltxml blib/lib/LaTeXML/Package/lastpage.sty.ltxml
+cp lib/LaTeXML/Package/latexsym.sty.ltxml blib/lib/LaTeXML/Package/latexsym.sty.ltxml
+cp lib/LaTeXML/Package/keyval.sty.ltxml blib/lib/LaTeXML/Package/keyval.sty.ltxml
+cp lib/LaTeXML/Package/lipsum.sty.ltxml blib/lib/LaTeXML/Package/lipsum.sty.ltxml
+cp lib/LaTeXML/Package/lxRDFa.sty.ltxml blib/lib/LaTeXML/Package/lxRDFa.sty.ltxml
+cp lib/LaTeXML/Package/marvosym.sty.ltxml blib/lib/LaTeXML/Package/marvosym.sty.ltxml
+cp lib/LaTeXML/Package/lscape.sty.ltxml blib/lib/LaTeXML/Package/lscape.sty.ltxml
+cp lib/LaTeXML/Package/lmodern.sty.ltxml blib/lib/LaTeXML/Package/lmodern.sty.ltxml
+cp lib/LaTeXML/Package/inst_support.sty.ltxml blib/lib/LaTeXML/Package/inst_support.sty.ltxml
+cp lib/LaTeXML/Package/mathdots.sty.ltxml blib/lib/LaTeXML/Package/mathdots.sty.ltxml
+cp lib/LaTeXML/Package/latexml.sty.ltxml blib/lib/LaTeXML/Package/latexml.sty.ltxml
+cp lib/LaTeXML/Package/listings.sty.ltxml blib/lib/LaTeXML/Package/listings.sty.ltxml
+cp lib/LaTeXML/Package/mathbbol.sty.ltxml blib/lib/LaTeXML/Package/mathbbol.sty.ltxml
+cp lib/LaTeXML/Package/ly1.fontmap.ltxml blib/lib/LaTeXML/Package/ly1.fontmap.ltxml
+cp lib/LaTeXML/Package/mathpple.sty.ltxml blib/lib/LaTeXML/Package/mathpple.sty.ltxml
+cp lib/LaTeXML/Package/mathpazo.sty.ltxml blib/lib/LaTeXML/Package/mathpazo.sty.ltxml
+cp lib/LaTeXML/Package/llamapun.sty.ltxml blib/lib/LaTeXML/Package/llamapun.sty.ltxml
+cp lib/LaTeXML/Package/makeidx.sty.ltxml blib/lib/LaTeXML/Package/makeidx.sty.ltxml
+cp lib/LaTeXML/Package/lgr.fontmap.ltxml blib/lib/LaTeXML/Package/lgr.fontmap.ltxml
+cp lib/LaTeXML/Package/llncs.cls.ltxml blib/lib/LaTeXML/Package/llncs.cls.ltxml
+cp lib/LaTeXML/Package/iopart_support.sty.ltxml blib/lib/LaTeXML/Package/iopart_support.sty.ltxml
+cp lib/LaTeXML/Package/lineno.sty.ltxml blib/lib/LaTeXML/Package/lineno.sty.ltxml
+cp lib/LaTeXML/Package/iopart.cls.ltxml blib/lib/LaTeXML/Package/iopart.cls.ltxml
+cp lib/LaTeXML/Package/luximono.sty.ltxml blib/lib/LaTeXML/Package/luximono.sty.ltxml
+cp lib/LaTeXML/Package/longtable.sty.ltxml blib/lib/LaTeXML/Package/longtable.sty.ltxml
+cp lib/LaTeXML/Package/latin10.def.ltxml blib/lib/LaTeXML/Package/latin10.def.ltxml
+cp lib/LaTeXML/Package/jheppub.sty.ltxml blib/lib/LaTeXML/Package/jheppub.sty.ltxml
+cp lib/LaTeXML/Package/mn2e_support.sty.ltxml blib/lib/LaTeXML/Package/mn2e_support.sty.ltxml
+cp lib/LaTeXML/Package/numprint.sty.ltxml blib/lib/LaTeXML/Package/numprint.sty.ltxml
+cp lib/LaTeXML/Package/mathptm.sty.ltxml blib/lib/LaTeXML/Package/mathptm.sty.ltxml
+cp lib/LaTeXML/Package/mn.cls.ltxml blib/lib/LaTeXML/Package/mn.cls.ltxml
+cp lib/LaTeXML/Package/palatino.sty.ltxml blib/lib/LaTeXML/Package/palatino.sty.ltxml
+cp lib/LaTeXML/Package/paralist.sty.ltxml blib/lib/LaTeXML/Package/paralist.sty.ltxml
+cp lib/LaTeXML/Package/nicefrac.sty.ltxml blib/lib/LaTeXML/Package/nicefrac.sty.ltxml
+cp lib/LaTeXML/Package/nameref.sty.ltxml blib/lib/LaTeXML/Package/nameref.sty.ltxml
+cp lib/LaTeXML/Package/newlfont.sty.ltxml blib/lib/LaTeXML/Package/newlfont.sty.ltxml
+cp lib/LaTeXML/Package/mathptmx.sty.ltxml blib/lib/LaTeXML/Package/mathptmx.sty.ltxml
+cp lib/LaTeXML/Package/newtxtext.sty.ltxml blib/lib/LaTeXML/Package/newtxtext.sty.ltxml
+cp lib/LaTeXML/Package/newtxmath.sty.ltxml blib/lib/LaTeXML/Package/newtxmath.sty.ltxml
+cp lib/LaTeXML/Package/moderncv.cls.ltxml blib/lib/LaTeXML/Package/moderncv.cls.ltxml
+cp lib/LaTeXML/Package/multirow.sty.ltxml blib/lib/LaTeXML/Package/multirow.sty.ltxml
+cp lib/LaTeXML/Package/microtype.sty.ltxml blib/lib/LaTeXML/Package/microtype.sty.ltxml
+cp lib/LaTeXML/Package/newcent.sty.ltxml blib/lib/LaTeXML/Package/newcent.sty.ltxml
+cp lib/LaTeXML/Package/mleftright.sty.ltxml blib/lib/LaTeXML/Package/mleftright.sty.ltxml
+cp lib/LaTeXML/Package/parskip.sty.ltxml blib/lib/LaTeXML/Package/parskip.sty.ltxml
+cp lib/LaTeXML/Package/newfloat.sty.ltxml blib/lib/LaTeXML/Package/newfloat.sty.ltxml
+cp lib/LaTeXML/Package/ntheorem.sty.ltxml blib/lib/LaTeXML/Package/ntheorem.sty.ltxml
+cp lib/LaTeXML/Package/mathtools.sty.ltxml blib/lib/LaTeXML/Package/mathtools.sty.ltxml
+cp lib/LaTeXML/Package/multido.sty.ltxml blib/lib/LaTeXML/Package/multido.sty.ltxml
+cp lib/LaTeXML/Package/mathrsfs.sty.ltxml blib/lib/LaTeXML/Package/mathrsfs.sty.ltxml
+cp lib/LaTeXML/Package/multicol.sty.ltxml blib/lib/LaTeXML/Package/multicol.sty.ltxml
+cp lib/LaTeXML/Package/mnras.cls.ltxml blib/lib/LaTeXML/Package/mnras.cls.ltxml
+cp lib/LaTeXML/Package/natbib.sty.ltxml blib/lib/LaTeXML/Package/natbib.sty.ltxml
+cp lib/LaTeXML/Package/ot4.fontmap.ltxml blib/lib/LaTeXML/Package/ot4.fontmap.ltxml
+cp lib/LaTeXML/Package/ngerman.sty.ltxml blib/lib/LaTeXML/Package/ngerman.sty.ltxml
+cp lib/LaTeXML/Package/nopageno.sty.ltxml blib/lib/LaTeXML/Package/nopageno.sty.ltxml
+cp lib/LaTeXML/Package/mn2e.cls.ltxml blib/lib/LaTeXML/Package/mn2e.cls.ltxml
+cp lib/LaTeXML/Package/pgfmath.code.tex.ltxml blib/lib/LaTeXML/Package/pgfmath.code.tex.ltxml
+cp lib/LaTeXML/Package/placeins.sty.ltxml blib/lib/LaTeXML/Package/placeins.sty.ltxml
+cp lib/LaTeXML/Package/remreset.sty.ltxml blib/lib/LaTeXML/Package/remreset.sty.ltxml
+cp lib/LaTeXML/Package/pst-node.sty.ltxml blib/lib/LaTeXML/Package/pst-node.sty.ltxml
+cp lib/LaTeXML/Package/pgf.sty.ltxml blib/lib/LaTeXML/Package/pgf.sty.ltxml
+cp lib/LaTeXML/Package/ragged2e.sty.ltxml blib/lib/LaTeXML/Package/ragged2e.sty.ltxml
+cp lib/LaTeXML/Package/pgfkeys.code.tex.ltxml blib/lib/LaTeXML/Package/pgfkeys.code.tex.ltxml
+cp lib/LaTeXML/Package/pdfpages.sty.ltxml blib/lib/LaTeXML/Package/pdfpages.sty.ltxml
+cp lib/LaTeXML/Package/pifont.sty.ltxml blib/lib/LaTeXML/Package/pifont.sty.ltxml
+cp lib/LaTeXML/Package/quantumarticle.cls.ltxml blib/lib/LaTeXML/Package/quantumarticle.cls.ltxml
+cp lib/LaTeXML/Package/psfig.sty.ltxml blib/lib/LaTeXML/Package/psfig.sty.ltxml
+cp lib/LaTeXML/Package/preview.sty.ltxml blib/lib/LaTeXML/Package/preview.sty.ltxml
+cp lib/LaTeXML/Package/pdflscape.sty.ltxml blib/lib/LaTeXML/Package/pdflscape.sty.ltxml
+cp lib/LaTeXML/Package/pdfsync.sty.ltxml blib/lib/LaTeXML/Package/pdfsync.sty.ltxml
+cp lib/LaTeXML/Package/pzd.fontmap.ltxml blib/lib/LaTeXML/Package/pzd.fontmap.ltxml
+cp lib/LaTeXML/Package/pgfplots.sty.ltxml blib/lib/LaTeXML/Package/pgfplots.sty.ltxml
+cp lib/LaTeXML/Package/revsymb.sty.ltxml blib/lib/LaTeXML/Package/revsymb.sty.ltxml
+cp lib/LaTeXML/Package/revtex.sty.ltxml blib/lib/LaTeXML/Package/revtex.sty.ltxml
+cp lib/LaTeXML/Package/pspicture.sty.ltxml blib/lib/LaTeXML/Package/pspicture.sty.ltxml
+cp lib/LaTeXML/Package/pslatex.sty.ltxml blib/lib/LaTeXML/Package/pslatex.sty.ltxml
+cp lib/LaTeXML/Package/psfig.tex.ltxml blib/lib/LaTeXML/Package/psfig.tex.ltxml
+cp lib/LaTeXML/Package/pxfonts.sty.ltxml blib/lib/LaTeXML/Package/pxfonts.sty.ltxml
+cp lib/LaTeXML/Package/pgfsys-latexml.def.ltxml blib/lib/LaTeXML/Package/pgfsys-latexml.def.ltxml
+cp lib/LaTeXML/Package/pdfTeX.pool.ltxml blib/lib/LaTeXML/Package/pdfTeX.pool.ltxml
+cp lib/LaTeXML/Package/report.cls.ltxml blib/lib/LaTeXML/Package/report.cls.ltxml
+cp lib/LaTeXML/Package/revtex3_support.sty.ltxml blib/lib/LaTeXML/Package/revtex3_support.sty.ltxml
+cp lib/LaTeXML/Package/pstricks.sty.ltxml blib/lib/LaTeXML/Package/pstricks.sty.ltxml
+cp lib/LaTeXML/Package/pst-grad.sty.ltxml blib/lib/LaTeXML/Package/pst-grad.sty.ltxml
+cp lib/LaTeXML/Package/revtex.cls.ltxml blib/lib/LaTeXML/Package/revtex.cls.ltxml
+cp lib/LaTeXML/Package/relsize.sty.ltxml blib/lib/LaTeXML/Package/relsize.sty.ltxml
+cp lib/LaTeXML/Package/revtex4-1.cls.ltxml blib/lib/LaTeXML/Package/revtex4-1.cls.ltxml
+cp lib/LaTeXML/Package/setspace.sty.ltxml blib/lib/LaTeXML/Package/setspace.sty.ltxml
+cp lib/LaTeXML/Package/rotate.sty.ltxml blib/lib/LaTeXML/Package/rotate.sty.ltxml
+cp lib/LaTeXML/Package/sv_support.sty.ltxml blib/lib/LaTeXML/Package/sv_support.sty.ltxml
+cp lib/LaTeXML/Package/revtex4_support.sty.ltxml blib/lib/LaTeXML/Package/revtex4_support.sty.ltxml
+cp lib/LaTeXML/Package/soul.sty.ltxml blib/lib/LaTeXML/Package/soul.sty.ltxml
+cp lib/LaTeXML/Package/stmaryrd.sty.ltxml blib/lib/LaTeXML/Package/stmaryrd.sty.ltxml
+cp lib/LaTeXML/Package/srcltx.sty.ltxml blib/lib/LaTeXML/Package/srcltx.sty.ltxml
+cp lib/LaTeXML/Package/subfloat.sty.ltxml blib/lib/LaTeXML/Package/subfloat.sty.ltxml
+cp lib/LaTeXML/Package/svjour3.cls.ltxml blib/lib/LaTeXML/Package/svjour3.cls.ltxml
+cp lib/LaTeXML/Package/svjour.cls.ltxml blib/lib/LaTeXML/Package/svjour.cls.ltxml
+cp lib/LaTeXML/Package/sidecap.sty.ltxml blib/lib/LaTeXML/Package/sidecap.sty.ltxml
+cp lib/LaTeXML/Package/rotating.sty.ltxml blib/lib/LaTeXML/Package/rotating.sty.ltxml
+cp lib/LaTeXML/Package/scalefnt.sty.ltxml blib/lib/LaTeXML/Package/scalefnt.sty.ltxml
+cp lib/LaTeXML/Package/supertabular.sty.ltxml blib/lib/LaTeXML/Package/supertabular.sty.ltxml
+cp lib/LaTeXML/Package/subfigure.sty.ltxml blib/lib/LaTeXML/Package/subfigure.sty.ltxml
+cp lib/LaTeXML/Package/revtex4.cls.ltxml blib/lib/LaTeXML/Package/revtex4.cls.ltxml
+cp lib/LaTeXML/Package/showkeys.sty.ltxml blib/lib/LaTeXML/Package/showkeys.sty.ltxml
+cp lib/LaTeXML/Package/svg.sty.ltxml blib/lib/LaTeXML/Package/svg.sty.ltxml
+cp lib/LaTeXML/Package/subfig.sty.ltxml blib/lib/LaTeXML/Package/subfig.sty.ltxml
+cp lib/LaTeXML/Package/siunitx.sty.ltxml blib/lib/LaTeXML/Package/siunitx.sty.ltxml
+cp lib/LaTeXML/Package/revtex4.sty.ltxml blib/lib/LaTeXML/Package/revtex4.sty.ltxml
+cp lib/LaTeXML/Package/subcaption.sty.ltxml blib/lib/LaTeXML/Package/subcaption.sty.ltxml
+cp lib/LaTeXML/Package/subfiles.sty.ltxml blib/lib/LaTeXML/Package/subfiles.sty.ltxml
+cp lib/LaTeXML/Package/slides.cls.ltxml blib/lib/LaTeXML/Package/slides.cls.ltxml
+cp lib/LaTeXML/Package/sectsty.sty.ltxml blib/lib/LaTeXML/Package/sectsty.sty.ltxml
+cp lib/LaTeXML/Package/slashed.sty.ltxml blib/lib/LaTeXML/Package/slashed.sty.ltxml
+cp lib/LaTeXML/Package/subfiles.cls.ltxml blib/lib/LaTeXML/Package/subfiles.cls.ltxml
+cp lib/LaTeXML/Package/stfloats.sty.ltxml blib/lib/LaTeXML/Package/stfloats.sty.ltxml
+cp lib/LaTeXML/Package/rsfs.sty.ltxml blib/lib/LaTeXML/Package/rsfs.sty.ltxml
+cp lib/LaTeXML/Package/texvc.sty.ltxml blib/lib/LaTeXML/Package/texvc.sty.ltxml
+cp lib/LaTeXML/Package/tabulary.sty.ltxml blib/lib/LaTeXML/Package/tabulary.sty.ltxml
+cp lib/LaTeXML/Package/thmtools.sty.ltxml blib/lib/LaTeXML/Package/thmtools.sty.ltxml
+cp lib/LaTeXML/Package/t1enc.sty.ltxml blib/lib/LaTeXML/Package/t1enc.sty.ltxml
+cp lib/LaTeXML/Package/tabularx.sty.ltxml blib/lib/LaTeXML/Package/tabularx.sty.ltxml
+cp lib/LaTeXML/Package/tablefootnote.sty.ltxml blib/lib/LaTeXML/Package/tablefootnote.sty.ltxml
+cp lib/LaTeXML/Package/tcilatex.tex.ltxml blib/lib/LaTeXML/Package/tcilatex.tex.ltxml
+cp lib/LaTeXML/Package/twoopt.sty.ltxml blib/lib/LaTeXML/Package/twoopt.sty.ltxml
+cp lib/LaTeXML/Package/t1enc.def.ltxml blib/lib/LaTeXML/Package/t1enc.def.ltxml
+cp lib/LaTeXML/Package/transparent.sty.ltxml blib/lib/LaTeXML/Package/transparent.sty.ltxml
+cp lib/LaTeXML/Package/t2c.fontmap.ltxml blib/lib/LaTeXML/Package/t2c.fontmap.ltxml
+cp lib/LaTeXML/Package/ts1.fontmap.ltxml blib/lib/LaTeXML/Package/ts1.fontmap.ltxml
+cp lib/LaTeXML/Package/tocbibind.sty.ltxml blib/lib/LaTeXML/Package/tocbibind.sty.ltxml
+cp lib/LaTeXML/Package/titling.sty.ltxml blib/lib/LaTeXML/Package/titling.sty.ltxml
+cp lib/LaTeXML/Package/times.sty.ltxml blib/lib/LaTeXML/Package/times.sty.ltxml
+cp lib/LaTeXML/Package/theorem.sty.ltxml blib/lib/LaTeXML/Package/theorem.sty.ltxml
+cp lib/LaTeXML/Package/tikz.sty.ltxml blib/lib/LaTeXML/Package/tikz.sty.ltxml
+cp lib/LaTeXML/Package/t2a.fontmap.ltxml blib/lib/LaTeXML/Package/t2a.fontmap.ltxml
+cp lib/LaTeXML/Package/svmult.cls.ltxml blib/lib/LaTeXML/Package/svmult.cls.ltxml
+cp lib/LaTeXML/Package/t1.fontmap.ltxml blib/lib/LaTeXML/Package/t1.fontmap.ltxml
+cp lib/LaTeXML/Package/todonotes.sty.ltxml blib/lib/LaTeXML/Package/todonotes.sty.ltxml
+cp lib/LaTeXML/Package/tikz-3dplot.sty.ltxml blib/lib/LaTeXML/Package/tikz-3dplot.sty.ltxml
+cp lib/LaTeXML/Package/titlesec.sty.ltxml blib/lib/LaTeXML/Package/titlesec.sty.ltxml
+cp lib/LaTeXML/Package/threeparttable.sty.ltxml blib/lib/LaTeXML/Package/threeparttable.sty.ltxml
+cp lib/LaTeXML/Package/textcase.sty.ltxml blib/lib/LaTeXML/Package/textcase.sty.ltxml
+cp lib/LaTeXML/Package/textcomp.sty.ltxml blib/lib/LaTeXML/Package/textcomp.sty.ltxml
+cp lib/LaTeXML/Package/thm-restate.sty.ltxml blib/lib/LaTeXML/Package/thm-restate.sty.ltxml
+cp lib/LaTeXML/Package/t2b.fontmap.ltxml blib/lib/LaTeXML/Package/t2b.fontmap.ltxml
+cp lib/LaTeXML/Package/tracefnt.sty.ltxml blib/lib/LaTeXML/Package/tracefnt.sty.ltxml
+cp lib/LaTeXML/Package/turing.sty.ltxml blib/lib/LaTeXML/Package/turing.sty.ltxml
+cp lib/LaTeXML/Package/type1cm.sty.ltxml blib/lib/LaTeXML/Package/type1cm.sty.ltxml
+cp lib/LaTeXML/Package/ulem.sty.ltxml blib/lib/LaTeXML/Package/ulem.sty.ltxml
+cp lib/LaTeXML/Package/xkeyval.sty.ltxml blib/lib/LaTeXML/Package/xkeyval.sty.ltxml
+cp lib/LaTeXML/Post/Graphics.pm blib/lib/LaTeXML/Post/Graphics.pm
+cp lib/LaTeXML/Package/wiki.sty.ltxml blib/lib/LaTeXML/Package/wiki.sty.ltxml
+cp lib/LaTeXML/Package/url.sty.ltxml blib/lib/LaTeXML/Package/url.sty.ltxml
+cp lib/LaTeXML/Package/wrapfig.sty.ltxml blib/lib/LaTeXML/Package/wrapfig.sty.ltxml
+cp lib/LaTeXML/Package/units.sty.ltxml blib/lib/LaTeXML/Package/units.sty.ltxml
+cp lib/LaTeXML/Package/upgreek.sty.ltxml blib/lib/LaTeXML/Package/upgreek.sty.ltxml
+cp lib/LaTeXML/Package/xcolor.sty.ltxml blib/lib/LaTeXML/Package/xcolor.sty.ltxml
+cp lib/LaTeXML/Post.pm blib/lib/LaTeXML/Post.pm
+cp lib/LaTeXML/Package/utopia.sty.ltxml blib/lib/LaTeXML/Package/utopia.sty.ltxml
+cp lib/LaTeXML/Package/vmargin.sty.ltxml blib/lib/LaTeXML/Package/vmargin.sty.ltxml
+cp lib/LaTeXML/Package/utf8.def.ltxml blib/lib/LaTeXML/Package/utf8.def.ltxml
+cp lib/LaTeXML/Package/xkvview.sty.ltxml blib/lib/LaTeXML/Package/xkvview.sty.ltxml
+cp lib/LaTeXML/Package/xargs.sty.ltxml blib/lib/LaTeXML/Package/xargs.sty.ltxml
+cp lib/LaTeXML/Package/upref.sty.ltxml blib/lib/LaTeXML/Package/upref.sty.ltxml
+cp lib/LaTeXML/Package/verbatim.sty.ltxml blib/lib/LaTeXML/Package/verbatim.sty.ltxml
+cp lib/LaTeXML/Post/LaTeXImages.pm blib/lib/LaTeXML/Post/LaTeXImages.pm
+cp lib/LaTeXML/Package/wasysym.sty.ltxml blib/lib/LaTeXML/Package/wasysym.sty.ltxml
+cp lib/LaTeXML/Post/CrossRef.pm blib/lib/LaTeXML/Post/CrossRef.pm
+cp lib/LaTeXML/Package/underscore.sty.ltxml blib/lib/LaTeXML/Package/underscore.sty.ltxml
+cp lib/LaTeXML/Package/yfonts.sty.ltxml blib/lib/LaTeXML/Package/yfonts.sty.ltxml
+cp lib/LaTeXML/Package/undertilde.sty.ltxml blib/lib/LaTeXML/Package/undertilde.sty.ltxml
+cp lib/LaTeXML/Package/xspace.sty.ltxml blib/lib/LaTeXML/Package/xspace.sty.ltxml
+cp lib/LaTeXML/Package/varioref.sty.ltxml blib/lib/LaTeXML/Package/varioref.sty.ltxml
+cp lib/LaTeXML/Post/LexMath.pm blib/lib/LaTeXML/Post/LexMath.pm
+cp lib/LaTeXML/Post/Collector.pm blib/lib/LaTeXML/Post/Collector.pm
+cp lib/LaTeXML/Package/varwidth.sty.ltxml blib/lib/LaTeXML/Package/varwidth.sty.ltxml
+cp lib/LaTeXML/Package/txfonts.sty.ltxml blib/lib/LaTeXML/Package/txfonts.sty.ltxml
+cp lib/LaTeXML/Package/xunicode.sty.ltxml blib/lib/LaTeXML/Package/xunicode.sty.ltxml
+cp lib/LaTeXML/Package/utf8x.def.ltxml blib/lib/LaTeXML/Package/utf8x.def.ltxml
+cp lib/LaTeXML/Post/PictureImages.pm blib/lib/LaTeXML/Post/PictureImages.pm
+cp lib/LaTeXML/Post/Split.pm blib/lib/LaTeXML/Post/Split.pm
+cp lib/LaTeXML/Post/TeXMath.pm blib/lib/LaTeXML/Post/TeXMath.pm
+cp lib/LaTeXML/resources/CSS/LaTeXML-blue.css blib/lib/LaTeXML/resources/CSS/LaTeXML-blue.css
+cp lib/LaTeXML/Post/MathML/Content.pm blib/lib/LaTeXML/Post/MathML/Content.pm
+cp lib/LaTeXML/Post/MathML/Linebreaker.pm blib/lib/LaTeXML/Post/MathML/Linebreaker.pm
+cp lib/LaTeXML/Post/Scan.pm blib/lib/LaTeXML/Post/Scan.pm
+cp lib/LaTeXML/Util/Radix.pm blib/lib/LaTeXML/Util/Radix.pm
+cp lib/LaTeXML/resources/CSS/LaTeXML-epub.css blib/lib/LaTeXML/resources/CSS/LaTeXML-epub.css
+cp lib/LaTeXML/Post/MakeIndex.pm blib/lib/LaTeXML/Post/MakeIndex.pm
+cp lib/LaTeXML/Post/Writer.pm blib/lib/LaTeXML/Post/Writer.pm
+cp lib/LaTeXML/Post/SVG.pm blib/lib/LaTeXML/Post/SVG.pm
+cp lib/LaTeXML/Post/XSLT.pm blib/lib/LaTeXML/Post/XSLT.pm
+cp lib/LaTeXML/Post/MathML/Presentation.pm blib/lib/LaTeXML/Post/MathML/Presentation.pm
+cp lib/LaTeXML/Util/Transform.pm blib/lib/LaTeXML/Util/Transform.pm
+cp lib/LaTeXML/Util/Geometry.pm blib/lib/LaTeXML/Util/Geometry.pm
+cp lib/LaTeXML/resources/CSS/LaTeXML-marginpar.css blib/lib/LaTeXML/resources/CSS/LaTeXML-marginpar.css
+cp lib/LaTeXML/Post/OpenMath.pm blib/lib/LaTeXML/Post/OpenMath.pm
+cp lib/LaTeXML/Util/Image.pm blib/lib/LaTeXML/Util/Image.pm
+cp lib/LaTeXML/Util/ObjectDB/Entry.pm blib/lib/LaTeXML/Util/ObjectDB/Entry.pm
+cp lib/LaTeXML/Util/Pack.pm blib/lib/LaTeXML/Util/Pack.pm
+cp lib/LaTeXML/Post/XMath.pm blib/lib/LaTeXML/Post/XMath.pm
+cp lib/LaTeXML/Post/Manifest/Epub.pm blib/lib/LaTeXML/Post/Manifest/Epub.pm
+cp lib/LaTeXML/resources/CSS/LaTeXML-navbar-left.css blib/lib/LaTeXML/resources/CSS/LaTeXML-navbar-left.css
+cp lib/LaTeXML/Post/Manifest.pm blib/lib/LaTeXML/Post/Manifest.pm
+cp lib/LaTeXML/Pre/BibTeX.pm blib/lib/LaTeXML/Pre/BibTeX.pm
+cp lib/LaTeXML/resources/CSS/LaTeXML-navbar-right.css blib/lib/LaTeXML/resources/CSS/LaTeXML-navbar-right.css
+cp lib/LaTeXML/Util/Pathname.pm blib/lib/LaTeXML/Util/Pathname.pm
+cp lib/LaTeXML/Util/Test.pm blib/lib/LaTeXML/Util/Test.pm
+cp lib/LaTeXML/Post/MathImages.pm blib/lib/LaTeXML/Post/MathImages.pm
+cp lib/LaTeXML/Post/MathML.pm blib/lib/LaTeXML/Post/MathML.pm
+cp lib/LaTeXML/Util/ObjectDB.pm blib/lib/LaTeXML/Util/ObjectDB.pm
+cp lib/LaTeXML/Util/WWW.pm blib/lib/LaTeXML/Util/WWW.pm
+cp lib/LaTeXML/Pre/BibTeX/Entry.pm blib/lib/LaTeXML/Pre/BibTeX/Entry.pm
+cp lib/LaTeXML/Post/MakeBibliography.pm blib/lib/LaTeXML/Post/MakeBibliography.pm
+cp lib/LaTeXML/resources/Profiles/modern.opt blib/lib/LaTeXML/resources/Profiles/modern.opt
+cp lib/LaTeXML/resources/Profiles/standard.opt blib/lib/LaTeXML/resources/Profiles/standard.opt
+cp lib/LaTeXML/resources/CSS/ltx-report.css blib/lib/LaTeXML/resources/CSS/ltx-report.css
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-block.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-block.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-block.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-block.rng
+cp lib/LaTeXML/resources/Profiles/stex.opt blib/lib/LaTeXML/resources/Profiles/stex.opt
+cp lib/LaTeXML/resources/Profiles/fragment-html.opt blib/lib/LaTeXML/resources/Profiles/fragment-html.opt
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-inline.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-inline.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-bib.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-bib.rng
+cp lib/LaTeXML/resources/CSS/ltx-listings.css blib/lib/LaTeXML/resources/CSS/ltx-listings.css
+cp lib/LaTeXML/resources/Profiles/stex-migration.opt blib/lib/LaTeXML/resources/Profiles/stex-migration.opt
+cp lib/LaTeXML/resources/Profiles/stex-module.opt blib/lib/LaTeXML/resources/Profiles/stex-module.opt
+cp lib/LaTeXML/resources/CSS/ltx-amsart.css blib/lib/LaTeXML/resources/CSS/ltx-amsart.css
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-common.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-common.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-bib.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-bib.rnc
+cp lib/LaTeXML/resources/CSS/ltx-svjour.css blib/lib/LaTeXML/resources/CSS/ltx-svjour.css
+cp lib/LaTeXML/resources/CSS/LaTeXML.css blib/lib/LaTeXML/resources/CSS/LaTeXML.css
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-common.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-common.rnc
+cp lib/LaTeXML/resources/Profiles/fragment.opt blib/lib/LaTeXML/resources/Profiles/fragment.opt
+cp lib/LaTeXML/resources/Profiles/fragment-xhtml.opt blib/lib/LaTeXML/resources/Profiles/fragment-xhtml.opt
+cp lib/LaTeXML/resources/CSS/ltx-cv.css blib/lib/LaTeXML/resources/CSS/ltx-cv.css
+cp lib/LaTeXML/resources/CSS/ltx-book.css blib/lib/LaTeXML/resources/CSS/ltx-book.css
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-inline.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-inline.rnc
+cp lib/LaTeXML/resources/Profiles/math.opt blib/lib/LaTeXML/resources/Profiles/math.opt
+cp lib/LaTeXML/resources/CSS/ltx-apj.css blib/lib/LaTeXML/resources/CSS/ltx-apj.css
+cp lib/LaTeXML/resources/CSS/ltx-ulem.css blib/lib/LaTeXML/resources/CSS/ltx-ulem.css
+cp lib/LaTeXML/resources/CSS/ltx-article.css blib/lib/LaTeXML/resources/CSS/ltx-article.css
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-misc.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-misc.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-animation.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-animation.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML.model blib/lib/LaTeXML/resources/RelaxNG/LaTeXML.model
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-picture.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-picture.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-math.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-math.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-animation.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-animation.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-meta.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-meta.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-para.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-para.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-structure.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-structure.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rng
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-structure.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-structure.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-math.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-math.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-picture.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-picture.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-para.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-para.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-misc.rnc blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-misc.rnc
+cp lib/LaTeXML/resources/RelaxNG/LaTeXML-meta.rng blib/lib/LaTeXML/resources/RelaxNG/LaTeXML-meta.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-cursor.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-cursor.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-conditional.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-conditional.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-conditional.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-conditional.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-cursor.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-cursor.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-clip.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-clip.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-clip.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-clip.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-marker.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-marker.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-image.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-image.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-font.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-font.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-gradient.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-gradient.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-filter.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-filter.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-marker.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-marker.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-image.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-image.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-font.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-font.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-gradient.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-gradient.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-filter.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-filter.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-mask.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-mask.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-mask.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-mask.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-profile.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-profile.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-style.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-style.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-shape.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-shape.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-script.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-script.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-profile.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-profile.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-view.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-view.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-text.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-text.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-script.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-script.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-style.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-style.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-pattern.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-pattern.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-shape.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-shape.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-view.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-view.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-qname.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-qname.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-structure.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-structure.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-text.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-text.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-pattern.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-pattern.rnc
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-structure.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-structure.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg11.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg11.rng
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rng
+cp lib/LaTeXML/resources/XSLT/LaTeXML-jats.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-jats.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-webpage-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-webpage-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-misc-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-misc-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-para-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-para-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-block-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-block-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-structure-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-structure-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-tabular-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-tabular-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-epub3.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-epub3.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-all-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-all-xhtml.xsl
+cp lib/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rnc
+cp lib/LaTeXML/resources/XSLT/LaTeXML-inline-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-inline-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-common.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-common.xsl
+cp lib/LaTeXML/resources/RelaxNG/svg/svg11-basic.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg11-basic.rng
+cp lib/LaTeXML/resources/XSLT/LaTeXML-html5.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-html5.xsl
+cp lib/LaTeXML/resources/RelaxNG/svg/svg11-tiny.rng blib/lib/LaTeXML/resources/RelaxNG/svg/svg11-tiny.rng
+cp lib/LaTeXML/resources/XSLT/LaTeXML-html4.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-html4.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-picture-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-picture-xhtml.xsl
+cp lib/LaTeXML/resources/RelaxNG/svg/svg11.rnc blib/lib/LaTeXML/resources/RelaxNG/svg/svg11.rnc
+cp lib/LaTeXML/resources/XSLT/LaTeXML-meta-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-meta-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-bib-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-bib-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-math-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-math-xhtml.xsl
+cp lib/LaTeXML/resources/XSLT/LaTeXML-tei.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-tei.xsl
+cp lib/LaTeXML/texmf/latexml.sty blib/lib/LaTeXML/texmf/latexml.sty
+cp lib/LaTeXML/resources/XSLT/LaTeXML-xhtml.xsl blib/lib/LaTeXML/resources/XSLT/LaTeXML-xhtml.xsl
+cp lib/LaTeXML/texmf/lxRDFa.sty blib/lib/LaTeXML/texmf/lxRDFa.sty
+cp lib/LaTeXML/resources/javascript/LaTeXML-maybeMathjax.js blib/lib/LaTeXML/resources/javascript/LaTeXML-maybeMathjax.js
+cp bin/latexml blib/script/latexml
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/latexml
+cp bin/latexmlc blib/script/latexmlc
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/latexmlc
+cp bin/latexmlfind blib/script/latexmlfind
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/latexmlfind
+cp bin/latexmlmath blib/script/latexmlmath
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/latexmlmath
+cp bin/latexmlpost blib/script/latexmlpost
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/latexmlpost
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -pe "s@__REVISION__@@"  lib/LaTeXML/Version.in > blib/lib/LaTeXML/Version.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MParse::RecDescent - lib/LaTeXML/MathGrammar LaTeXML::MathGrammar Parse::RecDescent
+precompiling grammar from file 'lib/LaTeXML/MathGrammar'
+to class LaTeXML::MathGrammar in module file 'MathGrammar.pm'
+mv MathGrammar.pm blib/lib/LaTeXML/MathGrammar.pm
+Manifying 5 pod documents
+Manifying 31 pod documents
+Manifying 32 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/pkgconfig m4datadir=/nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/aclocal aclocaldir=/nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/aclocal install
+Manifying 5 pod documents
+Manifying 31 pod documents
+Manifying 32 pod documents
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/LaTeXML.catalog
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/MathParser.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Global.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/MathGrammar.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Version.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Pre/BibTeX.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Pre/BibTeX/Entry.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Graphics.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MakeBibliography.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Scan.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Writer.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/XSLT.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Manifest.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Split.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MathImages.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/LexMath.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/XMath.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/OpenMath.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/PictureImages.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Collector.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MathML.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MakeIndex.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/SVG.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/CrossRef.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/LaTeXImages.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/TeXMath.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/Manifest/Epub.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MathML/Presentation.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MathML/Content.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Post/MathML/Linebreaker.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/MuGlue.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/MuDimension.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Mouth.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Box.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Token.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/List.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Whatsit.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Rewrite.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Pair.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Alignment.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/State.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/KeyVals.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/PairList.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Gullet.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Stomach.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Tokens.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Comment.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Array.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Parameters.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Document.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/KeyVal.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Parameter.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Alignment/Template.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/CharDef.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Register.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Constructor.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Primitive.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Expandable.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Conditional.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Definition/Constructor/Compiler.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Mouth/https.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Mouth/http.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Mouth/file.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Core/Mouth/Binding.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/fragment.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/stex-migration.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/modern.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/standard.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/stex-module.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/stex.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/fragment-xhtml.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/fragment-html.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/Profiles/math.opt
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/javascript/LaTeXML-maybeMathjax.js
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-ulem.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML-epub.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-listings.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-amsart.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-cv.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-report.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML-marginpar.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML-blue.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML-navbar-left.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-book.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-svjour.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML-navbar-right.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-article.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/LaTeXML.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/CSS/ltx-apj.css
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-meta-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-tei.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-block-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-inline-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-jats.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-picture-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-para-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-webpage-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-html5.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-structure-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-common.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-math-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-html4.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-all-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-bib-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-tabular-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-misc-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-xhtml.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/XSLT/LaTeXML-epub3.xsl
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-misc.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-structure.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-math.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-block.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-inline.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-para.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-misc.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML.model
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-inline.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-meta.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-structure.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-block.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-meta.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-common.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-common.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-tabular.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-bib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-para.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-bib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-picture.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-picture.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/LaTeXML-math.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg11.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-filter.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg11-tiny.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-clip.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-style.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-style.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-filter.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-viewport-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-animation.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-script.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-pattern.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-animation.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-cursor.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-gradient.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-conditional.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-marker.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-structure.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-image.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-shape.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-xlink-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-view.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-mask.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-qname.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-marker.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-animevents-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-datatypes.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-cursor.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-profile.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-opacity-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-font.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-graphevents-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-font.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-core-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-gradient.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-script.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-text.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg11-basic.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg11.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-extresources-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-mask.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-structure.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-structure.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-profile.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-hyperlink.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-view.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-text.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-shape.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-filter.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-graphics-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-clip.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-image.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-container-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-basic-graphics-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-font.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-paint-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-extensibility.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-clip.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-text.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-pattern.rnc
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-conditional.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/resources/RelaxNG/svg/svg-docevents-attrib.rng
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/texmf/lxRDFa.sty
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/texmf/latexml.sty
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Config.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Object.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Model.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Font.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Dimension.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Float.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Locator.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Glue.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Number.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Error.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/XML.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Model/RelaxNG.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Model/DTD.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/XML/Parser.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/XML/XSLT.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/XML/XPath.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/XML/RelaxNG.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/Derived.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/cmy.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/cmyk.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/hsb.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/gray.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Common/Color/rgb.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Pack.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/WWW.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Pathname.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Transform.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Geometry.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Test.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Image.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/ObjectDB.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/Radix.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Util/ObjectDB/Entry.pm
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex4_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xkeyval.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/euscript.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ngerman.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aa_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t1enc.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/breakurl.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/deluxetable.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/csquotes.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathpple.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/appendix.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aa.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/textcomp.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/a0size.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/gensymb.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/rotate.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/longtable.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/attachfile.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/units.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/elsart_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/citesort.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsxtra.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/float.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tracefnt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsa.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/upgreek.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/microtype.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/exscale.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aipcheck.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/texvc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/placeins.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lastpage.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ifpdf.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/url.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/TeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/graphics.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsb.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/dsfont.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/natbib.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/floatflt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/blindtext.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/babel.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/twoopt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/wrapfig.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/quantumarticle.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/alltt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/indentfirst.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/stmaryrd.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mn.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fancyheadings.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/epsfig.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex3_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ntheorem.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/chngcntr.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathrsfs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/nicefrac.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/eurosym.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/elsart.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathptmx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/gen-m-l.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/emulateapj5.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cite.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ccfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/eulervm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/multicol.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fontenc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/OmniBus.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/multido.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subfloat.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/elsart.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/thmtools.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/concmath.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsppt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fancyhdr.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subfigure.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/iopart_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ot4.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cp852.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/acmart.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/inst_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algmatlab.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/footmisc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/wasysym.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t1.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lscape.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lineno.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/llncs.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xargs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ams_core.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathbbol.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/csquotes.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/llamapun.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/times.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/undertilde.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/rotating.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fourier.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathtools.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/elsarticle.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amstex.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/book.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xkvview.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/eucal.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/eufrak.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsbsy.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cases.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xcolor.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/nopageno.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/svg.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/listings.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/siunitx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/palatino.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/latexml.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algpascal.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/color.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/calrsfs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/bbm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fullpage.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/relsize.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/varwidth.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/titlesec.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/listingsutf8.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cleveref.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fontspec.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pst-node.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/article.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/chapterbib.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aecompl.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/gen-p-l.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ly1.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/report.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pgfsys-latexml.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/doublespace.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/etoolbox.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pgfmath.code.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/bbold.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pzd.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tocbibind.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aas_macros.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/upref.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/psfig.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ulem.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex4-1.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsopn.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/psfig.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsrefs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/showkeys.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fleqn.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/jheppub.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/helvet.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/flowchart.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsgen.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cancel.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/soul.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/hyperxmp.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/PoS.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subcaption.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/sidecap.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/sv_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algorithm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pxfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ellipsis.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/nameref.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/newtxmath.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/emulateapj.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/epsf.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/utopia.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/array.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/graphicx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathpazo.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/iopart.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/bookman.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ragged2e.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsbook.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pspicture.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/vmargin.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/moderncv.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lmodern.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/authblk.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/euler.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aaspp.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aasms.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/wiki.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pifont.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ifvtex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lxRDFa.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/balance.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/charter.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pstricks.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cropmark.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lipsum.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/german.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/enumerate.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/beton.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/french.ldf.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/iopams.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tikz-3dplot.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/crop.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsthm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/BibTeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algorithmic.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/titling.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/flushend.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/newfloat.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/stfloats.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/avant.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex4.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tablefootnote.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/esint.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/floatpag.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/epstopdf.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/circuitikz.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amssymb.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/newtxtext.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/hyperref.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/dcolumn.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subfiles.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pgfplots.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/JHEP2.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/chancery.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/multirow.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revsymb.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/colordvi.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pdfpages.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/svjour.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/todonotes.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/etex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subfiles.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/here.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/epigraph.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex4.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/makeidx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/scalefnt.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/slides.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/eTeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tikz.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/JHEP.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsart.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/html.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/afterpage.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fix-cm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algpseudocode.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/verbatim.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mn2e.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/supertabular.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ifluatex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/threeparttable.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pdfTeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/svmult.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/emulateapj.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mnras.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algorithmicx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/apjfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/LaTeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/subfig.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/frenchb.ldf.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/makecell.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/braket.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/keyval.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/textcase.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pgf.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/latexsym.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/theorem.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ts1.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/caption.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algorithm2e.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/lgr.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/cmbright.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/setspace.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pst-grad.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/hhline.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsmath.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/bm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/parskip.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pgfkeys.code.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/svjour3.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/fixltx2e.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aas_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/underscore.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/luximono.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/numprint.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ams_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/enumitem.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/epsf.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathdots.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/courier.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t2b.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/a4.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/transparent.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ifxetex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/babel.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aastex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/empheq.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/geometry.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/a4wide.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/accents.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/acronym.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amscd.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/applemac.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/utf8x.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amsproc.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amstext.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/revtex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/varioref.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pslatex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/turing.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/gen-j-l.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/calc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/newlfont.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pdfsync.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tabulary.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ifthen.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tcilatex.tex.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aipproc.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/slashed.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/preview.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ieeeconf.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/floatfig.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t2c.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/sectsty.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/aastex.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/thm-restate.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/ae.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/latin10.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/paralist.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/a0poster.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/footnote.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/IEEEtran.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/booktabs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xspace.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/amstex.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t2a.fontmap.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/flafter.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/framed.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/srcltx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/marvosym.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/utf8.def.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/newcent.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/grffile.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mleftright.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/endnotes.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mathptm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/yfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/bibunits.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/xunicode.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/type1cm.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/colortbl.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/tabularx.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/inputenc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/import.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/txfonts.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/comment.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/rsfs.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/icml.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/icml_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/mn2e_support.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/AmSTeX.pool.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/JHEP3.cls.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/remreset.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/pdflscape.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/algcompatible.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/site_perl/5.32.0/LaTeXML/Package/t1enc.sty.ltxml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man1/latexmlmath.1
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man1/latexmlc.1
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man1/latexmlfind.1
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man1/latexmlpost.1
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man1/latexml.1
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::MuGlue.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Util::Pack.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Glue.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Object.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::Expandable.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Package.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Util::Pathname.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::Constructor.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::State.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Parameter.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Font.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Alignment.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::hsb.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Document.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::List.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::MuDimension.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::Conditional.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Whatsit.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Pair.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Model::RelaxNG.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Util::WWW.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::KeyVal.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::cmy.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Array.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Token.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::PairList.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Config.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Pre::BibTeX.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Tokens.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Mouth::file.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::CharDef.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Mouth.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Post::MathML.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::rgb.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::Primitive.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Model.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Rewrite.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Error.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Global.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Mouth::https.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::KeyVals.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Parameters.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Mouth::http.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Model::DTD.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Gullet.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Definition::Register.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Stomach.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::MathParser.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Comment.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Mouth::Binding.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Float.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Dimension.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::gray.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Core::Box.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Number.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Post.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::Derived.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Locator.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3/LaTeXML::Common::Color::cmyk.3
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexml
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlfind
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlmath
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlpost
+Installing /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlc
+Appending installation info to /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+shortenPerlShebang: rewriting shebang line in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexml
+shortenPerlShebang: rewriting shebang line in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlc
+shortenPerlShebang: rewriting shebang line in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlfind
+shortenPerlShebang: rewriting shebang line in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlmath
+shortenPerlShebang: rewriting shebang line in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin/latexmlpost
+post-installation fixup
+Moving /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/man3 to /nix/store/qcps5w29a4m61in43xdxyg9cb0zlnvvj-perl5.32.0-LaTeXML-0.8.4-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4
+gzipping man pages under /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/lib  /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4/bin
+patching script interpreter paths in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4
+checking for references to /build/ in /nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qcps5w29a4m61in43xdxyg9cb0zlnvvj-perl5.32.0-LaTeXML-0.8.4-devdoc
+gzipping man pages under /nix/store/qcps5w29a4m61in43xdxyg9cb0zlnvvj-perl5.32.0-LaTeXML-0.8.4-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qcps5w29a4m61in43xdxyg9cb0zlnvvj-perl5.32.0-LaTeXML-0.8.4-devdoc
+checking for references to /build/ in /nix/store/qcps5w29a4m61in43xdxyg9cb0zlnvvj-perl5.32.0-LaTeXML-0.8.4-devdoc...
+/nix/store/xgmp562z961591i5apk97nlj84hgz635-perl5.32.0-LaTeXML-0.8.4

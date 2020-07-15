@@ -1,0 +1,109 @@
+these derivations will be built:
+  /nix/store/i4g0prnl3fhg9s01gxacm0xrbjq8d5sq-perl5.32.0-Test-Assertions-1.054.drv
+  /nix/store/wd6gxabrvhvh0nbl4llp24h35m375g8v-perl5.32.0-Hash-Flatten-1.19.drv
+building '/nix/store/i4g0prnl3fhg9s01gxacm0xrbjq8d5sq-perl5.32.0-Test-Assertions-1.054.drv'...
+unpacking sources
+unpacking source archive /nix/store/v93g89zdc6bh1ndisvpbrn7q74qzj516-Test-Assertions-1.054.tar.gz
+source root is Test-Assertions-1.054
+setting SOURCE_DATE_EPOCH to timestamp 1155227850 of file Test-Assertions-1.054/META.yml
+patching sources
+configuring
+patching ./t/Test-Assertion_style.pl...
+patching ./t/pod_coverage.t...
+patching ./t/Test-Assertions-TestScript.t...
+patching ./t/Test-Assertions.t...
+patching ./t/fails.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Assertions
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Assertions/Manual.pod blib/lib/Test/Assertions/Manual.pod
+cp lib/Test/Assertions/TestScript.pm blib/lib/Test/Assertions/TestScript.pm
+cp lib/Test/Assertions.pm blib/lib/Test/Assertions.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/pod.t ......................... skipped: Test::Pod 1.00 required for testing POD
+t/pod_coverage.t ................ skipped: Test::Pod::Coverage 1.00 required for testing POD Coverage
+t/Test-Assertions-TestScript.t .. ok
+t/Test-Assertions.t ............. ok
+All tests successful.
+Files=4, Tests=59,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.05 csys =  0.32 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib/pkgconfig m4datadir=/nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/aclocal aclocaldir=/nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib/perl5/site_perl/5.32.0/Test/Assertions.pm
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib/perl5/site_perl/5.32.0/Test/Assertions/Manual.pod
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib/perl5/site_perl/5.32.0/Test/Assertions/TestScript.pm
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/man/man3/Test::Assertions::TestScript.3
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/man/man3/Test::Assertions.3
+Installing /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/man/man3/Test::Assertions::Manual.3
+Appending installation info to /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/man/man3 to /nix/store/99isghs19s4f6irdp3zslh2cv4hmfhc1-perl5.32.0-Test-Assertions-1.054-devdoc/share/man/man3
+Removing empty /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054/lib
+patching script interpreter paths in /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054
+checking for references to /build/ in /nix/store/1k2x1mgghsrc243nmpl8vkkvajdrhkw4-perl5.32.0-Test-Assertions-1.054...
+shrinking RPATHs of ELF executables and libraries in /nix/store/99isghs19s4f6irdp3zslh2cv4hmfhc1-perl5.32.0-Test-Assertions-1.054-devdoc
+gzipping man pages under /nix/store/99isghs19s4f6irdp3zslh2cv4hmfhc1-perl5.32.0-Test-Assertions-1.054-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/99isghs19s4f6irdp3zslh2cv4hmfhc1-perl5.32.0-Test-Assertions-1.054-devdoc
+checking for references to /build/ in /nix/store/99isghs19s4f6irdp3zslh2cv4hmfhc1-perl5.32.0-Test-Assertions-1.054-devdoc...
+building '/nix/store/wd6gxabrvhvh0nbl4llp24h35m375g8v-perl5.32.0-Hash-Flatten-1.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/kf5xj4pgv5ri9jafh41gllp78vxjrp6c-Hash-Flatten-1.19.tar.gz
+source root is Hash-Flatten-1.19
+setting SOURCE_DATE_EPOCH to timestamp 1285338374 of file Hash-Flatten-1.19/META.yml
+patching sources
+configuring
+patching ./t/overload.t...
+patching ./t/hash_flatten.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Hash::Flatten
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Hash/Flatten.pm blib/lib/Hash/Flatten.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/hash_flatten.t .. ok
+t/overload.t ...... ok
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/pod_coverage.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD Coverage
+All tests successful.
+Files=4, Tests=38,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.21 cusr  0.07 csys =  0.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/lib/pkgconfig m4datadir=/nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/share/aclocal aclocaldir=/nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/lib/perl5/site_perl/5.32.0/Hash/Flatten.pm
+Installing /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/share/man/man3/Hash::Flatten.3
+Appending installation info to /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/share/man/man3 to /nix/store/6dc966l11yycd3x8v07mq5civlzvabfn-perl5.32.0-Hash-Flatten-1.19-devdoc/share/man/man3
+Removing empty /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19/lib
+patching script interpreter paths in /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19
+checking for references to /build/ in /nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6dc966l11yycd3x8v07mq5civlzvabfn-perl5.32.0-Hash-Flatten-1.19-devdoc
+gzipping man pages under /nix/store/6dc966l11yycd3x8v07mq5civlzvabfn-perl5.32.0-Hash-Flatten-1.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6dc966l11yycd3x8v07mq5civlzvabfn-perl5.32.0-Hash-Flatten-1.19-devdoc
+checking for references to /build/ in /nix/store/6dc966l11yycd3x8v07mq5civlzvabfn-perl5.32.0-Hash-Flatten-1.19-devdoc...
+/nix/store/mh2awa4vh7skj4wdww5lx869zwq0ymw7-perl5.32.0-Hash-Flatten-1.19

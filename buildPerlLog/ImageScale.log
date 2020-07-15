@@ -1,0 +1,99 @@
+these derivations will be built:
+  /nix/store/ydq4hppvyy76yl1dzwpmwwinxppg78hw-perl5.32.0-Image-Scale-0.14.drv
+building '/nix/store/ydq4hppvyy76yl1dzwpmwwinxppg78hw-perl5.32.0-Image-Scale-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/v5jjlhs8lvq0k5rjbrbghvkzynr9847f-Image-Scale-0.14.tar.gz
+source root is Image-Scale-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1511837962 of file Image-Scale-0.14/MANIFEST
+patching sources
+configuring
+patching ./tools/bench.pl...
+patching ./tools/scan.pl...
+
+Image::Scale will be built with:
+
+  JPEG support:     yes (/nix/store/n79ni05lsfdg7k2bq382xxn134grncn0-libjpeg-turbo-2.0.4-dev/include, libjpeg version 62)
+  PNG support:      yes (/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/include, libpng version 1.6.37)
+  GIF support:      no, install giflib v4.1 or higher
+
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lz
+Generating a Unix-style Makefile
+Writing Makefile for Image::Scale
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Image/Scale.pm blib/lib/Image/Scale.pm
+Running Mkbootstrap for Scale ()
+chmod 644 "Scale.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scale.bs blib/arch/auto/Image/Scale/Scale.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Image-Scale-0.14/typemap'  Scale.xs > Scale.xsc
+mv Scale.xsc Scale.c
+cc -c  -I. -I.. -Isrc -Iinclude -I/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/include -I/nix/store/n79ni05lsfdg7k2bq382xxn134grncn0-libjpeg-turbo-2.0.4-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.14\" -DXS_VERSION=\"0.14\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -O2 -Wall -Wno-unused-value -Wno-format-security -Winline -ffast-math -DHAVE_JPEG -DJPEG_VERSION=62 -DHAVE_PNG -DPNG_VERSION=1.6.37 Scale.c
+In file included from src/image.c:20,
+                 from Scale.xs:18:
+src/bmp.c: In function 'image_bmp_read_header':
+src/bmp.c:25:7: warning: variable 'offset' set but not used [-Wunused-but-set-variable]
+   25 |   int offset, palette_colors;
+      |       ^~~~~~
+Scale.c: In function 'XS_Image__Scale___cleanup':
+Scale.c:702:7: warning: variable 'self' set but not used [-Wunused-but-set-variable]
+  702 |  HV * self;
+      |       ^~~~
+rm -f blib/arch/auto/Image/Scale/Scale.so
+LD_RUN_PATH="/nix/store/lzg2wfh9763ab9qq369bhwk9md30ww6m-libjpeg-turbo-2.0.4/lib:/nix/store/cafyrqpsal8ilbsspzylimmpr1crw7cw-libpng-apng-1.6.37/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Scale.o  -o blib/arch/auto/Image/Scale/Scale.so  \
+   -L/nix/store/cafyrqpsal8ilbsspzylimmpr1crw7cw-libpng-apng-1.6.37/lib -L/nix/store/lzg2wfh9763ab9qq369bhwk9md30ww6m-libjpeg-turbo-2.0.4/lib -ljpeg -lpng   \
+
+chmod 755 blib/arch/auto/Image/Scale/Scale.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scale.bs blib/arch/auto/Image/Scale/Scale.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02pod.t .......... skipped: Test::Pod 1.14 required
+t/03podcoverage.t .. skipped: Test::Pod::Coverage 1.04 required
+t/04critic.t ....... skipped: Critic test only for developers.
+t/bmp.t ............ ok
+t/gif.t ............ skipped: Image::Scale not built with giflib support
+t/jpeg.t ........... 1/117 # libjpeg version: 62
+t/jpeg.t ........... ok
+t/png.t ............ 1/46 # libpng version: 1.6.37
+t/png.t ............ ok
+t/stringify.t ...... skipped: Path::Tiny not installed
+All tests successful.
+Files=9, Tests=194,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.54 cusr  0.11 csys =  0.71 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib/pkgconfig m4datadir=/nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/share/aclocal aclocaldir=/nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scale.bs blib/arch/auto/Image/Scale/Scale.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Image/Scale/Scale.so
+Installing /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Image/Scale.pm
+Installing /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/share/man/man3/Image::Scale.3
+Appending installation info to /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/share/man/man3 to /nix/store/dq8hr58hpflnbpspl3ha7lxcxw9bc2wk-perl5.32.0-Image-Scale-0.14-devdoc/share/man/man3
+Removing empty /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14
+shrinking /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Image/Scale/Scale.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14/lib
+patching script interpreter paths in /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14
+checking for references to /build/ in /nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dq8hr58hpflnbpspl3ha7lxcxw9bc2wk-perl5.32.0-Image-Scale-0.14-devdoc
+gzipping man pages under /nix/store/dq8hr58hpflnbpspl3ha7lxcxw9bc2wk-perl5.32.0-Image-Scale-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dq8hr58hpflnbpspl3ha7lxcxw9bc2wk-perl5.32.0-Image-Scale-0.14-devdoc
+checking for references to /build/ in /nix/store/dq8hr58hpflnbpspl3ha7lxcxw9bc2wk-perl5.32.0-Image-Scale-0.14-devdoc...
+/nix/store/7dp6qzpihjr2nzvxj1fqqqmpzyvvr46r-perl5.32.0-Image-Scale-0.14

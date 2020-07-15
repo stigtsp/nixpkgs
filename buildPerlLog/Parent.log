@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/j9jbzlak2v4l6l67qdj6ny33fbyxxf8s-perl5.32.0-parent-0.238.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/iixk0blcgsnx5qd4nykj97s6x2kzqvdz-parent-0.238.tar.gz
+copying path '/nix/store/iixk0blcgsnx5qd4nykj97s6x2kzqvdz-parent-0.238.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j9jbzlak2v4l6l67qdj6ny33fbyxxf8s-perl5.32.0-parent-0.238.drv'...
+unpacking sources
+unpacking source archive /nix/store/iixk0blcgsnx5qd4nykj97s6x2kzqvdz-parent-0.238.tar.gz
+source root is parent-0.238
+setting SOURCE_DATE_EPOCH to timestamp 1581061393 of file parent-0.238/META.yml
+patching sources
+configuring
+patching ./xt/99-changes.t...
+patching ./xt/99-compile.t...
+patching ./xt/99-versions.t...
+patching ./t/parent-classfromfile.t...
+patching ./t/parent-classfromclassfile.t...
+patching ./t/parent-pmc.t...
+patching ./t/parent-returns-false.t...
+patching ./t/rt62341.t.disabled...
+patching ./t/compile-time-file.t...
+patching ./t/parent.t...
+patching ./t/compile-time.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for parent
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/parent.pm blib/lib/parent.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/compile-time-file.t .......... ok
+t/compile-time.t ............... ok
+t/parent-classfromclassfile.t .. ok
+t/parent-classfromfile.t ....... ok
+t/parent-pmc.t ................. ok
+t/parent-returns-false.t ....... ok
+t/parent.t ..................... ok
+All tests successful.
+Files=7, Tests=33,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.32 cusr  0.06 csys =  0.42 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/lib/pkgconfig m4datadir=/nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/share/aclocal aclocaldir=/nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/lib/perl5/site_perl/5.32.0/parent.pm
+Installing /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/share/man/man3/parent.3
+Appending installation info to /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/share/man/man3 to /nix/store/x8bqrzvsg4xlqr4kjcf2wa37pll9gxxw-perl5.32.0-parent-0.238-devdoc/share/man/man3
+Removing empty /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238/lib
+patching script interpreter paths in /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238
+checking for references to /build/ in /nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x8bqrzvsg4xlqr4kjcf2wa37pll9gxxw-perl5.32.0-parent-0.238-devdoc
+gzipping man pages under /nix/store/x8bqrzvsg4xlqr4kjcf2wa37pll9gxxw-perl5.32.0-parent-0.238-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x8bqrzvsg4xlqr4kjcf2wa37pll9gxxw-perl5.32.0-parent-0.238-devdoc
+checking for references to /build/ in /nix/store/x8bqrzvsg4xlqr4kjcf2wa37pll9gxxw-perl5.32.0-parent-0.238-devdoc...
+/nix/store/flm52k7wbggr84xlrdnmpxvkq245q3dv-perl5.32.0-parent-0.238

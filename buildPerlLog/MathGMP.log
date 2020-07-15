@@ -1,0 +1,88 @@
+these derivations will be built:
+  /nix/store/lr0myw6nwqjc8f3qn4mx45arwywf6a1q-perl5.32.0-Math-GMP-2.20.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/yjyk95bqv9gpp0wfrww5rfy70kb50s2x-Math-GMP-2.20.tar.gz
+copying path '/nix/store/yjyk95bqv9gpp0wfrww5rfy70kb50s2x-Math-GMP-2.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lr0myw6nwqjc8f3qn4mx45arwywf6a1q-perl5.32.0-Math-GMP-2.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/yjyk95bqv9gpp0wfrww5rfy70kb50s2x-Math-GMP-2.20.tar.gz
+source root is Math-GMP-2.20
+setting SOURCE_DATE_EPOCH to timestamp 1581275322 of file Math-GMP-2.20/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./xt/99_yaml.t...
+patching ./xt/release/trailing-space.t...
+patching ./xt/99_spellcheck.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/01_gmppm.t...
+patching ./t/check-funcs-ret-value--rt92593.t...
+patching ./t/02_init_from_float.t...
+patching ./t/test-use-constant.t...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lgmp
+Generating a Unix-style Makefile
+Writing Makefile for Math::GMP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/GMP.pm blib/lib/Math/GMP.pm
+AutoSplitting blib/lib/Math/GMP.pm (blib/lib/auto/Math/GMP)
+Running Mkbootstrap for GMP ()
+chmod 644 "GMP.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GMP.bs blib/arch/auto/Math/GMP/GMP.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Math-GMP-2.20/typemap'  GMP.xs > GMP.xsc
+mv GMP.xsc GMP.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.20\" -DXS_VERSION=\"2.20\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   GMP.c
+rm -f blib/arch/auto/Math/GMP/GMP.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  GMP.o  -o blib/arch/auto/Math/GMP/GMP.so  \
+      \
+
+chmod 755 blib/arch/auto/Math/GMP/GMP.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GMP.bs blib/arch/auto/Math/GMP/GMP.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ...................... ok
+t/01_gmppm.t ........................ ok
+t/02_init_from_float.t .............. ok
+t/check-funcs-ret-value--rt92593.t .. ok
+t/test-use-constant.t ............... ok
+All tests successful.
+Files=5, Tests=1024,  0 wallclock secs ( 0.10 usr  0.02 sys +  0.56 cusr  0.21 csys =  0.89 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/pkgconfig m4datadir=/nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/share/aclocal aclocaldir=/nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GMP.bs blib/arch/auto/Math/GMP/GMP.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/GMP/GMP.so
+Installing /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/GMP.pm
+Installing /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/GMP/autosplit.ix
+Installing /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/share/man/man3/Math::GMP.3
+Appending installation info to /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/share/man/man3 to /nix/store/kx0qii581hww9qa5x827y5w4qvgmmcy8-perl5.32.0-Math-GMP-2.20-devdoc/share/man/man3
+Removing empty /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20
+shrinking /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/GMP/GMP.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20/lib
+patching script interpreter paths in /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20
+checking for references to /build/ in /nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kx0qii581hww9qa5x827y5w4qvgmmcy8-perl5.32.0-Math-GMP-2.20-devdoc
+gzipping man pages under /nix/store/kx0qii581hww9qa5x827y5w4qvgmmcy8-perl5.32.0-Math-GMP-2.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kx0qii581hww9qa5x827y5w4qvgmmcy8-perl5.32.0-Math-GMP-2.20-devdoc
+checking for references to /build/ in /nix/store/kx0qii581hww9qa5x827y5w4qvgmmcy8-perl5.32.0-Math-GMP-2.20-devdoc...
+/nix/store/293l5289q1mwyinhim12s6dgdmws6s53-perl5.32.0-Math-GMP-2.20

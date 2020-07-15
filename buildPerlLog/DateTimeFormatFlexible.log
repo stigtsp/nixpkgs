@@ -1,0 +1,108 @@
+these derivations will be built:
+  /nix/store/wixxv6c3l61sq29947v0m8mbbwvzhm9w-perl5.32.0-DateTime-Format-Flexible-0.32.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/z38r9hxksk8a6qg5galsvz7jff0a77yd-DateTime-Format-Flexible-0.32.tar.gz
+copying path '/nix/store/z38r9hxksk8a6qg5galsvz7jff0a77yd-DateTime-Format-Flexible-0.32.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wixxv6c3l61sq29947v0m8mbbwvzhm9w-perl5.32.0-DateTime-Format-Flexible-0.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/z38r9hxksk8a6qg5galsvz7jff0a77yd-DateTime-Format-Flexible-0.32.tar.gz
+source root is DateTime-Format-Flexible-0.32
+setting SOURCE_DATE_EPOCH to timestamp 1568454278 of file DateTime-Format-Flexible-0.32/META.yml
+patching sources
+configuring
+patching ./example/parse_date.pl...
+patching ./t/time.t...
+patching ./t/base.t...
+patching ./t/parsing.t...
+patching ./t/invalid.t...
+patching ./t/no_year.t...
+patching ./t/nanoseconds.t...
+patching ./t/lang-es.t...
+patching ./t/002_pod.t...
+patching ./t/strings.t...
+patching ./t/pick_year.t...
+patching ./t/timezones.t...
+patching ./t/tz_map.t...
+patching ./t/substr_timezones.t...
+patching ./t/lang-de.t...
+patching ./t/no_year_base.t...
+patching ./t/003_podcoverage.t...
+patching ./t/ddmmyyyy.t...
+patching ./t/alpha_month.t...
+patching ./t/strings_base.t...
+patching ./t/mmyy.t...
+patching ./t/whitespace.t...
+patching ./t/strip.t...
+patching ./t/time_base.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Format::Flexible
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DateTime/Format/Flexible/lang/de.pm blib/lib/DateTime/Format/Flexible/lang/de.pm
+cp lib/DateTime/Format/Flexible/lang/en.pm blib/lib/DateTime/Format/Flexible/lang/en.pm
+cp lib/DateTime/Format/Flexible/lang.pm blib/lib/DateTime/Format/Flexible/lang.pm
+cp lib/DateTime/Format/Flexible/lang/es.pm blib/lib/DateTime/Format/Flexible/lang/es.pm
+cp lib/DateTime/Format/Flexible.pm blib/lib/DateTime/Format/Flexible.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/001_load.t .......... ok
+t/002_pod.t ........... skipped: Test::Pod 1.14 required
+t/003_podcoverage.t ... skipped: Test::Pod::Coverage 1.04 required
+t/alpha_month.t ....... ok
+t/base.t .............. ok
+t/ddmmyyyy.t .......... ok
+t/invalid.t ........... ok
+t/lang-de.t ........... ok
+t/lang-es.t ........... ok
+t/mmyy.t .............. ok
+t/nanoseconds.t ....... ok
+t/no_year.t ........... ok
+t/no_year_base.t ...... ok
+t/parsing.t ........... ok
+t/pick_year.t ......... ok
+t/strings.t ........... ok
+t/strings_base.t ...... ok
+t/strip.t ............. ok
+t/substr_timezones.t .. ok
+t/time.t .............. ok
+t/time_base.t ......... ok
+t/timezones.t ......... ok
+t/tz_map.t ............ ok
+t/whitespace.t ........ ok
+All tests successful.
+Files=24, Tests=9366, 28 wallclock secs ( 1.12 usr  0.13 sys + 23.02 cusr  4.55 csys = 28.82 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/pkgconfig m4datadir=/nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/aclocal aclocaldir=/nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/site_perl/5.32.0/DateTime/Format/Flexible.pm
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/site_perl/5.32.0/DateTime/Format/Flexible/lang.pm
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/site_perl/5.32.0/DateTime/Format/Flexible/lang/es.pm
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/site_perl/5.32.0/DateTime/Format/Flexible/lang/en.pm
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/site_perl/5.32.0/DateTime/Format/Flexible/lang/de.pm
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3/DateTime::Format::Flexible::lang::en.3
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3/DateTime::Format::Flexible::lang::de.3
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3/DateTime::Format::Flexible::lang.3
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3/DateTime::Format::Flexible::lang::es.3
+Installing /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3/DateTime::Format::Flexible.3
+Appending installation info to /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/man3 to /nix/store/jnk1xqqp5b1xd7sg8d6qyj8vksjrfi25-perl5.32.0-DateTime-Format-Flexible-0.32-devdoc/share/man/man3
+Removing empty /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32/lib
+patching script interpreter paths in /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32
+checking for references to /build/ in /nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jnk1xqqp5b1xd7sg8d6qyj8vksjrfi25-perl5.32.0-DateTime-Format-Flexible-0.32-devdoc
+gzipping man pages under /nix/store/jnk1xqqp5b1xd7sg8d6qyj8vksjrfi25-perl5.32.0-DateTime-Format-Flexible-0.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jnk1xqqp5b1xd7sg8d6qyj8vksjrfi25-perl5.32.0-DateTime-Format-Flexible-0.32-devdoc
+checking for references to /build/ in /nix/store/jnk1xqqp5b1xd7sg8d6qyj8vksjrfi25-perl5.32.0-DateTime-Format-Flexible-0.32-devdoc...
+/nix/store/r3qfsqkbla6k9g6n86sa73dpw0ck5kf8-perl5.32.0-DateTime-Format-Flexible-0.32

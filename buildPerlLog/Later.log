@@ -1,0 +1,62 @@
+these derivations will be built:
+  /nix/store/cpy3dzy20a248p66h03x2x8jpmjxznd4-perl5.32.0-Object-Realize-Later-0.21.drv
+building '/nix/store/cpy3dzy20a248p66h03x2x8jpmjxznd4-perl5.32.0-Object-Realize-Later-0.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/i8hn87vhggz85lxi7d3s13c2x42wp4p7-Object-Realize-Later-0.21.tar.gz
+source root is Object-Realize-Later-0.21
+setting SOURCE_DATE_EPOCH to timestamp 1516784677 of file Object-Realize-Later-0.21/META.yml
+patching sources
+configuring
+patching ./xt/99pod.t...
+patching ./t/10isa.t...
+patching ./t/30realize.t...
+patching ./t/60module.t...
+patching ./t/20can.t...
+patching ./t/40autoload.t...
+patching ./t/41autoload.t...
+patching ./t/50again.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Object::Realize::Later
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Object/Realize/Later.pod blib/lib/Object/Realize/Later.pod
+cp lib/Object/Realize/Later.pm blib/lib/Object/Realize/Later.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10isa.t ....... ok
+t/20can.t ....... ok
+t/30realize.t ... ok
+t/40autoload.t .. ok
+t/41autoload.t .. ok
+t/50again.t ..... ok
+t/60module.t .... ok
+All tests successful.
+Files=7, Tests=109,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.15 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/lib/pkgconfig m4datadir=/nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/share/aclocal aclocaldir=/nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/lib/perl5/site_perl/5.32.0/Object/Realize/Later.pod
+Installing /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/lib/perl5/site_perl/5.32.0/Object/Realize/Later.pm
+Installing /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/share/man/man3/Object::Realize::Later.3
+Appending installation info to /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/share/man/man3 to /nix/store/yl4r04jzfhqksyrvwidsc0l6z90icfrp-perl5.32.0-Object-Realize-Later-0.21-devdoc/share/man/man3
+Removing empty /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21/lib
+patching script interpreter paths in /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21
+checking for references to /build/ in /nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yl4r04jzfhqksyrvwidsc0l6z90icfrp-perl5.32.0-Object-Realize-Later-0.21-devdoc
+gzipping man pages under /nix/store/yl4r04jzfhqksyrvwidsc0l6z90icfrp-perl5.32.0-Object-Realize-Later-0.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yl4r04jzfhqksyrvwidsc0l6z90icfrp-perl5.32.0-Object-Realize-Later-0.21-devdoc
+checking for references to /build/ in /nix/store/yl4r04jzfhqksyrvwidsc0l6z90icfrp-perl5.32.0-Object-Realize-Later-0.21-devdoc...
+/nix/store/6p5f179flp70qya032nn7w83rkxyff9l-perl5.32.0-Object-Realize-Later-0.21

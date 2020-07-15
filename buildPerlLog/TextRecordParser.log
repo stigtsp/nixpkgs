@@ -1,0 +1,83 @@
+these derivations will be built:
+  /nix/store/vbi762w468ssbz51a4waxm6y3lfwwbd6-perl5.32.0-Text-RecordParser-1.6.5.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/kwarrrzlwpcaghy73f7lbjh8b3jcf91w-Text-RecordParser-1.6.5.tar.gz
+copying path '/nix/store/kwarrrzlwpcaghy73f7lbjh8b3jcf91w-Text-RecordParser-1.6.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vbi762w468ssbz51a4waxm6y3lfwwbd6-perl5.32.0-Text-RecordParser-1.6.5.drv'...
+unpacking sources
+unpacking source archive /nix/store/kwarrrzlwpcaghy73f7lbjh8b3jcf91w-Text-RecordParser-1.6.5.tar.gz
+source root is Text-RecordParser-1.6.5
+setting SOURCE_DATE_EPOCH to timestamp 1429646352 of file Text-RecordParser-1.6.5/Changes
+patching sources
+configuring
+patching ./t/00-pipe.t...
+patching ./t/pod-coverage.t...
+patching ./t/04-bind.t...
+patching ./t/05-fetch.t...
+patching ./t/10-tablify.t...
+patching ./t/08-compute.t...
+patching ./t/02-filename-fh.t...
+patching ./t/pod.t...
+patching ./t/06-filter.t...
+patching ./t/12-object.t...
+patching ./t/01-new.t...
+patching ./t/03-separator.t...
+patching ./t/07-parse.t...
+patching ./t/09-comment.t...
+patching ./t/14-trim.t...
+patching ./t/11-tabmerge.t...
+patching ./t/13-tab2graph.t...
+patching ./bin/tab2graph...
+patching ./bin/tabmerge...
+patching ./bin/tablify...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::RecordParser
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/RecordParser/Tab.pm blib/lib/Text/RecordParser/Tab.pm
+cp lib/Text/RecordParser.pm blib/lib/Text/RecordParser.pm
+cp lib/Text/RecordParser/Object.pm blib/lib/Text/RecordParser/Object.pm
+cp bin/tab2graph blib/script/tab2graph
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tab2graph
+cp bin/tablify blib/script/tablify
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tablify
+cp bin/tabmerge blib/script/tabmerge
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tabmerge
+Manifying 3 pod documents
+Manifying 3 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib/pkgconfig m4datadir=/nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/aclocal aclocaldir=/nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/aclocal install
+Manifying 3 pod documents
+Manifying 3 pod documents
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib/perl5/site_perl/5.32.0/Text/RecordParser.pm
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib/perl5/site_perl/5.32.0/Text/RecordParser/Object.pm
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib/perl5/site_perl/5.32.0/Text/RecordParser/Tab.pm
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man1/tab2graph.1
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man1/tablify.1
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man1/tabmerge.1
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man3/Text::RecordParser::Tab.3
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man3/Text::RecordParser::Object.3
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man3/Text::RecordParser.3
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/bin/tab2graph
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/bin/tabmerge
+Installing /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/bin/tablify
+Appending installation info to /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/man3 to /nix/store/bd6y9hsn6dxm9v36q2rp3r7wphgxvy29-perl5.32.0-Text-RecordParser-1.6.5-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5
+gzipping man pages under /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/lib  /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5/bin
+patching script interpreter paths in /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5
+checking for references to /build/ in /nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bd6y9hsn6dxm9v36q2rp3r7wphgxvy29-perl5.32.0-Text-RecordParser-1.6.5-devdoc
+gzipping man pages under /nix/store/bd6y9hsn6dxm9v36q2rp3r7wphgxvy29-perl5.32.0-Text-RecordParser-1.6.5-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bd6y9hsn6dxm9v36q2rp3r7wphgxvy29-perl5.32.0-Text-RecordParser-1.6.5-devdoc
+checking for references to /build/ in /nix/store/bd6y9hsn6dxm9v36q2rp3r7wphgxvy29-perl5.32.0-Text-RecordParser-1.6.5-devdoc...
+/nix/store/2w6znsc06f2gpy2dwy80sjpg7v03dn10-perl5.32.0-Text-RecordParser-1.6.5

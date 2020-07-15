@@ -1,0 +1,96 @@
+these derivations will be built:
+  /nix/store/38rjp5pkawjddx3rlb6yky8b4zfy7y9k-perl5.32.0-Text-Roman-3.5.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/fq2przb5lkxyqq70dj0r117parkqffqa-Text-Roman-3.5.tar.gz
+copying path '/nix/store/fq2przb5lkxyqq70dj0r117parkqffqa-Text-Roman-3.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/38rjp5pkawjddx3rlb6yky8b4zfy7y9k-perl5.32.0-Text-Roman-3.5.drv'...
+unpacking sources
+unpacking source archive /nix/store/fq2przb5lkxyqq70dj0r117parkqffqa-Text-Roman-3.5.tar.gz
+source root is Text-Roman-3.5
+setting SOURCE_DATE_EPOCH to timestamp 1359396836 of file Text-Roman-3.5/weaver.ini
+patching sources
+configuring
+patching ./t/00-compile.t...
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/release-mojibake.t...
+patching ./t/10-simple.t...
+patching ./t/release-kwalitee.t...
+patching ./t/11-void.t...
+patching ./t/release-synopsis.t...
+patching ./t/15-aliased.t...
+patching ./t/release-portability.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/05-ecalder.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/00-load.t...
+patching ./t/release-minimum-version.t...
+patching ./t/release-pod-linkcheck.t...
+patching ./t/release-distmeta.t...
+patching ./t/release-dist-manifest.t...
+patching ./t/release-pod-coverage.t...
+patching ./t/20-predef.t...
+patching ./eg/unroman.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Roman
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Roman.pm blib/lib/Text/Roman.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............... ok
+t/00-load.t .................. 1/1 # Text::Roman v3.5, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .................. ok
+t/05-ecalder.t ............... ok
+t/10-simple.t ................ ok
+t/11-void.t .................. ok
+t/15-aliased.t ............... ismroman() deprecated, use ismilhar() instead at t/15-aliased.t line 9.
+t/15-aliased.t ............... 1/? mroman2int() deprecated, use milhar2int() instead at t/15-aliased.t line 10.
+roman() deprecated, use int2roman() instead at t/15-aliased.t line 11.
+t/15-aliased.t ............... ok
+t/20-predef.t ................ ok
+t/author-critic.t ............ skipped: these tests are for testing by the author
+t/author-test-eol.t .......... skipped: these tests are for testing by the author
+t/release-cpan-changes.t ..... skipped: these tests are for release candidate testing
+t/release-dist-manifest.t .... skipped: these tests are for release candidate testing
+t/release-distmeta.t ......... skipped: these tests are for release candidate testing
+t/release-kwalitee.t ......... skipped: these tests are for release candidate testing
+t/release-minimum-version.t .. skipped: these tests are for release candidate testing
+t/release-mojibake.t ......... skipped: these tests are for release candidate testing
+t/release-no-tabs.t .......... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t ..... skipped: these tests are for release candidate testing
+t/release-pod-linkcheck.t .... skipped: these tests are for release candidate testing
+t/release-pod-syntax.t ....... skipped: these tests are for release candidate testing
+t/release-portability.t ...... skipped: these tests are for release candidate testing
+t/release-synopsis.t ......... skipped: these tests are for release candidate testing
+t/release-test-version.t ..... skipped: these tests are for release candidate testing
+t/release-unused-vars.t ...... skipped: these tests are for release candidate testing
+All tests successful.
+Files=23, Tests=431,  2 wallclock secs ( 0.09 usr  0.02 sys +  1.76 cusr  0.18 csys =  2.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/lib/pkgconfig m4datadir=/nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/share/aclocal aclocaldir=/nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/lib/perl5/site_perl/5.32.0/Text/Roman.pm
+Installing /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/share/man/man3/Text::Roman.3
+Appending installation info to /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/share/man/man3 to /nix/store/vgykh6r35ds5piqm089hckrs3g5yk4sv-perl5.32.0-Text-Roman-3.5-devdoc/share/man/man3
+Removing empty /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5/lib
+patching script interpreter paths in /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5
+checking for references to /build/ in /nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vgykh6r35ds5piqm089hckrs3g5yk4sv-perl5.32.0-Text-Roman-3.5-devdoc
+gzipping man pages under /nix/store/vgykh6r35ds5piqm089hckrs3g5yk4sv-perl5.32.0-Text-Roman-3.5-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vgykh6r35ds5piqm089hckrs3g5yk4sv-perl5.32.0-Text-Roman-3.5-devdoc
+checking for references to /build/ in /nix/store/vgykh6r35ds5piqm089hckrs3g5yk4sv-perl5.32.0-Text-Roman-3.5-devdoc...
+/nix/store/1ry2hz8md2cwjg5i5l3gzxgwwgmf4cfs-perl5.32.0-Text-Roman-3.5

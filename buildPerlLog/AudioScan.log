@@ -1,0 +1,140 @@
+these derivations will be built:
+  /nix/store/rsyjnlp45xgqdk27gbq6pyc8bdlr7zx2-perl5.32.0-Audio-Scan-1.01.drv
+these paths will be fetched (4.57 MiB download, 4.60 MiB unpacked):
+  /nix/store/5cg248cb981sb7shgqry35vxv8pwqd19-Audio-Scan-1.01.tar.gz
+copying path '/nix/store/5cg248cb981sb7shgqry35vxv8pwqd19-Audio-Scan-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rsyjnlp45xgqdk27gbq6pyc8bdlr7zx2-perl5.32.0-Audio-Scan-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/5cg248cb981sb7shgqry35vxv8pwqd19-Audio-Scan-1.01.tar.gz
+source root is Audio-Scan-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1531192278 of file Audio-Scan-1.01/META.yml
+patching sources
+configuring
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./tools/bench.pl...
+patching ./tools/audio_scan.pl...
+patching ./tools/leak.pl...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lz
+Generating a Unix-style Makefile
+Writing Makefile for Audio::Scan
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Audio/Scan.pm blib/lib/Audio/Scan.pm
+Running Mkbootstrap for Scan ()
+chmod 644 "Scan.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scan.bs blib/arch/auto/Audio/Scan/Scan.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Scan.xs > Scan.xsc
+Please specify prototyping behavior for Scan.xs (see perlxs manual)
+mv Scan.xsc Scan.c
+cc -c  -Iinclude -Isrc -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.01\" -DXS_VERSION=\"1.01\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Scan.c
+In file included from Scan.xs:26:
+src/asf.c: In function '_asf_parse':
+src/asf.c:187:38: warning: format '%llu' expects argument of type 'long long unsigned int', but argument 3 has type 'uint64_t' {aka 'long unsigned int'} [-Wformat=]
+  187 |       PerlIO_printf(PerlIO_stderr(), "size: %llu\n", tmp.size);
+      |                                      ^~~~~~~~~~~~~~  ~~~~~~~~
+      |                                                         |
+      |                                                         uint64_t {aka long unsigned int}
+In file included from Scan.xs:26:
+src/asf.c: In function '_parse_header_extension':
+src/asf.c:702:38: warning: format '%llu' expects argument of type 'long long unsigned int', but argument 3 has type 'uint64_t' {aka 'long unsigned int'} [-Wformat=]
+  702 |       PerlIO_printf(PerlIO_stderr(), "size: %llu\n", hdr_size);
+      |                                      ^~~~~~~~~~~~~~  ~~~~~~~~
+      |                                                      |
+      |                                                      uint64_t {aka long unsigned int}
+src/asf.c: In function '_parse_index_objects':
+src/asf.c:1274:38: warning: format '%llu' expects argument of type 'long long unsigned int', but argument 3 has type 'uint64_t' {aka 'long unsigned int'} [-Wformat=]
+ 1274 |       PerlIO_printf(PerlIO_stderr(), "size: %llu\n", size);
+      |                                      ^~~~~~~~~~~~~~  ~~~~
+      |                                                      |
+      |                                                      uint64_t {aka long unsigned int}
+In file included from Scan.xs:29:
+src/mp4.c: In function 'mp4_find_frame_return_info':
+src/mp4.c:258:36: warning: format '%lld' expects argument of type 'long long int', but argument 4 has type 'uint64_t' {aka 'long unsigned int'} [-Wformat=]
+  258 |     PerlIO_printf(PerlIO_stderr(), "find_frame: file offset out of range (%d > %lld)\n", file_offset, mp4->audio_offset + mp4->audio_size);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                                         |
+      |                                                                                                                         uint64_t {aka long unsigned int}
+Scan.xs: In function '_generate_hash':
+Scan.xs:208:42: warning: format '%llu' expects argument of type 'long long unsigned int', but argument 6 has type 'uint64_t' {aka 'long unsigned int'} [-Wformat=]
+  208 |   snprintf(hashstr, sizeof(hashstr) - 1, "%s%d%llu", file, mtime, size);
+      |                                          ^~~~~~~~~~               ~~~~
+      |                                                                   |
+      |                                                                   uint64_t {aka long unsigned int}
+rm -f blib/arch/auto/Audio/Scan/Scan.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Scan.o  -o blib/arch/auto/Audio/Scan/Scan.so  \
+      \
+
+chmod 755 blib/arch/auto/Audio/Scan/Scan.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scan.bs blib/arch/auto/Audio/Scan/Scan.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02pod.t .......... skipped: Test::Pod 1.14 required
+t/03podcoverage.t .. skipped: Test::Pod::Coverage 1.04 required
+t/04critic.t ....... skipped: Critic test only for developers.
+t/aac.t ............ ok
+t/aiff.t ........... ok
+t/asf.t ............ ok
+t/dsdiff.t ......... ok
+t/dsf.t ............ ok
+t/flac.t ........... ok
+t/mac.t ............ ok
+t/mp3.t ............ ok
+t/mp4.t ............ ok
+t/musepack.t ....... ok
+t/ogg.t ............ ok
+t/opus.t ........... ok
+t/util.t ........... ok
+t/wav.t ............ ok
+t/wavpack.t ........ ok
+All tests successful.
+Files=19, Tests=1202,  2 wallclock secs ( 0.13 usr  0.02 sys +  1.20 cusr  0.27 csys =  1.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib/pkgconfig m4datadir=/nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/share/aclocal aclocaldir=/nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Scan.bs blib/arch/auto/Audio/Scan/Scan.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Audio/Scan/Scan.so
+Installing /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Audio/Scan.pm
+Installing /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/share/man/man3/Audio::Scan.3
+Appending installation info to /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/share/man/man3 to /nix/store/j0if3ba4c3p0rjiajxnswx45fi6s2bxm-perl5.32.0-Audio-Scan-1.01-devdoc/share/man/man3
+Removing empty /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01
+shrinking /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Audio/Scan/Scan.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01/lib
+patching script interpreter paths in /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01
+checking for references to /build/ in /nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j0if3ba4c3p0rjiajxnswx45fi6s2bxm-perl5.32.0-Audio-Scan-1.01-devdoc
+gzipping man pages under /nix/store/j0if3ba4c3p0rjiajxnswx45fi6s2bxm-perl5.32.0-Audio-Scan-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j0if3ba4c3p0rjiajxnswx45fi6s2bxm-perl5.32.0-Audio-Scan-1.01-devdoc
+checking for references to /build/ in /nix/store/j0if3ba4c3p0rjiajxnswx45fi6s2bxm-perl5.32.0-Audio-Scan-1.01-devdoc...
+/nix/store/ga99x7d5lwycjpjhag0hyjsbbna4lqd5-perl5.32.0-Audio-Scan-1.01

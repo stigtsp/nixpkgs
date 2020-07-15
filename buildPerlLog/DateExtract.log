@@ -1,0 +1,199 @@
+these derivations will be built:
+  /nix/store/73rd5hcx50c6gpaq5lnlxck906a87qd0-perl5.32.0-DateTime-Format-Natural-1.09.drv
+  /nix/store/j2c5wb8phsr8ss6k0h9dqwmyw7s8yhin-perl5.32.0-Date-Extract-0.06.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/gygx9s9v2h6z5ikr8fnz5l8992pkhq4a-Date-Extract-0.06.tar.gz
+copying path '/nix/store/gygx9s9v2h6z5ikr8fnz5l8992pkhq4a-Date-Extract-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/73rd5hcx50c6gpaq5lnlxck906a87qd0-perl5.32.0-DateTime-Format-Natural-1.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/gbnrs3jgzamri4hrm118jbm23ipl5qk4-DateTime-Format-Natural-1.09.tar.gz
+source root is DateTime-Format-Natural-1.09
+setting SOURCE_DATE_EPOCH to timestamp 1589728966 of file DateTime-Format-Natural-1.09/t/pod.t
+patching sources
+configuring
+patching ./scripts/dateparse...
+patching ./t/pod-coverage.t...
+patching ./t/12-parse_failure.t...
+patching ./t/01-parse.t...
+patching ./t/15-regression.t...
+patching ./t/03-parse_daytime.t...
+patching ./t/07-parse_datetime.t...
+patching ./t/06-parse_prefer_future.t...
+patching ./t/pod.t...
+patching ./t/18-validate.t...
+patching ./t/09-parse_iso8601.t...
+patching ./t/07-parse_datetime_future.t...
+patching ./t/14-extract_expression.t...
+patching ./t/17-trace.t...
+patching ./t/04-parse_durations.t...
+patching ./t/08-parse_aliases.t...
+patching ./t/00-load.t...
+patching ./t/11-parse_success.t...
+patching ./t/02-parse_format.t...
+patching ./t/05-parse_time_zone.t...
+patching ./t/06-parse_demand_future.t...
+patching ./t/16-state.t...
+patching ./t/13-parse_assert.t...
+patching ./t/10-parse_expand.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Format::Natural
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Date::Calc is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'DateTime-Format-Natural' version '1.09'
+Building DateTime-Format-Natural
+running tests
+t/00-load.t ................... ok
+t/01-parse.t .................. ok
+t/02-parse_format.t ........... ok
+t/03-parse_daytime.t .......... ok
+t/04-parse_durations.t ........ ok
+t/05-parse_time_zone.t ........ ok
+t/06-parse_demand_future.t .... ok
+t/06-parse_prefer_future.t .... ok
+t/07-parse_datetime.t ......... ok
+t/07-parse_datetime_future.t .. ok
+t/08-parse_aliases.t .......... ok
+t/09-parse_iso8601.t .......... ok
+t/10-parse_expand.t ........... ok
+t/11-parse_success.t .......... ok
+t/12-parse_failure.t .......... ok
+t/13-parse_assert.t ........... ok
+t/14-extract_expression.t ..... ok
+t/15-regression.t ............. ok
+t/16-state.t .................. ok
+t/17-trace.t .................. ok
+t/18-validate.t ............... ok
+t/pod-coverage.t .............. skipped: tests for release testing
+t/pod.t ....................... skipped: tests for release testing
+All tests successful.
+Files=23, Tests=5624, 34 wallclock secs ( 0.78 usr  0.10 sys + 29.20 cusr  5.38 csys = 35.46 CPU)
+Result: PASS
+installing
+Building DateTime-Format-Natural
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man1/dateparse.1
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Wrappers.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Extract.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Test.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Rewrite.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Formatted.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Compat.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Expand.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Calc.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Duration.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Helpers.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Utils.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Duration/Checks.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Lang/EN.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib/perl5/site_perl/5.32.0/DateTime/Format/Natural/Lang/Base.pm
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Test.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Extract.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Duration.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Compat.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Lang::EN.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Expand.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Calc.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Helpers.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Rewrite.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Wrappers.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Formatted.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Utils.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3/DateTime::Format::Natural::Lang::Base.3
+Installing /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/bin/dateparse
+post-installation fixup
+Moving /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/man3 to /nix/store/579pwk4cc35parf5r4aqjal69n3klad3-perl5.32.0-DateTime-Format-Natural-1.09-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09
+gzipping man pages under /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/lib  /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09/bin
+patching script interpreter paths in /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09
+checking for references to /build/ in /nix/store/w0fac04wxr7zc0gxn945jm88y6jafy3g-perl5.32.0-DateTime-Format-Natural-1.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/579pwk4cc35parf5r4aqjal69n3klad3-perl5.32.0-DateTime-Format-Natural-1.09-devdoc
+gzipping man pages under /nix/store/579pwk4cc35parf5r4aqjal69n3klad3-perl5.32.0-DateTime-Format-Natural-1.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/579pwk4cc35parf5r4aqjal69n3klad3-perl5.32.0-DateTime-Format-Natural-1.09-devdoc
+checking for references to /build/ in /nix/store/579pwk4cc35parf5r4aqjal69n3klad3-perl5.32.0-DateTime-Format-Natural-1.09-devdoc...
+building '/nix/store/j2c5wb8phsr8ss6k0h9dqwmyw7s8yhin-perl5.32.0-Date-Extract-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/gygx9s9v2h6z5ikr8fnz5l8992pkhq4a-Date-Extract-0.06.tar.gz
+source root is Date-Extract-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1478848176 of file Date-Extract-0.06/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./t/05-format.t...
+patching ./t/03-returns.t...
+patching ./t/10-misc.t...
+patching ./t/02-extract.t...
+patching ./t/01-new.t...
+patching ./t/00-load.t...
+patching ./t/04-formats.t...
+Cannot determine perl version info from lib/Date/Extract.pm
+*** Module::AutoInstall version 1.17
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More                ...loaded. (1.302175)
+- Test::MockTime            ...loaded. (0.17)
+- List::Util                ...loaded. (1.55)
+- Carp                      ...loaded. (1.50)
+- DateTime::Format::Natural ...loaded. (1.09 >= 0.60)
+- parent                    ...loaded. (0.238)
+- Class::Data::Inheritable  ...loaded. (0.08)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Date::Extract
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Date/Extract.pm blib/lib/Date/Extract.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00-load.t t/01-new.t t/02-extract.t t/03-returns.t t/04-formats.t t/05-format.t t/10-misc.t
+t/00-load.t ..... ok
+t/01-new.t ...... ok
+t/02-extract.t .. ok
+t/03-returns.t .. ok
+t/04-formats.t .. ok
+t/05-format.t ... ok
+t/10-misc.t ..... ok
+All tests successful.
+Files=7, Tests=148,  4 wallclock secs ( 0.07 usr  0.03 sys +  2.31 cusr  1.55 csys =  3.96 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/lib/pkgconfig m4datadir=/nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/share/aclocal aclocaldir=/nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/lib/perl5/site_perl/5.32.0/Date/Extract.pm
+Installing /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/share/man/man3/Date::Extract.3
+Appending installation info to /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/share/man/man3 to /nix/store/kysiyfj2bbw295slm5pbwyc1wsrpiqnb-perl5.32.0-Date-Extract-0.06-devdoc/share/man/man3
+Removing empty /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06/lib
+patching script interpreter paths in /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06
+checking for references to /build/ in /nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kysiyfj2bbw295slm5pbwyc1wsrpiqnb-perl5.32.0-Date-Extract-0.06-devdoc
+gzipping man pages under /nix/store/kysiyfj2bbw295slm5pbwyc1wsrpiqnb-perl5.32.0-Date-Extract-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kysiyfj2bbw295slm5pbwyc1wsrpiqnb-perl5.32.0-Date-Extract-0.06-devdoc
+checking for references to /build/ in /nix/store/kysiyfj2bbw295slm5pbwyc1wsrpiqnb-perl5.32.0-Date-Extract-0.06-devdoc...
+/nix/store/w60g59n4h66ngglv9sk8nlhbqyrfhcfb-perl5.32.0-Date-Extract-0.06

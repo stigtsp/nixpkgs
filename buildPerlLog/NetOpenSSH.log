@@ -1,0 +1,100 @@
+these derivations will be built:
+  /nix/store/qq8ry6y050qhs2sj0yx641w3a7sp9w40-perl5.32.0-Net-OpenSSH-0.79.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/xsi98yxkdi84iq0n66gz4zqmmgv38bvw-Net-OpenSSH-0.79.tar.gz
+copying path '/nix/store/xsi98yxkdi84iq0n66gz4zqmmgv38bvw-Net-OpenSSH-0.79.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qq8ry6y050qhs2sj0yx641w3a7sp9w40-perl5.32.0-Net-OpenSSH-0.79.drv'...
+unpacking sources
+unpacking source archive /nix/store/xsi98yxkdi84iq0n66gz4zqmmgv38bvw-Net-OpenSSH-0.79.tar.gz
+source root is Net-OpenSSH-0.79
+setting SOURCE_DATE_EPOCH to timestamp 1588175232 of file Net-OpenSSH-0.79/MANIFEST
+patching sources
+configuring
+patching ./examples/sshfs_mount.pl...
+patching ./examples/change_passwd.pl...
+patching ./examples/autosudo.pl...
+patching ./examples/keep_in_sync.pl...
+patching ./examples/git_ssh_through_mux.pl...
+patching ./examples/net-telnet.pl...
+patching ./examples/git_with_password.pl...
+patching ./examples/expect.pl...
+patching ./examples/login_handler.pl...
+patching ./examples/password_from_data.pl...
+patching ./t/1_run.t...
+patching ./t/quoting.t...
+patching ./t/uri.t...
+No SSH client is available from your PATH!
+Continuing anyway...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::OpenSSH
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/OpenSSH/ObjectRemote.pm blib/lib/Net/OpenSSH/ObjectRemote.pm
+cp lib/Net/OpenSSH/ShellQuoter/Chain.pm blib/lib/Net/OpenSSH/ShellQuoter/Chain.pm
+cp lib/Net/OpenSSH/ConnectionCache.pm blib/lib/Net/OpenSSH/ConnectionCache.pm
+cp lib/Net/OpenSSH/ShellQuoter.pm blib/lib/Net/OpenSSH/ShellQuoter.pm
+cp lib/Net/OpenSSH/ShellQuoter/MSWin.pm blib/lib/Net/OpenSSH/ShellQuoter/MSWin.pm
+cp lib/Net/OpenSSH/ShellQuoter/fish.pm blib/lib/Net/OpenSSH/ShellQuoter/fish.pm
+cp lib/Net/OpenSSH/OSTracer.pm blib/lib/Net/OpenSSH/OSTracer.pm
+cp lib/Net/OpenSSH/ShellQuoter/MSCmd.pm blib/lib/Net/OpenSSH/ShellQuoter/MSCmd.pm
+cp lib/Net/OpenSSH.pm blib/lib/Net/OpenSSH.pm
+cp lib/Net/OpenSSH/ModuleLoader.pm blib/lib/Net/OpenSSH/ModuleLoader.pm
+cp lib/Net/OpenSSH/SSH.pm blib/lib/Net/OpenSSH/SSH.pm
+cp lib/Net/OpenSSH/ShellQuoter/csh.pm blib/lib/Net/OpenSSH/ShellQuoter/csh.pm
+cp lib/Net/OpenSSH/ShellQuoter/POSIX.pm blib/lib/Net/OpenSSH/ShellQuoter/POSIX.pm
+cp lib/Net/OpenSSH/Constants.pm blib/lib/Net/OpenSSH/Constants.pm
+Manifying 7 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1_run.t .... skipped: ps command not found
+t/quoting.t .. # shell is not clean: $?=0, output...
+# Can't exec "/noshell": No such file or directory at t/common.pm line 59.
+t/quoting.t .. skipped: Your shell does unexpected things!
+t/uri.t ...... ok
+All tests successful.
+Files=3, Tests=19,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.18 cusr  0.03 csys =  0.24 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/pkgconfig m4datadir=/nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/aclocal aclocaldir=/nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/aclocal install
+Manifying 7 pod documents
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/SSH.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ObjectRemote.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ConnectionCache.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/OSTracer.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ModuleLoader.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/Constants.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/fish.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/csh.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/MSWin.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/Chain.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/MSCmd.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/site_perl/5.32.0/Net/OpenSSH/ShellQuoter/POSIX.pm
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::ConnectionCache.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::ShellQuoter::MSCmd.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::Constants.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::SSH.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::ShellQuoter::MSWin.3
+Installing /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3/Net::OpenSSH::OSTracer.3
+Appending installation info to /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/man3 to /nix/store/zfa3nrwjyljsrj5c6l7ch8p6n028wgii-perl5.32.0-Net-OpenSSH-0.79-devdoc/share/man/man3
+Removing empty /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79/lib
+patching script interpreter paths in /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79
+checking for references to /build/ in /nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zfa3nrwjyljsrj5c6l7ch8p6n028wgii-perl5.32.0-Net-OpenSSH-0.79-devdoc
+gzipping man pages under /nix/store/zfa3nrwjyljsrj5c6l7ch8p6n028wgii-perl5.32.0-Net-OpenSSH-0.79-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zfa3nrwjyljsrj5c6l7ch8p6n028wgii-perl5.32.0-Net-OpenSSH-0.79-devdoc
+checking for references to /build/ in /nix/store/zfa3nrwjyljsrj5c6l7ch8p6n028wgii-perl5.32.0-Net-OpenSSH-0.79-devdoc...
+/nix/store/ssrvfbz6p0wxwvzbzxb0f789d5laxldq-perl5.32.0-Net-OpenSSH-0.79

@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/65s1qw1z6llmkyjdz88lb1qbh7l1df20-perl5.32.0-HTML-Mason-PSGIHandler-0.53.drv
+building '/nix/store/65s1qw1z6llmkyjdz88lb1qbh7l1df20-perl5.32.0-HTML-Mason-PSGIHandler-0.53.drv'...
+unpacking sources
+unpacking source archive /nix/store/3gi2a3vj2r1csd0ykkhrzh4q81rg50pd-HTML-Mason-PSGIHandler-0.53.tar.gz
+source root is HTML-Mason-PSGIHandler-0.53
+setting SOURCE_DATE_EPOCH to timestamp 1379056395 of file HTML-Mason-PSGIHandler-0.53/t/streamy.t
+patching sources
+configuring
+patching ./t/release-has-version.t...
+patching ./t/release-distmeta.t...
+patching ./t/release-dist-manifest.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::Mason::PSGIHandler
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/Mason/PSGIHandler/Streamy.pm blib/lib/HTML/Mason/PSGIHandler/Streamy.pm
+cp lib/HTML/Mason/PSGIHandler.pm blib/lib/HTML/Mason/PSGIHandler.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............. ok
+t/hello.t .................. ok
+t/leaks.t .................. ok
+t/release-dist-manifest.t .. skipped: these tests are for release candidate testing
+t/release-distmeta.t ....... skipped: these tests are for release candidate testing
+t/release-eol.t ............ skipped: these tests are for release candidate testing
+t/release-has-version.t .... skipped: these tests are for release candidate testing
+t/release-no-tabs.t ........ skipped: these tests are for release candidate testing
+t/release-pod.t ............ skipped: these tests are for release candidate testing
+t/release-synopsis.t ....... skipped: these tests are for release candidate testing
+t/streamy.t ................ ok
+All tests successful.
+Files=11, Tests=30,  4 wallclock secs ( 0.07 usr  0.05 sys +  1.81 cusr  1.76 csys =  3.69 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/lib/pkgconfig m4datadir=/nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/share/aclocal aclocaldir=/nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/lib/perl5/site_perl/5.32.0/HTML/Mason/PSGIHandler.pm
+Installing /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/lib/perl5/site_perl/5.32.0/HTML/Mason/PSGIHandler/Streamy.pm
+Installing /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/share/man/man3/HTML::Mason::PSGIHandler.3
+Appending installation info to /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/share/man/man3 to /nix/store/9qmb4s56ap756i2j6ywvgsp9xiicndha-perl5.32.0-HTML-Mason-PSGIHandler-0.53-devdoc/share/man/man3
+Removing empty /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53/lib
+patching script interpreter paths in /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53
+checking for references to /build/ in /nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9qmb4s56ap756i2j6ywvgsp9xiicndha-perl5.32.0-HTML-Mason-PSGIHandler-0.53-devdoc
+gzipping man pages under /nix/store/9qmb4s56ap756i2j6ywvgsp9xiicndha-perl5.32.0-HTML-Mason-PSGIHandler-0.53-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9qmb4s56ap756i2j6ywvgsp9xiicndha-perl5.32.0-HTML-Mason-PSGIHandler-0.53-devdoc
+checking for references to /build/ in /nix/store/9qmb4s56ap756i2j6ywvgsp9xiicndha-perl5.32.0-HTML-Mason-PSGIHandler-0.53-devdoc...
+/nix/store/l3lwhl5kay14f2pr00z17annff687afl-perl5.32.0-HTML-Mason-PSGIHandler-0.53

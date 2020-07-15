@@ -1,0 +1,114 @@
+these derivations will be built:
+  /nix/store/z1khvpj9f2f66kms8f169srk3x75bxaa-perl5.32.0-XML-Validator-Schema-1.10.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/2dzm048860w0cirjs2kv33d31n6866z4-XML-Validator-Schema-1.10.tar.gz
+copying path '/nix/store/2dzm048860w0cirjs2kv33d31n6866z4-XML-Validator-Schema-1.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z1khvpj9f2f66kms8f169srk3x75bxaa-perl5.32.0-XML-Validator-Schema-1.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/2dzm048860w0cirjs2kv33d31n6866z4-XML-Validator-Schema-1.10.tar.gz
+source root is XML-Validator-Schema-1.10
+setting SOURCE_DATE_EPOCH to timestamp 1201816353 of file XML-Validator-Schema-1.10/META.yml
+patching sources
+configuring
+patching ./t/04model.t...
+patching ./t/01basic.t...
+patching ./t/05xerces.t...
+patching ./t/06passthru.t...
+patching ./t/02yaml.t...
+patching ./t/03types.t...
+patching ./t/07locator.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::Validator::Schema
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Schema/Attribute.pm blib/lib/XML/Validator/Schema/Attribute.pm
+cp Schema/ModelNode.pm blib/lib/XML/Validator/Schema/ModelNode.pm
+cp Schema/ElementNode.pm blib/lib/XML/Validator/Schema/ElementNode.pm
+cp Schema/AttributeLibrary.pm blib/lib/XML/Validator/Schema/AttributeLibrary.pm
+cp Schema/ElementLibrary.pm blib/lib/XML/Validator/Schema/ElementLibrary.pm
+cp Schema/Node.pm blib/lib/XML/Validator/Schema/Node.pm
+cp Schema/ElementRefNode.pm blib/lib/XML/Validator/Schema/ElementRefNode.pm
+cp Schema/SimpleTypeNode.pm blib/lib/XML/Validator/Schema/SimpleTypeNode.pm
+cp Schema/Library.pm blib/lib/XML/Validator/Schema/Library.pm
+cp Schema/RootNode.pm blib/lib/XML/Validator/Schema/RootNode.pm
+cp Schema.pm blib/lib/XML/Validator/Schema.pm
+cp Schema/Util.pm blib/lib/XML/Validator/Schema/Util.pm
+cp Schema/AttributeNode.pm blib/lib/XML/Validator/Schema/AttributeNode.pm
+cp Schema/ComplexTypeNode.pm blib/lib/XML/Validator/Schema/ComplexTypeNode.pm
+cp Schema/Parser.pm blib/lib/XML/Validator/Schema/Parser.pm
+cp Schema/SimpleType.pm blib/lib/XML/Validator/Schema/SimpleType.pm
+cp Schema/TypeLibrary.pm blib/lib/XML/Validator/Schema/TypeLibrary.pm
+Manifying 17 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01basic.t ..... ok
+t/02yaml.t ......
+
+                ======> Testing against XML::SAX::PurePerl <======
+
+t/02yaml.t ...... ok
+t/03types.t ..... ok
+t/04model.t ..... ok
+t/05xerces.t .... skipped: Test requires $XERCES_DOMCOUNT
+t/06passthru.t .. skipped: Test requires XML::SAX::Writer
+t/07locator.t ... ok
+All tests successful.
+Files=7, Tests=463,  2 wallclock secs ( 0.07 usr  0.01 sys +  1.02 cusr  0.35 csys =  1.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/pkgconfig m4datadir=/nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/aclocal aclocaldir=/nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/aclocal install
+Manifying 17 pod documents
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/ModelNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/Parser.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/ComplexTypeNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/AttributeNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/Library.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/Attribute.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/SimpleTypeNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/Util.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/RootNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/ElementNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/TypeLibrary.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/SimpleType.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/ElementLibrary.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/ElementRefNode.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/Node.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/site_perl/5.32.0/XML/Validator/Schema/AttributeLibrary.pm
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::ElementNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::Node.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::AttributeLibrary.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::Parser.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::SimpleType.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::RootNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::ModelNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::SimpleTypeNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::ComplexTypeNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::ElementLibrary.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::ElementRefNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::Util.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::TypeLibrary.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::Attribute.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::AttributeNode.3
+Installing /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3/XML::Validator::Schema::Library.3
+Appending installation info to /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/man3 to /nix/store/yivjplsdab6jvjknniv7wyklrq2sbpz1-perl5.32.0-XML-Validator-Schema-1.10-devdoc/share/man/man3
+Removing empty /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10/lib
+patching script interpreter paths in /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10
+checking for references to /build/ in /nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yivjplsdab6jvjknniv7wyklrq2sbpz1-perl5.32.0-XML-Validator-Schema-1.10-devdoc
+gzipping man pages under /nix/store/yivjplsdab6jvjknniv7wyklrq2sbpz1-perl5.32.0-XML-Validator-Schema-1.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yivjplsdab6jvjknniv7wyklrq2sbpz1-perl5.32.0-XML-Validator-Schema-1.10-devdoc
+checking for references to /build/ in /nix/store/yivjplsdab6jvjknniv7wyklrq2sbpz1-perl5.32.0-XML-Validator-Schema-1.10-devdoc...
+/nix/store/8skiphr5pari2pshg4jyvyi980yrr7hh-perl5.32.0-XML-Validator-Schema-1.10

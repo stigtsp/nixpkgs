@@ -1,0 +1,117 @@
+these derivations will be built:
+  /nix/store/lr51igfrswf7ybrcsyw8p9vfda4v6ay2-perl5.32.0-Digest-HMAC-1.03.drv
+  /nix/store/ldfml5mnaxqp8w5pb4cllnsyvspm27z7-perl5.32.0-Authen-OATH-2.0.1.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/lhvm0f0130i3lyhfhqgnl4ghsi9l913w-Authen-OATH-2.0.1.tar.gz
+copying path '/nix/store/lhvm0f0130i3lyhfhqgnl4ghsi9l913w-Authen-OATH-2.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lr51igfrswf7ybrcsyw8p9vfda4v6ay2-perl5.32.0-Digest-HMAC-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/1rsr56v8a40wfayw6wd4pg9w9icw4327-Digest-HMAC-1.03.tar.gz
+source root is Digest-HMAC-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1311612829 of file Digest-HMAC-1.03/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Digest::HMAC
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Digest/HMAC.pm blib/lib/Digest/HMAC.pm
+cp lib/Digest/HMAC_MD5.pm blib/lib/Digest/HMAC_MD5.pm
+cp lib/Digest/HMAC_SHA1.pm blib/lib/Digest/HMAC_SHA1.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/rfc2202.t .. ok
+All tests successful.
+Files=1, Tests=14,  0 wallclock secs ( 0.01 usr +  0.00 sys =  0.01 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/pkgconfig m4datadir=/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/aclocal aclocaldir=/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl/5.32.0/Digest/HMAC.pm
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl/5.32.0/Digest/HMAC_MD5.pm
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl/5.32.0/Digest/HMAC_SHA1.pm
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/man/man3/Digest::HMAC.3
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/man/man3/Digest::HMAC_SHA1.3
+Installing /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/man/man3/Digest::HMAC_MD5.3
+Appending installation info to /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/man/man3 to /nix/store/5q1dajli5bz27jk3f87wrxhcppwr1ch7-perl5.32.0-Digest-HMAC-1.03-devdoc/share/man/man3
+Removing empty /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib
+patching script interpreter paths in /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03
+checking for references to /build/ in /nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5q1dajli5bz27jk3f87wrxhcppwr1ch7-perl5.32.0-Digest-HMAC-1.03-devdoc
+gzipping man pages under /nix/store/5q1dajli5bz27jk3f87wrxhcppwr1ch7-perl5.32.0-Digest-HMAC-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5q1dajli5bz27jk3f87wrxhcppwr1ch7-perl5.32.0-Digest-HMAC-1.03-devdoc
+checking for references to /build/ in /nix/store/5q1dajli5bz27jk3f87wrxhcppwr1ch7-perl5.32.0-Digest-HMAC-1.03-devdoc...
+building '/nix/store/ldfml5mnaxqp8w5pb4cllnsyvspm27z7-perl5.32.0-Authen-OATH-2.0.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/lhvm0f0130i3lyhfhqgnl4ghsi9l913w-Authen-OATH-2.0.1.tar.gz
+source root is Authen-OATH-2.0.1
+setting SOURCE_DATE_EPOCH to timestamp 1492012754 of file Authen-OATH-2.0.1/t/release-cpan-changes.t
+patching sources
+configuring
+patching ./t/01-cases.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/02-bignum.t...
+patching ./t/manifest.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+patching ./t/author-synopsis.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::OATH
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Authen/OATH.pm blib/lib/Authen/OATH.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............... 1/1 # Testing Authen::OATH 2.0.1, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ............... ok
+t/01-cases.t .............. ok
+t/02-bignum.t ............. ok
+t/author-pod-coverage.t ... skipped: these tests are for testing by the author
+t/author-pod-spell.t ...... skipped: these tests are for testing by the author
+t/author-synopsis.t ....... skipped: these tests are for testing by the author
+t/author-tidyall.t ........ skipped: these tests are for testing by the author
+t/manifest.t .............. skipped: Author tests not required for installation
+t/pod-coverage.t .......... skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ................... skipped: Test::Pod 1.22 required for testing POD
+t/release-cpan-changes.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=11, Tests=41,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.63 cusr  0.32 csys =  1.02 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/lib/pkgconfig m4datadir=/nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/share/aclocal aclocaldir=/nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/lib/perl5/site_perl/5.32.0/Authen/OATH.pm
+Installing /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/share/man/man3/Authen::OATH.3
+Appending installation info to /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/share/man/man3 to /nix/store/dp8h7qigli6jj9dyj17ng43j3z6j4sb7-perl5.32.0-Authen-OATH-2.0.1-devdoc/share/man/man3
+Removing empty /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1/lib
+patching script interpreter paths in /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1
+checking for references to /build/ in /nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dp8h7qigli6jj9dyj17ng43j3z6j4sb7-perl5.32.0-Authen-OATH-2.0.1-devdoc
+gzipping man pages under /nix/store/dp8h7qigli6jj9dyj17ng43j3z6j4sb7-perl5.32.0-Authen-OATH-2.0.1-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dp8h7qigli6jj9dyj17ng43j3z6j4sb7-perl5.32.0-Authen-OATH-2.0.1-devdoc
+checking for references to /build/ in /nix/store/dp8h7qigli6jj9dyj17ng43j3z6j4sb7-perl5.32.0-Authen-OATH-2.0.1-devdoc...
+/nix/store/gxwxw3zf8csjbwkxqbv9yn85h1n43y28-perl5.32.0-Authen-OATH-2.0.1

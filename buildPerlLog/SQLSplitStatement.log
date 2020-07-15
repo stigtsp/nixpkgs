@@ -1,0 +1,205 @@
+these derivations will be built:
+  /nix/store/3yzjckhj77ki00idsxs4c6sqgjpxf0cz-perl5.32.0-SQL-Tokenizer-0.24.drv
+  /nix/store/2l1ar2hw6pzlhifg20ymnwjqknh4nqb7-perl5.32.0-SQL-SplitStatement-1.00020.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/d1w35yrb8fjmznqxln6f5z82qj8biz28-SQL-Tokenizer-0.24.tar.gz
+  /nix/store/diwpwzwnqblq4px42hv4vijvqc3f8j0p-SQL-SplitStatement-1.00020.tar.gz
+copying path '/nix/store/diwpwzwnqblq4px42hv4vijvqc3f8j0p-SQL-SplitStatement-1.00020.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/d1w35yrb8fjmznqxln6f5z82qj8biz28-SQL-Tokenizer-0.24.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3yzjckhj77ki00idsxs4c6sqgjpxf0cz-perl5.32.0-SQL-Tokenizer-0.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/d1w35yrb8fjmznqxln6f5z82qj8biz28-SQL-Tokenizer-0.24.tar.gz
+source root is SQL-Tokenizer-0.24
+setting SOURCE_DATE_EPOCH to timestamp 1309850035 of file SQL-Tokenizer-0.24/META.yml
+patching sources
+configuring
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./t/pod.t...
+patching ./t/99-more-dollars.t...
+patching ./t/00-load.t...
+patching ./t/99-dollars.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for SQL::Tokenizer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/SQL/Tokenizer.pm blib/lib/SQL/Tokenizer.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ......................... 1/1 # Testing SQL::Tokenizer 0.24, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ......................... ok
+t/01-single-quotes.t ................ ok
+t/02-double-quotes.t ................ ok
+t/03-complex.t ...................... ok
+t/04-c-style-comments.t ............. ok
+t/05-ansi-comments.t ................ ok
+t/06-empty.t ........................ ok
+t/07-equality-and-math-operators.t .. ok
+t/08-remove-white-tokens.t .......... ok
+t/09-shell-style-comments.t ......... ok
+t/10-sql-operators.t ................ ok
+t/11-name-sep.t ..................... ok
+t/98-dbix-placeholder-named.t ....... ok
+t/99-dollars.t ...................... ok
+t/99-more-dollars.t ................. ok
+t/99-rt34889.t ...................... ok
+t/pod.t ............................. skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=17, Tests=70,  1 wallclock secs ( 0.06 usr  0.01 sys +  0.78 cusr  0.13 csys =  0.98 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/lib/pkgconfig m4datadir=/nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/share/aclocal aclocaldir=/nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/lib/perl5/site_perl/5.32.0/SQL/Tokenizer.pm
+Installing /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/share/man/man3/SQL::Tokenizer.3
+Appending installation info to /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/share/man/man3 to /nix/store/n65v2qzsn9pymxjkjpr87g7rhrffknp2-perl5.32.0-SQL-Tokenizer-0.24-devdoc/share/man/man3
+Removing empty /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24/lib
+patching script interpreter paths in /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24
+checking for references to /build/ in /nix/store/n6jnqxwz0wrdyxbhggy201wmh8krvl9l-perl5.32.0-SQL-Tokenizer-0.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n65v2qzsn9pymxjkjpr87g7rhrffknp2-perl5.32.0-SQL-Tokenizer-0.24-devdoc
+gzipping man pages under /nix/store/n65v2qzsn9pymxjkjpr87g7rhrffknp2-perl5.32.0-SQL-Tokenizer-0.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n65v2qzsn9pymxjkjpr87g7rhrffknp2-perl5.32.0-SQL-Tokenizer-0.24-devdoc
+checking for references to /build/ in /nix/store/n65v2qzsn9pymxjkjpr87g7rhrffknp2-perl5.32.0-SQL-Tokenizer-0.24-devdoc...
+building '/nix/store/2l1ar2hw6pzlhifg20ymnwjqknh4nqb7-perl5.32.0-SQL-SplitStatement-1.00020.drv'...
+unpacking sources
+unpacking source archive /nix/store/diwpwzwnqblq4px42hv4vijvqc3f8j0p-SQL-SplitStatement-1.00020.tar.gz
+source root is SQL-SplitStatement-1.00020
+setting SOURCE_DATE_EPOCH to timestamp 1301133906 of file SQL-SplitStatement-1.00020/t/release-unused-vars.t
+patching sources
+configuring
+patching ./t/72-proc_plsql_package.t...
+patching ./t/70-proc_plsql_mixed.t...
+patching ./t/00-compile.t...
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/92-postgresql_pagila.t...
+patching ./t/20-hard.t...
+patching ./t/70-proc_plsql_slash_endings.t...
+patching ./t/30-nested_blocks.t...
+patching ./t/61-placeholders_empty.t...
+patching ./t/10-simple.t...
+patching ./t/95-script.t...
+patching ./t/release-kwalitee.t...
+patching ./t/72-proc_plsql_function_inside_package.t...
+patching ./t/74-proc_plpgsql_dollar_quoted_w_transactions.t...
+patching ./t/80-examples.t...
+patching ./t/25-keywords_as_unquoted_identifiers.t...
+patching ./t/40-comments.t...
+patching ./t/51-transactions_and_proc.t...
+patching ./t/release-synopsis.t...
+patching ./t/71-proc_plsql_RTbug_57971.t...
+patching ./t/42-slash_terminates.t...
+patching ./t/90-mysql_sakila.t...
+patching ./t/72-proc_plsql_mixed_endings.t...
+patching ./t/05-empty_statements.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/72-proc_plsql_alias.t...
+patching ./t/00-load.t...
+patching ./t/94-exception.t...
+patching ./t/90-mysql_mixed.t...
+patching ./t/50-transactions.t...
+patching ./t/74-proc_plpgsql_dollar_quoted.t...
+patching ./t/release-distmeta.t...
+patching ./t/90-mysql_delimiter.t...
+patching ./t/75-proc_grant.t...
+patching ./t/60-placeholders.t...
+patching ./t/release-pod-coverage.t...
+patching ./t/81-examples_procedural.t...
+patching ./t/72-proc_plsql_nested_functions.t...
+patching ./bin/sql-split...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for SQL::SplitStatement
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/SQL/SplitStatement.pm blib/lib/SQL/SplitStatement.pm
+cp bin/sql-split blib/script/sql-split
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/sql-split
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .................................... ok
+t/00-load.t ....................................... 1/1 # Testing SQL::SplitStatement 1.00020, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....................................... ok
+t/05-empty_statements.t ........................... ok
+t/10-simple.t ..................................... ok
+t/20-hard.t ....................................... ok
+t/25-keywords_as_unquoted_identifiers.t ........... ok
+t/30-nested_blocks.t .............................. ok
+t/40-comments.t ................................... ok
+t/42-slash_terminates.t ........................... ok
+t/50-transactions.t ............................... ok
+t/51-transactions_and_proc.t ...................... ok
+t/60-placeholders.t ............................... ok
+t/61-placeholders_empty.t ......................... ok
+t/70-proc_plsql_mixed.t ........................... ok
+t/70-proc_plsql_slash_endings.t ................... ok
+t/71-proc_plsql_RTbug_57971.t ..................... ok
+t/72-proc_plsql_alias.t ........................... ok
+t/72-proc_plsql_function_inside_package.t ......... ok
+t/72-proc_plsql_mixed_endings.t ................... ok
+t/72-proc_plsql_nested_functions.t ................ ok
+t/72-proc_plsql_package.t ......................... ok
+t/74-proc_plpgsql_dollar_quoted.t ................. ok
+t/74-proc_plpgsql_dollar_quoted_w_transactions.t .. ok
+t/75-proc_grant.t ................................. ok
+t/80-examples.t ................................... ok
+t/81-examples_procedural.t ........................ ok
+t/82-synopsis.t ................................... ok
+t/90-mysql_delimiter.t ............................ ok
+t/90-mysql_mixed.t ................................ ok
+t/90-mysql_sakila.t ............................... ok
+t/92-postgresql_pagila.t .......................... ok
+t/94-exception.t .................................. ok
+t/95-script.t ..................................... skipped: please install Test::Script::Run to run these tests
+t/author-critic.t ................................. skipped: these tests are for testing by the author
+t/release-distmeta.t .............................. skipped: these tests are for release candidate testing
+t/release-kwalitee.t .............................. skipped: these tests are for release candidate testing
+t/release-no-tabs.t ............................... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .......................... skipped: these tests are for release candidate testing
+t/release-pod-syntax.t ............................ skipped: these tests are for release candidate testing
+t/release-synopsis.t .............................. skipped: these tests are for release candidate testing
+t/release-unused-vars.t ........................... skipped: these tests are for release candidate testing
+All tests successful.
+Files=41, Tests=285,  7 wallclock secs ( 0.14 usr  0.03 sys +  5.40 cusr  1.89 csys =  7.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/lib/pkgconfig m4datadir=/nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/aclocal aclocaldir=/nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/lib/perl5/site_perl/5.32.0/SQL/SplitStatement.pm
+Installing /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/man/man1/sql-split.1
+Installing /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/man/man3/SQL::SplitStatement.3
+Installing /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/bin/sql-split
+Appending installation info to /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/man/man3 to /nix/store/d76l2wlf53cb1s98976q6fr3a8q2kha8-perl5.32.0-SQL-SplitStatement-1.00020-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020
+gzipping man pages under /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/lib  /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020/bin
+patching script interpreter paths in /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020
+checking for references to /build/ in /nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d76l2wlf53cb1s98976q6fr3a8q2kha8-perl5.32.0-SQL-SplitStatement-1.00020-devdoc
+gzipping man pages under /nix/store/d76l2wlf53cb1s98976q6fr3a8q2kha8-perl5.32.0-SQL-SplitStatement-1.00020-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d76l2wlf53cb1s98976q6fr3a8q2kha8-perl5.32.0-SQL-SplitStatement-1.00020-devdoc
+checking for references to /build/ in /nix/store/d76l2wlf53cb1s98976q6fr3a8q2kha8-perl5.32.0-SQL-SplitStatement-1.00020-devdoc...
+/nix/store/winqxnr4y8p5bn76z0jwdmk2yw33j69c-perl5.32.0-SQL-SplitStatement-1.00020

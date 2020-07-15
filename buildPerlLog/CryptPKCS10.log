@@ -1,0 +1,47 @@
+these derivations will be built:
+  /nix/store/qxmqynpl6pcrypij1p0zqvpdy749vlx1-perl5.32.0-Crypt-PKCS10-2.001.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/kly2pyyb8r2n6hz3ks2rgpg86hgzhs0i-Crypt-PKCS10-2.001.tar.gz
+copying path '/nix/store/kly2pyyb8r2n6hz3ks2rgpg86hgzhs0i-Crypt-PKCS10-2.001.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qxmqynpl6pcrypij1p0zqvpdy749vlx1-perl5.32.0-Crypt-PKCS10-2.001.drv'...
+unpacking sources
+unpacking source archive /nix/store/kly2pyyb8r2n6hz3ks2rgpg86hgzhs0i-Crypt-PKCS10-2.001.tar.gz
+source root is Crypt-PKCS10-2.001
+setting SOURCE_DATE_EPOCH to timestamp 1544782922 of file Crypt-PKCS10-2.001/xt/01_Kwalitee.t
+patching sources
+configuring
+patching ./runbrew...
+patching ./BUILD...
+patching ./examples/dump_csr...
+patching ./examples/verify_csr...
+patching ./t/0-signature.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Crypt-PKCS10' version '2.001'
+cp lib/Crypt/PKCS10.pm blib/lib/Crypt/PKCS10.pm
+running tests
+t/0-signature.t .. skipped: Set the environment variable TEST_SIGNATURE to enable this test.
+t/02_base.t ...... 1/11 # Perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl version 5.32.0
+# Skipping DSA, RSA tests: no support
+t/02_base.t ...... ok
+t/03_ecc.t ....... skipped: Crypt::PK::ECC is not installed, skipping ECC tests
+All tests successful.
+Files=3, Tests=11,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.37 cusr  0.08 csys =  0.50 CPU)
+Result: PASS
+installing
+Installing /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001/lib/perl5/site_perl/5.32.0/Crypt/PKCS10.pm
+Installing /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001/share/man/man3/Crypt::PKCS10.3
+post-installation fixup
+Moving /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001/share/man/man3 to /nix/store/5a1qghx3z98k9mw47klsn274rqpx1zs6-perl5.32.0-Crypt-PKCS10-2.001-devdoc/share/man/man3
+Removing empty /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001/lib
+patching script interpreter paths in /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001
+checking for references to /build/ in /nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5a1qghx3z98k9mw47klsn274rqpx1zs6-perl5.32.0-Crypt-PKCS10-2.001-devdoc
+gzipping man pages under /nix/store/5a1qghx3z98k9mw47klsn274rqpx1zs6-perl5.32.0-Crypt-PKCS10-2.001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5a1qghx3z98k9mw47klsn274rqpx1zs6-perl5.32.0-Crypt-PKCS10-2.001-devdoc
+checking for references to /build/ in /nix/store/5a1qghx3z98k9mw47klsn274rqpx1zs6-perl5.32.0-Crypt-PKCS10-2.001-devdoc...
+/nix/store/wg3crl92mkw5g66anxd36qlpzrwqs46z-perl5.32.0-Crypt-PKCS10-2.001

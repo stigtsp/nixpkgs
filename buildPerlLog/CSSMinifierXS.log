@@ -1,0 +1,57 @@
+these derivations will be built:
+  /nix/store/h3ak5waq59lnbgq1n1wssfyq0xn88smm-perl5.32.0-CSS-Minifier-XS-0.09.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/bbz0pyd8wd3f9nyqw27zrb79mp4k5j49-CSS-Minifier-XS-0.09.tar.gz
+copying path '/nix/store/bbz0pyd8wd3f9nyqw27zrb79mp4k5j49-CSS-Minifier-XS-0.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h3ak5waq59lnbgq1n1wssfyq0xn88smm-perl5.32.0-CSS-Minifier-XS-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/bbz0pyd8wd3f9nyqw27zrb79mp4k5j49-CSS-Minifier-XS-0.09.tar.gz
+source root is CSS-Minifier-XS-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1383249637 of file CSS-Minifier-XS-0.09/t/pod.t
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CSS::Minifier::XS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'CSS-Minifier-XS' version '0.09'
+Building CSS-Minifier-XS
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.09" -DXS_VERSION="0.09" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/CSS/Minifier/XS.o lib/CSS/Minifier/XS.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/CSS/Minifier/XS/XS.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/CSS/Minifier/XS/XS.so lib/CSS/Minifier/XS.o
+running tests
+t/01-loads.t ................ ok
+t/02-minify.t ............... ok
+t/03-minifies-to-nothing.t .. ok
+t/99-benchmark.t ............ skipped: CSS::Minifier not available for benchmark comparison
+t/pod-coverage.t ............ skipped: Test::Pod::Coverage 1.00 required for testing POD
+t/pod.t ..................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=6, Tests=18,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.29 cusr  0.06 csys =  0.39 CPU)
+Result: PASS
+installing
+Building CSS-Minifier-XS
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/CSS/Minifier/XS/XS.bs
+Installing /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/CSS/Minifier/XS/XS.so
+Installing /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/CSS/Minifier/XS.pm
+Installing /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/share/man/man3/CSS::Minifier::XS.3
+post-installation fixup
+Moving /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/share/man/man3 to /nix/store/znlgigmj430awnns6rnpgspdrg70rdi4-perl5.32.0-CSS-Minifier-XS-0.09-devdoc/share/man/man3
+Removing empty /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09
+shrinking /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/CSS/Minifier/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09/lib
+patching script interpreter paths in /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09
+checking for references to /build/ in /nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/znlgigmj430awnns6rnpgspdrg70rdi4-perl5.32.0-CSS-Minifier-XS-0.09-devdoc
+gzipping man pages under /nix/store/znlgigmj430awnns6rnpgspdrg70rdi4-perl5.32.0-CSS-Minifier-XS-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/znlgigmj430awnns6rnpgspdrg70rdi4-perl5.32.0-CSS-Minifier-XS-0.09-devdoc
+checking for references to /build/ in /nix/store/znlgigmj430awnns6rnpgspdrg70rdi4-perl5.32.0-CSS-Minifier-XS-0.09-devdoc...
+/nix/store/bllb95w81wvwj52wiwxzkbaf7z9q5pzc-perl5.32.0-CSS-Minifier-XS-0.09

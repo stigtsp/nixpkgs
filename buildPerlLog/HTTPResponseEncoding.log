@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/j0g1jlf1j0xqxqhxrzd5hx5cif0k4ph6-perl5.32.0-HTTP-Response-Encoding-0.06.drv
+building '/nix/store/j0g1jlf1j0xqxqhxrzd5hx5cif0k4ph6-perl5.32.0-HTTP-Response-Encoding-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/sbwzd1lr7586f6mdhk8lmbgf2vxv9y6p-HTTP-Response-Encoding-0.06.tar.gz
+source root is HTTP-Response-Encoding-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1248816342 of file HTTP-Response-Encoding-0.06/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/boilerplate.t...
+patching ./t/pod.t...
+patching ./t/01-file.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTTP::Response::Encoding
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTTP/Response/Encoding.pm blib/lib/HTTP/Response/Encoding.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ....... 1/1 # Testing HTTP::Response::Encoding 0.06, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/01-file.t ....... ok
+t/boilerplate.t ... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=5, Tests=17,  2 wallclock secs ( 0.04 usr  0.02 sys +  0.55 cusr  0.44 csys =  1.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/lib/pkgconfig m4datadir=/nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/share/aclocal aclocaldir=/nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/lib/perl5/site_perl/5.32.0/HTTP/Response/Encoding.pm
+Installing /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/share/man/man3/HTTP::Response::Encoding.3
+Appending installation info to /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/share/man/man3 to /nix/store/fyi45sbx3jpva4k4ivbclfhwilz61rj8-perl5.32.0-HTTP-Response-Encoding-0.06-devdoc/share/man/man3
+Removing empty /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06/lib
+patching script interpreter paths in /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06
+checking for references to /build/ in /nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fyi45sbx3jpva4k4ivbclfhwilz61rj8-perl5.32.0-HTTP-Response-Encoding-0.06-devdoc
+gzipping man pages under /nix/store/fyi45sbx3jpva4k4ivbclfhwilz61rj8-perl5.32.0-HTTP-Response-Encoding-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fyi45sbx3jpva4k4ivbclfhwilz61rj8-perl5.32.0-HTTP-Response-Encoding-0.06-devdoc
+checking for references to /build/ in /nix/store/fyi45sbx3jpva4k4ivbclfhwilz61rj8-perl5.32.0-HTTP-Response-Encoding-0.06-devdoc...
+/nix/store/0qw0ap8v0maffh9g49hyvc5yw5yir19v-perl5.32.0-HTTP-Response-Encoding-0.06

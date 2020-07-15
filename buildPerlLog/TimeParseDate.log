@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/04g7z6l7fbcaq2l1xl45p3wi41hn2gz7-perl5.32.0-Time-ParseDate-2015.103.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/wn8wb8lg29jsxq4xvpa2sx505glf3zl2-Time-ParseDate-2015.103.tar.gz
+copying path '/nix/store/wn8wb8lg29jsxq4xvpa2sx505glf3zl2-Time-ParseDate-2015.103.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/04g7z6l7fbcaq2l1xl45p3wi41hn2gz7-perl5.32.0-Time-ParseDate-2015.103.drv'...
+unpacking sources
+unpacking source archive /nix/store/wn8wb8lg29jsxq4xvpa2sx505glf3zl2-Time-ParseDate-2015.103.tar.gz
+source root is Time-ParseDate-2015.103
+setting SOURCE_DATE_EPOCH to timestamp 1446249420 of file Time-ParseDate-2015.103/MANIFEST
+patching sources
+configuring
+patching ./t/metdate.t...
+patching ./t/datetime.t...
+patching ./t/order1.t...
+patching ./t/order2.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Time::ParseDate
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Time/CTime.pm blib/lib/Time/CTime.pm
+cp lib/Time/ParseDate.pm blib/lib/Time/ParseDate.pm
+cp lib/Time/DaysInMonth.pm blib/lib/Time/DaysInMonth.pm
+cp lib/Time/Timezone.pm blib/lib/Time/Timezone.pm
+cp lib/Time/JulianDay.pm blib/lib/Time/JulianDay.pm
+Manifying 5 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/pkgconfig m4datadir=/nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/aclocal aclocaldir=/nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/site_perl/5.32.0/Time/ParseDate.pm
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/site_perl/5.32.0/Time/Timezone.pm
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/site_perl/5.32.0/Time/CTime.pm
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/site_perl/5.32.0/Time/DaysInMonth.pm
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/site_perl/5.32.0/Time/JulianDay.pm
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3/Time::CTime.3
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3/Time::Timezone.3
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3/Time::DaysInMonth.3
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3/Time::ParseDate.3
+Installing /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3/Time::JulianDay.3
+Appending installation info to /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/man3 to /nix/store/vfz170bgqvx5l3q69vz93mi4maaqxhy5-perl5.32.0-Time-ParseDate-2015.103-devdoc/share/man/man3
+Removing empty /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103/lib
+patching script interpreter paths in /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103
+checking for references to /build/ in /nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vfz170bgqvx5l3q69vz93mi4maaqxhy5-perl5.32.0-Time-ParseDate-2015.103-devdoc
+gzipping man pages under /nix/store/vfz170bgqvx5l3q69vz93mi4maaqxhy5-perl5.32.0-Time-ParseDate-2015.103-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vfz170bgqvx5l3q69vz93mi4maaqxhy5-perl5.32.0-Time-ParseDate-2015.103-devdoc
+checking for references to /build/ in /nix/store/vfz170bgqvx5l3q69vz93mi4maaqxhy5-perl5.32.0-Time-ParseDate-2015.103-devdoc...
+/nix/store/5whi51nqpgvfiwddr66k8fc376gqgk2h-perl5.32.0-Time-ParseDate-2015.103

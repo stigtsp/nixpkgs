@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/3y8vv33bigcjglxpzyvr9kqbx329wh2x-perl5.32.0-AnyEvent-HTTP-2.25.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/bz1v1hyds2v55nfzi92ycw0l2h3r6ach-AnyEvent-HTTP-2.25.tar.gz
+copying path '/nix/store/bz1v1hyds2v55nfzi92ycw0l2h3r6ach-AnyEvent-HTTP-2.25.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3y8vv33bigcjglxpzyvr9kqbx329wh2x-perl5.32.0-AnyEvent-HTTP-2.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/bz1v1hyds2v55nfzi92ycw0l2h3r6ach-AnyEvent-HTTP-2.25.tar.gz
+source root is AnyEvent-HTTP-2.25
+setting SOURCE_DATE_EPOCH to timestamp 1587989646 of file AnyEvent-HTTP-2.25/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for AnyEvent::HTTP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp HTTP.pm blib/lib/AnyEvent/HTTP.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t ......... ok
+t/01_basic.t ........ ok
+t/02_ip_literals.t .. ok
+All tests successful.
+Files=3, Tests=28, 48 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/lib/pkgconfig m4datadir=/nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/share/aclocal aclocaldir=/nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/lib/perl5/site_perl/5.32.0/AnyEvent/HTTP.pm
+Installing /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/share/man/man3/AnyEvent::HTTP.3
+Appending installation info to /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/share/man/man3 to /nix/store/avskx2mbsx1ypk8ddrd0r2wqh7q0v241-perl5.32.0-AnyEvent-HTTP-2.25-devdoc/share/man/man3
+Removing empty /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25/lib
+patching script interpreter paths in /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25
+checking for references to /build/ in /nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/avskx2mbsx1ypk8ddrd0r2wqh7q0v241-perl5.32.0-AnyEvent-HTTP-2.25-devdoc
+gzipping man pages under /nix/store/avskx2mbsx1ypk8ddrd0r2wqh7q0v241-perl5.32.0-AnyEvent-HTTP-2.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/avskx2mbsx1ypk8ddrd0r2wqh7q0v241-perl5.32.0-AnyEvent-HTTP-2.25-devdoc
+checking for references to /build/ in /nix/store/avskx2mbsx1ypk8ddrd0r2wqh7q0v241-perl5.32.0-AnyEvent-HTTP-2.25-devdoc...
+/nix/store/hhn3il9rzi2pr6i82mgcs67qqbm6sx5h-perl5.32.0-AnyEvent-HTTP-2.25

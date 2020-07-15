@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/943n294c21r4s6fm13bd3q99dbxc87n5-perl5.32.0-Business-ISSN-1.004.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/f3wbiik3ja87ly61bllrjsqxm3pp003r-Business-ISSN-1.004.tar.gz
+copying path '/nix/store/f3wbiik3ja87ly61bllrjsqxm3pp003r-Business-ISSN-1.004.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/943n294c21r4s6fm13bd3q99dbxc87n5-perl5.32.0-Business-ISSN-1.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/f3wbiik3ja87ly61bllrjsqxm3pp003r-Business-ISSN-1.004.tar.gz
+source root is Business-ISSN-1.004
+setting SOURCE_DATE_EPOCH to timestamp 1584675194 of file Business-ISSN-1.004/META.yml
+patching sources
+configuring
+patching ./examples/placeholder.pl...
+patching ./t/issn.t...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Business::ISSN
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Business/ISSN.pm blib/lib/Business/ISSN.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/issn.t .......... ok
+t/load.t .......... ok
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+t/pod_coverage.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+All tests successful.
+Files=4, Tests=34,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.18 cusr  0.02 csys =  0.23 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/lib/pkgconfig m4datadir=/nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/share/aclocal aclocaldir=/nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/lib/perl5/site_perl/5.32.0/Business/ISSN.pm
+Installing /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/share/man/man3/Business::ISSN.3
+Appending installation info to /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/share/man/man3 to /nix/store/c9vrlfzw2s1s73p44ng4w109xpa4jjpx-perl5.32.0-Business-ISSN-1.004-devdoc/share/man/man3
+Removing empty /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004/lib
+patching script interpreter paths in /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004
+checking for references to /build/ in /nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c9vrlfzw2s1s73p44ng4w109xpa4jjpx-perl5.32.0-Business-ISSN-1.004-devdoc
+gzipping man pages under /nix/store/c9vrlfzw2s1s73p44ng4w109xpa4jjpx-perl5.32.0-Business-ISSN-1.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/c9vrlfzw2s1s73p44ng4w109xpa4jjpx-perl5.32.0-Business-ISSN-1.004-devdoc
+checking for references to /build/ in /nix/store/c9vrlfzw2s1s73p44ng4w109xpa4jjpx-perl5.32.0-Business-ISSN-1.004-devdoc...
+/nix/store/7gf9fv0fj43mq362a3f5x60k09nxb6h0-perl5.32.0-Business-ISSN-1.004

@@ -1,0 +1,82 @@
+these derivations will be built:
+  /nix/store/wy5bhai1bi45g2bhna9l02551dw1wkys-perl5.32.0-Role-Basic-0.13.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/qgr561py4gj1fk9gx5ravcwf5bg5v0sh-Role-Basic-0.13.tar.gz
+copying path '/nix/store/qgr561py4gj1fk9gx5ravcwf5bg5v0sh-Role-Basic-0.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wy5bhai1bi45g2bhna9l02551dw1wkys-perl5.32.0-Role-Basic-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/qgr561py4gj1fk9gx5ravcwf5bg5v0sh-Role-Basic-0.13.tar.gz
+source root is Role-Basic-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1333474980 of file Role-Basic-0.13/xt/pod.t
+patching sources
+configuring
+patching ./xt/manifest.t...
+patching ./xt/pod.t...
+patching ./examples/currency.pl...
+patching ./t/exceptions.t...
+patching ./t/moose/033_role_exclusion_and_alias_bug.t...
+patching ./t/moose/043_conflict_many_methods.t...
+patching ./t/moose/012_method_exclusion_in_composition.t...
+patching ./t/moose/004_role_composition_errors.t...
+patching ./t/moose/014_more_alias_and_exclude.t...
+patching ./t/moose/011_overriding.t...
+patching ./t/moose/013_method_aliasing_in_composition.t...
+patching ./t/moose/003_apply_role.t...
+patching ./t/moose/005_role_conflict_detection.t...
+patching ./t/moose/032_roles_and_method_cloning.t...
+patching ./t/internals.t...
+patching ./t/bugs.t...
+patching ./t/00-load.t...
+patching ./t/basic.t...
+patching ./t/composition.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Role::Basic
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Role-Basic' version '0.13'
+Building Role-Basic
+running tests
+t/00-load.t .................................... 1/1 # Testing Role::Basic 0.13, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .................................... ok
+t/basic.t ...................................... ok
+t/bugs.t ....................................... ok
+t/composition.t ................................ ok
+t/exceptions.t ................................. ok
+t/internals.t .................................. ok
+t/moose/003_apply_role.t ....................... ok
+t/moose/004_role_composition_errors.t .......... ok
+t/moose/005_role_conflict_detection.t .......... ok
+t/moose/011_overriding.t ....................... ok
+t/moose/012_method_exclusion_in_composition.t .. ok
+t/moose/013_method_aliasing_in_composition.t ... ok
+t/moose/014_more_alias_and_exclude.t ........... ok
+t/moose/032_roles_and_method_cloning.t ......... ok
+t/moose/033_role_exclusion_and_alias_bug.t ..... ok
+t/moose/043_conflict_many_methods.t ............ ok
+All tests successful.
+Files=16, Tests=304,  1 wallclock secs ( 0.07 usr  0.02 sys +  0.97 cusr  0.13 csys =  1.19 CPU)
+Result: PASS
+installing
+Building Role-Basic
+Installing /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/lib/perl5/site_perl/5.32.0/Role/Basic.pm
+Installing /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/lib/perl5/site_perl/5.32.0/Role/Basic/Philosophy.pod
+Installing /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/share/man/man3/Role::Basic::Philosophy.3
+Installing /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/share/man/man3/Role::Basic.3
+post-installation fixup
+Moving /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/share/man/man3 to /nix/store/z3dzqrknwy9sgwf12xwx070zxq0d2k60-perl5.32.0-Role-Basic-0.13-devdoc/share/man/man3
+Removing empty /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13/lib
+patching script interpreter paths in /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13
+checking for references to /build/ in /nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z3dzqrknwy9sgwf12xwx070zxq0d2k60-perl5.32.0-Role-Basic-0.13-devdoc
+gzipping man pages under /nix/store/z3dzqrknwy9sgwf12xwx070zxq0d2k60-perl5.32.0-Role-Basic-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z3dzqrknwy9sgwf12xwx070zxq0d2k60-perl5.32.0-Role-Basic-0.13-devdoc
+checking for references to /build/ in /nix/store/z3dzqrknwy9sgwf12xwx070zxq0d2k60-perl5.32.0-Role-Basic-0.13-devdoc...
+/nix/store/fxsry4wq30h43bjbqplzfw6mbaxnkrl9-perl5.32.0-Role-Basic-0.13

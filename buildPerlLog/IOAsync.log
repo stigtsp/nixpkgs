@@ -1,0 +1,413 @@
+these derivations will be built:
+  /nix/store/c68w2zrp8vavb9y5ijn7l95rv583zcfp-perl5.32.0-Struct-Dumb-0.12.drv
+  /nix/store/xis5k91l61g0w9pvrrc0x2fbaa9n41kh-perl5.32.0-Metrics-Any-0.05.drv
+  /nix/store/n1s5a62fbgiz5x57i8jrhpzxxnwj18ym-perl5.32.0-Test-Metrics-Any-0.01.drv
+  /nix/store/h56f4l23rq3hil2yk6jbcib3vli242sy-perl5.32.0-IO-Async-0.77.drv
+building '/nix/store/c68w2zrp8vavb9y5ijn7l95rv583zcfp-perl5.32.0-Struct-Dumb-0.12.drv'...
+building '/nix/store/xis5k91l61g0w9pvrrc0x2fbaa9n41kh-perl5.32.0-Metrics-Any-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/5n696w8a8z2gplbvdz4fynhl3za3wqwr-Struct-Dumb-0.12.tar.gz
+unpacking sources
+unpacking source archive /nix/store/lwxjfpmbk5nafy4nzmib02s102lxq7gq-Metrics-Any-0.05.tar.gz
+source root is Struct-Dumb-0.12
+setting SOURCE_DATE_EPOCH to timestamp 1587426111 of file Struct-Dumb-0.12/t/99pod.t
+patching sources
+configuring
+source root is Metrics-Any-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1589385409 of file Metrics-Any-0.05/t/99pod.t
+patching sources
+configuring
+patching ./t/05predicate.t...
+patching ./t/02scope.t...
+patching ./t/10data-dump.t...
+patching ./t/11adapter-test.t...
+patching ./t/01point.t...
+patching ./t/20name-prefix.t...
+patching ./t/04named.t...
+patching ./t/04adapter-string-parse.t...
+patching ./t/99pod.t...
+patching ./t/13adapter-tee.t...
+patching ./t/03readonly.t...
+patching ./t/21nonstrict.t...
+patching ./t/00use.t...
+patching ./t/03adapter-late.t...
+patching ./t/11data-dump-late.t...
+patching ./t/99pod.t...
+patching ./t/01collector.t...
+patching ./t/12adapter-file.t...
+patching ./t/10adapter-null.t...
+patching ./t/00use.t...
+patching ./t/02adapter-early.t...
+no configure script, doing nothing
+building
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Struct-Dumb' version '0.12'
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Metrics-Any' version '0.05'
+Building Struct-Dumb
+Building Metrics-Any
+running tests
+running tests
+t/00use.t ............. ok
+t/00use.t ................... ok
+t/01point.t ........... ok
+t/02scope.t ........... ok
+t/01collector.t ............. ok
+t/03readonly.t ........ ok
+t/02adapter-early.t ......... ok
+t/04named.t ........... ok
+t/03adapter-late.t .......... ok
+t/04adapter-string-parse.t .. ok
+t/05predicate.t ....... ok
+t/10data-dump.t ....... skipped: No Data::Dump
+t/10adapter-null.t .......... ok
+t/11adapter-test.t .......... ok
+t/11data-dump-late.t .. skipped: No Data::Dump
+t/99pod.t ............. skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=9, Tests=27,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.54 cusr  0.22 csys =  0.81 CPU)
+Result: PASS
+t/12adapter-file.t .......... ok
+installing
+t/13adapter-tee.t ........... ok
+Building Struct-Dumb
+t/20name-prefix.t ........... ok
+Installing /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12/lib/perl5/site_perl/5.32.0/Struct/Dumb.pm
+Installing /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12/share/man/man3/Struct::Dumb.3
+post-installation fixup
+Moving /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12/share/man/man3 to /nix/store/5pbgicjgmkppw1q2jj8cm756plkhbj9m-perl5.32.0-Struct-Dumb-0.12-devdoc/share/man/man3
+Removing empty /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12/lib
+patching script interpreter paths in /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12
+checking for references to /build/ in /nix/store/w01z16rf3gb0xw2zs4wfardlm9c64jhx-perl5.32.0-Struct-Dumb-0.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5pbgicjgmkppw1q2jj8cm756plkhbj9m-perl5.32.0-Struct-Dumb-0.12-devdoc
+gzipping man pages under /nix/store/5pbgicjgmkppw1q2jj8cm756plkhbj9m-perl5.32.0-Struct-Dumb-0.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5pbgicjgmkppw1q2jj8cm756plkhbj9m-perl5.32.0-Struct-Dumb-0.12-devdoc
+checking for references to /build/ in /nix/store/5pbgicjgmkppw1q2jj8cm756plkhbj9m-perl5.32.0-Struct-Dumb-0.12-devdoc...
+t/21nonstrict.t ............. ok
+t/99pod.t ................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=12, Tests=70,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.73 cusr  0.30 csys =  1.09 CPU)
+Result: PASS
+installing
+Building Metrics-Any
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Collector.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter/Tee.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter/Test.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter/File.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter/Null.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib/perl5/site_perl/5.32.0/Metrics/Any/Adapter/Stderr.pm
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter::Null.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter::File.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Collector.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter::Tee.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter::Stderr.3
+Installing /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3/Metrics::Any::Adapter::Test.3
+post-installation fixup
+Moving /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/man3 to /nix/store/chfd88skj7awixgq7pj5xiihs33pzvi8-perl5.32.0-Metrics-Any-0.05-devdoc/share/man/man3
+Removing empty /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05/lib
+patching script interpreter paths in /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05
+checking for references to /build/ in /nix/store/cskbrn7k4a6wky5ksnc9ymr88lpn2yxb-perl5.32.0-Metrics-Any-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/chfd88skj7awixgq7pj5xiihs33pzvi8-perl5.32.0-Metrics-Any-0.05-devdoc
+gzipping man pages under /nix/store/chfd88skj7awixgq7pj5xiihs33pzvi8-perl5.32.0-Metrics-Any-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/chfd88skj7awixgq7pj5xiihs33pzvi8-perl5.32.0-Metrics-Any-0.05-devdoc
+checking for references to /build/ in /nix/store/chfd88skj7awixgq7pj5xiihs33pzvi8-perl5.32.0-Metrics-Any-0.05-devdoc...
+building '/nix/store/n1s5a62fbgiz5x57i8jrhpzxxnwj18ym-perl5.32.0-Test-Metrics-Any-0.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/46diiryxhrn2zq65xgpjzr4l6gm95krw-Test-Metrics-Any-0.01.tar.gz
+source root is Test-Metrics-Any-0.01
+setting SOURCE_DATE_EPOCH to timestamp 1588680588 of file Test-Metrics-Any-0.01/t/99pod.t
+patching sources
+configuring
+patching ./t/02predicates.t...
+patching ./t/99pod.t...
+patching ./t/01metrics.t...
+patching ./t/00use.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Metrics-Any' version '0.01'
+Building Test-Metrics-Any
+running tests
+t/00use.t ......... ok
+t/01metrics.t ..... ok
+t/02predicates.t .. ok
+t/99pod.t ......... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=4, Tests=10,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.23 cusr  0.06 csys =  0.32 CPU)
+Result: PASS
+installing
+Building Test-Metrics-Any
+Installing /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01/lib/perl5/site_perl/5.32.0/Test/Metrics/Any.pm
+Installing /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01/share/man/man3/Test::Metrics::Any.3
+post-installation fixup
+Moving /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01/share/man/man3 to /nix/store/5xi89nbqqy3gj6rxwq3hz4ma90drzrrk-perl5.32.0-Test-Metrics-Any-0.01-devdoc/share/man/man3
+Removing empty /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01/lib
+patching script interpreter paths in /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01
+checking for references to /build/ in /nix/store/a7bk5pf5jg8k7w9qb4ciyfpkp7lkml5a-perl5.32.0-Test-Metrics-Any-0.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5xi89nbqqy3gj6rxwq3hz4ma90drzrrk-perl5.32.0-Test-Metrics-Any-0.01-devdoc
+gzipping man pages under /nix/store/5xi89nbqqy3gj6rxwq3hz4ma90drzrrk-perl5.32.0-Test-Metrics-Any-0.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5xi89nbqqy3gj6rxwq3hz4ma90drzrrk-perl5.32.0-Test-Metrics-Any-0.01-devdoc
+checking for references to /build/ in /nix/store/5xi89nbqqy3gj6rxwq3hz4ma90drzrrk-perl5.32.0-Test-Metrics-Any-0.01-devdoc...
+building '/nix/store/h56f4l23rq3hil2yk6jbcib3vli242sy-perl5.32.0-IO-Async-0.77.drv'...
+unpacking sources
+unpacking source archive /nix/store/77qsf899svwsn1bz2jq3wghfzpj92d3w-IO-Async-0.77.tar.gz
+source root is IO-Async-0.77
+setting SOURCE_DATE_EPOCH to timestamp 1589393621 of file IO-Async-0.77/t/TimeAbout.pm
+patching sources
+configuring
+patching ./examples/tcp-proxy.pl...
+patching ./examples/netcat-client.pl...
+patching ./examples/chat-server.pl...
+patching ./examples/echo-server.pl...
+patching ./examples/readwrite-futures.pl...
+patching ./examples/tail-logfile.pl...
+patching ./examples/whoami-server.pl...
+patching ./t/28filestream.t...
+patching ./t/14loop-poll-process.t...
+patching ./t/20handle.t...
+patching ./t/21stream-2write.t...
+patching ./t/21stream-3split.t...
+patching ./t/64handle-bind.t...
+patching ./t/51loop-connect.t...
+patching ./t/24listener.t...
+patching ./t/33process.t...
+patching ./t/22timer-countdown.t...
+patching ./t/21stream-4encoding.t...
+patching ./t/41routine.t...
+patching ./t/04notifier.t...
+patching ./t/12loop-select-signal.t...
+patching ./t/22timer-absolute.t...
+patching ./t/25socket.t...
+patching ./t/36loop-runchild.t...
+patching ./t/32loop-spawnchild-setup.t...
+patching ./t/38loop-thread.t...
+patching ./t/52loop-listen.t...
+patching ./t/11loop-select-timer.t...
+patching ./t/23signal.t...
+patching ./t/19loop-future.t...
+patching ./t/16loop-poll-metrics.t...
+patching ./t/06notifier-mixin.t...
+patching ./t/15loop-select-control.t...
+patching ./t/07notifier-future.t...
+patching ./t/01timequeue.t...
+patching ./t/63handle-connect.t...
+patching ./t/11loop-poll-timer.t...
+patching ./t/10loop-poll-io.t...
+patching ./t/27file.t...
+patching ./t/62protocol-linestream.t...
+patching ./t/03loop-magic.t...
+patching ./t/16loop-select-metrics.t...
+patching ./t/12loop-poll-signal.t...
+patching ./t/61protocol-stream.t...
+patching ./t/53loop-extend.t...
+patching ./t/40channel.t...
+patching ./t/15loop-poll-control.t...
+patching ./t/19test.t...
+patching ./t/99pod.t...
+patching ./t/14loop-select-process.t...
+patching ./t/18loop-select-legacy.t...
+patching ./t/34process-handles.t...
+patching ./t/22timer-periodic.t...
+patching ./t/39loop-runproccess.t...
+patching ./t/30loop-fork.t...
+patching ./t/21stream-1read.t...
+patching ./t/18loop-poll-legacy.t...
+patching ./t/37loop-child-root.t...
+patching ./t/05notifier-loop.t...
+patching ./t/42function.t...
+patching ./t/02os.t...
+patching ./t/13loop-select-idle.t...
+patching ./t/50resolver.t...
+patching ./t/00use.t...
+patching ./t/10loop-select-io.t...
+patching ./t/31loop-spawnchild.t...
+patching ./t/60protocol.t...
+patching ./t/70future-io.t...
+patching ./t/13loop-poll-idle.t...
+patching ./t/35loop-openprocess.t...
+patching ./t/26pid.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'IO-Async' version '0.77'
+Building IO-Async
+running tests
+t/00use.t .................... ok
+t/01timequeue.t .............. ok
+t/02os.t ..................... ok
+t/03loop-magic.t ............. ok
+t/04notifier.t ............... ok
+t/05notifier-loop.t .......... ok
+t/06notifier-mixin.t ......... ok
+t/07notifier-future.t ........ ok
+t/10loop-poll-io.t ........... ok
+t/10loop-select-io.t ......... ok
+t/11loop-poll-timer.t ........ ok
+t/11loop-select-timer.t ...... ok
+t/12loop-poll-signal.t ....... ok
+t/12loop-select-signal.t ..... ok
+t/13loop-poll-idle.t ......... ok
+t/13loop-select-idle.t ....... ok
+t/14loop-poll-process.t ...... ok
+t/14loop-select-process.t .... ok
+t/15loop-poll-control.t ...... ok
+t/15loop-select-control.t .... ok
+t/16loop-poll-metrics.t ...... ok
+t/16loop-select-metrics.t .... ok
+t/18loop-poll-legacy.t ....... ok
+t/18loop-select-legacy.t ..... ok
+t/19loop-future.t ............ ok
+t/19test.t ................... ok
+t/20handle.t ................. ok
+t/21stream-1read.t ........... ok
+t/21stream-2write.t .......... ok
+t/21stream-3split.t .......... ok
+t/21stream-4encoding.t ....... ok
+t/22timer-absolute.t ......... ok
+t/22timer-countdown.t ........ ok
+t/22timer-periodic.t ......... ok
+t/23signal.t ................. ok
+t/24listener.t ............... ok
+t/25socket.t ................. ok
+t/26pid.t .................... ok
+t/27file.t ................... ok
+t/28filestream.t ............. ok
+t/30loop-fork.t .............. ok
+t/31loop-spawnchild.t ........ ok
+t/32loop-spawnchild-setup.t .. ok
+t/33process.t ................ ok
+t/34process-handles.t ........ ok
+t/35loop-openprocess.t ....... ok
+t/36loop-runchild.t .......... ok
+t/37loop-child-root.t ........ skipped: not root
+t/38loop-thread.t ............ ok
+t/39loop-runproccess.t ....... ok
+t/40channel.t ................ ok
+t/41routine.t ................ ok
+t/42function.t ............... 1/? Warning: unable to close filehandle $wr properly: Bad file descriptor during global destruction.
+Warning: unable to close filehandle $wr properly: Bad file descriptor during global destruction.
+Warning: unable to close filehandle $out properly: Bad file descriptor during global destruction.
+Warning: unable to close filehandle $out properly: Bad file descriptor during global destruction.
+Warning: unable to close filehandle properly: Bad file descriptor during global destruction.
+Warning: unable to close filehandle properly: Bad file descriptor during global destruction.
+t/42function.t ............... ok
+t/51loop-connect.t ........... ok
+t/52loop-listen.t ............ ok
+t/53loop-extend.t ............ ok
+t/60protocol.t ............... ok
+t/61protocol-stream.t ........ ok
+t/62protocol-linestream.t .... ok
+t/63handle-connect.t ......... ok
+t/64handle-bind.t ............ ok
+t/70future-io.t .............. skipped: Future::IO is not available
+t/99pod.t .................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=63, Tests=1598, 106 wallclock secs ( 0.31 usr  0.07 sys +  7.29 cusr  4.03 csys = 11.70 CPU)
+Result: PASS
+installing
+Building IO-Async
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Debug.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Process.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Signal.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Socket.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Function.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Channel.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Listener.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/FileStream.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Routine.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Protocol.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Test.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/File.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Notifier.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Loop.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Handle.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Resolver.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Future.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/LoopTests.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Metrics.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/PID.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Stream.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/OS.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Timer.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Loop/Poll.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Loop/Select.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/OS/cygwin.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/OS/linux.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/OS/MSWin32.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Protocol/LineStream.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Protocol/Stream.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Internals/ChildManager.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Internals/Connector.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Internals/TimeQueue.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Timer/Countdown.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Timer/Periodic.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/IO/Async/Timer/Absolute.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib/perl5/site_perl/5.32.0/Future/IO/Impl/IOAsync.pm
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Future.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Timer::Countdown.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Resolver.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::File.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Loop::Poll.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Protocol::Stream.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Channel.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::LoopTests.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Function.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Protocol::LineStream.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Timer.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Routine.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Signal.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::PID.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Notifier.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Metrics.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Protocol.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Listener.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Test.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Loop::Select.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Socket.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/Future::IO::Impl::IOAsync.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Timer::Absolute.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Timer::Periodic.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Debug.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::FileStream.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Stream.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::OS::MSWin32.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::OS::linux.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Handle.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::OS::cygwin.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Process.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::Loop.3
+Installing /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3/IO::Async::OS.3
+post-installation fixup
+Moving /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/man3 to /nix/store/89nmvxzvrlj2r2w3qkw9aggsakgz8wp2-perl5.32.0-IO-Async-0.77-devdoc/share/man/man3
+Removing empty /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77/lib
+patching script interpreter paths in /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77
+checking for references to /build/ in /nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77...
+shrinking RPATHs of ELF executables and libraries in /nix/store/89nmvxzvrlj2r2w3qkw9aggsakgz8wp2-perl5.32.0-IO-Async-0.77-devdoc
+gzipping man pages under /nix/store/89nmvxzvrlj2r2w3qkw9aggsakgz8wp2-perl5.32.0-IO-Async-0.77-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/89nmvxzvrlj2r2w3qkw9aggsakgz8wp2-perl5.32.0-IO-Async-0.77-devdoc
+checking for references to /build/ in /nix/store/89nmvxzvrlj2r2w3qkw9aggsakgz8wp2-perl5.32.0-IO-Async-0.77-devdoc...
+/nix/store/xymxwrx6la62dkk42zlc24c0r1xbcrdz-perl5.32.0-IO-Async-0.77

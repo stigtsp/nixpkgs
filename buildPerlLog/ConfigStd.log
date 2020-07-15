@@ -1,0 +1,68 @@
+these derivations will be built:
+  /nix/store/bribz9mlr2792w798cyc25ma2f5136jb-perl5.32.0-Config-Std-0.903.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/3cyzxknm35qk21aqvrdkrjyrxk4khkvf-Config-Std-0.903.tar.gz
+copying path '/nix/store/3cyzxknm35qk21aqvrdkrjyrxk4khkvf-Config-Std-0.903.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bribz9mlr2792w798cyc25ma2f5136jb-perl5.32.0-Config-Std-0.903.drv'...
+unpacking sources
+unpacking source archive /nix/store/3cyzxknm35qk21aqvrdkrjyrxk4khkvf-Config-Std-0.903.tar.gz
+source root is Config-Std-0.903
+setting SOURCE_DATE_EPOCH to timestamp 1507342696 of file Config-Std-0.903/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::Std
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Test::Distribution is not installed
+    *  Test::Pod is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Config-Std' version '0.903'
+Building Config-Std
+running tests
+t/00.load.t ......... 1/1 # Testing Config::Std 0.903
+t/00.load.t ......... ok
+t/00write.t ......... ok
+t/01read.t .......... ok
+t/01read_renamed.t .. ok
+t/02rewrite.t ....... ok
+t/02rewrite_eq.t .... ok
+t/03autoviv.t ....... ok
+t/comments.t ........ ok
+t/pod-coverage.t .... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ............. skipped: Test::Pod 1.14 required for testing POD
+t/undef.t ........... ok
+All tests successful.
+Files=11, Tests=29,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.59 cusr  0.12 csys =  0.76 CPU)
+Result: PASS
+installing
+Building Config-Std
+Installing /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903/lib/perl5/site_perl/5.32.0/Config/Std.pm
+Installing /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903/share/man/man3/Config::Std.3
+post-installation fixup
+Moving /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903/share/man/man3 to /nix/store/v4m01by3a6c75byaplnivfqm237v21yv-perl5.32.0-Config-Std-0.903-devdoc/share/man/man3
+Removing empty /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903/lib
+patching script interpreter paths in /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903
+checking for references to /build/ in /nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v4m01by3a6c75byaplnivfqm237v21yv-perl5.32.0-Config-Std-0.903-devdoc
+gzipping man pages under /nix/store/v4m01by3a6c75byaplnivfqm237v21yv-perl5.32.0-Config-Std-0.903-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v4m01by3a6c75byaplnivfqm237v21yv-perl5.32.0-Config-Std-0.903-devdoc
+checking for references to /build/ in /nix/store/v4m01by3a6c75byaplnivfqm237v21yv-perl5.32.0-Config-Std-0.903-devdoc...
+/nix/store/cl9p23rnjq23xkpsc0avsxdbhw298hvr-perl5.32.0-Config-Std-0.903

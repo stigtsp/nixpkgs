@@ -1,0 +1,71 @@
+these derivations will be built:
+  /nix/store/ls3gvj24xjbdp3r8g952bpmnx59p8722-perl5.32.0-Linux-FD-0.011.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/vhdsqwk22hx1zdhlskmkas3pnzl4q3iv-Linux-FD-0.011.tar.gz
+copying path '/nix/store/vhdsqwk22hx1zdhlskmkas3pnzl4q3iv-Linux-FD-0.011.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ls3gvj24xjbdp3r8g952bpmnx59p8722-perl5.32.0-Linux-FD-0.011.drv'...
+unpacking sources
+unpacking source archive /nix/store/vhdsqwk22hx1zdhlskmkas3pnzl4q3iv-Linux-FD-0.011.tar.gz
+source root is Linux-FD-0.011
+setting SOURCE_DATE_EPOCH to timestamp 1399806523 of file Linux-FD-0.011/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./examples/timers...
+patching ./t/release-pod-syntax.t...
+patching ./t/release-pod-coverage.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Linux-FD' version '0.011'
+Building Linux-FD
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.011" -DXS_VERSION="0.011" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Linux/FD.o lib/Linux/FD.c
+lib/Linux/FD.xs: In function 'S_sv_to_sigset':
+lib/Linux/FD.xs:28:20: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   28 |   Perl_croak(aTHX_ "%s is not of type POSIX::SigSet");
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/Linux/FD.xs: In function 'S_get_event_flag':
+lib/Linux/FD.xs:133:19: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'SV *' {aka 'struct sv *'} [-Wformat=]
+  133 |  Perl_croak(aTHX_ "No such flag '%s' known", flag_name);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~
+      |                                              |
+      |                                              SV * {aka struct sv *}
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Linux/FD/FD.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Linux/FD/FD.so lib/Linux/FD.o
+running tests
+t/00-compile.t ............ ok
+t/10-events.t ............. ok
+t/10-signals.t ............ ok
+t/10-timers.t ............. ok
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .... skipped: these tests are for release candidate testing
+All tests successful.
+Files=6, Tests=34,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.49 cusr  0.20 csys =  0.73 CPU)
+Result: PASS
+installing
+Building Linux-FD
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Linux/FD/FD.so
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Linux/FD/FD.bs
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Linux/FD.pm
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Linux/FD/Signal.pm
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Linux/FD/Event.pm
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Linux/FD/Timer.pm
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/man3/Linux::FD::Signal.3
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/man3/Linux::FD::Timer.3
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/man3/Linux::FD.3
+Installing /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/man3/Linux::FD::Event.3
+post-installation fixup
+Moving /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/man3 to /nix/store/fyada5pkbil3qj8q0ny9cn1sabvsq803-perl5.32.0-Linux-FD-0.011-devdoc/share/man/man3
+Removing empty /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011
+shrinking /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Linux/FD/FD.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011/lib
+patching script interpreter paths in /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011
+checking for references to /build/ in /nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fyada5pkbil3qj8q0ny9cn1sabvsq803-perl5.32.0-Linux-FD-0.011-devdoc
+gzipping man pages under /nix/store/fyada5pkbil3qj8q0ny9cn1sabvsq803-perl5.32.0-Linux-FD-0.011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fyada5pkbil3qj8q0ny9cn1sabvsq803-perl5.32.0-Linux-FD-0.011-devdoc
+checking for references to /build/ in /nix/store/fyada5pkbil3qj8q0ny9cn1sabvsq803-perl5.32.0-Linux-FD-0.011-devdoc...
+/nix/store/iq2jqbhh77m2pb7ci7w2jhc7m8rwgzd5-perl5.32.0-Linux-FD-0.011

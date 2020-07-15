@@ -1,0 +1,1202 @@
+these derivations will be built:
+  /nix/store/v2vl78bfnx49bd0nv8n3vc9c8vf4gdyw-hook.drv
+  /nix/store/a5s7d8zcdzr2g2x97k3sy7xng383b1sk-libxml2-2.9.10.drv
+  /nix/store/53sqm863snxp0yh5amqivb3l6qwwjjhp-perl5.32.0-Alien-Libxml2-0.16.drv
+building '/nix/store/v2vl78bfnx49bd0nv8n3vc9c8vf4gdyw-hook.drv'...
+building '/nix/store/a5s7d8zcdzr2g2x97k3sy7xng383b1sk-libxml2-2.9.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/66fq8vj17z8080nav6cy2q7jha50n3k1-libxml2-2.9.10.tar.gz
+source root is libxml2-2.9.10
+setting SOURCE_DATE_EPOCH to timestamp 1572462881 of file libxml2-2.9.10/libxml2.spec
+patching sources
+applying patch /nix/store/frr6f2hq56j6b4wc0bsklaqskjsagqc0-utf8-xmlErrorFuncHandler.patch
+patching file python/libxml.c
+applying patch /nix/store/7rqhjkg31p5dwcs9j5zbqax7j3193wpp-CVE-2020-7595.patch
+patching file parser.c
+applying patch /nix/store/9knlyrzh2hrxlvwzhnnrkgchr2dfsjbg-CVE-2019-20388.patch
+patching file xmlschemas.c
+Hunk #1 succeeded at 28095 (offset 5 lines).
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10 --bindir=/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin --sbindir=/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/sbin --includedir=/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include --oldincludedir=/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include --mandir=/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man --infodir=/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/share/info --docdir=/nix/store/mfxkcd80mfrj932njrjnbkca1sxc4ag9-libxml2-2.9.10-doc/share/doc/libxml2 --libdir=/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib --libexecdir=/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/libexec --localedir=/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/locale --exec_prefix=\$dev --disable-static --enable-shared --without-icu --with-python=/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... none
+checking whether ln -s works... yes
+checking how to run the C preprocessor... gcc -E
+checking for mv... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mv
+checking for tar... /nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin/tar
+checking for perl... /usr/bin/perl
+checking for wget... /usr/bin/wget
+checking for xmllint... /usr/bin/xmllint
+checking for xsltproc... /usr/bin/xsltproc
+checking for pkg-config... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+./configure: line 7338: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+Checking zlib
+checking for Z... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for gzread in -lz... yes
+Checking lzma
+checking for LZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+Checking headers
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for arpa/nameser.h... yes
+checking for resolv.h... yes
+checking dl.h usability... no
+checking dl.h presence... no
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+Checking types
+checking for uint32_t... yes
+Checking libraries
+checking for strftime... yes
+checking for strftime... (cached) yes
+checking for localtime... yes
+checking for gettimeofday... yes
+checking for ftime... yes
+checking for stat... yes
+checking for signal... yes
+checking for rand... yes
+checking for rand_r... yes
+checking for srand... yes
+checking for time... yes
+checking for isascii... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for va_copy... yes
+checking whether va_list is an array type... yes
+checking for library containing gethostent... none required
+checking for library containing setsockopt... none required
+checking for library containing connect... none required
+checking for type of socket length (socklen_t)... socklen_t *
+checking for const gethostbyname() argument... yes
+checking for const send() second argument... yes
+checking whether to enable IPv6... yes
+checking struct sockaddr::ss_family... yes
+checking for getaddrinfo... yes
+checking for isnan... yes
+checking for isinf... yes
+Found python in /nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin/python
+Found Python version 3.8
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+Checking configuration requirements
+Enabling multithreaded support
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_join in -lpthread... yes
+Enabled Schematron support
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking for iconv declaration...
+        extern size_t iconv (iconv_t cd,  char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+Disabling ICU support
+Enabled Schemas/Relax-NG support
+checking for printf... yes
+checking for sprintf... yes
+checking for fprintf... yes
+checking for snprintf... yes
+checking for vfprintf... yes
+checking for vsprintf... yes
+checking for vsnprintf... yes
+checking for sscanf... yes
+Disabling code coverage for GCC
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libxml2.spec
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libxml/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating doc/devhelp/Makefile
+config.status: creating example/Makefile
+config.status: creating python/Makefile
+config.status: creating python/tests/Makefile
+config.status: creating xstc/Makefile
+config.status: creating include/libxml/xmlversion.h
+config.status: creating libxml-2.0.pc
+config.status: creating libxml-2.0-uninstalled.pc
+config.status: creating libxml2-config.cmake
+config.status: creating python/setup.py
+config.status: creating xml2-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Done configuring
+building
+build flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+make  all-recursive
+make[1]: Entering directory '/build/libxml2-2.9.10'
+Making all in include
+make[2]: Entering directory '/build/libxml2-2.9.10/include'
+Making all in libxml
+make[3]: Entering directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Entering directory '/build/libxml2-2.9.10/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include'
+make[2]: Leaving directory '/build/libxml2-2.9.10/include'
+Making all in .
+make[2]: Entering directory '/build/libxml2-2.9.10'
+  CC       xmllint.o
+  CC       SAX.lo
+  CC       entities.lo
+  CC       encoding.lo
+  CC       error.lo
+  CC       parserInternals.lo
+  CC       parser.lo
+  CC       tree.lo
+  CC       hash.lo
+  CC       list.lo
+  CC       xmlIO.lo
+  CC       xmlmemory.lo
+  CC       uri.lo
+  CC       valid.lo
+  CC       xlink.lo
+  CC       HTMLparser.lo
+  CC       HTMLtree.lo
+  CC       debugXML.lo
+  CC       xpath.lo
+  CC       xpointer.lo
+  CC       xinclude.lo
+  CC       nanohttp.lo
+  CC       nanoftp.lo
+  CC       catalog.lo
+  CC       globals.lo
+  CC       threads.lo
+  CC       c14n.lo
+  CC       xmlstring.lo
+  CC       buf.lo
+  CC       xmlregexp.lo
+  CC       xmlschemas.lo
+  CC       xmlschemastypes.lo
+  CC       xmlunicode.lo
+  CC       xmlreader.lo
+  CC       relaxng.lo
+  CC       dict.lo
+  CC       SAX2.lo
+  CC       xmlwriter.lo
+  CC       legacy.lo
+  CC       chvalid.lo
+  CC       pattern.lo
+  CC       xmlsave.lo
+  CC       xmlmodule.lo
+  CC       schematron.lo
+  CC       xzlib.lo
+  CC       xmlcatalog.o
+sed -e 's?\@XML_LIBDIR\@?-L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib?g' \
+    -e 's?\@XML_INCLUDEDIR\@?-I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2?g' \
+    -e 's?\@VERSION\@?2.9.10?g' \
+    -e 's?\@XML_LIBS\@?-lxml2?g' \
+    -e 's?\@XML_PRIVATE_LIBS\@?-lz     -lm ?g' \
+       < ./xml2Conf.sh.in > xml2Conf.tmp \
+&& mv xml2Conf.tmp xml2Conf.sh
+  CC       testdso.lo
+  CCLD     testdso.la
+  CCLD     libxml2.la
+  CCLD     xmllint
+  CCLD     xmlcatalog
+make[2]: Leaving directory '/build/libxml2-2.9.10'
+Making all in doc
+make[2]: Entering directory '/build/libxml2-2.9.10/doc'
+Making all in .
+make[3]: Entering directory '/build/libxml2-2.9.10/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making all in devhelp
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/devhelp'
+Making all in examples
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[2]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making all in example
+make[2]: Entering directory '/build/libxml2-2.9.10/example'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libxml2-2.9.10/example'
+Making all in xstc
+make[2]: Entering directory '/build/libxml2-2.9.10/xstc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libxml2-2.9.10/xstc'
+Making all in python
+make[2]: Entering directory '/build/libxml2-2.9.10/python'
+make  all-recursive
+make[3]: Entering directory '/build/libxml2-2.9.10/python'
+Making all in .
+make[4]: Entering directory '/build/libxml2-2.9.10/python'
+  CC       libxml.lo
+  CC       libxml2-py.lo
+  CC       types.lo
+  CCLD     libxml2mod.la
+make[4]: Leaving directory '/build/libxml2-2.9.10/python'
+Making all in tests
+make[4]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[3]: Leaving directory '/build/libxml2-2.9.10/python'
+make[2]: Leaving directory '/build/libxml2-2.9.10/python'
+make[1]: Leaving directory '/build/libxml2-2.9.10'
+running tests
+check flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y check
+  CC       runtest.o
+  CC       testrecurse.o
+  CC       testapi.o
+  CC       testchar.o
+  CC       testdict.o
+  CC       runxmlconf.o
+make  all-recursive
+  CCLD     testchar
+make[1]: Entering directory '/build/libxml2-2.9.10'
+Making all in include
+make[2]: Entering directory '/build/libxml2-2.9.10/include'
+Making all in libxml
+make[3]: Entering directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include/libxml'
+  CCLD     testdict
+make[3]: Entering directory '/build/libxml2-2.9.10/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include'
+make[2]: Leaving directory '/build/libxml2-2.9.10/include'
+Making all in .
+make[2]: Entering directory '/build/libxml2-2.9.10'
+make[2]: Leaving directory '/build/libxml2-2.9.10'
+Making all in doc
+make[2]: Entering directory '/build/libxml2-2.9.10/doc'
+  CCLD     runxmlconf
+Making all in .
+make[3]: Entering directory '/build/libxml2-2.9.10/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making all in devhelp
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/devhelp'
+Making all in examples
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[2]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making all in example
+make[2]: Entering directory '/build/libxml2-2.9.10/example'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libxml2-2.9.10/example'
+Making all in xstc
+make[2]: Entering directory '/build/libxml2-2.9.10/xstc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libxml2-2.9.10/xstc'
+Making all in python
+make[2]: Entering directory '/build/libxml2-2.9.10/python'
+make  all-recursive
+make[3]: Entering directory '/build/libxml2-2.9.10/python'
+  CCLD     testrecurse
+Making all in .
+make[4]: Entering directory '/build/libxml2-2.9.10/python'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/python'
+Making all in tests
+make[4]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[3]: Leaving directory '/build/libxml2-2.9.10/python'
+make[2]: Leaving directory '/build/libxml2-2.9.10/python'
+make[1]: Leaving directory '/build/libxml2-2.9.10'
+  CCLD     runtest
+  CCLD     testapi
+[ -d test   ] || ln -s ./test   .
+[ -d result ] || ln -s ./result .
+./runtest && \
+     ./testrecurse && \
+    ASAN_OPTIONS="$ASAN_OPTIONS:detect_leaks=0"  ./testapi && \
+     ./testchar && \
+     ./testdict && \
+     ./runxmlconf
+## XML regression tests
+## XML regression tests on memory
+## XML entity subst regression tests
+## XML Namespaces regression tests
+## Error cases regression tests
+## Error cases regression tests (old 1.0)
+## Error cases stream regression tests
+## Reader regression tests
+## Reader entities substitution regression tests
+## Reader on memory regression tests
+## Walker regression tests
+## SAX1 callbacks regression tests
+## SAX2 callbacks regression tests
+## SAX2 callbacks regression tests with entity substitution
+## XML push regression tests
+## HTML regression tests
+## Push HTML regression tests
+## HTML SAX regression tests
+## Valid documents regression tests
+## Validity checking regression tests
+## Streaming validity checking regression tests
+## Streaming validity error checking regression tests
+## General documents valid regression tests
+## XInclude regression tests
+## XInclude xmlReader regression tests
+## XInclude regression tests stripping include nodes
+## XInclude xmlReader regression tests stripping include nodes
+## XPath expressions regression tests
+## XPath document queries regression tests
+## XPointer document queries regression tests
+## xml:id regression tests
+## URI parsing tests
+## URI base composition tests
+## Path URI conversion tests
+## Schemas regression tests
+## Relax-NG regression tests
+## Relax-NG streaming regression tests
+## Pattern regression tests
+## C14N with comments regression tests
+## C14N without comments regression tests
+## C14N exclusive without comments regression tests
+## C14N 1.1 without comments regression tests
+## Catalog and Threads regression tests
+Total 3175 tests, no errors
+## Parsing recursive test cases
+## Parsing non-recursive test cases
+## Parsing non-recursive huge case
+.........
+Total 9 tests, no errors
+Testing HTMLparser : 32 of 38 functions ...
+Testing HTMLtree : 18 of 18 functions ...
+Testing SAX2 : 38 of 38 functions ...
+Testing c14n : 3 of 4 functions ...
+Testing catalog : 27 of 36 functions ...
+Testing chvalid : 9 of 9 functions ...
+Testing debugXML : 25 of 28 functions ...
+Testing dict : 10 of 13 functions ...
+Testing encoding : 16 of 19 functions ...
+Testing entities : 13 of 17 functions ...
+Testing hash : 17 of 25 functions ...
+Testing list : 19 of 26 functions ...
+Testing nanoftp : 14 of 22 functions ...
+Testing nanohttp : 13 of 17 functions ...
+Testing parser : 61 of 70 functions ...
+Testing parserInternals : 33 of 90 functions ...
+Testing pattern : 10 of 15 functions ...
+Testing relaxng : 14 of 24 functions ...
+Testing schemasInternals : 0 of 2 functions ...
+Testing schematron : 1 of 10 functions ...
+Testing tree : 142 of 164 functions ...
+Testing uri : 10 of 15 functions ...
+Testing valid : 50 of 70 functions ...
+Testing xinclude : 8 of 10 functions ...
+Testing xmlIO : 40 of 50 functions ...
+Testing xmlautomata : 3 of 19 functions ...
+Testing xmlerror : 7 of 15 functions ...
+Testing xmlmodule : 2 of 4 functions ...
+Testing xmlreader : 76 of 86 functions ...
+Testing xmlregexp : 16 of 30 functions ...
+Testing xmlsave : 4 of 10 functions ...
+Testing xmlschemas : 16 of 27 functions ...
+Testing xmlschemastypes : 26 of 34 functions ...
+Testing xmlstring : 26 of 30 functions ...
+Testing xmlunicode : 166 of 166 functions ...
+Testing xmlwriter : 52 of 80 functions ...
+Testing xpath : 32 of 40 functions ...
+Testing xpathInternals : 106 of 117 functions ...
+Testing xpointer : 17 of 21 functions ...
+Total: 1163 functions, 280911 tests, 0 errors
+testing char range: 1 2 3 4 done
+testing 1 byte char in document: 1 2 3 4 done
+testing 2 byte char in document: 1 2 3 4 done
+dictionary tests succeeded 20000 strings
+xmlconf/xmlconf.xml is missing
+  you need to fetch and extract the
+  latest XML Conformance Test Suites
+  http://www.w3.org/XML/Test/xmlts20080827.tar.gz
+  see http://www.w3.org/XML/Test/ for informations
+Ran 0 tests, no errors
+Total 0 tests, no errors
+make[1]: Entering directory '/build/libxml2-2.9.10/python'
+make  all-recursive
+make[2]: Entering directory '/build/libxml2-2.9.10/python'
+Making all in .
+make[3]: Entering directory '/build/libxml2-2.9.10/python'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/python'
+Making all in tests
+make[3]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[2]: Leaving directory '/build/libxml2-2.9.10/python'
+cd tests && make tests
+make[2]: Entering directory '/build/libxml2-2.9.10/python/tests'
+## running Python regression tests
+make[2]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[1]: Leaving directory '/build/libxml2-2.9.10/python'
+make  check-recursive
+make[1]: Entering directory '/build/libxml2-2.9.10'
+Making check in include
+make[2]: Entering directory '/build/libxml2-2.9.10/include'
+Making check in libxml
+make[3]: Entering directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Entering directory '/build/libxml2-2.9.10/include'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/include'
+make[2]: Leaving directory '/build/libxml2-2.9.10/include'
+Making check in .
+make[2]: Entering directory '/build/libxml2-2.9.10'
+make  testSchemas testRelax testSAX testHTML testXPath testURI testThreads testC14N testAutomata testRegexp testReader testapi testModule runtest runsuite testchar testdict runxmlconf testrecurse testlimits
+make[3]: Entering directory '/build/libxml2-2.9.10'
+  CC       testSchemas.o
+  CC       testRelax.o
+  CC       testSAX.o
+  CC       testHTML.o
+  CC       testXPath.o
+  CC       testURI.o
+  CC       testThreads.o
+  CC       testC14N.o
+  CC       testAutomata.o
+  CC       testRegexp.o
+make[3]: 'testapi' is up to date.
+  CC       testReader.o
+make[3]: 'runtest' is up to date.
+  CC       testModule.o
+make[3]: 'testchar' is up to date.
+make[3]: 'testdict' is up to date.
+make[3]: 'runxmlconf' is up to date.
+make[3]: 'testrecurse' is up to date.
+  CC       runsuite.o
+  CC       testlimits.o
+  CCLD     testSchemas
+  CCLD     testRelax
+  CCLD     testXPath
+  CCLD     testURI
+  CCLD     testThreads
+  CCLD     testC14N
+  CCLD     testAutomata
+  CCLD     testRegexp
+  CCLD     testReader
+  CCLD     testModule
+  CCLD     testlimits
+  CCLD     testSAX
+  CCLD     testHTML
+  CCLD     runsuite
+make[3]: Leaving directory '/build/libxml2-2.9.10'
+make[2]: Leaving directory '/build/libxml2-2.9.10'
+Making check in doc
+make[2]: Entering directory '/build/libxml2-2.9.10/doc'
+Making check in .
+make[3]: Entering directory '/build/libxml2-2.9.10/doc'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making check in devhelp
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/devhelp'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/devhelp'
+Making check in examples
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+make  io1 io2 parse1 parse2 parse3 parse4 reader1 reader2 reader3 reader4 testWriter tree1 tree2 xpath1 xpath2
+make[4]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+  CC       io1.o
+  CC       io2.o
+  CC       parse1.o
+  CC       parse2.o
+  CC       parse3.o
+  CC       parse4.o
+  CC       reader1.o
+  CC       reader2.o
+  CC       reader3.o
+  CC       reader4.o
+  CC       testWriter.o
+  CC       tree1.o
+  CC       tree2.o
+  CC       xpath1.o
+  CC       xpath2.o
+  CCLD     io1
+  CCLD     io2
+  CCLD     parse1
+  CCLD     parse2
+  CCLD     parse3
+  CCLD     parse4
+  CCLD     reader1
+  CCLD     reader2
+  CCLD     reader3
+  CCLD     reader4
+  CCLD     testWriter
+  CCLD     tree1
+  CCLD     tree2
+  CCLD     xpath1
+  CCLD     xpath2
+make[4]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[2]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making check in example
+make[2]: Entering directory '/build/libxml2-2.9.10/example'
+make  gjobread
+make[3]: Entering directory '/build/libxml2-2.9.10/example'
+  CC       gjobread.o
+  CCLD     gjobread
+make[3]: Leaving directory '/build/libxml2-2.9.10/example'
+make[2]: Leaving directory '/build/libxml2-2.9.10/example'
+Making check in xstc
+make[2]: Entering directory '/build/libxml2-2.9.10/xstc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/build/libxml2-2.9.10/xstc'
+Making check in python
+make[2]: Entering directory '/build/libxml2-2.9.10/python'
+make  check-recursive
+make[3]: Entering directory '/build/libxml2-2.9.10/python'
+Making check in .
+make[4]: Entering directory '/build/libxml2-2.9.10/python'
+make[4]: Nothing to be done for 'check-am'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/python'
+Making check in tests
+make[4]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[4]: Nothing to be done for 'check'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[3]: Leaving directory '/build/libxml2-2.9.10/python'
+make[2]: Leaving directory '/build/libxml2-2.9.10/python'
+make[1]: Leaving directory '/build/libxml2-2.9.10'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/pkgconfig m4datadir=/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/share/aclocal aclocaldir=/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/share/aclocal pythondir=\"/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages\" install
+make  install-recursive
+make[1]: Entering directory '/build/libxml2-2.9.10'
+Making install in include
+make[2]: Entering directory '/build/libxml2-2.9.10/include'
+Making install in libxml
+make[3]: Entering directory '/build/libxml2-2.9.10/include/libxml'
+make[4]: Entering directory '/build/libxml2-2.9.10/include/libxml'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2/libxml'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 SAX.h entities.h encoding.h parser.h parserInternals.h xmlerror.h HTMLparser.h HTMLtree.h debugXML.h tree.h list.h hash.h xpath.h xpathInternals.h xpointer.h xinclude.h xmlIO.h xmlmemory.h nanohttp.h nanoftp.h uri.h valid.h xlink.h xmlversion.h DOCBparser.h catalog.h threads.h globals.h c14n.h xmlautomata.h xmlregexp.h xmlmodule.h xmlschemas.h schemasInternals.h xmlschemastypes.h xmlstring.h xmlunicode.h xmlreader.h relaxng.h dict.h '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2/libxml'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 SAX2.h xmlexports.h xmlwriter.h chvalid.h pattern.h xmlsave.h schematron.h '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2/libxml'
+make[4]: Leaving directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Leaving directory '/build/libxml2-2.9.10/include/libxml'
+make[3]: Entering directory '/build/libxml2-2.9.10/include'
+make[4]: Entering directory '/build/libxml2-2.9.10/include'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/libxml2-2.9.10/include'
+make[3]: Leaving directory '/build/libxml2-2.9.10/include'
+make[2]: Leaving directory '/build/libxml2-2.9.10/include'
+Making install in .
+make[2]: Entering directory '/build/libxml2-2.9.10'
+make[3]: Entering directory '/build/libxml2-2.9.10'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libxml2.la '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libxml2.so.2.9.10 /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/libxml2.so.2.9.10
+libtool: install: (cd /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib && { ln -s -f libxml2.so.2.9.10 libxml2.so.2 || { rm -f libxml2.so.2 && ln -s libxml2.so.2.9.10 libxml2.so.2; }; })
+libtool: install: (cd /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib && { ln -s -f libxml2.so.2.9.10 libxml2.so || { rm -f libxml2.so && ln -s libxml2.so.2.9.10 libxml2.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libxml2.lai /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/libxml2.la
+libtool: finish: PATH="/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin:/nix/store/qsnyjnj5p231n058h9c6pr4m4wjh1wdk-ncurses-6.2-dev/bin:/nix/store/3bp7lhfq3gh9zgkc61mdv2srn889nlk3-ncurses-6.2/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ./libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c xmllint xmlcatalog '/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/xmllint /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xmllint
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/xmlcatalog /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xmlcatalog
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c xml2-config '/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 xml2Conf.sh '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/cmake/libxml2'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml2-config.cmake '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/cmake/libxml2'
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./Copyright /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/examples
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./xmllint.c /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/examples
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./testSAX.c /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/examples
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./testHTML.c /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/examples
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./testXPath.c /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/examples
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/share/aclocal'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml.m4 '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/share/aclocal'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 xml2-config.1 '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man3'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml.3 '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man3'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/pkgconfig'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml-2.0.pc '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/pkgconfig'
+make[3]: Leaving directory '/build/libxml2-2.9.10'
+make[2]: Leaving directory '/build/libxml2-2.9.10'
+Making install in doc
+make[2]: Entering directory '/build/libxml2-2.9.10/doc'
+Making install in .
+make[3]: Entering directory '/build/libxml2-2.9.10/doc'
+make[4]: Entering directory '/build/libxml2-2.9.10/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./xml.html ./encoding.html ./FAQ.html ./structure.gif ./DOM.gif ./smallfootonly.gif ./redhat.gif ./libxml.gif ./w3c.png ./Libxml2-Logo-180x168.gif ./Libxml2-Logo-90x34.gif /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./html/*.html /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./html/*.png /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./tutorial/*.* \
+        /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial/images
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./tutorial/images/*.* \
+        /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial/images
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial/images/callouts
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./tutorial/images/callouts/*.* \
+        /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html/tutorial/images/callouts
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 xmllint.1 xmlcatalog.1 '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man1'
+make[4]: Leaving directory '/build/libxml2-2.9.10/doc'
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making install in devhelp
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/devhelp'
+make[4]: Entering directory '/build/libxml2-2.9.10/doc/devhelp'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/gtk-doc/html/libxml2'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml2.devhelp general.html index.html libxml2-c14n.html libxml2-catalog.html libxml2-chvalid.html libxml2-debugXML.html libxml2-dict.html libxml2-DOCBparser.html libxml2-encoding.html libxml2-entities.html libxml2-globals.html libxml2-hash.html libxml2-HTMLparser.html libxml2-HTMLtree.html libxml2-list.html libxml2-nanoftp.html libxml2-nanohttp.html libxml2-parser.html libxml2-parserInternals.html libxml2-pattern.html libxml2-relaxng.html libxml2-SAX2.html libxml2-SAX.html libxml2-schemasInternals.html libxml2-schematron.html libxml2-threads.html libxml2-tree.html libxml2-uri.html libxml2-valid.html libxml2-xinclude.html libxml2-xlink.html libxml2-xmlautomata.html libxml2-xmlerror.html libxml2-xmlexports.html libxml2-xmlIO.html libxml2-xmlmemory.html libxml2-xmlmodule.html libxml2-xmlreader.html libxml2-xmlregexp.html '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/gtk-doc/html/libxml2'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libxml2-xmlsave.html libxml2-xmlschemas.html libxml2-xmlschemastypes.html libxml2-xmlstring.html libxml2-xmlunicode.html libxml2-xmlversion.html libxml2-xmlwriter.html libxml2-xpath.html libxml2-xpathInternals.html libxml2-xpointer.html home.png left.png right.png up.png style.css '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/gtk-doc/html/libxml2'
+make[4]: Leaving directory '/build/libxml2-2.9.10/doc/devhelp'
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/devhelp'
+Making install in examples
+make[3]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+make[4]: Entering directory '/build/libxml2-2.9.10/doc/examples'
+make[4]: Nothing to be done for 'install-exec-am'.
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 0644 ./*.html ./*.c ./*.xml ./*.xsl ./*.res /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-2.9.10/html
+make[4]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[3]: Leaving directory '/build/libxml2-2.9.10/doc/examples'
+make[2]: Leaving directory '/build/libxml2-2.9.10/doc'
+Making install in example
+make[2]: Entering directory '/build/libxml2-2.9.10/example'
+make[3]: Entering directory '/build/libxml2-2.9.10/example'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/example'
+make[2]: Leaving directory '/build/libxml2-2.9.10/example'
+Making install in xstc
+make[2]: Entering directory '/build/libxml2-2.9.10/xstc'
+make[3]: Entering directory '/build/libxml2-2.9.10/xstc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/libxml2-2.9.10/xstc'
+make[2]: Leaving directory '/build/libxml2-2.9.10/xstc'
+Making install in python
+make[2]: Entering directory '/build/libxml2-2.9.10/python'
+make  install-recursive
+make[3]: Entering directory '/build/libxml2-2.9.10/python'
+Making install in .
+make[4]: Entering directory '/build/libxml2-2.9.10/python'
+make[5]: Entering directory '/build/libxml2-2.9.10/python'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-python-2.9.10'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 TODO '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-python-2.9.10'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 drv_libxml2.py libxml2.py '/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libxml2mod.la '/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages'
+libtool: warning(B: relinking 'libxml2mod.la'(B
+libtool: install: (cd /build/libxml2-2.9.10/python; /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash "/build/libxml2-2.9.10/libtool"  --silent --tag CC --mode=relink gcc -g -O2 -module -avoid-version ../libxml2.la -L/nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib -lpthread -ldl -lcrypt -lncurses -lutil -lm -lm -o libxml2mod.la -rpath /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages libxml.lo libxml2-py.lo types.lo )
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libxml2mod.soT /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages/libxml2mod.so
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libxml2mod.lai /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages/libxml2mod.la
+libtool: finish: PATH="/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin:/nix/store/qsnyjnj5p231n058h9c6pr4m4wjh1wdk-ncurses-6.2-dev/bin:/nix/store/3bp7lhfq3gh9zgkc61mdv2srn889nlk3-ncurses-6.2/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/build/libxml2-2.9.10/python'
+make[4]: Leaving directory '/build/libxml2-2.9.10/python'
+Making install in tests
+make[4]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[5]: Entering directory '/build/libxml2-2.9.10/python/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-python-2.9.10/examples'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 build.py attribs.py tst.py tstxpath.py xpathext.py push.py pushSAX.py pushSAXhtml.py error.py serialize.py validate.py tstURI.py cutnpaste.py xpathret.py xpath.py outbuf.py inbuf.py input_callback.py resolver.py regexp.py reader.py reader2.py reader3.py reader4.py reader5.py reader6.py reader7.py reader8.py readernext.py walker.py nsdel.py ctxterror.py readererr.py relaxng.py schema.py thread2.py sync.py tstLastError.py indexes.py dtdvalid.py '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-python-2.9.10/examples'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 tstmem.py validDTD.py validSchemas.py validRNG.py compareNodes.py xpathns.py xpathleak.py tst.xml valid.xml invalid.xml test.dtd '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc/libxml2-python-2.9.10/examples'
+make[5]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[4]: Leaving directory '/build/libxml2-2.9.10/python/tests'
+make[3]: Leaving directory '/build/libxml2-2.9.10/python'
+make[2]: Leaving directory '/build/libxml2-2.9.10/python'
+make[1]: Leaving directory '/build/libxml2-2.9.10'
+post-installation fixup
+Moving /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/doc to /nix/store/mfxkcd80mfrj932njrjnbkca1sxc4ag9-libxml2-2.9.10-doc/share/doc
+rmdir: failed to remove '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share': Directory not empty
+Removing /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/gtk-doc
+Removing empty /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/share/ and (possibly) its parents
+Moving /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/cmake to /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/cmake
+rmdir: failed to remove '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib': Directory not empty
+Patching '/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/pkgconfig/libxml-2.0.pc' includedir to output /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev
+shrinking RPATHs of ELF executables and libraries in /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin
+shrinking /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xmllint
+shrinking /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xmlcatalog
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin
+patching script interpreter paths in /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin
+/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xml2-config: interpreter directive changed from " /bin/sh" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/sh"
+checking for references to /build/ in /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib
+patching script interpreter paths in /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev
+checking for references to /build/ in /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10
+shrinking /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/libxml2.so.2.9.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib
+patching script interpreter paths in /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10
+checking for references to /build/ in /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man
+gzipping man pages under /nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man
+checking for references to /build/ in /nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mfxkcd80mfrj932njrjnbkca1sxc4ag9-libxml2-2.9.10-doc
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mfxkcd80mfrj932njrjnbkca1sxc4ag9-libxml2-2.9.10-doc
+checking for references to /build/ in /nix/store/mfxkcd80mfrj932njrjnbkca1sxc4ag9-libxml2-2.9.10-doc...
+shrinking RPATHs of ELF executables and libraries in /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py
+shrinking /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib/python3.8/site-packages/libxml2mod.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py/lib
+patching script interpreter paths in /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py
+checking for references to /build/ in /nix/store/423x1598fnchg9jxw6d0hzw4qsg7ix3k-libxml2-2.9.10-py...
+Moving /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin/xml2-config to /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/bin/xml2-config
+rmdir: failed to remove '/nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/bin': Directory not empty
+Moving /nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib/xml2Conf.sh to /nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/lib/xml2Conf.sh
+rmdir: failed to remove '/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib': Directory not empty
+Moving /nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man/man1 to /nix/store/hl144hqb1z6n35rhzynzwgfvza3p3kkm-libxml2-2.9.10-bin/share/man/man1
+rmdir: failed to remove '/nix/store/jiy69bvi0j5p5xxjfqirv25a0a65dxfg-libxml2-2.9.10-man/share/man': Directory not empty
+building '/nix/store/53sqm863snxp0yh5amqivb3l6qwwjjhp-perl5.32.0-Alien-Libxml2-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/d05xrxmi0ii1drcgrirji72ds47h7xs4-Alien-Libxml2-0.16.tar.gz
+source root is Alien-Libxml2-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1587549018 of file Alien-Libxml2-0.16/xt/release/fixme.t
+patching sources
+configuring
+patching ./maint/cip-before-install...
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+Alien::Build::CommandSequence> + xml2-config --version
+Alien::Build::CommandSequence> [output consumed by Alien::Build recipe]
+Alien::Build::CommandSequence> + xml2-config --cflags
+Alien::Build::CommandSequence> [output consumed by Alien::Build recipe]
+Alien::Build::CommandSequence> + xml2-config --libs
+Alien::Build::CommandSequence> [output consumed by Alien::Build recipe]
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Alien::Libxml2
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Alien/Libxml2.pm blib/lib/Alien/Libxml2.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e prefix site /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+main> prefix /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/share/dist/Alien-Libxml2
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e version 0.16
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e download
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e build
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+Use of uninitialized value in subroutine entry at /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0/PkgConfig.pm line 873.
+Use of uninitialized value $search_paths[0] in join or string at /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0/PkgConfig.pm line 878.
+Alien::Build::Plugin::PkgConfig::PP> Trying to load the pkg-config information from the source code build
+Alien::Build::Plugin::PkgConfig::PP> of your package failed
+Alien::Build::Plugin::PkgConfig::PP> You are currently using the pure-perl implementation of pkg-config
+Alien::Build::Plugin::PkgConfig::PP> (AB Plugin is named PkgConfig::PP, which uses PkgConfig.pm
+Alien::Build::Plugin::PkgConfig::PP> It may work better with the real pkg-config.
+Alien::Build::Plugin::PkgConfig::PP> Try installing your OS' version of pkg-config or unset ALIEN_BUILD_PKG_CONFIG
+Alien::Build::Plugin::Core::Legacy> adding legacy hash to config
+Alien::Build::Plugin::Core::Gather> mkdir -p /build/Alien-Libxml2-0.16/blib/lib/auto/share/dist/Alien-Libxml2/_alien
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e test
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_diag.t ........ 1/? #
+#
+#
+# HARNESS_ACTIVE=1
+# HARNESS_VERSION=3.42
+# PERL5LIB=/build/Alien-Libxml2-0.16/blib/lib:/build/Alien-Libxml2-0.16/blib/arch:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl/5.32.0:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl/5.32.0:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl/5.32.0:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl/5.32.0:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl/5.32.0:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl/5.32.0:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl/5.32.0:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl/5.32.0:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl/5.32.0:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl/5.32.0:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl/5.32.0:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl/5.32.0:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl/5.32.0:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl/5.32.0:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl:/nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl:/nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl:/nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl:/nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl:/nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl:/nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl:/nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl:/nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl:/nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl:/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl:/nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl:/nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl:/nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl:/nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl:/nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl:/nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl:/nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl:/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl
+# PERL_AUTOINSTALL=--skipdeps
+# PERL_DL_NONLAZY=1
+# PERL_USE_UNSAFE_INC=1
+# SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+# fullperl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0
+# shell=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+#
+#
+#
+# PERL5LIB path
+# /build/Alien-Libxml2-0.16/blib/lib
+# /build/Alien-Libxml2-0.16/blib/arch
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl/5.32.0
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl/5.32.0
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl/5.32.0
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl/5.32.0
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl/5.32.0
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl/5.32.0
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl/5.32.0
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl/5.32.0
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl/5.32.0
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl/5.32.0
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl/5.32.0
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl/5.32.0
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl/5.32.0
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl/5.32.0
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl/5.32.0
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl/5.32.0
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl/5.32.0
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl
+# /nix/store/mf15acckh4r7d81y2fskciipvx2sjk08-perl5.32.0-Mojo-DOM58-2.000/lib/perl5/site_perl
+# /nix/store/y2vzs6panllr1r2s78606fairs2bqpjr-perl5.32.0-Sort-Versions-1.62/lib/perl5/site_perl
+# /nix/store/rpi6mdv7mqn5nvl4ih23r7spw84kk5dq-perl5.32.0-Test2-Suite-0.000130/lib/perl5/site_perl
+# /nix/store/llb07ll37x35q0an3162ra5ya5qdqkaj-perl5.32.0-Module-Pluggable-5.2/lib/perl5/site_perl
+# /nix/store/y6qjsz9ciq1n80nj7xm94yz5xgdgmrm8-perl5.32.0-Scope-Guard-0.21/lib/perl5/site_perl
+# /nix/store/vzyfpl31rak595hxfwxz9bqxw7qrr6pq-perl5.32.0-Sub-Info-0.002/lib/perl5/site_perl
+# /nix/store/0wm2ry2gksqnypp7sz48wi94zrv4kvmg-perl5.32.0-Importer-0.025/lib/perl5/site_perl
+# /nix/store/yrlbj04cplw9537f0f3q30asz0n37w68-perl5.32.0-Term-Table-0.015/lib/perl5/site_perl
+# /nix/store/k8dm0yp2n1mz7vl9dc51fsssrsiv794s-perl5.32.0-Test-Simple-1.302175/lib/perl5/site_perl
+# /nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl
+# /nix/store/hgbgg8a7x544csgvf66jlh86216ziz6f-perl5.32.0-Alien-Build-2.26/lib/perl5/site_perl
+# /nix/store/dsyw40fh2zf3c6yxl9n61g84dmzd8jhf-perl5.32.0-Capture-Tiny-0.48/lib/perl5/site_perl
+# /nix/store/c94dvm16ph333hj74sa65qkxq7nha9l0-perl5.32.0-FFI-CheckLib-0.27/lib/perl5/site_perl
+# /nix/store/hlm73mjykr3kmxkzv32k9c5dq7dzwahw-perl5.32.0-File-Which-1.23/lib/perl5/site_perl
+# /nix/store/4zj671q375m04xbpmzfnp36hfbcjzffw-perl5.32.0-File-chdir-0.1010/lib/perl5/site_perl
+# /nix/store/ylx0jdm8c7zz8pdc474082a9svlwqsry-perl5.32.0-Path-Tiny-0.114/lib/perl5/site_perl
+# /nix/store/qdngwv8fbzgym6kmnh2a7q8lm8jw51h0-perl5.32.0-PkgConfig-0.23026/lib/perl5/site_perl
+# /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl
+#
+#
+#
+# perl                                     5.032000
+# Alien::Base                              2.26
+# Alien::Build                             2.26
+# Alien::Build::MM                         2.26
+# Alien::Build::Plugin::Build::SearchDep   2.26
+# Alien::Build::Plugin::Prefer::BadVersion 2.26
+# Alien::Build::Plugin::Probe::Vcpkg       2.26
+# ExtUtils::CBuilder                       0.280234
+# ExtUtils::MakeMaker                      7.44
+# Test2::V0                                0.000130
+# Test::Alien                              2.26
+#
+#
+#
+# version        = 2.9.10
+# cflags         = -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2
+# cflags_static  = -I/nix/store/0f0nf82zkswx16m3zbp49ywz7cqm3wi7-libxml2-2.9.10-dev/include/libxml2
+# libs           = -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -lxml2 -lz -lm -ldl
+# libs_static    = -L/nix/store/v32689da2zbmbawr8jdd9q6rsgdqdw5y-libxml2-2.9.10/lib -lxml2 -lz -lm -ldl
+#
+#
+#
+t/00_diag.t ........ ok
+t/alien_libxml2.t .. ok
+All tests successful.
+Files=2, Tests=4,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.84 cusr  0.23 csys =  1.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/pkgconfig m4datadir=/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/share/aclocal aclocaldir=/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MAlien::Build::MM=cmd -e clean_install
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::PP
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Alien/Libxml2/Libxml2.txt
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Alien/Libxml2.pm
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Alien/Libxml2/Install/Files.pm
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/share/dist/Alien-Libxml2/_alien/alienfile
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/share/dist/Alien-Libxml2/_alien/alien.json
+Installing /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/share/man/man3/Alien::Libxml2.3
+Appending installation info to /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/share/man/man3 to /nix/store/vghmmxmwm4hnmqwpxjwzc1v7rav8c3xw-perl5.32.0-Alien-Libxml2-0.16-devdoc/share/man/man3
+Removing empty /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16/lib
+patching script interpreter paths in /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16
+checking for references to /build/ in /nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vghmmxmwm4hnmqwpxjwzc1v7rav8c3xw-perl5.32.0-Alien-Libxml2-0.16-devdoc
+gzipping man pages under /nix/store/vghmmxmwm4hnmqwpxjwzc1v7rav8c3xw-perl5.32.0-Alien-Libxml2-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vghmmxmwm4hnmqwpxjwzc1v7rav8c3xw-perl5.32.0-Alien-Libxml2-0.16-devdoc
+checking for references to /build/ in /nix/store/vghmmxmwm4hnmqwpxjwzc1v7rav8c3xw-perl5.32.0-Alien-Libxml2-0.16-devdoc...
+/nix/store/aj8j5qj1p0769v11hn88n8811dz6fvlj-perl5.32.0-Alien-Libxml2-0.16

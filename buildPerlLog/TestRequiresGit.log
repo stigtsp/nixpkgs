@@ -1,0 +1,116 @@
+these derivations will be built:
+  /nix/store/011j9bbkirpmjacb9fyy63rxbzz163p6-perl5.32.0-Test-Requires-Git-1.008.drv
+building '/nix/store/011j9bbkirpmjacb9fyy63rxbzz163p6-perl5.32.0-Test-Requires-Git-1.008.drv'...
+unpacking sources
+unpacking source archive /nix/store/vih1hkrdjzwmgpljab7q73kq4iy0mfl6-Test-Requires-Git-1.008.tar.gz
+source root is Test-Requires-Git-1.008
+setting SOURCE_DATE_EPOCH to timestamp 1488916931 of file Test-Requires-Git-1.008/t/use_git.t
+patching sources
+configuring
+patching ./t/00-report-prereqs.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/release-distmeta.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Requires::Git
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Requires/Git.pm blib/lib/Test/Requires/Git.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     List::Util           any     1.55
+#     Scalar::Util         any     1.55
+#     Test::More           any 1.302175
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                 Want     Have
+#     --------------------- ----- --------
+#     Carp                    any     1.50
+#     Git::Version::Compare 1.003    1.004
+#     Test::Builder::Module   any 1.302175
+#     base                    any     2.27
+#     strict                  any     1.11
+#     warnings                any     1.47
+#
+t/00-report-prereqs.t .... ok
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/fail.t ................. Can't exec "git": No such file or directory at /build/Test-Requires-Git-1.008/blib/lib/Test/Requires/Git.pm line 81.
+# undef
+t/fail.t ................. ok
+t/has_plan.t ............. ok
+t/import.t ............... Can't exec "git": No such file or directory at /build/Test-Requires-Git-1.008/blib/lib/Test/Requires/Git.pm line 81.
+t/import.t ............... ok
+t/no_git.t ............... ok
+t/no_plan.t .............. ok
+t/odd_args.t ............. ok
+t/other_git.t ............ 1/2 Can't exec "/zlonk/bam/kapow": No such file or directory at /build/Test-Requires-Git-1.008/blib/lib/Test/Requires/Git.pm line 81.
+t/other_git.t ............ ok
+t/release-distmeta.t ..... skipped: these tests are for release candidate testing
+t/skip_all.t ............. ok
+t/skip_git.t ............. ok
+t/skip_one.t ............. # fake version: 2.3.3.8
+t/skip_one.t ............. ok
+t/skip_remaining.t ....... ok
+t/success.t .............. ok
+t/undef_plan.t ........... skipped: 1.2.3 version_lt 1.2.1
+t/use_git.t .............. Can't exec "/zowie/zzzzzwap/ker_plop": No such file or directory at /build/Test-Requires-Git-1.008/blib/lib/Test/Requires/Git.pm line 81.
+t/use_git.t .............. skipped: `/zowie/zzzzzwap/ker_plop` binary not available or broken
+All tests successful.
+Files=18, Tests=420,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.00 cusr  0.19 csys =  1.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/lib/pkgconfig m4datadir=/nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/share/aclocal aclocaldir=/nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/lib/perl5/site_perl/5.32.0/Test/Requires/Git.pm
+Installing /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/share/man/man3/Test::Requires::Git.3
+Appending installation info to /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/share/man/man3 to /nix/store/snqgmvqyfc7rvf3rbddnp199f7c93fqh-perl5.32.0-Test-Requires-Git-1.008-devdoc/share/man/man3
+Removing empty /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008/lib
+patching script interpreter paths in /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008
+checking for references to /build/ in /nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/snqgmvqyfc7rvf3rbddnp199f7c93fqh-perl5.32.0-Test-Requires-Git-1.008-devdoc
+gzipping man pages under /nix/store/snqgmvqyfc7rvf3rbddnp199f7c93fqh-perl5.32.0-Test-Requires-Git-1.008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/snqgmvqyfc7rvf3rbddnp199f7c93fqh-perl5.32.0-Test-Requires-Git-1.008-devdoc
+checking for references to /build/ in /nix/store/snqgmvqyfc7rvf3rbddnp199f7c93fqh-perl5.32.0-Test-Requires-Git-1.008-devdoc...
+/nix/store/a286dyzd08vnqqdcx1x9a0v27cfif7rb-perl5.32.0-Test-Requires-Git-1.008

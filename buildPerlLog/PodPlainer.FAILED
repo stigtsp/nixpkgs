@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/g3m8lfm8ymmhpf0w7mm318rqai11anfv-perl5.32.0-Pod-Plainer-1.04.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/qdwsdh12mbvz3xy5p4ap3ms5nvh7dhvp-Pod-Plainer-1.04.tar.gz
+copying path '/nix/store/qdwsdh12mbvz3xy5p4ap3ms5nvh7dhvp-Pod-Plainer-1.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g3m8lfm8ymmhpf0w7mm318rqai11anfv-perl5.32.0-Pod-Plainer-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/qdwsdh12mbvz3xy5p4ap3ms5nvh7dhvp-Pod-Plainer-1.04.tar.gz
+source root is Pod-Plainer-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1404503204 of file Pod-Plainer-1.04/MANIFEST
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Pod::Parser 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Plainer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Plainer.pm blib/lib/Pod/Plainer.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/plainer.t ....... 1/8
+#   Failed test 'require Pod::Plainer;'
+#   at t/plainer.t line 8.
+#     Tried to require 'Pod::Plainer'.
+#     Error:  Can't locate Pod/Parser.pm in @INC (you may need to install the Pod::Parser module) (@INC contains: /build/Pod-Plainer-1.04/blib/lib /build/Pod-Plainer-1.04/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7bzc85nf5p6ndp0jplxlal01yrdqp0pj-perl5.32.0-Pod-Plainer-1.04/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/7bzc85nf5p6ndp0jplxlal01yrdqp0pj-perl5.32.0-Pod-Plainer-1.04/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Plainer-1.04/blib/lib/Pod/Plainer.pm line 5, <DATA> line 14.
+# BEGIN failed--compilation aborted at /build/Pod-Plainer-1.04/blib/lib/Pod/Plainer.pm line 5, <DATA> line 14.
+# Compilation failed in require at (eval 8) line 2, <DATA> line 14.
+Can't locate object method "new" via package "Pod::Plainer" at t/plainer.t line 10, <DATA> line 14.
+Use of uninitialized value $input in unlink at t/plainer.t line 36, <DATA> line 14.
+Use of uninitialized value $output in unlink at t/plainer.t line 37, <DATA> line 14.
+# Looks like your test exited with 255 just after 1.
+t/plainer.t ....... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 8/8 subtests
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+
+Test Summary Report
+-------------------
+t/plainer.t     (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 8 tests but ran 1.
+Files=3, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.13 cusr  0.02 csys =  0.17 CPU)
+Result: FAIL
+Failed 1/3 test programs. 1/1 subtests failed.
+make: *** [Makefile:851: test_dynamic] Error 255
+builder for '/nix/store/g3m8lfm8ymmhpf0w7mm318rqai11anfv-perl5.32.0-Pod-Plainer-1.04.drv' failed with exit code 2
+error: build of '/nix/store/g3m8lfm8ymmhpf0w7mm318rqai11anfv-perl5.32.0-Pod-Plainer-1.04.drv' failed

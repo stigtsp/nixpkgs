@@ -1,0 +1,2253 @@
+these derivations will be built:
+  /nix/store/4jpzmjrxmgxqixp4k6sp4vh14bvapa3z-perl5.32.0-ExtUtils-PkgConfig-1.16.drv
+  /nix/store/axdkw87776yair81r1gnm572rslls1ii-cairo-1.16.0.drv
+  /nix/store/54a1g96clsr183zvynwidcxiknh3d25r-perl5.32.0-Cairo-1.107.drv
+building '/nix/store/axdkw87776yair81r1gnm572rslls1ii-cairo-1.16.0.drv'...
+building '/nix/store/4jpzmjrxmgxqixp4k6sp4vh14bvapa3z-perl5.32.0-ExtUtils-PkgConfig-1.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/id4kniwhy9pklmhsvjpk74hg6c6gg92v-ExtUtils-PkgConfig-1.16.tar.gz
+source root is ExtUtils-PkgConfig-1.16
+setting SOURCE_DATE_EPOCH to timestamp 1492739820 of file ExtUtils-PkgConfig-1.16/README
+patching sources
+configuring
+patching ./t/2.t...
+unpacking sources
+unpacking source archive /nix/store/msap1sjndnmq73w4b5nap0328ix71inm-cairo-1.16.0.tar.xz
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::PkgConfig
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/ExtUtils/PkgConfig.pm blib/lib/ExtUtils/PkgConfig.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1.t .. 1/10 # Testing against pkg-config 0.29
+t/1.t .. ok
+t/2.t .. ok
+t/3.t .. ok
+t/4.t .. ok
+All tests successful.
+Files=4, Tests=51,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.29 cusr  0.09 csys =  0.41 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/lib/pkgconfig m4datadir=/nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/share/aclocal aclocaldir=/nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/lib/perl5/site_perl/5.32.0/ExtUtils/PkgConfig.pm
+Installing /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/share/man/man3/ExtUtils::PkgConfig.3
+Appending installation info to /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/share/man/man3 to /nix/store/gjvl4z0rba5k5jixf2bf0cwdj1mq3vja-perl5.32.0-ExtUtils-PkgConfig-1.16-devdoc/share/man/man3
+Removing empty /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16/lib
+patching script interpreter paths in /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16
+checking for references to /build/ in /nix/store/ln8h86vvywagzv5lrhc8526rsmzw4zfy-perl5.32.0-ExtUtils-PkgConfig-1.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gjvl4z0rba5k5jixf2bf0cwdj1mq3vja-perl5.32.0-ExtUtils-PkgConfig-1.16-devdoc
+gzipping man pages under /nix/store/gjvl4z0rba5k5jixf2bf0cwdj1mq3vja-perl5.32.0-ExtUtils-PkgConfig-1.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gjvl4z0rba5k5jixf2bf0cwdj1mq3vja-perl5.32.0-ExtUtils-PkgConfig-1.16-devdoc
+checking for references to /build/ in /nix/store/gjvl4z0rba5k5jixf2bf0cwdj1mq3vja-perl5.32.0-ExtUtils-PkgConfig-1.16-devdoc...
+source root is cairo-1.16.0
+setting SOURCE_DATE_EPOCH to timestamp 1539980627 of file cairo-1.16.0/ChangeLog.pre-1.8
+patching sources
+applying patch /nix/store/lwlwzxw77w9bmgfhd3s53hxv8yx8z0xm-CVE-2018-19876.patch
+patching file src/cairo-ft-font.c
+configuring
+fixing libtool script ./build/ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0 --bindir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin --sbindir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/sbin --includedir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include --oldincludedir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include --mandir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/share/man --infodir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/share/info --docdir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/doc/cairo --libdir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib --libexecdir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/libexec --localedir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/locale --enable-tee --enable-xcb --enable-gl --enable-pdf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for unistd.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for typeof syntax and keyword spelling... typeof
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... none
+checking whether make supports nested variables... (cached) yes
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+./configure: line 7953: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk-doc... no
+configure: WARNING:
+  You will not be able to create source packages with 'make dist'
+  because gtk-doc >= 1.15 is not found.
+checking for gtkdoc-check... no
+checking for gtkdoc-check... no
+checking for gtkdoc-rebase... no
+checking for gtkdoc-mkpdf... no
+checking whether to build gtk-doc documentation... no
+checking for GTKDOC_DEPS... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for find... /nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin/find
+checking for xargs... /nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin/xargs
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking how to run the C preprocessor... gcc -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... ld
+checking if the linker (ld) is GNU ld... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for inline... inline
+checking pkg-config is at least version 0.9.0... yes
+checking for supported warning flags...
+checking whether gcc supports -Werror... yes
+checking whether gcc supports -errwarn... no
+checking whether gcc supports -Wall... yes
+checking whether gcc supports -Wextra... yes
+checking whether gcc supports -Wmissing-declarations... yes
+checking whether gcc supports -Werror-implicit-function-declaration... yes
+checking whether gcc supports -Wpointer-arith... yes
+checking whether gcc supports -Wwrite-strings... yes
+checking whether gcc supports -Wsign-compare... yes
+checking whether gcc supports -Wpacked... yes
+checking whether gcc supports -Wswitch-enum... yes
+checking whether gcc supports -Wmissing-format-attribute... yes
+checking whether gcc supports -Wvolatile-register-var... yes
+checking whether gcc supports -Wstrict-aliasing=2... yes
+checking whether gcc supports -Winit-self... yes
+checking whether gcc supports -Wunsafe-loop-optimizations... yes
+checking whether gcc supports -Wno-missing-field-initializers... yes
+checking whether gcc supports -Wno-unused-parameter... yes
+checking whether gcc supports -Wno-attributes... yes
+checking whether gcc supports -Wno-long-long... yes
+checking whether gcc supports -Winline... yes
+checking whether gcc supports -erroff=E_ENUM_TYPE_MISMATCH_ARG... no
+checking whether gcc supports -erroff=E_ENUM_TYPE_MISMATCH_OP... no
+checking whether gcc supports -fno-strict-aliasing... yes
+checking whether gcc supports -fno-common... yes
+checking whether gcc supports -Wp,-D_FORTIFY_SOURCE=2... yes
+checking whether gcc supports -Wunused-but-set-variable -Wno-unused-but-set-variable... yes
+checking which warning flags were supported...  -Wall -Wextra -Wmissing-declarations -Werror-implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wsign-compare -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2 -Wno-unused-but-set-variable
+checking how to enable unused result warnings... __attribute__((__warn_unused_result__))
+checking how to allow undefined symbols in shared libraries used by test suite... -Wl,--allow-shlib-undefined
+checking whether byte ordering is bigendian... no
+checking whether float word ordering is bigendian... no
+checking for native atomic primitives... cxx11
+checking whether atomic ops require a memory barrier... no
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of size_t... 8
+checking for native Win32... no
+checking for Sun Solaris (non-POSIX ctime_r)... no
+checking for cos in -lm... yes
+checking for sched_yield in -lrt... yes
+checking for shm_open in -lrt... yes
+checking for connect in -lsocket... no
+checking for __builtin_return_address(0)... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking sys/int_types.h usability... no
+checking sys/int_types.h presence... no
+checking for sys/int_types.h... no
+checking for uint64_t... yes
+checking for uint128_t... no
+checking for __uint128_t... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking for alarm... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for sched_getaffinity... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for mmap... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for clock_gettime... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking for feenableexcept... yes
+checking for fedisableexcept... yes
+checking for feclearexcept... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking for signal.h... (cached) yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking for fenv.h... (cached) yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for ctime_r... yes
+checking for localtime_r... yes
+checking for gmtime_r... yes
+checking for drand48... yes
+checking for flockfile... yes
+checking for funlockfile... yes
+checking for getline... yes
+checking for link... yes
+checking for strndup... yes
+checking for sys/stat.h... (cached) yes
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking for mkdir... yes
+checking mkdir variant... mkdir(path, mode)
+checking for fork... yes
+checking for waitpid... yes
+checking for raise... yes
+checking for VALGRIND... no
+no
+checking for compress in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for lzo2a_decompress in -llzo2... no
+checking for dlsym in -ldl... yes
+checking for dlfcn.h... (cached) yes
+checking xlocale.h usability... no
+checking xlocale.h presence... no
+checking for xlocale.h... no
+checking for newlocale... yes
+checking for strtod_l... yes
+checking for X... libraries , headers
+checking for cairo's Xlib surface backend feature...
+checking for xlib... yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/shm.h usability... yes
+checking sys/shm.h presence... yes
+checking for sys/shm.h... yes
+checking whether shmctl IPC_RMID allowes subsequent attaches... yes
+checking for X11/extensions/XShm.h... yes
+checking for X11/extensions/shmproto.h... yes
+checking for X11/extensions/shmstr.h... yes
+checking whether cairo's Xlib surface backend feature could be enabled... yes
+checking for cairo's Xlib Xrender surface backend feature...
+checking for xlib_xrender... yes
+checking for XRenderCreateSolidFill... yes
+checking for XRenderCreateLinearGradient... yes
+checking for XRenderCreateRadialGradient... yes
+checking for XRenderCreateConicalGradient... yes
+checking whether cairo's Xlib Xrender surface backend feature could be enabled... yes
+checking for cairo's XCB surface backend feature...
+checking for xcb... yes
+checking whether cairo's XCB surface backend feature could be enabled... yes
+checking for cairo's XCB/SHM functions feature...
+checking for xcb_shm... yes
+checking whether cairo's XCB/SHM functions feature could be enabled... yes
+checking for cairo's Quartz surface backend feature...
+checking ApplicationServices/ApplicationServices.h usability... no
+checking ApplicationServices/ApplicationServices.h presence... no
+checking for ApplicationServices/ApplicationServices.h... no
+checking CoreGraphics/CoreGraphics.h usability... no
+checking CoreGraphics/CoreGraphics.h presence... no
+checking for CoreGraphics/CoreGraphics.h... no
+checking whether cairo's Quartz surface backend feature could be enabled... no (requires CoreGraphics framework)
+checking for cairo's Quartz font backend feature...
+checking whether cairo's Quartz font backend feature could be enabled... no (requires CoreGraphics framework)
+checking for cairo's Microsoft Windows surface backend feature...
+checking whether cairo's Microsoft Windows surface backend feature could be enabled... no (requires a Win32 platform)
+checking for cairo's Microsoft Windows font backend feature...
+checking whether cairo's Microsoft Windows font backend feature could be enabled... no (requires a Win32 platform)
+checking for cairo's PNG functions feature...
+checking for png... yes
+checking whether cairo's PNG functions feature could be enabled... yes
+checking for cairo's OpenGL surface backend feature...
+checking for gl... yes
+checking whether cairo's OpenGL surface backend feature could be enabled... yes
+checking for cairo's EGL functions feature...
+checking for egl... yes
+checking whether cairo's EGL functions feature could be enabled... yes
+checking for cairo's GLX functions feature...
+checking GL/glx.h usability... yes
+checking GL/glx.h presence... yes
+checking for GL/glx.h... yes
+checking whether cairo's GLX functions feature could be enabled... yes
+checking for cairo's WGL functions feature...
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking whether cairo's WGL functions feature could be enabled... no (WGL headers not found)
+checking for cairo's script surface backend feature...
+checking whether cairo's script surface backend feature could be enabled... yes
+checking for cairo's FreeType font backend feature...
+checking for FREETYPE... yes
+checking whether cairo's FreeType font backend feature could be enabled... yes
+checking for cairo's Fontconfig font backend feature...
+checking for FONTCONFIG... yes
+checking whether cairo's Fontconfig font backend feature could be enabled... yes
+checking for FT_Get_X11_Font_Format... yes
+checking for FT_GlyphSlot_Embolden... yes
+checking for FT_GlyphSlot_Oblique... yes
+checking for FT_Load_Sfnt_Table... yes
+checking for FT_Library_SetLcdFilter... yes
+checking for FT_Get_Var_Design_Coordinates... yes
+checking for FT_Done_MM_Var... yes
+checking for FT_HAS_COLOR... yes
+checking for FcInit... yes
+checking for FcFini... yes
+checking for cairo's PostScript surface backend feature...
+checking whether cairo's PostScript surface backend feature could be enabled... yes
+checking for gs... no
+configure: WARNING: PS backend will not be tested since ghostscript is not available
+checking for LIBSPECTRE... no
+checking for cairo's PDF surface backend feature...
+checking whether cairo's PDF surface backend feature could be enabled... yes
+checking for POPPLER... no
+configure: WARNING: PDF backend will not be tested since poppler >= 0.17.4 is not available
+checking for cairo's SVG surface backend feature...
+checking whether cairo's SVG surface backend feature could be enabled... yes
+checking for LIBRSVG... no
+configure: WARNING: SVG backend will not be tested since librsvg >= 2.35.0 is not available
+checking for cairo's image surface backend feature...
+checking for pixman... yes
+checking whether cairo's image surface backend feature could be enabled... yes
+checking for cairo's mime surface backend feature...
+checking whether cairo's mime surface backend feature could be enabled... yes
+checking for cairo's recording surface backend feature...
+checking whether cairo's recording surface backend feature could be enabled... yes
+checking for cairo's observer surface backend feature...
+checking whether cairo's observer surface backend feature could be enabled... yes
+checking for cairo's tee surface backend feature...
+checking whether cairo's tee surface backend feature could be enabled... yes
+checking for cairo's user font backend feature...
+checking whether cairo's user font backend feature could be enabled... yes
+checking for cairo's pthread feature...
+checking whether cairo's pthread feature could be enabled... yes
+checking for cairo's gobject functions feature...
+checking for GOBJECT... yes
+checking whether cairo's gobject functions feature could be enabled... yes
+checking for GOBJECT... yes
+checking for cairo's cairo-trace feature...
+checking whether cairo's cairo-trace feature could be enabled... yes
+checking for cairo's cairo-script-interpreter feature...
+checking whether cairo's cairo-script-interpreter feature could be enabled... yes
+checking for bfd_openr in -lbfd... yes
+checking bfd.h usability... no
+checking bfd.h presence... no
+checking for bfd.h... no
+checking libiberty.h usability... no
+checking libiberty.h presence... no
+checking for libiberty.h... no
+checking for cairo's symbol-lookup feature...
+checking whether cairo's symbol-lookup feature could be enabled... no (requires bfd)
+checking for glib... yes
+checking for shm_open in -lrt... (cached) yes
+checking for gtk... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/cairo.pc
+config.status: creating cairo-uninstalled.pc
+config.status: creating src/cairo-xlib.pc
+config.status: creating cairo-xlib-uninstalled.pc
+config.status: creating src/cairo-xlib-xrender.pc
+config.status: creating cairo-xlib-xrender-uninstalled.pc
+config.status: creating src/cairo-xcb.pc
+config.status: creating cairo-xcb-uninstalled.pc
+config.status: creating src/cairo-xcb-shm.pc
+config.status: creating cairo-xcb-shm-uninstalled.pc
+config.status: creating src/cairo-png.pc
+config.status: creating cairo-png-uninstalled.pc
+config.status: creating src/cairo-gl.pc
+config.status: creating cairo-gl-uninstalled.pc
+config.status: creating src/cairo-egl.pc
+config.status: creating cairo-egl-uninstalled.pc
+config.status: creating src/cairo-glx.pc
+config.status: creating cairo-glx-uninstalled.pc
+config.status: creating src/cairo-script.pc
+config.status: creating cairo-script-uninstalled.pc
+config.status: creating src/cairo-ft.pc
+config.status: creating cairo-ft-uninstalled.pc
+config.status: creating src/cairo-fc.pc
+config.status: creating cairo-fc-uninstalled.pc
+config.status: creating src/cairo-ps.pc
+config.status: creating cairo-ps-uninstalled.pc
+config.status: creating src/cairo-pdf.pc
+config.status: creating cairo-pdf-uninstalled.pc
+config.status: creating src/cairo-svg.pc
+config.status: creating cairo-svg-uninstalled.pc
+config.status: creating src/cairo-tee.pc
+config.status: creating cairo-tee-uninstalled.pc
+config.status: creating src/cairo-gobject.pc
+config.status: creating cairo-gobject-uninstalled.pc
+config.status: creating Makefile
+config.status: creating boilerplate/Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating test/pdiff/Makefile
+config.status: creating perf/Makefile
+config.status: creating perf/micro/Makefile
+config.status: creating util/Makefile
+config.status: creating util/cairo-fdr/Makefile
+config.status: creating util/cairo-gobject/Makefile
+config.status: creating util/cairo-missing/Makefile
+config.status: creating util/cairo-script/Makefile
+config.status: creating util/cairo-script/examples/Makefile
+config.status: creating util/cairo-sphinx/Makefile
+config.status: creating util/cairo-trace/Makefile
+config.status: creating util/cairo-trace/cairo-trace
+config.status: creating doc/Makefile
+config.status: creating doc/public/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing ./build/Makefile.win32.features commands
+config.status: creating ./build/Makefile.win32.features
+config.status: ./build/Makefile.win32.features is unchanged
+config.status: executing ./src/Makefile.am.features commands
+config.status: creating ./src/Makefile.am.features
+config.status: ./src/Makefile.am.features is unchanged
+config.status: executing ./src/Makefile.win32.features commands
+config.status: creating ./src/Makefile.win32.features
+config.status: ./src/Makefile.win32.features is unchanged
+config.status: executing ./boilerplate/Makefile.am.features commands
+config.status: creating ./boilerplate/Makefile.am.features
+config.status: ./boilerplate/Makefile.am.features is unchanged
+config.status: executing ./boilerplate/Makefile.win32.features commands
+config.status: creating ./boilerplate/Makefile.win32.features
+config.status: ./boilerplate/Makefile.win32.features is unchanged
+config.status: executing src/cairo-features.h commands
+config.status: creating src/cairo-features.h
+config.status: executing src/cairo-supported-features.h commands
+config.status: creating src/cairo-supported-features.h
+config.status: executing ./build/Makefile.win32.features-h commands
+config.status: creating ./build/Makefile.win32.features-h
+config.status: ./build/Makefile.win32.features-h is unchanged
+config.status: executing cairo-trace commands
+
+cairo (version 1.16.0 [release]) will be compiled with:
+
+The following surface backends:
+  Image:         yes (always builtin)
+  Recording:     yes (always builtin)
+  Observer:      yes (always builtin)
+  Mime:          yes (always builtin)
+  Tee:           yes
+  XML:           no (disabled, use --enable-xml to enable)
+  Xlib:          yes
+  Xlib Xrender:  yes
+  Qt:            no (disabled, use --enable-qt to enable)
+  Quartz:        no (requires CoreGraphics framework)
+  Quartz-image:  no (disabled, use --enable-quartz-image to enable)
+  XCB:           yes
+  Win32:         no (requires a Win32 platform)
+  OS2:           no (disabled, use --enable-os2 to enable)
+  CairoScript:   yes
+  PostScript:    yes
+  PDF:           yes
+  SVG:           yes
+  OpenGL:        yes
+  OpenGL ES 2.0: no (disabled, use --enable-glesv2 to enable)
+  OpenGL ES 3.0: no (disabled, use --enable-glesv3 to enable)
+  BeOS:          no (disabled, use --enable-beos to enable)
+  DirectFB:      no (disabled, use --enable-directfb to enable)
+  OpenVG:        no (disabled, use --enable-vg to enable)
+  DRM:           no (disabled, use --enable-drm to enable)
+  Cogl:          no (disabled, use --enable-cogl to enable)
+
+The following font backends:
+  User:          yes (always builtin)
+  FreeType:      yes
+  Fontconfig:    yes
+  Win32:         no (requires a Win32 platform)
+  Quartz:        no (requires CoreGraphics framework)
+
+The following functions:
+  PNG functions:   yes
+  GLX functions:   yes
+  WGL functions:   no (WGL headers not found)
+  EGL functions:   yes
+  X11-xcb functions: no (disabled, use --enable-xlib-xcb to enable)
+  XCB-shm functions: yes
+
+The following features and utilities:
+  cairo-trace:                yes
+  cairo-script-interpreter:   yes
+
+And the following internal features:
+  pthread:       yes
+  gtk-doc:       no
+  gcov support:  no
+  symbol-lookup: no (requires bfd)
+  test surfaces: no (disabled, use --enable-test-surfaces to enable)
+  ps testing:    no (requires libspectre)
+  pdf testing:   no (requires poppler-glib >= 0.17.4)
+  svg testing:   no (requires librsvg-2.0 >= 2.35.0)
+
+
+--- The OpenGL surface backend feature is still under active development and
+--- is included in this release only as a preview. It does NOT fully work yet
+--- and incompatible changes may yet be made to OpenGL surface backend
+--- specific API.
+
+--- The tee surface backend feature is still under active development and is
+--- included in this release only as a preview. It does NOT fully work yet
+--- and incompatible changes may yet be made to tee surface backend specific
+--- API.
+
+building
+build flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+make  all-recursive
+make[1]: Entering directory '/build/cairo-1.16.0'
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+Making all in src
+make[2]: Entering directory '/build/cairo-1.16.0/src'
+Makefile:3093: warning: ignoring prerequisites on suffix rule definition
+Makefile:3095: warning: ignoring prerequisites on suffix rule definition
+make  all-am
+make[3]: Entering directory '/build/cairo-1.16.0/src'
+Makefile:3093: warning: ignoring prerequisites on suffix rule definition
+Makefile:3095: warning: ignoring prerequisites on suffix rule definition
+  CC       cairo-analysis-surface.lo
+  CC       cairo-arc.lo
+  CC       cairo-array.lo
+  CC       cairo-atomic.lo
+  CC       cairo-base64-stream.lo
+  CC       cairo-base85-stream.lo
+  CC       cairo-bentley-ottmann-rectangular.lo
+  CC       cairo-bentley-ottmann-rectilinear.lo
+cairo-analysis-surface.c:1009:5: warning: cast between incompatible function types from 'cairo_int_status_t (*)(void)' {aka 'enum _cairo_int_status (*)(void)'} to 'cairo_int_status_t (*)(void *, cairo_operator_t,  const cairo_pattern_t *, const cairo_clip_t *)' {aka 'enum _cairo_int_status (*)(void *, enum _cairo_operator,  const struct _cairo_pattern *, const struct _cairo_clip *)'} [-Wcast-function-type]
+ 1009 |     (_paint_func) _return_success,     /* paint */
+      |     ^
+cairo-analysis-surface.c:1010:5: warning: cast between incompatible function types from 'cairo_int_status_t (*)(void)' {aka 'enum _cairo_int_status (*)(void)'} to 'cairo_int_status_t (*)(void *, cairo_operator_t,  const cairo_pattern_t *, const cairo_pattern_t *, const cairo_clip_t *)' {aka 'enum _cairo_int_status (*)(void *, enum _cairo_operator,  const struct _cairo_pattern *, const struct _cairo_pattern *, const struct _cairo_clip *)'} [-Wcast-function-type]
+ 1010 |     (_mask_func) _return_success,     /* mask */
+      |     ^
+cairo-analysis-surface.c:1011:5: warning: cast between incompatible function types from 'cairo_int_status_t (*)(void)' {aka 'enum _cairo_int_status (*)(void)'} to 'cairo_int_status_t (*)(void *, cairo_operator_t,  const cairo_pattern_t *, const cairo_path_fixed_t *, const cairo_stroke_style_t *, const cairo_matrix_t *, const cairo_matrix_t *, double,  cairo_antialias_t,  const cairo_clip_t *)' {aka 'enum _cairo_int_status (*)(void *, enum _cairo_operator,  const struct _cairo_pattern *, const struct _cairo_path_fixed *, const struct _cairo_stroke_style *, const struct _cairo_matrix *, const struct _cairo_matrix *, double,  enum _cairo_antialias,  const struct _cairo_clip *)'} [-Wcast-function-type]
+ 1011 |     (_stroke_func) _return_success,     /* stroke */
+      |     ^
+cairo-analysis-surface.c:1012:5: warning: cast between incompatible function types from 'cairo_int_status_t (*)(void)' {aka 'enum _cairo_int_status (*)(void)'} to 'cairo_int_status_t (*)(void *, cairo_operator_t,  const cairo_pattern_t *, const cairo_path_fixed_t *, cairo_fill_rule_t,  double,  cairo_antialias_t,  const cairo_clip_t *)' {aka 'enum _cairo_int_status (*)(void *, enum _cairo_operator,  const struct _cairo_pattern *, const struct _cairo_path_fixed *, enum _cairo_fill_rule,  double,  enum _cairo_antialias,  const struct _cairo_clip *)'} [-Wcast-function-type]
+ 1012 |     (_fill_func) _return_success,     /* fill */
+      |     ^
+cairo-analysis-surface.c:1014:5: warning: cast between incompatible function types from 'cairo_int_status_t (*)(void)' {aka 'enum _cairo_int_status (*)(void)'} to 'cairo_int_status_t (*)(void *, cairo_operator_t,  const cairo_pattern_t *, cairo_glyph_t *, int,  cairo_scaled_font_t *, const cairo_clip_t *)' {aka 'enum _cairo_int_status (*)(void *, enum _cairo_operator,  const struct _cairo_pattern *, struct <anonymous> *, int,  struct _cairo_scaled_font *, const struct _cairo_clip *)'} [-Wcast-function-type]
+ 1014 |     (_show_glyphs_func) _return_success,    /* show_glyphs */
+      |     ^
+cairo-base64-stream.c: In function '_cairo_base64_stream_write':
+cairo-base64-stream.c:87:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   87 |   dst[2] = '=';
+      |   ~~~~~~~^~~~~
+cairo-base64-stream.c:88:6: note: here
+   88 |      case 1:
+      |      ^~~~
+  CC       cairo-bentley-ottmann.lo
+  CC       cairo-botor-scan-converter.lo
+  CC       cairo-boxes-intersect.lo
+  CC       cairo-boxes.lo
+  CC       cairo-cache.lo
+  CC       cairo-clip-boxes.lo
+  CC       cairo-clip-polygon.lo
+  CC       cairo-clip-region.lo
+  CC       cairo-clip-surface.lo
+  CC       cairo-clip-tor-scan-converter.lo
+  CC       cairo-clip.lo
+  CC       cairo-color.lo
+  CC       cairo-composite-rectangles.lo
+  CC       cairo-compositor.lo
+  CC       cairo-contour.lo
+  CC       cairo-damage.lo
+  CC       cairo-debug.lo
+  CC       cairo-default-context.lo
+  CC       cairo-device.lo
+  CC       cairo-error.lo
+  CC       cairo-fallback-compositor.lo
+  CC       cairo-fixed.lo
+  CC       cairo-font-face-twin-data.lo
+  CC       cairo-font-face-twin.lo
+  CC       cairo-font-face.lo
+  CC       cairo-font-options.lo
+  CC       cairo-freed-pool.lo
+  CC       cairo-freelist.lo
+  CC       cairo-gstate.lo
+  CC       cairo-hash.lo
+  CC       cairo-hull.lo
+  CC       cairo-image-compositor.lo
+  CC       cairo-image-info.lo
+  CC       cairo-image-source.lo
+  CC       cairo-image-surface.lo
+  CC       cairo-line.lo
+  CC       cairo-lzw.lo
+  CC       cairo-mask-compositor.lo
+cairo-image-surface.c: In function '_cairo_format_from_pixman_format':
+cairo-image-surface.c:95:5: warning: enumeration value 'PIXMAN_rgba_float' not handled in switch [-Wswitch-enum]
+   95 |     switch (pixman_format) {
+      |     ^~~~~~
+cairo-image-surface.c:95:5: warning: enumeration value 'PIXMAN_rgb_float' not handled in switch [-Wswitch-enum]
+  CC       cairo-matrix.lo
+  CC       cairo-mempool.lo
+  CC       cairo-mesh-pattern-rasterizer.lo
+  CC       cairo-misc.lo
+  CC       cairo-mono-scan-converter.lo
+  CC       cairo-mutex.lo
+  CC       cairo-no-compositor.lo
+  CC       cairo-observer.lo
+  CC       cairo-output-stream.lo
+  CC       cairo-paginated-surface.lo
+  CC       cairo-path-bounds.lo
+  CC       cairo-path-fill.lo
+  CC       cairo-path-fixed.lo
+  CC       cairo-path-in-fill.lo
+  CC       cairo-path-stroke-boxes.lo
+  CC       cairo-path-stroke-polygon.lo
+cairo-path-fill.c: In function '_cairo_filler_curve_to':
+cairo-path-fill.c:116:10: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+  116 |          (cairo_spline_add_point_func_t)_cairo_filler_line_to, filler,
+      |          ^
+  CC       cairo-path-stroke-traps.lo
+cairo-path-in-fill.c: In function '_cairo_in_fill_curve_to':
+cairo-path-in-fill.c:220:10: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+  220 |          (cairo_spline_add_point_func_t)_cairo_in_fill_line_to,
+      |          ^
+  CC       cairo-path-stroke-tristrip.lo
+cairo-path-fixed.c: In function '_cpf_curve_to':
+cairo-path-fixed.c:1149:10: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+ 1149 |          (cairo_spline_add_point_func_t)cpf->line_to,
+      |          ^
+cairo-path-fixed.c: In function '_cairo_path_fixed_iter_is_fill_box':
+cairo-path-fixed.c:1519:2: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1519 |  _cairo_path_fixed_iter_next_op (&iter);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-path-fixed.c:1520:5: note: here
+ 1520 |     case CAIRO_PATH_OP_MOVE_TO: /* implicit close */
+      |     ^~~~
+  CC       cairo-path-stroke.lo
+  CC       cairo-path.lo
+  CC       cairo-pattern.lo
+cairo-path-stroke-polygon.c: In function 'outer_close':
+cairo-path-stroke-polygon.c:403:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  403 |  if ((in->dev_slope.x * out->dev_slope.x +
+      |     ^
+cairo-path-stroke-polygon.c:412:5: note: here
+  412 |     case CAIRO_LINE_JOIN_MITER:
+      |     ^~~~
+  CC       cairo-pen.lo
+cairo-path-stroke-traps.c: In function 'curve_to_dashed':
+cairo-path-stroke-traps.c:1046:12: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+ 1046 |     func = (cairo_spline_add_point_func_t)line_to_dashed;
+      |            ^
+cairo-path-stroke-traps.c: In function 'join':
+cairo-path-stroke-traps.c:310:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  310 |     default: {
+      |              ^
+cairo-path-stroke-traps.c:464:5: note: here
+  464 |     case CAIRO_LINE_JOIN_BEVEL: {
+      |     ^~~~
+cairo-path-stroke.c: In function '_cairo_stroker_curve_to':
+cairo-path-stroke.c:1244:2: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+ 1244 |  (cairo_spline_add_point_func_t) _cairo_stroker_line_to_dashed :
+      |  ^
+cairo-path-stroke.c:1245:2: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+ 1245 |  (cairo_spline_add_point_func_t) _cairo_stroker_line_to;
+      |  ^
+cairo-path-stroke.c:1249:2: warning: cast between incompatible function types from 'cairo_status_t (*)(void *, const cairo_point_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *)'} to 'cairo_status_t (*)(void *, const cairo_point_t *, const cairo_slope_t *)' {aka 'enum _cairo_status (*)(void *, const struct _cairo_point *, const struct _cairo_slope *)'} [-Wcast-function-type]
+ 1249 |  (cairo_spline_add_point_func_t) _cairo_stroker_line_to_dashed :
+      |  ^
+  CC       cairo-polygon-intersect.lo
+cairo-path-stroke.c: In function '_tessellate_fan':
+cairo-path-stroke.c:244:20: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  244 |     cairo_status_t status;
+      |                    ^~~~~~
+  CC       cairo-polygon-reduce.lo
+  CC       cairo-polygon.lo
+  CC       cairo-raster-source-pattern.lo
+  CC       cairo-recording-surface.lo
+  CC       cairo-rectangle.lo
+  CC       cairo-rectangular-scan-converter.lo
+cairo-polygon-reduce.c: In function '_cairo_polygon_reduce':
+cairo-polygon-reduce.c:998:1: warning: inlining failed in call to '_cairo_bo_event_queue_insert_if_intersect_below_current_y': --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-reduce.c:1347:12: note: called from here
+ 1347 |   status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, e2);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-reduce.c:998:1: warning: inlining failed in call to '_cairo_bo_event_queue_insert_if_intersect_below_current_y': --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-reduce.c:1353:12: note: called from here
+ 1353 |   status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-intersect.c: In function '_cairo_polygon_intersect':
+cairo-polygon-intersect.c:932:1: warning: inlining failed in call to 'event_queue_insert_if_intersect_below_current_y': --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-intersect.c:1284:12: note: called from here
+ 1284 |   status = event_queue_insert_if_intersect_below_current_y (&event_queue, left, e2);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-intersect.c:932:1: warning: inlining failed in call to 'event_queue_insert_if_intersect_below_current_y': --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-polygon-intersect.c:1290:12: note: called from here
+ 1290 |   status = event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       cairo-region.lo
+  CC       cairo-rtree.lo
+  CC       cairo-scaled-font.lo
+  CC       cairo-shape-mask-compositor.lo
+  CC       cairo-slope.lo
+  CC       cairo-spans-compositor.lo
+  CC       cairo-spans.lo
+  CC       cairo-spline.lo
+  CC       cairo-stroke-dash.lo
+  CC       cairo-stroke-style.lo
+  CC       cairo-surface-clipper.lo
+  CC       cairo-surface-fallback.lo
+  CC       cairo-surface-observer.lo
+  CC       cairo-surface-offset.lo
+  CC       cairo-surface-snapshot.lo
+  CC       cairo-surface-subsurface.lo
+  CC       cairo-surface-wrapper.lo
+  CC       cairo-surface.lo
+  CC       cairo-time.lo
+  CC       cairo-tor-scan-converter.lo
+  CC       cairo-tor22-scan-converter.lo
+  CC       cairo-toy-font-face.lo
+  CC       cairo-traps-compositor.lo
+  CC       cairo-traps.lo
+  CC       cairo-tristrip.lo
+  CC       cairo-unicode.lo
+  CC       cairo-user-font.lo
+  CC       cairo-version.lo
+  CC       cairo-wideint.lo
+  CC       cairo.lo
+  CC       cairo-cff-subset.lo
+  CC       cairo-scaled-font-subsets.lo
+  CC       cairo-truetype-subset.lo
+  CC       cairo-type1-fallback.lo
+  CC       cairo-type1-glyph-names.lo
+  CC       cairo-type1-subset.lo
+  CC       cairo-type3-glyph-surface.lo
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from cairoint.h:59,
+                 from cairo-type1-subset.c:44:
+In function 'strncpy',
+    inlined from 'cairo_type1_font_subset_get_matrix.isra.0' at cairo-type1-subset.c:337:6:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-type1-subset.c: In function 'cairo_type1_font_subset_get_matrix.isra.0':
+cairo-type1-subset.c:315:25: note: length computed here
+  315 |     decimal_point_len = strlen (decimal_point);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+  CC       cairo-pdf-operators.lo
+  CC       cairo-pdf-shading.lo
+  CC       cairo-tag-attributes.lo
+  CC       cairo-deflate-stream.lo
+  CC       cairo-xlib-display.lo
+  CC       cairo-xlib-core-compositor.lo
+  CC       cairo-xlib-fallback-compositor.lo
+  CC       cairo-xlib-render-compositor.lo
+  CC       cairo-xlib-screen.lo
+  CC       cairo-xlib-source.lo
+  CC       cairo-xlib-surface.lo
+  CC       cairo-xlib-surface-shm.lo
+  CC       cairo-xlib-visual.lo
+  CC       cairo-xlib-xcb-surface.lo
+  CC       cairo-xcb-connection.lo
+  CC       cairo-xcb-connection-core.lo
+  CC       cairo-xcb-connection-render.lo
+  CC       cairo-xcb-connection-shm.lo
+  CC       cairo-xcb-screen.lo
+  CC       cairo-xcb-shm.lo
+  CC       cairo-xcb-surface.lo
+  CC       cairo-xcb-surface-core.lo
+  CC       cairo-xcb-surface-render.lo
+  CC       cairo-xcb-resources.lo
+  CC       cairo-png.lo
+  CC       cairo-gl-composite.lo
+  CC       cairo-gl-device.lo
+  CC       cairo-gl-dispatch.lo
+  CC       cairo-gl-glyphs.lo
+  CC       cairo-gl-gradient.lo
+  CC       cairo-gl-info.lo
+  CC       cairo-gl-msaa-compositor.lo
+  CC       cairo-gl-operand.lo
+  CC       cairo-gl-shaders.lo
+  CC       cairo-gl-source.lo
+  CC       cairo-gl-spans-compositor.lo
+  CC       cairo-gl-surface.lo
+  CC       cairo-gl-traps-compositor.lo
+  CC       cairo-egl-context.lo
+  CC       cairo-glx-context.lo
+  CC       cairo-script-surface.lo
+cairo-gl-surface.c: In function '_cairo_gl_get_image_format_and_type_gl':
+cairo-gl-surface.c:182:5: warning: enumeration value 'PIXMAN_rgba_float' not handled in switch [-Wswitch-enum]
+  182 |     switch (pixman_format) {
+      |     ^~~~~~
+cairo-gl-surface.c:182:5: warning: enumeration value 'PIXMAN_rgb_float' not handled in switch [-Wswitch-enum]
+  CC       cairo-ft-font.lo
+  CC       cairo-ps-surface.lo
+  CC       cairo-pdf-surface.lo
+  CC       cairo-pdf-interchange.lo
+  CC       cairo-tag-stack.lo
+cairo-ft-font.c: In function '_get_bitmap_surface':
+cairo-ft-font.c:1317:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1317 |  if (!own_buffer && library)
+      |     ^
+cairo-ft-font.c:1360:5: note: here
+ 1360 |     default:
+      |     ^~~~~~~
+  CC       cairo-svg-surface.lo
+  CC       cairo-tee-surface.lo
+cairo-pdf-surface.c: In function '_create_font_subset_tag':
+cairo-pdf-surface.c:5312:17: warning: taking the absolute value of unsigned type 'uint32_t' {aka 'unsigned int'} has no effect [-Wabsolute-value]
+ 5312 |     numerator = abs (hash);
+      |                 ^~~
+cairo-pdf-surface.c: In function '_hash_data':
+cairo-pdf-surface.c:5281:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5281 |     case 11: c+= ((uint32_t) data[10] << 24);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5282:5: note: here
+ 5282 |     case 10: c+= ((uint32_t) data[9] << 16);
+      |     ^~~~
+cairo-pdf-surface.c:5282:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5282 |     case 10: c+= ((uint32_t) data[9] << 16);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5283:5: note: here
+ 5283 |     case 9 : c+= ((uint32_t) data[8] << 8);
+      |     ^~~~
+cairo-pdf-surface.c:5283:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5283 |     case 9 : c+= ((uint32_t) data[8] << 8);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5284:5: note: here
+ 5284 |     case 8 : b+= ((uint32_t) data[7] << 24);
+      |     ^~~~
+cairo-pdf-surface.c:5284:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5284 |     case 8 : b+= ((uint32_t) data[7] << 24);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5285:5: note: here
+ 5285 |     case 7 : b+= ((uint32_t) data[6] << 16);
+      |     ^~~~
+cairo-pdf-surface.c:5285:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5285 |     case 7 : b+= ((uint32_t) data[6] << 16);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5286:5: note: here
+ 5286 |     case 6 : b+= ((uint32_t) data[5] << 8);
+      |     ^~~~
+cairo-pdf-surface.c:5286:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5286 |     case 6 : b+= ((uint32_t) data[5] << 8);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5287:5: note: here
+ 5287 |     case 5 : b+= data[4];
+      |     ^~~~
+cairo-pdf-surface.c:5287:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5287 |     case 5 : b+= data[4];
+      |              ~^~~~~~~~~~
+cairo-pdf-surface.c:5288:5: note: here
+ 5288 |     case 4 : a+= ((uint32_t) data[3] << 24);
+      |     ^~~~
+cairo-pdf-surface.c:5288:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5288 |     case 4 : a+= ((uint32_t) data[3] << 24);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5289:5: note: here
+ 5289 |     case 3 : a+= ((uint32_t) data[2] << 16);
+      |     ^~~~
+cairo-pdf-surface.c:5289:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5289 |     case 3 : a+= ((uint32_t) data[2] << 16);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5290:5: note: here
+ 5290 |     case 2 : a+= ((uint32_t) data[1] << 8);
+      |     ^~~~
+cairo-pdf-surface.c:5290:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5290 |     case 2 : a+= ((uint32_t) data[1] << 8);
+      |              ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-pdf-surface.c:5291:5: note: here
+ 5291 |     case 1 : a+= data[0];
+      |     ^~~~
+cairo-svg-surface.c: In function 'base64_write_func':
+cairo-svg-surface.c:1278:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1278 |   dst[2] = '=';
+      |   ~~~~~~~^~~~~
+cairo-svg-surface.c:1279:6: note: here
+ 1279 |      case 1:
+      |      ^~~~
+  CCLD     libcairo.la
+make[3]: Leaving directory '/build/cairo-1.16.0/src'
+make[2]: Leaving directory '/build/cairo-1.16.0/src'
+Making all in doc
+make[2]: Entering directory '/build/cairo-1.16.0/doc'
+make  all-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/doc'
+Making all in public
+make[4]: Entering directory '/build/cairo-1.16.0/doc/public'
+make  all-am
+make[5]: Entering directory '/build/cairo-1.16.0/doc/public'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/doc/public'
+make[4]: Leaving directory '/build/cairo-1.16.0/doc/public'
+make[4]: Entering directory '/build/cairo-1.16.0/doc'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/build/cairo-1.16.0/doc'
+make[3]: Leaving directory '/build/cairo-1.16.0/doc'
+make[2]: Leaving directory '/build/cairo-1.16.0/doc'
+Making all in util
+make[2]: Entering directory '/build/cairo-1.16.0/util'
+make  all-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/util'
+Making all in .
+make[4]: Entering directory '/build/cairo-1.16.0/util'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/build/cairo-1.16.0/util'
+Making all in cairo-missing
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-missing'
+  CC       strndup.lo
+  CC       getline.lo
+  CCLD     libcairo-missing.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-missing'
+Making all in cairo-gobject
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-gobject'
+  CC       libcairo_gobject_la-cairo-gobject-enums.lo
+  CC       libcairo_gobject_la-cairo-gobject-structs.lo
+  CCLD     libcairo-gobject.la
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-gobject'
+Making all in cairo-script
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-script'
+Making all in examples
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-script'
+  CC       libcairo_script_interpreter_la-cairo-script-file.lo
+  CC       libcairo_script_interpreter_la-cairo-script-hash.lo
+  CC       libcairo_script_interpreter_la-cairo-script-interpreter.lo
+  CC       libcairo_script_interpreter_la-cairo-script-objects.lo
+  CC       libcairo_script_interpreter_la-cairo-script-operators.lo
+  CC       libcairo_script_interpreter_la-cairo-script-scanner.lo
+  CC       libcairo_script_interpreter_la-cairo-script-stack.lo
+cairo-script-file.c: In function 'csi_file_getc':
+cairo-script-file.c:835:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  835 |      file->rem = fread (file->bp = file->data, 1, CHUNK_SIZE, file->src);
+      |      ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cairo-script-file.c:836:5: note: here
+  836 |     case BYTES:
+      |     ^~~~
+cairo-script-scanner.c: In function '_scan_file':
+cairo-script-scanner.c:1056:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1056 |      scan->line_number++;
+      |      ~~~~~~~~~~~~~~~~~^~
+cairo-script-scanner.c:1057:2: note: here
+ 1057 |  case 0x0:
+      |  ^~~~
+cairo-script-operators.c: In function '_csi_ostack_get_matrix':
+cairo-script-operators.c:458:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  458 |  if (obj->datum.array->stack.len == 6) {
+      |     ^
+cairo-script-operators.c:468:5: note: here
+  468 |     default:
+      |     ^~~~~~~
+  CCLD     libcairo-script-interpreter.la
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-script'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-script'
+Making all in cairo-trace
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-trace'
+  CC       libcairo_trace_la-trace.lo
+trace.c: In function '_encode_string_literal':
+trace.c:1827:10: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1827 |      max -= 2;
+      |      ~~~~^~~~
+trace.c:1828:2: note: here
+ 1828 |  case '\t':
+      |  ^~~~
+trace.c: In function '_init_logfile':
+trace.c:839:35: warning: '%s' directive output may be truncated writing up to 4095 bytes into a region of size between 4019 and 4095 [-Wformat-truncation=]
+  839 |  snprintf (buf, sizeof (buf), "%s/%s.%d.trace",
+      |                                   ^~
+  840 |   filename, name, getpid());
+      |             ~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from trace.c:34:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 10 or more bytes (assuming 4181) into a destination of size 4096
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libcairo-trace.la
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-trace'
+Making all in cairo-fdr
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-fdr'
+  CC       cairo_fdr_la-fdr.lo
+  CCLD     cairo-fdr.la
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-fdr'
+Making all in cairo-sphinx
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-sphinx'
+cd ../../boilerplate && make  libcairoboilerplate.la
+  CC       cairo_sphinx_la-fdr.lo
+  CC       cairo_sphinx-sphinx.o
+make[5]: Entering directory '/build/cairo-1.16.0/boilerplate'
+  CC       cairo-boilerplate-getopt.lo
+  CC       cairo-boilerplate-system.lo
+  CC       cairo-boilerplate.lo
+  CC       cairo-boilerplate-xlib.lo
+  CC       cairo-boilerplate-xcb.lo
+  CC       cairo-boilerplate-egl.lo
+sphinx.c: In function 'compare_images':
+sphinx.c:561:11: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+  561 |    diff = abs (va - vb);
+      |           ^~~
+sphinx.c:565:15: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+  565 |        diff = abs (va - vb);
+      |               ^~~
+sphinx.c:590:11: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+  590 |    diff = abs (va - vb);
+      |           ^~~
+sphinx.c:594:15: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+  594 |        diff = abs (va - vb);
+      |               ^~~
+sphinx.c:547:5: warning: enumeration value 'CAIRO_FORMAT_RGB30' not handled in switch [-Wswitch]
+  547 |     switch (cairo_image_surface_get_format (a)) {
+      |     ^~~~~~
+  CC       cairo-boilerplate-glx.lo
+  CC       cairo-boilerplate-script.lo
+  CC       cairo-boilerplate-ps.lo
+cairo-boilerplate-egl.c:45:36: warning: 'gl_closure_key' defined but not used [-Wunused-const-variable=]
+   45 | static const cairo_user_data_key_t gl_closure_key;
+      |                                    ^~~~~~~~~~~~~~
+  CCLD     cairo-sphinx.la
+  CC       cairo-boilerplate-pdf.lo
+  CC       cairo-boilerplate-svg.lo
+(cd . && sh ./make-cairo-boilerplate-constructors.sh cairo-boilerplate-getopt.c cairo-boilerplate-system.c cairo-boilerplate.c  cairo-boilerplate-xlib.c  cairo-boilerplate-xcb.c                    cairo-boilerplate-egl.c cairo-boilerplate-glx.c  cairo-boilerplate-script.c   cairo-boilerplate-ps.c cairo-boilerplate-pdf.c cairo-boilerplate-svg.c                                                          ) > cairo-boilerplate-constructors.c
+  CC       cairo-boilerplate-constructors.lo
+  CCLD     libcairoboilerplate.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+  CCLD     cairo-sphinx
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-sphinx'
+make[3]: Leaving directory '/build/cairo-1.16.0/util'
+make[2]: Leaving directory '/build/cairo-1.16.0/util'
+Making all in boilerplate
+make[2]: Entering directory '/build/cairo-1.16.0/boilerplate'
+make  all-am
+make[3]: Entering directory '/build/cairo-1.16.0/boilerplate'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+make[2]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+Making all in test
+make[2]: Entering directory '/build/cairo-1.16.0/test'
+(cd . && sh ./make-cairo-test-constructors.sh a1-bug.c a1-clip.c a1-fill.c a1-image-sample.c a1-mask.c a1-mask-sample.c a1-sample.c a1-traps-sample.c a1-rasterisation.c a8-clear.c a8-mask.c aliasing.c alpha-similar.c arc-direction.c arc-infinite-loop.c arc-looping-dash.c api-special-cases.c big-line.c big-empty-box.c big-empty-triangle.c big-little-box.c big-little-triangle.c bug-spline.c big-trap.c bilevel-image.c bug-40410.c bug-51910.c bug-84115.c bug-bo-rectangular.c bug-bo-collins.c bug-bo-ricotz.c bug-source-cu.c bug-extents.c bug-seams.c caps.c checkerboard.c caps-joins.c caps-joins-alpha.c caps-joins-curve.c caps-tails-curve.c caps-sub-paths.c clear.c clear-source.c clip-all.c clip-complex-bug61592.c clip-complex-shape.c clip-contexts.c clip-disjoint.c clip-disjoint-hatching.c clip-disjoint-quad.c clip-device-offset.c clip-double-free.c clip-draw-unbounded.c clip-empty.c clip-empty-group.c clip-empty-save.c clip-fill.c clip-fill-no-op.c clip-fill-rule.c clip-fill-rule-pixel-aligned.c clip-group-shapes.c clip-image.c clip-intersect.c clip-mixed-antialias.c clip-nesting.c clip-operator.c clip-push-group.c clip-polygons.c clip-rectilinear.c clip-shape.c clip-stroke.c clip-stroke-no-op.c clip-text.c clip-twice.c clip-twice-rectangle.c clip-unbounded.c clip-zero.c clipped-group.c clipped-surface.c close-path.c close-path-current-point.c composite-integer-translate-source.c composite-integer-translate-over.c composite-integer-translate-over-repeat.c copy-disjoint.c copy-path.c coverage.c create-for-stream.c create-from-broken-png-stream.c create-from-png.c create-from-png-stream.c culled-glyphs.c curve-to-as-line-to.c dash-caps-joins.c dash-curve.c dash-infinite-loop.c dash-no-dash.c dash-offset.c dash-offset-negative.c dash-scale.c dash-state.c dash-zero-length.c degenerate-arc.c degenerate-arcs.c degenerate-curve-to.c degenerate-dash.c degenerate-linear-gradient.c degenerate-path.c degenerate-pen.c degenerate-radial-gradient.c degenerate-rel-curve-to.c degenerate-solid-dash.c drunkard-tails.c device-offset.c device-offset-fractional.c device-offset-positive.c device-offset-scale.c error-setters.c extend-pad.c extend-pad-border.c extend-pad-similar.c extend-reflect.c extend-reflect-similar.c extend-repeat.c extend-repeat-similar.c extended-blend.c fallback.c fill-alpha.c fill-alpha-pattern.c fill-and-stroke.c fill-and-stroke-alpha.c fill-and-stroke-alpha-add.c fill-degenerate-sort-order.c fill-disjoint.c fill-empty.c fill-image.c fill-missed-stop.c fill-rule.c filter-bilinear-extents.c filter-nearest-offset.c filter-nearest-transformed.c finer-grained-fallbacks.c font-face-get-type.c font-matrix-translation.c font-options.c font-variations.c glyph-cache-pressure.c get-and-set.c get-clip.c get-group-target.c get-path-extents.c gradient-alpha.c gradient-constant-alpha.c gradient-zero-stops.c gradient-zero-stops-mask.c group-clip.c group-paint.c group-state.c group-unaligned.c half-coverage.c halo.c hatchings.c horizontal-clip.c huge-linear.c huge-radial.c image-surface-source.c image-bug-710072.c implicit-close.c infinite-join.c in-fill-empty-trapezoid.c in-fill-trapezoid.c invalid-matrix.c inverse-text.c inverted-clip.c joins.c joins-loop.c joins-star.c joins-retrace.c large-clip.c large-font.c large-source.c large-source-roi.c large-twin-antialias-mixed.c leaky-dash.c leaky-dashed-rectangle.c leaky-dashed-stroke.c leaky-polygon.c line-width.c line-width-large-overlap.c line-width-overlap.c line-width-scale.c line-width-tolerance.c line-width-zero.c linear-gradient.c linear-gradient-extend.c linear-gradient-large.c linear-gradient-one-stop.c linear-gradient-reflect.c linear-gradient-subset.c linear-step-function.c linear-uniform.c long-dashed-lines.c long-lines.c map-to-image.c mask.c mask-alpha.c mask-ctm.c mask-glyphs.c mask-surface-ctm.c mask-transformed-image.c mask-transformed-similar.c mesh-pattern.c mesh-pattern-accuracy.c mesh-pattern-conical.c mesh-pattern-control-points.c mesh-pattern-fold.c mesh-pattern-overlap.c mesh-pattern-transformed.c mime-data.c mime-surface-api.c miter-precision.c move-to-show-surface.c negative-stride-image.c new-sub-path.c nil-surface.c operator.c operator-alpha.c operator-alpha-alpha.c operator-clear.c operator-source.c outline-tolerance.c over-above-source.c over-around-source.c over-below-source.c over-between-source.c overlapping-boxes.c overlapping-glyphs.c overlapping-dash-caps.c paint.c paint-clip-fill.c paint-repeat.c paint-source-alpha.c paint-with-alpha.c paint-with-alpha-group-clip.c partial-clip-text.c partial-coverage.c pass-through.c path-append.c path-currentpoint.c path-stroke-twice.c path-precision.c pattern-get-type.c pattern-getters.c pdf-isolated-group.c pixman-downscale.c pixman-rotate.c png.c push-group.c push-group-color.c push-group-path-offset.c radial-gradient.c radial-gradient-extend.c radial-outer-focus.c random-clips.c random-intersections-eo.c random-intersections-nonzero.c random-intersections-curves-eo.c random-intersections-curves-nz.c raster-source.c record.c record1414x.c record2x.c record90.c recordflip.c record-extend.c record-neg-extents.c record-mesh.c record-replay-extend.c recording-ink-extents.c recording-surface-pattern.c recording-surface-extend.c rectangle-rounding-error.c rectilinear-fill.c rectilinear-grid.c rectilinear-miter-limit.c rectilinear-dash.c rectilinear-dash-scale.c rectilinear-stroke.c reflected-stroke.c rel-path.c rgb24-ignore-alpha.c rotate-image-surface-paint.c rotate-stroke-box.c rotated-clip.c rounded-rectangle-fill.c rounded-rectangle-stroke.c sample.c scale-down-source-surface-paint.c scale-offset-image.c scale-offset-similar.c scale-source-surface-paint.c scaled-font-zero-matrix.c stroke-ctm-caps.c stroke-clipped.c stroke-image.c stroke-open-box.c select-font-face.c select-font-no-show-text.c self-copy.c self-copy-overlap.c self-intersecting.c set-source.c show-glyphs-advance.c show-glyphs-many.c show-text-current-point.c shape-general-convex.c shape-sierpinski.c simple.c skew-extreme.c smask.c smask-fill.c smask-image-mask.c smask-mask.c smask-paint.c smask-stroke.c smask-text.c smp-glyph.c solid-pattern-cache-stress.c source-clip.c source-clip-scale.c source-surface-scale-paint.c spline-decomposition.c stride-12-image.c stroke-pattern.c subsurface.c subsurface-image-repeat.c subsurface-repeat.c subsurface-reflect.c subsurface-pad.c subsurface-modify-child.c subsurface-modify-parent.c subsurface-outside-target.c subsurface-scale.c subsurface-similar-repeat.c surface-finish-twice.c surface-pattern.c surface-pattern-big-scale-down.c surface-pattern-operator.c surface-pattern-scale-down.c surface-pattern-scale-down-extend.c surface-pattern-scale-up.c text-antialias.c text-antialias-subpixel.c text-cache-crash.c text-glyph-range.c text-pattern.c text-rotate.c text-transform.c text-unhinted-metrics.c text-zero-len.c thin-lines.c tighten-bounds.c tiger.c toy-font-face.c transforms.c translate-show-surface.c trap-clip.c twin.c twin-antialias-gray.c twin-antialias-mixed.c twin-antialias-none.c twin-antialias-subpixel.c unaligned-box.c unantialiased-shapes.c unbounded-operator.c unclosed-strokes.c user-data.c user-font.c user-font-mask.c user-font-proxy.c user-font-rescale.c world-map.c white-in-noop.c xcb-huge-image-shm.c xcb-huge-subimage.c xcb-stress-cache.c xcb-snapshot-assert.c xcomposite-projection.c xlib-expose-event.c zero-alpha.c zero-mask.c pthread-same-source.c pthread-show-text.c pthread-similar.c  bitmap-font.c ft-font-create-for-ft-face.c ft-show-glyphs-positioning.c ft-show-glyphs-table.c ft-text-vertical-layout-type1.c ft-text-vertical-layout-type3.c ft-text-antialias-none.c gl-device-release.c gl-oversized-surface.c gl-surface-source.c egl-oversized-surface.c egl-surface-source.c  pdf-features.c pdf-mime-data.c pdf-surface-source.c pdf-tagged-text.c ps-eps.c ps-features.c ps-surface-source.c svg-surface.c svg-clip.c svg-surface-source.c  xcb-surface-source.c xlib-surface.c xlib-surface-source.c get-xrender-format.c multi-page.c mime-unique-id.c fallback-resolution.c) > cairo-test-constructors.c || (rm cairo-test-constructors.c ; exit 1)
+make  all-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/test'
+Making all in pdiff
+make[4]: Entering directory '/build/cairo-1.16.0/test/pdiff'
+make  all-am
+make[5]: Entering directory '/build/cairo-1.16.0/test/pdiff'
+  CC       lpyramid.lo
+  CC       pdiff.lo
+  CCLD     libpdiff.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/build/cairo-1.16.0/test/pdiff'
+make[4]: Leaving directory '/build/cairo-1.16.0/test/pdiff'
+Making all in .
+make[4]: Entering directory '/build/cairo-1.16.0/test'
+  CC       cairo_test_suite-buffer-diff.o
+  CC       cairo_test_suite-cairo-test.o
+  CC       cairo_test_suite-cairo-test-runner.o
+  CC       cairo_test_suite-a1-bug.o
+  CC       cairo_test_suite-a1-clip.o
+  CC       cairo_test_suite-a1-fill.o
+  CC       cairo_test_suite-a1-image-sample.o
+  CC       cairo_test_suite-a1-mask.o
+cairo-test-runner.c: In function 'is_running_under_debugger':
+cairo-test-runner.c:170:24: warning: passing argument 2 to restrict-qualified parameter aliases with argument 1 [-Wrestrict]
+  170 |     if (readlink (buf, buf, sizeof (buf)) != -1 &&
+      |                   ~~~  ^~~
+  CC       cairo_test_suite-a1-mask-sample.o
+  CC       cairo_test_suite-a1-sample.o
+  CC       cairo_test_suite-a1-traps-sample.o
+  CC       cairo_test_suite-a1-rasterisation.o
+  CC       cairo_test_suite-a8-clear.o
+  CC       cairo_test_suite-a8-mask.o
+  CC       cairo_test_suite-aliasing.o
+  CC       cairo_test_suite-alpha-similar.o
+  CC       cairo_test_suite-arc-direction.o
+  CC       cairo_test_suite-arc-infinite-loop.o
+  CC       cairo_test_suite-arc-looping-dash.o
+  CC       cairo_test_suite-api-special-cases.o
+  CC       cairo_test_suite-big-line.o
+  CC       cairo_test_suite-big-empty-box.o
+  CC       cairo_test_suite-big-empty-triangle.o
+  CC       cairo_test_suite-big-little-box.o
+  CC       cairo_test_suite-big-little-triangle.o
+  CC       cairo_test_suite-bug-spline.o
+  CC       cairo_test_suite-big-trap.o
+  CC       cairo_test_suite-bilevel-image.o
+  CC       cairo_test_suite-bug-40410.o
+  CC       cairo_test_suite-bug-51910.o
+  CC       cairo_test_suite-bug-84115.o
+  CC       cairo_test_suite-bug-bo-rectangular.o
+  CC       cairo_test_suite-bug-bo-collins.o
+  CC       cairo_test_suite-bug-bo-ricotz.o
+  CC       cairo_test_suite-bug-source-cu.o
+  CC       cairo_test_suite-bug-extents.o
+  CC       cairo_test_suite-bug-seams.o
+  CC       cairo_test_suite-caps.o
+  CC       cairo_test_suite-checkerboard.o
+  CC       cairo_test_suite-caps-joins.o
+  CC       cairo_test_suite-caps-joins-alpha.o
+  CC       cairo_test_suite-caps-joins-curve.o
+  CC       cairo_test_suite-caps-tails-curve.o
+  CC       cairo_test_suite-caps-sub-paths.o
+  CC       cairo_test_suite-clear.o
+  CC       cairo_test_suite-clear-source.o
+  CC       cairo_test_suite-clip-all.o
+  CC       cairo_test_suite-clip-complex-bug61592.o
+  CC       cairo_test_suite-clip-complex-shape.o
+  CC       cairo_test_suite-clip-contexts.o
+  CC       cairo_test_suite-clip-disjoint.o
+  CC       cairo_test_suite-clip-disjoint-hatching.o
+  CC       cairo_test_suite-clip-disjoint-quad.o
+  CC       cairo_test_suite-clip-device-offset.o
+  CC       cairo_test_suite-clip-double-free.o
+  CC       cairo_test_suite-clip-draw-unbounded.o
+  CC       cairo_test_suite-clip-empty.o
+  CC       cairo_test_suite-clip-empty-group.o
+  CC       cairo_test_suite-clip-empty-save.o
+  CC       cairo_test_suite-clip-fill.o
+  CC       cairo_test_suite-clip-fill-no-op.o
+  CC       cairo_test_suite-clip-fill-rule.o
+  CC       cairo_test_suite-clip-fill-rule-pixel-aligned.o
+  CC       cairo_test_suite-clip-group-shapes.o
+  CC       cairo_test_suite-clip-image.o
+  CC       cairo_test_suite-clip-intersect.o
+  CC       cairo_test_suite-clip-mixed-antialias.o
+  CC       cairo_test_suite-clip-nesting.o
+  CC       cairo_test_suite-clip-operator.o
+  CC       cairo_test_suite-clip-push-group.o
+  CC       cairo_test_suite-clip-polygons.o
+  CC       cairo_test_suite-clip-rectilinear.o
+  CC       cairo_test_suite-clip-shape.o
+  CC       cairo_test_suite-clip-stroke.o
+  CC       cairo_test_suite-clip-stroke-no-op.o
+  CC       cairo_test_suite-clip-text.o
+  CC       cairo_test_suite-clip-twice.o
+  CC       cairo_test_suite-clip-twice-rectangle.o
+  CC       cairo_test_suite-clip-unbounded.o
+  CC       cairo_test_suite-clip-zero.o
+  CC       cairo_test_suite-clipped-group.o
+  CC       cairo_test_suite-clipped-surface.o
+  CC       cairo_test_suite-close-path.o
+  CC       cairo_test_suite-close-path-current-point.o
+  CC       cairo_test_suite-composite-integer-translate-source.o
+  CC       cairo_test_suite-composite-integer-translate-over.o
+  CC       cairo_test_suite-composite-integer-translate-over-repeat.o
+  CC       cairo_test_suite-copy-disjoint.o
+  CC       cairo_test_suite-copy-path.o
+  CC       cairo_test_suite-coverage.o
+  CC       cairo_test_suite-create-for-stream.o
+  CC       cairo_test_suite-create-from-broken-png-stream.o
+  CC       cairo_test_suite-create-from-png.o
+  CC       cairo_test_suite-create-from-png-stream.o
+  CC       cairo_test_suite-culled-glyphs.o
+  CC       cairo_test_suite-curve-to-as-line-to.o
+  CC       cairo_test_suite-dash-caps-joins.o
+  CC       cairo_test_suite-dash-curve.o
+  CC       cairo_test_suite-dash-infinite-loop.o
+  CC       cairo_test_suite-dash-no-dash.o
+  CC       cairo_test_suite-dash-offset.o
+  CC       cairo_test_suite-dash-offset-negative.o
+  CC       cairo_test_suite-dash-scale.o
+  CC       cairo_test_suite-dash-state.o
+  CC       cairo_test_suite-dash-zero-length.o
+  CC       cairo_test_suite-degenerate-arc.o
+  CC       cairo_test_suite-degenerate-arcs.o
+  CC       cairo_test_suite-degenerate-curve-to.o
+  CC       cairo_test_suite-degenerate-dash.o
+  CC       cairo_test_suite-degenerate-linear-gradient.o
+  CC       cairo_test_suite-degenerate-path.o
+  CC       cairo_test_suite-degenerate-pen.o
+  CC       cairo_test_suite-degenerate-radial-gradient.o
+  CC       cairo_test_suite-degenerate-rel-curve-to.o
+  CC       cairo_test_suite-degenerate-solid-dash.o
+  CC       cairo_test_suite-drunkard-tails.o
+  CC       cairo_test_suite-device-offset.o
+  CC       cairo_test_suite-device-offset-fractional.o
+  CC       cairo_test_suite-device-offset-positive.o
+  CC       cairo_test_suite-device-offset-scale.o
+  CC       cairo_test_suite-error-setters.o
+  CC       cairo_test_suite-extend-pad.o
+  CC       cairo_test_suite-extend-pad-border.o
+  CC       cairo_test_suite-extend-pad-similar.o
+  CC       cairo_test_suite-extend-reflect.o
+  CC       cairo_test_suite-extend-reflect-similar.o
+  CC       cairo_test_suite-extend-repeat.o
+  CC       cairo_test_suite-extend-repeat-similar.o
+  CC       cairo_test_suite-extended-blend.o
+  CC       cairo_test_suite-fill-alpha.o
+  CC       cairo_test_suite-fallback.o
+  CC       cairo_test_suite-fill-alpha-pattern.o
+  CC       cairo_test_suite-fill-and-stroke.o
+  CC       cairo_test_suite-fill-and-stroke-alpha.o
+  CC       cairo_test_suite-fill-and-stroke-alpha-add.o
+  CC       cairo_test_suite-fill-degenerate-sort-order.o
+  CC       cairo_test_suite-fill-disjoint.o
+  CC       cairo_test_suite-fill-empty.o
+  CC       cairo_test_suite-fill-image.o
+  CC       cairo_test_suite-fill-missed-stop.o
+  CC       cairo_test_suite-fill-rule.o
+  CC       cairo_test_suite-filter-bilinear-extents.o
+  CC       cairo_test_suite-filter-nearest-offset.o
+  CC       cairo_test_suite-filter-nearest-transformed.o
+  CC       cairo_test_suite-finer-grained-fallbacks.o
+  CC       cairo_test_suite-font-face-get-type.o
+  CC       cairo_test_suite-font-matrix-translation.o
+  CC       cairo_test_suite-font-options.o
+  CC       cairo_test_suite-font-variations.o
+  CC       cairo_test_suite-glyph-cache-pressure.o
+  CC       cairo_test_suite-get-and-set.o
+  CC       cairo_test_suite-get-clip.o
+  CC       cairo_test_suite-get-group-target.o
+  CC       cairo_test_suite-get-path-extents.o
+  CC       cairo_test_suite-gradient-alpha.o
+  CC       cairo_test_suite-gradient-constant-alpha.o
+  CC       cairo_test_suite-gradient-zero-stops.o
+  CC       cairo_test_suite-gradient-zero-stops-mask.o
+  CC       cairo_test_suite-group-clip.o
+  CC       cairo_test_suite-group-paint.o
+  CC       cairo_test_suite-group-state.o
+  CC       cairo_test_suite-group-unaligned.o
+  CC       cairo_test_suite-half-coverage.o
+  CC       cairo_test_suite-halo.o
+  CC       cairo_test_suite-hatchings.o
+  CC       cairo_test_suite-horizontal-clip.o
+  CC       cairo_test_suite-huge-linear.o
+  CC       cairo_test_suite-huge-radial.o
+  CC       cairo_test_suite-image-surface-source.o
+  CC       cairo_test_suite-image-bug-710072.o
+  CC       cairo_test_suite-implicit-close.o
+  CC       cairo_test_suite-infinite-join.o
+  CC       cairo_test_suite-in-fill-empty-trapezoid.o
+  CC       cairo_test_suite-in-fill-trapezoid.o
+  CC       cairo_test_suite-invalid-matrix.o
+  CC       cairo_test_suite-inverse-text.o
+  CC       cairo_test_suite-inverted-clip.o
+  CC       cairo_test_suite-joins.o
+  CC       cairo_test_suite-joins-loop.o
+  CC       cairo_test_suite-joins-star.o
+  CC       cairo_test_suite-joins-retrace.o
+  CC       cairo_test_suite-large-clip.o
+  CC       cairo_test_suite-large-font.o
+  CC       cairo_test_suite-large-source.o
+  CC       cairo_test_suite-large-source-roi.o
+  CC       cairo_test_suite-large-twin-antialias-mixed.o
+  CC       cairo_test_suite-leaky-dash.o
+  CC       cairo_test_suite-leaky-dashed-rectangle.o
+  CC       cairo_test_suite-leaky-dashed-stroke.o
+  CC       cairo_test_suite-leaky-polygon.o
+  CC       cairo_test_suite-line-width.o
+  CC       cairo_test_suite-line-width-large-overlap.o
+  CC       cairo_test_suite-line-width-overlap.o
+  CC       cairo_test_suite-line-width-scale.o
+  CC       cairo_test_suite-line-width-tolerance.o
+  CC       cairo_test_suite-line-width-zero.o
+  CC       cairo_test_suite-linear-gradient.o
+  CC       cairo_test_suite-linear-gradient-extend.o
+  CC       cairo_test_suite-linear-gradient-large.o
+  CC       cairo_test_suite-linear-gradient-one-stop.o
+  CC       cairo_test_suite-linear-gradient-reflect.o
+  CC       cairo_test_suite-linear-gradient-subset.o
+  CC       cairo_test_suite-linear-step-function.o
+  CC       cairo_test_suite-linear-uniform.o
+  CC       cairo_test_suite-long-dashed-lines.o
+  CC       cairo_test_suite-long-lines.o
+  CC       cairo_test_suite-map-to-image.o
+  CC       cairo_test_suite-mask.o
+  CC       cairo_test_suite-mask-alpha.o
+  CC       cairo_test_suite-mask-ctm.o
+  CC       cairo_test_suite-mask-glyphs.o
+  CC       cairo_test_suite-mask-surface-ctm.o
+  CC       cairo_test_suite-mask-transformed-image.o
+  CC       cairo_test_suite-mask-transformed-similar.o
+  CC       cairo_test_suite-mesh-pattern.o
+  CC       cairo_test_suite-mesh-pattern-accuracy.o
+  CC       cairo_test_suite-mesh-pattern-conical.o
+  CC       cairo_test_suite-mesh-pattern-control-points.o
+  CC       cairo_test_suite-mesh-pattern-fold.o
+  CC       cairo_test_suite-mesh-pattern-overlap.o
+  CC       cairo_test_suite-mesh-pattern-transformed.o
+  CC       cairo_test_suite-mime-data.o
+  CC       cairo_test_suite-mime-surface-api.o
+  CC       cairo_test_suite-miter-precision.o
+  CC       cairo_test_suite-move-to-show-surface.o
+  CC       cairo_test_suite-negative-stride-image.o
+  CC       cairo_test_suite-new-sub-path.o
+  CC       cairo_test_suite-nil-surface.o
+  CC       cairo_test_suite-operator.o
+  CC       cairo_test_suite-operator-alpha.o
+  CC       cairo_test_suite-operator-alpha-alpha.o
+  CC       cairo_test_suite-operator-clear.o
+  CC       cairo_test_suite-operator-source.o
+  CC       cairo_test_suite-outline-tolerance.o
+  CC       cairo_test_suite-over-above-source.o
+  CC       cairo_test_suite-over-around-source.o
+  CC       cairo_test_suite-over-below-source.o
+  CC       cairo_test_suite-over-between-source.o
+  CC       cairo_test_suite-overlapping-boxes.o
+  CC       cairo_test_suite-overlapping-glyphs.o
+  CC       cairo_test_suite-overlapping-dash-caps.o
+  CC       cairo_test_suite-paint.o
+  CC       cairo_test_suite-paint-clip-fill.o
+  CC       cairo_test_suite-paint-repeat.o
+  CC       cairo_test_suite-paint-source-alpha.o
+  CC       cairo_test_suite-paint-with-alpha.o
+  CC       cairo_test_suite-paint-with-alpha-group-clip.o
+  CC       cairo_test_suite-partial-clip-text.o
+  CC       cairo_test_suite-partial-coverage.o
+  CC       cairo_test_suite-pass-through.o
+  CC       cairo_test_suite-path-append.o
+  CC       cairo_test_suite-path-currentpoint.o
+  CC       cairo_test_suite-path-stroke-twice.o
+  CC       cairo_test_suite-path-precision.o
+  CC       cairo_test_suite-pattern-get-type.o
+  CC       cairo_test_suite-pattern-getters.o
+  CC       cairo_test_suite-pdf-isolated-group.o
+  CC       cairo_test_suite-pixman-downscale.o
+  CC       cairo_test_suite-pixman-rotate.o
+  CC       cairo_test_suite-png.o
+  CC       cairo_test_suite-push-group.o
+  CC       cairo_test_suite-push-group-color.o
+  CC       cairo_test_suite-push-group-path-offset.o
+  CC       cairo_test_suite-radial-gradient.o
+  CC       cairo_test_suite-radial-gradient-extend.o
+  CC       cairo_test_suite-radial-outer-focus.o
+  CC       cairo_test_suite-random-clips.o
+  CC       cairo_test_suite-random-intersections-eo.o
+  CC       cairo_test_suite-random-intersections-nonzero.o
+  CC       cairo_test_suite-random-intersections-curves-eo.o
+  CC       cairo_test_suite-random-intersections-curves-nz.o
+  CC       cairo_test_suite-raster-source.o
+  CC       cairo_test_suite-record.o
+  CC       cairo_test_suite-record1414x.o
+  CC       cairo_test_suite-record2x.o
+  CC       cairo_test_suite-record90.o
+  CC       cairo_test_suite-recordflip.o
+  CC       cairo_test_suite-record-extend.o
+  CC       cairo_test_suite-record-neg-extents.o
+  CC       cairo_test_suite-record-mesh.o
+  CC       cairo_test_suite-record-replay-extend.o
+  CC       cairo_test_suite-recording-ink-extents.o
+  CC       cairo_test_suite-recording-surface-pattern.o
+  CC       cairo_test_suite-recording-surface-extend.o
+  CC       cairo_test_suite-rectangle-rounding-error.o
+  CC       cairo_test_suite-rectilinear-fill.o
+  CC       cairo_test_suite-rectilinear-grid.o
+  CC       cairo_test_suite-rectilinear-miter-limit.o
+  CC       cairo_test_suite-rectilinear-dash.o
+  CC       cairo_test_suite-rectilinear-dash-scale.o
+  CC       cairo_test_suite-rectilinear-stroke.o
+  CC       cairo_test_suite-reflected-stroke.o
+  CC       cairo_test_suite-rel-path.o
+  CC       cairo_test_suite-rgb24-ignore-alpha.o
+  CC       cairo_test_suite-rotate-image-surface-paint.o
+  CC       cairo_test_suite-rotate-stroke-box.o
+  CC       cairo_test_suite-rotated-clip.o
+  CC       cairo_test_suite-rounded-rectangle-fill.o
+  CC       cairo_test_suite-rounded-rectangle-stroke.o
+  CC       cairo_test_suite-sample.o
+  CC       cairo_test_suite-scale-down-source-surface-paint.o
+  CC       cairo_test_suite-scale-offset-image.o
+  CC       cairo_test_suite-scale-offset-similar.o
+  CC       cairo_test_suite-scale-source-surface-paint.o
+  CC       cairo_test_suite-scaled-font-zero-matrix.o
+  CC       cairo_test_suite-stroke-ctm-caps.o
+  CC       cairo_test_suite-stroke-clipped.o
+  CC       cairo_test_suite-stroke-image.o
+  CC       cairo_test_suite-stroke-open-box.o
+  CC       cairo_test_suite-select-font-face.o
+  CC       cairo_test_suite-select-font-no-show-text.o
+  CC       cairo_test_suite-self-copy.o
+  CC       cairo_test_suite-self-copy-overlap.o
+  CC       cairo_test_suite-self-intersecting.o
+  CC       cairo_test_suite-set-source.o
+  CC       cairo_test_suite-show-glyphs-advance.o
+  CC       cairo_test_suite-show-glyphs-many.o
+  CC       cairo_test_suite-show-text-current-point.o
+  CC       cairo_test_suite-shape-general-convex.o
+  CC       cairo_test_suite-shape-sierpinski.o
+  CC       cairo_test_suite-simple.o
+  CC       cairo_test_suite-skew-extreme.o
+  CC       cairo_test_suite-smask.o
+  CC       cairo_test_suite-smask-fill.o
+  CC       cairo_test_suite-smask-image-mask.o
+  CC       cairo_test_suite-smask-mask.o
+  CC       cairo_test_suite-smask-paint.o
+  CC       cairo_test_suite-smask-stroke.o
+  CC       cairo_test_suite-smask-text.o
+  CC       cairo_test_suite-smp-glyph.o
+  CC       cairo_test_suite-solid-pattern-cache-stress.o
+  CC       cairo_test_suite-source-clip.o
+  CC       cairo_test_suite-source-clip-scale.o
+  CC       cairo_test_suite-source-surface-scale-paint.o
+  CC       cairo_test_suite-spline-decomposition.o
+  CC       cairo_test_suite-stride-12-image.o
+  CC       cairo_test_suite-stroke-pattern.o
+  CC       cairo_test_suite-subsurface.o
+  CC       cairo_test_suite-subsurface-image-repeat.o
+  CC       cairo_test_suite-subsurface-repeat.o
+  CC       cairo_test_suite-subsurface-reflect.o
+  CC       cairo_test_suite-subsurface-pad.o
+  CC       cairo_test_suite-subsurface-modify-child.o
+  CC       cairo_test_suite-subsurface-modify-parent.o
+  CC       cairo_test_suite-subsurface-outside-target.o
+  CC       cairo_test_suite-subsurface-scale.o
+  CC       cairo_test_suite-subsurface-similar-repeat.o
+  CC       cairo_test_suite-surface-finish-twice.o
+  CC       cairo_test_suite-surface-pattern.o
+  CC       cairo_test_suite-surface-pattern-big-scale-down.o
+  CC       cairo_test_suite-surface-pattern-operator.o
+  CC       cairo_test_suite-surface-pattern-scale-down.o
+  CC       cairo_test_suite-surface-pattern-scale-down-extend.o
+  CC       cairo_test_suite-surface-pattern-scale-up.o
+  CC       cairo_test_suite-text-antialias.o
+  CC       cairo_test_suite-text-antialias-subpixel.o
+  CC       cairo_test_suite-text-cache-crash.o
+  CC       cairo_test_suite-text-glyph-range.o
+  CC       cairo_test_suite-text-pattern.o
+  CC       cairo_test_suite-text-rotate.o
+  CC       cairo_test_suite-text-transform.o
+  CC       cairo_test_suite-text-unhinted-metrics.o
+  CC       cairo_test_suite-text-zero-len.o
+  CC       cairo_test_suite-thin-lines.o
+  CC       cairo_test_suite-tighten-bounds.o
+  CC       cairo_test_suite-tiger.o
+  CC       cairo_test_suite-toy-font-face.o
+  CC       cairo_test_suite-transforms.o
+  CC       cairo_test_suite-translate-show-surface.o
+  CC       cairo_test_suite-trap-clip.o
+  CC       cairo_test_suite-twin.o
+  CC       cairo_test_suite-twin-antialias-gray.o
+  CC       cairo_test_suite-twin-antialias-mixed.o
+  CC       cairo_test_suite-twin-antialias-none.o
+  CC       cairo_test_suite-twin-antialias-subpixel.o
+  CC       cairo_test_suite-unaligned-box.o
+  CC       cairo_test_suite-unantialiased-shapes.o
+  CC       cairo_test_suite-unbounded-operator.o
+  CC       cairo_test_suite-unclosed-strokes.o
+  CC       cairo_test_suite-user-data.o
+  CC       cairo_test_suite-user-font.o
+  CC       cairo_test_suite-user-font-mask.o
+  CC       cairo_test_suite-user-font-proxy.o
+  CC       cairo_test_suite-user-font-rescale.o
+  CC       cairo_test_suite-world-map.o
+  CC       cairo_test_suite-white-in-noop.o
+  CC       cairo_test_suite-xcb-huge-image-shm.o
+  CC       cairo_test_suite-xcb-huge-subimage.o
+  CC       cairo_test_suite-xcb-stress-cache.o
+  CC       cairo_test_suite-xcb-snapshot-assert.o
+  CC       cairo_test_suite-xcomposite-projection.o
+  CC       cairo_test_suite-xlib-expose-event.o
+  CC       cairo_test_suite-zero-alpha.o
+  CC       cairo_test_suite-zero-mask.o
+  CC       cairo_test_suite-pthread-same-source.o
+  CC       cairo_test_suite-pthread-show-text.o
+  CC       cairo_test_suite-pthread-similar.o
+  CC       cairo_test_suite-bitmap-font.o
+  CC       cairo_test_suite-ft-font-create-for-ft-face.o
+  CC       cairo_test_suite-ft-show-glyphs-positioning.o
+  CC       cairo_test_suite-ft-show-glyphs-table.o
+  CC       cairo_test_suite-ft-text-vertical-layout-type1.o
+  CC       cairo_test_suite-ft-text-vertical-layout-type3.o
+  CC       cairo_test_suite-ft-text-antialias-none.o
+  CC       cairo_test_suite-gl-device-release.o
+  CC       cairo_test_suite-gl-oversized-surface.o
+  CC       cairo_test_suite-gl-surface-source.o
+  CC       cairo_test_suite-egl-oversized-surface.o
+  CC       cairo_test_suite-egl-surface-source.o
+  CC       cairo_test_suite-pdf-features.o
+  CC       cairo_test_suite-pdf-mime-data.o
+  CC       cairo_test_suite-pdf-surface-source.o
+  CC       cairo_test_suite-pdf-tagged-text.o
+  CC       cairo_test_suite-ps-eps.o
+  CC       cairo_test_suite-ps-features.o
+  CC       cairo_test_suite-ps-surface-source.o
+  CC       cairo_test_suite-svg-surface.o
+  CC       cairo_test_suite-svg-clip.o
+  CC       cairo_test_suite-svg-surface-source.o
+  CC       cairo_test_suite-xcb-surface-source.o
+  CC       cairo_test_suite-xlib-surface.o
+  CC       cairo_test_suite-xlib-surface-source.o
+  CC       cairo_test_suite-get-xrender-format.o
+  CC       cairo_test_suite-multi-page.o
+  CC       cairo_test_suite-mime-unique-id.o
+  CC       cairo_test_suite-fallback-resolution.o
+  CC       cairo_test_suite-cairo-test-constructors.o
+  CC       any2ppm-any2ppm.o
+  CCLD     any2ppm
+  CCLD     cairo-test-suite
+make[4]: Leaving directory '/build/cairo-1.16.0/test'
+make[3]: Leaving directory '/build/cairo-1.16.0/test'
+make[2]: Leaving directory '/build/cairo-1.16.0/test'
+Making all in perf
+make[2]: Entering directory '/build/cairo-1.16.0/perf'
+make  all-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/perf'
+Making all in micro
+make[4]: Entering directory '/build/cairo-1.16.0/perf/micro'
+make  all-am
+make[5]: Entering directory '/build/cairo-1.16.0/perf/micro'
+  CC       cairo-perf-cover.lo
+  CC       box-outline.lo
+  CC       composite-checker.lo
+  CC       disjoint.lo
+  CC       fill.lo
+  CC       hatching.lo
+  CC       hash-table.lo
+  CC       line.lo
+  CC       a1-line.lo
+  CC       long-lines.lo
+  CC       mosaic.lo
+  CC       paint.lo
+  CC       paint-with-alpha.lo
+  CC       mask.lo
+  CC       pattern_create_radial.lo
+  CC       rectangles.lo
+  CC       rounded-rectangles.lo
+  CC       stroke.lo
+  CC       subimage_copy.lo
+  CC       tessellate.lo
+  CC       text.lo
+  CC       tiger.lo
+  CC       glyphs.lo
+  CC       twin.lo
+  CC       unaligned-clip.lo
+  CC       wave.lo
+  CC       world-map.lo
+  CC       zrusin.lo
+  CC       long-dashed-lines.lo
+  CC       dragon.lo
+  CC       pythagoras-tree.lo
+  CC       intersections.lo
+  CC       many-strokes.lo
+  CC       wide-strokes.lo
+  CC       many-fills.lo
+  CC       wide-fills.lo
+  CC       many-curves.lo
+  CC       curve.lo
+  CC       a1-curve.lo
+  CC       spiral.lo
+  CC       pixel.lo
+  CC       sierpinski.lo
+  CC       fill-clip.lo
+  CCLD     libcairo-perf-micro.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/build/cairo-1.16.0/perf/micro'
+make[4]: Leaving directory '/build/cairo-1.16.0/perf/micro'
+make[4]: Entering directory '/build/cairo-1.16.0/perf'
+  CC       cairo-analyse-trace.o
+  CC       cairo-error.o
+  CC       cairo-perf.lo
+  CC       cairo-perf-report.lo
+  CC       cairo-stats.lo
+  CC       cairo-time.lo
+  CC       cairo-perf-trace.o
+  CC       cairo-hash.o
+  CC       cairo-perf-micro.o
+  CCLD     libcairoperf.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     cairo-analyse-trace
+  CCLD     cairo-perf-trace
+  CCLD     cairo-perf-micro
+make[4]: Leaving directory '/build/cairo-1.16.0/perf'
+make[3]: Leaving directory '/build/cairo-1.16.0/perf'
+make[2]: Leaving directory '/build/cairo-1.16.0/perf'
+make[2]: Entering directory '/build/cairo-1.16.0'
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+make[2]: Leaving directory '/build/cairo-1.16.0'
+make[1]: Leaving directory '/build/cairo-1.16.0'
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gsettings-schemas/cairo-1.16.0/glib-2.0/schemas/ pkgconfigdir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig m4datadir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/share/aclocal aclocaldir=/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/share/aclocal install
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+make  install-recursive
+make[1]: Entering directory '/build/cairo-1.16.0'
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+Making install in src
+make[2]: Entering directory '/build/cairo-1.16.0/src'
+Makefile:3093: warning: ignoring prerequisites on suffix rule definition
+Makefile:3095: warning: ignoring prerequisites on suffix rule definition
+make  install-am
+make[3]: Entering directory '/build/cairo-1.16.0/src'
+Makefile:3093: warning: ignoring prerequisites on suffix rule definition
+Makefile:3095: warning: ignoring prerequisites on suffix rule definition
+make[4]: Entering directory '/build/cairo-1.16.0/src'
+Makefile:3093: warning: ignoring prerequisites on suffix rule definition
+Makefile:3095: warning: ignoring prerequisites on suffix rule definition
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libcairo.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo.so.2.11600.0 /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo.so.2.11600.0
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo.so.2.11600.0 libcairo.so.2 || { rm -f libcairo.so.2 && ln -s libcairo.so.2.11600.0 libcairo.so.2; }; })
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo.so.2.11600.0 libcairo.so || { rm -f libcairo.so && ln -s libcairo.so.2.11600.0 libcairo.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 cairo.h cairo-deprecated.h cairo-xlib.h cairo-xlib-xrender.h cairo-xcb.h cairo-gl.h cairo-script.h cairo-ft.h cairo-ps.h cairo-pdf.h cairo-svg.h cairo-tee.h ../cairo-version.h '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 cairo-features.h '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 cairo.pc cairo-xlib.pc cairo-xlib-xrender.pc cairo-xcb.pc cairo-xcb-shm.pc cairo-png.pc cairo-gl.pc cairo-egl.pc cairo-glx.pc cairo-script.pc cairo-ft.pc cairo-fc.pc cairo-ps.pc cairo-pdf.pc cairo-svg.pc cairo-tee.pc cairo-gobject.pc '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig'
+make[4]: Leaving directory '/build/cairo-1.16.0/src'
+make[3]: Leaving directory '/build/cairo-1.16.0/src'
+make[2]: Leaving directory '/build/cairo-1.16.0/src'
+Making install in doc
+make[2]: Entering directory '/build/cairo-1.16.0/doc'
+make  install-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/doc'
+Making install in public
+make[4]: Entering directory '/build/cairo-1.16.0/doc/public'
+make  install-am
+make[5]: Entering directory '/build/cairo-1.16.0/doc/public'
+make[6]: Entering directory '/build/cairo-1.16.0/doc/public'
+make[6]: Nothing to be done for 'install-exec-am'.
+installfiles=`echo ./html/*`; \
+if test "$installfiles" = './html/*'; \
+then echo '-- Nothing to install' ; \
+else \
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash /build/cairo-1.16.0/build/install-sh -d /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gtk-doc/html/cairo; \
+  for i in $installfiles; do \
+    echo '-- Installing '$i ; \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $i /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gtk-doc/html/cairo; \
+  done; \
+  echo '-- Installing ./html/index.sgml' ; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./html/index.sgml /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gtk-doc/html/cairo || :; \
+  which gtkdoc-rebase >/dev/null && \
+    gtkdoc-rebase --relative --dest-dir= --html-dir=/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gtk-doc/html/cairo ; \
+fi
+-- Installing ./html/bindings-errors.html
+-- Installing ./html/bindings-fonts.html
+-- Installing ./html/bindings-memory.html
+-- Installing ./html/bindings-overloading.html
+-- Installing ./html/bindings-path.html
+-- Installing ./html/bindings-patterns.html
+-- Installing ./html/bindings-return-values.html
+-- Installing ./html/bindings-streams.html
+-- Installing ./html/bindings-surfaces.html
+-- Installing ./html/cairo-Error-handling.html
+-- Installing ./html/cairo-FreeType-Fonts.html
+-- Installing ./html/cairo-Image-Surfaces.html
+-- Installing ./html/cairo-PDF-Surfaces.html
+-- Installing ./html/cairo-PNG-Support.html
+-- Installing ./html/cairo-Paths.html
+-- Installing ./html/cairo-PostScript-Surfaces.html
+-- Installing ./html/cairo-Quartz-(CGFont)-Fonts.html
+-- Installing ./html/cairo-Quartz-Surfaces.html
+-- Installing ./html/cairo-Raster-Sources.html
+-- Installing ./html/cairo-Recording-Surfaces.html
+-- Installing ./html/cairo-Regions.html
+-- Installing ./html/cairo-SVG-Surfaces.html
+-- Installing ./html/cairo-Script-Surfaces.html
+-- Installing ./html/cairo-Tags-and-Links.html
+-- Installing ./html/cairo-Transformations.html
+-- Installing ./html/cairo-Types.html
+-- Installing ./html/cairo-User-Fonts.html
+-- Installing ./html/cairo-Version-Information.html
+-- Installing ./html/cairo-Win32-Fonts.html
+-- Installing ./html/cairo-Win32-Surfaces.html
+-- Installing ./html/cairo-XCB-Surfaces.html
+-- Installing ./html/cairo-XLib-Surfaces.html
+-- Installing ./html/cairo-XLib-XRender-Backend.html
+-- Installing ./html/cairo-cairo-device-t.html
+-- Installing ./html/cairo-cairo-font-face-t.html
+-- Installing ./html/cairo-cairo-font-options-t.html
+-- Installing ./html/cairo-cairo-matrix-t.html
+-- Installing ./html/cairo-cairo-pattern-t.html
+-- Installing ./html/cairo-cairo-scaled-font-t.html
+-- Installing ./html/cairo-cairo-surface-t.html
+-- Installing ./html/cairo-cairo-t.html
+-- Installing ./html/cairo-drawing.html
+-- Installing ./html/cairo-fonts.html
+-- Installing ./html/cairo-support.html
+-- Installing ./html/cairo-surfaces.html
+-- Installing ./html/cairo-text.html
+-- Installing ./html/cairo.devhelp2
+-- Installing ./html/home.png
+-- Installing ./html/index-1.10.html
+-- Installing ./html/index-1.12.html
+-- Installing ./html/index-1.14.html
+-- Installing ./html/index-1.16.html
+-- Installing ./html/index-1.2.html
+-- Installing ./html/index-1.4.html
+-- Installing ./html/index-1.6.html
+-- Installing ./html/index-1.8.html
+-- Installing ./html/index-all.html
+-- Installing ./html/index.html
+-- Installing ./html/language-bindings.html
+-- Installing ./html/left-insensitive.png
+-- Installing ./html/left.png
+-- Installing ./html/right-insensitive.png
+-- Installing ./html/right.png
+-- Installing ./html/style.css
+-- Installing ./html/up-insensitive.png
+-- Installing ./html/up.png
+-- Installing ./html/index.sgml
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install: cannot stat './html/index.sgml': No such file or directory
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash: line 11: which: command not found
+make[6]: [Makefile:1874: install-data-local] Error 127 (ignored)
+make[6]: Leaving directory '/build/cairo-1.16.0/doc/public'
+make[5]: Leaving directory '/build/cairo-1.16.0/doc/public'
+make[4]: Leaving directory '/build/cairo-1.16.0/doc/public'
+make[4]: Entering directory '/build/cairo-1.16.0/doc'
+make[5]: Entering directory '/build/cairo-1.16.0/doc'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/doc'
+make[4]: Leaving directory '/build/cairo-1.16.0/doc'
+make[3]: Leaving directory '/build/cairo-1.16.0/doc'
+make[2]: Leaving directory '/build/cairo-1.16.0/doc'
+Making install in util
+make[2]: Entering directory '/build/cairo-1.16.0/util'
+make  install-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/util'
+Making install in .
+make[4]: Entering directory '/build/cairo-1.16.0/util'
+make[5]: Entering directory '/build/cairo-1.16.0/util'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/util'
+make[4]: Leaving directory '/build/cairo-1.16.0/util'
+Making install in cairo-missing
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-missing'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-missing'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-missing'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-missing'
+Making install in cairo-gobject
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-gobject'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-gobject'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libcairo-gobject.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+libtool: warning: relinking 'libcairo-gobject.la'
+libtool: install: (cd /build/cairo-1.16.0/util/cairo-gobject; /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash "/build/cairo-1.16.0/libtool"  --silent --tag CC --mode=relink gcc -D_REENTRANT -I/nix/store/mgjjl2hakgdafwxqbvam7ikqhqhg9s9s-pixman-0.38.4/include/pixman-1 -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/6kjv42bf7xibvglzldz6z2ljvcmhkxbk-mesa-20.0.8-dev/include -I/nix/store/w699kjzyhsciwh04qzqk5k0p12ba2k2n-libglvnd-1.3.1-dev/include -I/nix/store/6kjv42bf7xibvglzldz6z2ljvcmhkxbk-mesa-20.0.8-dev/include -I/nix/store/w699kjzyhsciwh04qzqk5k0p12ba2k2n-libglvnd-1.3.1-dev/include -I/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/include -I/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/include/libpng16 -I/nix/store/by0c06978yn35ahpy7dbifm4ylzhayzf-libxcb-1.13.1-dev/include -I/nix/store/by0c06978yn35ahpy7dbifm4ylzhayzf-libxcb-1.13.1-dev/include -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/v58830zjvxd66kzwy5j9hi9xfr80n9gb-libXrender-0.9.10-dev/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -I/nix/store/pflr3l1x446pq8pd0jh11bfxf85rbvnd-libXext-1.3.4-dev/include -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -Wall -Wextra -Wmissing-declarations -Werror-implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wsign-compare -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2 -Wno-unused-but-set-variable -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -g -O2 -version-info 11602:0:11600 -no-undefined -o libcairo-gobject.la -rpath /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib libcairo_gobject_la-cairo-gobject-enums.lo libcairo_gobject_la-cairo-gobject-structs.lo ../../src/libcairo.la -lpthread -L/nix/store/mgjjl2hakgdafwxqbvam7ikqhqhg9s9s-pixman-0.38.4/lib -lpixman-1 -L/nix/store/rhqncn38al36j37rzqh9rw5fjd13lnh8-fontconfig-2.12.6-lib/lib -L/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib -lfontconfig -lfreetype -L/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib -lfreetype -L/nix/store/lzdn7q7n151fkc4hqsplsfk9sgj7plvz-libglvnd-1.3.1/lib -lEGL -L/nix/store/lzdn7q7n151fkc4hqsplsfk9sgj7plvz-libglvnd-1.3.1/lib -lGL -ldl -L/nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib -L/nix/store/cafyrqpsal8ilbsspzylimmpr1crw7cw-libpng-apng-1.6.37/lib -lpng16 -lz -L/nix/store/5090163mc7sv5hqawkss7bq4gn4q0wgy-libxcb-1.13.1/lib -lxcb-shm -L/nix/store/5090163mc7sv5hqawkss7bq4gn4q0wgy-libxcb-1.13.1/lib -lxcb -lxcb-render -L/nix/store/1blyvmr9l5pv8jf42nrr7yq3w1ab63k0-libXrender-0.9.10/lib -L/nix/store/8h2zd70ndpl3fgsjlgkd5jhd8qwi6jgw-libX11-1.6.8/lib -lXrender -lX11 -L/nix/store/lh2qlvnhnqwah3mxlq0v2hsbqksyk8r6-libXext-1.3.4/lib -L/nix/store/8h2zd70ndpl3fgsjlgkd5jhd8qwi6jgw-libX11-1.6.8/lib -lX11 -lXext -lz -lz -lz -lGL -L/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib -lgobject-2.0 -lglib-2.0 -lrt -lm )
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-gobject.so.2.11600.0T /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-gobject.so.2.11600.0
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo-gobject.so.2.11600.0 libcairo-gobject.so.2 || { rm -f libcairo-gobject.so.2 && ln -s libcairo-gobject.so.2.11600.0 libcairo-gobject.so.2; }; })
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo-gobject.so.2.11600.0 libcairo-gobject.so || { rm -f libcairo-gobject.so && ln -s libcairo-gobject.so.2.11600.0 libcairo-gobject.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-gobject.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-gobject.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 cairo-gobject.h '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-gobject'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-gobject'
+Making install in cairo-script
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-script'
+Making install in examples
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[6]: Entering directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-script/examples'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-script'
+make[6]: Entering directory '/build/cairo-1.16.0/util/cairo-script'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libcairo-script-interpreter.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib'
+libtool: warning: relinking 'libcairo-script-interpreter.la'
+libtool: install: (cd /build/cairo-1.16.0/util/cairo-script; /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash "/build/cairo-1.16.0/libtool"  --silent --tag CC --mode=relink gcc -D_REENTRANT -I/nix/store/mgjjl2hakgdafwxqbvam7ikqhqhg9s9s-pixman-0.38.4/include/pixman-1 -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/6kjv42bf7xibvglzldz6z2ljvcmhkxbk-mesa-20.0.8-dev/include -I/nix/store/w699kjzyhsciwh04qzqk5k0p12ba2k2n-libglvnd-1.3.1-dev/include -I/nix/store/6kjv42bf7xibvglzldz6z2ljvcmhkxbk-mesa-20.0.8-dev/include -I/nix/store/w699kjzyhsciwh04qzqk5k0p12ba2k2n-libglvnd-1.3.1-dev/include -I/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/include -I/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/include/libpng16 -I/nix/store/by0c06978yn35ahpy7dbifm4ylzhayzf-libxcb-1.13.1-dev/include -I/nix/store/by0c06978yn35ahpy7dbifm4ylzhayzf-libxcb-1.13.1-dev/include -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/v58830zjvxd66kzwy5j9hi9xfr80n9gb-libXrender-0.9.10-dev/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -I/nix/store/pflr3l1x446pq8pd0jh11bfxf85rbvnd-libXext-1.3.4-dev/include -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -Wall -Wextra -Wmissing-declarations -Werror-implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wsign-compare -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2 -Wno-unused-but-set-variable -g -O2 -version-info 11602:0:11600 -no-undefined -o libcairo-script-interpreter.la -rpath /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib libcairo_script_interpreter_la-cairo-script-file.lo libcairo_script_interpreter_la-cairo-script-hash.lo libcairo_script_interpreter_la-cairo-script-interpreter.lo libcairo_script_interpreter_la-cairo-script-objects.lo libcairo_script_interpreter_la-cairo-script-operators.lo libcairo_script_interpreter_la-cairo-script-scanner.lo libcairo_script_interpreter_la-cairo-script-stack.lo ../../src/libcairo.la -lpthread -L/nix/store/mgjjl2hakgdafwxqbvam7ikqhqhg9s9s-pixman-0.38.4/lib -lpixman-1 -L/nix/store/rhqncn38al36j37rzqh9rw5fjd13lnh8-fontconfig-2.12.6-lib/lib -L/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib -lfontconfig -lfreetype -L/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib -lfreetype -L/nix/store/lzdn7q7n151fkc4hqsplsfk9sgj7plvz-libglvnd-1.3.1/lib -lEGL -L/nix/store/lzdn7q7n151fkc4hqsplsfk9sgj7plvz-libglvnd-1.3.1/lib -lGL -ldl -L/nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib -L/nix/store/cafyrqpsal8ilbsspzylimmpr1crw7cw-libpng-apng-1.6.37/lib -lpng16 -lz -L/nix/store/5090163mc7sv5hqawkss7bq4gn4q0wgy-libxcb-1.13.1/lib -lxcb-shm -L/nix/store/5090163mc7sv5hqawkss7bq4gn4q0wgy-libxcb-1.13.1/lib -lxcb -lxcb-render -L/nix/store/1blyvmr9l5pv8jf42nrr7yq3w1ab63k0-libXrender-0.9.10/lib -L/nix/store/8h2zd70ndpl3fgsjlgkd5jhd8qwi6jgw-libX11-1.6.8/lib -lXrender -lX11 -L/nix/store/lh2qlvnhnqwah3mxlq0v2hsbqksyk8r6-libXext-1.3.4/lib -L/nix/store/8h2zd70ndpl3fgsjlgkd5jhd8qwi6jgw-libX11-1.6.8/lib -lX11 -lXext -lz -lz -lz -lGL -lz -lrt -lm )
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-script-interpreter.so.2.11600.0T /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-script-interpreter.so.2.11600.0
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo-script-interpreter.so.2.11600.0 libcairo-script-interpreter.so.2 || { rm -f libcairo-script-interpreter.so.2 && ln -s libcairo-script-interpreter.so.2.11600.0 libcairo-script-interpreter.so.2; }; })
+libtool: install: (cd /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib && { ln -s -f libcairo-script-interpreter.so.2.11600.0 libcairo-script-interpreter.so || { rm -f libcairo-script-interpreter.so && ln -s libcairo-script-interpreter.so.2.11600.0 libcairo-script-interpreter.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-script-interpreter.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-script-interpreter.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 cairo-script-interpreter.h '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo'
+make[6]: Leaving directory '/build/cairo-1.16.0/util/cairo-script'
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-script'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-script'
+Making install in cairo-trace
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-trace'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-trace'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c cairo-trace '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libcairo-trace.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-trace.so /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/libcairo-trace.so
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libcairo-trace.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/libcairo-trace.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-trace'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-trace'
+Making install in cairo-fdr
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-fdr'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-fdr'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   cairo-fdr.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cairo-fdr.so /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-fdr.so
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cairo-fdr.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-fdr.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-fdr'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-fdr'
+Making install in cairo-sphinx
+make[4]: Entering directory '/build/cairo-1.16.0/util/cairo-sphinx'
+make[5]: Entering directory '/build/cairo-1.16.0/util/cairo-sphinx'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c cairo-sphinx '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cairo-sphinx /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin/cairo-sphinx
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   cairo-sphinx.la '/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cairo-sphinx.so /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-sphinx.so
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/cairo-sphinx.lai /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-sphinx.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/build/cairo-1.16.0/util/cairo-sphinx'
+make[4]: Leaving directory '/build/cairo-1.16.0/util/cairo-sphinx'
+make[3]: Leaving directory '/build/cairo-1.16.0/util'
+make[2]: Leaving directory '/build/cairo-1.16.0/util'
+Making install in boilerplate
+make[2]: Entering directory '/build/cairo-1.16.0/boilerplate'
+make  install-am
+make[3]: Entering directory '/build/cairo-1.16.0/boilerplate'
+make[4]: Entering directory '/build/cairo-1.16.0/boilerplate'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+make[3]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+make[2]: Leaving directory '/build/cairo-1.16.0/boilerplate'
+Making install in test
+make[2]: Entering directory '/build/cairo-1.16.0/test'
+make  install-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/test'
+Making install in pdiff
+make[4]: Entering directory '/build/cairo-1.16.0/test/pdiff'
+make  install-am
+make[5]: Entering directory '/build/cairo-1.16.0/test/pdiff'
+make[6]: Entering directory '/build/cairo-1.16.0/test/pdiff'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/build/cairo-1.16.0/test/pdiff'
+make[5]: Leaving directory '/build/cairo-1.16.0/test/pdiff'
+make[4]: Leaving directory '/build/cairo-1.16.0/test/pdiff'
+Making install in .
+make[4]: Entering directory '/build/cairo-1.16.0/test'
+make[5]: Entering directory '/build/cairo-1.16.0/test'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/test'
+make[4]: Leaving directory '/build/cairo-1.16.0/test'
+make[3]: Leaving directory '/build/cairo-1.16.0/test'
+make[2]: Leaving directory '/build/cairo-1.16.0/test'
+Making install in perf
+make[2]: Entering directory '/build/cairo-1.16.0/perf'
+make  install-recursive
+make[3]: Entering directory '/build/cairo-1.16.0/perf'
+Making install in micro
+make[4]: Entering directory '/build/cairo-1.16.0/perf/micro'
+make  install-am
+make[5]: Entering directory '/build/cairo-1.16.0/perf/micro'
+make[6]: Entering directory '/build/cairo-1.16.0/perf/micro'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/build/cairo-1.16.0/perf/micro'
+make[5]: Leaving directory '/build/cairo-1.16.0/perf/micro'
+make[4]: Leaving directory '/build/cairo-1.16.0/perf/micro'
+make[4]: Entering directory '/build/cairo-1.16.0/perf'
+make[5]: Entering directory '/build/cairo-1.16.0/perf'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/cairo-1.16.0/perf'
+make[4]: Leaving directory '/build/cairo-1.16.0/perf'
+make[3]: Leaving directory '/build/cairo-1.16.0/perf'
+make[2]: Leaving directory '/build/cairo-1.16.0/perf'
+make[2]: Entering directory '/build/cairo-1.16.0'
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+make[3]: Entering directory '/build/cairo-1.16.0'
+Makefile:1502: warning: overriding recipe for target 'recheck'
+Makefile:1140: warning: ignoring old recipe for target 'recheck'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/cairo-1.16.0'
+make[2]: Leaving directory '/build/cairo-1.16.0'
+make[1]: Leaving directory '/build/cairo-1.16.0'
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/gtk-doc to /nix/store/q0jkfjd3vqs6hqjl7baw0k1r54nwjc56-cairo-1.16.0-devdoc/share/gtk-doc
+Removing empty /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/share/ and (possibly) its parents
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-egl.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-fc.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-ft.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-gl.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-glx.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-gobject.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-pdf.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-png.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-ps.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-script.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-svg.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-tee.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-xcb-shm.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-xcb.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-xlib-xrender.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo-xlib.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+Patching '/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib/pkgconfig/cairo.pc' includedir to output /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+shrinking RPATHs of ELF executables and libraries in /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-fdr.so
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/libcairo-trace.so
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/cairo/cairo-sphinx.so
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-script-interpreter.so.2.11600.0
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo.so.2.11600.0
+shrinking /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib/libcairo-gobject.so.2.11600.0
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib
+patching script interpreter paths in /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0
+checking for references to /build/ in /nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+shrinking /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin/cairo-sphinx
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/lib  /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin
+patching script interpreter paths in /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev
+/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin/cairo-trace: interpreter directive changed from "/bin/sh" to "/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/sh"
+checking for references to /build/ in /nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q0jkfjd3vqs6hqjl7baw0k1r54nwjc56-cairo-1.16.0-devdoc
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q0jkfjd3vqs6hqjl7baw0k1r54nwjc56-cairo-1.16.0-devdoc
+checking for references to /build/ in /nix/store/q0jkfjd3vqs6hqjl7baw0k1r54nwjc56-cairo-1.16.0-devdoc...
+building '/nix/store/54a1g96clsr183zvynwidcxiknh3d25r-perl5.32.0-Cairo-1.107.drv'...
+unpacking sources
+unpacking source archive /nix/store/y7igcjvlwp41l0paqbhw7ahzcsivp8w6-Cairo-1.107.tar.gz
+source root is Cairo-1.107
+setting SOURCE_DATE_EPOCH to timestamp 1570422998 of file Cairo-1.107/META.yml
+patching sources
+configuring
+patching ./examples/png/text-rotate.pl...
+patching ./examples/png/spiral.pl...
+patching ./examples/png/snapping.pl...
+patching ./examples/png/bevels.pl...
+patching ./examples/png/spline-pipeline.pl...
+patching ./examples/png/splines_tolerance.pl...
+patching ./examples/png/hering.pl...
+patching ./examples/png/outline.pl...
+patching ./examples/png/star_and_ring.pl...
+patching ./examples/png/stars.pl...
+patching ./examples/png/text.pl...
+patching ./examples/png/caps_joins.pl...
+patching ./examples/freetype-font.pl...
+patching ./examples/png-streams.pl...
+patching ./examples/glyph-text.pl...
+patching ./examples/simple.pl...
+patching ./examples/twisted-text.pl...
+patching ./examples/subclassing.pl...
+patching ./t/CairoRegion.t...
+patching ./t/CairoPattern.t...
+patching ./t/CairoFt.t...
+patching ./t/CairoPath.t...
+patching ./t/CairoFont.t...
+patching ./t/00-loading.t...
+patching ./t/CairoSurface.t...
+patching ./t/Cairo.t...
+Compiling Cairo with FreeType support
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cairo
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp cairo-perl.typemap blib/arch/Cairo/Install/cairo-perl.typemap
+cp build/IFiles.pm blib/arch/Cairo/Install/Files.pm
+cp cairo-perl.h blib/arch/Cairo/Install/cairo-perl.h
+cp build/cairo-perl-auto.typemap blib/arch/Cairo/Install/cairo-perl-auto.typemap
+cp lib/Cairo.pm blib/lib/Cairo.pm
+cp build/cairo-perl-auto.h blib/arch/Cairo/Install/cairo-perl-auto.h
+cp doctypes blib/arch/Cairo/Install/doctypes
+Running Mkbootstrap for Cairo ()
+chmod 644 "Cairo.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cairo.bs blib/arch/auto/Cairo/Cairo.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  Cairo.xs > Cairo.xsc
+mv Cairo.xsc Cairo.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Cairo.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoFont.xs > CairoFont.xsc
+mv CairoFont.xsc CairoFont.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoFont.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoMatrix.xs > CairoMatrix.xsc
+mv CairoMatrix.xsc CairoMatrix.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoMatrix.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoPath.xs > CairoPath.xsc
+mv CairoPath.xsc CairoPath.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoPath.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoPattern.xs > CairoPattern.xsc
+mv CairoPattern.xsc CairoPattern.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoPattern.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoSurface.xs > CairoSurface.xsc
+mv CairoSurface.xsc CairoSurface.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoSurface.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoRegion.xs > CairoRegion.xsc
+mv CairoRegion.xsc CairoRegion.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoRegion.c
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Cairo-1.107/build/cairo-perl-auto.typemap' -typemap '/build/Cairo-1.107/cairo-perl.typemap'  CairoFt.xs > CairoFt.xsc
+mv CairoFt.xsc CairoFt.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CairoFt.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   cairo-perl-enums.c
+cc -c  -I. -Ibuild -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.107\" -DXS_VERSION=\"1.107\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   cairo-perl-flags.c
+rm -f blib/arch/auto/Cairo/Cairo.so
+LD_RUN_PATH="/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib:/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Cairo.o CairoFont.o CairoMatrix.o CairoPath.o CairoPattern.o CairoSurface.o CairoRegion.o CairoFt.o cairo-perl-enums.o cairo-perl-flags.o  -o blib/arch/auto/Cairo/Cairo.so  \
+   -L/nix/store/3fdn5f6yhp7rgdiq80xgwgpri5hi69qh-cairo-1.16.0/lib -lcairo -L/nix/store/znbxnmm92npfppagkc5f588q8lxm0my0-freetype-2.10.2/lib -lfreetype   \
+
+chmod 755 blib/arch/auto/Cairo/Cairo.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cairo.bs blib/arch/auto/Cairo/Cairo.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-loading.t .... ok
+t/Cairo.t ......... 1/72 Fontconfig error: Cannot load default config file
+t/Cairo.t ......... ok
+t/CairoFont.t ..... 1/29 Fontconfig error: Cannot load default config file
+t/CairoFont.t ..... ok
+t/CairoFt.t ....... skipped: need Cairo with FreeType support and Font::FreeType
+t/CairoMatrix.t ... ok
+t/CairoPath.t ..... ok
+t/CairoPattern.t .. ok
+t/CairoRegion.t ... ok
+t/CairoSurface.t .. ok
+All tests successful.
+Files=9, Tests=303,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.52 cusr  0.16 csys =  0.74 CPU)
+Result: PASS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/gsettings-schemas/perl5.32.0-Cairo-1.107/glib-2.0/schemas/ pkgconfigdir=/nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/pkgconfig m4datadir=/nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/aclocal aclocaldir=/nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cairo.bs blib/arch/auto/Cairo/Cairo.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/cairo-perl.h
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/cairo-perl-auto.typemap
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/doctypes
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/cairo-perl-auto.h
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/Files.pm
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/cairo-perl.typemap
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cairo/Cairo.so
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo.pm
+Installing /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/man/man3/Cairo.3
+Appending installation info to /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/man/man3 to /nix/store/b1277djn602dwj6855b2bwj0dn74zz51-perl5.32.0-Cairo-1.107-devdoc/share/man/man3
+Removing empty /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107
+shrinking /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cairo/Cairo.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib
+patching script interpreter paths in /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107
+checking for references to /build/ in /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b1277djn602dwj6855b2bwj0dn74zz51-perl5.32.0-Cairo-1.107-devdoc
+gzipping man pages under /nix/store/b1277djn602dwj6855b2bwj0dn74zz51-perl5.32.0-Cairo-1.107-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b1277djn602dwj6855b2bwj0dn74zz51-perl5.32.0-Cairo-1.107-devdoc
+checking for references to /build/ in /nix/store/b1277djn602dwj6855b2bwj0dn74zz51-perl5.32.0-Cairo-1.107-devdoc...
+/nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107

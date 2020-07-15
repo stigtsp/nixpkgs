@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/8vrjrfzvwwdfdw1d66cg75n1ki280bia-perl5.32.0-Text-Wrapper-1.05.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/vlg9fr6aryqad8wk7jf1m0qvkq00xdj0-Text-Wrapper-1.05.tar.gz
+copying path '/nix/store/vlg9fr6aryqad8wk7jf1m0qvkq00xdj0-Text-Wrapper-1.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8vrjrfzvwwdfdw1d66cg75n1ki280bia-perl5.32.0-Text-Wrapper-1.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/vlg9fr6aryqad8wk7jf1m0qvkq00xdj0-Text-Wrapper-1.05.tar.gz
+source root is Text-Wrapper-1.05
+setting SOURCE_DATE_EPOCH to timestamp 1390078622 of file Text-Wrapper-1.05/xt/release/pod-syntax.t
+patching sources
+configuring
+patching ./example/gettysburg.pl...
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./t/10-wrapper.t...
+patching ./t/00-load.t...
+patching ./t/20-unicode.t...
+patching ./t/00-all_prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Wrapper
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Wrapper.pm blib/lib/Text/Wrapper.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-all_prereqs.t .. # Listing %INC
+#        Carp 1.50
+#    Exporter 5.74
+# overloading 0.02
+#      strict 1.11
+#    warnings 1.47
+t/00-all_prereqs.t .. ok
+t/00-load.t ......... 1/1 # Testing Text::Wrapper 1.05
+t/00-load.t ......... ok
+t/10-wrapper.t ...... ok
+t/20-unicode.t ...... ok
+All tests successful.
+Files=4, Tests=32,  1 wallclock secs ( 0.02 usr  0.02 sys +  0.19 cusr  0.07 csys =  0.30 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/lib/pkgconfig m4datadir=/nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/share/aclocal aclocaldir=/nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/lib/perl5/site_perl/5.32.0/Text/Wrapper.pm
+Installing /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/share/man/man3/Text::Wrapper.3
+Appending installation info to /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/share/man/man3 to /nix/store/wcr94xw6hq8aqdjgcrj4p1psa9nlz09c-perl5.32.0-Text-Wrapper-1.05-devdoc/share/man/man3
+Removing empty /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05/lib
+patching script interpreter paths in /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05
+checking for references to /build/ in /nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wcr94xw6hq8aqdjgcrj4p1psa9nlz09c-perl5.32.0-Text-Wrapper-1.05-devdoc
+gzipping man pages under /nix/store/wcr94xw6hq8aqdjgcrj4p1psa9nlz09c-perl5.32.0-Text-Wrapper-1.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wcr94xw6hq8aqdjgcrj4p1psa9nlz09c-perl5.32.0-Text-Wrapper-1.05-devdoc
+checking for references to /build/ in /nix/store/wcr94xw6hq8aqdjgcrj4p1psa9nlz09c-perl5.32.0-Text-Wrapper-1.05-devdoc...
+/nix/store/69jpz8gq23x9wfr0665md5hnjl43qjir-perl5.32.0-Text-Wrapper-1.05

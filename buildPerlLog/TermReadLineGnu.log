@@ -1,0 +1,142 @@
+these derivations will be built:
+  /nix/store/4dvxl9y5jh2nfq9vqafdsa2pzslidp4l-perl5.32.0-Term-ReadLine-Gnu-1.36.drv
+these paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/6im6dx2anfgzal54dmldl0kcbmwrkdnw-Term-ReadLine-Gnu-1.36.tar.gz
+copying path '/nix/store/6im6dx2anfgzal54dmldl0kcbmwrkdnw-Term-ReadLine-Gnu-1.36.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4dvxl9y5jh2nfq9vqafdsa2pzslidp4l-perl5.32.0-Term-ReadLine-Gnu-1.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/6im6dx2anfgzal54dmldl0kcbmwrkdnw-Term-ReadLine-Gnu-1.36.tar.gz
+source root is Term-ReadLine-Gnu-1.36
+setting SOURCE_DATE_EPOCH to timestamp 1547444033 of file Term-ReadLine-Gnu-1.36/MANIFEST
+patching sources
+configuring
+patching ./eg/pftp...
+patching ./eg/perlsh...
+patching ./eg/ptksh+...
+patching ./eg/fileman...
+Found `/nix/store/3bp7lhfq3gh9zgkc61mdv2srn889nlk3-ncurses-6.2/lib/libtinfo.so'.
+cc  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  rlver.c -o rlver    -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -lreadline -ltinfo
+<<<It seems that you have the GNU Readline Library version 6.3.>>>
+cc  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -DTRG_READLINE_VERSION=0x0603  rlmalloc.c -o rlmalloc    -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -lreadline -ltinfo
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lreadline
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -ltinfo
+Generating a Unix-style Makefile
+Writing Makefile for Term::ReadLine::Gnu
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Gnu/XS.pm blib/lib/Term/ReadLine/Gnu/XS.pm
+AutoSplitting blib/lib/Term/ReadLine/Gnu/XS.pm (blib/lib/auto/Term/ReadLine/Gnu/XS)
+blib/lib/Term/ReadLine/Gnu/XS.pm: some names are not unique when truncated to 8 characters:
+ directory blib/lib/auto/Term/ReadLine/Gnu/XS:
+  rl_bind_key.al, rl_bind_key_if_unbound.al, rl_bind_keyseq.al, rl_bind_keyseq_if_unbound.al truncate to rl_bind_
+  rl_set_keymap.al, rl_set_key.al truncate to rl_set_k
+cp Gnu.pm blib/lib/Term/ReadLine/Gnu.pm
+Running Mkbootstrap for Gnu ()
+chmod 644 "Gnu.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Gnu.bs blib/arch/auto/Term/ReadLine/Gnu/Gnu.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Term-ReadLine-Gnu-1.36/typemap'  Gnu.xs > Gnu.xsc
+mv Gnu.xsc Gnu.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.36\" -DXS_VERSION=\"1.36\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DTRG_READLINE_VERSION=0x0603 Gnu.c
+In file included from Gnu.xs:20:
+ppport.h:4471: warning: "WIDEST_UTYPE" redefined
+ 4471 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from Gnu.xs:17:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+rm -f blib/arch/auto/Term/ReadLine/Gnu/Gnu.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Gnu.o  -o blib/arch/auto/Term/ReadLine/Gnu/Gnu.so  \
+      \
+
+chmod 755 blib/arch/auto/Term/ReadLine/Gnu/Gnu.so
+cp eg/perlsh blib/script/perlsh
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perlsh
+Manifying 1 pod document
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/pkgconfig m4datadir=/nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/aclocal aclocaldir=/nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Gnu.bs blib/arch/auto/Term/ReadLine/Gnu/Gnu.bs 644
+Manifying 1 pod document
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/Gnu.so
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/autosplit.ix
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/unbind_command.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_bind_keyseq_if_unbound.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_filename_list.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/hist_arg_extract.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/display_readline_version.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/_str2fn.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_bind_key_if_unbound.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/get_history_event.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_set_keymap.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_completion_mode.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_copy_keymap.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/_tgetstrs.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/unbind_key.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_add_funmap_entry.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_discard_keymap.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_invoking_keyseqs.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_generic_bind.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_message.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_set_key.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_call_function.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/history_expand_line.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_bind_key.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_bind_keyseq.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/list_completion_function.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/_trp_completion_function.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/hist_list.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_tty_unset_default_bindings.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/Tk_getc.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/ornaments.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/_str2map.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/unbind_function.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/change_ornaments.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/_ch_wrapper.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/operate_and_get_next.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_tty_set_default_bindings.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/rl_macro_bind.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/XS/shadow_redisplay.al
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Term/ReadLine/Gnu.pm
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Term/ReadLine/Gnu/XS.pm
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/man/man1/perlsh.1
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/man/man3/Term::ReadLine::Gnu.3
+Installing /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/bin/perlsh
+Appending installation info to /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/man/man3 to /nix/store/krylg2sa95mrskx1dfqnscslj25gfqxv-perl5.32.0-Term-ReadLine-Gnu-1.36-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36
+shrinking /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Term/ReadLine/Gnu/Gnu.so
+gzipping man pages under /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/lib  /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36/bin
+patching script interpreter paths in /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36
+checking for references to /build/ in /nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/krylg2sa95mrskx1dfqnscslj25gfqxv-perl5.32.0-Term-ReadLine-Gnu-1.36-devdoc
+gzipping man pages under /nix/store/krylg2sa95mrskx1dfqnscslj25gfqxv-perl5.32.0-Term-ReadLine-Gnu-1.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/krylg2sa95mrskx1dfqnscslj25gfqxv-perl5.32.0-Term-ReadLine-Gnu-1.36-devdoc
+checking for references to /build/ in /nix/store/krylg2sa95mrskx1dfqnscslj25gfqxv-perl5.32.0-Term-ReadLine-Gnu-1.36-devdoc...
+/nix/store/sadz9bfxvy8s8a598ql0b04g9n46mhqd-perl5.32.0-Term-ReadLine-Gnu-1.36

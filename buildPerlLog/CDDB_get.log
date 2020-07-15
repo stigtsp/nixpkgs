@@ -1,0 +1,64 @@
+these derivations will be built:
+  /nix/store/wwlnz078flm8dvx57310kf4n1aih68yx-perl5.32.0-CDDB_get-2.28.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/03k4plna65s98pirhsxihzakfjzwflfv-CDDB_get-2.28.tar.gz
+copying path '/nix/store/03k4plna65s98pirhsxihzakfjzwflfv-CDDB_get-2.28.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wwlnz078flm8dvx57310kf4n1aih68yx-perl5.32.0-CDDB_get-2.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/03k4plna65s98pirhsxihzakfjzwflfv-CDDB_get-2.28.tar.gz
+source root is CDDB_get-2.28
+setting SOURCE_DATE_EPOCH to timestamp 1331058523 of file CDDB_get-2.28/META.yml
+patching sources
+configuring
+patching ./cddb.pl...
+patching ./t/use.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CDDB_get
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp CDDB_cache.pm blib/lib/CDDB_cache.pm
+AutoSplitting blib/lib/CDDB_cache.pm (blib/lib/auto/CDDB_cache)
+cp cddb.pl blib/lib/cddb.pl
+cp CDDB_get.pm blib/lib/CDDB_get.pm
+AutoSplitting blib/lib/CDDB_get.pm (blib/lib/auto/CDDB_get)
+cp cddb.pl blib/script/cddb.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cddb.pl
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/use.t .. cddb: checking for os ... Linux (x86_64) [little endian] [64 bit]
+t/use.t .. ok
+All tests successful.
+Files=1, Tests=2,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.06 cusr  0.01 csys =  0.09 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/pkgconfig m4datadir=/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/share/aclocal aclocaldir=/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/CDDB_cache.pm
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/cddb.pl
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/CDDB_get.pm
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/auto/CDDB_cache/autosplit.ix
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/auto/CDDB_get/autosplit.ix
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/share/man/man3/CDDB_get.3
+Installing /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/bin/cddb.pl
+Appending installation info to /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/share/man/man3 to /nix/store/rjp765qa9ap89y2dfrl65jgqp914digp-perl5.32.0-CDDB_get-2.28-devdoc/share/man/man3
+Removing empty /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib  /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/bin
+patching script interpreter paths in /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28
+/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl/5.32.0/cddb.pl: interpreter directive changed from "/usr/bin/perl -I. -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I. -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rjp765qa9ap89y2dfrl65jgqp914digp-perl5.32.0-CDDB_get-2.28-devdoc
+gzipping man pages under /nix/store/rjp765qa9ap89y2dfrl65jgqp914digp-perl5.32.0-CDDB_get-2.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rjp765qa9ap89y2dfrl65jgqp914digp-perl5.32.0-CDDB_get-2.28-devdoc
+checking for references to /build/ in /nix/store/rjp765qa9ap89y2dfrl65jgqp914digp-perl5.32.0-CDDB_get-2.28-devdoc...
+/nix/store/7k47rgfias9ilz9drw2sny86g05l62n5-perl5.32.0-CDDB_get-2.28

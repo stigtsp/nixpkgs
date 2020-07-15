@@ -1,0 +1,118 @@
+these derivations will be built:
+  /nix/store/w3r80sj14p7aswjg42bbzzk41dv9v0ql-perl5.32.0-Template-Timer-1.00.drv
+  /nix/store/ny8l532f388b1xd6a6fcv1nni496bc2r-perl5.32.0-Catalyst-View-TT-0.44.drv
+building '/nix/store/w3r80sj14p7aswjg42bbzzk41dv9v0ql-perl5.32.0-Template-Timer-1.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/cmm7690qadkkyr1a3bgs02zg27jf2y75-Template-Timer-1.00.tar.gz
+source root is Template-Timer-1.00
+setting SOURCE_DATE_EPOCH to timestamp 1236404008 of file Template-Timer-1.00/META.yml
+patching sources
+configuring
+patching ./t/pod.t...
+patching ./t/00-load.t...
+patching ./t/eval.t...
+WARNING: EXTRA_META is not a known parameter.
+Checking if your kit is complete...
+Looks good
+'EXTRA_META' is not a known MakeMaker parameter name.
+Generating a Unix-style Makefile
+Writing Makefile for Template::Timer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Timer.pm blib/lib/Template/Timer.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .. 1/1 # Testing Template::Timer 1.00
+t/00-load.t .. ok
+t/eval.t ..... ok
+t/pod.t ...... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=3, Tests=4,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.21 cusr  0.05 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/lib/pkgconfig m4datadir=/nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/share/aclocal aclocaldir=/nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/lib/perl5/site_perl/5.32.0/Template/Timer.pm
+Installing /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/share/man/man3/Template::Timer.3
+Appending installation info to /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/share/man/man3 to /nix/store/z9a1846c2iwa78ch1z1shsa27q38qg6n-perl5.32.0-Template-Timer-1.00-devdoc/share/man/man3
+Removing empty /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00/lib
+patching script interpreter paths in /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00
+checking for references to /build/ in /nix/store/2nam6kbx32h9y0gizrvircql19gdwxxv-perl5.32.0-Template-Timer-1.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z9a1846c2iwa78ch1z1shsa27q38qg6n-perl5.32.0-Template-Timer-1.00-devdoc
+gzipping man pages under /nix/store/z9a1846c2iwa78ch1z1shsa27q38qg6n-perl5.32.0-Template-Timer-1.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z9a1846c2iwa78ch1z1shsa27q38qg6n-perl5.32.0-Template-Timer-1.00-devdoc
+checking for references to /build/ in /nix/store/z9a1846c2iwa78ch1z1shsa27q38qg6n-perl5.32.0-Template-Timer-1.00-devdoc...
+building '/nix/store/ny8l532f388b1xd6a6fcv1nni496bc2r-perl5.32.0-Catalyst-View-TT-0.44.drv'...
+unpacking sources
+unpacking source archive /nix/store/k9r8f3596s08z86lkqh2hgjn5q24dl0i-Catalyst-View-TT-0.44.tar.gz
+source root is Catalyst-View-TT-0.44
+setting SOURCE_DATE_EPOCH to timestamp 1444074797 of file Catalyst-View-TT-0.44/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::View::TT
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/View/TT.pm blib/lib/Catalyst/View/TT.pm
+cp lib/Catalyst/Helper/View/TT.pm blib/lib/Catalyst/Helper/View/TT.pm
+cp lib/Catalyst/Helper/View/TTSite.pm blib/lib/Catalyst/Helper/View/TTSite.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t ................. ok
+t/04pkgconfig.t ........... ok
+t/05appconfig.t ........... ok
+t/06includepath.t ......... ok
+t/07render.t .............. ok
+t/08cycle.t ............... ok
+t/09providers.t ........... ok
+t/10providers.encoding.t .. skipped: Template::Provider::Encoding
+t/11norequest.t ........... 1/3 [warn] Attempted to use view 'TestApp::View::Pkgconfig', but does not exist
+[warn] Used regexp fallback for $c->view('Pkgconfig'), which found 'TestApp::View::TT::Pkgconfig'. Relying on regexp fallback behavior for component resolution is unreliable and unsafe. You probably meant $c->view('TT::Pkgconfig') instead of $c->view('Pkgconfig'), but if you really wanted to search, pass in a regexp as the argument like so: $c->view(qr/Pkgconfig/) at t/11norequest.t line 10.
+t/11norequest.t ........... ok
+t/12expose_methods.t ...... ok
+t/13classconfig.t ......... ok
+t/14alt_content_type.t .... ok
+t/utf8.t .................. ok
+All tests successful.
+Files=13, Tests=56, 14 wallclock secs ( 0.16 usr  0.09 sys +  9.09 cusr  5.14 csys = 14.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib/pkgconfig m4datadir=/nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/aclocal aclocaldir=/nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib/perl5/site_perl/5.32.0/Catalyst/View/TT.pm
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib/perl5/site_perl/5.32.0/Catalyst/Helper/View/TTSite.pm
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib/perl5/site_perl/5.32.0/Catalyst/Helper/View/TT.pm
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/man/man3/Catalyst::Helper::View::TT.3
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/man/man3/Catalyst::View::TT.3
+Installing /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/man/man3/Catalyst::Helper::View::TTSite.3
+Appending installation info to /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/man/man3 to /nix/store/yjjhwzmzw2g06rx3415vd800xhvd8k84-perl5.32.0-Catalyst-View-TT-0.44-devdoc/share/man/man3
+Removing empty /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44/lib
+patching script interpreter paths in /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44
+checking for references to /build/ in /nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yjjhwzmzw2g06rx3415vd800xhvd8k84-perl5.32.0-Catalyst-View-TT-0.44-devdoc
+gzipping man pages under /nix/store/yjjhwzmzw2g06rx3415vd800xhvd8k84-perl5.32.0-Catalyst-View-TT-0.44-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yjjhwzmzw2g06rx3415vd800xhvd8k84-perl5.32.0-Catalyst-View-TT-0.44-devdoc
+checking for references to /build/ in /nix/store/yjjhwzmzw2g06rx3415vd800xhvd8k84-perl5.32.0-Catalyst-View-TT-0.44-devdoc...
+/nix/store/32dg58w9c6kr81qhm315y6a9mp95j1cl-perl5.32.0-Catalyst-View-TT-0.44

@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/wpw9x3ajw0a4pbdjzjsdp4fg6r5g9pg8-perl5.32.0-Test-XPath-0.19.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/dyrvxizsxdcxi31w3ql1w740sbqkn54w-Test-XPath-0.19.tar.gz
+copying path '/nix/store/dyrvxizsxdcxi31w3ql1w740sbqkn54w-Test-XPath-0.19.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wpw9x3ajw0a4pbdjzjsdp4fg6r5g9pg8-perl5.32.0-Test-XPath-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/dyrvxizsxdcxi31w3ql1w740sbqkn54w-Test-XPath-0.19.tar.gz
+source root is Test-XPath-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1527554252 of file Test-XPath-0.19/META.yml
+patching sources
+configuring
+patching ./t/css_selector.t...
+patching ./t/xhtml.t...
+patching ./t/pod.t...
+patching ./t/ex.t...
+patching ./t/blocks.t...
+patching ./t/subclass.t...
+patching ./t/xpath.t...
+patching ./t/xmlns.t...
+patching ./t/simple.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::XPath
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  HTML::Selector::XPath is not installed
+    *  Test::Pod is not installed
+    *  Test::Pod::Coverage is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-XPath' version '0.19'
+Building Test-XPath
+running tests
+t/blocks.t ........ skipped: PerlX::MethodCallWithBlock not installed
+t/css_selector.t .. skipped: Install HTML::Selector::XPath to use CSS selectors
+t/ex.t ............ ok
+t/pod.t ........... skipped: Test::Pod 1.20 required for testing POD
+t/simple.t ........ ok
+t/subclass.t ...... ok
+t/xhtml.t ......... ok
+t/xmlns.t ......... ok
+t/xpath.t ......... ok
+All tests successful.
+Files=9, Tests=115,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.75 cusr  0.32 csys =  1.13 CPU)
+Result: PASS
+installing
+Building Test-XPath
+Installing /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19/lib/perl5/site_perl/5.32.0/Test/XPath.pm
+Installing /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19/share/man/man3/Test::XPath.3
+post-installation fixup
+Moving /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19/share/man/man3 to /nix/store/ihc49amsnljcmfnd7x70rpx5pcnraks1-perl5.32.0-Test-XPath-0.19-devdoc/share/man/man3
+Removing empty /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19/lib
+patching script interpreter paths in /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19
+checking for references to /build/ in /nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ihc49amsnljcmfnd7x70rpx5pcnraks1-perl5.32.0-Test-XPath-0.19-devdoc
+gzipping man pages under /nix/store/ihc49amsnljcmfnd7x70rpx5pcnraks1-perl5.32.0-Test-XPath-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ihc49amsnljcmfnd7x70rpx5pcnraks1-perl5.32.0-Test-XPath-0.19-devdoc
+checking for references to /build/ in /nix/store/ihc49amsnljcmfnd7x70rpx5pcnraks1-perl5.32.0-Test-XPath-0.19-devdoc...
+/nix/store/3md2mxdcmfrxcyl6x1d17zga0xlhilbp-perl5.32.0-Test-XPath-0.19

@@ -1,0 +1,57 @@
+these derivations will be built:
+  /nix/store/yjbky5bbmn0f97zf1xmhsfg4zlyzpl4d-perl5.32.0-W3C-LinkChecker-4.81.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/62x07yy79876c1ldwidirfiavg3d779r-W3C-LinkChecker-4.81.tar.gz
+copying path '/nix/store/62x07yy79876c1ldwidirfiavg3d779r-W3C-LinkChecker-4.81.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yjbky5bbmn0f97zf1xmhsfg4zlyzpl4d-perl5.32.0-W3C-LinkChecker-4.81.drv'...
+unpacking sources
+unpacking source archive /nix/store/62x07yy79876c1ldwidirfiavg3d779r-W3C-LinkChecker-4.81.tar.gz
+source root is W3C-LinkChecker-4.81
+setting SOURCE_DATE_EPOCH to timestamp 1318754361 of file W3C-LinkChecker-4.81/META.yml
+patching sources
+configuring
+patching ./bin/checklink...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Locale::Country 0 not found.
+Warning: prerequisite Locale::Language 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for W3C::LinkChecker
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command -e 'mkpath' -- lib/W3C
+echo "# Dummy module for CPAN indexing purposes."  > lib/W3C/LinkChecker.pm
+echo "package W3C::LinkChecker;"                           >> lib/W3C/LinkChecker.pm
+echo "use strict;"                                >> lib/W3C/LinkChecker.pm
+echo "use vars qw(\$VERSION);"                   >> lib/W3C/LinkChecker.pm
+echo "\$VERSION = \"4.81\";"               >> lib/W3C/LinkChecker.pm
+echo "1;"                                         >> lib/W3C/LinkChecker.pm
+cp lib/W3C/LinkChecker.pm blib/lib/W3C/LinkChecker.pm
+cp bin/checklink blib/script/checklink
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/checklink
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00compile.t .. bin/checklink syntax OK
+t/00compile.t .. ok
+All tests successful.
+Files=1, Tests=2,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.20 cusr  0.11 csys =  0.37 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Manifying 1 pod document
+Installing /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/lib/perl5/site_perl/5.32.0/W3C/LinkChecker.pm
+Installing /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/share/man/man1/checklink.1
+Installing /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/bin/checklink
+Appending installation info to /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81
+gzipping man pages under /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/lib  /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81/bin
+patching script interpreter paths in /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81
+checking for references to /build/ in /nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81...
+/nix/store/jsk387zvrkljszx5wfhw548hhhm08k91-perl5.32.0-W3C-LinkChecker-4.81

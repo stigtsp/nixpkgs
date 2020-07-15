@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/jqdb4w9zml76myafmqkldhvqi07p6mkb-perl5.32.0-Locale-Msgfmt-0.15.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/1d2rkqmiyqccc8fa22cy4a161imlrmnm-Locale-Msgfmt-0.15.tar.gz
+copying path '/nix/store/1d2rkqmiyqccc8fa22cy4a161imlrmnm-Locale-Msgfmt-0.15.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jqdb4w9zml76myafmqkldhvqi07p6mkb-perl5.32.0-Locale-Msgfmt-0.15.drv'...
+unpacking sources
+unpacking source archive /nix/store/1d2rkqmiyqccc8fa22cy4a161imlrmnm-Locale-Msgfmt-0.15.tar.gz
+source root is Locale-Msgfmt-0.15
+setting SOURCE_DATE_EPOCH to timestamp 1289116088 of file Locale-Msgfmt-0.15/MANIFEST
+patching sources
+configuring
+patching ./private/compare-all...
+patching ./private/dump-po...
+patching ./private/compare...
+patching ./private/dump-mo...
+patching ./script/msgfmt.pl...
+patching ./t/samples/build...
+patching ./t/version.t...
+patching ./t/00-load.t...
+patching ./t/msgfmt.t...
+patching ./t/interface.t...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Locale::Maketext::Gettext 1.28 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Locale::Msgfmt
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Locale/Msgfmt/po.pm blib/lib/Locale/Msgfmt/po.pm
+cp lib/Locale/Msgfmt.pm blib/lib/Locale/Msgfmt.pm
+cp lib/Module/Install/Msgfmt.pm blib/lib/Module/Install/Msgfmt.pm
+cp lib/Locale/Msgfmt/mo.pm blib/lib/Locale/Msgfmt/mo.pm
+cp lib/Locale/Msgfmt/Utils.pm blib/lib/Locale/Msgfmt/Utils.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .... ok
+t/interface.t .. ok
+t/msgfmt.t ..... ok
+t/version.t .... ok
+All tests successful.
+Files=4, Tests=16,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.04 csys =  0.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/pkgconfig m4datadir=/nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/aclocal aclocaldir=/nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/site_perl/5.32.0/Locale/Msgfmt.pm
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/site_perl/5.32.0/Locale/Msgfmt/mo.pm
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/site_perl/5.32.0/Locale/Msgfmt/po.pm
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/site_perl/5.32.0/Locale/Msgfmt/Utils.pm
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/site_perl/5.32.0/Module/Install/Msgfmt.pm
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/man3/Locale::Msgfmt.3
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/man3/Locale::Msgfmt::mo.3
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/man3/Locale::Msgfmt::po.3
+Installing /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/man3/Locale::Msgfmt::Utils.3
+Appending installation info to /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/man3 to /nix/store/852q7y5qr92w8a1mypkynf46r9wjpxbi-perl5.32.0-Locale-Msgfmt-0.15-devdoc/share/man/man3
+Removing empty /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15/lib
+patching script interpreter paths in /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15
+checking for references to /build/ in /nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/852q7y5qr92w8a1mypkynf46r9wjpxbi-perl5.32.0-Locale-Msgfmt-0.15-devdoc
+gzipping man pages under /nix/store/852q7y5qr92w8a1mypkynf46r9wjpxbi-perl5.32.0-Locale-Msgfmt-0.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/852q7y5qr92w8a1mypkynf46r9wjpxbi-perl5.32.0-Locale-Msgfmt-0.15-devdoc
+checking for references to /build/ in /nix/store/852q7y5qr92w8a1mypkynf46r9wjpxbi-perl5.32.0-Locale-Msgfmt-0.15-devdoc...
+/nix/store/a5qicbid1xh3k7h5zkjhfm7b00g6kb36-perl5.32.0-Locale-Msgfmt-0.15

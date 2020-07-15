@@ -1,0 +1,306 @@
+these derivations will be built:
+  /nix/store/1wpmrsb2rkajxi9r82czakccy48vsc6d-perl5.32.0-Net-IP-1.26.drv
+  /nix/store/2qia1rlzfpjlpg9kll978jqvwqy22z2k-perl5.32.0-Data-HexDump-0.02.drv
+  /nix/store/gi1bq50mqjja2sfyb8rjgv7qyvpdbh7p-perl5.32.0-Authen-Radius-0.31.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/64xwrwrrcbikz9xfk8222hxmk7vh6xq0-Authen-Radius-0.31.tar.gz
+  /nix/store/qq5rwm5y7rah33fc36yr59wj1jv21gkc-Data-HexDump-0.02.tar.gz
+  /nix/store/zf7ps3p7k7xvdg8vi9wpisvvhh0lsjpg-Net-IP-1.26.tar.gz
+copying path '/nix/store/64xwrwrrcbikz9xfk8222hxmk7vh6xq0-Authen-Radius-0.31.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qq5rwm5y7rah33fc36yr59wj1jv21gkc-Data-HexDump-0.02.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zf7ps3p7k7xvdg8vi9wpisvvhh0lsjpg-Net-IP-1.26.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2qia1rlzfpjlpg9kll978jqvwqy22z2k-perl5.32.0-Data-HexDump-0.02.drv'...
+building '/nix/store/1wpmrsb2rkajxi9r82czakccy48vsc6d-perl5.32.0-Net-IP-1.26.drv'...
+unpacking sources
+unpacking source archive /nix/store/qq5rwm5y7rah33fc36yr59wj1jv21gkc-Data-HexDump-0.02.tar.gz
+source root is Data-HexDump-0.02
+setting SOURCE_DATE_EPOCH to timestamp 936572415 of file Data-HexDump-0.02/lib/Data/HexDump.pm
+patching sources
+configuring
+patching ./hexdump...
+unpacking sources
+unpacking source archive /nix/store/zf7ps3p7k7xvdg8vi9wpisvvhh0lsjpg-Net-IP-1.26.tar.gz
+source root is Net-IP-1.26
+setting SOURCE_DATE_EPOCH to timestamp 1354116783 of file Net-IP-1.26/META.yml
+patching sources
+configuring
+patching ./iptab...
+patching ./ipcount...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::HexDump
+Writing MYMETA.yml and MYMETA.json
+Checking if your kit is complete...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/HexDump.pm blib/lib/Data/HexDump.pm
+cp hexdump blib/script/hexdump
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/hexdump
+cp IP.pm blib/lib/Net/IP.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" Net-IP.spec.PL Net-IP.spec
+cp ipcount blib/script/ipcount
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ipcount
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp iptab blib/script/iptab
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/iptab
+t/compare.t .. Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+Character in 'c' format wrapped in pack at t/compare.t line 13.
+t/compare.t .. ok
+t/data.t ..... ok
+All tests successful.
+Files=2, Tests=12,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.04 cusr  0.00 csys =  0.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/lib/pkgconfig m4datadir=/nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/share/aclocal aclocaldir=/nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/lib/perl5/site_perl/5.32.0/Data/HexDump.pm
+Installing /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/share/man/man3/Data::HexDump.3
+Installing /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/bin/hexdump
+Appending installation info to /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+post-installation fixup
+Moving /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/share/man/man3 to /nix/store/vcxqandjapq891ndh443zaly69lgr2p4-perl5.32.0-Data-HexDump-0.02-devdoc/share/man/man3
+Removing empty /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/lib  /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02/bin
+patching script interpreter paths in /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02
+checking for references to /build/ in /nix/store/ffpcj4zfagdz3s60j9rcrxbag407n37p-perl5.32.0-Data-HexDump-0.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vcxqandjapq891ndh443zaly69lgr2p4-perl5.32.0-Data-HexDump-0.02-devdoc
+gzipping man pages under /nix/store/vcxqandjapq891ndh443zaly69lgr2p4-perl5.32.0-Data-HexDump-0.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vcxqandjapq891ndh443zaly69lgr2p4-perl5.32.0-Data-HexDump-0.02-devdoc
+checking for references to /build/ in /nix/store/vcxqandjapq891ndh443zaly69lgr2p4-perl5.32.0-Data-HexDump-0.02-devdoc...
+t/ipv4.t .. ok
+t/ipv6.t .. ok
+All tests successful.
+Files=2, Tests=36069, 13 wallclock secs ( 1.38 usr  0.01 sys + 13.48 cusr  0.01 csys = 14.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/lib/pkgconfig m4datadir=/nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/share/aclocal aclocaldir=/nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/lib/perl5/site_perl/5.32.0/Net/IP.pm
+Installing /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/share/man/man3/Net::IP.3
+Installing /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/bin/iptab
+Installing /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/bin/ipcount
+Appending installation info to /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/share/man/man3 to /nix/store/ri14x1q3ks2h727pyajqgbyi4k28kxj0-perl5.32.0-Net-IP-1.26-devdoc/share/man/man3
+Removing empty /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/lib  /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26/bin
+patching script interpreter paths in /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26
+checking for references to /build/ in /nix/store/v1myx0szyklpfgbnrscl6l437dplsj24-perl5.32.0-Net-IP-1.26...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ri14x1q3ks2h727pyajqgbyi4k28kxj0-perl5.32.0-Net-IP-1.26-devdoc
+gzipping man pages under /nix/store/ri14x1q3ks2h727pyajqgbyi4k28kxj0-perl5.32.0-Net-IP-1.26-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ri14x1q3ks2h727pyajqgbyi4k28kxj0-perl5.32.0-Net-IP-1.26-devdoc
+checking for references to /build/ in /nix/store/ri14x1q3ks2h727pyajqgbyi4k28kxj0-perl5.32.0-Net-IP-1.26-devdoc...
+building '/nix/store/gi1bq50mqjja2sfyb8rjgv7qyvpdbh7p-perl5.32.0-Authen-Radius-0.31.drv'...
+unpacking sources
+unpacking source archive /nix/store/64xwrwrrcbikz9xfk8222hxmk7vh6xq0-Authen-Radius-0.31.tar.gz
+source root is Authen-Radius-0.31
+setting SOURCE_DATE_EPOCH to timestamp 1561126804 of file Authen-Radius-0.31/META.yml
+patching sources
+configuring
+patching ./contrib/check_pwd.pl...
+patching ./install-radius-db.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::Radius
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Radius.pm blib/lib/Authen/Radius.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" install-radius-db.PL install-radius-db
+/etc/raddb directory does not exists and cannot be created
+Default RADIUS dictionaries are not installed.
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" install-radius-db.PL install-radius-db
+/etc/raddb directory does not exists and cannot be created
+Default RADIUS dictionaries are not installed.
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/acct_reply.t ........ ok
+t/check_pwd.t ......... ok
+t/decode.t ............ ok
+t/dictionary.t ........ ok
+t/digest.t ............ ok
+t/encode.t ............ ok
+t/error.t ............. ok
+t/local_dictionary.t .. ok
+t/no_dictionary.t ..... ok
+t/node_list.t ......... ok
+t/tag.t ............... ok
+t/vendor.t ............ ok
+All tests successful.
+Files=12, Tests=117,  2 wallclock secs ( 0.04 usr  0.02 sys +  1.36 cusr  0.26 csys =  1.68 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/lib/pkgconfig m4datadir=/nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/share/aclocal aclocaldir=/nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" install-radius-db.PL install-radius-db
+/etc/raddb directory does not exists and cannot be created
+Default RADIUS dictionaries are not installed.
+Manifying 1 pod document
+Installing /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/lib/perl5/site_perl/5.32.0/Authen/Radius.pm
+Installing /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/share/man/man3/Authen::Radius.3
+Appending installation info to /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/share/man/man3 to /nix/store/1rd40by9r5n8ls4vmgg503v3x706qsfz-perl5.32.0-Authen-Radius-0.31-devdoc/share/man/man3
+Removing empty /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31/lib
+patching script interpreter paths in /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31
+checking for references to /build/ in /nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1rd40by9r5n8ls4vmgg503v3x706qsfz-perl5.32.0-Authen-Radius-0.31-devdoc
+gzipping man pages under /nix/store/1rd40by9r5n8ls4vmgg503v3x706qsfz-perl5.32.0-Authen-Radius-0.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1rd40by9r5n8ls4vmgg503v3x706qsfz-perl5.32.0-Authen-Radius-0.31-devdoc
+checking for references to /build/ in /nix/store/1rd40by9r5n8ls4vmgg503v3x706qsfz-perl5.32.0-Authen-Radius-0.31-devdoc...
+/nix/store/5a2h5rh7p9fgvmbb2wiv0326bbv9jyvy-perl5.32.0-Authen-Radius-0.31

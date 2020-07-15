@@ -1,0 +1,112 @@
+these derivations will be built:
+  /nix/store/2w3v7k2bzgsvvl5x72a72d4ffdb1vs8j-perl5.32.0-MooseX-Traits-0.13.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/8xxkin5mrwbnizagldgd7fp0mq7qzvks-MooseX-Traits-0.13.tar.gz
+copying path '/nix/store/8xxkin5mrwbnizagldgd7fp0mq7qzvks-MooseX-Traits-0.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2w3v7k2bzgsvvl5x72a72d4ffdb1vs8j-perl5.32.0-MooseX-Traits-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/8xxkin5mrwbnizagldgd7fp0mq7qzvks-MooseX-Traits-0.13.tar.gz
+source root is MooseX-Traits-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1439698263 of file MooseX-Traits-0.13/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./t/00-report-prereqs.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Traits
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Traits' version '0.13'
+cp lib/MooseX/Traits.pm blib/lib/MooseX/Traits.pm
+cp lib/MooseX/Traits/Util.pm blib/lib/MooseX/Traits/Util.pm
+running tests
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.007 0.039
+#
+# === Test Requires ===
+#
+#     Module                      Want     Have
+#     --------------------------- ---- --------
+#     ExtUtils::MakeMaker          any     7.44
+#     File::Spec                   any     3.78
+#     Moose                        any   2.2012
+#     MooseX::Role::Parameterized  any     1.11
+#     Test::Fatal                  any    0.014
+#     Test::More                  0.88 1.302175
+#     Test::Requires               any     0.11
+#     ok                           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module               Want   Have
+#     -------------------- ---- ------
+#     Carp                  any   1.50
+#     Class::Load           any   0.25
+#     Moose::Role           any 2.2012
+#     Sub::Exporter         any  0.987
+#     namespace::autoclean  any   0.29
+#     strict                any   1.11
+#     warnings              any   1.47
+#     warnings::register    any   1.04
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Pod::Coverage missing
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+t/class.t .............. ok
+t/parameterized.t ...... ok
+t/subclass.t ........... ok
+t/with-traits.t ........ ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=8, Tests=85,  3 wallclock secs ( 0.07 usr  0.04 sys +  1.88 cusr  0.61 csys =  2.60 CPU)
+Result: PASS
+installing
+Installing /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/lib/perl5/site_perl/5.32.0/MooseX/Traits.pm
+Installing /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/lib/perl5/site_perl/5.32.0/MooseX/Traits/Util.pm
+Installing /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/share/man/man3/MooseX::Traits.3
+Installing /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/share/man/man3/MooseX::Traits::Util.3
+post-installation fixup
+Moving /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/share/man/man3 to /nix/store/xcvkcbzmwz1sjkhbzv4gn65yrvcg1p4l-perl5.32.0-MooseX-Traits-0.13-devdoc/share/man/man3
+Removing empty /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13/lib
+patching script interpreter paths in /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13
+checking for references to /build/ in /nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xcvkcbzmwz1sjkhbzv4gn65yrvcg1p4l-perl5.32.0-MooseX-Traits-0.13-devdoc
+gzipping man pages under /nix/store/xcvkcbzmwz1sjkhbzv4gn65yrvcg1p4l-perl5.32.0-MooseX-Traits-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xcvkcbzmwz1sjkhbzv4gn65yrvcg1p4l-perl5.32.0-MooseX-Traits-0.13-devdoc
+checking for references to /build/ in /nix/store/xcvkcbzmwz1sjkhbzv4gn65yrvcg1p4l-perl5.32.0-MooseX-Traits-0.13-devdoc...
+/nix/store/a693jjqgh6mc9byf0rkn3izv1mzw9cfb-perl5.32.0-MooseX-Traits-0.13

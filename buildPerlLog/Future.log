@@ -1,0 +1,210 @@
+these derivations will be built:
+  /nix/store/83i47chzyidxb4v814nw83rxz9hjaky2-perl5.32.0-Test-Identity-0.01.drv
+  /nix/store/bz4dlyl3q9mj5a02bhzy8y0hp1kdlh7q-perl5.32.0-Test-Refcount-0.10.drv
+  /nix/store/c6m1p82jffg5z2q6mnb3sk7hlc9pp2ng-perl5.32.0-Future-0.45.drv
+building '/nix/store/83i47chzyidxb4v814nw83rxz9hjaky2-perl5.32.0-Test-Identity-0.01.drv'...
+building '/nix/store/bz4dlyl3q9mj5a02bhzy8y0hp1kdlh7q-perl5.32.0-Test-Refcount-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/9snam12x4ndffn6d7h15ahmmx8i9f6z8-Test-Identity-0.01.tar.gz
+source root is Test-Identity-0.01
+unpacking sources
+unpacking source archive /nix/store/h2cxkz9p02jgyrqipzjnpyymqdd1rvpd-Test-Refcount-0.10.tar.gz
+setting SOURCE_DATE_EPOCH to timestamp 1288552599 of file Test-Identity-0.01/t/99pod.t
+patching sources
+source root is Test-Refcount-0.10
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1561545036 of file Test-Refcount-0.10/t/99pod.t
+patching sources
+configuring
+patching ./t/01identical.t...
+patching ./t/99pod.t...
+patching ./t/00use.t...
+patching ./t/01count.t...
+patching ./t/04reftypes.t...
+patching ./t/02one.t...
+patching ./t/99pod.t...
+patching ./t/03weak.t...
+patching ./t/00use.t...
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+Looks good
+Checking prerequisites...
+  recommends:
+    *  Devel::MAT is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Generating a Unix-style Makefile
+Writing Makefile for Test::Identity
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Refcount' version '0.10'
+Building Test-Refcount
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Identity' version '0.01'
+running tests
+Building Test-Identity
+running tests
+t/00use.t ....... ok
+t/01count.t ..... ok
+t/00use.t ........ ok
+t/02one.t ....... ok
+t/01identical.t .. ok
+t/03weak.t ...... ok
+t/99pod.t ........ skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=3, Tests=9,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.15 cusr  0.04 csys =  0.21 CPU)
+Result: PASS
+installing
+t/04reftypes.t .. ok
+Building Test-Identity
+t/99pod.t ....... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=6, Tests=20,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.32 cusr  0.09 csys =  0.44 CPU)
+Result: PASS
+installing
+Installing /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01/lib/perl5/site_perl/5.32.0/Test/Identity.pm
+Installing /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01/share/man/man3/Test::Identity.3
+post-installation fixup
+Moving /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01/share/man/man3 to /nix/store/xw0abcwgjsi7hl48rib70qdm7qv4fa2h-perl5.32.0-Test-Identity-0.01-devdoc/share/man/man3
+Removing empty /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01/lib
+patching script interpreter paths in /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01
+checking for references to /build/ in /nix/store/f9wbsw4cx5ilc73ll4zfjmh8vz4jvwqd-perl5.32.0-Test-Identity-0.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xw0abcwgjsi7hl48rib70qdm7qv4fa2h-perl5.32.0-Test-Identity-0.01-devdoc
+gzipping man pages under /nix/store/xw0abcwgjsi7hl48rib70qdm7qv4fa2h-perl5.32.0-Test-Identity-0.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xw0abcwgjsi7hl48rib70qdm7qv4fa2h-perl5.32.0-Test-Identity-0.01-devdoc
+checking for references to /build/ in /nix/store/xw0abcwgjsi7hl48rib70qdm7qv4fa2h-perl5.32.0-Test-Identity-0.01-devdoc...
+Building Test-Refcount
+Installing /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10/lib/perl5/site_perl/5.32.0/Test/Refcount.pm
+Installing /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10/share/man/man3/Test::Refcount.3
+post-installation fixup
+Moving /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10/share/man/man3 to /nix/store/wjnjm2b4nwzkmdrh1401lpa19893fxv5-perl5.32.0-Test-Refcount-0.10-devdoc/share/man/man3
+Removing empty /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10/lib
+patching script interpreter paths in /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10
+checking for references to /build/ in /nix/store/4gsvgd6ng4myir7vz4s8r8yslx151r2q-perl5.32.0-Test-Refcount-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wjnjm2b4nwzkmdrh1401lpa19893fxv5-perl5.32.0-Test-Refcount-0.10-devdoc
+gzipping man pages under /nix/store/wjnjm2b4nwzkmdrh1401lpa19893fxv5-perl5.32.0-Test-Refcount-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wjnjm2b4nwzkmdrh1401lpa19893fxv5-perl5.32.0-Test-Refcount-0.10-devdoc
+checking for references to /build/ in /nix/store/wjnjm2b4nwzkmdrh1401lpa19893fxv5-perl5.32.0-Test-Refcount-0.10-devdoc...
+building '/nix/store/c6m1p82jffg5z2q6mnb3sk7hlc9pp2ng-perl5.32.0-Future-0.45.drv'...
+unpacking sources
+unpacking source archive /nix/store/i03jgc7c5fsavzf1yn6gw09f9w9bjrm9-Future-0.45.tar.gz
+source root is Future-0.45
+setting SOURCE_DATE_EPOCH to timestamp 1587564334 of file Future-0.45/t/99pod.t
+patching sources
+configuring
+patching ./t/22wrap_cb.t...
+patching ./t/23exception.t...
+patching ./t/12needs_all.t...
+patching ./t/50test-future.t...
+patching ./t/11wait_any.t...
+patching ./t/33utils-repeat-generate.t...
+patching ./t/02cancel.t...
+patching ./t/36utils-map.t...
+patching ./t/35utils-map-void.t...
+patching ./t/32utils-repeat.t...
+patching ./t/01future.t...
+patching ./t/13needs_any.t...
+patching ./t/04else.t...
+patching ./t/06followed_by.t...
+patching ./t/21debug.t...
+patching ./t/05then-else.t...
+patching ./t/51test-future-deferred.t...
+patching ./t/03then.t...
+patching ./t/34utils-repeat-foreach.t...
+patching ./t/30utils-call.t...
+patching ./t/99pod.t...
+patching ./t/07catch.t...
+patching ./t/41queue.t...
+patching ./t/10wait_all.t...
+patching ./t/40mutex.t...
+patching ./t/52awaitable-future.t...
+patching ./t/00use.t...
+patching ./t/09transform.t...
+patching ./t/20subclass.t...
+patching ./t/31utils-call-with-escape.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Future' version '0.45'
+Building Future
+running tests
+t/00use.t ..................... ok
+t/01future.t .................. ok
+t/02cancel.t .................. ok
+t/03then.t .................... ok
+t/04else.t .................... ok
+t/05then-else.t ............... ok
+t/06followed_by.t ............. ok
+t/07catch.t ................... ok
+t/09transform.t ............... ok
+t/10wait_all.t ................ ok
+t/11wait_any.t ................ ok
+t/12needs_all.t ............... ok
+t/13needs_any.t ............... ok
+t/20subclass.t ................ ok
+t/21debug.t ................... ok
+t/22wrap_cb.t ................. ok
+t/23exception.t ............... ok
+t/30utils-call.t .............. ok
+t/31utils-call-with-escape.t .. ok
+t/32utils-repeat.t ............ ok
+t/33utils-repeat-generate.t ... ok
+t/34utils-repeat-foreach.t .... ok
+t/35utils-map-void.t .......... ok
+t/36utils-map.t ............... ok
+t/40mutex.t ................... ok
+t/41queue.t ................... ok
+t/50test-future.t ............. ok
+t/51test-future-deferred.t .... ok
+t/52awaitable-future.t ........ skipped: No Test::Future::AsyncAwait::Awaitable
+t/99pod.t ..................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=30, Tests=678,  3 wallclock secs ( 0.11 usr  0.04 sys +  2.09 cusr  0.97 csys =  3.21 CPU)
+Result: PASS
+installing
+Building Future
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Test/Future.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Test/Future/Deferred.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future/Mutex.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future/Exception.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future/Phrasebook.pod
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future/Queue.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib/perl5/site_perl/5.32.0/Future/Utils.pm
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Test::Future::Deferred.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future::Utils.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future::Mutex.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Test::Future.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future::Queue.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future::Exception.3
+Installing /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3/Future::Phrasebook.3
+post-installation fixup
+Moving /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/man3 to /nix/store/ja7xkm60hvqpfkqwwab5p9dp1spwlklp-perl5.32.0-Future-0.45-devdoc/share/man/man3
+Removing empty /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45/lib
+patching script interpreter paths in /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45
+checking for references to /build/ in /nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ja7xkm60hvqpfkqwwab5p9dp1spwlklp-perl5.32.0-Future-0.45-devdoc
+gzipping man pages under /nix/store/ja7xkm60hvqpfkqwwab5p9dp1spwlklp-perl5.32.0-Future-0.45-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ja7xkm60hvqpfkqwwab5p9dp1spwlklp-perl5.32.0-Future-0.45-devdoc
+checking for references to /build/ in /nix/store/ja7xkm60hvqpfkqwwab5p9dp1spwlklp-perl5.32.0-Future-0.45-devdoc...
+/nix/store/cz14l5jh3155nb2bzhlggpd9qzp1gfjq-perl5.32.0-Future-0.45

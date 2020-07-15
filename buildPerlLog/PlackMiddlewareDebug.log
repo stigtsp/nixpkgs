@@ -1,0 +1,198 @@
+these derivations will be built:
+  /nix/store/438g5206qy2w943z19nmfhaqlis8xjbx-perl5.32.0-Text-MicroTemplate-0.24.drv
+  /nix/store/61mhm0gb9dy3nn9slg4agz8didkl3xld-perl5.32.0-Plack-Middleware-Debug-0.18.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/0435wbh80wln5gykp3vd4aw3xrpj8f8y-Plack-Middleware-Debug-0.18.tar.gz
+  /nix/store/y4n5z4z6p4bbdpqdcclajmh5sxh9ccjv-Text-MicroTemplate-0.24.tar.gz
+copying path '/nix/store/0435wbh80wln5gykp3vd4aw3xrpj8f8y-Plack-Middleware-Debug-0.18.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/y4n5z4z6p4bbdpqdcclajmh5sxh9ccjv-Text-MicroTemplate-0.24.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/438g5206qy2w943z19nmfhaqlis8xjbx-perl5.32.0-Text-MicroTemplate-0.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/y4n5z4z6p4bbdpqdcclajmh5sxh9ccjv-Text-MicroTemplate-0.24.tar.gz
+source root is Text-MicroTemplate-0.24
+setting SOURCE_DATE_EPOCH to timestamp 1435364356 of file Text-MicroTemplate-0.24/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::MicroTemplate
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/MicroTemplate/EncodedString.pm blib/lib/Text/MicroTemplate/EncodedString.pm
+cp lib/Text/MicroTemplate.pm blib/lib/Text/MicroTemplate.pm
+cp lib/Text/MicroTemplate/File.pm blib/lib/Text/MicroTemplate/File.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00-base.t ........... ok
+t/01-simple.t ......... ok
+t/02-render_mt.t ...... ok
+t/03-modes.t .......... ok
+t/04-multiline.t ...... ok
+t/05-warn.t ........... skipped: IO::Scalar is not installed
+t/06-package.t ........ ok
+t/07-file.t ........... ok
+t/08-filter.t ......... ok
+t/09-escape.t ......... ok
+t/10-emptytemplate.t .. ok
+t/11-comment.t ........ ok
+t/12-compound.t ....... ok
+t/13-heredoc.t ........ ok
+t/14-lineno.t ......... ok
+t/15-prepend.t ........ ok
+All tests successful.
+Files=16, Tests=77,  3 wallclock secs ( 0.05 usr  0.01 sys +  0.82 cusr  0.10 csys =  0.98 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib/pkgconfig m4datadir=/nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/aclocal aclocaldir=/nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib/perl5/site_perl/5.32.0/Text/MicroTemplate.pm
+Installing /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib/perl5/site_perl/5.32.0/Text/MicroTemplate/File.pm
+Installing /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib/perl5/site_perl/5.32.0/Text/MicroTemplate/EncodedString.pm
+Installing /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/man/man3/Text::MicroTemplate::File.3
+Installing /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/man/man3/Text::MicroTemplate.3
+Appending installation info to /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/man/man3 to /nix/store/9gs8s31iwlqpa1fdscpz4m03w4b86xv9-perl5.32.0-Text-MicroTemplate-0.24-devdoc/share/man/man3
+Removing empty /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24/lib
+patching script interpreter paths in /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24
+checking for references to /build/ in /nix/store/qmyhqvlwfgds1jqilq7h8rvr41ygk9dy-perl5.32.0-Text-MicroTemplate-0.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9gs8s31iwlqpa1fdscpz4m03w4b86xv9-perl5.32.0-Text-MicroTemplate-0.24-devdoc
+gzipping man pages under /nix/store/9gs8s31iwlqpa1fdscpz4m03w4b86xv9-perl5.32.0-Text-MicroTemplate-0.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9gs8s31iwlqpa1fdscpz4m03w4b86xv9-perl5.32.0-Text-MicroTemplate-0.24-devdoc
+checking for references to /build/ in /nix/store/9gs8s31iwlqpa1fdscpz4m03w4b86xv9-perl5.32.0-Text-MicroTemplate-0.24-devdoc...
+building '/nix/store/61mhm0gb9dy3nn9slg4agz8didkl3xld-perl5.32.0-Plack-Middleware-Debug-0.18.drv'...
+unpacking sources
+unpacking source archive /nix/store/0435wbh80wln5gykp3vd4aw3xrpj8f8y-Plack-Middleware-Debug-0.18.tar.gz
+source root is Plack-Middleware-Debug-0.18
+setting SOURCE_DATE_EPOCH to timestamp 1588536778 of file Plack-Middleware-Debug-0.18/t/utf8.t
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/01_basic.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Plack-Middleware-Debug' version '0.18'
+cp lib/Plack/Middleware/Debug/Memory.pm blib/lib/Plack/Middleware/Debug/Memory.pm
+cp lib/Plack/Middleware/Debug/Timer.pm blib/lib/Plack/Middleware/Debug/Timer.pm
+cp share/debug_toolbar/jquery.js blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/jquery.js
+cp share/debug_toolbar/toolbar.min.css blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.min.css
+cp lib/Plack/Middleware/Debug/CatalystLog.pm blib/lib/Plack/Middleware/Debug/CatalystLog.pm
+cp share/debug_toolbar/panel_bg.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/panel_bg.png
+cp share/debug_toolbar/back.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/back.png
+cp lib/Plack/Middleware/Debug/Environment.pm blib/lib/Plack/Middleware/Debug/Environment.pm
+cp lib/Plack/Middleware/Debug/Panel.pm blib/lib/Plack/Middleware/Debug/Panel.pm
+cp lib/Plack/Middleware/Debug/DBITrace.pm blib/lib/Plack/Middleware/Debug/DBITrace.pm
+cp lib/Plack/Middleware/Debug/Base.pm blib/lib/Plack/Middleware/Debug/Base.pm
+cp share/debug_toolbar/toolbar.min.js blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.min.js
+cp share/debug_toolbar/back_hover.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/back_hover.png
+cp share/debug_toolbar/toolbar.js blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.js
+cp share/debug_toolbar/jquery.cookie.js blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/jquery.cookie.js
+cp lib/Plack/Middleware/Debug/Parameters.pm blib/lib/Plack/Middleware/Debug/Parameters.pm
+cp share/debug_toolbar/indicator.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/indicator.png
+cp share/debug_toolbar/close_hover.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/close_hover.png
+cp lib/Plack/Middleware/Debug.pm blib/lib/Plack/Middleware/Debug.pm
+cp share/debug_toolbar/information.gif blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/information.gif
+cp lib/Plack/Middleware/Debug/TrackObjects.pm blib/lib/Plack/Middleware/Debug/TrackObjects.pm
+cp lib/Plack/Middleware/Debug/Response.pm blib/lib/Plack/Middleware/Debug/Response.pm
+cp share/debug_toolbar/close.png blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/close.png
+cp share/debug_toolbar/toolbar.css blib/lib/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.css
+cp lib/Plack/Middleware/Debug/ModuleVersions.pm blib/lib/Plack/Middleware/Debug/ModuleVersions.pm
+cp lib/Plack/Middleware/Debug/Session.pm blib/lib/Plack/Middleware/Debug/Session.pm
+cp lib/Plack/Middleware/Debug/PerlConfig.pm blib/lib/Plack/Middleware/Debug/PerlConfig.pm
+running tests
+t/01_basic.t ........... Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+t/01_basic.t ........... 1/? Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+t/01_basic.t ........... ok
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+t/parameters-leak.t .... skipped: Test requires module 'Test::LeakTrace' but it's not found
+t/utf8.t ............... Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Can't exec "ps": No such file or directory at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 37.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Use of uninitialized value $out in substitution (s///) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 38.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+Argument "" isn't numeric in subtraction (-) at /build/Plack-Middleware-Debug-0.18/blib/lib/Plack/Middleware/Debug/Memory.pm line 19.
+t/utf8.t ............... ok
+All tests successful.
+Files=4, Tests=13,  1 wallclock secs ( 0.05 usr  0.04 sys +  0.42 cusr  0.32 csys =  0.83 CPU)
+Result: PASS
+installing
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Memory.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/CatalystLog.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Response.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Session.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/TrackObjects.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Panel.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Environment.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/PerlConfig.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/DBITrace.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/ModuleVersions.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Parameters.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Base.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/Plack/Middleware/Debug/Timer.pm
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/jquery.js
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/jquery.cookie.js
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.min.js
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/indicator.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.min.css
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/back.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/close.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/back_hover.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/information.gif
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.js
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/panel_bg.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/toolbar.css
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib/perl5/site_perl/5.32.0/auto/share/dist/Plack-Middleware-Debug/debug_toolbar/close_hover.png
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::CatalystLog.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::DBITrace.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::PerlConfig.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::ModuleVersions.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Base.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Response.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Environment.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Timer.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Panel.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Memory.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Session.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::TrackObjects.3
+Installing /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3/Plack::Middleware::Debug::Parameters.3
+post-installation fixup
+Moving /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/man3 to /nix/store/j6b0gifdl6zcncla12j0j0jdv0c2jqs9-perl5.32.0-Plack-Middleware-Debug-0.18-devdoc/share/man/man3
+Removing empty /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18/lib
+patching script interpreter paths in /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18
+checking for references to /build/ in /nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j6b0gifdl6zcncla12j0j0jdv0c2jqs9-perl5.32.0-Plack-Middleware-Debug-0.18-devdoc
+gzipping man pages under /nix/store/j6b0gifdl6zcncla12j0j0jdv0c2jqs9-perl5.32.0-Plack-Middleware-Debug-0.18-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j6b0gifdl6zcncla12j0j0jdv0c2jqs9-perl5.32.0-Plack-Middleware-Debug-0.18-devdoc
+checking for references to /build/ in /nix/store/j6b0gifdl6zcncla12j0j0jdv0c2jqs9-perl5.32.0-Plack-Middleware-Debug-0.18-devdoc...
+/nix/store/kip9zmsd7ynd5dfj0bdn6x8y7fswi0sn-perl5.32.0-Plack-Middleware-Debug-0.18

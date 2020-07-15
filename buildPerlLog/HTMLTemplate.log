@@ -1,0 +1,89 @@
+these derivations will be built:
+  /nix/store/6a2i42wbc46lznvgh4iq0zx9icap7f0b-perl5.32.0-HTML-Template-2.97.drv
+building '/nix/store/6a2i42wbc46lznvgh4iq0zx9icap7f0b-perl5.32.0-HTML-Template-2.97.drv'...
+unpacking sources
+unpacking source archive /nix/store/j31z1p28sn54yj3bnqw6zjrzjsiz9mq8-HTML-Template-2.97.tar.gz
+source root is HTML-Template-2.97
+setting SOURCE_DATE_EPOCH to timestamp 1495139329 of file HTML-Template-2.97/templates/var.tmpl
+patching sources
+configuring
+patching ./scripts/clean_shm.pl...
+patching ./scripts/time_trial.pl...
+patching ./bench/profile_small.pl...
+patching ./bench/profile_var.pl...
+patching ./bench/profile_medium.pl...
+patching ./bench/vars.pl...
+patching ./bench/profile_large.pl...
+patching ./bench/new.pl...
+patching ./t/author-pod-syntax.t...
+patching ./t/05-force_untaint.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::Template
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/Template.pm blib/lib/HTML/Template.pm
+cp lib/HTML/Template/FAQ.pm blib/lib/HTML/Template/FAQ.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-bad-args.t ............. ok
+t/01-coderefs.t ............. ok
+t/02-parse.t ................ ok
+t/02-random.t ............... ok
+t/03-associate.t ............ ok
+t/03-else_else_bug.t ........ ok
+t/04-default-escape.t ....... ok
+t/04-default_with_escape.t .. ok
+t/04-escape.t ............... ok
+t/04-no_taintmode.t ......... ok
+t/04-type-source.t .......... ok
+t/05-blind-cache.t .......... ok
+t/05-force_untaint.t ........ ok
+t/05-nested_global.t ........ ok
+t/06-file-cache-dir.t ....... ok
+t/07-double-file-cache.t .... ok
+t/08-cache-debug.t .......... ok
+t/09-caching-precluded.t .... ok
+t/10-param.t ................ ok
+t/11-non-file-templates.t ... ok
+t/12-open_mode.t ............ ok
+t/12-query.t ................ ok
+t/12-utf8.t ................. ok
+t/13-loop-boolean.t ......... ok
+t/13-loop-context.t ......... ok
+t/13-loop-repeated.t ........ ok
+t/14-includes.t ............. ok
+t/15-comment.t .............. skipped: not implemented yet
+t/16-config.t ............... ok
+t/99-old-test-pl.t .......... ok
+t/author-pod-syntax.t ....... skipped: these tests are for testing by the author
+All tests successful.
+Files=31, Tests=608,  3 wallclock secs ( 0.12 usr  0.03 sys +  2.18 cusr  0.61 csys =  2.94 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/lib/pkgconfig m4datadir=/nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/aclocal aclocaldir=/nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/lib/perl5/site_perl/5.32.0/HTML/Template.pm
+Installing /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/lib/perl5/site_perl/5.32.0/HTML/Template/FAQ.pm
+Installing /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/man/man3/HTML::Template.3
+Installing /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/man/man3/HTML::Template::FAQ.3
+Appending installation info to /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/man/man3 to /nix/store/739pqln6073hpgyfzkxvk3kv7xhzgr02-perl5.32.0-HTML-Template-2.97-devdoc/share/man/man3
+Removing empty /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97/lib
+patching script interpreter paths in /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97
+checking for references to /build/ in /nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97...
+shrinking RPATHs of ELF executables and libraries in /nix/store/739pqln6073hpgyfzkxvk3kv7xhzgr02-perl5.32.0-HTML-Template-2.97-devdoc
+gzipping man pages under /nix/store/739pqln6073hpgyfzkxvk3kv7xhzgr02-perl5.32.0-HTML-Template-2.97-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/739pqln6073hpgyfzkxvk3kv7xhzgr02-perl5.32.0-HTML-Template-2.97-devdoc
+checking for references to /build/ in /nix/store/739pqln6073hpgyfzkxvk3kv7xhzgr02-perl5.32.0-HTML-Template-2.97-devdoc...
+/nix/store/g183lhcwpcqzpz2hqdd4qv9qkw58mxzz-perl5.32.0-HTML-Template-2.97

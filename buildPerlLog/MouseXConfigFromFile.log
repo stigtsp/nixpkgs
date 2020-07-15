@@ -1,0 +1,181 @@
+these derivations will be built:
+  /nix/store/ljb8xv6kbj6cbwwvgdadzza4pm415sl3-perl5.32.0-MouseX-Types-0.06.drv
+  /nix/store/j5l0mjm2kb90j7ncz7pknkkff99kkw4q-perl5.32.0-MouseX-Types-Path-Class-0.07.drv
+  /nix/store/jshw822dh7f04mw2qhgx2dab9hy3hbwj-perl5.32.0-MouseX-ConfigFromFile-0.05.drv
+these paths will be fetched (0.08 MiB download, 0.07 MiB unpacked):
+  /nix/store/k6dl7068hw0pjwjiawbx0p3annls6ahd-MouseX-Types-Path-Class-0.07.tar.gz
+  /nix/store/r3vnzf61akij0ilmidjydz2mkn938vaa-MouseX-Types-0.06.tar.gz
+  /nix/store/wv0x4chfpzipfy78hic3q3a1wd3l9r2g-MouseX-ConfigFromFile-0.05.tar.gz
+copying path '/nix/store/wv0x4chfpzipfy78hic3q3a1wd3l9r2g-MouseX-ConfigFromFile-0.05.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/k6dl7068hw0pjwjiawbx0p3annls6ahd-MouseX-Types-Path-Class-0.07.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/r3vnzf61akij0ilmidjydz2mkn938vaa-MouseX-Types-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ljb8xv6kbj6cbwwvgdadzza4pm415sl3-perl5.32.0-MouseX-Types-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/r3vnzf61akij0ilmidjydz2mkn938vaa-MouseX-Types-0.06.tar.gz
+source root is MouseX-Types-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1318903586 of file MouseX-Types-0.06/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./t/101-100_with_Any-Moose/19_typelib_with_role.t...
+patching ./t/101-100_with_Any-Moose/failing/11_library-definition.t...
+patching ./t/101-100_with_Any-Moose/failing/20_union_with_string_type.t...
+patching ./t/101-100_with_Any-Moose/failing/12_wrapper-definition.t...
+patching ./t/101-100_with_Any-Moose/failing/18_combined_libs.t...
+patching ./t/101-100_with_Any-Moose/failing/17_syntax_errors.t...
+patching ./t/101-100_with_Any-Moose/failing/16_introspection.t...
+patching ./t/101-100_with_Any-Moose/failing/21_coerce_parameterized_types.t...
+patching ./t/101-100_with_Any-Moose/failing/13_typedecorator.t...
+patching ./t/101-100_with_Any-Moose/10_moose-types.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MouseX::Types
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MouseX/Types/TypeDecorator.pm blib/lib/MouseX/Types/TypeDecorator.pm
+cp lib/MouseX/Types/Moose.pm blib/lib/MouseX/Types/Moose.pm
+cp lib/MouseX/Types/Mouse.pm blib/lib/MouseX/Types/Mouse.pm
+cp lib/MouseX/Types.pm blib/lib/MouseX/Types.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/000_compile.t ........................................... ok
+t/001-make_immutable.t .................................... ok
+t/002-base.t .............................................. ok
+t/003-isa_or.t ............................................ ok
+t/004-parametarization.t .................................. ok
+t/005-predicate.t ......................................... ok
+t/101-100_with_Any-Moose/10_moose-types.t ................. Any::Moose is deprecated. Please use Moo instead at t/101-100_with_Any-Moose/10_moose-types.t line 8.
+t/101-100_with_Any-Moose/10_moose-types.t ................. ok
+t/101-100_with_Any-Moose/14_compatibility-sub-exporter.t .. Any::Moose is deprecated. Please use Moo instead at /build/MouseX-Types-0.06/t/101-100_with_Any-Moose/lib/SubExporterCompatibility.pm line 3.
+t/101-100_with_Any-Moose/14_compatibility-sub-exporter.t .. ok
+t/101-100_with_Any-Moose/19_typelib_with_role.t ........... Any::Moose is deprecated. Please use Moo instead at t/101-100_with_Any-Moose/19_typelib_with_role.t line 8.
+t/101-100_with_Any-Moose/19_typelib_with_role.t ........... ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/101-100_with_Any-Moose/10_moose-types.t               (Wstat: 0 Tests: 63 Failed: 0)
+  TODO passed:   3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33
+                36, 39, 42, 45, 48, 51, 54, 57, 60, 63
+Files=9, Tests=144,  2 wallclock secs ( 0.07 usr  0.02 sys +  0.90 cusr  0.80 csys =  1.79 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/pkgconfig m4datadir=/nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/aclocal aclocaldir=/nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/perl5/site_perl/5.32.0/MouseX/Types.pm
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/perl5/site_perl/5.32.0/MouseX/Types/TypeDecorator.pm
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/perl5/site_perl/5.32.0/MouseX/Types/Moose.pm
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/perl5/site_perl/5.32.0/MouseX/Types/Mouse.pm
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/man/man3/MouseX::Types.3
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/man/man3/MouseX::Types::Mouse.3
+Installing /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/man/man3/MouseX::Types::Moose.3
+Appending installation info to /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/man/man3 to /nix/store/l09v342q6vmz17wr6g2pb569k9ha3k6l-perl5.32.0-MouseX-Types-0.06-devdoc/share/man/man3
+Removing empty /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06/lib
+patching script interpreter paths in /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06
+checking for references to /build/ in /nix/store/r7xfwp90j07nj7s2lx9innm9dkn3rmfn-perl5.32.0-MouseX-Types-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l09v342q6vmz17wr6g2pb569k9ha3k6l-perl5.32.0-MouseX-Types-0.06-devdoc
+gzipping man pages under /nix/store/l09v342q6vmz17wr6g2pb569k9ha3k6l-perl5.32.0-MouseX-Types-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l09v342q6vmz17wr6g2pb569k9ha3k6l-perl5.32.0-MouseX-Types-0.06-devdoc
+checking for references to /build/ in /nix/store/l09v342q6vmz17wr6g2pb569k9ha3k6l-perl5.32.0-MouseX-Types-0.06-devdoc...
+building '/nix/store/j5l0mjm2kb90j7ncz7pknkkff99kkw4q-perl5.32.0-MouseX-Types-Path-Class-0.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/k6dl7068hw0pjwjiawbx0p3annls6ahd-MouseX-Types-Path-Class-0.07.tar.gz
+source root is MouseX-Types-Path-Class-0.07
+setting SOURCE_DATE_EPOCH to timestamp 1333297150 of file MouseX-Types-Path-Class-0.07/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MouseX::Types::Path::Class
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MouseX/Types/Path/Class.pm blib/lib/MouseX/Types/Path/Class.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t .. ok
+t/01_basic.t .... ok
+t/02_getopt.t ... skipped: MouseX::Getopt required for this test
+All tests successful.
+Files=3, Tests=11,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.41 cusr  0.30 csys =  0.77 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/lib/pkgconfig m4datadir=/nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/share/aclocal aclocaldir=/nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/lib/perl5/site_perl/5.32.0/MouseX/Types/Path/Class.pm
+Installing /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/share/man/man3/MouseX::Types::Path::Class.3
+Appending installation info to /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/share/man/man3 to /nix/store/wsds3zvfc6dwz2a50gbmpqilx6dl7y6h-perl5.32.0-MouseX-Types-Path-Class-0.07-devdoc/share/man/man3
+Removing empty /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07/lib
+patching script interpreter paths in /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07
+checking for references to /build/ in /nix/store/5xm3mrbmsid78rz7fdn4kcz7j9dnv8cq-perl5.32.0-MouseX-Types-Path-Class-0.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wsds3zvfc6dwz2a50gbmpqilx6dl7y6h-perl5.32.0-MouseX-Types-Path-Class-0.07-devdoc
+gzipping man pages under /nix/store/wsds3zvfc6dwz2a50gbmpqilx6dl7y6h-perl5.32.0-MouseX-Types-Path-Class-0.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wsds3zvfc6dwz2a50gbmpqilx6dl7y6h-perl5.32.0-MouseX-Types-Path-Class-0.07-devdoc
+checking for references to /build/ in /nix/store/wsds3zvfc6dwz2a50gbmpqilx6dl7y6h-perl5.32.0-MouseX-Types-Path-Class-0.07-devdoc...
+building '/nix/store/jshw822dh7f04mw2qhgx2dab9hy3hbwj-perl5.32.0-MouseX-ConfigFromFile-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/wv0x4chfpzipfy78hic3q3a1wd3l9r2g-MouseX-ConfigFromFile-0.05.tar.gz
+source root is MouseX-ConfigFromFile-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1267621832 of file MouseX-ConfigFromFile-0.05/inc/Test/UseAllModules.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MouseX::ConfigFromFile
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MouseX/ConfigFromFile.pm blib/lib/MouseX/ConfigFromFile.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t .. ok
+t/01_basic.t .... ok
+t/02_default.t .. ok
+t/03_builder.t .. ok
+All tests successful.
+Files=4, Tests=17,  1 wallclock secs ( 0.05 usr  0.03 sys +  0.56 cusr  0.42 csys =  1.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/lib/pkgconfig m4datadir=/nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/share/aclocal aclocaldir=/nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/lib/perl5/site_perl/5.32.0/MouseX/ConfigFromFile.pm
+Installing /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/share/man/man3/MouseX::ConfigFromFile.3
+Appending installation info to /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/share/man/man3 to /nix/store/72z9bni7y52662ks40aypn6l34200n0r-perl5.32.0-MouseX-ConfigFromFile-0.05-devdoc/share/man/man3
+Removing empty /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05/lib
+patching script interpreter paths in /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05
+checking for references to /build/ in /nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/72z9bni7y52662ks40aypn6l34200n0r-perl5.32.0-MouseX-ConfigFromFile-0.05-devdoc
+gzipping man pages under /nix/store/72z9bni7y52662ks40aypn6l34200n0r-perl5.32.0-MouseX-ConfigFromFile-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/72z9bni7y52662ks40aypn6l34200n0r-perl5.32.0-MouseX-ConfigFromFile-0.05-devdoc
+checking for references to /build/ in /nix/store/72z9bni7y52662ks40aypn6l34200n0r-perl5.32.0-MouseX-ConfigFromFile-0.05-devdoc...
+/nix/store/sjhs40zkam75m0nddp69n52l2hi1p78b-perl5.32.0-MouseX-ConfigFromFile-0.05

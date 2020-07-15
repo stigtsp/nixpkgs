@@ -1,0 +1,59 @@
+these derivations will be built:
+  /nix/store/vfcg5p8n6ckwiig2fvfgiyfj8pdz5363-perl5.32.0-B-Keywords-1.21.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/niz3cg06asfan5zcd1d4a8iyznywgma9-B-Keywords-1.21.tar.gz
+copying path '/nix/store/niz3cg06asfan5zcd1d4a8iyznywgma9-B-Keywords-1.21.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vfcg5p8n6ckwiig2fvfgiyfj8pdz5363-perl5.32.0-B-Keywords-1.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/niz3cg06asfan5zcd1d4a8iyznywgma9-B-Keywords-1.21.tar.gz
+source root is B-Keywords-1.21
+setting SOURCE_DATE_EPOCH to timestamp 1576602003 of file B-Keywords-1.21/SIGNATURE
+patching sources
+configuring
+patching ./t/export.t...
+patching ./t/11keywords.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for B::Keywords
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/B/Keywords.pm blib/lib/B/Keywords.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10basic.t ................. ok
+t/11keywords.t .............. ok
+t/export.t .................. ok
+t/z_kwalitee.t .............. skipped: This test is only run for the module author
+t/z_meta.t .................. skipped: This test is only run for the module author
+t/z_perl_minimum_version.t .. skipped: Author tests not required for installation
+t/z_pod-coverage.t .......... skipped: This test is only run for the module author
+t/z_pod.t ................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=8, Tests=289,  0 wallclock secs ( 0.04 usr  0.00 sys +  0.35 cusr  0.05 csys =  0.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/lib/pkgconfig m4datadir=/nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/share/aclocal aclocaldir=/nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/lib/perl5/site_perl/5.32.0/B/Keywords.pm
+Installing /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/share/man/man3/B::Keywords.3
+Appending installation info to /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/share/man/man3 to /nix/store/44kpa7hqwi8aq7h6b3k86lqmknr9bmi8-perl5.32.0-B-Keywords-1.21-devdoc/share/man/man3
+Removing empty /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21/lib
+patching script interpreter paths in /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21
+checking for references to /build/ in /nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/44kpa7hqwi8aq7h6b3k86lqmknr9bmi8-perl5.32.0-B-Keywords-1.21-devdoc
+gzipping man pages under /nix/store/44kpa7hqwi8aq7h6b3k86lqmknr9bmi8-perl5.32.0-B-Keywords-1.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/44kpa7hqwi8aq7h6b3k86lqmknr9bmi8-perl5.32.0-B-Keywords-1.21-devdoc
+checking for references to /build/ in /nix/store/44kpa7hqwi8aq7h6b3k86lqmknr9bmi8-perl5.32.0-B-Keywords-1.21-devdoc...
+/nix/store/pxkwjzwyi7ji4vmnz7pls5hiy9ynm55q-perl5.32.0-B-Keywords-1.21

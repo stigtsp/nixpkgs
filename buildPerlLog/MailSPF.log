@@ -1,0 +1,146 @@
+these derivations will be built:
+  /nix/store/jhc06hn9ah24ml8mwzhsh7znsjy88k4g-perl5.32.0-Net-DNS-Resolver-Programmable-0.009.drv
+  /nix/store/8562jhh45wzli2m5w56qkay841s0hsbj-perl5.32.0-Mail-SPF-2.9.0.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/1ipddlz58yq9brfh38169iwa9ai8i3b7-Mail-SPF-v2.9.0.tar.gz
+  /nix/store/hgq1zq5x9mbp62q5bcvjnq7g7xla65ij-Net-DNS-Resolver-Programmable-0.009.tar.gz
+copying path '/nix/store/1ipddlz58yq9brfh38169iwa9ai8i3b7-Mail-SPF-v2.9.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/hgq1zq5x9mbp62q5bcvjnq7g7xla65ij-Net-DNS-Resolver-Programmable-0.009.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jhc06hn9ah24ml8mwzhsh7znsjy88k4g-perl5.32.0-Net-DNS-Resolver-Programmable-0.009.drv'...
+unpacking sources
+unpacking source archive /nix/store/hgq1zq5x9mbp62q5bcvjnq7g7xla65ij-Net-DNS-Resolver-Programmable-0.009.tar.gz
+source root is Net-DNS-Resolver-Programmable-0.009
+setting SOURCE_DATE_EPOCH to timestamp 1500930170 of file Net-DNS-Resolver-Programmable-0.009/META.yml
+patching sources
+configuring
+patching ./t/01-basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::DNS::Resolver::Programmable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/DNS/Resolver/Programmable.pm blib/lib/Net/DNS/Resolver/Programmable.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-basic.t .. # Testing Net::DNS::Resolver::Programmable 0.009, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/01-basic.t .. ok
+All tests successful.
+Files=1, Tests=17,  1 wallclock secs ( 0.01 usr  0.00 sys +  0.10 cusr  0.02 csys =  0.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/pkgconfig m4datadir=/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/share/aclocal aclocaldir=/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl/5.32.0/Net/DNS/Resolver/Programmable.pm
+Installing /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/share/man/man3/Net::DNS::Resolver::Programmable.3
+Appending installation info to /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/share/man/man3 to /nix/store/f12maznadjiin8ic01xzaa3jb4kvpcam-perl5.32.0-Net-DNS-Resolver-Programmable-0.009-devdoc/share/man/man3
+Removing empty /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib
+patching script interpreter paths in /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009
+checking for references to /build/ in /nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009...
+shrinking RPATHs of ELF executables and libraries in /nix/store/f12maznadjiin8ic01xzaa3jb4kvpcam-perl5.32.0-Net-DNS-Resolver-Programmable-0.009-devdoc
+gzipping man pages under /nix/store/f12maznadjiin8ic01xzaa3jb4kvpcam-perl5.32.0-Net-DNS-Resolver-Programmable-0.009-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/f12maznadjiin8ic01xzaa3jb4kvpcam-perl5.32.0-Net-DNS-Resolver-Programmable-0.009-devdoc
+checking for references to /build/ in /nix/store/f12maznadjiin8ic01xzaa3jb4kvpcam-perl5.32.0-Net-DNS-Resolver-Programmable-0.009-devdoc...
+building '/nix/store/8562jhh45wzli2m5w56qkay841s0hsbj-perl5.32.0-Mail-SPF-2.9.0.drv'...
+unpacking sources
+unpacking source archive /nix/store/1ipddlz58yq9brfh38169iwa9ai8i3b7-Mail-SPF-v2.9.0.tar.gz
+source root is Mail-SPF-v2.9.0
+setting SOURCE_DATE_EPOCH to timestamp 1374465156 of file Mail-SPF-v2.9.0/SIGNATURE
+patching sources
+configuring
+patching ./sbin/spfd...
+patching ./debian/spf-tools-perl.postinst...
+patching ./debian/spf-tools-perl.prerm...
+patching ./debian/rules...
+patching ./bin/spfquery...
+# running Build.PL --prefix /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Mail-SPF' version 'v2.9.0'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Mail-SPF' version 'v2.9.0'
+Building Mail-SPF
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/pkgconfig m4datadir=/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/aclocal aclocaldir=/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/aclocal install
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl Build --makefile_env_macros 1 install
+Building Mail-SPF
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man1/spfquery.1
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mod.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Exception.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Util.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Request.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Server.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Record.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Result.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/MacroString.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Term.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/SenderIPAddrMech.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Base.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/Include.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/IP4.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/Exists.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/MX.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/PTR.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/All.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/IP6.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mech/A.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/v2/Record.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mod/Redirect.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/Mod/Exp.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl/Mail/SPF/v1/Record.pm
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mod.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Request.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::All.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::PTR.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::v1::Record.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::SenderIPAddrMech.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::Exists.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Term.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::v2::Record.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::A.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mod::Exp.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::MX.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Base.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::IP6.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Server.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::MacroString.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Result.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Record.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mod::Redirect.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::IP4.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Util.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech::Include.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man/man3/Mail::SPF::Mech.3
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/bin/spfd
+Installing /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/bin/spfquery
+post-installation fixup
+moving /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/man to /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/man
+Moving /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/man/man3 to /nix/store/nal3k2yzfwq7lxwsiqcqqdswzkpa2vz7-perl5.32.0-Mail-SPF-2.9.0-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0
+gzipping man pages under /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib  /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/bin
+patching script interpreter paths in /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0
+/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/bin/spfd: interpreter directive changed from "/usr/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/7x73g89n92f4f0ynl0wjm94app3z486d-perl5.32.0-Net-DNS-Resolver-Programmable-0.009/lib/perl5/site_perl -I/nix/store/jg4mln46b76a7fg6ch7239igh2gsf76j-perl5.32.0-Net-DNS-1.24/lib/perl5/site_perl -I/nix/store/jxfxlwrcm2986vmz15ixcs45444rpbff-perl5.32.0-Digest-HMAC-1.03/lib/perl5/site_perl -I/nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl -I/nix/store/cmzli7h4sgndkpxmlarb7cl30vly6qbg-perl5.32.0-NetAddr-IP-4.079/lib/perl5/site_perl -I/nix/store/c7xsgcqadpwn3xanwj6ghj85cag7km3j-perl5.32.0-URI-1.76/lib/perl5/site_perl -I/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nal3k2yzfwq7lxwsiqcqqdswzkpa2vz7-perl5.32.0-Mail-SPF-2.9.0-devdoc
+gzipping man pages under /nix/store/nal3k2yzfwq7lxwsiqcqqdswzkpa2vz7-perl5.32.0-Mail-SPF-2.9.0-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nal3k2yzfwq7lxwsiqcqqdswzkpa2vz7-perl5.32.0-Mail-SPF-2.9.0-devdoc
+checking for references to /build/ in /nix/store/nal3k2yzfwq7lxwsiqcqqdswzkpa2vz7-perl5.32.0-Mail-SPF-2.9.0-devdoc...
+/nix/store/q9w4pz345v04xrqxxpan9nz4lb7anwir-perl5.32.0-Mail-SPF-2.9.0

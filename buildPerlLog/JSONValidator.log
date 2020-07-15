@@ -1,0 +1,811 @@
+these derivations will be built:
+  /nix/store/m55kiz5cfcdcyscb44jw8sz6pm21q6iv-perl5.32.0-Net-IDN-Encode-2.500.drv
+  /nix/store/x1iacjv45i4b1l8q23nkdp7cxcm3h9h1-perl5.32.0-Mojolicious-8.55.drv
+  /nix/store/i57l0kf0af9jarpmwgpqkgki87s1vv60-perl5.32.0-JSON-Validator-4.00.drv
+building '/nix/store/x1iacjv45i4b1l8q23nkdp7cxcm3h9h1-perl5.32.0-Mojolicious-8.55.drv'...
+building '/nix/store/m55kiz5cfcdcyscb44jw8sz6pm21q6iv-perl5.32.0-Net-IDN-Encode-2.500.drv'...
+unpacking sources
+unpacking source archive /nix/store/543vlag0bzpd2aphpv4z4g6rz5wayha6-Mojolicious-8.55.tar.gz
+unpacking sources
+unpacking source archive /nix/store/1j5xcpb25i1i7hc60gccimnfr72b5z3p-Net-IDN-Encode-2.500.tar.gz
+source root is Mojolicious-8.55
+setting SOURCE_DATE_EPOCH to timestamp 1592473340 of file Mojolicious-8.55/META.json
+patching sources
+configuring
+source root is Net-IDN-Encode-2.500
+setting SOURCE_DATE_EPOCH to timestamp 1538785687 of file Net-IDN-Encode-2.500/t/xtra_pp.t
+patching ./script/hypnotoad...
+patching sources
+patching ./script/morbo...
+configuring
+patching ./script/mojo...
+patching ./eg/hello_idn.pl...
+patching ./eg/hello_idn_email.pl...
+patching ./t/mojolicious/external/myapp.pl...
+patching ./t/mojolicious/external/script/my_app...
+patching ./t/mojolicious/external/myapp2.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IDN::Encode
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-IDN-Encode' version '2.500'
+Building Net-IDN-Encode
+Checking if your kit is complete...
+Looks good
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="2.500" -DXS_VERSION="2.500" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Net/IDN/Punycode.o lib/Net/IDN/Punycode.c
+Generating a Unix-style Makefile
+Writing Makefile for Mojolicious
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+lib/Net/IDN/Punycode.xs: In function 'XS_Net__IDN__Punycode_decode_punycode':
+lib/Net/IDN/Punycode.xs:256:5: warning: 'Perl_uvuni_to_utf8_flags' is deprecated [-Wdeprecated-declarations]
+  256 |     uvuni_to_utf8_flags((U8*)skip_p, n, UNICODE_ALLOW_ANY);
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Net/IDN/Punycode.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:4014:19: note: declared here
+ 4014 | PERL_CALLCONV U8* Perl_uvuni_to_utf8_flags(pTHX_ U8 *d, UV uv, UV flags)
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+cp lib/Mojo/HelloWorld.pm blib/lib/Mojo/HelloWorld.pm
+cp lib/Mojo/Exception.pm blib/lib/Mojo/Exception.pm
+cp lib/Mojo/Cookie/Request.pm blib/lib/Mojo/Cookie/Request.pm
+cp lib/Mojo/Date.pm blib/lib/Mojo/Date.pm
+cp lib/Mojo/Message.pm blib/lib/Mojo/Message.pm
+cp lib/Mojo/JSON.pm blib/lib/Mojo/JSON.pm
+cp lib/Mojo/Base.pm blib/lib/Mojo/Base.pm
+cp lib/Mojo/Headers.pm blib/lib/Mojo/Headers.pm
+cp lib/Mojo/Home.pm blib/lib/Mojo/Home.pm
+cp lib/Mojo/Promise.pm blib/lib/Mojo/Promise.pm
+cp lib/Mojo/Asset/File.pm blib/lib/Mojo/Asset/File.pm
+cp lib/Mojo/Message/Request.pm blib/lib/Mojo/Message/Request.pm
+cp lib/Mojo/Asset.pm blib/lib/Mojo/Asset.pm
+cp lib/Mojo.pm blib/lib/Mojo.pm
+cp lib/Mojo/Content.pm blib/lib/Mojo/Content.pm
+cp lib/Mojo/Collection.pm blib/lib/Mojo/Collection.pm
+cp lib/Mojo/IOLoop/Delay.pm blib/lib/Mojo/IOLoop/Delay.pm
+cp lib/Mojo/IOLoop.pm blib/lib/Mojo/IOLoop.pm
+cp lib/Mojo/Reactor/EV.pm blib/lib/Mojo/Reactor/EV.pm
+cp lib/Mojo/Reactor.pm blib/lib/Mojo/Reactor.pm
+cp lib/Mojo/Loader.pm blib/lib/Mojo/Loader.pm
+cp lib/Mojo/File.pm blib/lib/Mojo/File.pm
+cp lib/Mojo/DOM.pm blib/lib/Mojo/DOM.pm
+cp lib/Mojo/Reactor/Poll.pm blib/lib/Mojo/Reactor/Poll.pm
+cp lib/Mojo/Message/Response.pm blib/lib/Mojo/Message/Response.pm
+cp lib/Mojo/DOM/CSS.pm blib/lib/Mojo/DOM/CSS.pm
+cp lib/Mojo/Asset/Memory.pm blib/lib/Mojo/Asset/Memory.pm
+cp lib/Mojo/IOLoop/TLS.pm blib/lib/Mojo/IOLoop/TLS.pm
+cp lib/Mojo/Cache.pm blib/lib/Mojo/Cache.pm
+cp lib/Mojo/JSON/Pointer.pm blib/lib/Mojo/JSON/Pointer.pm
+cp lib/Mojo/IOLoop/resources/server.key blib/lib/Mojo/IOLoop/resources/server.key
+cp lib/Mojo/Parameters.pm blib/lib/Mojo/Parameters.pm
+cp lib/Mojo/IOLoop/Server.pm blib/lib/Mojo/IOLoop/Server.pm
+cp lib/Mojo/Log.pm blib/lib/Mojo/Log.pm
+cp lib/Mojo/EventEmitter.pm blib/lib/Mojo/EventEmitter.pm
+cp lib/Mojo/IOLoop/resources/server.crt blib/lib/Mojo/IOLoop/resources/server.crt
+cp lib/Mojo/Content/Single.pm blib/lib/Mojo/Content/Single.pm
+cp lib/Mojo/IOLoop/Subprocess.pm blib/lib/Mojo/IOLoop/Subprocess.pm
+cp lib/Mojo/DOM/HTML.pm blib/lib/Mojo/DOM/HTML.pm
+cp lib/Mojo/IOLoop/Client.pm blib/lib/Mojo/IOLoop/Client.pm
+cp lib/Mojo/ByteStream.pm blib/lib/Mojo/ByteStream.pm
+cp lib/Mojo/IOLoop/Stream.pm blib/lib/Mojo/IOLoop/Stream.pm
+cp lib/Mojo/Content/MultiPart.pm blib/lib/Mojo/Content/MultiPart.pm
+cp lib/Mojo/Path.pm blib/lib/Mojo/Path.pm
+cp lib/Mojo/Cookie/Response.pm blib/lib/Mojo/Cookie/Response.pm
+cp lib/Mojo/Cookie.pm blib/lib/Mojo/Cookie.pm
+cp lib/Mojo/DynamicMethods.pm blib/lib/Mojo/DynamicMethods.pm
+cp lib/Mojolicious/Command/get.pm blib/lib/Mojolicious/Command/get.pm
+cp lib/Mojo/UserAgent/Server.pm blib/lib/Mojo/UserAgent/Server.pm
+cp lib/Mojo/Server/Prefork.pm blib/lib/Mojo/Server/Prefork.pm
+cp lib/Mojo/Server/Morbo/Backend.pm blib/lib/Mojo/Server/Morbo/Backend.pm
+cp lib/Mojolicious/Command/Author/generate/app.pm blib/lib/Mojolicious/Command/Author/generate/app.pm
+cp lib/Mojolicious/Command/cgi.pm blib/lib/Mojolicious/Command/cgi.pm
+cp lib/Mojolicious.pm blib/lib/Mojolicious.pm
+cp lib/Mojo/Server/Hypnotoad.pm blib/lib/Mojo/Server/Hypnotoad.pm
+cp lib/Mojo/UserAgent/CookieJar.pm blib/lib/Mojo/UserAgent/CookieJar.pm
+cp lib/Mojo/Transaction.pm blib/lib/Mojo/Transaction.pm
+cp lib/Mojo/UserAgent/Transactor.pm blib/lib/Mojo/UserAgent/Transactor.pm
+cp lib/Mojo/Transaction/WebSocket.pm blib/lib/Mojo/Transaction/WebSocket.pm
+cp lib/Mojo/UserAgent/Proxy.pm blib/lib/Mojo/UserAgent/Proxy.pm
+cp lib/Mojolicious/Command/Author/generate/lite_app.pm blib/lib/Mojolicious/Command/Author/generate/lite_app.pm
+cp lib/Mojolicious/Command/Author/generate/makefile.pm blib/lib/Mojolicious/Command/Author/generate/makefile.pm
+cp lib/Mojo/UserAgent.pm blib/lib/Mojo/UserAgent.pm
+cp lib/Mojolicious/Command/daemon.pm blib/lib/Mojolicious/Command/daemon.pm
+cp lib/Mojo/URL.pm blib/lib/Mojo/URL.pm
+cp lib/Mojo/Template.pm blib/lib/Mojo/Template.pm
+cp lib/Mojolicious/Command/Author/cpanify.pm blib/lib/Mojolicious/Command/Author/cpanify.pm
+cp lib/Mojo/Server/Morbo/Backend/Poll.pm blib/lib/Mojo/Server/Morbo/Backend/Poll.pm
+cp lib/Mojo/Server/CGI.pm blib/lib/Mojo/Server/CGI.pm
+cp lib/Mojo/resources/html_entities.txt blib/lib/Mojo/resources/html_entities.txt
+cp lib/Mojolicious/Command/Author/inflate.pm blib/lib/Mojolicious/Command/Author/inflate.pm
+cp lib/Mojolicious/Command/Author/generate.pm blib/lib/Mojolicious/Command/Author/generate.pm
+cp lib/Mojolicious/Command.pm blib/lib/Mojolicious/Command.pm
+cp lib/Mojolicious/Command/Author/generate/plugin.pm blib/lib/Mojolicious/Command/Author/generate/plugin.pm
+cp lib/Mojo/Server/Daemon.pm blib/lib/Mojo/Server/Daemon.pm
+cp lib/Mojolicious/Command/eval.pm blib/lib/Mojolicious/Command/eval.pm
+cp lib/Mojo/Server/PSGI.pm blib/lib/Mojo/Server/PSGI.pm
+cp lib/Mojo/Transaction/HTTP.pm blib/lib/Mojo/Transaction/HTTP.pm
+cp lib/Mojo/Server.pm blib/lib/Mojo/Server.pm
+cp lib/Mojo/Upload.pm blib/lib/Mojo/Upload.pm
+cp lib/Mojo/Server/Morbo.pm blib/lib/Mojo/Server/Morbo.pm
+cp lib/Mojo/Util.pm blib/lib/Mojo/Util.pm
+cp lib/Mojo/WebSocket.pm blib/lib/Mojo/WebSocket.pm
+cp lib/Mojolicious/Guides.pod blib/lib/Mojolicious/Guides.pod
+cp lib/Mojolicious/Renderer.pm blib/lib/Mojolicious/Renderer.pm
+cp lib/Mojolicious/Command/psgi.pm blib/lib/Mojolicious/Command/psgi.pm
+cp lib/Mojolicious/Plugin/Config.pm blib/lib/Mojolicious/Plugin/Config.pm
+cp lib/Mojolicious/Plugin/DefaultHelpers.pm blib/lib/Mojolicious/Plugin/DefaultHelpers.pm
+cp lib/Mojolicious/Command/prefork.pm blib/lib/Mojolicious/Command/prefork.pm
+cp lib/Mojolicious/Guides/FAQ.pod blib/lib/Mojolicious/Guides/FAQ.pod
+cp lib/Mojolicious/Plugin/HeaderCondition.pm blib/lib/Mojolicious/Plugin/HeaderCondition.pm
+cp lib/Mojolicious/Plugin/EPLRenderer.pm blib/lib/Mojolicious/Plugin/EPLRenderer.pm
+cp lib/Mojolicious/Sessions.pm blib/lib/Mojolicious/Sessions.pm
+cp lib/Mojolicious/Guides/Growing.pod blib/lib/Mojolicious/Guides/Growing.pod
+cp lib/Mojolicious/Controller.pm blib/lib/Mojolicious/Controller.pm
+cp lib/Mojolicious/Plugin/Mount.pm blib/lib/Mojolicious/Plugin/Mount.pm
+cp lib/Mojolicious/Commands.pm blib/lib/Mojolicious/Commands.pm
+cp lib/Mojolicious/Plugin/TagHelpers.pm blib/lib/Mojolicious/Plugin/TagHelpers.pm
+cp lib/Mojolicious/Plugins.pm blib/lib/Mojolicious/Plugins.pm
+cp lib/Mojolicious/Routes/Route.pm blib/lib/Mojolicious/Routes/Route.pm
+cp lib/Mojolicious/Static.pm blib/lib/Mojolicious/Static.pm
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Net/IDN/Punycode/Punycode.bs')
+cp lib/Mojolicious/Command/routes.pm blib/lib/Mojolicious/Command/routes.pm
+cp lib/Mojolicious/Guides/Testing.pod blib/lib/Mojolicious/Guides/Testing.pod
+cp lib/Mojolicious/Command/version.pm blib/lib/Mojolicious/Command/version.pm
+cp lib/Mojolicious/Plugin/JSONConfig.pm blib/lib/Mojolicious/Plugin/JSONConfig.pm
+cp lib/Mojolicious/Types.pm blib/lib/Mojolicious/Types.pm
+cp lib/Mojolicious/Guides/Tutorial.pod blib/lib/Mojolicious/Guides/Tutorial.pod
+cp lib/Mojolicious/Guides/Contributing.pod blib/lib/Mojolicious/Guides/Contributing.pod
+cp lib/Mojolicious/Guides/Cookbook.pod blib/lib/Mojolicious/Guides/Cookbook.pod
+cp lib/Mojolicious/Routes/Match.pm blib/lib/Mojolicious/Routes/Match.pm
+cp lib/Mojolicious/Plugin/EPRenderer.pm blib/lib/Mojolicious/Plugin/EPRenderer.pm
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Net/IDN/Punycode/Punycode.so lib/Net/IDN/Punycode.o
+cp lib/Mojolicious/Guides/Routing.pod blib/lib/Mojolicious/Guides/Routing.pod
+cp lib/Mojolicious/Routes/Pattern.pm blib/lib/Mojolicious/Routes/Pattern.pm
+cp lib/Mojolicious/Guides/Rendering.pod blib/lib/Mojolicious/Guides/Rendering.pod
+cp lib/Mojolicious/Validator.pm blib/lib/Mojolicious/Validator.pm
+cp lib/Mojolicious/Routes.pm blib/lib/Mojolicious/Routes.pm
+cp lib/Mojolicious/Lite.pm blib/lib/Mojolicious/Lite.pm
+cp lib/Mojolicious/Plugin.pm blib/lib/Mojolicious/Plugin.pm
+cp lib/Mojolicious/resources/templates/mojo/not_found.html.ep blib/lib/Mojolicious/resources/templates/mojo/not_found.html.ep
+cp lib/Mojolicious/resources/public/mojo/logo.png blib/lib/Mojolicious/resources/public/mojo/logo.png
+cp lib/Mojolicious/resources/public/mojo/prettify/run_prettify.js blib/lib/Mojolicious/resources/public/mojo/prettify/run_prettify.js
+cp lib/Mojolicious/resources/public/mojo/pinstripe-light.png blib/lib/Mojolicious/resources/public/mojo/pinstripe-light.png
+cp lib/Mojolicious/resources/public/mojo/logo-black.png blib/lib/Mojolicious/resources/public/mojo/logo-black.png
+cp lib/Mojolicious/resources/public/mojo/pinstripe-dark.png blib/lib/Mojolicious/resources/public/mojo/pinstripe-dark.png
+cp lib/Mojolicious/resources/public/favicon.ico blib/lib/Mojolicious/resources/public/favicon.ico
+cp lib/Mojolicious/resources/public/mojo/noraptor.png blib/lib/Mojolicious/resources/public/mojo/noraptor.png
+cp lib/Mojolicious/resources/public/mojo/prettify/prettify-mojo-dark.css blib/lib/Mojolicious/resources/public/mojo/prettify/prettify-mojo-dark.css
+cp lib/Mojolicious/resources/public/mojo/jquery/jquery.js blib/lib/Mojolicious/resources/public/mojo/jquery/jquery.js
+cp lib/Test/Mojo.pm blib/lib/Test/Mojo.pm
+cp lib/Mojolicious/resources/templates/mojo/debug.html.ep blib/lib/Mojolicious/resources/templates/mojo/debug.html.ep
+cp lib/Mojolicious/resources/templates/mojo/exception.html.ep blib/lib/Mojolicious/resources/templates/mojo/exception.html.ep
+cp lib/Mojolicious/resources/public/mojo/notfound.png blib/lib/Mojolicious/resources/public/mojo/notfound.png
+cp lib/Mojolicious/resources/public/mojo/logo-white-2x.png blib/lib/Mojolicious/resources/public/mojo/logo-white-2x.png
+cp lib/Mojolicious/resources/public/mojo/logo-black-2x.png blib/lib/Mojolicious/resources/public/mojo/logo-black-2x.png
+cp lib/Mojolicious/resources/public/mojo/logo-white.png blib/lib/Mojolicious/resources/public/mojo/logo-white.png
+cp lib/Mojolicious/Validator/Validation.pm blib/lib/Mojolicious/Validator/Validation.pm
+cp lib/Mojolicious/resources/public/mojo/failraptor.png blib/lib/Mojolicious/resources/public/mojo/failraptor.png
+cp lib/ojo.pm blib/lib/ojo.pm
+cp script/hypnotoad blib/script/hypnotoad
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/hypnotoad
+cp script/mojo blib/script/mojo
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mojo
+running tests
+cp script/morbo blib/script/morbo
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/morbo
+Manifying 3 pod documents
+Manifying 40 pod documents
+t/00use.t ................. ok
+t/domain_to_ascii.t ....... ok
+t/domain_to_unicode.t ..... ok
+t/encode_bytes.t .......... ok
+t/encode_utf8.t ........... ok
+Manifying 34 pod documents
+t/punycode_vec-pp.t ....... ok
+t/punycode_vec-xs.t ....... ok
+t/uts46_api_call.t ........ ok
+t/uts46_encode_bytes.t .... ok
+t/uts46_encode_utf8.t ..... ok
+Manifying 29 pod documents
+Manifying 15 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/mojo/asset.t ............................. ok
+t/mojo/base.t .............................. ok
+t/uts46_to_ascii-trans.t .. ok
+t/mojo/bytestream.t ........................ ok
+t/mojo/cache.t ............................. ok
+t/mojo/cgi.t ............................... ok
+t/mojo/collection.t ........................ ok
+t/mojo/content.t ........................... ok
+t/mojo/cookie.t ............................ ok
+t/mojo/cookiejar.t ......................... ok
+t/uts46_to_ascii.t ........ ok
+t/mojo/daemon.t ............................ ok
+t/mojo/daemon_ipv6_tls.t ................... skipped: set TEST_IPV6 to enable this test (developer only!)
+t/mojo/date.t .............................. ok
+t/mojo/delay.t ............................. ok
+t/uts46_to_unicode.t ...... ok
+t/xtra_pp.t ............... ok
+All tests successful.
+Files=14, Tests=20366,  5 wallclock secs ( 1.66 usr  0.11 sys +  5.35 cusr  0.34 csys =  7.46 CPU)
+Result: PASS
+installing
+t/mojo/dom.t ............................... ok
+Building Net-IDN-Encode
+t/mojo/dynamic_methods.t ................... ok
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/IDN/Punycode/Punycode.bs
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/IDN/Punycode/Punycode.so
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/Encode.pm
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/Standards.pod
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/Punycode.pm
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/Overview.pod
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/UTS46.pm
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/UTS46/_Mapping.pm
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/IDN/Punycode/PP.pm
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::UTS46.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::Standards.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::Overview.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::Punycode::PP.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::Punycode.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::UTS46::_Mapping.3
+Installing /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3/Net::IDN::Encode.3
+post-installation fixup
+Moving /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/man3 to /nix/store/q37f57igzv9mxkk474sng10djb6rf7px-perl5.32.0-Net-IDN-Encode-2.500-devdoc/share/man/man3
+Removing empty /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500
+shrinking /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/IDN/Punycode/Punycode.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500/lib
+patching script interpreter paths in /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500
+checking for references to /build/ in /nix/store/a2gxma3q86rmxqal2wb61bpqmjijxs9q-perl5.32.0-Net-IDN-Encode-2.500...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q37f57igzv9mxkk474sng10djb6rf7px-perl5.32.0-Net-IDN-Encode-2.500-devdoc
+gzipping man pages under /nix/store/q37f57igzv9mxkk474sng10djb6rf7px-perl5.32.0-Net-IDN-Encode-2.500-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q37f57igzv9mxkk474sng10djb6rf7px-perl5.32.0-Net-IDN-Encode-2.500-devdoc
+checking for references to /build/ in /nix/store/q37f57igzv9mxkk474sng10djb6rf7px-perl5.32.0-Net-IDN-Encode-2.500-devdoc...
+t/mojo/eventemitter.t ...................... ok
+t/mojo/exception.t ......................... ok
+t/mojo/file.t .............................. ok
+t/mojo/headers.t ........................... ok
+t/mojo/home.t .............................. ok
+t/mojo/hypnotoad.t ......................... skipped: set TEST_HYPNOTOAD to enable this test (developer only!)
+t/mojo/ioloop.t ............................ ok
+t/mojo/ioloop_ipv6.t ....................... skipped: set TEST_IPV6 to enable this test (developer only!)
+t/mojo/ioloop_tls.t ........................ skipped: set TEST_TLS to enable this test (developer only!)
+t/mojo/json.t .............................. ok
+t/mojo/json_pointer.t ...................... ok
+t/mojo/json_xs.t ........................... skipped: Cpanel::JSON::XS 4.09+ required for this test!
+t/mojo/loader.t ............................ ok
+t/mojo/log.t ............................... ok
+t/mojo/morbo.t ............................. skipped: set TEST_MORBO to enable this test (developer only!)
+t/mojo/parameters.t ........................ ok
+t/mojo/path.t .............................. ok
+t/mojo/prefork.t ........................... skipped: set TEST_PREFORK to enable this test (developer only!)
+t/mojo/promise.t ........................... ok
+t/mojo/promise_async_await.t ............... skipped: set TEST_ASYNC_AWAIT to enable this test (developer only!)
+t/mojo/proxy.t ............................. ok
+t/mojo/psgi.t .............................. ok
+t/mojo/reactor_detect.t .................... ok
+t/mojo/reactor_ev.t ........................ skipped: set TEST_EV to enable this test (developer only!)
+t/mojo/reactor_poll.t ...................... ok
+t/mojo/request.t ........................... ok
+t/mojo/request_cgi.t ....................... ok
+t/mojo/response.t .......................... ok
+t/mojo/roles.t ............................. skipped: Role::Tiny 2.000001+ required for this test!
+t/mojo/signatures.t ........................ ok
+t/mojo/subprocess.t ........................ skipped: set TEST_SUBPROCESS to enable this test (developer only!)
+t/mojo/subprocess_ev.t ..................... skipped: set TEST_SUBPROCESS to enable this test (developer only!)
+t/mojo/template.t .......................... ok
+t/mojo/tls.t ............................... skipped: set TEST_TLS to enable this test (developer only!)
+t/mojo/transactor.t ........................ ok
+t/mojo/url.t ............................... ok
+t/mojo/user_agent.t ........................ ok
+t/mojo/user_agent_online.t ................. skipped: set TEST_ONLINE to enable this test (developer only!)
+t/mojo/user_agent_socks.t .................. skipped: set TEST_SOCKS to enable this test (developer only!)
+t/mojo/user_agent_tls.t .................... skipped: set TEST_TLS to enable this test (developer only!)
+t/mojo/user_agent_unix.t ................... skipped: set TEST_UNIX to enable this test (developer only!)
+t/mojo/util.t .............................. ok
+t/mojo/websocket.t ......................... ok
+t/mojo/websocket_frames.t .................. ok
+t/mojo/websocket_proxy.t ................... ok
+t/mojo/websocket_proxy_tls.t ............... skipped: set TEST_TLS to enable this test (developer only!)
+t/mojolicious/app.t ........................ ok
+t/mojolicious/charset_lite_app.t ........... ok
+t/mojolicious/command.t .................... ok
+t/mojolicious/commands.t ................... ok
+t/mojolicious/dispatch.t ................... ok
+t/mojolicious/dispatcher_lite_app.t ........ ok
+t/mojolicious/embedded_app.t ............... ok
+t/mojolicious/embedded_lite_app.t .......... ok
+t/mojolicious/exception_lite_app.t ......... ok
+t/mojolicious/external_app.t ............... ok
+t/mojolicious/external_lite_app.t .......... ok
+t/mojolicious/group_lite_app.t ............. ok
+t/mojolicious/json_config_lite_app.t ....... ok
+t/mojolicious/json_config_mode_lite_app.t .. ok
+t/mojolicious/layouted_lite_app.t .......... ok
+t/mojolicious/lite_app.t ................... ok
+t/mojolicious/log_lite_app.t ............... ok
+t/mojolicious/longpolling_lite_app.t ....... ok
+t/mojolicious/multipath_lite_app.t ......... ok
+t/mojolicious/ojo.t ........................ ok
+t/mojolicious/ojo_signatures.t ............. ok
+t/mojolicious/pattern.t .................... ok
+t/mojolicious/production_app.t ............. ok
+t/mojolicious/proxy_app.t .................. ok
+t/mojolicious/rebased_lite_app.t ........... ok
+t/mojolicious/renderer.t ................... ok
+t/mojolicious/restful_lite_app.t ........... ok
+t/mojolicious/routes.t ..................... ok
+t/mojolicious/signatures_lite_app.t ........ ok
+t/mojolicious/static_lite_app.t ............ ok
+t/mojolicious/tag_helper_lite_app.t ........ ok
+t/mojolicious/testing_app.t ................ ok
+t/mojolicious/tls_lite_app.t ............... skipped: set TEST_TLS to enable this test (developer only!)
+t/mojolicious/twinkle_lite_app.t ........... ok
+t/mojolicious/types.t ...................... ok
+t/mojolicious/upload_lite_app.t ............ ok
+t/mojolicious/upload_stream_lite_app.t ..... ok
+t/mojolicious/validation_lite_app.t ........ ok
+t/mojolicious/websocket_lite_app.t ......... ok
+t/pod.t .................................... skipped: set TEST_POD to enable this test (developer only!)
+t/pod_coverage.t ........................... skipped: set TEST_POD to enable this test (developer only!)
+t/test/mojo.t .............................. ok
+All tests successful.
+Files=103, Tests=10004, 40 wallclock secs ( 1.20 usr  0.14 sys + 30.01 cusr  2.67 csys = 34.02 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/pkgconfig m4datadir=/nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/aclocal aclocaldir=/nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/aclocal install
+Manifying 3 pod documents
+Manifying 40 pod documents
+Manifying 34 pod documents
+Manifying 29 pod documents
+Manifying 15 pod documents
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/ojo.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/DynamicMethods.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Reactor.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Cookie.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Asset.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Collection.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/EventEmitter.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Exception.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/URL.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Promise.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Path.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Content.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Loader.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Upload.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Transaction.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Util.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Date.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Headers.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Message.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Home.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/File.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Log.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Cache.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/UserAgent.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Template.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/JSON.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/WebSocket.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/DOM.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/HelloWorld.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Parameters.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/ByteStream.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Base.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/UserAgent/CookieJar.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/UserAgent/Proxy.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/UserAgent/Transactor.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/UserAgent/Server.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Daemon.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Hypnotoad.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Morbo.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Prefork.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/PSGI.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/CGI.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Morbo/Backend.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Server/Morbo/Backend/Poll.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/Server.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/Client.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/TLS.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/Delay.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/Stream.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/Subprocess.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/resources/server.crt
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/IOLoop/resources/server.key
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/DOM/CSS.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/DOM/HTML.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/JSON/Pointer.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Cookie/Request.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Cookie/Response.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Asset/Memory.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Asset/File.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Transaction/HTTP.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Transaction/WebSocket.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Content/Single.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Content/MultiPart.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Reactor/Poll.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Reactor/EV.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/resources/html_entities.txt
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Message/Request.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojo/Message/Response.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Types.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Routes.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Validator.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Static.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugins.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Commands.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Lite.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Renderer.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Controller.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Sessions.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Validator/Validation.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/cgi.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/version.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/daemon.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/prefork.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/eval.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/psgi.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/get.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/routes.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/generate.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/inflate.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/cpanify.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/generate/plugin.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/generate/makefile.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/generate/app.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/generate/lite_app.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Config.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/JSONConfig.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Mount.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/TagHelpers.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/HeaderCondition.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/DefaultHelpers.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/EPLRenderer.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/EPRenderer.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Testing.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Cookbook.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Routing.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Contributing.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Rendering.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Growing.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/Tutorial.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Guides/FAQ.pod
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/favicon.ico
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/failraptor.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/notfound.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/noraptor.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/logo-white-2x.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/logo-black.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/pinstripe-dark.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/logo-white.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/logo-black-2x.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/logo.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/pinstripe-light.png
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/prettify/run_prettify.js
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/prettify/prettify-mojo-dark.css
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/public/mojo/jquery/jquery.js
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/templates/mojo/not_found.html.ep
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/templates/mojo/exception.html.ep
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/resources/templates/mojo/debug.html.ep
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Routes/Pattern.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Routes/Match.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Mojolicious/Routes/Route.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/site_perl/5.32.0/Test/Mojo.pm
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man1/hypnotoad.1
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man1/mojo.1
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man1/morbo.1
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Renderer.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::generate::makefile.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Static.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::Client.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Routing.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::JSON.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Message::Response.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::TagHelpers.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugins.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::get.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Cookie::Response.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Collection.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::inflate.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Promise.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Content::Single.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Validator::Validation.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::HelloWorld.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Contributing.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Tutorial.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::UserAgent::Server.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Morbo.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Morbo::Backend.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::HeaderCondition.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Log.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::UserAgent.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Routes::Route.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::routes.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Transaction::WebSocket.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Transaction.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::JSONConfig.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::UserAgent::Proxy.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Types.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::UserAgent::Transactor.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Asset::File.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Asset::Memory.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::generate::lite_app.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Util.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::ByteStream.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Headers.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Routes::Pattern.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Exception.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Message::Request.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Base.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Lite.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Routes.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Transaction::HTTP.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Cookie::Request.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Cache.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Template.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Home.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::DefaultHelpers.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Hypnotoad.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Growing.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::Mount.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Routes::Match.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Validator.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::UserAgent::CookieJar.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::Stream.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::WebSocket.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::cpanify.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Asset.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::CGI.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::Subprocess.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Date.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Reactor.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::version.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::DOM.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Content.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::URL.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Cookie.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Upload.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::JSON::Pointer.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::generate::app.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::PSGI.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::psgi.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::EventEmitter.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::prefork.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Controller.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Daemon.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::EPLRenderer.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::DOM::HTML.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::EPRenderer.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::TLS.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::Delay.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::daemon.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Cookbook.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::cgi.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Testing.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Reactor::Poll.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::eval.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::Rendering.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Test::Mojo.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Content::MultiPart.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Parameters.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Commands.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Morbo::Backend::Poll.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Reactor::EV.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Loader.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Server::Prefork.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Guides::FAQ.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::generate::plugin.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Path.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::File.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::DOM::CSS.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Sessions.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Command::Author::generate.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::DynamicMethods.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/ojo.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::Message.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojolicious::Plugin::Config.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3/Mojo::IOLoop::Server.3
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/bin/hypnotoad
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/bin/morbo
+Installing /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/bin/mojo
+Appending installation info to /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/man3 to /nix/store/ipg4nv3n7jxv41mcsq4dpw65j30l5dqz-perl5.32.0-Mojolicious-8.55-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55
+gzipping man pages under /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/lib  /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55/bin
+patching script interpreter paths in /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55
+checking for references to /build/ in /nix/store/k243w89kq32dld3dph3wj880if4gvwr6-perl5.32.0-Mojolicious-8.55...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ipg4nv3n7jxv41mcsq4dpw65j30l5dqz-perl5.32.0-Mojolicious-8.55-devdoc
+gzipping man pages under /nix/store/ipg4nv3n7jxv41mcsq4dpw65j30l5dqz-perl5.32.0-Mojolicious-8.55-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ipg4nv3n7jxv41mcsq4dpw65j30l5dqz-perl5.32.0-Mojolicious-8.55-devdoc
+checking for references to /build/ in /nix/store/ipg4nv3n7jxv41mcsq4dpw65j30l5dqz-perl5.32.0-Mojolicious-8.55-devdoc...
+building '/nix/store/i57l0kf0af9jarpmwgpqkgki87s1vv60-perl5.32.0-JSON-Validator-4.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/5a44i563l3q723dakn4960207w20vbkf-JSON-Validator-4.00.tar.gz
+source root is JSON-Validator-4.00
+setting SOURCE_DATE_EPOCH to timestamp 1591580516 of file JSON-Validator-4.00/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for JSON::Validator
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/JSON/Validator/cache/eaa832720f36cff0abc20c05236a9cd9 blib/lib/JSON/Validator/cache/eaa832720f36cff0abc20c05236a9cd9
+cp lib/JSON/Validator/Schema/Draft4.pm blib/lib/JSON/Validator/Schema/Draft4.pm
+cp lib/JSON/Validator/cache/4a31fe43be9e23ca9eb8d9e9faba8892 blib/lib/JSON/Validator/cache/4a31fe43be9e23ca9eb8d9e9faba8892
+cp lib/JSON/Validator.pm blib/lib/JSON/Validator.pm
+cp lib/JSON/Validator/Ref.pm blib/lib/JSON/Validator/Ref.pm
+cp lib/JSON/Validator/Error.pm blib/lib/JSON/Validator/Error.pm
+cp lib/JSON/Validator/Schema/Draft7.pm blib/lib/JSON/Validator/Schema/Draft7.pm
+cp lib/JSON/Validator/Schema.pm blib/lib/JSON/Validator/Schema.pm
+cp lib/JSON/Validator/cache/10a5eeb37fcd5d829449028f7ceb0774 blib/lib/JSON/Validator/cache/10a5eeb37fcd5d829449028f7ceb0774
+cp lib/JSON/Validator/cache/3d35aac549d951f4cf9182ff47bff0b4 blib/lib/JSON/Validator/cache/3d35aac549d951f4cf9182ff47bff0b4
+cp lib/JSON/Validator/Formats.pm blib/lib/JSON/Validator/Formats.pm
+cp lib/JSON/Validator/Schema/Draft6.pm blib/lib/JSON/Validator/Schema/Draft6.pm
+cp lib/JSON/Validator/cache/a516498b60c53096b2ce2cd83ebe0abc blib/lib/JSON/Validator/cache/a516498b60c53096b2ce2cd83ebe0abc
+cp lib/JSON/Validator/cache/49c95b866e40f788892a7fb3c816b0e8 blib/lib/JSON/Validator/cache/49c95b866e40f788892a7fb3c816b0e8
+cp lib/JSON/Validator/Util.pm blib/lib/JSON/Validator/Util.pm
+cp lib/JSON/Validator/Joi.pm blib/lib/JSON/Validator/Joi.pm
+cp lib/JSON/Validator/cache/a0f5b4b4e75ea17fc09e88ec0343d148 blib/lib/JSON/Validator/cache/a0f5b4b4e75ea17fc09e88ec0343d148
+cp lib/JSON/Validator/cache/36d1bd12eeed51e86c8695bd8876a9df blib/lib/JSON/Validator/cache/36d1bd12eeed51e86c8695bd8876a9df
+cp lib/JSON/Validator/cache/630949337805585c8e52deea27d11419 blib/lib/JSON/Validator/cache/630949337805585c8e52deea27d11419
+cp lib/JSON/Validator/cache/ea34d47d4e060a1c3b12d2287aff89a7 blib/lib/JSON/Validator/cache/ea34d47d4e060a1c3b12d2287aff89a7
+Manifying 10 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ........................... ok
+t/acceptance.t ......................... ok
+t/backcompat.t ......................... ok
+t/bundle.t ............................. ok
+t/coerce-default.t ..................... ok
+t/coerce.t ............................. 1/? coerce(1) will be deprecated. at t/coerce.t line 17.
+t/coerce.t ............................. ok
+t/deep-mixed-ref.t ..................... ok
+t/draft4.t ............................. ok
+t/draft6.t ............................. ok
+t/draft7.t ............................. ok
+t/formats.t ............................ ok
+t/get.t ................................ ok
+t/id-keyword-draft4.t .................. ok
+t/id-keyword-draft7.t .................. ok
+t/invalid-ref.t ........................ ok
+t/issue-103-one-of.t ................... ok
+t/issue-158-draf7-coerce-defaults.t .... ok
+t/issue-22-duplicate-error-messages.t .. ok
+t/issue-42-cache-control.t ............. skipped: TEST_ONLINE=1
+t/issue-59-oneof-blessed-booleans.t .... ok
+t/issue-71-additionalproperties.t ...... ok
+t/joi.t ................................ 1/? joi() will be removed in future version. at t/Helper.pm line 19.
+joi() will be removed in future version. at t/Helper.pm line 19.
+t/joi.t ................................ ok
+t/jv-allof.t ........................... ok
+t/jv-anyof.t ........................... ok
+t/jv-array.t ........................... ok
+t/jv-basic.t ........................... ok
+t/jv-boolean.t ......................... ok
+t/jv-const.t ........................... ok
+t/jv-enum.t ............................ ok
+t/jv-formats.t ......................... 1/? Format rule for 'unknown' is missing at /build/JSON-Validator-4.00/blib/lib/JSON/Validator.pm line 815.
+t/jv-formats.t ......................... ok
+t/jv-if-then-else.t .................... ok
+t/jv-integer.t ......................... ok
+t/jv-not.t ............................. ok
+t/jv-number.t .......................... ok
+t/jv-object.t .......................... ok
+t/jv-oneof.t ........................... ok
+t/jv-required.t ........................ ok
+t/jv-string.t .......................... ok
+t/load-data.t .......................... ok
+t/load-file.t .......................... ok
+t/load-from-app.t ...................... [2020-07-15 05:46:13.45981] [390] [debug] [DZXK0bMe] GET "/spec"
+[2020-07-15 05:46:13.46012] [390] [debug] [DZXK0bMe] Routing to a callback
+[2020-07-15 05:46:13.46034] [390] [debug] [DZXK0bMe] 200 OK (0.000523s, 1912.046/s)
+t/load-from-app.t ...................... ok
+t/load-http.t .......................... skipped: TEST_ONLINE=1
+t/load-json.t .......................... ok
+t/load-yaml.t .......................... ok
+t/more-bundle.t ........................ ok
+t/random-errors.t ...................... skipped: TEST_RANDOM_ITERATIONS=10000
+t/relative-ref.t ....................... ok
+t/schema-as-attr.t ..................... ok
+t/to-json.t ............................ ok
+t/util-checksum-yaml-xs.t .............. ok
+t/util.t ............................... ok
+t/validate-draft07.t ................... ok
+t/validate-id.t ........................ ok
+t/validate-recursive.t ................. ok
+t/validate-schema.t .................... ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/acceptance.t                       (Wstat: 0 Tests: 265 Failed: 0)
+  TODO passed:   184-191
+t/formats.t                          (Wstat: 0 Tests: 26 Failed: 0)
+  TODO passed:   12
+t/jv-object.t                        (Wstat: 0 Tests: 49 Failed: 0)
+  TODO passed:   9
+Files=55, Tests=1118, 22 wallclock secs ( 0.27 usr  0.06 sys + 18.82 cusr  2.95 csys = 22.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/pkgconfig m4datadir=/nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/aclocal aclocaldir=/nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/aclocal install
+Manifying 10 pod documents
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Joi.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Ref.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Schema.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Util.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Formats.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Error.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Schema/Draft4.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Schema/Draft6.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/Schema/Draft7.pm
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/10a5eeb37fcd5d829449028f7ceb0774
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/4a31fe43be9e23ca9eb8d9e9faba8892
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/3d35aac549d951f4cf9182ff47bff0b4
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/eaa832720f36cff0abc20c05236a9cd9
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/36d1bd12eeed51e86c8695bd8876a9df
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/630949337805585c8e52deea27d11419
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/a516498b60c53096b2ce2cd83ebe0abc
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/49c95b866e40f788892a7fb3c816b0e8
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/a0f5b4b4e75ea17fc09e88ec0343d148
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator/cache/ea34d47d4e060a1c3b12d2287aff89a7
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Joi.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Error.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Schema::Draft7.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Schema::Draft6.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Util.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Schema.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Formats.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Ref.3
+Installing /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3/JSON::Validator::Schema::Draft4.3
+Appending installation info to /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/man3 to /nix/store/v60gpynharzx951j8gyk6r0pcpnszn40-perl5.32.0-JSON-Validator-4.00-devdoc/share/man/man3
+Removing empty /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib
+patching script interpreter paths in /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00
+checking for references to /build/ in /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v60gpynharzx951j8gyk6r0pcpnszn40-perl5.32.0-JSON-Validator-4.00-devdoc
+gzipping man pages under /nix/store/v60gpynharzx951j8gyk6r0pcpnszn40-perl5.32.0-JSON-Validator-4.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v60gpynharzx951j8gyk6r0pcpnszn40-perl5.32.0-JSON-Validator-4.00-devdoc
+checking for references to /build/ in /nix/store/v60gpynharzx951j8gyk6r0pcpnszn40-perl5.32.0-JSON-Validator-4.00-devdoc...
+/nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00

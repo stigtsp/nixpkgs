@@ -1,0 +1,47 @@
+these derivations will be built:
+  /nix/store/c1xazv0yswjsfi7idzrsxsy168pxv0kj-perl5.32.0-LWPx-ParanoidAgent-1.12.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/iqvqcd4jdxwz75qw6g0mazljqifj3n66-LWPx-ParanoidAgent-1.12.tar.gz
+copying path '/nix/store/iqvqcd4jdxwz75qw6g0mazljqifj3n66-LWPx-ParanoidAgent-1.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/c1xazv0yswjsfi7idzrsxsy168pxv0kj-perl5.32.0-LWPx-ParanoidAgent-1.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/iqvqcd4jdxwz75qw6g0mazljqifj3n66-LWPx-ParanoidAgent-1.12.tar.gz
+source root is LWPx-ParanoidAgent-1.12
+setting SOURCE_DATE_EPOCH to timestamp 1475151283 of file LWPx-ParanoidAgent-1.12/META.yml
+patching sources
+configuring
+patching ./t/00-all.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LWPx::ParanoidAgent
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LWPx/ParanoidAgent.pm blib/lib/LWPx/ParanoidAgent.pm
+cp lib/LWPx/Protocol/http_paranoid.pm blib/lib/LWPx/Protocol/http_paranoid.pm
+cp lib/LWPx/Protocol/https_paranoid.pm blib/lib/LWPx/Protocol/https_paranoid.pm
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib/pkgconfig m4datadir=/nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/share/aclocal aclocaldir=/nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib/perl5/site_perl/5.32.0/LWPx/ParanoidAgent.pm
+Installing /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib/perl5/site_perl/5.32.0/LWPx/Protocol/https_paranoid.pm
+Installing /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib/perl5/site_perl/5.32.0/LWPx/Protocol/http_paranoid.pm
+Installing /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/share/man/man3/LWPx::ParanoidAgent.3
+Appending installation info to /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/share/man/man3 to /nix/store/xyx3l54hvz6ryism5na9vx1196bfjfsk-perl5.32.0-LWPx-ParanoidAgent-1.12-devdoc/share/man/man3
+Removing empty /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12/lib
+patching script interpreter paths in /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12
+checking for references to /build/ in /nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xyx3l54hvz6ryism5na9vx1196bfjfsk-perl5.32.0-LWPx-ParanoidAgent-1.12-devdoc
+gzipping man pages under /nix/store/xyx3l54hvz6ryism5na9vx1196bfjfsk-perl5.32.0-LWPx-ParanoidAgent-1.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xyx3l54hvz6ryism5na9vx1196bfjfsk-perl5.32.0-LWPx-ParanoidAgent-1.12-devdoc
+checking for references to /build/ in /nix/store/xyx3l54hvz6ryism5na9vx1196bfjfsk-perl5.32.0-LWPx-ParanoidAgent-1.12-devdoc...
+/nix/store/2xr3x1h07bqkd98m2ijz0lphfw9980hf-perl5.32.0-LWPx-ParanoidAgent-1.12

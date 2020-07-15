@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/7i4a950cs5h58986dvc49x2y7sc2wxzd-perl5.32.0-Class-Virtual-0.08.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/r1ml91hfrav8fjwcsarjz82kq73cqil9-Class-Virtual-0.08.tar.gz
+copying path '/nix/store/r1ml91hfrav8fjwcsarjz82kq73cqil9-Class-Virtual-0.08.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7i4a950cs5h58986dvc49x2y7sc2wxzd-perl5.32.0-Class-Virtual-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/r1ml91hfrav8fjwcsarjz82kq73cqil9-Class-Virtual-0.08.tar.gz
+source root is Class-Virtual-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1470514092 of file Class-Virtual-0.08/META.yml
+patching sources
+configuring
+patching ./t/Abstract.t...
+patching ./t/assert.t...
+patching ./t/Virtual.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Virtual
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Virtually/Abstract.pm blib/lib/Class/Virtually/Abstract.pm
+cp lib/Class/Virtual.pm blib/lib/Class/Virtual.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Abstract.t .. ok
+t/assert.t .... ok
+t/Virtual.t ... ok
+All tests successful.
+Files=3, Tests=34,  0 wallclock secs ( 0.01 usr  0.02 sys +  0.17 cusr  0.06 csys =  0.26 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/lib/pkgconfig m4datadir=/nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/aclocal aclocaldir=/nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/lib/perl5/site_perl/5.32.0/Class/Virtual.pm
+Installing /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/lib/perl5/site_perl/5.32.0/Class/Virtually/Abstract.pm
+Installing /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/man/man3/Class::Virtual.3
+Installing /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/man/man3/Class::Virtually::Abstract.3
+Appending installation info to /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/man/man3 to /nix/store/pz4xnqnnypxizl8hi3a7h03q0078p0yf-perl5.32.0-Class-Virtual-0.08-devdoc/share/man/man3
+Removing empty /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08/lib
+patching script interpreter paths in /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08
+checking for references to /build/ in /nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/pz4xnqnnypxizl8hi3a7h03q0078p0yf-perl5.32.0-Class-Virtual-0.08-devdoc
+gzipping man pages under /nix/store/pz4xnqnnypxizl8hi3a7h03q0078p0yf-perl5.32.0-Class-Virtual-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/pz4xnqnnypxizl8hi3a7h03q0078p0yf-perl5.32.0-Class-Virtual-0.08-devdoc
+checking for references to /build/ in /nix/store/pz4xnqnnypxizl8hi3a7h03q0078p0yf-perl5.32.0-Class-Virtual-0.08-devdoc...
+/nix/store/raha8g3c11nvm3j113ddnpv6z4ldpq2a-perl5.32.0-Class-Virtual-0.08

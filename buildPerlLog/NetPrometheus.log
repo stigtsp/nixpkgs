@@ -1,0 +1,102 @@
+these derivations will be built:
+  /nix/store/pyagn7681ydvnm9hljcsdzsjdkr1nv51-perl5.32.0-Net-Prometheus-0.11.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/snxd906lyfl5gqnkqbgqzzr23kxbi9dg-Net-Prometheus-0.11.tar.gz
+copying path '/nix/store/snxd906lyfl5gqnkqbgqzzr23kxbi9dg-Net-Prometheus-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pyagn7681ydvnm9hljcsdzsjdkr1nv51-perl5.32.0-Net-Prometheus-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/snxd906lyfl5gqnkqbgqzzr23kxbi9dg-Net-Prometheus-0.11.tar.gz
+source root is Net-Prometheus-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1589372236 of file Net-Prometheus-0.11/t/99pod.t
+patching sources
+configuring
+patching ./t/30handle.t...
+patching ./t/20client.t...
+patching ./t/13histogram.t...
+patching ./t/10gauge.t...
+patching ./t/31psgi.t...
+patching ./t/50perl-collector.t...
+patching ./t/02labels.t...
+patching ./t/12summary.t...
+patching ./t/51perl-collector-detail.t...
+patching ./t/99pod.t...
+patching ./t/21label-rendering.t...
+patching ./t/11counter.t...
+patching ./t/01metric.t...
+patching ./t/40process-collector.t...
+patching ./t/00use.t...
+patching ./t/23collector.t...
+patching ./t/22metric-grouping.t...
+no configure script, doing nothing
+building
+Building optional XS module
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-Prometheus' version '0.11'
+Building Net-Prometheus
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.11" -DXS_VERSION="0.11" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Net/Prometheus/PerlCollector.o lib/Net/Prometheus/PerlCollector.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Net/Prometheus/PerlCollector/PerlCollector.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Net/Prometheus/PerlCollector/PerlCollector.so lib/Net/Prometheus/PerlCollector.o
+running tests
+t/00use.t ...................... ok
+t/01metric.t ................... ok
+t/02labels.t ................... ok
+t/10gauge.t .................... ok
+t/11counter.t .................. ok
+t/12summary.t .................. ok
+t/13histogram.t ................ ok
+t/20client.t ................... ok
+t/21label-rendering.t .......... ok
+t/22metric-grouping.t .......... ok
+t/23collector.t ................ ok
+t/30handle.t ................... ok
+t/31psgi.t ..................... ok
+t/40process-collector.t ........ ok
+t/41process-collector-linux.t .. ok
+t/50perl-collector.t ........... ok
+t/51perl-collector-detail.t .... ok
+t/99pod.t ...................... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=18, Tests=103,  4 wallclock secs ( 0.07 usr  0.02 sys +  1.63 cusr  1.32 csys =  3.04 CPU)
+Result: PASS
+installing
+Building Net-Prometheus
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/Prometheus/PerlCollector/PerlCollector.so
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/Prometheus/PerlCollector/PerlCollector.bs
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Types.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/ProcessCollector.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Histogram.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Registry.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Gauge.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Counter.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/PerlCollector.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Summary.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/Metric.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Prometheus/ProcessCollector/linux.pm
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Gauge.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::PerlCollector.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Registry.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::ProcessCollector.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Counter.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::ProcessCollector::linux.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Histogram.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Metric.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Summary.3
+Installing /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3/Net::Prometheus::Types.3
+post-installation fixup
+Moving /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/man3 to /nix/store/jhvhg4w5x259srbwi1a94xirfpjvxk03-perl5.32.0-Net-Prometheus-0.11-devdoc/share/man/man3
+Removing empty /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11
+shrinking /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/Prometheus/PerlCollector/PerlCollector.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11/lib
+patching script interpreter paths in /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11
+checking for references to /build/ in /nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jhvhg4w5x259srbwi1a94xirfpjvxk03-perl5.32.0-Net-Prometheus-0.11-devdoc
+gzipping man pages under /nix/store/jhvhg4w5x259srbwi1a94xirfpjvxk03-perl5.32.0-Net-Prometheus-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jhvhg4w5x259srbwi1a94xirfpjvxk03-perl5.32.0-Net-Prometheus-0.11-devdoc
+checking for references to /build/ in /nix/store/jhvhg4w5x259srbwi1a94xirfpjvxk03-perl5.32.0-Net-Prometheus-0.11-devdoc...
+/nix/store/cq7jflhjv2dcfbbivxbqazbk5c1nch3h-perl5.32.0-Net-Prometheus-0.11

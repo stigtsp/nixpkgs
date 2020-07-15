@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/zl1ch0xj86z3a1gq6ld79ql7j7bgsz2d-perl5.32.0-Proc-Simple-1.32.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/0663pah8162h4ab3y8fwfg2bl90pw5kw-Proc-Simple-1.32.tar.gz
+copying path '/nix/store/0663pah8162h4ab3y8fwfg2bl90pw5kw-Proc-Simple-1.32.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zl1ch0xj86z3a1gq6ld79ql7j7bgsz2d-perl5.32.0-Proc-Simple-1.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/0663pah8162h4ab3y8fwfg2bl90pw5kw-Proc-Simple-1.32.tar.gz
+source root is Proc-Simple-1.32
+setting SOURCE_DATE_EPOCH to timestamp 1447651577 of file Proc-Simple-1.32/META.yml
+patching sources
+configuring
+patching ./t/time.t...
+patching ./t/stdouterr.t...
+patching ./t/wait.t...
+patching ./t/destroy.t...
+patching ./t/mult.t...
+patching ./t/sh-c.t...
+patching ./t/exit.t...
+patching ./t/esub.t...
+patching ./t/muarg.t...
+patching ./t/simple.t...
+patching ./eg/parproc.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Proc::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Simple.pm blib/lib/Proc/Simple.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/destroy.t .... ok
+t/esub.t ....... ok
+t/exit.t ....... ok
+t/muarg.t ...... ok
+t/mult.t ....... ok
+t/sh-c.t ....... ok
+t/simple.t ..... ok
+t/stdouterr.t .. ok
+t/time.t ....... ok
+t/wait.t ....... ok
+All tests successful.
+Files=10, Tests=121, 14 wallclock secs ( 0.04 usr  0.01 sys +  0.56 cusr  0.14 csys =  0.75 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/lib/pkgconfig m4datadir=/nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/share/aclocal aclocaldir=/nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/lib/perl5/site_perl/5.32.0/Proc/Simple.pm
+Installing /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/share/man/man3/Proc::Simple.3
+Appending installation info to /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/share/man/man3 to /nix/store/rqwr904219v5rpgj5x03k2ids6dcrkyg-perl5.32.0-Proc-Simple-1.32-devdoc/share/man/man3
+Removing empty /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32/lib
+patching script interpreter paths in /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32
+checking for references to /build/ in /nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rqwr904219v5rpgj5x03k2ids6dcrkyg-perl5.32.0-Proc-Simple-1.32-devdoc
+gzipping man pages under /nix/store/rqwr904219v5rpgj5x03k2ids6dcrkyg-perl5.32.0-Proc-Simple-1.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rqwr904219v5rpgj5x03k2ids6dcrkyg-perl5.32.0-Proc-Simple-1.32-devdoc
+checking for references to /build/ in /nix/store/rqwr904219v5rpgj5x03k2ids6dcrkyg-perl5.32.0-Proc-Simple-1.32-devdoc...
+/nix/store/psdkfad24ymgkr1nsz3xv7s3vm5d56q8-perl5.32.0-Proc-Simple-1.32

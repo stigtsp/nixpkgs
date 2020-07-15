@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/6h528b3balfs4pw3kz854by7s89slxbl-perl5.32.0-PerlIO-gzip-0.20.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/yz3zg69xnd4fyadcqarfjybz7chxj8pd-PerlIO-gzip-0.20.tar.gz
+copying path '/nix/store/yz3zg69xnd4fyadcqarfjybz7chxj8pd-PerlIO-gzip-0.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6h528b3balfs4pw3kz854by7s89slxbl-perl5.32.0-PerlIO-gzip-0.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/yz3zg69xnd4fyadcqarfjybz7chxj8pd-PerlIO-gzip-0.20.tar.gz
+source root is PerlIO-gzip-0.20
+setting SOURCE_DATE_EPOCH to timestamp 1498073532 of file PerlIO-gzip-0.20/META.yml
+patching sources
+configuring
+patching ./t/read.t...
+patching ./t/write.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lz
+Generating a Unix-style Makefile
+Writing Makefile for PerlIO::gzip
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp gzip.pm blib/lib/PerlIO/gzip.pm
+Running Mkbootstrap for gzip ()
+chmod 644 "gzip.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- gzip.bs blib/arch/auto/PerlIO/gzip/gzip.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  gzip.xs > gzip.xsc
+mv gzip.xsc gzip.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.20\" -DXS_VERSION=\"0.20\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   gzip.c
+rm -f blib/arch/auto/PerlIO/gzip/gzip.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  gzip.o  -o blib/arch/auto/PerlIO/gzip/gzip.so  \
+      \
+
+chmod 755 blib/arch/auto/PerlIO/gzip/gzip.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- gzip.bs blib/arch/auto/PerlIO/gzip/gzip.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/read.t ... ok
+t/write.t .. ok
+All tests successful.
+Files=2, Tests=561,  0 wallclock secs ( 0.05 usr  0.00 sys +  0.18 cusr  0.02 csys =  0.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib/pkgconfig m4datadir=/nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/share/aclocal aclocaldir=/nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- gzip.bs blib/arch/auto/PerlIO/gzip/gzip.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/gzip/gzip.so
+Installing /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/PerlIO/gzip.pm
+Installing /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/share/man/man3/PerlIO::gzip.3
+Appending installation info to /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/share/man/man3 to /nix/store/14fp2hda03nqcaawimw0a69izz69wb3r-perl5.32.0-PerlIO-gzip-0.20-devdoc/share/man/man3
+Removing empty /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20
+shrinking /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/gzip/gzip.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20/lib
+patching script interpreter paths in /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20
+checking for references to /build/ in /nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/14fp2hda03nqcaawimw0a69izz69wb3r-perl5.32.0-PerlIO-gzip-0.20-devdoc
+gzipping man pages under /nix/store/14fp2hda03nqcaawimw0a69izz69wb3r-perl5.32.0-PerlIO-gzip-0.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/14fp2hda03nqcaawimw0a69izz69wb3r-perl5.32.0-PerlIO-gzip-0.20-devdoc
+checking for references to /build/ in /nix/store/14fp2hda03nqcaawimw0a69izz69wb3r-perl5.32.0-PerlIO-gzip-0.20-devdoc...
+/nix/store/5ky81q9ld1w8ci6gd1g171l13fg4z5qr-perl5.32.0-PerlIO-gzip-0.20

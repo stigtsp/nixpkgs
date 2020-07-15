@@ -1,0 +1,130 @@
+these derivations will be built:
+  /nix/store/c9ih4a8d3w68qlrkr36vidy0ap11sza3-perl5.32.0-HTML-FormFu-MultiForm-1.03.drv
+building '/nix/store/c9ih4a8d3w68qlrkr36vidy0ap11sza3-perl5.32.0-HTML-FormFu-MultiForm-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/4bwv4brc0rpwwln39n0r37l4ngmwz23d-HTML-FormFu-MultiForm-1.03.tar.gz
+source root is HTML-FormFu-MultiForm-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1500972209 of file HTML-FormFu-MultiForm-1.03/xt/release/pause-permissions.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::FormFu::MultiForm
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/FormFu/MultiForm.pm blib/lib/HTML/FormFu/MultiForm.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/multiform-misc/*.t t/multiform-nested-name/*.t t/multiform-no-combine/*.t t/multiform/*.t t/multiform_hidden_name/*.t
+t/00-report-prereqs.t ........................ #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Cwd                  any     3.78
+#     ExtUtils::MakeMaker  any     7.44
+#     Fatal                any     2.32
+#     File::Spec           any     3.78
+#     Test::More          0.92 1.302175
+#     YAML::XS             any     0.82
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                                       Want   Have
+#     -------------------------------------------- ---- ------
+#     Carp                                          any   1.50
+#     Clone                                         any   0.45
+#     Crypt::CBC                                    any   2.33
+#     Crypt::DES                                    any   2.07
+#     HTML::FormFu                                  any   2.07
+#     HTML::FormFu::Attribute                       any   2.07
+#     HTML::FormFu::ObjectUtil                      any   2.07
+#     HTML::FormFu::QueryType::CGI                  any   2.07
+#     HTML::FormFu::Role::FormAndElementMethods     any   2.07
+#     HTML::FormFu::Role::FormBlockAndFieldMethods  any   2.07
+#     HTML::FormFu::Role::NestedHashUtils           any   2.07
+#     HTML::FormFu::Role::Populate                  any   2.07
+#     List::MoreUtils                               any  0.428
+#     Moose                                         any 2.2012
+#     MooseX::Attribute::Chained                    any  1.0.3
+#     Scalar::Util                                  any   1.55
+#     Storable                                      any   3.21
+#     overload                                      any   1.31
+#     strict                                        any   1.11
+#
+t/00-report-prereqs.t ........................ ok
+t/multiform-misc-file-client-side.t .......... skipped: CGI tmp_upload_dir functionality makes this unusable on modern versions
+t/multiform-misc/accessors.t ................. ok
+t/multiform-misc/file-server-side.t .......... skipped: CGI tmp_upload_dir functionality makes this unusable on modern versions
+t/multiform-nested-name/0_render_page_1.t .... ok
+t/multiform-nested-name/1_submit_page_1.t .... ok
+t/multiform-nested-name/2_render_page_2.t .... ok
+t/multiform-nested-name/3_submit_page_2.t .... ok
+t/multiform-nested-name/4_complete_page_3.t .. ok
+t/multiform-no-combine/0_render_page_1.t ..... ok
+t/multiform-no-combine/1_submit_page_1.t ..... ok
+t/multiform-no-combine/2_render_page_2.t ..... ok
+t/multiform-no-combine/3_submit_page_2.t ..... ok
+t/multiform-no-combine/4_complete_page_3.t ... ok
+t/multiform/0_render_page_1.t ................ ok
+t/multiform/1_submit_page_1.t ................ ok
+t/multiform/2_render_page_2.t ................ ok
+t/multiform/3_submit_page_2.t ................ ok
+t/multiform/4_complete_page_3.t .............. ok
+t/multiform_hidden_name/0_render_page_1.t .... ok
+t/multiform_hidden_name/1_submit_page_1.t .... ok
+t/multiform_hidden_name/2_render_page_2.t .... ok
+t/multiform_hidden_name/3_submit_page_2.t .... ok
+t/multiform_hidden_name/4_complete_page_3.t .. ok
+All tests successful.
+Files=24, Tests=111, 26 wallclock secs ( 0.21 usr  0.09 sys + 17.01 cusr  9.02 csys = 26.33 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/lib/pkgconfig m4datadir=/nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/share/aclocal aclocaldir=/nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/lib/perl5/site_perl/5.32.0/HTML/FormFu/MultiForm.pm
+Installing /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/share/man/man3/HTML::FormFu::MultiForm.3
+Appending installation info to /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/share/man/man3 to /nix/store/xjmwjisivcx3wfxh4dg8gk3b9f9sq268-perl5.32.0-HTML-FormFu-MultiForm-1.03-devdoc/share/man/man3
+Removing empty /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03/lib
+patching script interpreter paths in /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03
+checking for references to /build/ in /nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xjmwjisivcx3wfxh4dg8gk3b9f9sq268-perl5.32.0-HTML-FormFu-MultiForm-1.03-devdoc
+gzipping man pages under /nix/store/xjmwjisivcx3wfxh4dg8gk3b9f9sq268-perl5.32.0-HTML-FormFu-MultiForm-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xjmwjisivcx3wfxh4dg8gk3b9f9sq268-perl5.32.0-HTML-FormFu-MultiForm-1.03-devdoc
+checking for references to /build/ in /nix/store/xjmwjisivcx3wfxh4dg8gk3b9f9sq268-perl5.32.0-HTML-FormFu-MultiForm-1.03-devdoc...
+/nix/store/7jssgrg0zv1083y7zjl1b7lwnzjc3g44-perl5.32.0-HTML-FormFu-MultiForm-1.03

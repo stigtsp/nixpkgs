@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/aikkvvhrl6bmkzfi03l490dwc4lmp97j-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/99f5bny36pwhkqzmlpd8ki09ml0jjd55-TAP-Parser-SourceHandler-pgTAP-3.35.tar.gz
+copying path '/nix/store/99f5bny36pwhkqzmlpd8ki09ml0jjd55-TAP-Parser-SourceHandler-pgTAP-3.35.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/aikkvvhrl6bmkzfi03l490dwc4lmp97j-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35.drv'...
+unpacking sources
+unpacking source archive /nix/store/99f5bny36pwhkqzmlpd8ki09ml0jjd55-TAP-Parser-SourceHandler-pgTAP-3.35.tar.gz
+source root is TAP-Parser-SourceHandler-pgTAP-3.35
+setting SOURCE_DATE_EPOCH to timestamp 1551554303 of file TAP-Parser-SourceHandler-pgTAP-3.35/t/source_handler.t
+patching sources
+configuring
+patching ./t/source.pg...
+patching ./t/source_handler.t...
+patching ./t/bin/psql...
+patching ./bin/pg_tapgen...
+patching ./bin/pg_prove...
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Test::Pod is not installed
+    *  Test::Pod::Coverage is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'TAP-Parser-SourceHandler-pgTAP' version '3.35'
+Building TAP-Parser-SourceHandler-pgTAP
+running tests
+t/source_handler.t .. ok
+All tests successful.
+Files=1, Tests=47,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.08 cusr  0.02 csys =  0.12 CPU)
+Result: PASS
+installing
+Building TAP-Parser-SourceHandler-pgTAP
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man/man1/pg_tapgen.1
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man/man1/pg_prove.1
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/lib/perl5/site_perl/5.32.0/TAP/Parser/SourceHandler/pgTAP.pm
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man/man3/TAP::Parser::SourceHandler::pgTAP.3
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/bin/pg_tapgen
+Installing /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/bin/pg_prove
+post-installation fixup
+Moving /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man/man3 to /nix/store/r7jiqzs3g45hljc7i4jmimbpj9ngg49x-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35
+gzipping man pages under /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/lib  /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35/bin
+patching script interpreter paths in /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35
+checking for references to /build/ in /nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r7jiqzs3g45hljc7i4jmimbpj9ngg49x-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35-devdoc
+gzipping man pages under /nix/store/r7jiqzs3g45hljc7i4jmimbpj9ngg49x-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r7jiqzs3g45hljc7i4jmimbpj9ngg49x-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35-devdoc
+checking for references to /build/ in /nix/store/r7jiqzs3g45hljc7i4jmimbpj9ngg49x-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35-devdoc...
+/nix/store/xsn4375b7f4ncq12ixqynfy1mx8lk8la-perl5.32.0-TAP-Parser-SourceHandler-pgTAP-3.35

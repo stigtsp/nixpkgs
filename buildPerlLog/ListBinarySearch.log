@@ -1,0 +1,98 @@
+these derivations will be built:
+  /nix/store/z8cchyr4kzdg69kd0zg0dq6yx1wnp3sf-perl5.32.0-List-BinarySearch-0.25.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/v3gpf4rl6nfgmh82pv8sp67fcg4gv1hi-List-BinarySearch-0.25.tar.gz
+copying path '/nix/store/v3gpf4rl6nfgmh82pv8sp67fcg4gv1hi-List-BinarySearch-0.25.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z8cchyr4kzdg69kd0zg0dq6yx1wnp3sf-perl5.32.0-List-BinarySearch-0.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/v3gpf4rl6nfgmh82pv8sp67fcg4gv1hi-List-BinarySearch-0.25.tar.gz
+source root is List-BinarySearch-0.25
+setting SOURCE_DATE_EPOCH to timestamp 1417554999 of file List-BinarySearch-0.25/META.yml
+patching sources
+configuring
+patching ./examples/bsearch.pl...
+patching ./t/00-boilerplate.t...
+patching ./t/01-manifest.t...
+patching ./t/07-kwalitee.t...
+patching ./t/02-pod.t...
+patching ./t/12-positional_searches.t...
+patching ./t/13-pp.t...
+patching ./t/10-load-can.t...
+patching ./t/11-search.t...
+patching ./t/14-pp-isa.t...
+patching ./t/16-coverage.t...
+patching ./t/09-load-prereqs.t...
+patching ./t/04-perlcritic.t...
+patching ./t/06-changes.t...
+patching ./t/03-pod-coverage.t...
+patching ./t/15-xs-isa.t...
+
+List::BinarySearch::XS is not installed.
+
+This module will provide a performance improvement.  Though it is not required
+for proper operation, it is strongly recommended that this module be installed
+unless the target environment is unable to compile XS modules.
+
+Answering 'yes' to the following question will cause most CPAN installers to
+pull in the List::BinarySearch::XS module automatically.  If you are doing a
+manual installation you will probably need to install List::BinarySearch::XS
+separately.
+
+Would you like to install List::BinarySearch::XS? [y] y
+List::BinarySearch::XS has been added to the dependency list.
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite List::BinarySearch::XS 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for List::BinarySearch
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/List/BinarySearch.pm blib/lib/List/BinarySearch.pm
+cp lib/List/BinarySearch/PP.pm blib/lib/List/BinarySearch/PP.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-boilerplate.t .......... skipped: Set $ENV{RELEASE_TESTING} to run boilerplate check.
+t/01-manifest.t ............. skipped: Author tests not required for installation
+t/02-pod.t .................. skipped: Test::Pod 1.22 required, and $ENV{RELEASE_TESTING} must be set for POD tests.
+t/03-pod-coverage.t ......... skipped: Set $ENV{RELEASE_TESTING} to run POD coverage test.
+t/04-perlcritic.t ........... skipped: Author Test: Set $ENV{RELEASE_TESTING} to a true value to run.
+t/06-changes.t .............. skipped: Author tests skipped.  Set $ENV{RELEASE_TESTING} to run
+t/07-kwalitee.t ............. skipped: Author Test: Set $ENV{RELEASE_TESTING} to a true value to run.
+t/09-load-prereqs.t ......... ok
+t/10-load-can.t ............. ok
+t/11-search.t ............... ok
+t/12-positional_searches.t .. ok
+t/13-pp.t ................... ok
+t/14-pp-isa.t ............... ok
+t/15-xs-isa.t ............... No documentation found for "List::BinarySearch::XS".
+t/15-xs-isa.t ............... skipped: List::BinarySearch::XS must be installed for interoperability tests
+t/16-coverage.t ............. ok
+All tests successful.
+Files=15, Tests=28,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.77 cusr  0.15 csys =  0.98 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/lib/pkgconfig m4datadir=/nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/aclocal aclocaldir=/nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/lib/perl5/site_perl/5.32.0/List/BinarySearch.pm
+Installing /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/lib/perl5/site_perl/5.32.0/List/BinarySearch/PP.pm
+Installing /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/man/man3/List::BinarySearch.3
+Installing /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/man/man3/List::BinarySearch::PP.3
+Appending installation info to /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/man/man3 to /nix/store/z9m6ipibap3gzr98hn1lq1pad4i2nfdk-perl5.32.0-List-BinarySearch-0.25-devdoc/share/man/man3
+Removing empty /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25/lib
+patching script interpreter paths in /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25
+checking for references to /build/ in /nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z9m6ipibap3gzr98hn1lq1pad4i2nfdk-perl5.32.0-List-BinarySearch-0.25-devdoc
+gzipping man pages under /nix/store/z9m6ipibap3gzr98hn1lq1pad4i2nfdk-perl5.32.0-List-BinarySearch-0.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z9m6ipibap3gzr98hn1lq1pad4i2nfdk-perl5.32.0-List-BinarySearch-0.25-devdoc
+checking for references to /build/ in /nix/store/z9m6ipibap3gzr98hn1lq1pad4i2nfdk-perl5.32.0-List-BinarySearch-0.25-devdoc...
+/nix/store/9kvsz3bi6jckilli7dkmljnkxq43gy41-perl5.32.0-List-BinarySearch-0.25

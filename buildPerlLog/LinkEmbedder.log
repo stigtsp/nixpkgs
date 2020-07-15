@@ -1,0 +1,111 @@
+these derivations will be built:
+  /nix/store/3cpdlp3w0f9k8bbhbd385967is1cmmq7-perl5.32.0-LinkEmbedder-1.12.drv
+building '/nix/store/3cpdlp3w0f9k8bbhbd385967is1cmmq7-perl5.32.0-LinkEmbedder-1.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/wbgf444n7gyn9z4my1rxyq8xis5c3hp6-LinkEmbedder-1.12.tar.gz
+source root is LinkEmbedder-1.12
+setting SOURCE_DATE_EPOCH to timestamp 1585019531 of file LinkEmbedder-1.12/META.yml
+patching sources
+configuring
+patching ./examples/embedder.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LinkEmbedder
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LinkEmbedder/Link/Fpaste.pm blib/lib/LinkEmbedder/Link/Fpaste.pm
+cp lib/LinkEmbedder/Link.pm blib/lib/LinkEmbedder/Link.pm
+cp lib/LinkEmbedder/Link/Twitter.pm blib/lib/LinkEmbedder/Link/Twitter.pm
+cp lib/LinkEmbedder/Link/Pastebin.pm blib/lib/LinkEmbedder/Link/Pastebin.pm
+cp lib/LinkEmbedder/Link/Xkcd.pm blib/lib/LinkEmbedder/Link/Xkcd.pm
+cp lib/LinkEmbedder/Link/OpenSUSE.pm blib/lib/LinkEmbedder/Link/OpenSUSE.pm
+cp lib/LinkEmbedder/Link/Imgur.pm blib/lib/LinkEmbedder/Link/Imgur.pm
+cp lib/LinkEmbedder/Link/Travis.pm blib/lib/LinkEmbedder/Link/Travis.pm
+cp lib/LinkEmbedder/Link/NHL.pm blib/lib/LinkEmbedder/Link/NHL.pm
+cp lib/LinkEmbedder/Link/AppearIn.pm blib/lib/LinkEmbedder/Link/AppearIn.pm
+cp lib/LinkEmbedder/Link/Basic.pm blib/lib/LinkEmbedder/Link/Basic.pm
+cp lib/LinkEmbedder/Link/Spotify.pm blib/lib/LinkEmbedder/Link/Spotify.pm
+cp lib/LinkEmbedder/Link/Shadowcat.pm blib/lib/LinkEmbedder/Link/Shadowcat.pm
+cp lib/LinkEmbedder/Link/Github.pm blib/lib/LinkEmbedder/Link/Github.pm
+cp lib/LinkEmbedder/Link/oEmbed.pm blib/lib/LinkEmbedder/Link/oEmbed.pm
+cp lib/LinkEmbedder/Link/Google.pm blib/lib/LinkEmbedder/Link/Google.pm
+cp lib/LinkEmbedder/Link/Ix.pm blib/lib/LinkEmbedder/Link/Ix.pm
+cp lib/LinkEmbedder/Link/Metacpan.pm blib/lib/LinkEmbedder/Link/Metacpan.pm
+cp lib/LinkEmbedder.pm blib/lib/LinkEmbedder.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ........... ok
+t/appearin.t ........... skipped: cpanm IO::Socket::SSL
+t/basic.t .............. skipped: TEST_ONLINE=1
+t/bitbucket.t .......... skipped: TEST_ONLINE=1
+t/fpaste.t ............. skipped: TEST_FEDORA=TdDtYw1YSaEDqIOqVYlWbw
+t/gist.t ............... skipped: TEST_ONLINE=1
+t/github.t ............. skipped: TEST_ONLINE=1
+t/google.t ............. skipped: TEST_ONLINE=1
+t/greatcirclemapper.t .. skipped: TEST_ONLINE=1
+t/imgur.t .............. skipped: TEST_ONLINE=1
+t/instagram.t .......... skipped: TEST_ONLINE=1
+t/ix.t ................. skipped: TEST_ONLINE=1
+t/link.t ............... ok
+t/metacpan.t ........... skipped: TEST_ONLINE=1
+t/mojopaste.t .......... skipped: TEST_ONLINE=1
+t/nhl.t ................ skipped: TEST_ONLINE=1
+t/opensuse.t ........... skipped: TEST_ONLINE=1
+t/pastebin.t ........... skipped: TEST_ONLINE=1
+t/perlbot.t ............ skipped: TEST_PERLBOT=xogtbq
+t/serve.t .............. ok
+t/shadowcat.t .......... skipped: TEST_SHADOWCAT=586840
+t/spotify.t ............ skipped: TEST_ONLINE=1
+t/ted.t ................ skipped: TEST_ONLINE=1
+t/travis.t ............. skipped: TEST_ONLINE=1
+t/twitter.t ............ skipped: TEST_ONLINE=1
+t/vimeo.t .............. skipped: TEST_ONLINE=1
+t/xkcd.t ............... skipped: TEST_ONLINE=1
+t/youtube.t ............ skipped: TEST_ONLINE=1
+All tests successful.
+Files=28, Tests=81,  8 wallclock secs ( 0.07 usr  0.02 sys +  6.27 cusr  0.93 csys =  7.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/pkgconfig m4datadir=/nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/aclocal aclocaldir=/nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/oEmbed.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Metacpan.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Github.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Xkcd.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Fpaste.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Shadowcat.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Basic.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Pastebin.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Ix.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Imgur.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/OpenSUSE.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Spotify.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/AppearIn.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/NHL.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Google.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Twitter.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/site_perl/5.32.0/LinkEmbedder/Link/Travis.pm
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/man/man3/LinkEmbedder::Link.3
+Installing /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/man/man3/LinkEmbedder.3
+Appending installation info to /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/man/man3 to /nix/store/hrl37cafrzbzvx05k5d0jinflm69vz54-perl5.32.0-LinkEmbedder-1.12-devdoc/share/man/man3
+Removing empty /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12/lib
+patching script interpreter paths in /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12
+checking for references to /build/ in /nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hrl37cafrzbzvx05k5d0jinflm69vz54-perl5.32.0-LinkEmbedder-1.12-devdoc
+gzipping man pages under /nix/store/hrl37cafrzbzvx05k5d0jinflm69vz54-perl5.32.0-LinkEmbedder-1.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hrl37cafrzbzvx05k5d0jinflm69vz54-perl5.32.0-LinkEmbedder-1.12-devdoc
+checking for references to /build/ in /nix/store/hrl37cafrzbzvx05k5d0jinflm69vz54-perl5.32.0-LinkEmbedder-1.12-devdoc...
+/nix/store/czim23z8v1jafxmfi9ibs0qxnjcnzjdf-perl5.32.0-LinkEmbedder-1.12

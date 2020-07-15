@@ -1,0 +1,88 @@
+these derivations will be built:
+  /nix/store/h44vmv92gif02y96ls7r92h7yvndwhf8-perl5.32.0-Linux-ACL-0.05.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/5aiggy9l8xwz4drlnb5kfgmpr5pzabji-Linux-ACL-0.05.tar.gz
+copying path '/nix/store/5aiggy9l8xwz4drlnb5kfgmpr5pzabji-Linux-ACL-0.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h44vmv92gif02y96ls7r92h7yvndwhf8-perl5.32.0-Linux-ACL-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/5aiggy9l8xwz4drlnb5kfgmpr5pzabji-Linux-ACL-0.05.tar.gz
+source root is Linux-ACL-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1492209462 of file Linux-ACL-0.05/Changes
+patching sources
+configuring
+patching ./t/manifest.t...
+patching ./t/boilerplate.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lacl
+Generating a Unix-style Makefile
+Writing Makefile for Linux::ACL
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Linux/ACL.pm blib/lib/Linux/ACL.pm
+Running Mkbootstrap for ACL ()
+chmod 644 "ACL.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ACL.bs blib/arch/auto/Linux/ACL/ACL.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  ACL.xs > ACL.xsc
+Please specify prototyping behavior for ACL.xs (see perlxs manual)
+mv ACL.xsc ACL.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.05\" -DXS_VERSION=\"0.05\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   ACL.c
+rm -f blib/arch/auto/Linux/ACL/ACL.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  ACL.o  -o blib/arch/auto/Linux/ACL/ACL.so  \
+      \
+
+chmod 755 blib/arch/auto/Linux/ACL/ACL.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ACL.bs blib/arch/auto/Linux/ACL/ACL.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ....... 1/1 # Testing Linux::ACL 0.05, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/boilerplate.t ... ok
+t/manifest.t ...... skipped: Author tests not required for installation
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.22 required for testing POD
+All tests successful.
+
+Test Summary Report
+-------------------
+t/boilerplate.t (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   2
+Files=5, Tests=4,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.22 cusr  0.04 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib/pkgconfig m4datadir=/nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/share/aclocal aclocaldir=/nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ACL.bs blib/arch/auto/Linux/ACL/ACL.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Linux/ACL/ACL.so
+Installing /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Linux/ACL.pm
+Installing /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/share/man/man3/Linux::ACL.3
+Appending installation info to /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/share/man/man3 to /nix/store/ngavy87yl2dhzk5dxzdng83plazvvlmq-perl5.32.0-Linux-ACL-0.05-devdoc/share/man/man3
+Removing empty /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05
+shrinking /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Linux/ACL/ACL.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05/lib
+patching script interpreter paths in /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05
+checking for references to /build/ in /nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ngavy87yl2dhzk5dxzdng83plazvvlmq-perl5.32.0-Linux-ACL-0.05-devdoc
+gzipping man pages under /nix/store/ngavy87yl2dhzk5dxzdng83plazvvlmq-perl5.32.0-Linux-ACL-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ngavy87yl2dhzk5dxzdng83plazvvlmq-perl5.32.0-Linux-ACL-0.05-devdoc
+checking for references to /build/ in /nix/store/ngavy87yl2dhzk5dxzdng83plazvvlmq-perl5.32.0-Linux-ACL-0.05-devdoc...
+/nix/store/8mlbnyxszfn7rvizsk4jmbpzhzqkcq2k-perl5.32.0-Linux-ACL-0.05

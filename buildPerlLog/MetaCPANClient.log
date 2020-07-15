@@ -1,0 +1,299 @@
+these derivations will be built:
+  /nix/store/161x4j6c9c625i3gh50w4zm993lyxbwk-perl5.32.0-Ref-Util-0.204.drv
+  /nix/store/4n0rhfaily894p6fqzn6v0x3nvp1aa2x-perl5.32.0-MetaCPAN-Client-2.026000.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/xxl8g7vcw96r92g1nsabk10mnvx5y8am-MetaCPAN-Client-2.026000.tar.gz
+copying path '/nix/store/xxl8g7vcw96r92g1nsabk10mnvx5y8am-MetaCPAN-Client-2.026000.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/161x4j6c9c625i3gh50w4zm993lyxbwk-perl5.32.0-Ref-Util-0.204.drv'...
+unpacking sources
+unpacking source archive /nix/store/1k0q5r5bcz2185qz50ldlfk29bsplq65-Ref-Util-0.204.tar.gz
+source root is Ref-Util-0.204
+setting SOURCE_DATE_EPOCH to timestamp 1524136911 of file Ref-Util-0.204/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Ref::Util::XS 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Ref::Util
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Ref/Util/PP.pm blib/lib/Ref/Util/PP.pm
+cp lib/Ref/Util.pm blib/lib/Ref/Util.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#     Text::ParseWords     any 3.30
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Ref::Util::XS        any  missing
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module        Want    Have
+#     ------------- ---- -------
+#     Exporter      5.57    5.74
+#     Ref::Util::XS  any missing
+#
+#
+# *** WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING ***
+#
+# The following REQUIRED prerequisites were not satisfied:
+#
+# Ref::Util::XS is not installed (any version required)
+# Ref::Util::XS is not installed (any version required)
+#
+t/00-report-prereqs.t .. ok
+t/all-permutations.t ... ok
+t/arrayref.t ........... ok
+t/b-concise.t .......... skipped: nothing to do when no custom ops
+t/dynamic.t ............ ok
+t/expr.t ............... ok
+t/functions.t .......... ok
+t/list.t ............... ok
+t/magic-readonly.t ..... skipped: Readonly is required for this test
+t/magic.t .............. ok
+t/pureperl.t ........... skipped: All tests already executed in PP mode
+t/toomany.t ............ ok
+All tests successful.
+Files=12, Tests=468,  0 wallclock secs ( 0.09 usr  0.02 sys +  0.75 cusr  0.10 csys =  0.96 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/lib/pkgconfig m4datadir=/nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/aclocal aclocaldir=/nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/lib/perl5/site_perl/5.32.0/Ref/Util.pm
+Installing /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/lib/perl5/site_perl/5.32.0/Ref/Util/PP.pm
+Installing /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/man/man3/Ref::Util.3
+Installing /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/man/man3/Ref::Util::PP.3
+Appending installation info to /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/man/man3 to /nix/store/0vyga20bb3bxa7yqs9mnkm4blr14bj3n-perl5.32.0-Ref-Util-0.204-devdoc/share/man/man3
+Removing empty /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204/lib
+patching script interpreter paths in /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204
+checking for references to /build/ in /nix/store/8iv23hy45jl6qkbbpgz8hkmay8ixlji3-perl5.32.0-Ref-Util-0.204...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0vyga20bb3bxa7yqs9mnkm4blr14bj3n-perl5.32.0-Ref-Util-0.204-devdoc
+gzipping man pages under /nix/store/0vyga20bb3bxa7yqs9mnkm4blr14bj3n-perl5.32.0-Ref-Util-0.204-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0vyga20bb3bxa7yqs9mnkm4blr14bj3n-perl5.32.0-Ref-Util-0.204-devdoc
+checking for references to /build/ in /nix/store/0vyga20bb3bxa7yqs9mnkm4blr14bj3n-perl5.32.0-Ref-Util-0.204-devdoc...
+building '/nix/store/4n0rhfaily894p6fqzn6v0x3nvp1aa2x-perl5.32.0-MetaCPAN-Client-2.026000.drv'...
+unpacking sources
+unpacking source archive /nix/store/xxl8g7vcw96r92g1nsabk10mnvx5y8am-MetaCPAN-Client-2.026000.tar.gz
+source root is MetaCPAN-Client-2.026000
+setting SOURCE_DATE_EPOCH to timestamp 1552579173 of file MetaCPAN-Client-2.026000/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/api/_get_or_search.t...
+patching ./t/api/cover.t...
+patching ./t/api/module.t...
+patching ./t/api/file.t...
+patching ./t/api/author.t...
+patching ./t/api/_search.t...
+patching ./t/api/distribution.t...
+patching ./t/api/pod.t...
+patching ./t/api/_get.t...
+patching ./t/api/permission.t...
+patching ./t/api/package.t...
+patching ./t/api/favorite.t...
+patching ./t/api/release.t...
+patching ./t/api/rating.t...
+patching ./t/api/download_url.t...
+patching ./t/request.t...
+patching ./t/resultset.t...
+patching ./t/scroll.t...
+patching ./t/result_custom.t...
+patching ./t/entity.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MetaCPAN::Client
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MetaCPAN/Client/Pod.pm blib/lib/MetaCPAN/Client/Pod.pm
+cp lib/MetaCPAN/Client/Favorite.pm blib/lib/MetaCPAN/Client/Favorite.pm
+cp lib/MetaCPAN/Client/Distribution.pm blib/lib/MetaCPAN/Client/Distribution.pm
+cp lib/MetaCPAN/Client/Author.pm blib/lib/MetaCPAN/Client/Author.pm
+cp lib/MetaCPAN/Client/DownloadURL.pm blib/lib/MetaCPAN/Client/DownloadURL.pm
+cp lib/MetaCPAN/Client/Module.pm blib/lib/MetaCPAN/Client/Module.pm
+cp lib/MetaCPAN/Client.pm blib/lib/MetaCPAN/Client.pm
+cp lib/MetaCPAN/Client/Role/HasUA.pm blib/lib/MetaCPAN/Client/Role/HasUA.pm
+cp lib/MetaCPAN/Client/ResultSet.pm blib/lib/MetaCPAN/Client/ResultSet.pm
+cp lib/MetaCPAN/Client/Mirror.pm blib/lib/MetaCPAN/Client/Mirror.pm
+cp lib/MetaCPAN/Client/File.pm blib/lib/MetaCPAN/Client/File.pm
+cp lib/MetaCPAN/Client/Release.pm blib/lib/MetaCPAN/Client/Release.pm
+cp lib/MetaCPAN/Client/Scroll.pm blib/lib/MetaCPAN/Client/Scroll.pm
+cp lib/MetaCPAN/Client/Types.pm blib/lib/MetaCPAN/Client/Types.pm
+cp lib/MetaCPAN/Client/Request.pm blib/lib/MetaCPAN/Client/Request.pm
+cp lib/MetaCPAN/Client/Cover.pm blib/lib/MetaCPAN/Client/Cover.pm
+cp lib/MetaCPAN/Client/Rating.pm blib/lib/MetaCPAN/Client/Rating.pm
+cp lib/MetaCPAN/Client/Permission.pm blib/lib/MetaCPAN/Client/Permission.pm
+cp lib/MetaCPAN/Client/Role/Entity.pm blib/lib/MetaCPAN/Client/Role/Entity.pm
+cp lib/MetaCPAN/Client/Package.pm blib/lib/MetaCPAN/Client/Package.pm
+Manifying 20 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/00-report-prereqs.t t/api/_get.t t/api/_get_or_search.t t/api/_search.t t/entity.t t/request.t t/resultset.t
+t/00-report-prereqs.t ... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module                Want Have
+#     ------------------- ------ ----
+#     ExtUtils::MakeMaker 7.1101 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                   Want     Have
+#     -------------------- -------- --------
+#     ExtUtils::MakeMaker       any     7.44
+#     File::Spec                any     3.78
+#     LWP::Protocol::https      any     6.07
+#     Test::Fatal               any    0.014
+#     Test::More                any 1.302175
+#     Test::Needs          0.002005 0.002006
+#     base                      any     2.27
+#     blib                     1.01     1.07
+#
+# === Test Recommends ===
+#
+#     Module                     Want     Have
+#     ---------------------- -------- --------
+#     CPAN::Meta             2.120900 2.150010
+#     HTTP::Tiny::Mech       1.001002  missing
+#     WWW::Mechanize::Cached     1.50  missing
+#
+# === Runtime Requires ===
+#
+#     Module           Want     Have
+#     --------------- ----- --------
+#     Carp              any     1.50
+#     HTTP::Tiny      0.056    0.076
+#     IO::Socket::SSL  1.42    2.068
+#     JSON::MaybeXS     any 1.004002
+#     JSON::PP          any     4.04
+#     Moo               any 2.004000
+#     Moo::Role         any 2.004000
+#     Net::SSLeay      1.49     1.88
+#     Ref::Util         any    0.204
+#     Safe::Isa         any 1.000010
+#     Type::Tiny        any 1.010002
+#     URI::Escape       any     3.31
+#     strict            any     1.11
+#     warnings          any     1.47
+#
+t/00-report-prereqs.t ... ok
+t/api/_get.t ............ ok
+t/api/_get_or_search.t .. ok
+t/api/_search.t ......... ok
+t/entity.t .............. ok
+t/request.t ............. ok
+t/resultset.t ........... ok
+All tests successful.
+Files=7, Tests=59,  3 wallclock secs ( 0.06 usr  0.03 sys +  1.85 cusr  1.38 csys =  3.32 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/pkgconfig m4datadir=/nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/aclocal aclocaldir=/nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/aclocal install
+Manifying 20 pod documents
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/ResultSet.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Types.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Scroll.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Package.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Favorite.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/DownloadURL.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Request.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Mirror.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/File.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Distribution.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Author.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Cover.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Pod.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Module.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Rating.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Release.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Permission.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Role/HasUA.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/site_perl/5.32.0/MetaCPAN/Client/Role/Entity.pm
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Distribution.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Scroll.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Mirror.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Cover.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Favorite.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Author.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Package.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Role::Entity.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::File.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Pod.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Types.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Release.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::ResultSet.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Rating.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Role::HasUA.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Permission.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Module.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::Request.3
+Installing /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3/MetaCPAN::Client::DownloadURL.3
+Appending installation info to /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/man3 to /nix/store/kgbrs6i4qlw3z93fd3yh8mp8a9n6a8w2-perl5.32.0-MetaCPAN-Client-2.026000-devdoc/share/man/man3
+Removing empty /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000/lib
+patching script interpreter paths in /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000
+checking for references to /build/ in /nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kgbrs6i4qlw3z93fd3yh8mp8a9n6a8w2-perl5.32.0-MetaCPAN-Client-2.026000-devdoc
+gzipping man pages under /nix/store/kgbrs6i4qlw3z93fd3yh8mp8a9n6a8w2-perl5.32.0-MetaCPAN-Client-2.026000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kgbrs6i4qlw3z93fd3yh8mp8a9n6a8w2-perl5.32.0-MetaCPAN-Client-2.026000-devdoc
+checking for references to /build/ in /nix/store/kgbrs6i4qlw3z93fd3yh8mp8a9n6a8w2-perl5.32.0-MetaCPAN-Client-2.026000-devdoc...
+/nix/store/z91ayimp461fyjbynxsp66y3h314j9zl-perl5.32.0-MetaCPAN-Client-2.026000

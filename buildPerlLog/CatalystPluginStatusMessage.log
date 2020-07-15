@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/7g19lq2rdpahlzvj3c653zv08wildkjl-perl5.32.0-strictures-2.000006.drv
+  /nix/store/lh3si35q72s2356bgzia6z0b5rmq81cf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/a65h0k5d1sxkcbdkc6v3gmqlbd54zw5w-Catalyst-Plugin-StatusMessage-1.002000.tar.gz
+copying path '/nix/store/a65h0k5d1sxkcbdkc6v3gmqlbd54zw5w-Catalyst-Plugin-StatusMessage-1.002000.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7g19lq2rdpahlzvj3c653zv08wildkjl-perl5.32.0-strictures-2.000006.drv'...
+unpacking sources
+unpacking source archive /nix/store/fxgfr2fq80nkv3cm1cj8719k14i9yssc-strictures-2.000006.tar.gz
+source root is strictures-2.000006
+setting SOURCE_DATE_EPOCH to timestamp 1552255702 of file strictures-2.000006/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite bareword::filehandles 0 not found.
+Warning: prerequisite indirect 0 not found.
+Warning: prerequisite multidimensional 0 not found.
+Generating a Unix-style Makefile
+Writing Makefile for strictures
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/strictures.pm blib/lib/strictures.pm
+cp lib/strictures/extra.pm blib/lib/strictures/extra.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/crash.t ....... ok
+t/extras.t ...... ok
+t/strictures.t .. ok
+All tests successful.
+Files=3, Tests=42,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.16 cusr  0.02 csys =  0.20 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/lib/pkgconfig m4datadir=/nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/aclocal aclocaldir=/nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/lib/perl5/site_perl/5.32.0/strictures.pm
+Installing /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/lib/perl5/site_perl/5.32.0/strictures/extra.pm
+Installing /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/man/man3/strictures::extra.3
+Installing /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/man/man3/strictures.3
+Appending installation info to /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/man/man3 to /nix/store/p5xqbanxfyw8pi7slqjp5nsbn51zqb41-perl5.32.0-strictures-2.000006-devdoc/share/man/man3
+Removing empty /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006/lib
+patching script interpreter paths in /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006
+checking for references to /build/ in /nix/store/7vypiqb41hp78ddfhdjaldqkdsvkcab8-perl5.32.0-strictures-2.000006...
+shrinking RPATHs of ELF executables and libraries in /nix/store/p5xqbanxfyw8pi7slqjp5nsbn51zqb41-perl5.32.0-strictures-2.000006-devdoc
+gzipping man pages under /nix/store/p5xqbanxfyw8pi7slqjp5nsbn51zqb41-perl5.32.0-strictures-2.000006-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/p5xqbanxfyw8pi7slqjp5nsbn51zqb41-perl5.32.0-strictures-2.000006-devdoc
+checking for references to /build/ in /nix/store/p5xqbanxfyw8pi7slqjp5nsbn51zqb41-perl5.32.0-strictures-2.000006-devdoc...
+building '/nix/store/lh3si35q72s2356bgzia6z0b5rmq81cf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000.drv'...
+unpacking sources
+unpacking source archive /nix/store/a65h0k5d1sxkcbdkc6v3gmqlbd54zw5w-Catalyst-Plugin-StatusMessage-1.002000.tar.gz
+source root is Catalyst-Plugin-StatusMessage-1.002000
+setting SOURCE_DATE_EPOCH to timestamp 1337202873 of file Catalyst-Plugin-StatusMessage-1.002000/xt/release/pod-syntax.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./t/03_custom_config.t...
+patching ./t/02_status_message.t...
+patching ./t/01_use.t...
+Checking if your kit is complete...
+Looks good
+WARNING: ABSTRACT contains control character(s), they will be removed
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::StatusMessage
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/StatusMessage.pm blib/lib/Catalyst/Plugin/StatusMessage.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t ............. ok
+t/02_status_message.t .. 1/? # Redirected to http://localhost/show?mid=80494025
+# Redirected to http://localhost/show?mid=21628919
+t/02_status_message.t .. ok
+t/03_custom_config.t ... 1/? # Redirected to http://localhost/show?my_mid=83297408
+# Redirected to http://localhost/show?my_mid=94455817
+t/03_custom_config.t ... ok
+All tests successful.
+Files=3, Tests=25,  3 wallclock secs ( 0.07 usr  0.08 sys +  1.91 cusr  1.48 csys =  3.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/lib/pkgconfig m4datadir=/nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/share/aclocal aclocaldir=/nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/StatusMessage.pm
+Installing /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/share/man/man3/Catalyst::Plugin::StatusMessage.3
+Appending installation info to /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/share/man/man3 to /nix/store/vfb7ixhib6iiwyymd64yx4dxq6amysap-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000-devdoc/share/man/man3
+Removing empty /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000/lib
+patching script interpreter paths in /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000
+checking for references to /build/ in /nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vfb7ixhib6iiwyymd64yx4dxq6amysap-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000-devdoc
+gzipping man pages under /nix/store/vfb7ixhib6iiwyymd64yx4dxq6amysap-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vfb7ixhib6iiwyymd64yx4dxq6amysap-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000-devdoc
+checking for references to /build/ in /nix/store/vfb7ixhib6iiwyymd64yx4dxq6amysap-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000-devdoc...
+/nix/store/vgg5a9lm2y00nl9cq8y4g190qc54cdhf-perl5.32.0-Catalyst-Plugin-StatusMessage-1.002000

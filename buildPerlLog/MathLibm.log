@@ -1,0 +1,119 @@
+these derivations will be built:
+  /nix/store/sga24wzhild96czrb426sq9d361m37k7-perl5.32.0-Math-Libm-1.00.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/sb0wsm697s9wy5pdxlq2ply4yrrcxnqw-Math-Libm-1.00.tar.gz
+copying path '/nix/store/sb0wsm697s9wy5pdxlq2ply4yrrcxnqw-Math-Libm-1.00.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sga24wzhild96czrb426sq9d361m37k7-perl5.32.0-Math-Libm-1.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/sb0wsm697s9wy5pdxlq2ply4yrrcxnqw-Math-Libm-1.00.tar.gz
+source root is Math-Libm-1.00
+setting SOURCE_DATE_EPOCH to timestamp 961909235 of file Math-Libm-1.00/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+Generating a Unix-style Makefile
+Writing Makefile for Math::Libm
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Libm.pm blib/lib/Math/Libm.pm
+AutoSplitting blib/lib/Math/Libm.pm (blib/lib/auto/Math/Libm)
+Running Mkbootstrap for Libm ()
+chmod 644 "Libm.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Libm.bs blib/arch/auto/Math/Libm/Libm.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Libm.xs > Libm.xsc
+mv Libm.xsc Libm.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.00\" -DXS_VERSION=\"1.00\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -D_REENTRANT Libm.c
+rm -f blib/arch/auto/Math/Libm/Libm.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Libm.o  -o blib/arch/auto/Math/Libm/Libm.so  \
+      \
+
+chmod 755 blib/arch/auto/Math/Libm/Libm.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Libm.bs blib/arch/auto/Math/Libm/Libm.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..1
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+ok 7
+ok 8
+ok 9
+ok 10
+ok 11
+ok 12
+ok 13
+ok 14
+ok 15
+ok 16
+ok 17
+ok 18
+ok 19
+ok 20
+ok 21
+ok 22
+ok 23
+ok 24
+ok 25
+ok 26
+ok 27
+ok 28
+ok 29
+ok 30
+ok 31
+ok 32
+ok 33
+ok 34
+ok 35
+ok 36
+ok 37
+ok 38
+ok 39
+ok 40
+ok 41
+ok 42
+ok 43
+ok 44
+ok 45
+ok 46
+ok 47
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/pkgconfig m4datadir=/nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/share/aclocal aclocaldir=/nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Libm.bs blib/arch/auto/Math/Libm/Libm.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Libm/Libm.so
+Installing /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Libm.pm
+Installing /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Libm/autosplit.ix
+Installing /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/share/man/man3/Math::Libm.3
+Appending installation info to /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/share/man/man3 to /nix/store/aka30fg78kv4v91g0gdllhdcbmkcng02-perl5.32.0-Math-Libm-1.00-devdoc/share/man/man3
+Removing empty /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00
+shrinking /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Libm/Libm.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00/lib
+patching script interpreter paths in /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00
+checking for references to /build/ in /nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/aka30fg78kv4v91g0gdllhdcbmkcng02-perl5.32.0-Math-Libm-1.00-devdoc
+gzipping man pages under /nix/store/aka30fg78kv4v91g0gdllhdcbmkcng02-perl5.32.0-Math-Libm-1.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/aka30fg78kv4v91g0gdllhdcbmkcng02-perl5.32.0-Math-Libm-1.00-devdoc
+checking for references to /build/ in /nix/store/aka30fg78kv4v91g0gdllhdcbmkcng02-perl5.32.0-Math-Libm-1.00-devdoc...
+/nix/store/wjpwyc40dpvdvj16fi4fvrhfgyz037vl-perl5.32.0-Math-Libm-1.00

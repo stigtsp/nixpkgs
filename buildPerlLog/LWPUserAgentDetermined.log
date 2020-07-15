@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/hmx66cxgkddglg124gmd6k246d2pjadz-perl5.32.0-LWP-UserAgent-Determined-1.07.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/8mwi7r6m8y6wg6g5zh204v4ykfqz4vlp-LWP-UserAgent-Determined-1.07.tar.gz
+copying path '/nix/store/8mwi7r6m8y6wg6g5zh204v4ykfqz4vlp-LWP-UserAgent-Determined-1.07.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hmx66cxgkddglg124gmd6k246d2pjadz-perl5.32.0-LWP-UserAgent-Determined-1.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/8mwi7r6m8y6wg6g5zh204v4ykfqz4vlp-LWP-UserAgent-Determined-1.07.tar.gz
+source root is LWP-UserAgent-Determined-1.07
+setting SOURCE_DATE_EPOCH to timestamp 1403641559 of file LWP-UserAgent-Determined-1.07/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LWP::UserAgent::Determined
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LWP/UserAgent/Determined.pm blib/lib/LWP/UserAgent/Determined.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_about_verbose.t .... ok
+t/10_determined_test.t .. ok
+All tests successful.
+Files=2, Tests=15, 38 wallclock secs ( 0.04 usr  0.02 sys +  0.09 cusr  0.04 csys =  0.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/lib/pkgconfig m4datadir=/nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/share/aclocal aclocaldir=/nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/lib/perl5/site_perl/5.32.0/LWP/UserAgent/Determined.pm
+Installing /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/share/man/man3/LWP::UserAgent::Determined.3
+Appending installation info to /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/share/man/man3 to /nix/store/dyj9gzlnnp3zkm86iq3cwa7hr3wjzgsn-perl5.32.0-LWP-UserAgent-Determined-1.07-devdoc/share/man/man3
+Removing empty /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07/lib
+patching script interpreter paths in /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07
+checking for references to /build/ in /nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dyj9gzlnnp3zkm86iq3cwa7hr3wjzgsn-perl5.32.0-LWP-UserAgent-Determined-1.07-devdoc
+gzipping man pages under /nix/store/dyj9gzlnnp3zkm86iq3cwa7hr3wjzgsn-perl5.32.0-LWP-UserAgent-Determined-1.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dyj9gzlnnp3zkm86iq3cwa7hr3wjzgsn-perl5.32.0-LWP-UserAgent-Determined-1.07-devdoc
+checking for references to /build/ in /nix/store/dyj9gzlnnp3zkm86iq3cwa7hr3wjzgsn-perl5.32.0-LWP-UserAgent-Determined-1.07-devdoc...
+/nix/store/qfcwly4y48xpvjfhsgcdcqwylz57ffrb-perl5.32.0-LWP-UserAgent-Determined-1.07

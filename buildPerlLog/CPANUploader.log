@@ -1,0 +1,108 @@
+these derivations will be built:
+  /nix/store/xc9nwbqp95yqvr5vw4i7f7s4ihzv4gqj-perl5.32.0-CPAN-Uploader-0.103014.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/j3ci90id2vjiv2jr2a83892bci8xg54b-CPAN-Uploader-0.103014.tar.gz
+copying path '/nix/store/j3ci90id2vjiv2jr2a83892bci8xg54b-CPAN-Uploader-0.103014.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xc9nwbqp95yqvr5vw4i7f7s4ihzv4gqj-perl5.32.0-CPAN-Uploader-0.103014.drv'...
+unpacking sources
+unpacking source archive /nix/store/j3ci90id2vjiv2jr2a83892bci8xg54b-CPAN-Uploader-0.103014.tar.gz
+source root is CPAN-Uploader-0.103014
+setting SOURCE_DATE_EPOCH to timestamp 1591551638 of file CPAN-Uploader-0.103014/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./bin/cpan-upload...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CPAN::Uploader
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CPAN/Uploader.pm blib/lib/CPAN/Uploader.pm
+cp bin/cpan-upload blib/script/cpan-upload
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/cpan-upload
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                     Want    Have
+#     ------------------------- ----- -------
+#     Carp                        any    1.50
+#     Data::Dumper                any   2.174
+#     Digest::MD5                 any 2.55_01
+#     File::Basename              any    2.85
+#     File::HomeDir               any   1.004
+#     File::Spec                  any    3.78
+#     Getopt::Long::Descriptive 0.084   0.105
+#     HTTP::Request::Common       any    6.24
+#     HTTP::Status                any    6.24
+#     LWP::Protocol::https          1    6.07
+#     LWP::UserAgent              any    6.45
+#     Term::ReadKey               any    2.38
+#     strict                      any    1.11
+#     warnings                    any    1.47
+#
+t/00-report-prereqs.t .. ok
+All tests successful.
+Files=2, Tests=2,  1 wallclock secs ( 0.03 usr  0.04 sys +  0.44 cusr  0.37 csys =  0.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/lib/pkgconfig m4datadir=/nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/aclocal aclocaldir=/nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/lib/perl5/site_perl/5.32.0/CPAN/Uploader.pm
+Installing /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/man/man1/cpan-upload.1
+Installing /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/man/man3/CPAN::Uploader.3
+Installing /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/bin/cpan-upload
+Appending installation info to /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/man/man3 to /nix/store/ypw10hn0pw624rvhb7fz4bb21lpwmfih-perl5.32.0-CPAN-Uploader-0.103014-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014
+gzipping man pages under /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/lib  /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014/bin
+patching script interpreter paths in /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014
+checking for references to /build/ in /nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ypw10hn0pw624rvhb7fz4bb21lpwmfih-perl5.32.0-CPAN-Uploader-0.103014-devdoc
+gzipping man pages under /nix/store/ypw10hn0pw624rvhb7fz4bb21lpwmfih-perl5.32.0-CPAN-Uploader-0.103014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ypw10hn0pw624rvhb7fz4bb21lpwmfih-perl5.32.0-CPAN-Uploader-0.103014-devdoc
+checking for references to /build/ in /nix/store/ypw10hn0pw624rvhb7fz4bb21lpwmfih-perl5.32.0-CPAN-Uploader-0.103014-devdoc...
+/nix/store/yb0gk6kd3byyscdss7wlisv2zwcg3rk0-perl5.32.0-CPAN-Uploader-0.103014

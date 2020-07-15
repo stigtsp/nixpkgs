@@ -1,0 +1,114 @@
+these derivations will be built:
+  /nix/store/9s8gzj98mh6gy95rz7rslfxai4k8xvh8-perl5.32.0-PathTools-3.75.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/hk4xzncci6vglqa95rxw7hsll2bdnf4m-PathTools-3.75.tar.gz
+copying path '/nix/store/hk4xzncci6vglqa95rxw7hsll2bdnf4m-PathTools-3.75.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9s8gzj98mh6gy95rz7rslfxai4k8xvh8-perl5.32.0-PathTools-3.75.drv'...
+unpacking sources
+unpacking source archive /nix/store/hk4xzncci6vglqa95rxw7hsll2bdnf4m-PathTools-3.75.tar.gz
+source root is PathTools-3.75
+setting SOURCE_DATE_EPOCH to timestamp 1535468627 of file PathTools-3.75/META.yml
+patching sources
+configuring
+patching ./t/win32.t...
+patching ./t/Spec-taint.t...
+patching ./t/cwd.t...
+patching ./t/Spec.t...
+patching ./t/taint.t...
+patching ./t/Functions.t...
+patching ./t/rel2abs2rel.t...
+patching ./t/abs2rel.t...
+patching ./t/crossplatform.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cwd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/Spec/Functions.pm blib/lib/File/Spec/Functions.pm
+cp lib/File/Spec/Cygwin.pm blib/lib/File/Spec/Cygwin.pm
+cp lib/File/Spec/Epoc.pm blib/lib/File/Spec/Epoc.pm
+cp lib/File/Spec.pm blib/lib/File/Spec.pm
+cp lib/File/Spec/Mac.pm blib/lib/File/Spec/Mac.pm
+cp lib/File/Spec/VMS.pm blib/lib/File/Spec/VMS.pm
+cp lib/File/Spec/Unix.pm blib/lib/File/Spec/Unix.pm
+cp lib/File/Spec/Win32.pm blib/lib/File/Spec/Win32.pm
+cp lib/File/Spec/OS2.pm blib/lib/File/Spec/OS2.pm
+cp lib/File/Spec/AmigaOS.pm blib/lib/File/Spec/AmigaOS.pm
+cp Cwd.pm blib/lib/Cwd.pm
+Running Mkbootstrap for Cwd ()
+chmod 644 "Cwd.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cwd.bs blib/arch/auto/Cwd/Cwd.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Cwd.xs > Cwd.xsc
+mv Cwd.xsc Cwd.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"3.75\" -DXS_VERSION=\"3.75\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DDOUBLE_SLASHES_SPECIAL=0 Cwd.c
+rm -f blib/arch/auto/Cwd/Cwd.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Cwd.o  -o blib/arch/auto/Cwd/Cwd.so  \
+      \
+
+chmod 755 blib/arch/auto/Cwd/Cwd.so
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cwd.bs blib/arch/auto/Cwd/Cwd.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/abs2rel.t ........ ok
+t/crossplatform.t .. ok
+t/cwd.t ............ ok
+t/cwd_enoent.t ..... ok
+t/Functions.t ...... ok
+t/rel2abs2rel.t .... ok
+t/Spec-taint.t ..... ok
+t/Spec.t ........... ok
+t/taint.t .......... ok
+t/tmpdir.t ......... ok
+t/win32.t .......... skipped: this is not win32
+All tests successful.
+Files=11, Tests=847,  1 wallclock secs ( 0.08 usr  0.02 sys +  0.72 cusr  0.10 csys =  0.92 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/pkgconfig m4datadir=/nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/aclocal aclocaldir=/nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Cwd.bs blib/arch/auto/Cwd/Cwd.bs 644
+Manifying 11 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cwd/Cwd.so
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cwd.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/VMS.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Cygwin.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Unix.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Mac.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Functions.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/AmigaOS.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/OS2.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Epoc.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Spec/Win32.pm
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Mac.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Functions.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Epoc.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Unix.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Win32.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/Cwd.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::OS2.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::AmigaOS.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::Cygwin.3
+Installing /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3/File::Spec::VMS.3
+Appending installation info to /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/man3 to /nix/store/s4czv529mz5wafa4q3yzw4h2qhsqfli9-perl5.32.0-PathTools-3.75-devdoc/share/man/man3
+Removing empty /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75
+shrinking /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cwd/Cwd.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75/lib
+patching script interpreter paths in /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75
+checking for references to /build/ in /nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75...
+shrinking RPATHs of ELF executables and libraries in /nix/store/s4czv529mz5wafa4q3yzw4h2qhsqfli9-perl5.32.0-PathTools-3.75-devdoc
+gzipping man pages under /nix/store/s4czv529mz5wafa4q3yzw4h2qhsqfli9-perl5.32.0-PathTools-3.75-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/s4czv529mz5wafa4q3yzw4h2qhsqfli9-perl5.32.0-PathTools-3.75-devdoc
+checking for references to /build/ in /nix/store/s4czv529mz5wafa4q3yzw4h2qhsqfli9-perl5.32.0-PathTools-3.75-devdoc...
+/nix/store/2br384zvrq87i6giq7p1kabfkbwsnhyn-perl5.32.0-PathTools-3.75

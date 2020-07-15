@@ -1,0 +1,213 @@
+these derivations will be built:
+  /nix/store/7sg128fzx03v06gfz0jrdx9pz6gwx442-perl5.32.0-CGI-Session-4.48.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/pa62d4y94bw3j5dfa5g9hxf3mqfxikrz-CGI-Session-4.48.tar.gz
+copying path '/nix/store/pa62d4y94bw3j5dfa5g9hxf3mqfxikrz-CGI-Session-4.48.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7sg128fzx03v06gfz0jrdx9pz6gwx442-perl5.32.0-CGI-Session-4.48.drv'...
+unpacking sources
+unpacking source archive /nix/store/pa62d4y94bw3j5dfa5g9hxf3mqfxikrz-CGI-Session-4.48.tar.gz
+source root is CGI-Session-4.48
+setting SOURCE_DATE_EPOCH to timestamp 1310389241 of file CGI-Session-4.48/t/symlink_file.t
+patching sources
+configuring
+patching ./examples/subscriptions.cgi...
+patching ./examples/purge.pl...
+patching ./t/new_with_undef.t...
+patching ./t/load_with_undef.t...
+----------------------------------------
+#### WARNING ####
+
+If you are using custom CGI::Session drivers they may not be compatible
+with the current driver specifications. You will need to make some changes
+to your drivers' code before proceeding with this installation to make it
+compatible with CGI::Session 4.x.
+
+Fortunately, current driver specifications are a lot easier to adapt to.
+Should you have any assistance re-coding your current drivers, please let
+me know.
+
+Current driver specs are documented in CGI/Session/Driver.pm
+
+#### TESTING #####
+
+You are encouraged to run tests for the backend you will be using. The
+database backends that need a customized connection string won't run by
+default. To run them, some environment variables must be set.
+
+The simplest method is to use the standard "DBI_DSN/DBI_USER/DBI_PASS"
+environment variables.
+
+Otherwise, you can set these variables:
+For PostgreSQL:
+    CGISESS_PG_DSN
+    CGISESS_PG_USER
+    CGISESS_PG_PASS
+
+For MySQL:
+    CGISESS_MYSQL_DSN
+    CGISESS_MYSQL_USER
+    CGISESS_MYSQL_PASS
+    CGISESS_MYSQL_SOCKET
+
+----------------------------------------
+Warning: Module::Metadata::Changes's ini.report.pl failed to generate or update Changelog.ini.
+----------------------------------------
+WARNING: EXTRA_META is not a known parameter.
+Checking if your kit is complete...
+Warning: the following files are missing in your kit:
+        MYMETA.json
+Please inform the author.
+'EXTRA_META' is not a known MakeMaker parameter name.
+Generating a Unix-style Makefile
+Writing Makefile for CGI::Session
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+----------------------------------------
+#### WARNING ####
+
+If you are using custom CGI::Session drivers they may not be compatible
+with the current driver specifications. You will need to make some changes
+to your drivers' code before proceeding with this installation to make it
+compatible with CGI::Session 4.x.
+
+Fortunately, current driver specifications are a lot easier to adapt to.
+Should you have any assistance re-coding your current drivers, please let
+me know.
+
+Current driver specs are documented in CGI/Session/Driver.pm
+
+#### TESTING #####
+
+You are encouraged to run tests for the backend you will be using. The
+database backends that need a customized connection string won't run by
+default. To run them, some environment variables must be set.
+
+The simplest method is to use the standard "DBI_DSN/DBI_USER/DBI_PASS"
+environment variables.
+
+Otherwise, you can set these variables:
+For PostgreSQL:
+    CGISESS_PG_DSN
+    CGISESS_PG_USER
+    CGISESS_PG_PASS
+
+For MySQL:
+    CGISESS_MYSQL_DSN
+    CGISESS_MYSQL_USER
+    CGISESS_MYSQL_PASS
+    CGISESS_MYSQL_SOCKET
+
+----------------------------------------
+Warning: Module::Metadata::Changes's ini.report.pl failed to generate or update Changelog.ini.
+----------------------------------------
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'CGI-Session' version '4.48'
+Building CGI-Session
+running tests
+t/api3_db_file.t ................ skipped: DB_File not available
+t/api3_db_file_freezethaw.t ..... skipped: DB_File not available
+t/api3_db_file_storable.t ....... skipped: DB_File not available
+t/api3_db_file_storable_incr.t .. skipped: DB_File not available
+t/api3_file.t ................... ok
+t/api3_file_freezethaw.t ........ skipped: FreezeThaw not available
+t/api3_file_freezethaw_incr.t ... skipped: FreezeThaw not available
+t/api3_file_storable.t .......... ok
+t/api3_file_storable_incr.t ..... ok
+t/api3_incr.t ................... ok
+t/api3_obj_store.t .............. #Using Storable as object serializer
+t/api3_obj_store.t .............. ok
+t/api3_obj_store_db_file.t ...... skipped: DB_File is not available
+t/bug21952.t .................... ok
+t/bug24285.t .................... ok
+t/cgi_simple.t .................. skipped: CGI::Simple not installed, so skipping related tests.
+t/complex_ds.t .................. ok
+t/driver_dbi.t .................. skipped: DBI module not found
+t/expire.t ...................... ok
+t/find.t ........................ 1/7 # The found session has been deleted and flushed
+t/find.t ........................ ok
+t/flush.t ....................... ok
+t/g4.t .......................... ok
+t/g4_dbfile.t ................... skipped: DB_File is NOT available
+t/g4_dbfile_freezethaw.t ........ skipped: DB_File is NOT available
+t/g4_dbfile_storable.t .......... skipped: DB_File is NOT available
+t/g4_freezethaw.t ............... skipped: FreezeThaw is NOT available
+t/g4_mysql.t .................... skipped: DBI is NOT available
+t/g4_mysql_freezethaw.t ......... skipped: DBI is NOT available
+t/g4_mysql_storable.t ........... skipped: DBI is NOT available
+t/g4_postgresql.t ............... skipped: DataSource is not known
+t/g4_postgresql_freezethaw.t .... skipped: DataSource is not known
+t/g4_postgresql_storable.t ...... skipped: DataSource is not known
+t/g4_sqlite.t ................... skipped: DBI is NOT available
+t/g4_sqlite_freezethaw.t ........ skipped: DBI is NOT available
+t/g4_sqlite_storable.t .......... skipped: DBI is NOT available
+t/g4_storable.t ................. ok
+t/header.t ...................... ok
+t/ip_matches.t .................. ok
+t/is_new.t ...................... ok
+t/load.t ........................ ok
+t/load_with_undef.t ............. ok
+t/name.t ........................ ok
+t/new_with_undef.t .............. ok
+t/parse_dsn.t ................... ok
+t/remote_addr.t ................. ok
+t/session_param_undef.t ......... 1/21 # Check in STORE of original item
+# Check in STORE of stored/retrieved item
+# Check in LOAD after loading from session
+t/session_param_undef.t ......... ok
+t/str2seconds.t ................. ok
+t/symlink_db_file.t ............. skipped: DB_File not available
+t/symlink_file.t ................ ok
+All tests successful.
+Files=48, Tests=410, 10 wallclock secs ( 0.12 usr  0.07 sys +  3.41 cusr  1.03 csys =  4.63 CPU)
+Result: PASS
+installing
+Building CGI-Session
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/ErrorHandler.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Tutorial.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/ID/incr.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/ID/md5.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/ID/static.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Serialize/freezethaw.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Serialize/storable.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Serialize/default.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Test/Default.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/db_file.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/DBI.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/postgresql.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/mysql.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/file.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib/perl5/site_perl/5.32.0/CGI/Session/Driver/sqlite.pm
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::ID::incr.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::DBI.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::sqlite.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Tutorial.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Serialize::freezethaw.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Test::Default.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::mysql.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::db_file.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Serialize::storable.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::ID::md5.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::file.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::ID::static.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Driver::postgresql.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::Serialize::default.3
+Installing /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3/CGI::Session::ErrorHandler.3
+post-installation fixup
+Moving /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/man3 to /nix/store/nq3pa7abkix3xy8dzazs2nv87kara5vm-perl5.32.0-CGI-Session-4.48-devdoc/share/man/man3
+Removing empty /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48/lib
+patching script interpreter paths in /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48
+checking for references to /build/ in /nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nq3pa7abkix3xy8dzazs2nv87kara5vm-perl5.32.0-CGI-Session-4.48-devdoc
+gzipping man pages under /nix/store/nq3pa7abkix3xy8dzazs2nv87kara5vm-perl5.32.0-CGI-Session-4.48-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nq3pa7abkix3xy8dzazs2nv87kara5vm-perl5.32.0-CGI-Session-4.48-devdoc
+checking for references to /build/ in /nix/store/nq3pa7abkix3xy8dzazs2nv87kara5vm-perl5.32.0-CGI-Session-4.48-devdoc...
+/nix/store/94yqavpk8vabjfv742vhc6msj93l8jkf-perl5.32.0-CGI-Session-4.48

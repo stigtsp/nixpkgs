@@ -1,0 +1,53 @@
+these derivations will be built:
+  /nix/store/pj7xsx2isckfd8fnf36qv2hryx2fk1vz-perl5.32.0-Test-JSON-0.11.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/wdbrxnfz3rzgswyyhqz59vy1s28a6zwy-Test-JSON-0.11.tar.gz
+copying path '/nix/store/wdbrxnfz3rzgswyyhqz59vy1s28a6zwy-Test-JSON-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pj7xsx2isckfd8fnf36qv2hryx2fk1vz-perl5.32.0-Test-JSON-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/wdbrxnfz3rzgswyyhqz59vy1s28a6zwy-Test-JSON-0.11.tar.gz
+source root is Test-JSON-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1249809503 of file Test-JSON-0.11/t/pod.t
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/10testjson.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::JSON
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-JSON' version '0.11'
+Building Test-JSON
+running tests
+t/00-load.t ....... 1/1 # Testing Test::JSON 0.11, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/10testjson.t .... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=4, Tests=37,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.28 cusr  0.14 csys =  0.45 CPU)
+Result: PASS
+installing
+Building Test-JSON
+Installing /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11/lib/perl5/site_perl/5.32.0/Test/JSON.pm
+Installing /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11/share/man/man3/Test::JSON.3
+post-installation fixup
+Moving /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11/share/man/man3 to /nix/store/5zhi80cnbqpxg1cfy2x6kljvlyaz8lvb-perl5.32.0-Test-JSON-0.11-devdoc/share/man/man3
+Removing empty /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11/lib
+patching script interpreter paths in /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11
+checking for references to /build/ in /nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5zhi80cnbqpxg1cfy2x6kljvlyaz8lvb-perl5.32.0-Test-JSON-0.11-devdoc
+gzipping man pages under /nix/store/5zhi80cnbqpxg1cfy2x6kljvlyaz8lvb-perl5.32.0-Test-JSON-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5zhi80cnbqpxg1cfy2x6kljvlyaz8lvb-perl5.32.0-Test-JSON-0.11-devdoc
+checking for references to /build/ in /nix/store/5zhi80cnbqpxg1cfy2x6kljvlyaz8lvb-perl5.32.0-Test-JSON-0.11-devdoc...
+/nix/store/f4f1g0ff1zq5q11q37ijma426427bj22-perl5.32.0-Test-JSON-0.11

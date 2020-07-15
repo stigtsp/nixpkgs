@@ -1,0 +1,73 @@
+these derivations will be built:
+  /nix/store/mdhnj166ki3jlz50lsc18p0hcw30949g-perl5.32.0-App-St-1.1.4.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/m3ba5jk970zfpqk923qv01pksih71rav-v1.1.4.tar.gz
+copying path '/nix/store/m3ba5jk970zfpqk923qv01pksih71rav-v1.1.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mdhnj166ki3jlz50lsc18p0hcw30949g-perl5.32.0-App-St-1.1.4.drv'...
+unpacking sources
+unpacking source archive /nix/store/m3ba5jk970zfpqk923qv01pksih71rav-v1.1.4.tar.gz
+source root is st-1.1.4
+setting SOURCE_DATE_EPOCH to timestamp 1498478253 of file st-1.1.4/t/07-result.t
+patching sources
+configuring
+patching ./script/st...
+patching ./t/05-format.t...
+patching ./t/06-percentile.t...
+patching ./t/07-result.t...
+patching ./t/03-validate.t...
+patching ./t/04-process.t...
+patching ./t/01-use.t...
+patching ./t/06-quantiles.t...
+patching ./t/05-basic-stats.t...
+patching ./t/02-new.t...
+Generating a Unix-style Makefile
+Writing Makefile for App::St
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/App/St.pm blib/lib/App/St.pm
+cp script/st blib/script/st
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/st
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-use.t .......... ok
+t/02-new.t .......... ok
+t/03-validate.t ..... ok
+t/04-process.t ...... ok
+t/05-basic-stats.t .. ok
+t/05-format.t ....... ok
+t/06-percentile.t ... ok
+t/06-quantiles.t .... ok
+t/07-result.t ....... ok
+All tests successful.
+Files=9, Tests=61,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.42 cusr  0.07 csys =  0.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/lib/pkgconfig m4datadir=/nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/aclocal aclocaldir=/nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/lib/perl5/site_perl/5.32.0/App/St.pm
+Installing /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/man/man1/st.1
+Installing /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/man/man3/App::St.3
+Installing /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/bin/st
+Appending installation info to /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+Usage:
+post-installation fixup
+Moving /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/man/man3 to /nix/store/7jw93a8wz860n3d0ckikj248jpawhmsl-perl5.32.0-App-St-1.1.4-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4
+gzipping man pages under /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/lib  /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4/bin
+patching script interpreter paths in /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4
+checking for references to /build/ in /nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7jw93a8wz860n3d0ckikj248jpawhmsl-perl5.32.0-App-St-1.1.4-devdoc
+gzipping man pages under /nix/store/7jw93a8wz860n3d0ckikj248jpawhmsl-perl5.32.0-App-St-1.1.4-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7jw93a8wz860n3d0ckikj248jpawhmsl-perl5.32.0-App-St-1.1.4-devdoc
+checking for references to /build/ in /nix/store/7jw93a8wz860n3d0ckikj248jpawhmsl-perl5.32.0-App-St-1.1.4-devdoc...
+/nix/store/ps8zs9zgnccdpakil73sh7m06x5wwq2l-perl5.32.0-App-St-1.1.4

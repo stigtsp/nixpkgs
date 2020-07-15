@@ -1,0 +1,80 @@
+these derivations will be built:
+  /nix/store/9wpyyw1p3hg6az4klnfb3623kmbn07da-perl5.32.0-Compress-Raw-Zlib-2.093.drv
+building '/nix/store/9wpyyw1p3hg6az4klnfb3623kmbn07da-perl5.32.0-Compress-Raw-Zlib-2.093.drv'...
+unpacking sources
+unpacking source archive /nix/store/plgfsczkw7a86hl8kkfl359rsh0bgxg0-Compress-Raw-Zlib-2.093.tar.gz
+source root is Compress-Raw-Zlib-2.093
+setting SOURCE_DATE_EPOCH to timestamp 1575731809 of file Compress-Raw-Zlib-2.093/META.yml
+patching sources
+configuring
+patching ./examples/filtinf...
+patching ./examples/filtdef...
+patching ./Makefile.PL...
+Parsing config.in...
+Auto Detect Gzip OS Code..
+Setting Gzip OS Code to 3 [Unix/Default]
+Looks Good.
+Up/Downgrade not needed.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Compress::Raw::Zlib
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Compress/Raw/Zlib.pm blib/lib/Compress/Raw/Zlib.pm
+Running Mkbootstrap for Zlib ()
+chmod 644 "Zlib.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Zlib.bs blib/arch/auto/Compress/Raw/Zlib/Zlib.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Compress-Raw-Zlib-2.093/typemap'  Zlib.xs > Zlib.xsc
+mv Zlib.xsc Zlib.c
+cc -c  -I/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.093\" -DXS_VERSION=\"2.093\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNO_VIZ -DZ_SOLO   -DGZIP_OS_CODE=3 -DUSE_PPPORT_H Zlib.c
+rm -f blib/arch/auto/Compress/Raw/Zlib/Zlib.so
+LD_RUN_PATH="/nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Zlib.o  -o blib/arch/auto/Compress/Raw/Zlib/Zlib.so  \
+   -L/nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib -lz   \
+
+chmod 755 blib/arch/auto/Compress/Raw/Zlib/Zlib.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Zlib.bs blib/arch/auto/Compress/Raw/Zlib/Zlib.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000prereq.t ...... # Running Perl version  5.032000
+t/000prereq.t ...... ok
+t/01version.t ...... ok
+t/02zlib.t ......... ok
+t/07bufsize.t ...... skipped: Lengthy Tests Disabled
+t/09limitoutput.t .. ok
+t/18lvalue.t ....... ok
+t/19nonpv.t ........ ok
+t/99pod.t .......... skipped: Test::Pod 1.00 required for testing POD
+t/meta-json.t ...... skipped: Test::CPAN::Meta::JSON required for testing META.json
+t/meta-yaml.t ...... skipped: Test::CPAN::Meta required for testing META.yml
+All tests successful.
+Files=10, Tests=483,  0 wallclock secs ( 0.06 usr  0.01 sys +  0.42 cusr  0.05 csys =  0.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib/pkgconfig m4datadir=/nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/share/aclocal aclocaldir=/nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Zlib.bs blib/arch/auto/Compress/Raw/Zlib/Zlib.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so
+Installing /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Compress/Raw/Zlib.pm
+Installing /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/share/man/man3/Compress::Raw::Zlib.3
+Appending installation info to /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/share/man/man3 to /nix/store/ixwabdgchkhbf8aa3mpf7wq3fs0x21ih-perl5.32.0-Compress-Raw-Zlib-2.093-devdoc/share/man/man3
+Removing empty /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093
+shrinking /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093/lib
+patching script interpreter paths in /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093
+checking for references to /build/ in /nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ixwabdgchkhbf8aa3mpf7wq3fs0x21ih-perl5.32.0-Compress-Raw-Zlib-2.093-devdoc
+gzipping man pages under /nix/store/ixwabdgchkhbf8aa3mpf7wq3fs0x21ih-perl5.32.0-Compress-Raw-Zlib-2.093-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ixwabdgchkhbf8aa3mpf7wq3fs0x21ih-perl5.32.0-Compress-Raw-Zlib-2.093-devdoc
+checking for references to /build/ in /nix/store/ixwabdgchkhbf8aa3mpf7wq3fs0x21ih-perl5.32.0-Compress-Raw-Zlib-2.093-devdoc...
+/nix/store/fcjpgmi13vkcvv6s48q2aa735x5mkqyl-perl5.32.0-Compress-Raw-Zlib-2.093

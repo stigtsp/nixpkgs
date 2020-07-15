@@ -1,0 +1,80 @@
+these derivations will be built:
+  /nix/store/qsl19l0via90bdas112lln84dws6wd61-perl5.32.0-Mojolicious-Plugin-Webpack-0.12.drv
+these paths will be fetched (0.17 MiB download, 0.17 MiB unpacked):
+  /nix/store/fv4f508zd83drd68qnqkk8z4fqfyy75w-Mojolicious-Plugin-Webpack-0.12.tar.gz
+copying path '/nix/store/fv4f508zd83drd68qnqkk8z4fqfyy75w-Mojolicious-Plugin-Webpack-0.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qsl19l0via90bdas112lln84dws6wd61-perl5.32.0-Mojolicious-Plugin-Webpack-0.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/fv4f508zd83drd68qnqkk8z4fqfyy75w-Mojolicious-Plugin-Webpack-0.12.tar.gz
+source root is Mojolicious-Plugin-Webpack-0.12
+setting SOURCE_DATE_EPOCH to timestamp 1570399334 of file Mojolicious-Plugin-Webpack-0.12/MANIFEST
+patching sources
+configuring
+patching ./example/webpack/lite.pl...
+patching ./example/rollup/lite.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mojolicious::Plugin::Webpack
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojolicious/Plugin/Webpack/my_app.js blib/lib/Mojolicious/Plugin/Webpack/my_app.js
+cp lib/Mojolicious/Plugin/Webpack/webpack.html blib/lib/Mojolicious/Plugin/Webpack/webpack.html
+cp lib/Mojolicious/Plugin/Webpack/package.json blib/lib/Mojolicious/Plugin/Webpack/package.json
+cp lib/Mojolicious/Command/Author/webpack.pm blib/lib/Mojolicious/Command/Author/webpack.pm
+cp lib/Mojolicious/Plugin/Webpack/webpack.config.js blib/lib/Mojolicious/Plugin/Webpack/webpack.config.js
+cp lib/Mojolicious/Plugin/Webpack/Builder.pm blib/lib/Mojolicious/Plugin/Webpack/Builder.pm
+cp lib/Mojolicious/Plugin/Webpack/webpack.custom.js blib/lib/Mojolicious/Plugin/Webpack/webpack.custom.js
+cp lib/Mojolicious/Plugin/Webpack.pm blib/lib/Mojolicious/Plugin/Webpack.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ................ ok
+t/builder.t ................. ok
+t/command-webpack.t ......... ok
+t/cwd.t ..................... ok
+t/example-build-assets.t .... skipped: TEST_BUILD_ASSETS=1
+t/headers.t ................. skipped: TEST_BUILD_ASSETS=1
+t/install-deps.t ............ skipped: TEST_NODE_MODULES=1
+t/markup.t .................. ok
+t/migrate-from-assetpack.t .. skipped: TEST_ASSETPACK=1
+t/process-css.t ............. skipped: TEST_PROCESS_CSS=1
+t/process-js.t .............. skipped: TEST_PROCESS_JS=1
+t/process-sass.t ............ skipped: TEST_PROCESS_SASS=1
+t/register.t ................ ok
+t/shim.t .................... ok
+All tests successful.
+Files=14, Tests=80,  4 wallclock secs ( 0.05 usr  0.01 sys +  3.17 cusr  0.30 csys =  3.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/pkgconfig m4datadir=/nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/aclocal aclocaldir=/nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Command/Author/webpack.pm
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack.pm
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/webpack.config.js
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/webpack.html
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/webpack.custom.js
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/package.json
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/my_app.js
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/Webpack/Builder.pm
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/man/man3/Mojolicious::Plugin::Webpack.3
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/man/man3/Mojolicious::Command::Author::webpack.3
+Installing /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/man/man3/Mojolicious::Plugin::Webpack::Builder.3
+Appending installation info to /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/man/man3 to /nix/store/0s16va23hmrlry9zlgyw21m7as18ghja-perl5.32.0-Mojolicious-Plugin-Webpack-0.12-devdoc/share/man/man3
+Removing empty /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12/lib
+patching script interpreter paths in /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12
+checking for references to /build/ in /nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0s16va23hmrlry9zlgyw21m7as18ghja-perl5.32.0-Mojolicious-Plugin-Webpack-0.12-devdoc
+gzipping man pages under /nix/store/0s16va23hmrlry9zlgyw21m7as18ghja-perl5.32.0-Mojolicious-Plugin-Webpack-0.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0s16va23hmrlry9zlgyw21m7as18ghja-perl5.32.0-Mojolicious-Plugin-Webpack-0.12-devdoc
+checking for references to /build/ in /nix/store/0s16va23hmrlry9zlgyw21m7as18ghja-perl5.32.0-Mojolicious-Plugin-Webpack-0.12-devdoc...
+/nix/store/5s8bmzq901y9hhz3x02fngms3phh1gra-perl5.32.0-Mojolicious-Plugin-Webpack-0.12

@@ -1,0 +1,95 @@
+these derivations will be built:
+  /nix/store/vkj2i3fklisqb2xys7xqv1mfnjqck878-perl5.32.0-threads-shared-1.59.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/mgklm0aamwqlh347bw4crkpgbwh596rh-threads-shared-1.59.tar.gz
+copying path '/nix/store/mgklm0aamwqlh347bw4crkpgbwh596rh-threads-shared-1.59.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vkj2i3fklisqb2xys7xqv1mfnjqck878-perl5.32.0-threads-shared-1.59.drv'...
+unpacking sources
+unpacking source archive /nix/store/mgklm0aamwqlh347bw4crkpgbwh596rh-threads-shared-1.59.tar.gz
+source root is threads-shared-1.59
+setting SOURCE_DATE_EPOCH to timestamp 1543545775 of file threads-shared-1.59/META.yml
+patching sources
+configuring
+patching ./examples/class.pl...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lpthread
+Generating a Unix-style Makefile
+Writing Makefile for threads::shared
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/threads/shared.pm blib/lib/threads/shared.pm
+Running Mkbootstrap for shared ()
+chmod 644 "shared.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- shared.bs blib/arch/auto/threads/shared/shared.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  shared.xs > shared.xsc
+mv shared.xsc shared.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.59\" -DXS_VERSION=\"1.59\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAS_PPPORT_H shared.c
+rm -f blib/arch/auto/threads/shared/shared.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  shared.o  -o blib/arch/auto/threads/shared/shared.so  \
+      \
+
+chmod 755 blib/arch/auto/threads/shared/shared.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- shared.bs blib/arch/auto/threads/shared/shared.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/0nothread.t .... 1/53 # Testing threads::shared 1.59
+t/0nothread.t .... ok
+t/av_refs.t ...... ok
+t/av_simple.t .... ok
+t/blessed.t ...... ok
+t/clone.t ........ ok
+t/cond.t ......... ok
+t/disabled.t ..... ok
+t/dualvar.t ...... ok
+t/hv_refs.t ...... ok
+t/hv_simple.t .... ok
+t/no_share.t ..... ok
+t/object.t ....... ok
+t/object2.t ...... ok
+t/pod.t .......... skipped: Module maintainer tests
+t/shared_attr.t .. ok
+t/stress.t ....... ok
+t/sv_refs.t ...... ok
+t/sv_simple.t .... ok
+t/utf8.t ......... ok
+t/wait.t ......... ok
+t/waithires.t .... ok
+All tests successful.
+Files=21, Tests=979, 21 wallclock secs ( 0.12 usr  0.02 sys +  4.65 cusr  0.11 csys =  4.90 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib/pkgconfig m4datadir=/nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/share/aclocal aclocaldir=/nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- shared.bs blib/arch/auto/threads/shared/shared.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/threads/shared/shared.so
+Installing /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/threads/shared.pm
+Installing /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/share/man/man3/threads::shared.3
+Appending installation info to /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/share/man/man3 to /nix/store/4lj01dvrj69akzn12ankhwrbrz8wqrvj-perl5.32.0-threads-shared-1.59-devdoc/share/man/man3
+Removing empty /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59
+shrinking /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/threads/shared/shared.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59/lib
+patching script interpreter paths in /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59
+checking for references to /build/ in /nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4lj01dvrj69akzn12ankhwrbrz8wqrvj-perl5.32.0-threads-shared-1.59-devdoc
+gzipping man pages under /nix/store/4lj01dvrj69akzn12ankhwrbrz8wqrvj-perl5.32.0-threads-shared-1.59-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4lj01dvrj69akzn12ankhwrbrz8wqrvj-perl5.32.0-threads-shared-1.59-devdoc
+checking for references to /build/ in /nix/store/4lj01dvrj69akzn12ankhwrbrz8wqrvj-perl5.32.0-threads-shared-1.59-devdoc...
+/nix/store/879bnwj0np69211b4mmgmylfh91qz4ls-perl5.32.0-threads-shared-1.59

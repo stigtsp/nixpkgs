@@ -1,0 +1,451 @@
+these derivations will be built:
+  /nix/store/93sw5l0f2q07gli9rhn298fp3yijs24r-perl5.32.0-Curses-1.36.drv
+these paths will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/990ljcsmkahzjs0lfvar5jlnvfq75zqf-Curses-1.36.tar.gz
+copying path '/nix/store/990ljcsmkahzjs0lfvar5jlnvfq75zqf-Curses-1.36.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/93sw5l0f2q07gli9rhn298fp3yijs24r-perl5.32.0-Curses-1.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/990ljcsmkahzjs0lfvar5jlnvfq75zqf-Curses-1.36.tar.gz
+source root is Curses-1.36
+setting SOURCE_DATE_EPOCH to timestamp 1471215511 of file Curses-1.36/META.yml
+patching sources
+configuring
+patching ./demo2...
+patching ./demo.menu...
+patching ./gdc...
+patching ./demo...
+patching ./demo.form...
+patching ./t/00-load.t...
+patching ./testcurses...
+patching ./demo.panel...
+patching ./test.syms...
+patching ./Makefile.PL...
+GEN    function:  not applicable
+PANELS functions: not enabled
+MENUS  functions: not enabled
+FORMS  functions: not enabled
+
+Making a guess for -I and -L/-l options...
+Guesses:
+  includes:    '-I/usr/include/ncurses'
+  libs:        '-lncurses'
+  Curses type: ncurses
+Making a guess for "c-config.h"...
+Choosing hints file 'hints/c-linux.ncurses.h'
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lncurses
+Generating a Unix-style Makefile
+Writing Makefile for Curses
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Curses.pm blib/lib/Curses.pm
+Running Mkbootstrap for Curses ()
+chmod 644 "Curses.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curses.bs blib/arch/auto/Curses/Curses.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" test.syms
+Checking capabilities of the Ncurses libraries.
+Set CURSES_VERBOSE environment variable to see the details of the tests.
+
+Doing test compiles with the compile command 'cc -DSYM="_C_SYM_" -I/usr/include/ncurses -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -o _C_FILE_ _C_FILE_.c  -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib >/dev/null 2>&1'
+function 'waddch' found
+function 'wechochar' found
+function 'waddchstr' found
+function 'waddchnstr' found
+function 'waddstr' found
+function 'waddnstr' found
+function 'wattroff' found
+function 'wattron' found
+function 'wattrset' found
+function 'wstandend' found
+function 'wstandout' found
+function 'wattr_get' found
+function 'wattr_off' found
+function 'wattr_on' found
+function 'wattr_set' found
+function 'wchgat' found
+function 'COLOR_PAIR' found
+function 'PAIR_NUMBER' found
+function 'beep' found
+function 'flash' found
+function 'wbkgd' found
+function 'wbkgdset' found
+function 'getbkgd' found
+function 'wborder' found
+function 'box' found
+function 'whline' found
+function 'wvline' found
+function 'werase' found
+function 'wclear' found
+function 'wclrtobot' found
+function 'wclrtoeol' found
+function 'start_color' found
+function 'init_pair' found
+function 'init_color' found
+function 'has_colors' found
+function 'can_change_color' found
+function 'color_content' found
+function 'pair_content' found
+function 'wdelch' found
+function 'wdeleteln' found
+function 'winsdelln' found
+function 'winsertln' found
+function 'wgetch' found
+function 'ungetch' found
+function 'has_key' found
+function 'KEY_F' found
+function 'wgetstr' found
+function 'wgetnstr' found
+function 'getyx' found
+function 'getparyx' found
+function 'getbegyx' found
+function 'getmaxyx' found
+function 'winch' found
+function 'winchstr' found
+function 'winchnstr' found
+function 'initscr' found
+function 'endwin' found
+function 'isendwin' found
+function 'newterm' found
+function 'set_term' found
+function 'delscreen' found
+function 'cbreak' found
+function 'cbreak' returns int
+function 'nocbreak' found
+function 'nocbreak' returns int
+function 'echo' found
+function 'echo' returns int
+function 'noecho' found
+function 'noecho' returns int
+function 'halfdelay' found
+function 'intrflush' found
+function 'keypad' found
+function 'meta' found
+function 'nodelay' found
+function 'notimeout' found
+function 'raw' found
+function 'raw' returns int
+function 'noraw' found
+function 'noraw' returns int
+function 'qiflush' found
+function 'noqiflush' found
+function 'wtimeout' found
+function 'typeahead' found
+function 'winsch' found
+function 'winsstr' found
+function 'winsnstr' found
+function 'winstr' found
+function 'winnstr' found
+function 'def_prog_mode' found
+function 'def_shell_mode' found
+function 'reset_prog_mode' found
+function 'reset_shell_mode' found
+function 'resetty' found
+function 'savetty' found
+function 'getsyx' found
+function 'getsyx' returns void
+function 'setsyx' found
+function 'setsyx' returns void
+function 'curs_set' found
+function 'napms' found
+function 'wmove' found
+function 'clearok' found
+function 'idlok' found
+function 'idlok' returns int
+function 'idcok' found
+function 'immedok' found
+function 'leaveok' found
+function 'wsetscrreg' found
+function 'scrollok' found
+function 'nl' found
+function 'nl' returns int
+function 'nonl' found
+function 'nonl' returns int
+function 'overlay' found
+function 'overwrite' found
+function 'copywin' found
+function 'newpad' found
+function 'subpad' found
+function 'prefresh' found
+function 'pnoutrefresh' found
+function 'pechochar' found
+function 'wrefresh' found
+function 'wnoutrefresh' found
+function 'doupdate' found
+function 'redrawwin' found
+function 'wredrawln' found
+function 'scr_dump' found
+function 'scr_restore' found
+function 'scr_init' found
+function 'scr_set' found
+function 'scroll' found
+function 'wscrl' found
+function 'slk_init' found
+function 'slk_set' found
+function 'slk_refresh' found
+function 'slk_noutrefresh' found
+function 'slk_label' found
+function 'slk_clear' found
+function 'slk_restore' found
+function 'slk_touch' found
+function 'slk_attron' found
+function 'slk_attrset' found
+function 'slk_attr' found
+function 'slk_attroff' found
+function 'slk_color' found
+function 'baudrate' found
+function 'erasechar' found
+function 'has_ic' found
+function 'has_il' found
+function 'killchar' found
+function 'termattrs' found
+function 'termname' found
+function 'touchwin' found
+function 'untouchwin' found
+function 'wtouchln' found
+function 'is_linetouched' found
+function 'is_wintouched' found
+function 'unctrl' found
+function 'keyname' found
+function 'filter' found
+function 'filter' returns void
+function 'use_env' found
+function 'putwin' found
+function 'getwin' found
+function 'delay_output' found
+function 'flushinp' found
+function 'newwin' found
+function 'delwin' found
+function 'mvwin' found
+function 'subwin' found
+function 'derwin' found
+function 'mvderwin' found
+function 'dupwin' found
+function 'wsyncup' found
+function 'syncok' found
+function 'wcursyncup' found
+function 'wsyncdown' found
+function 'getmouse' found
+function 'ungetmouse' found
+function 'mousemask' found
+function 'wenclose' found
+function 'wmouse_trafo' found
+function 'mouseinterval' found
+function 'BUTTON_RELEASE' found
+function 'BUTTON_PRESS' found
+function 'BUTTON_CLICK' found
+function 'BUTTON_DOUBLE_CLICK' found
+function 'BUTTON_TRIPLE_CLICK' found
+function 'BUTTON_RESERVED_EVENT' found
+Negative repeat count does nothing at test.syms line 272, <IN> line 196.
+function 'use_default_colors' found
+function 'assume_default_colors' found
+Negative repeat count does nothing at test.syms line 272, <IN> line 198.
+function 'define_key' found
+function 'keybound' found
+function 'keyok' found
+function 'resizeterm' found
+function 'wresize' found
+function 'getmaxy' found
+function 'getmaxx' found
+function 'flusok' NOT found
+function 'getcap' NOT found
+function 'touchoverlap' NOT found
+function 'new_panel' NOT found
+function 'bottom_panel' NOT found
+function 'top_panel' NOT found
+function 'show_panel' NOT found
+function 'update_panels' NOT found
+function 'hide_panel' NOT found
+function 'panel_window' NOT found
+function 'replace_panel' NOT found
+function 'move_panel' NOT found
+function 'panel_hidden' NOT found
+function 'panel_above' NOT found
+function 'panel_below' NOT found
+function 'set_panel_userptr' NOT found
+function 'panel_userptr' NOT found
+function 'del_panel' NOT found
+function 'set_menu_fore' NOT found
+function 'menu_fore' NOT found
+function 'set_menu_back' NOT found
+function 'menu_back' NOT found
+function 'set_menu_grey' NOT found
+function 'menu_grey' NOT found
+function 'set_menu_pad' NOT found
+function 'menu_pad' NOT found
+function 'pos_menu_cursor' NOT found
+function 'menu_driver' NOT found
+function 'set_menu_format' NOT found
+function 'menu_format' NOT found
+function 'set_menu_items' NOT found
+function 'menu_items' NOT found
+function 'item_count' NOT found
+function 'set_menu_mark' NOT found
+function 'menu_mark' NOT found
+function 'new_menu' NOT found
+function 'free_menu' NOT found
+function 'menu_opts' NOT found
+function 'set_menu_opts' NOT found
+function 'menu_opts_on' NOT found
+function 'menu_opts_off' NOT found
+function 'set_menu_pattern' NOT found
+function 'menu_pattern' NOT found
+function 'post_menu' NOT found
+function 'unpost_menu' NOT found
+function 'set_menu_userptr' NOT found
+function 'menu_userptr' NOT found
+function 'set_menu_win' NOT found
+function 'menu_win' NOT found
+function 'set_menu_sub' NOT found
+function 'menu_sub' NOT found
+function 'scale_menu' NOT found
+function 'set_current_item' NOT found
+function 'current_item' NOT found
+function 'set_top_row' NOT found
+function 'top_row' NOT found
+function 'item_index' NOT found
+function 'item_name' NOT found
+function 'item_description' NOT found
+function 'new_item' NOT found
+function 'free_item' NOT found
+function 'set_item_opts' NOT found
+function 'item_opts_on' NOT found
+function 'item_opts_off' NOT found
+function 'item_opts' NOT found
+function 'item_userptr' NOT found
+function 'set_item_userptr' NOT found
+function 'set_item_value' NOT found
+function 'item_value' NOT found
+function 'item_visible' NOT found
+function 'menu_request_name' NOT found
+function 'menu_request_by_name' NOT found
+Negative repeat count does nothing at test.syms line 272, <IN> line 277.
+function 'set_menu_spacing' NOT found
+function 'menu_spacing' NOT found
+function 'pos_form_cursor' NOT found
+function 'data_ahead' NOT found
+function 'data_behind' NOT found
+function 'form_driver' NOT found
+function 'set_form_fields' NOT found
+function 'form_fields' NOT found
+function 'field_count' NOT found
+function 'move_field' NOT found
+function 'new_form' NOT found
+function 'free_form' NOT found
+function 'set_new_page' NOT found
+function 'new_page' NOT found
+function 'set_form_opts' NOT found
+function 'form_opts_on' NOT found
+function 'form_opts_off' NOT found
+function 'form_opts' NOT found
+function 'set_current_field' NOT found
+function 'current_field' NOT found
+function 'set_form_page' NOT found
+function 'form_page' NOT found
+function 'field_index' NOT found
+function 'post_form' NOT found
+function 'unpost_form' NOT found
+function 'set_form_userptr' NOT found
+function 'form_userptr' NOT found
+function 'set_form_win' NOT found
+function 'form_win' NOT found
+function 'set_form_sub' NOT found
+function 'form_sub' NOT found
+function 'scale_form' NOT found
+function 'set_field_fore' NOT found
+function 'field_fore' NOT found
+function 'set_field_back' NOT found
+function 'field_back' NOT found
+function 'set_field_pad' NOT found
+function 'field_pad' NOT found
+function 'set_field_buffer' NOT found
+function 'field_buffer' NOT found
+function 'set_field_status' NOT found
+function 'field_status' NOT found
+function 'set_max_field' NOT found
+function 'field_info' NOT found
+function 'dynamic_field_info' NOT found
+function 'set_field_just' NOT found
+function 'field_just' NOT found
+function 'new_field' NOT found
+function 'dup_field' NOT found
+function 'link_field' NOT found
+function 'free_field' NOT found
+function 'set_field_opts' NOT found
+function 'field_opts_on' NOT found
+function 'field_opts_off' NOT found
+function 'field_opts' NOT found
+function 'set_field_userptr' NOT found
+function 'field_userptr' NOT found
+function 'field_arg' NOT found
+function 'form_request_name' NOT found
+function 'form_request_by_name' NOT found
+Negative repeat count does nothing at test.syms line 272, <IN> line 337.
+variable 'LINES' found
+variable 'COLS' found
+variable 'stdscr' found
+variable 'curscr' found
+variable 'COLORS' found
+variable 'COLOR_PAIRS' found
+typedef 'attr_t' found
+typedef 'bool' found
+typedef 'chtype' found
+typedef 'MEVENT' found
+typedef 'mmask_t' found
+typedef 'SCREEN' found
+function 'waddnwstr' found
+function 'wget_wch' found
+function 'wgetn_wstr' found
+function 'winnwstr' found
+function 'wins_nwstr' found
+function 'unget_wch' found
+cc -c  -I/usr/include/ncurses -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.36\" -DXS_VERSION=\"1.36\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Curses.c
+rm -f blib/arch/auto/Curses/Curses.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Curses.o  -o blib/arch/auto/Curses/Curses.so  \
+      \
+
+chmod 755 blib/arch/auto/Curses/Curses.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curses.bs blib/arch/auto/Curses/Curses.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .. 1/1 # Testing Curses 1.36, Perl 5.032000
+t/00-load.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.04 cusr  0.01 csys =  0.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib/pkgconfig m4datadir=/nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/share/aclocal aclocaldir=/nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Curses.bs blib/arch/auto/Curses/Curses.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Curses/Curses.so
+Installing /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Curses.pm
+Installing /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/share/man/man3/Curses.3
+Appending installation info to /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/share/man/man3 to /nix/store/znnjlvf3kdphsrqp27bh80pl84dcl5fj-perl5.32.0-Curses-1.36-devdoc/share/man/man3
+Removing empty /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36
+shrinking /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Curses/Curses.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36/lib
+patching script interpreter paths in /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36
+checking for references to /build/ in /nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/znnjlvf3kdphsrqp27bh80pl84dcl5fj-perl5.32.0-Curses-1.36-devdoc
+gzipping man pages under /nix/store/znnjlvf3kdphsrqp27bh80pl84dcl5fj-perl5.32.0-Curses-1.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/znnjlvf3kdphsrqp27bh80pl84dcl5fj-perl5.32.0-Curses-1.36-devdoc
+checking for references to /build/ in /nix/store/znnjlvf3kdphsrqp27bh80pl84dcl5fj-perl5.32.0-Curses-1.36-devdoc...
+/nix/store/w32d2yjmgy2k1hv9f5q13naxfq4v519c-perl5.32.0-Curses-1.36

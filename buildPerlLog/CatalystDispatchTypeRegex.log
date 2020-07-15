@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/xynz2clacn4z0ryxk21ij12f7149rbar-perl5.32.0-Catalyst-DispatchType-Regex-5.90035.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/mkbyrhyhhqkp512g6h1880w0s8744kdp-Catalyst-DispatchType-Regex-5.90035.tar.gz
+copying path '/nix/store/mkbyrhyhhqkp512g6h1880w0s8744kdp-Catalyst-DispatchType-Regex-5.90035.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xynz2clacn4z0ryxk21ij12f7149rbar-perl5.32.0-Catalyst-DispatchType-Regex-5.90035.drv'...
+unpacking sources
+unpacking source archive /nix/store/mkbyrhyhhqkp512g6h1880w0s8744kdp-Catalyst-DispatchType-Regex-5.90035.tar.gz
+source root is Catalyst-DispatchType-Regex-5.90035
+setting SOURCE_DATE_EPOCH to timestamp 1427810338 of file Catalyst-DispatchType-Regex-5.90035/xt/pod.t
+patching sources
+configuring
+patching ./xt/pod-coverage.t...
+patching ./xt/meta.t...
+patching ./xt/minimumversion.t...
+patching ./xt/manifest.t...
+patching ./xt/hasversion.t...
+patching ./xt/fixme.t...
+patching ./xt/pod.t...
+patching ./t/aggregate/unit_core_uri_for_action.t...
+patching ./t/aggregate/live_component_controller_action_regexp.t...
+patching ./t/aggregate/live_priorities.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Catalyst-DispatchType-Regex' version '5.90035'
+Building Catalyst-DispatchType-Regex
+running tests
+t/01use.t .............................................. 1/1 # Testing Catalyst::DispatchType::Regex 5.90035
+t/01use.t .............................................. ok
+t/aggregate/live_component_controller_action_regexp.t .. DEPRECATION WARNING: The Regex dispatch type is deprecated.
+  It is recommended that you convert Regex and LocalRegex
+  methods to Chained methods. at /build/Catalyst-DispatchType-Regex-5.90035/blib/lib/Catalyst/DispatchType/Regex.pm line 210.
+t/aggregate/live_component_controller_action_regexp.t .. ok
+t/aggregate/live_priorities.t .......................... DEPRECATION WARNING: The Regex dispatch type is deprecated.
+  It is recommended that you convert Regex and LocalRegex
+  methods to Chained methods. at /build/Catalyst-DispatchType-Regex-5.90035/blib/lib/Catalyst/DispatchType/Regex.pm line 210.
+t/aggregate/live_priorities.t .......................... ok
+t/aggregate/unit_core_uri_for_action.t ................. DEPRECATION WARNING: The Regex dispatch type is deprecated.
+  It is recommended that you convert Regex and LocalRegex
+  methods to Chained methods. at /build/Catalyst-DispatchType-Regex-5.90035/blib/lib/Catalyst/DispatchType/Regex.pm line 210.
+t/aggregate/unit_core_uri_for_action.t ................. ok
+All tests successful.
+Files=4, Tests=60,  4 wallclock secs ( 0.06 usr  0.04 sys +  2.90 cusr  1.39 csys =  4.39 CPU)
+Result: PASS
+installing
+Building Catalyst-DispatchType-Regex
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/lib/perl5/site_perl/5.32.0/Catalyst/DispatchType/Regexp.pm
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/lib/perl5/site_perl/5.32.0/Catalyst/DispatchType/LocalRegex.pm
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/lib/perl5/site_perl/5.32.0/Catalyst/DispatchType/LocalRegexp.pm
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/lib/perl5/site_perl/5.32.0/Catalyst/DispatchType/Regex.pm
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/man3/Catalyst::DispatchType::LocalRegex.3
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/man3/Catalyst::DispatchType::Regex.3
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/man3/Catalyst::DispatchType::LocalRegexp.3
+Installing /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/man3/Catalyst::DispatchType::Regexp.3
+post-installation fixup
+Moving /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/man3 to /nix/store/fwkdmaf6k45q6s73rw8xx2zwyirnw20m-perl5.32.0-Catalyst-DispatchType-Regex-5.90035-devdoc/share/man/man3
+Removing empty /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035/lib
+patching script interpreter paths in /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035
+checking for references to /build/ in /nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fwkdmaf6k45q6s73rw8xx2zwyirnw20m-perl5.32.0-Catalyst-DispatchType-Regex-5.90035-devdoc
+gzipping man pages under /nix/store/fwkdmaf6k45q6s73rw8xx2zwyirnw20m-perl5.32.0-Catalyst-DispatchType-Regex-5.90035-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fwkdmaf6k45q6s73rw8xx2zwyirnw20m-perl5.32.0-Catalyst-DispatchType-Regex-5.90035-devdoc
+checking for references to /build/ in /nix/store/fwkdmaf6k45q6s73rw8xx2zwyirnw20m-perl5.32.0-Catalyst-DispatchType-Regex-5.90035-devdoc...
+/nix/store/33w86i714kyjcn8hspdv31hywyc96gv2-perl5.32.0-Catalyst-DispatchType-Regex-5.90035

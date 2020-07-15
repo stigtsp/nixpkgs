@@ -1,0 +1,824 @@
+these derivations will be built:
+  /nix/store/q65ppxc5ivblf3vq5mvadaljx6prvkwv-libunique-1.1.6.drv
+  /nix/store/9731ap696sy9y8ksh2s6raycwrl2vwiw-perl5.32.0-Gtk2-Unique-0.05.drv
+these paths will be fetched (0.33 MiB download, 0.33 MiB unpacked):
+  /nix/store/7bh3z0gaif0v8hgjgrq0ch5x3gby5kb8-Gtk2-Unique-0.05.tar.gz
+  /nix/store/9mvab37nkr21kkrx768vkjvhkvc25ryc-libunique-1.1.6.tar.bz2
+copying path '/nix/store/7bh3z0gaif0v8hgjgrq0ch5x3gby5kb8-Gtk2-Unique-0.05.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9mvab37nkr21kkrx768vkjvhkvc25ryc-libunique-1.1.6.tar.bz2' from 'https://cache.nixos.org'...
+building '/nix/store/q65ppxc5ivblf3vq5mvadaljx6prvkwv-libunique-1.1.6.drv'...
+unpacking sources
+unpacking source archive /nix/store/9mvab37nkr21kkrx768vkjvhkvc25ryc-libunique-1.1.6.tar.bz2
+source root is libunique-1.1.6
+setting SOURCE_DATE_EPOCH to timestamp 1258034516 of file libunique-1.1.6/doc/reference/xml/unique-version.xml
+patching sources
+applying patch /nix/store/px1f9nsjmcahs7a6svf5l144xrvpap7i-1.1.6-compiler-warnings.patch
+patching file unique/dbus/uniquebackend-dbus.c
+applying patch /nix/store/rydxja9sbs7lqxqfq31x3s8vhp87yck5-1.1.6-fix-test.patch
+patching file tests/test-unique.c
+applying patch /nix/store/hy5lr15sv00azwra7nx0ch0c7clqpnr8-1.1.6-G_CONST_RETURN.patch
+patching file unique/uniqueapp.c
+patching file unique/uniquebackend.c
+patching file unique/uniquebackend.h
+patching file unique/uniqueinternals.h
+patching file unique/uniquemessage.c
+patching file unique/uniquemessage.h
+applying patch /nix/store/774r38baikiswy2svm7bmw315k2b36mw-1.1.6-include-terminator.patch
+patching file unique/uniqueinternals.h
+patching file unique/uniquemessage.c
+applying patch /nix/store/9jbf5k8s60xcjv4wh39gkdwk6y32wwl5-gcc7-bug.patch
+patching file unique/uniqueapp.c
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... none
+checking for library containing strerror... none required
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) none
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether make sets $(MAKE)... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... no
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from gcc object... ok
+./configure: line 1: /usr/bin/file: not found
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for glib-mkenums... /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin/glib-mkenums
+checking for glib-genmarshal... /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin/glib-genmarshal
+checking whether build environment is sane... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) none
+checking pkg-config is at least version 0.9.0... yes
+checking for UNIQUE... yes
+checking for X... libraries , headers
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... no
+checking for UNIQUE_X11... yes
+checking for DBUS... yes
+checking for dbus-binding-tool... /nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/bin/dbus-binding-tool
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking for default IPC mechanism... D-Bus
+checking for supported compiler flags...  -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... /nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... /nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin/msgfmt
+checking for xgettext... /nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin/xgettext
+checking for gobject-introspection... no
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating unique.pc
+config.status: creating build/Makefile
+config.status: creating build/autotools/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/reference/Makefile
+config.status: creating doc/reference/version.xml
+config.status: creating unique/Makefile
+config.status: creating unique/uniqueversion.h
+config.status: creating unique/bacon/Makefile
+config.status: creating unique/dbus/Makefile
+config.status: creating tests/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+
+Unique 1.1.6
+
+Configuration:
+            Maintainer flags: yes
+                 Debug level: yes
+         Build documentation: no
+    Build introspection data: auto
+
+Backends:
+          Unix Domain Socket: yes
+                       D-BUS: yes
+
+             Default backend: dbus
+
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+make  all-recursive
+make[1]: Entering directory '/build/libunique-1.1.6'
+Making all in build
+make[2]: Entering directory '/build/libunique-1.1.6/build'
+Making all in autotools
+make[3]: Entering directory '/build/libunique-1.1.6/build/autotools'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libunique-1.1.6/build/autotools'
+make[3]: Entering directory '/build/libunique-1.1.6/build'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libunique-1.1.6/build'
+make[2]: Leaving directory '/build/libunique-1.1.6/build'
+Making all in unique
+make[2]: Entering directory '/build/libunique-1.1.6/unique'
+  GEN    stamp-enum-types
+  GEN    uniqueenumtypes.c
+  GEN    stamp-marshal
+INFO: Reading ./uniquemarshal.list...
+  GEN    uniquemarshal.c
+INFO: Reading ./uniquemarshal.list...
+make  all-recursive
+make[3]: Entering directory '/build/libunique-1.1.6/unique'
+Making all in bacon
+make[4]: Entering directory '/build/libunique-1.1.6/unique/bacon'
+  CC     libunique_bacon_la-uniquebackend-bacon.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -DG_LOG_DOMAIN=\"Unique-Bacon\" -DG_DISABLE_SINGLE_INCLUDES  -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include  -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -g -O2 -g -c -o libunique_bacon_la-uniquebackend-bacon.lo `test -f 'uniquebackend-bacon.c' || echo './'`uniquebackend-bacon.c
+  CC     libunique_bacon_la-uniquefactory-bacon.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -DG_LOG_DOMAIN=\"Unique-Bacon\" -DG_DISABLE_SINGLE_INCLUDES  -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include  -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -g -O2 -g -c -o libunique_bacon_la-uniquefactory-bacon.lo `test -f 'uniquefactory-bacon.c' || echo './'`uniquefactory-bacon.c
+  CC     libunique_bacon_la-uniquemessage-bacon.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -DG_LOG_DOMAIN=\"Unique-Bacon\" -DG_DISABLE_SINGLE_INCLUDES  -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include  -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -g -O2 -g -c -o libunique_bacon_la-uniquemessage-bacon.lo `test -f 'uniquemessage-bacon.c' || echo './'`uniquemessage-bacon.c
+  CCLD   libunique-bacon.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/build/libunique-1.1.6/unique/bacon'
+Making all in dbus
+make[4]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make  all-am
+make[5]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+  CC     libunique_dbus_la-uniquefactory-dbus.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -DG_LOG_DOMAIN=\"Unique-DBus\" -DG_DISABLE_SINGLE_INCLUDES -I../..   -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -DUNIQUE_ENABLE_DEBUG -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -g -O2 -g -c -o libunique_dbus_la-uniquefactory-dbus.lo `test -f 'uniquefactory-dbus.c' || echo './'`uniquefactory-dbus.c
+In file included from uniquefactory-dbus.c:86:
+uniquebackend-glue.h:53:1: warning: 'org_gtk_UniqueApp_send_message_async' defined but not used [-Wunused-function]
+   53 | org_gtk_UniqueApp_send_message_async (DBusGProxy *proxy, const char * IN_command, const GValueArray* IN_message, const guint IN_time, org_gtk_UniqueApp_send_message_reply callback, gpointer userdata)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from uniquefactory-dbus.c:86:
+uniquebackend-glue.h:29:1: warning: 'org_gtk_UniqueApp_send_message' defined but not used [-Wunused-function]
+   29 | org_gtk_UniqueApp_send_message (DBusGProxy *proxy, const char * IN_command, const GValueArray* IN_message, const guint IN_time, char ** OUT_response, GError **error)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC     libunique_dbus_la-uniquebackend-dbus.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -DG_LOG_DOMAIN=\"Unique-DBus\" -DG_DISABLE_SINGLE_INCLUDES -I../..   -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -DUNIQUE_ENABLE_DEBUG -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -g -O2 -g -c -o libunique_dbus_la-uniquebackend-dbus.lo `test -f 'uniquebackend-dbus.c' || echo './'`uniquebackend-dbus.c
+In file included from uniquebackend-dbus.c:42:
+uniquebackend-glue.h:53:1: warning: 'org_gtk_UniqueApp_send_message_async' defined but not used [-Wunused-function]
+   53 | org_gtk_UniqueApp_send_message_async (DBusGProxy *proxy, const char * IN_command, const GValueArray* IN_message, const guint IN_time, org_gtk_UniqueApp_send_message_reply callback, gpointer userdata)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD   libunique-dbus.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[4]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[4]: Entering directory '/build/libunique-1.1.6/unique'
+  CC     uniqueapp.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DG_LOG_DOMAIN=\"Unique\" -DPREFIX=\""/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6"\"  -DUNIQUE_ENABLE_DEBUG   -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -g -O2 -g -c -o uniqueapp.lo `test -f './uniqueapp.c' || echo './'`./uniqueapp.c
+  CC     uniquebackend.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DG_LOG_DOMAIN=\"Unique\" -DPREFIX=\""/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6"\"  -DUNIQUE_ENABLE_DEBUG   -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -g -O2 -g -c -o uniquebackend.lo `test -f './uniquebackend.c' || echo './'`./uniquebackend.c
+  CC     uniquemessage.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DG_LOG_DOMAIN=\"Unique\" -DPREFIX=\""/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6"\"  -DUNIQUE_ENABLE_DEBUG   -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -g -O2 -g -c -o uniquemessage.lo `test -f './uniquemessage.c' || echo './'`./uniquemessage.c
+  CC     uniqueenumtypes.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DG_LOG_DOMAIN=\"Unique\" -DPREFIX=\""/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6"\"  -DUNIQUE_ENABLE_DEBUG   -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -g -O2 -g -c -o uniqueenumtypes.lo uniqueenumtypes.c
+  CC     uniquemarshal.lo
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --silent --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES -DG_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DG_LOG_DOMAIN=\"Unique\" -DPREFIX=\""/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6"\"  -DUNIQUE_ENABLE_DEBUG   -Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/include/dbus-1.0 -I/nix/store/77j8aysbwqjs70zf4mwpmha4dkggm18n-dbus-1.12.18-dev/include/dbus-1.0 -I/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/lib/dbus-1.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include -g -O2 -g -c -o uniquemarshal.lo uniquemarshal.c
+  CCLD   libunique-1.0.la
+make[4]: Leaving directory '/build/libunique-1.1.6/unique'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique'
+make[2]: Leaving directory '/build/libunique-1.1.6/unique'
+Making all in tests
+make[2]: Entering directory '/build/libunique-1.1.6/tests'
+  CC     test-unique.o
+gcc -DHAVE_CONFIG_H -I. -I.. -DG_LOG_DOMAIN=\"Test-Unique\" -I.. -I.. -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0 -I/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/lib/gtk-2.0/include -I/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/include/cairo -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include -I/nix/store/wy6pw2b1if2j0wvx5fp4bwa9fbzmwkky-fontconfig-2.12.6-dev/include -I/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/include -I/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/include/freetype2 -I/nix/store/lj6018v2wkyndmq6m3125yyd3gsrg4yh-pango-1.44.7-dev/include/pango-1.0 -I/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/include/harfbuzz -I/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/include/gdk-pixbuf-2.0 -I/nix/store/356n70dg6bprmqc6f9n4m2px4wimbrg7-atk-2.36.0-dev/include/atk-1.0 -I/nix/store/pqfgbyq933j45wa2g8sc405dismmy49q-xorgproto-2019.1/include -I/nix/store/q5czpnsvghf152ncdnz3kbhj9lbq5xil-libX11-1.6.8-dev/include     -g -O2 -g -c test-unique.c
+  CCLD   test-unique
+make[2]: Leaving directory '/build/libunique-1.1.6/tests'
+Making all in doc
+make[2]: Entering directory '/build/libunique-1.1.6/doc'
+Making all in reference
+make[3]: Entering directory '/build/libunique-1.1.6/doc/reference'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/build/libunique-1.1.6/doc/reference'
+make[3]: Entering directory '/build/libunique-1.1.6/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/build/libunique-1.1.6/doc'
+make[2]: Leaving directory '/build/libunique-1.1.6/doc'
+Making all in po
+make[2]: Entering directory '/build/libunique-1.1.6/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libunique-1.1.6/po'
+make[2]: Entering directory '/build/libunique-1.1.6'
+  GEN    unique-1.0.pc
+make[2]: Leaving directory '/build/libunique-1.1.6'
+make[1]: Leaving directory '/build/libunique-1.1.6'
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y check
+Making check in build
+make[1]: Entering directory '/build/libunique-1.1.6/build'
+Making check in autotools
+make[2]: Entering directory '/build/libunique-1.1.6/build/autotools'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/build/libunique-1.1.6/build/autotools'
+make[2]: Entering directory '/build/libunique-1.1.6/build'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/build/libunique-1.1.6/build'
+make[1]: Leaving directory '/build/libunique-1.1.6/build'
+Making check in unique
+make[1]: Entering directory '/build/libunique-1.1.6/unique'
+make  check-recursive
+make[2]: Entering directory '/build/libunique-1.1.6/unique'
+Making check in bacon
+make[3]: Entering directory '/build/libunique-1.1.6/unique/bacon'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/build/libunique-1.1.6/unique/bacon'
+Making check in dbus
+make[3]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make  check-am
+make[4]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make[4]: Nothing to be done for 'check-am'.
+make[4]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[3]: Entering directory '/build/libunique-1.1.6/unique'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique'
+make[2]: Leaving directory '/build/libunique-1.1.6/unique'
+make[1]: Leaving directory '/build/libunique-1.1.6/unique'
+Making check in tests
+make[1]: Entering directory '/build/libunique-1.1.6/tests'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/libunique-1.1.6/tests'
+Making check in doc
+make[1]: Entering directory '/build/libunique-1.1.6/doc'
+Making check in reference
+make[2]: Entering directory '/build/libunique-1.1.6/doc/reference'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/build/libunique-1.1.6/doc/reference'
+make[2]: Entering directory '/build/libunique-1.1.6/doc'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/build/libunique-1.1.6/doc'
+make[1]: Leaving directory '/build/libunique-1.1.6/doc'
+Making check in po
+make[1]: Entering directory '/build/libunique-1.1.6/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/build/libunique-1.1.6/po'
+make[1]: Entering directory '/build/libunique-1.1.6'
+make[1]: Leaving directory '/build/libunique-1.1.6'
+glibPreInstallPhase
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gsettings-schemas/libunique-1.1.6/glib-2.0/schemas/ gsettingsschemadir=/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gsettings-schemas/libunique-1.1.6/glib-2.0/schemas/ install
+Making install in build
+make[1]: Entering directory '/build/libunique-1.1.6/build'
+Making install in autotools
+make[2]: Entering directory '/build/libunique-1.1.6/build/autotools'
+make[3]: Entering directory '/build/libunique-1.1.6/build/autotools'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/libunique-1.1.6/build/autotools'
+make[2]: Leaving directory '/build/libunique-1.1.6/build/autotools'
+make[2]: Entering directory '/build/libunique-1.1.6/build'
+make[3]: Entering directory '/build/libunique-1.1.6/build'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/libunique-1.1.6/build'
+make[2]: Leaving directory '/build/libunique-1.1.6/build'
+make[1]: Leaving directory '/build/libunique-1.1.6/build'
+Making install in unique
+make[1]: Entering directory '/build/libunique-1.1.6/unique'
+make  install-recursive
+make[2]: Entering directory '/build/libunique-1.1.6/unique'
+Making install in bacon
+make[3]: Entering directory '/build/libunique-1.1.6/unique/bacon'
+make[4]: Entering directory '/build/libunique-1.1.6/unique/bacon'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/build/libunique-1.1.6/unique/bacon'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique/bacon'
+Making install in dbus
+make[3]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make  install-am
+make[4]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make[5]: Entering directory '/build/libunique-1.1.6/unique/dbus'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[4]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique/dbus'
+make[3]: Entering directory '/build/libunique-1.1.6/unique'
+make[4]: Entering directory '/build/libunique-1.1.6/unique'
+test -z "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib" || /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib"
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libunique-1.0.la '/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libunique-1.0.so.0.100.6 /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/libunique-1.0.so.0.100.6
+libtool: install: (cd /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib && { ln -s -f libunique-1.0.so.0.100.6 libunique-1.0.so.0 || { rm -f libunique-1.0.so.0 && ln -s libunique-1.0.so.0.100.6 libunique-1.0.so.0; }; })
+libtool: install: (cd /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib && { ln -s -f libunique-1.0.so.0.100.6 libunique-1.0.so || { rm -f libunique-1.0.so && ln -s libunique-1.0.so.0.100.6 libunique-1.0.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libunique-1.0.lai /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/libunique-1.0.la
+libtool: finish: PATH="/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin:/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/fpwd0za03mrpfd3sj6by0kw90gpf3qys-gettext-0.20.1/bin:/nix/store/0z2lwpmf43p0pv8zj9lwarz22w6b1r7r-glib-2.64.3-bin/bin:/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/bin:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/bin:/nix/store/a7qdvqnjhmyxhwfrrq0mb4c15wwlzzzs-cairo-1.16.0-dev/bin:/nix/store/wagq52jzxbf4rjv9xb12yxfmr5bx25gg-freetype-2.10.2-dev/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/1q0zxqvbksi9aajlnjzzql680f0w4lr5-libpng-apng-1.6.37-dev/bin:/nix/store/prp0adslss57hdxzvqndvhwyv5g66ylx-fontconfig-2.12.6-bin/bin:/nix/store/b9dwwbx8w94fmbdnxki8myiw0m4rd3fc-expat-2.2.8-dev/bin:/nix/store/4g2wpz1ndmgpih5l044mb582qwp1lfra-harfbuzz-2.6.7-dev/bin:/nix/store/whz544lji486qzgcjqhbyl8n4m2zvh05-graphite2-1.3.14/bin:/nix/store/gx7nrkrcfc1si5ndz65r18c6v1ihiqjv-pango-1.44.7-bin/bin:/nix/store/3r97jhmglkwnxyl22wdq57x2y4j411rd-gdk-pixbuf-2.40.0-dev/bin:/nix/store/2gjly6kpwki9v4b5nwmzyaf0fi9hi0a2-libjpeg-turbo-2.0.4-bin/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/nix/store/rnj747nynql39fyqvsv5xxs98qmagnnq-libtiff-4.1.0-bin/bin:/nix/store/rb83xfv6ryqbs2a2f64lp2fkghpq29v0-gdk-pixbuf-2.40.0/bin:/nix/store/fagc13qn55lh2i8chml4pvwy2jqpldkg-cups-2.3.3-dev/bin:/nix/store/nph1kmd0j7imh11jd86ir67r5280wx7i-cups-2.3.3/bin:/nix/store/zbb25i9ms4827wvrkpq3w6yy9f5p8saf-gtk+-2.24.32/bin:/nix/store/s3r1h8wc125k5n4yp9iad20j0qqxkqzl-dbus-glib-0.110-dev/bin:/nix/store/090kzx01169w89239l0dg5nf0bimidf3-dbus-1.12.18-lib/bin:/nix/store/nsdg5qsxqsclhji7kcl8ncwrxsddx5ff-dbus-1.12.18/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "" || /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ""
+test -z "" || /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p ""
+test -z "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique" || /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique"
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ../unique/uniqueapp.h ../unique/uniquebackend.h ../unique/uniquemessage.h ../unique/uniqueenumtypes.h ../unique/uniqueversion.h ../unique/unique.h '/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique'
+make[4]: Leaving directory '/build/libunique-1.1.6/unique'
+make[3]: Leaving directory '/build/libunique-1.1.6/unique'
+make[2]: Leaving directory '/build/libunique-1.1.6/unique'
+make[1]: Leaving directory '/build/libunique-1.1.6/unique'
+Making install in tests
+make[1]: Entering directory '/build/libunique-1.1.6/tests'
+make[2]: Entering directory '/build/libunique-1.1.6/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libunique-1.1.6/tests'
+make[1]: Leaving directory '/build/libunique-1.1.6/tests'
+Making install in doc
+make[1]: Entering directory '/build/libunique-1.1.6/doc'
+Making install in reference
+make[2]: Entering directory '/build/libunique-1.1.6/doc/reference'
+make[3]: Entering directory '/build/libunique-1.1.6/doc/reference'
+make[3]: Nothing to be done for 'install-exec-am'.
+installfiles=`echo ./html/*`; \
+if test "$installfiles" = './html/*'; \
+then echo '-- Nothing to install' ; \
+else \
+  if test -n ""; then \
+    installdir="/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gtk-doc/html/unique-"; \
+  else \
+    installdir="/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gtk-doc/html/unique"; \
+  fi; \
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../../mkinstalldirs ${installdir} ; \
+  for i in $installfiles; do \
+    echo '-- Installing '$i ; \
+    /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 $i ${installdir}; \
+  done; \
+  if test -n ""; then \
+    mv -f ${installdir}/unique.devhelp2 \
+      ${installdir}/unique-.devhelp2; \
+    mv -f ${installdir}/unique.devhelp \
+      ${installdir}/unique-.devhelp; \
+  fi; \
+  ! which gtkdoc-rebase >/dev/null 2>&1 || \
+    gtkdoc-rebase --relative --dest-dir= --html-dir=${installdir} ; \
+fi
+mkdir -p -- /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gtk-doc/html/unique
+-- Installing ./html/UniqueApp.html
+-- Installing ./html/UniqueBackend.html
+-- Installing ./html/home.png
+-- Installing ./html/index.html
+-- Installing ./html/index.sgml
+-- Installing ./html/ix01.html
+-- Installing ./html/left.png
+-- Installing ./html/license.html
+-- Installing ./html/right.png
+-- Installing ./html/style.css
+-- Installing ./html/unique-Message-Data.html
+-- Installing ./html/unique-Versioning-Information.html
+-- Installing ./html/unique-overview.html
+-- Installing ./html/unique.devhelp
+-- Installing ./html/unique.devhelp2
+-- Installing ./html/up.png
+make[3]: Leaving directory '/build/libunique-1.1.6/doc/reference'
+make[2]: Leaving directory '/build/libunique-1.1.6/doc/reference'
+make[2]: Entering directory '/build/libunique-1.1.6/doc'
+make[3]: Entering directory '/build/libunique-1.1.6/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/build/libunique-1.1.6/doc'
+make[2]: Leaving directory '/build/libunique-1.1.6/doc'
+make[1]: Leaving directory '/build/libunique-1.1.6/doc'
+Making install in po
+make[1]: Entering directory '/build/libunique-1.1.6/po'
+if test -r ".././mkinstalldirs"; then \
+  .././mkinstalldirs /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share; \
+else \
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../mkinstalldirs /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share; \
+fi
+if test "libunique" = "glib"; then \
+  if test -r ".././mkinstalldirs"; then \
+    .././mkinstalldirs /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/glib-2.0/gettext/po; \
+  else \
+    /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../mkinstalldirs /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/glib-2.0/gettext/po; \
+  fi; \
+  /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ./Makefile.in.in \
+                  /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/glib-2.0/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/build/libunique-1.1.6/po'
+make[1]: Entering directory '/build/libunique-1.1.6'
+make[2]: Entering directory '/build/libunique-1.1.6'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/pkgconfig" || /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p "/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/pkgconfig"
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 unique-1.0.pc '/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/pkgconfig'
+make[2]: Leaving directory '/build/libunique-1.1.6'
+make[1]: Leaving directory '/build/libunique-1.1.6'
+glibPreFixupPhase
+dropIconThemeCache
+glibPreFixupPhase
+post-installation fixup
+Removing /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/gtk-doc
+Removing empty /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/share/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6
+shrinking /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib/libunique-1.0.so.0.100.6
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/lib
+patching script interpreter paths in /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6
+checking for references to /build/ in /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6...
+building '/nix/store/9731ap696sy9y8ksh2s6raycwrl2vwiw-perl5.32.0-Gtk2-Unique-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/7bh3z0gaif0v8hgjgrq0ch5x3gby5kb8-Gtk2-Unique-0.05.tar.gz
+source root is Gtk2-Unique-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1273081863 of file Gtk2-Unique-0.05/META.yml
+patching sources
+configuring
+patching ./examples/sample.pl...
+patching ./t/unit-tests.pl...
+patching ./t/UniqueBackend.t...
+patching ./t/UniqueApp.t...
+patching ./t/Unique.t...
+Including generated API documentation...
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: '-pthread'
+Invalid LICENSE value 'perl, lgpl' ignored
+Generating a Unix-style Makefile
+Writing Makefile for Gtk2::Unique
+Invalid LICENSE value 'perl, lgpl' ignored
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Gtk2/Unique.pm blib/lib/Gtk2/Unique.pm
+cp build/unique-autogen.h blib/arch/Gtk2/Unique/Install/unique-autogen.h
+cp unique-perl.h blib/arch/Gtk2/Unique/Install/unique-perl.h
+cp /build/Gtk2-Unique-0.05/build/unique.typemap blib/arch/Gtk2/Unique/Install/unique.typemap
+cp build/IFiles.pm blib/arch/Gtk2/Unique/Install/Files.pm
+Running Mkbootstrap for Unique ()
+chmod 644 "Unique.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Unique.bs blib/arch/auto/Gtk2/Unique/Unique.bs 644
+[ XS xs/Unique.xs ]
+mv xs/Unique.xsc xs/Unique.c
+[ CC xs/Unique.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:33,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/Unique.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/Unique.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:126,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/Unique.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: 'GTimeVal' is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/galloca.h:32,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib.h:30,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/Unique.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
+  547 | struct _GTimeVal
+      |        ^~~~~~~~~
+[ XS xs/UniqueApp.xs ]
+mv xs/UniqueApp.xsc xs/UniqueApp.c
+[ CC xs/UniqueApp.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:33,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueApp.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueApp.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:126,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueApp.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: 'GTimeVal' is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/galloca.h:32,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib.h:30,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueApp.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
+  547 | struct _GTimeVal
+      |        ^~~~~~~~~
+xs/UniqueApp.xs: In function 'perl_unique_app_marshall_message_received':
+xs/UniqueApp.xs:32:33: warning: implicit declaration of function 'unique_command_to_string'; did you mean 'unique_command_get_type'? [-Wimplicit-function-declaration]
+   32 |  command_name = (const gchar *) unique_command_to_string (app, command);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 unique_command_get_type
+xs/UniqueApp.xs:32:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   32 |  command_name = (const gchar *) unique_command_to_string (app, command);
+      |                 ^
+xs/UniqueApp.xs: In function 'XS_Gtk2__UniqueApp_send_message_by_name':
+xs/UniqueApp.xs:321:19: warning: implicit declaration of function 'unique_command_from_string'; did you mean 'unique_command_get_type'? [-Wimplicit-function-declaration]
+  321 |      command_id = unique_command_from_string(app, command_name);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   unique_command_get_type
+[ XS xs/UniqueBackend.xs ]
+mv xs/UniqueBackend.xsc xs/UniqueBackend.c
+[ CC xs/UniqueBackend.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:33,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueBackend.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueBackend.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:126,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueBackend.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: 'GTimeVal' is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/galloca.h:32,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib.h:30,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueBackend.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
+  547 | struct _GTimeVal
+      |        ^~~~~~~~~
+[ XS xs/UniqueMessageData.xs ]
+mv xs/UniqueMessageData.xsc xs/UniqueMessageData.c
+[ CC xs/UniqueMessageData.c ]
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkobject.h:37,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwidget.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkcontainer.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkbin.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkwindow.h:36,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkdialog.h:35,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkaboutdialog.h:32,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:33,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueMessageData.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktypeutils.h:236:1: warning: 'GTypeDebugFlags' is deprecated [-Wdeprecated-declarations]
+  236 | void            gtk_type_init   (GTypeDebugFlags    debug_flags);
+      | ^~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gobject.h:24,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:29,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueMessageData.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gtype.h:679:1: note: declared here
+  679 | {
+      | ^
+In file included from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolitem.h:31,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtkmenutoolbutton.h:30,
+                 from /nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtk.h:126,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:29,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueMessageData.xs:1:
+/nix/store/w7fi1fvji7lw0ck1h4zh25xf9ap4ald0-gtk+-2.24.32-dev/include/gtk-2.0/gtk/gtktooltips.h:73:3: warning: 'GTimeVal' is deprecated: Use 'GDateTime' instead [-Wdeprecated-declarations]
+   73 |   GTimeVal last_popdown;
+      |   ^~~~~~~~
+In file included from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/galloca.h:32,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib.h:30,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib-object.h:22,
+                 from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h:37,
+                 from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/gtk2perl.h:27,
+                 from ./unique-perl.h:3,
+                 from xs/UniqueMessageData.xs:1:
+/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0/glib/gtypes.h:547:8: note: declared here
+  547 | struct _GTimeVal
+      |        ^~~~~~~~~
+xs/UniqueMessageData.xs: In function 'XS_Gtk2__UniqueMessageData_get':
+xs/UniqueMessageData.xs:44:50: warning: passing argument 2 of 'unique_message_data_get' from incompatible pointer type [-Wincompatible-pointer-types]
+   44 |   string = unique_message_data_get(message_data, &length);
+      |                                                  ^~~~~~~
+      |                                                  |
+      |                                                  gint * {aka int *}
+In file included from /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique/uniqueapp.h:26,
+                 from /nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique/unique.h:24,
+                 from ./unique-perl.h:5,
+                 from xs/UniqueMessageData.xs:1:
+/nix/store/mhln0l26qbb06v32c6srdcvxv9zlmwz6-libunique-1.1.6/include/unique-1.0/unique/uniquemessage.h:51:24: note: expected 'gsize *' {aka 'long unsigned int *'} but argument is of type 'gint *' {aka 'int *'}
+   51 | const guchar *         unique_message_data_get            (UniqueMessageData *message_data,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+rm -f blib/arch/auto/Gtk2/Unique/Unique.so
+[ LD blib/arch/auto/Gtk2/Unique/Unique.so ]
+chmod 755 blib/arch/auto/Gtk2/Unique/Unique.so
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command -e mkpath blib/lib/Gtk2/Unique/
+Parsing XS files...
+Generating POD...
+Loaded 7 extra types from /nix/store/rjbw2q740x8wvwcg501vzvyjnfyjcfxv-perl5.32.0-Cairo-1.107/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/Install/doctypes
+Loaded 2 extra types from /nix/store/4g4yflp9fl3qm5j192mkxlwrzak6gh3s-perl5.32.0-Pango-1.227/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Pango/Install/doctypes
+Loaded 8 extra types from /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/doctypes
+Loaded 9 extra types from /nix/store/xf1yc9xb65sbbx8ah8czayn6n39i39pl-perl5.32.0-Gtk2-1.24993/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Install/doctypes
+Creating POD index...
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Unique.bs blib/arch/auto/Gtk2/Unique/Unique.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Unique.t ......... skipped: Gtk2->init_check failed, probably unable to open DISPLAY
+t/UniqueApp.t ...... skipped: Gtk2->init_check failed, probably unable to open DISPLAY
+t/UniqueBackend.t .. skipped: Gtk2->init_check failed, probably unable to open DISPLAY
+Files=3, Tests=0,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.24 cusr  0.11 csys =  0.38 CPU)
+Result: NOTESTS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/gsettings-schemas/perl5.32.0-Gtk2-Unique-0.05/glib-2.0/schemas/ pkgconfigdir=/nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/pkgconfig m4datadir=/nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/aclocal aclocaldir=/nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Unique.bs blib/arch/auto/Gtk2/Unique/Unique.bs 644
+Manifying 5 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique/Install/unique.typemap
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique/Install/unique-perl.h
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique/Install/unique-autogen.h
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique/Install/Files.pm
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Gtk2/Unique/Unique.so
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/UniqueBackend.pod
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/UniqueApp.pod
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique.pm
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/UniqueMessageData.pod
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique.pod
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Gtk2/Unique/index.pod
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3/Gtk2::UniqueMessageData.3
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3/Gtk2::Unique.3
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3/Gtk2::UniqueBackend.3
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3/Gtk2::UniqueApp.3
+Installing /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3/Gtk2::Unique::index.3
+Appending installation info to /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+dropIconThemeCache
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/man3 to /nix/store/zrfbzlq109159ivw6xcnpak342g2amhg-perl5.32.0-Gtk2-Unique-0.05-devdoc/share/man/man3
+Removing empty /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05
+shrinking /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Gtk2/Unique/Unique.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05/lib
+patching script interpreter paths in /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05
+checking for references to /build/ in /nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zrfbzlq109159ivw6xcnpak342g2amhg-perl5.32.0-Gtk2-Unique-0.05-devdoc
+gzipping man pages under /nix/store/zrfbzlq109159ivw6xcnpak342g2amhg-perl5.32.0-Gtk2-Unique-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zrfbzlq109159ivw6xcnpak342g2amhg-perl5.32.0-Gtk2-Unique-0.05-devdoc
+checking for references to /build/ in /nix/store/zrfbzlq109159ivw6xcnpak342g2amhg-perl5.32.0-Gtk2-Unique-0.05-devdoc...
+/nix/store/l78qymfjmvx6rbj0iw4n5ji1npy66a24-perl5.32.0-Gtk2-Unique-0.05

@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/ynya4i4m4qdwxy4gl34zb3df55xmk40b-perl5.32.0-SCGI-0.6.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/av33iy4whjygrv6xb4xixfyqrh45k3hg-SCGI-0.6.tar.gz
+copying path '/nix/store/av33iy4whjygrv6xb4xixfyqrh45k3hg-SCGI-0.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ynya4i4m4qdwxy4gl34zb3df55xmk40b-perl5.32.0-SCGI-0.6.drv'...
+unpacking sources
+unpacking source archive /nix/store/av33iy4whjygrv6xb4xixfyqrh45k3hg-SCGI-0.6.tar.gz
+source root is SCGI-0.6
+setting SOURCE_DATE_EPOCH to timestamp 1144068159 of file SCGI-0.6/t/pod.t
+patching sources
+configuring
+patching ./examples/blocking.pl...
+patching ./examples/non_blocking.pl...
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+patching ./t/non-blocking.t...
+patching ./t/blocking.t...
+# running Build.PL --prefix /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'SCGI' version '0.6'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'SCGI' version '0.6'
+Building SCGI
+running tests
+t/blocking.t ...... ok
+t/non-blocking.t .. ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=4, Tests=20,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.58 cusr  0.11 csys =  0.71 CPU)
+Result: PASS
+installing
+Building SCGI
+Installing /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/lib/perl5/site_perl/5.32.0/SCGI.pm
+Installing /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/lib/perl5/site_perl/5.32.0/SCGI/Request.pm
+Installing /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/share/man/man3/SCGI.3
+Installing /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/share/man/man3/SCGI::Request.3
+post-installation fixup
+Moving /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/share/man/man3 to /nix/store/zk4axpzh4dsj5r35fgbbmsmy4zcx9am6-perl5.32.0-SCGI-0.6-devdoc/share/man/man3
+Removing empty /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6/lib
+patching script interpreter paths in /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6
+checking for references to /build/ in /nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zk4axpzh4dsj5r35fgbbmsmy4zcx9am6-perl5.32.0-SCGI-0.6-devdoc
+gzipping man pages under /nix/store/zk4axpzh4dsj5r35fgbbmsmy4zcx9am6-perl5.32.0-SCGI-0.6-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zk4axpzh4dsj5r35fgbbmsmy4zcx9am6-perl5.32.0-SCGI-0.6-devdoc
+checking for references to /build/ in /nix/store/zk4axpzh4dsj5r35fgbbmsmy4zcx9am6-perl5.32.0-SCGI-0.6-devdoc...
+/nix/store/kwbjxhfzwd4qp117xc1z52gqasfjnmzj-perl5.32.0-SCGI-0.6

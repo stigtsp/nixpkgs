@@ -1,0 +1,62 @@
+these derivations will be built:
+  /nix/store/np2n5ydbc7059pp7kn0x8v95j7vbki7b-perl5.32.0-Net-Statsd-0.12.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/yzl5k2ywz1xdjnxsqd3xz3vzfaqjq0bh-Net-Statsd-0.12.tar.gz
+copying path '/nix/store/yzl5k2ywz1xdjnxsqd3xz3vzfaqjq0bh-Net-Statsd-0.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/np2n5ydbc7059pp7kn0x8v95j7vbki7b-perl5.32.0-Net-Statsd-0.12.drv'...
+unpacking sources
+unpacking source archive /nix/store/yzl5k2ywz1xdjnxsqd3xz3vzfaqjq0bh-Net-Statsd-0.12.tar.gz
+source root is Net-Statsd-0.12
+setting SOURCE_DATE_EPOCH to timestamp 1452847871 of file Net-Statsd-0.12/t/rt-74172.t
+patching sources
+configuring
+patching ./t/rt-74172.t...
+patching ./t/mock-server.t...
+patching ./bin/benchmark.pl...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Net::Statsd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/Statsd.pm blib/lib/Net/Statsd.pm
+cp bin/benchmark.pl blib/script/benchmark.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/benchmark.pl
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000-load.t ..... ok
+t/mock-server.t .. ok
+t/rt-74172.t ..... ok
+All tests successful.
+Files=3, Tests=24,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.34 cusr  0.04 csys =  0.40 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/lib/pkgconfig m4datadir=/nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/aclocal aclocaldir=/nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/lib/perl5/site_perl/5.32.0/Net/Statsd.pm
+Installing /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/man/man1/benchmark.pl.1
+Installing /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/man/man3/Net::Statsd.3
+Installing /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/bin/benchmark.pl
+Appending installation info to /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/man/man3 to /nix/store/dipv9jdkk4qllfg19q4l439ld57i5jia-perl5.32.0-Net-Statsd-0.12-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12
+gzipping man pages under /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/lib  /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12/bin
+patching script interpreter paths in /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12
+checking for references to /build/ in /nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dipv9jdkk4qllfg19q4l439ld57i5jia-perl5.32.0-Net-Statsd-0.12-devdoc
+gzipping man pages under /nix/store/dipv9jdkk4qllfg19q4l439ld57i5jia-perl5.32.0-Net-Statsd-0.12-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dipv9jdkk4qllfg19q4l439ld57i5jia-perl5.32.0-Net-Statsd-0.12-devdoc
+checking for references to /build/ in /nix/store/dipv9jdkk4qllfg19q4l439ld57i5jia-perl5.32.0-Net-Statsd-0.12-devdoc...
+/nix/store/8ny27risd2gha9k63zl4i977jx3rk3an-perl5.32.0-Net-Statsd-0.12

@@ -1,0 +1,63 @@
+these derivations will be built:
+  /nix/store/fsqkmp23zmzw2mrp54pga09r7jn0dgx5-perl5.32.0-Test-Manifest-2.021.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/44ypw9px8z0i7rm05gjh6h4mhiknscph-Test-Manifest-2.021.tar.gz
+copying path '/nix/store/44ypw9px8z0i7rm05gjh6h4mhiknscph-Test-Manifest-2.021.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fsqkmp23zmzw2mrp54pga09r7jn0dgx5-perl5.32.0-Test-Manifest-2.021.drv'...
+unpacking sources
+unpacking source archive /nix/store/44ypw9px8z0i7rm05gjh6h4mhiknscph-Test-Manifest-2.021.tar.gz
+source root is Test-Manifest-2.021
+setting SOURCE_DATE_EPOCH to timestamp 1525747689 of file Test-Manifest-2.021/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Test::Manifest
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Manifest.pm blib/lib/Test/Manifest.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00load.t ................ ok
+t/01get_test_files.t ...... 1/? # Test level is 0
+# Test level is 1
+# Test level is 2
+# Test level is 3
+t/01get_test_files.t ...... ok
+t/01make_test_manifest.t .. # manifest name is t/test_manifest
+t/01make_test_manifest.t .. 1/?     # count of test files is 8
+t/01make_test_manifest.t .. ok
+t/99pod.t ................. skipped: Test::Pod 1.00 required for testing POD
+t/include.t ............... ok
+t/leading_space.t ......... ok
+t/pod_coverage.t .......... skipped: Test::Pod::Coverage required for testing POD
+t/trailing_space.t ........ ok
+All tests successful.
+Files=8, Tests=14,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.40 cusr  0.07 csys =  0.50 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/lib/pkgconfig m4datadir=/nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/share/aclocal aclocaldir=/nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/lib/perl5/site_perl/5.32.0/Test/Manifest.pm
+Installing /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/share/man/man3/Test::Manifest.3
+Appending installation info to /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/share/man/man3 to /nix/store/2xbyjkwxv4v6i0z7n8nd0vrxkj62vjc3-perl5.32.0-Test-Manifest-2.021-devdoc/share/man/man3
+Removing empty /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021/lib
+patching script interpreter paths in /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021
+checking for references to /build/ in /nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2xbyjkwxv4v6i0z7n8nd0vrxkj62vjc3-perl5.32.0-Test-Manifest-2.021-devdoc
+gzipping man pages under /nix/store/2xbyjkwxv4v6i0z7n8nd0vrxkj62vjc3-perl5.32.0-Test-Manifest-2.021-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2xbyjkwxv4v6i0z7n8nd0vrxkj62vjc3-perl5.32.0-Test-Manifest-2.021-devdoc
+checking for references to /build/ in /nix/store/2xbyjkwxv4v6i0z7n8nd0vrxkj62vjc3-perl5.32.0-Test-Manifest-2.021-devdoc...
+/nix/store/2vhkq18k7np3yaxh74m9wfrng7m7djnl-perl5.32.0-Test-Manifest-2.021

@@ -1,0 +1,54 @@
+these derivations will be built:
+  /nix/store/f7a7n3bj04isl4i0ygg54n05pyy7ybqn-perl5.32.0-Devel-FindPerl-0.015.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/hv2x9gp4lksrrxlgk2ba5kn7vdy5yxgk-Devel-FindPerl-0.015.tar.gz
+copying path '/nix/store/hv2x9gp4lksrrxlgk2ba5kn7vdy5yxgk-Devel-FindPerl-0.015.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f7a7n3bj04isl4i0ygg54n05pyy7ybqn-perl5.32.0-Devel-FindPerl-0.015.drv'...
+unpacking sources
+unpacking source archive /nix/store/hv2x9gp4lksrrxlgk2ba5kn7vdy5yxgk-Devel-FindPerl-0.015.tar.gz
+source root is Devel-FindPerl-0.015
+setting SOURCE_DATE_EPOCH to timestamp 1539601228 of file Devel-FindPerl-0.015/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/11-tainted.t...
+patching ./t/10-basics.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Devel::FindPerl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Devel/FindPerl.pm blib/lib/Devel/FindPerl.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10-basics.t ... ok
+t/11-tainted.t .. ok
+All tests successful.
+Files=2, Tests=2,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.14 cusr  0.02 csys =  0.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/lib/pkgconfig m4datadir=/nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/share/aclocal aclocaldir=/nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/lib/perl5/site_perl/5.32.0/Devel/FindPerl.pm
+Installing /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/share/man/man3/Devel::FindPerl.3
+Appending installation info to /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/share/man/man3 to /nix/store/n4wnd2mmn18pplskc9jxymb9vjmya8c8-perl5.32.0-Devel-FindPerl-0.015-devdoc/share/man/man3
+Removing empty /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015/lib
+patching script interpreter paths in /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015
+checking for references to /build/ in /nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n4wnd2mmn18pplskc9jxymb9vjmya8c8-perl5.32.0-Devel-FindPerl-0.015-devdoc
+gzipping man pages under /nix/store/n4wnd2mmn18pplskc9jxymb9vjmya8c8-perl5.32.0-Devel-FindPerl-0.015-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n4wnd2mmn18pplskc9jxymb9vjmya8c8-perl5.32.0-Devel-FindPerl-0.015-devdoc
+checking for references to /build/ in /nix/store/n4wnd2mmn18pplskc9jxymb9vjmya8c8-perl5.32.0-Devel-FindPerl-0.015-devdoc...
+/nix/store/radwbzm84n05rr90jf2ccn72idzfkqr7-perl5.32.0-Devel-FindPerl-0.015

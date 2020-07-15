@@ -1,0 +1,269 @@
+these derivations will be built:
+  /nix/store/8kd4lcd404q1k0djl2n1dy958ycjg68h-perl5.32.0-PBKDF2-Tiny-0.005.drv
+  /nix/store/g685ps1zrl8nvkxd0l2c62vlaw4vkhqn-perl5.32.0-Crypt-URandom-0.36.drv
+  /nix/store/p286clm4dhc0p7qrmk8dxbzaz3czzraw-perl5.32.0-Authen-SCRAM-0.011.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/93h7m00ganfhajmr94zlw4nl4pyba40m-Crypt-URandom-0.36.tar.gz
+  /nix/store/qr7p8vhgg6dimkj9dy6bkckkjzksg0df-PBKDF2-Tiny-0.005.tar.gz
+  /nix/store/sjzxaav0igcccyk3k7a8k3b6xy5ysvvf-Authen-SCRAM-0.011.tar.gz
+copying path '/nix/store/sjzxaav0igcccyk3k7a8k3b6xy5ysvvf-Authen-SCRAM-0.011.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/93h7m00ganfhajmr94zlw4nl4pyba40m-Crypt-URandom-0.36.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qr7p8vhgg6dimkj9dy6bkckkjzksg0df-PBKDF2-Tiny-0.005.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g685ps1zrl8nvkxd0l2c62vlaw4vkhqn-perl5.32.0-Crypt-URandom-0.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/93h7m00ganfhajmr94zlw4nl4pyba40m-Crypt-URandom-0.36.tar.gz
+source root is Crypt-URandom-0.36
+setting SOURCE_DATE_EPOCH to timestamp 1433159029 of file Crypt-URandom-0.36/META.yml
+patching sources
+configuring
+patching ./t/pod.t...
+building '/nix/store/8kd4lcd404q1k0djl2n1dy958ycjg68h-perl5.32.0-PBKDF2-Tiny-0.005.drv'...
+Checking if your kit is complete...
+unpacking sources
+unpacking source archive /nix/store/qr7p8vhgg6dimkj9dy6bkckkjzksg0df-PBKDF2-Tiny-0.005.tar.gz
+Looks good
+source root is PBKDF2-Tiny-0.005
+setting SOURCE_DATE_EPOCH to timestamp 1416480679 of file PBKDF2-Tiny-0.005/xt/release/test-version.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::URandom
+patching ./t/00-report-prereqs.t...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PBKDF2::Tiny
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/URandom.pm blib/lib/Crypt/URandom.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp lib/PBKDF2/Tiny.pm blib/lib/PBKDF2/Tiny.pm
+t/00.load.t .. 1/1 # Testing Crypt::URandom 0.36
+t/00.load.t .. ok
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/export.t ... ok
+t/pod.t ...... skipped: Test::Pod 1.14 required for testing POD
+t/rand.t ..... ok
+All tests successful.
+Files=4, Tests=6,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.21 cusr  0.03 csys =  0.27 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/lib/pkgconfig m4datadir=/nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/share/aclocal aclocaldir=/nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/share/aclocal install
+Manifying 1 pod document
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Config               any 5.032000
+#     ExtUtils::MakeMaker 6.17     7.44
+#     File::Spec           any     3.78
+#     Text::ParseWords     any     3.30
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Encode               any     3.06
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.88 1.302175
+#     utf8                 any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module   Want Have
+#     -------- ---- ----
+#     Carp      any 1.50
+#     Exporter 5.57 5.74
+#     strict    any 1.11
+#     warnings  any 1.47
+#
+t/00-report-prereqs.t .. ok
+Installing /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/lib/perl5/site_perl/5.32.0/Crypt/URandom.pm
+Installing /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/share/man/man3/Crypt::URandom.3
+Appending installation info to /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/share/man/man3 to /nix/store/4g2rrhb6gcb6agmg4liysm2j9ngsfpc6-perl5.32.0-Crypt-URandom-0.36-devdoc/share/man/man3
+Removing empty /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36/lib
+patching script interpreter paths in /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36
+checking for references to /build/ in /nix/store/0vk928flfyrhfrhgzhkcn7g79ywi8ihf-perl5.32.0-Crypt-URandom-0.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4g2rrhb6gcb6agmg4liysm2j9ngsfpc6-perl5.32.0-Crypt-URandom-0.36-devdoc
+gzipping man pages under /nix/store/4g2rrhb6gcb6agmg4liysm2j9ngsfpc6-perl5.32.0-Crypt-URandom-0.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4g2rrhb6gcb6agmg4liysm2j9ngsfpc6-perl5.32.0-Crypt-URandom-0.36-devdoc
+checking for references to /build/ in /nix/store/4g2rrhb6gcb6agmg4liysm2j9ngsfpc6-perl5.32.0-Crypt-URandom-0.36-devdoc...
+t/pbkdf2.t ............. ok
+All tests successful.
+Files=2, Tests=4,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.64 cusr  0.03 csys =  0.70 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/lib/pkgconfig m4datadir=/nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/share/aclocal aclocaldir=/nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/lib/perl5/site_perl/5.32.0/PBKDF2/Tiny.pm
+Installing /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/share/man/man3/PBKDF2::Tiny.3
+Appending installation info to /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/share/man/man3 to /nix/store/qsd98skfjailv3ry3x8a0minp0li8z05-perl5.32.0-PBKDF2-Tiny-0.005-devdoc/share/man/man3
+Removing empty /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005/lib
+patching script interpreter paths in /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005
+checking for references to /build/ in /nix/store/vsawqzhrk3d4jpm07gra257kpjqf815a-perl5.32.0-PBKDF2-Tiny-0.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qsd98skfjailv3ry3x8a0minp0li8z05-perl5.32.0-PBKDF2-Tiny-0.005-devdoc
+gzipping man pages under /nix/store/qsd98skfjailv3ry3x8a0minp0li8z05-perl5.32.0-PBKDF2-Tiny-0.005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qsd98skfjailv3ry3x8a0minp0li8z05-perl5.32.0-PBKDF2-Tiny-0.005-devdoc
+checking for references to /build/ in /nix/store/qsd98skfjailv3ry3x8a0minp0li8z05-perl5.32.0-PBKDF2-Tiny-0.005-devdoc...
+building '/nix/store/p286clm4dhc0p7qrmk8dxbzaz3czzraw-perl5.32.0-Authen-SCRAM-0.011.drv'...
+unpacking sources
+unpacking source archive /nix/store/sjzxaav0igcccyk3k7a8k3b6xy5ysvvf-Authen-SCRAM-0.011.tar.gz
+source root is Authen-SCRAM-0.011
+setting SOURCE_DATE_EPOCH to timestamp 1529807560 of file Authen-SCRAM-0.011/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+patching ./devel/scram-examples.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::SCRAM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Authen/SCRAM/Client.pm blib/lib/Authen/SCRAM/Client.pm
+cp lib/Authen/SCRAM.pm blib/lib/Authen/SCRAM.pm
+cp lib/Authen/SCRAM/Role/Common.pm blib/lib/Authen/SCRAM/Role/Common.pm
+cp lib/Authen/SCRAM/Server.pm blib/lib/Authen/SCRAM/Server.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker 6.17 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Exporter             any     5.74
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::FailWarnings   any    0.008
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     base                 any     2.27
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                     Want     Have
+#     ---------------------- -------- --------
+#     Authen::SASL::SASLprep    1.100    1.100
+#     Carp                        any     1.50
+#     Crypt::URandom              any     0.36
+#     Encode                      any     3.06
+#     MIME::Base64                any     3.15
+#     Moo                    1.001000 2.004000
+#     Moo::Role              1.001000 2.004000
+#     PBKDF2::Tiny              0.003    0.005
+#     Try::Tiny                   any     0.30
+#     Types::Standard             any 1.010002
+#     namespace::clean            any     0.27
+#     strict                      any     1.11
+#     warnings                    any     1.47
+#
+t/00-report-prereqs.t .. ok
+t/client.t ............. ok
+t/errors.t ............. ok
+t/round_trip.t ......... ok
+t/server.t ............. ok
+All tests successful.
+Files=5, Tests=22,  2 wallclock secs ( 0.05 usr  0.02 sys +  1.30 cusr  0.44 csys =  1.81 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/pkgconfig m4datadir=/nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/aclocal aclocaldir=/nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/perl5/site_perl/5.32.0/Authen/SCRAM.pm
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/perl5/site_perl/5.32.0/Authen/SCRAM/Server.pm
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/perl5/site_perl/5.32.0/Authen/SCRAM/Client.pm
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/perl5/site_perl/5.32.0/Authen/SCRAM/Role/Common.pm
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/man3/Authen::SCRAM::Role::Common.3
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/man3/Authen::SCRAM.3
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/man3/Authen::SCRAM::Server.3
+Installing /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/man3/Authen::SCRAM::Client.3
+Appending installation info to /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/man3 to /nix/store/91i2vdfihfgmjznijjxwkxfv38ikcmrr-perl5.32.0-Authen-SCRAM-0.011-devdoc/share/man/man3
+Removing empty /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011/lib
+patching script interpreter paths in /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011
+checking for references to /build/ in /nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/91i2vdfihfgmjznijjxwkxfv38ikcmrr-perl5.32.0-Authen-SCRAM-0.011-devdoc
+gzipping man pages under /nix/store/91i2vdfihfgmjznijjxwkxfv38ikcmrr-perl5.32.0-Authen-SCRAM-0.011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/91i2vdfihfgmjznijjxwkxfv38ikcmrr-perl5.32.0-Authen-SCRAM-0.011-devdoc
+checking for references to /build/ in /nix/store/91i2vdfihfgmjznijjxwkxfv38ikcmrr-perl5.32.0-Authen-SCRAM-0.011-devdoc...
+/nix/store/qpl0ygj49sc189846r5svl06ffas91cm-perl5.32.0-Authen-SCRAM-0.011

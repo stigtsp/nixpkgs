@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/jsqf5b4zx9kxs4z4rh0vb6hhsqb104x2-perl5.32.0-CGI-PSGI-0.15.drv
+building '/nix/store/jsqf5b4zx9kxs4z4rh0vb6hhsqb104x2-perl5.32.0-CGI-PSGI-0.15.drv'...
+unpacking sources
+unpacking source archive /nix/store/f0nqi284c2sfgd750wc7wcq4iy3p1nih-CGI-PSGI-0.15.tar.gz
+source root is CGI-PSGI-0.15
+setting SOURCE_DATE_EPOCH to timestamp 1305666007 of file CGI-PSGI-0.15/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./t/cookie.t...
+patching ./tools/extract-methods...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CGI::PSGI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CGI/PSGI.pm blib/lib/CGI/PSGI.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00_compile.t .... ok
+t/cookie.t ........ ok
+t/http.t .......... ok
+t/psgi.t .......... 1/36 CGI::param called in list context from t/psgi.t line 42, this can lead to vulnerabilities. See the warning in "Fetching the value or values of a single named parameter" at /nix/store/1cj18z5hqvsylknf0mnlvjs8x6chqz79-perl5.32.0-CGI-4.49/lib/perl5/site_perl/5.32.0/CGI.pm line 411.
+t/psgi.t .......... ok
+t/psgi_headers.t .. ok
+t/redirect.t ...... ok
+t/upload.t ........ ok
+All tests successful.
+Files=7, Tests=88,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.48 cusr  0.13 csys =  0.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/lib/pkgconfig m4datadir=/nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/share/aclocal aclocaldir=/nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/lib/perl5/site_perl/5.32.0/CGI/PSGI.pm
+Installing /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/share/man/man3/CGI::PSGI.3
+Appending installation info to /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/share/man/man3 to /nix/store/h8smg1l3wm0896sqdnfyf0cq7cp7nqwq-perl5.32.0-CGI-PSGI-0.15-devdoc/share/man/man3
+Removing empty /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15/lib
+patching script interpreter paths in /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15
+checking for references to /build/ in /nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/h8smg1l3wm0896sqdnfyf0cq7cp7nqwq-perl5.32.0-CGI-PSGI-0.15-devdoc
+gzipping man pages under /nix/store/h8smg1l3wm0896sqdnfyf0cq7cp7nqwq-perl5.32.0-CGI-PSGI-0.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/h8smg1l3wm0896sqdnfyf0cq7cp7nqwq-perl5.32.0-CGI-PSGI-0.15-devdoc
+checking for references to /build/ in /nix/store/h8smg1l3wm0896sqdnfyf0cq7cp7nqwq-perl5.32.0-CGI-PSGI-0.15-devdoc...
+/nix/store/6r70zidqvlriww0wf9f7wh8g1gvac7l9-perl5.32.0-CGI-PSGI-0.15

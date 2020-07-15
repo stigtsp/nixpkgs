@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/yqwir93knv7kkdqcjf3c9fqc0rf952ib-perl5.32.0-PerlIO-eol-0.17.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/7kkk1llla96036pwn8ps5i6lmp30xn7n-PerlIO-eol-0.17.tar.gz
+copying path '/nix/store/7kkk1llla96036pwn8ps5i6lmp30xn7n-PerlIO-eol-0.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yqwir93knv7kkdqcjf3c9fqc0rf952ib-perl5.32.0-PerlIO-eol-0.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/7kkk1llla96036pwn8ps5i6lmp30xn7n-PerlIO-eol-0.17.tar.gz
+source root is PerlIO-eol-0.17
+setting SOURCE_DATE_EPOCH to timestamp 1514282459 of file PerlIO-eol-0.17/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PerlIO::eol
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/PerlIO/eol.pm blib/lib/PerlIO/eol.pm
+Running Mkbootstrap for eol ()
+chmod 644 "eol.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- eol.bs blib/arch/auto/PerlIO/eol/eol.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  eol.xs > eol.xsc
+mv eol.xsc eol.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.17\" -DXS_VERSION=\"0.17\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   eol.c
+rm -f blib/arch/auto/PerlIO/eol/eol.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  eol.o  -o blib/arch/auto/PerlIO/eol/eol.so  \
+      \
+
+chmod 755 blib/arch/auto/PerlIO/eol/eol.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- eol.bs blib/arch/auto/PerlIO/eol/eol.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .. ok
+t/1-basic.t ..... ok
+All tests successful.
+Files=2, Tests=24,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.12 cusr  0.02 csys =  0.17 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib/pkgconfig m4datadir=/nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/share/aclocal aclocaldir=/nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- eol.bs blib/arch/auto/PerlIO/eol/eol.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/eol/eol.so
+Installing /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/PerlIO/eol.pm
+Installing /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/share/man/man3/PerlIO::eol.3
+Appending installation info to /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/share/man/man3 to /nix/store/0ml3bq74iha71ml0d0w624jdhvzfsc6i-perl5.32.0-PerlIO-eol-0.17-devdoc/share/man/man3
+Removing empty /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17
+shrinking /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/eol/eol.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17/lib
+patching script interpreter paths in /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17
+checking for references to /build/ in /nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0ml3bq74iha71ml0d0w624jdhvzfsc6i-perl5.32.0-PerlIO-eol-0.17-devdoc
+gzipping man pages under /nix/store/0ml3bq74iha71ml0d0w624jdhvzfsc6i-perl5.32.0-PerlIO-eol-0.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0ml3bq74iha71ml0d0w624jdhvzfsc6i-perl5.32.0-PerlIO-eol-0.17-devdoc
+checking for references to /build/ in /nix/store/0ml3bq74iha71ml0d0w624jdhvzfsc6i-perl5.32.0-PerlIO-eol-0.17-devdoc...
+/nix/store/lfy98cksjzrhvqlak0dmkvdmkw79ixj9-perl5.32.0-PerlIO-eol-0.17

@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/98ibvh2f6r5aimr082721mq62balf6hd-perl5.32.0-RPC-EPC-Service-0.0.11.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xc4f70d3nlyxdkrv2hlwirnk91aj7kis-RPC-EPC-Service-v0.0.11.tar.gz
+copying path '/nix/store/xc4f70d3nlyxdkrv2hlwirnk91aj7kis-RPC-EPC-Service-v0.0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/98ibvh2f6r5aimr082721mq62balf6hd-perl5.32.0-RPC-EPC-Service-0.0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/xc4f70d3nlyxdkrv2hlwirnk91aj7kis-RPC-EPC-Service-v0.0.11.tar.gz
+source root is RPC-EPC-Service-v0.0.11
+setting SOURCE_DATE_EPOCH to timestamp 1400805085 of file RPC-EPC-Service-v0.0.11/t/_process.pl
+patching sources
+configuring
+patching ./t/_echo.pl...
+patching ./t/_errors.pl...
+patching ./t/_add.pl...
+patching ./t/_methods.pl...
+# running Build.PL --prefix /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'RPC-EPC-Service' version 'v0.0.11'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'RPC-EPC-Service' version 'v0.0.11'
+Building RPC-EPC-Service
+running tests
+t/00.load.t ........ 1/1 # Testing RPC::EPC::Service 0.0.11
+t/00.load.t ........ ok
+t/01.primitives.t .. ok
+t/02.process.t ..... ok
+t/03.echo.t ........ ok
+t/04.add.t ......... ok
+t/05.errors.t ...... ok
+t/06.query.t ....... ok
+t/07.encode.t ...... ok
+All tests successful.
+Files=8, Tests=43,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.80 cusr  0.19 csys =  1.03 CPU)
+Result: PASS
+installing
+Building RPC-EPC-Service
+Installing /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11/lib/perl5/site_perl/5.32.0/RPC/EPC/Service.pm
+Installing /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11/share/man/man3/RPC::EPC::Service.3
+post-installation fixup
+Moving /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11/share/man/man3 to /nix/store/mn915dvqg1mrji9wylz2vgyvdwl9ipnz-perl5.32.0-RPC-EPC-Service-0.0.11-devdoc/share/man/man3
+Removing empty /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11/lib
+patching script interpreter paths in /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11
+checking for references to /build/ in /nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mn915dvqg1mrji9wylz2vgyvdwl9ipnz-perl5.32.0-RPC-EPC-Service-0.0.11-devdoc
+gzipping man pages under /nix/store/mn915dvqg1mrji9wylz2vgyvdwl9ipnz-perl5.32.0-RPC-EPC-Service-0.0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mn915dvqg1mrji9wylz2vgyvdwl9ipnz-perl5.32.0-RPC-EPC-Service-0.0.11-devdoc
+checking for references to /build/ in /nix/store/mn915dvqg1mrji9wylz2vgyvdwl9ipnz-perl5.32.0-RPC-EPC-Service-0.0.11-devdoc...
+/nix/store/a9m501z46rxy12q8sgbdvq8f6b8cl5k7-perl5.32.0-RPC-EPC-Service-0.0.11

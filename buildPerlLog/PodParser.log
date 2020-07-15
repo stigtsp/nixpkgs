@@ -1,0 +1,91 @@
+these derivations will be built:
+  /nix/store/x67gd4ngrzbr760ggc0av8n3arfp7bp8-perl5.32.0-Pod-Parser-1.63.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/4jrcsnpzchcwzaswcb5zhpi9a7mn43cv-Pod-Parser-1.63.tar.gz
+copying path '/nix/store/4jrcsnpzchcwzaswcb5zhpi9a7mn43cv-Pod-Parser-1.63.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x67gd4ngrzbr760ggc0av8n3arfp7bp8-perl5.32.0-Pod-Parser-1.63.drv'...
+unpacking sources
+unpacking source archive /nix/store/4jrcsnpzchcwzaswcb5zhpi9a7mn43cv-Pod-Parser-1.63.tar.gz
+source root is Pod-Parser-1.63
+setting SOURCE_DATE_EPOCH to timestamp 1423601150 of file Pod-Parser-1.63/META.yml
+patching sources
+configuring
+patching ./scripts/podselect.PL...
+patching ./t/pod/contains_pod.t...
+patching ./t/pod/selfcheck.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Parser
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/InputObjects.pm blib/lib/Pod/InputObjects.pm
+cp lib/Pod/ParseUtils.pm blib/lib/Pod/ParseUtils.pm
+cp lib/Pod/Select.pm blib/lib/Pod/Select.pm
+cp lib/Pod/PlainText.pm blib/lib/Pod/PlainText.pm
+cp lib/Pod/Find.pm blib/lib/Pod/Find.pm
+cp lib/Pod/Parser.pm blib/lib/Pod/Parser.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" scripts/podselect.PL scripts/podselect
+Extracting podselect (with variable substitutions)
+cp scripts/podselect blib/script/podselect
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/podselect
+Manifying 1 pod document
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/pod/*.t
+t/pod/contains_pod.t ..... ok
+t/pod/emptycmd.t ......... ok
+t/pod/find.t ............. ok
+t/pod/for.t .............. ok
+t/pod/headings.t ......... ok
+t/pod/include.t .......... ok
+t/pod/included.t ......... ok
+t/pod/lref.t ............. ok
+t/pod/multiline_items.t .. ok
+t/pod/nested_items.t ..... ok
+t/pod/nested_seqs.t ...... ok
+t/pod/oneline_cmds.t ..... ok
+t/pod/podselect.t ........ ok
+t/pod/selfcheck.t ........ ok
+t/pod/special_seqs.t ..... ok
+t/pod/twice.t ............ ok
+All tests successful.
+Files=16, Tests=25,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.63 cusr  0.07 csys =  0.77 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/pkgconfig m4datadir=/nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/aclocal aclocaldir=/nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/aclocal install
+Manifying 1 pod document
+Manifying 6 pod documents
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/Find.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/Parser.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/PlainText.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/Select.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/ParseUtils.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/site_perl/5.32.0/Pod/InputObjects.pm
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man1/podselect.1
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::Select.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::Find.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::ParseUtils.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::PlainText.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::Parser.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3/Pod::InputObjects.3
+Installing /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/bin/podselect
+Appending installation info to /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/man3 to /nix/store/72fidhxkws10hzld8x3qsgjwm9khllzr-perl5.32.0-Pod-Parser-1.63-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63
+gzipping man pages under /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/lib  /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63/bin
+patching script interpreter paths in /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63
+checking for references to /build/ in /nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63...
+shrinking RPATHs of ELF executables and libraries in /nix/store/72fidhxkws10hzld8x3qsgjwm9khllzr-perl5.32.0-Pod-Parser-1.63-devdoc
+gzipping man pages under /nix/store/72fidhxkws10hzld8x3qsgjwm9khllzr-perl5.32.0-Pod-Parser-1.63-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/72fidhxkws10hzld8x3qsgjwm9khllzr-perl5.32.0-Pod-Parser-1.63-devdoc
+checking for references to /build/ in /nix/store/72fidhxkws10hzld8x3qsgjwm9khllzr-perl5.32.0-Pod-Parser-1.63-devdoc...
+/nix/store/qy5mmdjzryw8sfqnvwkrqj0a83q4y0cs-perl5.32.0-Pod-Parser-1.63

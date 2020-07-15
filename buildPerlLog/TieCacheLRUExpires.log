@@ -1,0 +1,123 @@
+these derivations will be built:
+  /nix/store/iw0ig54p38j08w1dms78xkz8gc6h8r1b-perl5.32.0-Tie-Cache-LRU-Expires-0.55.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/5hlzdrxk034xbz18lnnm9cmwh6lw8vq1-Tie-Cache-LRU-Expires-0.55.tar.gz
+copying path '/nix/store/5hlzdrxk034xbz18lnnm9cmwh6lw8vq1-Tie-Cache-LRU-Expires-0.55.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/iw0ig54p38j08w1dms78xkz8gc6h8r1b-perl5.32.0-Tie-Cache-LRU-Expires-0.55.drv'...
+unpacking sources
+unpacking source archive /nix/store/5hlzdrxk034xbz18lnnm9cmwh6lw8vq1-Tie-Cache-LRU-Expires-0.55.tar.gz
+source root is Tie-Cache-LRU-Expires-0.55
+setting SOURCE_DATE_EPOCH to timestamp 1342734398 of file Tie-Cache-LRU-Expires-0.55/META.yml
+patching sources
+configuring
+patching ./test.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Tie::Cache::LRU::Expires
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Expires.pm blib/lib/Tie/Cache/LRU/Expires.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..7
+test 1: using the module.
+ok 1
+test 2: setting and getting.
+setting...
+getting...
+6=test 6
+7=test 7
+8=test 8
+9=test 9
+10=test 10
+entries in LRU cache:5
+NTA.nlX.400, SMTP: Dit is gecached
+NTA.nlX.400,SMTP: Dit is gecached
+hans : Case insensitive?  Hans:
+73ok 2
+test 3: expiry test: setting...
+1..3 now, 4 and 5 two seconds later
+getting...
+1=test 1
+2=test 2
+3=test 3
+4=test 4 (2 secs apart)
+5=test 5 (2 secs apart)
+entries in LRU cache:5
+waiting 2 secs...
+getting...
+4=test 4 (2 secs apart)
+5=test 5 (2 secs apart)
+entries in LRU cache:5
+waiting another 2 secs...
+getting...
+entries in LRU cache:5
+ok 3
+test4: testing the caching of arrays (including expiry)
+initializing the array...
+array:a
+array:b
+array:c
+putting the array in cache...
+changing entry 1 (out of 0, 1, 2)...
+getting the cached entry...
+array:a
+array:jojo
+array:c
+entries in LRU cache:5
+printing the original variable...
+array:a
+array:jojo
+array:c
+putting an other array in cache (directly)...
+getting the cached entry...
+hans:1
+hans:2
+hans:3
+hans:4
+entries in LRU cache:5
+waiting for 5 seconds...
+expired
+ok 4
+test 5, overwriting cached entries
+writing 'hans' entry two times...
+result:entry1
+entries in LRU cache:5
+result:entry2
+entries in LRU cache:5
+ok 5
+test 6: checking existance
+exists
+doesn't exist
+entries in LRU cache:5
+waiting 5 seconds to check existance again
+doesn't exist anymore
+entries in LRU cache:5
+clearing LRU cache..
+ok 7
+entries in LRU cache:0
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/lib/pkgconfig m4datadir=/nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/share/aclocal aclocaldir=/nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/lib/perl5/site_perl/5.32.0/Tie/Cache/LRU/Expires.pm
+Installing /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/share/man/man3/Tie::Cache::LRU::Expires.3
+Appending installation info to /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/share/man/man3 to /nix/store/wkpax09wbjym7ismrb7l5ax7rx8lk4al-perl5.32.0-Tie-Cache-LRU-Expires-0.55-devdoc/share/man/man3
+Removing empty /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55/lib
+patching script interpreter paths in /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55
+checking for references to /build/ in /nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wkpax09wbjym7ismrb7l5ax7rx8lk4al-perl5.32.0-Tie-Cache-LRU-Expires-0.55-devdoc
+gzipping man pages under /nix/store/wkpax09wbjym7ismrb7l5ax7rx8lk4al-perl5.32.0-Tie-Cache-LRU-Expires-0.55-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wkpax09wbjym7ismrb7l5ax7rx8lk4al-perl5.32.0-Tie-Cache-LRU-Expires-0.55-devdoc
+checking for references to /build/ in /nix/store/wkpax09wbjym7ismrb7l5ax7rx8lk4al-perl5.32.0-Tie-Cache-LRU-Expires-0.55-devdoc...
+/nix/store/snv0q70w9rdvvrykx16d867pd35jgans-perl5.32.0-Tie-Cache-LRU-Expires-0.55

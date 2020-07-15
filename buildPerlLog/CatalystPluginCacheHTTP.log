@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/yhl1mpanwdfy88m0zf36w7zvzr24dh5v-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/9k9np3z6i3chng91n9vminj03lli0d78-Catalyst-Plugin-Cache-HTTP-0.001000.tar.gz
+copying path '/nix/store/9k9np3z6i3chng91n9vminj03lli0d78-Catalyst-Plugin-Cache-HTTP-0.001000.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yhl1mpanwdfy88m0zf36w7zvzr24dh5v-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000.drv'...
+unpacking sources
+unpacking source archive /nix/store/9k9np3z6i3chng91n9vminj03lli0d78-Catalyst-Plugin-Cache-HTTP-0.001000.tar.gz
+source root is Catalyst-Plugin-Cache-HTTP-0.001000
+setting SOURCE_DATE_EPOCH to timestamp 1232398390 of file Catalyst-Plugin-Cache-HTTP-0.001000/MANIFEST
+patching sources
+configuring
+patching ./t/lib/script/testapp_server.pl...
+patching ./t/lib/script/testapp_test.pl...
+patching ./t/00-load.t...
+patching ./t/author/pod-coverage.t...
+patching ./t/author/pod.t...
+patching ./t/live-test.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::Cache::HTTP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/Cache/HTTP.pm blib/lib/Catalyst/Plugin/Cache/HTTP.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .... ok
+t/live-test.t .. ok
+All tests successful.
+Files=2, Tests=24,  2 wallclock secs ( 0.08 usr  0.07 sys +  1.04 cusr  0.58 csys =  1.77 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/lib/pkgconfig m4datadir=/nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/share/aclocal aclocaldir=/nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/Cache/HTTP.pm
+Installing /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/share/man/man3/Catalyst::Plugin::Cache::HTTP.3
+Appending installation info to /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/share/man/man3 to /nix/store/fxxf6b859da1bmvzxjwi5c4x1ca2y2xb-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000-devdoc/share/man/man3
+Removing empty /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000/lib
+patching script interpreter paths in /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000
+checking for references to /build/ in /nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fxxf6b859da1bmvzxjwi5c4x1ca2y2xb-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000-devdoc
+gzipping man pages under /nix/store/fxxf6b859da1bmvzxjwi5c4x1ca2y2xb-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fxxf6b859da1bmvzxjwi5c4x1ca2y2xb-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000-devdoc
+checking for references to /build/ in /nix/store/fxxf6b859da1bmvzxjwi5c4x1ca2y2xb-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000-devdoc...
+/nix/store/q0nafwjl68i15rkhxpsgb7jkgpxiwca8-perl5.32.0-Catalyst-Plugin-Cache-HTTP-0.001000

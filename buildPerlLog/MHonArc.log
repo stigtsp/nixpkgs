@@ -1,0 +1,138 @@
+these derivations will be built:
+  /nix/store/5yp2a3p8sv82314giy4j3wf1fvrmp7hl-perl5.32.0-MHonArc-2.6.19.drv
+these paths will be fetched (1.68 MiB download, 1.90 MiB unpacked):
+  /nix/store/zs8i3qd4caj2zx2ns7x9pz7g0076kfjb-MHonArc-2.6.19.tar.gz
+copying path '/nix/store/zs8i3qd4caj2zx2ns7x9pz7g0076kfjb-MHonArc-2.6.19.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/5yp2a3p8sv82314giy4j3wf1fvrmp7hl-perl5.32.0-MHonArc-2.6.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/zs8i3qd4caj2zx2ns7x9pz7g0076kfjb-MHonArc-2.6.19.tar.gz
+source root is MHonArc-2.6.19
+setting SOURCE_DATE_EPOCH to timestamp 1398134425 of file MHonArc-2.6.19/examples/mhonarc.vim
+patching sources
+applying patch /nix/store/zgvavvdj819blbcic9rcr3yznjrplgcs-mhonarc.patch
+patching file lib/mhamain.pl
+patching file lib/mhopt.pl
+configuring
+patching ./extras/mha-mhedit/mha-mhedit...
+patching ./admin/mhaadmin.cgi...
+patching ./admin/mhaadmin.rc...
+patching ./mha-decode...
+patching ./mhonarc...
+patching ./mha-dbedit...
+patching ./examples/mha-p7m...
+patching ./examples/mha-preview...
+patching ./contrib/mhastart.pl...
+patching ./contrib/mhn2mbox.pl...
+patching ./contrib/prsfrom.pl...
+patching ./mha-dbrecover...
+patching ./install.me...
+patching ./Makefile.PL...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+chmod a+x mhonarc mha-dbrecover mha-dbedit mha-decode
+chmod -R a+r,a+X .
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+No tests
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1b7p4ms2y9ibjzcmywj6jsbjkpzxvra3-perl5.32.0-MHonArc-2.6.19-dev/lib/pkgconfig m4datadir=/nix/store/1b7p4ms2y9ibjzcmywj6jsbjkpzxvra3-perl5.32.0-MHonArc-2.6.19-dev/share/aclocal aclocaldir=/nix/store/1b7p4ms2y9ibjzcmywj6jsbjkpzxvra3-perl5.32.0-MHonArc-2.6.19-dev/share/aclocal install
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl install.me -batch -prefix /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19
+Checking dependencies:
+        Fcntl ......................... ok
+        File::Basename ................ ok
+        Getopt::Long .................. ok
+        Symbol ........................ ok
+        Time::Local ................... ok
+Installing programs to "/nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin":
+    mhonarc => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin/mhonarc
+    mha-dbedit => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin/mha-dbedit
+    mha-dbrecover => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin/mha-dbrecover
+    mha-decode => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin/mha-decode
+Installing lib files to "/nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0":
+    lib/base64.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/base64.pl
+    lib/ewhutil.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/ewhutil.pl
+    lib/iso2022jp.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/iso2022jp.pl
+    lib/iso8859.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/iso8859.pl
+    lib/mhamain.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhamain.pl
+    lib/mhdb.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhdb.pl
+    lib/mhdysub.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhdysub.pl
+    lib/mhexternal.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhexternal.pl
+    lib/mhfile.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhfile.pl
+    lib/mhidxrc.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhidxrc.pl
+    lib/mhindex.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhindex.pl
+    lib/mhinit.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhinit.pl
+    lib/mhlock.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhlock.pl
+    lib/mhmimetypes.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhmimetypes.pl
+    lib/mhmsgextbody.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhmsgextbody.pl
+    lib/mhmsgfile.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhmsgfile.pl
+    lib/mhnote.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhnote.pl
+    lib/mhnull.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhnull.pl
+    lib/mhopt.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhopt.pl
+    lib/mhrcfile.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhrcfile.pl
+    lib/mhrcvars.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhrcvars.pl
+    lib/mhrmm.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhrmm.pl
+    lib/mhscan.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhscan.pl
+    lib/mhsingle.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhsingle.pl
+    lib/mhthread.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhthread.pl
+    lib/mhtime.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhtime.pl
+    lib/mhtxtenrich.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhtxtenrich.pl
+    lib/mhtxthtml.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhtxthtml.pl
+    lib/mhtxtplain.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhtxtplain.pl
+    lib/mhtxttsv.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhtxttsv.pl
+    lib/mhusage.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhusage.pl
+    lib/mhutil.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/mhutil.pl
+    lib/osinit.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/osinit.pl
+    lib/qprint.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/qprint.pl
+    lib/readmail.pl => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/readmail.pl
+    lib/MHonArc => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib/perl5/site_perl/5.32.0/MHonArc
+Installing docs to "/nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc":
+    doc/app-api.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-api.html
+    doc/app-bugs.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-bugs.html
+    doc/app-diagnos.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-diagnos.html
+    doc/app-mimeconf.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-mimeconf.html
+    doc/app-rcfileexs.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-rcfileexs.html
+    doc/app-rcidx.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-rcidx.html
+    doc/app-utilsprg.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/app-utilsprg.html
+    doc/blank.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/blank.png
+    doc/bug.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/bug.png
+    doc/commontasks.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/commontasks.html
+    doc/contacts.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/contacts.html
+    doc/faq => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/faq
+    doc/faq.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/faq.png
+    doc/home.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/home.png
+    doc/index.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/index.html
+    doc/install.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/install.html
+    doc/intro.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/intro.html
+    doc/layout.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/layout.html
+    doc/mhonarc.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/mhonarc.html
+    doc/monicon.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/monicon.png
+    doc/next.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/next.png
+    doc/prev.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/prev.png
+    doc/quickstart.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/quickstart.html
+    doc/rcfileexs => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/rcfileexs
+    doc/rcvars.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/rcvars.html
+    doc/relnotes.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/relnotes.html
+    doc/resources => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/resources
+    doc/resources.html => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/resources.html
+    doc/ssbg75.jpg => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/ssbg75.jpg
+    doc/stampwb2.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/stampwb2.png
+    doc/up.png => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc/MHonArc/up.png
+Installing manpages to "/nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man":
+    man/mhonarc.1 => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man/man1/mhonarc.1
+    man/mha-dbedit.1 => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man/man1/mha-dbedit.1
+    man/mha-dbrecover.1 => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man/man1/mha-dbrecover.1
+    man/mha-decode.1 => /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man/man1/mha-decode.1
+post-installation fixup
+moving /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/doc to /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/doc
+shrinking RPATHs of ELF executables and libraries in /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19
+gzipping man pages under /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/lib  /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19/bin
+patching script interpreter paths in /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19
+checking for references to /build/ in /nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19...
+find: '/nix/store/1b7p4ms2y9ibjzcmywj6jsbjkpzxvra3-perl5.32.0-MHonArc-2.6.19-dev': No such file or directory
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+/nix/store/2kyxndjrdahjh0yfrnc3gc5zjawdd4kw-perl5.32.0-MHonArc-2.6.19

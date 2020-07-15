@@ -1,0 +1,103 @@
+these derivations will be built:
+  /nix/store/cmh8wn5i6qzdbq5b9m640njds9giv9k4-perl5.32.0-Data-Perl-0.002011.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/lx81gg3pg1zcysgkx22p4jk61hqlaxz7-Data-Perl-0.002011.tar.gz
+copying path '/nix/store/lx81gg3pg1zcysgkx22p4jk61hqlaxz7-Data-Perl-0.002011.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cmh8wn5i6qzdbq5b9m640njds9giv9k4-perl5.32.0-Data-Perl-0.002011.drv'...
+unpacking sources
+unpacking source archive /nix/store/lx81gg3pg1zcysgkx22p4jk61hqlaxz7-Data-Perl-0.002011.tar.gz
+source root is Data-Perl-0.002011
+setting SOURCE_DATE_EPOCH to timestamp 1579700012 of file Data-Perl-0.002011/weaver.ini
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/Perl.pm blib/lib/Data/Perl.pm
+cp lib/Data/Perl/Role/Counter.pm blib/lib/Data/Perl/Role/Counter.pm
+cp lib/Data/Perl/Role/Collection/Array.pm blib/lib/Data/Perl/Role/Collection/Array.pm
+cp lib/Data/Perl/Code.pm blib/lib/Data/Perl/Code.pm
+cp lib/Data/Perl/Role/String.pm blib/lib/Data/Perl/Role/String.pm
+cp lib/Data/Perl/Number.pm blib/lib/Data/Perl/Number.pm
+cp lib/Data/Perl/String.pm blib/lib/Data/Perl/String.pm
+cp lib/Data/Perl/Collection/Array.pm blib/lib/Data/Perl/Collection/Array.pm
+cp lib/Data/Perl/Role/Code.pm blib/lib/Data/Perl/Role/Code.pm
+cp lib/Data/Perl/Role/Bool.pm blib/lib/Data/Perl/Role/Bool.pm
+cp lib/Data/Perl/Role/Collection/Hash.pm blib/lib/Data/Perl/Role/Collection/Hash.pm
+cp lib/Data/Perl/Collection/Hash.pm blib/lib/Data/Perl/Collection/Hash.pm
+cp lib/Data/Perl/Bool.pm blib/lib/Data/Perl/Bool.pm
+cp lib/Data/Perl/Role/Number.pm blib/lib/Data/Perl/Role/Number.pm
+cp lib/Data/Perl/Counter.pm blib/lib/Data/Perl/Counter.pm
+Manifying 15 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/collection/*.t
+t/author-pod-coverage.t ..... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ....... skipped: these tests are for testing by the author
+t/bool.t .................... ok
+t/code.t .................... ok
+t/collection/array.t ........ ok
+t/collection/hash.t ......... ok
+t/collection/subclassing.t .. ok
+t/counter.t ................. ok
+t/helpers.t ................. ok
+t/number.t .................. ok
+t/string.t .................. ok
+All tests successful.
+Files=11, Tests=194,  1 wallclock secs ( 0.06 usr  0.02 sys +  0.76 cusr  0.30 csys =  1.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/pkgconfig m4datadir=/nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/aclocal aclocaldir=/nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/aclocal install
+Manifying 15 pod documents
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Bool.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/String.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Code.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Counter.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Number.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Collection/Hash.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Collection/Array.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Bool.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/String.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Code.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Counter.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Number.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Collection/Hash.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/site_perl/5.32.0/Data/Perl/Role/Collection/Array.pm
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::String.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Code.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Code.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Bool.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Collection::Array.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Collection::Array.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Number.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Number.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Collection::Hash.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Bool.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Counter.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Role::Collection::Hash.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::Counter.3
+Installing /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3/Data::Perl::String.3
+Appending installation info to /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/man3 to /nix/store/clwp6m0flridcr7z356b49vdg92mfa8h-perl5.32.0-Data-Perl-0.002011-devdoc/share/man/man3
+Removing empty /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011/lib
+patching script interpreter paths in /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011
+checking for references to /build/ in /nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/clwp6m0flridcr7z356b49vdg92mfa8h-perl5.32.0-Data-Perl-0.002011-devdoc
+gzipping man pages under /nix/store/clwp6m0flridcr7z356b49vdg92mfa8h-perl5.32.0-Data-Perl-0.002011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/clwp6m0flridcr7z356b49vdg92mfa8h-perl5.32.0-Data-Perl-0.002011-devdoc
+checking for references to /build/ in /nix/store/clwp6m0flridcr7z356b49vdg92mfa8h-perl5.32.0-Data-Perl-0.002011-devdoc...
+/nix/store/p86s88nb0rl8nhl7719yh54xpha78vss-perl5.32.0-Data-Perl-0.002011

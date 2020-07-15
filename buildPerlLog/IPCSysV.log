@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/4757ywvz8rf93d19d8fkp9dv0xi057si-perl5.32.0-IPC-SysV-2.07.drv
+building '/nix/store/4757ywvz8rf93d19d8fkp9dv0xi057si-perl5.32.0-IPC-SysV-2.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/ismga7190yszdlmmraq152a7q0afdjdy-IPC-SysV-2.07.tar.gz
+source root is IPC-SysV-2.07
+setting SOURCE_DATE_EPOCH to timestamp 1462826097 of file IPC-SysV-2.07/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Setting license tag...
+Generating a Unix-style Makefile
+Writing Makefile for IPC::SysV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IPC/SharedMem.pm blib/lib/IPC/SharedMem.pm
+cp lib/IPC/Msg.pm blib/lib/IPC/Msg.pm
+cp lib/IPC/Semaphore.pm blib/lib/IPC/Semaphore.pm
+cp lib/IPC/SysV.pm blib/lib/IPC/SysV.pm
+Running Mkbootstrap for SysV ()
+chmod 644 "SysV.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SysV.bs blib/arch/auto/IPC/SysV/SysV.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/IPC-SysV-2.07/typemap'  SysV.xs > SysV.xsc
+mv SysV.xsc SysV.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.07\" -DXS_VERSION=\"2.07\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   SysV.c
+rm -f blib/arch/auto/IPC/SysV/SysV.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  SysV.o  -o blib/arch/auto/IPC/SysV/SysV.so  \
+      \
+
+chmod 755 blib/arch/auto/IPC/SysV/SysV.so
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SysV.bs blib/arch/auto/IPC/SysV/SysV.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/ipcsysv.t .. ok
+t/msg.t ...... ok
+t/pod.t ...... skipped: testing pod requires Test::Pod
+t/podcov.t ... skipped: testing pod coverage requires Pod::Coverage 0.10
+t/sem.t ...... ok
+t/shm.t ...... ok
+All tests successful.
+Files=6, Tests=82,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.28 cusr  0.05 csys =  0.37 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/pkgconfig m4datadir=/nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/aclocal aclocaldir=/nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SysV.bs blib/arch/auto/IPC/SysV/SysV.bs 644
+Manifying 4 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IPC/Semaphore.pm
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IPC/SharedMem.pm
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IPC/Msg.pm
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IPC/SysV.pm
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/man3/IPC::Msg.3
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/man3/IPC::SharedMem.3
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/man3/IPC::Semaphore.3
+Installing /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/man3/IPC::SysV.3
+Appending installation info to /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/man3 to /nix/store/72z14lhkg48bksvdh0a0vi4wkihjryh1-perl5.32.0-IPC-SysV-2.07-devdoc/share/man/man3
+Removing empty /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07
+shrinking /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07/lib
+patching script interpreter paths in /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07
+checking for references to /build/ in /nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/72z14lhkg48bksvdh0a0vi4wkihjryh1-perl5.32.0-IPC-SysV-2.07-devdoc
+gzipping man pages under /nix/store/72z14lhkg48bksvdh0a0vi4wkihjryh1-perl5.32.0-IPC-SysV-2.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/72z14lhkg48bksvdh0a0vi4wkihjryh1-perl5.32.0-IPC-SysV-2.07-devdoc
+checking for references to /build/ in /nix/store/72z14lhkg48bksvdh0a0vi4wkihjryh1-perl5.32.0-IPC-SysV-2.07-devdoc...
+/nix/store/l44yd48610i5j9zm2557rn6l8ni0jqc3-perl5.32.0-IPC-SysV-2.07

@@ -1,0 +1,253 @@
+these derivations will be built:
+  /nix/store/2ygydp485nvc4a4972gvyyjaqzdmg6sm-perl5.32.0-HTML-Mason-1.59.drv
+building '/nix/store/2ygydp485nvc4a4972gvyyjaqzdmg6sm-perl5.32.0-HTML-Mason-1.59.drv'...
+unpacking sources
+unpacking source archive /nix/store/i66bibd65pd63a9wv5b5shp4zhlrv1ks-HTML-Mason-1.59.tar.gz
+source root is HTML-Mason-1.59
+setting SOURCE_DATE_EPOCH to timestamp 1589647968 of file HTML-Mason-1.59/xt/release/meta-json.t
+patching sources
+configuring
+patching ./benchmarks/multiple_benches.pl...
+patching ./benchmarks/bench.pl...
+patching ./xt/release/meta-json.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/single_test.pl...
+patching ./t/12-taint.t...
+patching ./t/run_tests...
+patching ./t/run_one_test...
+patching ./bin/convert0.6.pl...
+patching ./bin/mason.pl...
+patching ./bin/convert0.8.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::Mason
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/Mason/Utils.pm blib/lib/HTML/Mason/Utils.pm
+cp lib/HTML/Mason/Parser.pm blib/lib/HTML/Mason/Parser.pm
+cp lib/HTML/Mason/Cache/BaseCache.pm blib/lib/HTML/Mason/Cache/BaseCache.pm
+cp lib/HTML/Mason/Resolver/File.pm blib/lib/HTML/Mason/Resolver/File.pm
+cp lib/HTML/Mason/Params.pod blib/lib/HTML/Mason/Params.pod
+cp lib/HTML/Mason/Escapes.pm blib/lib/HTML/Mason/Escapes.pm
+cp lib/HTML/Mason/Compiler.pm blib/lib/HTML/Mason/Compiler.pm
+cp lib/HTML/Mason/Admin.pod blib/lib/HTML/Mason/Admin.pod
+cp lib/HTML/Mason/ComponentSource.pm blib/lib/HTML/Mason/ComponentSource.pm
+cp lib/HTML/Mason/Apache/Request.pm blib/lib/HTML/Mason/Apache/Request.pm
+cp lib/HTML/Mason/Plugin.pm blib/lib/HTML/Mason/Plugin.pm
+cp lib/HTML/Mason/Tests.pm blib/lib/HTML/Mason/Tests.pm
+cp lib/HTML/Mason/CGIHandler.pm blib/lib/HTML/Mason/CGIHandler.pm
+cp lib/HTML/Mason/Tools.pm blib/lib/HTML/Mason/Tools.pm
+cp lib/HTML/Mason/MethodMaker.pm blib/lib/HTML/Mason/MethodMaker.pm
+cp lib/HTML/Mason/Resolver/Null.pm blib/lib/HTML/Mason/Resolver/Null.pm
+cp lib/HTML/Mason/Compiler/ToObject.pm blib/lib/HTML/Mason/Compiler/ToObject.pm
+cp lib/HTML/Mason/Interp.pm blib/lib/HTML/Mason/Interp.pm
+cp lib/HTML/Mason/Component/FileBased.pm blib/lib/HTML/Mason/Component/FileBased.pm
+cp lib/HTML/Mason/Component/Subcomponent.pm blib/lib/HTML/Mason/Component/Subcomponent.pm
+cp lib/HTML/Mason.pm blib/lib/HTML/Mason.pm
+cp lib/HTML/Mason/FakeApache.pm blib/lib/HTML/Mason/FakeApache.pm
+cp lib/HTML/Mason/Resolver.pm blib/lib/HTML/Mason/Resolver.pm
+cp lib/HTML/Mason/Devel.pod blib/lib/HTML/Mason/Devel.pod
+cp lib/HTML/Mason/FAQ.pod blib/lib/HTML/Mason/FAQ.pod
+cp lib/HTML/Mason/Plugin/Context.pm blib/lib/HTML/Mason/Plugin/Context.pm
+cp lib/HTML/Mason/Handler.pm blib/lib/HTML/Mason/Handler.pm
+cp lib/HTML/Mason/Lexer.pm blib/lib/HTML/Mason/Lexer.pm
+cp lib/HTML/Mason/ApacheHandler.pm blib/lib/HTML/Mason/ApacheHandler.pm
+cp lib/HTML/Mason/Component.pm blib/lib/HTML/Mason/Component.pm
+cp lib/HTML/Mason/Request.pm blib/lib/HTML/Mason/Request.pm
+cp lib/HTML/Mason/Subclassing.pod blib/lib/HTML/Mason/Subclassing.pod
+cp lib/HTML/Mason/Exceptions.pm blib/lib/HTML/Mason/Exceptions.pm
+cp bin/convert0.6.README blib/script/convert0.6.README
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/convert0.6.README
+cp bin/convert0.6.pl blib/script/convert0.6.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/convert0.6.pl
+cp bin/convert0.8.README blib/script/convert0.8.README
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/convert0.8.README
+cp bin/convert0.8.pl blib/script/convert0.8.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/convert0.8.pl
+cp bin/mason.pl blib/script/mason.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mason.pl
+Manifying 31 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t ......... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           0.8     3.78
+#     Test::Deep           any    1.130
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module           Want  Have
+#     ---------------- ---- -----
+#     CGI              2.46  4.49
+#     Cache::Cache     1.00  1.08
+#     Class::Container 0.07  0.13
+#     Exception::Class 1.15  1.44
+#     File::Spec        0.8  3.78
+#     HTML::Entities    any  3.69
+#     Log::Any         0.08 1.708
+#     Params::Validate 0.70  1.29
+#     Scalar::Util     1.01  1.55
+#
+t/00-report-prereqs.t ......... ok
+t/01-syntax.t ................. ok
+t/01a-comp-calls.t ............ ok
+t/02-sections.t ............... ok
+t/02a-filter.t ................ ok
+t/04-misc.t ................... ok
+t/05-request.t ................ ok
+t/05a-stack-corruption.t ...... ok
+t/06-compiler.t ............... ok
+t/06a-compiler_obj.t .......... ok
+t/06b-compiler-named-subs.t ... ok
+t/06c-compiler-spaces-path.t .. ok
+t/07-interp.t ................. ok
+t/07a-interp-mcr.t ............ ok
+t/07b-interp-static-source.t .. ok
+t/09-component.t .............. ok
+t/09a-comp_content.t .......... ok
+t/10-cache.t .................. ok
+t/10a-cache-1.0x.t ............ ok
+t/10b-cache-chi.t ............. skipped: CHI 0.21+ is not installed
+t/11-inherit.t ................ ok
+t/12-taint.t .................. ok
+t/13-errors.t ................. ok
+t/14-cgi.t .................... ok
+t/14a-fake_apache.t ........... ok
+t/15-subclass.t ............... ok
+t/17-print.t .................. ok
+t/18-leak.t ................... ok
+t/19-subrequest.t ............. ok
+t/20-plugins.t ................ ok
+t/21-escapes.t ................ ok
+t/22-path-security.t .......... ok
+t/23-leak2.t .................. skipped: These tests require Test::Memory::Cycle to run.
+t/24-tools.t .................. ok
+t/25-flush-in-content.t ....... ok
+t/25-log.t .................... ok
+All tests successful.
+Files=36, Tests=515, 26 wallclock secs ( 0.18 usr  0.04 sys +  5.75 cusr  2.48 csys =  8.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/pkgconfig m4datadir=/nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/aclocal aclocaldir=/nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/aclocal install
+Manifying 31 pod documents
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Lexer.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Parser.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Escapes.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/FakeApache.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/ApacheHandler.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Tests.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Params.pod
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Component.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Request.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Admin.pod
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Handler.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/MethodMaker.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Plugin.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Exceptions.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Resolver.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Compiler.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/ComponentSource.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Subclassing.pod
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/CGIHandler.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Devel.pod
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Interp.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Tools.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Utils.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/FAQ.pod
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Cache/BaseCache.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Plugin/Context.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Compiler/ToObject.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Resolver/File.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Resolver/Null.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Apache/Request.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Component/FileBased.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/site_perl/5.32.0/HTML/Mason/Component/Subcomponent.pm
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::ApacheHandler.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Params.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Component::FileBased.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Tests.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::FakeApache.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Resolver::Null.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Plugin::Context.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Resolver::File.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Utils.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Component::Subcomponent.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Request.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::FAQ.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Parser.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Devel.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Resolver.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::MethodMaker.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Plugin.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::ComponentSource.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Escapes.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Component.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Compiler::ToObject.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Compiler.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Admin.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Lexer.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Exceptions.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Subclassing.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Cache::BaseCache.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::CGIHandler.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Interp.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3/HTML::Mason::Tools.3
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin/convert0.8.README
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin/convert0.6.pl
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin/mason.pl
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin/convert0.8.pl
+Installing /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin/convert0.6.README
+Appending installation info to /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/man3 to /nix/store/rvx5av6mk5f9ggfvil2zlh4w6s6xlkyq-perl5.32.0-HTML-Mason-1.59-devdoc/share/man/man3
+Removing empty /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/lib  /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59/bin
+patching script interpreter paths in /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59
+checking for references to /build/ in /nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rvx5av6mk5f9ggfvil2zlh4w6s6xlkyq-perl5.32.0-HTML-Mason-1.59-devdoc
+gzipping man pages under /nix/store/rvx5av6mk5f9ggfvil2zlh4w6s6xlkyq-perl5.32.0-HTML-Mason-1.59-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rvx5av6mk5f9ggfvil2zlh4w6s6xlkyq-perl5.32.0-HTML-Mason-1.59-devdoc
+checking for references to /build/ in /nix/store/rvx5av6mk5f9ggfvil2zlh4w6s6xlkyq-perl5.32.0-HTML-Mason-1.59-devdoc...
+/nix/store/nb8blhvnc8nyn4cg1ia69dq1qxrnsr75-perl5.32.0-HTML-Mason-1.59

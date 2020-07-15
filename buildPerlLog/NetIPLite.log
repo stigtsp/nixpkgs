@@ -1,0 +1,71 @@
+these derivations will be built:
+  /nix/store/ynk29n4y0dza0zhbpfy6qag1ycr4q4fd-perl5.32.0-Net-IP-Lite-0.03.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/snyxajdbccdgz452fzchbq3wy81ps630-Net-IP-Lite-0.03.tar.gz
+copying path '/nix/store/snyxajdbccdgz452fzchbq3wy81ps630-Net-IP-Lite-0.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ynk29n4y0dza0zhbpfy6qag1ycr4q4fd-perl5.32.0-Net-IP-Lite-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/snyxajdbccdgz452fzchbq3wy81ps630-Net-IP-Lite-0.03.tar.gz
+source root is Net-IP-Lite-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1371249773 of file Net-IP-Lite-0.03/t/lib/Test/Net/IP/Lite.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IP::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/IP/Lite.pm blib/lib/Net/IP/Lite.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/0000_use.t ............. ok
+t/0001_ip2bin.t .......... ok
+t/0002_ip_validate.t ..... ok
+t/0003_ip_is_ipv4.t ...... ok
+t/0004_ip_is_ipv6.t ...... ok
+t/0005_ip_is_ipv6ipv4.t .. ok
+t/0006_ip_transform.t .... ok
+t/0007_ip_equal.t ........ ok
+t/0008_ip_equal_v4.t ..... ok
+t/0009_ip_equal_v6.t ..... ok
+t/0010_ip_in_range.t ..... ok
+t/1001_new.t ............. ok
+t/1002_binary.t .......... ok
+t/1003_is_ipv4.t ......... ok
+t/1004_is_ipv6.t ......... ok
+t/1005_is_ipv6ipv4.t ..... ok
+t/1006_transform.t ....... ok
+t/1007_equal.t ........... ok
+t/1008_equal_v4.t ........ ok
+t/1009_equal_v6.t ........ ok
+t/1010_in_range.t ........ ok
+t/2001_net-new.t ......... ok
+t/2002_net-contains.t .... ok
+All tests successful.
+Files=23, Tests=4886,  2 wallclock secs ( 0.34 usr  0.04 sys +  1.84 cusr  0.27 csys =  2.49 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/lib/pkgconfig m4datadir=/nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/share/aclocal aclocaldir=/nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/lib/perl5/site_perl/5.32.0/Net/IP/Lite.pm
+Installing /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/share/man/man3/Net::IP::Lite.3
+Appending installation info to /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/share/man/man3 to /nix/store/5pm9dl5cpnq9sg4422zhzqrzsgjsi1pi-perl5.32.0-Net-IP-Lite-0.03-devdoc/share/man/man3
+Removing empty /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03/lib
+patching script interpreter paths in /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03
+checking for references to /build/ in /nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5pm9dl5cpnq9sg4422zhzqrzsgjsi1pi-perl5.32.0-Net-IP-Lite-0.03-devdoc
+gzipping man pages under /nix/store/5pm9dl5cpnq9sg4422zhzqrzsgjsi1pi-perl5.32.0-Net-IP-Lite-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5pm9dl5cpnq9sg4422zhzqrzsgjsi1pi-perl5.32.0-Net-IP-Lite-0.03-devdoc
+checking for references to /build/ in /nix/store/5pm9dl5cpnq9sg4422zhzqrzsgjsi1pi-perl5.32.0-Net-IP-Lite-0.03-devdoc...
+/nix/store/946zb45svfh0y2ghfwk0mbvyqzvnpwdg-perl5.32.0-Net-IP-Lite-0.03

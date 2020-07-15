@@ -1,0 +1,127 @@
+these derivations will be built:
+  /nix/store/56b0564kgcas0s06rk1xnzpg3ms73x5z-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/x6b14gddcb8j7n5d19g73nb69sjy7pyq-Mojolicious-Plugin-OpenAPI-3.33.tar.gz
+copying path '/nix/store/x6b14gddcb8j7n5d19g73nb69sjy7pyq-Mojolicious-Plugin-OpenAPI-3.33.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/56b0564kgcas0s06rk1xnzpg3ms73x5z-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33.drv'...
+unpacking sources
+unpacking source archive /nix/store/x6b14gddcb8j7n5d19g73nb69sjy7pyq-Mojolicious-Plugin-OpenAPI-3.33.tar.gz
+source root is Mojolicious-Plugin-OpenAPI-3.33
+setting SOURCE_DATE_EPOCH to timestamp 1591597693 of file Mojolicious-Plugin-OpenAPI-3.33/META.json
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mojolicious::Plugin::OpenAPI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv3.pod blib/lib/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv3.pod
+cp lib/Mojolicious/Plugin/OpenAPI/Security.pm blib/lib/Mojolicious/Plugin/OpenAPI/Security.pm
+cp lib/Mojolicious/Plugin/OpenAPI.pm blib/lib/Mojolicious/Plugin/OpenAPI.pm
+cp lib/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv2.pod blib/lib/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv2.pod
+cp lib/Mojolicious/Plugin/OpenAPI/SpecRenderer.pm blib/lib/Mojolicious/Plugin/OpenAPI/SpecRenderer.pm
+cp lib/Mojolicious/Plugin/OpenAPI/Cors.pm blib/lib/Mojolicious/Plugin/OpenAPI/Cors.pm
+cp lib/JSON/Validator/OpenAPI/Mojolicious.pm blib/lib/JSON/Validator/OpenAPI/Mojolicious.pm
+cp lib/Mojolicious/Plugin/OpenAPI/Guides/Swagger2.pod blib/lib/Mojolicious/Plugin/OpenAPI/Guides/Swagger2.pod
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ........................... ok
+t/basic-404-501.t ...................... ok
+t/basic-autorender.t ................... ok
+t/basic-bundle.t ....................... ok
+t/basic-coerce.t ....................... ok
+t/basic-correct-order-of-paths.t ....... ok
+t/basic-custom-formats.t ............... ok
+t/basic-custom-renderer.t .............. ok
+t/basic-empty-response.t ............... ok
+t/basic-invalid-json-input.t ........... ok
+t/basic-legacy-swagger2.t .............. ok
+t/basic-mojo-placeholder.t ............. ok
+t/basic-mojo-route-names.t ............. ok
+t/basic-path-parameters.t .............. ok
+t/basic-register-plugin.t .............. ok
+t/basic-under-route-authenticate.t ..... ok
+t/jv-recursion.t ....................... validate_json() will be removed in future version. at t/jv-recursion.t line 13.
+singleton() will be removed in future version. at t/jv-recursion.t line 13.
+t/jv-recursion.t ....................... ok
+t/plugin-cors.t ........................ $c->openapi->cors_simple() has been replaced by $c->openapi->cors_exchange() at /build/Mojolicious-Plugin-OpenAPI-3.33/blib/lib/Mojolicious/Plugin/OpenAPI/Cors.pm line 86.
+t/plugin-cors.t ........................ 1/? $c->openapi->cors_simple() has been replaced by $c->openapi->cors_exchange() at /build/Mojolicious-Plugin-OpenAPI-3.33/blib/lib/Mojolicious/Plugin/OpenAPI/Cors.pm line 86.
+$c->openapi->cors_simple() has been replaced by $c->openapi->cors_exchange() at /build/Mojolicious-Plugin-OpenAPI-3.33/blib/lib/Mojolicious/Plugin/OpenAPI/Cors.pm line 86.
+t/plugin-cors.t ........................ ok
+t/plugin-security-rules-not-defined.t .. ok
+t/plugin-security-v2.t ................. ok
+t/plugin-security-v3.t ................. ok
+t/plugin-spec-renderer-doc.t ........... ok
+t/plugin-spec-renderer-options.t ....... ok
+t/plugin-spec-renderer-standalone.t .... ok
+t/plugin-spec-renderer-v3.t ............ ok
+t/v2-collectionformat.t ................ ok
+t/v2-defaults.t ........................ ok
+t/v2-discriminator.t ................... ok
+t/v2-file.t ............................ ok
+t/v2-formats.t ......................... 1/? Format rule for 'unknown' is missing at /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator.pm line 815.
+t/v2-formats.t ......................... ok
+t/v2-headers.t ......................... ok
+t/v2-readonly.t ........................ ok
+t/v2-tutorial.t ........................ ok
+t/v2-validate-schema.t ................. ok
+t/v3-basic.t ........................... ok
+t/v3-body.t ............................ ok
+t/v3-defaults.t ........................ ok
+t/v3-file.t ............................ 1/? Format rule for 'binary' is missing at /nix/store/0naqnkxiw8cb2z4x0nyx8l38l5balql7-perl5.32.0-JSON-Validator-4.00/lib/perl5/site_perl/5.32.0/JSON/Validator.pm line 815.
+t/v3-file.t ............................ ok
+t/v3-invalid_file_refs.t ............... ok
+t/v3-invalid_file_refs_no_path.t ....... Use of uninitialized value in string eq at /build/Mojolicious-Plugin-OpenAPI-3.33/blib/lib/JSON/Validator/OpenAPI/Mojolicious.pm line 34.
+t/v3-invalid_file_refs_no_path.t ....... 1/? Use of uninitialized value in string eq at /build/Mojolicious-Plugin-OpenAPI-3.33/blib/lib/JSON/Validator/OpenAPI/Mojolicious.pm line 34.
+t/v3-invalid_file_refs_no_path.t ....... ok
+t/v3-nullable.t ........................ ok
+t/v3-style-array.t ..................... ok
+t/v3-tutorial.t ........................ ok
+t/v3-valid_file_refs.t ................. ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/v2-formats.t                       (Wstat: 0 Tests: 30 Failed: 0)
+  TODO passed:   15
+Files=44, Tests=794, 23 wallclock secs ( 0.20 usr  0.05 sys + 19.45 cusr  3.37 csys = 23.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/pkgconfig m4datadir=/nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/aclocal aclocaldir=/nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/aclocal install
+Manifying 8 pod documents
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI.pm
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/Security.pm
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/Cors.pm
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/SpecRenderer.pm
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv2.pod
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/Guides/Swagger2.pod
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/Mojolicious/Plugin/OpenAPI/Guides/OpenAPIv3.pod
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/JSON/Validator/OpenAPI/Mojolicious.pm
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::Guides::Swagger2.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::SpecRenderer.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::Security.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/JSON::Validator::OpenAPI::Mojolicious.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::Cors.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::Guides::OpenAPIv2.3
+Installing /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3/Mojolicious::Plugin::OpenAPI::Guides::OpenAPIv3.3
+Appending installation info to /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/man3 to /nix/store/5jmzambmf6w1kga8ycn62rn17dxi6kvz-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33-devdoc/share/man/man3
+Removing empty /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib
+patching script interpreter paths in /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33
+checking for references to /build/ in /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5jmzambmf6w1kga8ycn62rn17dxi6kvz-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33-devdoc
+gzipping man pages under /nix/store/5jmzambmf6w1kga8ycn62rn17dxi6kvz-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5jmzambmf6w1kga8ycn62rn17dxi6kvz-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33-devdoc
+checking for references to /build/ in /nix/store/5jmzambmf6w1kga8ycn62rn17dxi6kvz-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33-devdoc...
+/nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33

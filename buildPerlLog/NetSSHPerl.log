@@ -1,0 +1,355 @@
+these derivations will be built:
+  /nix/store/anraaj7qyx92hrfgizpbwlk8j1irpga8-perl5.32.0-Net-SSH-Perl-2.14.drv
+these paths will be fetched (0.25 MiB download, 0.25 MiB unpacked):
+  /nix/store/9b0p3ci69dcafkgvbmy6ns9hlyv5visx-Net-SSH-Perl-2.14.tar.gz
+copying path '/nix/store/9b0p3ci69dcafkgvbmy6ns9hlyv5visx-Net-SSH-Perl-2.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/anraaj7qyx92hrfgizpbwlk8j1irpga8-perl5.32.0-Net-SSH-Perl-2.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/9b0p3ci69dcafkgvbmy6ns9hlyv5visx-Net-SSH-Perl-2.14.tar.gz
+source root is Net-SSH-Perl-2.14
+setting SOURCE_DATE_EPOCH to timestamp 1503553678 of file Net-SSH-Perl-2.14/SIGNATURE
+patching sources
+configuring
+patching ./t/99-pod.t...
+patching ./t/01-compile.t...
+patching ./t/00-signature.t...
+patching ./t/02-buffer.t...
+patching ./t/07-ed25519.t...
+patching ./t/06-auth.t...
+patching ./t/06-circular.t...
+patching ./t/04-config.t...
+patching ./t/05-cipher.t...
+patching ./t/99-yaml.t...
+patching ./t/99-spellcheck.t...
+patching ./t/03-packet.t...
+patching ./t/99-perlcritic.t...
+patching ./eg/pscp...
+patching ./eg/remoteinteract.pl...
+patching ./eg/pssh-keygen...
+patching ./eg/pssh...
+patching ./eg/cmd.pl...
+patching ./eg/remoteinteract2.pl...
+This is Net::SSH::Perl.
+
+As of version 1.00, Net::SSH::Perl supports both the SSH1 and
+SSH2 protocols natively. The two protocols have different
+module prerequisitives, so you need to decide which protocol(s)
+you plan to use. If you use one or the other, only those modules
+for your chosen protocol will be installed; if you choose both,
+all of the supporting modules will be installed. Please choose
+the protocols you'd like to use from the following list ("Both"
+is the default).
+
+    [1] SSH1
+    [2] SSH2
+    [3] Both SSH1 and SSH2
+
+Which protocol(s) do you plan to use? [3] 3
+
+Checking for optional modules
+
+Digest::BubbleBabble is required if you want to generate bubble babble
+key fingerprints with pssh-keygen.
+
+Would you like to install it? (y/n) [y] y
+
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Digest::BubbleBabble 0.01 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Net::SSH::Perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/SSH/Perl/Auth/Rhosts_RSA.pm blib/lib/Net/SSH/Perl/Auth/Rhosts_RSA.pm
+cp lib/Net/SSH/Perl/Auth/KeyboardInt.pm blib/lib/Net/SSH/Perl/Auth/KeyboardInt.pm
+cp lib/Net/SSH/Perl/Cipher/DES.pm blib/lib/Net/SSH/Perl/Cipher/DES.pm
+cp lib/Net/SSH/Perl/Auth.pm blib/lib/Net/SSH/Perl/Auth.pm
+cp lib/Net/SSH/Perl/Cipher/AES192_CTR.pm blib/lib/Net/SSH/Perl/Cipher/AES192_CTR.pm
+cp lib/Net/SSH/Perl/Cipher/AES128_CTR.pm blib/lib/Net/SSH/Perl/Cipher/AES128_CTR.pm
+cp lib/Net/SSH/Perl/Auth/PublicKey.pm blib/lib/Net/SSH/Perl/Auth/PublicKey.pm
+cp lib/Net/SSH/Perl/Cipher/CTR.pm blib/lib/Net/SSH/Perl/Cipher/CTR.pm
+cp lib/Net/SSH/Perl/Auth/Password.pm blib/lib/Net/SSH/Perl/Auth/Password.pm
+cp lib/Net/SSH/Perl/Cipher/IDEA.pm blib/lib/Net/SSH/Perl/Cipher/IDEA.pm
+cp lib/Net/SSH/Perl/Auth/RSA.pm blib/lib/Net/SSH/Perl/Auth/RSA.pm
+cp lib/Net/SSH/Perl/Cipher/ChachaPoly.pm blib/lib/Net/SSH/Perl/Cipher/ChachaPoly.pm
+cp lib/Net/SSH/Perl/Cipher/AES256_CBC.pm blib/lib/Net/SSH/Perl/Cipher/AES256_CBC.pm
+cp lib/Net/SSH/Perl/Auth/ChallengeResponse.pm blib/lib/Net/SSH/Perl/Auth/ChallengeResponse.pm
+cp lib/Net/SSH/Perl/Cipher/AES_CBC.pm blib/lib/Net/SSH/Perl/Cipher/AES_CBC.pm
+cp lib/Net/SSH/Perl/Cipher/AES_CTR.pm blib/lib/Net/SSH/Perl/Cipher/AES_CTR.pm
+cp lib/Net/SSH/Perl/Cipher/ChachaPoly.xs blib/lib/Net/SSH/Perl/Cipher/ChachaPoly.xs
+cp lib/Net/SSH/Perl/Cipher/CBC.pm blib/lib/Net/SSH/Perl/Cipher/CBC.pm
+cp lib/Net/SSH/Perl/Cipher.pm blib/lib/Net/SSH/Perl/Cipher.pm
+cp lib/Net/SSH/Perl/Cipher/Blowfish.pm blib/lib/Net/SSH/Perl/Cipher/Blowfish.pm
+cp lib/Net/SSH/Perl/Channel.pm blib/lib/Net/SSH/Perl/Channel.pm
+cp lib/Net/SSH/Perl/AuthMgr.pm blib/lib/Net/SSH/Perl/AuthMgr.pm
+cp lib/Net/SSH/Perl/Cipher/CFB.pm blib/lib/Net/SSH/Perl/Cipher/CFB.pm
+cp lib/Net/SSH/Perl/Buffer.pm blib/lib/Net/SSH/Perl/Buffer.pm
+cp lib/Net/SSH/Perl/Cipher/AES192_CBC.pm blib/lib/Net/SSH/Perl/Cipher/AES192_CBC.pm
+cp lib/Net/SSH/Perl/Cipher/AES256_CTR.pm blib/lib/Net/SSH/Perl/Cipher/AES256_CTR.pm
+cp lib/Net/SSH/Perl/Auth/KeyboardInteractive.pm blib/lib/Net/SSH/Perl/Auth/KeyboardInteractive.pm
+cp lib/Net/SSH/Perl/ChannelMgr.pm blib/lib/Net/SSH/Perl/ChannelMgr.pm
+cp lib/Net/SSH/Perl/Auth/Rhosts.pm blib/lib/Net/SSH/Perl/Auth/Rhosts.pm
+cp lib/Net/SSH/Perl/Cipher/AES128_CBC.pm blib/lib/Net/SSH/Perl/Cipher/AES128_CBC.pm
+cp lib/Net/SSH/Perl.pm blib/lib/Net/SSH/Perl.pm
+cp lib/Net/SSH/Perl/Cipher/RC4.pm blib/lib/Net/SSH/Perl/Cipher/RC4.pm
+cp lib/Net/SSH/Perl/Agent.pm blib/lib/Net/SSH/Perl/Agent.pm
+cp lib/Net/SSH/Perl/Cipher/DES3.pm blib/lib/Net/SSH/Perl/Cipher/DES3.pm
+cp lib/Net/SSH/Perl/Handle.pm blib/lib/Net/SSH/Perl/Handle.pm
+cp lib/Net/SSH/Perl/Kex/DH14SHA1.pm blib/lib/Net/SSH/Perl/Kex/DH14SHA1.pm
+cp lib/Net/SSH/Perl/Key/RSA.pm blib/lib/Net/SSH/Perl/Key/RSA.pm
+cp lib/Net/SSH/Perl/Handle/SSH2.pm blib/lib/Net/SSH/Perl/Handle/SSH2.pm
+cp lib/Net/SSH/Perl/Key/DSA.pm blib/lib/Net/SSH/Perl/Key/DSA.pm
+cp lib/Net/SSH/Perl/Kex.pm blib/lib/Net/SSH/Perl/Kex.pm
+cp lib/Net/SSH/Perl/Key/Ed25519.xs blib/lib/Net/SSH/Perl/Key/Ed25519.xs
+cp lib/Net/SSH/Perl/Util.pm blib/lib/Net/SSH/Perl/Util.pm
+cp lib/Net/SSH/Perl/Kex/DHGEXSHA1.pm blib/lib/Net/SSH/Perl/Kex/DHGEXSHA1.pm
+cp lib/Net/SSH/Perl/Subsystem/Client.pm blib/lib/Net/SSH/Perl/Subsystem/Client.pm
+cp lib/Net/SSH/Perl/Comp.pm blib/lib/Net/SSH/Perl/Comp.pm
+cp lib/Net/SSH/Perl/Util/Authfile.pm blib/lib/Net/SSH/Perl/Util/Authfile.pm
+cp lib/Net/SSH/Perl/Proxy.pm blib/lib/Net/SSH/Perl/Proxy.pm
+cp lib/Net/SSH/Perl/Packet.pm blib/lib/Net/SSH/Perl/Packet.pm
+cp lib/Net/SSH/Perl/Key.pm blib/lib/Net/SSH/Perl/Key.pm
+cp lib/Net/SSH/Perl/Mac.pm blib/lib/Net/SSH/Perl/Mac.pm
+cp lib/Net/SSH/Perl/Config.pm blib/lib/Net/SSH/Perl/Config.pm
+cp lib/Net/SSH/Perl/Key/ECDSA384.pm blib/lib/Net/SSH/Perl/Key/ECDSA384.pm
+cp lib/Net/SSH/Perl/Key/ECDSA256.pm blib/lib/Net/SSH/Perl/Key/ECDSA256.pm
+cp lib/Net/SSH/Perl/Kex/DH18SHA512.pm blib/lib/Net/SSH/Perl/Kex/DH18SHA512.pm
+cp lib/Net/SSH/Perl/Kex/C25519.pm blib/lib/Net/SSH/Perl/Kex/C25519.pm
+cp lib/Net/SSH/Perl/Kex/DH16SHA512.pm blib/lib/Net/SSH/Perl/Kex/DH16SHA512.pm
+cp lib/Net/SSH/Perl/Kex/DHGEXSHA256.pm blib/lib/Net/SSH/Perl/Kex/DHGEXSHA256.pm
+cp lib/Net/SSH/Perl/Kex/DHGEX.pm blib/lib/Net/SSH/Perl/Kex/DHGEX.pm
+cp lib/Net/SSH/Perl/Constants.pm blib/lib/Net/SSH/Perl/Constants.pm
+cp lib/Net/SSH/Perl/SSH2.pm blib/lib/Net/SSH/Perl/SSH2.pm
+cp lib/Net/SSH/Perl/Kex/DH14SHA256.pm blib/lib/Net/SSH/Perl/Kex/DH14SHA256.pm
+cp lib/Net/SSH/Perl/Key/ECDSA.pm blib/lib/Net/SSH/Perl/Key/ECDSA.pm
+cp lib/Net/SSH/Perl/Comp/Zlib.pm blib/lib/Net/SSH/Perl/Comp/Zlib.pm
+cp lib/Net/SSH/Perl/Key/RSA1.pm blib/lib/Net/SSH/Perl/Key/RSA1.pm
+cp lib/Net/SSH/Perl/Subsystem/Server.pm blib/lib/Net/SSH/Perl/Subsystem/Server.pm
+cp lib/Net/SSH/Perl/Key/Ed25519.pm blib/lib/Net/SSH/Perl/Key/Ed25519.pm
+cp lib/Net/SSH/Perl/Key/ECDSA521.pm blib/lib/Net/SSH/Perl/Key/ECDSA521.pm
+cp lib/Net/SSH/Perl/Kex/DH.pm blib/lib/Net/SSH/Perl/Kex/DH.pm
+cp lib/Net/SSH/Perl/Handle/SSH1.pm blib/lib/Net/SSH/Perl/Handle/SSH1.pm
+cp lib/Net/SSH/Perl/Kex/DH1.pm blib/lib/Net/SSH/Perl/Kex/DH1.pm
+cp lib/Net/SSH/Perl/SSH1.pm blib/lib/Net/SSH/Perl/SSH1.pm
+cp lib/Net/SSH/Perl/Util/Hosts.pm blib/lib/Net/SSH/Perl/Util/Hosts.pm
+cp lib/Net/SSH/Perl/Util/Term.pm blib/lib/Net/SSH/Perl/Util/Term.pm
+cp lib/Net/SSH/Perl/Util/SSH1MP.pm blib/lib/Net/SSH/Perl/Util/SSH1MP.pm
+cp lib/Net/SSH/Perl/Util/Win32.pm blib/lib/Net/SSH/Perl/Util/Win32.pm
+cp lib/Net/SSH/Perl/Util/RSA.pm blib/lib/Net/SSH/Perl/Util/RSA.pm
+cp lib/Net/SSH/Perl/Util/SSH1Misc.pm blib/lib/Net/SSH/Perl/Util/SSH1Misc.pm
+Running Mkbootstrap for Perl ()
+chmod 644 "Perl.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Perl.bs blib/arch/auto/Net/SSH/Perl/Perl.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Net-SSH-Perl-2.14/typemap'  Perl.xs > Perl.xsc
+mv Perl.xsc Perl.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.14\" -DXS_VERSION=\"2.14\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Perl.c
+In file included from src/chacha/chacha.c:9,
+                 from Perl.c:191:
+src/chacha/chacha.h:25:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+   25 |     __attribute__((__bounded__(__minbytes__, 2, CHACHA_MINKEYLEN)));
+      |     ^~~~~~~~~~~~~
+src/chacha/chacha.h:28:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+   28 |     __attribute__((__bounded__(__minbytes__, 3, CHACHA_CTRLEN)));
+      |     ^~~~~~~~~~~~~
+src/chacha/chacha.h:28:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+src/chacha/chacha.h:32:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+   32 |     __attribute__((__bounded__(__buffer__, 3, 4)));
+      |     ^~~~~~~~~~~~~
+src/chacha/chacha.h:32:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+In file included from src/chacha/poly1305.c:10,
+                 from Perl.c:193:
+src/chacha/poly1305.h:20:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+   20 |     __attribute__((__bounded__(__minbytes__, 4, POLY1305_KEYLEN)));
+      |     ^~~~~~~~~~~~~
+src/chacha/poly1305.h:20:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+src/chacha/poly1305.h:20:5: warning: 'bounded' attribute directive ignored [-Wattributes]
+rm -f blib/arch/auto/Net/SSH/Perl/Perl.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Perl.o  -o blib/arch/auto/Net/SSH/Perl/Perl.so  \
+      \
+
+chmod 755 blib/arch/auto/Net/SSH/Perl/Perl.so
+Manifying 30 pod documents
+Manifying 31 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Perl.bs blib/arch/auto/Net/SSH/Perl/Perl.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-signature.t ... skipped: Set the environment variable TEST_SIGNATURE to enable this test
+t/01-compile.t ..... ok
+t/02-buffer.t ...... ok
+t/03-packet.t ...... ok
+t/04-config.t ...... ok
+t/05-cipher.t ...... ok
+t/06-auth.t ........ skipped: Test not enabled yet
+t/06-circular.t .... ok
+t/07-ed25519.t ..... ok
+t/99-perlcritic.t .. skipped: Set the environment variable TEST_CRITIC to enable this test
+t/99-pod.t ......... skipped: Test not ready yet.
+t/99-spellcheck.t .. skipped: Set the environment variable TEST_SPELL to enable this test
+t/99-yaml.t ........ skipped: Set the environment variable TEST_AUTHOR to enable this test
+All tests successful.
+Files=13, Tests=157,  2 wallclock secs ( 0.06 usr  0.01 sys +  1.17 cusr  0.55 csys =  1.79 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/pkgconfig m4datadir=/nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/aclocal aclocaldir=/nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Perl.bs blib/arch/auto/Net/SSH/Perl/Perl.bs 644
+Manifying 30 pod documents
+Manifying 31 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/SSH/Perl/Perl.so
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Agent.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Config.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/ChannelMgr.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Proxy.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Buffer.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Channel.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Mac.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Handle.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/SSH2.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/SSH1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Packet.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Comp.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Constants.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/AuthMgr.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/KeyboardInt.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/RSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/Password.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/ChallengeResponse.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/KeyboardInteractive.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/PublicKey.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/Rhosts.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Auth/Rhosts_RSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Subsystem/Server.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Subsystem/Client.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Comp/Zlib.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES192_CBC.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/CFB.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES_CTR.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/RC4.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/IDEA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/CBC.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/ChachaPoly.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES256_CTR.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES128_CBC.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES256_CBC.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/DES3.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES_CBC.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES192_CTR.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/AES128_CTR.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/DES.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/ChachaPoly.xs
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/Blowfish.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Cipher/CTR.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Handle/SSH2.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Handle/SSH1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH14SHA1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH14SHA256.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH16SHA512.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DHGEXSHA1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DHGEXSHA256.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/C25519.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH18SHA512.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DH.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Kex/DHGEX.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/RSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/Ed25519.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/Ed25519.xs
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/ECDSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/ECDSA256.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/DSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/ECDSA521.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/RSA1.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Key/ECDSA384.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/RSA.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/Hosts.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/Authfile.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/SSH1MP.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/Term.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/SSH1Misc.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSH/Perl/Util/Win32.pm
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH18SHA512.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::SSH1.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Handle.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::Blowfish.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH14SHA256.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Config.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::IDEA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::C25519.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH1.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES_CTR.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES256_CBC.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::CTR.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Comp.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::CBC.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key::DSA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Buffer.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Constants.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES_CBC.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Packet.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::DES.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Subsystem::Client.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES192_CTR.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Mac.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::KeyboardInt.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DHGEXSHA1.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Agent.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::Password.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key::RSA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES192_CBC.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH14SHA1.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::Rhosts_RSA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES128_CTR.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::ChannelMgr.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Proxy.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::SSH2.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DHGEX.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES256_CTR.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::ChachaPoly.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Comp::Zlib.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Util.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::Rhosts.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key::RSA1.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DHGEXSHA256.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Channel.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::RSA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth::PublicKey.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::RC4.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Kex::DH16SHA512.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Subsystem::Server.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::AuthMgr.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key::Ed25519.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Key::ECDSA.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::AES128_CBC.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Auth.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::CFB.3
+Installing /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3/Net::SSH::Perl::Cipher::DES3.3
+Appending installation info to /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/man3 to /nix/store/qs69zj1raalplfi4k057bl5qavkhbg7m-perl5.32.0-Net-SSH-Perl-2.14-devdoc/share/man/man3
+Removing empty /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14
+shrinking /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/SSH/Perl/Perl.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14/lib
+patching script interpreter paths in /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14
+checking for references to /build/ in /nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qs69zj1raalplfi4k057bl5qavkhbg7m-perl5.32.0-Net-SSH-Perl-2.14-devdoc
+gzipping man pages under /nix/store/qs69zj1raalplfi4k057bl5qavkhbg7m-perl5.32.0-Net-SSH-Perl-2.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qs69zj1raalplfi4k057bl5qavkhbg7m-perl5.32.0-Net-SSH-Perl-2.14-devdoc
+checking for references to /build/ in /nix/store/qs69zj1raalplfi4k057bl5qavkhbg7m-perl5.32.0-Net-SSH-Perl-2.14-devdoc...
+/nix/store/dm4khgg4kmshci42vc0fvrk53frf43vd-perl5.32.0-Net-SSH-Perl-2.14

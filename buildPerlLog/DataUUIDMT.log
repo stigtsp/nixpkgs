@@ -1,0 +1,320 @@
+these derivations will be built:
+  /nix/store/z0k8vz2wkl2fyvifflnscqb45srdah5i-perl5.32.0-Object-InsideOut-4.05.drv
+  /nix/store/hp22jvpckanq5qbnihdlk3wsdl80vdvy-perl5.32.0-Math-Random-MT-Auto-6.23.drv
+  /nix/store/a7rdcb3l64m01hi0mq6zkn8p0lh2j5w8-perl5.32.0-Data-UUID-MT-1.001.drv
+these paths will be fetched (0.27 MiB download, 0.27 MiB unpacked):
+  /nix/store/22pj1xymybl94qvi87kivgsc98fd0d2v-Math-Random-MT-Auto-6.23.tar.gz
+  /nix/store/4acrnsgv712m482xsj9gr16wpxgx33ks-Data-UUID-MT-1.001.tar.gz
+  /nix/store/9hx7jk48aqgbbvjnfis2265cv9p1szs4-Object-InsideOut-4.05.tar.gz
+copying path '/nix/store/4acrnsgv712m482xsj9gr16wpxgx33ks-Data-UUID-MT-1.001.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/22pj1xymybl94qvi87kivgsc98fd0d2v-Math-Random-MT-Auto-6.23.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9hx7jk48aqgbbvjnfis2265cv9p1szs4-Object-InsideOut-4.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z0k8vz2wkl2fyvifflnscqb45srdah5i-perl5.32.0-Object-InsideOut-4.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/9hx7jk48aqgbbvjnfis2265cv9p1szs4-Object-InsideOut-4.05.tar.gz
+source root is Object-InsideOut-4.05
+setting SOURCE_DATE_EPOCH to timestamp 1543290176 of file Object-InsideOut-4.05/MANIFEST
+patching sources
+configuring
+
+Checking prerequisites...
+ * Optional prerequisite Want is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+
+Checking prerequisites...
+ * Optional prerequisite Math::Random::MT::Auto is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Object::InsideOut
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Math::Random::MT::Auto is not installed
+    *  Test::Pod is not installed
+    *  Test::Pod::Coverage is not installed
+    *  Want is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Object-InsideOut' version '4.05'
+Building Object-InsideOut
+running tests
+t/00-load.t ................. 1/1 # Testing Object::InsideOut 4.05
+t/00-load.t ................. ok
+t/01-basic.t ................ ok
+t/01a-basic.t ............... ok
+t/02-auto.t ................. ok
+t/03-threads.t .............. ok
+t/03a-threads.t ............. ok
+t/04-shared.t ............... ok
+t/04a-shared.t .............. ok
+t/05-require.t .............. ok
+t/05a-require.t ............. ok
+t/06-id.t ................... ok
+t/07-dump.t ................. ok
+t/07a-dump.t ................ ok
+t/08-access.t ............... ok
+t/09-chained.t .............. ok
+t/09a-chained.t ............. ok
+t/09b-chained.t ............. ok
+t/10-cumulative.t ........... ok
+t/10a-cumulative.t .......... ok
+t/10b-cumulative.t .......... ok
+t/11-coercion.t ............. ok
+t/12-super.t ................ ok
+t/13-pump.t ................. ok
+t/14-auto_cc.t .............. ok
+t/15-type.t ................. ok
+t/15a-type.t ................ ok
+t/16-return.t ............... ok
+t/17-dynamic.t .............. ok
+t/18-inherit.t .............. ok
+t/18a-inherit.t ............. ok
+t/19-storable.t ............. ok
+t/20-clone.t ................ ok
+t/21-import.t ............... ok
+t/22-import.t ............... ok
+t/23-weak.t ................. ok
+t/24-preproc.t .............. ok
+t/25-access.t ............... ok
+t/26-preinit.t .............. ok
+t/27-exception.t ............ ok
+t/28-lvalue.t ............... skipped: Needs Want v0.12 or later
+t/29-non_lvalue.t ........... skipped: Needs Want v0.12 or later
+t/30-all.t .................. ok
+t/31-attr.t ................. ok
+t/32-meta.t ................. ok
+t/33-hash_only.t ............ ok
+t/34-secure.t ............... skipped: Math::Random::MT::Auto not available
+t/34a-secure.t .............. skipped: Math::Random::MT::Auto not available
+t/35-add_class.t ............ ok
+t/36-require.t .............. ok
+t/37-class_perm.t ........... ok
+t/38-combined.t ............. ok
+t/39-fork.t ................. skipped: Not using pseudo-forks
+t/40-normalize.t ............ ok
+t/41-def.t .................. ok
+t/42-sh_obj.t ............... ok
+t/43-overload.t ............. ok
+t/44-data.t ................. ok
+t/45-unused.t ............... ok
+t/46-singleton.t ............ 1/1       (in cleanup)    (in cleanup)  at /build/Object-InsideOut-4.05/blib/lib/Object/InsideOut.pm line 1953 during global destruction.
+t/46-singleton.t ............ ok
+t/46a-singleton.t ........... 1/1       (in cleanup)    (in cleanup)  at /build/Object-InsideOut-4.05/blib/lib/Object/InsideOut.pm line 1953 during global destruction.
+t/46a-singleton.t ........... ok
+t/47-sh_reuse.t ............. ok
+t/48-not_shared.t ........... ok
+t/49-delegators.t ........... ok
+t/49a-delegators-non-OIO.t .. ok
+t/50-active_defs.t .......... ok
+t/51-readonly.t ............. ok
+t/99-pod.t .................. skipped: Module maintainer tests
+All tests successful.
+Files=67, Tests=921,  7 wallclock secs ( 0.21 usr  0.07 sys +  5.67 cusr  1.32 csys =  7.27 CPU)
+Result: PASS
+installing
+Building Object-InsideOut
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut.pod
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Autoload.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Exception.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Foreign.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Overload.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/attributes.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Metadata.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Util.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/lvalue.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Dynamic.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Universal.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Dump.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Chained.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Secure.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut/Cumulative.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Bundle/Object/InsideOut.pm
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/share/man/man3/Bundle::Object::InsideOut.3
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/share/man/man3/Object::InsideOut.3
+Installing /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/share/man/man3/Object::InsideOut::Metadata.3
+post-installation fixup
+Moving /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/share/man/man3 to /nix/store/32a9q0cf2zhwb9lzi7gk9pr1gfx17zmh-perl5.32.0-Object-InsideOut-4.05-devdoc/share/man/man3
+Removing empty /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib
+patching script interpreter paths in /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05
+checking for references to /build/ in /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/32a9q0cf2zhwb9lzi7gk9pr1gfx17zmh-perl5.32.0-Object-InsideOut-4.05-devdoc
+gzipping man pages under /nix/store/32a9q0cf2zhwb9lzi7gk9pr1gfx17zmh-perl5.32.0-Object-InsideOut-4.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/32a9q0cf2zhwb9lzi7gk9pr1gfx17zmh-perl5.32.0-Object-InsideOut-4.05-devdoc
+checking for references to /build/ in /nix/store/32a9q0cf2zhwb9lzi7gk9pr1gfx17zmh-perl5.32.0-Object-InsideOut-4.05-devdoc...
+building '/nix/store/hp22jvpckanq5qbnihdlk3wsdl80vdvy-perl5.32.0-Math-Random-MT-Auto-6.23.drv'...
+unpacking sources
+unpacking source archive /nix/store/22pj1xymybl94qvi87kivgsc98fd0d2v-Math-Random-MT-Auto-6.23.tar.gz
+source root is Math-Random-MT-Auto-6.23
+setting SOURCE_DATE_EPOCH to timestamp 1543288820 of file Math-Random-MT-Auto-6.23/META.yml
+patching sources
+configuring
+patching ./examples/poisson.pl...
+patching ./examples/decay.pl...
+patching ./examples/timings.pl...
+patching ./examples/binomial.pl...
+patching ./examples/cards.pl...
+patching ./examples/erlang.pl...
+patching ./examples/bell.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::Random::MT::Auto
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/Random/MT/Auto.pm blib/lib/Math/Random/MT/Auto.pm
+cp lib/Math/Random/MT/Auto/Range.pm blib/lib/Math/Random/MT/Auto/Range.pm
+Running Mkbootstrap for Auto ()
+chmod 644 "Auto.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Auto.bs blib/arch/auto/Math/Random/MT/Auto/Auto.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  MRMA.xs > MRMA.xsc
+mv MRMA.xsc MRMA.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"6.23\" -DXS_VERSION=\"6.23\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   MRMA.c
+rm -f blib/arch/auto/Math/Random/MT/Auto/Auto.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  MRMA.o  -o blib/arch/auto/Math/Random/MT/Auto/Auto.so  \
+      \
+
+chmod 755 blib/arch/auto/Math/Random/MT/Auto/Auto.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Auto.bs blib/arch/auto/Math/Random/MT/Auto/Auto.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ......... 1/1 # Testing Math::Random::MT::Auto 6.23
+t/00-load.t ......... ok
+t/01-mersenne.t ..... ok
+t/02-gaussian.t ..... ok
+t/03-threads.t ...... ok
+t/04-win32.t ........ skipped: Not MSWin32 or Cygwin
+t/05-dev_urandom.t .. ok
+t/06-dev_random.t ... ok
+t/07-random_org.t ... skipped: LWP::Useragent not available
+t/08-hotbits.t ...... skipped: LWP::Useragent not available
+t/09-state.t ........ ok
+t/10-deviates.t ..... ok
+t/11-range.t ........ ok
+t/12-rn_info.t ...... skipped: LWP::Useragent not available
+t/13-overload.t ..... ok
+t/14-serialize.t .... ok
+t/15-shared.t ....... ok
+t/99-pod.t .......... skipped: Module maintainer tests
+All tests successful.
+Files=17, Tests=5612,  4 wallclock secs ( 0.34 usr  0.03 sys +  2.78 cusr  0.38 csys =  3.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/pkgconfig m4datadir=/nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/aclocal aclocaldir=/nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Auto.bs blib/arch/auto/Math/Random/MT/Auto/Auto.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Random/MT/Auto/Auto.so
+Installing /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Random/MT/Auto.pm
+Installing /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Random/MT/Auto/Range.pm
+Installing /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/man/man3/Math::Random::MT::Auto.3
+Installing /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/man/man3/Math::Random::MT::Auto::Range.3
+Appending installation info to /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/man/man3 to /nix/store/jg4zr6mhrnzf1flcfi12cbl2zx1ckn5k-perl5.32.0-Math-Random-MT-Auto-6.23-devdoc/share/man/man3
+Removing empty /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23
+shrinking /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Random/MT/Auto/Auto.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23/lib
+patching script interpreter paths in /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23
+checking for references to /build/ in /nix/store/hvqh56i1p0d3ixia9c08xgnl3bq93rkh-perl5.32.0-Math-Random-MT-Auto-6.23...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jg4zr6mhrnzf1flcfi12cbl2zx1ckn5k-perl5.32.0-Math-Random-MT-Auto-6.23-devdoc
+gzipping man pages under /nix/store/jg4zr6mhrnzf1flcfi12cbl2zx1ckn5k-perl5.32.0-Math-Random-MT-Auto-6.23-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jg4zr6mhrnzf1flcfi12cbl2zx1ckn5k-perl5.32.0-Math-Random-MT-Auto-6.23-devdoc
+checking for references to /build/ in /nix/store/jg4zr6mhrnzf1flcfi12cbl2zx1ckn5k-perl5.32.0-Math-Random-MT-Auto-6.23-devdoc...
+building '/nix/store/a7rdcb3l64m01hi0mq6zkn8p0lh2j5w8-perl5.32.0-Data-UUID-MT-1.001.drv'...
+unpacking sources
+unpacking source archive /nix/store/4acrnsgv712m482xsj9gr16wpxgx33ks-Data-UUID-MT-1.001.tar.gz
+source root is Data-UUID-MT-1.001
+setting SOURCE_DATE_EPOCH to timestamp 1371739447 of file Data-UUID-MT-1.001/xt/release/test-version.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+patching ./t/00-compile.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::UUID::MT
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/UUID/MT.pm blib/lib/Data/UUID/MT.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .........        (in cleanup)    (in cleanup)  at /nix/store/m3brivzhm5xd3czq362j6k9l24ngxpj6-perl5.32.0-Object-InsideOut-4.05/lib/perl5/site_perl/5.32.0/Object/InsideOut.pm line 1953 during global destruction.
+t/00-compile.t ......... ok
+t/00-report-prereqs.t .. # Prerequisite Report:
+#    Version Module
+#   -------- ----------------------
+#   5.032000 Config
+#       7.44 ExtUtils::MakeMaker
+#       1.37 File::Find
+#       3.78 File::Spec::Functions
+#     0.2309 File::Temp
+#       0.16 List::AllUtils
+#       1.55 List::Util
+#       6.23 Math::Random::MT::Auto
+#       1.55 Scalar::Util
+#   1.302175 Test::More
+#     1.9764 Time::HiRes
+#       1.11 strict
+#       1.47 warnings
+t/00-report-prereqs.t .. ok
+t/uuid.t ............... ok
+All tests successful.
+Files=3, Tests=15,  1 wallclock secs ( 0.03 usr  0.02 sys +  0.60 cusr  0.22 csys =  0.87 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/lib/pkgconfig m4datadir=/nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/share/aclocal aclocaldir=/nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/lib/perl5/site_perl/5.32.0/Data/UUID/MT.pm
+Installing /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/share/man/man3/Data::UUID::MT.3
+Appending installation info to /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/share/man/man3 to /nix/store/rdg8zp30zx9k0clcb7iva1xyxp0n3sam-perl5.32.0-Data-UUID-MT-1.001-devdoc/share/man/man3
+Removing empty /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001/lib
+patching script interpreter paths in /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001
+checking for references to /build/ in /nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rdg8zp30zx9k0clcb7iva1xyxp0n3sam-perl5.32.0-Data-UUID-MT-1.001-devdoc
+gzipping man pages under /nix/store/rdg8zp30zx9k0clcb7iva1xyxp0n3sam-perl5.32.0-Data-UUID-MT-1.001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rdg8zp30zx9k0clcb7iva1xyxp0n3sam-perl5.32.0-Data-UUID-MT-1.001-devdoc
+checking for references to /build/ in /nix/store/rdg8zp30zx9k0clcb7iva1xyxp0n3sam-perl5.32.0-Data-UUID-MT-1.001-devdoc...
+/nix/store/dy8411ccqrh1ahg0binyzz3ds3728qks-perl5.32.0-Data-UUID-MT-1.001

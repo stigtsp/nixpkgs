@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/s7h4njkj9r5wv82hj8mbrk6f7rxc57si-perl5.32.0-LockFile-Simple-0.208.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/qypjrkcih54svj8b8xldzcvhvkx9llir-LockFile-Simple-0.208.tar.gz
+copying path '/nix/store/qypjrkcih54svj8b8xldzcvhvkx9llir-LockFile-Simple-0.208.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/s7h4njkj9r5wv82hj8mbrk6f7rxc57si-perl5.32.0-LockFile-Simple-0.208.drv'...
+unpacking sources
+unpacking source archive /nix/store/qypjrkcih54svj8b8xldzcvhvkx9llir-LockFile-Simple-0.208.tar.gz
+source root is LockFile-Simple-0.208
+setting SOURCE_DATE_EPOCH to timestamp 1338585545 of file LockFile-Simple-0.208/META.yml
+patching sources
+configuring
+patching ./t/user.t...
+patching ./t/basic.t...
+patching ./t/simple.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LockFile::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Simple.pm blib/lib/LockFile/Simple.pm
+cp Lock.pm blib/lib/LockFile/Lock.pm
+cp Lock/Simple.pm blib/lib/LockFile/Lock/Simple.pm
+cp Manager.pm blib/lib/LockFile/Manager.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t ... ok
+t/simple.t .. ok
+t/user.t .... ok
+All tests successful.
+Files=3, Tests=13,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.04 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/pkgconfig m4datadir=/nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/share/aclocal aclocaldir=/nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/perl5/site_perl/5.32.0/LockFile/Manager.pm
+Installing /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/perl5/site_perl/5.32.0/LockFile/Lock.pm
+Installing /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/perl5/site_perl/5.32.0/LockFile/Simple.pm
+Installing /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/perl5/site_perl/5.32.0/LockFile/Lock/Simple.pm
+Installing /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/share/man/man3/LockFile::Simple.3
+Appending installation info to /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/share/man/man3 to /nix/store/kzq4l102iajq34nhmdcwi9p9fprzjgwk-perl5.32.0-LockFile-Simple-0.208-devdoc/share/man/man3
+Removing empty /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208/lib
+patching script interpreter paths in /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208
+checking for references to /build/ in /nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kzq4l102iajq34nhmdcwi9p9fprzjgwk-perl5.32.0-LockFile-Simple-0.208-devdoc
+gzipping man pages under /nix/store/kzq4l102iajq34nhmdcwi9p9fprzjgwk-perl5.32.0-LockFile-Simple-0.208-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kzq4l102iajq34nhmdcwi9p9fprzjgwk-perl5.32.0-LockFile-Simple-0.208-devdoc
+checking for references to /build/ in /nix/store/kzq4l102iajq34nhmdcwi9p9fprzjgwk-perl5.32.0-LockFile-Simple-0.208-devdoc...
+/nix/store/wmfvkgqlyj785mhclx1y6jk2flfg188y-perl5.32.0-LockFile-Simple-0.208

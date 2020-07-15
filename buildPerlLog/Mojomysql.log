@@ -1,0 +1,104 @@
+these derivations will be built:
+  /nix/store/hinjw61bl7kwia375lq5gvai0wrx69v0-perl5.32.0-Mojo-mysql-1.19.drv
+these paths will be fetched (2.74 MiB download, 2.74 MiB unpacked):
+  /nix/store/sajv9w7j6l11m78x38l07mz5q10qj1s8-Mojo-mysql-1.19.tar.gz
+copying path '/nix/store/sajv9w7j6l11m78x38l07mz5q10qj1s8-Mojo-mysql-1.19.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hinjw61bl7kwia375lq5gvai0wrx69v0-perl5.32.0-Mojo-mysql-1.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/sajv9w7j6l11m78x38l07mz5q10qj1s8-Mojo-mysql-1.19.tar.gz
+source root is Mojo-mysql-1.19
+setting SOURCE_DATE_EPOCH to timestamp 1588283929 of file Mojo-mysql-1.19/META.yml
+patching sources
+configuring
+patching ./examples/blog/script/blog...
+patching ./t/test-dbi-async.t...
+patching ./local/DBD-mysql/blib/lib/DBD/mysql.pm...
+patching ./local/DBD-mysql/.git/hooks/pre-push.sample...
+patching ./local/DBD-mysql/.git/hooks/applypatch-msg.sample...
+patching ./local/DBD-mysql/.git/hooks/post-update.sample...
+patching ./local/DBD-mysql/.git/hooks/commit-msg.sample...
+patching ./local/DBD-mysql/.git/hooks/pre-rebase.sample...
+patching ./local/DBD-mysql/.git/hooks/fsmonitor-watchman.sample...
+patching ./local/DBD-mysql/.git/hooks/pre-commit.sample...
+patching ./local/DBD-mysql/.git/hooks/update.sample...
+patching ./local/DBD-mysql/.git/hooks/pre-applypatch.sample...
+patching ./local/DBD-mysql/.git/hooks/pre-receive.sample...
+patching ./local/DBD-mysql/.git/hooks/prepare-commit-msg.sample...
+patching ./local/DBD-mysql/.git/hooks/pre-merge-commit.sample...
+patching ./local/DBD-mysql/t/56connattr.t...
+patching ./local/DBD-mysql/lib/DBD/mysql.pm...
+patching ./local/async_query_in_flight.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mojo::mysql
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojo/mysql/PubSub.pm blib/lib/Mojo/mysql/PubSub.pm
+cp lib/SQL/Abstract/mysql.pm blib/lib/SQL/Abstract/mysql.pm
+cp lib/Mojo/mysql.pm blib/lib/Mojo/mysql.pm
+cp lib/Mojo/mysql/Results.pm blib/lib/Mojo/mysql/Results.pm
+cp lib/Mojo/mysql/Database.pm blib/lib/Mojo/mysql/Database.pm
+cp lib/Mojo/mysql/Transaction.pm blib/lib/Mojo/mysql/Transaction.pm
+cp lib/Mojo/mysql/Migrations.pm blib/lib/Mojo/mysql/Migrations.pm
+Manifying 7 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ............... ok
+t/async_query_in_flight.t .. skipped: TEST_FOR=500 TEST_ONLINE=mysql://root@/test
+t/blocking-leak.t .......... skipped: TEST_ONLINE=mysql://root@/test
+t/connection.t ............. ok
+t/crud.t ................... skipped: TEST_ONLINE=mysql://root@/test
+t/database.t ............... skipped: TEST_ONLINE=mysql://root@/test
+t/json.t ................... skipped: TEST_ONLINE=mysql://root@/test
+t/mariadb.t ................ skipped: TEST_ONLINE=mariadb://root@/test
+t/migrations.t ............. skipped: TEST_ONLINE=mysql://root@/test
+t/mysql.t .................. skipped: TEST_ONLINE=mysql://root@/test
+t/mysql_auto_reconnect.t ... skipped: TEST_ONLINE=mysql://root@/test
+t/mysql_lite_app.t ......... skipped: TEST_ONLINE=mysql://root@/test
+t/pubsub.t ................. skipped: TEST_PUBSUB=1 TEST_ONLINE=mysql://root@/test
+t/results.t ................ skipped: TEST_ONLINE=mysql://root@/test
+t/results_methods.t ........ skipped: TEST_ONLINE=mysql://root@/test
+t/sql-live.t ............... skipped: TEST_ONLINE=mysql://root@/test
+t/sql.t .................... ok
+t/strict-mode.t ............ skipped: TEST_ONLINE=mysql://root@/test
+t/test-dbi-async.t ......... skipped: TEST_DBI_ASYNC=1
+t/utf8.t ................... skipped: TEST_ONLINE=mysql://root@/test
+All tests successful.
+Files=20, Tests=96,  7 wallclock secs ( 0.08 usr  0.02 sys +  4.87 cusr  1.81 csys =  6.78 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/pkgconfig m4datadir=/nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/aclocal aclocaldir=/nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/aclocal install
+Manifying 7 pod documents
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql/PubSub.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql/Transaction.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql/Database.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql/Results.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/Mojo/mysql/Migrations.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/site_perl/5.32.0/SQL/Abstract/mysql.pm
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql::PubSub.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/SQL::Abstract::mysql.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql::Database.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql::Migrations.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql::Results.3
+Installing /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3/Mojo::mysql::Transaction.3
+Appending installation info to /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/man3 to /nix/store/2fbviq2byvq738wqrj8jvxlfhzghyxr4-perl5.32.0-Mojo-mysql-1.19-devdoc/share/man/man3
+Removing empty /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19/lib
+patching script interpreter paths in /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19
+checking for references to /build/ in /nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2fbviq2byvq738wqrj8jvxlfhzghyxr4-perl5.32.0-Mojo-mysql-1.19-devdoc
+gzipping man pages under /nix/store/2fbviq2byvq738wqrj8jvxlfhzghyxr4-perl5.32.0-Mojo-mysql-1.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2fbviq2byvq738wqrj8jvxlfhzghyxr4-perl5.32.0-Mojo-mysql-1.19-devdoc
+checking for references to /build/ in /nix/store/2fbviq2byvq738wqrj8jvxlfhzghyxr4-perl5.32.0-Mojo-mysql-1.19-devdoc...
+/nix/store/fasmq95a79j5crkfzkyspb9lsmz6gm6l-perl5.32.0-Mojo-mysql-1.19

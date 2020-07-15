@@ -1,0 +1,53 @@
+these derivations will be built:
+  /nix/store/vxkd2q38rvafysjfk3isi0nwy5k4im84-perl5.32.0-Parse-LocalDistribution-0.19.drv
+building '/nix/store/vxkd2q38rvafysjfk3isi0nwy5k4im84-perl5.32.0-Parse-LocalDistribution-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/ar3cc46h2g57sy1j1dp8lrs0mw0lza8p-Parse-LocalDistribution-0.19.tar.gz
+source root is Parse-LocalDistribution-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1478177616 of file Parse-LocalDistribution-0.19/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Parse::LocalDistribution
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Parse/LocalDistribution.pm blib/lib/Parse/LocalDistribution.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t ..................... ok
+t/10_self_check.t ............... ok
+t/20_dist_not_in_the_current.t .. ok
+t/30_no_index.t ................. ok
+t/40_manifest.t ................. ok
+t/41_manifest_skip.t ............ ok
+t/50_permissions_files.t ........ skipped: requires PAUSE::Permissions 0.08
+t/50_permissions_meta.t ......... skipped: requires PAUSE::Permissions 0.08
+All tests successful.
+Files=8, Tests=17,  1 wallclock secs ( 0.04 usr  0.00 sys +  0.78 cusr  0.23 csys =  1.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/lib/pkgconfig m4datadir=/nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/share/aclocal aclocaldir=/nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/lib/perl5/site_perl/5.32.0/Parse/LocalDistribution.pm
+Installing /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/share/man/man3/Parse::LocalDistribution.3
+Appending installation info to /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/share/man/man3 to /nix/store/d42qlf96ibb32v9dlzwxhdlvcrvxw9qk-perl5.32.0-Parse-LocalDistribution-0.19-devdoc/share/man/man3
+Removing empty /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19/lib
+patching script interpreter paths in /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19
+checking for references to /build/ in /nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d42qlf96ibb32v9dlzwxhdlvcrvxw9qk-perl5.32.0-Parse-LocalDistribution-0.19-devdoc
+gzipping man pages under /nix/store/d42qlf96ibb32v9dlzwxhdlvcrvxw9qk-perl5.32.0-Parse-LocalDistribution-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d42qlf96ibb32v9dlzwxhdlvcrvxw9qk-perl5.32.0-Parse-LocalDistribution-0.19-devdoc
+checking for references to /build/ in /nix/store/d42qlf96ibb32v9dlzwxhdlvcrvxw9qk-perl5.32.0-Parse-LocalDistribution-0.19-devdoc...
+/nix/store/wg6kmxb3sqyq7x05i2wginq313jfk7z3-perl5.32.0-Parse-LocalDistribution-0.19

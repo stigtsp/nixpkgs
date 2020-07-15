@@ -1,0 +1,1453 @@
+these derivations will be built:
+  /nix/store/qmzhb0jbjfn6pkazap445bsm3d0danxn-perl5.32.0-Sub-Override-0.09.drv
+  /nix/store/06s0chsr8wn5z9rmrydrz15pfjmklm0r-perl5.32.0-HTML-TokeParser-Simple-3.16.drv
+  /nix/store/8mf4pkll00gcl88ww2126xsvvm7kc8fj-perl5.32.0-Regexp-Assemble-0.38.drv
+  /nix/store/m44aaw2x7wpvp10nxsmr84rifvlmsd1d-perl5.32.0-MooseX-Aliases-0.11.drv
+  /nix/store/lz767qvp6nkay0cz9j34v8k6ifs3xadw-perl5.32.0-HTML-FormFu-2.07.drv
+building '/nix/store/m44aaw2x7wpvp10nxsmr84rifvlmsd1d-perl5.32.0-MooseX-Aliases-0.11.drv'...
+building '/nix/store/8mf4pkll00gcl88ww2126xsvvm7kc8fj-perl5.32.0-Regexp-Assemble-0.38.drv'...
+building '/nix/store/qmzhb0jbjfn6pkazap445bsm3d0danxn-perl5.32.0-Sub-Override-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/andnfkyk887m7kvssql6xj6zdabzfydh-Regexp-Assemble-0.38.tgz
+source root is Regexp-Assemble-0.38
+setting SOURCE_DATE_EPOCH to timestamp 1497913985 of file Regexp-Assemble-0.38/META.yml
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/f4jf99ksnws1ips79qcwi7pwhb2qpxji-Sub-Override-0.09.tar.gz
+source root is Sub-Override-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1358362890 of file Sub-Override-0.09/META.yml
+patching sources
+configuring
+patching ./examples/hostmatch/hostmatch...
+patching ./examples/ircwatcher...
+patching ./xt/pod-coverage.t...
+patching ./xt/pod.t...
+patching ./examples/naive...
+patching ./t/override.t...
+patching ./examples/stress-test.pl...
+patching ./examples/assemble...
+patching ./examples/fee...
+patching ./examples/track-5.10...
+patching ./examples/tld...
+patching ./examples/roman...
+patching ./examples/unquotemeta...
+patching ./examples/debugging...
+unpacking sources
+unpacking source archive /nix/store/1l3p2ikfnvqdaw0q4kmai8w0s1h7ncqx-MooseX-Aliases-0.11.tar.gz
+source root is MooseX-Aliases-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1373655787 of file MooseX-Aliases-0.11/xt/release/pod-syntax.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./t/00-compile.t...
+patching ./t/attributes.t...
+patching ./t/init_arg-coerce.t...
+patching ./t/versus-inheritance.t...
+patching ./t/mop.t...
+Checking if your kit is complete...
+patching ./t/warnings.t...
+patching ./t/roles.t...
+patching ./t/init_arg.t...
+patching ./t/errors.t...
+Looks good
+patching ./t/synopsis.t...
+Skipping testcover target, ExtUtils::MakeMaker::Coverage not found
+patching ./t/basic.t...
+patching ./t/versus-modifiers.t...
+Checking if your kit is complete...
+patching ./t/traits.t...
+patching ./t/roles-init_arg.t...
+patching ./t/inherited.t...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sub::Override
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for Regexp::Assemble
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+cp lib/Sub/Override.pm blib/lib/Sub/Override.pm
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Aliases
+cp lib/Regexp/Assemble.pm blib/lib/Regexp/Assemble.pm
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/override.t .. ok
+All tests successful.
+Files=1, Tests=28,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.06 cusr  0.02 csys =  0.11 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/lib/pkgconfig m4datadir=/nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/share/aclocal aclocaldir=/nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/share/aclocal install
+Manifying 1 pod document
+t/00_basic.t ...... # Testing Regexp::Assemble
+Installing /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/lib/perl5/site_perl/5.32.0/Sub/Override.pm
+Installing /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/share/man/man3/Sub::Override.3
+Appending installation info to /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+t/00_basic.t ...... ok
+post-installation fixup
+cp lib/MooseX/Aliases/Meta/Trait/Method.pm blib/lib/MooseX/Aliases/Meta/Trait/Method.pm
+Moving /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/share/man/man3 to /nix/store/64asbxvh3k4vn6w6ci3d7yhidkclck07-perl5.32.0-Sub-Override-0.09-devdoc/share/man/man3
+Removing empty /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/share/man/ and (possibly) its parents
+cp lib/MooseX/Aliases/Meta/Trait/Role/Composite.pm blib/lib/MooseX/Aliases/Meta/Trait/Role/Composite.pm
+cp lib/MooseX/Aliases/Meta/Trait/Class.pm blib/lib/MooseX/Aliases/Meta/Trait/Class.pm
+cp lib/MooseX/Aliases/Meta/Trait/Role/ApplicationToClass.pm blib/lib/MooseX/Aliases/Meta/Trait/Role/ApplicationToClass.pm
+cp lib/MooseX/Aliases/Meta/Trait/Role/ApplicationToRole.pm blib/lib/MooseX/Aliases/Meta/Trait/Role/ApplicationToRole.pm
+shrinking RPATHs of ELF executables and libraries in /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09
+cp lib/MooseX/Aliases.pm blib/lib/MooseX/Aliases.pm
+cp lib/MooseX/Aliases/Meta/Trait/Attribute.pm blib/lib/MooseX/Aliases/Meta/Trait/Attribute.pm
+cp lib/MooseX/Aliases/Meta/Trait/Role.pm blib/lib/MooseX/Aliases/Meta/Trait/Role.pm
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09/lib
+patching script interpreter paths in /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09
+checking for references to /build/ in /nix/store/nwmbrxqikhb3mblc2jahrsgakc06d0kz-perl5.32.0-Sub-Override-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/64asbxvh3k4vn6w6ci3d7yhidkclck07-perl5.32.0-Sub-Override-0.09-devdoc
+gzipping man pages under /nix/store/64asbxvh3k4vn6w6ci3d7yhidkclck07-perl5.32.0-Sub-Override-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/64asbxvh3k4vn6w6ci3d7yhidkclck07-perl5.32.0-Sub-Override-0.09-devdoc
+checking for references to /build/ in /nix/store/64asbxvh3k4vn6w6ci3d7yhidkclck07-perl5.32.0-Sub-Override-0.09-devdoc...
+building '/nix/store/06s0chsr8wn5z9rmrydrz15pfjmklm0r-perl5.32.0-HTML-TokeParser-Simple-3.16.drv'...
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+unpacking sources
+unpacking source archive /nix/store/h9jz8kgvhk05s6qyxsmznr5kjqmki0zd-HTML-TokeParser-Simple-3.16.tar.gz
+source root is HTML-TokeParser-Simple-3.16
+setting SOURCE_DATE_EPOCH to timestamp 1372229696 of file HTML-TokeParser-Simple-3.16/xt/pod.t
+patching sources
+configuring
+patching ./xt/pod-coverage.t...
+patching ./xt/pod.t...
+patching ./t/constructor.t...
+patching ./t/get_token.t...
+patching ./t/get_tag.t...
+patching ./t/munge_html.t...
+Checking if your kit is complete...
+Looks good
+t/01_insert.t ..... ok
+Generating a Unix-style Makefile
+Writing Makefile for HTML::TokeParser::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+t/02_reduce.t ..... ok
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'HTML-TokeParser-Simple' version '3.16'
+t/03_str.t ........ ok
+Building HTML-TokeParser-Simple
+running tests
+t/04_match.t ...... ok
+t/constructor.t .. ok
+t/get_tag.t ...... ok
+t/get_token.t .... ok
+t/internals.t .... ok
+t/munge_html.t ... ok
+All tests successful.
+Files=5, Tests=170,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.37 cusr  0.15 csys =  0.57 CPU)
+Result: PASS
+installing
+t/05_hostmatch.t .. ok
+Building HTML-TokeParser-Simple
+t/06_general.t .... ok
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Declaration.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Tag.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/ProcessInstruction.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Text.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Comment.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Tag/Start.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib/perl5/site_perl/5.32.0/HTML/TokeParser/Simple/Token/Tag/End.pm
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Tag.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Tag::Start.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Text.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Comment.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Declaration.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::ProcessInstruction.3
+Installing /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3/HTML::TokeParser::Simple::Token::Tag::End.3
+post-installation fixup
+Moving /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/man3 to /nix/store/nhwc0d3gpvz450x0qyk6rjmh0194wkh0-perl5.32.0-HTML-TokeParser-Simple-3.16-devdoc/share/man/man3
+Removing empty /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16/lib
+patching script interpreter paths in /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16
+checking for references to /build/ in /nix/store/4kq4rr2n5hiqj637d7gbp1l478f9s64j-perl5.32.0-HTML-TokeParser-Simple-3.16...
+t/07_warning.t .... ok
+shrinking RPATHs of ELF executables and libraries in /nix/store/nhwc0d3gpvz450x0qyk6rjmh0194wkh0-perl5.32.0-HTML-TokeParser-Simple-3.16-devdoc
+gzipping man pages under /nix/store/nhwc0d3gpvz450x0qyk6rjmh0194wkh0-perl5.32.0-HTML-TokeParser-Simple-3.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nhwc0d3gpvz450x0qyk6rjmh0194wkh0-perl5.32.0-HTML-TokeParser-Simple-3.16-devdoc
+checking for references to /build/ in /nix/store/nhwc0d3gpvz450x0qyk6rjmh0194wkh0-perl5.32.0-HTML-TokeParser-Simple-3.16-devdoc...
+t/08_track.t ...... ok
+t/09_debug.t ...... ok
+t/10_perl514.t .... ok
+All tests successful.
+Files=11, Tests=2948,  2 wallclock secs ( 0.37 usr  0.03 sys +  2.00 cusr  0.14 csys =  2.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/lib/pkgconfig m4datadir=/nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/share/aclocal aclocaldir=/nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/lib/perl5/site_perl/5.32.0/Regexp/Assemble.pm
+Installing /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/share/man/man3/Regexp::Assemble.3
+Appending installation info to /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/share/man/man3 to /nix/store/hq535g8r189d0lhavylr219fvnrhis88-perl5.32.0-Regexp-Assemble-0.38-devdoc/share/man/man3
+Removing empty /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38/lib
+patching script interpreter paths in /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38
+checking for references to /build/ in /nix/store/7xzfdc1dgd8gy6xn0i9f71qj7npk5hv7-perl5.32.0-Regexp-Assemble-0.38...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hq535g8r189d0lhavylr219fvnrhis88-perl5.32.0-Regexp-Assemble-0.38-devdoc
+gzipping man pages under /nix/store/hq535g8r189d0lhavylr219fvnrhis88-perl5.32.0-Regexp-Assemble-0.38-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hq535g8r189d0lhavylr219fvnrhis88-perl5.32.0-Regexp-Assemble-0.38-devdoc
+checking for references to /build/ in /nix/store/hq535g8r189d0lhavylr219fvnrhis88-perl5.32.0-Regexp-Assemble-0.38-devdoc...
+t/00-compile.t .......... ok
+t/attributes.t .......... ok
+t/basic.t ............... ok
+t/errors.t .............. ok
+t/inherited.t ........... ok
+t/init_arg-coerce.t ..... ok
+t/init_arg.t ............ ok
+t/mop.t ................. ok
+t/roles-init_arg.t ...... ok
+t/roles.t ............... ok
+t/synopsis.t ............ skipped: Test::Output is required for this test
+t/traits.t .............. ok
+t/versus-inheritance.t .. ok
+t/versus-modifiers.t .... ok
+t/warnings.t ............ skipped: Test::Output is required for this test
+All tests successful.
+Files=15, Tests=151,  7 wallclock secs ( 0.09 usr  0.04 sys +  4.89 cusr  2.31 csys =  7.33 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/pkgconfig m4datadir=/nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/aclocal aclocaldir=/nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Role.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Method.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Class.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Attribute.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Role/Composite.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Role/ApplicationToRole.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/site_perl/5.32.0/MooseX/Aliases/Meta/Trait/Role/ApplicationToClass.pm
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/man/man3/MooseX::Aliases::Meta::Trait::Method.3
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/man/man3/MooseX::Aliases::Meta::Trait::Attribute.3
+Installing /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/man/man3/MooseX::Aliases.3
+Appending installation info to /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/man/man3 to /nix/store/lnxnvqqwxcp19ggcsb8z6syhi6ipkq3y-perl5.32.0-MooseX-Aliases-0.11-devdoc/share/man/man3
+Removing empty /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11/lib
+patching script interpreter paths in /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11
+checking for references to /build/ in /nix/store/g0jff7q5msw6ax5lqp14ah1jccxn3qrw-perl5.32.0-MooseX-Aliases-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lnxnvqqwxcp19ggcsb8z6syhi6ipkq3y-perl5.32.0-MooseX-Aliases-0.11-devdoc
+gzipping man pages under /nix/store/lnxnvqqwxcp19ggcsb8z6syhi6ipkq3y-perl5.32.0-MooseX-Aliases-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lnxnvqqwxcp19ggcsb8z6syhi6ipkq3y-perl5.32.0-MooseX-Aliases-0.11-devdoc
+checking for references to /build/ in /nix/store/lnxnvqqwxcp19ggcsb8z6syhi6ipkq3y-perl5.32.0-MooseX-Aliases-0.11-devdoc...
+building '/nix/store/lz767qvp6nkay0cz9j34v8k6ifs3xadw-perl5.32.0-HTML-FormFu-2.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/sz0pz8khnq0ssvmgiqcbzzcsw9kpr6b6-HTML-FormFu-2.07.tar.gz
+source root is HTML-FormFu-2.07
+setting SOURCE_DATE_EPOCH to timestamp 1544802937 of file HTML-FormFu-2.07/xt/release/pause-permissions.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./examples/unicode/script/unicode_create.pl...
+patching ./examples/unicode/script/unicode_test.pl...
+patching ./examples/unicode/script/unicode_server.pl...
+patching ./examples/unicode/script/unicode_cgi.pl...
+patching ./examples/unicode/script/unicode_fastcgi.pl...
+patching ./t/00-report-prereqs.t...
+patching ./t/elements/number.t...
+patching ./bin/html_formfu_dumpconf.pl...
+patching ./bin/html_formfu_deploy.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::FormFu
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp share/templates/tt/xhtml/non_block blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/non_block
+cp share/templates/tt/xhtml/block blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/block
+cp share/templates/tt/xhtml/end_form blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_form
+cp share/templates/tt/xhtml/field_layout_multi_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_multi_field
+cp share/templates/tt/xhtml/field_layout_comment blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_comment
+cp share/templates/tt/xhtml/field_layout_errors blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_errors
+cp share/templates/tt/xhtml/field_layout_checkboxgroup_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_checkboxgroup_field
+cp share/templates/tt/xhtml/field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field
+cp share/templates/tt/xhtml/field_layout blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout
+cp share/templates/tt/xhtml/field_layout_block blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_block
+cp share/templates/tt/xhtml/end_block blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_block
+cp share/templates/tt/xhtml/field_layout_javascript blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_javascript
+cp share/templates/tt/xhtml/field_layout_label blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label
+cp share/templates/tt/xhtml/field_layout_label_text blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_text
+cp share/templates/tt/xhtml/field_layout_contentbutton_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_contentbutton_field
+cp share/templates/tt/xhtml/field_layout_textarea_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_textarea_field
+cp share/templates/tt/xhtml/field_layout_label_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_field
+cp share/templates/tt/xhtml/field_layout_parser blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_parser
+cp share/templates/tt/xhtml/field_layout_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_field
+cp share/templates/tt/xhtml/field_layout_select_field blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_select_field
+cp share/templates/tt/xhtml/form blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/form
+cp share/templates/tt/xhtml/start_block blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_block
+cp share/templates/tt/xhtml/start_form blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_form
+cp share/templates/tt/xhtml/repeatable blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/repeatable
+cp share/templates/tt/xhtml/recaptcha blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/recaptcha
+cp lib/HTML/FormFu/Constants.pm blib/lib/HTML/FormFu/Constants.pm
+cp lib/HTML/FormFu/Constraint/DateTime.pm blib/lib/HTML/FormFu/Constraint/DateTime.pm
+cp lib/HTML/FormFu/Constraint/Equal.pm blib/lib/HTML/FormFu/Constraint/Equal.pm
+cp lib/HTML/FormFu/Constraint/File/Size.pm blib/lib/HTML/FormFu/Constraint/File/Size.pm
+cp lib/HTML/FormFu/Constraint/CallbackOnce.pm blib/lib/HTML/FormFu/Constraint/CallbackOnce.pm
+cp lib/HTML/FormFu/Constraint/AllOrNone.pm blib/lib/HTML/FormFu/Constraint/AllOrNone.pm
+cp lib/HTML/FormFu/Constraint/DependOn.pm blib/lib/HTML/FormFu/Constraint/DependOn.pm
+cp lib/HTML/FormFu/Constraint/Range.pm blib/lib/HTML/FormFu/Constraint/Range.pm
+cp lib/HTML/FormFu/Constraint/JSON.pm blib/lib/HTML/FormFu/Constraint/JSON.pm
+cp lib/HTML/FormFu/Constraint/MaxLength.pm blib/lib/HTML/FormFu/Constraint/MaxLength.pm
+cp lib/HTML/FormFu/Constraint/MaxRange.pm blib/lib/HTML/FormFu/Constraint/MaxRange.pm
+cp lib/HTML/FormFu/Constraint/Email.pm blib/lib/HTML/FormFu/Constraint/Email.pm
+cp lib/HTML/FormFu/Attribute.pm blib/lib/HTML/FormFu/Attribute.pm
+cp lib/HTML/FormFu/Constraint/Regex.pm blib/lib/HTML/FormFu/Constraint/Regex.pm
+cp lib/HTML/FormFu/Constraint/MinRange.pm blib/lib/HTML/FormFu/Constraint/MinRange.pm
+cp lib/HTML/FormFu/Constraint/MinLength.pm blib/lib/HTML/FormFu/Constraint/MinLength.pm
+cp lib/HTML/FormFu/Constraint/File.pm blib/lib/HTML/FormFu/Constraint/File.pm
+cp lib/HTML/FormFu/Constraint/ASCII.pm blib/lib/HTML/FormFu/Constraint/ASCII.pm
+cp lib/HTML/FormFu/Constraint/AutoSet.pm blib/lib/HTML/FormFu/Constraint/AutoSet.pm
+cp lib/HTML/FormFu/Constraint/Number.pm blib/lib/HTML/FormFu/Constraint/Number.pm
+cp lib/HTML/FormFu/Constraint/File/MIME.pm blib/lib/HTML/FormFu/Constraint/File/MIME.pm
+cp lib/HTML/FormFu/Constraint/File/MaxSize.pm blib/lib/HTML/FormFu/Constraint/File/MaxSize.pm
+cp lib/HTML/FormFu/Constraint/Callback.pm blib/lib/HTML/FormFu/Constraint/Callback.pm
+cp lib/HTML/FormFu/Constraint/MinMaxFields.pm blib/lib/HTML/FormFu/Constraint/MinMaxFields.pm
+cp lib/HTML/FormFu/Constraint.pm blib/lib/HTML/FormFu/Constraint.pm
+cp lib/HTML/FormFu.pm blib/lib/HTML/FormFu.pm
+cp lib/HTML/FormFu/Constraint/Length.pm blib/lib/HTML/FormFu/Constraint/Length.pm
+cp lib/HTML/FormFu/Constraint/Integer.pm blib/lib/HTML/FormFu/Constraint/Integer.pm
+cp lib/HTML/FormFu/Constraint/Bool.pm blib/lib/HTML/FormFu/Constraint/Bool.pm
+cp lib/HTML/FormFu/Constraint/Printable.pm blib/lib/HTML/FormFu/Constraint/Printable.pm
+cp lib/HTML/FormFu/Constraint/File/MinSize.pm blib/lib/HTML/FormFu/Constraint/File/MinSize.pm
+cp lib/HTML/FormFu/Constraint/Repeatable/Any.pm blib/lib/HTML/FormFu/Constraint/Repeatable/Any.pm
+cp lib/HTML/FormFu/Element/Button.pm blib/lib/HTML/FormFu/Element/Button.pm
+cp lib/HTML/FormFu/Element/ContentButton.pm blib/lib/HTML/FormFu/Element/ContentButton.pm
+cp lib/HTML/FormFu/Deflator/CompoundSplit.pm blib/lib/HTML/FormFu/Deflator/CompoundSplit.pm
+cp lib/HTML/FormFu/Deploy.pm blib/lib/HTML/FormFu/Deploy.pm
+cp lib/HTML/FormFu/Element/Checkbox.pm blib/lib/HTML/FormFu/Element/Checkbox.pm
+cp lib/HTML/FormFu/Element/Number.pm blib/lib/HTML/FormFu/Element/Number.pm
+cp lib/HTML/FormFu/Deflator.pm blib/lib/HTML/FormFu/Deflator.pm
+cp lib/HTML/FormFu/Element/ComboBox.pm blib/lib/HTML/FormFu/Element/ComboBox.pm
+cp lib/HTML/FormFu/Deflator/CompoundDateTime.pm blib/lib/HTML/FormFu/Deflator/CompoundDateTime.pm
+cp lib/HTML/FormFu/Element/Checkboxgroup.pm blib/lib/HTML/FormFu/Element/Checkboxgroup.pm
+cp lib/HTML/FormFu/Constraint/SingleValue.pm blib/lib/HTML/FormFu/Constraint/SingleValue.pm
+cp lib/HTML/FormFu/Element/File.pm blib/lib/HTML/FormFu/Element/File.pm
+cp lib/HTML/FormFu/Deflator/PathClassFile.pm blib/lib/HTML/FormFu/Deflator/PathClassFile.pm
+cp lib/HTML/FormFu/Element/Email.pm blib/lib/HTML/FormFu/Element/Email.pm
+cp lib/HTML/FormFu/Element/Label.pm blib/lib/HTML/FormFu/Element/Label.pm
+cp lib/HTML/FormFu/Constraint/Word.pm blib/lib/HTML/FormFu/Constraint/Word.pm
+cp lib/HTML/FormFu/Element/Hidden.pm blib/lib/HTML/FormFu/Element/Hidden.pm
+cp lib/HTML/FormFu/Deflator/Callback.pm blib/lib/HTML/FormFu/Deflator/Callback.pm
+cp lib/HTML/FormFu/Element/Date.pm blib/lib/HTML/FormFu/Element/Date.pm
+cp lib/HTML/FormFu/Constraint/Required.pm blib/lib/HTML/FormFu/Constraint/Required.pm
+cp lib/HTML/FormFu/Deflator/Strftime.pm blib/lib/HTML/FormFu/Deflator/Strftime.pm
+cp lib/HTML/FormFu/Element/Fieldset.pm blib/lib/HTML/FormFu/Element/Fieldset.pm
+cp lib/HTML/FormFu/Element/Image.pm blib/lib/HTML/FormFu/Element/Image.pm
+cp lib/HTML/FormFu/Element/Hr.pm blib/lib/HTML/FormFu/Element/Hr.pm
+cp lib/HTML/FormFu/Deflator/FormatNumber.pm blib/lib/HTML/FormFu/Deflator/FormatNumber.pm
+cp lib/HTML/FormFu/Element/Blank.pm blib/lib/HTML/FormFu/Element/Blank.pm
+cp lib/HTML/FormFu/Element/Block.pm blib/lib/HTML/FormFu/Element/Block.pm
+cp lib/HTML/FormFu/Element.pm blib/lib/HTML/FormFu/Element.pm
+cp lib/HTML/FormFu/Constraint/Set.pm blib/lib/HTML/FormFu/Constraint/Set.pm
+cp lib/HTML/FormFu/Element/Multi.pm blib/lib/HTML/FormFu/Element/Multi.pm
+cp lib/HTML/FormFu/Element/DateTime.pm blib/lib/HTML/FormFu/Element/DateTime.pm
+cp lib/HTML/FormFu/Filter/HTMLScrubber.pm blib/lib/HTML/FormFu/Filter/HTMLScrubber.pm
+cp lib/HTML/FormFu/Element/Textarea.pm blib/lib/HTML/FormFu/Element/Textarea.pm
+cp lib/HTML/FormFu/Element/Text.pm blib/lib/HTML/FormFu/Element/Text.pm
+cp lib/HTML/FormFu/Exception/Constraint.pm blib/lib/HTML/FormFu/Exception/Constraint.pm
+cp lib/HTML/FormFu/Filter/CompoundSprintf.pm blib/lib/HTML/FormFu/Filter/CompoundSprintf.pm
+cp lib/HTML/FormFu/Filter/HTMLEscape.pm blib/lib/HTML/FormFu/Filter/HTMLEscape.pm
+cp lib/HTML/FormFu/Element/Reset.pm blib/lib/HTML/FormFu/Element/Reset.pm
+cp lib/HTML/FormFu/Exception/Input.pm blib/lib/HTML/FormFu/Exception/Input.pm
+cp lib/HTML/FormFu/Element/Radiogroup.pm blib/lib/HTML/FormFu/Element/Radiogroup.pm
+cp lib/HTML/FormFu/Filter/NonNumeric.pm blib/lib/HTML/FormFu/Filter/NonNumeric.pm
+cp lib/HTML/FormFu/Element/Password.pm blib/lib/HTML/FormFu/Element/Password.pm
+cp lib/HTML/FormFu/Filter.pm blib/lib/HTML/FormFu/Filter.pm
+cp lib/HTML/FormFu/Exception/Validator.pm blib/lib/HTML/FormFu/Exception/Validator.pm
+cp lib/HTML/FormFu/Filter/Encode.pm blib/lib/HTML/FormFu/Filter/Encode.pm
+cp lib/HTML/FormFu/Element/Src.pm blib/lib/HTML/FormFu/Element/Src.pm
+cp lib/HTML/FormFu/Filter/ForceListValue.pm blib/lib/HTML/FormFu/Filter/ForceListValue.pm
+cp lib/HTML/FormFu/Filter/CompoundJoin.pm blib/lib/HTML/FormFu/Filter/CompoundJoin.pm
+cp lib/HTML/FormFu/Filter/FormatNumber.pm blib/lib/HTML/FormFu/Filter/FormatNumber.pm
+cp lib/HTML/FormFu/Element/Select.pm blib/lib/HTML/FormFu/Element/Select.pm
+cp lib/HTML/FormFu/Element/Radio.pm blib/lib/HTML/FormFu/Element/Radio.pm
+cp lib/HTML/FormFu/Filter/CopyValue.pm blib/lib/HTML/FormFu/Filter/CopyValue.pm
+cp lib/HTML/FormFu/Element/URL.pm blib/lib/HTML/FormFu/Element/URL.pm
+cp lib/HTML/FormFu/Element/Submit.pm blib/lib/HTML/FormFu/Element/Submit.pm
+cp lib/HTML/FormFu/Filter/Callback.pm blib/lib/HTML/FormFu/Filter/Callback.pm
+cp lib/HTML/FormFu/Exception/Inflator.pm blib/lib/HTML/FormFu/Exception/Inflator.pm
+cp lib/HTML/FormFu/Filter/LowerCase.pm blib/lib/HTML/FormFu/Filter/LowerCase.pm
+cp lib/HTML/FormFu/Exception.pm blib/lib/HTML/FormFu/Exception.pm
+cp lib/HTML/FormFu/Exception/Transformer.pm blib/lib/HTML/FormFu/Exception/Transformer.pm
+cp lib/HTML/FormFu/Filter/Regex.pm blib/lib/HTML/FormFu/Filter/Regex.pm
+cp lib/HTML/FormFu/Element/SimpleTable.pm blib/lib/HTML/FormFu/Element/SimpleTable.pm
+cp lib/HTML/FormFu/Element/Repeatable.pm blib/lib/HTML/FormFu/Element/Repeatable.pm
+cp lib/HTML/FormFu/FakeQuery.pm blib/lib/HTML/FormFu/FakeQuery.pm
+cp lib/HTML/FormFu/Model/HashRef.pm blib/lib/HTML/FormFu/Model/HashRef.pm
+cp lib/HTML/FormFu/I18N/pt_pt.pm blib/lib/HTML/FormFu/I18N/pt_pt.pm
+cp lib/HTML/FormFu/I18N/ru.pm blib/lib/HTML/FormFu/I18N/ru.pm
+cp lib/HTML/FormFu/I18N/ja.pm blib/lib/HTML/FormFu/I18N/ja.pm
+cp lib/HTML/FormFu/I18N.pm blib/lib/HTML/FormFu/I18N.pm
+cp lib/HTML/FormFu/I18N/hu.pm blib/lib/HTML/FormFu/I18N/hu.pm
+cp lib/HTML/FormFu/Localize.pm blib/lib/HTML/FormFu/Localize.pm
+cp lib/HTML/FormFu/Filter/Split.pm blib/lib/HTML/FormFu/Filter/Split.pm
+cp lib/HTML/FormFu/OutputProcessor.pm blib/lib/HTML/FormFu/OutputProcessor.pm
+cp lib/HTML/FormFu/Literal.pm blib/lib/HTML/FormFu/Literal.pm
+cp lib/HTML/FormFu/I18N/no.pm blib/lib/HTML/FormFu/I18N/no.pm
+cp lib/HTML/FormFu/Filter/TrimEdges.pm blib/lib/HTML/FormFu/Filter/TrimEdges.pm
+cp lib/HTML/FormFu/I18N/da.pm blib/lib/HTML/FormFu/I18N/da.pm
+cp lib/HTML/FormFu/I18N/pt_br.pm blib/lib/HTML/FormFu/I18N/pt_br.pm
+cp lib/HTML/FormFu/Manual/Unicode.pod blib/lib/HTML/FormFu/Manual/Unicode.pod
+cp lib/HTML/FormFu/OutputProcessor/Indent.pm blib/lib/HTML/FormFu/OutputProcessor/Indent.pm
+cp lib/HTML/FormFu/I18N/ro.pm blib/lib/HTML/FormFu/I18N/ro.pm
+cp lib/HTML/FormFu/Model.pm blib/lib/HTML/FormFu/Model.pm
+cp lib/HTML/FormFu/Inflator/DateTime.pm blib/lib/HTML/FormFu/Inflator/DateTime.pm
+cp lib/HTML/FormFu/I18N/ua.pm blib/lib/HTML/FormFu/I18N/ua.pm
+cp lib/HTML/FormFu/I18N/zh_cn.pm blib/lib/HTML/FormFu/I18N/zh_cn.pm
+cp lib/HTML/FormFu/I18N/de.pm blib/lib/HTML/FormFu/I18N/de.pm
+cp lib/HTML/FormFu/I18N/bg.pm blib/lib/HTML/FormFu/I18N/bg.pm
+cp lib/HTML/FormFu/ObjectUtil.pm blib/lib/HTML/FormFu/ObjectUtil.pm
+cp lib/HTML/FormFu/I18N/it.pm blib/lib/HTML/FormFu/I18N/it.pm
+cp lib/HTML/FormFu/Filter/Whitespace.pm blib/lib/HTML/FormFu/Filter/Whitespace.pm
+cp lib/HTML/FormFu/Inflator/Callback.pm blib/lib/HTML/FormFu/Inflator/Callback.pm
+cp lib/HTML/FormFu/Inflator.pm blib/lib/HTML/FormFu/Inflator.pm
+cp lib/HTML/FormFu/I18N/fr.pm blib/lib/HTML/FormFu/I18N/fr.pm
+cp lib/HTML/FormFu/I18N/en.pm blib/lib/HTML/FormFu/I18N/en.pm
+cp lib/HTML/FormFu/I18N/es.pm blib/lib/HTML/FormFu/I18N/es.pm
+cp lib/HTML/FormFu/Manual/Cookbook.pod blib/lib/HTML/FormFu/Manual/Cookbook.pod
+cp lib/HTML/FormFu/Inflator/CompoundDateTime.pm blib/lib/HTML/FormFu/Inflator/CompoundDateTime.pm
+cp lib/HTML/FormFu/I18N/cs.pm blib/lib/HTML/FormFu/I18N/cs.pm
+cp lib/HTML/FormFu/I18N/tr.pm blib/lib/HTML/FormFu/I18N/tr.pm
+cp lib/HTML/FormFu/Filter/UpperCase.pm blib/lib/HTML/FormFu/Filter/UpperCase.pm
+cp lib/HTML/FormFu/Plugin.pm blib/lib/HTML/FormFu/Plugin.pm
+cp lib/HTML/FormFu/Role/Element/NonBlock.pm blib/lib/HTML/FormFu/Role/Element/NonBlock.pm
+cp lib/HTML/FormFu/QueryType/Catalyst.pm blib/lib/HTML/FormFu/QueryType/Catalyst.pm
+cp lib/HTML/FormFu/Processor.pm blib/lib/HTML/FormFu/Processor.pm
+cp lib/HTML/FormFu/Preload.pm blib/lib/HTML/FormFu/Preload.pm
+cp lib/HTML/FormFu/Role/Constraint/Others.pm blib/lib/HTML/FormFu/Role/Constraint/Others.pm
+cp lib/HTML/FormFu/Role/Element/MultiElement.pm blib/lib/HTML/FormFu/Role/Element/MultiElement.pm
+cp lib/HTML/FormFu/Role/HasParent.pm blib/lib/HTML/FormFu/Role/HasParent.pm
+cp lib/HTML/FormFu/Role/Element/ProcessOptionsFromModel.pm blib/lib/HTML/FormFu/Role/Element/ProcessOptionsFromModel.pm
+cp lib/HTML/FormFu/Role/Element/Group.pm blib/lib/HTML/FormFu/Role/Element/Group.pm
+cp lib/HTML/FormFu/QueryType/CGI.pm blib/lib/HTML/FormFu/QueryType/CGI.pm
+cp lib/HTML/FormFu/Role/Element/SingleValueField.pm blib/lib/HTML/FormFu/Role/Element/SingleValueField.pm
+cp lib/HTML/FormFu/Role/GetProcessors.pm blib/lib/HTML/FormFu/Role/GetProcessors.pm
+cp lib/HTML/FormFu/Plugin/StashValid.pm blib/lib/HTML/FormFu/Plugin/StashValid.pm
+cp lib/HTML/FormFu/Role/CustomRoles.pm blib/lib/HTML/FormFu/Role/CustomRoles.pm
+cp lib/HTML/FormFu/Role/Element/Layout.pm blib/lib/HTML/FormFu/Role/Element/Layout.pm
+cp lib/HTML/FormFu/QueryType/CGI/Simple.pm blib/lib/HTML/FormFu/QueryType/CGI/Simple.pm
+cp lib/HTML/FormFu/Role/FormAndElementMethods.pm blib/lib/HTML/FormFu/Role/FormAndElementMethods.pm
+cp lib/HTML/FormFu/Role/CreateChildren.pm blib/lib/HTML/FormFu/Role/CreateChildren.pm
+cp lib/HTML/FormFu/Role/FormAndBlockMethods.pm blib/lib/HTML/FormFu/Role/FormAndBlockMethods.pm
+cp lib/HTML/FormFu/Role/ContainsElementsSharedWithField.pm blib/lib/HTML/FormFu/Role/ContainsElementsSharedWithField.pm
+cp lib/HTML/FormFu/Role/Element/Input.pm blib/lib/HTML/FormFu/Role/Element/Input.pm
+cp lib/HTML/FormFu/Role/Element/Field.pm blib/lib/HTML/FormFu/Role/Element/Field.pm
+cp lib/HTML/FormFu/Role/FormBlockAndFieldMethods.pm blib/lib/HTML/FormFu/Role/FormBlockAndFieldMethods.pm
+cp lib/HTML/FormFu/Role/Filter/Compound.pm blib/lib/HTML/FormFu/Role/Filter/Compound.pm
+cp lib/HTML/FormFu/OutputProcessor/StripWhitespace.pm blib/lib/HTML/FormFu/OutputProcessor/StripWhitespace.pm
+cp lib/HTML/FormFu/Role/ContainsElements.pm blib/lib/HTML/FormFu/Role/ContainsElements.pm
+cp lib/HTML/FormFu/Role/Element/Coercible.pm blib/lib/HTML/FormFu/Role/Element/Coercible.pm
+cp lib/HTML/FormFu/Role/Element/FieldMethods.pm blib/lib/HTML/FormFu/Role/Element/FieldMethods.pm
+cp lib/HTML/FormFu/Upload.pm blib/lib/HTML/FormFu/Upload.pm
+cp lib/HTML/FormFu/UploadParam.pm blib/lib/HTML/FormFu/UploadParam.pm
+cp lib/HTML/FormFu/Validator/Callback.pm blib/lib/HTML/FormFu/Validator/Callback.pm
+cp lib/HTML/FormFu/Transformer.pm blib/lib/HTML/FormFu/Transformer.pm
+cp lib/HTML/FormFu/Role/NestedHashUtils.pm blib/lib/HTML/FormFu/Role/NestedHashUtils.pm
+cp lib/HTML/FormFu/Role/Populate.pm blib/lib/HTML/FormFu/Role/Populate.pm
+cp lib/HTML/FormFu/Util.pm blib/lib/HTML/FormFu/Util.pm
+cp lib/HTML/FormFu/Role/Render.pm blib/lib/HTML/FormFu/Role/Render.pm
+cp lib/HTML/FormFu/Validator.pm blib/lib/HTML/FormFu/Validator.pm
+cp lib/HTML/FormFu/Transformer/Callback.pm blib/lib/HTML/FormFu/Transformer/Callback.pm
+cp bin/html_formfu_deploy.pl blib/script/html_formfu_deploy.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/html_formfu_deploy.pl
+cp bin/html_formfu_dumpconf.pl blib/script/html_formfu_dumpconf.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/html_formfu_dumpconf.pl
+Manifying 2 pod documents
+Manifying 27 pod documents
+Manifying 28 pod documents
+Manifying 29 pod documents
+Manifying 30 pod documents
+Manifying 29 pod documents
+Manifying 26 pod documents
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_select_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_contentbutton_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/non_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_javascript (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_text (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_textarea_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_checkboxgroup_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_errors (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_parser (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_comment (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_multi_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/repeatable (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/recaptcha (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_block (unchanged)
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/bugs/*.t t/constraints/*.t t/deflators/*.t t/elements/*.t t/examples/*.t t/filters/*.t t/force_errors/*.t t/form/*.t t/i18n/*.t t/inflators/*.t t/internals/*.t t/load_config/*.t t/model/*.t t/nested/*.t t/nested/constraints/*.t t/nested/elements/*.t t/nested/filters/*.t t/nested/form/*.t t/nested/inflators/*.t t/nested/internals/*.t t/nested/transformers/*.t t/nested/validators/*.t t/output_processors/*.t t/plugins/*.t t/repeatable/*.t t/repeatable/constraints/*.t t/repeatable/repeatable/constraints/*.t t/roles/*.t t/transformers/*.t t/utils/*.t t/validators/*.t
+t/00-report-prereqs.t .......................................... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module                  Want Have
+#     ----------------------- ---- ----
+#     ExtUtils::MakeMaker      any 7.44
+#     File::ShareDir::Install 0.06 0.13
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                 Want     Have
+#     ---------------------- ---- --------
+#     CGI                    3.37     4.49
+#     ExtUtils::MakeMaker     any     7.44
+#     File::Spec              any     3.78
+#     POSIX                   any     1.94
+#     Regexp::Assemble        any     0.38
+#     Test::Exception         any     0.43
+#     Test::Memory::Cycle     any     1.06
+#     Test::More             0.92 1.302175
+#     Test::RequiresInternet  any     0.05
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                       Want       Have
+#     -------------------------- ------ ----------
+#     Carp                          any       1.50
+#     Class::MOP::Method            any     2.2012
+#     Clone                        0.31       0.45
+#     Config::Any                  0.18       0.32
+#     Cwd                           any       3.78
+#     Data::Visitor                0.26       0.30
+#     Data::Visitor::Callback       any       0.30
+#     DateTime                     0.54       1.52
+#     DateTime::Format::Builder  0.7901       0.82
+#     DateTime::Format::Natural     any       1.09
+#     DateTime::Format::Strptime 1.2000       1.77
+#     DateTime::Locale             0.45       1.25
+#     Email::Valid                  any      1.202
+#     Encode                        any       3.06
+#     Exporter                     5.57       5.74
+#     Fatal                         any       2.32
+#     File::Copy                    any       2.34
+#     File::Find                    any       1.37
+#     File::ShareDir                any      1.116
+#     File::Spec                    any       3.78
+#     File::Temp                    any     0.2309
+#     HTML::Scrubber                any       0.19
+#     HTML::TokeParser::Simple     3.14       3.16
+#     HTTP::Headers                1.64       6.24
+#     Hash::Flatten                 any       1.19
+#     IO::File                      any       1.41
+#     JSON::MaybeXS                 any   1.004002
+#     List::MoreUtils               any      0.428
+#     List::Util                   1.45       1.55
+#     Locale::Maketext              any       1.29
+#     Module::Pluggable             any        5.2
+#     Moose                        1.00     2.2012
+#     Moose::Role                   any     2.2012
+#     Moose::Util                   any     2.2012
+#     MooseX::Aliases               any       0.11
+#     MooseX::Attribute::Chained v1.0.2      1.0.3
+#     Number::Format                any       1.75
+#     Path::Class::File             any       0.37
+#     Readonly                      any       2.05
+#     Regexp::Common                any 2017060201
+#     Scalar::Util                  any       1.55
+#     Storable                      any       3.21
+#     Task::Weaken                  any       1.06
+#     YAML::XS                     0.32       0.82
+#
+t/00-report-prereqs.t .......................................... ok
+t/01use.t ...................................................... ok
+t/04basic.t .................................................... ok
+t/05_repeated_render.t ......................................... ok
+t/block_insert_after.t ......................................... ok
+t/block_insert_before.t ........................................ ok
+t/bugs/constructor_arg_overwrites_default.t .................... ok
+t/bugs/date_element_deflator.t ................................. ok
+t/bugs/date_element_empty_input.t .............................. ok
+t/bugs/datetime_hour_lt_10.t ................................... ok
+t/bugs/element_class.t ......................................... ok
+t/bugs/element_parent.t ........................................ ok
+t/bugs/empty_block_with_nested_name.t .......................... ok
+t/bugs/error_msg.t ............................................. ok
+t/bugs/error_multiple_fields_same_name.t ....................... ok
+t/bugs/field_no_name.t ......................................... ok
+t/bugs/filter_run_once.t ....................................... ok
+t/bugs/multiple_checkbox_same_name.t ........................... ok
+t/bugs/name_regex_chars.t ...................................... ok
+t/bugs/not_nested.t ............................................ ok
+t/bugs/populate_element_coderef.t .............................. ok
+t/bugs/pre_1_00_compat.t ....................................... ok
+t/bugs/render_processed_value_retain_default.t ................. ok
+t/bugs/repeatable_increase_rep.t ............................... ok
+t/bugs/result_params_multiple.t ................................ ok
+t/bugs/select_empty_options.t .................................. ok
+t/bugs/submit_no_value.t ....................................... ok
+t/bugs/submit_retain_default.t ................................. ok
+t/bugs/value_empty_string.t .................................... ok
+t/bugs/value_no_default.t ...................................... ok
+t/bugs/yaml_utf8.t ............................................. ok
+t/constraints/allornone.t ...................................... ok
+t/constraints/allornone_attach_errors_to_base.t ................ ok
+t/constraints/allornone_attach_errors_to_others.t .............. ok
+t/constraints/ascii.t .......................................... ok
+t/constraints/autoset.t ........................................ ok
+t/constraints/autoset_group.t .................................. ok
+t/constraints/bool.t ........................................... ok
+t/constraints/callback.t ....................................... ok
+t/constraints/callbackonce.t ................................... ok
+t/constraints/constraint.t ..................................... ok
+t/constraints/constraint_other_siblings.t ...................... ok
+t/constraints/constraint_other_siblings_not.t .................. ok
+t/constraints/constraint_when.t ................................ ok
+t/constraints/constraint_when_any_field.t ...................... ok
+t/constraints/constraint_when_any_true_value.t ................. ok
+t/constraints/constraint_when_default_empty_value.t ............ ok
+t/constraints/constraint_when_fields.t ......................... ok
+t/constraints/datetime_parser.t ................................ ok
+t/constraints/dependon.t ....................................... ok
+t/constraints/dependon_attach_errors_to_base.t ................. ok
+t/constraints/dependon_attach_errors_to_others.t ............... ok
+t/constraints/email-mx.t ....................................... skipped: no host: cpan.org
+t/constraints/email.t .......................................... ok
+t/constraints/equal.t .......................................... ok
+t/constraints/equal_internals.t ................................ ok
+t/constraints/equal_not.t ...................................... ok
+t/constraints/file.t ........................................... ok
+t/constraints/file_maxsize.t ................................... ok
+t/constraints/file_mime.t ...................................... ok
+t/constraints/file_minsize.t ................................... ok
+t/constraints/file_size.t ...................................... ok
+t/constraints/integer.t ........................................ ok
+t/constraints/json.t ........................................... ok
+t/constraints/length.t ......................................... ok
+t/constraints/localize.t ....................................... ok
+t/constraints/maxlength.t ...................................... ok
+t/constraints/maxrange.t ....................................... ok
+t/constraints/minlength.t ...................................... ok
+t/constraints/minmaxfields.t ................................... ok
+t/constraints/minmaxfields_with_filter_split.t ................. ok
+t/constraints/minrange.t ....................................... ok
+t/constraints/not_equal.t ...................................... ok
+t/constraints/not_word.t ....................................... ok
+t/constraints/number.t ......................................... ok
+t/constraints/printable.t ...................................... ok
+t/constraints/range.t .......................................... ok
+t/constraints/regex.t .......................................... ok
+t/constraints/regex_anchored.t ................................. ok
+t/constraints/regex_common.t ................................... ok
+t/constraints/repeatable_any.t ................................. ok
+t/constraints/repeatable_any_not_increment_field_names.t ....... ok
+t/constraints/required.t ....................................... ok
+t/constraints/required_file.t .................................. ok
+t/constraints/required_only_on_reps.t .......................... ok
+t/constraints/set.t ............................................ ok
+t/constraints/singlevalue.t .................................... ok
+t/constraints/word.t ........................................... ok
+t/constraints/xml.t ............................................ ok
+t/deflators/callback.t ......................................... ok
+t/deflators/compounddatetime.t ................................. ok
+t/deflators/compounddatetime_field_order.t ..................... ok
+t/deflators/compoundsplit.t .................................... ok
+t/deflators/compoundsplit_after_submit.t ....................... ok
+t/deflators/compoundsplit_field_order.t ........................ ok
+t/deflators/compoundsplit_split.t .............................. ok
+t/deflators/formatnumber.t ..................................... ok
+t/deflators/pathclassfile.t .................................... ok
+t/elements-file_post.t ......................................... ok
+t/elements/blank.t ............................................. ok
+t/elements/block.t ............................................. ok
+t/elements/block_auto_block_id.t ............................... ok
+t/elements/block_repeatable.t .................................. ok
+t/elements/block_repeatable_attrs.t ............................ ok
+t/elements/block_repeatable_auto_block_id.t .................... ok
+t/elements/block_repeatable_auto_id.t .......................... ok
+t/elements/block_repeatable_date.t ............................. ok
+t/elements/block_repeatable_inc.t .............................. ok
+t/elements/block_repeatable_multi.t ............................ ok
+t/elements/block_repeatable_tag.t .............................. ok
+t/elements/button.t ............................................ ok
+t/elements/button_no_name.t .................................... ok
+t/elements/checkbox.t .......................................... ok
+t/elements/checkbox_force_default.t ............................ ok
+t/elements/checkbox_retain_default.t ........................... ok
+t/elements/checkbox_reverse.t .................................. ok
+t/elements/checkboxgroup.t ..................................... ok
+t/elements/checkboxgroup_attributes_escaped.t .................. ok
+t/elements/combobox.t .......................................... ok
+t/elements/combobox_repeatable.t ............................... ok
+t/elements/combobox_required.t ................................. ok
+t/elements/content_button.t .................................... ok
+t/elements/date.t .............................................. ok
+t/elements/date_default.t ...................................... ok
+t/elements/date_default_datetime_args.t ........................ ok
+t/elements/date_default_empty.t ................................ ok
+t/elements/date_month_year.t ................................... ok
+t/elements/date_natural.t ...................................... ok
+t/elements/date_order.t ........................................ ok
+t/elements/date_order_error.t .................................. ok
+t/elements/date_rename.t ....................................... ok
+t/elements/date_undef.t ........................................ ok
+t/elements/date_year_reverse.t ................................. ok
+t/elements/datetime.t .......................................... ok
+t/elements/datetime_interval.t ................................. ok
+t/elements/datetime_seconds.t .................................. ok
+t/elements/element_setup.t ..................................... ok
+t/elements/email.t ............................................. ok
+t/elements/error_attributes_failing_test.t ..................... ok
+t/elements/escaping.t .......................................... ok
+t/elements/field_default_empty_value.t ......................... ok
+t/elements/field_non_param.t ................................... ok
+t/elements/fieldset.t .......................................... ok
+t/elements/fieldset_legend_attrs.t ............................. ok
+t/elements/file.t .............................................. ok
+t/elements/file_post_cgi_simple.t .............................. skipped: CGI::Simple required
+t/elements/hidden.t ............................................ ok
+t/elements/hr.t ................................................ ok
+t/elements/image.t ............................................. ok
+t/elements/label.t ............................................. ok
+t/elements/label_value_submission.t ............................ ok
+t/elements/multi.t ............................................. ok
+t/elements/multi_errors.t ...................................... ok
+t/elements/multiple_submit_buttons.t ........................... ok
+t/elements/no_block_tag.t ...................................... ok
+t/elements/no_container_tag.t .................................. ok
+t/elements/number.t ............................................ ok
+t/elements/object.t ............................................ skipped: Template.pm required
+t/elements/password.t .......................................... ok
+t/elements/password_render_value.t ............................. ok
+t/elements/password_retain_default.t ........................... ok
+t/elements/radio.t ............................................. ok
+t/elements/radio_force_default.t ............................... ok
+t/elements/radio_retain_default.t .............................. ok
+t/elements/radiogroup.t ........................................ ok
+t/elements/radiogroup_attributes_escaped.t ..................... ok
+t/elements/radiogroup_attrs_xml.t .............................. ok
+t/elements/radiogroup_dup_opt.t ................................ ok
+t/elements/radiogroup_errors.t ................................. ok
+t/elements/radiogroup_force_default.t .......................... ok
+t/elements/radiogroup_id.t ..................................... ok
+t/elements/radiogroup_id_value.t ............................... ok
+t/elements/radiogroup_retain_default.t ......................... ok
+t/elements/radiogroup_subgroup.t ............................... ok
+t/elements/radiogroup_unknown_opt.t ............................ ok
+t/elements/radiogroup_xml.t .................................... ok
+t/elements/render_method.t ..................................... skipped: Template.pm required
+t/elements/repeatable_counter_name.t ........................... ok
+t/elements/repeatable_repeatable.t ............................. ok
+t/elements/reset.t ............................................. ok
+t/elements/reverse.t ........................................... ok
+t/elements/select.t ............................................ ok
+t/elements/select_attributes_escaped.t ......................... ok
+t/elements/select_deflator_default.t ........................... ok
+t/elements/select_empty_first.t ................................ ok
+t/elements/select_empty_first_label.t .......................... ok
+t/elements/select_force_default.t .............................. ok
+t/elements/select_label_loc.t .................................. ok
+t/elements/select_multi_default_values.t ....................... ok
+t/elements/select_multi_value.t ................................ ok
+t/elements/select_optgroup.t ................................... ok
+t/elements/select_options.t .................................... ok
+t/elements/select_retain_default.t ............................. ok
+t/elements/select_same_name.t .................................. ok
+t/elements/select_value_range.t ................................ ok
+t/elements/simple_table.t ...................................... ok
+t/elements/simple_table_class.t ................................ ok
+t/elements/simple_table_multiple.t ............................. ok
+t/elements/src.t ............................................... ok
+t/elements/submit.t ............................................ ok
+t/elements/text.t .............................................. ok
+t/elements/text_attributes.t ................................... ok
+t/elements/text_auto_comment_class.t ........................... ok
+t/elements/text_auto_container_class.t ......................... ok
+t/elements/text_auto_container_comment_class.t ................. ok
+t/elements/text_auto_container_error_class.t ................... ok
+t/elements/text_auto_container_label_class.t ................... ok
+t/elements/text_auto_label_class.t ............................. ok
+t/elements/text_datalist_options.t ............................. ok
+t/elements/text_datalist_values.t .............................. ok
+t/elements/text_errors.t ....................................... ok
+t/elements/text_force_default.t ................................ ok
+t/elements/text_layout.t ....................................... ok
+t/elements/text_retain_default.t ............................... ok
+t/elements/text_title.t ........................................ ok
+t/elements/textarea.t .......................................... ok
+t/elements/url.t ............................................... ok
+t/examples/custom_label.t ...................................... skipped: Template.pm required
+t/examples/custom_label2.t ..................................... skipped: Template.pm required
+t/examples/field_as.t .......................................... skipped: Template.pm required
+t/examples/fields_as_list_items.t .............................. skipped: Template.pm required
+t/field_accessor_loc.t ......................................... ok
+t/field_accessor_loc_arrayref.t ................................ ok
+t/field_change_name.t .......................................... ok
+t/field_id.t ................................................... ok
+t/filters/all_by_default.t ..................................... ok
+t/filters/callback.t ........................................... ok
+t/filters/compoundjoin.t ....................................... ok
+t/filters/compoundjoin_field_order.t ........................... ok
+t/filters/compoundjoin_join.t .................................. ok
+t/filters/compoundsprintf.t .................................... ok
+t/filters/compoundsprintf_field_order.t ........................ ok
+t/filters/copyvalue.t .......................................... ok
+t/filters/encode.t ............................................. ok
+t/filters/filter.t ............................................. ok
+t/filters/formatnumber.t ....................................... ok
+t/filters/htmlescape.t ......................................... ok
+t/filters/htmlscrubber.t ....................................... ok
+t/filters/lowercase.t .......................................... ok
+t/filters/nonnumeric.t ......................................... ok
+t/filters/regex.t .............................................. ok
+t/filters/regex_eval.t ......................................... ok
+t/filters/split.t .............................................. ok
+t/filters/trimedges.t .......................................... ok
+t/filters/uppercase.t .......................................... ok
+t/filters/whitespace.t ......................................... ok
+t/force_errors/allornone.t ..................................... ok
+t/force_errors/callbackonce.t .................................. ok
+t/force_errors/dependon.t ...................................... ok
+t/force_errors/equal.t ......................................... ok
+t/force_errors/force_errors.t .................................. ok
+t/force_errors/integer.t ....................................... ok
+t/force_errors/minmaxfields.t .................................. ok
+t/form/add_render_class_args.t ................................. ok
+t/form/add_valid.t ............................................. ok
+t/form/add_valid_unknown.t ..................................... ok
+t/form/attributes.t ............................................ ok
+t/form/auto_constraint_class.t ................................. ok
+t/form/auto_error_class.t ...................................... ok
+t/form/auto_error_field_class.t ................................ ok
+t/form/auto_error_message.t .................................... ok
+t/form/auto_fieldset.t ......................................... ok
+t/form/auto_label.t ............................................ ok
+t/form/clone.t ................................................. ok
+t/form/config_callback.t ....................................... ok
+t/form/constraints_from_dbic.t ................................. ok
+t/form/constraints_from_dbic_rs.t .............................. ok
+t/form/default_args.t .......................................... ok
+t/form/default_args_alt.t ...................................... ok
+t/form/default_args_isa.t ...................................... ok
+t/form/default_args_not_inheriting.t ........................... ok
+t/form/default_values.t ........................................ ok
+t/form/end.t ................................................... ok
+t/form/error_message.t ......................................... ok
+t/form/force_error_message.t ................................... ok
+t/form/form_error_message_class.t .............................. ok
+t/form/get_all_elements.t ...................................... ok
+t/form/get_constraint.t ........................................ ok
+t/form/get_constraints.t ....................................... ok
+t/form/get_deflator.t .......................................... ok
+t/form/get_deflators.t ......................................... ok
+t/form/get_element.t ........................................... ok
+t/form/get_elements.t .......................................... ok
+t/form/get_errors.t ............................................ ok
+t/form/get_field.t ............................................. ok
+t/form/get_fields.t ............................................ ok
+t/form/get_filter.t ............................................ ok
+t/form/get_filters.t ........................................... ok
+t/form/get_inflator.t .......................................... ok
+t/form/get_inflators.t ......................................... ok
+t/form/get_parent.t ............................................ ok
+t/form/has_errors.t ............................................ ok
+t/form/hidden_fields.t ......................................... ok
+t/form/init_arg.t .............................................. ok
+t/form/insert_after.t .......................................... ok
+t/form/insert_before.t ......................................... ok
+t/form/javascript.t ............................................ ok
+t/form/javascript_src.t ........................................ ok
+t/form/languages.t ............................................. ok
+t/form/model.t ................................................. ok
+t/form/multiple_same_named_fields.t ............................ ok
+t/form/object.t ................................................ skipped: Template.pm required
+t/form/param.t ................................................. ok
+t/form/param_array.t ........................................... ok
+t/form/param_list.t ............................................ ok
+t/form/param_value.t ........................................... ok
+t/form/params.t ................................................ ok
+t/form/params_ignore_underscore.t .............................. ok
+t/form/query.t ................................................. ok
+t/form/render_processed_value.t ................................ ok
+t/form/start.t ................................................. ok
+t/form/stash.t ................................................. ok
+t/form/submitted.t ............................................. ok
+t/form/submitted_and_valid.t ................................... ok
+t/form/title_xml.t ............................................. ok
+t/form/valid.t ................................................. ok
+t/i18n/add_localize_object.t ................................... ok
+t/i18n/add_localize_object_from_class.t ........................ ok
+t/inflators/array.t ............................................ ok
+t/inflators/callback.t ......................................... ok
+t/inflators/compounddatetime.t ................................. ok
+t/inflators/compounddatetime_field_order.t ..................... ok
+t/inflators/datetime_optional.t ................................ ok
+t/inflators/datetime_parser.t .................................. ok
+t/inflators/datetime_regex.t ................................... ok
+t/inflators/datetime_regex_string.t ............................ ok
+t/inflators/datetime_strptime.t ................................ ok
+t/inflators/datetime_timezone.t ................................ ok
+t/inflators/datetime_with_constraint.t ......................... ok
+t/internals/default_args-types.t ............................... ok
+t/load_config/config_file_path.t ............................... ok
+t/load_config/load_config_file.t ............................... ok
+t/load_config/load_config_file_constraint_regex.t .............. ok
+t/load_config/load_config_file_multi_stream.t .................. ok
+t/load_config/load_config_file_multiple.t ...................... ok
+t/load_config/load_config_filestem.t ........................... ok
+t/model/hashref_create.t ....................................... ok
+t/model/hashref_create_repeatable_without_nestedname.t ......... ok
+t/model/hashref_default_values.t ............................... ok
+t/model/hashref_escaping.t ..................................... ok
+t/model/hashref_multi_within_rep.t ............................. ok
+t/model/hashref_process.t ...................................... ok
+t/multiple_select_fields.t ..................................... ok
+t/multiple_text_fields.t ....................................... ok
+t/nested-elements-file_post.t .................................. ok
+t/nested/constraints/allornone.t ............................... ok
+t/nested/constraints/callbackonce.t ............................ ok
+t/nested/constraints/constraint_when.t ......................... ok
+t/nested/constraints/dependon.t ................................ ok
+t/nested/constraints/equal.t ................................... ok
+t/nested/constraints/minmaxfields.t ............................ ok
+t/nested/constraints/required.t ................................ ok
+t/nested/element_name.t ........................................ ok
+t/nested/elements/block_repeatable_multi_named.t ............... ok
+t/nested/elements/block_repeatable_multi_named_filter.t ........ ok
+t/nested/elements/block_without_name.t ......................... ok
+t/nested/elements/checkbox_force_default.t ..................... ok
+t/nested/elements/checkbox_retain_default.t .................... ok
+t/nested/elements/combobox.t ................................... ok
+t/nested/elements/date.t ....................................... ok
+t/nested/elements/multi.t ...................................... ok
+t/nested/elements/multi_named.t ................................ ok
+t/nested/elements/radio.t ...................................... ok
+t/nested/elements/radio_force_default.t ........................ ok
+t/nested/elements/radio_retain_default.t ....................... ok
+t/nested/elements/radiogroup.t ................................. ok
+t/nested/elements/radiogroup_force_default.t ................... ok
+t/nested/elements/radiogroup_retain_default.t .................. ok
+t/nested/elements/repeatable_repeatable.t ...................... ok
+t/nested/elements/select.t ..................................... ok
+t/nested/elements/select_force_default.t ....................... ok
+t/nested/elements/select_retain_default.t ...................... ok
+t/nested/elements/select_same_name.t ........................... ok
+t/nested/elements/text.t ....................................... ok
+t/nested/filters/regex.t ....................................... ok
+t/nested/form/render_processed_value.t ......................... ok
+t/nested/form_input.t .......................................... ok
+t/nested/illegal_name.t ........................................ ok
+t/nested/inflators/datetime_strptime.t ......................... ok
+t/nested/internals/form_processed_params.t ..................... ok
+t/nested/internals/hash_keys.t ................................. ok
+t/nested/param.t ............................................... ok
+t/nested/params.t .............................................. ok
+t/nested/pre_expanded.t ........................................ ok
+t/nested/transformers/callback.t ............................... ok
+t/nested/valid.t ............................................... ok
+t/nested/validators/callback.t ................................. ok
+t/output_processors/indent.t ................................... ok
+t/output_processors/indent_internals.t ......................... ok
+t/output_processors/strip_whitespace.t ......................... ok
+t/plugins/stashvalid.t ......................................... ok
+t/plugins/stashvalid_on_field.t ................................ ok
+t/repeatable/clone.t ........................................... ok
+t/repeatable/constraints/attach_errors_to.t .................... ok
+t/repeatable/constraints/equal.t ............................... ok
+t/repeatable/constraints/required.t ............................ ok
+t/repeatable/constraints/required_not_increment_field_names.t .. ok
+t/repeatable/constraints/required_not_nested.t ................. ok
+t/repeatable/constraints/when.t ................................ ok
+t/repeatable/repeatable/constraints/repeatable_any.t ........... ok
+t/roles/block.t ................................................ ok
+t/roles/field.t ................................................ ok
+t/roles/form.t ................................................. ok
+t/transformers/callback.t ...................................... ok
+t/utils/append_xml_attribute.t ................................. ok
+t/utils/has_xml_attribute.t .................................... ok
+t/utils/remove_xml_attribute.t ................................. ok
+t/validators/callback.t ........................................ ok
+t/validators/validator.t ....................................... ok
+All tests successful.
+Files=409, Tests=2224, 398 wallclock secs ( 2.97 usr  0.49 sys + 250.16 cusr 145.42 csys = 399.04 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/pkgconfig m4datadir=/nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/aclocal aclocaldir=/nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/aclocal install
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_multi_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_comment (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_checkboxgroup_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_textarea_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/non_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_errors (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_javascript (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_select_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_contentbutton_field (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_parser (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_text (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/recaptcha (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_block (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_form (unchanged)
+Skip blib/lib/auto/share/dist/HTML-FormFu/templates/tt/xhtml/repeatable (unchanged)
+Manifying 2 pod documents
+Manifying 27 pod documents
+Manifying 28 pod documents
+Manifying 29 pod documents
+Manifying 30 pod documents
+Manifying 29 pod documents
+Manifying 26 pod documents
+Manifying 1 pod document
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_comment
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_form
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_javascript
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_errors
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/repeatable
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_block
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label_text
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_select_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/start_form
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_multi_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_block
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_textarea_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_label
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/end_block
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/non_block
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_parser
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_checkboxgroup_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/field_layout_contentbutton_field
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/block
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/recaptcha
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/auto/share/dist/HTML-FormFu/templates/tt/xhtml/form
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Localize.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Model.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Validator.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Literal.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Inflator.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Attribute.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Upload.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Util.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Preload.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Plugin.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/UploadParam.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deploy.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/FakeQuery.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Transformer.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Processor.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/OutputProcessor.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/ObjectUtil.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constants.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Validator/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception/Validator.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception/Inflator.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception/Constraint.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception/Input.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Exception/Transformer.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Model/HashRef.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/ASCII.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/AllOrNone.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Equal.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Email.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Word.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/SingleValue.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/MaxRange.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/CallbackOnce.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/MinRange.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/File.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/DateTime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Printable.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Required.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/JSON.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/MinLength.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Bool.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Integer.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/AutoSet.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/MinMaxFields.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Set.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Range.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/DependOn.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Length.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Regex.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/MaxLength.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Number.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/File/MIME.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/File/MaxSize.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/File/MinSize.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/File/Size.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Constraint/Repeatable/Any.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Transformer/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Plugin/StashValid.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Manual/Unicode.pod
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Manual/Cookbook.pod
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/Strftime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/CompoundDateTime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/PathClassFile.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/CompoundSplit.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Deflator/FormatNumber.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/da.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/zh_cn.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/no.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/ru.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/fr.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/es.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/en.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/cs.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/tr.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/pt_pt.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/ro.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/de.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/ua.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/ja.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/hu.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/pt_br.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/it.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/I18N/bg.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/QueryType/Catalyst.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/QueryType/CGI.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/QueryType/CGI/Simple.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/SimpleTable.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Radiogroup.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Password.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/URL.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Email.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Button.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Hidden.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Radio.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Src.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Date.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Submit.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Checkboxgroup.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Multi.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Hr.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Blank.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Block.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/File.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/DateTime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Image.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Fieldset.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/ContentButton.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/ComboBox.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Label.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Reset.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Textarea.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Select.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Text.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Repeatable.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Checkbox.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Element/Number.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Populate.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/HasParent.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/CustomRoles.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/FormAndBlockMethods.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/ContainsElements.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/ContainsElementsSharedWithField.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Render.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/FormBlockAndFieldMethods.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/GetProcessors.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/FormAndElementMethods.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/CreateChildren.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/NestedHashUtils.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Constraint/Others.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/SingleValueField.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/Coercible.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/MultiElement.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/Layout.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/NonBlock.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/FieldMethods.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/Input.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/ProcessOptionsFromModel.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/Group.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Element/Field.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Role/Filter/Compound.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/UpperCase.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/Encode.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/Whitespace.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/LowerCase.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/Split.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/HTMLEscape.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/CompoundSprintf.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/NonNumeric.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/CopyValue.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/HTMLScrubber.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/FormatNumber.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/TrimEdges.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/ForceListValue.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/Regex.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Filter/CompoundJoin.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Inflator/CompoundDateTime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Inflator/DateTime.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/Inflator/Callback.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/OutputProcessor/Indent.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/site_perl/5.32.0/HTML/FormFu/OutputProcessor/StripWhitespace.pm
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man1/html_formfu_deploy.pl.1
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man1/html_formfu_dumpconf.pl.1
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Upload.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::CopyValue.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Inflator::CompoundDateTime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Button.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::da.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::TrimEdges.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Repeatable.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::Encode.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Image.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::LowerCase.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Repeatable::Any.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Validator.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::UploadParam.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::FormAndElementMethods.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::File.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::ContentButton.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Checkbox.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::Field.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::MaxRange.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Date.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::MinRange.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constants.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Transformer.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Hidden.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::DateTime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::Group.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::es.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::en.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::QueryType::Catalyst.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::tr.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::CompoundDateTime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::NonBlock.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::ja.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Literal.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::HasParent.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::MultiElement.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Integer.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::SingleValue.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::pt_br.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::Whitespace.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::DateTime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Equal.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::ua.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Blank.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::FakeQuery.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::OutputProcessor::Indent.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Select.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::ObjectUtil.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Preload.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Textarea.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Email.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::FormatNumber.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::CreateChildren.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception::Input.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::ContainsElementsSharedWithField.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Fieldset.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::File::MinSize.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::ContainsElements.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::File::Size.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::MinMaxFields.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::ForceListValue.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::NonNumeric.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Reset.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Attribute.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::UpperCase.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::ASCII.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::OutputProcessor.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::Input.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Src.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Render.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::MinLength.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Printable.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::AutoSet.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Processor.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::SimpleTable.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::HTMLScrubber.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Required.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::fr.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::bg.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Multi.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::MaxLength.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::JSON.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Localize.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Radio.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::ru.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::pt_pt.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::Regex.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Radiogroup.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::FormAndBlockMethods.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::ro.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Validator::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Plugin::StashValid.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::ComboBox.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::NestedHashUtils.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Length.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::no.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::PathClassFile.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::SingleValueField.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Label.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::CompoundSprintf.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::FormatNumber.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Manual::Cookbook.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::HTMLEscape.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Inflator.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Constraint::Others.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::Strftime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Number.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Number.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::File::MIME.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::File.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::File::MaxSize.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::QueryType::CGI::Simple.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::CallbackOnce.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::DependOn.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Manual::Unicode.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Submit.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::Layout.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Word.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Hr.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::ProcessOptionsFromModel.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Util.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::zh_cn.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::de.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Text.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::CompoundJoin.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception::Constraint.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::AllOrNone.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::it.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::CustomRoles.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::Coercible.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Block.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Filter::Compound.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::OutputProcessor::StripWhitespace.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Inflator::DateTime.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deploy.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::hu.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::I18N::cs.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Inflator::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Regex.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Password.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Deflator::CompoundSplit.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Email.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::QueryType::CGI.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Transformer::Callback.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::FormBlockAndFieldMethods.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception::Validator.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Plugin.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Set.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Populate.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception::Inflator.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Filter::Split.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::GetProcessors.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::URL.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Element::Checkboxgroup.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Range.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Exception::Transformer.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Model::HashRef.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Model.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Constraint::Bool.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3/HTML::FormFu::Role::Element::FieldMethods.3
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/bin/html_formfu_dumpconf.pl
+Installing /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/bin/html_formfu_deploy.pl
+Appending installation info to /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/man3 to /nix/store/il0wpkb5qryspjs8589cr3m0qlwj83vi-perl5.32.0-HTML-FormFu-2.07-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07
+gzipping man pages under /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/lib  /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07/bin
+patching script interpreter paths in /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07
+checking for references to /build/ in /nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/il0wpkb5qryspjs8589cr3m0qlwj83vi-perl5.32.0-HTML-FormFu-2.07-devdoc
+gzipping man pages under /nix/store/il0wpkb5qryspjs8589cr3m0qlwj83vi-perl5.32.0-HTML-FormFu-2.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/il0wpkb5qryspjs8589cr3m0qlwj83vi-perl5.32.0-HTML-FormFu-2.07-devdoc
+checking for references to /build/ in /nix/store/il0wpkb5qryspjs8589cr3m0qlwj83vi-perl5.32.0-HTML-FormFu-2.07-devdoc...
+/nix/store/d6yljbbgcq5nxx9v0mmksy5g9xq6c0yy-perl5.32.0-HTML-FormFu-2.07

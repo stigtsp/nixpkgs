@@ -1,0 +1,152 @@
+these derivations will be built:
+  /nix/store/89yzjw1mzns5kh668fln3fqw3fl7q2im-perl5.32.0-Regexp-Grammars-1.057.drv
+these paths will be fetched (0.25 MiB download, 0.25 MiB unpacked):
+  /nix/store/5a5r6q33virxf1ais3lmxqmji0yz486d-Regexp-Grammars-1.057.tar.gz
+copying path '/nix/store/5a5r6q33virxf1ais3lmxqmji0yz486d-Regexp-Grammars-1.057.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/89yzjw1mzns5kh668fln3fqw3fl7q2im-perl5.32.0-Regexp-Grammars-1.057.drv'...
+unpacking sources
+unpacking source archive /nix/store/5a5r6q33virxf1ais3lmxqmji0yz486d-Regexp-Grammars-1.057.tar.gz
+source root is Regexp-Grammars-1.057
+setting SOURCE_DATE_EPOCH to timestamp 1590185179 of file Regexp-Grammars-1.057/MANIFEST
+patching sources
+configuring
+patching ./demo/demo_rfc5322.pl...
+patching ./demo/demo_Lucene_query.pl...
+patching ./demo/demo_hashlines.pl...
+patching ./demo/demo_pos.pl...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite B::Hooks::Parser 0.16 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Regexp::Grammars
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  requires:
+    !  B::Hooks::Parser is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Regexp-Grammars' version '1.057'
+Building Regexp-Grammars
+running tests
+t/00.load.t ............................ 1/1 # Testing Regexp::Grammars 1.057
+t/00.load.t ............................ ok
+t/alias_literal.t ...................... ok
+t/aliased_subpatterns.t ................ ok
+t/arg.t ................................ ok
+t/autoflatten.t ........................ ok
+t/backref.t ............................ ok
+t/backref_ARG.t ........................ ok
+t/charnames.t .......................... ok
+t/charset.t ............................ ok
+t/class_accessor.t ..................... ok
+t/clear_actions.t ...................... ok
+t/comment.t ............................ ok
+t/data_structure.t ..................... ok
+t/error.t .............................. ok
+t/error_non_backtracking.t ............. ok
+t/error_non_hash_based.t ............... ok
+t/error_translate.t .................... ok
+t/fatal.t .............................. ok
+t/fwdref.t ............................. ok
+t/grammar.t ............................ ok
+t/grammar_polymorphism.t ............... ok
+t/hash.t ............................... ok
+t/hash_redef.t ......................... ok
+t/hash_redef_local.t ................... ok
+t/inline_computation.t ................. ok
+t/inline_computation_handler.t ......... ok
+t/inline_computation_obj_handler.t ..... ok
+t/local_ws.t ........................... ok
+t/lookaheads.t ......................... ok
+t/matchline.t .......................... ok
+t/matchpos.t ........................... ok
+t/minimize_bug.t ....................... ok
+t/missing_slash_x.t .................... ok
+t/moose.t .............................. skipped: Moose required for testing moosey objrules
+t/neg_lookahead.t ...................... ok
+t/new.t ................................ ok
+t/new_init.t ........................... ok
+t/new_init_autoload.t .................. ok
+t/new_init_limited_autoload.t .......... ok
+t/new_init_limited_autoload_warn.t ..... ok
+t/no_context.t ......................... ok
+t/no_context_counterlocal.t ............ ok
+t/no_context_local.t ................... ok
+t/no_context_named_capture.t ........... ok
+t/non_backtracking.t ................... ok
+t/obj_rename.t ......................... ok
+t/one_liner.t .......................... ok
+t/pod.t ................................ skipped: Test::Pod 1.14 required for testing POD
+t/pseudovars.t ......................... ok
+t/repop_ws.t ........................... ok
+t/seplist.t ............................ ok
+t/seplist_countedhash_0.t .............. ok
+t/seplist_countedhash_0_.t ............. ok
+t/seplist_countedhash_0_1.t ............ ok
+t/seplist_countedhash_0_N.t ............ ok
+t/seplist_countedhash_1.t .............. ok
+t/seplist_countedhash_1_.t ............. ok
+t/seplist_countedhash_1_N.t ............ ok
+t/seplist_countedhash_M_.t ............. ok
+t/seplist_countedhash_M_N.t ............ ok
+t/seplist_countedhash_N.t .............. ok
+t/seplist_greediness.t .................   warn | Non-backtracking subrule call <[item=Value]>++
+       | at t/seplist_greediness.t line 45
+       | may not revert correctly during backtracking.
+       | (If grammar does not work, try <[item=Value]>+ instead)
+       |
+t/seplist_greediness.t ................. ok
+t/seplist_plushash.t ................... ok
+t/seplist_questionmark.t ............... ok
+t/seplist_rawhash.t .................... ok
+t/seplist_starhash.t ................... ok
+t/seplist_trailing__countedhash_0.t .... ok
+t/seplist_trailing__countedhash_0_.t ... ok
+t/seplist_trailing__countedhash_0_1.t .. ok
+t/seplist_trailing__countedhash_0_N.t .. ok
+t/seplist_trailing__countedhash_1.t .... ok
+t/seplist_trailing__countedhash_1_.t ... ok
+t/seplist_trailing__countedhash_1_N.t .. ok
+t/seplist_trailing__countedhash_M_.t ... ok
+t/seplist_trailing__countedhash_M_N.t .. ok
+t/seplist_trailing__countedhash_N.t .... ok
+t/seplist_trailing__greediness.t .......   warn | Non-backtracking subrule call <[item=Value]>++
+       | at t/seplist_trailing__greediness.t line 45
+       | may not revert correctly during backtracking.
+       | (If grammar does not work, try <[item=Value]>+ instead)
+       |
+t/seplist_trailing__greediness.t ....... ok
+t/seplist_trailing__plushash.t ......... ok
+t/seplist_trailing__questionmark.t ..... ok
+t/seplist_trailing__rawhash.t .......... ok
+t/seplist_trailing__starhash.t ......... ok
+t/top_is_token.t ....................... ok
+t/ws_redefine.t ........................ ok
+All tests successful.
+Files=83, Tests=1407,  6 wallclock secs ( 0.26 usr  0.08 sys +  5.71 cusr  0.91 csys =  6.96 CPU)
+Result: PASS
+installing
+Building Regexp-Grammars
+Installing /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057/lib/perl5/site_perl/5.32.0/Regexp/Grammars.pm
+Installing /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057/share/man/man3/Regexp::Grammars.3
+post-installation fixup
+Moving /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057/share/man/man3 to /nix/store/17xisxf9d4wknna6b65val2pb4d9hs5h-perl5.32.0-Regexp-Grammars-1.057-devdoc/share/man/man3
+Removing empty /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057/lib
+patching script interpreter paths in /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057
+checking for references to /build/ in /nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057...
+shrinking RPATHs of ELF executables and libraries in /nix/store/17xisxf9d4wknna6b65val2pb4d9hs5h-perl5.32.0-Regexp-Grammars-1.057-devdoc
+gzipping man pages under /nix/store/17xisxf9d4wknna6b65val2pb4d9hs5h-perl5.32.0-Regexp-Grammars-1.057-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/17xisxf9d4wknna6b65val2pb4d9hs5h-perl5.32.0-Regexp-Grammars-1.057-devdoc
+checking for references to /build/ in /nix/store/17xisxf9d4wknna6b65val2pb4d9hs5h-perl5.32.0-Regexp-Grammars-1.057-devdoc...
+/nix/store/5rckdpm8lh1pd2cv6vlbvrcgnlmm4s9r-perl5.32.0-Regexp-Grammars-1.057

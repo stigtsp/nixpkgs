@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/vz3cd5s486j5wavmxak8n7w3k78js48y-perl5.32.0-Unicode-CaseFold-1.01.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/yz9skf5mc1bqflxg33cqywzg2h185anj-Unicode-CaseFold-1.01.tar.gz
+copying path '/nix/store/yz9skf5mc1bqflxg33cqywzg2h185anj-Unicode-CaseFold-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vz3cd5s486j5wavmxak8n7w3k78js48y-perl5.32.0-Unicode-CaseFold-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/yz9skf5mc1bqflxg33cqywzg2h185anj-Unicode-CaseFold-1.01.tar.gz
+source root is Unicode-CaseFold-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1500959852 of file Unicode-CaseFold-1.01/t/author-pp-10fold.t
+patching sources
+configuring
+patching ./t/author-pp-10fold.t...
+patching ./t/10fold.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Unicode-CaseFold' version '1.01'
+Building Unicode-CaseFold
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.01" -DXS_VERSION="1.01" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Unicode/CaseFold.o lib/Unicode/CaseFold.c
+In file included from lib/Unicode/CaseFold.xs:5:
+c/ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from lib/Unicode/CaseFold.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Unicode/CaseFold/CaseFold.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Unicode/CaseFold/CaseFold.so lib/Unicode/CaseFold.o
+running tests
+t/10fold.t ............ ok
+t/author-pp-10fold.t .. skipped: these tests are for testing by the author
+All tests successful.
+Files=2, Tests=99,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.06 cusr  0.01 csys =  0.10 CPU)
+Result: PASS
+installing
+Building Unicode-CaseFold
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Unicode/CaseFold/CaseFold.bs
+Installing /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Unicode/CaseFold/CaseFold.so
+Installing /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Unicode/CaseFoldPP.pm
+Installing /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Unicode/CaseFold.pm
+Installing /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/share/man/man3/Unicode::CaseFold.3
+post-installation fixup
+Moving /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/share/man/man3 to /nix/store/rm3a4aap80bai7r6m4772qmack4z31zn-perl5.32.0-Unicode-CaseFold-1.01-devdoc/share/man/man3
+Removing empty /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01
+shrinking /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Unicode/CaseFold/CaseFold.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01/lib
+patching script interpreter paths in /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01
+checking for references to /build/ in /nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rm3a4aap80bai7r6m4772qmack4z31zn-perl5.32.0-Unicode-CaseFold-1.01-devdoc
+gzipping man pages under /nix/store/rm3a4aap80bai7r6m4772qmack4z31zn-perl5.32.0-Unicode-CaseFold-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rm3a4aap80bai7r6m4772qmack4z31zn-perl5.32.0-Unicode-CaseFold-1.01-devdoc
+checking for references to /build/ in /nix/store/rm3a4aap80bai7r6m4772qmack4z31zn-perl5.32.0-Unicode-CaseFold-1.01-devdoc...
+/nix/store/hd51kdbvkbl6fwx859nhln8khr8jxd65-perl5.32.0-Unicode-CaseFold-1.01

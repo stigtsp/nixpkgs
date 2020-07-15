@@ -1,0 +1,83 @@
+these derivations will be built:
+  /nix/store/crcz2v804jnb240i1pqf96jypqcgdk0s-perl5.32.0-Math-BigInt-Lite-0.18.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/7yaaqla2yqwq86s8g86ynqq520p4bchq-Math-BigInt-Lite-0.18.tar.gz
+copying path '/nix/store/7yaaqla2yqwq86s8g86ynqq520p4bchq-Math-BigInt-Lite-0.18.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/crcz2v804jnb240i1pqf96jypqcgdk0s-perl5.32.0-Math-BigInt-Lite-0.18.drv'...
+unpacking sources
+unpacking source archive /nix/store/7yaaqla2yqwq86s8g86ynqq520p4bchq-Math-BigInt-Lite-0.18.tar.gz
+source root is Math-BigInt-Lite-0.18
+setting SOURCE_DATE_EPOCH to timestamp 1523988721 of file Math-BigInt-Lite-0.18/SIGNATURE
+patching sources
+configuring
+patching ./MANIFEST.SKIP...
+patching ./t/release-pod.t...
+patching ./t/release-unused-vars.t...
+patching ./t/release-kwalitee.t...
+patching ./t/release-synopsis.t...
+patching ./t/lite.t...
+patching ./t/mbi_ali.t...
+patching ./t/bigintpm.t...
+patching ./t/release-portability.t...
+patching ./t/from_oct-mbl.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/from_hex-mbl.t...
+patching ./t/with.t...
+patching ./t/release-whitespaces.t...
+patching ./t/alias.inc...
+patching ./t/from_bin-mbl.t...
+patching ./t/release-test-version.t...
+patching ./t/release-pod-coverage.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Math::BigInt::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Math/BigInt/Lite.pm blib/lib/Math/BigInt/Lite.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/bigintpm.t .............. ok
+t/from_bin-mbl.t .......... ok
+t/from_hex-mbl.t .......... ok
+t/from_oct-mbl.t .......... ok
+t/lite.t .................. ok
+t/mbi_ali.t ............... ok
+t/release-cpan-changes.t .. skipped: these tests are for release candidate testing
+t/release-kwalitee.t ...... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod.t ........... skipped: these tests are for release candidate testing
+t/release-portability.t ... skipped: these tests are for release candidate testing
+t/release-synopsis.t ...... skipped: these tests are for release candidate testing
+t/release-test-version.t .. skipped: these tests are for release candidate testing
+t/release-unused-vars.t ... skipped: these tests are for release candidate testing
+t/release-whitespaces.t ... skipped: these tests are for release candidate testing
+t/with.t .................. ok
+All tests successful.
+Files=16, Tests=14356, 11 wallclock secs ( 2.94 usr  0.22 sys + 10.16 cusr  0.31 csys = 13.63 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/lib/pkgconfig m4datadir=/nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/share/aclocal aclocaldir=/nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/lib/perl5/site_perl/5.32.0/Math/BigInt/Lite.pm
+Installing /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/share/man/man3/Math::BigInt::Lite.3
+Appending installation info to /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/share/man/man3 to /nix/store/y5x97sk1wrcnlgci680dqy34bynyhy6i-perl5.32.0-Math-BigInt-Lite-0.18-devdoc/share/man/man3
+Removing empty /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18/lib
+patching script interpreter paths in /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18
+checking for references to /build/ in /nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y5x97sk1wrcnlgci680dqy34bynyhy6i-perl5.32.0-Math-BigInt-Lite-0.18-devdoc
+gzipping man pages under /nix/store/y5x97sk1wrcnlgci680dqy34bynyhy6i-perl5.32.0-Math-BigInt-Lite-0.18-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y5x97sk1wrcnlgci680dqy34bynyhy6i-perl5.32.0-Math-BigInt-Lite-0.18-devdoc
+checking for references to /build/ in /nix/store/y5x97sk1wrcnlgci680dqy34bynyhy6i-perl5.32.0-Math-BigInt-Lite-0.18-devdoc...
+/nix/store/kgwqv008rrbkqg38igzrzjjlch5qk3sk-perl5.32.0-Math-BigInt-Lite-0.18

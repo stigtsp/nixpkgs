@@ -1,0 +1,230 @@
+these derivations will be built:
+  /nix/store/x4cmymk3x76r3q47qjla2a5bnxggqads-perl5.32.0-Text-Reform-1.20.drv
+  /nix/store/lxy9xxlfg8xlajf06k62r7jh3cgh9ghr-perl5.32.0-Text-Autoformat-1.75.drv
+  /nix/store/inkdk3lgkjnc0m7l0x87rs96hlmnlnhy-perl5.32.0-Swim-0.1.48.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/4lmy1fiydh0z2i39hzfhp7jyas4pk1w3-Text-Reform-1.20.tar.gz
+  /nix/store/64mpyf3j6d4avbsscazv52jmcg32mm1w-Text-Autoformat-1.75.tar.gz
+  /nix/store/h4qy3pcb27jrychgw2fmxgvdpdy5m0r3-Swim-0.1.48.tar.gz
+copying path '/nix/store/h4qy3pcb27jrychgw2fmxgvdpdy5m0r3-Swim-0.1.48.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/64mpyf3j6d4avbsscazv52jmcg32mm1w-Text-Autoformat-1.75.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4lmy1fiydh0z2i39hzfhp7jyas4pk1w3-Text-Reform-1.20.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x4cmymk3x76r3q47qjla2a5bnxggqads-perl5.32.0-Text-Reform-1.20.drv'...
+unpacking sources
+unpacking source archive /nix/store/4lmy1fiydh0z2i39hzfhp7jyas4pk1w3-Text-Reform-1.20.tar.gz
+source root is Text-Reform-1.20
+setting SOURCE_DATE_EPOCH to timestamp 1252189514 of file Text-Reform-1.20/META.yml
+patching sources
+configuring
+patching ./demo/demo_table.pl...
+patching ./demo/demo_columns.pl...
+patching ./demo/demo_filler.pl...
+patching ./demo/demo_reentrant.pl...
+patching ./demo/demo_leader1.pl...
+patching ./demo/demo_footer.pl...
+patching ./demo/demo_cols.pl...
+patching ./demo/demo_ws.pl...
+patching ./demo/demo_badheader.pl...
+patching ./demo/demo_simple.pl...
+patching ./demo/demo.pl...
+patching ./t/pod.t...
+patching ./t/reform.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Reform
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Text-Reform' version '1.20'
+Building Text-Reform
+running tests
+t/00.load.t .. 1/1 # Testing Text::Reform 1.20
+t/00.load.t .. ok
+t/pod.t ...... skipped: Test::Pod 1.14 required for testing POD
+t/reform.t ... ok
+All tests successful.
+Files=3, Tests=67,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.16 cusr  0.03 csys =  0.22 CPU)
+Result: PASS
+installing
+Building Text-Reform
+Installing /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20/lib/perl5/site_perl/5.32.0/Text/Reform.pm
+Installing /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20/share/man/man3/Text::Reform.3
+post-installation fixup
+Moving /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20/share/man/man3 to /nix/store/flzyz7fz469v0s3i56plhp9qmax5x23a-perl5.32.0-Text-Reform-1.20-devdoc/share/man/man3
+Removing empty /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20/lib
+patching script interpreter paths in /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20
+checking for references to /build/ in /nix/store/p8zhifbicjz6hn8pjcqj3dmsjfchr5dz-perl5.32.0-Text-Reform-1.20...
+shrinking RPATHs of ELF executables and libraries in /nix/store/flzyz7fz469v0s3i56plhp9qmax5x23a-perl5.32.0-Text-Reform-1.20-devdoc
+gzipping man pages under /nix/store/flzyz7fz469v0s3i56plhp9qmax5x23a-perl5.32.0-Text-Reform-1.20-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/flzyz7fz469v0s3i56plhp9qmax5x23a-perl5.32.0-Text-Reform-1.20-devdoc
+checking for references to /build/ in /nix/store/flzyz7fz469v0s3i56plhp9qmax5x23a-perl5.32.0-Text-Reform-1.20-devdoc...
+building '/nix/store/lxy9xxlfg8xlajf06k62r7jh3cgh9ghr-perl5.32.0-Text-Autoformat-1.75.drv'...
+unpacking sources
+unpacking source archive /nix/store/64mpyf3j6d4avbsscazv52jmcg32mm1w-Text-Autoformat-1.75.tar.gz
+source root is Text-Autoformat-1.75
+setting SOURCE_DATE_EPOCH to timestamp 1565692966 of file Text-Autoformat-1.75/t/03.zero-number.t
+patching sources
+configuring
+patching ./t/02.empty-string.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Autoformat
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Autoformat/NullHang.pm blib/lib/Text/Autoformat/NullHang.pm
+cp lib/Text/Autoformat/Hang.pm blib/lib/Text/Autoformat/Hang.pm
+cp lib/Text/Autoformat.pm blib/lib/Text/Autoformat.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00.load.t .......... 1/1 # Testing Text::Autoformat 1.75
+t/00.load.t .......... ok
+t/01.ignore.t ........ ok
+t/02.empty-string.t .. ok
+t/02.wide-numbers.t .. ok
+t/03.zero-number.t ... ok
+All tests successful.
+Files=5, Tests=7,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.28 cusr  0.05 csys =  0.36 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib/pkgconfig m4datadir=/nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/share/aclocal aclocaldir=/nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib/perl5/site_perl/5.32.0/Text/Autoformat.pm
+Installing /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib/perl5/site_perl/5.32.0/Text/Autoformat/Hang.pm
+Installing /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib/perl5/site_perl/5.32.0/Text/Autoformat/NullHang.pm
+Installing /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/share/man/man3/Text::Autoformat.3
+Appending installation info to /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/share/man/man3 to /nix/store/0d4by1aw73gmxl0ilzhxmap97dgklq26-perl5.32.0-Text-Autoformat-1.75-devdoc/share/man/man3
+Removing empty /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75/lib
+patching script interpreter paths in /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75
+checking for references to /build/ in /nix/store/gfrrlbnjxidbhjp5riz7zra2yjvp7b42-perl5.32.0-Text-Autoformat-1.75...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0d4by1aw73gmxl0ilzhxmap97dgklq26-perl5.32.0-Text-Autoformat-1.75-devdoc
+gzipping man pages under /nix/store/0d4by1aw73gmxl0ilzhxmap97dgklq26-perl5.32.0-Text-Autoformat-1.75-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0d4by1aw73gmxl0ilzhxmap97dgklq26-perl5.32.0-Text-Autoformat-1.75-devdoc
+checking for references to /build/ in /nix/store/0d4by1aw73gmxl0ilzhxmap97dgklq26-perl5.32.0-Text-Autoformat-1.75-devdoc...
+building '/nix/store/inkdk3lgkjnc0m7l0x87rs96hlmnlnhy-perl5.32.0-Swim-0.1.48.drv'...
+unpacking sources
+unpacking source archive /nix/store/h4qy3pcb27jrychgw2fmxgvdpdy5m0r3-Swim-0.1.48.tar.gz
+source root is Swim-0.1.48
+setting SOURCE_DATE_EPOCH to timestamp 1578604293 of file Swim-0.1.48/t/pre.t
+patching sources
+configuring
+patching ./inc/bin/testml-cpan...
+patching ./t/edge.t...
+patching ./t/comment.t...
+patching ./t/list-data.t...
+patching ./t/meta.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/pre.t...
+patching ./t/block.t...
+patching ./t/para.t...
+patching ./t/link.t...
+patching ./t/hyper.t...
+patching ./t/head.t...
+patching ./t/phrase-func.t...
+patching ./t/list.t...
+patching ./t/bugs.t...
+patching ./t/phrase.t...
+patching ./bin/swim...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Swim
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp share/swim.pgx blib/lib/auto/share/dist/Swim/swim.pgx
+cp lib/Swim/Tree.pm blib/lib/Swim/Tree.pm
+cp lib/Swim/CheatSheet.pod blib/lib/Swim/CheatSheet.pod
+cp lib/Swim/Markdown.pm blib/lib/Swim/Markdown.pm
+cp lib/Swim/Util.pm blib/lib/Swim/Util.pm
+cp lib/Swim/Markup.pm blib/lib/Swim/Markup.pm
+cp lib/Swim/Grammar.pm blib/lib/Swim/Grammar.pm
+cp lib/Swim/Byte.pm blib/lib/Swim/Byte.pm
+cp lib/Swim/HTML.pm blib/lib/Swim/HTML.pm
+cp lib/Swim.pm blib/lib/Swim.pm
+cp lib/Swim/Pod.pm blib/lib/Swim/Pod.pm
+cp lib/Swim.pod blib/lib/Swim.pod
+cp lib/Swim/Command.pm blib/lib/Swim/Command.pm
+cp lib/Swim/Design.pod blib/lib/Swim/Design.pod
+cp bin/swim blib/script/swim
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/swim
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+Skip blib/lib/auto/share/dist/Swim/swim.pgx (unchanged)
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000-compile-modules.t .. ok
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/block.t ................ ok
+t/bugs.t ................. ok
+t/comment.t .............. ok
+t/edge.t ................. ok
+t/head.t ................. ok
+t/hyper.t ................ ok
+t/issue-5.t .............. ok
+t/link.t ................. ok
+t/list-data.t ............ ok
+t/list.t ................. ok
+t/meta.t ................. ok
+t/para.t ................. ok
+t/phrase-func.t .......... ok
+t/phrase.t ............... ok
+t/pre.t .................. ok
+All tests successful.
+Files=17, Tests=121,  2 wallclock secs ( 0.07 usr  0.03 sys +  1.21 cusr  0.35 csys =  1.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/pkgconfig m4datadir=/nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/aclocal aclocaldir=/nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/aclocal install
+Skip blib/lib/auto/share/dist/Swim/swim.pgx (unchanged)
+Manifying 4 pod documents
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim.pod
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Grammar.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Markup.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Util.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Markdown.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Byte.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Command.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Pod.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/HTML.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/CheatSheet.pod
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Tree.pm
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/Swim/Design.pod
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/site_perl/5.32.0/auto/share/dist/Swim/swim.pgx
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/man3/Swim::CheatSheet.3
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/man3/Swim.3
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/man3/Swim::Pod.3
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/man3/Swim::Design.3
+Installing /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/bin/swim
+Appending installation info to /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/man3 to /nix/store/d6n674ki1fjs26fpgyy2yi8j5v0yva29-perl5.32.0-Swim-0.1.48-devdoc/share/man/man3
+Removing empty /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/lib  /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48/bin
+patching script interpreter paths in /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48
+checking for references to /build/ in /nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48...
+shrinking RPATHs of ELF executables and libraries in /nix/store/d6n674ki1fjs26fpgyy2yi8j5v0yva29-perl5.32.0-Swim-0.1.48-devdoc
+gzipping man pages under /nix/store/d6n674ki1fjs26fpgyy2yi8j5v0yva29-perl5.32.0-Swim-0.1.48-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/d6n674ki1fjs26fpgyy2yi8j5v0yva29-perl5.32.0-Swim-0.1.48-devdoc
+checking for references to /build/ in /nix/store/d6n674ki1fjs26fpgyy2yi8j5v0yva29-perl5.32.0-Swim-0.1.48-devdoc...
+/nix/store/6yzkvgv5q04b9lzw2jxwcgqfgbinlzky-perl5.32.0-Swim-0.1.48

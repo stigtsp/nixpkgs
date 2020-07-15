@@ -1,0 +1,888 @@
+these derivations will be built:
+  /nix/store/pv72221ag1a7c80yp2d6wkza6914mmhn-perl5.32.0-Test-MemoryGrowth-0.03.drv
+  /nix/store/1gq7iy2pg1r9f03k83dm4yz03bcz7nyq-perl5.32.0-Sereal-Decoder-4.014.drv
+  /nix/store/ajcmw59abwwisyxfxagkv7w4bvrr8gpq-perl5.32.0-Sereal-Encoder-4.014.drv
+  /nix/store/br7gkfgrx4dv14axx0b349p8nhwzjda4-perl5.32.0-MooseX-Params-Validate-0.21.drv
+  /nix/store/n4c7bdmzm14bzv0idv7lh5hsxr5pbrak-perl5.32.0-MaxMind-DB-Writer-0.300003.drv
+these paths will be fetched (1.56 MiB download, 1.56 MiB unpacked):
+  /nix/store/3ksz674h1f6gfrj7w1yc5h0w2vgmhrm4-Test-MemoryGrowth-0.03.tar.gz
+  /nix/store/dzi5z84lsb94l7z5f6yy647lsnmp6nw0-Sereal-Encoder-4.014.tar.gz
+  /nix/store/flylm0w58q49cny972a27s9ncbm45rra-Sereal-Decoder-4.014.tar.gz
+  /nix/store/li9hw26y080ssnyidkj42275cabsnvkb-MooseX-Params-Validate-0.21.tar.gz
+  /nix/store/yyd5ynl8hp1i2mklvmymk867h1lfg639-MaxMind-DB-Writer-0.300003.tar.gz
+copying path '/nix/store/yyd5ynl8hp1i2mklvmymk867h1lfg639-MaxMind-DB-Writer-0.300003.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/li9hw26y080ssnyidkj42275cabsnvkb-MooseX-Params-Validate-0.21.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dzi5z84lsb94l7z5f6yy647lsnmp6nw0-Sereal-Encoder-4.014.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/flylm0w58q49cny972a27s9ncbm45rra-Sereal-Decoder-4.014.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3ksz674h1f6gfrj7w1yc5h0w2vgmhrm4-Test-MemoryGrowth-0.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pv72221ag1a7c80yp2d6wkza6914mmhn-perl5.32.0-Test-MemoryGrowth-0.03.drv'...
+building '/nix/store/br7gkfgrx4dv14axx0b349p8nhwzjda4-perl5.32.0-MooseX-Params-Validate-0.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/3ksz674h1f6gfrj7w1yc5h0w2vgmhrm4-Test-MemoryGrowth-0.03.tar.gz
+source root is Test-MemoryGrowth-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1547602159 of file Test-MemoryGrowth-0.03/t/99pod.t
+patching sources
+configuring
+patching ./t/01leak.t...
+patching ./t/02counts.t...
+patching ./t/99pod.t...
+patching ./t/00use.t...
+no configure script, doing nothing
+building
+unpacking sources
+unpacking source archive /nix/store/li9hw26y080ssnyidkj42275cabsnvkb-MooseX-Params-Validate-0.21.tar.gz
+source root is MooseX-Params-Validate-0.21
+setting SOURCE_DATE_EPOCH to timestamp 1423415809 of file MooseX-Params-Validate-0.21/tidyall.ini
+patching sources
+configuring
+Checking prerequisites...
+  recommends:
+    *  Devel::MAT is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+patching ./t/00-report-prereqs.t...
+patching ./t/release-synopsis.t...
+patching ./t/release-portability.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/release-pod-no404s.t...
+patching ./t/release-pod-linkcheck.t...
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-MemoryGrowth' version '0.03'
+patching ./t/release-pod-coverage.t...
+patching ./t/release-tidyall.t...
+Building Test-MemoryGrowth
+Checking if your kit is complete...
+running tests
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Params::Validate
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+t/00use.t ..... ok
+t/01leak.t .... ok
+t/02counts.t .. ok
+t/99pod.t ..... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=4, Tests=7,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.23 cusr  0.05 csys =  0.31 CPU)
+Result: PASS
+installing
+cp lib/MooseX/Params/Validate/Exception/ValidationFailedForTypeConstraint.pm blib/lib/MooseX/Params/Validate/Exception/ValidationFailedForTypeConstraint.pm
+cp lib/MooseX/Params/Validate.pm blib/lib/MooseX/Params/Validate.pm
+Building Test-MemoryGrowth
+Installing /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03/lib/perl5/site_perl/5.32.0/Test/MemoryGrowth.pm
+Installing /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03/share/man/man3/Test::MemoryGrowth.3
+post-installation fixup
+Moving /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03/share/man/man3 to /nix/store/34ghpnc03pkky07z05yhvfl88j6dbrni-perl5.32.0-Test-MemoryGrowth-0.03-devdoc/share/man/man3
+Removing empty /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03/lib
+patching script interpreter paths in /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03
+checking for references to /build/ in /nix/store/ivqaihwki85z0qxbsi6wi2hqxhl6yhxg-perl5.32.0-Test-MemoryGrowth-0.03...
+Manifying 2 pod documents
+shrinking RPATHs of ELF executables and libraries in /nix/store/34ghpnc03pkky07z05yhvfl88j6dbrni-perl5.32.0-Test-MemoryGrowth-0.03-devdoc
+gzipping man pages under /nix/store/34ghpnc03pkky07z05yhvfl88j6dbrni-perl5.32.0-Test-MemoryGrowth-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/34ghpnc03pkky07z05yhvfl88j6dbrni-perl5.32.0-Test-MemoryGrowth-0.03-devdoc
+checking for references to /build/ in /nix/store/34ghpnc03pkky07z05yhvfl88j6dbrni-perl5.32.0-Test-MemoryGrowth-0.03-devdoc...
+building '/nix/store/1gq7iy2pg1r9f03k83dm4yz03bcz7nyq-perl5.32.0-Sereal-Decoder-4.014.drv'...
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+unpacking sources
+unpacking source archive /nix/store/flylm0w58q49cny972a27s9ncbm45rra-Sereal-Decoder-4.014.tar.gz
+source root is Sereal-Decoder-4.014
+setting SOURCE_DATE_EPOCH to timestamp 1591893986 of file Sereal-Decoder-4.014/META.yml
+patching sources
+configuring
+patching ./author_tools/hobodecoder.pl...
+patching ./author_tools/different_sereal_docs.sh...
+patching ./author_tools/update_from_header.pl...
+patching ./author_tools/freeze_thaw_timing.pl...
+patching ./author_tools/decode.pl...
+patching ./t/004_testset.t...
+patching ./t/060_each.t...
+patching ./t/110_nobless.t...
+patching ./t/200_bulk.t...
+patching ./t/190_customop.t...
+patching ./t/900_regr_issue_15.t...
+patching ./t/010_desperate.t...
+patching ./t/400_evil.t...
+patching ./t/001_load.t...
+patching ./t/160_recursion.t...
+patching ./t/030_looks_like_sereal.t...
+patching ./t/300_overload.t...
+patching ./t/210_bulk_readonly.t...
+patching ./t/150_dec_exception.t...
+patching ./t/500_utf8decoding.t...
+patching ./t/902_bad_input.t...
+patching ./t/400_utf8validate.t...
+patching ./t/800_threads.t...
+patching ./t/700_roundtrip/v4/sort_keys_perl_rev.t...
+patching ./t/700_roundtrip/v4/sort_keys_perl.t...
+patching ./t/700_roundtrip/v4/freeze_thaw.t...
+patching ./t/700_roundtrip/v4/snappy_canon.t...
+patching ./t/700_roundtrip/v4/zstd.t...
+patching ./t/700_roundtrip/v4/zlib.t...
+patching ./t/700_roundtrip/v4/sort_keys.t...
+patching ./t/700_roundtrip/v4/zlib_force.t...
+patching ./t/700_roundtrip/v4/dedudep_strings.t...
+patching ./t/700_roundtrip/v4/snappy.t...
+patching ./t/700_roundtrip/v4/readonly.t...
+patching ./t/700_roundtrip/v4/snappy_and_warn_unknown.t...
+patching ./t/700_roundtrip/v4/plain.t...
+patching ./t/700_roundtrip/v4/plain_canon.t...
+patching ./t/700_roundtrip/v4/snappy_incr.t...
+patching ./t/700_roundtrip/v4/snappy_incr_canon.t...
+patching ./t/700_roundtrip/v4/zstd_force.t...
+patching ./t/700_roundtrip/v2/freeze_thaw.t...
+patching ./t/700_roundtrip/v2/snappy_canon.t...
+patching ./t/700_roundtrip/v2/sort_keys.t...
+patching ./t/700_roundtrip/v2/dedudep_strings.t...
+patching ./t/700_roundtrip/v2/snappy.t...
+patching ./t/700_roundtrip/v2/readonly.t...
+patching ./t/700_roundtrip/v2/plain.t...
+patching ./t/700_roundtrip/v2/plain_canon.t...
+patching ./t/700_roundtrip/v2/snappy_incr.t...
+patching ./t/700_roundtrip/v2/snappy_incr_canon.t...
+patching ./t/700_roundtrip/v1/snappy_canon.t...
+patching ./t/700_roundtrip/v1/snappy.t...
+patching ./t/700_roundtrip/v1/plain.t...
+patching ./t/700_roundtrip/v1/plain_canon.t...
+patching ./t/700_roundtrip/v3/sort_keys_perl_rev.t...
+patching ./t/700_roundtrip/v3/sort_keys_perl.t...
+patching ./t/700_roundtrip/v3/freeze_thaw.t...
+patching ./t/700_roundtrip/v3/snappy_canon.t...
+patching ./t/700_roundtrip/v3/zlib.t...
+patching ./t/700_roundtrip/v3/sort_keys.t...
+patching ./t/700_roundtrip/v3/zlib_force.t...
+patching ./t/700_roundtrip/v3/dedudep_strings.t...
+patching ./t/700_roundtrip/v3/snappy.t...
+patching ./t/700_roundtrip/v3/readonly.t...
+patching ./t/700_roundtrip/v3/plain.t...
+patching ./t/700_roundtrip/v3/plain_canon.t...
+patching ./t/700_roundtrip/v3/snappy_incr.t...
+patching ./t/700_roundtrip/v3/snappy_incr_canon.t...
+patching ./t/020_incremental.t...
+patching ./t/901_regr_segv.t...
+Using bundled csnappy code
+Using bundled miniz code
+Using bundled zstd code
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sereal::Decoder
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Changes      Makefile.PL   srl_common.h             srl_reader_types.h
+Decoder.xs   author_tools  srl_decoder.c            srl_reader_varint.h
+INSTALL      inc           srl_decoder.h            srl_stack.h
+MANIFEST     lib           srl_inline.h             srl_taginfo.h
+META.json    miniz.c       srl_protocol.h           t
+META.yml     miniz.h       srl_reader.h             typemap
+MYMETA.json  ppport.h      srl_reader_decompress.h  xt
+MYMETA.yml   ptable.h      srl_reader_error.h       zstd
+Makefile     snappy        srl_reader_misc.h
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+t/00-compile.t .............. ok
+cp lib/Sereal/Decoder.pm blib/lib/Sereal/Decoder.pm
+cp lib/Sereal/Decoder/Constants.pm blib/lib/Sereal/Decoder/Constants.pm
+cp lib/Sereal/Performance.pm blib/lib/Sereal/Performance.pm
+make[1]: Entering directory '/build/Sereal-Decoder-4.014/zstd'
+compiling static library
+cc -I. -I./common -DXXH_NAMESPACE=ZSTD_ -DZSTD_LEGACY_SUPPORT=0 -O3 -fPIC -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith  -c common/debug.c common/entropy_common.c common/error_private.c common/fse_decompress.c common/pool.c common/threading.c common/xxhash.c common/zstd_common.c compress/fse_compress.c compress/hist.c compress/huf_compress.c compress/zstd_compress.c compress/zstd_compress_literals.c compress/zstd_compress_sequences.c compress/zstd_compress_superblock.c compress/zstd_double_fast.c compress/zstd_fast.c compress/zstd_lazy.c compress/zstd_ldm.c compress/zstd_opt.c compress/zstdmt_compress.c decompress/huf_decompress.c decompress/zstd_ddict.c decompress/zstd_decompress.c decompress/zstd_decompress_block.c
+t/00-report-prereqs.t ....... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                            Want     Have
+#     --------------------------------- ---- --------
+#     ExtUtils::MakeMaker                any     7.44
+#     File::Spec                         any     3.78
+#     IO::Handle                         any     1.42
+#     IPC::Open3                         any     1.21
+#     Moose::Meta::TypeConstraint::Role  any   2.2012
+#     Moose::Role                        any   2.2012
+#     Test::Fatal                        any    0.014
+#     Test::More                        0.96 1.302175
+#     overload                           any     1.31
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                         Want   Have
+#     ---------------------------- ------ ------
+#     Carp                            any   1.50
+#     Devel::Caller                   any   2.06
+#     Moose                        2.1200 2.2012
+#     Moose::Exception                any 2.2012
+#     Moose::Util                     any 2.2012
+#     Moose::Util::TypeConstraints    any 2.2012
+#     Params::Validate               1.15   1.29
+#     Scalar::Util                    any   1.55
+#     Sub::Exporter                   any  0.987
+#     strict                          any   1.11
+#     warnings                        any   1.47
+#
+t/00-report-prereqs.t ....... ok
+t/001_basic.t ............... ok
+t/002_basic_list.t .......... ok
+t/003_nocache_flag.t ........ ok
+t/004_custom_cache_key.t .... ok
+t/005_coercion.t ............ ok
+t/006_not_moose.t ........... ok
+t/007_deprecated.t .......... ok
+t/008_positional.t .......... ok
+t/009_wrapped.t ............. ok
+t/010_overloaded.t .......... ok
+t/011_allow_extra.t ......... ok
+t/012_ref_as_first_param.t .. ok
+t/013_tc_message.t .......... ok
+t/014_anon_does.t ........... ok
+t/author-eol.t .............. skipped: these tests are for testing by the author
+t/author-no-tabs.t .......... skipped: these tests are for testing by the author
+t/author-pod-spell.t ........ skipped: these tests are for testing by the author
+t/release-cpan-changes.t .... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .... skipped: these tests are for release candidate testing
+t/release-pod-linkcheck.t ... skipped: these tests are for release candidate testing
+t/release-pod-no404s.t ...... skipped: these tests are for release candidate testing
+t/release-pod-syntax.t ...... skipped: these tests are for release candidate testing
+t/release-portability.t ..... skipped: these tests are for release candidate testing
+t/release-synopsis.t ........ skipped: these tests are for release candidate testing
+t/release-test-version.t .... skipped: these tests are for release candidate testing
+t/release-tidyall.t ......... skipped: these tests are for release candidate testing
+All tests successful.
+Files=28, Tests=146,  9 wallclock secs ( 0.16 usr  0.04 sys +  5.81 cusr  3.23 csys =  9.24 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/lib/pkgconfig m4datadir=/nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/aclocal aclocaldir=/nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/lib/perl5/site_perl/5.32.0/MooseX/Params/Validate.pm
+Installing /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/lib/perl5/site_perl/5.32.0/MooseX/Params/Validate/Exception/ValidationFailedForTypeConstraint.pm
+Installing /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/man/man3/MooseX::Params::Validate.3
+Installing /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/man/man3/MooseX::Params::Validate::Exception::ValidationFailedForTypeConstraint.3
+Appending installation info to /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/man/man3 to /nix/store/r9k38db6dryd149lkvwjcgx1xradqi79-perl5.32.0-MooseX-Params-Validate-0.21-devdoc/share/man/man3
+Removing empty /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21/lib
+patching script interpreter paths in /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21
+checking for references to /build/ in /nix/store/x3497b4v585clpn9s01v7v006pix3yax-perl5.32.0-MooseX-Params-Validate-0.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r9k38db6dryd149lkvwjcgx1xradqi79-perl5.32.0-MooseX-Params-Validate-0.21-devdoc
+gzipping man pages under /nix/store/r9k38db6dryd149lkvwjcgx1xradqi79-perl5.32.0-MooseX-Params-Validate-0.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r9k38db6dryd149lkvwjcgx1xradqi79-perl5.32.0-MooseX-Params-Validate-0.21-devdoc
+checking for references to /build/ in /nix/store/r9k38db6dryd149lkvwjcgx1xradqi79-perl5.32.0-MooseX-Params-Validate-0.21-devdoc...
+ar rcs libzstd.o *.o
+make[1]: Leaving directory '/build/Sereal-Decoder-4.014/zstd'
+Running Mkbootstrap for Decoder ()
+chmod 644 "Decoder.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Decoder.bs blib/arch/auto/Sereal/Decoder/Decoder.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Sereal-Decoder-4.014/typemap'  Decoder.xs > Decoder.xsc
+mv Decoder.xsc Decoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG Decoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG srl_decoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG miniz.c
+rm -f blib/arch/auto/Sereal/Decoder/Decoder.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Decoder.o srl_decoder.o miniz.o zstd/libzstd.o  -o blib/arch/auto/Sereal/Decoder/Decoder.so  \
+      \
+
+chmod 755 blib/arch/auto/Sereal/Decoder/Decoder.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Decoder.bs blib/arch/auto/Sereal/Decoder/Decoder.bs 644
+make[1]: Entering directory '/build/Sereal-Decoder-4.014/zstd'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Sereal-Decoder-4.014/zstd'
+make[1]: Entering directory '/build/Sereal-Decoder-4.014/zstd'
+make[1]: Nothing to be done for 'test_dynamic'.
+make[1]: Leaving directory '/build/Sereal-Decoder-4.014/zstd'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*/*.t
+t/001_load.t .................................. # Perl Regexp Internals Type = MODERN_REGEXP
+t/001_load.t .................................. ok
+t/002_have_enc_and_dec.t ...................... skipped: Must have both encoder and decoder to run this test.
+t/004_testset.t ............................... ok
+t/005_flags.t ................................. skipped: Did not find right version of encoder/decoder
+t/010_desperate.t ............................. ok
+t/020_incremental.t ........................... ok
+t/030_looks_like_sereal.t ..................... ok
+t/040_special_vars.t .......................... skipped: Did not find right version of encoder
+t/060_each.t .................................. skipped: Did not find right version of encoder
+t/070_alias_options.t ......................... skipped: Did not find right version of encoder
+t/071_alias_reserealize.t ..................... skipped: Did not find right version of encoder
+t/080_set_readonly.t .......................... skipped: Did not find right version of encoder
+t/110_nobless.t ............................... skipped: Did not find right version of encoder
+t/150_dec_exception.t ......................... ok
+t/160_recursion.t ............................. ok
+t/190_customop.t .............................. ok
+t/200_bulk.t .................................. skipped: Did not find right version of encoder
+t/210_bulk_readonly.t ......................... skipped: Did not find right version of encoder
+t/300_overload.t .............................. skipped: Did not find right version of encoder
+t/400_evil.t .................................. skipped: Did not find right version of decoder
+t/400_utf8validate.t .......................... ok
+t/500_utf8decoding.t .......................... skipped: Did not find right version of encoder
+t/550_decode_into.t ........................... ok
+t/700_roundtrip/v1/plain.t .................... skipped: Did not find right version of encoder
+t/700_roundtrip/v1/plain_canon.t .............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v1/snappy.t ................... skipped: Did not find right version of encoder
+t/700_roundtrip/v1/snappy_canon.t ............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v2/dedudep_strings.t .......... skipped: Did not find right version of encoder
+t/700_roundtrip/v2/freeze_thaw.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v2/plain.t .................... skipped: Did not find right version of encoder
+t/700_roundtrip/v2/plain_canon.t .............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v2/readonly.t ................. skipped: Did not find right version of encoder
+t/700_roundtrip/v2/snappy.t ................... skipped: Did not find right version of encoder
+t/700_roundtrip/v2/snappy_canon.t ............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v2/snappy_incr.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v2/snappy_incr_canon.t ........ skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v2/sort_keys.t ................ skipped: Did not find right version of encoder
+t/700_roundtrip/v3/dedudep_strings.t .......... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/freeze_thaw.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v3/plain.t .................... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/plain_canon.t .............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v3/readonly.t ................. skipped: Did not find right version of encoder
+t/700_roundtrip/v3/snappy.t ................... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/snappy_canon.t ............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v3/snappy_incr.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v3/snappy_incr_canon.t ........ skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v3/sort_keys.t ................ skipped: Did not find right version of encoder
+t/700_roundtrip/v3/sort_keys_perl.t ........... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/sort_keys_perl_rev.t ....... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/zlib.t ..................... skipped: Did not find right version of encoder
+t/700_roundtrip/v3/zlib_force.t ............... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/dedudep_strings.t .......... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/freeze_thaw.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v4/plain.t .................... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/plain_canon.t .............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v4/readonly.t ................. skipped: Did not find right version of encoder
+t/700_roundtrip/v4/snappy.t ................... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/snappy_and_warn_unknown.t .. skipped: Did not find right version of encoder
+t/700_roundtrip/v4/snappy_canon.t ............. skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v4/snappy_incr.t .............. skipped: Did not find right version of encoder
+t/700_roundtrip/v4/snappy_incr_canon.t ........ skipped: Did not find right version of encoder (want 3.001006)
+t/700_roundtrip/v4/sort_keys.t ................ skipped: Did not find right version of encoder
+t/700_roundtrip/v4/sort_keys_perl.t ........... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/sort_keys_perl_rev.t ....... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/zlib.t ..................... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/zlib_force.t ............... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/zstd.t ..................... skipped: Did not find right version of encoder
+t/700_roundtrip/v4/zstd_force.t ............... skipped: Did not find right version of encoder
+t/800_threads.t ............................... ok
+t/900_regr_issue_15.t ......................... ok
+t/901_regr_segv.t ............................. ok
+t/902_bad_input.t ............................. ok
+t/903_reentrancy.t ............................ ok
+All tests successful.
+Files=73, Tests=705,  8 wallclock secs ( 0.25 usr  0.05 sys +  5.98 cusr  1.82 csys =  8.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/pkgconfig m4datadir=/nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/aclocal aclocaldir=/nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/aclocal install
+make[1]: Entering directory '/build/Sereal-Decoder-4.014/zstd'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Sereal-Decoder-4.014/zstd'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Decoder.bs blib/arch/auto/Sereal/Decoder/Decoder.bs 644
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sereal/Decoder/Decoder.so
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sereal/Decoder.pm
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sereal/Performance.pm
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sereal/Decoder/Constants.pm
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/man/man3/Sereal::Performance.3
+Installing /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/man/man3/Sereal::Decoder.3
+Appending installation info to /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/man/man3 to /nix/store/6z7c73xvlshlhn1ykbp5myn4wpc9v8mp-perl5.32.0-Sereal-Decoder-4.014-devdoc/share/man/man3
+Removing empty /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014
+shrinking /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sereal/Decoder/Decoder.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014/lib
+patching script interpreter paths in /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014
+checking for references to /build/ in /nix/store/y25kwym0lrgwxzf508ydfqvsq1f7ajqg-perl5.32.0-Sereal-Decoder-4.014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6z7c73xvlshlhn1ykbp5myn4wpc9v8mp-perl5.32.0-Sereal-Decoder-4.014-devdoc
+gzipping man pages under /nix/store/6z7c73xvlshlhn1ykbp5myn4wpc9v8mp-perl5.32.0-Sereal-Decoder-4.014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6z7c73xvlshlhn1ykbp5myn4wpc9v8mp-perl5.32.0-Sereal-Decoder-4.014-devdoc
+checking for references to /build/ in /nix/store/6z7c73xvlshlhn1ykbp5myn4wpc9v8mp-perl5.32.0-Sereal-Decoder-4.014-devdoc...
+building '/nix/store/ajcmw59abwwisyxfxagkv7w4bvrr8gpq-perl5.32.0-Sereal-Encoder-4.014.drv'...
+unpacking sources
+unpacking source archive /nix/store/dzi5z84lsb94l7z5f6yy647lsnmp6nw0-Sereal-Encoder-4.014.tar.gz
+source root is Sereal-Encoder-4.014
+setting SOURCE_DATE_EPOCH to timestamp 1591893852 of file Sereal-Encoder-4.014/META.yml
+patching sources
+configuring
+patching ./author_tools/hobodecoder.pl...
+patching ./author_tools/different_sereal_docs.sh...
+patching ./author_tools/update_from_header.pl...
+patching ./author_tools/freeze_thaw_timing.pl...
+patching ./author_tools/decode.pl...
+patching ./t/004_testset.t...
+patching ./t/110_nobless.t...
+patching ./t/200_bulk.t...
+patching ./t/120_hdr_data.t...
+patching ./t/190_customop.t...
+patching ./t/021_sort_keys_option.t...
+patching ./t/010_desperate.t...
+patching ./t/400_evil.t...
+patching ./t/030_canonical_vs_test_deep.t...
+patching ./t/022_canonical_refs.t...
+patching ./t/001_load.t...
+patching ./t/300_fail.t...
+patching ./t/130_freezethaw.t...
+patching ./t/160_recursion.t...
+patching ./t/180_magic_array.t...
+patching ./t/011_aliased_dedupe.t...
+patching ./t/002_constants.t...
+patching ./t/003_ptable.t...
+patching ./t/900_reentrancy.t...
+patching ./t/800_threads.t...
+patching ./t/700_roundtrip/v4/sort_keys_perl_rev.t...
+patching ./t/700_roundtrip/v4/sort_keys_perl.t...
+patching ./t/700_roundtrip/v4/freeze_thaw.t...
+patching ./t/700_roundtrip/v4/snappy_canon.t...
+patching ./t/700_roundtrip/v4/zstd.t...
+patching ./t/700_roundtrip/v4/zlib.t...
+patching ./t/700_roundtrip/v4/sort_keys.t...
+patching ./t/700_roundtrip/v4/zlib_force.t...
+patching ./t/700_roundtrip/v4/dedudep_strings.t...
+patching ./t/700_roundtrip/v4/snappy.t...
+patching ./t/700_roundtrip/v4/readonly.t...
+patching ./t/700_roundtrip/v4/snappy_and_warn_unknown.t...
+patching ./t/700_roundtrip/v4/plain.t...
+patching ./t/700_roundtrip/v4/plain_canon.t...
+patching ./t/700_roundtrip/v4/snappy_incr.t...
+patching ./t/700_roundtrip/v4/snappy_incr_canon.t...
+patching ./t/700_roundtrip/v4/zstd_force.t...
+patching ./t/700_roundtrip/v2/freeze_thaw.t...
+patching ./t/700_roundtrip/v2/snappy_canon.t...
+patching ./t/700_roundtrip/v2/sort_keys.t...
+patching ./t/700_roundtrip/v2/dedudep_strings.t...
+patching ./t/700_roundtrip/v2/snappy.t...
+patching ./t/700_roundtrip/v2/readonly.t...
+patching ./t/700_roundtrip/v2/plain.t...
+patching ./t/700_roundtrip/v2/plain_canon.t...
+patching ./t/700_roundtrip/v2/snappy_incr.t...
+patching ./t/700_roundtrip/v2/snappy_incr_canon.t...
+patching ./t/700_roundtrip/v1/snappy_canon.t...
+patching ./t/700_roundtrip/v1/snappy.t...
+patching ./t/700_roundtrip/v1/plain.t...
+patching ./t/700_roundtrip/v1/plain_canon.t...
+patching ./t/700_roundtrip/v3/sort_keys_perl_rev.t...
+patching ./t/700_roundtrip/v3/sort_keys_perl.t...
+patching ./t/700_roundtrip/v3/freeze_thaw.t...
+patching ./t/700_roundtrip/v3/snappy_canon.t...
+patching ./t/700_roundtrip/v3/zlib.t...
+patching ./t/700_roundtrip/v3/sort_keys.t...
+patching ./t/700_roundtrip/v3/zlib_force.t...
+patching ./t/700_roundtrip/v3/dedudep_strings.t...
+patching ./t/700_roundtrip/v3/snappy.t...
+patching ./t/700_roundtrip/v3/readonly.t...
+patching ./t/700_roundtrip/v3/plain.t...
+patching ./t/700_roundtrip/v3/plain_canon.t...
+patching ./t/700_roundtrip/v3/snappy_incr.t...
+patching ./t/700_roundtrip/v3/snappy_incr_canon.t...
+patching ./t/020_sort_keys.t...
+Using bundled csnappy code
+Using bundled miniz code
+Using bundled zstd code
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sereal::Encoder
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Sereal/Encoder.pm blib/lib/Sereal/Encoder.pm
+cp lib/Sereal/Encoder/Constants.pm blib/lib/Sereal/Encoder/Constants.pm
+make[1]: Entering directory '/build/Sereal-Encoder-4.014/zstd'
+compiling static library
+cc -I. -I./common -DXXH_NAMESPACE=ZSTD_ -DZSTD_LEGACY_SUPPORT=0 -O3 -fPIC -Wall -Wextra -Wcast-qual -Wcast-align -Wshadow -Wstrict-aliasing=1 -Wswitch-enum -Wdeclaration-after-statement -Wstrict-prototypes -Wundef -Wpointer-arith  -c common/debug.c common/entropy_common.c common/error_private.c common/fse_decompress.c common/pool.c common/threading.c common/xxhash.c common/zstd_common.c compress/fse_compress.c compress/hist.c compress/huf_compress.c compress/zstd_compress.c compress/zstd_compress_literals.c compress/zstd_compress_sequences.c compress/zstd_compress_superblock.c compress/zstd_double_fast.c compress/zstd_fast.c compress/zstd_lazy.c compress/zstd_ldm.c compress/zstd_opt.c compress/zstdmt_compress.c decompress/huf_decompress.c decompress/zstd_ddict.c decompress/zstd_decompress.c decompress/zstd_decompress_block.c
+ar rcs libzstd.o *.o
+make[1]: Leaving directory '/build/Sereal-Encoder-4.014/zstd'
+Running Mkbootstrap for Encoder ()
+chmod 644 "Encoder.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Encoder.bs blib/arch/auto/Sereal/Encoder/Encoder.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Sereal-Encoder-4.014/typemap'  Encoder.xs > Encoder.xsc
+mv Encoder.xsc Encoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG -DHAVE_BUILTIN_CTZ Encoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG -DHAVE_BUILTIN_CTZ srl_encoder.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -Werror=declaration-after-statement    -DVERSION=\"4.014\" -DXS_VERSION=\"4.014\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DNDEBUG -DHAVE_BUILTIN_CTZ miniz.c
+rm -f blib/arch/auto/Sereal/Encoder/Encoder.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Encoder.o srl_encoder.o miniz.o zstd/libzstd.o  -o blib/arch/auto/Sereal/Encoder/Encoder.so  \
+      \
+
+chmod 755 blib/arch/auto/Sereal/Encoder/Encoder.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Encoder.bs blib/arch/auto/Sereal/Encoder/Encoder.bs 644
+make[1]: Entering directory '/build/Sereal-Encoder-4.014/zstd'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Sereal-Encoder-4.014/zstd'
+make[1]: Entering directory '/build/Sereal-Encoder-4.014/zstd'
+make[1]: Nothing to be done for 'test_dynamic'.
+make[1]: Leaving directory '/build/Sereal-Encoder-4.014/zstd'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*/*.t
+t/001_load.t .................................. ok
+t/002_constants.t ............................. ok
+t/002_have_enc_and_dec.t ...................... # Testing with both encoder and decoder.
+# Sereal::Decoder v4.014
+# Sereal::Encoder v4.014
+t/002_have_enc_and_dec.t ...................... ok
+t/003_ptable.t ................................ ok
+t/004_testset.t ............................... ok
+t/005_flags.t ................................. ok
+t/010_desperate.t ............................. ok
+t/011_aliased_dedupe.t ........................ ok
+t/020_sort_keys.t ............................. ok
+t/021_sort_keys_option.t ...................... ok
+t/022_canonical_refs.t ........................ ok
+t/030_canonical_vs_test_deep.t ................ ok
+t/040_tied_hash.t ............................. ok
+t/110_nobless.t ............................... ok
+t/120_hdr_data.t .............................. ok
+t/130_freezethaw.t ............................ ok
+t/160_recursion.t ............................. ok
+t/170_cyclic_weakrefs.t ....................... ok
+t/180_magic_array.t ........................... ok
+t/190_customop.t .............................. ok
+t/200_bulk.t .................................. ok
+t/300_fail.t .................................. ok
+t/400_evil.t .................................. ok
+t/700_roundtrip/v1/plain.t .................... ok
+t/700_roundtrip/v1/plain_canon.t .............. ok
+t/700_roundtrip/v1/snappy.t ................... ok
+t/700_roundtrip/v1/snappy_canon.t ............. ok
+t/700_roundtrip/v2/dedudep_strings.t .......... ok
+t/700_roundtrip/v2/freeze_thaw.t .............. ok
+t/700_roundtrip/v2/plain.t .................... ok
+t/700_roundtrip/v2/plain_canon.t .............. ok
+t/700_roundtrip/v2/readonly.t ................. ok
+t/700_roundtrip/v2/snappy.t ................... ok
+t/700_roundtrip/v2/snappy_canon.t ............. ok
+t/700_roundtrip/v2/snappy_incr.t .............. ok
+t/700_roundtrip/v2/snappy_incr_canon.t ........ ok
+t/700_roundtrip/v2/sort_keys.t ................ ok
+t/700_roundtrip/v3/dedudep_strings.t .......... ok
+t/700_roundtrip/v3/freeze_thaw.t .............. ok
+t/700_roundtrip/v3/plain.t .................... ok
+t/700_roundtrip/v3/plain_canon.t .............. ok
+t/700_roundtrip/v3/readonly.t ................. ok
+t/700_roundtrip/v3/snappy.t ................... ok
+t/700_roundtrip/v3/snappy_canon.t ............. ok
+t/700_roundtrip/v3/snappy_incr.t .............. ok
+t/700_roundtrip/v3/snappy_incr_canon.t ........ ok
+t/700_roundtrip/v3/sort_keys.t ................ ok
+t/700_roundtrip/v3/sort_keys_perl.t ........... ok
+t/700_roundtrip/v3/sort_keys_perl_rev.t ....... ok
+t/700_roundtrip/v3/zlib.t ..................... ok
+t/700_roundtrip/v3/zlib_force.t ............... ok
+t/700_roundtrip/v4/dedudep_strings.t .......... ok
+t/700_roundtrip/v4/freeze_thaw.t .............. ok
+t/700_roundtrip/v4/plain.t .................... ok
+t/700_roundtrip/v4/plain_canon.t .............. ok
+t/700_roundtrip/v4/readonly.t ................. ok
+t/700_roundtrip/v4/snappy.t ................... ok
+t/700_roundtrip/v4/snappy_and_warn_unknown.t .. ok
+t/700_roundtrip/v4/snappy_canon.t ............. ok
+t/700_roundtrip/v4/snappy_incr.t .............. ok
+t/700_roundtrip/v4/snappy_incr_canon.t ........ ok
+t/700_roundtrip/v4/sort_keys.t ................ ok
+t/700_roundtrip/v4/sort_keys_perl.t ........... ok
+t/700_roundtrip/v4/sort_keys_perl_rev.t ....... ok
+t/700_roundtrip/v4/zlib.t ..................... ok
+t/700_roundtrip/v4/zlib_force.t ............... ok
+t/700_roundtrip/v4/zstd.t ..................... ok
+t/700_roundtrip/v4/zstd_force.t ............... ok
+t/800_threads.t ............................... ok
+t/900_reentrancy.t ............................ ok
+All tests successful.
+Files=70, Tests=294317, 101 wallclock secs (24.80 usr  1.58 sys + 96.45 cusr  3.37 csys = 126.20 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/pkgconfig m4datadir=/nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/share/aclocal aclocaldir=/nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/share/aclocal install
+make[1]: Entering directory '/build/Sereal-Encoder-4.014/zstd'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Sereal-Encoder-4.014/zstd'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Encoder.bs blib/arch/auto/Sereal/Encoder/Encoder.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sereal/Encoder/Encoder.so
+Installing /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sereal/Encoder.pm
+Installing /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sereal/Encoder/Constants.pm
+Installing /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/share/man/man3/Sereal::Encoder.3
+Appending installation info to /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/share/man/man3 to /nix/store/ac38ria57dacw5d585i3ivh4vplw9160-perl5.32.0-Sereal-Encoder-4.014-devdoc/share/man/man3
+Removing empty /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014
+shrinking /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sereal/Encoder/Encoder.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014/lib
+patching script interpreter paths in /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014
+checking for references to /build/ in /nix/store/spic6f7qfjfjg5z9kdb1hfla1s8g7wkj-perl5.32.0-Sereal-Encoder-4.014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ac38ria57dacw5d585i3ivh4vplw9160-perl5.32.0-Sereal-Encoder-4.014-devdoc
+gzipping man pages under /nix/store/ac38ria57dacw5d585i3ivh4vplw9160-perl5.32.0-Sereal-Encoder-4.014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ac38ria57dacw5d585i3ivh4vplw9160-perl5.32.0-Sereal-Encoder-4.014-devdoc
+checking for references to /build/ in /nix/store/ac38ria57dacw5d585i3ivh4vplw9160-perl5.32.0-Sereal-Encoder-4.014-devdoc...
+building '/nix/store/n4c7bdmzm14bzv0idv7lh5hsxr5pbrak-perl5.32.0-MaxMind-DB-Writer-0.300003.drv'...
+unpacking sources
+unpacking source archive /nix/store/yyd5ynl8hp1i2mklvmymk867h1lfg639-MaxMind-DB-Writer-0.300003.tar.gz
+source root is MaxMind-DB-Writer-0.300003
+setting SOURCE_DATE_EPOCH to timestamp 1531242948 of file MaxMind-DB-Writer-0.300003/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+patching ./dev-bin/clang-format-all.sh...
+no configure script, doing nothing
+building
+Checking for stdlib.h... yes
+Checking for stdarg.h... yes
+Checking for string.h... yes
+Checking for float.h... yes
+Checking for assert.h... yes
+Checking for ctype.h... yes
+Checking for errno.h... yes
+Checking for limits.h... yes
+Checking for locale.h... yes
+Checking for math.h... yes
+Checking for setjmp.h... yes
+Checking for signal.h... yes
+Checking for stddef.h... yes
+Checking for stdio.h... yes
+Checking for time.h... yes
+Checking for sys/types.h... yes
+Checking for sys/stat.h... yes
+Checking for memory.h... yes
+Checking for strings.h... yes
+Checking for inttypes.h... yes
+Checking for stdint.h... yes
+Checking for unistd.h... yes
+Checking for int64_t... yes
+Checking for stdlib.h... yes
+Checking for stdarg.h... yes
+Checking for string.h... yes
+Checking for float.h... yes
+Checking for assert.h... yes
+Checking for ctype.h... yes
+Checking for errno.h... yes
+Checking for limits.h... yes
+Checking for locale.h... yes
+Checking for math.h... yes
+Checking for setjmp.h... yes
+Checking for signal.h... yes
+Checking for stddef.h... yes
+Checking for stdio.h... yes
+Checking for time.h... yes
+Checking for sys/types.h... yes
+Checking for sys/stat.h... yes
+Checking for memory.h... yes
+Checking for strings.h... yes
+Checking for inttypes.h... yes
+Checking for stdint.h... yes
+Checking for unistd.h... yes
+Checking for uint64_t... yes
+Checking for __int128... yes
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'MaxMind-DB-Writer' version '0.300003'
+Building MaxMind-DB-Writer
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -DINT64_T -fms-extensions -std=c99 -D__INT128 -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/perl_math_int128.o c/perl_math_int128.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -DINT64_T -fms-extensions -std=c99 -D__INT128 -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/perl_math_int64.o c/perl_math_int64.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -DINT64_T -fms-extensions -std=c99 -D__INT128 -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/tree.o c/tree.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -DINT64_T -fms-extensions -std=c99 -D__INT128 -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/windows_mman.o c/windows_mman.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.300003" -DXS_VERSION="0.300003" -fPIC -DINT64_T -fms-extensions -std=c99 -D__INT128 -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/MaxMind/DB/Writer/Tree.o lib/MaxMind/DB/Writer/Tree.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/MaxMind/DB/Writer/Tree/Tree.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/MaxMind/DB/Writer/Tree/Tree.so lib/MaxMind/DB/Writer/Tree.o c/perl_math_int128.o c/perl_math_int64.o c/tree.o c/windows_mman.o
+running tests
+t/00-report-prereqs.t ...................................... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module        Want   Have
+#     ------------- ---- ------
+#     Module::Build 0.28 0.4231
+#
+# === Build Requires ===
+#
+#     Module             Want     Have
+#     ------------------ ---- --------
+#     ExtUtils::CBuilder  any 0.280234
+#     Module::Build      0.28   0.4231
+#
+# === Test Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     Data::Printer                    any     0.40
+#     Devel::Refcount                  any     0.10
+#     ExtUtils::MakeMaker              any     7.44
+#     File::Spec                       any     3.78
+#     File::Temp                       any   0.2309
+#     JSON                             any     4.02
+#     List::AllUtils                   any     0.16
+#     List::Util                       any     1.55
+#     MaxMind::DB::Reader              any 1.000014
+#     Net::Works::Address              any     0.22
+#     Scalar::Util                     any     1.55
+#     Test::Bits                       any     0.02
+#     Test::Builder                    any 1.302175
+#     Test::Fatal                      any    0.014
+#     Test::HexDifferences             any    1.001
+#     Test::MaxMind::DB::Common::Data  any 0.040001
+#     Test::More                      0.96 1.302175
+#     Test::Requires                   any     0.11
+#     Test::Warnings                   any    0.030
+#     lib                              any     0.65
+#     utf8                             any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                           Want     Have
+#     ---------------------------- -------- --------
+#     Carp                              any     1.50
+#     Data::Dumper::Concise             any    2.023
+#     Data::IEEE754                     any     0.02
+#     Digest::MD5                       any  2.55_01
+#     Digest::SHA1                      any     2.13
+#     Encode                            any     3.06
+#     Exporter                          any     5.74
+#     IO::Handle                        any     1.42
+#     Math::Int128                     0.21     0.22
+#     Math::Int64                      0.51     0.54
+#     MaxMind::DB::Common          0.031003 0.040001
+#     MaxMind::DB::Metadata             any 0.040001
+#     MaxMind::DB::Reader::Decoder      any 1.000014
+#     MaxMind::DB::Role::Debugs         any 0.040001
+#     Moose                             any   2.2012
+#     Moose::Util::TypeConstraints      any   2.2012
+#     MooseX::Params::Validate          any     0.21
+#     MooseX::StrictConstructor         any     0.21
+#     Net::Works::Network               any     0.22
+#     Sereal::Decoder                   any    4.014
+#     Sereal::Encoder                 3.002    4.014
+#     Test::Deep::NoTest                any    undef
+#     XSLoader                          any     0.30
+#     autodie                           any     2.32
+#     bytes                             any     1.07
+#     constant                          any     1.33
+#     namespace::autoclean              any     0.29
+#     strict                            any     1.11
+#     warnings                          any     1.47
+#
+t/00-report-prereqs.t ...................................... ok
+t/MaxMind/DB/Writer/Serializer-deduplication.t ............. ok
+t/MaxMind/DB/Writer/Serializer-large-pointer.t ............. ok
+t/MaxMind/DB/Writer/Serializer-types/array.t ............... ok
+t/MaxMind/DB/Writer/Serializer-types/boolean.t ............. ok
+t/MaxMind/DB/Writer/Serializer-types/bytes.t ............... ok
+t/MaxMind/DB/Writer/Serializer-types/double.t .............. ok
+t/MaxMind/DB/Writer/Serializer-types/end_marker.t .......... ok
+t/MaxMind/DB/Writer/Serializer-types/float.t ............... ok
+t/MaxMind/DB/Writer/Serializer-types/int32.t ............... ok
+t/MaxMind/DB/Writer/Serializer-types/map.t ................. ok
+t/MaxMind/DB/Writer/Serializer-types/pointer.t ............. ok
+t/MaxMind/DB/Writer/Serializer-types/uint128.t ............. ok
+t/MaxMind/DB/Writer/Serializer-types/uint16.t .............. ok
+t/MaxMind/DB/Writer/Serializer-types/uint32.t .............. ok
+t/MaxMind/DB/Writer/Serializer-types/uint64.t .............. ok
+t/MaxMind/DB/Writer/Serializer-types/utf8_string.t ......... ok
+t/MaxMind/DB/Writer/Serializer-utf8-as-bytes.t ............. ok
+t/MaxMind/DB/Writer/Serializer-utf8-round-trip.t ........... ok
+t/MaxMind/DB/Writer/Serializer.t ........................... ok
+t/MaxMind/DB/Writer/Tree-bigint.t .......................... ok
+t/MaxMind/DB/Writer/Tree-data-references.t ................. ok
+t/MaxMind/DB/Writer/Tree-freeze-thaw.t ..................... Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree-freeze-thaw.t ..................... ok
+t/MaxMind/DB/Writer/Tree-insert-range.t .................... ok
+t/MaxMind/DB/Writer/Tree-ipv4-and-6.t ...................... ok
+t/MaxMind/DB/Writer/Tree-ipv6-aliases.t .................... ok
+t/MaxMind/DB/Writer/Tree-iterator-large-dataset.t .......... Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree-iterator-large-dataset.t .......... ok
+t/MaxMind/DB/Writer/Tree-iterator.t ........................ Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree-iterator.t ........................ ok
+t/MaxMind/DB/Writer/Tree-output/0-0-0-0.t .................. ok
+t/MaxMind/DB/Writer/Tree-output/basic.t .................... ok
+t/MaxMind/DB/Writer/Tree-output/freeze-thaw-record-size.t .. ok
+t/MaxMind/DB/Writer/Tree-output/freeze-then-write-bug.t .... ok
+t/MaxMind/DB/Writer/Tree-output/ipv6-aliases.t ............. ok
+t/MaxMind/DB/Writer/Tree-output/record-deduplication.t ..... Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree-output/record-deduplication.t ..... ok
+t/MaxMind/DB/Writer/Tree-output/utf8-data.t ................ ok
+t/MaxMind/DB/Writer/Tree-record-collisions.t ............... Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree-record-collisions.t ............... ok
+t/MaxMind/DB/Writer/Tree-thaw-merge.t ...................... ok
+t/MaxMind/DB/Writer/Tree.t ................................. Use of uninitialized value in subroutine entry at /nix/store/sgmf340r3r56k93ianms62l5qvp4zi82-perl5.32.0-Data-Printer-0.40/lib/perl5/site_perl/5.32.0/Data/Printer.pm line 1049.
+t/MaxMind/DB/Writer/Tree.t ................................. ok
+t/MaxMind/DB/Writer/Util.t ................................. ok
+All tests successful.
+Files=39, Tests=458, 38 wallclock secs ( 0.72 usr  0.12 sys + 27.52 cusr  9.99 csys = 38.35 CPU)
+Result: PASS
+installing
+Building MaxMind-DB-Writer
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Writer/Tree/Tree.so
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Writer/Tree/Tree.bs
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Writer.pm
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Writer/Util.pm
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Writer/Serializer.pm
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Writer/Tree.pm
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Writer/Tree/Processor/VisualizeTree.pm
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/share/man/man3/MaxMind::DB::Writer.3
+Installing /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/share/man/man3/MaxMind::DB::Writer::Tree.3
+post-installation fixup
+Moving /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/share/man/man3 to /nix/store/2a26q85dnnv6rfhyv2qbwf4r8xmdc35d-perl5.32.0-MaxMind-DB-Writer-0.300003-devdoc/share/man/man3
+Removing empty /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003
+shrinking /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Writer/Tree/Tree.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003/lib
+patching script interpreter paths in /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003
+checking for references to /build/ in /nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2a26q85dnnv6rfhyv2qbwf4r8xmdc35d-perl5.32.0-MaxMind-DB-Writer-0.300003-devdoc
+gzipping man pages under /nix/store/2a26q85dnnv6rfhyv2qbwf4r8xmdc35d-perl5.32.0-MaxMind-DB-Writer-0.300003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2a26q85dnnv6rfhyv2qbwf4r8xmdc35d-perl5.32.0-MaxMind-DB-Writer-0.300003-devdoc
+checking for references to /build/ in /nix/store/2a26q85dnnv6rfhyv2qbwf4r8xmdc35d-perl5.32.0-MaxMind-DB-Writer-0.300003-devdoc...
+/nix/store/1c7x61nidcvd3a19si1y6z3spl6rkqn5-perl5.32.0-MaxMind-DB-Writer-0.300003

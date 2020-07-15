@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/8nabvgh5k12mgsdxnchn6v866vkpy4cm-perl5.32.0-Test-HTTP-Server-Simple-0.11.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/rmg3q14kk93ybzda6s9w6k1jvvk89q1g-Test-HTTP-Server-Simple-0.11.tar.gz
+copying path '/nix/store/rmg3q14kk93ybzda6s9w6k1jvvk89q1g-Test-HTTP-Server-Simple-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8nabvgh5k12mgsdxnchn6v866vkpy4cm-perl5.32.0-Test-HTTP-Server-Simple-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/rmg3q14kk93ybzda6s9w6k1jvvk89q1g-Test-HTTP-Server-Simple-0.11.tar.gz
+source root is Test-HTTP-Server-Simple-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1257880571 of file Test-HTTP-Server-Simple-0.11/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+patching ./t/01.basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::HTTP::Server::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/HTTP/Server/Simple.pm blib/lib/Test/HTTP/Server/Simple.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00.load.t ....... 1/1 # Testing Test::HTTP::Server::Simple 0.11
+t/00.load.t ....... ok
+t/01.basic.t ...... 1/6 Use of uninitialized value $tcp in socket at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 705, <DATA> line 16.
+Use of uninitialized value $tcp in socket at /nix/store/cfbkbd5vnhic6xp7wgj3ran19jkmxksb-perl5.32.0-HTTP-Server-Simple-0.52/lib/perl5/site_perl/5.32.0/HTTP/Server/Simple.pm line 705, <DATA> line 16.
+t/01.basic.t ...... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=4, Tests=7,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.24 cusr  0.09 csys =  0.36 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/lib/pkgconfig m4datadir=/nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/share/aclocal aclocaldir=/nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/lib/perl5/site_perl/5.32.0/Test/HTTP/Server/Simple.pm
+Installing /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/share/man/man3/Test::HTTP::Server::Simple.3
+Appending installation info to /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/share/man/man3 to /nix/store/cjs1cacgyj566f0x0zlbm9vz1mrf8p4k-perl5.32.0-Test-HTTP-Server-Simple-0.11-devdoc/share/man/man3
+Removing empty /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11/lib
+patching script interpreter paths in /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11
+checking for references to /build/ in /nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cjs1cacgyj566f0x0zlbm9vz1mrf8p4k-perl5.32.0-Test-HTTP-Server-Simple-0.11-devdoc
+gzipping man pages under /nix/store/cjs1cacgyj566f0x0zlbm9vz1mrf8p4k-perl5.32.0-Test-HTTP-Server-Simple-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cjs1cacgyj566f0x0zlbm9vz1mrf8p4k-perl5.32.0-Test-HTTP-Server-Simple-0.11-devdoc
+checking for references to /build/ in /nix/store/cjs1cacgyj566f0x0zlbm9vz1mrf8p4k-perl5.32.0-Test-HTTP-Server-Simple-0.11-devdoc...
+/nix/store/g97bpa20d7m8kvmrx2v3c0zxvnw6zvza-perl5.32.0-Test-HTTP-Server-Simple-0.11

@@ -1,0 +1,232 @@
+these derivations will be built:
+  /nix/store/8qvmplhs2w3pdq1f9rgys5q5v8wlzrsj-perl5.32.0-Authen-Krb5-1.905.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/lnhhybzqkl0pd75x41kj2v17cpj58l7r-Authen-Krb5-1.905.tar.gz
+copying path '/nix/store/lnhhybzqkl0pd75x41kj2v17cpj58l7r-Authen-Krb5-1.905.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8qvmplhs2w3pdq1f9rgys5q5v8wlzrsj-perl5.32.0-Authen-Krb5-1.905.drv'...
+unpacking sources
+unpacking source archive /nix/store/lnhhybzqkl0pd75x41kj2v17cpj58l7r-Authen-Krb5-1.905.tar.gz
+source root is Authen-Krb5-1.905
+setting SOURCE_DATE_EPOCH to timestamp 1512419426 of file Authen-Krb5-1.905/typemap
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/release-minimum-version.t...
+patching ./eg/sample_client...
+patching ./eg/simple_client...
+patching ./eg/sample_server...
+patching ./eg/simple_server...
+no configure script, doing nothing
+building
+Found MIT kerberos 5 version 1.18
+CFLAGS: -I/nix/store/mzbdzpgd655r4yxq69m2zh5xgaj4qxmn-libkrb5-1.18-dev/include
+LDFLAGS: -L/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -lkrb5 -lk5crypto -lcom_err
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Authen-Krb5' version '1.905'
+Building Authen-Krb5
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.905" -DXS_VERSION="1.905" -fPIC -I/nix/store/mzbdzpgd655r4yxq69m2zh5xgaj4qxmn-libkrb5-1.18-dev/include -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Authen/Krb5.o lib/Authen/Krb5.c
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_mk_req':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:457:17: note: in expansion of macro 'SvPV'
+  457 |  in_data.data = SvPV(in,in_data.length);
+      |                 ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_rd_req':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:479:17: note: in expansion of macro 'SvPV'
+  479 |  in_data.data = SvPV(in,in_data.length);
+      |                 ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_gen_portaddr':
+lib/Authen/Krb5.xs:496:8: warning: implicit declaration of function 'krb5_gen_portaddr' [-Wimplicit-function-declaration]
+  496 |  err = krb5_gen_portaddr(context,addr,(krb5_pointer)&port,&RETVAL);
+      |        ^~~~~~~~~~~~~~~~~
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_gen_replay_name':
+lib/Authen/Krb5.xs:523:8: warning: implicit declaration of function 'krb5_gen_replay_name'; did you mean 'krb5_set_real_time'? [-Wimplicit-function-declaration]
+  523 |  err = krb5_gen_replay_name(context,addr,uniq,&RETVAL);
+      |        ^~~~~~~~~~~~~~~~~~~~
+      |        krb5_set_real_time
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_mk_priv':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:538:17: note: in expansion of macro 'SvPV'
+  538 |  in_data.data = SvPV(in,in_data.length);
+      |                 ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_rd_priv':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:553:17: note: in expansion of macro 'SvPV'
+  553 |  in_data.data = SvPV(in,in_data.length);
+      |                 ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_get_server_rcache':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:566:15: note: in expansion of macro 'SvPV'
+  566 |  rc_data.data=SvPV(piece,rc_data.length);
+      |               ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5_sendauth':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:593:17: note: in expansion of macro 'SvPV'
+  593 |  in_data.data = SvPV(in,in_data.length);
+      |                 ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5__EncTktPart_DESTROY':
+lib/Authen/Krb5.xs:1011:3: warning: implicit declaration of function 'krb5_free_enc_tkt_part'; did you mean 'krb5_free_enctypes'? [-Wimplicit-function-declaration]
+ 1011 |   krb5_free_enc_tkt_part(context,etp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   krb5_free_enctypes
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5603,
+                 from lib/Authen/Krb5.xs:5:
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5__Address_new':
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1725:57: warning: passing argument 3 of 'Perl_sv_2pv_flags' from incompatible pointer type [-Wincompatible-pointer-types]
+ 1725 |      ? ((lp = SvCUR(sv)), SvPVX(sv)) : sv_2pv_flags(sv, &lp, flags))
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/embed.h:559:55: note: in definition of macro 'sv_2pv_flags'
+  559 | #define sv_2pv_flags(a,b,c) Perl_sv_2pv_flags(aTHX_ a,b,c)
+      |                                                       ^
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/sv.h:1719:30: note: in expansion of macro 'SvPV_flags'
+ 1719 | #define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+      |                              ^~~~~~~~~~
+lib/Authen/Krb5.xs:1026:35: note: in expansion of macro 'SvPV'
+ 1026 |  RETVAL->contents = (krb5_octet *)SvPV(contents,RETVAL->length);
+      |                                   ^~~~
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:5564,
+                 from lib/Authen/Krb5.xs:5:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/proto.h:3244:21: note: expected 'STRLEN * const' {aka 'long unsigned int * const'} but argument is of type 'unsigned int *'
+ 3244 | PERL_CALLCONV char* Perl_sv_2pv_flags(pTHX_ SV *const sv, STRLEN *const lp, const I32 flags);
+      |                     ^~~~~~~~~~~~~~~~~
+lib/Authen/Krb5.xs: In function 'XS_Authen__Krb5__Address_DESTROY':
+lib/Authen/Krb5.xs:1037:3: warning: implicit declaration of function 'krb5_free_address'; did you mean 'krb5_free_addresses'? [-Wimplicit-function-declaration]
+ 1037 |   krb5_free_address(context,addr);
+      |   ^~~~~~~~~~~~~~~~~
+      |   krb5_free_addresses
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Authen/Krb5/Krb5.bs')
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Authen/Krb5/Krb5.so lib/Authen/Krb5.o -L/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -lkrb5 -lk5crypto -lcom_err
+running tests
+t/00-compile.t ............... ok
+t/author-pod-coverage.t ...... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ........ skipped: these tests are for testing by the author
+t/release-minimum-version.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=4, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.08 cusr  0.03 csys =  0.14 CPU)
+Result: PASS
+installing
+Building Authen-Krb5
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/Krb5/Krb5.bs
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/Krb5/Krb5.so
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5.pm
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Ticket.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Principal.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/KeyBlock.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Keytab.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/AuthContext.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Ccache.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/KeytabEntry.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/EncTktPart.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Creds.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/Krb5/Keyblock.pod
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Creds.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::KeytabEntry.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::EncTktPart.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Ticket.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::AuthContext.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Keyblock.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Ccache.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::KeyBlock.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Principal.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5.3
+Installing /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3/Authen::Krb5::Keytab.3
+post-installation fixup
+Moving /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/man3 to /nix/store/ci9ngh2mcb5fjnmpbkj31z86jlqq1zh0-perl5.32.0-Authen-Krb5-1.905-devdoc/share/man/man3
+Removing empty /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905
+shrinking /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/Krb5/Krb5.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905/lib
+patching script interpreter paths in /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905
+checking for references to /build/ in /nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ci9ngh2mcb5fjnmpbkj31z86jlqq1zh0-perl5.32.0-Authen-Krb5-1.905-devdoc
+gzipping man pages under /nix/store/ci9ngh2mcb5fjnmpbkj31z86jlqq1zh0-perl5.32.0-Authen-Krb5-1.905-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ci9ngh2mcb5fjnmpbkj31z86jlqq1zh0-perl5.32.0-Authen-Krb5-1.905-devdoc
+checking for references to /build/ in /nix/store/ci9ngh2mcb5fjnmpbkj31z86jlqq1zh0-perl5.32.0-Authen-Krb5-1.905-devdoc...
+/nix/store/670yxw5cs42ja8iqzk2xw2wn4p1zcis5-perl5.32.0-Authen-Krb5-1.905

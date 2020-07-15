@@ -1,0 +1,185 @@
+these derivations will be built:
+  /nix/store/1v9w8928f37v5a8c8in2cllbkb9j2mv0-perl5.32.0-MouseX-SimpleConfig-0.11.drv
+  /nix/store/r9h3ahwq129l04l994nwiiaxn34wn7c9-perl5.32.0-MouseX-Getopt-0.38.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/4l51y79k5yfd80p2f0hf0vmbamyxfnar-MouseX-SimpleConfig-0.11.tar.gz
+  /nix/store/x8rgxlca1c0gdk0zdd3wa3bbzsszr63f-MouseX-Getopt-0.38.tar.gz
+copying path '/nix/store/x8rgxlca1c0gdk0zdd3wa3bbzsszr63f-MouseX-Getopt-0.38.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4l51y79k5yfd80p2f0hf0vmbamyxfnar-MouseX-SimpleConfig-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1v9w8928f37v5a8c8in2cllbkb9j2mv0-perl5.32.0-MouseX-SimpleConfig-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/4l51y79k5yfd80p2f0hf0vmbamyxfnar-MouseX-SimpleConfig-0.11.tar.gz
+source root is MouseX-SimpleConfig-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1299369583 of file MouseX-SimpleConfig-0.11/xt/author/perltidy.rc
+patching sources
+configuring
+patching ./t/00-compile.t...
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/release-kwalitee.t...
+patching ./t/11default.t...
+patching ./t/release-check-changes.t...
+patching ./t/release-has-version.t...
+patching ./t/10simple.t...
+patching ./t/12config_any_args.t...
+patching ./t/release-portability.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/multiple.t...
+patching ./t/release-minimum-version.t...
+patching ./t/release-distmeta.t...
+patching ./t/01use.t...
+patching ./t/release-dist-manifest.t...
+patching ./t/release-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MouseX::SimpleConfig
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MouseX/SimpleConfig.pm blib/lib/MouseX/SimpleConfig.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .................. skipped: no tests to run
+t/01use.t ....................... ok
+t/10simple.t .................... skipped: YAML or YAML::Syck required for this test
+t/11default.t ................... skipped: YAML or YAML::Syck required for this test
+t/12config_any_args.t ........... skipped: Config::General required for this test
+t/author-critic.t ............... skipped: these tests are for testing by the author
+t/multiple.t .................... skipped: YAML or YAML::Syck required for this test
+t/release-check-changes.t ....... skipped: these tests are for release candidate testing
+t/release-consistent-version.t .. skipped: these tests are for release candidate testing
+t/release-dist-manifest.t ....... skipped: these tests are for release candidate testing
+t/release-distmeta.t ............ skipped: these tests are for release candidate testing
+t/release-eol.t ................. skipped: these tests are for release candidate testing
+t/release-has-version.t ......... skipped: these tests are for release candidate testing
+t/release-kwalitee.t ............ skipped: these tests are for release candidate testing
+t/release-minimum-version.t ..... skipped: these tests are for release candidate testing
+t/release-no-tabs.t ............. skipped: these tests are for release candidate testing
+t/release-pod-coverage.t ........ skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .......... skipped: these tests are for release candidate testing
+t/release-portability.t ......... skipped: these tests are for release candidate testing
+t/release-unused-vars.t ......... skipped: these tests are for release candidate testing
+All tests successful.
+Files=20, Tests=1,  4 wallclock secs ( 0.09 usr  0.04 sys +  2.01 cusr  2.11 csys =  4.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/lib/pkgconfig m4datadir=/nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/share/aclocal aclocaldir=/nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/lib/perl5/site_perl/5.32.0/MouseX/SimpleConfig.pm
+Installing /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/share/man/man3/MouseX::SimpleConfig.3
+Appending installation info to /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/share/man/man3 to /nix/store/5ml0vb5p76a6qxrahkjx7d8sfj191df3-perl5.32.0-MouseX-SimpleConfig-0.11-devdoc/share/man/man3
+Removing empty /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11/lib
+patching script interpreter paths in /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11
+checking for references to /build/ in /nix/store/57iap6vpc03v8mbcr27hykd2wllpvz1c-perl5.32.0-MouseX-SimpleConfig-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5ml0vb5p76a6qxrahkjx7d8sfj191df3-perl5.32.0-MouseX-SimpleConfig-0.11-devdoc
+gzipping man pages under /nix/store/5ml0vb5p76a6qxrahkjx7d8sfj191df3-perl5.32.0-MouseX-SimpleConfig-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5ml0vb5p76a6qxrahkjx7d8sfj191df3-perl5.32.0-MouseX-SimpleConfig-0.11-devdoc
+checking for references to /build/ in /nix/store/5ml0vb5p76a6qxrahkjx7d8sfj191df3-perl5.32.0-MouseX-SimpleConfig-0.11-devdoc...
+building '/nix/store/r9h3ahwq129l04l994nwiiaxn34wn7c9-perl5.32.0-MouseX-Getopt-0.38.drv'...
+unpacking sources
+unpacking source archive /nix/store/x8rgxlca1c0gdk0zdd3wa3bbzsszr63f-MouseX-Getopt-0.38.tar.gz
+source root is MouseX-Getopt-0.38
+setting SOURCE_DATE_EPOCH to timestamp 1548473893 of file MouseX-Getopt-0.38/t/110_sort_usage_by_attr_order.t
+patching sources
+configuring
+patching ./t/001_basic.t...
+patching ./t/008_configfromfile.t...
+patching ./t/006_metaclass_traits.t...
+patching ./t/101_argv_bug.t...
+patching ./t/103_uc_bug.t...
+patching ./t/005_strict.t...
+patching ./t/000_load.t...
+patching ./t/002_custom_option_type.t...
+patching ./t/010_dashes.t...
+patching ./t/003_inferred_option_type.t...
+patching ./t/102_basic_basic.t...
+patching ./t/108_usage_attr.t...
+patching ./t/007_nogetopt_trait.t...
+patching ./t/100_gld_default_bug.t...
+patching ./t/109_help_flag.t...
+patching ./t/009_gld_and_explicit_options.t...
+patching ./t/004_nogetop.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MouseX-Getopt' version '0.38'
+cp lib/MouseX/Getopt/Meta/Attribute.pm blib/lib/MouseX/Getopt/Meta/Attribute.pm
+cp lib/MouseX/Getopt/GLD.pm blib/lib/MouseX/Getopt/GLD.pm
+cp lib/MouseX/Getopt/Meta/Attribute/NoGetopt.pm blib/lib/MouseX/Getopt/Meta/Attribute/NoGetopt.pm
+cp lib/MouseX/Getopt/Meta/Attribute/Trait.pm blib/lib/MouseX/Getopt/Meta/Attribute/Trait.pm
+cp lib/MouseX/Getopt/Meta/Attribute/Trait/NoGetopt.pm blib/lib/MouseX/Getopt/Meta/Attribute/Trait/NoGetopt.pm
+cp lib/MouseX/Getopt/OptionTypeMap.pm blib/lib/MouseX/Getopt/OptionTypeMap.pm
+cp lib/MouseX/Getopt/Dashes.pm blib/lib/MouseX/Getopt/Dashes.pm
+cp lib/MouseX/Getopt/Strict.pm blib/lib/MouseX/Getopt/Strict.pm
+cp lib/MouseX/Getopt/Basic.pm blib/lib/MouseX/Getopt/Basic.pm
+cp lib/MouseX/Getopt.pm blib/lib/MouseX/Getopt.pm
+running tests
+t/000_load.t ...................... ok
+t/001_basic.t ..................... ok
+t/002_custom_option_type.t ........ ok
+t/003_inferred_option_type.t ...... ok
+t/004_nogetop.t ................... ok
+t/005_strict.t .................... ok
+t/006_metaclass_traits.t .......... ok
+t/007_nogetopt_trait.t ............ ok
+t/008_configfromfile.t ............ ok
+t/009_gld_and_explicit_options.t .. ok
+t/010_dashes.t .................... ok
+t/100_gld_default_bug.t ........... ok
+t/101_argv_bug.t .................. ok
+t/102_basic_basic.t ............... ok
+t/103_uc_bug.t .................... ok
+t/104_override_usage.t ............ ok
+t/105_uc_bug_more.t ............... ok
+t/106_no_ignore_case.t ............ ok
+t/107_no_auto_help.t .............. ok
+t/108_usage_attr.t ................ ok
+t/109_help_flag.t ................. ok
+t/110_sort_usage_by_attr_order.t .. ok
+All tests successful.
+Files=22, Tests=359,  8 wallclock secs ( 0.11 usr  0.05 sys +  3.73 cusr  3.59 csys =  7.48 CPU)
+Result: PASS
+installing
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Dashes.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Strict.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Basic.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/GLD.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/OptionTypeMap.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Meta/Attribute.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Meta/Attribute/NoGetopt.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Meta/Attribute/Trait.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib/perl5/site_perl/5.32.0/MouseX/Getopt/Meta/Attribute/Trait/NoGetopt.pm
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Dashes.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::GLD.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::OptionTypeMap.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Meta::Attribute.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Meta::Attribute::Trait.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Meta::Attribute::NoGetopt.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Strict.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Meta::Attribute::Trait::NoGetopt.3
+Installing /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3/MouseX::Getopt::Basic.3
+post-installation fixup
+Moving /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/man3 to /nix/store/51s660jrpz4kdlxd6j7lg08cjxs328xv-perl5.32.0-MouseX-Getopt-0.38-devdoc/share/man/man3
+Removing empty /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38/lib
+patching script interpreter paths in /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38
+checking for references to /build/ in /nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38...
+shrinking RPATHs of ELF executables and libraries in /nix/store/51s660jrpz4kdlxd6j7lg08cjxs328xv-perl5.32.0-MouseX-Getopt-0.38-devdoc
+gzipping man pages under /nix/store/51s660jrpz4kdlxd6j7lg08cjxs328xv-perl5.32.0-MouseX-Getopt-0.38-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/51s660jrpz4kdlxd6j7lg08cjxs328xv-perl5.32.0-MouseX-Getopt-0.38-devdoc
+checking for references to /build/ in /nix/store/51s660jrpz4kdlxd6j7lg08cjxs328xv-perl5.32.0-MouseX-Getopt-0.38-devdoc...
+/nix/store/fz9qlglkibsj6bs7rxrkwm6dpp3gfv5f-perl5.32.0-MouseX-Getopt-0.38

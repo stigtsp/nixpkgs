@@ -1,0 +1,49 @@
+these derivations will be built:
+  /nix/store/mzbmfknwaarazl8zag0ra4pxhk0v7xdm-perl5.32.0-LWP-Authen-OAuth-1.02.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/qwrw26hbkhrm018r9x1kpdyrmyly32hy-LWP-Authen-OAuth-1.02.tar.gz
+copying path '/nix/store/qwrw26hbkhrm018r9x1kpdyrmyly32hy-LWP-Authen-OAuth-1.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mzbmfknwaarazl8zag0ra4pxhk0v7xdm-perl5.32.0-LWP-Authen-OAuth-1.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/qwrw26hbkhrm018r9x1kpdyrmyly32hy-LWP-Authen-OAuth-1.02.tar.gz
+source root is LWP-Authen-OAuth-1.02
+setting SOURCE_DATE_EPOCH to timestamp 1360146908 of file LWP-Authen-OAuth-1.02/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for LWP::Authen::OAuth
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/LWP/Authen/OAuth.pm blib/lib/LWP/Authen/OAuth.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/LWP-Authen-OAuth.t .. ok
+All tests successful.
+Files=1, Tests=2,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.09 cusr  0.06 csys =  0.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/lib/pkgconfig m4datadir=/nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/share/aclocal aclocaldir=/nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/lib/perl5/site_perl/5.32.0/LWP/Authen/OAuth.pm
+Installing /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/share/man/man3/LWP::Authen::OAuth.3
+Appending installation info to /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/share/man/man3 to /nix/store/v7nlw6rjj7dzy08jdln2a9fsxvapymg1-perl5.32.0-LWP-Authen-OAuth-1.02-devdoc/share/man/man3
+Removing empty /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02/lib
+patching script interpreter paths in /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02
+checking for references to /build/ in /nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v7nlw6rjj7dzy08jdln2a9fsxvapymg1-perl5.32.0-LWP-Authen-OAuth-1.02-devdoc
+gzipping man pages under /nix/store/v7nlw6rjj7dzy08jdln2a9fsxvapymg1-perl5.32.0-LWP-Authen-OAuth-1.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v7nlw6rjj7dzy08jdln2a9fsxvapymg1-perl5.32.0-LWP-Authen-OAuth-1.02-devdoc
+checking for references to /build/ in /nix/store/v7nlw6rjj7dzy08jdln2a9fsxvapymg1-perl5.32.0-LWP-Authen-OAuth-1.02-devdoc...
+/nix/store/0csjpngvf2kiik06fybpswpvsq62aiqq-perl5.32.0-LWP-Authen-OAuth-1.02

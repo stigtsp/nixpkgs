@@ -1,0 +1,64 @@
+these derivations will be built:
+  /nix/store/pgbv08rz2zdcjhk1bh1c4c2k9kwisbc8-perl5.32.0-Tree-DAG_Node-1.31.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/1h4kfhsj6p37c6bx5wnd4b5ixl9vp96p-Tree-DAG_Node-1.31.tgz
+copying path '/nix/store/1h4kfhsj6p37c6bx5wnd4b5ixl9vp96p-Tree-DAG_Node-1.31.tgz' from 'https://cache.nixos.org'...
+building '/nix/store/pgbv08rz2zdcjhk1bh1c4c2k9kwisbc8-perl5.32.0-Tree-DAG_Node-1.31.drv'...
+unpacking sources
+unpacking source archive /nix/store/1h4kfhsj6p37c6bx5wnd4b5ixl9vp96p-Tree-DAG_Node-1.31.tgz
+source root is Tree-DAG_Node-1.31
+setting SOURCE_DATE_EPOCH to timestamp 1518560204 of file Tree-DAG_Node-1.31/META.yml
+patching sources
+configuring
+patching ./scripts/read.tree.pl...
+patching ./scripts/cut.and.paste.subtrees.pl...
+patching ./scripts/write.tree.pl...
+patching ./t/about.perl.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Tree::DAG_Node
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Tree/DAG_Node.pm blib/lib/Tree/DAG_Node.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00.versions.t ............. 1/? # Testing Tree::DAG_Node V 1.31
+# Using File::Slurp::Tiny V 0.004
+# Using strict V 1.11
+# Using utf8 V 1.22
+# Using warnings V 1.47
+t/00.versions.t ............. ok
+t/about.perl.t .............. ok
+t/cut.and.paste.subtrees.t .. 1/? # Warning: Don't try this at home kids. Some trees get into an infinite loop.
+t/cut.and.paste.subtrees.t .. ok
+t/load.t .................... ok
+t/read.tree.t ............... ok
+t/string2hash.t ............. ok
+All tests successful.
+Files=6, Tests=26,  0 wallclock secs ( 0.05 usr  0.02 sys +  0.41 cusr  0.08 csys =  0.56 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/lib/pkgconfig m4datadir=/nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/share/aclocal aclocaldir=/nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/lib/perl5/site_perl/5.32.0/Tree/DAG_Node.pm
+Installing /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/share/man/man3/Tree::DAG_Node.3
+Appending installation info to /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/share/man/man3 to /nix/store/fxlqxjyx9dkfy8ph1b9bazzwcgswb1qj-perl5.32.0-Tree-DAG_Node-1.31-devdoc/share/man/man3
+Removing empty /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31/lib
+patching script interpreter paths in /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31
+checking for references to /build/ in /nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fxlqxjyx9dkfy8ph1b9bazzwcgswb1qj-perl5.32.0-Tree-DAG_Node-1.31-devdoc
+gzipping man pages under /nix/store/fxlqxjyx9dkfy8ph1b9bazzwcgswb1qj-perl5.32.0-Tree-DAG_Node-1.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fxlqxjyx9dkfy8ph1b9bazzwcgswb1qj-perl5.32.0-Tree-DAG_Node-1.31-devdoc
+checking for references to /build/ in /nix/store/fxlqxjyx9dkfy8ph1b9bazzwcgswb1qj-perl5.32.0-Tree-DAG_Node-1.31-devdoc...
+/nix/store/1ki3fbqg85dhmk3iyffqdvasljziamqm-perl5.32.0-Tree-DAG_Node-1.31

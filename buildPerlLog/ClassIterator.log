@@ -1,0 +1,56 @@
+these derivations will be built:
+  /nix/store/84n2r2zpdzrwr0m7wjx6l4px71wxqm4m-perl5.32.0-Class-Iterator-0.3.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/fbvwvf42ihsgkz8145j7mi0gg840aj34-Class-Iterator-0.3.tar.gz
+copying path '/nix/store/fbvwvf42ihsgkz8145j7mi0gg840aj34-Class-Iterator-0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/84n2r2zpdzrwr0m7wjx6l4px71wxqm4m-perl5.32.0-Class-Iterator-0.3.drv'...
+unpacking sources
+unpacking source archive /nix/store/fbvwvf42ihsgkz8145j7mi0gg840aj34-Class-Iterator-0.3.tar.gz
+source root is Class-Iterator-0.3
+setting SOURCE_DATE_EPOCH to timestamp 1075321727 of file Class-Iterator-0.3/Iterator.pm
+patching sources
+configuring
+Generating a Unix-style Makefile
+Writing Makefile for Class::Iterator
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Iterator.pm blib/lib/Class/Iterator.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01.t .. 1/205         (in cleanup) Unknow method DESTROY at t/01.t line 29.
+        (in cleanup) Unknow method DESTROY at t/01.t line 39.
+        (in cleanup) Unknow method DESTROY at t/01.t line 39.
+        (in cleanup) Unknow method DESTROY at t/01.t line 39.
+        (in cleanup) Unknow method DESTROY at t/01.t line 39.
+t/01.t .. ok
+t/02.t .. 1/102         (in cleanup) Unknow method DESTROY at t/02.t line 24.
+        (in cleanup) Unknow method DESTROY at t/02.t line 24.
+        (in cleanup) Unknow method DESTROY at t/02.t line 24.
+t/02.t .. ok
+All tests successful.
+Files=2, Tests=307,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.11 cusr  0.01 csys =  0.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/lib/pkgconfig m4datadir=/nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/share/aclocal aclocaldir=/nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/lib/perl5/site_perl/5.32.0/Class/Iterator.pm
+Installing /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/share/man/man3/Class::Iterator.3
+Appending installation info to /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/share/man/man3 to /nix/store/j623zddpj1if2s90am8dn4vi3rdgvdsj-perl5.32.0-Class-Iterator-0.3-devdoc/share/man/man3
+Removing empty /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3/lib
+patching script interpreter paths in /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3
+checking for references to /build/ in /nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j623zddpj1if2s90am8dn4vi3rdgvdsj-perl5.32.0-Class-Iterator-0.3-devdoc
+gzipping man pages under /nix/store/j623zddpj1if2s90am8dn4vi3rdgvdsj-perl5.32.0-Class-Iterator-0.3-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j623zddpj1if2s90am8dn4vi3rdgvdsj-perl5.32.0-Class-Iterator-0.3-devdoc
+checking for references to /build/ in /nix/store/j623zddpj1if2s90am8dn4vi3rdgvdsj-perl5.32.0-Class-Iterator-0.3-devdoc...
+/nix/store/jgp1v0ia6aq6d7r7x5293k1bb3nhjpxb-perl5.32.0-Class-Iterator-0.3

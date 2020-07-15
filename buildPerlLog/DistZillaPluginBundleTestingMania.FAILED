@@ -1,0 +1,885 @@
+these derivations will be built:
+  /nix/store/0aw290j2h76aann5hpffyqnqxb7s9si8-perl5.32.0-syntax-0.004.drv
+  /nix/store/lmyfzi9xsfn89r66n31fni1f63hgq06s-perl5.32.0-Test-EOL-2.00.drv
+  /nix/store/116b8l9a20pfi5i2ypyv62qc24ndgjjf-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19.drv
+  /nix/store/pb8g17qvgxqk23z1vgba5zq9612zxv9l-perl5.32.0-File-Find-Rule-Perl-1.15.drv
+  /nix/store/4b9bycr1f7xhi3bad2dmz5w9kk8h60jd-perl5.32.0-PPIx-Regexp-0.072.drv
+  /nix/store/72i6xpxgsfrxp0bp8yh6wbpfxi5xryy4-perl5.32.0-PPIx-Utilities-1.001000.drv
+  /nix/store/983kx1pqn2rh64vqf01mcilkwm1924wh-perl5.32.0-Perl-Tidy-20200110.drv
+  /nix/store/f5fs5rjr484nv8k4nvwmhm1vpsyfddix-perl5.32.0-String-Format-1.18.drv
+  /nix/store/jsc9m07000k8mhr45rlwj9nkbyg9yvs0-perl5.32.0-PPIx-QuoteLike-0.011.drv
+  /nix/store/rd041n118m41n57xxgvjz7lbckjc26kg-perl5.32.0-Pod-Spell-1.20.drv
+  /nix/store/v1fsybh3myslm7jndmn6rppinlrd2p98-perl5.32.0-Perl-Critic-1.138.drv
+  /nix/store/hvyx3dnlwx9cynwhsjl1p5d6409qg7xa-perl5.32.0-Probe-Perl-0.03.drv
+  /nix/store/wh52dbcm3k8335xpwfgpq2hsqz55zn87-perl5.32.0-Test-Script-1.26.drv
+  /nix/store/1di934zykvsb2hra7vfl2wlwbyl11ilk-perl5.32.0-Perl-MinimumVersion-1.38.drv
+  /nix/store/3a88bim3f30c2gchgrx74fiiz1dyi5w3-perl5.32.0-MCE-1.872.drv
+  /nix/store/g4j7kzjf1jvyi17sqc1xkk9s4qp4p5bv-perl5.32.0-Test-Perl-Critic-1.04.drv
+  /nix/store/2kz37arbj49r8q905bs19l4v9hxwpj1z-perl5.32.0-Dist-Zilla-Plugin-Test-Perl-Critic-3.001.drv
+  /nix/store/rr7ky1hc94lr661lswfcpgggiy4n5d7y-perl5.32.0-Test-MinimumVersion-0.101082.drv
+  /nix/store/2rcylyv19qp6vfy7shj6nlwp0pfg2g9j-perl5.32.0-Dist-Zilla-Plugin-Test-MinimumVersion-2.000010.drv
+  /nix/store/5qf2hqmn8pf0nmvf1mka4z8njx49w89s-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12.drv
+  /nix/store/5vqqkj8mssh5shi6jq1p8dwvlyxm5xwj-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.drv
+  /nix/store/na2zgb3d9s4v8sr71mkavp0m79w4grxj-perl5.32.0-Syntax-Keyword-Junction-0.003008.drv
+  /nix/store/arlm74gf51lsq49w530f40nj20rjm3xk-perl5.32.0-Moose-Autobox-0.16.drv
+  /nix/store/b9pgqgbyas52h9k40a88nzb8nwrsm3fp-perl5.32.0-Dist-Zilla-Plugin-Test-Compile-2.058.drv
+  /nix/store/dhlc2kx8rzwz654939n5iwk4mi3wjn9p-perl5.32.0-Test-Vars-0.014.drv
+  /nix/store/g4x72hzsq9mhd032ca1yr4iwb3ga242s-perl5.32.0-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.drv
+  /nix/store/za94g3vrz8l1clj0zah6wzwnpk29j6mb-perl5.32.0-Test-NoTabs-2.02.drv
+  /nix/store/h2mcz4v1z03p5z2c6qj9vdq9zx4f1pzb-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15.drv
+  /nix/store/ipkz3x4j7122l42pyy2g5h8jdkp297w4-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Changes-0.012.drv
+  /nix/store/wgfh25rlvj50qihkwn9kbpszg48xs2i1-perl5.32.0-Test-CPAN-Meta-JSON-0.16.drv
+  /nix/store/kgidrra8lqmh12gzwr229w4r8yppkdbl-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.drv
+  /nix/store/kifxdcv92nbjc5kkn7978j4q07vnz8zr-perl5.32.0-Test-Version-2.09.drv
+  /nix/store/hwqx6x3h6393ldzgnfs7w3q6jqdczh3r-perl5.32.0-Pod-Eventual-0.094001.drv
+  /nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv
+  /nix/store/lmg00693m21xqd9l3rhz1ii208na2i7l-perl5.32.0-Pod-Coverage-TrustPod-0.100005.drv
+  /nix/store/m32kr6fkk6ki2a3bnxrn2qsivdr3vjzg-perl5.32.0-Dist-Zilla-Plugin-Test-Version-1.09.drv
+  /nix/store/dpyskalnqq8628m4d0wfkfb683flglj4-perl5.32.0-Test-Mojibake-1.3.drv
+  /nix/store/maxy0g3ckspl05wmxxycq16j0jjb29cn-perl5.32.0-Dist-Zilla-Plugin-MojibakeTests-0.8.drv
+  /nix/store/c4s3bp74pzxmclp9b006pcd9gjrsz37c-perl5.32.0-Test-Portability-Files-0.10.drv
+  /nix/store/pclk0daicgh6drppdndvz5nrsacvy3vd-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000.drv
+  /nix/store/v8by575ln1ir46w0rfami8jf7b6v5rfg-perl5.32.0-Dist-Zilla-Plugin-Test-DistManifest-2.000005.drv
+  /nix/store/p8nb2cygf1jd7kpsqc6qvzd01fmwh58i-perl5.32.0-Test-Synopsis-0.16.drv
+  /nix/store/x7ml1xsrqv247kd9b2v9s3x336vwncqp-perl5.32.0-Dist-Zilla-Plugin-Test-Synopsis-2.000007.drv
+  /nix/store/xmr3ipw02d6gzs8165fbd5sasarfr95z-perl5.32.0-Test-CPAN-Meta-0.25.drv
+  /nix/store/4xi17x3wrlic57ra214p5wb6kl1p0n7s-perl5.32.0-Dist-Zilla-PluginBundle-TestingMania-0.25.drv
+these paths will be fetched (2.45 MiB download, 2.45 MiB unpacked):
+  /nix/store/04d9qks6svn18cjd2crnrx2m68sxpml1-Dist-Zilla-Plugin-Test-EOL-0.19.tar.gz
+  /nix/store/1bvz00da901p0c005badjzrraxq3k7l5-Test-MinimumVersion-0.101082.tar.gz
+  /nix/store/307rq5dk2bmfvwp528f079hlxzjlyq3v-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.tar.gz
+  /nix/store/32xq0rhsd9dc5v8hbzhz4ma3kqr41wly-Test-Portability-Files-0.10.tar.gz
+  /nix/store/3aifa4ib9qnlbjljbk4n3mrp6py0id0g-Dist-Zilla-Plugin-MojibakeTests-0.8.tar.gz
+  /nix/store/44d4si5snn7c025fb5852mpy5rfdm730-Perl-Critic-1.138.tar.gz
+  /nix/store/46qmqjy4zmwm7xibzq0pkrwg8xkpy07p-MCE-1.872.tar.gz
+  /nix/store/4skdvr19zzjc7509wy0j3xarvhr7j175-Dist-Zilla-Plugin-Test-Synopsis-2.000007.tar.gz
+  /nix/store/7xfwk6cc01qpqsv0lrxwwscjnlxksal3-Test-Perl-Critic-1.04.tar.gz
+  /nix/store/822q34nr0h9l0jd9v54dj3ybn7cw7mc1-Test-Script-1.26.tar.gz
+  /nix/store/830rw7z9kcllhxcams8kk9259zggg7mv-Dist-Zilla-Plugin-Test-Kwalitee-2.12.tar.gz
+  /nix/store/94rpbxr86hyx9cmy2kxfpqp09yb1vbd5-Perl-Tidy-20200110.tar.gz
+  /nix/store/9xvadrfaz6ksdz8a5q0wqfps6c38fgmz-PPIx-Utilities-1.001000.tar.gz
+  /nix/store/ajhym3m2nyjrqlp82jl6vmv7y04nq5w1-Dist-Zilla-Plugin-Test-Compile-2.058.tar.gz
+  /nix/store/b410gn15874hhv4xwdg7pp0m82h7b9kg-Dist-Zilla-Plugin-Test-Version-1.09.tar.gz
+  /nix/store/b94gcd2w253cspqwrgx2qb955qj4x22y-Test-Mojibake-1.3.tar.gz
+  /nix/store/bjpgp7j2pzf6vi90xfnwfnjvpjiy8n9r-Moose-Autobox-0.16.tar.gz
+  /nix/store/br8nlilvssdpfmmkfvcm8qx7bpxgn970-Dist-Zilla-Plugin-Test-DistManifest-2.000005.tar.gz
+  /nix/store/dpf62ihy8wrs3q6y0qhic81vz9jihx9l-PPIx-Regexp-0.072.tar.gz
+  /nix/store/dsv0yk4qxnma4p5v486d3imb6w6sw8ka-Syntax-Keyword-Junction-0.003008.tar.gz
+  /nix/store/frb5wjxwx8bg9vnxadw3hf20wskx6619-Dist-Zilla-Plugin-Test-CPAN-Changes-0.012.tar.gz
+  /nix/store/g25iffkxprw44j3xvp76i5zyfkjavxcn-Perl-MinimumVersion-1.38.tar.gz
+  /nix/store/if2jjis1biq0cyz4w9i1aqm0xigfbhzd-Probe-Perl-0.03.tar.gz
+  /nix/store/j7hdgvm9cvc6ignq6d4xi1gnk0d6w35s-Test-Vars-0.014.tar.gz
+  /nix/store/jblm901sn8bbkvwkxwpyd6wd3jc57rkp-Dist-Zilla-Plugin-Test-MinimumVersion-2.000010.tar.gz
+  /nix/store/jm0dd9h7625qqh8j6vs3p9jq3zyw466m-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.tar.gz
+  /nix/store/kxrwxdwpb6r0c08j2h8kl5p0rhqps8i7-Dist-Zilla-Plugin-Test-Portability-2.001000.tar.gz
+  /nix/store/l6ia46ayv8905pxlbai0vlx7vhp2fwss-syntax-0.004.tar.gz
+  /nix/store/majcyvnmlk28rxc46qzgrrnmnip1b0pw-Pod-Spell-1.20.tar.gz
+  /nix/store/nb7xl1a5hmn8khz394dhpzb46s94pn31-Dist-Zilla-Plugin-Test-NoTabs-0.15.tar.gz
+  /nix/store/pbp9pxhh6lmdm40fiwx5may5gf8npj6f-Dist-Zilla-Plugin-Test-Perl-Critic-3.001.tar.gz
+  /nix/store/qbvk9llh80cj27df6298gc5anqrfb50f-PPIx-QuoteLike-0.011.tar.gz
+  /nix/store/qmdizjg370aabap2fjfzp2w0ar32j3cz-Test-Version-2.09.tar.gz
+  /nix/store/rfdfdd8j9s9lxmmnrzp4ai869lcmvcf8-File-Find-Rule-Perl-1.15.tar.gz
+  /nix/store/sgn2abw23hs6p2xx2s5zw7qwx7jcphnk-Test-CPAN-Meta-JSON-0.16.tar.gz
+  /nix/store/wwnjckz2pkp6lpvn9s6s371ihj5jlb29-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.tar.gz
+  /nix/store/y6bl8mgb8kw6gbk8d50yvv72hvrpcldw-Dist-Zilla-PluginBundle-TestingMania-0.25.tar.gz
+  /nix/store/yjmh2kn2rcjraa3hm1zahry1n9aq9kzp-Test-Synopsis-0.16.tar.gz
+  /nix/store/zx6ndpzmhk6v7qkj567wqx6q6qkw6wq2-String-Format-1.18.tar.gz
+copying path '/nix/store/y6bl8mgb8kw6gbk8d50yvv72hvrpcldw-Dist-Zilla-PluginBundle-TestingMania-0.25.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3aifa4ib9qnlbjljbk4n3mrp6py0id0g-Dist-Zilla-Plugin-MojibakeTests-0.8.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/frb5wjxwx8bg9vnxadw3hf20wskx6619-Dist-Zilla-Plugin-Test-CPAN-Changes-0.012.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/307rq5dk2bmfvwp528f079hlxzjlyq3v-Dist-Zilla-Plugin-Test-CPAN-Meta-JSON-0.004.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ajhym3m2nyjrqlp82jl6vmv7y04nq5w1-Dist-Zilla-Plugin-Test-Compile-2.058.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/br8nlilvssdpfmmkfvcm8qx7bpxgn970-Dist-Zilla-Plugin-Test-DistManifest-2.000005.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/04d9qks6svn18cjd2crnrx2m68sxpml1-Dist-Zilla-Plugin-Test-EOL-0.19.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/830rw7z9kcllhxcams8kk9259zggg7mv-Dist-Zilla-Plugin-Test-Kwalitee-2.12.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/jblm901sn8bbkvwkxwpyd6wd3jc57rkp-Dist-Zilla-Plugin-Test-MinimumVersion-2.000010.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nb7xl1a5hmn8khz394dhpzb46s94pn31-Dist-Zilla-Plugin-Test-NoTabs-0.15.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pbp9pxhh6lmdm40fiwx5may5gf8npj6f-Dist-Zilla-Plugin-Test-Perl-Critic-3.001.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/jm0dd9h7625qqh8j6vs3p9jq3zyw466m-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/kxrwxdwpb6r0c08j2h8kl5p0rhqps8i7-Dist-Zilla-Plugin-Test-Portability-2.001000.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4skdvr19zzjc7509wy0j3xarvhr7j175-Dist-Zilla-Plugin-Test-Synopsis-2.000007.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/wwnjckz2pkp6lpvn9s6s371ihj5jlb29-Dist-Zilla-Plugin-Test-UnusedVars-2.000007.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/b410gn15874hhv4xwdg7pp0m82h7b9kg-Dist-Zilla-Plugin-Test-Version-1.09.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rfdfdd8j9s9lxmmnrzp4ai869lcmvcf8-File-Find-Rule-Perl-1.15.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/46qmqjy4zmwm7xibzq0pkrwg8xkpy07p-MCE-1.872.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bjpgp7j2pzf6vi90xfnwfnjvpjiy8n9r-Moose-Autobox-0.16.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qbvk9llh80cj27df6298gc5anqrfb50f-PPIx-QuoteLike-0.011.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dpf62ihy8wrs3q6y0qhic81vz9jihx9l-PPIx-Regexp-0.072.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9xvadrfaz6ksdz8a5q0wqfps6c38fgmz-PPIx-Utilities-1.001000.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/44d4si5snn7c025fb5852mpy5rfdm730-Perl-Critic-1.138.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/g25iffkxprw44j3xvp76i5zyfkjavxcn-Perl-MinimumVersion-1.38.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/94rpbxr86hyx9cmy2kxfpqp09yb1vbd5-Perl-Tidy-20200110.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/majcyvnmlk28rxc46qzgrrnmnip1b0pw-Pod-Spell-1.20.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/if2jjis1biq0cyz4w9i1aqm0xigfbhzd-Probe-Perl-0.03.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zx6ndpzmhk6v7qkj567wqx6q6qkw6wq2-String-Format-1.18.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dsv0yk4qxnma4p5v486d3imb6w6sw8ka-Syntax-Keyword-Junction-0.003008.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/sgn2abw23hs6p2xx2s5zw7qwx7jcphnk-Test-CPAN-Meta-JSON-0.16.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/1bvz00da901p0c005badjzrraxq3k7l5-Test-MinimumVersion-0.101082.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/b94gcd2w253cspqwrgx2qb955qj4x22y-Test-Mojibake-1.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/7xfwk6cc01qpqsv0lrxwwscjnlxksal3-Test-Perl-Critic-1.04.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/32xq0rhsd9dc5v8hbzhz4ma3kqr41wly-Test-Portability-Files-0.10.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/822q34nr0h9l0jd9v54dj3ybn7cw7mc1-Test-Script-1.26.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/yjmh2kn2rcjraa3hm1zahry1n9aq9kzp-Test-Synopsis-0.16.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/j7hdgvm9cvc6ignq6d4xi1gnk0d6w35s-Test-Vars-0.014.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qmdizjg370aabap2fjfzp2w0ar32j3cz-Test-Version-2.09.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/l6ia46ayv8905pxlbai0vlx7vhp2fwss-syntax-0.004.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ipkz3x4j7122l42pyy2g5h8jdkp297w4-perl5.32.0-Dist-Zilla-Plugin-Test-CPAN-Changes-0.012.drv'...
+building '/nix/store/v8by575ln1ir46w0rfami8jf7b6v5rfg-perl5.32.0-Dist-Zilla-Plugin-Test-DistManifest-2.000005.drv'...
+building '/nix/store/5qf2hqmn8pf0nmvf1mka4z8njx49w89s-perl5.32.0-Dist-Zilla-Plugin-Test-Kwalitee-2.12.drv'...
+building '/nix/store/5vqqkj8mssh5shi6jq1p8dwvlyxm5xwj-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.drv'...
+building '/nix/store/pb8g17qvgxqk23z1vgba5zq9612zxv9l-perl5.32.0-File-Find-Rule-Perl-1.15.drv'...
+building '/nix/store/3a88bim3f30c2gchgrx74fiiz1dyi5w3-perl5.32.0-MCE-1.872.drv'...
+building '/nix/store/jsc9m07000k8mhr45rlwj9nkbyg9yvs0-perl5.32.0-PPIx-QuoteLike-0.011.drv'...
+unpacking sources
+unpacking source archive /nix/store/rfdfdd8j9s9lxmmnrzp4ai869lcmvcf8-File-Find-Rule-Perl-1.15.tar.gz
+source root is File-Find-Rule-Perl-1.15
+setting SOURCE_DATE_EPOCH to timestamp 1428267478 of file File-Find-Rule-Perl-1.15/META.yml
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/46qmqjy4zmwm7xibzq0pkrwg8xkpy07p-MCE-1.872.tar.gz
+source root is MCE-1.872
+setting SOURCE_DATE_EPOCH to timestamp 1592193811 of file MCE-1.872/Changes
+patching sources
+configuring
+building '/nix/store/4b9bycr1f7xhi3bad2dmz5w9kk8h60jd-perl5.32.0-PPIx-Regexp-0.072.drv'...
+patching ./t/dist/t/01_compile.t...
+unpacking sources
+unpacking source archive /nix/store/qbvk9llh80cj27df6298gc5anqrfb50f-PPIx-QuoteLike-0.011.tar.gz
+source root is PPIx-QuoteLike-0.011
+setting SOURCE_DATE_EPOCH to timestamp 1585656117 of file PPIx-QuoteLike-0.011/xt/author/pod_spelling.t
+patching ./xt/flock_lock.t...
+patching ./xt/channel_lock.t...
+patching sources
+configuring
+patching ./xt/channel2_lock.t...
+patching ./t/05_mce_grep.t...
+patching ./t/04_norm_que_worker.t...
+patching ./t/04_channel_mutex.t...
+patching ./t/02_do_callback_result.t...
+patching ./t/06_nodata_flow.t...
+patching ./t/01_mutex_channel.t...
+patching ./t/06_relay.t...
+patching ./t/00_required_signals.t...
+patching ./t/05_mce_map.t...
+patching ./t/01_load_mce.t...
+patching ./t/04_prio_que_worker.t...
+patching ./t/05_mce_step.t...
+patching ./t/04_channel_threads_mp.t...
+patching ./t/05_mce_loop.t...
+patching ./t/05_mce_stream.t...
+patching ./t/01_load_signal_tag.t...
+unpacking sources
+unpacking source archive /nix/store/dpf62ihy8wrs3q6y0qhic81vz9jihx9l-PPIx-Regexp-0.072.tar.gz
+Checking if your kit is complete...
+patching ./t/04_channel_threads.t...
+source root is PPIx-Regexp-0.072
+patching ./t/03_chunk_size.t...
+Looks good
+patching ./t/05_mce_flow.t...
+patching ./t/04_channel_mutex_mp.t...
+patching ./t/04_prio_que_manager.t...
+setting SOURCE_DATE_EPOCH to timestamp 1589979813 of file PPIx-Regexp-0.072/xt/author/unit_left_curly.t
+patching ./t/06_nodata_step.t...
+patching sources
+configuring
+patching ./t/05_mce_child.t...
+patching ./eg/variables...
+patching ./t/04_channel_simple.t...
+patching ./eg/pqldump...
+patching ./t/01_mutex_channel2.t...
+patching ./t/01_mutex_flock.t...
+patching ./t/02_do_callback_args.t...
+patching ./t/01_load_signal_arg.t...
+patching ./t/04_norm_que_manager.t...
+patching ./t/01_load_signal_export.t...
+Generating a Unix-style Makefile
+Writing Makefile for File::Find::Rule::Perl
+patching ./t/00_required_modules.t...
+Writing MYMETA.yml and MYMETA.json
+patching ./t/03_user_args.t...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+
+The following optional modules were not available:
+
+    * PPIx::Regexp is not available.
+      This module is needed to find variables inside nested regular
+      expressions.
+
+It is not necessary to install these now. If you decide to install them
+later, this software will make use of them when it finds them.
+
+Checking if your kit is complete...
+patching ./bin/mce_grep...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PPIx::QuoteLike
+Writing MYMETA.yml and MYMETA.json
+Checking if your kit is complete...
+no configure script, doing nothing
+building
+Looks good
+patching ./eg/preslurp...
+patching ./eg/interpolated...
+patching ./eg/find-variable-length-lookarounds...
+patching ./eg/predump...
+patching ./eg/prenav...
+patching ./eg/preaccepts...
+Generating a Unix-style Makefile
+Writing Makefile for MCE
+
+The following optional modules were not available:
+
+    * PPIx::Regexp is not available.
+      This module is needed to find variables inside nested regular
+      expressions.
+
+It is not necessary to install these now. If you decide to install them
+later, this software will make use of them when it finds them.
+
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/Find/Rule/Perl.pm blib/lib/File/Find/Rule/Perl.pm
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'PPIx-QuoteLike' version '0.011'
+Checking if your kit is complete...
+Manifying 1 pod document
+Looks good
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Generating a Unix-style Makefile
+Writing Makefile for PPIx::Regexp
+Building PPIx-QuoteLike
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+cp lib/MCE/Core.pod blib/lib/MCE/Core.pod
+cp lib/MCE/Core/Input/Generator.pm blib/lib/MCE/Core/Input/Generator.pm
+cp lib/MCE/Loop.pm blib/lib/MCE/Loop.pm
+cp lib/MCE/Examples.pod blib/lib/MCE/Examples.pod
+cp lib/MCE/Mutex.pm blib/lib/MCE/Mutex.pm
+cp lib/MCE/Step.pm blib/lib/MCE/Step.pm
+cp lib/MCE/Core/Worker.pm blib/lib/MCE/Core/Worker.pm
+cp lib/MCE/Util.pm blib/lib/MCE/Util.pm
+cp lib/MCE.pm blib/lib/MCE.pm
+cp lib/MCE/Channel/Threads.pm blib/lib/MCE/Channel/Threads.pm
+cp lib/MCE/Core/Input/Handle.pm blib/lib/MCE/Core/Input/Handle.pm
+cp lib/MCE/Map.pm blib/lib/MCE/Map.pm
+cp lib/MCE/Flow.pm blib/lib/MCE/Flow.pm
+cp lib/MCE.pod blib/lib/MCE.pod
+cp lib/MCE/Core/Manager.pm blib/lib/MCE/Core/Manager.pm
+cp lib/MCE/Channel.pm blib/lib/MCE/Channel.pm
+cp lib/MCE/Queue.pm blib/lib/MCE/Queue.pm
+cp lib/MCE/Mutex/Channel.pm blib/lib/MCE/Mutex/Channel.pm
+cp lib/MCE/Channel/Simple.pm blib/lib/MCE/Channel/Simple.pm
+cp lib/MCE/Mutex/Channel2.pm blib/lib/MCE/Mutex/Channel2.pm
+cp lib/MCE/Mutex/Flock.pm blib/lib/MCE/Mutex/Flock.pm
+cp lib/MCE/Child.pm blib/lib/MCE/Child.pm
+cp lib/MCE/Stream.pm blib/lib/MCE/Stream.pm
+cp lib/MCE/Candy.pm blib/lib/MCE/Candy.pm
+cp lib/MCE/Signal.pm blib/lib/MCE/Signal.pm
+cp lib/MCE/Grep.pm blib/lib/MCE/Grep.pm
+cp lib/MCE/Core/Input/Request.pm blib/lib/MCE/Core/Input/Request.pm
+cp lib/MCE/Core/Input/Iterator.pm blib/lib/MCE/Core/Input/Iterator.pm
+cp lib/MCE/Subs.pm blib/lib/MCE/Subs.pm
+cp lib/MCE/Core/Validation.pm blib/lib/MCE/Core/Validation.pm
+cp lib/MCE/Core/Input/Sequence.pm blib/lib/MCE/Core/Input/Sequence.pm
+cp lib/MCE/Relay.pm blib/lib/MCE/Relay.pm
+cp lib/MCE/Channel/Mutex.pm blib/lib/MCE/Channel/Mutex.pm
+t/01_compile.t ... ok
+running tests
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'PPIx-Regexp' version '0.072'
+Manifying 32 pod documents
+t/02_main.t ...... ok
+unpacking sources
+unpacking source archive /nix/store/jm0dd9h7625qqh8j6vs3p9jq3zyw466m-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.tar.gz
+source root is Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004
+unpacking sources
+unpacking source archive /nix/store/frb5wjxwx8bg9vnxadw3hf20wskx6619-Dist-Zilla-Plugin-Test-CPAN-Changes-0.012.tar.gz
+source root is Dist-Zilla-Plugin-Test-CPAN-Changes-0.012
+setting SOURCE_DATE_EPOCH to timestamp 1465749520 of file Dist-Zilla-Plugin-Test-CPAN-Changes-0.012/xt/release/unused-vars.t
+patching sources
+setting SOURCE_DATE_EPOCH to timestamp 1504707375 of file Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/xt/release/unused-vars.t
+configuring
+Building PPIx-Regexp
+patching sources
+configuring
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/meta-json.t...
+t/03_no_index.t .. ok
+All tests successful.
+Files=3, Tests=31,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.41 cusr  0.11 csys =  0.57 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/lib/pkgconfig m4datadir=/nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/share/aclocal aclocaldir=/nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/share/aclocal install
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+unpacking sources
+unpacking source archive /nix/store/br8nlilvssdpfmmkfvcm8qx7bpxgn970-Dist-Zilla-Plugin-Test-DistManifest-2.000005.tar.gz
+patching ./xt/author/mojibake.t...
+source root is Dist-Zilla-Plugin-Test-DistManifest-2.000005
+patching ./xt/author/critic.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-syntax.t...
+setting SOURCE_DATE_EPOCH to timestamp 1421959789 of file Dist-Zilla-Plugin-Test-DistManifest-2.000005/xt/release/unused-vars.t
+patching ./xt/author/pod-linkcheck.t...
+patching ./xt/author/synopsis.t...
+patching sources
+configuring
+patching ./xt/author/portability.t...
+patching ./t/00-report-prereqs.t...
+Manifying 1 pod document
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/unused-vars.t...
+Installing /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/lib/perl5/site_perl/5.32.0/File/Find/Rule/Perl.pm
+Installing /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/share/man/man3/File::Find::Rule::Perl.3
+patching ./xt/release/mojibake.t...
+Appending installation info to /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/pod-linkcheck.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/cpan-changes.t...
+t/basic.t ............................ ok
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+post-installation fixup
+Moving /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/share/man/man3 to /nix/store/9jhlrgxgbzyib1r129nknn4cq83gvk1p-perl5.32.0-File-Find-Rule-Perl-1.15-devdoc/share/man/man3
+Removing empty /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15
+unpacking sources
+unpacking source archive /nix/store/830rw7z9kcllhxcams8kk9259zggg7mv-Dist-Zilla-Plugin-Test-Kwalitee-2.12.tar.gz
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15/lib
+source root is Dist-Zilla-Plugin-Test-Kwalitee-2.12
+setting SOURCE_DATE_EPOCH to timestamp 1443585590 of file Dist-Zilla-Plugin-Test-Kwalitee-2.12/xt/release/portability.t
+patching script interpreter paths in /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15
+patching sources
+configuring
+checking for references to /build/ in /nix/store/3qb3bi3wj0jwjzf4m7lbwxrb45dvm32i-perl5.32.0-File-Find-Rule-Perl-1.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9jhlrgxgbzyib1r129nknn4cq83gvk1p-perl5.32.0-File-Find-Rule-Perl-1.15-devdoc
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+gzipping man pages under /nix/store/9jhlrgxgbzyib1r129nknn4cq83gvk1p-perl5.32.0-File-Find-Rule-Perl-1.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9jhlrgxgbzyib1r129nknn4cq83gvk1p-perl5.32.0-File-Find-Rule-Perl-1.15-devdoc
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+checking for references to /build/ in /nix/store/9jhlrgxgbzyib1r129nknn4cq83gvk1p-perl5.32.0-File-Find-Rule-Perl-1.15-devdoc...
+patching ./xt/release/changes_has_content.t...
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+building '/nix/store/72i6xpxgsfrxp0bp8yh6wbpfxi5xryy4-perl5.32.0-PPIx-Utilities-1.001000.drv'...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+t/dump.t ............................. ok
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Checking if your kit is complete...
+Looks good
+Looks good
+t/00_required_modules.t .... ok
+running tests
+Warning: prerequisite Test::Pod::LinkCheck 0.005 not found.
+unpacking sources
+unpacking source archive /nix/store/9xvadrfaz6ksdz8a5q0wqfps6c38fgmz-PPIx-Utilities-1.001000.tar.gz
+source root is PPIx-Utilities-1.001000
+t/00_required_signals.t .... ok
+t/locations.t ........................ ok
+setting SOURCE_DATE_EPOCH to timestamp 1291257125 of file PPIx-Utilities-1.001000/xt/author/stop-words
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Pod::LinkCheck
+patching ./xt/author/pod_syntax.t...
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::CPAN::Changes
+t/normalize_interpolation_for_ppi.t .. ok
+patching ./xt/author/distribution.t...
+t/01_load_mce.t ............ ok
+Writing MYMETA.yml and MYMETA.json
+patching ./xt/author/perlcritic-code.t...
+patching ./xt/author/pod_coverage.t...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+patching ./xt/author/perlcritic-tests.t...
+patching ./xt/author/copyright.t...
+patching ./xt/author/consistent_version_numbers.t...
+patching ./xt/author/kwalitee.t...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+patching ./t/split-ppi-node-by-namespace.t...
+t/01_load_signal_arg.t ..... ok
+patching ./Build.PL...
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::DistManifest
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+t/basic.t ....... ok
+t/01_load_signal_export.t .. ok
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PPIx::Utilities
+Writing MYMETA.yml and MYMETA.json
+t/parse.t ............................ ok
+no configure script, doing nothing
+building
+t/fuzz.t ........ ok
+t/01_load_signal_tag.t ..... ok
+Checking if your kit is complete...
+Looks good
+t/01_mutex_channel.t ....... ok
+t/unit-adhoc.t ....................... ok
+t/01_mutex_channel2.t ...... ok
+Checking prerequisites...
+  recommends:
+    *  Readonly::XS is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+t/locations.t ... ok
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Kwalitee
+t/01_mutex_flock.t ......... ok
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'PPIx-Utilities' version '1.001000'
+t/02_do_callback_args.t .... ok
+Writing MYMETA.yml and MYMETA.json
+t/variables.t ........................ ok
+no configure script, doing nothing
+building
+Building PPIx-Utilities
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-DistManifest' version '2.000005'
+running tests
+t/02_do_callback_result.t .. ok
+t/version.t .......................... ok
+All tests successful.
+Files=8, Tests=659,  3 wallclock secs ( 0.11 usr  0.02 sys +  1.77 cusr  0.57 csys =  2.47 CPU)
+Result: PASS
+installing
+t/03_chunk_size.t .......... ok
+t/03_user_args.t ........... ok
+Building PPIx-QuoteLike
+cp lib/Dist/Zilla/Plugin/Test/Pod/LinkCheck.pm blib/lib/Dist/Zilla/Plugin/Test/Pod/LinkCheck.pm
+t/04_channel_mutex.t ....... ok
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-Kwalitee' version '2.12'
+Building Dist-Zilla-Plugin-Test-DistManifest
+cp lib/Dist/Zilla/Plugin/Test/CPAN/Changes.pm blib/lib/Dist/Zilla/Plugin/Test/CPAN/Changes.pm
+t/04_channel_mutex_mp.t .... ok
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Dumper.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Constant.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Utils.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Whitespace.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Unknown.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Structure.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Control.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Interpolation.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/String.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib/perl5/site_perl/5.32.0/PPIx/QuoteLike/Token/Delimiter.pm
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Structure.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Constant.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Whitespace.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Delimiter.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Utils.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Control.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::String.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Interpolation.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Dumper.3
+Installing /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3/PPIx::QuoteLike::Token::Unknown.3
+post-installation fixup
+Moving /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/man3 to /nix/store/p3iqzl03r7nsk4i81mn0p0hnirp65byb-perl5.32.0-PPIx-QuoteLike-0.011-devdoc/share/man/man3
+Removing empty /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/share/man/ and (possibly) its parents
+t/04_channel_simple.t ...... ok
+t/split-ppi-node-by-namespace.t .. ok
+All tests successful.
+Files=1, Tests=10,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.32 cusr  0.14 csys =  0.51 CPU)
+Result: PASS
+running tests
+shrinking RPATHs of ELF executables and libraries in /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011
+installing
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011/lib
+patching script interpreter paths in /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011
+checking for references to /build/ in /nix/store/229z08rb4rdh96qg8rawc72xndgizvn7-perl5.32.0-PPIx-QuoteLike-0.011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/p3iqzl03r7nsk4i81mn0p0hnirp65byb-perl5.32.0-PPIx-QuoteLike-0.011-devdoc
+gzipping man pages under /nix/store/p3iqzl03r7nsk4i81mn0p0hnirp65byb-perl5.32.0-PPIx-QuoteLike-0.011-devdoc/share/man/
+Manifying 1 pod document
+t/04_channel_threads.t ..... ok
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/p3iqzl03r7nsk4i81mn0p0hnirp65byb-perl5.32.0-PPIx-QuoteLike-0.011-devdoc
+checking for references to /build/ in /nix/store/p3iqzl03r7nsk4i81mn0p0hnirp65byb-perl5.32.0-PPIx-QuoteLike-0.011-devdoc...
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+Building PPIx-Utilities
+building '/nix/store/983kx1pqn2rh64vqf01mcilkwm1924wh-perl5.32.0-Perl-Tidy-20200110.drv'...
+t/04_channel_threads_mp.t .. ok
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/lib/perl5/site_perl/5.32.0/PPIx/Utilities.pm
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/lib/perl5/site_perl/5.32.0/PPIx/Utilities/Statement.pm
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/lib/perl5/site_perl/5.32.0/PPIx/Utilities/Node.pm
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/lib/perl5/site_perl/5.32.0/PPIx/Utilities/Exception/Bug.pm
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/man3/PPIx::Utilities::Node.3
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/man3/PPIx::Utilities::Statement.3
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/man3/PPIx::Utilities.3
+Installing /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/man3/PPIx::Utilities::Exception::Bug.3
+post-installation fixup
+Moving /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/man3 to /nix/store/y6x36zfsrn000w3vn52f2273pzq42jap-perl5.32.0-PPIx-Utilities-1.001000-devdoc/share/man/man3
+Removing empty /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000
+unpacking sources
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000/lib
+unpacking source archive /nix/store/94rpbxr86hyx9cmy2kxfpqp09yb1vbd5-Perl-Tidy-20200110.tar.gz
+t/04_norm_que_manager.t .... ok
+patching script interpreter paths in /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000
+checking for references to /build/ in /nix/store/h7sn6h846yaf0rns3rr6cyfg2svv8p9h-perl5.32.0-PPIx-Utilities-1.001000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y6x36zfsrn000w3vn52f2273pzq42jap-perl5.32.0-PPIx-Utilities-1.001000-devdoc
+gzipping man pages under /nix/store/y6x36zfsrn000w3vn52f2273pzq42jap-perl5.32.0-PPIx-Utilities-1.001000-devdoc/share/man/
+source root is Perl-Tidy-20200110
+setting SOURCE_DATE_EPOCH to timestamp 1578583390 of file Perl-Tidy-20200110/META.yml
+patching sources
+configuring
+patching ./pm2pl...
+patching ./examples/perlmask.pl...
+patching ./examples/perltidyrc_dump.pl...
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y6x36zfsrn000w3vn52f2273pzq42jap-perl5.32.0-PPIx-Utilities-1.001000-devdoc
+cp lib/Dist/Zilla/Plugin/Test/Kwalitee.pm blib/lib/Dist/Zilla/Plugin/Test/Kwalitee.pm
+checking for references to /build/ in /nix/store/y6x36zfsrn000w3vn52f2273pzq42jap-perl5.32.0-PPIx-Utilities-1.001000-devdoc...
+patching ./examples/perllinetype.pl...
+patching ./examples/delete_ending_blank_lines.pl...
+patching ./examples/perlxmltok.pl...
+patching ./examples/perlcomment.pl...
+patching ./examples/perltidy_okw.pl...
+patching ./examples/bbtidy.pl...
+building '/nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv'...
+patching ./examples/ex_mp.pl...
+t/04_norm_que_worker.t ..... ok
+patching ./examples/filter_example.pl...
+patching ./examples/break_long_quotes.pl...
+patching ./examples/find_naughty.pl...
+running tests
+unpacking sources
+unpacking source archive /nix/store/5icwdxpkg6as293w5g03vvmzyj2518cz-Pod-Coverage-0.23.tar.gz
+source root is Pod-Coverage-0.23
+setting SOURCE_DATE_EPOCH to timestamp 1367414003 of file Pod-Coverage-0.23/META.yml
+patching sources
+configuring
+t/04_prio_que_manager.t .... ok
+patching ./examples/check_installed...
+patching ./examples/script-covered...
+patching ./t/05parentage.t...
+patching ./t/02simple.t...
+patching ./t/04cvgv.t...
+patching ./t/01compile.t...
+patching ./t/03import.t...
+patching ./t/09whitespace.t...
+patching ./t/08tie.t...
+patching ./bin/perltidy...
+patching ./t/06trustme.t...
+t/04_prio_que_worker.t ..... ok
+patching ./bin/pod_cover...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Perl::Tidy
+Writing MYMETA.yml and MYMETA.json
+Checking if your kit is complete...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Looks good
+Warning: prerequisite Pod::Find 0.21 not found.
+Warning: prerequisite Pod::Parser 1.13 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Coverage
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Perl/Tidy/Logger.pm blib/lib/Perl/Tidy/Logger.pm
+cp lib/Perl/Tidy.pod blib/lib/Perl/Tidy.pod
+cp lib/Perl/Tidy/Debugger.pm blib/lib/Perl/Tidy/Debugger.pm
+cp lib/Perl/Tidy/FileWriter.pm blib/lib/Perl/Tidy/FileWriter.pm
+cp lib/Perl/Tidy/LineBuffer.pm blib/lib/Perl/Tidy/LineBuffer.pm
+cp lib/Perl/Tidy/LineSource.pm blib/lib/Perl/Tidy/LineSource.pm
+cp lib/Perl/Tidy/HtmlWriter.pm blib/lib/Perl/Tidy/HtmlWriter.pm
+cp lib/Perl/Tidy/IndentationItem.pm blib/lib/Perl/Tidy/IndentationItem.pm
+cp lib/Perl/Tidy/LineSink.pm blib/lib/Perl/Tidy/LineSink.pm
+cp lib/Perl/Tidy/VerticalAligner/Alignment.pm blib/lib/Perl/Tidy/VerticalAligner/Alignment.pm
+cp lib/Perl/Tidy/DevNull.pm blib/lib/Perl/Tidy/DevNull.pm
+cp lib/Perl/Tidy/Diagnostics.pm blib/lib/Perl/Tidy/Diagnostics.pm
+cp lib/Perl/Tidy.pm blib/lib/Perl/Tidy.pm
+cp lib/Perl/Tidy/IOScalarArray.pm blib/lib/Perl/Tidy/IOScalarArray.pm
+cp lib/Perl/Tidy/Tokenizer.pm blib/lib/Perl/Tidy/Tokenizer.pm
+cp lib/Perl/Tidy/Formatter.pm blib/lib/Perl/Tidy/Formatter.pm
+cp lib/Perl/Tidy/VerticalAligner.pm blib/lib/Perl/Tidy/VerticalAligner.pm
+cp lib/Perl/Tidy/IOScalar.pm blib/lib/Perl/Tidy/IOScalar.pm
+cp lib/Perl/Tidy/VerticalAligner/Line.pm blib/lib/Perl/Tidy/VerticalAligner/Line.pm
+cp bin/perltidy blib/script/perltidy
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perltidy
+cp lib/Pod/Coverage/Overloader.pm blib/lib/Pod/Coverage/Overloader.pm
+cp lib/Pod/Coverage.pm blib/lib/Pod/Coverage.pm
+cp lib/Pod/Coverage/CountParents.pm blib/lib/Pod/Coverage/CountParents.pm
+cp lib/Pod/Coverage/ExportOnly.pm blib/lib/Pod/Coverage/ExportOnly.pm
+cp bin/pod_cover blib/script/pod_cover
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pod_cover
+Manifying 1 pod document
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01compile.t ..... 1/4
+#   Failed test 'use Pod::Coverage;'
+#   at t/01compile.t line 4.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/01compile.t line 4.
+# BEGIN failed--compilation aborted at t/01compile.t line 4.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/01compile.t line 5.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/01compile.t line 5.
+# BEGIN failed--compilation aborted at t/01compile.t line 5.
+
+#   Failed test 'use Pod::Coverage::Overloader;'
+#   at t/01compile.t line 6.
+#     Tried to use 'Pod::Coverage::Overloader'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/Overloader.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/Overloader.pm line 3.
+# Compilation failed in require at t/01compile.t line 6.
+# BEGIN failed--compilation aborted at t/01compile.t line 6.
+
+#   Failed test 'use Pod::Coverage::CountParents;'
+#   at t/01compile.t line 7.
+#     Tried to use 'Pod::Coverage::CountParents'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# Compilation failed in require at t/01compile.t line 7.
+# BEGIN failed--compilation aborted at t/01compile.t line 7.
+# Looks like you failed 4 tests of 4.
+t/01compile.t ..... Dubious, test returned 4 (wstat 1024, 0x400)
+Failed 4/4 subtests
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+t/02simple.t ...... 1/36
+#   Failed test 'use Pod::Coverage;'
+#   at t/02simple.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/02simple.t line 7.
+# BEGIN failed--compilation aborted at t/02simple.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/02simple.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/02simple.t line 8.
+# BEGIN failed--compilation aborted at t/02simple.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/02simple.t line 11.
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# Looks like your test exited with 255 just after 2.
+t/02simple.t ...... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 36/36 subtests
+t/03import.t ...... 1/3
+#   Failed test 'Simple2 works correctly in import form'
+#   at t/03import.t line 7.
+#          got: ''
+#     expected: 'Simple2 has a Pod::Coverage rating of 0.75
+# 'naked' is uncovered'
+
+#   Failed test 'Simple7 import form'
+#   at t/03import.t line 9.
+#          got: ''
+#     expected: 'Simple7 has a Pod::Coverage rating of 0
+# The following are uncovered: bar, foo'
+
+#   Failed test 'Simple7 import form, implicit package'
+#   at t/03import.t line 11.
+#          got: ''
+#     expected: 'Simple7 has a Pod::Coverage rating of 0
+# The following are uncovered: bar, foo'
+# Looks like you failed 3 tests of 3.
+t/03import.t ...... Dubious, test returned 3 (wstat 768, 0x300)
+Failed 3/3 subtests
+t/04cvgv.t ........ Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+Compilation failed in require at t/04cvgv.t line 4.
+BEGIN failed--compilation aborted at t/04cvgv.t line 4.
+# Looks like your test exited with 2 before it could output anything.
+t/04cvgv.t ........ Dubious, test returned 2 (wstat 512, 0x200)
+Failed 4/4 subtests
+t/05parentage.t ... 1/5
+#   Failed test 'use Pod::Coverage::CountParents;'
+#   at t/05parentage.t line 8.
+#     Tried to use 'Pod::Coverage::CountParents'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/CountParents.pm line 3.
+# Compilation failed in require at t/05parentage.t line 8.
+# BEGIN failed--compilation aborted at t/05parentage.t line 8.
+Can't locate object method "new" via package "Pod::Coverage::CountParents" at t/05parentage.t line 11.
+# Looks like your test exited with 255 just after 1.
+t/05parentage.t ... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 5/5 subtests
+t/06trustme.t ..... 1/10
+#   Failed test 'use Pod::Coverage;'
+#   at t/06trustme.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/06trustme.t line 7.
+# BEGIN failed--compilation aborted at t/06trustme.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/06trustme.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/06trustme.t line 8.
+# BEGIN failed--compilation aborted at t/06trustme.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/06trustme.t line 11.
+# Looks like your test exited with 255 just after 2.
+t/06trustme.t ..... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 10/10 subtests
+t/07pod.t ......... skipped: Test::Pod 1.00 required for testing POD
+t/00-compile.t .. ok
+t/05_mce_child.t ........... ok
+t/08tie.t ......... 1/4
+#   Failed test 'use Pod::Coverage;'
+#   at t/08tie.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/08tie.t line 7.
+# BEGIN failed--compilation aborted at t/08tie.t line 7.
+
+#   Failed test 'use Pod::Coverage::ExportOnly;'
+#   at t/08tie.t line 8.
+#     Tried to use 'Pod::Coverage::ExportOnly'.
+#     Error:  Attempt to reload Pod/Coverage.pm aborted.
+# Compilation failed in require at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage/ExportOnly.pm line 3.
+# Compilation failed in require at t/08tie.t line 8.
+# BEGIN failed--compilation aborted at t/08tie.t line 8.
+Can't locate object method "new" via package "Pod::Coverage" at t/08tie.t line 11.
+# Looks like your test exited with 255 just after 2.
+t/08tie.t ......... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 4/4 subtests
+t/00-compile.t ......... ok
+t/09whitespace.t .. 1/3
+#   Failed test 'use Pod::Coverage;'
+#   at t/09whitespace.t line 7.
+#     Tried to use 'Pod::Coverage'.
+#     Error:  Can't locate Pod/Find.pm in @INC (you may need to install the Pod::Find module) (@INC contains: t/lib /nix/store/d1nbps28xxmnkd1k5vv2knwgka0yzfxk-perl5.32.0-Pod-Coverage-0.23/lib/perl5/site_perl /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl/5.32.0 /nix/store/g6p0zv8307wpl258bm85gzrn5gjlqlaw-perl5.32.0-Devel-Symdump-2.18/lib/perl5/site_perl /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl/5.32.0 /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl /build/Pod-Coverage-0.23/blib/lib /build/Pod-Coverage-0.23/blib/arch /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0 .) at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# BEGIN failed--compilation aborted at /build/Pod-Coverage-0.23/blib/lib/Pod/Coverage.pm line 6.
+# Compilation failed in require at t/09whitespace.t line 7.
+# BEGIN failed--compilation aborted at t/09whitespace.t line 7.
+Can't locate object method "new" via package "Pod::Coverage" at t/09whitespace.t line 10.
+# Looks like your test exited with 255 just after 1.
+t/09whitespace.t .. Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 3/3 subtests
+
+Test Summary Report
+-------------------
+t/01compile.t   (Wstat: 1024 Tests: 4 Failed: 4)
+  Failed tests:  1-4
+  Non-zero exit status: 4
+t/02simple.t    (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 36 tests but ran 2.
+t/03import.t    (Wstat: 768 Tests: 3 Failed: 3)
+  Failed tests:  1-3
+  Non-zero exit status: 3
+t/04cvgv.t      (Wstat: 512 Tests: 0 Failed: 0)
+  Non-zero exit status: 2
+  Parse errors: Bad plan.  You planned 4 tests but ran 0.
+t/05parentage.t (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 5 tests but ran 1.
+t/06trustme.t   (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 10 tests but ran 2.
+t/08tie.t       (Wstat: 65280 Tests: 2 Failed: 2)
+  Failed tests:  1-2
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/09whitespace.t (Wstat: 65280 Tests: 1 Failed: 1)
+  Failed test:  1
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 3 tests but ran 1.
+Files=9, Tests=15,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.86 cusr  0.20 csys =  1.13 CPU)
+Result: FAIL
+Failed 8/9 test programs. 15/15 subtests failed.
+make: *** [Makefile:879: test_dynamic] Error 255
+builder for '/nix/store/yfh5fbg949kzl5rh060z1ii7q7lz3g1r-perl5.32.0-Pod-Coverage-0.23.drv' failed with exit code 2
+cannot build derivation '/nix/store/lmg00693m21xqd9l3rhz1ii208na2i7l-perl5.32.0-Pod-Coverage-TrustPod-0.100005.drv': 1 dependencies couldn't be built
+building '/nix/store/rd041n118m41n57xxgvjz7lbckjc26kg-perl5.32.0-Pod-Spell-1.20.drv'...
+building '/nix/store/hvyx3dnlwx9cynwhsjl1p5d6409qg7xa-perl5.32.0-Probe-Perl-0.03.drv'...
+building '/nix/store/f5fs5rjr484nv8k4nvwmhm1vpsyfddix-perl5.32.0-String-Format-1.18.drv'...
+building '/nix/store/xmr3ipw02d6gzs8165fbd5sasarfr95z-perl5.32.0-Test-CPAN-Meta-0.25.drv'...
+building '/nix/store/wgfh25rlvj50qihkwn9kbpszg48xs2i1-perl5.32.0-Test-CPAN-Meta-JSON-0.16.drv'...
+building '/nix/store/lmyfzi9xsfn89r66n31fni1f63hgq06s-perl5.32.0-Test-EOL-2.00.drv'...
+building '/nix/store/dpyskalnqq8628m4d0wfkfb683flglj4-perl5.32.0-Test-Mojibake-1.3.drv'...
+building '/nix/store/za94g3vrz8l1clj0zah6wzwnpk29j6mb-perl5.32.0-Test-NoTabs-2.02.drv'...
+cannot build derivation '/nix/store/4xi17x3wrlic57ra214p5wb6kl1p0n7s-perl5.32.0-Dist-Zilla-PluginBundle-TestingMania-0.25.drv': 1 dependencies couldn't be built
+error: build of '/nix/store/4xi17x3wrlic57ra214p5wb6kl1p0n7s-perl5.32.0-Dist-Zilla-PluginBundle-TestingMania-0.25.drv' failed

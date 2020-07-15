@@ -1,0 +1,67 @@
+these derivations will be built:
+  /nix/store/va1w258iyj2vyzg1h26kcfbv3f321a0f-perl5.32.0-Net-IMAP-Client-0.9505.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/0kjdb8qnins72n0m2ab6v9zl9mm9wjvd-Net-IMAP-Client-0.9505.tar.gz
+copying path '/nix/store/0kjdb8qnins72n0m2ab6v9zl9mm9wjvd-Net-IMAP-Client-0.9505.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/va1w258iyj2vyzg1h26kcfbv3f321a0f-perl5.32.0-Net-IMAP-Client-0.9505.drv'...
+unpacking sources
+unpacking source archive /nix/store/0kjdb8qnins72n0m2ab6v9zl9mm9wjvd-Net-IMAP-Client-0.9505.tar.gz
+source root is Net-IMAP-Client-0.9505
+setting SOURCE_DATE_EPOCH to timestamp 1405705014 of file Net-IMAP-Client-0.9505/META.yml
+patching sources
+configuring
+patching ./t/boilerplate.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IMAP::Client
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/IMAP/Client/MsgAddress.pm blib/lib/Net/IMAP/Client/MsgAddress.pm
+cp lib/Net/IMAP/Client/MsgSummary.pm blib/lib/Net/IMAP/Client/MsgSummary.pm
+cp lib/Net/IMAP/Client.pm blib/lib/Net/IMAP/Client.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ....... 1/1 # Testing Net::IMAP::Client 0.9505, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/boilerplate.t ... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.22 required for testing POD
+All tests successful.
+
+Test Summary Report
+-------------------
+t/boilerplate.t (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   1-3
+Files=4, Tests=4,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.29 cusr  0.12 csys =  0.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib/pkgconfig m4datadir=/nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/aclocal aclocaldir=/nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib/perl5/site_perl/5.32.0/Net/IMAP/Client.pm
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib/perl5/site_perl/5.32.0/Net/IMAP/Client/MsgAddress.pm
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib/perl5/site_perl/5.32.0/Net/IMAP/Client/MsgSummary.pm
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/man/man3/Net::IMAP::Client::MsgSummary.3
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/man/man3/Net::IMAP::Client.3
+Installing /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/man/man3/Net::IMAP::Client::MsgAddress.3
+Appending installation info to /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/man/man3 to /nix/store/syl9lwg1lgspx4ma9zl30fkdrf7gkkhq-perl5.32.0-Net-IMAP-Client-0.9505-devdoc/share/man/man3
+Removing empty /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505/lib
+patching script interpreter paths in /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505
+checking for references to /build/ in /nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505...
+shrinking RPATHs of ELF executables and libraries in /nix/store/syl9lwg1lgspx4ma9zl30fkdrf7gkkhq-perl5.32.0-Net-IMAP-Client-0.9505-devdoc
+gzipping man pages under /nix/store/syl9lwg1lgspx4ma9zl30fkdrf7gkkhq-perl5.32.0-Net-IMAP-Client-0.9505-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/syl9lwg1lgspx4ma9zl30fkdrf7gkkhq-perl5.32.0-Net-IMAP-Client-0.9505-devdoc
+checking for references to /build/ in /nix/store/syl9lwg1lgspx4ma9zl30fkdrf7gkkhq-perl5.32.0-Net-IMAP-Client-0.9505-devdoc...
+/nix/store/0sh5f44fmk8vm6g2r5jk0l3kb4a49g8y-perl5.32.0-Net-IMAP-Client-0.9505

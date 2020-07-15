@@ -1,0 +1,637 @@
+these derivations will be built:
+  /nix/store/y7n64k5rr597bpjpjc0d7qmrqglqg9z3-perl5.32.0-Net-Works-0.22.drv
+  /nix/store/ycd8mb1ysscpjgk85ba3lmkjak424a2f-libmaxminddb-1.4.2.drv
+  /nix/store/1aryvb55i9xyhcb8g32vgzilfa693xa3-perl5.32.0-MaxMind-DB-Reader-XS-1.000008.drv
+these paths will be fetched (0.90 MiB download, 0.91 MiB unpacked):
+  /nix/store/0nphamvzl1vlnr3d7xi8xhmb91i0jd7a-libmaxminddb-1.4.2.tar.gz
+  /nix/store/6jalanbqzvk6g82184zlhswfiq0xw8ic-Net-Works-0.22.tar.gz
+  /nix/store/x550h05s8scwff0wijlzidyqzk885s9q-MaxMind-DB-Reader-XS-1.000008.tar.gz
+copying path '/nix/store/x550h05s8scwff0wijlzidyqzk885s9q-MaxMind-DB-Reader-XS-1.000008.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/0nphamvzl1vlnr3d7xi8xhmb91i0jd7a-libmaxminddb-1.4.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/6jalanbqzvk6g82184zlhswfiq0xw8ic-Net-Works-0.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/y7n64k5rr597bpjpjc0d7qmrqglqg9z3-perl5.32.0-Net-Works-0.22.drv'...
+building '/nix/store/ycd8mb1ysscpjgk85ba3lmkjak424a2f-libmaxminddb-1.4.2.drv'...
+unpacking sources
+unpacking source archive /nix/store/6jalanbqzvk6g82184zlhswfiq0xw8ic-Net-Works-0.22.tar.gz
+source root is Net-Works-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1471800548 of file Net-Works-0.22/tidyall.ini
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/0nphamvzl1vlnr3d7xi8xhmb91i0jd7a-libmaxminddb-1.4.2.tar.gz
+patching ./t/00-report-prereqs.t...
+patching ./t/author-pod-syntax.t...
+source root is libmaxminddb-1.4.2
+patching ./t/author-pod-coverage.t...
+setting SOURCE_DATE_EPOCH to timestamp 1572710423 of file libmaxminddb-1.4.2/man/man3/libmaxminddb.3
+patching sources
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2
+patching ./t/author-synopsis.t...
+checking for pkg-config... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for gcc... gcc
+Checking if your kit is complete...
+Looks good
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+Generating a Unix-style Makefile
+Writing Makefile for Net::Works
+checking for suffix of executables...
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for fgrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+cp lib/Net/Works/Types.pm blib/lib/Net/Works/Types.pm
+cp lib/Net/Works/Util.pm blib/lib/Net/Works/Util.pm
+cp lib/Net/Works.pm blib/lib/Net/Works.pm
+cp lib/Net/Works/Network.pm blib/lib/Net/Works/Network.pm
+cp lib/Net/Works/Address.pm blib/lib/Net/Works/Address.pm
+cp lib/Net/Works/Role/IP.pm blib/lib/Net/Works/Role/IP.pm
+checking command to parse nm output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd
+checking how to truncate binary pipes... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/dd bs=4096 count=1
+Manifying 4 pod documents
+./configure: line 5995: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+checking how to run the C preprocessor... gcc -E
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+t/00-report-prereqs.t ..... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     B                    any     1.80
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Math::BigInt         any 1.999818
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module               Want     Have
+#     -------------------- ---- --------
+#     Carp                  any     1.50
+#     Exporter              any     5.74
+#     List::AllUtils        any     0.16
+#     Math::Int128         0.06     0.22
+#     Moo                   any 2.004000
+#     Moo::Role             any 2.004000
+#     Scalar::Util          any     1.55
+#     Socket               1.99    2.029
+#     Sub::Quote            any 2.006006
+#     integer               any     1.01
+#     namespace::autoclean 0.16     0.29
+#     overload              any     1.31
+#     strict                any     1.11
+#     warnings              any     1.47
+#
+t/00-report-prereqs.t ..... ok
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+t/Address.t ............... ok
+t/author-00-compile.t ..... skipped: these tests are for testing by the author
+t/author-eol.t ............ skipped: these tests are for testing by the author
+t/author-no-tabs.t ........ skipped: these tests are for testing by the author
+t/author-pod-coverage.t ... skipped: these tests are for testing by the author
+t/author-pod-spell.t ...... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ..... skipped: these tests are for testing by the author
+t/author-portability.t .... skipped: these tests are for testing by the author
+t/author-synopsis.t ....... skipped: these tests are for testing by the author
+t/author-test-version.t ... skipped: these tests are for testing by the author
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... none
+checking for gcc option to accept ISO C99... none needed
+checking whether compiler accepts "-fms-extensions"... yes
+checking for C/C++ restrict keyword... __restrict
+t/bad-data.t .............. ok
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+t/Network-splitting.t ..... ok
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking for stdint.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for off_t... yes
+t/Network.t ............... ok
+t/release-cpan-changes.t .. skipped: these tests are for release candidate testing
+t/release-tidyall.t ....... skipped: these tests are for release candidate testing
+All tests successful.
+Files=16, Tests=1474,  2 wallclock secs ( 0.19 usr  0.05 sys +  1.41 cusr  0.49 csys =  2.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/pkgconfig m4datadir=/nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/aclocal aclocaldir=/nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/aclocal install
+checking for size_t... yes
+Manifying 4 pod documents
+checking for ssize_t... yes
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works/Types.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works/Util.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works/Address.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works/Network.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/site_perl/5.32.0/Net/Works/Role/IP.pm
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/man3/Net::Works::Network.3
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/man3/Net::Works::Address.3
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/man3/Net::Works.3
+Installing /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/man3/Net::Works::Util.3
+checking for uint8_t... yes
+Appending installation info to /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+checking for uint32_t... yes
+post-installation fixup
+Moving /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/man3 to /nix/store/1kcxsz4ss8vlijnc0kblwbljxrpr47ny-perl5.32.0-Net-Works-0.22-devdoc/share/man/man3
+Removing empty /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22/lib
+patching script interpreter paths in /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22
+checking for references to /build/ in /nix/store/6sdh1pzrrqnhsqyfbpdqd1ci3h70hfwp-perl5.32.0-Net-Works-0.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1kcxsz4ss8vlijnc0kblwbljxrpr47ny-perl5.32.0-Net-Works-0.22-devdoc
+gzipping man pages under /nix/store/1kcxsz4ss8vlijnc0kblwbljxrpr47ny-perl5.32.0-Net-Works-0.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1kcxsz4ss8vlijnc0kblwbljxrpr47ny-perl5.32.0-Net-Works-0.22-devdoc
+checking for uint64_t... yes
+checking for references to /build/ in /nix/store/1kcxsz4ss8vlijnc0kblwbljxrpr47ny-perl5.32.0-Net-Works-0.22-devdoc...
+checking for unsigned __int128... yes
+checking for boolean... no
+checking for clock_gettime... yes
+checking for open_memstream... yes
+checking whether byte ordering is bigendian... no
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for library containing fabs... -lm
+checking for library containing fabsf... none required
+checking for library containing getaddrinfo... none required
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/libmaxminddb.pc
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating bin/Makefile
+config.status: creating t/Makefile
+config.status: creating config.h
+config.status: creating include/maxminddb_config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+make  all-recursive
+make[1]: Entering directory '/build/libmaxminddb-1.4.2'
+Making all in src
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/src'
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I../include  -I../include  -O2 -g -g  -fms-extensions -c -o maxminddb.lo maxminddb.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -O2 -g -g -fms-extensions -c maxminddb.c  -fPIC -DPIC -o .libs/maxminddb.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I../include  -I../include  -O2 -g -g  -fms-extensions -c -o data-pool.lo data-pool.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -O2 -g -g -fms-extensions -c data-pool.c  -fPIC -DPIC -o .libs/data-pool.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc -O2 -g -g  -fms-extensions -version-info 0:7:0 -export-symbols-regex '^MMDB_.*'  -o libmaxminddb.la -rpath /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib maxminddb.lo data-pool.lo  -lm
+libtool: link: nm  .libs/maxminddb.o .libs/data-pool.o   | sed -n -e 's/^.*[     ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[         ][      ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed 's/.* //' | sort | uniq > .libs/libmaxminddb.exp
+libtool: link: /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E -e "^MMDB_.*" ".libs/libmaxminddb.exp" > ".libs/libmaxminddb.expT"
+libtool: link: mv -f ".libs/libmaxminddb.expT" ".libs/libmaxminddb.exp"
+libtool: link: echo "{ global:" > .libs/libmaxminddb.ver
+libtool: link:  cat .libs/libmaxminddb.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libmaxminddb.ver
+libtool: link:  echo "local: *; };" >> .libs/libmaxminddb.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/maxminddb.o .libs/data-pool.o   -lm  -O2 -g -g   -Wl,-soname -Wl,libmaxminddb.so.0 -Wl,-version-script -Wl,.libs/libmaxminddb.ver -o .libs/libmaxminddb.so.0.0.7
+libtool: link: (cd ".libs" && rm -f "libmaxminddb.so.0" && ln -s "libmaxminddb.so.0.0.7" "libmaxminddb.so.0")
+libtool: link: (cd ".libs" && rm -f "libmaxminddb.so" && ln -s "libmaxminddb.so.0.0.7" "libmaxminddb.so")
+libtool: link: ( cd ".libs" && rm -f "libmaxminddb.la" && ln -s "../libmaxminddb.la" "libmaxminddb.la" )
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/src'
+Making all in bin
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/bin'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../include  -I../include -pthread  -O2 -g -g  -fms-extensions -c -o mmdblookup.o mmdblookup.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc -O2 -g -g  -fms-extensions ../src/libmaxminddb.la -pthread  -o mmdblookup mmdblookup.o  -lm
+libtool: link: gcc -O2 -g -g -fms-extensions -pthread -o .libs/mmdblookup mmdblookup.o  ../src/.libs/libmaxminddb.so -lm -pthread -Wl,-rpath -Wl,/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/bin'
+Making all in t
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/t'
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I.. -I../include  -I../include  -O2 -g -g  -fms-extensions -I../src -c -o maxminddb_test_helper.lo maxminddb_test_helper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -O2 -g -g -fms-extensions -I../src -c maxminddb_test_helper.c  -fPIC -DPIC -o .libs/maxminddb_test_helper.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool  --tag=CC   --mode=link gcc -O2 -g -g  -fms-extensions -I../src ../src/libmaxminddb.la  -o libmmdbtest.la  maxminddb_test_helper.lo  -lm
+libtool: link: ar cru .libs/libmmdbtest.a .libs/maxminddb_test_helper.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libmmdbtest.a
+libtool: link: ( cd ".libs" && rm -f "libmmdbtest.la" && ln -s "../libmmdbtest.la" "libmmdbtest.la" )
+cd libtap && make  all
+make[3]: Entering directory '/build/libmaxminddb-1.4.2/t/libtap'
+gcc -Wall -I. -fPIC   -c tap.c  -o tap.o
+ar rcs libtap.a tap.o
+gcc -shared   tap.o  -o libtap.so
+generating tap.pc
+make[3]: Leaving directory '/build/libmaxminddb-1.4.2/t/libtap'
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/t'
+make[2]: Entering directory '/build/libmaxminddb-1.4.2'
+if [ ! -f man/man1/mmdblookup.1 ]; then mkdir -p man/man1 && touch man/man1/mmdblookup.1; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2'
+make[1]: Leaving directory '/build/libmaxminddb-1.4.2'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Making install in src
+make[1]: Entering directory '/build/libmaxminddb-1.4.2/src'
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/src'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib'
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c   libmaxminddb.la '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libmaxminddb.so.0.0.7 /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib/libmaxminddb.so.0.0.7
+libtool: install: (cd /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib && { ln -s -f libmaxminddb.so.0.0.7 libmaxminddb.so.0 || { rm -f libmaxminddb.so.0 && ln -s libmaxminddb.so.0.0.7 libmaxminddb.so.0; }; })
+libtool: install: (cd /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib && { ln -s -f libmaxminddb.so.0.0.7 libmaxminddb.so || { rm -f libmaxminddb.so && ln -s libmaxminddb.so.0.0.7 libmaxminddb.so; }; })
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libmaxminddb.lai /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib/libmaxminddb.la
+libtool: finish: PATH="/nix/store/k2grwi9fkrr354bncq0lbli4hr3g76l5-patchelf-0.11/bin:/nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin:/nix/store/0hjkz01g2znh8ii6m40iz7fwd0lzb2g6-gcc-9.3.0/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/ll9qlidp5fy49slgjcrl350gnrd4ll5i-binutils-wrapper-2.31.1/bin:/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin:/nix/store/pqj3p3dg099q1d7xrb56lj14hh9zh3mr-glibc-2.31-bin/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin:/nix/store/1fdiqaciax39fi3vklfc1zcjjgk6s48a-findutils-4.7.0/bin:/nix/store/x3q6nra1dx72rsc73ynm8xqyf1h85ara-diffutils-3.7/bin:/nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin:/nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin:/nix/store/2km8wjl2rsw72lmlcdlmn2ljbmg4cvia-gawk-5.1.0/bin:/nix/store/b17n9kqqxy8a9qc3v02a0czk0fhzgijm-gnutar-1.32/bin:/nix/store/0hdfcwlhy9xhfy547fm27fn9faz7klyq-gzip-1.10/bin:/nix/store/fc9nzyc3wsx6w8h5iir254x9z0j630ly-bzip2-1.0.6.0.1-bin/bin:/nix/store/h8n3hwz92jvbdk3jkhy576h9ykj33aal-gnumake-4.3/bin:/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin:/nix/store/5rr8xag5jvs6lzfgsyk5k5ignh282s8b-patch-2.7.6/bin:/nix/store/piiwh7bkhvb7187mgabdi7hh45z7f45l-xz-5.2.5-bin/bin:/sbin" ldconfig -n /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 ../include/maxminddb.h '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib/pkgconfig'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 libmaxminddb.pc '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib/pkgconfig'
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/src'
+make[1]: Leaving directory '/build/libmaxminddb-1.4.2/src'
+Making install in bin
+make[1]: Entering directory '/build/libmaxminddb-1.4.2/bin'
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/bin'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/bin'
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool   --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c mmdblookup '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/bin'
+libtool: install: /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/mmdblookup /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/bin/mmdblookup
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/bin'
+make[1]: Leaving directory '/build/libmaxminddb-1.4.2/bin'
+Making install in t
+make[1]: Entering directory '/build/libmaxminddb-1.4.2/t'
+cd libtap && make  all
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/t/libtap'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/t/libtap'
+make[2]: Entering directory '/build/libmaxminddb-1.4.2/t'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2/t'
+make[1]: Leaving directory '/build/libmaxminddb-1.4.2/t'
+make[1]: Entering directory '/build/libmaxminddb-1.4.2'
+if [ ! -f man/man1/mmdblookup.1 ]; then mkdir -p man/man1 && touch man/man1/mmdblookup.1; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+make[2]: Entering directory '/build/libmaxminddb-1.4.2'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 include/maxminddb.h '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+if [ ! -f man/man1/mmdblookup.1 ]; then mkdir -p man/man1 && touch man/man1/mmdblookup.1; fi
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/share/man/man1'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 man/man1/mmdblookup.1 '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/share/man/man1'
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+if [ ! -f man/man3/libmaxminddb.3 ]; then mkdir -p man/man3 && touch man/man3/libmaxminddb.3; fi
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/share/man/man3'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 man/man3/MMDB_aget_value.3 man/man3/MMDB_close.3 man/man3/MMDB_dump_entry_data_list.3 man/man3/MMDB_free_entry_data_list.3 man/man3/MMDB_get_entry_data_list.3 man/man3/MMDB_get_metadata_as_entry_data_list.3 man/man3/MMDB_get_value.3 man/man3/MMDB_lib_version.3 man/man3/MMDB_lookup_sockaddr.3 man/man3/MMDB_lookup_string.3 man/man3/MMDB_open.3 man/man3/MMDB_read_node.3 man/man3/MMDB_strerror.3 man/man3/MMDB_vget_value.3 man/man3/defined.3 man/man3/libmaxminddb.3 '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/share/man/man3'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/mkdir -p '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 include/maxminddb_config.h '/nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/include'
+make[2]: Leaving directory '/build/libmaxminddb-1.4.2'
+make[1]: Leaving directory '/build/libmaxminddb-1.4.2'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2
+shrinking /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib/libmaxminddb.so.0.0.7
+shrinking /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/bin/mmdblookup
+gzipping man pages under /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/lib  /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2/bin
+patching script interpreter paths in /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2
+checking for references to /build/ in /nix/store/hcnawisn8czsmhb2vb8nl6d8c1jd3m83-libmaxminddb-1.4.2...
+building '/nix/store/1aryvb55i9xyhcb8g32vgzilfa693xa3-perl5.32.0-MaxMind-DB-Reader-XS-1.000008.drv'...
+unpacking sources
+unpacking source archive /nix/store/x550h05s8scwff0wijlzidyqzk885s9q-MaxMind-DB-Reader-XS-1.000008.tar.gz
+source root is MaxMind-DB-Reader-XS-1.000008
+setting SOURCE_DATE_EPOCH to timestamp 1560854836 of file MaxMind-DB-Reader-XS-1.000008/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./maxmind-db/test-data/write-test-data.pl...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./tools/bench.pl...
+patching ./tools/cmp.pl...
+patching ./dev-bin/update-copied-tests...
+patching ./dev-bin/uncrustify-all.sh...
+no configure script, doing nothing
+building
+Checking for MMDB_lookup_string in -lmaxminddb... Checking for cc... gcc
+yes
+Checking for maxminddb_config.h... yes
+Checking for MMDB_search_node_s.right_record_type... yes
+Checking for unsigned __int128... yes
+Checking for compute result of (MMDB_UINT128_IS_BYTE_ARRAY)... no
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'MaxMind-DB-Reader-XS' version '1.000008'
+Building MaxMind-DB-Reader-XS
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -std=c99 -fms-extensions -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/perl_math_int128.o c/perl_math_int128.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -std=c99 -fms-extensions -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o c/perl_math_int64.o c/perl_math_int64.c
+gcc -Ic -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.000008" -DXS_VERSION="1.000008" -fPIC -std=c99 -fms-extensions -Wall -g -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/MaxMind/DB/Reader/XS.o lib/MaxMind/DB/Reader/XS.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/MaxMind/DB/Reader/XS/XS.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/MaxMind/DB/Reader/XS/XS.so lib/MaxMind/DB/Reader/XS.o c/perl_math_int128.o c/perl_math_int64.o -lmaxminddb
+running tests
+t/00-report-prereqs.t ...................... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module        Want   Have
+#     ------------- ---- ------
+#     Module::Build 0.28 0.4231
+#
+# === Build Requires ===
+#
+#     Module             Want     Have
+#     ------------------ ---- --------
+#     ExtUtils::CBuilder  any 0.280234
+#     Module::Build      0.28   0.4231
+#
+# === Test Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     ExtUtils::MakeMaker              any     7.44
+#     File::Spec                       any     3.78
+#     MaxMind::DB::Reader              any 1.000014
+#     Module::Implementation           any     0.09
+#     Net::Works::Network             0.21     0.22
+#     Path::Class                     0.27     0.37
+#     Test::Fatal                      any    0.014
+#     Test::MaxMind::DB::Common::Util  any 0.040001
+#     Test::More                      0.96 1.302175
+#     Test::Number::Delta              any     1.06
+#     Test::Requires                   any     0.11
+#     autodie                          any     2.32
+#     lib                              any     0.65
+#     utf8                             any     1.22
+#     version                          any   0.9924
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                                     Want     Have
+#     -------------------------------------- -------- --------
+#     Math::Int128                                any     0.22
+#     Math::Int64                                 any     0.54
+#     MaxMind::DB::Metadata                  0.040001 0.040001
+#     MaxMind::DB::Reader::Role::HasMetadata      any 1.000014
+#     MaxMind::DB::Types                          any 0.040001
+#     Moo                                         any 2.004000
+#     XSLoader                                    any     0.30
+#     namespace::autoclean                        any     0.29
+#     strict                                      any     1.11
+#     warnings                                    any     1.47
+#
+t/00-report-prereqs.t ...................... ok
+t/MaxMind/DB/Reader-broken-databases.t ..... ok
+t/MaxMind/DB/Reader-decoder.t .............. ok
+t/MaxMind/DB/Reader-no-ipv4-search-tree.t .. ok
+t/MaxMind/DB/Reader.t ...................... 1/? Use of uninitialized value in subroutine entry at /build/MaxMind-DB-Reader-XS-1.000008/blib/lib/MaxMind/DB/Reader/XS.pm line 56.
+t/MaxMind/DB/Reader.t ...................... ok
+t/MaxMind/DB/Reader/NoMoose.t .............. ok
+t/libmaxminddb-version.t ................... 1/? # libmaxminddb version is 1.4.2
+t/libmaxminddb-version.t ................... ok
+t/xs-only.t ................................ ok
+All tests successful.
+Files=8, Tests=359,  4 wallclock secs ( 0.08 usr  0.03 sys +  2.01 cusr  1.38 csys =  3.50 CPU)
+Result: PASS
+installing
+Building MaxMind-DB-Reader-XS
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Reader/XS/XS.bs
+Installing /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Reader/XS/XS.so
+Installing /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/MaxMind/DB/Reader/XS.pm
+Installing /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/share/man/man3/MaxMind::DB::Reader::XS.3
+post-installation fixup
+Moving /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/share/man/man3 to /nix/store/jb663l36rykms8wvrq9z6wkhd00bvy7g-perl5.32.0-MaxMind-DB-Reader-XS-1.000008-devdoc/share/man/man3
+Removing empty /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008
+shrinking /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/MaxMind/DB/Reader/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008/lib
+patching script interpreter paths in /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008
+checking for references to /build/ in /nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008...
+shrinking RPATHs of ELF executables and libraries in /nix/store/jb663l36rykms8wvrq9z6wkhd00bvy7g-perl5.32.0-MaxMind-DB-Reader-XS-1.000008-devdoc
+gzipping man pages under /nix/store/jb663l36rykms8wvrq9z6wkhd00bvy7g-perl5.32.0-MaxMind-DB-Reader-XS-1.000008-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/jb663l36rykms8wvrq9z6wkhd00bvy7g-perl5.32.0-MaxMind-DB-Reader-XS-1.000008-devdoc
+checking for references to /build/ in /nix/store/jb663l36rykms8wvrq9z6wkhd00bvy7g-perl5.32.0-MaxMind-DB-Reader-XS-1.000008-devdoc...
+/nix/store/51mvg95j472yg6z4mg5z4j10fss74b3m-perl5.32.0-MaxMind-DB-Reader-XS-1.000008

@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/yck73ygvk0i0grkl90gx32avc8scqvbj-perl5.32.0-MooseX-Clone-0.06.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/axwq3k5dm4jrswrc4qy0hnad28ak4lrs-MooseX-Clone-0.06.tar.gz
+copying path '/nix/store/axwq3k5dm4jrswrc4qy0hnad28ak4lrs-MooseX-Clone-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yck73ygvk0i0grkl90gx32avc8scqvbj-perl5.32.0-MooseX-Clone-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/axwq3k5dm4jrswrc4qy0hnad28ak4lrs-MooseX-Clone-0.06.tar.gz
+source root is MooseX-Clone-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1432420665 of file MooseX-Clone-0.06/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Clone
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Clone' version '0.06'
+cp lib/MooseX/Clone/Meta/Attribute/Trait/Clone.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/Clone.pm
+cp lib/MooseX/Clone.pm blib/lib/MooseX/Clone.pm
+cp lib/MooseX/Clone/Meta/Attribute/Trait/NoClone.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/NoClone.pm
+cp lib/MooseX/Clone/Meta/Attribute/Trait/StorableClone.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/StorableClone.pm
+cp lib/MooseX/Clone/Meta/Attribute/Trait/Clone/Base.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/Clone/Base.pm
+cp lib/MooseX/Clone/Meta/Attribute/Trait/Copy.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/Copy.pm
+cp lib/MooseX/Clone/Meta/Attribute/Trait/Clone/Std.pm blib/lib/MooseX/Clone/Meta/Attribute/Trait/Clone/Std.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.039 0.039
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Moose                any   2.2012
+#     Scalar::Util         any     1.55
+#     Test::More          0.88 1.302175
+#     strict               any     1.11
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                        Want   Have
+#     ----------------------------- ---- ------
+#     Carp                           any   1.50
+#     Data::Visitor                 0.24   0.30
+#     Data::Visitor::Callback        any   0.30
+#     Hash::Util::FieldHash::Compat  any   0.11
+#     Moose::Role                    any 2.2012
+#     Storable                       any   3.21
+#     namespace::autoclean           any   0.29
+#
+t/00-report-prereqs.t .. ok
+t/01_basic.t ........... ok
+t/02_auto_deref.t ...... ok
+All tests successful.
+Files=3, Tests=34,  1 wallclock secs ( 0.04 usr  0.03 sys +  0.87 cusr  0.42 csys =  1.36 CPU)
+Result: PASS
+installing
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/StorableClone.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/NoClone.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/Copy.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/Clone.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/Clone/Std.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib/perl5/site_perl/5.32.0/MooseX/Clone/Meta/Attribute/Trait/Clone/Base.pm
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::Clone::Std.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::Copy.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::NoClone.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::Clone.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::StorableClone.3
+Installing /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3/MooseX::Clone::Meta::Attribute::Trait::Clone::Base.3
+post-installation fixup
+Moving /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/man3 to /nix/store/zqs0k05jgp5mjl1qyx9hang8g7acczvm-perl5.32.0-MooseX-Clone-0.06-devdoc/share/man/man3
+Removing empty /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06/lib
+patching script interpreter paths in /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06
+checking for references to /build/ in /nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zqs0k05jgp5mjl1qyx9hang8g7acczvm-perl5.32.0-MooseX-Clone-0.06-devdoc
+gzipping man pages under /nix/store/zqs0k05jgp5mjl1qyx9hang8g7acczvm-perl5.32.0-MooseX-Clone-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zqs0k05jgp5mjl1qyx9hang8g7acczvm-perl5.32.0-MooseX-Clone-0.06-devdoc
+checking for references to /build/ in /nix/store/zqs0k05jgp5mjl1qyx9hang8g7acczvm-perl5.32.0-MooseX-Clone-0.06-devdoc...
+/nix/store/f6nmmswq150pm98fl5szrygq76214yjy-perl5.32.0-MooseX-Clone-0.06

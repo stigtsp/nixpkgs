@@ -1,0 +1,308 @@
+these derivations will be built:
+  /nix/store/q56v04arr9b1zw4y1j32j4yzhdn2hgjg-perl5.32.0-Text-BibTeX-0.88.drv
+these paths will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/hgfv72lpd2siibka01fhmgkhnhwi5as1-Text-BibTeX-0.88.tar.gz
+copying path '/nix/store/hgfv72lpd2siibka01fhmgkhnhwi5as1-Text-BibTeX-0.88.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q56v04arr9b1zw4y1j32j4yzhdn2hgjg-perl5.32.0-Text-BibTeX-0.88.drv'...
+unpacking sources
+unpacking source archive /nix/store/hgfv72lpd2siibka01fhmgkhnhwi5as1-Text-BibTeX-0.88.tar.gz
+source root is Text-BibTeX-0.88
+setting SOURCE_DATE_EPOCH to timestamp 1556550161 of file Text-BibTeX-0.88/xscode/btxs_support.h
+patching sources
+configuring
+patching ./scripts/btcheck...
+patching ./scripts/btsort...
+patching ./scripts/btformat...
+patching ./examples/append_entries...
+patching ./t/00_system_info.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Text-BibTeX' version '0.88'
+Building Text-BibTeX
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/jh3Kne8F5g/library.o /build/jh3Kne8F5g/library.c
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/jh3Kne8F5g/test.o /build/jh3Kne8F5g/test.c
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o /build/jh3Kne8F5g/libfoo.so /build/jh3Kne8F5g/library.o
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o /build/jh3Kne8F5g/foo /build/jh3Kne8F5g/test.o -L/build/jh3Kne8F5g -lfoo
+Checking for alloca.h... Checking for cc... gcc
+yes
+Checking for vsnprintf... yes
+Checking for strlcat... no
+Creating new 'btparse/src/bt_config.h' from 'btparse/src/bt_config.h.in'.
+
+** Creating Manpages
+
+** Compiling C files
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/args.o btparse/progs/args.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/biblex.o btparse/progs/biblex.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/bibparse.o btparse/progs/bibparse.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/dumpnames.o btparse/progs/dumpnames.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/getopt.o btparse/progs/getopt.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/progs/getopt1.o btparse/progs/getopt1.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/bibtex.o btparse/src/bibtex.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/bibtex_ast.o btparse/src/bibtex_ast.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/err.o btparse/src/err.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/error.o btparse/src/error.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/file_header.o btparse/src/file_header.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/format_name.o btparse/src/format_name.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/function_header.o btparse/src/function_header.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/init.o btparse/src/init.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/input.o btparse/src/input.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/lex_auxiliary.o btparse/src/lex_auxiliary.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/line_offsets.o btparse/src/line_offsets.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/macros.o btparse/src/macros.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/modify.o btparse/src/modify.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/names.o btparse/src/names.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/parse_auxiliary.o btparse/src/parse_auxiliary.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/postprocess.o btparse/src/postprocess.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/scan.o btparse/src/scan.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/string_util.o btparse/src/string_util.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/sym.o btparse/src/sym.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/tex_tree.o btparse/src/tex_tree.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/traversal.o btparse/src/traversal.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/src/util.o btparse/src/util.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/case_test.o btparse/tests/case_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/macro_test.o btparse/tests/macro_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/name_test.o btparse/tests/name_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/namebug.o btparse/tests/namebug.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/postprocess_test.o btparse/tests/postprocess_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/purify_test.o btparse/tests/purify_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/read_test.o btparse/tests/read_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/simple_test.o btparse/tests/simple_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/testlib.o btparse/tests/testlib.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o btparse/tests/tex_test.o btparse/tests/tex_test.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -D_FORTIFY_SOURCE=1 -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o xscode/btxs_support.o xscode/btxs_support.c
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+
+** Creating libbtparse.so
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o btparse/src/libbtparse.so btparse/src/init.o btparse/src/input.o btparse/src/bibtex.o btparse/src/err.o btparse/src/scan.o btparse/src/error.o btparse/src/lex_auxiliary.o btparse/src/parse_auxiliary.o btparse/src/bibtex_ast.o btparse/src/sym.o btparse/src/util.o btparse/src/postprocess.o btparse/src/macros.o btparse/src/traversal.o btparse/src/modify.o btparse/src/names.o btparse/src/tex_tree.o btparse/src/string_util.o btparse/src/format_name.o -Wl,-soname,libbtparse.so
+
+** Creating binaries (biblex, bibparse, dumpnames)
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/progs/biblex btparse/progs/biblex.o -Lbtparse/src -Wl,-R/nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64 -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/progs/bibparse btparse/progs/bibparse.o btparse/progs/args.o btparse/progs/getopt.o btparse/progs/getopt1.o -Lbtparse/src -Wl,-R/nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64 -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/progs/dumpnames btparse/progs/dumpnames.o -Lbtparse/src -Wl,-R/nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64 -lbtparse
+
+** Creating test binaries
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/simple_test btparse/tests/simple_test.o btparse/tests/testlib.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/read_test btparse/tests/read_test.o btparse/tests/testlib.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/postprocess_test btparse/tests/postprocess_test.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/tex_test btparse/tests/tex_test.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/macro_test btparse/tests/macro_test.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/name_test btparse/tests/name_test.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/namebug btparse/tests/namebug.o -Lbtparse/src -lbtparse
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o btparse/tests/purify_test btparse/tests/purify_test.o -Lbtparse/src -lbtparse
+
+** Preparing XS code
+gcc -Ibtparse/src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o xscode/BibTeX.o xscode/BibTeX.c
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Text/BibTeX/BibTeX.so xscode/BibTeX.o xscode/btxs_support.o -Lbtparse/src -lbtparse
+running tests
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/x2zWHp7bVM/library.o /build/x2zWHp7bVM/library.c
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/x2zWHp7bVM/test.o /build/x2zWHp7bVM/test.c
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o /build/x2zWHp7bVM/libfoo.so /build/x2zWHp7bVM/library.o
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o /build/x2zWHp7bVM/foo /build/x2zWHp7bVM/test.o -L/build/x2zWHp7bVM -lfoo
+Checking for alloca.h... Checking for cc... gcc
+yes
+Checking for vsnprintf... yes
+Checking for strlcat... no
+Creating new 'btparse/src/bt_config.h' from 'btparse/src/bt_config.h.in'.
+
+** Creating Manpages
+
+** Compiling C files
+
+** Creating libbtparse.so
+
+** Creating binaries (biblex, bibparse, dumpnames)
+
+** Creating test binaries
+
+** Preparing XS code
+t/00_system_info.t .. # #define HAVE_ALLOCA_H 1
+# #define HAVE_VSNPRINTF 1
+# #define PACKAGE "libbtparse"
+# #define PACKAGE_NAME "libbtparse"
+# #define PACKAGE_STRING "libbtparse"
+# #define PACKAGE_VERSION "libbtparse 0.88"
+# #define VERSION "0.88"
+t/00_system_info.t .. ok
+t/bib.t ............. ok
+t/from_file.t ....... ok
+t/macro.t ........... ok
+t/modify.t .......... ok
+t/nameformat.t ...... ok
+t/namelist.t ........ ok
+t/names.t ........... ok
+t/output.t .......... ok
+t/parse.t ........... ok
+t/parse_f.t ......... ok
+t/parse_s.t ......... ok
+t/purify.t .......... ok
+t/unlimited.t ....... ok
+All tests successful.
+Files=14, Tests=545,  2 wallclock secs ( 0.07 usr  0.03 sys +  1.21 cusr  0.37 csys =  1.68 CPU)
+Result: PASS
+installing
+Building Text-BibTeX
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/6sFOd4WLA3/library.o /build/6sFOd4WLA3/library.c
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o /build/6sFOd4WLA3/test.o /build/6sFOd4WLA3/test.c
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o /build/6sFOd4WLA3/libfoo.so /build/6sFOd4WLA3/library.o
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o /build/6sFOd4WLA3/foo /build/6sFOd4WLA3/test.o -L/build/6sFOd4WLA3 -lfoo
+Checking for alloca.h... Checking for cc... gcc
+yes
+Checking for vsnprintf... yes
+Checking for strlcat... no
+Creating new 'btparse/src/bt_config.h' from 'btparse/src/bt_config.h.in'.
+
+** Creating Manpages
+
+** Compiling C files
+
+** Creating libbtparse.so
+
+** Creating binaries (biblex, bibparse, dumpnames)
+
+** Creating test binaries
+
+** Preparing XS code
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/BibTeX/BibTeX.bs
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/BibTeX/BibTeX.so
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/dumpnames
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/bibparse
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/biblex
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/btool_faq.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_postprocess.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_input.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_macros.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_language.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_misc.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_post_processing.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_format_names.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_split_names.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/bt_traversal.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man1/btparse.1
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/NameFormat.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/BibSort.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/Name.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/Entry.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/File.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/Bib.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/Structure.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/Value.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/BibTeX/BibFormat.pm
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::Name.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::Structure.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::BibSort.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::File.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::Bib.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::Entry.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::BibFormat.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::NameFormat.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3/Text::BibTeX::Value.3
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/include/btparse.h
+Installing /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64/libbtparse.so
+Use of uninitialized value $ENV{"USER"} in string eq at inc/MyBuilder.pm line 55.
+
+** WARNING **
+It seems you are installing in a non standard path.
+You might need to add /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64 to your library search path.
+post-installation fixup
+Moving /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/man3 to /nix/store/30v11rzja0wg1c6hcbn53fphfz6nn07j-perl5.32.0-Text-BibTeX-0.88-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88
+shrinking /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64/libbtparse.so
+shrinking /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/BibTeX/BibTeX.so
+shrinking /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/dumpnames
+shrinking /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/bibparse
+shrinking /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin/biblex
+gzipping man pages under /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib  /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64  /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/bin
+patching script interpreter paths in /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88
+checking for references to /build/ in /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88...
+moving /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib64/* to /nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88/lib
+shrinking RPATHs of ELF executables and libraries in /nix/store/30v11rzja0wg1c6hcbn53fphfz6nn07j-perl5.32.0-Text-BibTeX-0.88-devdoc
+gzipping man pages under /nix/store/30v11rzja0wg1c6hcbn53fphfz6nn07j-perl5.32.0-Text-BibTeX-0.88-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/30v11rzja0wg1c6hcbn53fphfz6nn07j-perl5.32.0-Text-BibTeX-0.88-devdoc
+checking for references to /build/ in /nix/store/30v11rzja0wg1c6hcbn53fphfz6nn07j-perl5.32.0-Text-BibTeX-0.88-devdoc...
+/nix/store/zvg0xb2gdh240v51phf4jjpr1r7w7n7v-perl5.32.0-Text-BibTeX-0.88

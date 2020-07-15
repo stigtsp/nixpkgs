@@ -1,0 +1,115 @@
+these derivations will be built:
+  /nix/store/rs4m010shhin92gjq97d5qgz8mshlfpi-perl5.32.0-Unicode-Stringprep-1.105.drv
+  /nix/store/5b121mi0kg5pkssb0mk54lxjzmjshfyn-perl5.32.0-Authen-SASL-SASLprep-1.100.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/36zjd9ahz61rvxh51n3l1rac7i2hchbx-Authen-SASL-SASLprep-1.100.tar.gz
+  /nix/store/x50ngdwzl72r08ggz45zdmg0y9w0blhq-Unicode-Stringprep-1.105.tar.gz
+copying path '/nix/store/36zjd9ahz61rvxh51n3l1rac7i2hchbx-Authen-SASL-SASLprep-1.100.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/x50ngdwzl72r08ggz45zdmg0y9w0blhq-Unicode-Stringprep-1.105.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rs4m010shhin92gjq97d5qgz8mshlfpi-perl5.32.0-Unicode-Stringprep-1.105.drv'...
+unpacking sources
+unpacking source archive /nix/store/x50ngdwzl72r08ggz45zdmg0y9w0blhq-Unicode-Stringprep-1.105.tar.gz
+source root is Unicode-Stringprep-1.105
+setting SOURCE_DATE_EPOCH to timestamp 1409768960 of file Unicode-Stringprep-1.105/SIGNATURE
+patching sources
+configuring
+patching ./Build.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Unicode::Stringprep
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Unicode-Stringprep' version '1.105'
+Building Unicode-Stringprep
+running tests
+t/00_use.t .......................... ok
+t/01_references.t ................... ok
+t/10_pod_check.t .................... skipped: Test::Pod 1.00 required for testing POD
+t/11_pod_coverage.t ................. skipped: Test::Pod::Coverage required for testing POD coverage
+t/30_mappings.t ..................... ok
+t/31_prohibited_characters.t ........ ok
+t/31_prohibited_characters_extra.t .. ok
+t/32_nfkc_3_2.t ..................... ok
+t/99_perl-5.11.3.t .................. ok
+t/nameprep.t ........................ ok
+t/nameprep_bytes.t .................. ok
+t/nameprep_stored.t ................. ok
+t/saslprep.t ........................ ok
+t/saslprep_bytes.t .................. ok
+All tests successful.
+Files=14, Tests=188,  1 wallclock secs ( 0.06 usr  0.01 sys +  0.90 cusr  0.21 csys =  1.18 CPU)
+Result: PASS
+installing
+Building Unicode-Stringprep
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep/Unassigned.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep/Mapping.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep/Prohibited.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep/BiDi.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib/perl5/site_perl/5.32.0/Unicode/Stringprep/_Common.pm
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep::Unassigned.3
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep::Mapping.3
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep::BiDi.3
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep::_Common.3
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep::Prohibited.3
+Installing /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3/Unicode::Stringprep.3
+post-installation fixup
+Moving /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/man3 to /nix/store/8y0i7fiaijnrhm5a2r7y2d0hs4grrp7r-perl5.32.0-Unicode-Stringprep-1.105-devdoc/share/man/man3
+Removing empty /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105/lib
+patching script interpreter paths in /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105
+checking for references to /build/ in /nix/store/hdimqay87kr3mz95zybb2x94ggrrdcgm-perl5.32.0-Unicode-Stringprep-1.105...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8y0i7fiaijnrhm5a2r7y2d0hs4grrp7r-perl5.32.0-Unicode-Stringprep-1.105-devdoc
+gzipping man pages under /nix/store/8y0i7fiaijnrhm5a2r7y2d0hs4grrp7r-perl5.32.0-Unicode-Stringprep-1.105-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8y0i7fiaijnrhm5a2r7y2d0hs4grrp7r-perl5.32.0-Unicode-Stringprep-1.105-devdoc
+checking for references to /build/ in /nix/store/8y0i7fiaijnrhm5a2r7y2d0hs4grrp7r-perl5.32.0-Unicode-Stringprep-1.105-devdoc...
+building '/nix/store/5b121mi0kg5pkssb0mk54lxjzmjshfyn-perl5.32.0-Authen-SASL-SASLprep-1.100.drv'...
+unpacking sources
+unpacking source archive /nix/store/36zjd9ahz61rvxh51n3l1rac7i2hchbx-Authen-SASL-SASLprep-1.100.tar.gz
+source root is Authen-SASL-SASLprep-1.100
+setting SOURCE_DATE_EPOCH to timestamp 1474822740 of file Authen-SASL-SASLprep-1.100/SIGNATURE
+patching sources
+configuring
+patching ./Build.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::SASL::SASLprep
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Authen-SASL-SASLprep' version '1.100'
+Building Authen-SASL-SASLprep
+running tests
+t/00use.t ........ ok
+t/10pod.t ........ skipped: Test::Pod 1.00 required for testing POD
+t/11pod_cover.t .. skipped: Test::Pod::Coverage required for testing POD coverage
+t/saslprep.t ..... ok
+All tests successful.
+Files=4, Tests=63,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.24 cusr  0.07 csys =  0.35 CPU)
+Result: PASS
+installing
+Building Authen-SASL-SASLprep
+Installing /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100/lib/perl5/site_perl/5.32.0/Authen/SASL/SASLprep.pm
+Installing /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100/share/man/man3/Authen::SASL::SASLprep.3
+post-installation fixup
+Moving /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100/share/man/man3 to /nix/store/fmp26395a6v13d4a2h12y8rdamn62hnb-perl5.32.0-Authen-SASL-SASLprep-1.100-devdoc/share/man/man3
+Removing empty /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100/lib
+patching script interpreter paths in /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100
+checking for references to /build/ in /nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fmp26395a6v13d4a2h12y8rdamn62hnb-perl5.32.0-Authen-SASL-SASLprep-1.100-devdoc
+gzipping man pages under /nix/store/fmp26395a6v13d4a2h12y8rdamn62hnb-perl5.32.0-Authen-SASL-SASLprep-1.100-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fmp26395a6v13d4a2h12y8rdamn62hnb-perl5.32.0-Authen-SASL-SASLprep-1.100-devdoc
+checking for references to /build/ in /nix/store/fmp26395a6v13d4a2h12y8rdamn62hnb-perl5.32.0-Authen-SASL-SASLprep-1.100-devdoc...
+/nix/store/8c5d8rkpr9hbcg57ypnzmkny2y7lpv64-perl5.32.0-Authen-SASL-SASLprep-1.100

@@ -1,0 +1,63 @@
+these derivations will be built:
+  /nix/store/q3gv34hpglfyvzrwb6wqv9ghk4i5hc08-perl5.32.0-Devel-Refcount-0.10.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/266zh73a706cz5v5prjnr6vqy6g8i1h4-Devel-Refcount-0.10.tar.gz
+copying path '/nix/store/266zh73a706cz5v5prjnr6vqy6g8i1h4-Devel-Refcount-0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q3gv34hpglfyvzrwb6wqv9ghk4i5hc08-perl5.32.0-Devel-Refcount-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/266zh73a706cz5v5prjnr6vqy6g8i1h4-Devel-Refcount-0.10.tar.gz
+source root is Devel-Refcount-0.10
+setting SOURCE_DATE_EPOCH to timestamp 1360508863 of file Devel-Refcount-0.10/t/99pod.t
+patching sources
+configuring
+patching ./t/05assert.t...
+patching ./t/01refs.t...
+patching ./t/03fail.t...
+patching ./t/04pp.t...
+patching ./t/99pod.t...
+patching ./t/02objects.t...
+patching ./t/00use.t...
+# running Build.PL --prefix /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Devel-Refcount' version '0.10'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Devel-Refcount' version '0.10'
+Building Devel-Refcount
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.10" -DXS_VERSION="0.10" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Devel/Refcount.o lib/Devel/Refcount.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Devel/Refcount/Refcount.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Devel/Refcount/Refcount.so lib/Devel/Refcount.o
+running tests
+t/00use.t ...... ok
+t/01refs.t ..... ok
+t/02objects.t .. ok
+t/03fail.t ..... ok
+t/04pp.t ....... ok
+t/05assert.t ... ok
+t/99pod.t ...... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=7, Tests=43,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.39 cusr  0.15 csys =  0.57 CPU)
+Result: PASS
+installing
+Building Devel-Refcount
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/Refcount/Refcount.so
+Installing /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/Refcount/Refcount.bs
+Installing /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/Refcount.pm
+Installing /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/share/man/man3/Devel::Refcount.3
+post-installation fixup
+Moving /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/share/man/man3 to /nix/store/il8526rxykycp21allym9m94kw4axixw-perl5.32.0-Devel-Refcount-0.10-devdoc/share/man/man3
+Removing empty /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10
+shrinking /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/Refcount/Refcount.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10/lib
+patching script interpreter paths in /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10
+checking for references to /build/ in /nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/il8526rxykycp21allym9m94kw4axixw-perl5.32.0-Devel-Refcount-0.10-devdoc
+gzipping man pages under /nix/store/il8526rxykycp21allym9m94kw4axixw-perl5.32.0-Devel-Refcount-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/il8526rxykycp21allym9m94kw4axixw-perl5.32.0-Devel-Refcount-0.10-devdoc
+checking for references to /build/ in /nix/store/il8526rxykycp21allym9m94kw4axixw-perl5.32.0-Devel-Refcount-0.10-devdoc...
+/nix/store/3pczjz3rcx1jswxz9anjmd94w466bbba-perl5.32.0-Devel-Refcount-0.10

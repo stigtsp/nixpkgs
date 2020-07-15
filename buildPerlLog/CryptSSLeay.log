@@ -1,0 +1,141 @@
+these derivations will be built:
+  /nix/store/rrwkr3ak512rvx9sbdb27p1yl7fwnwhy-perl5.32.0-Crypt-SSLeay-0.73_06.drv
+these paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/76qmvslc8qjlyn3njdpcqh4qyggwh7j2-Crypt-SSLeay-0.73_06.tar.gz
+copying path '/nix/store/76qmvslc8qjlyn3njdpcqh4qyggwh7j2-Crypt-SSLeay-0.73_06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rrwkr3ak512rvx9sbdb27p1yl7fwnwhy-perl5.32.0-Crypt-SSLeay-0.73_06.drv'...
+unpacking sources
+unpacking source archive /nix/store/76qmvslc8qjlyn3njdpcqh4qyggwh7j2-Crypt-SSLeay-0.73_06.tar.gz
+source root is Crypt-SSLeay-0.73_06
+setting SOURCE_DATE_EPOCH to timestamp 1491242098 of file Crypt-SSLeay-0.73_06/MANIFEST
+patching sources
+configuring
+patching ./t/03-version.t...
+patching ./t/manifest.t...
+patching ./eg/net-ssl-test...
+patching ./eg/lwp-ssl-test...
+Use of uninitialized value in subroutine entry at Makefile.PL line 53.
+Use of uninitialized value in subroutine entry at Makefile.PL line 59.
+gcc -I/nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o openssl-version.o openssl-version.c
+gcc -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -o openssl-version openssl-version.o
+================================================================================
+Output from '/build/Crypt-SSLeay-0.73_06/openssl-version':
+OpenSSL 1.1.1g  21 Apr 2020
+1010107f
+================================================================================
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Devel::CheckLib 1.09 not found.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lssl32
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lssleay32
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -leay32
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -llibeay32
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lz
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::SSLeay
+Writing MYMETA.yml and MYMETA.json
+network_tests   0
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/SSLeay/CTX.pm blib/lib/Crypt/SSLeay/CTX.pm
+cp lib/Crypt/SSLeay/Version.pm blib/lib/Crypt/SSLeay/Version.pm
+cp lib/Crypt/SSLeay/Conn.pm blib/lib/Crypt/SSLeay/Conn.pm
+cp lib/Crypt/SSLeay/Err.pm blib/lib/Crypt/SSLeay/Err.pm
+cp lib/Crypt/SSLeay/MainContext.pm blib/lib/Crypt/SSLeay/MainContext.pm
+cp SSLeay.pm blib/lib/Crypt/SSLeay.pm
+cp lib/Crypt/SSLeay/X509.pm blib/lib/Crypt/SSLeay/X509.pm
+cp lib/Net/SSL.pm blib/lib/Net/SSL.pm
+Running Mkbootstrap for SSLeay ()
+chmod 644 "SSLeay.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SSLeay.bs blib/arch/auto/Crypt/SSLeay/SSLeay.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Crypt-SSLeay-0.73_06/typemap'  SSLeay.xs > SSLeay.xsc
+mv SSLeay.xsc SSLeay.c
+cc -c  -I/nix/store/41zhr9kz9sxv8w6sbnqdh4i5dy3jckxn-openssl-1.1.1g-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.73_06\" -DXS_VERSION=\"0.73_06\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   SSLeay.c
+rm -f blib/arch/auto/Crypt/SSLeay/SSLeay.so
+LD_RUN_PATH="/nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  SSLeay.o  -o blib/arch/auto/Crypt/SSLeay/SSLeay.so  \
+   -L/nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib -lssl -lcrypto   \
+
+chmod 755 blib/arch/auto/Crypt/SSLeay/SSLeay.so
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SSLeay.bs blib/arch/auto/Crypt/SSLeay/SSLeay.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t .... ok
+t/01-connect.t .. ok
+t/02-live.t ..... # Reading configuration from 'test.config' on linux
+t/02-live.t ..... skipped: Network tests disabled
+t/03-version.t .. ok
+t/manifest.t .... skipped: Author tests not required for installation
+All tests successful.
+Files=5, Tests=33,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.54 cusr  0.53 csys =  1.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/pkgconfig m4datadir=/nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/aclocal aclocaldir=/nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- SSLeay.bs blib/arch/auto/Crypt/SSLeay/SSLeay.bs 644
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/SSLeay/SSLeay.so
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/CTX.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/X509.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/MainContext.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/Err.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/Version.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/SSLeay/Conn.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/SSL.pm
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/man/man3/Crypt::SSLeay.3
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/man/man3/Crypt::SSLeay::Version.3
+Installing /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/man/man3/Net::SSL.3
+Appending installation info to /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/man/man3 to /nix/store/23fys26iw6llvp868rmfwn1083jhvw5n-perl5.32.0-Crypt-SSLeay-0.73_06-devdoc/share/man/man3
+Removing empty /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06
+shrinking /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/SSLeay/SSLeay.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06/lib
+patching script interpreter paths in /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06
+checking for references to /build/ in /nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/23fys26iw6llvp868rmfwn1083jhvw5n-perl5.32.0-Crypt-SSLeay-0.73_06-devdoc
+gzipping man pages under /nix/store/23fys26iw6llvp868rmfwn1083jhvw5n-perl5.32.0-Crypt-SSLeay-0.73_06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/23fys26iw6llvp868rmfwn1083jhvw5n-perl5.32.0-Crypt-SSLeay-0.73_06-devdoc
+checking for references to /build/ in /nix/store/23fys26iw6llvp868rmfwn1083jhvw5n-perl5.32.0-Crypt-SSLeay-0.73_06-devdoc...
+/nix/store/w7bvw8yahshm2h1c4cdm2fpmp20jwrnx-perl5.32.0-Crypt-SSLeay-0.73_06

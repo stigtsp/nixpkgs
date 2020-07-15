@@ -1,0 +1,120 @@
+these derivations will be built:
+  /nix/store/7d4q3phhhslxqwwh86nbzrfr4gddisgs-perl5.32.0-MooseX-Singleton-0.30.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/crqx6n63swhdqa2g7jx7bv3kj18ipkkb-MooseX-Singleton-0.30.tar.gz
+copying path '/nix/store/crqx6n63swhdqa2g7jx7bv3kj18ipkkb-MooseX-Singleton-0.30.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7d4q3phhhslxqwwh86nbzrfr4gddisgs-perl5.32.0-MooseX-Singleton-0.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/crqx6n63swhdqa2g7jx7bv3kj18ipkkb-MooseX-Singleton-0.30.tar.gz
+source root is MooseX-Singleton-0.30
+setting SOURCE_DATE_EPOCH to timestamp 1479876370 of file MooseX-Singleton-0.30/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Singleton
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Singleton' version '0.30'
+cp lib/MooseX/Singleton/Role/Object.pm blib/lib/MooseX/Singleton/Role/Object.pm
+cp lib/MooseX/Singleton/Role/Meta/Method/Constructor.pm blib/lib/MooseX/Singleton/Role/Meta/Method/Constructor.pm
+cp lib/MooseX/Singleton/Role/Meta/Class.pm blib/lib/MooseX/Singleton/Role/Meta/Class.pm
+cp lib/MooseX/Singleton.pm blib/lib/MooseX/Singleton.pm
+cp lib/MooseX/Singleton/Role/Meta/Instance.pm blib/lib/MooseX/Singleton/Role/Meta/Instance.pm
+running tests
+t/00-report-prereqs.t ........ #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     ---------------- ---- --------
+#     File::Spec        any     3.78
+#     Module::Metadata  any 1.000037
+#     Test::Fatal       any    0.014
+#     Test::More       0.88 1.302175
+#     Test::Requires    any     0.11
+#     Test::Warnings    any    0.030
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module          Want   Have
+#     --------------- ---- ------
+#     Carp             any   1.50
+#     Moose           1.10 2.2012
+#     Moose::Exporter  any 2.2012
+#     Moose::Role      any 2.2012
+#     Scalar::Util     any   1.55
+#     strict           any   1.11
+#     warnings         any   1.47
+#
+# === Other Modules ===
+#
+#     Module                  Have
+#     -------------------- -------
+#     Dist::CheckConflicts    0.11
+#     JSON::PP                4.04
+#     Pod::Coverage        missing
+#     Sub::Name               0.26
+#     YAML                 missing
+#     autodie                 2.32
+#
+t/00-report-prereqs.t ........ ok
+t/001-basic.t ................ ok
+t/002-init.t ................. ok
+t/003-immutable.t ............ ok
+t/004-build_bug.t ............ ok
+t/005-build_bug-immutable.t .. ok
+t/006-cooperative.t .......... skipped: Test requires module 'MooseX::StrictConstructor' but it's not found
+t/warnings_once.t ............ ok
+t/zzz-check-breaks.t ......... ok
+All tests successful.
+Files=9, Tests=55,  4 wallclock secs ( 0.06 usr  0.04 sys +  1.99 cusr  0.95 csys =  3.04 CPU)
+Result: PASS
+installing
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib/perl5/site_perl/5.32.0/MooseX/Singleton.pm
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib/perl5/site_perl/5.32.0/MooseX/Singleton/Role/Object.pm
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib/perl5/site_perl/5.32.0/MooseX/Singleton/Role/Meta/Instance.pm
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib/perl5/site_perl/5.32.0/MooseX/Singleton/Role/Meta/Class.pm
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib/perl5/site_perl/5.32.0/MooseX/Singleton/Role/Meta/Method/Constructor.pm
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3/MooseX::Singleton::Role::Object.3
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3/MooseX::Singleton::Role::Meta::Instance.3
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3/MooseX::Singleton::Role::Meta::Method::Constructor.3
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3/MooseX::Singleton.3
+Installing /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3/MooseX::Singleton::Role::Meta::Class.3
+post-installation fixup
+Moving /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/man3 to /nix/store/qic8jgqd7dnm7dsa8i0sx0y3b3g49csr-perl5.32.0-MooseX-Singleton-0.30-devdoc/share/man/man3
+Removing empty /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30/lib
+patching script interpreter paths in /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30
+checking for references to /build/ in /nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qic8jgqd7dnm7dsa8i0sx0y3b3g49csr-perl5.32.0-MooseX-Singleton-0.30-devdoc
+gzipping man pages under /nix/store/qic8jgqd7dnm7dsa8i0sx0y3b3g49csr-perl5.32.0-MooseX-Singleton-0.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qic8jgqd7dnm7dsa8i0sx0y3b3g49csr-perl5.32.0-MooseX-Singleton-0.30-devdoc
+checking for references to /build/ in /nix/store/qic8jgqd7dnm7dsa8i0sx0y3b3g49csr-perl5.32.0-MooseX-Singleton-0.30-devdoc...
+/nix/store/py6c1nvxd0fd4kgya457yz5r2qjlw1qn-perl5.32.0-MooseX-Singleton-0.30

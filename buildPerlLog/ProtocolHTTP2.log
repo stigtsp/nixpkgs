@@ -1,0 +1,120 @@
+these derivations will be built:
+  /nix/store/db105y4y6ws7qsi8r2ymhbnbhsby690b-perl5.32.0-Protocol-HTTP2-1.10.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/g5a6rvqjshnfpf3ars7nd3icn4igv4jq-Protocol-HTTP2-1.10.tar.gz
+copying path '/nix/store/g5a6rvqjshnfpf3ars7nd3icn4igv4jq-Protocol-HTTP2-1.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/db105y4y6ws7qsi8r2ymhbnbhsby690b-perl5.32.0-Protocol-HTTP2-1.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/g5a6rvqjshnfpf3ars7nd3icn4igv4jq-Protocol-HTTP2-1.10.tar.gz
+source root is Protocol-HTTP2-1.10
+setting SOURCE_DATE_EPOCH to timestamp 1573539549 of file Protocol-HTTP2-1.10/t/lib/PH2Test.pm
+patching sources
+configuring
+patching ./examples/extract_huff_codes.pl...
+patching ./examples/extract_static_table.pl...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Protocol-HTTP2' version '1.10'
+cp lib/Protocol/HTTP2/Upgrade.pm blib/lib/Protocol/HTTP2/Upgrade.pm
+cp lib/Protocol/HTTP2/Frame/Ping.pm blib/lib/Protocol/HTTP2/Frame/Ping.pm
+cp lib/Protocol/HTTP2/Frame.pm blib/lib/Protocol/HTTP2/Frame.pm
+cp lib/Protocol/HTTP2/Client.pm blib/lib/Protocol/HTTP2/Client.pm
+cp lib/Protocol/HTTP2.pm blib/lib/Protocol/HTTP2.pm
+cp lib/Protocol/HTTP2/Constants.pm blib/lib/Protocol/HTTP2/Constants.pm
+cp lib/Protocol/HTTP2/StaticTable.pm blib/lib/Protocol/HTTP2/StaticTable.pm
+cp lib/Protocol/HTTP2/Frame/Settings.pm blib/lib/Protocol/HTTP2/Frame/Settings.pm
+cp lib/Protocol/HTTP2/Server.pm blib/lib/Protocol/HTTP2/Server.pm
+cp lib/Protocol/HTTP2/Frame/Priority.pm blib/lib/Protocol/HTTP2/Frame/Priority.pm
+cp lib/Protocol/HTTP2/Huffman.pm blib/lib/Protocol/HTTP2/Huffman.pm
+cp lib/Protocol/HTTP2/Frame/Goaway.pm blib/lib/Protocol/HTTP2/Frame/Goaway.pm
+cp lib/Protocol/HTTP2/Frame/Data.pm blib/lib/Protocol/HTTP2/Frame/Data.pm
+cp lib/Protocol/HTTP2/Frame/Rst_stream.pm blib/lib/Protocol/HTTP2/Frame/Rst_stream.pm
+cp lib/Protocol/HTTP2/Stream.pm blib/lib/Protocol/HTTP2/Stream.pm
+cp lib/Protocol/HTTP2/Connection.pm blib/lib/Protocol/HTTP2/Connection.pm
+cp lib/Protocol/HTTP2/Frame/Headers.pm blib/lib/Protocol/HTTP2/Frame/Headers.pm
+cp lib/Protocol/HTTP2/HuffmanCodes.pm blib/lib/Protocol/HTTP2/HuffmanCodes.pm
+cp lib/Protocol/HTTP2/Frame/Push_promise.pm blib/lib/Protocol/HTTP2/Frame/Push_promise.pm
+cp lib/Protocol/HTTP2/Trace.pm blib/lib/Protocol/HTTP2/Trace.pm
+cp lib/Protocol/HTTP2/Frame/Continuation.pm blib/lib/Protocol/HTTP2/Frame/Continuation.pm
+cp lib/Protocol/HTTP2/HeaderCompression.pm blib/lib/Protocol/HTTP2/HeaderCompression.pm
+cp lib/Protocol/HTTP2/Frame/Window_update.pm blib/lib/Protocol/HTTP2/Frame/Window_update.pm
+running tests
+t/00_compile.t ............ ok
+t/01_HeaderCompression.t .. ok
+t/02_Huffman.t ............ ok
+t/03_connection.t ......... ok
+t/04_continuation.t ....... ok
+t/05_trace.t .............. ok
+t/06_upgrade.t ............ ok
+t/07_ping.t ............... ok
+t/08_priority.t ........... ok
+t/09_client_server_tcp.t .. ok
+t/10_settings.t ........... ok
+t/11_server_stream.t ...... ok
+t/12_leaks.t .............. ok
+t/13_request_with_body.t .. ok
+t/14_keepalive.t .......... ok
+All tests successful.
+Files=15, Tests=35,  2 wallclock secs ( 0.07 usr  0.03 sys +  1.15 cusr  0.38 csys =  1.63 CPU)
+Result: PASS
+installing
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/HeaderCompression.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/HuffmanCodes.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Huffman.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Server.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Connection.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/StaticTable.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Client.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Upgrade.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Trace.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Stream.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Constants.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Priority.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Ping.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Headers.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Settings.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Continuation.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Window_update.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Data.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Push_promise.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Goaway.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib/perl5/site_perl/5.32.0/Protocol/HTTP2/Frame/Rst_stream.pm
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Data.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Ping.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Window_update.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Client.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::StaticTable.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Stream.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Trace.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Connection.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Push_promise.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Upgrade.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Continuation.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Settings.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Priority.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Constants.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Goaway.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Rst_stream.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::HuffmanCodes.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Huffman.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Server.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::Frame::Headers.3
+Installing /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3/Protocol::HTTP2::HeaderCompression.3
+post-installation fixup
+Moving /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/man3 to /nix/store/w21rdg7gbijv4aapmyyhfk2sw2n27hii-perl5.32.0-Protocol-HTTP2-1.10-devdoc/share/man/man3
+Removing empty /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10/lib
+patching script interpreter paths in /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10
+checking for references to /build/ in /nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/w21rdg7gbijv4aapmyyhfk2sw2n27hii-perl5.32.0-Protocol-HTTP2-1.10-devdoc
+gzipping man pages under /nix/store/w21rdg7gbijv4aapmyyhfk2sw2n27hii-perl5.32.0-Protocol-HTTP2-1.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/w21rdg7gbijv4aapmyyhfk2sw2n27hii-perl5.32.0-Protocol-HTTP2-1.10-devdoc
+checking for references to /build/ in /nix/store/w21rdg7gbijv4aapmyyhfk2sw2n27hii-perl5.32.0-Protocol-HTTP2-1.10-devdoc...
+/nix/store/vyrb6qnw8rnrmgbjnkvmjc39zc2bg76b-perl5.32.0-Protocol-HTTP2-1.10

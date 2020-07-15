@@ -1,0 +1,67 @@
+these derivations will be built:
+  /nix/store/as7nsra78yfngbp2w8rm36gn6fn3cjrd-perl5.32.0-Test-Command-0.11.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xjr0lf8sji5zjy7rxdshfvskip6xnp5k-Test-Command-0.11.tar.gz
+copying path '/nix/store/xjr0lf8sji5zjy7rxdshfvskip6xnp5k-Test-Command-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/as7nsra78yfngbp2w8rm36gn6fn3cjrd-perl5.32.0-Test-Command-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/xjr0lf8sji5zjy7rxdshfvskip6xnp5k-Test-Command-0.11.tar.gz
+source root is Test-Command-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1367260818 of file Test-Command-0.11/t/pod.t
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/03-stdout.t...
+patching ./t/02-exit.t...
+patching ./t/05-object.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+patching ./t/06-signal.t...
+patching ./t/01-funcs.t...
+patching ./t/04-stderr.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Command
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Command' version '0.11'
+Building Test-Command
+running tests
+t/00-load.t ....... 1/1 # Testing Test::Command 0.11, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/01-funcs.t ...... ok
+t/02-exit.t ....... ok
+t/03-stdout.t ..... ok
+t/04-stderr.t ..... ok
+t/05-object.t ..... 1/38 Argument "foo\nbar\n" isn't numeric in numeric eq (==) at (eval in cmp_ok) t/05-object.t line 40.
+Argument "foo\nbar\n" isn't numeric in numeric ne (!=) at (eval in cmp_ok) t/05-object.t line 41.
+Argument "bar\nfoo\n" isn't numeric in numeric eq (==) at (eval in cmp_ok) t/05-object.t line 54.
+Argument "bar\nfoo\n" isn't numeric in numeric ne (!=) at (eval in cmp_ok) t/05-object.t line 55.
+t/05-object.t ..... ok
+t/06-signal.t ..... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=9, Tests=117,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.66 cusr  0.21 csys =  0.92 CPU)
+Result: PASS
+installing
+Building Test-Command
+Installing /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11/lib/perl5/site_perl/5.32.0/Test/Command.pm
+Installing /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11/share/man/man3/Test::Command.3
+post-installation fixup
+Moving /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11/share/man/man3 to /nix/store/rlsfbqzcaxbrr6cddq2r527bn2spf3kr-perl5.32.0-Test-Command-0.11-devdoc/share/man/man3
+Removing empty /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11/lib
+patching script interpreter paths in /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11
+checking for references to /build/ in /nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rlsfbqzcaxbrr6cddq2r527bn2spf3kr-perl5.32.0-Test-Command-0.11-devdoc
+gzipping man pages under /nix/store/rlsfbqzcaxbrr6cddq2r527bn2spf3kr-perl5.32.0-Test-Command-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rlsfbqzcaxbrr6cddq2r527bn2spf3kr-perl5.32.0-Test-Command-0.11-devdoc
+checking for references to /build/ in /nix/store/rlsfbqzcaxbrr6cddq2r527bn2spf3kr-perl5.32.0-Test-Command-0.11-devdoc...
+/nix/store/lrpzcfsqx7g2j8623wn2dm9593wzdlld-perl5.32.0-Test-Command-0.11

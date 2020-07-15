@@ -1,0 +1,395 @@
+these derivations will be built:
+  /nix/store/p66mf1ps3vijcmsib8n3f92kifqbgbdp-perl5.32.0-EV-4.33.drv
+these paths will be fetched (0.21 MiB download, 0.21 MiB unpacked):
+  /nix/store/nryw821sq063z5vzlgvqsyhqkp1kv4a3-EV-4.33.tar.gz
+copying path '/nix/store/nryw821sq063z5vzlgvqsyhqkp1kv4a3-EV-4.33.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p66mf1ps3vijcmsib8n3f92kifqbgbdp-perl5.32.0-EV-4.33.drv'...
+unpacking sources
+unpacking source archive /nix/store/nryw821sq063z5vzlgvqsyhqkp1kv4a3-EV-4.33.tar.gz
+source root is EV-4.33
+setting SOURCE_DATE_EPOCH to timestamp 1584537641 of file EV-4.33/README
+patching sources
+configuring
+
+***
+*** Canary::Stability COMPATIBILITY AND SUPPORT CHECK
+*** =================================================
+***
+*** Hi!
+***
+*** I do my best to provide predictable and reliable software.
+***
+*** However, in recent releases, P5P (who maintain perl) have been
+*** introducing regressions that are sometimes subtle and at other times
+*** catastrophic, often for personal preferences with little or no concern
+*** for existing code, most notably CPAN.
+***
+*** For this reason, it has become very hard for me to maintain the level
+*** of reliability and support I have committed myself to in the past, at
+*** least with some perl versions: I simply can't keep up working around new
+*** bugs or gratituous incompatibilities, and in turn you might suffer from
+*** unanticipated problems.
+***
+*** Therefore I have introduced a support and compatibility check, the results
+*** of which follow below, together with a FAQ and some recommendations.
+***
+*** This check is just to let you know that there might be a risk, so you can
+*** make judgement calls on how to proceed - it will not keep the module from
+*** installing or working.
+***
+*** The stability canary says: (nothing, it was driven away by harsh weather)
+***
+*** It seems you are running perl version 5.032000, likely the "official" or
+*** "standard" version. While there is nothing wrong with doing that,
+*** standard perl versions 5.022 and up are not supported by EV.
+*** While this might be fatal, it might also be all right - if you run into
+*** problems, you might want to downgrade your perl or switch to the
+*** stability branch.
+***
+*** If everything works fine, you can ignore this message.
+***
+***
+*** Stability canary mini-FAQ:
+***
+*** Do I need to do anything?
+***    With luck, no. While some distributions are known to fail
+***    already, most should probably work. This message is here
+***    to alert you that your perl is not supported by EV,
+***    and if things go wrong, you either need to downgrade, or
+***    sidegrade to the stability variant of your perl version,
+***    or simply live with the consequences.
+***
+*** What is this canary thing?
+***    It's purpose is to check support status of EV with
+***    respect to your perl version.
+***
+*** What is this "stability branch"?
+***    It's a branch or fork of the official perl, by schmorp, to
+***    improve stability and compatibility with existing modules.
+***
+*** How can I skip this prompt on automated installs?
+***    Set PERL_CANARY_STABILITY_NOPROMPT=1 in your environment.
+***    More info is in the Canary::Stability manpage.
+***
+*** Long version of this FAQ: http://stableperl.schmorp.de/faq.html
+*** Stability Branch homepage: http://stableperl.schmorp.de/
+***
+
+Continue anyways?  [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Welcome to EV configuration. If you are in a hurry, just press return here
+and hope for the best. The defaults should usually do.
+
+Skip further questions and use defaults (y/n)? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+POSIX optionally offers support for a monotonic clock source. EV
+can take advantage of this clock source to detect time jumps more
+reliably. Unfortunately, some systems are bound to be broken, so you can
+disable this here: you can completely disable the detection and use of
+the monotonic clock by answering 'n' here. Support for this clock type
+will otherwise be autodetected at both compile- and runtime. (this setting
+currently affects the use of nanosleep over select as well).
+
+Enable optional support for CLOCK_MONOTONIC (y/n)? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+POSIX optionally offers support for a (potentially) high-resolution
+realtime clock interface. In a good implementation, using it is faster
+than the normal method of using gettimeofday. Unfortunately, this option
+is also bound to be broken on some systems, and current EV versions do not
+actually call gettimeofday very often, so it defaults to no.
+
+Prefer clock_gettime (CLOCK_REALTIME) over gettimeofday (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+EV can use various backends with various portability issues. The select
+backend is the most portable and makes for a good fallback, but it can be
+limited to a low number of file descriptors and/or might not compile. If
+you have problems with compiling ev_select.c, you might try to play around
+with disabling it here, or forcing it to use the fd_set provided by your
+OS, via the next question. I highly recommend keeping it in.
+
+Enable select backend (y/n)? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+The select backend can operate in two modes. One uses the system-provided
+fd_set and is usually limited to 1024 file descriptors (64 on windows),
+the other requires your header files to define NFDBITS and declare a
+suitable fd_mask type. If you run into problems compiling ev_select.c, you
+can try forcing the use of the system fd_set here.
+
+Force use of system fd_set for select backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+The second very portable backend is poll(2). It does not exist on windows
+and various versions of Mac OS X (and on the other versions it simply
+doesn't work), but works basically everywhere else. It is recommended to use
+the default here unless you run into compilation problems in ev_poll.c.
+
+Enable poll backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Select and poll make it hard to write efficient servers, especially if the
+number of active connections is much lower than the watched ones. GNU/Linux
+systems have a more scalable method called "epoll", which EV can use. For
+this to work, both your kernel and glibc have to support epoll, but if you
+can compile it, the detection will be done at runtime, and EV will safely
+fall back to using select when epoll isn't available. If unsure, accept
+the default.
+
+Enable epoll backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Linux 4.18 introduced another event polling interface, this time using
+the Linux AIO API. While this API is far superior to epoll and almost
+rivals kqueue, it also suffers from the same issues as kqueue typically
+does: only a subset of file types are supported (as of 4.19, I have seen
+eventfd, pipes, sockets files and some devices, but no ttys). It also
+is subject arbitrary system-wide limits imposed on it. Therefore, this
+backend is not used by default, even when it is compiled in, and you have
+to request it explicitly, e.g. with LIBEV_FLAGS=64. If unsure, accept the
+default.
+
+Enable linux aio backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Linux 4.19 introduced another event polling interface, "io_uring". While
+this API is far superior to epoll and almost rivals linuxaio, it also
+suffers from the same issues as kqueue typically does: only a subset of
+file types are supported (as of 5.2). It is also very buggy still, and
+most importantly, very very slow for most workloads.  Therefore, this
+backend is not used by default, even when it is compiled in, and you have
+to request it explicitly, e.g. with LIBEV_FLAGS=128. If unsure, accept the
+default.
+
+Enable linux io_uring backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+EV can take advantage of kqueue on many BSD systems. Support for kqueue
+will be detected at runtime, with a safe fallback to other methods when it
+cannot be used.
+
+Note that kqueue is subtly broken on most operating systems, so by default
+it won't be used on many platforms, but you can still create your own
+event loop with kqueue backend if you ask specifically for it.
+
+Here is what we know:
+
+NetBSD:  partially working in at least 3.1 and later. Yeah! :)
+FreeBSD: broken on at least 6.2-STABLE, spotty in later versions,
+         sockets *likely* work, ptys definitely don't.
+OpenBSD: reports indicate that it likely doesn't work
+         (similar problems as on FreeBSD).
+OS X:    completely, utterly broken on at least <= 10.6.
+
+Enable kqueue backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Similarly to the kqueue backend above, EV can take advantage of the
+solaris 10 event port interface. Support for event ports will be detected
+at runtime, with a safe fallback to other methods when it cannot be used.
+
+Enable event port backend (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+EV needs the functions pthread_atfork and clock_gettime. On most systems
+you need some special libraries for this (such as -lrt and -lpthread). You
+can specify additional libraries to provide these calls (and any other
+required by EV) now, or accept the default.
+
+On GNU/Linux systems, EV uses the LSB 3.1 __register_atfork function
+to avoid the dependency on libpthread, and directly uses the clock_gettime
+syscall to avoid a dependency on librt.
+
+Extra libraries for pthread_atfork and clock_gettime? [ ]
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+A backend of a different kind is the Linux inotify(7) interface, which can
+be used to speed up (and reduce resource consumption) of stat watchers. If
+you have the include file and libc support for it, it is usually a good
+idea to enable it, as kernel availability is detected at runtime.
+
+Enable inotify support (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Another useful bit of functionality is the Linux eventfd, which is useful
+for faster signal handling (don't care) and intra-thread communications
+(more relevant). Kernel support for this will be probed at runtime, but
+your libc must contain the necessary wrapper. Glibc 2.7 and later should
+have this wrapper.
+
+Enable linux eventfd support (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Another sometimes useful bit of functionality is the Linux signalfd, which
+is useful for faster signal handling (don't care). Kernel support for
+this will be probed at runtime, but your libc must contain the necessary
+wrapper. Glibc 2.7 and later should have this wrapper.
+
+Enable linux signalfd support (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Linux kernels can notify userspace about realtime clock timejumps
+using timerfd. Libev by default will try to take advantage of this if
+possible. You can completely disable the detection and use of timerfd for
+this purpose by answering 'n' here. Support for timerfd will otherwise be
+autodetected at both compile- and runtime.
+
+Enable optional support for timerfd to detect timejumps (y/n)? [y] y
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Libev contains numerous internal assert() invocations to check for
+consistency and user errors. These are normally enabled, but most
+perl builds disable this error reporting mechanism by default. You
+can re-enable these asserts here. Enabling them might help you catch
+programming bugs earlier, but might cause a small slowdown. Also, failures
+will be reported by aboritng your program, instead of throwing a perl
+exception.
+
+If unsure, enable this if you only use this perl installation for
+development, and leave it off for use in production environments.
+
+Make sure assertions are enabled? (y/n)? [n] n
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Very rarely, people want to tweak EV even more, e.g. to exclude
+or include certain watcher types or backends. This can be done by adding
+extra -D options here, or via the EV_EXTRA_DEFS environment variable.
+
+For example, if you run into compilation problems because of missing memory
+fences (or you just want extra performance), you can tell EV to not support
+smp and threads via -DEV_NO_THREADS.
+
+Most people would just press enter.
+
+Any extra -D options? []
+
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+
+
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: ''
+Use of uninitialized value $thislib in substitution (s///) at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 72.
+Use of uninitialized value $thislib in pattern match (m//) at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 99.
+Use of uninitialized value $thislib in substitution (s///) at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 106.
+Use of uninitialized value $thislib in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 114.
+Unrecognized argument in LIBS ignored: ''
+Generating a Unix-style Makefile
+Writing Makefile for EV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp libev/ev.pod blib/lib/EV/libev.pod
+cp EV.pm blib/lib/EV.pm
+cp libev/ev.h blib/lib/EV/ev.h
+cp EV/EVAPI.h blib/lib/EV/EVAPI.h
+cp EV/MakeMaker.pm blib/lib/EV/MakeMaker.pm
+Running Mkbootstrap for EV ()
+chmod 644 "EV.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EV.bs blib/arch/auto/EV/EV.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/EV-4.33/typemap'  EV.xs > EV.xsc
+mv EV.xsc EV.c
+cc -c  -Ilibev -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"4.33\" -DXS_VERSION=\"4.33\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DEV_USE_REALTIME=0 -DEV_USE_SELECT=1 -DEV_USE_POLL=0 -DEV_USE_EPOLL=0 -DEV_USE_LINUXAIO=0 -DEV_USE_IOURING=0 -DEV_USE_KQUEUE=0 -DEV_USE_PORT=0 -DEV_USE_INOTIFY=0 -DEV_USE_EVENTFD=0 -DEV_USE_SIGNALFD=0  EV.c
+In file included from EV.xs:50:
+libev/ev.c: In function 'evpipe_write':
+libev/ev.c:2817:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+ 2817 |           write (evpipe [1], &(evpipe [1]), 1);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libev/ev.c: In function 'pipecb':
+libev/ev.c:2852:11: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+ 2852 |           read (evpipe [0], &dummy, sizeof (dummy));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f blib/arch/auto/EV/EV.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  EV.o  -o blib/arch/auto/EV/EV.so  \
+      \
+
+chmod 755 blib/arch/auto/EV/EV.so
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EV.bs blib/arch/auto/EV/EV.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t ........ ok
+t/01_timer.t ....... skipped: Too many broken cpan tester setups.
+t/02_once.t ........ skipped: Too many broken cpan tester setups.
+t/03_keepalive.t ... skipped: Too many broken cpan tester setups.
+t/04_stat.t ........ ok
+t/05_priority.t .... ok
+t/06_loop_once.t ... skipped: Too many broken cpan tester setups.
+t/07_loop_timer.t .. skipped: Too many broken cpan tester setups.
+t/08_async.t ....... ok
+t/09_brandon.t ..... skipped: Too many broken cpan tester setups.
+t/11_signal.t ...... ok
+All tests successful.
+Files=11, Tests=65,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.06 cusr  0.02 csys =  0.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/pkgconfig m4datadir=/nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/aclocal aclocaldir=/nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EV.bs blib/arch/auto/EV/EV.bs 644
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/EV/EV.so
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/EV.pm
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/EV/ev.h
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/EV/libev.pod
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/EV/EVAPI.h
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/EV/MakeMaker.pm
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/man/man3/EV::libev.3
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/man/man3/EV.3
+Installing /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/man/man3/EV::MakeMaker.3
+Appending installation info to /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/man/man3 to /nix/store/83wgaq715lww38lvkdqfxnv4l9bnasxx-perl5.32.0-EV-4.33-devdoc/share/man/man3
+Removing empty /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33
+shrinking /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/EV/EV.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33/lib
+patching script interpreter paths in /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33
+checking for references to /build/ in /nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33...
+shrinking RPATHs of ELF executables and libraries in /nix/store/83wgaq715lww38lvkdqfxnv4l9bnasxx-perl5.32.0-EV-4.33-devdoc
+gzipping man pages under /nix/store/83wgaq715lww38lvkdqfxnv4l9bnasxx-perl5.32.0-EV-4.33-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/83wgaq715lww38lvkdqfxnv4l9bnasxx-perl5.32.0-EV-4.33-devdoc
+checking for references to /build/ in /nix/store/83wgaq715lww38lvkdqfxnv4l9bnasxx-perl5.32.0-EV-4.33-devdoc...
+/nix/store/sb6v7rkrzf5wl41nm7wdk5p8bq2nqip6-perl5.32.0-EV-4.33

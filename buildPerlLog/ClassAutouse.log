@@ -1,0 +1,85 @@
+these derivations will be built:
+  /nix/store/v2kg4kc6qwmcczx18ik8vq80748afksp-perl5.32.0-Class-Autouse-2.01.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/12s0s8hjy0xhx0i640rvpsn9jj9vdybv-Class-Autouse-2.01.tar.gz
+copying path '/nix/store/12s0s8hjy0xhx0i640rvpsn9jj9vdybv-Class-Autouse-2.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v2kg4kc6qwmcczx18ik8vq80748afksp-perl5.32.0-Class-Autouse-2.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/12s0s8hjy0xhx0i640rvpsn9jj9vdybv-Class-Autouse-2.01.tar.gz
+source root is Class-Autouse-2.01
+setting SOURCE_DATE_EPOCH to timestamp 1328255816 of file Class-Autouse-2.01/MYMETA.json
+patching sources
+configuring
+patching ./xt/meta.t...
+patching ./xt/pod.t...
+patching ./xt/pmv.t...
+patching ./t/07_isa.t...
+patching ./t/05_recursive.t...
+patching ./t/04_prefork.t...
+patching ./t/09_callback_example.t...
+patching ./t/10_recursion.t...
+patching ./t/15_regex.t...
+patching ./t/13_no_exist.t...
+patching ./t/08_dynamic.t...
+patching ./t/03_parent.t...
+patching ./t/14_sugar.t...
+patching ./t/12_callback_no_exist.t...
+patching ./t/11_number_in_class_word.t...
+patching ./t/01_compile.t...
+patching ./t/06_base.t...
+patching ./t/02_main.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Autouse
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Autouse.pm blib/lib/Class/Autouse.pm
+cp lib/Class/Autouse/Parent.pm blib/lib/Class/Autouse/Parent.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01_compile.t ............... ok
+t/02_main.t .................. ok
+t/03_parent.t ................ ok
+t/04_prefork.t ............... skipped: prefork.pm is not installed
+t/05_recursive.t ............. ok
+t/06_base.t .................. ok
+t/07_isa.t ................... ok
+t/08_dynamic.t ............... ok
+t/09_callback_example.t ...... ok
+t/10_recursion.t ............. ok
+t/11_number_in_class_word.t .. ok
+t/12_callback_no_exist.t ..... ok
+t/13_no_exist.t .............. ok
+t/14_sugar.t ................. ok
+t/15_regex.t ................. 1/3 print() on unopened filehandle at (eval 9) line 13 during global destruction.
+print() on unopened filehandle at (eval 9) line 13 during global destruction.
+t/15_regex.t ................. ok
+All tests successful.
+Files=15, Tests=855,  3 wallclock secs ( 0.17 usr  0.02 sys +  2.77 cusr  0.23 csys =  3.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/lib/pkgconfig m4datadir=/nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/share/aclocal aclocaldir=/nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/lib/perl5/site_perl/5.32.0/Class/Autouse.pm
+Installing /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/lib/perl5/site_perl/5.32.0/Class/Autouse/Parent.pm
+Installing /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/share/man/man3/Class::Autouse.3
+Appending installation info to /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/share/man/man3 to /nix/store/mhkalgfnrf153cqi845wyn5f54nwfcs3-perl5.32.0-Class-Autouse-2.01-devdoc/share/man/man3
+Removing empty /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01/lib
+patching script interpreter paths in /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01
+checking for references to /build/ in /nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mhkalgfnrf153cqi845wyn5f54nwfcs3-perl5.32.0-Class-Autouse-2.01-devdoc
+gzipping man pages under /nix/store/mhkalgfnrf153cqi845wyn5f54nwfcs3-perl5.32.0-Class-Autouse-2.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mhkalgfnrf153cqi845wyn5f54nwfcs3-perl5.32.0-Class-Autouse-2.01-devdoc
+checking for references to /build/ in /nix/store/mhkalgfnrf153cqi845wyn5f54nwfcs3-perl5.32.0-Class-Autouse-2.01-devdoc...
+/nix/store/imgmgyd7arf5n3f1rwq0kk94i4iykmvj-perl5.32.0-Class-Autouse-2.01

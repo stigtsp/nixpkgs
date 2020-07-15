@@ -1,0 +1,636 @@
+these derivations will be built:
+  /nix/store/c46rdy8ahrsbabgn8lvfqgxn3q462p1a-absolute_gir_path.patch.drv
+  /nix/store/g5n3zpdf24f8578g4823vcj0pjnr673v-gobject-introspection-1.64.1.drv
+  /nix/store/i078bqg7j0dv9j77br95zrc8mka9fja4-perl5.32.0-Glib-Object-Introspection-0.048.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/ar52q99f30ryhvkr6ird5vsf0rcq50w5-Glib-Object-Introspection-0.048.tar.gz
+copying path '/nix/store/ar52q99f30ryhvkr6ird5vsf0rcq50w5-Glib-Object-Introspection-0.048.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/c46rdy8ahrsbabgn8lvfqgxn3q462p1a-absolute_gir_path.patch.drv'...
+building '/nix/store/g5n3zpdf24f8578g4823vcj0pjnr673v-gobject-introspection-1.64.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/13kfxinqg9v4r4fya2wcn2cy5zp7b7hk-gobject-introspection-1.64.1.tar.xz
+source root is gobject-introspection-1.64.1
+setting SOURCE_DATE_EPOCH to timestamp 1586095684 of file gobject-introspection-1.64.1/tools/meson.build
+patching sources
+applying patch /nix/store/x6pqrqik8qffns88spdwqysw520h2vpr-absolute_shlib_path.patch
+patching file giscanner/scannermain.py
+Hunk #2 succeeded at 247 (offset 9 lines).
+patching file giscanner/shlibs.py
+Hunk #2 succeeded at 114 (offset 2 lines).
+Hunk #3 succeeded at 124 (offset 2 lines).
+Hunk #4 succeeded at 147 (offset 2 lines).
+patching file giscanner/utils.py
+Hunk #1 succeeded at 112 (offset 1 line).
+patching file tests/scanner/test_shlibs.py
+applying patch /nix/store/jz796n740sy7f52j1rhrd40dq5yp84vq-absolute_gir_path.patch
+patching file gir/cairo-1.0.gir.in
+Hunk #1 succeeded at 6 with fuzz 2 (offset 1 line).
+configuring
+meson flags: --buildtype=plain         --libdir=/nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib --libexecdir=/nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/libexec         --bindir=/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin --sbindir=/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/sbin         --includedir=/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include         --mandir=/nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man/share/man --infodir=/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/info         --localedir=/nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/share/locale         -Dauto_features=enabled         -Dwrap_mode=nodownload         --prefix=/nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1 --datadir=/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share -Ddoctool=disabled -Dcairo=disabled -Dgtk_doc=true
+The Meson build system
+Version: 0.54.2
+Source dir: /build/gobject-introspection-1.64.1
+Build dir: /build/gobject-introspection-1.64.1/build
+Build type: native build
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Project name: gobject-introspection
+Project version: 1.64.1
+Using 'CC_FOR_BUILD' from environment with value: 'gcc'
+Using 'AR_FOR_BUILD' from environment with value: 'ar'
+Using 'CC' from environment with value: 'gcc'
+C compiler for the host machine: gcc (gcc 9.3.0 "gcc (GCC) 9.3.0")
+C linker for the host machine: gcc ld.bfd 2.31.1
+Using 'AR' from environment with value: 'ar'
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin/python3)
+Compiler for C supports arguments -Wall: YES
+Compiler for C supports arguments -Warray-bounds: YES
+Compiler for C supports arguments -Wcast-align: YES
+Compiler for C supports arguments -Wdeclaration-after-statement: YES
+Compiler for C supports arguments -Wduplicated-branches: YES
+Compiler for C supports arguments -Wextra: YES
+Compiler for C supports arguments -Wformat=2: YES
+Compiler for C supports arguments -Wformat-nonliteral: YES
+Compiler for C supports arguments -Wformat-security: YES
+Compiler for C supports arguments -Wimplicit-function-declaration: YES
+Compiler for C supports arguments -Winit-self: YES
+Compiler for C supports arguments -Wjump-misses-init: YES
+Compiler for C supports arguments -Wlogical-op: YES
+Compiler for C supports arguments -Wmissing-declarations: YES
+Compiler for C supports arguments -Wmissing-format-attribute: YES
+Compiler for C supports arguments -Wmissing-include-dirs: YES
+Compiler for C supports arguments -Wmissing-noreturn: YES
+Compiler for C supports arguments -Wmissing-prototypes: YES
+Compiler for C supports arguments -Wnested-externs: YES
+Compiler for C supports arguments -Wnull-dereference: YES
+Compiler for C supports arguments -Wold-style-definition: YES
+Compiler for C supports arguments -Wpacked: YES
+Compiler for C supports arguments -Wpointer-arith: YES
+Compiler for C supports arguments -Wrestrict: YES
+Compiler for C supports arguments -Wreturn-type: YES
+Compiler for C supports arguments -Wshadow: YES
+Compiler for C supports arguments -Wsign-compare: YES
+Compiler for C supports arguments -Wstrict-aliasing: YES
+Compiler for C supports arguments -Wstrict-prototypes: YES
+Compiler for C supports arguments -Wundef: YES
+Compiler for C supports arguments -Wunused-but-set-variable: YES
+Compiler for C supports arguments -Wwrite-strings: YES
+Compiler for C supports arguments -fno-strict-aliasing: YES
+meson.build:74: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+meson.build:74: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+Checking for size of "char" : 1
+Checking for size of "short" : 2
+Checking for size of "int" : 4
+Checking for size of "long" : 8
+Configuring config.h using configuration
+Using 'PKG_CONFIG' from environment with value: 'pkg-config'
+Found pkg-config: /nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin/pkg-config (0.29.2)
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency glib-2.0 found: YES 2.64.3
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency gobject-2.0 found: YES 2.64.3
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency gio-2.0 found: YES 2.64.3
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency gmodule-2.0 found: YES 2.64.3
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency gio-unix-2.0 found: YES 2.64.3
+Using 'PKG_CONFIG_PATH' from environment with value: '/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig:/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/share/pkgconfig:/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/lib/pkgconfig:/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/lib/pkgconfig:/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/lib/pkgconfig:/nix/store/jr7hnxwy0i67189d60jwmcl0wy4az079-zlib-1.2.11-dev/lib/pkgconfig'
+Run-time dependency libffi found: YES 3.3
+Dependency cairo skipped: feature cairo disabled
+Dependency cairo-gobject skipped: feature cairo disabled
+meson.build:180: WARNING: Not building with cairo support, not all tests will be run
+meson.build:202: WARNING: Not building with doctool support, not all tests will be run
+Library m found: YES
+Compiler for C supports arguments -Wno-implicit-fallthrough -Wimplicit-fallthrough: YES
+Compiler for C supports arguments -Wno-old-style-definition -Wold-style-definition: YES
+Compiler for C supports arguments -Wno-suggest-attribute=noreturn -Wsuggest-attribute=noreturn: YES
+Compiler for C supports arguments -Wno-type-limits -Wtype-limits: YES
+Compiler for C supports arguments -Wno-undef -Wundef: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-cast-align -Wcast-align: YES
+Compiler for C supports arguments -Wno-unused-function -Wunused-function: YES
+Compiler for C supports arguments -Wno-return-type -Wreturn-type: YES
+Compiler for C supports arguments -Wno-old-style-definition -Wold-style-definition: YES
+Compiler for C supports arguments -Wno-type-limits -Wtype-limits: YES
+Compiler for C supports arguments -Wno-old-style-definition -Wold-style-definition: YES
+Compiler for C supports arguments -Wno-cast-align -Wcast-align: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-duplicated-branches -Wduplicated-branches: YES
+Compiler for C supports arguments -Wno-cast-align -Wcast-align: YES
+Configuring giversion.h using configuration
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-duplicated-branches -Wduplicated-branches: YES
+Compiler for C supports arguments -Wno-type-limits -Wtype-limits: YES
+Compiler for C supports arguments -Wno-cast-align -Wcast-align: YES
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES
+Configuring g-ir-scanner using configuration
+Program /build/gobject-introspection-1.64.1/build/tools/g-ir-scanner found: YES (/build/gobject-introspection-1.64.1/build/tools/g-ir-scanner)
+Configuring g-ir-annotation-tool using configuration
+Program /build/gobject-introspection-1.64.1/build/tools/g-ir-annotation-tool found: YES (/build/gobject-introspection-1.64.1/build/tools/g-ir-annotation-tool)
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES
+Configuring _version.py using configuration
+Configuring __init__.py using configuration
+Configuring annotationmain.py using configuration
+Configuring annotationparser.py using configuration
+Configuring ast.py using configuration
+Configuring cachestore.py using configuration
+Configuring ccompiler.py using configuration
+Configuring codegen.py using configuration
+Configuring docmain.py using configuration
+Configuring docwriter.py using configuration
+Configuring dumper.py using configuration
+Configuring introspectablepass.py using configuration
+Configuring girparser.py using configuration
+Configuring girwriter.py using configuration
+Configuring gdumpparser.py using configuration
+Configuring libtoolimporter.py using configuration
+Configuring maintransformer.py using configuration
+Configuring mdextensions.py using configuration
+Configuring message.py using configuration
+Configuring msvccompiler.py using configuration
+Configuring pkgconfig.py using configuration
+Configuring shlibs.py using configuration
+Configuring scannermain.py using configuration
+Configuring sectionparser.py using configuration
+Configuring sourcescanner.py using configuration
+Configuring testcodegen.py using configuration
+Configuring transformer.py using configuration
+Configuring utils.py using configuration
+Configuring xmlwriter.py using configuration
+giscanner/meson.build:60: WARNING: Custom target input 'doctemplates' can't be converted to File object(s).
+This will become a hard error in the future.
+Program flex found: YES (/nix/store/fc9661bv6h181agvz1nj4i0c5pinjj98-flex-2.6.4/bin/flex)
+Program bison found: YES (/nix/store/cgl5815i7p8qxac2k3p17mi3hz03g507-bison-3.6.3/bin/bison)
+Has header "unistd.h" : YES
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Dependency python found: YES (pkgconfig)
+Configuring cairo-1.0.gir using configuration
+Configuring version.xml using configuration
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Compiler for C supports arguments -Wno-old-style-definition -Wold-style-definition: YES
+Compiler for C supports arguments -Wno-missing-field-initializers -Wmissing-field-initializers: YES
+Compiler for C supports arguments -Wno-unused-parameter -Wunused-parameter: YES
+Program pkg-config found: YES (/nix/store/wmfxrzgf5vxmvfghzx37spcrmsqqjqj5-pkg-config-wrapper-0.29.2/bin/pkg-config)
+Configuring gobject-introspection-no-export-1.0.pc using configuration
+Configuring gobject-introspection-1.0.pc using configuration
+Build targets in project: 85
+
+Option buildtype is: plain [default: debugoptimized]
+Found ninja-1.10.0 at /nix/store/7g23nm5f1x8nrd1026c426v4wassmmsp-ninja-1.10.0/bin/ninja
+Using 'STRIP' from environment with value: 'strip'
+Using 'STRIP' from environment with value: 'strip'
+meson: enabled parallel building
+building
+build flags: -j8 -l8
+[9/163] Compiling C object 'girepository/cmph/6cca4a0@@cmph@sta/cmph.c.o'c.o'K
+../girepository/cmph/cmph.c: In function 'count_nlfile_keys':
+../girepository/cmph/cmph.c:158:3: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+  158 |   fgets(buf, BUFSIZ, fd);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+[71/163] Generating scannerparser with a custom commande-1.0@sha/gettype.c.o'gnu@sha/giscannermodule.c.o'
+../giscanner/scannerparser.y: warning: 7 shift/reduce conflicts [-Wconflicts-sr]
+[163/163] Generating generate-typelib-regress with a custom command_everything_cus_____nix_store_7xb858afmn2pyrj3gilljcjgaqbchmal_python3_3_8_3_bin_python3____File__tools_g_ir_scanner______quiet______output__OUTPUT_______no_libtool______reparse_validate______add_include_path_____build_gobject_introspection_1_64_1_gir______add_include_path_____build_gobject_introspection_1_64_1_build_gir______warn_all______warn_error______namespace_Everything______nsversion_1_0______include_Gio_2_0______library_everything_1_0_____L_____build_gobject_introspection_1_64_1_build_tests_____I_____build_gobject_introspection_1_64_1_tests_____INPUT____ with a custom commandallingtests_h______INPUT____ with a custom commandxcredentialsmessage_h______c_include_gio_gunixfdlist_h______c_include_gio_gunixfdmessage_h______c_include_gio_gunixinputstream_h______c_include_gio_gunixmounts_h______c_include_gio_gunixoutputstream_h______c_include_gio_gunixsocketaddress_h______include_uninstalled__build_gobject_introspection_1_64_1_build_gir_GObject_2_0_gir______cflags_begin_____I_nix_store_s2ysdiwvmzi1m71yhsywyya94annyrwk_glib_2_64_3_dev_include_glib_2_0_____I_nix_store_mjdzvywdnpgsf784kpkmf54mvd0ca382_glib_2_64_3_lib_glib_2_0_include_____DGIO_COMPILATION_____DG_SETTINGS_ENABLE_BACKEND______cflags_end_____INPUT____ with a custom command
+running tests
+check flags: -j8 -l8 test
+[0/1] Running all tests.
+ 1/60 cmph-bdz-test                           OK             0.01s
+ 2/60 gthash-test                             OK             0.01s
+ 3/60 gi-testerEverything-1.0.typelib         OK             0.06s
+ 4/60 gi-testerGIMarshallingTests-1.0.typelib OK             0.07s
+ 5/60 test_offsets.py                         OK             0.21s
+ 6/60 warn-annotationparser                   OK             0.86s
+ 7/60 warn-callback-invalid-scope             OK             0.90s
+ 8/60 warn-callback-missing-scope             OK             0.85s
+ 9/60 warn-invalid-allow-none                 OK             0.89s
+10/60 warn-invalid-array                      OK             0.84s
+11/60 warn-invalid-closure                    OK             0.63s
+12/60 warn-invalid-constructor                OK             0.80s
+13/60 warn-invalid-element-type               OK             0.78s
+14/60 warn-invalid-method                     OK             0.82s
+15/60 warn-invalid-nullable                   OK             0.77s
+16/60 warn-invalid-optional                   OK             0.77s
+17/60 warn-invalid-option                     OK             0.57s
+18/60 warn-invalid-out                        OK             0.57s
+19/60 warn-invalid-return                     OK             0.72s
+20/60 warn-invalid-transfer                   OK             0.86s
+21/60 warn-missing-element-type               OK             0.90s
+22/60 warn-return-gobject                     OK             0.74s
+23/60 warn-unknown-parameter                  OK             0.59s
+24/60 warn-unresolved-type                    OK             0.75s
+25/60 test_ccompiler.py                       OK             0.28s
+26/60 test_shlibs.py                          OK             0.22s
+27/60 test_sourcescanner.py                   OK             0.49s
+28/60 test_transformer.py                     OK             1.13s
+29/60 test_xmlwriter.py                       OK             0.22s
+30/60 test_pkgconfig.py                       OK             0.48s
+31/60 test_docwriter.py                       OK             0.17s
+32/60 test_scanner.py                         OK             0.29s
+33/60 test_maintransformer.py                 OK             0.38s
+34/60 gi-tester-Typedefs-1.0.gir              OK             0.09s
+35/60 gi-tester-Bar-1.0.gir                   OK             0.08s
+36/60 gi-tester-SLetter-1.0.gir               OK             0.07s
+37/60 gi-tester-WarnLib-1.0.gir               OK             0.13s
+38/60 gi-tester-Utility-1.0.gir               OK             0.08s
+39/60 gi-tester-GtkFrob-1.0.gir               OK             0.07s
+40/60 gi-tester-GetType-1.0.gir               OK             0.08s
+41/60 gi-tester-Symbolfilter-1.0.gir          OK             0.07s
+42/60 gi-tester-Identfilter-1.0.gir           OK             0.07s
+43/60 gi-tester-Headeronly-1.0.gir            OK             0.07s
+44/60 gi-tester-Typedefs-1.0.typelib          OK             0.07s
+45/60 gi-tester-Bar-1.0.typelib               OK             0.07s
+46/60 gi-tester-SLetter-1.0.typelib           OK             0.07s
+47/60 gi-tester-WarnLib-1.0.typelib           OK             0.07s
+48/60 gi-tester-Utility-1.0.typelib           OK             0.08s
+49/60 gi-tester-GtkFrob-1.0.typelib           OK             0.07s
+50/60 gi-tester-GetType-1.0.typelib           OK             0.07s
+51/60 gi-tester-Symbolfilter-1.0.typelib      OK             0.09s
+52/60 gi-tester-Identfilter-1.0.typelib       OK             0.12s
+53/60 gi-tester-Headeronly-1.0.typelib        OK             0.07s
+54/60 gi-tester-Regress-1.0.typelib           OK             0.08s
+55/60 test_patterns.py                        OK             0.24s
+56/60 test_parser.py                          OK             0.52s
+57/60 gitestrepo                              OK             0.04s
+58/60 giteststructinfo                        OK             0.01s
+59/60 gitestthrows                            OK             0.01s
+60/60 gitypelibtest                           OK             0.01s
+
+Ok:                 60
+Expected Fail:      0
+Fail:               0
+Unexpected Pass:    0
+Skipped:            0
+Timeout:            0
+
+Full log written to /build/gobject-introspection-1.64.1/build/meson-logs/testlog.txt
+glibPreInstallPhase
+installing
+install flags: install
+[0/1] Installing files.
+Installing subdir /build/gobject-introspection-1.64.1/giscanner/doctemplates to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/class.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/base.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/namespace.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/signal.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/vfunc.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/callback.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/interface.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/property.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/enum.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/default.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/field.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/constructor.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/class.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/record.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/method.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/function.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Gjs/namespace.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/signal.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/vfunc.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/callback.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/interface.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/property.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/enum.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/default.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/field.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/constructor.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/class.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/record.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/method.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/function.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/Python/namespace.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/Python
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/signal.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/vfunc.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/callback.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/interface.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/property.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/enum.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/default.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/field.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/constructor.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/class.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/record.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/method.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/function.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/mallard/C/namespace.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/mallard/C
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/callback.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_methods.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/interface.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_doc.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/enum.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_method.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/default.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_vfuncs.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_index.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/class.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_signals.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_staticmethods.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/base.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/method.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/_properties.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/function.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing /build/gobject-introspection-1.64.1/giscanner/doctemplates/devdocs/Gjs/namespace.tmpl to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/doctemplates/devdocs/Gjs
+Installing girepository/libgirepository-1.0.so.1.0.0 to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib
+Installing tools/g-ir-compiler to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+Installing tools/g-ir-generate to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+Installing tools/g-ir-inspect to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+Installing giscanner/_giscanner.cpython-38-x86_64-linux-gnu.so to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing gir/GLib-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing gir/GObject-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing gir/GModule-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing gir/Gio-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing gir/GIRepository-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing gir/cairo-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/DBus-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/DBusGLib-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/fontconfig-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/freetype2-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/GL-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/libxml2-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/Vulkan-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/xft-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/xlib-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/xfixes-4.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/xrandr-1.3.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/win32-1.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/GLib-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/GObject-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/GModule-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/Gio-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing gir/GIRepository-2.0.typelib to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/girepository-1.0
+Installing tests/everything.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing tests/everything.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/girepository/giarginfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gibaseinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gicallableinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giconstantinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gienuminfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gifieldinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gifunctioninfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giinterfaceinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giobjectinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gipropertyinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giregisteredtypeinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/girepository.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/girffi.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gisignalinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gistructinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gitypeinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gitypelib.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/gitypes.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giunioninfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/giversionmacros.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/girepository/givfuncinfo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/build/girepository/giversion.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/include/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/docs/g-ir-compiler.1 to /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man/share/man/man1
+Installing /build/gobject-introspection-1.64.1/docs/g-ir-generate.1 to /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man/share/man/man1
+Installing /build/gobject-introspection-1.64.1/docs/g-ir-scanner.1 to /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man/share/man/man1
+Installing /build/gobject-introspection-1.64.1/build/girepository/gdump.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/build/tools/g-ir-scanner to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+Installing /build/gobject-introspection-1.64.1/build/tools/g-ir-annotation-tool to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+Installing /build/gobject-introspection-1.64.1/build/giscanner/_version.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/__init__.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/annotationmain.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/annotationparser.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/ast.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/cachestore.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/ccompiler.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/codegen.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/docmain.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/docwriter.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/dumper.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/introspectablepass.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/girparser.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/girwriter.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/gdumpparser.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/libtoolimporter.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/maintransformer.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/mdextensions.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/message.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/msvccompiler.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/pkgconfig.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/shlibs.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/scannermain.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/sectionparser.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/sourcescanner.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/testcodegen.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/transformer.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/utils.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/giscanner/xmlwriter.py to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner
+Installing /build/gobject-introspection-1.64.1/build/gir/cairo-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/DBus-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/DBusGLib-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/fontconfig-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/freetype2-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/GL-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/libxml2-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/Vulkan-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/xft-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/xlib-2.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/xfixes-4.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/xrandr-1.3.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/gir/win32-1.0.gir to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/docs/gir-1.2.rnc to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gir-1.0
+Installing /build/gobject-introspection-1.64.1/tests/scanner/annotation.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/annotation.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/drawable.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/drawable.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/foo.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/foo.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/regress.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/regress.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/utility.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/utility.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/warnlib.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/scanner/warnlib.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/gimarshallingtests.c to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/gimarshallingtests.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/tests/gitestmacros.h to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0/tests
+Installing /build/gobject-introspection-1.64.1/Makefile.introspection to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/gobject-introspection-1.0
+Installing /build/gobject-introspection-1.64.1/m4/introspection.m4 to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/share/aclocal
+Installing /build/gobject-introspection-1.64.1/build/gobject-introspection-no-export-1.0.pc to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/pkgconfig
+Installing /build/gobject-introspection-1.64.1/build/gobject-introspection-1.0.pc to /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/pkgconfig
+Running custom install script '/nix/store/3sn0y82wv14gnxbf0jbrvmcx2hjvk4za-meson-0.54.2/bin/meson --internal gtkdoc --sourcedir=/build/gobject-introspection-1.64.1 --builddir=/build/gobject-introspection-1.64.1/build --subdir=docs/reference --headerdirs=girepository --mainfile=gi-docs.xml --modulename=gi --moduleversion= --mode=auto --gtkdoc-scan=/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/bin/gtkdoc-scan --gtkdoc-scangobj=/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/bin/gtkdoc-scangobj --gtkdoc-mkdb=/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/bin/gtkdoc-mkdb --gtkdoc-mkhtml=/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/bin/gtkdoc-mkhtml --gtkdoc-fixxref=/nix/store/7lfn4750cxw6f95wgskn9x3zs5w7siyh-gtk-doc-1.32/bin/gtkdoc-fixxref --scanargs=--rebuild-types@@--ignore-headers=cmph girnode.h girparser.h girwriter.h girmodule.h girepository-private.h --mkdbargs=--name-space=g@@--ignore-files=cmph --content-files=/build/gobject-introspection-1.64.1/docs/reference/gi-struct-hierarchy.xml --cc=gcc --ld=gcc --cflags=-I/build/gobject-introspection-1.64.1/build/girepository/. -I/build/gobject-introspection-1.64.1/girepository/. -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include/glib-2.0 -I/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib/glib-2.0/include -I/nix/store/s2ysdiwvmzi1m71yhsywyya94annyrwk-glib-2.64.3-dev/include -pthread -I/nix/store/cknbmkm1ir3gg8vy69vxy898yssdi5x5-libffi-3.3-dev/include -Wall -Warray-bounds -Wcast-align -Wdeclaration-after-statement -Wduplicated-branches -Wextra -Wformat=2 -Wformat-nonliteral -Wformat-security -Wimplicit-function-declaration -Winit-self -Wjump-misses-init -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-include-dirs -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnull-dereference -Wold-style-definition -Wpacked -Wpointer-arith -Wrestrict -Wreturn-type -Wshadow -Wsign-compare -Wstrict-aliasing -Wstrict-prototypes -Wundef -Wunused-but-set-variable -Wwrite-strings -fno-strict-aliasing -DHAVE_CONFIG_H --ldflags=-L/build/gobject-introspection-1.64.1/build/girepository -Wl,-rpath,/build/gobject-introspection-1.64.1/build/girepository -L/build/gobject-introspection-1.64.1/build/girepository/cmph -Wl,-rpath,/build/gobject-introspection-1.64.1/build/girepository/cmph -L/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib -Wl,-rpath,/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib -L/nix/store/5my6n7hxynxhrr5sqkznyzzx0qgx13bw-libffi-3.3/lib/../lib64 -Wl,-rpath,/nix/store/5my6n7hxynxhrr5sqkznyzzx0qgx13bw-libffi-3.3/lib/../lib64 -lgirepository-1.0 -L/nix/store/mjdzvywdnpgsf784kpkmf54mvd0ca382-glib-2.64.3/lib -lglib-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lgio-2.0 -L/nix/store/5my6n7hxynxhrr5sqkznyzzx0qgx13bw-libffi-3.3/lib/../lib64 -lffi'
+Building documentation for gi
+html/GIBaseInfo.html:367: warning: no link for: "TRUE:CAPS" -> (<code class="literal">TRUE</code>).
+html/GIBaseInfo.html:482: warning: no link for: "NULL:CAPS" -> (<code class="literal">NULL</code>).
+html/GIRepository.html:641: warning: no link for: "GSList" -> (<span class="type">GSList</span>).
+html/GIRepository.html:652: warning: no link for: "GError" -> (<span class="type">GError</span>).
+html/GIRepository.html:771: warning: no link for: "FALSE:CAPS" -> (<code class="literal">FALSE</code>).
+html/GIRepository.html:912: warning: no link for: "GType" -> (<span class="type">GType</span>).
+html/GIRepository.html:1071: warning: no link for: "GQuark" -> (<span class="type">GQuark</span>).
+html/GIRepository.html:1171: warning: no link for: "g-file-new-for-path" -> (<code class="function">g_file_new_for_path()</code>).
+html/GIRepository.html:1172: warning: no link for: "GLocalFile" -> (<span class="type">GLocalFile</span>).
+html/GIRepository.html:1207: warning: no link for: "api-index-1.62" -> (1.62).
+html/GIRepository.html:1254: warning: no link for: "GClosure" -> (<span class="type">GClosure</span>).
+html/GIRepository.html:1255: warning: no link for: "GValue" -> (<span class="type">GValue</span>).
+html/gi-Common-Types.html:400: warning: no link for: "GList" -> (<span class="type">GList</span>).
+html/gi-Common-Types.html:414: warning: no link for: "GHashTable" -> (<span class="type">GHashTable</span>).
+html/gi-Common-Types.html:467: warning: no link for: "GPtrArray" -> (<span class="type">GPtrArray</span>).
+html/gi-Common-Types.html:474: warning: no link for: "GByteArray" -> (<span class="type">GByteArray</span>).
+html/gi-GIArgInfo.html:241: warning: no link for: "GDestroyNotify" -> (<span class="type">GDestroyNotify</span>).
+html/gi-GIArgInfo.html:689: warning: no link for: "g-list-free" -> (<code class="function">g_list_free()</code>).
+html/gi-GIArgInfo.html:689: warning: no link for: "g-hash-table-destroy" -> (<code class="function">g_hash_table_destroy()</code>).
+html/gi-GIFunctionInfo.html:231: warning: no link for: "g-module-symbol" -> (<code class="function">g_module_symbol()</code>).
+html/gi-GIObjectInfo.html:356: warning: no link for: "GObject" -> (<span class="type">GObject</span>).
+html/gi-GIPropertyInfo.html:128: warning: no link for: "GParamFlags" -> (<span class="type">GParamFlags</span>).
+html/gi-GIRegisteredTypeInfo.html:137: warning: no link for: "g-type-name" -> (<code class="function">g_type_name()</code>).
+html/gi-GISignalInfo.html:133: warning: no link for: "GSignalFlags" -> (<span class="type">GSignalFlags</span>).
+html/gi-GITypelib-Internals.html:1484: warning: no link for: "g-object-set" -> (<code class="function">g_object_set()</code>).
+html/gi-GITypelib-Internals.html:1491: warning: no link for: "g-object-get" -> (<code class="function">g_object_get()</code>).
+html/gi-GITypelib.html:119: warning: no link for: "g-free" -> (<code class="function">g_free()</code>).
+html/gi-GITypelib.html:199: warning: no link for: "GMappedFile" -> (<span class="type">GMappedFile</span>).
+
+giDiscoverSelf
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/share/gtk-doc to /nix/store/47fy5cpf963fpgyy5zic1v1qjc0g1042-gobject-introspection-1.64.1-devdoc/share/gtk-doc
+Removing empty /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/share/ and (possibly) its parents
+Moving /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/pkgconfig to /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/lib/pkgconfig
+rmdir: failed to remove '/nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib': Directory not empty
+Patching '/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/lib/pkgconfig/gobject-introspection-1.0.pc' includedir to output /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev
+Patching '/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/lib/pkgconfig/gobject-introspection-no-export-1.0.pc' includedir to output /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev
+shrinking RPATHs of ELF executables and libraries in /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1
+shrinking /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/gobject-introspection/giscanner/_giscanner.cpython-38-x86_64-linux-gnu.so
+shrinking /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib/libgirepository-1.0.so.1.0.0
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1/lib
+patching script interpreter paths in /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1
+checking for references to /build/ in /nix/store/5naljp01agls4ng516w83z0q79m28v7a-gobject-introspection-1.64.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev
+shrinking /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin/g-ir-inspect
+shrinking /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin/g-ir-compiler
+shrinking /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin/g-ir-generate
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/lib  /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin
+patching script interpreter paths in /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev
+/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin/g-ir-scanner: interpreter directive changed from "/usr/bin/env python3" to "/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin/python3"
+/nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev/bin/g-ir-annotation-tool: interpreter directive changed from "/usr/bin/env python3" to "/nix/store/7xb858afmn2pyrj3gilljcjgaqbchmal-python3-3.8.3/bin/python3"
+checking for references to /build/ in /nix/store/zi62r6cshj6qpl9nb9q09yksxr6v6fxc-gobject-introspection-1.64.1-dev...
+shrinking RPATHs of ELF executables and libraries in /nix/store/47fy5cpf963fpgyy5zic1v1qjc0g1042-gobject-introspection-1.64.1-devdoc
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/47fy5cpf963fpgyy5zic1v1qjc0g1042-gobject-introspection-1.64.1-devdoc
+checking for references to /build/ in /nix/store/47fy5cpf963fpgyy5zic1v1qjc0g1042-gobject-introspection-1.64.1-devdoc...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man
+gzipping man pages under /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man
+checking for references to /build/ in /nix/store/1zxmjl980brz2jddrwpi6hfxjl8pc2np-gobject-introspection-1.64.1-man...
+building '/nix/store/i078bqg7j0dv9j77br95zrc8mka9fja4-perl5.32.0-Glib-Object-Introspection-0.048.drv'...
+unpacking sources
+unpacking source archive /nix/store/ar52q99f30ryhvkr6ird5vsf0rcq50w5-Glib-Object-Introspection-0.048.tar.gz
+source root is Glib-Object-Introspection-0.048
+setting SOURCE_DATE_EPOCH to timestamp 1575992379 of file Glib-Object-Introspection-0.048/META.yml
+patching sources
+configuring
+patching ./t/vfunc-chaining.t...
+patching ./t/arg-checks.t...
+patching ./t/closures.t...
+patching ./t/variants.t...
+patching ./t/values.t...
+patching ./t/enums.t...
+patching ./t/boxed.t...
+patching ./t/arrays.t...
+patching ./t/00-basic-types.t...
+patching ./t/constants.t...
+patching ./t/vfunc-ref-counting.t...
+patching ./t/cairo-integration.t...
+patching ./t/structs.t...
+patching ./t/objects.t...
+patching ./t/hashes.t...
+patching ./t/callbacks.t...
+patching ./t/param-specs.t...
+patching ./t/interface-implementation.t...
+patching ./bin/perli11ndoc...
+Trying to build test libraries... Package cairo was not found in the pkg-config search path.
+Perhaps you should add the directory containing `cairo.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'cairo' found
+ at Makefile.PL line 190.
+not OK
+Error: *** can not find package cairo
+*** check that it is properly installed and available in PKG_CONFIG_PATH
+ at Makefile.PL line 190.
+Continuing without test library support...
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: '-pthread'
+Generating a Unix-style Makefile
+Writing Makefile for Glib::Object::Introspection
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp build/IFiles.pm blib/arch/Glib/Object/Introspection/Install/Files.pm
+cp lib/Glib/Object/Introspection.pm blib/lib/Glib/Object/Introspection.pm
+Running Mkbootstrap for Introspection ()
+chmod 644 "Introspection.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Introspection.bs blib/arch/auto/Glib/Object/Introspection/Introspection.bs 644
+[ XS GObjectIntrospection.xs ]
+mv GObjectIntrospection.xsc GObjectIntrospection.c
+[ CC GObjectIntrospection.c ]
+rm -f blib/arch/auto/Glib/Object/Introspection/Introspection.so
+[ LD blib/arch/auto/Glib/Object/Introspection/Introspection.so ]
+chmod 755 blib/arch/auto/Glib/Object/Introspection/Introspection.so
+cp bin/perli11ndoc blib/script/perli11ndoc
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/perli11ndoc
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Introspection.bs blib/arch/auto/Glib/Object/Introspection/Introspection.bs 644
+LD_LIBRARY_PATH=:build PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic-types.t ............ skipped: Need the test libraries
+t/arg-checks.t ................ skipped: Need the test libraries
+t/arrays.t .................... skipped: Need the test libraries
+t/boxed.t ..................... skipped: Need the test libraries
+t/cairo-integration.t ......... skipped: Need the test libraries
+t/callbacks.t ................. skipped: Need the test libraries
+t/closures.t .................. skipped: Need the test libraries
+t/constants.t ................. skipped: Need the test libraries
+t/enums.t ..................... skipped: Need the test libraries
+t/hashes.t .................... skipped: Need the test libraries
+t/interface-implementation.t .. skipped: Need the test libraries
+t/objects.t ................... skipped: Need the test libraries
+t/param-specs.t ............... skipped: Need the test libraries
+t/structs.t ................... skipped: Need the test libraries
+t/values.t .................... skipped: Need the test libraries
+t/variants.t .................. skipped: Need the test libraries
+t/vfunc-chaining.t ............ skipped: Need the test libraries
+t/vfunc-ref-counting.t ........ skipped: Need the test libraries
+Files=18, Tests=0,  1 wallclock secs ( 0.05 usr  0.02 sys +  1.04 cusr  0.43 csys =  1.54 CPU)
+Result: NOTESTS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/gsettings-schemas/perl5.32.0-Glib-Object-Introspection-0.048/glib-2.0/schemas/ pkgconfigdir=/nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/pkgconfig m4datadir=/nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/aclocal aclocaldir=/nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Introspection.bs blib/arch/auto/Glib/Object/Introspection/Introspection.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Object/Introspection/Install/Files.pm
+Installing /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Glib/Object/Introspection/Introspection.so
+Installing /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Object/Introspection.pm
+Installing /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/man/man3/Glib::Object::Introspection.3
+Installing /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/bin/perli11ndoc
+Appending installation info to /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+giDiscoverSelf
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/man/man3 to /nix/store/mb30pb3hnzfmqjbp1whc0y4a3j2mff74-perl5.32.0-Glib-Object-Introspection-0.048-devdoc/share/man/man3
+Removing empty /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048
+shrinking /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Glib/Object/Introspection/Introspection.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib  /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/bin
+patching script interpreter paths in /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048
+checking for references to /build/ in /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mb30pb3hnzfmqjbp1whc0y4a3j2mff74-perl5.32.0-Glib-Object-Introspection-0.048-devdoc
+gzipping man pages under /nix/store/mb30pb3hnzfmqjbp1whc0y4a3j2mff74-perl5.32.0-Glib-Object-Introspection-0.048-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mb30pb3hnzfmqjbp1whc0y4a3j2mff74-perl5.32.0-Glib-Object-Introspection-0.048-devdoc
+checking for references to /build/ in /nix/store/mb30pb3hnzfmqjbp1whc0y4a3j2mff74-perl5.32.0-Glib-Object-Introspection-0.048-devdoc...
+/nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048

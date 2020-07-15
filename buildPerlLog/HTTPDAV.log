@@ -1,0 +1,396 @@
+these derivations will be built:
+  /nix/store/951g55q4rblcvwrkbnaawhnjrwmn5mfb-perl5.32.0-libxml-perl-0.08.drv
+  /nix/store/sqsvl1cwfkc33f4wypv2dl6cd48rm17n-perl5.32.0-XML-RegExp-0.04.drv
+  /nix/store/hsik487b51ajzvq5mxfmq9689zx9l0c9-perl5.32.0-XML-DOM-1.46.drv
+  /nix/store/0m0i6z45rl4fx46dlalg9sllmmw3xy0p-perl5.32.0-HTTP-DAV-0.49.drv
+building '/nix/store/sqsvl1cwfkc33f4wypv2dl6cd48rm17n-perl5.32.0-XML-RegExp-0.04.drv'...
+building '/nix/store/951g55q4rblcvwrkbnaawhnjrwmn5mfb-perl5.32.0-libxml-perl-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/km72hhiy6hxbswpya31xz0j71sx4kb13-XML-RegExp-0.04.tar.gz
+source root is XML-RegExp-0.04
+setting SOURCE_DATE_EPOCH to timestamp 1332783000 of file XML-RegExp-0.04/MANIFEST
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/ad8nici4zl9abahibyrkwfcr8b1gi2vx-libxml-perl-0.08.tar.gz
+source root is libxml-perl-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1066760777 of file libxml-perl-0.08/libxml-perl-0.08.spec
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+patching ./doc/mirror.sh...
+Generating a Unix-style Makefile
+Writing Makefile for XML::RegExp
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Warning: NAME must be a package name
+cp lib/XML/RegExp.pm blib/lib/XML/RegExp.pm
+Generating a Unix-style Makefile
+Writing Makefile for libxml-perl
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..1
+ok 1
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/lib/pkgconfig m4datadir=/nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/share/aclocal aclocaldir=/nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/lib/perl5/site_perl/5.32.0/XML/RegExp.pm
+Installing /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/share/man/man3/XML::RegExp.3
+Appending installation info to /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/share/man/man3 to /nix/store/r8ff9cxjzbkhxwr3y3w51hmzjwxwq72d-perl5.32.0-XML-RegExp-0.04-devdoc/share/man/man3
+Removing empty /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04/lib
+patching script interpreter paths in /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04
+checking for references to /build/ in /nix/store/nr7ybdmjmbcyw5sdah2i733vaxxgl9z8-perl5.32.0-XML-RegExp-0.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r8ff9cxjzbkhxwr3y3w51hmzjwxwq72d-perl5.32.0-XML-RegExp-0.04-devdoc
+gzipping man pages under /nix/store/r8ff9cxjzbkhxwr3y3w51hmzjwxwq72d-perl5.32.0-XML-RegExp-0.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r8ff9cxjzbkhxwr3y3w51hmzjwxwq72d-perl5.32.0-XML-RegExp-0.04-devdoc
+checking for references to /build/ in /nix/store/r8ff9cxjzbkhxwr3y3w51hmzjwxwq72d-perl5.32.0-XML-RegExp-0.04-devdoc...
+cp lib/Data/Grove/Parent.pm blib/lib/Data/Grove/Parent.pm
+cp lib/XML/Handler/CanonXMLWriter.pm blib/lib/XML/Handler/CanonXMLWriter.pm
+cp lib/XML/PatAct/Amsterdam.pm blib/lib/XML/PatAct/Amsterdam.pm
+cp lib/Data/Grove.pm blib/lib/Data/Grove.pm
+cp lib/XML/PatAct/PatternTempl.pm blib/lib/XML/PatAct/PatternTempl.pm
+cp lib/XML/SAX2Perl.pm blib/lib/XML/SAX2Perl.pm
+cp lib/XML/PatAct/ActionTempl.pm blib/lib/XML/PatAct/ActionTempl.pm
+cp lib/XML/Parser/PerlSAX.pm blib/lib/XML/Parser/PerlSAX.pm
+cp lib/Data/Grove/Visitor.pm blib/lib/Data/Grove/Visitor.pm
+cp lib/XML/Perl2SAX.pm blib/lib/XML/Perl2SAX.pm
+cp lib/XML/ESISParser.pm blib/lib/XML/ESISParser.pm
+cp lib/XML/PatAct/MatchName.pm blib/lib/XML/PatAct/MatchName.pm
+cp lib/XML/PatAct/ToObjects.pm blib/lib/XML/PatAct/ToObjects.pm
+cp lib/XML/Handler/Sample.pm blib/lib/XML/Handler/Sample.pm
+cp lib/XML/Handler/Subs.pm blib/lib/XML/Handler/Subs.pm
+cp lib/XML/Handler/XMLWriter.pm blib/lib/XML/Handler/XMLWriter.pm
+Manifying 16 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/amsterdam.t ......... ok
+t/canon_xml_writer.t .. ok
+t/schema.t ............ ok
+t/stream.t ............ ok
+t/subs.t .............. ok
+t/xp_sax.t ............ ok
+All tests successful.
+Files=6, Tests=45,  0 wallclock secs ( 0.04 usr  0.02 sys +  0.18 cusr  0.12 csys =  0.36 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/pkgconfig m4datadir=/nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/aclocal aclocaldir=/nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/aclocal install
+Manifying 16 pod documents
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Perl2SAX.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/SAX2Perl.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/ESISParser.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/PatAct/ToObjects.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/PatAct/PatternTempl.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/PatAct/ActionTempl.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/PatAct/Amsterdam.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/PatAct/MatchName.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Parser/PerlSAX.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Handler/Subs.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Handler/CanonXMLWriter.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Handler/XMLWriter.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/XML/Handler/Sample.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/Data/Grove.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/Data/Grove/Parent.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/site_perl/5.32.0/Data/Grove/Visitor.pm
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::SAX2Perl.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::PatAct::ActionTempl.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Handler::Subs.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/Data::Grove::Parent.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Handler::Sample.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::PatAct::MatchName.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/Data::Grove::Visitor.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Perl2SAX.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Parser::PerlSAX.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Handler::CanonXMLWriter.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::PatAct::Amsterdam.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::Handler::XMLWriter.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::ESISParser.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::PatAct::PatternTempl.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/Data::Grove.3
+Installing /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3/XML::PatAct::ToObjects.3
+Appending installation info to /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/man3 to /nix/store/hvqr8gwr2q23kz8sdy5nfaisi3472md3-perl5.32.0-libxml-perl-0.08-devdoc/share/man/man3
+Removing empty /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08/lib
+patching script interpreter paths in /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08
+checking for references to /build/ in /nix/store/irqm1skjdcwhclcwc56yxxylqrma9rpr-perl5.32.0-libxml-perl-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hvqr8gwr2q23kz8sdy5nfaisi3472md3-perl5.32.0-libxml-perl-0.08-devdoc
+gzipping man pages under /nix/store/hvqr8gwr2q23kz8sdy5nfaisi3472md3-perl5.32.0-libxml-perl-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hvqr8gwr2q23kz8sdy5nfaisi3472md3-perl5.32.0-libxml-perl-0.08-devdoc
+checking for references to /build/ in /nix/store/hvqr8gwr2q23kz8sdy5nfaisi3472md3-perl5.32.0-libxml-perl-0.08-devdoc...
+building '/nix/store/hsik487b51ajzvq5mxfmq9689zx9l0c9-perl5.32.0-XML-DOM-1.46.drv'...
+unpacking sources
+unpacking source archive /nix/store/yc356ni9jbfjasrl20v1zglnk6rd9973-XML-DOM-1.46.tar.gz
+source root is XML-DOM-1.46
+setting SOURCE_DATE_EPOCH to timestamp 1474461551 of file XML-DOM-1.46/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::DOM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/DOM/DOMException.pm blib/lib/XML/DOM/DOMException.pm
+cp lib/XML/DOM/Text.pod blib/lib/XML/DOM/Text.pod
+cp lib/XML/DOM/Entity.pod blib/lib/XML/DOM/Entity.pod
+cp lib/XML/DOM/Parser.pod blib/lib/XML/DOM/Parser.pod
+cp lib/XML/DOM/NodeList.pod blib/lib/XML/DOM/NodeList.pod
+cp lib/XML/DOM/ProcessingInstruction.pod blib/lib/XML/DOM/ProcessingInstruction.pod
+cp lib/XML/DOM/DocumentType.pod blib/lib/XML/DOM/DocumentType.pod
+cp lib/XML/DOM/DocumentFragment.pod blib/lib/XML/DOM/DocumentFragment.pod
+cp lib/XML/DOM.pm blib/lib/XML/DOM.pm
+cp lib/XML/DOM/CDATASection.pod blib/lib/XML/DOM/CDATASection.pod
+cp lib/XML/DOM/NamedNodeMap.pod blib/lib/XML/DOM/NamedNodeMap.pod
+cp lib/XML/DOM/Document.pod blib/lib/XML/DOM/Document.pod
+cp lib/XML/DOM/NodeList.pm blib/lib/XML/DOM/NodeList.pm
+cp lib/XML/DOM/Comment.pod blib/lib/XML/DOM/Comment.pod
+cp lib/XML/Handler/BuildDOM.pm blib/lib/XML/Handler/BuildDOM.pm
+cp lib/XML/DOM/XMLDecl.pod blib/lib/XML/DOM/XMLDecl.pod
+cp lib/XML/DOM/Notation.pod blib/lib/XML/DOM/Notation.pod
+cp lib/XML/DOM/Element.pod blib/lib/XML/DOM/Element.pod
+cp lib/XML/DOM/EntityReference.pod blib/lib/XML/DOM/EntityReference.pod
+cp lib/XML/DOM/Node.pod blib/lib/XML/DOM/Node.pod
+cp lib/XML/DOM/PerlSAX.pm blib/lib/XML/DOM/PerlSAX.pm
+cp lib/XML/DOM/Attr.pod blib/lib/XML/DOM/Attr.pod
+cp lib/XML/DOM/CharacterData.pod blib/lib/XML/DOM/CharacterData.pod
+cp lib/XML/DOM/NamedNodeMap.pm blib/lib/XML/DOM/NamedNodeMap.pm
+cp lib/XML/DOM/ElementDecl.pod blib/lib/XML/DOM/ElementDecl.pod
+cp lib/XML/DOM/AttDef.pod blib/lib/XML/DOM/AttDef.pod
+cp lib/XML/DOM/AttlistDecl.pod blib/lib/XML/DOM/AttlistDecl.pod
+cp lib/XML/DOM/DOMImplementation.pod blib/lib/XML/DOM/DOMImplementation.pod
+Manifying 25 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/build_dom.t ......... ok
+t/dom_astress.t ....... ok
+t/dom_attr.t .......... ok
+t/dom_cdata.t ......... ok
+t/dom_documenttype.t .. ok
+t/dom_encode.t ........ ok
+t/dom_example.t ....... ok
+t/dom_extent.t ........ ok
+t/dom_jp_astress.t .... ok
+t/dom_jp_attr.t ....... ok
+t/dom_jp_cdata.t ...... ok
+t/dom_jp_example.t .... ok
+t/dom_jp_minus.t ...... ok
+t/dom_jp_modify.t ..... ok
+t/dom_jp_print.t ...... ok
+t/dom_minus.t ......... ok
+t/dom_modify.t ........ ok
+t/dom_noexpand.t ...... ok
+t/dom_print.t ......... ok
+t/dom_template.t ...... ok
+t/dom_text.t .......... ok
+All tests successful.
+Files=21, Tests=129,  3 wallclock secs ( 0.09 usr  0.04 sys +  1.82 cusr  0.76 csys =  2.71 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/pkgconfig m4datadir=/nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/aclocal aclocaldir=/nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/aclocal install
+Manifying 25 pod documents
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/PerlSAX.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/DocumentFragment.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/DocumentType.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/NodeList.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Document.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Node.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Entity.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/NamedNodeMap.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/CharacterData.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Text.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Notation.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/DOMException.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Element.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/DOMImplementation.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/AttDef.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/XMLDecl.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/NamedNodeMap.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/NodeList.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/ProcessingInstruction.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/AttlistDecl.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/CDATASection.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Comment.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/EntityReference.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Attr.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/Parser.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/DOM/ElementDecl.pod
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/site_perl/5.32.0/XML/Handler/BuildDOM.pm
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::PerlSAX.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Entity.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Element.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::AttlistDecl.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::NamedNodeMap.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::CharacterData.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::DocumentType.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::AttDef.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Text.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::ElementDecl.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::EntityReference.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::CDATASection.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::NodeList.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Parser.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::Handler::BuildDOM.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Node.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::ProcessingInstruction.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Notation.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::DocumentFragment.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Comment.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Document.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::DOMImplementation.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::XMLDecl.3
+Installing /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3/XML::DOM::Attr.3
+Appending installation info to /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/man3 to /nix/store/vnqrvyxpx6634xl5m59vr37hri97891j-perl5.32.0-XML-DOM-1.46-devdoc/share/man/man3
+Removing empty /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46/lib
+patching script interpreter paths in /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46
+checking for references to /build/ in /nix/store/lm8q53ak06h0pbg4w348fxrsqa9j22j2-perl5.32.0-XML-DOM-1.46...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vnqrvyxpx6634xl5m59vr37hri97891j-perl5.32.0-XML-DOM-1.46-devdoc
+gzipping man pages under /nix/store/vnqrvyxpx6634xl5m59vr37hri97891j-perl5.32.0-XML-DOM-1.46-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vnqrvyxpx6634xl5m59vr37hri97891j-perl5.32.0-XML-DOM-1.46-devdoc
+checking for references to /build/ in /nix/store/vnqrvyxpx6634xl5m59vr37hri97891j-perl5.32.0-XML-DOM-1.46-devdoc...
+building '/nix/store/0m0i6z45rl4fx46dlalg9sllmmw3xy0p-perl5.32.0-HTTP-DAV-0.49.drv'...
+unpacking sources
+unpacking source archive /nix/store/9nz9nn7wm58nh2y8k46w5a7rl3mf4w3f-HTTP-DAV-0.49.tar.gz
+source root is HTTP-DAV-0.49
+setting SOURCE_DATE_EPOCH to timestamp 1543423758 of file HTTP-DAV-0.49/MANIFEST
+patching sources
+configuring
+patching ./t/9_RT_42877.t...
+patching ./t/6_dav_globs.t...
+patching ./t/9_RT_68936.t...
+patching ./t/1_loadme.t...
+patching ./t/1_utils.t...
+patching ./t/9_RT_47500.t...
+patching ./t/5_proppatch.t...
+patching ./t/9_RT_19616.t...
+patching ./t/9_RT_38677.t...
+patching ./t/4_multistatus.t...
+patching ./t/5_propfind.t...
+patching ./t/3_put_get_delete.t...
+patching ./t/6_dav_lock.t...
+patching ./t/6_dav_copy_move.t...
+patching ./t/2_options.t...
+patching ./t/6_dav_lock2.t...
+patching ./t/9_RT_60457.t...
+patching ./t/9_RT_69439.t...
+patching ./t/9_RT_59674.t...
+patching ./t/9_RT_52665.t...
+patching ./t/6_dav_options.t...
+patching ./bin/dave...
+patching ./bin/dist...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTTP::DAV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTTP/DAV/Utils.pm blib/lib/HTTP/DAV/Utils.pm
+cp lib/HTTP/DAV/Response.pm blib/lib/HTTP/DAV/Response.pm
+cp lib/HTTP/DAV/Lock.pm blib/lib/HTTP/DAV/Lock.pm
+cp lib/HTTP/DAV/Resource.pm blib/lib/HTTP/DAV/Resource.pm
+cp lib/HTTP/DAV.pm blib/lib/HTTP/DAV.pm
+cp lib/HTTP/DAV/Comms.pm blib/lib/HTTP/DAV/Comms.pm
+cp lib/HTTP/DAV/ResourceList.pm blib/lib/HTTP/DAV/ResourceList.pm
+cp lib/HTTP/DAV/Changes.pod blib/lib/HTTP/DAV/Changes.pod
+cp bin/dave blib/script/dave
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/dave
+Manifying 1 pod document
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1_loadme.t ............ ok
+t/1_utils.t ............. ok
+t/2_options.t ........... ok
+t/3_put_get_delete.t .... ok
+t/4_multistatus.t ....... ok
+t/5_propfind.t .......... ok
+t/5_proppatch.t ......... ok
+t/6_dav_copy_move.t ..... ok
+t/6_dav_get_callback.t .. ok
+t/6_dav_globs.t ......... ok
+t/6_dav_lock.t .......... ok
+t/6_dav_lock2.t ......... ok
+t/6_dav_open_put_get.t .. ok
+t/6_dav_options.t ....... ok
+t/9_RT_19616.t .......... ok
+t/9_RT_38677.t .......... ok
+t/9_RT_42877.t .......... ok
+t/9_RT_47500.t .......... ok
+t/9_RT_52665.t .......... ok
+t/9_RT_59674.t .......... ok
+t/9_RT_60457.t .......... ok
+t/9_RT_68936.t .......... ok
+t/9_RT_69439.t .......... ok
+All tests successful.
+Files=23, Tests=228,  6 wallclock secs ( 0.11 usr  0.04 sys +  3.41 cusr  2.30 csys =  5.86 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/pkgconfig m4datadir=/nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/aclocal aclocaldir=/nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/aclocal install
+Manifying 1 pod document
+Manifying 5 pod documents
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Comms.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Resource.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Response.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Lock.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/ResourceList.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Changes.pod
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/site_perl/5.32.0/HTTP/DAV/Utils.pm
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man1/dave.1
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3/HTTP::DAV::Response.3
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3/HTTP::DAV::Changes.3
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3/HTTP::DAV::Resource.3
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3/HTTP::DAV.3
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3/HTTP::DAV::Lock.3
+Installing /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/bin/dave
+Appending installation info to /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/man3 to /nix/store/irwyl67063npf7ifzxj2gyl199var9hw-perl5.32.0-HTTP-DAV-0.49-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49
+gzipping man pages under /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/lib  /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49/bin
+patching script interpreter paths in /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49
+checking for references to /build/ in /nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49...
+shrinking RPATHs of ELF executables and libraries in /nix/store/irwyl67063npf7ifzxj2gyl199var9hw-perl5.32.0-HTTP-DAV-0.49-devdoc
+gzipping man pages under /nix/store/irwyl67063npf7ifzxj2gyl199var9hw-perl5.32.0-HTTP-DAV-0.49-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/irwyl67063npf7ifzxj2gyl199var9hw-perl5.32.0-HTTP-DAV-0.49-devdoc
+checking for references to /build/ in /nix/store/irwyl67063npf7ifzxj2gyl199var9hw-perl5.32.0-HTTP-DAV-0.49-devdoc...
+/nix/store/76j0rmkq0krm379dkv2ynwm3283k5px9-perl5.32.0-HTTP-DAV-0.49

@@ -1,0 +1,82 @@
+these derivations will be built:
+  /nix/store/m4j4s24z7wdihni4ab74s5issm4bay9n-perl5.32.0-Authen-ModAuthPubTkt-0.1.1.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/nd4909x5yabrmiid57d1qhj87zw1r351-Authen-ModAuthPubTkt-0.1.1.tar.gz
+copying path '/nix/store/nd4909x5yabrmiid57d1qhj87zw1r351-Authen-ModAuthPubTkt-0.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m4j4s24z7wdihni4ab74s5issm4bay9n-perl5.32.0-Authen-ModAuthPubTkt-0.1.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/nd4909x5yabrmiid57d1qhj87zw1r351-Authen-ModAuthPubTkt-0.1.1.tar.gz
+source root is Authen-ModAuthPubTkt-0.1.1
+setting SOURCE_DATE_EPOCH to timestamp 1340306678 of file Authen-ModAuthPubTkt-0.1.1/META.yml
+patching sources
+configuring
+patching ./t/manifest.t...
+patching ./t/boilerplate.t...
+patching ./t/pod.t...
+patching ./t/00-load.t...
+patching ./eg/generate_rsa_keys.sh...
+patching ./eg/mod_auth_pubtkt.pl...
+patching ./eg/generate_dsa_keys.sh...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Authen::ModAuthPubTkt
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Authen/ModAuthPubTkt.pm blib/lib/Authen/ModAuthPubTkt.pm
+cp eg/mod_auth_pubtkt.pl blib/script/mod_auth_pubtkt.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mod_auth_pubtkt.pl
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ................ 1/1 # Testing Authen::ModAuthPubTkt 0.1.1, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ................ ok
+t/01-generate-rsa.t ........ ok
+t/02-generate-dsa.t ........ ok
+t/03-verify-rsa.t .......... 1/102 !! NOTE:: Some warning may be printed below, as we're detecting invalid keys. This is expected
+Pubtkt.pm: missing "sig=" in ticket (uid=gordon;cip=127.0.0.1;validuntil=1594865608;graceperiod=1594862008;tokens=;udata=;]ig=guB2an1f5rMsWhLhu9w0e+fBUwYJz8k366PjM2XX3V5f1v3NBP7r7iYls1BLKOMz3Sx0j/7u3QmKd1UqI5dgKD2XKBiQTtUT/xCkjvqfDavgGlE3snObKQjhXz7T9eHEbRkuA6QUG6ygkaXY+tBCup5aJpBMCwNKMxgfY7dFrzc=) at /build/Authen-ModAuthPubTkt-0.1.1/blib/lib/Authen/ModAuthPubTkt.pm line 284.
+Pubtkt.pm: missing "sig=" in ticket (uid=gordon;cip=127.0.0.1;validuntil=1594865608;graceperiod=1594862008;tokens=;udata=;sip=guB2an1f5rMsWhLhu9w0e+fBUwYJz8k366PjM2XX3V5f1v3NBP7r7iYls1BLKOMz3Sx0j/7u3QmKd1UqI5dgKD2XKBiQTtUT/xCkjvqfDavgGlE3snObKQjhXz7T9eHEbRkuA6QUG6ygkaXY+tBCup5aJpBMCwNKMxgfY7dFrzc=) at /build/Authen-ModAuthPubTkt-0.1.1/blib/lib/Authen/ModAuthPubTkt.pm line 284.
+Pubtkt.pm: missing "sig=" in ticket (uid=gordon;cip=127.0.0.1;validuntil=1594865608;graceperiod=1594862008;tokens=;udata=;sdg=guB2an1f5rMsWhLhu9w0e+fBUwYJz8k366PjM2XX3V5f1v3NBP7r7iYls1BLKOMz3Sx0j/7u3QmKd1UqI5dgKD2XKBiQTtUT/xCkjvqfDavgGlE3snObKQjhXz7T9eHEbRkuA6QUG6ygkaXY+tBCup5aJpBMCwNKMxgfY7dFrzc=) at /build/Authen-ModAuthPubTkt-0.1.1/blib/lib/Authen/ModAuthPubTkt.pm line 284.
+t/03-verify-rsa.t .......... ok
+t/04-verify-dsa.t .......... 1/102 !! NOTE:: Some warning may be printed below, as we're detecting invalid keys. This is expected
+Pubtkt.pm: missing "sig=" in ticket (uid=gordon;cip=127.0.0.1;validuntil=1594865608;graceperiod=1594862008;tokens=;udata=;rig=MCwCFG918Ly13tBF0HlmpzqMvAdVntPSAhQBjRu/o3vfYt/BPXhHeRGZDCtrlA==) at /build/Authen-ModAuthPubTkt-0.1.1/blib/lib/Authen/ModAuthPubTkt.pm line 284.
+Pubtkt.pm: missing "sig=" in ticket (uid=gordon;cip=127.0.0.1;validuntil=1594865608;graceperiod=1594862008;tokens=;udata=;si+=MCwCFG918Ly13tBF0HlmpzqMvAdVntPSAhQBjRu/o3vfYt/BPXhHeRGZDCtrlA==) at /build/Authen-ModAuthPubTkt-0.1.1/blib/lib/Authen/ModAuthPubTkt.pm line 284.
+t/04-verify-dsa.t .......... ok
+t/05-wrong-rsa-key-file.t .. ok
+t/06-bad-rsa-key-file.t .... ok
+t/boilerplate.t ............ ok
+t/manifest.t ............... skipped: Author tests not required for installation
+t/pod-coverage.t ........... skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t .................... skipped: Test::Pod 1.22 required for testing POD
+All tests successful.
+
+Test Summary Report
+-------------------
+t/boilerplate.t          (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   1-3
+Files=11, Tests=215,  2 wallclock secs ( 0.06 usr  0.02 sys +  1.08 cusr  0.43 csys =  1.59 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/lib/pkgconfig m4datadir=/nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/share/aclocal aclocaldir=/nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/lib/perl5/site_perl/5.32.0/Authen/ModAuthPubTkt.pm
+Installing /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/share/man/man3/Authen::ModAuthPubTkt.3
+Installing /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/bin/mod_auth_pubtkt.pl
+Appending installation info to /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/share/man/man3 to /nix/store/c9i1khhrhmkm7w9nza2b1h8dk4214jnw-perl5.32.0-Authen-ModAuthPubTkt-0.1.1-devdoc/share/man/man3
+Removing empty /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/lib  /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1/bin
+patching script interpreter paths in /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1
+checking for references to /build/ in /nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c9i1khhrhmkm7w9nza2b1h8dk4214jnw-perl5.32.0-Authen-ModAuthPubTkt-0.1.1-devdoc
+gzipping man pages under /nix/store/c9i1khhrhmkm7w9nza2b1h8dk4214jnw-perl5.32.0-Authen-ModAuthPubTkt-0.1.1-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/c9i1khhrhmkm7w9nza2b1h8dk4214jnw-perl5.32.0-Authen-ModAuthPubTkt-0.1.1-devdoc
+checking for references to /build/ in /nix/store/c9i1khhrhmkm7w9nza2b1h8dk4214jnw-perl5.32.0-Authen-ModAuthPubTkt-0.1.1-devdoc...
+/nix/store/9hx7w63yffvia2c5qpd0k81hwp8gyrlc-perl5.32.0-Authen-ModAuthPubTkt-0.1.1

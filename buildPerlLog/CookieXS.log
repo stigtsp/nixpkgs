@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/8n8z004h015kfisq34saxyiqmirvd5wp-perl5.32.0-Cookie-XS-0.11.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/hnnxhch4l8fvrr04pczkxmy1525zj9q9-Cookie-XS-0.11.tar.gz
+copying path '/nix/store/hnnxhch4l8fvrr04pczkxmy1525zj9q9-Cookie-XS-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8n8z004h015kfisq34saxyiqmirvd5wp-perl5.32.0-Cookie-XS-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/hnnxhch4l8fvrr04pczkxmy1525zj9q9-Cookie-XS-0.11.tar.gz
+source root is Cookie-XS-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1221202996 of file Cookie-XS-0.11/README
+patching sources
+configuring
+WARNING!!! This module is now obsolete; please use CGI::Cookie::XS instead.
+*** Module::AutoInstall version 1.03
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More      ...loaded. (1.302175)
+- CGI::Cookie::XS ...loaded. (0.18 >= 0.15)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cookie::XS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cookie/XS.pm blib/lib/Cookie/XS.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/01-sanity.t t/02-overflow.t t/03-bug.t t/99-pod-coverage.t t/99-pod.t
+t/01-sanity.t ........ ok
+t/02-overflow.t ...... ok
+t/03-bug.t ........... ok
+t/99-pod-coverage.t .. skipped: Test::Pod::Coverage required for testing POD coverage
+t/99-pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=5, Tests=19,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.05 csys =  0.32 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/lib/pkgconfig m4datadir=/nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/share/aclocal aclocaldir=/nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/lib/perl5/site_perl/5.32.0/Cookie/XS.pm
+Installing /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/share/man/man3/Cookie::XS.3
+Appending installation info to /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/share/man/man3 to /nix/store/6pv4iby3w0qsljz4718bwl203dcdkdg8-perl5.32.0-Cookie-XS-0.11-devdoc/share/man/man3
+Removing empty /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11/lib
+patching script interpreter paths in /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11
+checking for references to /build/ in /nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6pv4iby3w0qsljz4718bwl203dcdkdg8-perl5.32.0-Cookie-XS-0.11-devdoc
+gzipping man pages under /nix/store/6pv4iby3w0qsljz4718bwl203dcdkdg8-perl5.32.0-Cookie-XS-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6pv4iby3w0qsljz4718bwl203dcdkdg8-perl5.32.0-Cookie-XS-0.11-devdoc
+checking for references to /build/ in /nix/store/6pv4iby3w0qsljz4718bwl203dcdkdg8-perl5.32.0-Cookie-XS-0.11-devdoc...
+/nix/store/74zgi35324nbqypzsa6qgshmqf83d4bv-perl5.32.0-Cookie-XS-0.11

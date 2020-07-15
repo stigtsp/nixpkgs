@@ -1,0 +1,336 @@
+these derivations will be built:
+  /nix/store/m27rp2jpg6vfc9n6izd9kzcy0g5n1qc0-tidyp-1.04.drv
+  /nix/store/6px463c8jygbk3blwm9g44qdsdsfrbwa-perl5.32.0-Alien-Tidyp-1.4.7.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/0cgz01597g5krbp1ak1c6mrf1rr6m481-Alien-Tidyp-v1.4.7.tar.gz
+copying path '/nix/store/0cgz01597g5krbp1ak1c6mrf1rr6m481-Alien-Tidyp-v1.4.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m27rp2jpg6vfc9n6izd9kzcy0g5n1qc0-tidyp-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/gbwl81l8rkypk47bi7y3bh70sk66rp0x-tidyp-1.04.tar.gz
+source root is tidyp-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1284697030 of file tidyp-1.04/ChangeLog
+patching sources
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-static --disable-dependency-tracking --prefix=/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for a BSD-compatible install... /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c
+checking whether ln -s works... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a sed that does not truncate output... /nix/store/bxagq7si45grj1fvyp4c37i9ir30mh7z-gnused-4.8/bin/sed
+checking for egrep... grep -E
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for ld option to reload object files... -r
+checking for BSD-compatible nm... nm
+checking how to recognise dependent libraries... pass_all
+./configure: line 1: /usr/bin/file: not found
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for f77... no
+checking for xlf... no
+checking for frt... no
+checking for pgf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for f90... no
+checking for xlf90... no
+checking for pgf90... no
+checking for epcf90... no
+checking for f95... no
+checking for fort... no
+checking for xlf95... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for gfortran... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse nm output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... ./configure: line 1: /usr/bin/file: not found
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... ld
+checking if the linker (ld) is GNU ld... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... ./configure: line 1: /usr/bin/file: not found
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking whether make sets $(MAKE)... (cached) yes
+checking if malloc debugging is wanted... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating include/Makefile
+config.status: creating bin/Makefile
+config.status: creating tests/Makefile
+config.status: executing depfiles commands
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Making all in src
+make[1]: Entering directory '/build/tidyp-1.04/src'
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o access.lo access.c
+mkdir .libs
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c access.c  -fPIC -DPIC -o .libs/access.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o attrs.lo attrs.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c attrs.c  -fPIC -DPIC -o .libs/attrs.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o istack.lo istack.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c istack.c  -fPIC -DPIC -o .libs/istack.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o parser.lo parser.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c parser.c  -fPIC -DPIC -o .libs/parser.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o tags.lo tags.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c tags.c  -fPIC -DPIC -o .libs/tags.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o entities.lo entities.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c entities.c  -fPIC -DPIC -o .libs/entities.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o lexer.lo lexer.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c lexer.c  -fPIC -DPIC -o .libs/lexer.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o pprint.lo pprint.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c pprint.c  -fPIC -DPIC -o .libs/pprint.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o clean.lo clean.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c clean.c  -fPIC -DPIC -o .libs/clean.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o localize.lo localize.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c localize.c  -fPIC -DPIC -o .libs/localize.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o config.lo config.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c config.c  -fPIC -DPIC -o .libs/config.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o alloc.lo alloc.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c alloc.c  -fPIC -DPIC -o .libs/alloc.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o attrask.lo attrask.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c attrask.c  -fPIC -DPIC -o .libs/attrask.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o attrdict.lo attrdict.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c attrdict.c  -fPIC -DPIC -o .libs/attrdict.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o attrget.lo attrget.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c attrget.c  -fPIC -DPIC -o .libs/attrget.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o buffio.lo buffio.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c buffio.c  -fPIC -DPIC -o .libs/buffio.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o fileio.lo fileio.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c fileio.c  -fPIC -DPIC -o .libs/fileio.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o streamio.lo streamio.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c streamio.c  -fPIC -DPIC -o .libs/streamio.o
+streamio.c:946:19: warning: 'Symbol2Unicode' defined but not used [-Wunused-const-variable=]
+  946 | static const uint Symbol2Unicode[] =
+      |                   ^~~~~~~~~~~~~~
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o tagask.lo tagask.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c tagask.c  -fPIC -DPIC -o .libs/tagask.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o tmbstr.lo tmbstr.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c tmbstr.c  -fPIC -DPIC -o .libs/tmbstr.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o utf8.lo utf8.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c utf8.c  -fPIC -DPIC -o .libs/utf8.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o tidyplib.lo tidyplib.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c tidyplib.c  -fPIC -DPIC -o .libs/tidyplib.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=compile gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o mappedio.lo mappedio.c
+ gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" "-DPACKAGE_STRING=\"tidyp 1.04\"" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1 -I. -I. -I../include -Wall -c mappedio.c  -fPIC -DPIC -o .libs/mappedio.o
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=link gcc -Wall    -o libtidyp.la -rpath /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib -version-info 0:0:0 -release 1.04 -no-undefined -export-dynamic access.lo attrs.lo istack.lo parser.lo tags.lo entities.lo lexer.lo pprint.lo clean.lo localize.lo config.lo alloc.lo attrask.lo attrdict.lo attrget.lo buffio.lo fileio.lo streamio.lo tagask.lo tmbstr.lo utf8.lo tidyplib.lo mappedio.lo
+gcc -shared  .libs/access.o .libs/attrs.o .libs/istack.o .libs/parser.o .libs/tags.o .libs/entities.o .libs/lexer.o .libs/pprint.o .libs/clean.o .libs/localize.o .libs/config.o .libs/alloc.o .libs/attrask.o .libs/attrdict.o .libs/attrget.o .libs/buffio.o .libs/fileio.o .libs/streamio.o .libs/tagask.o .libs/tmbstr.o .libs/utf8.o .libs/tidyplib.o .libs/mappedio.o   -Wl,-soname -Wl,libtidyp-1.04.so.0 -o .libs/libtidyp-1.04.so.0.0.0
+(cd .libs && rm -f libtidyp-1.04.so.0 && ln -s libtidyp-1.04.so.0.0.0 libtidyp-1.04.so.0)
+(cd .libs && rm -f libtidyp.so && ln -s libtidyp-1.04.so.0.0.0 libtidyp.so)
+creating libtidyp.la
+(cd .libs && rm -f libtidyp.la && ln -s ../libtidyp.la libtidyp.la)
+make[1]: Leaving directory '/build/tidyp-1.04/src'
+Making all in include
+make[1]: Entering directory '/build/tidyp-1.04/include'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/tidyp-1.04/include'
+Making all in bin
+make[1]: Entering directory '/build/tidyp-1.04/bin'
+gcc -DPACKAGE_NAME=\"tidyp\" -DPACKAGE_TARNAME=\"tidyp\" -DPACKAGE_VERSION=\"1.04\" -DPACKAGE_STRING=\"tidyp\ 1.04\" -DPACKAGE_BUGREPORT=\"andy@petdance.com\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSUPPORT_ACCESSIBILITY_CHECKS=1 -DSUPPORT_UTF16_ENCODINGS=1 -DSUPPORT_ASIAN_ENCODINGS=1  -I. -I. -I../include   -Wall  -c -o tidyp.o `test -f '../src/tidyp.c' || echo './'`../src/tidyp.c
+/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --tag=CC --mode=link gcc -Wall    -o tidyp  tidyp.o ../src/libtidyp.la
+mkdir .libs
+gcc -Wall -o .libs/tidyp tidyp.o  ../src/.libs/libtidyp.so  -Wl,--rpath -Wl,/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib
+creating tidyp
+make[1]: Leaving directory '/build/tidyp-1.04/bin'
+Making all in tests
+make[1]: Entering directory '/build/tidyp-1.04/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/tidyp-1.04/tests'
+make[1]: Entering directory '/build/tidyp-1.04'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/build/tidyp-1.04'
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+Making install in src
+make[1]: Entering directory '/build/tidyp-1.04/src'
+make[2]: Entering directory '/build/tidyp-1.04/src'
+test -z "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib" || mkdir -p -- "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib"
+ /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c  'libtidyp.la' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib/libtidyp.la'
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libtidyp-1.04.so.0.0.0 /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib/libtidyp-1.04.so.0.0.0
+(cd /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib && { ln -s -f libtidyp-1.04.so.0.0.0 libtidyp-1.04.so.0 || { rm -f libtidyp-1.04.so.0 && ln -s libtidyp-1.04.so.0.0.0 libtidyp-1.04.so.0; }; })
+(cd /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib && { ln -s -f libtidyp-1.04.so.0.0.0 libtidyp.so || { rm -f libtidyp.so && ln -s libtidyp-1.04.so.0.0.0 libtidyp.so; }; })
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/libtidyp.lai /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib/libtidyp.la
+PATH="$PATH:/sbin" ldconfig -n /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/tidyp-1.04/src'
+make[1]: Leaving directory '/build/tidyp-1.04/src'
+Making install in include
+make[1]: Entering directory '/build/tidyp-1.04/include'
+make[2]: Entering directory '/build/tidyp-1.04/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp" || mkdir -p -- "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp"
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 'platform.h' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp/platform.h'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 'tidyp.h' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp/tidyp.h'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 'tidypenum.h' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp/tidypenum.h'
+ /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c -m 644 'buffio.h' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp/buffio.h'
+make[2]: Leaving directory '/build/tidyp-1.04/include'
+make[1]: Leaving directory '/build/tidyp-1.04/include'
+Making install in bin
+make[1]: Entering directory '/build/tidyp-1.04/bin'
+make[2]: Entering directory '/build/tidyp-1.04/bin'
+test -z "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin" || mkdir -p -- "/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin"
+  /nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash ../libtool --mode=install /nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c 'tidyp' '/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin/tidyp'
+/nix/store/i0mpv6qb08c54ga3wz2xyc3pis31h4r5-coreutils-8.31/bin/install -c .libs/tidyp /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin/tidyp
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/tidyp-1.04/bin'
+make[1]: Leaving directory '/build/tidyp-1.04/bin'
+Making install in tests
+make[1]: Entering directory '/build/tidyp-1.04/tests'
+make[2]: Entering directory '/build/tidyp-1.04/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/tidyp-1.04/tests'
+make[1]: Leaving directory '/build/tidyp-1.04/tests'
+make[1]: Entering directory '/build/tidyp-1.04'
+make[2]: Entering directory '/build/tidyp-1.04'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/build/tidyp-1.04'
+make[1]: Leaving directory '/build/tidyp-1.04'
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04
+shrinking /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib/libtidyp-1.04.so.0.0.0
+shrinking /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin/tidyp
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib  /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/bin
+patching script interpreter paths in /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04
+checking for references to /build/ in /nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04...
+building '/nix/store/6px463c8jygbk3blwm9g44qdsdsfrbwa-perl5.32.0-Alien-Tidyp-1.4.7.drv'...
+unpacking sources
+unpacking source archive /nix/store/0cgz01597g5krbp1ak1c6mrf1rr6m481-Alien-Tidyp-v1.4.7.tar.gz
+source root is Alien-Tidyp-v1.4.7
+setting SOURCE_DATE_EPOCH to timestamp 1306826991 of file Alien-Tidyp-v1.4.7/t/pod.t
+patching sources
+configuring
+patching ./t/20-compile.t...
+patching ./t/pod.t...
+patching ./t/10-config.t...
+patching ./t/00-load.t...
+patching ./patches/config.guess...
+patching ./patches/config.sub...
+no configure script, doing nothing
+building
+Gonna use 'My::Builder::Unix' class ...
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Alien-Tidyp' version 'v1.4.7'
+Gonna detect tidyp already installed on your system:
+- testing: -I/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp -L/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib -ltidyp ...
+- TIDYP FOUND!
+Tidyp detected, wanna use tidyp already installed on your system? [y ]y
+Building Alien-Tidyp
+running tests
+t/00-load.t ....... 1/1 # Testing Alien::Tidyp v1.4.7, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t ....... ok
+t/10-config.t ..... # CONFIG VALUES:
+# LIBS=-L/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/lib -ltidyp
+# INC=-I/nix/store/bbxmf8grzr4p6zgxw028xcnqg265a646-tidyp-1.04/include/tidyp
+# PREFIX=
+t/10-config.t ..... ok
+t/20-compile.t .... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.22 required for testing POD
+All tests successful.
+Files=5, Tests=7,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.42 cusr  0.16 csys =  0.62 CPU)
+Result: PASS
+installing
+Building Alien-Tidyp
+Installing /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/lib/perl5/site_perl/5.32.0/Alien/Tidyp.pm
+Installing /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/lib/perl5/site_perl/5.32.0/Alien/Tidyp/ConfigData.pm
+Installing /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/lib/perl5/site_perl/5.32.0/auto/share/dist/Alien-Tidyp/share
+Installing /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/share/man/man3/Alien::Tidyp::ConfigData.3
+Installing /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/share/man/man3/Alien::Tidyp.3
+post-installation fixup
+Moving /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/share/man/man3 to /nix/store/m4k2d1fac6zxdif17mpfcnmvfd76a0j5-perl5.32.0-Alien-Tidyp-1.4.7-devdoc/share/man/man3
+Removing empty /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7/lib
+patching script interpreter paths in /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7
+checking for references to /build/ in /nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7...
+shrinking RPATHs of ELF executables and libraries in /nix/store/m4k2d1fac6zxdif17mpfcnmvfd76a0j5-perl5.32.0-Alien-Tidyp-1.4.7-devdoc
+gzipping man pages under /nix/store/m4k2d1fac6zxdif17mpfcnmvfd76a0j5-perl5.32.0-Alien-Tidyp-1.4.7-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/m4k2d1fac6zxdif17mpfcnmvfd76a0j5-perl5.32.0-Alien-Tidyp-1.4.7-devdoc
+checking for references to /build/ in /nix/store/m4k2d1fac6zxdif17mpfcnmvfd76a0j5-perl5.32.0-Alien-Tidyp-1.4.7-devdoc...
+/nix/store/nygwb29qnvhrrbhxjg9z23cbw9lqbqyg-perl5.32.0-Alien-Tidyp-1.4.7

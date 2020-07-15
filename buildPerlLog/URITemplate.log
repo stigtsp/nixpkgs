@@ -1,0 +1,52 @@
+these derivations will be built:
+  /nix/store/4b0ywc92549ww2b8yraz693d3savr3s5-perl5.32.0-URI-Template-0.24.drv
+building '/nix/store/4b0ywc92549ww2b8yraz693d3savr3s5-perl5.32.0-URI-Template-0.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/zrnsfmdbagh6br7a6wmymc72gmi748l0-URI-Template-0.24.tar.gz
+source root is URI-Template-0.24
+setting SOURCE_DATE_EPOCH to timestamp 1537466165 of file URI-Template-0.24/MANIFEST
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for URI::Template
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/URI/Template.pm blib/lib/URI/Template.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01-use.t ............... ok
+t/10-basic.t ............. ok
+t/12-suite.t ............. skipped: JSON required
+t/14-template_process.t .. ok
+t/98-pod.t ............... skipped: Test::Pod 1.14 required
+t/99-podcoverage.t ....... skipped: Test::Pod::Coverage 1.04 required
+t/gh-4.t ................. ok
+All tests successful.
+Files=7, Tests=35,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.36 cusr  0.06 csys =  0.46 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/lib/pkgconfig m4datadir=/nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/share/aclocal aclocaldir=/nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/lib/perl5/site_perl/5.32.0/URI/Template.pm
+Installing /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/share/man/man3/URI::Template.3
+Appending installation info to /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/share/man/man3 to /nix/store/ibv3kga6962r98a0na44gic8pz2jfgm1-perl5.32.0-URI-Template-0.24-devdoc/share/man/man3
+Removing empty /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24/lib
+patching script interpreter paths in /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24
+checking for references to /build/ in /nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ibv3kga6962r98a0na44gic8pz2jfgm1-perl5.32.0-URI-Template-0.24-devdoc
+gzipping man pages under /nix/store/ibv3kga6962r98a0na44gic8pz2jfgm1-perl5.32.0-URI-Template-0.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ibv3kga6962r98a0na44gic8pz2jfgm1-perl5.32.0-URI-Template-0.24-devdoc
+checking for references to /build/ in /nix/store/ibv3kga6962r98a0na44gic8pz2jfgm1-perl5.32.0-URI-Template-0.24-devdoc...
+/nix/store/2i8qlsaipi8j7kivd2jgk8b7bfgwy6ib-perl5.32.0-URI-Template-0.24

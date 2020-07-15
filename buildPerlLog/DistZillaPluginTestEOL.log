@@ -1,0 +1,228 @@
+these derivations will be built:
+  /nix/store/lmyfzi9xsfn89r66n31fni1f63hgq06s-perl5.32.0-Test-EOL-2.00.drv
+  /nix/store/116b8l9a20pfi5i2ypyv62qc24ndgjjf-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19.drv
+building '/nix/store/lmyfzi9xsfn89r66n31fni1f63hgq06s-perl5.32.0-Test-EOL-2.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/hccp1vsidn8wgmqffq4rkhfprqhqps2k-Test-EOL-2.00.tar.gz
+source root is Test-EOL-2.00
+setting SOURCE_DATE_EPOCH to timestamp 1493851143 of file Test-EOL-2.00/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::EOL
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/EOL.pm blib/lib/Test/EOL.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Configure Suggests ===
+#
+#     Module      Want Have
+#     -------- ------- ----
+#     JSON::PP 2.27300 4.04
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::More           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module        Want     Have
+#     ------------- ---- --------
+#     Cwd            any     3.78
+#     File::Find     any     1.37
+#     File::Spec     any     3.78
+#     Test::Builder  any 1.302175
+#     strict         any     1.11
+#     warnings       any     1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     JSON::PP         4.04
+#     Pod::Coverage missing
+#     Sub::Name     missing
+#     YAML          missing
+#     autodie          2.32
+#
+t/00-report-prereqs.t .. ok
+t/10-use-self.t ........ ok
+t/11-all.t ............. ok
+t/12-fail.t ............ ok
+t/13-latin1.t .......... ok
+All tests successful.
+Files=5, Tests=23,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.69 cusr  0.12 csys =  0.85 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/lib/pkgconfig m4datadir=/nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/share/aclocal aclocaldir=/nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/lib/perl5/site_perl/5.32.0/Test/EOL.pm
+Installing /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/share/man/man3/Test::EOL.3
+Appending installation info to /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/share/man/man3 to /nix/store/wv9csfxwd2pavjl06hyr0rgzasjkwcal-perl5.32.0-Test-EOL-2.00-devdoc/share/man/man3
+Removing empty /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00/lib
+patching script interpreter paths in /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00
+checking for references to /build/ in /nix/store/5js2l9nbi7n7vdlmw0rn2p1vq5ww12di-perl5.32.0-Test-EOL-2.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wv9csfxwd2pavjl06hyr0rgzasjkwcal-perl5.32.0-Test-EOL-2.00-devdoc
+gzipping man pages under /nix/store/wv9csfxwd2pavjl06hyr0rgzasjkwcal-perl5.32.0-Test-EOL-2.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wv9csfxwd2pavjl06hyr0rgzasjkwcal-perl5.32.0-Test-EOL-2.00-devdoc
+checking for references to /build/ in /nix/store/wv9csfxwd2pavjl06hyr0rgzasjkwcal-perl5.32.0-Test-EOL-2.00-devdoc...
+building '/nix/store/116b8l9a20pfi5i2ypyv62qc24ndgjjf-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/04d9qks6svn18cjd2crnrx2m68sxpml1-Dist-Zilla-Plugin-Test-EOL-0.19.tar.gz
+source root is Dist-Zilla-Plugin-Test-EOL-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1468898031 of file Dist-Zilla-Plugin-Test-EOL-0.19/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/portability.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::EOL
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-EOL' version '0.19'
+cp lib/Dist/Zilla/Plugin/EOLTests.pm blib/lib/Dist/Zilla/Plugin/EOLTests.pm
+cp lib/Dist/Zilla/Plugin/Test/EOL.pm blib/lib/Dist/Zilla/Plugin/Test/EOL.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module            Want     Have
+#     ---------------- ----- --------
+#     File::Spec         any     3.78
+#     File::pushd        any    1.016
+#     FindBin            any     1.51
+#     Module::Metadata   any 1.000037
+#     Test::DZil         any    6.015
+#     Test::Deep         any    1.130
+#     Test::EOL          any     2.00
+#     Test::More        0.88 1.302175
+#     Test::Warnings   0.009    0.030
+#     if                 any   0.0608
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                             Want     Have
+#     --------------------------------- ----- --------
+#     Data::Section                     0.004 0.200007
+#     Dist::Zilla::File::InMemory         any    6.015
+#     Dist::Zilla::Role::FileFinderUser   any    6.015
+#     Dist::Zilla::Role::FileGatherer     any    6.015
+#     Dist::Zilla::Role::FileMunger       any    6.015
+#     Dist::Zilla::Role::PrereqSource     any    6.015
+#     Dist::Zilla::Role::TextTemplate     any    6.015
+#     Moose                               any   2.2012
+#     Moose::Util::TypeConstraints        any   2.2012
+#     Path::Tiny                          any    0.114
+#     Sub::Exporter::ForMethods           any 0.100052
+#     namespace::autoclean                any     0.29
+#     strict                              any     1.11
+#     warnings                            any     1.47
+#
+# === Other Modules ===
+#
+#     Module                    Have
+#     --------------------- --------
+#     CPAN::Meta::Validator 2.150010
+#     Pod::Coverage          missing
+#
+t/00-report-prereqs.t .. ok
+t/01-basic.t ........... ok
+t/02-eoltests.t ........ ok
+t/03-finder.t .......... ok
+t/04-filename.t ........ ok
+t/eol.t ................ ok
+t/prereqs.t ............ ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=8, Tests=66, 11 wallclock secs ( 0.11 usr  0.13 sys +  6.31 cusr  4.45 csys = 11.00 CPU)
+Result: PASS
+installing
+Installing /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/EOLTests.pm
+Installing /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/EOL.pm
+Installing /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/share/man/man3/Dist::Zilla::Plugin::Test::EOL.3
+Installing /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/share/man/man3/Dist::Zilla::Plugin::EOLTests.3
+post-installation fixup
+Moving /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/share/man/man3 to /nix/store/b7gis6nb5ckcxng22d5sl642476x3f7p-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19-devdoc/share/man/man3
+Removing empty /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19/lib
+patching script interpreter paths in /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19
+checking for references to /build/ in /nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b7gis6nb5ckcxng22d5sl642476x3f7p-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19-devdoc
+gzipping man pages under /nix/store/b7gis6nb5ckcxng22d5sl642476x3f7p-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b7gis6nb5ckcxng22d5sl642476x3f7p-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19-devdoc
+checking for references to /build/ in /nix/store/b7gis6nb5ckcxng22d5sl642476x3f7p-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19-devdoc...
+/nix/store/v9md898hpa1cjzf1njqlhijipxpsia9i-perl5.32.0-Dist-Zilla-Plugin-Test-EOL-0.19

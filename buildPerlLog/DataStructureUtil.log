@@ -1,0 +1,81 @@
+these derivations will be built:
+  /nix/store/3yxxrzhr4xv326bkh5r2jxaizl1n4had-perl5.32.0-Data-Structure-Util-0.16.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/bjl8b7i0jgakj0dkg4pd8a1l4np4n37a-Data-Structure-Util-0.16.tar.gz
+copying path '/nix/store/bjl8b7i0jgakj0dkg4pd8a1l4np4n37a-Data-Structure-Util-0.16.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3yxxrzhr4xv326bkh5r2jxaizl1n4had-perl5.32.0-Data-Structure-Util-0.16.drv'...
+unpacking sources
+unpacking source archive /nix/store/bjl8b7i0jgakj0dkg4pd8a1l4np4n37a-Data-Structure-Util-0.16.tar.gz
+source root is Data-Structure-Util-0.16
+setting SOURCE_DATE_EPOCH to timestamp 1425810741 of file Data-Structure-Util-0.16/SIGNATURE
+patching sources
+configuring
+patching ./t/02circular.t...
+patching ./t/02circular_off.t...
+patching ./t/05refs.t...
+patching ./t/03bless.t...
+patching ./t/04utf8.t...
+patching ./t/00pod.t...
+patching ./t/06signature.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Structure::Util
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/Structure/Util.pm blib/lib/Data/Structure/Util.pm
+AutoSplitting blib/lib/Data/Structure/Util.pm (blib/lib/auto/Data/Structure/Util)
+Running Mkbootstrap for Util ()
+chmod 644 "Util.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Util.bs blib/arch/auto/Data/Structure/Util/Util.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Util.xs > Util.xsc
+mv Util.xsc Util.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.16\" -DXS_VERSION=\"0.16\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Util.c
+rm -f blib/arch/auto/Data/Structure/Util/Util.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Util.o  -o blib/arch/auto/Data/Structure/Util/Util.so  \
+      \
+
+chmod 755 blib/arch/auto/Data/Structure/Util/Util.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Util.bs blib/arch/auto/Data/Structure/Util/Util.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00pod.t ........... skipped: - do not have File::Find::Rule installed
+t/01compile.t ....... ok
+t/02circular.t ...... ok
+t/02circular_off.t .. ok
+t/03bless.t ......... ok
+t/04utf8.t .......... ok
+t/05refs.t .......... ok
+t/06signature.t ..... ok
+All tests successful.
+Files=8, Tests=133,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.50 cusr  0.10 csys =  0.65 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/pkgconfig m4datadir=/nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/share/aclocal aclocaldir=/nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Util.bs blib/arch/auto/Data/Structure/Util/Util.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Structure/Util/Util.so
+Installing /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/Structure/Util.pm
+Installing /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Structure/Util/autosplit.ix
+Installing /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/share/man/man3/Data::Structure::Util.3
+Appending installation info to /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/share/man/man3 to /nix/store/s8wh0i1al8yvbkwnzwg7vx155nf8mnvr-perl5.32.0-Data-Structure-Util-0.16-devdoc/share/man/man3
+Removing empty /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16
+shrinking /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Structure/Util/Util.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16/lib
+patching script interpreter paths in /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16
+checking for references to /build/ in /nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16...
+shrinking RPATHs of ELF executables and libraries in /nix/store/s8wh0i1al8yvbkwnzwg7vx155nf8mnvr-perl5.32.0-Data-Structure-Util-0.16-devdoc
+gzipping man pages under /nix/store/s8wh0i1al8yvbkwnzwg7vx155nf8mnvr-perl5.32.0-Data-Structure-Util-0.16-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/s8wh0i1al8yvbkwnzwg7vx155nf8mnvr-perl5.32.0-Data-Structure-Util-0.16-devdoc
+checking for references to /build/ in /nix/store/s8wh0i1al8yvbkwnzwg7vx155nf8mnvr-perl5.32.0-Data-Structure-Util-0.16-devdoc...
+/nix/store/9arhjxpchn8wsz45g1ji2sp27741bznl-perl5.32.0-Data-Structure-Util-0.16

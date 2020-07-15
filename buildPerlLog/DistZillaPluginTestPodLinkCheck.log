@@ -1,0 +1,109 @@
+these derivations will be built:
+  /nix/store/5vqqkj8mssh5shi6jq1p8dwvlyxm5xwj-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.drv
+building '/nix/store/5vqqkj8mssh5shi6jq1p8dwvlyxm5xwj-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/jm0dd9h7625qqh8j6vs3p9jq3zyw466m-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004.tar.gz
+source root is Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004
+setting SOURCE_DATE_EPOCH to timestamp 1504707375 of file Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/unused-vars.t...
+patching ./xt/release/dist-manifest.t...
+patching ./xt/release/meta-json.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-linkcheck.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite Test::Pod::LinkCheck 0.005 not found.
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Pod::LinkCheck
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Dist/Zilla/Plugin/Test/Pod/LinkCheck.pm blib/lib/Dist/Zilla/Plugin/Test/Pod/LinkCheck.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ......... ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Test::More           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                            Want    Have
+#     -------------------------------- ----- -------
+#     Dist::Zilla::Plugin::InlineFiles   any   6.015
+#     Dist::Zilla::Role::PrereqSource    any   6.015
+#     Moose                              any  2.2012
+#     Test::Pod::LinkCheck             0.005 missing
+#     strict                             any    1.11
+#     warnings                           any    1.47
+#
+#
+# *** WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING ***
+#
+# The following REQUIRED prerequisites were not satisfied:
+#
+# Test::Pod::LinkCheck is not installed (version '0.005' required)
+#
+t/00-report-prereqs.t .. ok
+All tests successful.
+Files=2, Tests=2,  3 wallclock secs ( 0.09 usr  0.08 sys +  1.35 cusr  1.56 csys =  3.08 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/lib/pkgconfig m4datadir=/nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/share/aclocal aclocaldir=/nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/Pod/LinkCheck.pm
+Installing /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/share/man/man3/Dist::Zilla::Plugin::Test::Pod::LinkCheck.3
+Appending installation info to /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/share/man/man3 to /nix/store/hi1yk3qnwhn9601zb03gksl731r22z5b-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004-devdoc/share/man/man3
+Removing empty /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004/lib
+patching script interpreter paths in /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004
+checking for references to /build/ in /nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hi1yk3qnwhn9601zb03gksl731r22z5b-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004-devdoc
+gzipping man pages under /nix/store/hi1yk3qnwhn9601zb03gksl731r22z5b-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hi1yk3qnwhn9601zb03gksl731r22z5b-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004-devdoc
+checking for references to /build/ in /nix/store/hi1yk3qnwhn9601zb03gksl731r22z5b-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004-devdoc...
+/nix/store/pa2p72gkaiav3kh45x234qpji6pyr3lz-perl5.32.0-Dist-Zilla-Plugin-Test-Pod-LinkCheck-1.004

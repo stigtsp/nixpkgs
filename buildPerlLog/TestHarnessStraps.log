@@ -1,0 +1,72 @@
+these derivations will be built:
+  /nix/store/sqfyq9c21nkfazmq3jszxb951clnp2sr-perl5.32.0-Test-Harness-Straps-0.30.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/cd762ingp1qar45h1v2m2jykxbpps8n7-Test-Harness-Straps-0.30.tar.gz
+copying path '/nix/store/cd762ingp1qar45h1v2m2jykxbpps8n7-Test-Harness-Straps-0.30.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sqfyq9c21nkfazmq3jszxb951clnp2sr-perl5.32.0-Test-Harness-Straps-0.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/cd762ingp1qar45h1v2m2jykxbpps8n7-Test-Harness-Straps-0.30.tar.gz
+source root is Test-Harness-Straps-0.30
+setting SOURCE_DATE_EPOCH to timestamp 1199831682 of file Test-Harness-Straps-0.30/SIGNATURE
+patching sources
+configuring
+patching ./t/00compile.t...
+patching ./t/strap.t...
+patching ./t/point-parse.t...
+patching ./t/callback.t...
+patching ./t/sample-tests/inc_taint...
+patching ./t/sample-tests/taint_warn...
+patching ./t/sample-tests/taint...
+patching ./t/sample-tests/shbang_misparse...
+patching ./t/sample-tests/segfault...
+patching ./t/sample-tests/no_output...
+patching ./t/strap-analyze.t...
+patching ./t/point.t...
+patching ./Build.PL...
+no configure script, doing nothing
+building
+Test::Harness::Straps is provided for backwards compatibility only.
+No further development is planned.  No bugs will be fixed.
+
+For customizable TAP parsing please use L<TAP::Parser> instead.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Harness-Straps' version '0.30'
+Building Test-Harness-Straps
+running tests
+t/00compile.t ...... 1/5 # Testing Test::Harness::Straps 0.30 under Perl 5.032000 and Test::More 1.302175
+t/00compile.t ...... ok
+t/callback.t ....... ok
+t/point-parse.t .... ok
+t/point.t .......... ok
+t/strap-analyze.t .. ok
+t/strap.t .......... ok
+All tests successful.
+Files=6, Tests=425,  0 wallclock secs ( 0.05 usr  0.01 sys +  0.53 cusr  0.15 csys =  0.74 CPU)
+Result: PASS
+installing
+Building Test-Harness-Straps
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib/perl5/5.32.0/Test/Harness/Assert.pm
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib/perl5/5.32.0/Test/Harness/Iterator.pm
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib/perl5/5.32.0/Test/Harness/Point.pm
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib/perl5/5.32.0/Test/Harness/Straps.pm
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib/perl5/5.32.0/Test/Harness/Results.pm
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3/Test::Harness::Point.3
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3/Test::Harness::Assert.3
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3/Test::Harness::Straps.3
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3/Test::Harness::Iterator.3
+Installing /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3/Test::Harness::Results.3
+post-installation fixup
+Moving /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/man3 to /nix/store/sfay94cjvkgsqx48irldag12lb8px1rf-perl5.32.0-Test-Harness-Straps-0.30-devdoc/share/man/man3
+Removing empty /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30/lib
+patching script interpreter paths in /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30
+checking for references to /build/ in /nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sfay94cjvkgsqx48irldag12lb8px1rf-perl5.32.0-Test-Harness-Straps-0.30-devdoc
+gzipping man pages under /nix/store/sfay94cjvkgsqx48irldag12lb8px1rf-perl5.32.0-Test-Harness-Straps-0.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sfay94cjvkgsqx48irldag12lb8px1rf-perl5.32.0-Test-Harness-Straps-0.30-devdoc
+checking for references to /build/ in /nix/store/sfay94cjvkgsqx48irldag12lb8px1rf-perl5.32.0-Test-Harness-Straps-0.30-devdoc...
+/nix/store/9s46vqvxxbgm9cirxla1p6l5r5d7r115-perl5.32.0-Test-Harness-Straps-0.30

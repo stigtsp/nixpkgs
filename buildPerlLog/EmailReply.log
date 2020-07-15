@@ -1,0 +1,93 @@
+these derivations will be built:
+  /nix/store/zg82syys1yxg468x6ww6fp7qi6dgv0nx-perl5.32.0-Email-Reply-1.204.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/j3vzn7cg7nmgb2dlgshvfbdzkc836k56-Email-Reply-1.204.tar.gz
+copying path '/nix/store/j3vzn7cg7nmgb2dlgshvfbdzkc836k56-Email-Reply-1.204.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zg82syys1yxg468x6ww6fp7qi6dgv0nx-perl5.32.0-Email-Reply-1.204.drv'...
+unpacking sources
+unpacking source archive /nix/store/j3vzn7cg7nmgb2dlgshvfbdzkc836k56-Email-Reply-1.204.tar.gz
+source root is Email-Reply-1.204
+setting SOURCE_DATE_EPOCH to timestamp 1448854091 of file Email-Reply-1.204/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Email::Reply
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Email/Reply.pm blib/lib/Email/Reply.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module          Want  Have
+#     --------------- ---- -----
+#     Email::Abstract 2.01 3.008
+#     Email::Address  1.80 1.912
+#     Email::MIME     1.82 1.949
+#     Exporter        5.57  5.74
+#     strict           any  1.11
+#     warnings         any  1.47
+#
+t/00-report-prereqs.t .. ok
+t/test.t ............... ok
+All tests successful.
+Files=2, Tests=17,  0 wallclock secs ( 0.02 usr  0.02 sys +  0.34 cusr  0.17 csys =  0.55 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/lib/pkgconfig m4datadir=/nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/share/aclocal aclocaldir=/nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/lib/perl5/site_perl/5.32.0/Email/Reply.pm
+Installing /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/share/man/man3/Email::Reply.3
+Appending installation info to /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/share/man/man3 to /nix/store/2kfrs87a44ya6bcbngwlmrk3kz1g0kms-perl5.32.0-Email-Reply-1.204-devdoc/share/man/man3
+Removing empty /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204/lib
+patching script interpreter paths in /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204
+checking for references to /build/ in /nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2kfrs87a44ya6bcbngwlmrk3kz1g0kms-perl5.32.0-Email-Reply-1.204-devdoc
+gzipping man pages under /nix/store/2kfrs87a44ya6bcbngwlmrk3kz1g0kms-perl5.32.0-Email-Reply-1.204-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2kfrs87a44ya6bcbngwlmrk3kz1g0kms-perl5.32.0-Email-Reply-1.204-devdoc
+checking for references to /build/ in /nix/store/2kfrs87a44ya6bcbngwlmrk3kz1g0kms-perl5.32.0-Email-Reply-1.204-devdoc...
+/nix/store/3n3m1cljgn73nmi2khb2z6q55l7qb5xx-perl5.32.0-Email-Reply-1.204

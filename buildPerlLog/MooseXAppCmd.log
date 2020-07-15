@@ -1,0 +1,404 @@
+these derivations will be built:
+  /nix/store/dbig5rxgya1bgy40c0hfxlvxvq5mfjc0-perl5.32.0-MooseX-Types-Stringlike-0.003.drv
+  /nix/store/4z0a88sn58kgfn6h6qnvbrckb5zqv0ww-perl5.32.0-MooseX-Types-Path-Tiny-0.012.drv
+  /nix/store/h197kkxnxfm898s5ambq6nd29mkcq7h3-perl5.32.0-MooseX-ConfigFromFile-0.14.drv
+  /nix/store/fblr29cv3wqnhdv9n2ix6vrzdlxdfc15-perl5.32.0-MooseX-App-Cmd-0.32.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/0y21xmw1syz5lnslmhs8pi4dlb5a441y-MooseX-ConfigFromFile-0.14.tar.gz
+  /nix/store/i916if11lgrkv0yhg5hi29b11b2c5c35-MooseX-Types-Path-Tiny-0.012.tar.gz
+  /nix/store/kkwq2p52bfb5hwi2qa1xlkkkmlv806w5-MooseX-Types-Stringlike-0.003.tar.gz
+  /nix/store/lqhiqqk1q7wc3322lx1b13lq6gzz8232-MooseX-App-Cmd-0.32.tar.gz
+copying path '/nix/store/lqhiqqk1q7wc3322lx1b13lq6gzz8232-MooseX-App-Cmd-0.32.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/0y21xmw1syz5lnslmhs8pi4dlb5a441y-MooseX-ConfigFromFile-0.14.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/i916if11lgrkv0yhg5hi29b11b2c5c35-MooseX-Types-Path-Tiny-0.012.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/kkwq2p52bfb5hwi2qa1xlkkkmlv806w5-MooseX-Types-Stringlike-0.003.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dbig5rxgya1bgy40c0hfxlvxvq5mfjc0-perl5.32.0-MooseX-Types-Stringlike-0.003.drv'...
+unpacking sources
+unpacking source archive /nix/store/kkwq2p52bfb5hwi2qa1xlkkkmlv806w5-MooseX-Types-Stringlike-0.003.tar.gz
+source root is MooseX-Types-Stringlike-0.003
+setting SOURCE_DATE_EPOCH to timestamp 1397732770 of file MooseX-Types-Stringlike-0.003/xt/release/test-version.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/critic.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Types::Stringlike
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooseX/Types/Stringlike.pm blib/lib/MooseX/Types/Stringlike.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#    Version Module
+#   -------- ------------------------
+#   2.150010 CPAN::Meta
+#      2.140 CPAN::Meta::Requirements
+#       7.44 ExtUtils::MakeMaker
+#       3.78 File::Spec::Functions
+#       1.55 List::Util
+#     2.2012 Moose
+#       0.50 MooseX::Types
+#       0.50 MooseX::Types::Moose
+#   1.302175 Test::More
+#       1.31 overload
+#       1.11 strict
+#     0.9924 version
+#       1.47 warnings
+t/00-report-prereqs.t .. ok
+t/arrayrefs.t .......... ok
+t/stringable.t ......... ok
+All tests successful.
+Files=3, Tests=7,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.72 cusr  0.41 csys =  1.19 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/lib/pkgconfig m4datadir=/nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/share/aclocal aclocaldir=/nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/lib/perl5/site_perl/5.32.0/MooseX/Types/Stringlike.pm
+Installing /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/share/man/man3/MooseX::Types::Stringlike.3
+Appending installation info to /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/share/man/man3 to /nix/store/cldn494p81w7hh30ls76kkz86ziiiywn-perl5.32.0-MooseX-Types-Stringlike-0.003-devdoc/share/man/man3
+Removing empty /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003/lib
+patching script interpreter paths in /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003
+checking for references to /build/ in /nix/store/yr8m14y92i2bmdvdx7dsi1y7i0y3cq4b-perl5.32.0-MooseX-Types-Stringlike-0.003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cldn494p81w7hh30ls76kkz86ziiiywn-perl5.32.0-MooseX-Types-Stringlike-0.003-devdoc
+gzipping man pages under /nix/store/cldn494p81w7hh30ls76kkz86ziiiywn-perl5.32.0-MooseX-Types-Stringlike-0.003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cldn494p81w7hh30ls76kkz86ziiiywn-perl5.32.0-MooseX-Types-Stringlike-0.003-devdoc
+checking for references to /build/ in /nix/store/cldn494p81w7hh30ls76kkz86ziiiywn-perl5.32.0-MooseX-Types-Stringlike-0.003-devdoc...
+building '/nix/store/4z0a88sn58kgfn6h6qnvbrckb5zqv0ww-perl5.32.0-MooseX-Types-Path-Tiny-0.012.drv'...
+unpacking sources
+unpacking source archive /nix/store/i916if11lgrkv0yhg5hi29b11b2c5c35-MooseX-Types-Path-Tiny-0.012.tar.gz
+source root is MooseX-Types-Path-Tiny-0.012
+setting SOURCE_DATE_EPOCH to timestamp 1491434238 of file MooseX-Types-Path-Tiny-0.012/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::Types::Path::Tiny
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-Types-Path-Tiny' version '0.012'
+cp lib/MooseX/Types/Path/Tiny.pm blib/lib/MooseX/Types/Path/Tiny.pm
+running tests
+t/00-report-prereqs.t ... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     ---------------- ---- --------
+#     File::Spec        any     3.78
+#     File::Temp       0.18   0.2309
+#     File::pushd       any    1.016
+#     Module::Metadata  any 1.000037
+#     Test::Fatal       any    0.014
+#     Test::More       0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                    Want   Have
+#     ------------------------- ---- ------
+#     Moose                        2 2.2012
+#     MooseX::Getopt             any   0.74
+#     MooseX::Types              any   0.50
+#     MooseX::Types::Moose       any   0.50
+#     MooseX::Types::Stringlike  any  0.003
+#     Path::Tiny                 any  0.114
+#     if                         any 0.0608
+#     namespace::autoclean       any   0.29
+#     strict                     any   1.11
+#     warnings                   any   1.47
+#
+# === Other Modules ===
+#
+#     Module                  Have
+#     -------------------- -------
+#     Dist::CheckConflicts    0.11
+#     JSON::PP                4.04
+#     Pod::Coverage        missing
+#     Sub::Name               0.26
+#     YAML                 missing
+#     autodie                 2.32
+#     namespace::clean        0.27
+#
+t/00-report-prereqs.t ... ok
+t/06-fully-qualified.t .. ok
+t/arrayref.t ............ ok
+t/basic.t ............... ok
+t/error.t ............... ok
+t/zzz-check-breaks.t .... ok
+All tests successful.
+Files=6, Tests=40,  3 wallclock secs ( 0.05 usr  0.06 sys +  2.12 cusr  1.06 csys =  3.29 CPU)
+Result: PASS
+installing
+Installing /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012/lib/perl5/site_perl/5.32.0/MooseX/Types/Path/Tiny.pm
+Installing /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012/share/man/man3/MooseX::Types::Path::Tiny.3
+post-installation fixup
+Moving /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012/share/man/man3 to /nix/store/x1w2ls1pbfynw3m7i56p6i2k9dihmv5b-perl5.32.0-MooseX-Types-Path-Tiny-0.012-devdoc/share/man/man3
+Removing empty /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012/lib
+patching script interpreter paths in /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012
+checking for references to /build/ in /nix/store/qd2mbs7iw8r34qgzd46b4dx3rx80ifmf-perl5.32.0-MooseX-Types-Path-Tiny-0.012...
+shrinking RPATHs of ELF executables and libraries in /nix/store/x1w2ls1pbfynw3m7i56p6i2k9dihmv5b-perl5.32.0-MooseX-Types-Path-Tiny-0.012-devdoc
+gzipping man pages under /nix/store/x1w2ls1pbfynw3m7i56p6i2k9dihmv5b-perl5.32.0-MooseX-Types-Path-Tiny-0.012-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/x1w2ls1pbfynw3m7i56p6i2k9dihmv5b-perl5.32.0-MooseX-Types-Path-Tiny-0.012-devdoc
+checking for references to /build/ in /nix/store/x1w2ls1pbfynw3m7i56p6i2k9dihmv5b-perl5.32.0-MooseX-Types-Path-Tiny-0.012-devdoc...
+building '/nix/store/h197kkxnxfm898s5ambq6nd29mkcq7h3-perl5.32.0-MooseX-ConfigFromFile-0.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/0y21xmw1syz5lnslmhs8pi4dlb5a441y-MooseX-ConfigFromFile-0.14.tar.gz
+source root is MooseX-ConfigFromFile-0.14
+setting SOURCE_DATE_EPOCH to timestamp 1439694716 of file MooseX-ConfigFromFile-0.14/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./t/00-report-prereqs.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::ConfigFromFile
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-ConfigFromFile' version '0.14'
+cp lib/MooseX/ConfigFromFile.pm blib/lib/MooseX/ConfigFromFile.pm
+running tests
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.007 0.039
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     Moose                  any   2.2012
+#     Scalar::Util           any     1.55
+#     Test::Deep             any    1.130
+#     Test::Fatal            any    0.014
+#     Test::More            0.88 1.302175
+#     Test::Requires         any     0.11
+#     Test::Without::Module  any     0.20
+#     if                     any   0.0608
+#     strict                 any     1.11
+#
+# === Test Recommends ===
+#
+#     Module             Want     Have
+#     -------------- -------- --------
+#     CPAN::Meta     2.120900 2.150010
+#     MooseX::Getopt      any     0.74
+#
+# === Runtime Requires ===
+#
+#     Module                     Want   Have
+#     ------------------------- ----- ------
+#     Carp                        any   1.50
+#     Moose::Role                 any 2.2012
+#     MooseX::Types::Moose        any   0.50
+#     MooseX::Types::Path::Tiny 0.005  0.012
+#     namespace::autoclean        any   0.29
+#     warnings                    any   1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Pod::Coverage missing
+#
+t/00-report-prereqs.t .... ok
+t/01use.t ................ ok
+t/02subclass.t ........... ok
+t/03configfile_method.t .. ok
+t/04a_getopt.t ........... ok
+t/04b_getopt.t ........... ok
+t/05_default_sub.t ....... ok
+t/zzz-check-breaks.t ..... ok
+All tests successful.
+Files=8, Tests=63,  4 wallclock secs ( 0.06 usr  0.05 sys +  2.73 cusr  1.31 csys =  4.15 CPU)
+Result: PASS
+installing
+Installing /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14/lib/perl5/site_perl/5.32.0/MooseX/ConfigFromFile.pm
+Installing /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14/share/man/man3/MooseX::ConfigFromFile.3
+post-installation fixup
+Moving /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14/share/man/man3 to /nix/store/n42m9x8n6ymd4jrj04g4331glsnb1x2f-perl5.32.0-MooseX-ConfigFromFile-0.14-devdoc/share/man/man3
+Removing empty /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14/lib
+patching script interpreter paths in /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14
+checking for references to /build/ in /nix/store/32ljmrc19mp2bncpjwxzfdcv43sa8yqf-perl5.32.0-MooseX-ConfigFromFile-0.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n42m9x8n6ymd4jrj04g4331glsnb1x2f-perl5.32.0-MooseX-ConfigFromFile-0.14-devdoc
+gzipping man pages under /nix/store/n42m9x8n6ymd4jrj04g4331glsnb1x2f-perl5.32.0-MooseX-ConfigFromFile-0.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n42m9x8n6ymd4jrj04g4331glsnb1x2f-perl5.32.0-MooseX-ConfigFromFile-0.14-devdoc
+checking for references to /build/ in /nix/store/n42m9x8n6ymd4jrj04g4331glsnb1x2f-perl5.32.0-MooseX-ConfigFromFile-0.14-devdoc...
+building '/nix/store/fblr29cv3wqnhdv9n2ix6vrzdlxdfc15-perl5.32.0-MooseX-App-Cmd-0.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/lqhiqqk1q7wc3322lx1b13lq6gzz8232-MooseX-App-Cmd-0.32.tar.gz
+source root is MooseX-App-Cmd-0.32
+setting SOURCE_DATE_EPOCH to timestamp 1442020216 of file MooseX-App-Cmd-0.32/xt/release/synopsis.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/synopsis.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::App::Cmd
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'MooseX-App-Cmd' version '0.32'
+cp lib/MooseX/App/Cmd/Command.pm blib/lib/MooseX/App/Cmd/Command.pm
+cp lib/MooseX/App/Cmd.pm blib/lib/MooseX/App/Cmd.pm
+running tests
+t/00-report-prereqs.t ... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Data::Dumper         any    2.174
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.88 1.302175
+#     Test::Output         any    1.031
+#     YAML                 any     1.30
+#     base                 any     2.27
+#     lib                  any     0.65
+#     strict               any     1.11
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Test Suggests ===
+#
+#     Module                 Want Have
+#     ---------------------- ---- ----
+#     MooseX::ConfigFromFile  any 0.14
+#
+# === Runtime Requires ===
+#
+#     Module                     Want   Have
+#     ------------------------- ----- ------
+#     App::Cmd                  0.321  0.331
+#     App::Cmd::Command           any  0.331
+#     Getopt::Long::Descriptive 0.091  0.105
+#     Moose                       any 2.2012
+#     Moose::Object               any 2.2012
+#     MooseX::Getopt              any   0.74
+#     MooseX::NonMoose            any   0.26
+#     namespace::autoclean        any   0.29
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Pod::Coverage missing
+#
+t/00-report-prereqs.t ... ok
+t/basic.t ............... ok
+t/build_emulates_new.t .. ok
+t/configfile.t .......... ok
+t/moose.t ............... ok
+t/zzz-check-breaks.t .... ok
+All tests successful.
+Files=6, Tests=21,  4 wallclock secs ( 0.06 usr  0.05 sys +  2.22 cusr  1.20 csys =  3.53 CPU)
+Result: PASS
+installing
+Installing /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/lib/perl5/site_perl/5.32.0/MooseX/App/Cmd.pm
+Installing /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/lib/perl5/site_perl/5.32.0/MooseX/App/Cmd/Command.pm
+Installing /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/share/man/man3/MooseX::App::Cmd::Command.3
+Installing /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/share/man/man3/MooseX::App::Cmd.3
+post-installation fixup
+Moving /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/share/man/man3 to /nix/store/bx86xizx9kcx89y1431vwfa9idb87i52-perl5.32.0-MooseX-App-Cmd-0.32-devdoc/share/man/man3
+Removing empty /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32/lib
+patching script interpreter paths in /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32
+checking for references to /build/ in /nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bx86xizx9kcx89y1431vwfa9idb87i52-perl5.32.0-MooseX-App-Cmd-0.32-devdoc
+gzipping man pages under /nix/store/bx86xizx9kcx89y1431vwfa9idb87i52-perl5.32.0-MooseX-App-Cmd-0.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bx86xizx9kcx89y1431vwfa9idb87i52-perl5.32.0-MooseX-App-Cmd-0.32-devdoc
+checking for references to /build/ in /nix/store/bx86xizx9kcx89y1431vwfa9idb87i52-perl5.32.0-MooseX-App-Cmd-0.32-devdoc...
+/nix/store/s75w849k7xmc18n2mwaslqkzni2wmpjs-perl5.32.0-MooseX-App-Cmd-0.32

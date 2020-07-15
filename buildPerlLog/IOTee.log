@@ -1,0 +1,46 @@
+these derivations will be built:
+  /nix/store/xvzbz68d39gwa3ny47m68vrpddnrmgm2-perl5.32.0-IO-Tee-0.65.drv
+building '/nix/store/xvzbz68d39gwa3ny47m68vrpddnrmgm2-perl5.32.0-IO-Tee-0.65.drv'...
+unpacking sources
+unpacking source archive /nix/store/pf655hdz2lykca4m6svf3pjw0pama42k-IO-Tee-0.65.tar.gz
+source root is IO-Tee-0.65
+setting SOURCE_DATE_EPOCH to timestamp 1502879033 of file IO-Tee-0.65/t/original.t
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::Tee
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/Tee.pm blib/lib/IO/Tee.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/original.t .. ok
+All tests successful.
+Files=1, Tests=27,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/lib/pkgconfig m4datadir=/nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/share/aclocal aclocaldir=/nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/lib/perl5/site_perl/5.32.0/IO/Tee.pm
+Installing /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/share/man/man3/IO::Tee.3
+Appending installation info to /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/share/man/man3 to /nix/store/6ssh6nr64ix9w1kw895dgsx5zi9bgb1w-perl5.32.0-IO-Tee-0.65-devdoc/share/man/man3
+Removing empty /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65/lib
+patching script interpreter paths in /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65
+checking for references to /build/ in /nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6ssh6nr64ix9w1kw895dgsx5zi9bgb1w-perl5.32.0-IO-Tee-0.65-devdoc
+gzipping man pages under /nix/store/6ssh6nr64ix9w1kw895dgsx5zi9bgb1w-perl5.32.0-IO-Tee-0.65-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6ssh6nr64ix9w1kw895dgsx5zi9bgb1w-perl5.32.0-IO-Tee-0.65-devdoc
+checking for references to /build/ in /nix/store/6ssh6nr64ix9w1kw895dgsx5zi9bgb1w-perl5.32.0-IO-Tee-0.65-devdoc...
+/nix/store/0s67yggddgzbqf2hn6v3j0q6gkyivvjg-perl5.32.0-IO-Tee-0.65

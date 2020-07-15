@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/czgz7df9afiz5dc604vpg2gpv6v8jkx9-perl5.32.0-Mojo-Pg-4.19.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/y1y3wpqy7p1sd23l4fkyx6zy2zxwb01j-Mojo-Pg-4.19.tar.gz
+copying path '/nix/store/y1y3wpqy7p1sd23l4fkyx6zy2zxwb01j-Mojo-Pg-4.19.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/czgz7df9afiz5dc604vpg2gpv6v8jkx9-perl5.32.0-Mojo-Pg-4.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/y1y3wpqy7p1sd23l4fkyx6zy2zxwb01j-Mojo-Pg-4.19.tar.gz
+source root is Mojo-Pg-4.19
+setting SOURCE_DATE_EPOCH to timestamp 1590927793 of file Mojo-Pg-4.19/META.yml
+patching sources
+configuring
+patching ./examples/blog/script/blog...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mojo::Pg
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojo/Pg/PubSub.pm blib/lib/Mojo/Pg/PubSub.pm
+cp lib/Mojo/Pg/Results.pm blib/lib/Mojo/Pg/Results.pm
+cp lib/Mojo/Pg/Migrations.pm blib/lib/Mojo/Pg/Migrations.pm
+cp lib/Mojo/Pg/Database.pm blib/lib/Mojo/Pg/Database.pm
+cp lib/Mojo/Pg/Transaction.pm blib/lib/Mojo/Pg/Transaction.pm
+cp lib/SQL/Abstract/Pg.pm blib/lib/SQL/Abstract/Pg.pm
+cp lib/Mojo/Pg.pm blib/lib/Mojo/Pg.pm
+Manifying 7 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/connection.t .... ok
+t/crud.t .......... skipped: set TEST_ONLINE to enable this test
+t/database.t ...... skipped: set TEST_ONLINE to enable this test
+t/migrations.t .... skipped: set TEST_ONLINE to enable this test
+t/pg_lite_app.t ... skipped: set TEST_ONLINE to enable this test
+t/pod.t ........... skipped: set TEST_POD to enable this test (developer only!)
+t/pod_coverage.t .. skipped: set TEST_POD to enable this test (developer only!)
+t/pubsub.t ........ skipped: set TEST_ONLINE to enable this test
+t/results.t ....... skipped: set TEST_ONLINE to enable this test
+t/sql.t ........... ok
+All tests successful.
+Files=10, Tests=78,  4 wallclock secs ( 0.04 usr  0.02 sys +  2.37 cusr  0.88 csys =  3.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/pkgconfig m4datadir=/nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/aclocal aclocaldir=/nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/aclocal install
+Manifying 7 pod documents
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg/PubSub.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg/Transaction.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg/Database.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg/Results.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/Mojo/Pg/Migrations.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/site_perl/5.32.0/SQL/Abstract/Pg.pm
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg::Database.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/SQL::Abstract::Pg.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg::Migrations.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg::Transaction.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg::Results.3
+Installing /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3/Mojo::Pg::PubSub.3
+Appending installation info to /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/man3 to /nix/store/p09x87kv2rqcg3v5bv334mhmscrsr65y-perl5.32.0-Mojo-Pg-4.19-devdoc/share/man/man3
+Removing empty /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19/lib
+patching script interpreter paths in /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19
+checking for references to /build/ in /nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/p09x87kv2rqcg3v5bv334mhmscrsr65y-perl5.32.0-Mojo-Pg-4.19-devdoc
+gzipping man pages under /nix/store/p09x87kv2rqcg3v5bv334mhmscrsr65y-perl5.32.0-Mojo-Pg-4.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/p09x87kv2rqcg3v5bv334mhmscrsr65y-perl5.32.0-Mojo-Pg-4.19-devdoc
+checking for references to /build/ in /nix/store/p09x87kv2rqcg3v5bv334mhmscrsr65y-perl5.32.0-Mojo-Pg-4.19-devdoc...
+/nix/store/446n4bbhn6rgla49fxnfnc94vj5csabd-perl5.32.0-Mojo-Pg-4.19

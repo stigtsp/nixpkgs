@@ -1,0 +1,64 @@
+these derivations will be built:
+  /nix/store/fhc5ijxdwsipfj3qmcwcjhj7kqbqjjpw-perl5.32.0-HTML-FormatText-WithLinks-0.15.drv
+building '/nix/store/fhc5ijxdwsipfj3qmcwcjhj7kqbqjjpw-perl5.32.0-HTML-FormatText-WithLinks-0.15.drv'...
+unpacking sources
+unpacking source archive /nix/store/ls1dmj20bfac48h4x0p7s0aaf91gl7h4-HTML-FormatText-WithLinks-0.15.tar.gz
+source root is HTML-FormatText-WithLinks-0.15
+setting SOURCE_DATE_EPOCH to timestamp 1420405642 of file HTML-FormatText-WithLinks-0.15/t/with_emphasis.t
+patching sources
+configuring
+patching ./examples/custom_numbers.pl...
+patching ./examples/custom_footnotes.pl...
+patching ./examples/basic_usage.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::FormatText::WithLinks
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'HTML-FormatText-WithLinks' version '0.15'
+Building HTML-FormatText-WithLinks
+running tests
+t/01load.t ...................... ok
+t/basic_parse.t ................. ok
+t/custom_format.t ............... ok
+t/no_html_passed.t .............. ok
+t/parse_a_with_no_href.t ........ ok
+t/parse_file.t .................. ok
+t/parse_missing_file.t .......... ok
+t/parse_multiple_times.t ........ ok
+t/parse_with_base.t ............. ok
+t/parse_with_html_fragment.t .... ok
+t/parse_with_identical_links.t .. ok
+t/parse_with_links.t ............ ok
+t/parse_with_local_links.t ...... ok
+t/parse_with_name.t ............. ok
+t/parse_with_relative_links.t ... ok
+t/pod.t ......................... skipped: Test::Pod 1.00 required for testing POD
+t/podcover.t .................... skipped: Test::Pod::Coverage 0.08 required for testing POD coverage
+t/skip_linked_urls.t ............ ok
+t/treebuilder_problem.t ......... skipped: Test::MockObject  required for testing TreeBuilder problems
+t/with_emphasis.t ............... ok
+All tests successful.
+Files=20, Tests=92,  2 wallclock secs ( 0.06 usr  0.02 sys +  1.60 cusr  0.59 csys =  2.27 CPU)
+Result: PASS
+installing
+Building HTML-FormatText-WithLinks
+Installing /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15/lib/perl5/site_perl/5.32.0/HTML/FormatText/WithLinks.pm
+Installing /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15/share/man/man3/HTML::FormatText::WithLinks.3
+post-installation fixup
+Moving /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15/share/man/man3 to /nix/store/zsav8s8qh3f01ym000c9mbfxszvbv4ab-perl5.32.0-HTML-FormatText-WithLinks-0.15-devdoc/share/man/man3
+Removing empty /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15/lib
+patching script interpreter paths in /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15
+checking for references to /build/ in /nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zsav8s8qh3f01ym000c9mbfxszvbv4ab-perl5.32.0-HTML-FormatText-WithLinks-0.15-devdoc
+gzipping man pages under /nix/store/zsav8s8qh3f01ym000c9mbfxszvbv4ab-perl5.32.0-HTML-FormatText-WithLinks-0.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zsav8s8qh3f01ym000c9mbfxszvbv4ab-perl5.32.0-HTML-FormatText-WithLinks-0.15-devdoc
+checking for references to /build/ in /nix/store/zsav8s8qh3f01ym000c9mbfxszvbv4ab-perl5.32.0-HTML-FormatText-WithLinks-0.15-devdoc...
+/nix/store/gcqlndrhd6qrd33ifywfgn64gj2prb75-perl5.32.0-HTML-FormatText-WithLinks-0.15

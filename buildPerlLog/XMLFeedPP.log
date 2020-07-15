@@ -1,0 +1,196 @@
+these derivations will be built:
+  /nix/store/lc0cxrc1hf7sxy3x7vjq3jcvyl01cnrw-perl5.32.0-XML-TreePP-0.43.drv
+  /nix/store/zxmfdpx9npihq6v220y1b04dy5rvwmmi-perl5.32.0-XML-FeedPP-0.95.drv
+these paths will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/39zs7p60i8dsx15wfnk5m99mx3kw3csw-XML-FeedPP-0.95.tar.gz
+  /nix/store/rpbfyqnh0887jmk2xbldb5w50yys4xdg-XML-TreePP-0.43.tar.gz
+copying path '/nix/store/39zs7p60i8dsx15wfnk5m99mx3kw3csw-XML-FeedPP-0.95.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rpbfyqnh0887jmk2xbldb5w50yys4xdg-XML-TreePP-0.43.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lc0cxrc1hf7sxy3x7vjq3jcvyl01cnrw-perl5.32.0-XML-TreePP-0.43.drv'...
+unpacking sources
+unpacking source archive /nix/store/rpbfyqnh0887jmk2xbldb5w50yys4xdg-XML-TreePP-0.43.tar.gz
+source root is XML-TreePP-0.43
+setting SOURCE_DATE_EPOCH to timestamp 1416199067 of file XML-TreePP-0.43/META.yml
+patching sources
+configuring
+patching ./make-dist.sh...
+patching ./example/envxml.cgi...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::TreePP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/TreePP.pm blib/lib/XML/TreePP.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_pod.t .................... skipped: Test::Pod 1.00 required for testing POD
+t/01_parse.t .................. ok
+t/02_write.t .................. ok
+t/03_parsefile.t .............. ok
+t/04_escape.t ................. ok
+t/05_empty.t .................. ok
+t/06_cdata.t .................. ok
+t/07_attr_prefix.t ............ ok
+t/08_force_array.t ............ ok
+t/09_http-lite.t .............. skipped: HTTP::Lite is not loaded.
+t/10_http-lwp.t ............... skipped: define $MORE_TESTS to test LWP::UserAgent.
+t/11_escape_cdata.t ........... ok
+t/12_escape_charref.t ......... ok
+t/13_encoding_en.t ............ ok
+t/14_encoding_zh.t ............ ok
+t/15_encoding_ja.t ............ ok
+t/16_encoding_ko.t ............ ok
+t/17_output_encoding.t ........ ok
+t/18_escape_amp.t ............. ok
+t/19_multi_text.t ............. ok
+t/20_http-lite-cached.t ....... skipped: HTTP::Lite is not loaded.
+t/21_http-lwp-cached.t ........ skipped: define $MORE_TESTS to test this.
+t/22_http-lite-headers.t ...... skipped: HTTP::Lite is not loaded.
+t/23_http-lwp-headers.t ....... skipped: define $MORE_TESTS to test this.
+t/24_ignore_error.t ........... ok
+t/25_text_node_key.t .......... ok
+t/26_attr_prefix_null.t ....... ok
+t/27_http-lite-force.t ........ skipped: HTTP::Lite is not loaded.
+t/28_http-lwp-force.t ......... skipped: define $MORE_TESTS to test this.
+t/29_http-lwp-withcache.t ..... skipped: LWP::UserAgent::WithCache is not loaded.
+t/30_first_out.t .............. ok
+t/31_tie_ixhash.t ............. skipped: Tie::IxHash is not loaded.
+t/32_base_class.t ............. ok
+t/33_indent.t ................. ok
+t/34_utf8_flag.t .............. ok
+t/35_force_hash.t ............. ok
+t/36_elem_class.t ............. ok
+t/37_undef.t .................. ok
+t/38_cdata_cdsect.t ........... ok
+t/39_writefile.t .............. ok
+t/40_writefile_jcode.t ........ skipped: Jcode is not loaded.
+t/41_writefile_encode.t ....... ok
+t/42_cdata_comment.t .......... ok
+t/43_encoding_quote.t ......... ok
+t/44_utf8_bom.t ............... ok
+t/45_attr_space.t ............. ok
+t/46_xml_deref.t .............. ok
+t/47_xml_deref_utf8.t ......... ok
+t/48_blobref.t ................ ok
+t/49_invalid_encoding.t ....... ok
+t/50_invalid_tree.t ........... ok
+t/51_RT_42441.t ............... ok
+t/52_require_xml_decl.t ....... ok
+t/53_empty_text_node.t ........ ok
+t/54_empty_element_tag_end.t .. ok
+All tests successful.
+Files=55, Tests=1073,  9 wallclock secs ( 0.26 usr  0.07 sys +  5.06 cusr  3.40 csys =  8.79 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/lib/pkgconfig m4datadir=/nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/share/aclocal aclocaldir=/nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/lib/perl5/site_perl/5.32.0/XML/TreePP.pm
+Installing /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/share/man/man3/XML::TreePP.3
+Appending installation info to /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/share/man/man3 to /nix/store/n98bvbb4m8k355sfqnkb937gn90a4vl3-perl5.32.0-XML-TreePP-0.43-devdoc/share/man/man3
+Removing empty /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43/lib
+patching script interpreter paths in /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43
+checking for references to /build/ in /nix/store/mv8fd26zdd4nklbr5x1yasic31wq8ssh-perl5.32.0-XML-TreePP-0.43...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n98bvbb4m8k355sfqnkb937gn90a4vl3-perl5.32.0-XML-TreePP-0.43-devdoc
+gzipping man pages under /nix/store/n98bvbb4m8k355sfqnkb937gn90a4vl3-perl5.32.0-XML-TreePP-0.43-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n98bvbb4m8k355sfqnkb937gn90a4vl3-perl5.32.0-XML-TreePP-0.43-devdoc
+checking for references to /build/ in /nix/store/n98bvbb4m8k355sfqnkb937gn90a4vl3-perl5.32.0-XML-TreePP-0.43-devdoc...
+building '/nix/store/zxmfdpx9npihq6v220y1b04dy5rvwmmi-perl5.32.0-XML-FeedPP-0.95.drv'...
+unpacking sources
+unpacking source archive /nix/store/39zs7p60i8dsx15wfnk5m99mx3kw3csw-XML-FeedPP-0.95.tar.gz
+source root is XML-FeedPP-0.95
+setting SOURCE_DATE_EPOCH to timestamp 1524266244 of file XML-FeedPP-0.95/META.yml
+patching sources
+configuring
+patching ./make-dist.sh...
+Checking if your kit is complete...
+Looks good
+Warning: NAME must be a package name
+Generating a Unix-style Makefile
+Writing Makefile for XML-FeedPP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/FeedPP.pm blib/lib/XML/FeedPP.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_new.t .............. ok
+t/02_rss.t .............. ok
+t/03_rdf.t .............. ok
+t/04_atom.t ............. ok
+t/05_round.t ............ ok
+t/06_xmlns.t ............ ok
+t/07_encoding.t ......... ok
+t/08_datetime.t ......... ok
+t/09_setget.t ........... ok
+t/10_image.t ............ ok
+t/11_media.t ............ ok
+t/12_sort_item.t ........ ok
+t/13_remove_item.t ...... ok
+t/14_clear_item.t ....... ok
+t/15_clone_item.t ....... ok
+t/16_invalid_pubdate.t .. ok
+t/17_multi_category.t ... ok
+t/18_image_atom.t ....... ok
+t/19_invalid_w3cdtf.t ... ok
+t/20_limit_item.t ....... ok
+t/21_negative_item.t .... ok
+t/22_init_elements.t .... ok
+t/23_match_item.t ....... ok
+t/24_get_epoch.t ........ ok
+t/25_sort_timezone.t .... ok
+t/26_atom10_parse.t ..... ok
+t/27_atom03_parse.t ..... ok
+t/28_atom10_write.t ..... ok
+t/29_rfc2822.t .......... ok
+t/30_invalid_rdfseq.t ... ok
+t/31_two_digit_date.t ... ok
+t/32_two_titles.t ....... ok
+t/33_guid.t ............. ok
+t/34_category_type.t .... ok
+t/35_no_xml_decl.t ...... ok
+t/36_get_multiple.t ..... ok
+t/39_load_type.t ........ ok
+t/40_xml_deref.t ........ ok
+t/41_utf8_flag.t ........ ok
+t/42_indent.t ........... ok
+t/43_indent_atom.t ...... ok
+t/44_cdata.t ............ ok
+t/45_cdata_multi.t ...... ok
+t/46_atom_xhtml.t ....... ok
+All tests successful.
+Files=44, Tests=1398,  7 wallclock secs ( 0.24 usr  0.07 sys +  4.51 cusr  2.82 csys =  7.64 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/lib/pkgconfig m4datadir=/nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/share/aclocal aclocaldir=/nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/lib/perl5/site_perl/5.32.0/XML/FeedPP.pm
+Installing /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/share/man/man3/XML::FeedPP.3
+Appending installation info to /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/share/man/man3 to /nix/store/xxmc99rshwgv7rw194plj384q186az4c-perl5.32.0-XML-FeedPP-0.95-devdoc/share/man/man3
+Removing empty /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95/lib
+patching script interpreter paths in /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95
+checking for references to /build/ in /nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xxmc99rshwgv7rw194plj384q186az4c-perl5.32.0-XML-FeedPP-0.95-devdoc
+gzipping man pages under /nix/store/xxmc99rshwgv7rw194plj384q186az4c-perl5.32.0-XML-FeedPP-0.95-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xxmc99rshwgv7rw194plj384q186az4c-perl5.32.0-XML-FeedPP-0.95-devdoc
+checking for references to /build/ in /nix/store/xxmc99rshwgv7rw194plj384q186az4c-perl5.32.0-XML-FeedPP-0.95-devdoc...
+/nix/store/g4zr2svmxfwv8ziwijwq22h4ssjr2phr-perl5.32.0-XML-FeedPP-0.95

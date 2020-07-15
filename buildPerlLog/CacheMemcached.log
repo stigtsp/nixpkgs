@@ -1,0 +1,133 @@
+these derivations will be built:
+  /nix/store/d1d9qq9bn3lq0b1wpm12pra3svcc0myr-perl5.32.0-String-CRC32-1.8.drv
+  /nix/store/i4zcmq0h2zldndyjnd8l98jsrc9n2flp-perl5.32.0-Cache-Memcached-1.30.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/5bdpyrli8mzdix8dr55vcq57mna6x2dk-Cache-Memcached-1.30.tar.gz
+  /nix/store/79s6gjmhrkns86rgkxvkhi66m8a5f4zd-String-CRC32-1.8.tar.gz
+copying path '/nix/store/5bdpyrli8mzdix8dr55vcq57mna6x2dk-Cache-Memcached-1.30.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/79s6gjmhrkns86rgkxvkhi66m8a5f4zd-String-CRC32-1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/d1d9qq9bn3lq0b1wpm12pra3svcc0myr-perl5.32.0-String-CRC32-1.8.drv'...
+unpacking sources
+unpacking source archive /nix/store/79s6gjmhrkns86rgkxvkhi66m8a5f4zd-String-CRC32-1.8.tar.gz
+source root is String-CRC32-1.8
+setting SOURCE_DATE_EPOCH to timestamp 1572595175 of file String-CRC32-1.8/META.yml
+patching sources
+configuring
+patching ./t/crc.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for String::CRC32
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp CRC32.pod blib/lib/String/CRC32.pod
+cp CRC32.pm blib/lib/String/CRC32.pm
+Running Mkbootstrap for CRC32 ()
+chmod 644 "CRC32.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC32.bs blib/arch/auto/String/CRC32/CRC32.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/String-CRC32-1.8/typemap'  CRC32.xs > CRC32.xsc
+mv CRC32.xsc CRC32.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.8\" -DXS_VERSION=\"1.8\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CRC32.c
+rm -f blib/arch/auto/String/CRC32/CRC32.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  CRC32.o  -o blib/arch/auto/String/CRC32/CRC32.so  \
+      \
+
+chmod 755 blib/arch/auto/String/CRC32/CRC32.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC32.bs blib/arch/auto/String/CRC32/CRC32.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/crc.t .. ok
+All tests successful.
+Files=1, Tests=27,  0 wallclock secs ( 0.02 usr +  0.00 sys =  0.02 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/pkgconfig m4datadir=/nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/share/aclocal aclocaldir=/nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC32.bs blib/arch/auto/String/CRC32/CRC32.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/String/CRC32/CRC32.so
+Installing /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/String/CRC32.pm
+Installing /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/String/CRC32.pod
+Installing /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/share/man/man3/String::CRC32.3
+Appending installation info to /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/share/man/man3 to /nix/store/46lmcr0dbf69c1c6q7xlf11xgqb0bfmw-perl5.32.0-String-CRC32-1.8-devdoc/share/man/man3
+Removing empty /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8
+shrinking /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/String/CRC32/CRC32.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8/lib
+patching script interpreter paths in /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8
+checking for references to /build/ in /nix/store/hix3y1spdgiv5cfqbvhpc44zk90qkxkz-perl5.32.0-String-CRC32-1.8...
+shrinking RPATHs of ELF executables and libraries in /nix/store/46lmcr0dbf69c1c6q7xlf11xgqb0bfmw-perl5.32.0-String-CRC32-1.8-devdoc
+gzipping man pages under /nix/store/46lmcr0dbf69c1c6q7xlf11xgqb0bfmw-perl5.32.0-String-CRC32-1.8-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/46lmcr0dbf69c1c6q7xlf11xgqb0bfmw-perl5.32.0-String-CRC32-1.8-devdoc
+checking for references to /build/ in /nix/store/46lmcr0dbf69c1c6q7xlf11xgqb0bfmw-perl5.32.0-String-CRC32-1.8-devdoc...
+building '/nix/store/i4zcmq0h2zldndyjnd8l98jsrc9n2flp-perl5.32.0-Cache-Memcached-1.30.drv'...
+unpacking sources
+unpacking source archive /nix/store/5bdpyrli8mzdix8dr55vcq57mna6x2dk-Cache-Memcached-1.30.tar.gz
+source root is Cache-Memcached-1.30
+setting SOURCE_DATE_EPOCH to timestamp 1337470122 of file Cache-Memcached-1.30/META.json
+patching sources
+configuring
+patching ./t/05_reconnect_timeout.t...
+patching ./t/100_flush_bug.t...
+patching ./t/06_utf8_key.t...
+patching ./t/03_stats.t...
+patching ./t/04_noreply.t...
+patching ./t/101_multiple_clients.t...
+patching ./t/02_keys.t...
+patching ./t/01_use.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cache::Memcached
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cache/Memcached/GetParser.pm blib/lib/Cache/Memcached/GetParser.pm
+cp lib/Cache/Memcached.pm blib/lib/Cache/Memcached.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t ................ ok
+t/02_keys.t ............... skipped: No memcached instance running at 127.0.0.1:11211
+t/03_stats.t .............. skipped: No memcached instance running at 127.0.0.1:11211
+t/04_noreply.t ............ skipped: No memcached instance running at 127.0.0.1:11211
+t/05_reconnect_timeout.t .. skipped: Somehow we got a fast return when connecting to 192.0.2.1:11211
+t/06_utf8_key.t ........... skipped: No memcached instance running at 127.0.0.1:11211
+t/100_flush_bug.t ......... Use of uninitialized value $proto in socket at /build/Cache-Memcached-1.30/blib/lib/Cache/Memcached.pm line 300.
+t/100_flush_bug.t ......... ok
+t/101_multiple_clients.t .. skipped: cannot connect to 127.0.0.1:11211
+All tests successful.
+Files=8, Tests=8,  2 wallclock secs ( 0.03 usr  0.01 sys +  0.78 cusr  0.16 csys =  0.98 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/lib/pkgconfig m4datadir=/nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/share/aclocal aclocaldir=/nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/lib/perl5/site_perl/5.32.0/Cache/Memcached.pm
+Installing /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/lib/perl5/site_perl/5.32.0/Cache/Memcached/GetParser.pm
+Installing /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/share/man/man3/Cache::Memcached.3
+Appending installation info to /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/share/man/man3 to /nix/store/9hpakql8r9rhdy84kv1bhghm0iih4qhb-perl5.32.0-Cache-Memcached-1.30-devdoc/share/man/man3
+Removing empty /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30/lib
+patching script interpreter paths in /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30
+checking for references to /build/ in /nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9hpakql8r9rhdy84kv1bhghm0iih4qhb-perl5.32.0-Cache-Memcached-1.30-devdoc
+gzipping man pages under /nix/store/9hpakql8r9rhdy84kv1bhghm0iih4qhb-perl5.32.0-Cache-Memcached-1.30-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9hpakql8r9rhdy84kv1bhghm0iih4qhb-perl5.32.0-Cache-Memcached-1.30-devdoc
+checking for references to /build/ in /nix/store/9hpakql8r9rhdy84kv1bhghm0iih4qhb-perl5.32.0-Cache-Memcached-1.30-devdoc...
+/nix/store/a70i2xqcac65p1d57ccpfbcschnz96jh-perl5.32.0-Cache-Memcached-1.30

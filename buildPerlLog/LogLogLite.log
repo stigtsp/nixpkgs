@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/yd399vnlwpbhq7fcgjngll9w4kw6yjvr-perl5.32.0-Log-LogLite-0.82.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/7ffc6g1h5am42zs12j39pq7san6f0lha-Log-LogLite-0.82.tar.gz
+copying path '/nix/store/7ffc6g1h5am42zs12j39pq7san6f0lha-Log-LogLite-0.82.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yd399vnlwpbhq7fcgjngll9w4kw6yjvr-perl5.32.0-Log-LogLite-0.82.drv'...
+unpacking sources
+unpacking source archive /nix/store/7ffc6g1h5am42zs12j39pq7san6f0lha-Log-LogLite-0.82.tar.gz
+source root is Log-LogLite-0.82
+setting SOURCE_DATE_EPOCH to timestamp 1032870276 of file Log-LogLite-0.82/Changes
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Log::LogLite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp LogLite.pm blib/lib/Log/LogLite.pm
+cp NullLogLite.pm blib/lib/Log/NullLogLite.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..6
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/lib/pkgconfig m4datadir=/nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/aclocal aclocaldir=/nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/lib/perl5/site_perl/5.32.0/Log/NullLogLite.pm
+Installing /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/lib/perl5/site_perl/5.32.0/Log/LogLite.pm
+Installing /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/man/man3/Log::LogLite.3
+Installing /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/man/man3/Log::NullLogLite.3
+Appending installation info to /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/man/man3 to /nix/store/ls7g5ddk63gwvwgs5022aky4l27zq52m-perl5.32.0-Log-LogLite-0.82-devdoc/share/man/man3
+Removing empty /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82/lib
+patching script interpreter paths in /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82
+checking for references to /build/ in /nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ls7g5ddk63gwvwgs5022aky4l27zq52m-perl5.32.0-Log-LogLite-0.82-devdoc
+gzipping man pages under /nix/store/ls7g5ddk63gwvwgs5022aky4l27zq52m-perl5.32.0-Log-LogLite-0.82-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ls7g5ddk63gwvwgs5022aky4l27zq52m-perl5.32.0-Log-LogLite-0.82-devdoc
+checking for references to /build/ in /nix/store/ls7g5ddk63gwvwgs5022aky4l27zq52m-perl5.32.0-Log-LogLite-0.82-devdoc...
+/nix/store/swbfl7j5h8i88q21g6ldxch7448wgj51-perl5.32.0-Log-LogLite-0.82

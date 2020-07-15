@@ -1,0 +1,53 @@
+these derivations will be built:
+  /nix/store/q7cklc8q5fwdh89kpsrh3vif0lair5gj-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31.drv
+building '/nix/store/q7cklc8q5fwdh89kpsrh3vif0lair5gj-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31.drv'...
+unpacking sources
+unpacking source archive /nix/store/zv3f8yl37jnc3yqh04gs9bnpxi684pay-JSON-XS-VersionOneAndTwo-0.31.tar.gz
+source root is JSON-XS-VersionOneAndTwo-0.31
+setting SOURCE_DATE_EPOCH to timestamp 1202895906 of file JSON-XS-VersionOneAndTwo-0.31/META.yml
+patching sources
+configuring
+patching ./benchmarks/versiononeandtwo.pl...
+patching ./benchmarks/json_xs_1.pl...
+patching ./benchmarks/json_xs_2.pl...
+patching ./t/pod.t...
+patching ./t/simple.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for JSON::XS::VersionOneAndTwo
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/JSON/XS/VersionOneAndTwo.pm blib/lib/JSON/XS/VersionOneAndTwo.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/pod.t ..... skipped: Test::Pod 1.14 required for testing POD
+t/simple.t .. ok
+All tests successful.
+Files=2, Tests=4,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.11 cusr  0.04 csys =  0.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/lib/pkgconfig m4datadir=/nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/share/aclocal aclocaldir=/nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/lib/perl5/site_perl/5.32.0/JSON/XS/VersionOneAndTwo.pm
+Installing /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/share/man/man3/JSON::XS::VersionOneAndTwo.3
+Appending installation info to /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/share/man/man3 to /nix/store/gsbf0lh30di9hghbdvamaya0b4bdfgsv-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31-devdoc/share/man/man3
+Removing empty /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31/lib
+patching script interpreter paths in /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31
+checking for references to /build/ in /nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gsbf0lh30di9hghbdvamaya0b4bdfgsv-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31-devdoc
+gzipping man pages under /nix/store/gsbf0lh30di9hghbdvamaya0b4bdfgsv-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gsbf0lh30di9hghbdvamaya0b4bdfgsv-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31-devdoc
+checking for references to /build/ in /nix/store/gsbf0lh30di9hghbdvamaya0b4bdfgsv-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31-devdoc...
+/nix/store/f8xi3vi2rlp2prahf40hb8fsw7nnfhi8-perl5.32.0-JSON-XS-VersionOneAndTwo-0.31

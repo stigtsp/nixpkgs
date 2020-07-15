@@ -1,0 +1,77 @@
+these derivations will be built:
+  /nix/store/iv8arv9007bpl65c3bc32plg2xr12rd1-perl5.32.0-Wx-GLCanvas-0.09.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/557087g33c99a9byrs7fn5714f02wmc0-Wx-GLCanvas-0.09.tar.gz
+copying path '/nix/store/557087g33c99a9byrs7fn5714f02wmc0-Wx-GLCanvas-0.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/iv8arv9007bpl65c3bc32plg2xr12rd1-perl5.32.0-Wx-GLCanvas-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/557087g33c99a9byrs7fn5714f02wmc0-Wx-GLCanvas-0.09.tar.gz
+source root is Wx-GLCanvas-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1250017646 of file Wx-GLCanvas-0.09/META.yml
+patching sources
+configuring
+patching ./t/zz_pod.t...
+patching ./t/01_load.t...
+Checking if your kit is complete...
+Looks good
+'WX' is not a known MakeMaker parameter name.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lpthread
+Generating a Unix-style Makefile
+Writing Makefile for Wx::GLCanvas
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Wx/DemoModules/wxGLCanvas.pm blib/lib/Wx/DemoModules/wxGLCanvas.pm
+cp lib/Wx/GLCanvas.pm blib/lib/Wx/GLCanvas.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -S wxperl_overload cpp/ovl_const.cpp cpp/ovl_const.h overload.lst
+Writing 'cpp/ovl_const.h'.
+Writing 'cpp/ovl_const.cpp'.
+touch wxt_overload
+Running Mkbootstrap for GLCanvas ()
+chmod 644 "GLCanvas.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GLCanvas.bs blib/arch/auto/Wx/GLCanvas/GLCanvas.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -noprototypes  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/nix/store/1dmnha12gxf5x305wzcwgqhm6b0ixvdh-perl5.32.0-Wx-0.9932/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Wx/typemap' -typemap '/build/Wx-GLCanvas-0.09/typemap'  GLCanvas.xs > GLCanvas.xsc
+mv GLCanvas.xsc GLCanvas.c
+g++ -pthread   -c  -I. -I/nix/store/1dmnha12gxf5x305wzcwgqhm6b0ixvdh-perl5.32.0-Wx-0.9932/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Wx -I/nix/store/cdycgdzppvac1lh4xfh0y4qvvvzaix8f-wxwidgets-3.0.4/lib/wx/include/gtk2-unicode-3.0 -I/nix/store/cdycgdzppvac1lh4xfh0y4qvvvzaix8f-wxwidgets-3.0.4/include/wx-3.0  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.09\" -DXS_VERSION=\"0.09\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DWXPL_EXT -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__   GLCanvas.c
+rm -f blib/arch/auto/Wx/GLCanvas/GLCanvas.so
+LD_RUN_PATH="/nix/store/cdycgdzppvac1lh4xfh0y4qvvvzaix8f-wxwidgets-3.0.4/lib" g++  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  GLCanvas.o  -o blib/arch/auto/Wx/GLCanvas/GLCanvas.so  \
+   -L/nix/store/cdycgdzppvac1lh4xfh0y4qvvvzaix8f-wxwidgets-3.0.4/lib -lwx_gtk2u_gl-3.0 -lwx_gtk2u_core-3.0 -lwx_baseu-3.0   \
+
+chmod 755 blib/arch/auto/Wx/GLCanvas/GLCanvas.so
+Manifying 1 pod document
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/gsettings-schemas/perl5.32.0-Wx-GLCanvas-0.09/glib-2.0/schemas/ pkgconfigdir=/nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/pkgconfig m4datadir=/nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/aclocal aclocaldir=/nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GLCanvas.bs blib/arch/auto/Wx/GLCanvas/GLCanvas.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Wx/GLCanvas/GLCanvas.so
+Installing /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Wx/GLCanvas.pm
+Installing /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Wx/DemoModules/wxGLCanvas.pm
+Installing /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/man/man3/Wx::GLCanvas.3
+Appending installation info to /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+dropIconThemeCache
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/man/man3 to /nix/store/b3n98hqs8axzzjrlr7cpjqi9z8s4hilg-perl5.32.0-Wx-GLCanvas-0.09-devdoc/share/man/man3
+Removing empty /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09
+shrinking /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Wx/GLCanvas/GLCanvas.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09/lib
+patching script interpreter paths in /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09
+checking for references to /build/ in /nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b3n98hqs8axzzjrlr7cpjqi9z8s4hilg-perl5.32.0-Wx-GLCanvas-0.09-devdoc
+gzipping man pages under /nix/store/b3n98hqs8axzzjrlr7cpjqi9z8s4hilg-perl5.32.0-Wx-GLCanvas-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b3n98hqs8axzzjrlr7cpjqi9z8s4hilg-perl5.32.0-Wx-GLCanvas-0.09-devdoc
+checking for references to /build/ in /nix/store/b3n98hqs8axzzjrlr7cpjqi9z8s4hilg-perl5.32.0-Wx-GLCanvas-0.09-devdoc...
+/nix/store/fapv6fh6d44nkgq06csbx7f0zxvbbn1j-perl5.32.0-Wx-GLCanvas-0.09

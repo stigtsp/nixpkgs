@@ -1,0 +1,791 @@
+these derivations will be built:
+  /nix/store/3havchim3xmc8wszi8ngz2k7sf8c8cfr-perl5.32.0-Statistics-ChiSquare-1.0000.drv
+  /nix/store/fznfdlh192gza524irm9j2ccsyijzmif-perl5.32.0-Math-Pari-2.030518.drv
+  /nix/store/mc273gz42qdffhh6yvac694fg634nski-perl5.32.0-Crypt-Random-1.52.drv
+these paths will be fetched (1.71 MiB download, 1.73 MiB unpacked):
+  /nix/store/1k8v0g1fvba6c98q37zglrig36rkny3c-Math-Pari-2.030518.zip
+  /nix/store/4y2siqzz6x5adjlqbhj4x9wsafvg8603-Statistics-ChiSquare-1.0000.tar.gz
+  /nix/store/7nrcxf5cscy4cpgpgaqabv6gw2ip2560-Crypt-Random-1.52.tar.gz
+  /nix/store/ixsq5xdsj1nra8mn3r1k3j028pw4d2q7-pari-2.1.7.tgz
+copying path '/nix/store/7nrcxf5cscy4cpgpgaqabv6gw2ip2560-Crypt-Random-1.52.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/1k8v0g1fvba6c98q37zglrig36rkny3c-Math-Pari-2.030518.zip' from 'https://cache.nixos.org'...
+copying path '/nix/store/4y2siqzz6x5adjlqbhj4x9wsafvg8603-Statistics-ChiSquare-1.0000.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ixsq5xdsj1nra8mn3r1k3j028pw4d2q7-pari-2.1.7.tgz' from 'https://cache.nixos.org'...
+building '/nix/store/3havchim3xmc8wszi8ngz2k7sf8c8cfr-perl5.32.0-Statistics-ChiSquare-1.0000.drv'...
+unpacking sources
+unpacking source archive /nix/store/4y2siqzz6x5adjlqbhj4x9wsafvg8603-Statistics-ChiSquare-1.0000.tar.gz
+source root is Statistics-ChiSquare-1.0000
+setting SOURCE_DATE_EPOCH to timestamp 1477076807 of file Statistics-ChiSquare-1.0000/META.json
+patching sources
+configuring
+patching ./t/coverage.sh...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Statistics::ChiSquare
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+building '/nix/store/fznfdlh192gza524irm9j2ccsyijzmif-perl5.32.0-Math-Pari-2.030518.drv'...
+cp lib/Statistics/ChiSquare.pm blib/lib/Statistics/ChiSquare.pm
+unpacking sources
+unpacking source archive /nix/store/1k8v0g1fvba6c98q37zglrig36rkny3c-Math-Pari-2.030518.zip
+source root is Math-Pari-2.030518
+setting SOURCE_DATE_EPOCH to timestamp 1555732714 of file Math-Pari-2.030518/META.json
+patching sources
+configuring
+patching ./libPARI/extract_codes.pl...
+patching ./libPARI/gphelp...
+patching ./libPARI/gphelp-ini...
+Manifying 1 pod document
+patching ./utils/01_no_extra_newlines.test...
+patching ./utils/paridoc_to_pod...
+patching ./utils/chap3_to_pod...
+patching ./t/02_sections.t...
+patching ./t/000_load-problem.t...
+running tests
+patching ./t/01_no_extra_newlines.t...
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+patching ./t/PlotRect.t...
+patching ./t/zz_leak.t...
+patching ./t/00_Pari.t...
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+patching ./test_eng/Testout.pm...
+patching ./test_eng/ex.t...
+t/all.t ........... ok
+Available golden versions: `2.1.7'
+Latest supported golden is `pari-2.1.7.tgz'
+Picking golden version 2.1.7, file pari-2.1.7.tgz
+Well, I already have it (size=1542137), using the disk copy...
+Extracting...
+gzip -dc pari-2.1.7.tgz | tar -xvf -
+pari-2.1.7/
+pari-2.1.7/AUTHORS
+pari-2.1.7/Announce.2.1
+pari-2.1.7/CHANGES
+pari-2.1.7/COMPAT
+pari-2.1.7/COPYING
+pari-2.1.7/CVS.txt
+pari-2.1.7/Configure
+pari-2.1.7/INSTALL.tex
+pari-2.1.7/INSTALL.txt
+pari-2.1.7/MACHINES
+pari-2.1.7/NEW
+pari-2.1.7/Odos/
+pari-2.1.7/Odos/Makefile
+pari-2.1.7/Odos/README.MSVC
+pari-2.1.7/Odos/objs
+pari-2.1.7/Odos/objsgp
+pari-2.1.7/Odos/pariCE.c
+pari-2.1.7/Odos/pariCE.h
+pari-2.1.7/Odos/paricfg.h
+pari-2.1.7/Odos/pariinl.h
+pari-2.1.7/README
+pari-2.1.7/README.DOS
+pari-2.1.7/README.WIN
+pari-2.1.7/TODO
+pari-2.1.7/config/
+pari-2.1.7/config/DOC_Make.SH
+pari-2.1.7/config/GEN_Make.SH
+pari-2.1.7/config/Imakefile
+pari-2.1.7/config/MANIFEST
+pari-2.1.7/config/Makefile.DLLs
+pari-2.1.7/config/Makefile.SH
+pari-2.1.7/config/TOP_Make.SH
+pari-2.1.7/config/arch-osname
+pari-2.1.7/config/display
+pari-2.1.7/config/endian.c
+pari-2.1.7/config/extract_files
+pari-2.1.7/config/gnu.c
+pari-2.1.7/config/has_TIOCGWINSZ.c
+pari-2.1.7/config/has_dlopen.c
+pari-2.1.7/config/has_exp2.c
+pari-2.1.7/config/has_getrlimit.c
+pari-2.1.7/config/has_getrusage.c
+pari-2.1.7/config/has_opendir.c
+pari-2.1.7/config/has_sigrelse.c
+pari-2.1.7/config/has_sigsetmask.c
+pari-2.1.7/config/has_strftime.c
+pari-2.1.7/config/has_times.c
+pari-2.1.7/config/has_ulong.c
+pari-2.1.7/config/install
+pari-2.1.7/config/locate
+pari-2.1.7/config/locatelib
+pari-2.1.7/config/locatesymbol
+pari-2.1.7/config/look
+pari-2.1.7/config/myread
+pari-2.1.7/config/paricfg.h.SH
+pari-2.1.7/config/paricfgDOS.h.SH
+pari-2.1.7/config/rl_version.c
+pari-2.1.7/config/version
+pari-2.1.7/doc/
+pari-2.1.7/doc/appa.tex
+pari-2.1.7/doc/appb.tex
+pari-2.1.7/doc/appc.tex
+pari-2.1.7/doc/gp.1
+pari-2.1.7/doc/gphelp.1
+pari-2.1.7/doc/gphelp.in
+pari-2.1.7/doc/paricfg.tex.in
+pari-2.1.7/doc/parimacro.tex
+pari-2.1.7/doc/pdfmacs.tex
+pari-2.1.7/doc/refcard.tex
+pari-2.1.7/doc/tex2mail.1
+pari-2.1.7/doc/translations
+pari-2.1.7/doc/tutorial.tex
+pari-2.1.7/doc/users.tex
+pari-2.1.7/doc/usersch1.tex
+pari-2.1.7/doc/usersch2.tex
+pari-2.1.7/doc/usersch3.tex
+pari-2.1.7/doc/usersch4.tex
+pari-2.1.7/doc/usersch5.tex
+pari-2.1.7/emacs/
+pari-2.1.7/emacs/compile
+pari-2.1.7/emacs/pari-translator.el
+pari-2.1.7/emacs/pari.el-changes
+pari-2.1.7/emacs/pari.el.in
+pari-2.1.7/emacs/pariemacs.txt
+pari-2.1.7/emacs/with-syntax.el
+pari-2.1.7/examples/
+pari-2.1.7/examples/EXPLAIN
+pari-2.1.7/examples/Inputrc
+pari-2.1.7/examples/bench.gp
+pari-2.1.7/examples/cl.gp
+pari-2.1.7/examples/classno.gp
+pari-2.1.7/examples/contfrac.gp
+pari-2.1.7/examples/lucas.gp
+pari-2.1.7/examples/matexp.c
+pari-2.1.7/examples/rho.gp
+pari-2.1.7/examples/squfof.gp
+pari-2.1.7/examples/taylor.gp
+pari-2.1.7/misc/
+pari-2.1.7/misc/README
+pari-2.1.7/misc/color.dft
+pari-2.1.7/misc/gpalias
+pari-2.1.7/misc/gpflog
+pari-2.1.7/misc/gprc.dft
+pari-2.1.7/misc/gprc.dos
+pari-2.1.7/misc/new.dic
+pari-2.1.7/misc/pari.xpm
+pari-2.1.7/misc/tex2mail.in
+pari-2.1.7/misc/xgp
+pari-2.1.7/src/
+pari-2.1.7/src/basemath/
+pari-2.1.7/src/basemath/alglin1.c
+pari-2.1.7/src/basemath/alglin2.c
+pari-2.1.7/src/basemath/arith1.c
+pari-2.1.7/src/basemath/arith2.c
+pari-2.1.7/src/basemath/base1.c
+pari-2.1.7/src/basemath/base2.c
+pari-2.1.7/src/basemath/base3.c
+pari-2.1.7/src/basemath/base4.c
+pari-2.1.7/src/basemath/base5.c
+pari-2.1.7/src/basemath/bibli1.c
+pari-2.1.7/src/basemath/bibli2.c
+pari-2.1.7/src/basemath/buch1.c
+pari-2.1.7/src/basemath/buch2.c
+pari-2.1.7/src/basemath/buch3.c
+pari-2.1.7/src/basemath/buch4.c
+pari-2.1.7/src/basemath/galconj.c
+pari-2.1.7/src/basemath/gen1.c
+pari-2.1.7/src/basemath/gen2.c
+pari-2.1.7/src/basemath/gen3.c
+pari-2.1.7/src/basemath/ifactor1.c
+pari-2.1.7/src/basemath/polarit1.c
+pari-2.1.7/src/basemath/polarit2.c
+pari-2.1.7/src/basemath/polarit3.c
+pari-2.1.7/src/basemath/rootpol.c
+pari-2.1.7/src/basemath/subgroup.c
+pari-2.1.7/src/basemath/trans1.c
+pari-2.1.7/src/basemath/trans2.c
+pari-2.1.7/src/basemath/trans3.c
+pari-2.1.7/src/gp/
+pari-2.1.7/src/gp/gp.c
+pari-2.1.7/src/gp/gp.h
+pari-2.1.7/src/gp/gp_init.c
+pari-2.1.7/src/gp/gp_rl.c
+pari-2.1.7/src/gp/highlvl.c
+pari-2.1.7/src/gp/whatnow.c
+pari-2.1.7/src/graph/
+pari-2.1.7/src/graph/Gnuplot.h
+pari-2.1.7/src/graph/plotX.c
+pari-2.1.7/src/graph/plotgnuplot.c
+pari-2.1.7/src/graph/plotnull.c
+pari-2.1.7/src/graph/plotport.c
+pari-2.1.7/src/graph/rect.h
+pari-2.1.7/src/headers/
+pari-2.1.7/src/headers/pari.h
+pari-2.1.7/src/headers/pari68k.h
+pari-2.1.7/src/headers/paricast.h
+pari-2.1.7/src/headers/paricom.h
+pari-2.1.7/src/headers/paridecl.h
+pari-2.1.7/src/headers/parierr.h
+pari-2.1.7/src/headers/parigen.h
+pari-2.1.7/src/headers/parinf.h
+pari-2.1.7/src/headers/pariport.h
+pari-2.1.7/src/headers/paristio.h
+pari-2.1.7/src/headers/parisys.h
+pari-2.1.7/src/headers/paritype.h
+pari-2.1.7/src/kernel/
+pari-2.1.7/src/kernel/README
+pari-2.1.7/src/kernel/alpha/
+pari-2.1.7/src/kernel/alpha/Makefile.SH
+pari-2.1.7/src/kernel/alpha/level0.s
+pari-2.1.7/src/kernel/hppa/
+pari-2.1.7/src/kernel/hppa/Makefile.SH
+pari-2.1.7/src/kernel/hppa/README
+pari-2.1.7/src/kernel/hppa/level0.s
+pari-2.1.7/src/kernel/ix86/
+pari-2.1.7/src/kernel/ix86/Makefile.SH
+pari-2.1.7/src/kernel/ix86/l0asm.c
+pari-2.1.7/src/kernel/ix86/l0asm.h
+pari-2.1.7/src/kernel/ix86/l0asm.txt
+pari-2.1.7/src/kernel/ix86/level0.h
+pari-2.1.7/src/kernel/m68k/
+pari-2.1.7/src/kernel/m68k/Makefile.SH
+pari-2.1.7/src/kernel/m68k/mp.s
+pari-2.1.7/src/kernel/none/
+pari-2.1.7/src/kernel/none/Makefile.SH
+pari-2.1.7/src/kernel/none/asm0.h
+pari-2.1.7/src/kernel/none/level0.c
+pari-2.1.7/src/kernel/none/level0.h
+pari-2.1.7/src/kernel/none/level1.c
+pari-2.1.7/src/kernel/none/level1.h
+pari-2.1.7/src/kernel/none/mp.c
+pari-2.1.7/src/kernel/ppc/
+pari-2.1.7/src/kernel/ppc/README
+pari-2.1.7/src/kernel/ppc/kerPPC.s
+pari-2.1.7/src/kernel/sparcv7/
+pari-2.1.7/src/kernel/sparcv7/Makefile.SH
+pari-2.1.7/src/kernel/sparcv7/level0.S
+pari-2.1.7/src/kernel/sparcv8/
+pari-2.1.7/src/kernel/sparcv8/Makefile.SH
+pari-2.1.7/src/kernel/sparcv8/MakeVar.SH
+pari-2.1.7/src/kernel/sparcv8/level0.S
+pari-2.1.7/src/kernel/sparcv8/level0.h
+pari-2.1.7/src/kernel/sparcv8/level0_sparcv8_micro.S
+pari-2.1.7/src/kernel/sparcv8/level0_sparcv8_super.S
+pari-2.1.7/src/kernel/sparcv9/
+pari-2.1.7/src/kernel/sparcv9/README
+pari-2.1.7/src/kernel/sparcv9/asmsparcv9.h
+pari-2.1.7/src/language/
+pari-2.1.7/src/language/anal.c
+pari-2.1.7/src/language/anal.h
+pari-2.1.7/src/language/compat.c
+pari-2.1.7/src/language/errmsg.c
+pari-2.1.7/src/language/es.c
+pari-2.1.7/src/language/helpmsg.c
+pari-2.1.7/src/language/init.c
+pari-2.1.7/src/language/sumiter.c
+pari-2.1.7/src/make_emacs_tags
+pari-2.1.7/src/make_vi_tags
+pari-2.1.7/src/modules/
+pari-2.1.7/src/modules/elliptic.c
+pari-2.1.7/src/modules/galois.c
+pari-2.1.7/src/modules/kummer.c
+pari-2.1.7/src/modules/mpqs.c
+pari-2.1.7/src/modules/nffactor.c
+pari-2.1.7/src/modules/stark.c
+pari-2.1.7/src/modules/subfield.c
+pari-2.1.7/src/modules/thue.c
+pari-2.1.7/src/test/
+pari-2.1.7/src/test/32/
+pari-2.1.7/src/test/32/analyz
+pari-2.1.7/src/test/32/compat
+pari-2.1.7/src/test/32/elliptic
+pari-2.1.7/src/test/32/graph
+pari-2.1.7/src/test/32/kernel
+pari-2.1.7/src/test/32/linear
+pari-2.1.7/src/test/32/nfields
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+pari-2.1.7/src/test/32/number
+pari-2.1.7/src/test/32/objets
+pari-2.1.7/src/test/32/ploth
+pari-2.1.7/src/test/32/polyser
+pari-2.1.7/src/test/32/program
+pari-2.1.7/src/test/32/sumiter
+pari-2.1.7/src/test/32/trans
+pari-2.1.7/src/test/64/
+pari-2.1.7/src/test/64/analyz
+pari-2.1.7/src/test/64/compat
+pari-2.1.7/src/test/64/elliptic
+pari-2.1.7/src/test/64/graph
+pari-2.1.7/src/test/64/kernel
+pari-2.1.7/src/test/64/linear
+pari-2.1.7/src/test/64/nfields
+pari-2.1.7/src/test/64/number
+pari-2.1.7/src/test/64/objets
+pari-2.1.7/src/test/64/ploth
+pari-2.1.7/src/test/64/polyser
+pari-2.1.7/src/test/64/program
+pari-2.1.7/src/test/64/sumiter
+pari-2.1.7/src/test/64/trans
+pari-2.1.7/src/test/dotest
+pari-2.1.7/src/test/in/
+pari-2.1.7/src/test/in/analyz
+pari-2.1.7/src/test/in/compat
+pari-2.1.7/src/test/in/elliptic
+pari-2.1.7/src/test/in/graph
+pari-2.1.7/src/test/in/linear
+pari-2.1.7/src/test/in/nfields
+pari-2.1.7/src/test/in/number
+pari-2.1.7/src/test/in/objets
+pari-2.1.7/src/test/in/ploth
+pari-2.1.7/src/test/in/polyser
+pari-2.1.7/src/test/in/program
+pari-2.1.7/src/test/in/sumiter
+pari-2.1.7/src/test/in/trans
+pari-2.1.7/src/test/kerntest.c
+Looking for patches for 2.1.7...
+Patching...
+cd pari-2.1.7 && patch -p1  < ../patches/patch-pari-unnormalized-float
+patching file src/kernel/none/mp.c
+cd pari-2.1.7 && patch -p1  < ../patches/diff_2.1.7_-O
+patching file src/headers/parisys.h
+cd pari-2.1.7 && patch -p1  < ../patches/diff_2.1.7_div
+patching file src/kernel/ix86/level0.h
+cd pari-2.1.7 && patch -p1  < ../patches/diff_2.1.6_align_power_of_2
+patching file src/kernel/ix86/l0asm.c
+cd pari-2.1.7 && patch -p1  < ../patches/diff_2.1.7_restart
+patching file src/language/init.c
+Finished patching...
+Found GP/PARI build directory in pari-2.1.7
+     (integer-formatted version 2001007).
+
+  ### GP/PARI library version 2.1.* has many problems fixed in versions 2.3.*.
+
+  ### Especially important are the problems with symbols `hiremainder' and
+  ### `overflow' - if your build fails and error messages contain these
+  ### words, updating to 2.3.* might allow your use of fast processor-specific
+  ### assembler code.)
+
+  ### Switching to 2.3.* should be as simple as giving Makefile.PL an option
+  ###           version23_ok=1
+  ###   (if you or Makefile.PL already downloaded-and-extracted version-2.1.*
+  ###    distribution, give an extra option, force_download).
+  ### Alternatively, give option
+  ###           paridir=DIRECTORY-of-extracted-distribution
+
+  ### However: v.2.3.* REQUIRES patching for full support of plotting.
+  ###   (And I can auto-patch it!)
+
+Setting up Math::Pari with Perl 5.032000 on linux version gnulinux;
+   cc=cc, gccversion=9.3.0, cccdlflags='-fPIC',
+   ccflags='-D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+   optimize='-O2',
+   ld=cc, ldflags=' -fstack-protector-strong -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib'.
+t/pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=3, Tests=10,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.15 cusr  0.02 csys =  0.21 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/lib/pkgconfig m4datadir=/nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/share/aclocal aclocaldir=/nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/lib/perl5/site_perl/5.32.0/Statistics/ChiSquare.pm
+Installing /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/share/man/man3/Statistics::ChiSquare.3
+Appending installation info to /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/share/man/man3 to /nix/store/1rwhp9ghy0j34x3zqbvpb49mhh7iaa2k-perl5.32.0-Statistics-ChiSquare-1.0000-devdoc/share/man/man3
+Removing empty /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000/lib
+patching script interpreter paths in /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000
+checking for references to /build/ in /nix/store/pdrmjq6pzbv56zz4xlk6rpcm5k3ddm7s-perl5.32.0-Statistics-ChiSquare-1.0000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1rwhp9ghy0j34x3zqbvpb49mhh7iaa2k-perl5.32.0-Statistics-ChiSquare-1.0000-devdoc
+gzipping man pages under /nix/store/1rwhp9ghy0j34x3zqbvpb49mhh7iaa2k-perl5.32.0-Statistics-ChiSquare-1.0000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1rwhp9ghy0j34x3zqbvpb49mhh7iaa2k-perl5.32.0-Statistics-ChiSquare-1.0000-devdoc
+checking for references to /build/ in /nix/store/1rwhp9ghy0j34x3zqbvpb49mhh7iaa2k-perl5.32.0-Statistics-ChiSquare-1.0000-devdoc...
+...Generating libPARI/paricfg.h ...
+Scanning header files...
+...ulong
+...getrusage
+...CLK_TCK not defined
+Creating libPARI/paricfg.h...
+Trying to find DATADIR of an installed version of GP/PARI (if such exists)...
+sh: perl: not found
+sh: gp: not found
+...Processor of family `x86_64' detected
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+...Processor of family `x86_64' detected
+####    Do not know how to build for assembler `x86_64'.        ####
+####    Reversing to assembler-less type `port'.                ####
+####                                                            ####
+####    If you think your processor's assembler is supported    ####
+####    by PARI, edit libPARI/Makefile.PL and report.           ####
+####                                                            ####
+####    Alternatively, specify machine=YOURTYPE or machine=none ####
+####    on the                                                  ####
+####      perl Makefile.PL                                      ####
+####    command line.                                           ####
+####    Recognized types:                                       ####
+####      alpha hppa m86k none sparcv7 sparcv8 sparcv8_micro    ####
+####      sparcv8_super ix86 (ppc ia64 after 2.2.7)             ####
+...I will  use portable assembler-less build
+...Assembler is GNU assembler
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Math::Pari
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp libPARI.dumb.pod blib/lib/Math/libPARI.dumb.pod
+cp libPARI.pod blib/lib/Math/libPARI.pod
+cp Pari.pm blib/lib/Math/Pari.pm
+cp PariInit.pm blib/lib/Math/PariInit.pm
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -wle0 > pariinl.h
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -pe1 ../pari-2.1.7/src/kernel/none/level0.h ../pari-2.1.7/src/kernel/none/level1.h                     >> pariinl.h
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o gen2.o ../pari-2.1.7/src/basemath/gen2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o galconj.o ../pari-2.1.7/src/basemath/galconj.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o kummer.o ../pari-2.1.7/src/modules/kummer.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o bibli1.o ../pari-2.1.7/src/basemath/bibli1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o buch4.o ../pari-2.1.7/src/basemath/buch4.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o helpmsg.o ../pari-2.1.7/src/language/helpmsg.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o mpqs.o ../pari-2.1.7/src/modules/mpqs.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o polarit2.o ../pari-2.1.7/src/basemath/polarit2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o anal.o ../pari-2.1.7/src/language/anal.c
+../pari-2.1.7/src/language/anal.c: In function 'doskipseq':
+../pari-2.1.7/src/language/anal.c:2169:9: warning: implicit declaration of function 'term_width' [-Wimplicit-function-declaration]
+ 2169 |     L = term_width();
+      |         ^~~~~~~~~~
+../pari-2.1.7/src/language/anal.c: In function 'check_array_index':
+../pari-2.1.7/src/language/anal.c:658:23: warning: '[1-' directive writing 3 bytes into a region of size between 1 and 80 [-Wformat-overflow=]
+  658 |     else sprintf(s,"%s[1-%ld]",s,max-1);
+      |                       ^~~
+../pari-2.1.7/src/language/anal.c:658:20: note: directive argument in the range [-2, 4294967294]
+  658 |     else sprintf(s,"%s[1-%ld]",s,max-1);
+      |                    ^~~~~~~~~~~
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/stdio.h:867,
+                 from ../pari-2.1.7/src/headers/pari.h:37,
+                 from ../pari-2.1.7/src/language/anal.c:21:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/stdio2.h:36:10: note: '__builtin___sprintf_chk' output between 6 and 94 bytes into a destination of size 80
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o gen1.o ../pari-2.1.7/src/basemath/gen1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o trans3.o ../pari-2.1.7/src/basemath/trans3.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o base4.o ../pari-2.1.7/src/basemath/base4.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o base5.o ../pari-2.1.7/src/basemath/base5.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o thue.o ../pari-2.1.7/src/modules/thue.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o trans2.o ../pari-2.1.7/src/basemath/trans2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o base2.o ../pari-2.1.7/src/basemath/base2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o subgroup.o ../pari-2.1.7/src/basemath/subgroup.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o arith1.o ../pari-2.1.7/src/basemath/arith1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o buch2.o ../pari-2.1.7/src/basemath/buch2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o nffactor.o ../pari-2.1.7/src/modules/nffactor.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o subfield.o ../pari-2.1.7/src/modules/subfield.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o polarit3.o ../pari-2.1.7/src/basemath/polarit3.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o buch3.o ../pari-2.1.7/src/basemath/buch3.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o galois.o ../pari-2.1.7/src/modules/galois.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o arith2.o ../pari-2.1.7/src/basemath/arith2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o trans1.o ../pari-2.1.7/src/basemath/trans1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o errmsg.o ../pari-2.1.7/src/language/errmsg.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o es.o ../pari-2.1.7/src/language/es.c
+../pari-2.1.7/src/language/es.c: In function 'hit_return':
+../pari-2.1.7/src/language/es.c:41:6: warning: ignoring return value of 'fgets', declared with attribute warn_unused_result [-Wunused-result]
+   41 |   do fgets(tmp,16,stdin); while (tmp[strlen(tmp)-1] != '\n');
+      |      ^~~~~~~~~~~~~~~~~~~
+../pari-2.1.7/src/language/es.c: In function 'os_read':
+../pari-2.1.7/src/language/es.c:2222:3: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+ 2222 |   read(fd,ch,s);
+      |   ^~~~~~~~~~~~~
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o base3.o ../pari-2.1.7/src/basemath/base3.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o ifactor1.o ../pari-2.1.7/src/basemath/ifactor1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o gen3.o ../pari-2.1.7/src/basemath/gen3.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o highlvl.o ../pari-2.1.7/src/gp/highlvl.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o plotport.o ../pari-2.1.7/src/graph/plotport.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o elliptic.o ../pari-2.1.7/src/modules/elliptic.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o base1.o ../pari-2.1.7/src/basemath/base1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o rootpol.o ../pari-2.1.7/src/basemath/rootpol.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o init.o ../pari-2.1.7/src/language/init.c
+../pari-2.1.7/src/language/init.c:397:8: warning: type defaults to 'int' in declaration of 'need_force_init_defaults' [-Wimplicit-int]
+  397 | static need_force_init_defaults = 0;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o plotgnuplot.o ../pari-2.1.7/src/graph/plotgnuplot.c
+In file included from ../pari-2.1.7/src/graph/plotgnuplot.c:28:
+../pari-2.1.7/src/graph/Gnuplot.h:72:8: warning: type defaults to 'int' in declaration of 'outfile_set' [-Wimplicit-int]
+   72 | static outfile_set;
+      |        ^~~~~~~~~~~
+In file included from ../pari-2.1.7/src/graph/plotgnuplot.c:28:
+../pari-2.1.7/src/graph/Gnuplot.h:377:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  377 | UNKNOWN_null()
+      | ^~~~~~~~~~~~
+../pari-2.1.7/src/graph/Gnuplot.h: In function 'my_change_term':
+../pari-2.1.7/src/graph/Gnuplot.h:468:19: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  468 |     return term = (struct termentry *)(*my_term_ftablep->change_term_p)(s,l);
+      |                   ^
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o bibli2.o ../pari-2.1.7/src/basemath/bibli2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o stark.o ../pari-2.1.7/src/modules/stark.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o alglin2.o ../pari-2.1.7/src/basemath/alglin2.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o polarit1.o ../pari-2.1.7/src/basemath/polarit1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o alglin1.o ../pari-2.1.7/src/basemath/alglin1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o compat.o ../pari-2.1.7/src/language/compat.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o sumiter.o ../pari-2.1.7/src/language/sumiter.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o buch1.o ../pari-2.1.7/src/basemath/buch1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o mp.o ../pari-2.1.7/src/kernel/none/mp.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC -DPLOT_IS_TUNABLE -Derr=pari_err -DHAS_STAT -DHAS_OPENDIR -DASMINLINE -DGCC_INLINE -DDYNAMIC_PLOTTING -o mpinl.o ../pari-2.1.7/src/kernel/none/level1.c
+cc -c -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI  -I ../pari-2.1.7/src -I ../pari-2.1.7/src/headers -I ../pari-2.1.7/src/graph -I . -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC  -o kernel.o ../pari-2.1.7/src/kernel/none/level0.c
+rm -f libPARI.a
+ar  cr libPARI.a gen2.o galconj.o kummer.o bibli1.o buch4.o helpmsg.o mpqs.o polarit2.o anal.o gen1.o trans3.o base4.o base5.o thue.o trans2.o base2.o subgroup.o arith1.o buch2.o nffactor.o subfield.o polarit3.o buch3.o galois.o arith2.o trans1.o errmsg.o es.o base3.o ifactor1.o gen3.o highlvl.o plotport.o elliptic.o base1.o rootpol.o init.o plotgnuplot.o bibli2.o stark.o alglin2.o polarit1.o alglin1.o compat.o sumiter.o buch1.o mp.o mpinl.o kernel.o
+: libPARI.a
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+Running Mkbootstrap for Pari ()
+chmod 644 "Pari.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Pari.bs blib/arch/auto/Math/Pari/Pari.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Math-Pari-2.030518/typemap'  Pari.xs > Pari.xsc
+mv Pari.xsc Pari.c
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+cc -c  -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.030518\" -DXS_VERSION=\"2.030518\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE Pari.c
+Pari.xs: In function 'svErrflush':
+Pari.xs:829:11: warning: field precision specifier '.*' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+  829 |      warn("PARI: %.*s%*s%s", nl + 1 - s, s, 6, "", nl + 1);
+      |           ^~~~~~~~~~~~~~~~~  ~~~~~~~~~~
+      |                                     |
+      |                                     long int
+Pari.xs: In function 'heap_dump_one':
+Pari.xs:1286:38: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
+ 1286 |     case G_SCALAR: sv_catpvf(d->acc, " %2d: %s\n",
+      |                                      ^~~~~~~~~~~~
+ 1287 |         d->items - 1, SvPV_nolen(tmp));
+      |         ~~~~~~~~~~~~
+      |                  |
+      |                  long int
+Pari.xs: In function 'fill_argvect':
+Pari.xs:1863:14: warning: field precision specifier '.*' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+ 1863 |        croak("Cannot process default argument %.*s of type %.1s for prototype '%s'",
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1864 |       s - pre - 1, pre, s, s0);
+      |       ~~~~~~~~~~~
+      |               |
+      |               long int
+Pari.xs: In function 'XS_Math__Pari_loadPari':
+Pari.xs:3819:10: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+ 3819 |    croak("Unsupported Pari function %s, interface 0 code NULL");
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pari.xs:3882:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+ 3882 |    croak("Unsupported interface %d for \"direct-link\" Pari function %s",
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3883 |          valence, olds);
+      |          ~~~~~~~
+      |          |
+      |          long int
+Pari.xs:3885:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+ 3885 |    croak("Unsupported interface %d and no code for a Pari function %s",
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3886 |          valence, olds);
+      |          ~~~~~~~
+      |          |
+      |          long int
+Pari.xs: In function 'XS_Math__Pari_dumpStack':
+Pari.xs:4170:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+ 4170 |      ret = newSVpvf("%sstack size is %ld bytes (%d x %ld longs)\n",
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4171 |       pref, ssize, sizeof(long), ssize/sizeof(long));
+      |                    ~~~~~~~~~~~~
+      |                    |
+      |                    long unsigned int
+Pari.xs: In function 'XS_Math__Pari___dumpStack':
+Pari.xs:4209:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat=]
+ 4209 |      ret = newSVpvf("stack size is %ld bytes (%d x %ld longs)\n",
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4210 |       ssize,sizeof(long),ssize/sizeof(long));
+      |             ~~~~~~~~~~~~
+      |             |
+      |             long unsigned int
+Pari.xs: In function 'boot_Math__Pari':
+Pari.xs:4055:8: warning: implicit declaration of function 'init_graph' [-Wimplicit-function-declaration]
+ 4055 |        init_graph();
+      |        ^~~~~~~~~~
+rm -f blib/arch/auto/Math/Pari/Pari.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Pari.o  -o blib/arch/auto/Math/Pari/Pari.so libPARI/libPARI.a \
+      \
+
+chmod 755 blib/arch/auto/Math/Pari/Pari.so
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Pari.bs blib/arch/auto/Math/Pari/Pari.bs 644
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Nothing to be done for 'test_dynamic'.
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000_load-problem.t ...... ok
+t/00_Pari.t ............... 1/562 Binary number > 0b11111111111111111111111111111111 non-portable at (eval 3) line 6.
+Binary number > 0b11111111111111111111111111111111 non-portable at (eval 3) line 7.
+Binary number > 0b11111111111111111111111111111111 non-portable at (eval 3) line 11.
+Hexadecimal number > 0xffffffff non-portable at (eval 3) line 12.
+Binary number > 0b11111111111111111111111111111111 non-portable at (eval 3) line 13.
+t/00_Pari.t ............... ok
+t/01_no_extra_newlines.t .. ok
+t/02_sections.t ........... ok
+t/55_analyz.t ............. ok
+t/55_elliptic.t ........... ok
+t/55_graph.t .............. # Can't locate Term/Gnuplot.pm in @INC, ignoring plotting
+t/55_graph.t .............. ok
+t/55_linear.t ............. ok
+t/55_nfields.t ............ 1/161 PARI:   ***   Warning: insufficient precision for fundamental units, not given.
+PARI:   ***   Warning: not a fundamental discriminant in quadclassunit.
+t/55_nfields.t ............ ok
+t/55_number.t ............. ok
+t/55_objets.t ............. ok
+t/55_ploth.t .............. 1/34 # Can't locate Term/Gnuplot.pm in @INC, ignoring plotting
+t/55_ploth.t .............. ok
+t/55_polyser.t ............ ok
+t/55_program.t ............ ok
+t/55_sumiter.t ............ ok
+t/55_trans.t .............. ok
+t/PlotRect.t .............. # Can't locate Term/Gnuplot.pm in @INC, ignoring the test
+t/PlotRect.t .............. skipped: Can't locate Term/Gnuplot.pm in @INC
+t/zz_leak.t ............... ok
+All tests successful.
+Files=18, Tests=1286,  2 wallclock secs ( 0.18 usr  0.01 sys +  2.40 cusr  0.07 csys =  2.66 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/pkgconfig m4datadir=/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/aclocal aclocaldir=/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/aclocal install
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Pari.bs blib/arch/auto/Math/Pari/Pari.bs 644
+cd libPARI && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518" PASTHRU_DEFINE=' -DPARI_VERSION_EXP=2001007 -DDEBUG_PARI -DUSE_SLOW_ARRAY_ACCESS -DUSE_SLOW_NARGS_ACCESS -DLSB_in_U32=0 -Derr=pari_err -DGCC_INLINE ' PASTHRU_INC=' -I pari-2.1.7/src -I pari-2.1.7/src/headers -I pari-2.1.7/src -I ./libPARI '
+make[1]: Entering directory '/build/Math-Pari-2.030518/libPARI'
+make[1]: Leaving directory '/build/Math-Pari-2.030518/libPARI'
+Manifying 4 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Pari/Pari.so
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/libPARI.dumb.pod
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Pari.pm
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/PariInit.pm
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/libPARI.pod
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/man3/Math::PariInit.3
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/man3/Math::libPARI.3
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/man3/Math::libPARI.dumb.3
+Installing /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/man3/Math::Pari.3
+Appending installation info to /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/man3 to /nix/store/md1hhz449w0d8ah2xgcwni1g6jm9r98z-perl5.32.0-Math-Pari-2.030518-devdoc/share/man/man3
+Removing empty /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518
+shrinking /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Pari/Pari.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518/lib
+patching script interpreter paths in /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518
+checking for references to /build/ in /nix/store/682lwn8mvd6zhb13j28xyrcj4a8lizhj-perl5.32.0-Math-Pari-2.030518...
+shrinking RPATHs of ELF executables and libraries in /nix/store/md1hhz449w0d8ah2xgcwni1g6jm9r98z-perl5.32.0-Math-Pari-2.030518-devdoc
+gzipping man pages under /nix/store/md1hhz449w0d8ah2xgcwni1g6jm9r98z-perl5.32.0-Math-Pari-2.030518-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/md1hhz449w0d8ah2xgcwni1g6jm9r98z-perl5.32.0-Math-Pari-2.030518-devdoc
+checking for references to /build/ in /nix/store/md1hhz449w0d8ah2xgcwni1g6jm9r98z-perl5.32.0-Math-Pari-2.030518-devdoc...
+building '/nix/store/mc273gz42qdffhh6yvac694fg634nski-perl5.32.0-Crypt-Random-1.52.drv'...
+unpacking sources
+unpacking source archive /nix/store/7nrcxf5cscy4cpgpgaqabv6gw2ip2560-Crypt-Random-1.52.tar.gz
+source root is Crypt-Random-1.52
+setting SOURCE_DATE_EPOCH to timestamp 1545506922 of file Crypt-Random-1.52/META.yml
+patching sources
+configuring
+patching ./t/generator.t...
+patching ./t/octet_string.t...
+patching ./t/pari_misfeature.t...
+patching ./t/makerandom_itv.t...
+patching ./t/random.t...
+patching ./lib/Crypt/Random/Generator.pm...
+patching ./lib/Crypt/Random/Provider/devrandom.pm...
+patching ./lib/Crypt/Random/Provider/egd.pm...
+patching ./lib/Crypt/Random/Provider/rand.pm...
+patching ./lib/Crypt/Random/Provider/devurandom.pm...
+patching ./lib/Crypt/Random.pm...
+patching ./bin/makerandom...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::Random
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Crypt/Random/Provider/devrandom.pm blib/lib/Crypt/Random/Provider/devrandom.pm
+cp lib/Crypt/Random/Generator.pm blib/lib/Crypt/Random/Generator.pm
+cp lib/Crypt/Random/Provider/rand.pm blib/lib/Crypt/Random/Provider/rand.pm
+cp lib/Crypt/Random/Provider/devurandom.pm blib/lib/Crypt/Random/Provider/devurandom.pm
+cp lib/Crypt/Random/Provider/egd.pm blib/lib/Crypt/Random/Provider/egd.pm
+cp lib/Crypt/Random.pm blib/lib/Crypt/Random.pm
+cp lib/Crypt/Random/Provider/File.pm blib/lib/Crypt/Random/Provider/File.pm
+cp bin/makerandom blib/script/makerandom
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/makerandom
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/generator.t ........ ok
+t/makerandom_itv.t ... ok
+t/octet_string.t ..... ok
+t/pari_misfeature.t .. ok
+t/random.t ........... ok
+All tests successful.
+Files=5, Tests=19,  1 wallclock secs ( 0.07 usr  0.01 sys +  0.28 cusr  0.03 csys =  0.39 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/pkgconfig m4datadir=/nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/share/aclocal aclocaldir=/nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Generator.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Provider/devrandom.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Provider/File.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Provider/egd.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Provider/rand.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/site_perl/5.32.0/Crypt/Random/Provider/devurandom.pm
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/share/man/man3/Crypt::Random.3
+Installing /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/bin/makerandom
+Appending installation info to /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/share/man/man3 to /nix/store/8dskhba155s3fzgfkbgc3rdqxqw1nln4-perl5.32.0-Crypt-Random-1.52-devdoc/share/man/man3
+Removing empty /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/lib  /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52/bin
+patching script interpreter paths in /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52
+checking for references to /build/ in /nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8dskhba155s3fzgfkbgc3rdqxqw1nln4-perl5.32.0-Crypt-Random-1.52-devdoc
+gzipping man pages under /nix/store/8dskhba155s3fzgfkbgc3rdqxqw1nln4-perl5.32.0-Crypt-Random-1.52-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8dskhba155s3fzgfkbgc3rdqxqw1nln4-perl5.32.0-Crypt-Random-1.52-devdoc
+checking for references to /build/ in /nix/store/8dskhba155s3fzgfkbgc3rdqxqw1nln4-perl5.32.0-Crypt-Random-1.52-devdoc...
+/nix/store/smm26gk37c39c7qm70v91y3wdc30imlc-perl5.32.0-Crypt-Random-1.52

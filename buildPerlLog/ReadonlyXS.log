@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/i9vmdxb4f3dqrkhdccghbgz6dkyrqjv4-perl5.32.0-Readonly-XS-1.05.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/0y435dabrg2hm9d3gfszpqwh12985ppl-Readonly-XS-1.05.tar.gz
+copying path '/nix/store/0y435dabrg2hm9d3gfszpqwh12985ppl-Readonly-XS-1.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/i9vmdxb4f3dqrkhdccghbgz6dkyrqjv4-perl5.32.0-Readonly-XS-1.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/0y435dabrg2hm9d3gfszpqwh12985ppl-Readonly-XS-1.05.tar.gz
+source root is Readonly-XS-1.05
+setting SOURCE_DATE_EPOCH to timestamp 1235516751 of file Readonly-XS-1.05/META.yml
+patching sources
+configuring
+patching ./t/test.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Readonly::XS
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp XS.pm blib/lib/Readonly/XS.pm
+Running Mkbootstrap for XS ()
+chmod 644 "XS.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/Readonly/XS/XS.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  XS.xs > XS.xsc
+mv XS.xsc XS.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.05\" -DXS_VERSION=\"1.05\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   XS.c
+In file included from XS.xs:5:
+ppport.h:227: warning: "PERL_UNUSED_DECL" redefined
+  227 | #  define PERL_UNUSED_DECL
+      |
+In file included from XS.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:435: note: this is the location of the previous definition
+  435 | #  define PERL_UNUSED_DECL __attribute__unused__
+      |
+rm -f blib/arch/auto/Readonly/XS/XS.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  XS.o  -o blib/arch/auto/Readonly/XS/XS.so  \
+      \
+
+chmod 755 blib/arch/auto/Readonly/XS/XS.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/Readonly/XS/XS.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/test.t .. ok
+All tests successful.
+Files=1, Tests=10,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.04 cusr  0.01 csys =  0.08 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib/pkgconfig m4datadir=/nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/share/aclocal aclocaldir=/nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- XS.bs blib/arch/auto/Readonly/XS/XS.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Readonly/XS/XS.so
+Installing /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Readonly/XS.pm
+Installing /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/share/man/man3/Readonly::XS.3
+Appending installation info to /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/share/man/man3 to /nix/store/0px5z6iqqlpclsq8agp40wqq5r1qcdpw-perl5.32.0-Readonly-XS-1.05-devdoc/share/man/man3
+Removing empty /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05
+shrinking /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Readonly/XS/XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05/lib
+patching script interpreter paths in /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05
+checking for references to /build/ in /nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0px5z6iqqlpclsq8agp40wqq5r1qcdpw-perl5.32.0-Readonly-XS-1.05-devdoc
+gzipping man pages under /nix/store/0px5z6iqqlpclsq8agp40wqq5r1qcdpw-perl5.32.0-Readonly-XS-1.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0px5z6iqqlpclsq8agp40wqq5r1qcdpw-perl5.32.0-Readonly-XS-1.05-devdoc
+checking for references to /build/ in /nix/store/0px5z6iqqlpclsq8agp40wqq5r1qcdpw-perl5.32.0-Readonly-XS-1.05-devdoc...
+/nix/store/j4fs21z2w10f3gn5hpwa1qsm4fszi1p1-perl5.32.0-Readonly-XS-1.05

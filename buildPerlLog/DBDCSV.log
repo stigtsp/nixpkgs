@@ -1,0 +1,536 @@
+these derivations will be built:
+  /nix/store/8azxp4adrchp4yx50br2ikwdissciyk8-perl5.32.0-Text-Soundex-3.05.drv
+  /nix/store/i4syjwc675s0pab7sx89ddzfpfzmnj9q-perl5.32.0-Text-CSV_XS-1.43.drv
+  /nix/store/wcjmwxharscbbibwz136618n0wyai24v-perl5.32.0-Math-Base-Convert-0.11.drv
+  /nix/store/w66y787xpi2dsad6jp412qyb91wzy5a0-perl5.32.0-SQL-Statement-1.412.drv
+  /nix/store/lqmif9bx5naaldiiv7pql9jymi8l3hx2-perl5.32.0-DBD-CSV-0.54.drv
+these paths will be fetched (0.44 MiB download, 0.44 MiB unpacked):
+  /nix/store/0jr1igrqlch0k9cidc8r009b0mlgkhcr-Text-Soundex-3.05.tar.gz
+  /nix/store/1pl2scbcvdz3wg9kr3j87i8isi9bnga8-DBD-CSV-0.54.tgz
+  /nix/store/b2vp61l2pis7z36ch03p7zw1j9gh291p-Math-Base-Convert-0.11.tar.gz
+  /nix/store/ji3ghpi8ipxsrjzmh9mbzcfxws6jwhvr-SQL-Statement-1.412.tar.gz
+  /nix/store/zhk3qb836s600shbyck9jwr2j0b0d8cs-Text-CSV_XS-1.43.tgz
+copying path '/nix/store/1pl2scbcvdz3wg9kr3j87i8isi9bnga8-DBD-CSV-0.54.tgz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zhk3qb836s600shbyck9jwr2j0b0d8cs-Text-CSV_XS-1.43.tgz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ji3ghpi8ipxsrjzmh9mbzcfxws6jwhvr-SQL-Statement-1.412.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/b2vp61l2pis7z36ch03p7zw1j9gh291p-Math-Base-Convert-0.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/0jr1igrqlch0k9cidc8r009b0mlgkhcr-Text-Soundex-3.05.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8azxp4adrchp4yx50br2ikwdissciyk8-perl5.32.0-Text-Soundex-3.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/0jr1igrqlch0k9cidc8r009b0mlgkhcr-Text-Soundex-3.05.tar.gz
+source root is Text-Soundex-3.05
+building '/nix/store/wcjmwxharscbbibwz136618n0wyai24v-perl5.32.0-Math-Base-Convert-0.11.drv'...
+setting SOURCE_DATE_EPOCH to timestamp 1447174347 of file Text-Soundex-3.05/META.yml
+patching sources
+configuring
+building '/nix/store/i4syjwc675s0pab7sx89ddzfpfzmnj9q-perl5.32.0-Text-CSV_XS-1.43.drv'...
+unpacking sources
+unpacking source archive /nix/store/b2vp61l2pis7z36ch03p7zw1j9gh291p-Math-Base-Convert-0.11.tar.gz
+source root is Math-Base-Convert-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1445553134 of file Math-Base-Convert-0.11/META.yml
+patching sources
+configuring
+patching ./recurse2txt...
+patching ./bitmaps...
+unpacking sources
+unpacking source archive /nix/store/zhk3qb836s600shbyck9jwr2j0b0d8cs-Text-CSV_XS-1.43.tgz
+WARNING: Option PREFIX=/nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05 was not recognized. (ignoring)
+WARNING: Option INSTALLDIRS=site was not recognized. (ignoring)
+WARNING: Option PERL=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl was not recognized. (ignoring)
+WARNING: Option FULLPERL="/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" was not recognized. (ignoring)
+The XS code will be compiled.
+Checking if your kit is complete...
+source root is Text-CSV_XS-1.43
+setting SOURCE_DATE_EPOCH to timestamp 1590566512 of file Text-CSV_XS-1.43/cpanfile
+patching sources
+configuring
+Looks good
+patching ./lib/Math/Base/Convert/CalcPP.pm...
+patching ./lib/Math/Base/Convert/Bases.pm...
+patching ./err-csv/check.pl...
+patching ./Convert.pm...
+patching ./examples/rewrite.pl...
+patching ./examples/speed.pl...
+patching ./examples/csv2xls...
+patching ./examples/csvdiff...
+patching ./examples/csv2xlsx...
+patching ./examples/parser-xs.pl...
+patching ./examples/csv-check...
+patching ./t/41_null.t...
+patching ./t/40_misc.t...
+Generating a Unix-style Makefile
+Writing Makefile for Text::Soundex
+patching ./t/65_allow.t...
+patching ./t/46_eol_si.t...
+patching ./t/30_types.t...
+Writing MYMETA.yml and MYMETA.json
+patching ./t/60_samples.t...
+patching ./t/12_acc.t...
+no configure script, doing nothing
+building
+patching ./t/20_file.t...
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+patching ./t/66_formula.t...
+patching ./t/77_getall.t...
+patching ./t/80_diag.t...
+patching ./t/50_utf8.t...
+patching ./t/90_csv.t...
+patching ./t/10_base.t...
+patching ./t/15_flags.t...
+patching ./t/75_hashref.t...
+patching ./t/70_rt.t...
+patching ./t/55_combi.t...
+patching ./t/21_lexicalio.t...
+patching ./t/91_csv_cb.t...
+patching ./t/85_util.t...
+patching ./t/76_magic.t...
+patching ./t/51_utf8.t...
+patching ./t/78_fragment.t...
+patching ./t/81_subclass.t...
+patching ./t/22_scalario.t...
+patching ./t/45_eol.t...
+patching ./t/79_callbacks.t...
+patching ./Makefile.PL...
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+cp Soundex.pm blib/lib/Text/Soundex.pm
+Running Mkbootstrap for Soundex ()
+Generating a Unix-style Makefile
+Writing Makefile for Text::CSV_XS
+chmod 644 "Soundex.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Soundex.bs blib/arch/auto/Text/Soundex/Soundex.bs 644
+Writing MYMETA.yml and MYMETA.json
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Soundex.xs > Soundex.xsc
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+mv Soundex.xsc Soundex.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"3.05\" -DXS_VERSION=\"3.05\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Soundex.c
+cp lib/Math/Base/Convert/Bitmaps.pm blib/lib/Math/Base/Convert/Bitmaps.pm
+cp lib/Math/Base/Convert/Shortcuts.pm blib/lib/Math/Base/Convert/Shortcuts.pm
+cp lib/Math/Base/Convert/Bases.pm blib/lib/Math/Base/Convert/Bases.pm
+cp Convert.pm blib/lib/Math/Base/Convert.pm
+cp lib/Math/Base/Convert/CalcPP.pm blib/lib/Math/Base/Convert/CalcPP.pm
+cp CSV_XS.pm blib/lib/Text/CSV_XS.pm
+Running Mkbootstrap for CSV_XS ()
+chmod 644 "CSV_XS.bs"
+Manifying 5 pod documents
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CSV_XS.bs blib/arch/auto/Text/CSV_XS/CSV_XS.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  CSV_XS.xs > CSV_XS.xsc
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+mv CSV_XS.xsc CSV_XS.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.43\" -DXS_VERSION=\"1.43\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CSV_XS.c
+t/ascii.t ................. ok
+rm -f blib/arch/auto/Text/Soundex/Soundex.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Soundex.o  -o blib/arch/auto/Text/Soundex/Soundex.so  \
+      \
+
+t/backend.t ............... ok
+chmod 755 blib/arch/auto/Text/Soundex/Soundex.so
+t/basefunct.t ............. ok
+t/basemap.t ............... ok
+t/basemethods.t ........... ok
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Soundex.bs blib/arch/auto/Text/Soundex/Soundex.bs 644
+t/benchmarkcalc.t ......... ok
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/benchmarkcnv.t .......... ok
+t/convert.t ............... ok
+t/basic.t .. ok
+All tests successful.
+Files=1, Tests=18,  0 wallclock secs ( 0.02 usr +  0.01 sys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib/pkgconfig m4datadir=/nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/share/aclocal aclocaldir=/nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Soundex.bs blib/arch/auto/Text/Soundex/Soundex.bs 644
+t/frontend.t .............. ok
+t/isnotp2.t ............... ok
+Manifying 1 pod document
+t/longmultiply.t .......... ok
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/Soundex/Soundex.so
+Installing /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/Soundex.pm
+Installing /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/share/man/man3/Text::Soundex.3
+Appending installation info to /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/share/man/man3 to /nix/store/a7c5dw8raiskr5ig829d9phap7zgv6av-perl5.32.0-Text-Soundex-3.05-devdoc/share/man/man3
+Removing empty /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05
+shrinking /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/Soundex/Soundex.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05/lib
+patching script interpreter paths in /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05
+checking for references to /build/ in /nix/store/fy0xh51z8zd89zml27b2vp2kfh81ml49-perl5.32.0-Text-Soundex-3.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a7c5dw8raiskr5ig829d9phap7zgv6av-perl5.32.0-Text-Soundex-3.05-devdoc
+gzipping man pages under /nix/store/a7c5dw8raiskr5ig829d9phap7zgv6av-perl5.32.0-Text-Soundex-3.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/a7c5dw8raiskr5ig829d9phap7zgv6av-perl5.32.0-Text-Soundex-3.05-devdoc
+checking for references to /build/ in /nix/store/a7c5dw8raiskr5ig829d9phap7zgv6av-perl5.32.0-Text-Soundex-3.05-devdoc...
+t/overload.t .............. ok
+t/shiftright.t ............ ok
+t/useFROMbaseShortcuts.t .. ok
+t/useFROMbaseto32wide.t ... ok
+t/useTObaseShortcuts.t .... ok
+t/validbase.t ............. ok
+t/vet.t ................... ok
+t/vetcontext.t ............ ok
+t/zstrings.t .............. ok
+All tests successful.
+Files=20, Tests=5350,  1 wallclock secs ( 0.29 usr  0.02 sys +  0.78 cusr  0.04 csys =  1.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/pkgconfig m4datadir=/nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/aclocal aclocaldir=/nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/site_perl/5.32.0/Math/Base/Convert.pm
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/site_perl/5.32.0/Math/Base/Convert/CalcPP.pm
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/site_perl/5.32.0/Math/Base/Convert/Bases.pm
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/site_perl/5.32.0/Math/Base/Convert/Bitmaps.pm
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/site_perl/5.32.0/Math/Base/Convert/Shortcuts.pm
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3/Math::Base::Convert.3
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3/Math::Base::Convert::Bases.3
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3/Math::Base::Convert::CalcPP.3
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3/Math::Base::Convert::Bitmaps.3
+Installing /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3/Math::Base::Convert::Shortcuts.3
+Appending installation info to /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/man3 to /nix/store/can22sahgrig6xpw73v2nvyd0bh2v7ll-perl5.32.0-Math-Base-Convert-0.11-devdoc/share/man/man3
+Removing empty /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11/lib
+patching script interpreter paths in /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11
+checking for references to /build/ in /nix/store/n7a5mvam810wz3yfqkp4ppqwn9qmg8zx-perl5.32.0-Math-Base-Convert-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/can22sahgrig6xpw73v2nvyd0bh2v7ll-perl5.32.0-Math-Base-Convert-0.11-devdoc
+gzipping man pages under /nix/store/can22sahgrig6xpw73v2nvyd0bh2v7ll-perl5.32.0-Math-Base-Convert-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/can22sahgrig6xpw73v2nvyd0bh2v7ll-perl5.32.0-Math-Base-Convert-0.11-devdoc
+checking for references to /build/ in /nix/store/can22sahgrig6xpw73v2nvyd0bh2v7ll-perl5.32.0-Math-Base-Convert-0.11-devdoc...
+building '/nix/store/w66y787xpi2dsad6jp412qyb91wzy5a0-perl5.32.0-SQL-Statement-1.412.drv'...
+unpacking sources
+unpacking source archive /nix/store/ji3ghpi8ipxsrjzmh9mbzcfxws6jwhvr-SQL-Statement-1.412.tar.gz
+source root is SQL-Statement-1.412
+setting SOURCE_DATE_EPOCH to timestamp 1491482867 of file SQL-Statement-1.412/META.yml
+patching sources
+configuring
+patching ./t/23dialects.t...
+patching ./t/04idents.t...
+patching ./t/01prepare.t...
+patching ./t/15parse.t...
+patching ./t/00error.t...
+patching ./t/10limit.t...
+patching ./t/05simple.t...
+patching ./t/06virtual.t...
+patching ./t/99backtick.t...
+patching ./t/09ops.t...
+patching ./t/17quoting.t...
+patching ./t/03import.t...
+patching ./t/02execute.t...
+patching ./t/16parse.t...
+patching ./t/14parse.t...
+patching ./t/08join.t...
+patching ./t/12eval.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for SQL::Statement
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+rm -f blib/arch/auto/Text/CSV_XS/CSV_XS.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  CSV_XS.o  -o blib/arch/auto/Text/CSV_XS/CSV_XS.so  \
+      \
+
+chmod 755 blib/arch/auto/Text/CSV_XS/CSV_XS.so
+cp lib/SQL/Statement/Placeholder.pm blib/lib/SQL/Statement/Placeholder.pm
+cp lib/SQL/Statement/Roadmap.pod blib/lib/SQL/Statement/Roadmap.pod
+cp lib/SQL/Statement/Syntax.pod blib/lib/SQL/Statement/Syntax.pod
+cp lib/SQL/Dialects/ANSI.pm blib/lib/SQL/Dialects/ANSI.pm
+cp lib/SQL/Eval.pm blib/lib/SQL/Eval.pm
+cp lib/SQL/Statement/RAM.pm blib/lib/SQL/Statement/RAM.pm
+cp lib/SQL/Statement/Function.pm blib/lib/SQL/Statement/Function.pm
+cp lib/SQL/Parser.pm blib/lib/SQL/Parser.pm
+cp lib/SQL/Dialects/Role.pm blib/lib/SQL/Dialects/Role.pm
+cp lib/SQL/Statement/Functions.pm blib/lib/SQL/Statement/Functions.pm
+cp lib/SQL/Statement/GetInfo.pm blib/lib/SQL/Statement/GetInfo.pm
+cp lib/SQL/Statement/Term.pm blib/lib/SQL/Statement/Term.pm
+cp lib/SQL/Statement/Operation.pm blib/lib/SQL/Statement/Operation.pm
+cp lib/SQL/Statement/Util.pm blib/lib/SQL/Statement/Util.pm
+cp lib/SQL/Dialects/CSV.pm blib/lib/SQL/Dialects/CSV.pm
+cp lib/SQL/Statement/Structure.pod blib/lib/SQL/Statement/Structure.pod
+cp lib/SQL/Statement.pm blib/lib/SQL/Statement.pm
+cp lib/SQL/Dialects/AnyData.pm blib/lib/SQL/Dialects/AnyData.pm
+cp lib/SQL/Statement/Embed.pod blib/lib/SQL/Statement/Embed.pod
+cp lib/SQL/Statement/TermFactory.pm blib/lib/SQL/Statement/TermFactory.pm
+Manifying 1 pod document
+Manifying 20 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CSV_XS.bs blib/arch/auto/Text/CSV_XS/CSV_XS.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t xt/*.t
+t/10_base.t ....... ok
+t/12_acc.t ........ ok
+t/00error.t ..... # # Using required:
+# #   SQL::Statement: 1.412
+# # Using recommended:
+t/00error.t ..... ok
+t/15_flags.t ...... ok
+t/20_file.t ....... ok
+t/21_lexicalio.t .. ok
+t/01prepare.t ... ok
+t/22_scalario.t ... ok
+t/30_types.t ...... ok
+t/02execute.t ... ok
+t/40_misc.t ....... ok
+t/41_null.t ....... ok
+t/03import.t .... ok
+t/45_eol.t ........ ok
+t/04idents.t .... ok
+t/46_eol_si.t ..... ok
+t/50_utf8.t ....... ok
+t/05simple.t .... ok
+t/51_utf8.t ....... ok
+t/06virtual.t ... ok
+t/08join.t ...... ok
+t/09ops.t ....... ok
+t/10limit.t ..... ok
+t/12eval.t ...... ok
+t/14parse.t ..... ok
+t/15parse.t ..... ok
+t/16parse.t ..... ok
+t/17quoting.t ... ok
+t/23dialects.t .. ok
+t/99backtick.t .. ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/06virtual.t (Wstat: 0 Tests: 655 Failed: 0)
+  TODO passed:   565-567
+t/08join.t    (Wstat: 0 Tests: 321 Failed: 0)
+  TODO passed:   289-291, 293-295, 312-321
+Files=17, Tests=1665,  4 wallclock secs ( 0.25 usr  0.03 sys +  3.37 cusr  0.47 csys =  4.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/pkgconfig m4datadir=/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/aclocal aclocaldir=/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/aclocal install
+Manifying 20 pod documents
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Parser.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Eval.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Dialects/Role.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Dialects/AnyData.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Dialects/CSV.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Dialects/ANSI.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Placeholder.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Function.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/GetInfo.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Util.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Structure.pod
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Functions.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/TermFactory.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Syntax.pod
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Operation.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Roadmap.pod
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Term.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/RAM.pm
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl/5.32.0/SQL/Statement/Embed.pod
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Roadmap.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Functions.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Embed.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Placeholder.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Dialects::CSV.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Util.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Parser.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Operation.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Eval.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::GetInfo.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Dialects::Role.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Syntax.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Term.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Structure.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Dialects::AnyData.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Dialects::ANSI.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::TermFactory.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::RAM.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement::Function.3
+Installing /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3/SQL::Statement.3
+Appending installation info to /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/man3 to /nix/store/ixz6qncpk9nhhyr11fnapq0xpyn8h1cs-perl5.32.0-SQL-Statement-1.412-devdoc/share/man/man3
+Removing empty /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib
+patching script interpreter paths in /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412
+checking for references to /build/ in /nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ixz6qncpk9nhhyr11fnapq0xpyn8h1cs-perl5.32.0-SQL-Statement-1.412-devdoc
+gzipping man pages under /nix/store/ixz6qncpk9nhhyr11fnapq0xpyn8h1cs-perl5.32.0-SQL-Statement-1.412-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ixz6qncpk9nhhyr11fnapq0xpyn8h1cs-perl5.32.0-SQL-Statement-1.412-devdoc
+checking for references to /build/ in /nix/store/ixz6qncpk9nhhyr11fnapq0xpyn8h1cs-perl5.32.0-SQL-Statement-1.412-devdoc...
+t/55_combi.t ...... ok
+t/60_samples.t .... ok
+t/65_allow.t ...... ok
+t/66_formula.t .... ok
+t/70_rt.t ......... ok
+t/75_hashref.t .... ok
+t/76_magic.t ...... ok
+t/77_getall.t ..... ok
+t/78_fragment.t ... ok
+t/79_callbacks.t .. ok
+t/80_diag.t ....... ok
+t/81_subclass.t ... ok
+t/85_util.t ....... ok
+t/90_csv.t ........ ok
+t/91_csv_cb.t ..... ok
+All tests successful.
+Files=28, Tests=52129, 17 wallclock secs ( 3.95 usr  0.27 sys + 16.17 cusr  0.61 csys = 21.00 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/pkgconfig m4datadir=/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/share/aclocal aclocaldir=/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CSV_XS.bs blib/arch/auto/Text/CSV_XS/CSV_XS.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
+Installing /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Text/CSV_XS.pm
+Installing /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/share/man/man3/Text::CSV_XS.3
+Appending installation info to /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/share/man/man3 to /nix/store/24z9jh4fxn0605zx9ayn37573gl8rvmv-perl5.32.0-Text-CSV_XS-1.43-devdoc/share/man/man3
+Removing empty /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43
+shrinking /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib
+patching script interpreter paths in /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43
+checking for references to /build/ in /nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43...
+shrinking RPATHs of ELF executables and libraries in /nix/store/24z9jh4fxn0605zx9ayn37573gl8rvmv-perl5.32.0-Text-CSV_XS-1.43-devdoc
+gzipping man pages under /nix/store/24z9jh4fxn0605zx9ayn37573gl8rvmv-perl5.32.0-Text-CSV_XS-1.43-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/24z9jh4fxn0605zx9ayn37573gl8rvmv-perl5.32.0-Text-CSV_XS-1.43-devdoc
+checking for references to /build/ in /nix/store/24z9jh4fxn0605zx9ayn37573gl8rvmv-perl5.32.0-Text-CSV_XS-1.43-devdoc...
+building '/nix/store/lqmif9bx5naaldiiv7pql9jymi8l3hx2-perl5.32.0-DBD-CSV-0.54.drv'...
+unpacking sources
+unpacking source archive /nix/store/1pl2scbcvdz3wg9kr3j87i8isi9bnga8-DBD-CSV-0.54.tgz
+source root is DBD-CSV-0.54
+setting SOURCE_DATE_EPOCH to timestamp 1540812211 of file DBD-CSV-0.54/META.yml
+patching sources
+configuring
+patching ./examples/passwd.pl...
+patching ./t/31_delete.t...
+patching ./t/71_csv-ext.t...
+patching ./t/41_nulls.t...
+patching ./t/73_csv-case.t...
+patching ./t/72_csv-schema.t...
+patching ./t/30_insertfetch.t...
+patching ./t/48_utf8.t...
+patching ./t/20_createdrop.t...
+patching ./t/51_commit.t...
+patching ./t/80_rt.t...
+patching ./t/70_csv.t...
+patching ./t/40_numrows.t...
+patching ./t/lib.pl...
+patching ./t/10_base.t...
+patching ./t/11_dsnlist.t...
+patching ./t/61_meta.t...
+patching ./t/42_bindparam.t...
+patching ./t/44_listfields.t...
+patching ./t/60_misc.t...
+patching ./t/55_dir_search.t...
+patching ./t/43_blobs.t...
+patching ./t/82_free_unref_scalar.t...
+patching ./t/50_chopblanks.t...
+patching ./t/32_update.t...
+patching ./t/85_error.t...
+patching ./lib/DBD/CSV/GetInfo.pm...
+patching ./lib/DBD/CSV/TypeInfo.pm...
+patching ./lib/DBD/CSV.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBD::CSV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBD/CSV/GetInfo.pm blib/lib/DBD/CSV/GetInfo.pm
+cp lib/DBD/CSV.pm blib/lib/DBD/CSV.pm
+cp lib/Bundle/DBD/CSV.pm blib/lib/Bundle/DBD/CSV.pm
+cp lib/DBD/CSV/TypeInfo.pm blib/lib/DBD/CSV/TypeInfo.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/10_base.t ............... 1/? # Showing relevant versions (DBI_SQL_NANO = not set)
+# Using DBI            version 1.643
+# Using DBD::File      version 0.44
+# Using SQL::Statement version 1.412
+# Using Text::CSV_XS   version 1.43
+# DBD::CSV                 0.54 using Text::CSV_XS (1.43)
+#   DBD::File              0.44 using IO::File (1.41)
+#     DBI::DBD::SqlEngine  0.06 using SQL::Statement 1.412
+# DBI                      1.643
+# OS                       linux (gnulinux)
+# Perl                     5.032000 (x86_64-linux-thread-multi)
+t/10_base.t ............... ok
+t/11_dsnlist.t ............ ok
+t/20_createdrop.t ......... ok
+t/30_insertfetch.t ........ ok
+t/31_delete.t ............. ok
+t/32_update.t ............. ok
+t/40_numrows.t ............ ok
+t/41_nulls.t .............. ok
+t/42_bindparam.t .......... ok
+t/43_blobs.t .............. ok
+t/44_listfields.t ......... ok
+t/48_utf8.t ............... ok
+t/50_chopblanks.t ......... ok
+t/51_commit.t ............. ok
+t/55_dir_search.t ......... skipped: No folder scanning during automated tests
+t/60_misc.t ............... ok
+t/61_meta.t ............... ok
+t/70_csv.t ................ ok
+t/71_csv-ext.t ............ ok
+t/72_csv-schema.t ......... ok
+t/73_csv-case.t ........... ok
+t/80_rt.t ................. ok
+t/82_free_unref_scalar.t .. ok
+t/85_error.t .............. ok
+All tests successful.
+Files=24, Tests=1554,  8 wallclock secs ( 0.22 usr  0.04 sys +  6.03 cusr  1.40 csys =  7.69 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/pkgconfig m4datadir=/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/aclocal aclocaldir=/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl/5.32.0/DBD/CSV.pm
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl/5.32.0/DBD/CSV/GetInfo.pm
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl/5.32.0/DBD/CSV/TypeInfo.pm
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl/5.32.0/Bundle/DBD/CSV.pm
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/man/man3/Bundle::DBD::CSV.3
+Installing /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/man/man3/DBD::CSV.3
+Appending installation info to /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/man/man3 to /nix/store/27mf46zvpxp7a9m2gy4j5nizzyvbw36l-perl5.32.0-DBD-CSV-0.54-devdoc/share/man/man3
+Removing empty /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib
+patching script interpreter paths in /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54
+/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl/5.32.0/DBD/CSV.pm: interpreter directive changed from "/usr/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl -I/nix/store/hk1ap6k7znn20rv5861vbgmlwvmbg4k0-perl5.32.0-SQL-Statement-1.412/lib/perl5/site_perl -I/nix/store/f7fhcl405rbbwarcs2j5pwg84cazfyfk-perl5.32.0-Clone-0.45/lib/perl5/site_perl -I/nix/store/kzlry0bxj3z9f54h0537fsnz444lzscr-perl5.32.0-Module-Runtime-0.016/lib/perl5/site_perl -I/nix/store/hndlnawjwwlh69rzn6ffxvnb2nfkvsg3-perl5.32.0-Params-Util-1.07/lib/perl5/site_perl -I/nix/store/wla5gqhdsxkqqsfbrmw8asgwpr1j676g-perl5.32.0-Text-CSV_XS-1.43/lib/perl5/site_perl -I/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54...
+shrinking RPATHs of ELF executables and libraries in /nix/store/27mf46zvpxp7a9m2gy4j5nizzyvbw36l-perl5.32.0-DBD-CSV-0.54-devdoc
+gzipping man pages under /nix/store/27mf46zvpxp7a9m2gy4j5nizzyvbw36l-perl5.32.0-DBD-CSV-0.54-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/27mf46zvpxp7a9m2gy4j5nizzyvbw36l-perl5.32.0-DBD-CSV-0.54-devdoc
+checking for references to /build/ in /nix/store/27mf46zvpxp7a9m2gy4j5nizzyvbw36l-perl5.32.0-DBD-CSV-0.54-devdoc...
+/nix/store/wncba68f0sz7ip12hyd7vwpqiq4cqsz5-perl5.32.0-DBD-CSV-0.54

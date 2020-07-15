@@ -1,0 +1,46 @@
+these derivations will be built:
+  /nix/store/gr1r0q552pwg431zkyap2kn2iyyc5rin-perl5.32.0-Geography-Countries-2009041301.drv
+building '/nix/store/gr1r0q552pwg431zkyap2kn2iyyc5rin-perl5.32.0-Geography-Countries-2009041301.drv'...
+unpacking sources
+unpacking source archive /nix/store/94lvq80rv2jkl6vbfpbfnnhgk02g9rk5-Geography-Countries-2009041301.tar.gz
+source root is Geography-Countries-2009041301
+setting SOURCE_DATE_EPOCH to timestamp 1239644490 of file Geography-Countries-2009041301/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Geography::Countries
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Geography/Countries.pm blib/lib/Geography/Countries.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000_tests.t .. ok
+All tests successful.
+Files=1, Tests=13,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/lib/pkgconfig m4datadir=/nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/share/aclocal aclocaldir=/nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/lib/perl5/site_perl/5.32.0/Geography/Countries.pm
+Installing /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/share/man/man3/Geography::Countries.3
+Appending installation info to /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/share/man/man3 to /nix/store/2axl8p2sssz55rjfs2raxl9wm6zpchgs-perl5.32.0-Geography-Countries-2009041301-devdoc/share/man/man3
+Removing empty /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301/lib
+patching script interpreter paths in /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301
+checking for references to /build/ in /nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2axl8p2sssz55rjfs2raxl9wm6zpchgs-perl5.32.0-Geography-Countries-2009041301-devdoc
+gzipping man pages under /nix/store/2axl8p2sssz55rjfs2raxl9wm6zpchgs-perl5.32.0-Geography-Countries-2009041301-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2axl8p2sssz55rjfs2raxl9wm6zpchgs-perl5.32.0-Geography-Countries-2009041301-devdoc
+checking for references to /build/ in /nix/store/2axl8p2sssz55rjfs2raxl9wm6zpchgs-perl5.32.0-Geography-Countries-2009041301-devdoc...
+/nix/store/jvf4j8rz7hxv8mh391bk2zlxi5bzpwc3-perl5.32.0-Geography-Countries-2009041301

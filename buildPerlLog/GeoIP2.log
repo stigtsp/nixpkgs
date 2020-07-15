@@ -1,0 +1,667 @@
+these derivations will be built:
+  /nix/store/9b0m4b8cli9i531mji9n24fza7xbbiz6-perl5.32.0-MooX-StrictConstructor-0.011.drv
+  /nix/store/nk2v750j78hjpgfhnn8vw93j3b5ls31m-perl5.32.0-MaxMind-DB-Common-0.040001.drv
+  /nix/store/kxykm9jfi1jirg6hrwsrzjcjq0ql7xya-perl5.32.0-MaxMind-DB-Reader-1.000014.drv
+  /nix/store/h942cchc30ymbcycd5v77vq4xjihsiz2-perl5.32.0-GeoIP2-2.006002.drv
+these paths will be fetched (0.47 MiB download, 0.48 MiB unpacked):
+  /nix/store/3pg01dng1f4f8jq2p708jzzpsmwja67a-MaxMind-DB-Common-0.040001.tar.gz
+  /nix/store/5bj7a9yx8lsx9lnyr2h3dr89bp8v165s-GeoIP2-2.006002.tar.gz
+  /nix/store/c7r0ip40yc2czlf8n8rnzf8han92wp6x-MaxMind-DB-Reader-1.000014.tar.gz
+copying path '/nix/store/5bj7a9yx8lsx9lnyr2h3dr89bp8v165s-GeoIP2-2.006002.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/c7r0ip40yc2czlf8n8rnzf8han92wp6x-MaxMind-DB-Reader-1.000014.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3pg01dng1f4f8jq2p708jzzpsmwja67a-MaxMind-DB-Common-0.040001.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9b0m4b8cli9i531mji9n24fza7xbbiz6-perl5.32.0-MooX-StrictConstructor-0.011.drv'...
+unpacking sources
+unpacking source archive /nix/store/7h2ml43ina6klm8nf8am5p1wwq44c0kg-MooX-StrictConstructor-0.011.tar.gz
+source root is MooX-StrictConstructor-0.011
+setting SOURCE_DATE_EPOCH to timestamp 1583858322 of file MooX-StrictConstructor-0.011/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooX::StrictConstructor
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooX/StrictConstructor.pm blib/lib/MooX/StrictConstructor.pm
+cp lib/Method/Generate/Constructor/Role/StrictConstructor.pm blib/lib/Method/Generate/Constructor/Role/StrictConstructor.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .. ok
+t/basic.t ....... ok
+All tests successful.
+Files=2, Tests=17,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.22 cusr  0.10 csys =  0.36 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/lib/pkgconfig m4datadir=/nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/aclocal aclocaldir=/nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/lib/perl5/site_perl/5.32.0/MooX/StrictConstructor.pm
+Installing /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/lib/perl5/site_perl/5.32.0/Method/Generate/Constructor/Role/StrictConstructor.pm
+Installing /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/man/man3/Method::Generate::Constructor::Role::StrictConstructor.3
+Installing /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/man/man3/MooX::StrictConstructor.3
+Appending installation info to /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/man/man3 to /nix/store/mp7mv9abq2sq0dwwhsn7grq7j61xzp1a-perl5.32.0-MooX-StrictConstructor-0.011-devdoc/share/man/man3
+Removing empty /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011/lib
+patching script interpreter paths in /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011
+checking for references to /build/ in /nix/store/ixh342qj44h6l97dk2i6nxxxpdqnlz7j-perl5.32.0-MooX-StrictConstructor-0.011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mp7mv9abq2sq0dwwhsn7grq7j61xzp1a-perl5.32.0-MooX-StrictConstructor-0.011-devdoc
+gzipping man pages under /nix/store/mp7mv9abq2sq0dwwhsn7grq7j61xzp1a-perl5.32.0-MooX-StrictConstructor-0.011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mp7mv9abq2sq0dwwhsn7grq7j61xzp1a-perl5.32.0-MooX-StrictConstructor-0.011-devdoc
+checking for references to /build/ in /nix/store/mp7mv9abq2sq0dwwhsn7grq7j61xzp1a-perl5.32.0-MooX-StrictConstructor-0.011-devdoc...
+building '/nix/store/nk2v750j78hjpgfhnn8vw93j3b5ls31m-perl5.32.0-MaxMind-DB-Common-0.040001.drv'...
+unpacking sources
+unpacking source archive /nix/store/3pg01dng1f4f8jq2p708jzzpsmwja67a-MaxMind-DB-Common-0.040001.tar.gz
+source root is MaxMind-DB-Common-0.040001
+setting SOURCE_DATE_EPOCH to timestamp 1454432750 of file MaxMind-DB-Common-0.040001/tidyall.ini
+patching sources
+configuring
+patching ./t/00-report-prereqs.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/release-synopsis.t...
+patching ./t/release-portability.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/release-tidyall.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MaxMind::DB::Common
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MaxMind/DB/Common.pm blib/lib/MaxMind/DB/Common.pm
+cp lib/MaxMind/DB/Metadata.pm blib/lib/MaxMind/DB/Metadata.pm
+cp lib/MaxMind/DB/Types.pm blib/lib/MaxMind/DB/Types.pm
+cp lib/MaxMind/DB/Role/Debugs.pm blib/lib/MaxMind/DB/Role/Debugs.pm
+cp lib/Test/MaxMind/DB/Common/Data.pm blib/lib/Test/MaxMind/DB/Common/Data.pm
+cp lib/Test/MaxMind/DB/Common/Util.pm blib/lib/Test/MaxMind/DB/Common/Util.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/MaxMind/DB/*.t
+t/00-report-prereqs.t ..... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                  Want     Have
+#     ----------------------- ---- --------
+#     Carp                     any     1.50
+#     Data::Dumper::Concise    any    2.023
+#     DateTime                 any     1.52
+#     Exporter                 any     5.74
+#     List::AllUtils           any     0.16
+#     Math::BigInt             any 1.999818
+#     Moo                      any 2.004000
+#     Moo::Role                any 2.004000
+#     MooX::StrictConstructor  any    0.011
+#     Scalar::Util             any     1.55
+#     Sub::Quote               any 2.006006
+#     autodie                  any     2.32
+#     constant                 any     1.33
+#     namespace::autoclean     any     0.29
+#     overload                 any     1.31
+#     strict                   any     1.11
+#     warnings                 any     1.47
+#
+t/00-report-prereqs.t ..... ok
+t/author-00-compile.t ..... skipped: these tests are for testing by the author
+t/author-eol.t ............ skipped: these tests are for testing by the author
+t/author-no-tabs.t ........ skipped: these tests are for testing by the author
+t/author-pod-spell.t ...... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ..... skipped: these tests are for testing by the author
+t/author-test-version.t ... skipped: these tests are for testing by the author
+t/compile.t ............... ok
+t/MaxMind/DB/Common.t ..... ok
+t/MaxMind/DB/Metadata.t ... ok
+t/release-cpan-changes.t .. skipped: these tests are for release candidate testing
+t/release-portability.t ... skipped: these tests are for release candidate testing
+t/release-synopsis.t ...... skipped: these tests are for release candidate testing
+t/release-tidyall.t ....... skipped: these tests are for release candidate testing
+All tests successful.
+Files=14, Tests=8,  4 wallclock secs ( 0.09 usr  0.03 sys +  1.76 cusr  1.70 csys =  3.58 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/pkgconfig m4datadir=/nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/aclocal aclocaldir=/nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/MaxMind/DB/Types.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/MaxMind/DB/Metadata.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/MaxMind/DB/Common.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/MaxMind/DB/Role/Debugs.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/Test/MaxMind/DB/Common/Util.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/site_perl/5.32.0/Test/MaxMind/DB/Common/Data.pm
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/man/man3/MaxMind::DB::Metadata.3
+Installing /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/man/man3/MaxMind::DB::Common.3
+Appending installation info to /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/man/man3 to /nix/store/fp1kix0yndcib9yjjh4c4cr8bdl454ir-perl5.32.0-MaxMind-DB-Common-0.040001-devdoc/share/man/man3
+Removing empty /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001/lib
+patching script interpreter paths in /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001
+checking for references to /build/ in /nix/store/p18qx8fi1rjr6qxfnknvsbcg8kg0bhgs-perl5.32.0-MaxMind-DB-Common-0.040001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fp1kix0yndcib9yjjh4c4cr8bdl454ir-perl5.32.0-MaxMind-DB-Common-0.040001-devdoc
+gzipping man pages under /nix/store/fp1kix0yndcib9yjjh4c4cr8bdl454ir-perl5.32.0-MaxMind-DB-Common-0.040001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fp1kix0yndcib9yjjh4c4cr8bdl454ir-perl5.32.0-MaxMind-DB-Common-0.040001-devdoc
+checking for references to /build/ in /nix/store/fp1kix0yndcib9yjjh4c4cr8bdl454ir-perl5.32.0-MaxMind-DB-Common-0.040001-devdoc...
+building '/nix/store/kxykm9jfi1jirg6hrwsrzjcjq0ql7xya-perl5.32.0-MaxMind-DB-Reader-1.000014.drv'...
+unpacking sources
+unpacking source archive /nix/store/c7r0ip40yc2czlf8n8rnzf8han92wp6x-MaxMind-DB-Reader-1.000014.tar.gz
+source root is MaxMind-DB-Reader-1.000014
+setting SOURCE_DATE_EPOCH to timestamp 1560854285 of file MaxMind-DB-Reader-1.000014/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+patching ./bin/mmdb-dump-search-tree...
+patching ./bin/mmdb-dump-metadata...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./maxmind-db/test-data/write-test-data.pl...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./eg/mmdb-dump-database...
+patching ./eg/lookup-ip-address...
+patching ./eg/benchmark...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MaxMind::DB::Reader
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MaxMind/DB/Reader/Role/Sysreader.pm blib/lib/MaxMind/DB/Reader/Role/Sysreader.pm
+cp lib/MaxMind/DB/Reader/Role/HasDecoder.pm blib/lib/MaxMind/DB/Reader/Role/HasDecoder.pm
+cp lib/MaxMind/DB/Reader/Role/NodeReader.pm blib/lib/MaxMind/DB/Reader/Role/NodeReader.pm
+cp lib/MaxMind/DB/Reader/PP.pm blib/lib/MaxMind/DB/Reader/PP.pm
+cp lib/MaxMind/DB/Reader/Data/EndMarker.pm blib/lib/MaxMind/DB/Reader/Data/EndMarker.pm
+cp lib/MaxMind/DB/Reader/Role/HasMetadata.pm blib/lib/MaxMind/DB/Reader/Role/HasMetadata.pm
+cp lib/MaxMind/DB/Reader.pm blib/lib/MaxMind/DB/Reader.pm
+cp lib/MaxMind/DB/Reader/Decoder.pm blib/lib/MaxMind/DB/Reader/Decoder.pm
+cp lib/MaxMind/DB/Reader/Data/Container.pm blib/lib/MaxMind/DB/Reader/Data/Container.pm
+cp lib/MaxMind/DB/Reader/Role/Reader.pm blib/lib/MaxMind/DB/Reader/Role/Reader.pm
+cp bin/mmdb-dump-metadata blib/script/mmdb-dump-metadata
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mmdb-dump-metadata
+cp bin/mmdb-dump-search-tree blib/script/mmdb-dump-search-tree
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/mmdb-dump-search-tree
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/MaxMind/DB/*.t t/MaxMind/DB/Reader/*.t t/MaxMind/DB/Reader/Decoder-types/*.t
+t/00-report-prereqs.t ............................. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     Exporter                         any     5.74
+#     ExtUtils::MakeMaker              any     7.44
+#     File::Spec                       any     3.78
+#     Path::Class                     0.27     0.37
+#     Scalar::Util                    1.42     1.55
+#     Test::Bits                       any     0.02
+#     Test::Fatal                      any    0.014
+#     Test::MaxMind::DB::Common::Data  any 0.040001
+#     Test::MaxMind::DB::Common::Util  any 0.040001
+#     Test::More                      0.96 1.302175
+#     Test::Number::Delta              any     1.06
+#     Test::Requires                   any     0.11
+#     lib                              any     0.65
+#     utf8                             any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                        Want     Have
+#     ------------------------- -------- --------
+#     Carp                           any     1.50
+#     Data::IEEE754                  any     0.02
+#     Data::Printer                  any     0.40
+#     Data::Validate::IP            0.25     0.27
+#     DateTime                       any     1.52
+#     Encode                         any     3.06
+#     Getopt::Long                   any     2.51
+#     List::AllUtils                 any     0.16
+#     Math::BigInt                   any 1.999818
+#     MaxMind::DB::Common       0.040001 0.040001
+#     MaxMind::DB::Metadata          any 0.040001
+#     MaxMind::DB::Role::Debugs      any 0.040001
+#     MaxMind::DB::Types             any 0.040001
+#     Module::Implementation         any     0.09
+#     Moo                       1.003000 2.004000
+#     Moo::Role                      any 2.004000
+#     MooX::StrictConstructor        any    0.011
+#     Role::Tiny                1.003002 2.001004
+#     Socket                        1.87    2.029
+#     autodie                        any     2.32
+#     bytes                          any     1.07
+#     constant                       any     1.33
+#     namespace::autoclean           any     0.29
+#     strict                         any     1.11
+#     warnings                       any     1.47
+#
+# === Runtime Suggests ===
+#
+#     Module                      Want    Have
+#     ----------------------- -------- -------
+#     MaxMind::DB::Reader::XS 1.000003 missing
+#
+t/00-report-prereqs.t ............................. ok
+t/MaxMind/DB/Reader-broken-databases.t ............ ok
+t/MaxMind/DB/Reader-decoder.t ..................... skipped: Test requires module 'Math::Int128' but it's not found
+t/MaxMind/DB/Reader-no-ipv4-search-tree.t ......... ok
+t/MaxMind/DB/Reader.t ............................. ok
+t/MaxMind/DB/Reader/Decoder-maps-with-pointers.t .. ok
+t/MaxMind/DB/Reader/Decoder-types/array.t ......... ok
+t/MaxMind/DB/Reader/Decoder-types/boolean.t ....... ok
+t/MaxMind/DB/Reader/Decoder-types/bytes.t ......... ok
+t/MaxMind/DB/Reader/Decoder-types/container.t ..... ok
+t/MaxMind/DB/Reader/Decoder-types/double.t ........ ok
+t/MaxMind/DB/Reader/Decoder-types/end_marker.t .... ok
+t/MaxMind/DB/Reader/Decoder-types/float.t ......... ok
+t/MaxMind/DB/Reader/Decoder-types/int32.t ......... ok
+t/MaxMind/DB/Reader/Decoder-types/map.t ........... ok
+t/MaxMind/DB/Reader/Decoder-types/pointer.t ....... ok
+t/MaxMind/DB/Reader/Decoder-types/uint128.t ....... ok
+t/MaxMind/DB/Reader/Decoder-types/uint16.t ........ ok
+t/MaxMind/DB/Reader/Decoder-types/uint32.t ........ ok
+t/MaxMind/DB/Reader/Decoder-types/uint64.t ........ ok
+t/MaxMind/DB/Reader/Decoder-types/utf8_string.t ... ok
+t/MaxMind/DB/Reader/Decoder.t ..................... ok
+t/MaxMind/DB/Reader/NoMoose.t ..................... ok
+All tests successful.
+Files=23, Tests=459,  8 wallclock secs ( 0.17 usr  0.06 sys +  5.56 cusr  2.37 csys =  8.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/pkgconfig m4datadir=/nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/share/aclocal aclocaldir=/nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Decoder.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/PP.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Data/EndMarker.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Data/Container.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Role/HasDecoder.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Role/Sysreader.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Role/Reader.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Role/NodeReader.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/site_perl/5.32.0/MaxMind/DB/Reader/Role/HasMetadata.pm
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/share/man/man3/MaxMind::DB::Reader.3
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/bin/mmdb-dump-search-tree
+Installing /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/bin/mmdb-dump-metadata
+Appending installation info to /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/share/man/man3 to /nix/store/8g3as1zxsp8akhqjvbk4aj3yyzb3y33h-perl5.32.0-MaxMind-DB-Reader-1.000014-devdoc/share/man/man3
+Removing empty /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/lib  /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014/bin
+patching script interpreter paths in /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014
+checking for references to /build/ in /nix/store/1yp36iinn7in2m088xfj9nf8ydzdyz8c-perl5.32.0-MaxMind-DB-Reader-1.000014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8g3as1zxsp8akhqjvbk4aj3yyzb3y33h-perl5.32.0-MaxMind-DB-Reader-1.000014-devdoc
+gzipping man pages under /nix/store/8g3as1zxsp8akhqjvbk4aj3yyzb3y33h-perl5.32.0-MaxMind-DB-Reader-1.000014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8g3as1zxsp8akhqjvbk4aj3yyzb3y33h-perl5.32.0-MaxMind-DB-Reader-1.000014-devdoc
+checking for references to /build/ in /nix/store/8g3as1zxsp8akhqjvbk4aj3yyzb3y33h-perl5.32.0-MaxMind-DB-Reader-1.000014-devdoc...
+building '/nix/store/h942cchc30ymbcycd5v77vq4xjihsiz2-perl5.32.0-GeoIP2-2.006002.drv'...
+unpacking sources
+unpacking source archive /nix/store/5bj7a9yx8lsx9lnyr2h3dr89bp8v165s-GeoIP2-2.006002.tar.gz
+source root is GeoIP2-2.006002
+setting SOURCE_DATE_EPOCH to timestamp 1560855082 of file GeoIP2-2.006002/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+patching ./bin/web-service-request...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./maxmind-db/test-data/write-test-data.pl...
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for GeoIP2
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/GeoIP2/Record/Continent.pm blib/lib/GeoIP2/Record/Continent.pm
+cp lib/GeoIP2/Model/ASN.pm blib/lib/GeoIP2/Model/ASN.pm
+cp lib/GeoIP2/Role/Error/HTTP.pm blib/lib/GeoIP2/Role/Error/HTTP.pm
+cp lib/GeoIP2/Error/Generic.pm blib/lib/GeoIP2/Error/Generic.pm
+cp lib/GeoIP2/Error/HTTP.pm blib/lib/GeoIP2/Error/HTTP.pm
+cp lib/GeoIP2/Role/Record/HasNames.pm blib/lib/GeoIP2/Role/Record/HasNames.pm
+cp lib/GeoIP2/Record/RepresentedCountry.pm blib/lib/GeoIP2/Record/RepresentedCountry.pm
+cp lib/GeoIP2/Record/Subdivision.pm blib/lib/GeoIP2/Record/Subdivision.pm
+cp lib/GeoIP2/Role/Model/Flat.pm blib/lib/GeoIP2/Role/Model/Flat.pm
+cp lib/GeoIP2/Record/City.pm blib/lib/GeoIP2/Record/City.pm
+cp lib/GeoIP2/Role/Model.pm blib/lib/GeoIP2/Role/Model.pm
+cp lib/GeoIP2/Model/Enterprise.pm blib/lib/GeoIP2/Model/Enterprise.pm
+cp lib/GeoIP2/Record/Country.pm blib/lib/GeoIP2/Record/Country.pm
+cp lib/GeoIP2/WebService/Client.pm blib/lib/GeoIP2/WebService/Client.pm
+cp lib/GeoIP2/Error/IPAddressNotFound.pm blib/lib/GeoIP2/Error/IPAddressNotFound.pm
+cp lib/GeoIP2/Role/HasLocales.pm blib/lib/GeoIP2/Role/HasLocales.pm
+cp lib/GeoIP2/Record/Location.pm blib/lib/GeoIP2/Record/Location.pm
+cp lib/GeoIP2/Record/MaxMind.pm blib/lib/GeoIP2/Record/MaxMind.pm
+cp lib/GeoIP2/Model/AnonymousIP.pm blib/lib/GeoIP2/Model/AnonymousIP.pm
+cp lib/GeoIP2/Record/Postal.pm blib/lib/GeoIP2/Record/Postal.pm
+cp lib/GeoIP2/Model/City.pm blib/lib/GeoIP2/Model/City.pm
+cp lib/GeoIP2/Model/ISP.pm blib/lib/GeoIP2/Model/ISP.pm
+cp lib/GeoIP2/Model/Insights.pm blib/lib/GeoIP2/Model/Insights.pm
+cp lib/GeoIP2/Role/Model/HasSubdivisions.pm blib/lib/GeoIP2/Role/Model/HasSubdivisions.pm
+cp lib/GeoIP2/Model/Country.pm blib/lib/GeoIP2/Model/Country.pm
+cp lib/GeoIP2/Database/Reader.pm blib/lib/GeoIP2/Database/Reader.pm
+cp lib/GeoIP2/Error/Type.pm blib/lib/GeoIP2/Error/Type.pm
+cp lib/GeoIP2.pm blib/lib/GeoIP2.pm
+cp lib/GeoIP2/Types.pm blib/lib/GeoIP2/Types.pm
+cp lib/GeoIP2/Role/HasIPAddress.pm blib/lib/GeoIP2/Role/HasIPAddress.pm
+cp lib/GeoIP2/Error/WebService.pm blib/lib/GeoIP2/Error/WebService.pm
+cp lib/GeoIP2/Model/Domain.pm blib/lib/GeoIP2/Model/Domain.pm
+cp lib/GeoIP2/Model/ConnectionType.pm blib/lib/GeoIP2/Model/ConnectionType.pm
+cp lib/GeoIP2/Record/Traits.pm blib/lib/GeoIP2/Record/Traits.pm
+cp lib/GeoIP2/Role/Record/Country.pm blib/lib/GeoIP2/Role/Record/Country.pm
+cp lib/GeoIP2/Role/Model/Location.pm blib/lib/GeoIP2/Role/Model/Location.pm
+cp bin/web-service-request blib/script/web-service-request
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/web-service-request
+Manifying 26 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/GeoIP2/*.t t/GeoIP2/Database/*.t t/GeoIP2/Error/*.t t/GeoIP2/Model/*.t t/GeoIP2/WebService/*.t
+t/00-report-prereqs.t ....................... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     HTTP::Response         any     6.24
+#     HTTP::Status           any     6.24
+#     IO::Compress::Gzip     any    2.093
+#     MaxMind::DB::Metadata  any 0.040001
+#     Path::Class            any     0.37
+#     Test::Builder          any 1.302175
+#     Test::Fatal            any    0.014
+#     Test::More            0.96 1.302175
+#     Test::Number::Delta    any     1.06
+#     base                   any     2.27
+#     utf8                   any     1.22
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                   Want     Have
+#     -------------------- -------- --------
+#     B                         any     1.80
+#     Data::Dumper              any    2.174
+#     Data::Validate::IP       0.25     0.27
+#     Exporter                  any     5.74
+#     Getopt::Long              any     2.51
+#     HTTP::Headers             any     6.24
+#     HTTP::Request             any     6.24
+#     JSON::MaybeXS             any 1.004002
+#     LWP::Protocol::https      any     6.07
+#     LWP::UserAgent            any     6.45
+#     List::SomeUtils           any     0.58
+#     List::Util                any     1.55
+#     MIME::Base64              any     3.15
+#     MaxMind::DB::Reader  1.000000 1.000014
+#     Moo                       any 2.004000
+#     Moo::Role                 any 2.004000
+#     Params::Validate          any     1.29
+#     Scalar::Util              any     1.55
+#     Sub::Quote                any 2.006006
+#     Throwable::Error          any 0.200013
+#     Try::Tiny                 any     0.30
+#     URI                       any     1.76
+#     lib                       any     0.65
+#     namespace::clean          any     0.27
+#     strict                    any     1.11
+#     warnings                  any     1.47
+#
+t/00-report-prereqs.t ....................... ok
+t/GeoIP2/Database/Reader-Anonymous-IP.t ..... ok
+t/GeoIP2/Database/Reader-ASN.t .............. ok
+t/GeoIP2/Database/Reader-Connection-Type.t .. ok
+t/GeoIP2/Database/Reader-Domain.t ........... ok
+t/GeoIP2/Database/Reader-Enterprise.t ....... ok
+t/GeoIP2/Database/Reader-ISP.t .............. ok
+t/GeoIP2/Database/Reader.t .................. ok
+t/GeoIP2/Error/Type.t ....................... ok
+t/GeoIP2/Model/City.t ....................... ok
+t/GeoIP2/Model/Country.t .................... ok
+t/GeoIP2/Model/Insights.t ................... ok
+t/GeoIP2/Model/names.t ...................... ok
+t/GeoIP2/Types.t ............................ ok
+t/GeoIP2/WebService/Client.t ................ ok
+All tests successful.
+Files=15, Tests=500, 11 wallclock secs ( 0.19 usr  0.07 sys +  5.94 cusr  4.61 csys = 10.81 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/pkgconfig m4datadir=/nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/aclocal aclocaldir=/nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/aclocal install
+Manifying 26 pod documents
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Types.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/ISP.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/AnonymousIP.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/ConnectionType.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/Insights.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/Country.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/Enterprise.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/Domain.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/ASN.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Model/City.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Database/Reader.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Error/HTTP.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Error/Generic.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Error/Type.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Error/IPAddressNotFound.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Error/WebService.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/WebService/Client.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Model.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/HasLocales.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/HasIPAddress.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Model/Flat.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Model/Location.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Model/HasSubdivisions.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Error/HTTP.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Record/HasNames.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Role/Record/Country.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Continent.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Postal.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/RepresentedCountry.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Traits.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Subdivision.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/MaxMind.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Country.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/Location.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/site_perl/5.32.0/GeoIP2/Record/City.pm
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Subdivision.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::Country.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::City.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::Domain.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::AnonymousIP.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::Insights.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Error::WebService.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Continent.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::ISP.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::WebService::Client.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::RepresentedCountry.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Error::IPAddressNotFound.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Database::Reader.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::ASN.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::MaxMind.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Country.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::City.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Error::HTTP.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Traits.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Postal.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::Enterprise.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Record::Location.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Error::Generic.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Model::ConnectionType.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2::Error::Type.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3/GeoIP2.3
+Installing /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/bin/web-service-request
+Appending installation info to /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/man3 to /nix/store/vxs9rnc41jdlw9af5x0r8g9i6zraz9qc-perl5.32.0-GeoIP2-2.006002-devdoc/share/man/man3
+Removing empty /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/lib  /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002/bin
+patching script interpreter paths in /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002
+checking for references to /build/ in /nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vxs9rnc41jdlw9af5x0r8g9i6zraz9qc-perl5.32.0-GeoIP2-2.006002-devdoc
+gzipping man pages under /nix/store/vxs9rnc41jdlw9af5x0r8g9i6zraz9qc-perl5.32.0-GeoIP2-2.006002-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vxs9rnc41jdlw9af5x0r8g9i6zraz9qc-perl5.32.0-GeoIP2-2.006002-devdoc
+checking for references to /build/ in /nix/store/vxs9rnc41jdlw9af5x0r8g9i6zraz9qc-perl5.32.0-GeoIP2-2.006002-devdoc...
+/nix/store/5y30l3fcsh2a5rnjy9771ny3f4n6m5yd-perl5.32.0-GeoIP2-2.006002

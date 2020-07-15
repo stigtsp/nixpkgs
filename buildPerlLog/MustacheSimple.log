@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/szm7qhadpc0wklad8rswpvhrpykvska8-perl5.32.0-Mustache-Simple-1.3.6.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/wl4fqgyxx7dg4j94n04jmrgyhmcrmiwc-Mustache-Simple-v1.3.6.tar.gz
+copying path '/nix/store/wl4fqgyxx7dg4j94n04jmrgyhmcrmiwc-Mustache-Simple-v1.3.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/szm7qhadpc0wklad8rswpvhrpykvska8-perl5.32.0-Mustache-Simple-1.3.6.drv'...
+unpacking sources
+unpacking source archive /nix/store/wl4fqgyxx7dg4j94n04jmrgyhmcrmiwc-Mustache-Simple-v1.3.6.tar.gz
+source root is Mustache-Simple-v1.3.6
+setting SOURCE_DATE_EPOCH to timestamp 1502030977 of file Mustache-Simple-v1.3.6/META.yml
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/manifest.t...
+patching ./t/boilerplate.t...
+patching ./t/pod.t...
+patching ./t/Extra.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mustache::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mustache/Simple.pm blib/lib/Mustache/Simple.pm
+cp lib/Mustache/Simple/ContextStack.pm blib/lib/Mustache/Simple/ContextStack.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .......... 1/? # Testing Mustache::Simple v1.3.6, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .......... ok
+t/boilerplate.t ...... ok
+t/Extra.t ............ ok
+t/manifest.t ......... skipped: Author tests not required for installation
+t/Mustache-Simple.t .. ok
+t/pod-coverage.t ..... skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t .............. skipped: Test::Pod 1.22 required for testing POD
+All tests successful.
+
+Test Summary Report
+-------------------
+t/boilerplate.t    (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   1-3
+Files=7, Tests=129,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.40 cusr  0.08 csys =  0.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/lib/pkgconfig m4datadir=/nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/share/aclocal aclocaldir=/nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/lib/perl5/site_perl/5.32.0/Mustache/Simple.pm
+Installing /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/lib/perl5/site_perl/5.32.0/Mustache/Simple/ContextStack.pm
+Installing /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/share/man/man3/Mustache::Simple.3
+Appending installation info to /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/share/man/man3 to /nix/store/5i41bb2mlzrbvs43jh8b3n01brb38g7h-perl5.32.0-Mustache-Simple-1.3.6-devdoc/share/man/man3
+Removing empty /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6/lib
+patching script interpreter paths in /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6
+checking for references to /build/ in /nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5i41bb2mlzrbvs43jh8b3n01brb38g7h-perl5.32.0-Mustache-Simple-1.3.6-devdoc
+gzipping man pages under /nix/store/5i41bb2mlzrbvs43jh8b3n01brb38g7h-perl5.32.0-Mustache-Simple-1.3.6-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5i41bb2mlzrbvs43jh8b3n01brb38g7h-perl5.32.0-Mustache-Simple-1.3.6-devdoc
+checking for references to /build/ in /nix/store/5i41bb2mlzrbvs43jh8b3n01brb38g7h-perl5.32.0-Mustache-Simple-1.3.6-devdoc...
+/nix/store/xc90aiyvks33b4zx2s36nqry8p6ik4qm-perl5.32.0-Mustache-Simple-1.3.6

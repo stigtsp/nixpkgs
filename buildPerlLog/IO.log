@@ -1,0 +1,117 @@
+these derivations will be built:
+  /nix/store/7ahyqa7hr70njmngbl6xmb1gvy1q53sr-perl5.32.0-IO-1.42.drv
+building '/nix/store/7ahyqa7hr70njmngbl6xmb1gvy1q53sr-perl5.32.0-IO-1.42.drv'...
+unpacking sources
+unpacking source archive /nix/store/0l7h18nd1pz1h5jqxax1m3f2hnkrq5lf-IO-1.42.tar.gz
+source root is IO-1.42
+setting SOURCE_DATE_EPOCH to timestamp 1579502956 of file IO-1.42/META.json
+patching sources
+configuring
+patching ./t/io_sel.t...
+patching ./t/io_getline.t...
+patching ./t/io_dir.t...
+patching ./t/io_taint.t...
+patching ./t/io_tell.t...
+patching ./t/io_poll.t...
+patching ./t/io_udp.t...
+patching ./t/io_sock.t...
+patching ./t/cachepropagate-udp.t...
+patching ./t/IO.t...
+patching ./t/cachepropagate-tcp.t...
+patching ./t/io_xs.t...
+patching ./t/io_file_export.t...
+patching ./t/io_file.t...
+patching ./t/io_utf8.t...
+patching ./t/io_utf8argv.t...
+patching ./t/io_dup.t...
+patching ./t/cachepropagate-unix.t...
+patching ./t/io_unix.t...
+patching ./t/io_leak.t...
+patching ./t/io_linenum.t...
+patching ./t/io_multihomed.t...
+patching ./t/io_pipe.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/File.pm blib/lib/IO/File.pm
+cp lib/IO/Seekable.pm blib/lib/IO/Seekable.pm
+cp lib/IO/Socket.pm blib/lib/IO/Socket.pm
+cp lib/IO/Pipe.pm blib/lib/IO/Pipe.pm
+cp lib/IO/Select.pm blib/lib/IO/Select.pm
+cp lib/IO/Poll.pm blib/lib/IO/Poll.pm
+cp IO.pm blib/lib/IO.pm
+cp lib/IO/Socket/UNIX.pm blib/lib/IO/Socket/UNIX.pm
+cp lib/IO/Handle.pm blib/lib/IO/Handle.pm
+cp lib/IO/Dir.pm blib/lib/IO/Dir.pm
+cp lib/IO/Socket/INET.pm blib/lib/IO/Socket/INET.pm
+Running Mkbootstrap for IO ()
+chmod 644 "IO.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- IO.bs blib/arch/auto/IO/IO.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  IO.xs > IO.xsc
+mv IO.xsc IO.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.42\" -DXS_VERSION=\"1.42\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   IO.c
+In file included from IO.xs:17:
+ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from IO.xs:12:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.42\" -DXS_VERSION=\"1.42\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   poll.c
+rm -f blib/arch/auto/IO/IO.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  IO.o poll.o  -o blib/arch/auto/IO/IO.so  \
+      \
+
+chmod 755 blib/arch/auto/IO/IO.so
+Manifying 11 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/pkgconfig m4datadir=/nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/aclocal aclocaldir=/nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- IO.bs blib/arch/auto/IO/IO.bs 644
+Manifying 11 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IO/IO.so
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Socket.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Poll.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Pipe.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/File.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Handle.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Dir.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Select.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Seekable.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Socket/INET.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IO/Socket/UNIX.pm
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Dir.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Socket.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Handle.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Socket::UNIX.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Select.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::File.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Pipe.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Seekable.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Socket::INET.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO.3
+Installing /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3/IO::Poll.3
+Appending installation info to /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/man3 to /nix/store/mkv2nm8vy4qm9zjfjczsqc6qmsr6yx9p-perl5.32.0-IO-1.42-devdoc/share/man/man3
+Removing empty /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42
+shrinking /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IO/IO.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42/lib
+patching script interpreter paths in /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42
+checking for references to /build/ in /nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mkv2nm8vy4qm9zjfjczsqc6qmsr6yx9p-perl5.32.0-IO-1.42-devdoc
+gzipping man pages under /nix/store/mkv2nm8vy4qm9zjfjczsqc6qmsr6yx9p-perl5.32.0-IO-1.42-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mkv2nm8vy4qm9zjfjczsqc6qmsr6yx9p-perl5.32.0-IO-1.42-devdoc
+checking for references to /build/ in /nix/store/mkv2nm8vy4qm9zjfjczsqc6qmsr6yx9p-perl5.32.0-IO-1.42-devdoc...
+/nix/store/2w4w04z6yjrwipjn8vyq3sagigf1nb4i-perl5.32.0-IO-1.42

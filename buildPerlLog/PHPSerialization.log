@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/6i2bd2jf6y3njhhwk2xqzr6ab7n8b0kl-perl5.32.0-PHP-Serialization-0.34.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/h7wqx8pwc5f6idfw6l73dhw6hm22xcv9-PHP-Serialization-0.34.tar.gz
+copying path '/nix/store/h7wqx8pwc5f6idfw6l73dhw6hm22xcv9-PHP-Serialization-0.34.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6i2bd2jf6y3njhhwk2xqzr6ab7n8b0kl-perl5.32.0-PHP-Serialization-0.34.drv'...
+unpacking sources
+unpacking source archive /nix/store/h7wqx8pwc5f6idfw6l73dhw6hm22xcv9-PHP-Serialization-0.34.tar.gz
+source root is PHP-Serialization-0.34
+setting SOURCE_DATE_EPOCH to timestamp 1268951050 of file PHP-Serialization-0.34/META.yml
+patching sources
+configuring
+patching ./t/05RT24441.t...
+patching ./t/08incompletestringRT44700.t...
+patching ./t/02basic.t...
+patching ./t/06bool_deserializeRT45024.t...
+patching ./t/10intRT48594.t...
+patching ./t/09floatindexRT42029.t...
+patching ./t/07croak.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PHP::Serialization
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/PHP/Serialization.pm blib/lib/PHP/Serialization.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t ...................... ok
+t/02basic.t .................... ok
+t/03largeints.t ................ ok
+t/04arraysRT21218.t ............ ok
+t/05RT24441.t .................. ok
+t/06bool_deserializeRT45024.t .. ok
+t/07croak.t .................... ok
+t/08incompletestringRT44700.t .. ok
+t/09floatindexRT42029.t ........ ok
+t/10intRT48594.t ............... ok
+All tests successful.
+Files=10, Tests=17,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.48 cusr  0.08 csys =  0.60 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/lib/pkgconfig m4datadir=/nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/share/aclocal aclocaldir=/nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/lib/perl5/site_perl/5.32.0/PHP/Serialization.pm
+Installing /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/share/man/man3/PHP::Serialization.3
+Appending installation info to /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/share/man/man3 to /nix/store/3za49c5rkm9z7xcm8z3gbx4hqf3yidr3-perl5.32.0-PHP-Serialization-0.34-devdoc/share/man/man3
+Removing empty /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34/lib
+patching script interpreter paths in /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34
+checking for references to /build/ in /nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3za49c5rkm9z7xcm8z3gbx4hqf3yidr3-perl5.32.0-PHP-Serialization-0.34-devdoc
+gzipping man pages under /nix/store/3za49c5rkm9z7xcm8z3gbx4hqf3yidr3-perl5.32.0-PHP-Serialization-0.34-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3za49c5rkm9z7xcm8z3gbx4hqf3yidr3-perl5.32.0-PHP-Serialization-0.34-devdoc
+checking for references to /build/ in /nix/store/3za49c5rkm9z7xcm8z3gbx4hqf3yidr3-perl5.32.0-PHP-Serialization-0.34-devdoc...
+/nix/store/n8i6iahj64l2h4bygbnl78hlh2wc3i4s-perl5.32.0-PHP-Serialization-0.34

@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/gq12lapczbnmcg200x9b2pzgahac9c71-perl5.32.0-Gtk3-SimpleList-0.21.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/crp6cknm0b83rm60pkcwpm0ihf5656dg-Gtk3-SimpleList-0.21.tar.gz
+copying path '/nix/store/crp6cknm0b83rm60pkcwpm0ihf5656dg-Gtk3-SimpleList-0.21.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gq12lapczbnmcg200x9b2pzgahac9c71-perl5.32.0-Gtk3-SimpleList-0.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/crp6cknm0b83rm60pkcwpm0ihf5656dg-Gtk3-SimpleList-0.21.tar.gz
+source root is Gtk3-SimpleList-0.21
+setting SOURCE_DATE_EPOCH to timestamp 1588601867 of file Gtk3-SimpleList-0.21/META.yml
+patching sources
+configuring
+patching ./t/01compile.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Gtk3::SimpleList
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Gtk3/SimpleList.pm blib/lib/Gtk3/SimpleList.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01compile.t .. Too late to run INIT block at /nix/store/02xnl9c4dz80p7d68lz01q4ps0zp3yxr-perl5.32.0-Glib-Object-Introspection-0.048/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Object/Introspection.pm line 257.
+t/01compile.t .. ok
+All tests successful.
+Files=1, Tests=2,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.13 cusr  0.05 csys =  0.20 CPU)
+Result: PASS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/gsettings-schemas/perl5.32.0-Gtk3-SimpleList-0.21/glib-2.0/schemas/ pkgconfigdir=/nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/lib/pkgconfig m4datadir=/nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/aclocal aclocaldir=/nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/lib/perl5/site_perl/5.32.0/Gtk3/SimpleList.pm
+Installing /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/man/man3/Gtk3::SimpleList.3
+Appending installation info to /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+dropIconThemeCache
+glibPreFixupPhase
+giDiscoverSelf
+post-installation fixup
+Moving /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/man/man3 to /nix/store/058vdsv4rq77pkyd54wlz8d9h13km5yj-perl5.32.0-Gtk3-SimpleList-0.21-devdoc/share/man/man3
+Removing empty /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21/lib
+patching script interpreter paths in /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21
+checking for references to /build/ in /nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/058vdsv4rq77pkyd54wlz8d9h13km5yj-perl5.32.0-Gtk3-SimpleList-0.21-devdoc
+gzipping man pages under /nix/store/058vdsv4rq77pkyd54wlz8d9h13km5yj-perl5.32.0-Gtk3-SimpleList-0.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/058vdsv4rq77pkyd54wlz8d9h13km5yj-perl5.32.0-Gtk3-SimpleList-0.21-devdoc
+checking for references to /build/ in /nix/store/058vdsv4rq77pkyd54wlz8d9h13km5yj-perl5.32.0-Gtk3-SimpleList-0.21-devdoc...
+/nix/store/cxmqlxcrz9ldjnigircnrmlxzmsq0maq-perl5.32.0-Gtk3-SimpleList-0.21

@@ -1,0 +1,110 @@
+these derivations will be built:
+  /nix/store/flrzd00yi1amd9s15l0bxrxwbad2nvp1-perl5.32.0-Data-Dumper-2.173.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/c4xnh4ifw67dn6rcwcnb868p8lvx4sfc-Data-Dumper-2.173.tar.gz
+copying path '/nix/store/c4xnh4ifw67dn6rcwcnb868p8lvx4sfc-Data-Dumper-2.173.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/flrzd00yi1amd9s15l0bxrxwbad2nvp1-perl5.32.0-Data-Dumper-2.173.drv'...
+unpacking sources
+unpacking source archive /nix/store/c4xnh4ifw67dn6rcwcnb868p8lvx4sfc-Data-Dumper-2.173.tar.gz
+source root is Data-Dumper-2.173
+setting SOURCE_DATE_EPOCH to timestamp 1541844369 of file Data-Dumper-2.173/META.yml
+patching sources
+configuring
+patching ./t/toaster.t...
+patching ./t/pair.t...
+patching ./t/dumper.t...
+patching ./t/recurse.t...
+patching ./t/bless.t...
+patching ./t/indent.t...
+patching ./t/purity_deepcopy_maxdepth.t...
+patching ./t/dumpperl.t...
+patching ./t/values.t...
+patching ./t/deparse.t...
+patching ./t/freezer_useperl.t...
+patching ./t/qr.t...
+patching ./t/freezer.t...
+patching ./t/huge.t...
+patching ./t/terse.t...
+patching ./t/seen.t...
+patching ./t/quotekeys.t...
+patching ./t/trailing_comma.t...
+patching ./t/sparseseen.t...
+patching ./t/overload.t...
+patching ./t/misc.t...
+patching ./t/bless_var_method.t...
+patching ./t/bugs.t...
+patching ./t/perl-74170.t...
+patching ./t/names.t...
+patching ./t/sortkeys.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Dumper
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Dumper.pm blib/lib/Data/Dumper.pm
+Running Mkbootstrap for Dumper ()
+chmod 644 "Dumper.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Dumper.bs blib/arch/auto/Data/Dumper/Dumper.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Dumper.xs > Dumper.xsc
+mv Dumper.xsc Dumper.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.173\" -DXS_VERSION=\"2.173\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_PPPORT_H Dumper.c
+rm -f blib/arch/auto/Data/Dumper/Dumper.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Dumper.o  -o blib/arch/auto/Data/Dumper/Dumper.so  \
+      \
+
+chmod 755 blib/arch/auto/Data/Dumper/Dumper.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Dumper.bs blib/arch/auto/Data/Dumper/Dumper.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/bless.t ..................... ok
+t/bless_var_method.t .......... ok
+t/bugs.t ...................... ok
+t/deparse.t ................... ok
+t/dumper.t .................... ok
+t/dumpperl.t .................. ok
+t/freezer.t ................... ok
+t/freezer_useperl.t ........... ok
+t/huge.t ...................... skipped: Need ~10 GiB of core for this test
+t/indent.t .................... ok
+t/misc.t ...................... ok
+t/names.t ..................... ok
+t/overload.t .................. ok
+t/pair.t ...................... ok
+t/perl-74170.t ................ ok
+t/purity_deepcopy_maxdepth.t .. ok
+t/qr.t ........................ ok
+t/quotekeys.t ................. ok
+t/recurse.t ................... ok
+t/seen.t ...................... ok
+t/sortkeys.t .................. ok
+t/sparseseen.t ................ ok
+t/terse.t ..................... ok
+t/toaster.t ................... ok
+t/trailing_comma.t ............ ok
+t/values.t .................... ok
+All tests successful.
+Files=26, Tests=797,  2 wallclock secs ( 0.11 usr  0.02 sys +  1.54 cusr  0.25 csys =  1.92 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Dumper.bs blib/arch/auto/Data/Dumper/Dumper.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so
+Installing /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/Dumper.pm
+Installing /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/share/man/man3/Data::Dumper.3
+Appending installation info to /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173
+shrinking /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so
+gzipping man pages under /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173/lib
+patching script interpreter paths in /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173
+checking for references to /build/ in /nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173...
+/nix/store/m08z3l3ps0pm091qwzyr5i7qgnkcz57f-perl5.32.0-Data-Dumper-2.173

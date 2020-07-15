@@ -1,0 +1,182 @@
+these derivations will be built:
+  /nix/store/668zv0n60l5mks7h1y5gfakm970qhl3k-perl5.32.0-Test-Filename-0.03.drv
+  /nix/store/vska87mx5492kcgi8v5z00dldzz7227y-perl5.32.0-Path-Iterator-Rule-1.014.drv
+building '/nix/store/668zv0n60l5mks7h1y5gfakm970qhl3k-perl5.32.0-Test-Filename-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/ijav0kng7frfdmi6vmnanckhs9klv2hq-Test-Filename-0.03.tar.gz
+source root is Test-Filename-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1359666799 of file Test-Filename-0.03/xt/release/test-version.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/author/critic.t...
+patching ./t/00-compile.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Filename
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Filename.pm blib/lib/Test/Filename.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ... ok
+t/filename_is.t .. ok
+All tests successful.
+Files=2, Tests=27,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.18 cusr  0.04 csys =  0.24 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/lib/pkgconfig m4datadir=/nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/share/aclocal aclocaldir=/nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/lib/perl5/site_perl/5.32.0/Test/Filename.pm
+Installing /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/share/man/man3/Test::Filename.3
+Appending installation info to /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/share/man/man3 to /nix/store/z5xyhp114ccdx50bvzhj0xnkwjbk99as-perl5.32.0-Test-Filename-0.03-devdoc/share/man/man3
+Removing empty /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03/lib
+patching script interpreter paths in /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03
+checking for references to /build/ in /nix/store/gsyacs7b6wclcn067irgmbfhkm9ppi2r-perl5.32.0-Test-Filename-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z5xyhp114ccdx50bvzhj0xnkwjbk99as-perl5.32.0-Test-Filename-0.03-devdoc
+gzipping man pages under /nix/store/z5xyhp114ccdx50bvzhj0xnkwjbk99as-perl5.32.0-Test-Filename-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z5xyhp114ccdx50bvzhj0xnkwjbk99as-perl5.32.0-Test-Filename-0.03-devdoc
+checking for references to /build/ in /nix/store/z5xyhp114ccdx50bvzhj0xnkwjbk99as-perl5.32.0-Test-Filename-0.03-devdoc...
+building '/nix/store/vska87mx5492kcgi8v5z00dldzz7227y-perl5.32.0-Path-Iterator-Rule-1.014.drv'...
+unpacking sources
+unpacking source archive /nix/store/s9kgjs4wfpz8s3v4r80d8lmfxvk6lfrc-Path-Iterator-Rule-1.014.tar.gz
+source root is Path-Iterator-Rule-1.014
+setting SOURCE_DATE_EPOCH to timestamp 1530107192 of file Path-Iterator-Rule-1.014/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/critic.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/minimum-version.t...
+patching ./examples/modules-in-inc.pl...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Path::Iterator::Rule
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Path/Iterator/Rule.pm blib/lib/Path/Iterator/Rule.pm
+cp lib/PIR.pm blib/lib/PIR.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker 6.17 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Exporter             any     5.74
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     File::pushd          any    1.016
+#     Path::Tiny           any    0.114
+#     Test::Deep           any    1.130
+#     Test::Filename      0.03     0.03
+#     Test::More          0.92 1.302175
+#     lib                  any     0.65
+#     parent               any    0.238
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module             Want   Have
+#     ------------------ ---- ------
+#     Carp                any   1.50
+#     File::Basename      any   2.85
+#     File::Spec          any   3.78
+#     List::Util          any   1.55
+#     Number::Compare    0.02   0.03
+#     Scalar::Util        any   1.55
+#     Text::Glob          any   0.11
+#     Try::Tiny           any   0.30
+#     if                  any 0.0608
+#     strict              any   1.11
+#     warnings            any   1.47
+#     warnings::register  any   1.04
+#
+t/00-report-prereqs.t .... ok
+t/basic.t ................ ok
+t/breadth-depth-files.t .. ok
+t/breadth-depth.t ........ ok
+t/children-order.t ....... ok
+t/clone.t ................ ok
+t/content.t .............. ok
+t/error_handler.t ........ ok
+t/fast.t ................. ok
+t/helpers.t .............. ok
+t/logic.t ................ ok
+t/min-max-depth.t ........ ok
+t/names.t ................ ok
+t/perl.t ................. ok
+t/pir.t .................. ok
+t/relative.t ............. ok
+t/stat_tests.t ........... ok
+t/stringify.t ............ ok
+t/symlink.t .............. ok
+t/unsorted.t ............. ok
+t/vcs.t .................. ok
+t/visitor.t .............. ok
+t/x_tests.t .............. ok
+All tests successful.
+Files=23, Tests=91,  3 wallclock secs ( 0.07 usr  0.03 sys +  2.19 cusr  0.74 csys =  3.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/lib/pkgconfig m4datadir=/nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/aclocal aclocaldir=/nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/lib/perl5/site_perl/5.32.0/PIR.pm
+Installing /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/lib/perl5/site_perl/5.32.0/Path/Iterator/Rule.pm
+Installing /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/man/man3/PIR.3
+Installing /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/man/man3/Path::Iterator::Rule.3
+Appending installation info to /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/man/man3 to /nix/store/j14yfd3lx8bya9i6ywsr60sxrq39qxlx-perl5.32.0-Path-Iterator-Rule-1.014-devdoc/share/man/man3
+Removing empty /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014/lib
+patching script interpreter paths in /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014
+checking for references to /build/ in /nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j14yfd3lx8bya9i6ywsr60sxrq39qxlx-perl5.32.0-Path-Iterator-Rule-1.014-devdoc
+gzipping man pages under /nix/store/j14yfd3lx8bya9i6ywsr60sxrq39qxlx-perl5.32.0-Path-Iterator-Rule-1.014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j14yfd3lx8bya9i6ywsr60sxrq39qxlx-perl5.32.0-Path-Iterator-Rule-1.014-devdoc
+checking for references to /build/ in /nix/store/j14yfd3lx8bya9i6ywsr60sxrq39qxlx-perl5.32.0-Path-Iterator-Rule-1.014-devdoc...
+/nix/store/kf67kxz4qr11hl964y6rgci6sdfsacfr-perl5.32.0-Path-Iterator-Rule-1.014

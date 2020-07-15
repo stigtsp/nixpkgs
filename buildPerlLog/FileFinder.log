@@ -1,0 +1,68 @@
+these derivations will be built:
+  /nix/store/ax9fnw880lr3wqcxxn55yqrdzvaqk14s-perl5.32.0-File-Finder-0.53.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xrf71m2j9xhs7md8v5b8p3cyarwbh2ij-File-Finder-0.53.tar.gz
+copying path '/nix/store/xrf71m2j9xhs7md8v5b8p3cyarwbh2ij-File-Finder-0.53.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ax9fnw880lr3wqcxxn55yqrdzvaqk14s-perl5.32.0-File-Finder-0.53.drv'...
+unpacking sources
+unpacking source archive /nix/store/xrf71m2j9xhs7md8v5b8p3cyarwbh2ij-File-Finder-0.53.tar.gz
+source root is File-Finder-0.53
+setting SOURCE_DATE_EPOCH to timestamp 1112989668 of file File-Finder-0.53/META.yml
+patching sources
+configuring
+patching ./t/99-test-pod-coverage.t...
+patching ./t/05-steps.t...
+patching ./t/04-ffr.t...
+patching ./t/99-test-pod.t...
+patching ./t/99-test-distro.t...
+patching ./t/02-basic-logic.t...
+patching ./t/01-core.t...
+patching ./t/03-options.t...
+patching ./t/cprove...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Finder
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/Finder.pm blib/lib/File/Finder.pm
+cp lib/File/Finder/Steps.pm blib/lib/File/Finder/Steps.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-core.t ............... ok
+t/02-basic-logic.t ........ ok
+t/03-options.t ............ ok
+t/04-ffr.t ................ skipped: No File::Find::Rule installed
+t/05-steps.t .............. ok
+t/99-test-distro.t ........ skipped: Test::Distribution not installed
+t/99-test-pod-coverage.t .. skipped: Test::Pod::Coverage required for testing POD
+t/99-test-pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=8, Tests=87,  0 wallclock secs ( 0.04 usr  0.01 sys +  0.47 cusr  0.10 csys =  0.62 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/lib/pkgconfig m4datadir=/nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/aclocal aclocaldir=/nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/lib/perl5/site_perl/5.32.0/File/Finder.pm
+Installing /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/lib/perl5/site_perl/5.32.0/File/Finder/Steps.pm
+Installing /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/man/man3/File::Finder.3
+Installing /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/man/man3/File::Finder::Steps.3
+Appending installation info to /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/man/man3 to /nix/store/0l1arbzhkgmhgsri89xcb70qhdw6l3sl-perl5.32.0-File-Finder-0.53-devdoc/share/man/man3
+Removing empty /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53/lib
+patching script interpreter paths in /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53
+checking for references to /build/ in /nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0l1arbzhkgmhgsri89xcb70qhdw6l3sl-perl5.32.0-File-Finder-0.53-devdoc
+gzipping man pages under /nix/store/0l1arbzhkgmhgsri89xcb70qhdw6l3sl-perl5.32.0-File-Finder-0.53-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0l1arbzhkgmhgsri89xcb70qhdw6l3sl-perl5.32.0-File-Finder-0.53-devdoc
+checking for references to /build/ in /nix/store/0l1arbzhkgmhgsri89xcb70qhdw6l3sl-perl5.32.0-File-Finder-0.53-devdoc...
+/nix/store/jcfjk3napi31pbcca7rjqa2d2y6kl3ha-perl5.32.0-File-Finder-0.53

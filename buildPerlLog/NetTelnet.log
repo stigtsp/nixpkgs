@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/j9whk2jr9z7fdah0l0b3dmqdik00rkj7-perl5.32.0-Net-Telnet-3.04.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/da2cz9gypdca6pf47hqbnygvjhpp5v13-Net-Telnet-3.04.tar.gz
+copying path '/nix/store/da2cz9gypdca6pf47hqbnygvjhpp5v13-Net-Telnet-3.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j9whk2jr9z7fdah0l0b3dmqdik00rkj7-perl5.32.0-Net-Telnet-3.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/da2cz9gypdca6pf47hqbnygvjhpp5v13-Net-Telnet-3.04.tar.gz
+source root is Net-Telnet-3.04
+setting SOURCE_DATE_EPOCH to timestamp 1366583799 of file Net-Telnet-3.04/META.yml
+patching sources
+configuring
+patching ./t/select.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Telnet
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/Telnet.pm blib/lib/Net/Telnet.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/select.t .. ok
+All tests successful.
+Files=1, Tests=3,  0 wallclock secs ( 0.01 usr +  0.00 sys =  0.01 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/lib/pkgconfig m4datadir=/nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/share/aclocal aclocaldir=/nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/lib/perl5/site_perl/5.32.0/Net/Telnet.pm
+Installing /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/share/man/man3/Net::Telnet.3
+Appending installation info to /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/share/man/man3 to /nix/store/7c6slqw6vm59bqsr60ppaqkj2wxjm5zm-perl5.32.0-Net-Telnet-3.04-devdoc/share/man/man3
+Removing empty /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04/lib
+patching script interpreter paths in /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04
+checking for references to /build/ in /nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/7c6slqw6vm59bqsr60ppaqkj2wxjm5zm-perl5.32.0-Net-Telnet-3.04-devdoc
+gzipping man pages under /nix/store/7c6slqw6vm59bqsr60ppaqkj2wxjm5zm-perl5.32.0-Net-Telnet-3.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/7c6slqw6vm59bqsr60ppaqkj2wxjm5zm-perl5.32.0-Net-Telnet-3.04-devdoc
+checking for references to /build/ in /nix/store/7c6slqw6vm59bqsr60ppaqkj2wxjm5zm-perl5.32.0-Net-Telnet-3.04-devdoc...
+/nix/store/122svhwfvv1s239lq0fyqs5c6dirj61c-perl5.32.0-Net-Telnet-3.04

@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/nrm18r8j4a1s62rkqykjpsqz1v805ckq-perl5.32.0-URI-imap-1.01.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/qz2y37pm51fm6by5bmp6j9dazx3yv9w2-URI-imap-1.01.tar.gz
+copying path '/nix/store/qz2y37pm51fm6by5bmp6j9dazx3yv9w2-URI-imap-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nrm18r8j4a1s62rkqykjpsqz1v805ckq-perl5.32.0-URI-imap-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/qz2y37pm51fm6by5bmp6j9dazx3yv9w2-URI-imap-1.01.tar.gz
+source root is URI-imap-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1091906266 of file URI-imap-1.01/lib/URI/imap.pm
+patching sources
+configuring
+Undefined requirement for URI treated as '0' at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/MakeMaker.pm line 470.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for URI::imap
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/URI/imap.pm blib/lib/URI/imap.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/test.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.02 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/lib/pkgconfig m4datadir=/nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/share/aclocal aclocaldir=/nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/lib/perl5/site_perl/5.32.0/URI/imap.pm
+Installing /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/share/man/man3/URI::imap.3
+Appending installation info to /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/share/man/man3 to /nix/store/cgmd2yiv2gsni9026ccknqrz3ysjisr8-perl5.32.0-URI-imap-1.01-devdoc/share/man/man3
+Removing empty /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01/lib
+patching script interpreter paths in /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01
+checking for references to /build/ in /nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cgmd2yiv2gsni9026ccknqrz3ysjisr8-perl5.32.0-URI-imap-1.01-devdoc
+gzipping man pages under /nix/store/cgmd2yiv2gsni9026ccknqrz3ysjisr8-perl5.32.0-URI-imap-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cgmd2yiv2gsni9026ccknqrz3ysjisr8-perl5.32.0-URI-imap-1.01-devdoc
+checking for references to /build/ in /nix/store/cgmd2yiv2gsni9026ccknqrz3ysjisr8-perl5.32.0-URI-imap-1.01-devdoc...
+/nix/store/j4xyij5952vnw5rliwa7s6z9mp6lgk0c-perl5.32.0-URI-imap-1.01

@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/inybvah6sy33bff77w27v7ihbpnfz752-perl5.32.0-PAR-Dist-0.49.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/cmhrs7ql78mwgn8p8v1va3di9b4w7353-PAR-Dist-0.49.tar.gz
+copying path '/nix/store/cmhrs7ql78mwgn8p8v1va3di9b4w7353-PAR-Dist-0.49.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/inybvah6sy33bff77w27v7ihbpnfz752-perl5.32.0-PAR-Dist-0.49.drv'...
+unpacking sources
+unpacking source archive /nix/store/cmhrs7ql78mwgn8p8v1va3di9b4w7353-PAR-Dist-0.49.tar.gz
+source root is PAR-Dist-0.49
+setting SOURCE_DATE_EPOCH to timestamp 1350252678 of file PAR-Dist-0.49/META.yml
+patching sources
+configuring
+patching ./t/01basic.t...
+patching ./t/00podcover.t...
+patching ./t/03merge_meta.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for PAR::Dist
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/PAR/Dist.pm blib/lib/PAR/Dist.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00pod.t ............ skipped: Set environment variable PERL_TEST_POD=1 to test POD
+t/00podcover.t ....... skipped: Set environment variable PERL_TEST_POD=1 to test POD
+t/01basic.t .......... ok
+t/02parsedistname.t .. ok
+t/03merge_meta.t ..... PAR::Dist testers/debug info: Using 'Parse::CPAN::Meta' as YAML implementation at /build/PAR-Dist-0.49/blib/lib/PAR/Dist.pm line 1357.
+No YAML support for Dump found.
+No YAML support for DumpFile found.
+Found neither Archive::Zip (version != 1.28) nor ZIP/UNZIP as valid ZIP tools.
+t/03merge_meta.t ..... skipped: Skip because no YAML loader/dumper could be found
+All tests successful.
+Files=5, Tests=7,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.27 cusr  0.03 csys =  0.33 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/lib/pkgconfig m4datadir=/nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/share/aclocal aclocaldir=/nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/lib/perl5/site_perl/5.32.0/PAR/Dist.pm
+Installing /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/share/man/man3/PAR::Dist.3
+Appending installation info to /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/share/man/man3 to /nix/store/ldlrpy2682dcml1c1ad8wrpn332sg0b4-perl5.32.0-PAR-Dist-0.49-devdoc/share/man/man3
+Removing empty /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49/lib
+patching script interpreter paths in /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49
+checking for references to /build/ in /nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ldlrpy2682dcml1c1ad8wrpn332sg0b4-perl5.32.0-PAR-Dist-0.49-devdoc
+gzipping man pages under /nix/store/ldlrpy2682dcml1c1ad8wrpn332sg0b4-perl5.32.0-PAR-Dist-0.49-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ldlrpy2682dcml1c1ad8wrpn332sg0b4-perl5.32.0-PAR-Dist-0.49-devdoc
+checking for references to /build/ in /nix/store/ldlrpy2682dcml1c1ad8wrpn332sg0b4-perl5.32.0-PAR-Dist-0.49-devdoc...
+/nix/store/m6rx1f9zvd4rqpmrwa5ka26x5q2dw955-perl5.32.0-PAR-Dist-0.49

@@ -1,0 +1,313 @@
+these derivations will be built:
+  /nix/store/64l6jfaq966l2qifgxps2dhgilhjs54j-perl5.32.0-Glib-1.3293.drv
+  /nix/store/z6f78vk2vjh71qv5lw847dk1clf4a4df-perl5.32.0-Cairo-GObject-1.005.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/z5gr3kickha3kb665wdnv3ap1nfpr9my-Cairo-GObject-1.005.tar.gz
+copying path '/nix/store/z5gr3kickha3kb665wdnv3ap1nfpr9my-Cairo-GObject-1.005.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/64l6jfaq966l2qifgxps2dhgilhjs54j-perl5.32.0-Glib-1.3293.drv'...
+unpacking sources
+unpacking source archive /nix/store/fx0isczlcsjgby4dvw3x40w41i45j1qq-Glib-1.3293.tar.gz
+source root is Glib-1.3293
+setting SOURCE_DATE_EPOCH to timestamp 1591422960 of file Glib-1.3293/META.yml
+patching sources
+configuring
+patching ./apidoc.pl...
+patching ./Glib.exports...
+patching ./t/tied_flags.t...
+patching ./t/filename.t...
+patching ./t/signal_emission_hooks.t...
+patching ./t/6.t...
+patching ./t/d.t...
+patching ./t/lazy_loader.t...
+patching ./t/7.t...
+patching ./t/e.t...
+patching ./t/constants.t...
+patching ./t/64bit.t...
+patching ./t/tied_definedness.t...
+patching ./t/f.t...
+patching ./t/make_helper.t...
+patching ./t/b.t...
+patching ./t/g.t...
+patching ./t/c.t...
+patching ./t/a.t...
+patching ./t/2.t...
+patching ./t/signal_marshal.t...
+patching ./t/signal_query.t...
+patching ./t/1.t...
+patching ./t/9.t...
+patching ./t/8.t...
+patching ./t/options.t...
+patching ./t/bytes.t...
+patching ./t/5.t...
+patching ./t/4.t...
+patching ./t/tied_set_property.t...
+patching ./t/module_versions.t...
+patching ./t/variant.t...
+patching ./t/boxed_errors.t...
+Including generated API documentation...
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: '-pthread'
+Generating a Unix-style Makefile
+Writing Makefile for Glib
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp doctypes blib/arch/Glib/Install/doctypes
+cp devel.pod blib/lib/Glib/devel.pod
+cp gperl.h blib/arch/Glib/Install/gperl.h
+cp build/IFiles.pm blib/arch/Glib/Install/Files.pm
+cp lib/Glib/Object/Subclass.pm blib/lib/Glib/Object/Subclass.pm
+cp lib/Glib/ParseXSDoc.pm blib/lib/Glib/ParseXSDoc.pm
+cp lib/Glib/MakeHelper.pm blib/lib/Glib/MakeHelper.pm
+cp lib/Glib/CodeGen.pm blib/lib/Glib/CodeGen.pm
+cp gperl_marshal.h blib/arch/Glib/Install/gperl_marshal.h
+cp lib/Glib.pm blib/lib/Glib.pm
+cp lib/Glib/GenPod.pm blib/lib/Glib/GenPod.pm
+cp /build/Glib-1.3293/typemap blib/arch/Glib/Install/typemap
+Running Mkbootstrap for Glib ()
+chmod 644 "Glib.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Glib.bs blib/arch/auto/Glib/Glib.bs 644
+[ XS Glib.xs ]
+mv Glib.xsc Glib.c
+[ CC Glib.c ]
+[ XS GError.xs ]
+mv GError.xsc GError.c
+[ CC GError.c ]
+[ XS GUtils.xs ]
+mv GUtils.xsc GUtils.c
+[ CC GUtils.c ]
+[ XS GLog.xs ]
+mv GLog.xsc GLog.c
+[ CC GLog.c ]
+[ XS GType.xs ]
+mv GType.xsc GType.c
+[ CC GType.c ]
+[ XS GBoxed.xs ]
+mv GBoxed.xsc GBoxed.c
+[ CC GBoxed.c ]
+[ XS GObject.xs ]
+mv GObject.xsc GObject.c
+[ CC GObject.c ]
+[ XS GValue.xs ]
+mv GValue.xsc GValue.c
+[ CC GValue.c ]
+[ XS GClosure.xs ]
+mv GClosure.xsc GClosure.c
+[ CC GClosure.c ]
+[ XS GSignal.xs ]
+mv GSignal.xsc GSignal.c
+[ CC GSignal.c ]
+[ XS GMainLoop.xs ]
+mv GMainLoop.xsc GMainLoop.c
+[ CC GMainLoop.c ]
+[ XS GIOChannel.xs ]
+mv GIOChannel.xsc GIOChannel.c
+[ CC GIOChannel.c ]
+[ XS GParamSpec.xs ]
+mv GParamSpec.xsc GParamSpec.c
+[ CC GParamSpec.c ]
+GParamSpec.xs: In function 'boot_Glib__ParamSpec':
+GParamSpec.xs:240:13: warning: Deprecated pre-processor symbol
+  240 |  gperl_register_param_spec (G_TYPE_PARAM_VALUE_ARRAY, "Glib::Param::ValueArray");
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ XS GKeyFile.xs ]
+mv GKeyFile.xsc GKeyFile.c
+[ CC GKeyFile.c ]
+[ XS GOption.xs ]
+mv GOption.xsc GOption.c
+[ CC GOption.c ]
+[ XS GBookmarkFile.xs ]
+mv GBookmarkFile.xsc GBookmarkFile.c
+[ CC GBookmarkFile.c ]
+[ XS GVariant.xs ]
+mv GVariant.xsc GVariant.c
+[ CC GVariant.c ]
+[ CC gperl-gtypes.c ]
+rm -f blib/arch/auto/Glib/Glib.so
+[ LD blib/arch/auto/Glib/Glib.so ]
+chmod 755 blib/arch/auto/Glib/Glib.so
+Parsing XS files...
+Generating POD...
+Loaded 8 extra types from doctypes
+Creating POD index...
+Creating XS API documentation...
+Manifying 37 pod documents
+Manifying 3 pod documents
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/gsettings-schemas/perl5.32.0-Glib-1.3293/glib-2.0/schemas/ pkgconfigdir=/nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/pkgconfig m4datadir=/nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/aclocal aclocaldir=/nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Glib.bs blib/arch/auto/Glib/Glib.bs 644
+Creating POD index...
+Manifying 37 pod documents
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/typemap
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/doctypes
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl_marshal.h
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/gperl.h
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Install/Files.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Glib/Glib.so
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Log.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Markup.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Utils.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/MainLoop.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Signal.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/CodeGen.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Flags.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Type.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/version.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Object.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Error.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/KeyFile.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/OptionGroup.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Boxed.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/VariantType.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/devel.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/MakeHelper.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/VariantDict.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Variant.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/BookmarkFile.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/ParamSpec.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/index.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/GenPod.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/xsapi.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Bytes.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/ParseXSDoc.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/OptionContext.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Object/Subclass.pm
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Int.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Int64.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/String.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Flags.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Double.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/GType.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Unichar.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Boolean.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/UInt64.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/Enum.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Glib/Param/UInt.pod
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Variant.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Utils.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::MakeHelper.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::OptionGroup.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Signal.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::BookmarkFile.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::GenPod.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::VariantType.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Int64.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::VariantDict.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::xsapi.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Error.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Type.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Boxed.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::String.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::version.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Flags.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::index.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::OptionContext.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Bytes.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Boolean.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::ParamSpec.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::CodeGen.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Object::Subclass.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Double.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Flags.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::KeyFile.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Int.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::ParseXSDoc.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::UInt.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Object.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Unichar.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::GType.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::devel.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::Enum.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Param::UInt64.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Log.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::MainLoop.3
+Installing /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3/Glib::Markup.3
+Appending installation info to /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/man3 to /nix/store/06d472795404fihlvhvk7jgdnlkxbk49-perl5.32.0-Glib-1.3293-devdoc/share/man/man3
+Removing empty /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293
+shrinking /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Glib/Glib.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293/lib
+patching script interpreter paths in /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293
+checking for references to /build/ in /nix/store/vl7c0gjqjy2hriyg4fdcykmjlppbba88-perl5.32.0-Glib-1.3293...
+shrinking RPATHs of ELF executables and libraries in /nix/store/06d472795404fihlvhvk7jgdnlkxbk49-perl5.32.0-Glib-1.3293-devdoc
+gzipping man pages under /nix/store/06d472795404fihlvhvk7jgdnlkxbk49-perl5.32.0-Glib-1.3293-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/06d472795404fihlvhvk7jgdnlkxbk49-perl5.32.0-Glib-1.3293-devdoc
+checking for references to /build/ in /nix/store/06d472795404fihlvhvk7jgdnlkxbk49-perl5.32.0-Glib-1.3293-devdoc...
+building '/nix/store/z6f78vk2vjh71qv5lw847dk1clf4a4df-perl5.32.0-Cairo-GObject-1.005.drv'...
+unpacking sources
+unpacking source archive /nix/store/z5gr3kickha3kb665wdnv3ap1nfpr9my-Cairo-GObject-1.005.tar.gz
+source root is Cairo-GObject-1.005
+setting SOURCE_DATE_EPOCH to timestamp 1566449020 of file Cairo-GObject-1.005/META.json
+patching sources
+configuring
+patching ./examples/gst-cairo-overlay.pl...
+patching ./examples/draw-widget.pl...
+patching ./t/CairoGObject.t...
+Checking if your kit is complete...
+Looks good
+Unrecognized argument in LIBS ignored: '-pthread'
+Generating a Unix-style Makefile
+Writing Makefile for Cairo::GObject
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cairo/GObject.pm blib/lib/Cairo/GObject.pm
+cp build/IFiles.pm blib/arch/Cairo/GObject/Install/Files.pm
+Running Mkbootstrap for GObject ()
+chmod 644 "GObject.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GObject.bs blib/arch/auto/Cairo/GObject/GObject.bs 644
+[ XS CairoGObject.xs ]
+mv CairoGObject.xsc CairoGObject.c
+[ CC CairoGObject.c ]
+rm -f blib/arch/auto/Cairo/GObject/GObject.so
+[ LD blib/arch/auto/Cairo/GObject/GObject.so ]
+chmod 755 blib/arch/auto/Cairo/GObject/GObject.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GObject.bs blib/arch/auto/Cairo/GObject/GObject.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/CairoGObject.t .. ok
+All tests successful.
+Files=1, Tests=7,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.06 cusr  0.03 csys =  0.11 CPU)
+Result: PASS
+glibPreInstallPhase
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash gsettingsschemadir=/nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/gsettings-schemas/perl5.32.0-Cairo-GObject-1.005/glib-2.0/schemas/ pkgconfigdir=/nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/pkgconfig m4datadir=/nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/aclocal aclocaldir=/nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- GObject.bs blib/arch/auto/Cairo/GObject/GObject.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/GObject/Install/Files.pm
+Installing /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cairo/GObject/GObject.so
+Installing /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Cairo/GObject.pm
+Installing /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/man/man3/Cairo::GObject.3
+Appending installation info to /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+glibPreFixupPhase
+post-installation fixup
+Moving /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/man/man3 to /nix/store/nz495kmkyiiam13nmvls7a7mlms36mb1-perl5.32.0-Cairo-GObject-1.005-devdoc/share/man/man3
+Removing empty /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005
+shrinking /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Cairo/GObject/GObject.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005/lib
+patching script interpreter paths in /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005
+checking for references to /build/ in /nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nz495kmkyiiam13nmvls7a7mlms36mb1-perl5.32.0-Cairo-GObject-1.005-devdoc
+gzipping man pages under /nix/store/nz495kmkyiiam13nmvls7a7mlms36mb1-perl5.32.0-Cairo-GObject-1.005-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nz495kmkyiiam13nmvls7a7mlms36mb1-perl5.32.0-Cairo-GObject-1.005-devdoc
+checking for references to /build/ in /nix/store/nz495kmkyiiam13nmvls7a7mlms36mb1-perl5.32.0-Cairo-GObject-1.005-devdoc...
+/nix/store/ax7d2fp1zsj2145g9p58vd7i9izr2453-perl5.32.0-Cairo-GObject-1.005

@@ -1,0 +1,94 @@
+these derivations will be built:
+  /nix/store/f6qya9pdy58clv0f7c32y1dx0n4gfjhp-perl5.32.0-Data-Clone-0.004.drv
+building '/nix/store/f6qya9pdy58clv0f7c32y1dx0n4gfjhp-perl5.32.0-Data-Clone-0.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/dcrf8d4h557flr1kb66c9ph43smk6piw-Data-Clone-0.004.tar.gz
+source root is Data-Clone-0.004
+setting SOURCE_DATE_EPOCH to timestamp 1399413633 of file Data-Clone-0.004/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./example/scalar_refs.pl...
+patching ./xt/01_podspell.t...
+patching ./xt/02_pod.t...
+patching ./xt/03_pod-coverage.t...
+patching ./xt/04_synopsis.t...
+patching ./t/02_object.t...
+patching ./t/07_stack.t...
+patching ./t/04_tree.t...
+patching ./t/05_super.t...
+patching ./t/11_leaktrace.t...
+patching ./t/06_tie.t...
+patching ./t/10_threads.t...
+patching ./t/00_load.t...
+patching ./t/01_basic.t...
+patching ./t/03_scalar_ref.t...
+patching ./benchmark/vs_clone.pl...
+patching ./benchmark/object.pl...
+patching ./benchmark/vs_fast.pl...
+patching ./benchmark/method.pl...
+Writing ppport.h
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::Clone
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/Clone.pm blib/lib/Data/Clone.pm
+cp data_clone.h blib/arch/auto/Data/Clone/data_clone.h
+Running Mkbootstrap for Clone ()
+chmod 644 "Clone.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- Clone.bs blib/arch/auto/Data/Clone/Clone.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Data-Clone.xs > Data-Clone.xsc
+mv Data-Clone.xsc Data-Clone.c
+cc -c  "-I." -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Wdeclaration-after-statement -Wc++-compat -O2   -DVERSION=\"0.004\" -DXS_VERSION=\"0.004\" -o Data-Clone.o -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_PPPORT Data-Clone.c
+rm -f blib/arch/auto/Data/Clone/Clone.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Data-Clone.o  -o blib/arch/auto/Data/Clone/Clone.so  \
+      \
+
+chmod 755 blib/arch/auto/Data/Clone/Clone.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- Clone.bs blib/arch/auto/Data/Clone/Clone.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t t/*/*.t
+t/00_load.t ........ 1/1 # Testing Data::Clone/0.004
+t/00_load.t ........ ok
+t/01_basic.t ....... ok
+t/02_object.t ...... ok
+t/03_scalar_ref.t .. ok
+t/04_tree.t ........ ok
+t/05_super.t ....... ok
+t/06_tie.t ......... ok
+t/07_stack.t ....... ok
+t/10_threads.t ..... ok
+t/11_leaktrace.t ... skipped: Test requires module 'Test::LeakTrace' but it's not found
+All tests successful.
+Files=10, Tests=218,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.64 cusr  0.16 csys =  0.86 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/pkgconfig m4datadir=/nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/share/aclocal aclocaldir=/nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- Clone.bs blib/arch/auto/Data/Clone/Clone.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Clone/data_clone.h
+Installing /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Clone/Clone.so
+Installing /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/Clone.pm
+Installing /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/share/man/man3/Data::Clone.3
+Appending installation info to /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/share/man/man3 to /nix/store/r7x77g1x5w5m6jklxgq57dbgs3rc0aq4-perl5.32.0-Data-Clone-0.004-devdoc/share/man/man3
+Removing empty /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004
+shrinking /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/Clone/Clone.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004/lib
+patching script interpreter paths in /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004
+checking for references to /build/ in /nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/r7x77g1x5w5m6jklxgq57dbgs3rc0aq4-perl5.32.0-Data-Clone-0.004-devdoc
+gzipping man pages under /nix/store/r7x77g1x5w5m6jklxgq57dbgs3rc0aq4-perl5.32.0-Data-Clone-0.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/r7x77g1x5w5m6jklxgq57dbgs3rc0aq4-perl5.32.0-Data-Clone-0.004-devdoc
+checking for references to /build/ in /nix/store/r7x77g1x5w5m6jklxgq57dbgs3rc0aq4-perl5.32.0-Data-Clone-0.004-devdoc...
+/nix/store/br9kqm0g386yr4sv8aszilb5fr0akn4p-perl5.32.0-Data-Clone-0.004

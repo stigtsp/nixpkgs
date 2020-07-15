@@ -1,0 +1,79 @@
+these derivations will be built:
+  /nix/store/i6vzp8ngwl6275dqckpcqllv6y3qc4vw-perl5.32.0-DBIx-Connector-0.56.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/gfmf0m7nc4i9l9xb0203jykkmgf03v1v-DBIx-Connector-0.56.tar.gz
+copying path '/nix/store/gfmf0m7nc4i9l9xb0203jykkmgf03v1v-DBIx-Connector-0.56.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/i6vzp8ngwl6275dqckpcqllv6y3qc4vw-perl5.32.0-DBIx-Connector-0.56.drv'...
+unpacking sources
+unpacking source archive /nix/store/gfmf0m7nc4i9l9xb0203jykkmgf03v1v-DBIx-Connector-0.56.tar.gz
+source root is DBIx-Connector-0.56
+setting SOURCE_DATE_EPOCH to timestamp 1458147991 of file DBIx-Connector-0.56/t/txn_ping.t
+patching sources
+configuring
+patching ./t/base.t...
+patching ./t/svp_ping.t...
+patching ./t/run_fixup.t...
+patching ./t/txn.t...
+patching ./t/txn_fixup.t...
+patching ./t/svp.t...
+patching ./t/run_ping.t...
+patching ./t/svp_live.t...
+patching ./t/run.t...
+patching ./t/svp_fixup.t...
+patching ./t/load.t...
+patching ./t/txn_ping.t...
+patching ./t/driver.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'DBIx-Connector' version '0.56'
+Building DBIx-Connector
+running tests
+t/base.t ....... ok
+t/driver.t ..... ok
+t/load.t ....... ok
+t/run.t ........ ok
+t/run_fixup.t .. ok
+t/run_ping.t ... ok
+t/svp.t ........ ok
+t/svp_fixup.t .. ok
+t/svp_live.t ... skipped: Set DBICTEST_DSN _USER and _PASS to run savepoint tests
+t/svp_ping.t ... ok
+t/txn.t ........ ok
+t/txn_fixup.t .. ok
+t/txn_ping.t ... ok
+All tests successful.
+Files=13, Tests=762,  1 wallclock secs ( 0.09 usr  0.01 sys +  1.08 cusr  0.46 csys =  1.64 CPU)
+Result: PASS
+installing
+Building DBIx-Connector
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/MSSQL.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/mysql.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/Firebird.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/Pg.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/Oracle.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib/perl5/site_perl/5.32.0/DBIx/Connector/Driver/SQLite.pm
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::MSSQL.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::Firebird.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::Oracle.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::mysql.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::SQLite.3
+Installing /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3/DBIx::Connector::Driver::Pg.3
+post-installation fixup
+Moving /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/man3 to /nix/store/ja2l1a505c93cxk4rg5p22vrwm5nsgpk-perl5.32.0-DBIx-Connector-0.56-devdoc/share/man/man3
+Removing empty /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56/lib
+patching script interpreter paths in /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56
+checking for references to /build/ in /nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ja2l1a505c93cxk4rg5p22vrwm5nsgpk-perl5.32.0-DBIx-Connector-0.56-devdoc
+gzipping man pages under /nix/store/ja2l1a505c93cxk4rg5p22vrwm5nsgpk-perl5.32.0-DBIx-Connector-0.56-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ja2l1a505c93cxk4rg5p22vrwm5nsgpk-perl5.32.0-DBIx-Connector-0.56-devdoc
+checking for references to /build/ in /nix/store/ja2l1a505c93cxk4rg5p22vrwm5nsgpk-perl5.32.0-DBIx-Connector-0.56-devdoc...
+/nix/store/4wnsh7d7j33ydz5wp3bqnq66qjyf24lq-perl5.32.0-DBIx-Connector-0.56

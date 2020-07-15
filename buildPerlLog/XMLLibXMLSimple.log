@@ -1,0 +1,58 @@
+these derivations will be built:
+  /nix/store/j761mdaa18h0vqgc1ajjz54z33c8x2c2-perl5.32.0-XML-LibXML-Simple-1.01.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/6ckvp7svi3h5n3ydyf21li915v6b2pfh-XML-LibXML-Simple-1.01.tar.gz
+copying path '/nix/store/6ckvp7svi3h5n3ydyf21li915v6b2pfh-XML-LibXML-Simple-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j761mdaa18h0vqgc1ajjz54z33c8x2c2-perl5.32.0-XML-LibXML-Simple-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/6ckvp7svi3h5n3ydyf21li915v6b2pfh-XML-LibXML-Simple-1.01.tar.gz
+source root is XML-LibXML-Simple-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1579124942 of file XML-LibXML-Simple-1.01/META.yml
+patching sources
+configuring
+patching ./xt/99pod.t...
+patching ./t/10XMLin.t...
+patching ./t/01use.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::LibXML::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/LibXML/Simple.pm blib/lib/XML/LibXML/Simple.pm
+cp lib/XML/LibXML/Simple.pod blib/lib/XML/LibXML/Simple.pod
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .... Test::More version 1.302175
+XML::LibXML version 2.0205
+libxml2 2.9.10
+t/01use.t .... ok
+t/10XMLin.t .. ok
+All tests successful.
+Files=2, Tests=118,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.21 cusr  0.05 csys =  0.30 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/lib/pkgconfig m4datadir=/nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/share/aclocal aclocaldir=/nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/lib/perl5/site_perl/5.32.0/XML/LibXML/Simple.pod
+Installing /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/lib/perl5/site_perl/5.32.0/XML/LibXML/Simple.pm
+Installing /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/share/man/man3/XML::LibXML::Simple.3
+Appending installation info to /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/share/man/man3 to /nix/store/lyn9pznc6a8wz70ylslazzsh9nngw9wl-perl5.32.0-XML-LibXML-Simple-1.01-devdoc/share/man/man3
+Removing empty /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01/lib
+patching script interpreter paths in /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01
+checking for references to /build/ in /nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lyn9pznc6a8wz70ylslazzsh9nngw9wl-perl5.32.0-XML-LibXML-Simple-1.01-devdoc
+gzipping man pages under /nix/store/lyn9pznc6a8wz70ylslazzsh9nngw9wl-perl5.32.0-XML-LibXML-Simple-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lyn9pznc6a8wz70ylslazzsh9nngw9wl-perl5.32.0-XML-LibXML-Simple-1.01-devdoc
+checking for references to /build/ in /nix/store/lyn9pznc6a8wz70ylslazzsh9nngw9wl-perl5.32.0-XML-LibXML-Simple-1.01-devdoc...
+/nix/store/mgnbmb40abx246nzd8z7nw8yhh0m1yj5-perl5.32.0-XML-LibXML-Simple-1.01

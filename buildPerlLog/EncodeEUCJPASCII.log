@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/7shxias3ycsgjznnlfan07jybarxgkgi-perl5.32.0-Encode-EUCJPASCII-0.03.drv
+these paths will be fetched (0.12 MiB download, 0.13 MiB unpacked):
+  /nix/store/v2xzzr855q0iplng5c0wn6ypvzsxl30g-Encode-EUCJPASCII-0.03.tar.gz
+copying path '/nix/store/v2xzzr855q0iplng5c0wn6ypvzsxl30g-Encode-EUCJPASCII-0.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7shxias3ycsgjznnlfan07jybarxgkgi-perl5.32.0-Encode-EUCJPASCII-0.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/v2xzzr855q0iplng5c0wn6ypvzsxl30g-Encode-EUCJPASCII-0.03.tar.gz
+source root is Encode-EUCJPASCII-0.03
+setting SOURCE_DATE_EPOCH to timestamp 1255947017 of file Encode-EUCJPASCII-0.03/ucm/mkucm.pl
+patching sources
+configuring
+enc2xs is /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/enc2xs
+encode.h is at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Encode
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Encode::EUCJPASCII
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp EUCJPASCII.pm blib/lib/Encode/EUCJPASCII.pm
+Running Mkbootstrap for EUCJPASCII ()
+chmod 644 "EUCJPASCII.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EUCJPASCII.bs blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"  /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/enc2xs -"Q" -o EUCJPASCII_t.c -f EUCJPASCII_t.fnm
+Reading eucJP-ascii (eucJP-ascii)
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -nolinenumbers -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  EUCJPASCII.xs > EUCJPASCII.xsc
+mv EUCJPASCII.xsc EUCJPASCII.c
+cc -c  -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Encode -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.03\" -DXS_VERSION=\"0.03\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   EUCJPASCII.c
+cc -c  -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/Encode -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.03\" -DXS_VERSION=\"0.03\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   EUCJPASCII_t.c
+rm -f blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  EUCJPASCII.o EUCJPASCII_t.o  -o blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.so  \
+      \
+
+chmod 755 blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.so
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EUCJPASCII.bs blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/EUCJPASCII.t .. ok
+t/pod.t ......... skipped: Test::Pod 1.00 or later required for testing POD
+All tests successful.
+Files=2, Tests=28,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- EUCJPASCII.bs blib/arch/auto/Encode/EUCJPASCII/EUCJPASCII.bs 644
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Encode/EUCJPASCII/EUCJPASCII.so
+Installing /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Encode/EUCJPASCII.pm
+Appending installation info to /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03
+shrinking /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Encode/EUCJPASCII/EUCJPASCII.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03/lib
+patching script interpreter paths in /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03
+checking for references to /build/ in /nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03...
+/nix/store/chnl4szrazrs7k1bwn0nqigib9cm22p8-perl5.32.0-Encode-EUCJPASCII-0.03

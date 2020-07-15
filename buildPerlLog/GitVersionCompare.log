@@ -1,0 +1,98 @@
+these derivations will be built:
+  /nix/store/k6b80nqzn1k54x39jqzglbsn7p9rns7m-perl5.32.0-Git-Version-Compare-1.004.drv
+building '/nix/store/k6b80nqzn1k54x39jqzglbsn7p9rns7m-perl5.32.0-Git-Version-Compare-1.004.drv'...
+unpacking sources
+unpacking source archive /nix/store/n5ch0jf5k57cqb0x543xdxrl3nzaw7r4-Git-Version-Compare-1.004.tar.gz
+source root is Git-Version-Compare-1.004
+setting SOURCE_DATE_EPOCH to timestamp 1464062587 of file Git-Version-Compare-1.004/t/release-distmeta.t
+patching sources
+configuring
+patching ./t/00-report-prereqs.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/release-distmeta.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Git::Version::Compare
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Git/Version/Compare.pm blib/lib/Git/Version/Compare.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     List::Util           any     1.55
+#     Test::More           any 1.302175
+#     Test::NoWarnings     any     1.04
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module   Want Have
+#     -------- ---- ----
+#     Carp      any 1.50
+#     Exporter  any 5.74
+#     strict    any 1.11
+#     warnings  any 1.47
+#
+t/00-report-prereqs.t .... ok
+t/author-pod-coverage.t .. skipped: these tests are for testing by the author
+t/author-pod-syntax.t .... skipped: these tests are for testing by the author
+t/cmp_git.t .............. ok
+t/looks_like_git.t ....... ok
+t/normalize.t ............ ok
+t/ops.t .................. # fake git version 1.5.1.4
+t/ops.t .................. ok
+t/release-distmeta.t ..... skipped: these tests are for release candidate testing
+All tests successful.
+Files=8, Tests=13647,  1 wallclock secs ( 0.74 usr  0.02 sys +  1.31 cusr  0.14 csys =  2.21 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/lib/pkgconfig m4datadir=/nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/share/aclocal aclocaldir=/nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/lib/perl5/site_perl/5.32.0/Git/Version/Compare.pm
+Installing /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/share/man/man3/Git::Version::Compare.3
+Appending installation info to /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/share/man/man3 to /nix/store/vqinn7gsdsrncci4wapqpz4q9mnzaxw3-perl5.32.0-Git-Version-Compare-1.004-devdoc/share/man/man3
+Removing empty /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004/lib
+patching script interpreter paths in /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004
+checking for references to /build/ in /nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vqinn7gsdsrncci4wapqpz4q9mnzaxw3-perl5.32.0-Git-Version-Compare-1.004-devdoc
+gzipping man pages under /nix/store/vqinn7gsdsrncci4wapqpz4q9mnzaxw3-perl5.32.0-Git-Version-Compare-1.004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vqinn7gsdsrncci4wapqpz4q9mnzaxw3-perl5.32.0-Git-Version-Compare-1.004-devdoc
+checking for references to /build/ in /nix/store/vqinn7gsdsrncci4wapqpz4q9mnzaxw3-perl5.32.0-Git-Version-Compare-1.004-devdoc...
+/nix/store/bvlp0pvxbcz6rmvdkpilfkdyhgw10zfz-perl5.32.0-Git-Version-Compare-1.004

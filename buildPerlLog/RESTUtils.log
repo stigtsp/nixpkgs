@@ -1,0 +1,163 @@
+these derivations will be built:
+  /nix/store/697h4nja2lgh5z686qwdch5x3nigkawb-perl5.32.0-WWW-Mechanize-CGI-0.3.drv
+  /nix/store/38hfi7kl3yqirgiyfw8yhkg19jpl37pq-perl5.32.0-Test-WWW-Mechanize-CGI-0.1.drv
+  /nix/store/ykrzx5qavsw2mvnrwl81xc0dgh53vpyn-perl5.32.0-REST-Utils-0.6.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/3chrb87sfph17aqmcfnmvaql9wqn0h96-Test-WWW-Mechanize-CGI-0.1.tar.gz
+  /nix/store/bkarr7ahbygymmd4pbkqy7wgv5l6i7nc-REST-Utils-0.6.tar.gz
+  /nix/store/bpdawpqmk8qlyb38y2zrawi5j5fmp078-WWW-Mechanize-CGI-0.3.tar.gz
+copying path '/nix/store/bkarr7ahbygymmd4pbkqy7wgv5l6i7nc-REST-Utils-0.6.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3chrb87sfph17aqmcfnmvaql9wqn0h96-Test-WWW-Mechanize-CGI-0.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bpdawpqmk8qlyb38y2zrawi5j5fmp078-WWW-Mechanize-CGI-0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/697h4nja2lgh5z686qwdch5x3nigkawb-perl5.32.0-WWW-Mechanize-CGI-0.3.drv'...
+unpacking sources
+unpacking source archive /nix/store/bpdawpqmk8qlyb38y2zrawi5j5fmp078-WWW-Mechanize-CGI-0.3.tar.gz
+source root is WWW-Mechanize-CGI-0.3
+setting SOURCE_DATE_EPOCH to timestamp 1134345075 of file WWW-Mechanize-CGI-0.3/META.yml
+patching sources
+configuring
+patching ./t/02basic.t...
+patching ./t/cgi-bin/script.cgi...
+patching ./t/03forking.t...
+patching ./t/04application.t...
+patching ./t/01use.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for WWW::Mechanize::CGI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/WWW/Mechanize/CGI.pm blib/lib/WWW/Mechanize/CGI.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/02basic.t ........ ok
+t/03forking.t ...... ok
+t/04application.t .. 1/12 exception at /build/WWW-Mechanize-CGI-0.3/t/cgi-bin/script.cgi line 10.
+t/04application.t .. ok
+All tests successful.
+Files=4, Tests=30,  2 wallclock secs ( 0.05 usr  0.01 sys +  0.92 cusr  0.71 csys =  1.69 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/lib/pkgconfig m4datadir=/nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/share/aclocal aclocaldir=/nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/lib/perl5/site_perl/5.32.0/WWW/Mechanize/CGI.pm
+Installing /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/share/man/man3/WWW::Mechanize::CGI.3
+Appending installation info to /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/share/man/man3 to /nix/store/fpy0yfiz59ivn2x66wqvzak053ka8zv5-perl5.32.0-WWW-Mechanize-CGI-0.3-devdoc/share/man/man3
+Removing empty /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3/lib
+patching script interpreter paths in /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3
+checking for references to /build/ in /nix/store/nl3i6259vlpgipjx350bwj8i0z2b2swx-perl5.32.0-WWW-Mechanize-CGI-0.3...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fpy0yfiz59ivn2x66wqvzak053ka8zv5-perl5.32.0-WWW-Mechanize-CGI-0.3-devdoc
+gzipping man pages under /nix/store/fpy0yfiz59ivn2x66wqvzak053ka8zv5-perl5.32.0-WWW-Mechanize-CGI-0.3-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fpy0yfiz59ivn2x66wqvzak053ka8zv5-perl5.32.0-WWW-Mechanize-CGI-0.3-devdoc
+checking for references to /build/ in /nix/store/fpy0yfiz59ivn2x66wqvzak053ka8zv5-perl5.32.0-WWW-Mechanize-CGI-0.3-devdoc...
+building '/nix/store/38hfi7kl3yqirgiyfw8yhkg19jpl37pq-perl5.32.0-Test-WWW-Mechanize-CGI-0.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/3chrb87sfph17aqmcfnmvaql9wqn0h96-Test-WWW-Mechanize-CGI-0.1.tar.gz
+source root is Test-WWW-Mechanize-CGI-0.1
+setting SOURCE_DATE_EPOCH to timestamp 1131915232 of file Test-WWW-Mechanize-CGI-0.1/META.yml
+patching sources
+configuring
+patching ./t/02basic.t...
+patching ./t/01use.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::WWW::Mechanize::CGI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/WWW/Mechanize/CGI.pm blib/lib/Test/WWW/Mechanize/CGI.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .... ok
+t/02basic.t .. ok
+All tests successful.
+Files=2, Tests=4,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.50 cusr  0.45 csys =  1.01 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/lib/pkgconfig m4datadir=/nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/share/aclocal aclocaldir=/nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/lib/perl5/site_perl/5.32.0/Test/WWW/Mechanize/CGI.pm
+Installing /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/share/man/man3/Test::WWW::Mechanize::CGI.3
+Appending installation info to /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/share/man/man3 to /nix/store/zpf2849j8ra5v35y2496d5fb9wnjmz3w-perl5.32.0-Test-WWW-Mechanize-CGI-0.1-devdoc/share/man/man3
+Removing empty /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1/lib
+patching script interpreter paths in /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1
+checking for references to /build/ in /nix/store/qg50k843r6v70y1ifczldbjvcxa6kqzi-perl5.32.0-Test-WWW-Mechanize-CGI-0.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zpf2849j8ra5v35y2496d5fb9wnjmz3w-perl5.32.0-Test-WWW-Mechanize-CGI-0.1-devdoc
+gzipping man pages under /nix/store/zpf2849j8ra5v35y2496d5fb9wnjmz3w-perl5.32.0-Test-WWW-Mechanize-CGI-0.1-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zpf2849j8ra5v35y2496d5fb9wnjmz3w-perl5.32.0-Test-WWW-Mechanize-CGI-0.1-devdoc
+checking for references to /build/ in /nix/store/zpf2849j8ra5v35y2496d5fb9wnjmz3w-perl5.32.0-Test-WWW-Mechanize-CGI-0.1-devdoc...
+building '/nix/store/ykrzx5qavsw2mvnrwl81xc0dgh53vpyn-perl5.32.0-REST-Utils-0.6.drv'...
+unpacking sources
+unpacking source archive /nix/store/bkarr7ahbygymmd4pbkqy7wgv5l6i7nc-REST-Utils-0.6.tar.gz
+source root is REST-Utils-0.6
+setting SOURCE_DATE_EPOCH to timestamp 1335399344 of file REST-Utils-0.6/t/mime-parse.t
+patching sources
+configuring
+patching ./t/http-tunnel.t...
+patching ./t/00-signature.t...
+patching ./t/get-body.t...
+patching ./t/01-load.t...
+patching ./t/content-negotiation.t...
+patching ./t/mime-parse.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for REST::Utils
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'REST-Utils' version '0.6'
+Building REST-Utils
+running tests
+t/00-signature.t ......... skipped: Set the environment variable TEST_SIGNATURE to enable this test.
+t/01-load.t .............. 1/1 # Testing REST::Utils 0.6, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/01-load.t .............. ok
+t/content-negotiation.t .. ok
+t/get-body.t ............. ok
+t/http-tunnel.t .......... ok
+t/mime-parse.t ........... ok
+All tests successful.
+Files=6, Tests=74,  2 wallclock secs ( 0.05 usr  0.02 sys +  1.30 cusr  1.11 csys =  2.48 CPU)
+Result: PASS
+installing
+Building REST-Utils
+Installing /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6/lib/perl5/site_perl/5.32.0/REST/Utils.pm
+Installing /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6/share/man/man3/REST::Utils.3
+post-installation fixup
+Moving /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6/share/man/man3 to /nix/store/0r10qi0xs33zfpzy5ja8s3b1gziiasmz-perl5.32.0-REST-Utils-0.6-devdoc/share/man/man3
+Removing empty /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6/lib
+patching script interpreter paths in /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6
+checking for references to /build/ in /nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0r10qi0xs33zfpzy5ja8s3b1gziiasmz-perl5.32.0-REST-Utils-0.6-devdoc
+gzipping man pages under /nix/store/0r10qi0xs33zfpzy5ja8s3b1gziiasmz-perl5.32.0-REST-Utils-0.6-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0r10qi0xs33zfpzy5ja8s3b1gziiasmz-perl5.32.0-REST-Utils-0.6-devdoc
+checking for references to /build/ in /nix/store/0r10qi0xs33zfpzy5ja8s3b1gziiasmz-perl5.32.0-REST-Utils-0.6-devdoc...
+/nix/store/man36jpihiqivjxri52c1wdf7lyn8klq-perl5.32.0-REST-Utils-0.6

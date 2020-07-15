@@ -1,0 +1,60 @@
+these derivations will be built:
+  /nix/store/ck28aryzs7niqvd5vlm3g3q25jx0l71z-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/x5fb4izfvcvvk40biqjp5r8cmby4024p-DBIx-Class-Cursor-Cached-1.001004.tar.gz
+copying path '/nix/store/x5fb4izfvcvvk40biqjp5r8cmby4024p-DBIx-Class-Cursor-Cached-1.001004.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ck28aryzs7niqvd5vlm3g3q25jx0l71z-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004.drv'...
+unpacking sources
+unpacking source archive /nix/store/x5fb4izfvcvvk40biqjp5r8cmby4024p-DBIx-Class-Cursor-Cached-1.001004.tar.gz
+source root is DBIx-Class-Cursor-Cached-1.001004
+setting SOURCE_DATE_EPOCH to timestamp 1475800167 of file DBIx-Class-Cursor-Cached-1.001004/t/var/test.db
+patching sources
+configuring
+*** Module::AutoInstall version 1.16
+*** Checking for Perl dependencies...
+[Core Features]
+- DBD::SQLite      ...loaded. (1.64 >= 1.25)
+- Test::More       ...loaded. (1.302175)
+- Cache::FileCache ...loaded. (undef)
+- DBIx::Class      ...loaded. (0.082841 >= 0.08124)
+- Digest::SHA      ...loaded. (6.02)
+- Carp::Clan       ...loaded. (6.08 >= 6.0)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DBIx::Class::Cursor::Cached
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBIx/Class/Cursor/Cached.pm blib/lib/DBIx/Class/Cursor/Cached.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/simple.t
+t/simple.t .. 1/? DBIx::Class::ResultSet::all(): Invoking connector coderef CODE(0x138ff70) in order to obtain cache-lookup information at t/simple.t line 132
+t/simple.t .. ok
+All tests successful.
+Files=1, Tests=16,  0 wallclock secs ( 0.03 usr  0.04 sys +  0.30 cusr  0.17 csys =  0.54 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/lib/pkgconfig m4datadir=/nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/share/aclocal aclocaldir=/nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/lib/perl5/site_perl/5.32.0/DBIx/Class/Cursor/Cached.pm
+Installing /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/share/man/man3/DBIx::Class::Cursor::Cached.3
+Appending installation info to /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/share/man/man3 to /nix/store/sz2cayzvp96w2z0yrfb8mpdq64x2k8zh-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004-devdoc/share/man/man3
+Removing empty /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004/lib
+patching script interpreter paths in /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004
+checking for references to /build/ in /nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sz2cayzvp96w2z0yrfb8mpdq64x2k8zh-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004-devdoc
+gzipping man pages under /nix/store/sz2cayzvp96w2z0yrfb8mpdq64x2k8zh-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sz2cayzvp96w2z0yrfb8mpdq64x2k8zh-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004-devdoc
+checking for references to /build/ in /nix/store/sz2cayzvp96w2z0yrfb8mpdq64x2k8zh-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004-devdoc...
+/nix/store/7g25f4ksw44n0kcdc35nhfrrl4nycswf-perl5.32.0-DBIx-Class-Cursor-Cached-1.001004

@@ -1,0 +1,68 @@
+these derivations will be built:
+  /nix/store/18fzddxiqq79v5bqiykpkq894fygk200-perl5.32.0-Net-Ident-1.25.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/fiwprlj8hqhxxqvgn54sdd4gjbbk56sy-Net-Ident-1.25.tar.gz
+copying path '/nix/store/fiwprlj8hqhxxqvgn54sdd4gjbbk56sy-Net-Ident-1.25.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/18fzddxiqq79v5bqiykpkq894fygk200-perl5.32.0-Net-Ident-1.25.drv'...
+unpacking sources
+unpacking source archive /nix/store/fiwprlj8hqhxxqvgn54sdd4gjbbk56sy-Net-Ident-1.25.tar.gz
+source root is Net-Ident-1.25
+setting SOURCE_DATE_EPOCH to timestamp 1579413897 of file Net-Ident-1.25/META.yml
+patching sources
+configuring
+patching ./t/apache/perl/testmodperl...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Do not worry if any of the following items are not found
+Checking for previous Net::Ident... Not found.
+
+You could force installing the backwards-compatible Net::Ident, for
+example because you want to use scripts that rely on the backwards
+compatible calling syntax [not that that's very likely; I'm not aware
+of any existing scripts that use it -- JohnPC].
+
+To enable this, re-run this Makefile.PL using:
+
+        perl Makefile.PL --force-compat
+
+
+Checking for Apache.pm... not found
+Generating a Unix-style Makefile
+Writing Makefile for Net::Ident
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Ident.pm blib/lib/Net/Ident.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/0use.t .... ok
+t/apache.t .. skipped: (no reason given)
+t/compat.t .. skipped: (no reason given)
+t/Ident.t ... ok
+All tests successful.
+Files=4, Tests=2,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.08 cusr  0.01 csys =  0.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/lib/pkgconfig m4datadir=/nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/share/aclocal aclocaldir=/nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/lib/perl5/site_perl/5.32.0/Net/Ident.pm
+Installing /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/share/man/man3/Net::Ident.3
+Appending installation info to /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/share/man/man3 to /nix/store/bk1pc1m37hr76fd3j692glqn9id99mwj-perl5.32.0-Net-Ident-1.25-devdoc/share/man/man3
+Removing empty /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25/lib
+patching script interpreter paths in /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25
+checking for references to /build/ in /nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bk1pc1m37hr76fd3j692glqn9id99mwj-perl5.32.0-Net-Ident-1.25-devdoc
+gzipping man pages under /nix/store/bk1pc1m37hr76fd3j692glqn9id99mwj-perl5.32.0-Net-Ident-1.25-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bk1pc1m37hr76fd3j692glqn9id99mwj-perl5.32.0-Net-Ident-1.25-devdoc
+checking for references to /build/ in /nix/store/bk1pc1m37hr76fd3j692glqn9id99mwj-perl5.32.0-Net-Ident-1.25-devdoc...
+/nix/store/9j8hka4bddxrpam9azplrvzsfhlfv9qi-perl5.32.0-Net-Ident-1.25

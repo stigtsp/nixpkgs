@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/ramdisgnrbkal8pp4760w712kl4bl54l-perl5.32.0-Class-Observable-1.04.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/6nr4gcjhgrfhxhn0mcdqk2rs0ici1gbb-Class-Observable-1.04.tar.gz
+copying path '/nix/store/6nr4gcjhgrfhxhn0mcdqk2rs0ici1gbb-Class-Observable-1.04.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ramdisgnrbkal8pp4760w712kl4bl54l-perl5.32.0-Class-Observable-1.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/6nr4gcjhgrfhxhn0mcdqk2rs0ici1gbb-Class-Observable-1.04.tar.gz
+source root is Class-Observable-1.04
+setting SOURCE_DATE_EPOCH to timestamp 1097945330 of file Class-Observable-1.04/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Observable
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Observable.pm blib/lib/Class/Observable.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/class_observable.t .. ok
+t/inherited.t ......... ok
+All tests successful.
+Files=2, Tests=39,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.13 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/lib/pkgconfig m4datadir=/nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/share/aclocal aclocaldir=/nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/lib/perl5/site_perl/5.32.0/Class/Observable.pm
+Installing /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/share/man/man3/Class::Observable.3
+Appending installation info to /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/share/man/man3 to /nix/store/5hbrwc63vwhmi0787jxi3gbcfy2n2lbc-perl5.32.0-Class-Observable-1.04-devdoc/share/man/man3
+Removing empty /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04/lib
+patching script interpreter paths in /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04
+checking for references to /build/ in /nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5hbrwc63vwhmi0787jxi3gbcfy2n2lbc-perl5.32.0-Class-Observable-1.04-devdoc
+gzipping man pages under /nix/store/5hbrwc63vwhmi0787jxi3gbcfy2n2lbc-perl5.32.0-Class-Observable-1.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5hbrwc63vwhmi0787jxi3gbcfy2n2lbc-perl5.32.0-Class-Observable-1.04-devdoc
+checking for references to /build/ in /nix/store/5hbrwc63vwhmi0787jxi3gbcfy2n2lbc-perl5.32.0-Class-Observable-1.04-devdoc...
+/nix/store/gwp0rj2aalq8rzxzafli0ykyb0q0zz2g-perl5.32.0-Class-Observable-1.04

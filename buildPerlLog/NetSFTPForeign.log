@@ -1,0 +1,94 @@
+these derivations will be built:
+  /nix/store/w4kzjr7p4b8h7adyqbvmi6a3b7r1js0a-perl5.32.0-Net-SFTP-Foreign-1.90.drv
+these paths will be fetched (0.16 MiB download, 0.16 MiB unpacked):
+  /nix/store/nk60z8ivfyp0mzc3g0bg0j2pf7pxlygm-Net-SFTP-Foreign-1.90.tar.gz
+copying path '/nix/store/nk60z8ivfyp0mzc3g0bg0j2pf7pxlygm-Net-SFTP-Foreign-1.90.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w4kzjr7p4b8h7adyqbvmi6a3b7r1js0a-perl5.32.0-Net-SFTP-Foreign-1.90.drv'...
+unpacking sources
+unpacking source archive /nix/store/nk60z8ivfyp0mzc3g0bg0j2pf7pxlygm-Net-SFTP-Foreign-1.90.tar.gz
+source root is Net-SFTP-Foreign-1.90
+setting SOURCE_DATE_EPOCH to timestamp 1548525692 of file Net-SFTP-Foreign-1.90/META.yml
+patching sources
+configuring
+patching ./samples/capture_stderr.pl...
+patching ./samples/resume_put.pl...
+patching ./samples/sftp_tail.pl...
+patching ./samples/psftp...
+patching ./samples/passwd_conn.pl...
+patching ./t/1_run.t...
+patching ./t/4_perl5_11.t...
+patching ./t/3_convert.t...
+patching ./t/5_join.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::SFTP::Foreign
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/SFTP/Foreign/Attributes.pm blib/lib/Net/SFTP/Foreign/Attributes.pm
+cp lib/Net/SFTP/Foreign/Helpers.pm blib/lib/Net/SFTP/Foreign/Helpers.pm
+cp lib/Net/SFTP/Foreign/Backend/Unix.pm blib/lib/Net/SFTP/Foreign/Backend/Unix.pm
+cp lib/Net/SFTP/Foreign/Buffer.pm blib/lib/Net/SFTP/Foreign/Buffer.pm
+cp lib/Net/SFTP/Foreign/Attributes/Compat.pm blib/lib/Net/SFTP/Foreign/Attributes/Compat.pm
+cp lib/Net/SFTP/Foreign/Backend/Windows.pm blib/lib/Net/SFTP/Foreign/Backend/Windows.pm
+cp lib/Net/SFTP/Foreign.pm blib/lib/Net/SFTP/Foreign.pm
+cp lib/Net/SFTP/Foreign/Common.pm blib/lib/Net/SFTP/Foreign/Common.pm
+cp lib/Net/SFTP/Foreign/Local.pm blib/lib/Net/SFTP/Foreign/Local.pm
+cp lib/Net/SFTP/Foreign/Constants.pm blib/lib/Net/SFTP/Foreign/Constants.pm
+cp lib/Net/SFTP/Foreign/Compat.pm blib/lib/Net/SFTP/Foreign/Compat.pm
+Manifying 7 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1_run.t .................... Can't exec "which": No such file or directory at t/common.pm line 52.
+Use of uninitialized value $ssh in scalar chomp at t/common.pm line 52.
+t/1_run.t .................... skipped: sftp-server not found
+t/3_convert.t ................ Can't exec "which": No such file or directory at t/common.pm line 52.
+Use of uninitialized value $ssh in scalar chomp at t/common.pm line 52.
+t/3_convert.t ................ skipped: sftp-server not found
+t/4_perl5_11.t ............... Can't exec "which": No such file or directory at t/common.pm line 52.
+Use of uninitialized value $ssh in scalar chomp at t/common.pm line 52.
+t/4_perl5_11.t ............... skipped: sftp-server not found
+t/5_join.t ................... ok
+t/Net-SFTP-Foreign-Compat.t .. ok
+All tests successful.
+Files=5, Tests=20,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.33 cusr  0.06 csys =  0.42 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/pkgconfig m4datadir=/nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/aclocal aclocaldir=/nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/aclocal install
+Manifying 7 pod documents
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Buffer.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Attributes.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Local.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Common.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Compat.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Helpers.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Constants.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Backend/Unix.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Backend/Windows.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/site_perl/5.32.0/Net/SFTP/Foreign/Attributes/Compat.pm
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Local.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Constants.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Buffer.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Compat.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Attributes::Compat.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign.3
+Installing /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3/Net::SFTP::Foreign::Attributes.3
+Appending installation info to /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/man3 to /nix/store/q6wi1q47gq5nniqn9y5hx1h1p15y6iqf-perl5.32.0-Net-SFTP-Foreign-1.90-devdoc/share/man/man3
+Removing empty /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90/lib
+patching script interpreter paths in /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90
+checking for references to /build/ in /nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q6wi1q47gq5nniqn9y5hx1h1p15y6iqf-perl5.32.0-Net-SFTP-Foreign-1.90-devdoc
+gzipping man pages under /nix/store/q6wi1q47gq5nniqn9y5hx1h1p15y6iqf-perl5.32.0-Net-SFTP-Foreign-1.90-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q6wi1q47gq5nniqn9y5hx1h1p15y6iqf-perl5.32.0-Net-SFTP-Foreign-1.90-devdoc
+checking for references to /build/ in /nix/store/q6wi1q47gq5nniqn9y5hx1h1p15y6iqf-perl5.32.0-Net-SFTP-Foreign-1.90-devdoc...
+/nix/store/kcwimbpy0na9lf7snmdvnlxpwanyjx11-perl5.32.0-Net-SFTP-Foreign-1.90

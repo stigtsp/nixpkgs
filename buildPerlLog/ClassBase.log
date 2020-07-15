@@ -1,0 +1,95 @@
+these derivations will be built:
+  /nix/store/0ndj3mdg0rzmhslib690z9q1kigjbvxr-perl5.32.0-Class-Base-0.09.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/0iwbk8hgkl1gq42q5d6fvk2576aqkl0b-Class-Base-0.09.tar.gz
+copying path '/nix/store/0iwbk8hgkl1gq42q5d6fvk2576aqkl0b-Class-Base-0.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0ndj3mdg0rzmhslib690z9q1kigjbvxr-perl5.32.0-Class-Base-0.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/0iwbk8hgkl1gq42q5d6fvk2576aqkl0b-Class-Base-0.09.tar.gz
+source root is Class-Base-0.09
+setting SOURCE_DATE_EPOCH to timestamp 1515088288 of file Class-Base-0.09/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/unused-vars.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/test.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Base
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Base.pm blib/lib/Class/Base.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ......... ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Test::More           any 1.302175
+#     base                 any     2.27
+#     vars                 any     1.05
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module   Want Have
+#     -------- ---- ----
+#     Clone     any 0.45
+#     strict    any 1.11
+#     warnings  any 1.47
+#
+t/00-report-prereqs.t .. ok
+t/test.t ............... ok
+All tests successful.
+Files=3, Tests=47,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.27 cusr  0.04 csys =  0.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/lib/pkgconfig m4datadir=/nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/share/aclocal aclocaldir=/nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/lib/perl5/site_perl/5.32.0/Class/Base.pm
+Installing /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/share/man/man3/Class::Base.3
+Appending installation info to /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/share/man/man3 to /nix/store/5zysn5fpadgvf8qlkn14iklzi86ds02a-perl5.32.0-Class-Base-0.09-devdoc/share/man/man3
+Removing empty /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09/lib
+patching script interpreter paths in /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09
+checking for references to /build/ in /nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5zysn5fpadgvf8qlkn14iklzi86ds02a-perl5.32.0-Class-Base-0.09-devdoc
+gzipping man pages under /nix/store/5zysn5fpadgvf8qlkn14iklzi86ds02a-perl5.32.0-Class-Base-0.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5zysn5fpadgvf8qlkn14iklzi86ds02a-perl5.32.0-Class-Base-0.09-devdoc
+checking for references to /build/ in /nix/store/5zysn5fpadgvf8qlkn14iklzi86ds02a-perl5.32.0-Class-Base-0.09-devdoc...
+/nix/store/svi4m91kghh2ylw1y5f272b5q4rjqhw3-perl5.32.0-Class-Base-0.09

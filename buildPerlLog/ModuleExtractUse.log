@@ -1,0 +1,145 @@
+these derivations will be built:
+  /nix/store/yfgagxclxl5mw9gavca4jvgc6mw27di8-perl5.32.0-Pod-Strip-1.02.drv
+  /nix/store/0ls14423ikazklkjpvsjhvnxqxwpdx0g-perl5.32.0-Module-ExtractUse-0.343.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/f97xi1naqfji62yiir8b1pk999iqd9zq-Module-ExtractUse-0.343.tar.gz
+  /nix/store/knvjq9s8lxsa5pz7kvxv25ln48zk2njx-Pod-Strip-1.02.tar.gz
+copying path '/nix/store/f97xi1naqfji62yiir8b1pk999iqd9zq-Module-ExtractUse-0.343.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/knvjq9s8lxsa5pz7kvxv25ln48zk2njx-Pod-Strip-1.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yfgagxclxl5mw9gavca4jvgc6mw27di8-perl5.32.0-Pod-Strip-1.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/knvjq9s8lxsa5pz7kvxv25ln48zk2njx-Pod-Strip-1.02.tar.gz
+source root is Pod-Strip-1.02
+setting SOURCE_DATE_EPOCH to timestamp 1142884570 of file Pod-Strip-1.02/t/99_pod_coverage.t
+patching sources
+configuring
+patching ./t/99_pod_coverage.t...
+patching ./t/99_pod.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Strip
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Pod-Strip' version '1.02'
+Building Pod-Strip
+running tests
+t/00_load.t ................... ok
+t/10_strip.t .................. ok
+t/11_replace_with_comments.t .. ok
+t/99_pod.t .................... skipped: Test::Pod 1.14 required for testing POD
+t/99_pod_coverage.t ........... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+All tests successful.
+Files=5, Tests=7,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.28 cusr  0.05 csys =  0.36 CPU)
+Result: PASS
+installing
+Building Pod-Strip
+Installing /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02/lib/perl5/site_perl/5.32.0/Pod/Strip.pm
+Installing /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02/share/man/man3/Pod::Strip.3
+post-installation fixup
+Moving /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02/share/man/man3 to /nix/store/ivby6rqnczn53vh5qy4rd9dpm9h31rza-perl5.32.0-Pod-Strip-1.02-devdoc/share/man/man3
+Removing empty /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02/lib
+patching script interpreter paths in /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02
+checking for references to /build/ in /nix/store/z8ak93c9a1ny84rvjgg8jfgfg7h0spg7-perl5.32.0-Pod-Strip-1.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ivby6rqnczn53vh5qy4rd9dpm9h31rza-perl5.32.0-Pod-Strip-1.02-devdoc
+gzipping man pages under /nix/store/ivby6rqnczn53vh5qy4rd9dpm9h31rza-perl5.32.0-Pod-Strip-1.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ivby6rqnczn53vh5qy4rd9dpm9h31rza-perl5.32.0-Pod-Strip-1.02-devdoc
+checking for references to /build/ in /nix/store/ivby6rqnczn53vh5qy4rd9dpm9h31rza-perl5.32.0-Pod-Strip-1.02-devdoc...
+building '/nix/store/0ls14423ikazklkjpvsjhvnxqxwpdx0g-perl5.32.0-Module-ExtractUse-0.343.drv'...
+unpacking sources
+unpacking source archive /nix/store/f97xi1naqfji62yiir8b1pk999iqd9zq-Module-ExtractUse-0.343.tar.gz
+source root is Module-ExtractUse-0.343
+setting SOURCE_DATE_EPOCH to timestamp 1539868858 of file Module-ExtractUse-0.343/xt/pod_coverage.t
+patching sources
+configuring
+patching ./example/extractuse.pl...
+patching ./example/cpan.pl...
+patching ./xt/pod.t...
+patching ./xt/pod_coverage.t...
+patching ./t/24_version.t...
+patching ./t/21_comment.t...
+patching ./t/10_basic.t...
+patching ./t/23_universal_require.t...
+patching ./t/01_load.t...
+patching ./t/27_module_runtime.t...
+patching ./t/80_failing.t...
+patching ./t/25_utf8.t...
+patching ./t/20_parse_self.t...
+patching ./t/28_class_load.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Module-ExtractUse' version '0.343'
+Building Module-ExtractUse
+precompiling grammar from file 'grammar'
+to class Module::ExtractUse::Grammar in module file 'Grammar.pm'
+                 Hint: The precompiled grammar did not specify the -
+                       runtime_class option. The resulting parser will "use
+                       Parse::RecDescent". Future changes to Parse::RecDescent
+                       may cause Module::ExtractUse::Grammar to stop working.
+                       Consider building a -standalone parser, or providing
+                       the -runtime_class option as described in
+                       Parse::RecDescent's POD. Use $::RD_HINT = 0 to disable
+                       this message.
+running tests
+precompiling grammar from file 'grammar'
+to class Module::ExtractUse::Grammar in module file 'Grammar.pm'
+                 Hint: The precompiled grammar did not specify the -
+                       runtime_class option. The resulting parser will "use
+                       Parse::RecDescent". Future changes to Parse::RecDescent
+                       may cause Module::ExtractUse::Grammar to stop working.
+                       Consider building a -standalone parser, or providing
+                       the -runtime_class option as described in
+                       Parse::RecDescent's POD. Use $::RD_HINT = 0 to disable
+                       this message.
+t/01_load.t ............... ok
+t/10_basic.t .............. ok
+t/20_parse_self.t ......... ok
+t/21_comment.t ............ ok
+t/22_eval.t ............... ok
+t/23_universal_require.t .. skipped: UNIVERSAL::require required for this tests
+t/24_version.t ............ ok
+t/25_utf8.t ............... ok
+t/26_pod_encoding.t ....... ok
+t/27_module_runtime.t ..... ok
+t/28_class_load.t ......... ok
+t/80_failing.t ............ ok
+All tests successful.
+Files=12, Tests=415,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.93 cusr  0.45 csys =  2.47 CPU)
+Result: PASS
+installing
+Building Module-ExtractUse
+precompiling grammar from file 'grammar'
+to class Module::ExtractUse::Grammar in module file 'Grammar.pm'
+                 Hint: The precompiled grammar did not specify the -
+                       runtime_class option. The resulting parser will "use
+                       Parse::RecDescent". Future changes to Parse::RecDescent
+                       may cause Module::ExtractUse::Grammar to stop working.
+                       Consider building a -standalone parser, or providing
+                       the -runtime_class option as described in
+                       Parse::RecDescent's POD. Use $::RD_HINT = 0 to disable
+                       this message.
+Installing /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/lib/perl5/site_perl/5.32.0/Module/ExtractUse.pm
+Installing /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/lib/perl5/site_perl/5.32.0/Module/ExtractUse/Grammar.pm
+Installing /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/share/man/man3/Module::ExtractUse::Grammar.3
+Installing /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/share/man/man3/Module::ExtractUse.3
+post-installation fixup
+Moving /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/share/man/man3 to /nix/store/s7bf94a0hvqsnsblz0jyykwq1ckdz6pd-perl5.32.0-Module-ExtractUse-0.343-devdoc/share/man/man3
+Removing empty /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343/lib
+patching script interpreter paths in /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343
+checking for references to /build/ in /nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343...
+shrinking RPATHs of ELF executables and libraries in /nix/store/s7bf94a0hvqsnsblz0jyykwq1ckdz6pd-perl5.32.0-Module-ExtractUse-0.343-devdoc
+gzipping man pages under /nix/store/s7bf94a0hvqsnsblz0jyykwq1ckdz6pd-perl5.32.0-Module-ExtractUse-0.343-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/s7bf94a0hvqsnsblz0jyykwq1ckdz6pd-perl5.32.0-Module-ExtractUse-0.343-devdoc
+checking for references to /build/ in /nix/store/s7bf94a0hvqsnsblz0jyykwq1ckdz6pd-perl5.32.0-Module-ExtractUse-0.343-devdoc...
+/nix/store/wjci6qd09wibyprarizxkp492gxi28pi-perl5.32.0-Module-ExtractUse-0.343

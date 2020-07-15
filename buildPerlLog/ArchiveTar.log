@@ -1,0 +1,91 @@
+these derivations will be built:
+  /nix/store/qi523ybxvyys85zgfbig1863rzd1cil6-perl5.32.0-Archive-Tar-2.36.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/wq1d2jrdhj8gwpjkdmx0n5kb1hb63819-Archive-Tar-2.36.tar.gz
+copying path '/nix/store/wq1d2jrdhj8gwpjkdmx0n5kb1hb63819-Archive-Tar-2.36.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qi523ybxvyys85zgfbig1863rzd1cil6-perl5.32.0-Archive-Tar-2.36.drv'...
+unpacking sources
+unpacking source archive /nix/store/wq1d2jrdhj8gwpjkdmx0n5kb1hb63819-Archive-Tar-2.36.tar.gz
+source root is Archive-Tar-2.36
+setting SOURCE_DATE_EPOCH to timestamp 1580650393 of file Archive-Tar-2.36/META.yml
+patching sources
+configuring
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./bin/ptar...
+patching ./bin/ptardiff...
+patching ./bin/ptargrep...
+
+Archive::Tar comes with a utility called 'ptardiff' which lets you run diffs against tar archives.
+
+However, this utility requires you to have Text::Diff installed.
+
+To add Text::Diff as a prerequisite, please supply the '-d' option when invoking this Makefile.PL.
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Archive::Tar
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Archive/Tar.pm blib/lib/Archive/Tar.pm
+cp lib/Archive/Tar/File.pm blib/lib/Archive/Tar/File.pm
+cp lib/Archive/Tar/Constant.pm blib/lib/Archive/Tar/Constant.pm
+cp bin/ptar blib/script/ptar
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ptar
+cp bin/ptardiff blib/script/ptardiff
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ptardiff
+cp bin/ptargrep blib/script/ptargrep
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ptargrep
+Manifying 3 pod documents
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t .............. ok
+t/02_methods.t .......... ok
+t/03_file.t ............. ok
+t/04_resolved_issues.t .. ok
+t/05_iter.t ............. ok
+t/06_error.t ............ ok
+t/07_ptardiff.t ......... skipped: Text::Diff required to test ptardiff
+t/08_ptargrep.t ......... ok
+t/09_roundtrip.t ........ ok
+t/90_symlink.t .......... skipped: Skipping tests on this platform
+t/99_pod.t .............. skipped: Test::Pod v0.95 required for testing POD
+All tests successful.
+Files=11, Tests=1240,  1 wallclock secs ( 0.12 usr  0.01 sys +  1.41 cusr  0.22 csys =  1.76 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib/pkgconfig m4datadir=/nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/aclocal aclocaldir=/nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/aclocal install
+Manifying 3 pod documents
+Manifying 2 pod documents
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib/perl5/site_perl/5.32.0/Archive/Tar.pm
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib/perl5/site_perl/5.32.0/Archive/Tar/Constant.pm
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib/perl5/site_perl/5.32.0/Archive/Tar/File.pm
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man1/ptar.1
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man1/ptargrep.1
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man1/ptardiff.1
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man3/Archive::Tar.3
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man3/Archive::Tar::File.3
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/bin/ptar
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/bin/ptardiff
+Installing /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/bin/ptargrep
+Appending installation info to /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/man3 to /nix/store/bzm23p44w64yb5shs8mzp6l34p40jzm4-perl5.32.0-Archive-Tar-2.36-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36
+gzipping man pages under /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/lib  /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36/bin
+patching script interpreter paths in /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36
+checking for references to /build/ in /nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bzm23p44w64yb5shs8mzp6l34p40jzm4-perl5.32.0-Archive-Tar-2.36-devdoc
+gzipping man pages under /nix/store/bzm23p44w64yb5shs8mzp6l34p40jzm4-perl5.32.0-Archive-Tar-2.36-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bzm23p44w64yb5shs8mzp6l34p40jzm4-perl5.32.0-Archive-Tar-2.36-devdoc
+checking for references to /build/ in /nix/store/bzm23p44w64yb5shs8mzp6l34p40jzm4-perl5.32.0-Archive-Tar-2.36-devdoc...
+/nix/store/0drk491gk3s0n35kywrcc2rllfdrs5hw-perl5.32.0-Archive-Tar-2.36

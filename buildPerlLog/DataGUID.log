@@ -1,0 +1,102 @@
+these derivations will be built:
+  /nix/store/1p1km1rljccvssa5mngawa903fa9x0lg-perl5.32.0-Data-GUID-0.049.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/b092sghwqwg2vdbc38mq3r8c0mzm2a22-Data-GUID-0.049.tar.gz
+copying path '/nix/store/b092sghwqwg2vdbc38mq3r8c0mzm2a22-Data-GUID-0.049.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1p1km1rljccvssa5mngawa903fa9x0lg-perl5.32.0-Data-GUID-0.049.drv'...
+unpacking sources
+unpacking source archive /nix/store/b092sghwqwg2vdbc38mq3r8c0mzm2a22-Data-GUID-0.049.tar.gz
+source root is Data-GUID-0.049
+setting SOURCE_DATE_EPOCH to timestamp 1485216302 of file Data-GUID-0.049/xt/release/changes_has_content.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/import.t...
+patching ./t/basic.t...
+patching ./t/multipass_from.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::GUID
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/GUID.pm blib/lib/Data/GUID.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ 1/1 # Testing Data::GUID 0.049
+t/00-load.t ............ ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More          0.96 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module         Want  Have
+#     ------------- ----- -----
+#     Carp            any  1.50
+#     Data::UUID    1.148 1.226
+#     Sub::Exporter  0.90 0.987
+#     Sub::Install   0.03 0.928
+#     bytes           any  1.07
+#     overload        any  1.31
+#     strict          any  1.11
+#     warnings        any  1.47
+#
+t/00-report-prereqs.t .. ok
+t/basic.t .............. ok
+t/import.t ............. ok
+t/multipass_from.t ..... ok
+All tests successful.
+Files=5, Tests=96,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.47 cusr  0.16 csys =  0.68 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/lib/pkgconfig m4datadir=/nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/share/aclocal aclocaldir=/nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/lib/perl5/site_perl/5.32.0/Data/GUID.pm
+Installing /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/share/man/man3/Data::GUID.3
+Appending installation info to /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/share/man/man3 to /nix/store/9g6r3p724yx82c0l5vfa0dhk548f2k82-perl5.32.0-Data-GUID-0.049-devdoc/share/man/man3
+Removing empty /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049/lib
+patching script interpreter paths in /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049
+checking for references to /build/ in /nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9g6r3p724yx82c0l5vfa0dhk548f2k82-perl5.32.0-Data-GUID-0.049-devdoc
+gzipping man pages under /nix/store/9g6r3p724yx82c0l5vfa0dhk548f2k82-perl5.32.0-Data-GUID-0.049-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9g6r3p724yx82c0l5vfa0dhk548f2k82-perl5.32.0-Data-GUID-0.049-devdoc
+checking for references to /build/ in /nix/store/9g6r3p724yx82c0l5vfa0dhk548f2k82-perl5.32.0-Data-GUID-0.049-devdoc...
+/nix/store/mag686a1pwp0a1px8hv4chyj2c6yfhlh-perl5.32.0-Data-GUID-0.049

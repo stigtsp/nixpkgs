@@ -1,0 +1,208 @@
+these derivations will be built:
+  /nix/store/3a88bim3f30c2gchgrx74fiiz1dyi5w3-perl5.32.0-MCE-1.872.drv
+building '/nix/store/3a88bim3f30c2gchgrx74fiiz1dyi5w3-perl5.32.0-MCE-1.872.drv'...
+unpacking sources
+unpacking source archive /nix/store/46qmqjy4zmwm7xibzq0pkrwg8xkpy07p-MCE-1.872.tar.gz
+source root is MCE-1.872
+setting SOURCE_DATE_EPOCH to timestamp 1592193811 of file MCE-1.872/Changes
+patching sources
+configuring
+patching ./xt/flock_lock.t...
+patching ./xt/channel_lock.t...
+patching ./xt/channel2_lock.t...
+patching ./t/05_mce_grep.t...
+patching ./t/04_norm_que_worker.t...
+patching ./t/04_channel_mutex.t...
+patching ./t/02_do_callback_result.t...
+patching ./t/06_nodata_flow.t...
+patching ./t/01_mutex_channel.t...
+patching ./t/06_relay.t...
+patching ./t/00_required_signals.t...
+patching ./t/05_mce_map.t...
+patching ./t/01_load_mce.t...
+patching ./t/04_prio_que_worker.t...
+patching ./t/05_mce_step.t...
+patching ./t/04_channel_threads_mp.t...
+patching ./t/05_mce_loop.t...
+patching ./t/05_mce_stream.t...
+patching ./t/01_load_signal_tag.t...
+patching ./t/04_channel_threads.t...
+patching ./t/03_chunk_size.t...
+patching ./t/05_mce_flow.t...
+patching ./t/04_channel_mutex_mp.t...
+patching ./t/04_prio_que_manager.t...
+patching ./t/06_nodata_step.t...
+patching ./t/05_mce_child.t...
+patching ./t/04_channel_simple.t...
+patching ./t/01_mutex_channel2.t...
+patching ./t/01_mutex_flock.t...
+patching ./t/02_do_callback_args.t...
+patching ./t/01_load_signal_arg.t...
+patching ./t/04_norm_que_manager.t...
+patching ./t/01_load_signal_export.t...
+patching ./t/00_required_modules.t...
+patching ./t/03_user_args.t...
+patching ./bin/mce_grep...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MCE
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MCE.pod blib/lib/MCE.pod
+cp lib/MCE/Core/Input/Generator.pm blib/lib/MCE/Core/Input/Generator.pm
+cp lib/MCE/Grep.pm blib/lib/MCE/Grep.pm
+cp lib/MCE/Flow.pm blib/lib/MCE/Flow.pm
+cp lib/MCE/Channel.pm blib/lib/MCE/Channel.pm
+cp lib/MCE/Core/Input/Iterator.pm blib/lib/MCE/Core/Input/Iterator.pm
+cp lib/MCE/Queue.pm blib/lib/MCE/Queue.pm
+cp lib/MCE/Mutex/Channel2.pm blib/lib/MCE/Mutex/Channel2.pm
+cp lib/MCE/Step.pm blib/lib/MCE/Step.pm
+cp lib/MCE/Channel/Simple.pm blib/lib/MCE/Channel/Simple.pm
+cp lib/MCE/Mutex.pm blib/lib/MCE/Mutex.pm
+cp lib/MCE/Mutex/Channel.pm blib/lib/MCE/Mutex/Channel.pm
+cp lib/MCE/Core/Worker.pm blib/lib/MCE/Core/Worker.pm
+cp lib/MCE/Candy.pm blib/lib/MCE/Candy.pm
+cp lib/MCE/Relay.pm blib/lib/MCE/Relay.pm
+cp lib/MCE/Map.pm blib/lib/MCE/Map.pm
+cp lib/MCE/Channel/Threads.pm blib/lib/MCE/Channel/Threads.pm
+cp lib/MCE/Stream.pm blib/lib/MCE/Stream.pm
+cp lib/MCE/Loop.pm blib/lib/MCE/Loop.pm
+cp lib/MCE/Core/Manager.pm blib/lib/MCE/Core/Manager.pm
+cp lib/MCE/Core/Input/Request.pm blib/lib/MCE/Core/Input/Request.pm
+cp lib/MCE/Core/Input/Handle.pm blib/lib/MCE/Core/Input/Handle.pm
+cp lib/MCE/Channel/Mutex.pm blib/lib/MCE/Channel/Mutex.pm
+cp lib/MCE/Mutex/Flock.pm blib/lib/MCE/Mutex/Flock.pm
+cp lib/MCE/Core/Validation.pm blib/lib/MCE/Core/Validation.pm
+cp lib/MCE/Subs.pm blib/lib/MCE/Subs.pm
+cp lib/MCE.pm blib/lib/MCE.pm
+cp lib/MCE/Signal.pm blib/lib/MCE/Signal.pm
+cp lib/MCE/Core.pod blib/lib/MCE/Core.pod
+cp lib/MCE/Child.pm blib/lib/MCE/Child.pm
+cp lib/MCE/Core/Input/Sequence.pm blib/lib/MCE/Core/Input/Sequence.pm
+cp lib/MCE/Util.pm blib/lib/MCE/Util.pm
+cp lib/MCE/Examples.pod blib/lib/MCE/Examples.pod
+Manifying 32 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_required_modules.t .... ok
+t/00_required_signals.t .... ok
+t/01_load_mce.t ............ ok
+t/01_load_signal_arg.t ..... ok
+t/01_load_signal_export.t .. ok
+t/01_load_signal_tag.t ..... ok
+t/01_mutex_channel.t ....... ok
+t/01_mutex_channel2.t ...... ok
+t/01_mutex_flock.t ......... ok
+t/02_do_callback_args.t .... ok
+t/02_do_callback_result.t .. ok
+t/03_chunk_size.t .......... ok
+t/03_user_args.t ........... ok
+t/04_channel_mutex.t ....... ok
+t/04_channel_mutex_mp.t .... ok
+t/04_channel_simple.t ...... ok
+t/04_channel_threads.t ..... ok
+t/04_channel_threads_mp.t .. ok
+t/04_norm_que_manager.t .... ok
+t/04_norm_que_worker.t ..... ok
+t/04_prio_que_manager.t .... ok
+t/04_prio_que_worker.t ..... ok
+t/05_mce_child.t ........... ok
+t/05_mce_flow.t ............ ok
+t/05_mce_grep.t ............ ok
+t/05_mce_loop.t ............ ok
+t/05_mce_map.t ............. ok
+t/05_mce_step.t ............ ok
+t/05_mce_stream.t .......... ok
+t/06_nodata_flow.t ......... ok
+t/06_nodata_step.t ......... ok
+t/06_relay.t ............... ok
+All tests successful.
+Files=32, Tests=567,  5 wallclock secs ( 0.11 usr  0.04 sys +  2.55 cusr  0.58 csys =  3.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/pkgconfig m4datadir=/nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/aclocal aclocaldir=/nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/aclocal install
+Manifying 32 pod documents
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE.pod
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Grep.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Mutex.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Signal.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Subs.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core.pod
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Map.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Util.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Child.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Channel.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Candy.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Loop.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Queue.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Examples.pod
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Step.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Flow.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Relay.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Stream.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Mutex/Channel2.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Mutex/Flock.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Mutex/Channel.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Validation.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Manager.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Worker.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Input/Generator.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Input/Request.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Input/Iterator.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Input/Handle.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Core/Input/Sequence.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Channel/Mutex.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Channel/Threads.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/site_perl/5.32.0/MCE/Channel/Simple.pm
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Manager.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Input::Generator.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Channel::Threads.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Input::Iterator.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Channel::Mutex.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Channel::Simple.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Input::Sequence.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Mutex::Channel2.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Relay.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Validation.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Worker.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Util.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Step.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Flow.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Channel.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Queue.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Stream.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Child.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Mutex::Flock.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Mutex::Channel.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Loop.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Mutex.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Signal.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Map.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Grep.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Input::Handle.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Examples.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Subs.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core::Input::Request.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Core.3
+Installing /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3/MCE::Candy.3
+Appending installation info to /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/man3 to /nix/store/kiw7cm1kpzyh7m037z5i2zcrjxl7662w-perl5.32.0-MCE-1.872-devdoc/share/man/man3
+Removing empty /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872/lib
+patching script interpreter paths in /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872
+checking for references to /build/ in /nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872...
+shrinking RPATHs of ELF executables and libraries in /nix/store/kiw7cm1kpzyh7m037z5i2zcrjxl7662w-perl5.32.0-MCE-1.872-devdoc
+gzipping man pages under /nix/store/kiw7cm1kpzyh7m037z5i2zcrjxl7662w-perl5.32.0-MCE-1.872-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/kiw7cm1kpzyh7m037z5i2zcrjxl7662w-perl5.32.0-MCE-1.872-devdoc
+checking for references to /build/ in /nix/store/kiw7cm1kpzyh7m037z5i2zcrjxl7662w-perl5.32.0-MCE-1.872-devdoc...
+/nix/store/492v0hrc349r9p7ys8nxp1wcbvf7ldd3-perl5.32.0-MCE-1.872

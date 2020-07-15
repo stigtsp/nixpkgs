@@ -1,0 +1,105 @@
+these derivations will be built:
+  /nix/store/wfbw7qdicc2cfcnd5izpmavx60snc7rr-perl5.32.0-Sort-Key-1.33.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/20zplb0rvb1bdbzqipi81yn07hibdb9m-Sort-Key-1.33.tar.gz
+copying path '/nix/store/20zplb0rvb1bdbzqipi81yn07hibdb9m-Sort-Key-1.33.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wfbw7qdicc2cfcnd5izpmavx60snc7rr-perl5.32.0-Sort-Key-1.33.drv'...
+unpacking sources
+unpacking source archive /nix/store/20zplb0rvb1bdbzqipi81yn07hibdb9m-Sort-Key-1.33.tar.gz
+source root is Sort-Key-1.33
+setting SOURCE_DATE_EPOCH to timestamp 1398772432 of file Sort-Key-1.33/META.yml
+patching sources
+configuring
+patching ./t/ints.t...
+patching ./t/strings.t...
+patching ./t/multi.t...
+patching ./t/floats.t...
+patching ./t/natural.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sort::Key
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Sort/Key.pm blib/lib/Sort/Key.pm
+cp lib/Sort/Key/Types.pm blib/lib/Sort/Key/Types.pm
+cp lib/Sort/Key/Register.pm blib/lib/Sort/Key/Register.pm
+cp lib/Sort/Key/Multi.pm blib/lib/Sort/Key/Multi.pm
+cp lib/Sort/Key/Natural.pm blib/lib/Sort/Key/Natural.pm
+cp lib/Sort/Key/Maker.pm blib/lib/Sort/Key/Maker.pm
+Running Mkbootstrap for Key ()
+chmod 644 "Key.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Key.bs blib/arch/auto/Sort/Key/Key.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Sort-Key-1.33/typemap' -typemap '/build/Sort-Key-1.33/typemap'  Key.xs > Key.xsc
+mv Key.xsc Key.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.33\" -DXS_VERSION=\"1.33\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Key.c
+Key.xs: In function '_keysort':
+Key.xs:237:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'IV' {aka 'long int'} [-Wformat=]
+  237 |      croak("unsupported sort type %d", type);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~
+      |                                        |
+      |                                        IV {aka long int}
+Key.xs: In function '_multikeysort':
+Key.xs:547:9: warning: format '%d' expects argument of type 'int', but argument 2 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+  547 |   croak("wrong number of results returned "
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+......
+  550 |         nkeys, count);
+      |         ~~~~~
+      |         |
+      |         STRLEN {aka long unsigned int}
+Key.xs:547:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'IV' {aka 'long int'} [-Wformat=]
+rm -f blib/arch/auto/Sort/Key/Key.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Key.o  -o blib/arch/auto/Sort/Key/Key.so  \
+      \
+
+chmod 755 blib/arch/auto/Sort/Key/Key.so
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Key.bs blib/arch/auto/Sort/Key/Key.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/floats.t ... ok
+t/ints.t ..... ok
+t/multi.t .... ok
+t/natural.t .. ok
+t/strings.t .. ok
+All tests successful.
+Files=5, Tests=36,  1 wallclock secs ( 0.03 usr  0.01 sys +  1.78 cusr  0.04 csys =  1.86 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/pkgconfig m4datadir=/nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/aclocal aclocaldir=/nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Key.bs blib/arch/auto/Sort/Key/Key.bs 644
+Manifying 6 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sort/Key/Key.so
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key/Types.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key/Multi.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key/Register.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key/Natural.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Sort/Key/Maker.pm
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key::Types.3
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key::Register.3
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key::Maker.3
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key::Multi.3
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key::Natural.3
+Installing /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3/Sort::Key.3
+Appending installation info to /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/man3 to /nix/store/ksmkqd3mm3qwaxw74pa5p209ps8fxnjp-perl5.32.0-Sort-Key-1.33-devdoc/share/man/man3
+Removing empty /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33
+shrinking /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Sort/Key/Key.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33/lib
+patching script interpreter paths in /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33
+checking for references to /build/ in /nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ksmkqd3mm3qwaxw74pa5p209ps8fxnjp-perl5.32.0-Sort-Key-1.33-devdoc
+gzipping man pages under /nix/store/ksmkqd3mm3qwaxw74pa5p209ps8fxnjp-perl5.32.0-Sort-Key-1.33-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ksmkqd3mm3qwaxw74pa5p209ps8fxnjp-perl5.32.0-Sort-Key-1.33-devdoc
+checking for references to /build/ in /nix/store/ksmkqd3mm3qwaxw74pa5p209ps8fxnjp-perl5.32.0-Sort-Key-1.33-devdoc...
+/nix/store/xyd6lqjw61jl3pk1qrxd7lal464ccf2q-perl5.32.0-Sort-Key-1.33

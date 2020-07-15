@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/hcr3q45j7xbxs2vd2cammshsaa7nmh57-perl5.32.0-Mail-Maildir-1.0.0.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/8d5rf2aa0vy0lzkr18q54wn562n565hw-Mail-Maildir-1.0.0.tar.bz2
+copying path '/nix/store/8d5rf2aa0vy0lzkr18q54wn562n565hw-Mail-Maildir-1.0.0.tar.bz2' from 'https://cache.nixos.org'...
+building '/nix/store/hcr3q45j7xbxs2vd2cammshsaa7nmh57-perl5.32.0-Mail-Maildir-1.0.0.drv'...
+unpacking sources
+unpacking source archive /nix/store/8d5rf2aa0vy0lzkr18q54wn562n565hw-Mail-Maildir-1.0.0.tar.bz2
+source root is Maildir-1.00
+setting SOURCE_DATE_EPOCH to timestamp 1087575311 of file Maildir-1.00/lib/Mail/Maildir.pm
+patching sources
+configuring
+patching ./t/Maildir.t...
+patching ./lib/Mail/Maildir/Plusplus.pm...
+patching ./lib/Mail/Maildir.pm...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::Maildir
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/Maildir/Plusplus.pm blib/lib/Mail/Maildir/Plusplus.pm
+cp lib/Mail/Maildir.pm blib/lib/Mail/Maildir.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Maildir.t .. ok
+All tests successful.
+Files=1, Tests=36,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.07 cusr  0.01 csys =  0.09 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/lib/pkgconfig m4datadir=/nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/share/aclocal aclocaldir=/nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/lib/perl5/site_perl/5.32.0/Mail/Maildir.pm
+Installing /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/lib/perl5/site_perl/5.32.0/Mail/Maildir/Plusplus.pm
+Installing /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/share/man/man3/Mail::Maildir.3
+Appending installation info to /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/share/man/man3 to /nix/store/askv0smkfciajljql08v6c9wvi9svz1h-perl5.32.0-Mail-Maildir-1.0.0-devdoc/share/man/man3
+Removing empty /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0/lib
+patching script interpreter paths in /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0
+checking for references to /build/ in /nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0...
+shrinking RPATHs of ELF executables and libraries in /nix/store/askv0smkfciajljql08v6c9wvi9svz1h-perl5.32.0-Mail-Maildir-1.0.0-devdoc
+gzipping man pages under /nix/store/askv0smkfciajljql08v6c9wvi9svz1h-perl5.32.0-Mail-Maildir-1.0.0-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/askv0smkfciajljql08v6c9wvi9svz1h-perl5.32.0-Mail-Maildir-1.0.0-devdoc
+checking for references to /build/ in /nix/store/askv0smkfciajljql08v6c9wvi9svz1h-perl5.32.0-Mail-Maildir-1.0.0-devdoc...
+/nix/store/7vvqjzygqwv80hbjls91n6xjbmq4zkg9-perl5.32.0-Mail-Maildir-1.0.0

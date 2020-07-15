@@ -1,0 +1,235 @@
+these derivations will be built:
+  /nix/store/i60izf7vxmqx59djyij09n8xxrmwng1m-perl5.32.0-Proc-SafeExec-1.5.drv
+  /nix/store/v2giymlilkzf6k4idr152izvn91a2byd-perl5.32.0-Connector-1.28.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/h8vabpcayxf1krzf6ywxs8fj2a6dj119-Proc-SafeExec-1.5.tar.gz
+  /nix/store/mnnmva1j1a7vi5v9f2d94r5drrj9c49w-Connector-1.28.tar.gz
+copying path '/nix/store/mnnmva1j1a7vi5v9f2d94r5drrj9c49w-Connector-1.28.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/h8vabpcayxf1krzf6ywxs8fj2a6dj119-Proc-SafeExec-1.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/i60izf7vxmqx59djyij09n8xxrmwng1m-perl5.32.0-Proc-SafeExec-1.5.drv'...
+unpacking sources
+unpacking source archive /nix/store/h8vabpcayxf1krzf6ywxs8fj2a6dj119-Proc-SafeExec-1.5.tar.gz
+source root is Proc-SafeExec-1.5
+setting SOURCE_DATE_EPOCH to timestamp 1371237525 of file Proc-SafeExec-1.5/lib/Proc/SafeExec/Queue.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Proc::SafeExec
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Proc/SafeExec.pm blib/lib/Proc/SafeExec.pm
+cp lib/Proc/SafeExec/Queue.pm blib/lib/Proc/SafeExec/Queue.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Proc-SafeExec.t .. ok
+All tests successful.
+Files=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.03 cusr  0.00 csys =  0.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/lib/pkgconfig m4datadir=/nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/aclocal aclocaldir=/nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/lib/perl5/site_perl/5.32.0/Proc/SafeExec.pm
+Installing /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/lib/perl5/site_perl/5.32.0/Proc/SafeExec/Queue.pm
+Installing /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/man/man3/Proc::SafeExec.3
+Installing /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/man/man3/Proc::SafeExec::Queue.3
+Appending installation info to /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/man/man3 to /nix/store/vww6a2mw5rkymmwrsx2zfdpr82wdlgmc-perl5.32.0-Proc-SafeExec-1.5-devdoc/share/man/man3
+Removing empty /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5/lib
+patching script interpreter paths in /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5
+checking for references to /build/ in /nix/store/5vqk1i78qwhw535d33cld3rx5hxwxxnd-perl5.32.0-Proc-SafeExec-1.5...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vww6a2mw5rkymmwrsx2zfdpr82wdlgmc-perl5.32.0-Proc-SafeExec-1.5-devdoc
+gzipping man pages under /nix/store/vww6a2mw5rkymmwrsx2zfdpr82wdlgmc-perl5.32.0-Proc-SafeExec-1.5-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vww6a2mw5rkymmwrsx2zfdpr82wdlgmc-perl5.32.0-Proc-SafeExec-1.5-devdoc
+checking for references to /build/ in /nix/store/vww6a2mw5rkymmwrsx2zfdpr82wdlgmc-perl5.32.0-Proc-SafeExec-1.5-devdoc...
+building '/nix/store/v2giymlilkzf6k4idr152izvn91a2byd-perl5.32.0-Connector-1.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/mnnmva1j1a7vi5v9f2d94r5drrj9c49w-Connector-1.28.tar.gz
+source root is Connector-1.28
+setting SOURCE_DATE_EPOCH to timestamp 1573143190 of file Connector-1.28/MANIFEST
+patching sources
+configuring
+patching ./t/config/test.sh...
+patching ./test.pl...
+*** Module::AutoInstall version 1.19
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More        ...loaded. (1.302175)
+- Test::More        ...loaded. (1.302175)
+- Config::Merge     ...loaded. (1.04)
+- Config::Versioned ...loaded. (1.01)
+- Config::Std       ...loaded. (0.903)
+- Proc::SafeExec    ...loaded. (1.5)
+- YAML              ...loaded. (1.30)
+- Template          ...loaded. (3.008)
+- DBI               ...loaded. (1.643)
+- DBD::SQLite       ...loaded. (1.64)
+- Moose             ...loaded. (2.2012)
+- Log::Log4perl     ...loaded. (1.49)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Warning: the following files are missing in your kit:
+        t/01-proxy-http.t
+        t/01-proxy-proc-safeexec.t
+Please inform the author.
+Generating a Unix-style Makefile
+Writing Makefile for Connector
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Connector/Tee.pm blib/lib/Connector/Tee.pm
+cp lib/Connector/Builtin/File/Path.pm blib/lib/Connector/Builtin/File/Path.pm
+cp lib/Connector/Proxy/SOAP/Lite.pm blib/lib/Connector/Proxy/SOAP/Lite.pm
+cp lib/Connector/Builtin/Env.pm blib/lib/Connector/Builtin/Env.pm
+cp lib/Connector/Proxy/Net/LDAP/DN.pm blib/lib/Connector/Proxy/Net/LDAP/DN.pm
+cp lib/Connector/Multi/YAML.pm blib/lib/Connector/Multi/YAML.pm
+cp lib/Connector/Proxy/HTTP.pm blib/lib/Connector/Proxy/HTTP.pm
+cp lib/Connector/Proxy/YAML.pm blib/lib/Connector/Proxy/YAML.pm
+cp lib/Connector/Proxy/Net/FTP.pm blib/lib/Connector/Proxy/Net/FTP.pm
+cp lib/Connector/Builtin/Static.pm blib/lib/Connector/Builtin/Static.pm
+cp lib/Connector/Proxy/Net/LDAP.pm blib/lib/Connector/Proxy/Net/LDAP.pm
+cp lib/Connector/Proxy/DBI.pm blib/lib/Connector/Proxy/DBI.pm
+cp lib/Connector/Proxy.pm blib/lib/Connector/Proxy.pm
+cp lib/Connector/Builtin/Authentication/PasswordScheme.pm blib/lib/Connector/Builtin/Authentication/PasswordScheme.pm
+cp lib/Connector/Builtin/Authentication/Password.pm blib/lib/Connector/Builtin/Authentication/Password.pm
+cp lib/Connector/Builtin/File/SCP.pm blib/lib/Connector/Builtin/File/SCP.pm
+cp lib/Connector/Wrapper.pm blib/lib/Connector/Wrapper.pm
+cp lib/Connector/Proxy/Proc/SafeExec.pm blib/lib/Connector/Proxy/Proc/SafeExec.pm
+cp lib/Connector/Proxy/Net/LDAP/Single.pm blib/lib/Connector/Proxy/Net/LDAP/Single.pm
+cp lib/Connector/Multi.pm blib/lib/Connector/Multi.pm
+cp lib/Connector/Builtin/Memory.pm blib/lib/Connector/Builtin/Memory.pm
+cp lib/Connector/Proxy/Config/Std.pm blib/lib/Connector/Proxy/Config/Std.pm
+cp lib/Connector.pm blib/lib/Connector.pm
+cp lib/Connector/Proxy/Net/LDAP/Simple.pm blib/lib/Connector/Proxy/Net/LDAP/Simple.pm
+cp lib/Connector/Proxy/Authentication/KeyNanny.pm blib/lib/Connector/Proxy/Authentication/KeyNanny.pm
+cp lib/Connector/Iterator.pm blib/lib/Connector/Iterator.pm
+cp lib/Connector/Builtin/File/Simple.pm blib/lib/Connector/Builtin/File/Simple.pm
+cp lib/Connector/Proxy/Config/Versioned.pm blib/lib/Connector/Proxy/Config/Versioned.pm
+cp lib/Connector/Multi/Merge.pm blib/lib/Connector/Multi/Merge.pm
+cp lib/Connector/Builtin.pm blib/lib/Connector/Builtin.pm
+cp lib/Connector/Builtin/Authentication/LDAP.pm blib/lib/Connector/Builtin/Authentication/LDAP.pm
+cp lib/Connector/Types.pm blib/lib/Connector/Types.pm
+Manifying 25 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" "-Iblib/lib" "-Iblib/arch" test.pl
+test with val1: 'connector' at test.pl line 14.
+test with val2: 'connector' at test.pl line 17.
+test with val3: 'abc' at test.pl line 20.
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00-base.t t/01-builtin-env.t t/01-builtin-file-path.t t/01-builtin-file-scp.t t/01-builtin-file-simple.t t/01-builtin-memory.t t/01-builtin-password-scheme.t t/01-builtin-password.t t/01-builtin-static.t t/01-iterator.t t/01-multi-merge.t t/01-multi-yaml.t t/01-multi.t t/01-proxy-config-std.t t/01-proxy-config-versioned.t t/01-proxy-ftp.t t/01-proxy-net-ldap.t t/01-proxy-yaml.t t/01-tee.t t/01-wrapper.t t/10-proxy-dbi.t
+t/00-base.t ..................... ok
+t/01-builtin-env.t .............. ok
+t/01-builtin-file-path.t ........ ok
+t/01-builtin-file-scp.t ......... skipped: Skipping SCP tests - setup ssh-key auth and set CONN_HAVE_SSH_CONFIG=1
+t/01-builtin-file-simple.t ...... ok
+t/01-builtin-memory.t ........... ok
+t/01-builtin-password-scheme.t .. ok
+t/01-builtin-password.t ......... ok
+t/01-builtin-static.t ........... ok
+t/01-iterator.t ................. ok
+t/01-multi-merge.t .............. ok
+t/01-multi-yaml.t ............... 1/12 2020/07/15 02:51:40 Relative path length exceeds prefix length
+t/01-multi-yaml.t ............... ok
+t/01-multi.t .................... Use of uninitialized value $ENV{"USER"} in concatenation (.) or string at /nix/store/c6sf4ss2xnj17klcbapz99m1h0c7vgcp-perl5.32.0-Config-Versioned-1.01/lib/perl5/site_perl/5.32.0/Config/Versioned.pm line 39.
+t/01-multi.t .................... ok
+t/01-proxy-config-std.t ......... ok
+t/01-proxy-config-versioned.t ... Use of uninitialized value $ENV{"USER"} in concatenation (.) or string at /nix/store/c6sf4ss2xnj17klcbapz99m1h0c7vgcp-perl5.32.0-Config-Versioned-1.01/lib/perl5/site_perl/5.32.0/Config/Versioned.pm line 39.
+t/01-proxy-config-versioned.t ... ok
+t/01-proxy-ftp.t ................ ok
+t/01-proxy-net-ldap.t ........... skipped: Skipping LDAP tests because there might be no server
+t/01-proxy-yaml.t ............... ok
+t/01-tee.t ...................... ok
+t/01-wrapper.t .................. ok
+t/10-proxy-dbi.t ................ 1/? 2020/07/15 02:51:48 Ambiguous (multi-valued) result
+2020/07/15 02:51:48 Ambiguous (multi-valued) result
+2020/07/15 02:51:48 Ambiguous (multi-valued) result
+t/10-proxy-dbi.t ................ ok
+All tests successful.
+Files=21, Tests=342, 16 wallclock secs ( 0.20 usr  0.06 sys +  9.49 cusr  6.41 csys = 16.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/pkgconfig m4datadir=/nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/aclocal aclocaldir=/nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/aclocal install
+Manifying 25 pod documents
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Types.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Tee.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Wrapper.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Multi.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Iterator.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/DBI.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/HTTP.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/YAML.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Net/FTP.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Net/LDAP.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Net/LDAP/Single.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Net/LDAP/DN.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Net/LDAP/Simple.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/SOAP/Lite.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Proc/SafeExec.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Authentication/KeyNanny.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Config/Std.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Proxy/Config/Versioned.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Memory.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Static.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Env.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/File/Path.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/File/Simple.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/File/SCP.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Authentication/Password.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Authentication/PasswordScheme.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Builtin/Authentication/LDAP.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Multi/Merge.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/site_perl/5.32.0/Connector/Multi/YAML.pm
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Multi.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::Env.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Net::LDAP::Single.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Multi::Merge.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Proc::SafeExec.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Iterator.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Net::FTP.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::HTTP.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Multi::YAML.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::File::SCP.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Wrapper.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::File::Path.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Net::LDAP.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::SOAP::Lite.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Tee.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::DBI.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::Authentication::Password.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Config::Versioned.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::Authentication::PasswordScheme.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Net::LDAP::Simple.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Authentication::KeyNanny.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Builtin::Authentication::LDAP.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy.3
+Installing /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3/Connector::Proxy::Net::LDAP::DN.3
+Appending installation info to /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/man3 to /nix/store/sr2ny6biqb80gidp9jvl2rwylq4jz6qk-perl5.32.0-Connector-1.28-devdoc/share/man/man3
+Removing empty /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28/lib
+patching script interpreter paths in /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28
+checking for references to /build/ in /nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sr2ny6biqb80gidp9jvl2rwylq4jz6qk-perl5.32.0-Connector-1.28-devdoc
+gzipping man pages under /nix/store/sr2ny6biqb80gidp9jvl2rwylq4jz6qk-perl5.32.0-Connector-1.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sr2ny6biqb80gidp9jvl2rwylq4jz6qk-perl5.32.0-Connector-1.28-devdoc
+checking for references to /build/ in /nix/store/sr2ny6biqb80gidp9jvl2rwylq4jz6qk-perl5.32.0-Connector-1.28-devdoc...
+/nix/store/fd9mxlydd7209mmj439bbyqgxszvp7kw-perl5.32.0-Connector-1.28

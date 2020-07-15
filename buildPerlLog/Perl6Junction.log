@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/a34ykq53jg7x0rg2rd9sxfanksp1f8as-perl5.32.0-Perl6-Junction-1.60000.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/91ycy8ml5vcx5zprn255cn4azri0g15x-Perl6-Junction-1.60000.tar.gz
+copying path '/nix/store/91ycy8ml5vcx5zprn255cn4azri0g15x-Perl6-Junction-1.60000.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/a34ykq53jg7x0rg2rd9sxfanksp1f8as-perl5.32.0-Perl6-Junction-1.60000.drv'...
+unpacking sources
+unpacking source archive /nix/store/91ycy8ml5vcx5zprn255cn4azri0g15x-Perl6-Junction-1.60000.tar.gz
+source root is Perl6-Junction-1.60000
+setting SOURCE_DATE_EPOCH to timestamp 1377094992 of file Perl6-Junction-1.60000/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Perl6::Junction
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Perl6/Junction/Base.pm blib/lib/Perl6/Junction/Base.pm
+cp lib/Perl6/Junction/Any.pm blib/lib/Perl6/Junction/Any.pm
+cp lib/Perl6/Junction/None.pm blib/lib/Perl6/Junction/None.pm
+cp lib/Perl6/Junction/One.pm blib/lib/Perl6/Junction/One.pm
+cp lib/Perl6/Junction.pm blib/lib/Perl6/Junction.pm
+cp lib/Perl6/Junction/All.pm blib/lib/Perl6/Junction/All.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_use.t ....... ok
+t/all.t .......... ok
+t/any.t .......... ok
+t/import_tags.t .. ok
+t/join.t ......... ok
+t/no_import.t .... ok
+t/none.t ......... ok
+t/one.t .......... ok
+All tests successful.
+Files=8, Tests=374,  0 wallclock secs ( 0.05 usr  0.01 sys +  0.39 cusr  0.07 csys =  0.52 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/pkgconfig m4datadir=/nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/share/aclocal aclocaldir=/nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction/One.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction/Any.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction/None.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction/All.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/site_perl/5.32.0/Perl6/Junction/Base.pm
+Installing /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/share/man/man3/Perl6::Junction.3
+Appending installation info to /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/share/man/man3 to /nix/store/3mr9ygci38pknxg567ywbb2za3vlr2kl-perl5.32.0-Perl6-Junction-1.60000-devdoc/share/man/man3
+Removing empty /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000/lib
+patching script interpreter paths in /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000
+checking for references to /build/ in /nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3mr9ygci38pknxg567ywbb2za3vlr2kl-perl5.32.0-Perl6-Junction-1.60000-devdoc
+gzipping man pages under /nix/store/3mr9ygci38pknxg567ywbb2za3vlr2kl-perl5.32.0-Perl6-Junction-1.60000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3mr9ygci38pknxg567ywbb2za3vlr2kl-perl5.32.0-Perl6-Junction-1.60000-devdoc
+checking for references to /build/ in /nix/store/3mr9ygci38pknxg567ywbb2za3vlr2kl-perl5.32.0-Perl6-Junction-1.60000-devdoc...
+/nix/store/ncx4f59n4114l28n4p969sqgpwvnlf5v-perl5.32.0-Perl6-Junction-1.60000

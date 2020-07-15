@@ -1,0 +1,223 @@
+these derivations will be built:
+  /nix/store/za94g3vrz8l1clj0zah6wzwnpk29j6mb-perl5.32.0-Test-NoTabs-2.02.drv
+  /nix/store/h2mcz4v1z03p5z2c6qj9vdq9zx4f1pzb-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15.drv
+building '/nix/store/za94g3vrz8l1clj0zah6wzwnpk29j6mb-perl5.32.0-Test-NoTabs-2.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/b8mhkphc5zn33d60ryydqkwacd232rlj-Test-NoTabs-2.02.tar.gz
+source root is Test-NoTabs-2.02
+setting SOURCE_DATE_EPOCH to timestamp 1524319079 of file Test-NoTabs-2.02/xt/release/distmeta.t
+patching sources
+configuring
+patching ./xt/release/distmeta.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./xt/author/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::NoTabs
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/NoTabs.pm blib/lib/Test/NoTabs.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     Test::More           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module        Want     Have
+#     ------------- ---- --------
+#     File::Find     any     1.37
+#     File::Spec     any     3.78
+#     FindBin        any     1.51
+#     Test::Builder  any 1.302175
+#     strict         any     1.11
+#     warnings       any     1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     Encode           3.06
+#     JSON::PP         4.04
+#     Pod::Coverage missing
+#     Sub::Name     missing
+#     YAML          missing
+#     autodie          2.32
+#
+t/00-report-prereqs.t .. ok
+t/11-all.t ............. ok
+t/12-fail.t ............ ok
+t/13-badpod.t .......... ok
+All tests successful.
+Files=4, Tests=16,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.66 cusr  0.09 csys =  0.79 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/lib/pkgconfig m4datadir=/nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/share/aclocal aclocaldir=/nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/lib/perl5/site_perl/5.32.0/Test/NoTabs.pm
+Installing /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/share/man/man3/Test::NoTabs.3
+Appending installation info to /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/share/man/man3 to /nix/store/ha83rl8b0gkrl8i5w0l5278bfzj97rgz-perl5.32.0-Test-NoTabs-2.02-devdoc/share/man/man3
+Removing empty /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02/lib
+patching script interpreter paths in /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02
+checking for references to /build/ in /nix/store/bh1bimjk48kr10wpkas2p9p4f2pqvh21-perl5.32.0-Test-NoTabs-2.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ha83rl8b0gkrl8i5w0l5278bfzj97rgz-perl5.32.0-Test-NoTabs-2.02-devdoc
+gzipping man pages under /nix/store/ha83rl8b0gkrl8i5w0l5278bfzj97rgz-perl5.32.0-Test-NoTabs-2.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ha83rl8b0gkrl8i5w0l5278bfzj97rgz-perl5.32.0-Test-NoTabs-2.02-devdoc
+checking for references to /build/ in /nix/store/ha83rl8b0gkrl8i5w0l5278bfzj97rgz-perl5.32.0-Test-NoTabs-2.02-devdoc...
+building '/nix/store/h2mcz4v1z03p5z2c6qj9vdq9zx4f1pzb-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15.drv'...
+unpacking sources
+unpacking source archive /nix/store/nb7xl1a5hmn8khz394dhpzb46s94pn31-Dist-Zilla-Plugin-Test-NoTabs-0.15.tar.gz
+source root is Dist-Zilla-Plugin-Test-NoTabs-0.15
+setting SOURCE_DATE_EPOCH to timestamp 1432426104 of file Dist-Zilla-Plugin-Test-NoTabs-0.15/xt/release/portability.t
+patching sources
+configuring
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::NoTabs
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-NoTabs' version '0.15'
+cp lib/Dist/Zilla/Plugin/NoTabsTests.pm blib/lib/Dist/Zilla/Plugin/NoTabsTests.pm
+cp lib/Dist/Zilla/Plugin/Test/NoTabs.pm blib/lib/Dist/Zilla/Plugin/Test/NoTabs.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.039 0.039
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::pushd          any    1.016
+#     FindBin              any     1.51
+#     Test::DZil           any    6.015
+#     Test::Deep           any    1.130
+#     Test::More          0.88 1.302175
+#     Test::NoTabs         any     2.02
+#     Test::Requires       any     0.11
+#     if                   any   0.0608
+#     strict               any     1.11
+#     warnings             any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                                Want     Have
+#     --------------------------------- -------- --------
+#     Data::Section                        0.004 0.200007
+#     Dist::Zilla                       4.300039    6.015
+#     Dist::Zilla::File::InMemory            any    6.015
+#     Dist::Zilla::Role::FileFinderUser      any    6.015
+#     Dist::Zilla::Role::FileGatherer        any    6.015
+#     Dist::Zilla::Role::FileMunger          any    6.015
+#     Dist::Zilla::Role::PrereqSource        any    6.015
+#     Dist::Zilla::Role::TextTemplate        any    6.015
+#     Moose                                  any   2.2012
+#     Moose::Util::TypeConstraints           any   2.2012
+#     Path::Tiny                             any    0.114
+#     Sub::Exporter::ForMethods              any 0.100052
+#     namespace::autoclean                   any     0.29
+#
+# === Other Modules ===
+#
+#     Module                    Have
+#     --------------------- --------
+#     CPAN::Meta::Validator 2.150010
+#     Pod::Coverage          missing
+#
+t/00-report-prereqs.t .. ok
+t/01-basic.t ........... ok
+t/02-finder-legacy.t ... ok
+t/03-finder.t .......... ok
+t/04-filename.t ........ ok
+t/05-bytes-encoding.t .. ok
+t/zzz-check-breaks.t ... ok
+All tests successful.
+Files=7, Tests=43, 11 wallclock secs ( 0.12 usr  0.10 sys +  6.78 cusr  4.61 csys = 11.61 CPU)
+Result: PASS
+installing
+Installing /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/NoTabsTests.pm
+Installing /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/NoTabs.pm
+Installing /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/share/man/man3/Dist::Zilla::Plugin::Test::NoTabs.3
+Installing /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/share/man/man3/Dist::Zilla::Plugin::NoTabsTests.3
+post-installation fixup
+Moving /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/share/man/man3 to /nix/store/cav1zn1d7vpscxkjdwa17lick1n9a556-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15-devdoc/share/man/man3
+Removing empty /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15/lib
+patching script interpreter paths in /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15
+checking for references to /build/ in /nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15...
+shrinking RPATHs of ELF executables and libraries in /nix/store/cav1zn1d7vpscxkjdwa17lick1n9a556-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15-devdoc
+gzipping man pages under /nix/store/cav1zn1d7vpscxkjdwa17lick1n9a556-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/cav1zn1d7vpscxkjdwa17lick1n9a556-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15-devdoc
+checking for references to /build/ in /nix/store/cav1zn1d7vpscxkjdwa17lick1n9a556-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15-devdoc...
+/nix/store/8dd0n34zwyv42m53xmkjs0n6qa0r20kk-perl5.32.0-Dist-Zilla-Plugin-Test-NoTabs-0.15

@@ -1,0 +1,131 @@
+these derivations will be built:
+  /nix/store/dgm09vss8l7521dclk9bj0xj60ngf7h7-perl5.32.0-Parallel-ForkManager-2.02.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/4282554ccy0mkmlgfn0vvy4fcdnn9zk4-Parallel-ForkManager-2.02.tar.gz
+copying path '/nix/store/4282554ccy0mkmlgfn0vvy4fcdnn9zk4-Parallel-ForkManager-2.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dgm09vss8l7521dclk9bj0xj60ngf7h7-perl5.32.0-Parallel-ForkManager-2.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/4282554ccy0mkmlgfn0vvy4fcdnn9zk4-Parallel-ForkManager-2.02.tar.gz
+source root is Parallel-ForkManager-2.02
+setting SOURCE_DATE_EPOCH to timestamp 1539040762 of file Parallel-ForkManager-2.02/xt/release/unused-vars.t
+patching sources
+configuring
+patching ./xt/release/unused-vars.t...
+patching ./examples/callback_data.pl...
+patching ./examples/callback.pl...
+patching ./examples/parallel_get.pl...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Parallel::ForkManager
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Parallel/ForkManager.pm blib/lib/Parallel/ForkManager.pm
+cp lib/Parallel/ForkManager/Child.pm blib/lib/Parallel/ForkManager/Child.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............ ok
+t/00-load.t ............... 1/4 # time: 1 seconds
+t/00-load.t ............... 2/4 # time: 20 seconds
+# time: 0 seconds
+t/00-load.t ............... 4/4 # time: 7 seconds
+t/00-load.t ............... ok
+t/00-report-prereqs.t ..... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     IO::Handle           any     1.42
+#     IPC::Open3           any     1.21
+#     Test::More          0.94 1.302175
+#     Test::Warn           any     0.36
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module     Want     Have
+#     ---------- ---- --------
+#     Carp        any     1.50
+#     File::Path  any     2.16
+#     File::Spec  any     3.78
+#     File::Temp  any   0.2309
+#     Moo         any 2.004000
+#     Moo::Role   any 2.004000
+#     POSIX       any     1.94
+#     Storable    any     3.21
+#     strict      any     1.11
+#     warnings    any     1.47
+#
+t/00-report-prereqs.t ..... ok
+t/01-utf8-all.t ........... skipped: Need utf8::all for this test crashing on Windows
+t/02-callback.t ........... # This test can take 10-20 seconds, please wait. Started at Wed Jul 15 06:15:31 2020
+t/02-callback.t ........... ok
+t/03-callback-data.t ...... # This test can take 2-6 seconds, please wait. Started at Wed Jul 15 06:15:47 2020
+t/03-callback-data.t ...... ok
+t/basic-methods.t ......... ok
+t/changing-pids.t ......... ok
+t/start_child.t ........... ok
+t/waitpid-conflict.t ...... # code outside of P::FM stole 269
+child process '269' disappeared. A call to `waitpid` outside of Parallel::ForkManager might have reaped it.
+t/waitpid-conflict.t ...... ok
+t/waitpid-waitonechild.t .. # code outside of P::FM stole 271
+t/waitpid-waitonechild.t .. ok
+t/waitpid_blocking.t ...... ok
+All tests successful.
+
+Test Summary Report
+-------------------
+t/waitpid-conflict.t    (Wstat: 0 Tests: 2 Failed: 0)
+  TODO passed:   1-2
+t/waitpid-waitonechild.t (Wstat: 0 Tests: 3 Failed: 0)
+  TODO passed:   1-3
+Files=12, Tests=28, 70 wallclock secs ( 0.04 usr  0.01 sys +  1.70 cusr  0.77 csys =  2.52 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/lib/pkgconfig m4datadir=/nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/aclocal aclocaldir=/nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/lib/perl5/site_perl/5.32.0/Parallel/ForkManager.pm
+Installing /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/lib/perl5/site_perl/5.32.0/Parallel/ForkManager/Child.pm
+Installing /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/man/man3/Parallel::ForkManager.3
+Installing /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/man/man3/Parallel::ForkManager::Child.3
+Appending installation info to /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/man/man3 to /nix/store/ydx6a4wmqk20hh5fp33a7nmmzmynvj4p-perl5.32.0-Parallel-ForkManager-2.02-devdoc/share/man/man3
+Removing empty /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02/lib
+patching script interpreter paths in /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02
+checking for references to /build/ in /nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ydx6a4wmqk20hh5fp33a7nmmzmynvj4p-perl5.32.0-Parallel-ForkManager-2.02-devdoc
+gzipping man pages under /nix/store/ydx6a4wmqk20hh5fp33a7nmmzmynvj4p-perl5.32.0-Parallel-ForkManager-2.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ydx6a4wmqk20hh5fp33a7nmmzmynvj4p-perl5.32.0-Parallel-ForkManager-2.02-devdoc
+checking for references to /build/ in /nix/store/ydx6a4wmqk20hh5fp33a7nmmzmynvj4p-perl5.32.0-Parallel-ForkManager-2.02-devdoc...
+/nix/store/qg60p4d7r6xs2zfc5hixic0hxrjwprkg-perl5.32.0-Parallel-ForkManager-2.02

@@ -1,0 +1,188 @@
+these derivations will be built:
+  /nix/store/vqwbn48g34a7wasrsrr8k8sak10fnjxk-perl5.32.0-URI-Find-20160806.drv
+  /nix/store/x5g4dj76dsjvs30j2xv7bidbnzvdk7xl-perl5.32.0-Catalyst-Action-REST-1.21.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/v9gljj6fbqsh8j6iv824566w3glclgia-Catalyst-Action-REST-1.21.tar.gz
+  /nix/store/z2dvf4vw617vbpl6z9nisw675zz9if5f-URI-Find-20160806.tar.gz
+copying path '/nix/store/v9gljj6fbqsh8j6iv824566w3glclgia-Catalyst-Action-REST-1.21.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/z2dvf4vw617vbpl6z9nisw675zz9if5f-URI-Find-20160806.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vqwbn48g34a7wasrsrr8k8sak10fnjxk-perl5.32.0-URI-Find-20160806.drv'...
+unpacking sources
+unpacking source archive /nix/store/z2dvf4vw617vbpl6z9nisw675zz9if5f-URI-Find-20160806.tar.gz
+source root is URI-Find-20160806
+setting SOURCE_DATE_EPOCH to timestamp 1470516166 of file URI-Find-20160806/t/urifind/sciencenews
+patching sources
+configuring
+patching ./t/is_schemed.t...
+patching ./t/Find.t...
+patching ./t/load-schemeless.t...
+patching ./t/rfc3986_appendix_c.t...
+patching ./t/html.t...
+patching ./t/urifind/find.t...
+patching ./t/urifind/pod.t...
+patching ./t/filter.t...
+patching ./Build.PL...
+patching ./bin/urifind...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'URI-Find' version '20160806'
+Building URI-Find
+running tests
+t/Find.t ................ ok
+t/filter.t .............. ok
+t/html.t ................ ok
+t/is_schemed.t .......... ok
+t/load-schemeless.t ..... ok
+t/rfc3986_appendix_c.t .. ok
+t/urifind/find.t ........ ok
+t/urifind/pod.t ......... skipped: Test::Pod v0.95 required for testing POD
+All tests successful.
+Files=8, Tests=618,  2 wallclock secs ( 0.10 usr  0.02 sys +  0.98 cusr  0.21 csys =  1.31 CPU)
+Result: PASS
+installing
+Building URI-Find
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man/man1/urifind.1
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/lib/perl5/site_perl/5.32.0/URI/Find.pm
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/lib/perl5/site_perl/5.32.0/URI/Find/Schemeless.pm
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man/man3/URI::Find::Schemeless.3
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man/man3/URI::Find.3
+Installing /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/bin/urifind
+post-installation fixup
+Moving /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man/man3 to /nix/store/3qisa25gfxxznlfxx0b5n79hi2ky8ngb-perl5.32.0-URI-Find-20160806-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806
+gzipping man pages under /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/lib  /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806/bin
+patching script interpreter paths in /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806
+checking for references to /build/ in /nix/store/6nkpvjmnm5cfc99svzd9sxjgyq4806p1-perl5.32.0-URI-Find-20160806...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3qisa25gfxxznlfxx0b5n79hi2ky8ngb-perl5.32.0-URI-Find-20160806-devdoc
+gzipping man pages under /nix/store/3qisa25gfxxznlfxx0b5n79hi2ky8ngb-perl5.32.0-URI-Find-20160806-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3qisa25gfxxznlfxx0b5n79hi2ky8ngb-perl5.32.0-URI-Find-20160806-devdoc
+checking for references to /build/ in /nix/store/3qisa25gfxxznlfxx0b5n79hi2ky8ngb-perl5.32.0-URI-Find-20160806-devdoc...
+building '/nix/store/x5g4dj76dsjvs30j2xv7bidbnzvdk7xl-perl5.32.0-Catalyst-Action-REST-1.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/v9gljj6fbqsh8j6iv824566w3glclgia-Catalyst-Action-REST-1.21.tar.gz
+source root is Catalyst-Action-REST-1.21
+setting SOURCE_DATE_EPOCH to timestamp 1512486327 of file Catalyst-Action-REST-1.21/xt/version-numbers.t
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Action::REST
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Action/Serialize/Callback.pm blib/lib/Catalyst/Action/Serialize/Callback.pm
+cp lib/Catalyst/Action/Deserialize/YAML.pm blib/lib/Catalyst/Action/Deserialize/YAML.pm
+cp lib/Catalyst/Action/Deserialize/JSON/XS.pm blib/lib/Catalyst/Action/Deserialize/JSON/XS.pm
+cp lib/Catalyst/Action/REST/ForBrowsers.pm blib/lib/Catalyst/Action/REST/ForBrowsers.pm
+cp lib/Catalyst/Controller/REST.pm blib/lib/Catalyst/Controller/REST.pm
+cp lib/Catalyst/Action/Serialize/YAML/HTML.pm blib/lib/Catalyst/Action/Serialize/YAML/HTML.pm
+cp lib/Catalyst/Action/SerializeBase.pm blib/lib/Catalyst/Action/SerializeBase.pm
+cp lib/Catalyst/Action/Serialize/JSON.pm blib/lib/Catalyst/Action/Serialize/JSON.pm
+cp lib/Catalyst/Action/Serialize.pm blib/lib/Catalyst/Action/Serialize.pm
+cp lib/Catalyst/Action/Serialize/XML/Simple.pm blib/lib/Catalyst/Action/Serialize/XML/Simple.pm
+cp lib/Catalyst/TraitFor/Request/REST.pm blib/lib/Catalyst/TraitFor/Request/REST.pm
+cp lib/Catalyst/Action/DeserializeMultiPart.pm blib/lib/Catalyst/Action/DeserializeMultiPart.pm
+cp lib/Catalyst/Action/Serialize/YAML.pm blib/lib/Catalyst/Action/Serialize/YAML.pm
+cp lib/Catalyst/Action/REST.pm blib/lib/Catalyst/Action/REST.pm
+cp lib/Catalyst/Request/REST/ForBrowsers.pm blib/lib/Catalyst/Request/REST/ForBrowsers.pm
+cp lib/Catalyst/Action/Deserialize/XML/Simple.pm blib/lib/Catalyst/Action/Deserialize/XML/Simple.pm
+cp lib/Catalyst/Action/Serialize/View.pm blib/lib/Catalyst/Action/Serialize/View.pm
+cp lib/Catalyst/Action/Deserialize.pm blib/lib/Catalyst/Action/Deserialize.pm
+cp lib/Catalyst/Action/Deserialize/JSON.pm blib/lib/Catalyst/Action/Deserialize/JSON.pm
+cp lib/Catalyst/TraitFor/Request/REST/ForBrowsers.pm blib/lib/Catalyst/TraitFor/Request/REST/ForBrowsers.pm
+cp lib/Catalyst/Action/Deserialize/View.pm blib/lib/Catalyst/Action/Deserialize/View.pm
+cp lib/Catalyst/Action/Deserialize/Callback.pm blib/lib/Catalyst/Action/Deserialize/Callback.pm
+cp lib/Catalyst/Action/Serialize/JSON/XS.pm blib/lib/Catalyst/Action/Serialize/JSON/XS.pm
+cp lib/Catalyst/Request/REST.pm blib/lib/Catalyst/Request/REST.pm
+cp lib/Catalyst/Action/Serialize/JSONP.pm blib/lib/Catalyst/Action/Serialize/JSONP.pm
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/author-pod-syntax.t ................................... skipped: these tests are for testing by the author
+t/callback.t ............................................ ok
+t/catalyst-action-deserialize-multipart.t ............... skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-action-deserialize.t ......................... skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-action-rest-action-dispatch-for-browsers.t ... ok
+t/catalyst-action-rest-action-dispatch.t ................ ok
+t/catalyst-action-rest.t ................................ ok
+t/catalyst-action-serialize-accept.t .................... skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-action-serialize-query.t ..................... skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-action-serialize.t ........................... skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-controller-rest.t ............................ skipped: Test requires module 'YAML::Syck' but it's not found
+t/catalyst-request-rest-custom-nonrest-request-class.t .. ok
+t/catalyst-request-rest-custom-rest-request-class.t ..... ok
+t/catalyst-traitfor-request-rest-forbrowsers.t .......... ok
+t/catalyst-traitfor-request-rest.t ...................... ok
+t/isa.t ................................................. ok
+t/json.t ................................................ ok
+t/jsonp.t ............................................... ok
+t/view.t ................................................ ok
+t/xml-simple.t .......................................... ok
+t/yaml-html.t ........................................... skipped: Test requires module 'YAML::Syck' but it's not found
+t/yaml.t ................................................ ok
+All tests successful.
+Files=22, Tests=218, 19 wallclock secs ( 0.23 usr  0.09 sys + 12.04 cusr  6.80 csys = 19.16 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/pkgconfig m4datadir=/nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/aclocal aclocaldir=/nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Request/REST.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Request/REST/ForBrowsers.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Controller/REST.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/SerializeBase.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/DeserializeMultiPart.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/REST.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/JSONP.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/JSON.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/Callback.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/View.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/YAML.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/XML/Simple.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/JSON/XS.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Serialize/YAML/HTML.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/JSON.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/Callback.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/View.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/YAML.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/XML/Simple.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/Deserialize/JSON/XS.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/Action/REST/ForBrowsers.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/TraitFor/Request/REST.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/site_perl/5.32.0/Catalyst/TraitFor/Request/REST/ForBrowsers.pm
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::TraitFor::Request::REST.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Request::REST::ForBrowsers.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Controller::REST.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::DeserializeMultiPart.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::Serialize.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::TraitFor::Request::REST::ForBrowsers.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::REST::ForBrowsers.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::Deserialize.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Request::REST.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::REST.3
+Installing /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3/Catalyst::Action::SerializeBase.3
+Appending installation info to /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/man3 to /nix/store/nn8l8m15ml47vpdgn3wx63lazmqgbdp8-perl5.32.0-Catalyst-Action-REST-1.21-devdoc/share/man/man3
+Removing empty /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21/lib
+patching script interpreter paths in /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21
+checking for references to /build/ in /nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/nn8l8m15ml47vpdgn3wx63lazmqgbdp8-perl5.32.0-Catalyst-Action-REST-1.21-devdoc
+gzipping man pages under /nix/store/nn8l8m15ml47vpdgn3wx63lazmqgbdp8-perl5.32.0-Catalyst-Action-REST-1.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/nn8l8m15ml47vpdgn3wx63lazmqgbdp8-perl5.32.0-Catalyst-Action-REST-1.21-devdoc
+checking for references to /build/ in /nix/store/nn8l8m15ml47vpdgn3wx63lazmqgbdp8-perl5.32.0-Catalyst-Action-REST-1.21-devdoc...
+/nix/store/lydhhwzkrqwv5i4bdzg1ygc1x9ffy9x2-perl5.32.0-Catalyst-Action-REST-1.21

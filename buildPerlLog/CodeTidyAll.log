@@ -1,0 +1,607 @@
+these derivations will be built:
+  /nix/store/6rwp2xsdmgdirjy8kiivr2ydww8v23y2-perl5.32.0-Test-Most-0.37.drv
+  /nix/store/bq0zfikbcir0kwidhr6shw686zxxvx3j-perl5.32.0-lib-relative-1.000.drv
+  /nix/store/j1nfdxbg2zb3d6maxa2745b0fkckj9qd-perl5.32.0-Specio-Library-Path-Tiny-0.04.drv
+  /nix/store/r17s17qjfmpl1kw2b7czm0c5myqybsg2-perl5.32.0-Test-Class-Most-0.08.drv
+  /nix/store/ighsc4vpd8dqyfbzin21548rh8wwqan6-perl5.32.0-Code-TidyAll-0.78.drv
+building '/nix/store/j1nfdxbg2zb3d6maxa2745b0fkckj9qd-perl5.32.0-Specio-Library-Path-Tiny-0.04.drv'...
+building '/nix/store/6rwp2xsdmgdirjy8kiivr2ydww8v23y2-perl5.32.0-Test-Most-0.37.drv'...
+building '/nix/store/bq0zfikbcir0kwidhr6shw686zxxvx3j-perl5.32.0-lib-relative-1.000.drv'...
+unpacking sources
+unpacking source archive /nix/store/npi0kzil7d08idln1y250wrq70a9mxxg-lib-relative-1.000.tar.gz
+source root is lib-relative-1.000
+setting SOURCE_DATE_EPOCH to timestamp 1552945552 of file lib-relative-1.000/xt/author/pod-syntax.t
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/fxy6rcg5pd9rc0x11yz5hfjps98998fy-Specio-Library-Path-Tiny-0.04.tar.gz
+patching ./xt/author/pod-syntax.t...
+source root is Specio-Library-Path-Tiny-0.04
+unpacking sources
+unpacking source archive /nix/store/a1xbh34ihxnxlzwjly81y8sn4mg5v2ys-Test-Most-0.37.tar.gz
+patching ./t/00-report-prereqs.t...
+setting SOURCE_DATE_EPOCH to timestamp 1476567215 of file Specio-Library-Path-Tiny-0.04/xt/release/meta-json.t
+source root is Test-Most-0.37
+patching sources
+configuring
+setting SOURCE_DATE_EPOCH to timestamp 1586022418 of file Test-Most-0.37/META.yml
+patching sources
+configuring
+patching ./xt/author/pod.t...
+patching ./xt/release/meta-json.t...
+patching ./t/function_die.t...
+patching ./xt/author/pod-coverage.t...
+patching ./t/exception.t...
+patching ./t/function_bail.t...
+patching ./xt/author/mojibake.t...
+patching ./t/explain.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/common.t...
+patching ./t/import_bail.t...
+patching ./t/import_die.t...
+patching ./t/exclude_test_symbols.t...
+patching ./t/env_die.t...
+patching ./t/exclude_test_modules.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/00-load.t...
+patching ./t/env_bail.t...
+patching ./t/defer_plan.t...
+patching ./t/timex.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for lib::relative
+Checking if your kit is complete...
+Checking if your kit is complete...
+Looks good
+Looks good
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for Specio::Library::Path::Tiny
+Generating a Unix-style Makefile
+Writing Makefile for Test::Most
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/lib/relative.pm blib/lib/lib/relative.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp lib/Test/Most/Exception.pm blib/lib/Test/Most/Exception.pm
+cp lib/Test/Most.pm blib/lib/Test/Most.pm
+cp lib/Specio/Library/Path/Tiny.pm blib/lib/Specio/Library/Path/Tiny.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+Manifying 1 pod document
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp          0.19   0.2309
+#     Test::More          0.88 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module         Want Have
+#     -------------- ---- ----
+#     Cwd             any 3.78
+#     File::Basename  any 2.85
+#     File::Spec      any 3.78
+#     lib             any 0.65
+#
+t/00-report-prereqs.t .. ok
+t/lib_relative.t ....... ok
+All tests successful.
+Files=2, Tests=11,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.24 cusr  0.02 csys =  0.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/lib/pkgconfig m4datadir=/nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/share/aclocal aclocaldir=/nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/lib/perl5/site_perl/5.32.0/lib/relative.pm
+Installing /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/share/man/man3/lib::relative.3
+Appending installation info to /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+t/00-load.t ..................... 1/9 # Testing Test::Most 0.37, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+#     Exception::Class version is 1.44
+#     Test::Deep version is 1.130
+#     Test::Differences version is 0.67
+#     Test::Exception version is 0.43
+post-installation fixup
+Moving /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/share/man/man3 to /nix/store/bwwa5xb2nsipqfbxl51my99jsxsj3fdq-perl5.32.0-lib-relative-1.000-devdoc/share/man/man3
+Removing empty /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000/lib
+patching script interpreter paths in /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000
+checking for references to /build/ in /nix/store/fglx8iz73xanlvvp7z34695zb63d7k50-perl5.32.0-lib-relative-1.000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bwwa5xb2nsipqfbxl51my99jsxsj3fdq-perl5.32.0-lib-relative-1.000-devdoc
+gzipping man pages under /nix/store/bwwa5xb2nsipqfbxl51my99jsxsj3fdq-perl5.32.0-lib-relative-1.000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bwwa5xb2nsipqfbxl51my99jsxsj3fdq-perl5.32.0-lib-relative-1.000-devdoc
+checking for references to /build/ in /nix/store/bwwa5xb2nsipqfbxl51my99jsxsj3fdq-perl5.32.0-lib-relative-1.000-devdoc...
+#     Test::Harness version is 3.42
+#     Test::More version is 1.302175
+#     Test::Warn version is 0.36
+t/00-load.t ..................... ok
+t/bug_duplicate_plan.t .......... ok
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp          0.18   0.2309
+#     File::pushd          any    1.016
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     Test::Specio         any     0.46
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                     Want  Have
+#     ------------------------- ----- -----
+#     Path::Tiny                0.087 0.114
+#     Scalar::Util                any  1.55
+#     Specio                     0.29  0.46
+#     Specio::Declare             any  0.46
+#     Specio::Exporter            any  0.46
+#     Specio::Library::Builtins   any  0.46
+#     Specio::PartialDump         any  0.46
+#     overload                    any  1.31
+#     parent                      any 0.238
+#     strict                      any  1.11
+#     warnings                    any  1.47
+#
+t/00-report-prereqs.t .. ok
+t/common.t ...................... ok
+t/defer_plan.t .................. ok
+t/env_bail.t .................... ok
+t/env_die.t ..................... ok
+t/exception.t ................... ok
+t/exclude_test_modules.t ........ ok
+t/exclude_test_symbols.t ........ ok
+t/explain.t ..................... 1/8 Data::Dumper::Names 0.03 not found.  Use explain() instead of show() at t/explain.t line 34.
+Data::Dumper::Names 0.03 not found.  Use explain() instead of show() at t/explain.t line 69.
+t/explain.t ..................... ok
+t/function_bail.t ............... ok
+t/function_die.t ................ ok
+t/import_bail.t ................. ok
+t/basic.t .............. ok
+All tests successful.
+Files=2, Tests=48,  1 wallclock secs ( 0.21 usr  0.03 sys +  1.35 cusr  0.17 csys =  1.76 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/lib/pkgconfig m4datadir=/nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/share/aclocal aclocaldir=/nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/share/aclocal install
+t/import_die.t .................. ok
+Manifying 1 pod document
+Installing /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/lib/perl5/site_perl/5.32.0/Specio/Library/Path/Tiny.pm
+Installing /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/share/man/man3/Specio::Library::Path::Tiny.3
+Appending installation info to /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+t/import_strict_and_warnings.t .. ok
+post-installation fixup
+Moving /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/share/man/man3 to /nix/store/aiz1hs85146ifhlqh4yszksx44bxcs9m-perl5.32.0-Specio-Library-Path-Tiny-0.04-devdoc/share/man/man3
+Removing empty /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04/lib
+patching script interpreter paths in /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04
+checking for references to /build/ in /nix/store/m7lslym4pjkd0vg6d3pwnkb7z4zr3ffk-perl5.32.0-Specio-Library-Path-Tiny-0.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/aiz1hs85146ifhlqh4yszksx44bxcs9m-perl5.32.0-Specio-Library-Path-Tiny-0.04-devdoc
+gzipping man pages under /nix/store/aiz1hs85146ifhlqh4yszksx44bxcs9m-perl5.32.0-Specio-Library-Path-Tiny-0.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/aiz1hs85146ifhlqh4yszksx44bxcs9m-perl5.32.0-Specio-Library-Path-Tiny-0.04-devdoc
+checking for references to /build/ in /nix/store/aiz1hs85146ifhlqh4yszksx44bxcs9m-perl5.32.0-Specio-Library-Path-Tiny-0.04-devdoc...
+t/timex.t ....................... ok
+All tests successful.
+Files=16, Tests=88,  2 wallclock secs ( 0.08 usr  0.02 sys +  1.42 cusr  0.36 csys =  1.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/lib/pkgconfig m4datadir=/nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/aclocal aclocaldir=/nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/lib/perl5/site_perl/5.32.0/Test/Most.pm
+Installing /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/lib/perl5/site_perl/5.32.0/Test/Most/Exception.pm
+Installing /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/man/man3/Test::Most.3
+Installing /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/man/man3/Test::Most::Exception.3
+Appending installation info to /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/man/man3 to /nix/store/6kib36804vkcybldvl0f66m39qqd9ri5-perl5.32.0-Test-Most-0.37-devdoc/share/man/man3
+Removing empty /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37/lib
+patching script interpreter paths in /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37
+checking for references to /build/ in /nix/store/387f7q38rwlm715v1zr7jn22yg2ll86g-perl5.32.0-Test-Most-0.37...
+shrinking RPATHs of ELF executables and libraries in /nix/store/6kib36804vkcybldvl0f66m39qqd9ri5-perl5.32.0-Test-Most-0.37-devdoc
+gzipping man pages under /nix/store/6kib36804vkcybldvl0f66m39qqd9ri5-perl5.32.0-Test-Most-0.37-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/6kib36804vkcybldvl0f66m39qqd9ri5-perl5.32.0-Test-Most-0.37-devdoc
+checking for references to /build/ in /nix/store/6kib36804vkcybldvl0f66m39qqd9ri5-perl5.32.0-Test-Most-0.37-devdoc...
+building '/nix/store/r17s17qjfmpl1kw2b7czm0c5myqybsg2-perl5.32.0-Test-Class-Most-0.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/8az59kiqi1n8cdi46ww2m5sz89yk8hc3-Test-Class-Most-0.08.tar.gz
+source root is Test-Class-Most-0.08
+setting SOURCE_DATE_EPOCH to timestamp 1353578897 of file Test-Class-Most-0.08/xt/pod.t
+patching sources
+configuring
+patching ./xt/pod.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Class::Most
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Test-Class-Most' version '0.08'
+Building Test-Class-Most
+running tests
+t/test_class_load.t .. 1/? # Testing Test::Class::Most 0.08, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+# Testing Test::Class       0.50
+t/test_class_load.t .. ok
+All tests successful.
+Files=1, Tests=18,  1 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.03 csys =  0.15 CPU)
+Result: PASS
+installing
+Building Test-Class-Most
+Installing /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08/lib/perl5/site_perl/5.32.0/Test/Class/Most.pm
+Installing /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08/share/man/man3/Test::Class::Most.3
+post-installation fixup
+Moving /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08/share/man/man3 to /nix/store/9g2wy2s02gdr2azd335s9fccns15r0yy-perl5.32.0-Test-Class-Most-0.08-devdoc/share/man/man3
+Removing empty /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08/lib
+patching script interpreter paths in /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08
+checking for references to /build/ in /nix/store/wlnrnmmlrkc3knrly5arwdxgzw3dg660-perl5.32.0-Test-Class-Most-0.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9g2wy2s02gdr2azd335s9fccns15r0yy-perl5.32.0-Test-Class-Most-0.08-devdoc
+gzipping man pages under /nix/store/9g2wy2s02gdr2azd335s9fccns15r0yy-perl5.32.0-Test-Class-Most-0.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9g2wy2s02gdr2azd335s9fccns15r0yy-perl5.32.0-Test-Class-Most-0.08-devdoc
+checking for references to /build/ in /nix/store/9g2wy2s02gdr2azd335s9fccns15r0yy-perl5.32.0-Test-Class-Most-0.08-devdoc...
+building '/nix/store/ighsc4vpd8dqyfbzin21548rh8wwqan6-perl5.32.0-Code-TidyAll-0.78.drv'...
+unpacking sources
+unpacking source archive /nix/store/rnmy2fv6nsv5m9gd96pm543yybvkb67f-Code-TidyAll-0.78.tar.gz
+source root is Code-TidyAll-0.78
+setting SOURCE_DATE_EPOCH to timestamp 1587839061 of file Code-TidyAll-0.78/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/Plugin-PerlTidy.t...
+patching ./xt/author/Plugin-PHPCodeSniffer.t...
+patching ./xt/author/Plugin-PerlCritic.t...
+patching ./xt/author/Plugin-PodChecker.t...
+patching ./xt/author/Plugin-PodTidy.t...
+patching ./xt/author/Plugin-PodSpell.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/Plugin-PerlTidySweet.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/Plugin-CSSUnminifier.t...
+patching ./xt/author/Plugin-MasonTidy.t...
+patching ./xt/author/Plugin-JSLint.t...
+patching ./xt/author/Plugin-JSHint.t...
+patching ./xt/author/diff-on-tidy-error.t...
+patching ./xt/author/Plugin-JSBeautify.t...
+patching ./xt/author/Util.t...
+patching ./xt/author/spaces-in-paths.t...
+patching ./xt/author/parallel.t...
+patching ./xt/author/Git.t...
+patching ./xt/author/tidy-and-critic.t...
+patching ./t/00-report-prereqs.t...
+patching ./t/Zglob.t...
+patching ./t/Plugin-GenericValidator.t...
+patching ./t/Plugin-SortLines.t...
+patching ./t/Conf.t...
+patching ./t/Plugin-GenericTransformer.t...
+patching ./t/Basic.t...
+patching ./php/PHP_CodeSniffer/scripts/validate-pear-package.php...
+patching ./php/PHP_CodeSniffer/scripts/build-phar.php...
+patching ./php/PHP_CodeSniffer/src/Standards/Generic/Tests/PHP/CharacterBeforePHPOpeningTagUnitTest.2.inc...
+patching ./php/PHP_CodeSniffer/src/Standards/Generic/Tests/Files/InlineHTMLUnitTest.5.inc...
+patching ./php/PHP_CodeSniffer/src/Standards/PSR1/Tests/Files/SideEffectsUnitTest.7.inc...
+patching ./php/PHP_CodeSniffer/bin/phpcbf...
+patching ./php/PHP_CodeSniffer/bin/phpcs...
+patching ./bin/tidyall...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Code::TidyAll
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Code/TidyAll/Plugin/GenericTransformer.pm blib/lib/Code/TidyAll/Plugin/GenericTransformer.pm
+cp lib/Code/TidyAll/Git/Util.pm blib/lib/Code/TidyAll/Git/Util.pm
+cp lib/Code/TidyAll/Plugin/PerlTidy.pm blib/lib/Code/TidyAll/Plugin/PerlTidy.pm
+cp lib/Code/TidyAll/Plugin/PodChecker.pm blib/lib/Code/TidyAll/Plugin/PodChecker.pm
+cp lib/Code/TidyAll/Plugin/CSSUnminifier.pm blib/lib/Code/TidyAll/Plugin/CSSUnminifier.pm
+cp lib/Code/TidyAll/SVN/Util.pm blib/lib/Code/TidyAll/SVN/Util.pm
+cp lib/Code/TidyAll/Util.pm blib/lib/Code/TidyAll/Util.pm
+cp lib/Code/TidyAll.pm blib/lib/Code/TidyAll.pm
+cp lib/Code/TidyAll/CacheModel/Shared.pm blib/lib/Code/TidyAll/CacheModel/Shared.pm
+cp lib/Code/TidyAll/Role/HasIgnore.pm blib/lib/Code/TidyAll/Role/HasIgnore.pm
+cp lib/Code/TidyAll/Plugin/PHPCodeSniffer.pm blib/lib/Code/TidyAll/Plugin/PHPCodeSniffer.pm
+cp lib/Code/TidyAll/Plugin/PerlCritic.pm blib/lib/Code/TidyAll/Plugin/PerlCritic.pm
+cp lib/Code/TidyAll/Plugin/PodTidy.pm blib/lib/Code/TidyAll/Plugin/PodTidy.pm
+cp lib/Code/TidyAll/Plugin/JSBeautify.pm blib/lib/Code/TidyAll/Plugin/JSBeautify.pm
+cp lib/Code/TidyAll/Role/GenericExecutable.pm blib/lib/Code/TidyAll/Role/GenericExecutable.pm
+cp lib/Code/TidyAll/Cache.pm blib/lib/Code/TidyAll/Cache.pm
+cp lib/Code/TidyAll/Role/Tempdir.pm blib/lib/Code/TidyAll/Role/Tempdir.pm
+cp lib/Code/TidyAll/Role/RunsCommand.pm blib/lib/Code/TidyAll/Role/RunsCommand.pm
+cp lib/Code/TidyAll/Plugin/JSON.pm blib/lib/Code/TidyAll/Plugin/JSON.pm
+cp lib/Code/TidyAll/SVN/Precommit.pm blib/lib/Code/TidyAll/SVN/Precommit.pm
+cp lib/Code/TidyAll/Plugin/MasonTidy.pm blib/lib/Code/TidyAll/Plugin/MasonTidy.pm
+cp lib/Code/TidyAll/Git/Prereceive.pm blib/lib/Code/TidyAll/Git/Prereceive.pm
+cp lib/Code/TidyAll/Plugin/GenericValidator.pm blib/lib/Code/TidyAll/Plugin/GenericValidator.pm
+cp lib/Code/TidyAll/Plugin.pm blib/lib/Code/TidyAll/Plugin.pm
+cp lib/Code/TidyAll/Plugin/JSLint.pm blib/lib/Code/TidyAll/Plugin/JSLint.pm
+cp lib/Code/TidyAll/Git/Precommit.pm blib/lib/Code/TidyAll/Git/Precommit.pm
+cp lib/Code/TidyAll/Result.pm blib/lib/Code/TidyAll/Result.pm
+cp lib/Code/TidyAll/Config/INI/Reader.pm blib/lib/Code/TidyAll/Config/INI/Reader.pm
+cp lib/Code/TidyAll/Plugin/JSHint.pm blib/lib/Code/TidyAll/Plugin/JSHint.pm
+cp lib/Code/TidyAll/CacheModel.pm blib/lib/Code/TidyAll/CacheModel.pm
+cp lib/Code/TidyAll/Plugin/PodSpell.pm blib/lib/Code/TidyAll/Plugin/PodSpell.pm
+cp lib/Code/TidyAll/Plugin/PerlTidySweet.pm blib/lib/Code/TidyAll/Plugin/PerlTidySweet.pm
+cp lib/Code/TidyAll/Plugin/SortLines.pm blib/lib/Code/TidyAll/Plugin/SortLines.pm
+cp lib/Test/Code/TidyAll.pm blib/lib/Test/Code/TidyAll.pm
+cp lib/Code/TidyAll/Util/Zglob.pm blib/lib/Code/TidyAll/Util/Zglob.pm
+cp lib/Code/TidyAll/Zglob.pm blib/lib/Code/TidyAll/Zglob.pm
+cp bin/tidyall blib/script/tidyall
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/tidyall
+Manifying 1 pod document
+Manifying 28 pod documents
+Manifying 8 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .......... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Encode               any     3.06
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::Class::Most    any     0.08
+#     Test::Differences    any     0.67
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     Test::Warnings       any    0.030
+#     autodie              any     2.32
+#     lib                  any     0.65
+#     lib::relative        any    1.000
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                          Want     Have
+#     --------------------------- -------- --------
+#     Capture::Tiny                    any     0.48
+#     Config::INI::Reader              any    0.025
+#     Cwd                              any     3.78
+#     Data::Dumper                     any    2.174
+#     Date::Format                     any     2.24
+#     Digest::SHA                      any     6.02
+#     Exporter                         any     5.74
+#     File::Basename                   any     2.85
+#     File::Find                       any     1.37
+#     File::Spec                       any     3.78
+#     File::Which                      any     1.23
+#     File::pushd                      any    1.016
+#     Getopt::Long                     any     2.51
+#     IPC::Run3                        any    0.048
+#     IPC::System::Simple              any     1.30
+#     List::Compare                    any     0.53
+#     List::SomeUtils                  any     0.58
+#     Log::Any                         any    1.708
+#     Module::Runtime                  any    0.016
+#     Moo                         2.000000 2.004000
+#     Moo::Role                        any 2.004000
+#     Path::Tiny                     0.098    0.114
+#     Scalar::Util                     any     1.55
+#     Scope::Guard                     any     0.21
+#     Specio                          0.40     0.46
+#     Specio::Declare                  any     0.46
+#     Specio::Library::Builtins        any     0.46
+#     Specio::Library::Numeric         any     0.46
+#     Specio::Library::Path::Tiny     0.04     0.04
+#     Specio::Library::String          any     0.46
+#     Test::Builder                    any 1.302175
+#     Text::Diff                      1.44     1.45
+#     Text::Diff::Table                any     1.44
+#     Text::ParseWords                 any     3.30
+#     Time::Duration::Parse            any     0.15
+#     Try::Tiny                        any     0.30
+#     base                             any     2.27
+#     constant                         any     1.33
+#     strict                           any     1.11
+#     warnings                         any     1.47
+#
+# === Runtime Recommends ===
+#
+#     Module                Want    Have
+#     --------------------- ---- -------
+#     Parallel::ForkManager  any missing
+#
+t/00-report-prereqs.t .......... ok
+t/Basic.t ...................... 81/? could not find tidyall.ini or .tidyallrc upwards from '/build/Code-TidyAll-yRUh/global_ignore' at /build/Code-TidyAll-0.78/lib/Code/TidyAll.pm line 736.
+t/Basic.t ...................... 105/? could not find tidyall.ini or .tidyallrc upwards from '/build/Code-TidyAll-yRUh/plugin_ignore' at /build/Code-TidyAll-0.78/lib/Code/TidyAll.pm line 736.
+t/Basic.t ...................... ok
+t/Conf.t ....................... ok
+t/Plugin-GenericTransformer.t .. ok
+t/Plugin-GenericValidator.t .... ok
+t/Plugin-SortLines.t ........... ok
+t/Zglob.t ...................... ok
+All tests successful.
+Files=7, Tests=180, 11 wallclock secs ( 0.09 usr  0.05 sys +  6.55 cusr  3.74 csys = 10.43 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/pkgconfig m4datadir=/nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/aclocal aclocaldir=/nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/aclocal install
+Manifying 1 pod document
+Manifying 28 pod documents
+Manifying 8 pod documents
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Test/Code/TidyAll.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Util.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Zglob.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/CacheModel.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Cache.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Result.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Git/Util.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Git/Prereceive.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Git/Precommit.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/JSHint.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PerlTidySweet.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/GenericValidator.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PodSpell.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/MasonTidy.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/JSBeautify.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PerlCritic.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PHPCodeSniffer.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/JSON.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PodChecker.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/SortLines.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/GenericTransformer.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/CSSUnminifier.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PodTidy.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/PerlTidy.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Plugin/JSLint.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/CacheModel/Shared.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Role/RunsCommand.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Role/HasIgnore.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Role/GenericExecutable.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Role/Tempdir.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Config/INI/Reader.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/Util/Zglob.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/SVN/Util.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/site_perl/5.32.0/Code/TidyAll/SVN/Precommit.pm
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man1/tidyall.1
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Git::Precommit.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PerlCritic.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::CSSUnminifier.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Git::Prereceive.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::JSLint.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::GenericTransformer.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PodChecker.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Role::GenericExecutable.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PerlTidy.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::JSON.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::JSBeautify.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PodTidy.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::CacheModel.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::JSHint.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Util.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Config::INI::Reader.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PHPCodeSniffer.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::SVN::Precommit.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::CacheModel::Shared.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Test::Code::TidyAll.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Role::Tempdir.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::MasonTidy.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Util::Zglob.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PerlTidySweet.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Cache.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Role::HasIgnore.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Result.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Role::RunsCommand.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Zglob.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::PodSpell.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::SortLines.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::SVN::Util.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Git::Util.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3/Code::TidyAll::Plugin::GenericValidator.3
+Installing /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/bin/tidyall
+Appending installation info to /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/man3 to /nix/store/xmxnbly50fz2a0wh2bs86h7gw1zvfj0d-perl5.32.0-Code-TidyAll-0.78-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78
+gzipping man pages under /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/lib  /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78/bin
+patching script interpreter paths in /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78
+checking for references to /build/ in /nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xmxnbly50fz2a0wh2bs86h7gw1zvfj0d-perl5.32.0-Code-TidyAll-0.78-devdoc
+gzipping man pages under /nix/store/xmxnbly50fz2a0wh2bs86h7gw1zvfj0d-perl5.32.0-Code-TidyAll-0.78-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xmxnbly50fz2a0wh2bs86h7gw1zvfj0d-perl5.32.0-Code-TidyAll-0.78-devdoc
+checking for references to /build/ in /nix/store/xmxnbly50fz2a0wh2bs86h7gw1zvfj0d-perl5.32.0-Code-TidyAll-0.78-devdoc...
+/nix/store/0z2mr3i4lgmkrxqv1nksi2dg89n0f0h7-perl5.32.0-Code-TidyAll-0.78

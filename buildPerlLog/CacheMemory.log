@@ -1,0 +1,320 @@
+these derivations will be built:
+  /nix/store/j3j4yqi640m8dqqwp5zhjg6f21358z5r-perl5.32.0-File-NFSLock-1.29.drv
+  /nix/store/n1x5akj7zm7g9aizlwcs6774zvzhikxy-perl5.32.0-Heap-0.80.drv
+  /nix/store/p3zzdng9pk86246b0gkva8dbdi3g3v50-perl5.32.0-DB_File-1.853.drv
+  /nix/store/wkfibg916nhh0nik1r6n5pmnifm22g4f-perl5.32.0-Cache-2.11.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/aycrby1d9dcrq9lq3qp02j11dmcpsx94-Cache-2.11.tar.gz
+  /nix/store/i7ca7xr7b36qs9l4bprmj2wfdd4qqc41-File-NFSLock-1.29.tar.gz
+  /nix/store/xrynrra1hsb5r40zly26na2syixm77di-Heap-0.80.tar.gz
+copying path '/nix/store/aycrby1d9dcrq9lq3qp02j11dmcpsx94-Cache-2.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/i7ca7xr7b36qs9l4bprmj2wfdd4qqc41-File-NFSLock-1.29.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/xrynrra1hsb5r40zly26na2syixm77di-Heap-0.80.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p3zzdng9pk86246b0gkva8dbdi3g3v50-perl5.32.0-DB_File-1.853.drv'...
+unpacking sources
+unpacking source archive /nix/store/sbzp0ldy9ajh4fmmddkv8a967b09wlh0-DB_File-1.853.tar.gz
+source root is DB_File-1.853
+setting SOURCE_DATE_EPOCH to timestamp 1578257634 of file DB_File-1.853/META.yml
+patching sources
+configuring
+patching ./dbinfo...
+patching ./t/db-btree.t...
+patching ./t/db-threads.t...
+patching ./t/db-recno.t...
+patching ./t/db-hash.t...
+patching ./Makefile.PL...
+building '/nix/store/j3j4yqi640m8dqqwp5zhjg6f21358z5r-perl5.32.0-File-NFSLock-1.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/i7ca7xr7b36qs9l4bprmj2wfdd4qqc41-File-NFSLock-1.29.tar.gz
+Parsing config.in...
+Looks Good.
+source root is File-NFSLock-1.29
+setting SOURCE_DATE_EPOCH to timestamp 1541102280 of file File-NFSLock-1.29/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+patching ./examples/lock_test...
+Looks good
+building '/nix/store/n1x5akj7zm7g9aizlwcs6774zvzhikxy-perl5.32.0-Heap-0.80.drv'...
+patching ./t/430_taint.t...
+patching ./t/130_taint.t...
+Generating a Unix-style Makefile
+Writing Makefile for DB_File
+Writing MYMETA.yml and MYMETA.json
+unpacking sources
+no configure script, doing nothing
+building
+unpacking source archive /nix/store/xrynrra1hsb5r40zly26na2syixm77di-Heap-0.80.tar.gz
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+source root is Heap-0.80
+setting SOURCE_DATE_EPOCH to timestamp 1177783890 of file Heap-0.80/META.yml
+patching sources
+configuring
+patching ./t/strrev.t...
+patching ./t/num.t...
+patching ./t/str.t...
+patching ./t/binomial.t...
+patching ./t/test_leaks2.t...
+patching ./t/fibonacci.t...
+patching ./t/elem.t...
+patching ./t/numrev.t...
+patching ./t/ref.t...
+patching ./t/binary.t...
+patching ./t/refrev.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::NFSLock
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+cp DB_File.pm blib/lib/DB_File.pm
+Generating a Unix-style Makefile
+Writing Makefile for Heap
+Writing MYMETA.yml and MYMETA.json
+Running Mkbootstrap for DB_File ()
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+chmod 644 "DB_File.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- DB_File.bs blib/arch/auto/DB_File/DB_File.bs 644
+cc -c  -I/nix/store/79z0z2nswfjwi768wffyi4rrhl068clc-db-5.3.28-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.853\" -DXS_VERSION=\"1.853\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -D_NOT_CORE  -DmDB_Prefix_t=size_t -DmDB_Hash_t=u_int32_t   version.c
+cp lib/File/NFSLock.pm blib/lib/File/NFSLock.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" File-NFSLock.spec.PL File-NFSLock.spec
+Manifying 1 pod document
+cp lib/Heap.pm blib/lib/Heap.pm
+cp lib/Heap/Elem/StrRev.pm blib/lib/Heap/Elem/StrRev.pm
+cp lib/Heap/Elem/Num.pm blib/lib/Heap/Elem/Num.pm
+cp lib/Heap/Binary.pm blib/lib/Heap/Binary.pm
+cp lib/Heap/Binomial.pm blib/lib/Heap/Binomial.pm
+cp lib/Heap/Elem/Ref.pm blib/lib/Heap/Elem/Ref.pm
+cp lib/Heap/Elem/NumRev.pm blib/lib/Heap/Elem/NumRev.pm
+cp lib/Heap/Elem/Str.pm blib/lib/Heap/Elem/Str.pm
+cp lib/Heap/Elem.pm blib/lib/Heap/Elem.pm
+cp lib/Heap/Elem/RefRev.pm blib/lib/Heap/Elem/RefRev.pm
+cp lib/Heap/Fibonacci.pm blib/lib/Heap/Fibonacci.pm
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 11 pod documents
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/DB_File-1.853/typemap'  DB_File.xs > DB_File.xsc
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/100_load.t ...... ok
+mv DB_File.xsc DB_File.c
+cc -c  -I/nix/store/79z0z2nswfjwi768wffyi4rrhl068clc-db-5.3.28-dev/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.853\" -DXS_VERSION=\"1.853\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -D_NOT_CORE  -DmDB_Prefix_t=size_t -DmDB_Hash_t=u_int32_t   DB_File.c
+t/110_compare.t ... ok
+t/binary.t ....... ok
+t/120_single.t .... ok
+t/binomial.t ..... ok
+t/elem.t ......... ok
+t/130_taint.t ..... ok
+t/fibonacci.t .... ok
+t/num.t .......... ok
+t/numrev.t ....... ok
+t/ref.t .......... ok
+t/refrev.t ....... ok
+t/str.t .......... ok
+t/strrev.t ....... ok
+t/test.t ......... ok
+rm -f blib/arch/auto/DB_File/DB_File.so
+LD_RUN_PATH="/nix/store/8gwy47q4rznnmgh95jmpqc94kbh9vqc6-db-5.3.28/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  version.o DB_File.o  -o blib/arch/auto/DB_File/DB_File.so  \
+   -L/nix/store/8gwy47q4rznnmgh95jmpqc94kbh9vqc6-db-5.3.28/lib -ldb   \
+
+chmod 755 blib/arch/auto/DB_File/DB_File.so
+Manifying 1 pod document
+t/test_leaks.t ... ok
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- DB_File.bs blib/arch/auto/DB_File/DB_File.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000prereq.t ... 1/1 #
+#
+# DB_File version            1.853
+# DB_File::db_version        5.3
+# DB_File::db_ver            5.003028
+#
+t/000prereq.t ... ok
+t/db-btree.t .... ok
+t/db-hash.t ..... ok
+t/db-recno.t .... ok
+t/db-threads.t .. ok
+t/meta-json.t ... skipped: Test::CPAN::Meta::JSON required for testing META.json
+t/meta-yaml.t ... skipped: Test::CPAN::Meta required for testing META.yml
+t/pod.t ......... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=8, Tests=575,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.76 cusr  0.14 csys =  0.96 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib/pkgconfig m4datadir=/nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/share/aclocal aclocaldir=/nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- DB_File.bs blib/arch/auto/DB_File/DB_File.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DB_File/DB_File.so
+Installing /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DB_File.pm
+Installing /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/share/man/man3/DB_File.3
+Appending installation info to /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/share/man/man3 to /nix/store/5ff04fvydgb7kb5k3zy7hn0623mlrg91-perl5.32.0-DB_File-1.853-devdoc/share/man/man3
+Removing empty /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853
+shrinking /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DB_File/DB_File.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853/lib
+patching script interpreter paths in /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853
+checking for references to /build/ in /nix/store/w2bnhwb4zbg4rlv62h030wdfn3jj9r5k-perl5.32.0-DB_File-1.853...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5ff04fvydgb7kb5k3zy7hn0623mlrg91-perl5.32.0-DB_File-1.853-devdoc
+gzipping man pages under /nix/store/5ff04fvydgb7kb5k3zy7hn0623mlrg91-perl5.32.0-DB_File-1.853-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5ff04fvydgb7kb5k3zy7hn0623mlrg91-perl5.32.0-DB_File-1.853-devdoc
+checking for references to /build/ in /nix/store/5ff04fvydgb7kb5k3zy7hn0623mlrg91-perl5.32.0-DB_File-1.853-devdoc...
+t/test_leaks2.t .. ok
+All tests successful.
+Files=13, Tests=2473,  4 wallclock secs ( 0.15 usr  0.01 sys +  3.63 cusr  0.15 csys =  3.94 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/pkgconfig m4datadir=/nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/aclocal aclocaldir=/nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Binary.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Binomial.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Fibonacci.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/Ref.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/Num.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/NumRev.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/StrRev.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/RefRev.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/site_perl/5.32.0/Heap/Elem/Str.pm
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Binomial.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::Ref.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::Num.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Binary.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::NumRev.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::RefRev.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::Str.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Elem::StrRev.3
+Installing /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3/Heap::Fibonacci.3
+Appending installation info to /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/man3 to /nix/store/y2rw16q32qcnrc2r4h0v5jlz7085g1hm-perl5.32.0-Heap-0.80-devdoc/share/man/man3
+Removing empty /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80/lib
+patching script interpreter paths in /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80
+checking for references to /build/ in /nix/store/sjb6aa8iw0s30zmwzbxm15mqg2nxgjcs-perl5.32.0-Heap-0.80...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y2rw16q32qcnrc2r4h0v5jlz7085g1hm-perl5.32.0-Heap-0.80-devdoc
+gzipping man pages under /nix/store/y2rw16q32qcnrc2r4h0v5jlz7085g1hm-perl5.32.0-Heap-0.80-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y2rw16q32qcnrc2r4h0v5jlz7085g1hm-perl5.32.0-Heap-0.80-devdoc
+checking for references to /build/ in /nix/store/y2rw16q32qcnrc2r4h0v5jlz7085g1hm-perl5.32.0-Heap-0.80-devdoc...
+t/200_bl_ex.t ..... ok
+t/210_nb_ex.t ..... ok
+t/220_ex_scope.t .. ok
+t/230_double.t .... ok
+t/240_fork_ex.t ... ok
+t/241_fork_ex.t ... ok
+t/242_fork_ex.t ... ok
+t/243_fork_ex.t ... ok
+t/250_fork_sh.t ... ok
+t/251_fork_sh.t ... ok
+t/252_fork_sh.t ... ok
+t/253_fork_sh.t ... ok
+t/300_bl_sh.t ..... ok
+t/400_kill.t ...... ok
+t/410_die.t ....... ok
+t/420_crash.t ..... ok
+t/430_taint.t ..... ok
+All tests successful.
+Files=21, Tests=214, 84 wallclock secs ( 0.08 usr  0.02 sys +  1.60 cusr  0.40 csys =  2.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/lib/pkgconfig m4datadir=/nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/share/aclocal aclocaldir=/nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/lib/perl5/site_perl/5.32.0/File/NFSLock.pm
+Installing /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/share/man/man3/File::NFSLock.3
+Appending installation info to /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/share/man/man3 to /nix/store/l4qzfl50yxzqdrx5cd3jnp2ys1plr2ws-perl5.32.0-File-NFSLock-1.29-devdoc/share/man/man3
+Removing empty /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29/lib
+patching script interpreter paths in /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29
+checking for references to /build/ in /nix/store/k315r2zjpr9j88lbdhnilgqnliic0fzb-perl5.32.0-File-NFSLock-1.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l4qzfl50yxzqdrx5cd3jnp2ys1plr2ws-perl5.32.0-File-NFSLock-1.29-devdoc
+gzipping man pages under /nix/store/l4qzfl50yxzqdrx5cd3jnp2ys1plr2ws-perl5.32.0-File-NFSLock-1.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l4qzfl50yxzqdrx5cd3jnp2ys1plr2ws-perl5.32.0-File-NFSLock-1.29-devdoc
+checking for references to /build/ in /nix/store/l4qzfl50yxzqdrx5cd3jnp2ys1plr2ws-perl5.32.0-File-NFSLock-1.29-devdoc...
+building '/nix/store/wkfibg916nhh0nik1r6n5pmnifm22g4f-perl5.32.0-Cache-2.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/aycrby1d9dcrq9lq3qp02j11dmcpsx94-Cache-2.11.tar.gz
+source root is Cache-2.11
+setting SOURCE_DATE_EPOCH to timestamp 1424783020 of file Cache-2.11/t/style-trailing-space.t
+patching sources
+configuring
+patching ./scripts/bump-version-number.pl...
+patching ./t/pod.t...
+patching ./t/memory_set_namespace_rt32339.t...
+patching ./t/style-trailing-space.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Cache' version '2.11'
+Building Cache
+installing
+Building Cache
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/IOString.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Memory.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Entry.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/File.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/RemovalStrategy.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Tester.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Null.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/File/Entry.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/File/Heap.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/File/Handle.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Memory/Entry.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Memory/HeapElem.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/Null/Entry.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/RemovalStrategy/FIFO.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib/perl5/site_perl/5.32.0/Cache/RemovalStrategy/LRU.pm
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::File::Handle.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Null.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::RemovalStrategy::FIFO.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::File::Heap.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Memory::Entry.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::File::Entry.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::RemovalStrategy.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::IOString.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Null::Entry.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Tester.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::File.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Entry.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Memory.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::RemovalStrategy::LRU.3
+Installing /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3/Cache::Memory::HeapElem.3
+post-installation fixup
+Moving /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/man3 to /nix/store/wykf62bm121phlxf24gb469vrq3r276i-perl5.32.0-Cache-2.11-devdoc/share/man/man3
+Removing empty /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11/lib
+patching script interpreter paths in /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11
+checking for references to /build/ in /nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wykf62bm121phlxf24gb469vrq3r276i-perl5.32.0-Cache-2.11-devdoc
+gzipping man pages under /nix/store/wykf62bm121phlxf24gb469vrq3r276i-perl5.32.0-Cache-2.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wykf62bm121phlxf24gb469vrq3r276i-perl5.32.0-Cache-2.11-devdoc
+checking for references to /build/ in /nix/store/wykf62bm121phlxf24gb469vrq3r276i-perl5.32.0-Cache-2.11-devdoc...
+/nix/store/6wgkfp4svj85ix96gh836cfpm5fd0q17-perl5.32.0-Cache-2.11

@@ -1,0 +1,255 @@
+these derivations will be built:
+  /nix/store/9zdlkjc9vnna4035z1yszvrm9p857k4n-perl5.32.0-Error-0.17029.drv
+  /nix/store/mr77jzgxci4vsl4bcm7g3sfml955va7b-perl5.32.0-IPC-ShareLite-0.17.drv
+  /nix/store/vchs55argsz2k4imjl3vj5gf3d2n3dj8-perl5.32.0-Cache-Cache-1.08.drv
+building '/nix/store/9zdlkjc9vnna4035z1yszvrm9p857k4n-perl5.32.0-Error-0.17029.drv'...
+building '/nix/store/mr77jzgxci4vsl4bcm7g3sfml955va7b-perl5.32.0-IPC-ShareLite-0.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/rzmm7g6hp56bjnlh81ip3mjawflwnxsa-Error-0.17029.tar.gz
+unpacking sources
+unpacking source archive /nix/store/66ja8zwsf24hr7mgax0f5ncbwa69lnry-IPC-ShareLite-0.17.tar.gz
+source root is Error-0.17029
+source root is IPC-ShareLite-0.17
+setting SOURCE_DATE_EPOCH to timestamp 1580230269 of file Error-0.17029/xt/release/trailing-space.t
+setting SOURCE_DATE_EPOCH to timestamp 1236731829 of file IPC-ShareLite-0.17/SIGNATURE
+patching sources
+configuring
+patching sources
+configuring
+patching ./scripts/bump-version-number.pl...
+patching ./xt/release/trailing-space.t...
+patching ./t/unicode-key.t...
+patching ./xt/author/pod-coverage.t...
+patching ./t/pod.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/next-in-loop/Error.pm-next-out-of-catch.pl...
+patching ./examples/next-in-loop/Error.pm-next-label.pl...
+patching ./examples/next-in-loop/Error.pm-eval.pl...
+patching ./examples/next-in-loop/Error.pm-next.pl...
+patching ./examples/warndie.pl...
+patching ./t/03throw-non-Error.t...
+patching ./t/09dollar-at.t...
+patching ./t/12wrong-error-var.t...
+patching ./t/13except-arg0.t...
+patching ./t/11rethrow.t...
+patching ./t/07try-in-obj-destructor.t...
+patching ./t/14Error-Simple-VERSION.t...
+patching ./t/06customize-text-throw.t...
+patching ./t/04use-base-Error-Simple.t...
+patching ./t/05text-errors-with-file-handles.t...
+patching ./t/08warndie.t...
+patching ./t/10throw-in-catch.t...
+Checking if your kit is complete...
+Looks good
+Checking if your kit is complete...
+Generating a Unix-style Makefile
+Writing Makefile for IPC::ShareLite
+CPAN::Meta::YAML found a duplicate key 'no_index' in line '' at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/CPAN/Meta/YAML.pm line 515.
+Writing MYMETA.yml and MYMETA.json
+Looks good
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for Error
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+cp lib/IPC/ShareLite.pm blib/lib/IPC/ShareLite.pm
+AutoSplitting blib/lib/IPC/ShareLite.pm (blib/lib/auto/IPC/ShareLite)
+Running Mkbootstrap for ShareLite ()
+chmod 644 "ShareLite.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ShareLite.bs blib/arch/auto/IPC/ShareLite/ShareLite.bs 644
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.17\" -DXS_VERSION=\"0.17\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   sharestuff.c
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Error' version '0.17029'
+Building Error
+running tests
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/IPC-ShareLite-0.17/typemap'  ShareLite.xs > ShareLite.xsc
+mv ShareLite.xsc ShareLite.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.17\" -DXS_VERSION=\"0.17\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   ShareLite.c
+t/00-compile.t ....................... ok
+t/01throw.t .......................... ok
+t/02order.t .......................... ok
+t/03throw-non-Error.t ................ ok
+t/04use-base-Error-Simple.t .......... ok
+t/05text-errors-with-file-handles.t .. ok
+t/06customize-text-throw.t ........... ok
+rm -f blib/arch/auto/IPC/ShareLite/ShareLite.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  sharestuff.o ShareLite.o  -o blib/arch/auto/IPC/ShareLite/ShareLite.so  \
+      \
+
+chmod 755 blib/arch/auto/IPC/ShareLite/ShareLite.so
+t/07try-in-obj-destructor.t .......... ok
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ShareLite.bs blib/arch/auto/IPC/ShareLite/ShareLite.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/08warndie.t ........................ ok
+t/09dollar-at.t ...................... ok
+t/00-load.t ...... 1/1 # Testing IPC::ShareLite 0.17
+t/00-load.t ...... ok
+t/10throw-in-catch.t ................. ok
+t/pod.t .......... skipped: Test::Pod 1.14 required for testing POD
+t/11rethrow.t ........................ ok
+t/sharelite.t .... ok
+t/12wrong-error-var.t ................ ok
+t/unicode-key.t .. ok
+All tests successful.
+Files=4, Tests=18,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.22 cusr  0.04 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/pkgconfig m4datadir=/nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/share/aclocal aclocaldir=/nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- ShareLite.bs blib/arch/auto/IPC/ShareLite/ShareLite.bs 644
+t/13except-arg0.t .................... ok
+Manifying 1 pod document
+t/14Error-Simple-VERSION.t ........... ok
+All tests successful.
+Files=15, Tests=63,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.76 cusr  0.24 csys =  1.06 CPU)
+Result: PASS
+installing
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IPC/ShareLite/ShareLite.so
+Installing /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IPC/ShareLite/autosplit.ix
+Installing /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/IPC/ShareLite.pm
+Installing /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/share/man/man3/IPC::ShareLite.3
+Appending installation info to /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/share/man/man3 to /nix/store/b4c8322kdiw5gks4grv1hxrjxx2yr0w2-perl5.32.0-IPC-ShareLite-0.17-devdoc/share/man/man3
+Removing empty /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17
+shrinking /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/IPC/ShareLite/ShareLite.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17/lib
+patching script interpreter paths in /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17
+checking for references to /build/ in /nix/store/zx5skjm2jw39hrrib9q3w10zqailx0lc-perl5.32.0-IPC-ShareLite-0.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b4c8322kdiw5gks4grv1hxrjxx2yr0w2-perl5.32.0-IPC-ShareLite-0.17-devdoc
+gzipping man pages under /nix/store/b4c8322kdiw5gks4grv1hxrjxx2yr0w2-perl5.32.0-IPC-ShareLite-0.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b4c8322kdiw5gks4grv1hxrjxx2yr0w2-perl5.32.0-IPC-ShareLite-0.17-devdoc
+Building Error
+checking for references to /build/ in /nix/store/b4c8322kdiw5gks4grv1hxrjxx2yr0w2-perl5.32.0-IPC-ShareLite-0.17-devdoc...
+Installing /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl/5.32.0/Error.pm
+Installing /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib/perl5/site_perl/5.32.0/Error/Simple.pm
+Installing /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/share/man/man3/Error::Simple.3
+Installing /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/share/man/man3/Error.3
+post-installation fixup
+Moving /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/share/man/man3 to /nix/store/c15az0qiijaiw7y88aml2dqxndxk8kzf-perl5.32.0-Error-0.17029-devdoc/share/man/man3
+Removing empty /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029/lib
+patching script interpreter paths in /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029
+checking for references to /build/ in /nix/store/hgrz91y4q4gy0z8d1kkw6pv9dyjlibza-perl5.32.0-Error-0.17029...
+shrinking RPATHs of ELF executables and libraries in /nix/store/c15az0qiijaiw7y88aml2dqxndxk8kzf-perl5.32.0-Error-0.17029-devdoc
+gzipping man pages under /nix/store/c15az0qiijaiw7y88aml2dqxndxk8kzf-perl5.32.0-Error-0.17029-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/c15az0qiijaiw7y88aml2dqxndxk8kzf-perl5.32.0-Error-0.17029-devdoc
+checking for references to /build/ in /nix/store/c15az0qiijaiw7y88aml2dqxndxk8kzf-perl5.32.0-Error-0.17029-devdoc...
+building '/nix/store/vchs55argsz2k4imjl3vj5gf3d2n3dj8-perl5.32.0-Cache-Cache-1.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/pzd7kw92jks14s6lp0zmwzxkyr793kbf-Cache-Cache-1.08.tar.gz
+source root is Cache-Cache-1.08
+setting SOURCE_DATE_EPOCH to timestamp 1421943138 of file Cache-Cache-1.08/META.json
+patching sources
+configuring
+patching ./t/3_test_file_cache.t...
+patching ./t/2_test_memory_cache.t...
+patching ./t/1_test_cache_interface.t...
+patching ./t/5_test_size_aware_file_cache.t...
+patching ./t/6_test_size_aware_memory_cache.t...
+patching ./t/4_test_shared_memory_cache.t...
+patching ./t/7_test_size_aware_shared_memory_cache.t...
+Checking for IPC::ShareLite... found
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Cache::Cache
+Writing MYMETA.yml and MYMETA.json
+------------------------------------------------------------------
+Please be patient while running "make test" as the full test suite
+takes roughly two minutes to complete.
+------------------------------------------------------------------
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Cache/SizeAwareMemoryCache.pm blib/lib/Cache/SizeAwareMemoryCache.pm
+cp lib/Cache/CacheSizer.pm blib/lib/Cache/CacheSizer.pm
+cp lib/Cache/FileCache.pm blib/lib/Cache/FileCache.pm
+cp lib/Cache/FileBackend.pm blib/lib/Cache/FileBackend.pm
+cp lib/Cache/CacheUtils.pm blib/lib/Cache/CacheUtils.pm
+cp lib/Cache/Object.pm blib/lib/Cache/Object.pm
+cp lib/Cache/SharedMemoryBackend.pm blib/lib/Cache/SharedMemoryBackend.pm
+cp lib/Cache/Cache.pm blib/lib/Cache/Cache.pm
+cp lib/Cache/SizeAwareFileCache.pm blib/lib/Cache/SizeAwareFileCache.pm
+cp lib/Cache/NullCache.pm blib/lib/Cache/NullCache.pm
+cp lib/Cache/SizeAwareCache.pm blib/lib/Cache/SizeAwareCache.pm
+cp lib/Cache/CacheMetaData.pm blib/lib/Cache/CacheMetaData.pm
+cp lib/Cache/BaseCacheTester.pm blib/lib/Cache/BaseCacheTester.pm
+cp lib/Cache/SharedMemoryCache.pm blib/lib/Cache/SharedMemoryCache.pm
+cp lib/Cache/SizeAwareSharedMemoryCache.pm blib/lib/Cache/SizeAwareSharedMemoryCache.pm
+cp lib/Cache/SizeAwareCacheTester.pm blib/lib/Cache/SizeAwareCacheTester.pm
+cp lib/Cache/MemoryBackend.pm blib/lib/Cache/MemoryBackend.pm
+cp lib/Cache/MemoryCache.pm blib/lib/Cache/MemoryCache.pm
+cp lib/Cache/BaseCache.pm blib/lib/Cache/BaseCache.pm
+cp lib/Cache/CacheTester.pm blib/lib/Cache/CacheTester.pm
+Manifying 20 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/pkgconfig m4datadir=/nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/aclocal aclocaldir=/nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/aclocal install
+Manifying 20 pod documents
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SizeAwareMemoryCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SharedMemoryBackend.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/Object.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/MemoryBackend.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/CacheTester.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/CacheMetaData.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/FileBackend.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/FileCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/BaseCacheTester.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SizeAwareCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/CacheSizer.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/CacheUtils.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/BaseCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SizeAwareFileCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/MemoryCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SizeAwareSharedMemoryCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SizeAwareCacheTester.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/Cache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/NullCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/site_perl/5.32.0/Cache/SharedMemoryCache.pm
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::MemoryCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::Cache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SizeAwareMemoryCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::BaseCacheTester.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::CacheUtils.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SharedMemoryBackend.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SharedMemoryCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SizeAwareCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::BaseCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::Object.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SizeAwareFileCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::CacheMetaData.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::FileCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::FileBackend.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::NullCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SizeAwareSharedMemoryCache.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::SizeAwareCacheTester.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::MemoryBackend.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::CacheSizer.3
+Installing /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3/Cache::CacheTester.3
+Appending installation info to /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/man3 to /nix/store/hd8r0xdbzwg8kmpd44cjlcyrwqsxv0dr-perl5.32.0-Cache-Cache-1.08-devdoc/share/man/man3
+Removing empty /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08/lib
+patching script interpreter paths in /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08
+checking for references to /build/ in /nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hd8r0xdbzwg8kmpd44cjlcyrwqsxv0dr-perl5.32.0-Cache-Cache-1.08-devdoc
+gzipping man pages under /nix/store/hd8r0xdbzwg8kmpd44cjlcyrwqsxv0dr-perl5.32.0-Cache-Cache-1.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hd8r0xdbzwg8kmpd44cjlcyrwqsxv0dr-perl5.32.0-Cache-Cache-1.08-devdoc
+checking for references to /build/ in /nix/store/hd8r0xdbzwg8kmpd44cjlcyrwqsxv0dr-perl5.32.0-Cache-Cache-1.08-devdoc...
+/nix/store/df7f4vg9aajiqgc8301dsvvn7s542hij-perl5.32.0-Cache-Cache-1.08

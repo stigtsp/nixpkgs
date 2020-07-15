@@ -1,0 +1,62 @@
+these derivations will be built:
+  /nix/store/yr85pk8sy2m09l14dgvk7avk710g0wmk-perl5.32.0-Math-Clipper-1.29.drv
+these paths will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/vn4vf2ls46ny57p1ws9fl115li538k69-Math-Clipper-1.29.tar.gz
+copying path '/nix/store/vn4vf2ls46ny57p1ws9fl115li538k69-Math-Clipper-1.29.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yr85pk8sy2m09l14dgvk7avk710g0wmk-perl5.32.0-Math-Clipper-1.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/vn4vf2ls46ny57p1ws9fl115li538k69-Math-Clipper-1.29.tar.gz
+source root is Math-Clipper-1.29
+setting SOURCE_DATE_EPOCH to timestamp 1558076355 of file Math-Clipper-1.29/xsp/types.xspt
+patching sources
+configuring
+patching ./Build.PL...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Math-Clipper' version '1.29'
+Building Math-Clipper
+Processing XS typemap files...
+Generating main XS file...
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -xc++ -D_GLIBCXX_USE_C99 -DHAS_BOOL -Isrc -Ibuildtmp -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/clipper.o src/clipper.cpp
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.29" -DXS_VERSION="1.29" -fPIC -xc++ -D_GLIBCXX_USE_C99 -DHAS_BOOL -Isrc -Ibuildtmp -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o buildtmp/Clipper.o buildtmp/Clipper.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Math/Clipper/Clipper.bs')
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Math/Clipper/Clipper.so buildtmp/Clipper.o src/clipper.o -lstdc++
+running tests
+t/001compile.t ........... ok
+t/002basic.t ............. ok
+t/003boolops.t ........... ok
+t/004filltype.t .......... ok
+t/005offset.t ............ ok
+t/006winding.t ........... ok
+t/007usefullrange.t ...... ok
+t/008integerize.t ........ ok
+t/009expolygon.t ......... ok
+t/010simplify.t .......... ok
+t/011Int128Comparison.t .. ok
+t/012_polytree.t ......... ok
+All tests successful.
+Files=12, Tests=84,  2 wallclock secs ( 0.04 usr  0.02 sys +  0.73 cusr  0.29 csys =  1.08 CPU)
+Result: PASS
+installing
+Building Math-Clipper
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Clipper/Clipper.so
+Installing /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Clipper/Clipper.bs
+Installing /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Math/Clipper.pm
+Installing /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/share/man/man3/Math::Clipper.3
+post-installation fixup
+Moving /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/share/man/man3 to /nix/store/wy9vf80q5qhdm91in1f2x6zv1175rh1f-perl5.32.0-Math-Clipper-1.29-devdoc/share/man/man3
+Removing empty /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29
+shrinking /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Math/Clipper/Clipper.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29/lib
+patching script interpreter paths in /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29
+checking for references to /build/ in /nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/wy9vf80q5qhdm91in1f2x6zv1175rh1f-perl5.32.0-Math-Clipper-1.29-devdoc
+gzipping man pages under /nix/store/wy9vf80q5qhdm91in1f2x6zv1175rh1f-perl5.32.0-Math-Clipper-1.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/wy9vf80q5qhdm91in1f2x6zv1175rh1f-perl5.32.0-Math-Clipper-1.29-devdoc
+checking for references to /build/ in /nix/store/wy9vf80q5qhdm91in1f2x6zv1175rh1f-perl5.32.0-Math-Clipper-1.29-devdoc...
+/nix/store/nrlavdz18k3wfa0iv9h97lx3j7vn4hfm-perl5.32.0-Math-Clipper-1.29

@@ -1,0 +1,91 @@
+these derivations will be built:
+  /nix/store/bh91lmsla0n7hs9m9rnaywx6513p7kws-perl5.32.0-MIME-Lite-3.031.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/c2kbq62jw72fs200p7bs35kqwylhrz7w-MIME-Lite-3.031.tar.gz
+copying path '/nix/store/c2kbq62jw72fs200p7bs35kqwylhrz7w-MIME-Lite-3.031.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bh91lmsla0n7hs9m9rnaywx6513p7kws-perl5.32.0-MIME-Lite-3.031.drv'...
+unpacking sources
+unpacking source archive /nix/store/c2kbq62jw72fs200p7bs35kqwylhrz7w-MIME-Lite-3.031.tar.gz
+source root is MIME-Lite-3.031
+setting SOURCE_DATE_EPOCH to timestamp 1572095090 of file MIME-Lite-3.031/META.yml
+patching sources
+configuring
+patching ./examples/mime_postcard...
+patching ./examples/mime_longlines...
+patching ./examples/mime_gif...
+patching ./examples/mime_hack...
+patching ./examples/nodisp...
+patching ./examples/mime_fwd...
+patching ./t/pod-coverage.t...
+patching ./t/sendmail.t...
+patching ./t/pod.t...
+patching ./t/data.t...
+patching ./t/types.t...
+patching ./t/head.t...
+patching ./t/addrs.t...
+patching ./t/mime-version.t...
+patching ./t/verify.t...
+patching ./t/parts.t...
+patching ./contrib/MailTool.pm...
+patching ./Makefile.PL...
+MIME::Lite is designed to take advantage of a variety of external modules
+if they are not present then MIME::Lite will attempt to do its best
+but its strongly recommend that you install them.
+
+These modules are:
+        MIME::Types
+        Mail::Address
+I can add these modules to the prereq list which will cause the files to be
+automatically installed if they aren't already present
+Add prereqs? [Yes] Yes
+Checking if your kit is complete...
+Looks good
+Warning: prerequisite MIME::Types 1.28 not found.
+Warning: prerequisite Mail::Address 1.62 not found.
+Generating a Unix-style Makefile
+Writing Makefile for MIME::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp changes.pod blib/lib/MIME/changes.pod
+cp lib/MIME/Lite.pm blib/lib/MIME/Lite.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/addrs.t ......... ok
+t/data.t .......... ok
+t/head.t .......... ok
+t/mime-version.t .. ok
+t/parts.t ......... ok
+t/pod-coverage.t .. skipped: Test::Pod::Coverage 1.08 required for testing POD coverage
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+t/sendmail.t ...... ok
+t/types.t ......... skipped: MIME::Types >= 1.28 not available
+t/verify.t ........ ok
+All tests successful.
+Files=10, Tests=47,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.49 cusr  0.07 csys =  0.61 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/lib/pkgconfig m4datadir=/nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/aclocal aclocaldir=/nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/lib/perl5/site_perl/5.32.0/MIME/Lite.pm
+Installing /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/lib/perl5/site_perl/5.32.0/MIME/changes.pod
+Installing /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/man/man3/MIME::Lite.3
+Installing /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/man/man3/MIME::changes.3
+Appending installation info to /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/man/man3 to /nix/store/2zwdjngvf6d22x8lm8mdrrlmidvx2n9b-perl5.32.0-MIME-Lite-3.031-devdoc/share/man/man3
+Removing empty /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031/lib
+patching script interpreter paths in /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031
+checking for references to /build/ in /nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2zwdjngvf6d22x8lm8mdrrlmidvx2n9b-perl5.32.0-MIME-Lite-3.031-devdoc
+gzipping man pages under /nix/store/2zwdjngvf6d22x8lm8mdrrlmidvx2n9b-perl5.32.0-MIME-Lite-3.031-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2zwdjngvf6d22x8lm8mdrrlmidvx2n9b-perl5.32.0-MIME-Lite-3.031-devdoc
+checking for references to /build/ in /nix/store/2zwdjngvf6d22x8lm8mdrrlmidvx2n9b-perl5.32.0-MIME-Lite-3.031-devdoc...
+/nix/store/k8k8vxa4ax3fkzdjf9z4iwlsi72chcl5-perl5.32.0-MIME-Lite-3.031

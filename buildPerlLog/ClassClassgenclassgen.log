@@ -1,0 +1,69 @@
+these derivations will be built:
+  /nix/store/4nmfamzmanb94yyn5096m3p22qczagx7-perl5.32.0-Class-Classgen-classgen-3.03.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/43h5py4ba5nnhx9qfkdvvbs50fqwbl9a-Class-Classgen-classgen-3.03.tar.gz
+copying path '/nix/store/43h5py4ba5nnhx9qfkdvvbs50fqwbl9a-Class-Classgen-classgen-3.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4nmfamzmanb94yyn5096m3p22qczagx7-perl5.32.0-Class-Classgen-classgen-3.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/43h5py4ba5nnhx9qfkdvvbs50fqwbl9a-Class-Classgen-classgen-3.03.tar.gz
+source root is Class-Classgen-classgen-3.03
+setting SOURCE_DATE_EPOCH to timestamp 978128013 of file Class-Classgen-classgen-3.03/MANIFEST
+patching sources
+configuring
+patching ./classgen...
+patching ./examples/peanuts/peanuts...
+patching ./examples/inheritance/main...
+patching ./examples/associations/one_to_many/many...
+patching ./examples/associations/one_to_one/associated...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Classgen::classgen
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Comments.pm blib/lib/Class/Classgen/Comments.pm
+cp Classgen.pm blib/lib/Class/Classgen/Classgen.pm
+cp Attribute.pm blib/lib/Class/Classgen/Attribute.pm
+cp Section.pm blib/lib/Class/Classgen/Section.pm
+cp New.pm blib/lib/Class/Classgen/New.pm
+cp classgen blib/script/classgen
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/classgen
+Manifying 1 pod document
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+No tests defined for Class::Classgen::classgen extension.
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/pkgconfig m4datadir=/nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/aclocal aclocaldir=/nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/aclocal install
+Manifying 1 pod document
+Manifying 5 pod documents
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/site_perl/5.32.0/Class/Classgen/Section.pm
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/site_perl/5.32.0/Class/Classgen/Attribute.pm
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/site_perl/5.32.0/Class/Classgen/Classgen.pm
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/site_perl/5.32.0/Class/Classgen/Comments.pm
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/site_perl/5.32.0/Class/Classgen/New.pm
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man1/classgen.1
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3/Class::Classgen::New.3
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3/Class::Classgen::Section.3
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3/Class::Classgen::Classgen.3
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3/Class::Classgen::Attribute.3
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3/Class::Classgen::Comments.3
+Installing /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/bin/classgen
+Appending installation info to /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/man3 to /nix/store/2rascpcvq20sc0ql5klk20g5x8m0rc9n-perl5.32.0-Class-Classgen-classgen-3.03-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03
+gzipping man pages under /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/lib  /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03/bin
+patching script interpreter paths in /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03
+checking for references to /build/ in /nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2rascpcvq20sc0ql5klk20g5x8m0rc9n-perl5.32.0-Class-Classgen-classgen-3.03-devdoc
+gzipping man pages under /nix/store/2rascpcvq20sc0ql5klk20g5x8m0rc9n-perl5.32.0-Class-Classgen-classgen-3.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2rascpcvq20sc0ql5klk20g5x8m0rc9n-perl5.32.0-Class-Classgen-classgen-3.03-devdoc
+checking for references to /build/ in /nix/store/2rascpcvq20sc0ql5klk20g5x8m0rc9n-perl5.32.0-Class-Classgen-classgen-3.03-devdoc...
+/nix/store/dhi1f5rd7x90glhsndcqyqdmfbfyzn1i-perl5.32.0-Class-Classgen-classgen-3.03

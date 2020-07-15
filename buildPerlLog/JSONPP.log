@@ -1,0 +1,101 @@
+these derivations will be built:
+  /nix/store/94v4mq4ncprg9mhvzh0vf84v8wzbm0y5-perl5.32.0-JSON-PP-4.04.drv
+building '/nix/store/94v4mq4ncprg9mhvzh0vf84v8wzbm0y5-perl5.32.0-JSON-PP-4.04.drv'...
+unpacking sources
+unpacking source archive /nix/store/dvsc2ivqcsvzdvc9ivm2645wb27lh3vc-JSON-PP-4.04.tar.gz
+source root is JSON-PP-4.04
+setting SOURCE_DATE_EPOCH to timestamp 1561801890 of file JSON-PP-4.04/META.yml
+patching sources
+configuring
+patching ./bin/json_pp...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for JSON::PP
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/JSON/PP/Boolean.pm blib/lib/JSON/PP/Boolean.pm
+cp lib/JSON/PP.pm blib/lib/JSON/PP.pm
+cp bin/json_pp blib/script/json_pp
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/json_pp
+Manifying 1 pod document
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/000_load.t .......................... ok
+t/001_utf8.t .......................... ok
+t/002_error.t ......................... ok
+t/003_types.t ......................... ok
+t/004_dwiw_encode.t ................... ok
+t/005_dwiw_decode.t ................... ok
+t/006_pc_pretty.t ..................... ok
+t/007_pc_esc.t ........................ ok
+t/008_pc_base.t ....................... ok
+t/009_pc_extra_number.t ............... ok
+t/010_pc_keysort.t .................... ok
+t/011_pc_expo.t ....................... ok
+t/012_blessed.t ....................... ok
+t/013_limit.t ......................... ok
+t/014_latin1.t ........................ ok
+t/015_prefix.t ........................ ok
+t/016_tied.t .......................... ok
+t/017_relaxed.t ....................... ok
+t/018_json_checker.t .................. ok
+t/019_incr.t .......................... ok
+t/020_faihu.t ......................... ok
+t/020_unknown.t ....................... ok
+t/021_evans.t ......................... ok
+t/022_comment_at_eof.t ................ ok
+t/052_object.t ........................ ok
+t/099_binary.t ........................ ok
+t/104_sortby.t ........................ ok
+t/105_esc_slash.t ..................... ok
+t/106_allow_barekey.t ................. ok
+t/107_allow_singlequote.t ............. ok
+t/108_decode.t ........................ ok
+t/109_encode.t ........................ ok
+t/110_bignum.t ........................ ok
+t/112_upgrade.t ....................... ok
+t/113_overloaded_eq.t ................. ok
+t/114_decode_prefix.t ................. ok
+t/115_tie_ixhash.t .................... ok
+t/116_incr_parse_fixed.t .............. ok
+t/117_numbers.t ....................... ok
+t/118_boolean_values.t ................ ok
+t/gh_28_json_test_suite.t ............. ok
+t/gh_29_trailing_false_value.t ........ ok
+t/rt_116998_wrong_character_offset.t .. ok
+t/rt_90071_incr_parse.t ............... ok
+t/zero-mojibake.t ..................... ok
+All tests successful.
+Files=45, Tests=25760, 56 wallclock secs ( 2.68 usr  0.26 sys + 55.07 cusr  0.47 csys = 58.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/lib/pkgconfig m4datadir=/nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/aclocal aclocaldir=/nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/aclocal install
+Manifying 1 pod document
+Manifying 2 pod documents
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/lib/perl5/site_perl/5.32.0/JSON/PP.pm
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/lib/perl5/site_perl/5.32.0/JSON/PP/Boolean.pm
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man/man1/json_pp.1
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man/man3/JSON::PP.3
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man/man3/JSON::PP::Boolean.3
+Installing /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/bin/json_pp
+Appending installation info to /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man/man3 to /nix/store/fx7s5vn2db3mxhnd3a2vn1c1hnwawf41-perl5.32.0-JSON-PP-4.04-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04
+gzipping man pages under /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/lib  /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04/bin
+patching script interpreter paths in /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04
+checking for references to /build/ in /nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fx7s5vn2db3mxhnd3a2vn1c1hnwawf41-perl5.32.0-JSON-PP-4.04-devdoc
+gzipping man pages under /nix/store/fx7s5vn2db3mxhnd3a2vn1c1hnwawf41-perl5.32.0-JSON-PP-4.04-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fx7s5vn2db3mxhnd3a2vn1c1hnwawf41-perl5.32.0-JSON-PP-4.04-devdoc
+checking for references to /build/ in /nix/store/fx7s5vn2db3mxhnd3a2vn1c1hnwawf41-perl5.32.0-JSON-PP-4.04-devdoc...
+/nix/store/xy4snmfsa54q40hjib3avydnd5kbhs8y-perl5.32.0-JSON-PP-4.04

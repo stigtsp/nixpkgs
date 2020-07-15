@@ -1,0 +1,234 @@
+these derivations will be built:
+  /nix/store/dwh10flkfnvv3mmjnycwg8lfdkmbh198-perl5.32.0-Graph-0.9704.drv
+building '/nix/store/dwh10flkfnvv3mmjnycwg8lfdkmbh198-perl5.32.0-Graph-0.9704.drv'...
+unpacking sources
+unpacking source archive /nix/store/rsgnhplxphm1qqrryrlz3lpihhvzam9j-Graph-0.9704.tar.gz
+source root is Graph-0.9704
+setting SOURCE_DATE_EPOCH to timestamp 1444221023 of file Graph-0.9704/META.yml
+patching sources
+configuring
+patching ./util/srand.pl...
+patching ./util/cover.sh...
+patching ./t/u_te_ea.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Graph
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Graph/AdjacencyMap/Heavy.pm blib/lib/Graph/AdjacencyMap/Heavy.pm
+cp lib/Heap071/Fibonacci.pm blib/lib/Heap071/Fibonacci.pm
+AutoSplitting blib/lib/Heap071/Fibonacci.pm (blib/lib/auto/Heap071/Fibonacci)
+cp lib/Graph/MSTHeapElem.pm blib/lib/Graph/MSTHeapElem.pm
+cp lib/Graph/Traversal.pm blib/lib/Graph/Traversal.pm
+cp lib/Graph/BitMatrix.pm blib/lib/Graph/BitMatrix.pm
+cp lib/Graph/Directed.pm blib/lib/Graph/Directed.pm
+cp lib/Graph/Traversal/DFS.pm blib/lib/Graph/Traversal/DFS.pm
+cp lib/Graph/Traversal/BFS.pm blib/lib/Graph/Traversal/BFS.pm
+cp lib/Graph/AdjacencyMap/Light.pm blib/lib/Graph/AdjacencyMap/Light.pm
+cp lib/Graph/UnionFind.pm blib/lib/Graph/UnionFind.pm
+cp lib/Graph.pm blib/lib/Graph.pm
+cp lib/Heap071/Elem.pm blib/lib/Heap071/Elem.pm
+AutoSplitting blib/lib/Heap071/Elem.pm (blib/lib/auto/Heap071/Elem)
+cp lib/Graph/Undirected.pm blib/lib/Graph/Undirected.pm
+cp lib/Graph/AdjacencyMap.pm blib/lib/Graph/AdjacencyMap.pm
+cp lib/Graph/TransitiveClosure/Matrix.pm blib/lib/Graph/TransitiveClosure/Matrix.pm
+cp lib/Graph/SPTHeapElem.pm blib/lib/Graph/SPTHeapElem.pm
+cp lib/Graph/Matrix.pm blib/lib/Graph/Matrix.pm
+cp lib/Graph/TransitiveClosure.pm blib/lib/Graph/TransitiveClosure.pm
+cp lib/Graph/AdjacencyMap/Vertex.pm blib/lib/Graph/AdjacencyMap/Vertex.pm
+cp lib/Graph.pod blib/lib/Graph.pod
+cp lib/Graph/AdjacencyMatrix.pm blib/lib/Graph/AdjacencyMatrix.pm
+cp lib/Graph/Attribute.pm blib/lib/Graph/Attribute.pm
+Manifying 16 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_use.t ..................... ok
+t/01_isa.t ..................... ok
+t/02_trap.t .................... ok
+t/03_derived.t ................. ok
+t/04_dgraph.t .................. ok
+t/05_ugraph.t .................. ok
+t/06_new.t ..................... ok
+t/07_gen.t ..................... ok
+t/08_stringify.t ............... ok
+t/09_eq.t ...................... ok
+t/10_has_vertices.t ............ ok
+t/11_vertices.t ................ ok
+t/12_has_vertex.t .............. ok
+t/13_add_vertex.t .............. ok
+t/14_delete_vertex.t ........... ok
+t/15_has_edges.t ............... ok
+t/16_edges.t ................... ok
+t/17_has_edge.t ................ ok
+t/18_add_edge.t ................ ok
+t/19_delete_edge.t ............. ok
+t/20_countvertexed.t ........... ok
+t/21_multivertexed.t ........... ok
+t/22_refvertexed.t ............. ok
+t/23_hypervertexed.t ........... ok
+t/24_mixvertexed.t ............. ok
+t/25_countedged.t .............. ok
+t/26_multiedged.t .............. ok
+t/27_omnidirected.t ............ ok
+t/28_hyperedged.t .............. ok
+t/29_uniqedged.t ............... ok
+t/30_mixedged.t ................ ok
+t/31_hypervertex.t ............. ok
+t/32_hypervertex_edges.t ....... ok
+t/33_hyperedge.t ............... ok
+t/34_omnivertexed.t ............ ok
+t/35_uniqvertexed.t ............ ok
+t/36_omniuniqvertexed.t ........ ok
+t/37_hypervertex_implicit.t .... ok
+t/38_vertices_at.t ............. ok
+t/39_edges_at.t ................ ok
+t/40_edges_from.t .............. ok
+t/41_edges_to.t ................ ok
+t/42_add_path.t ................ ok
+t/43_has_path.t ................ ok
+t/44_delete_path.t ............. ok
+t/45_add_cycle.t ............... ok
+t/46_has_cycle.t ............... ok
+t/47_delete_cycle.t ............ ok
+t/48_get_vertex_count.t ........ ok
+t/49_get_edge_count.t .......... ok
+t/50_vertex_attributes.t ....... ok
+t/51_multivertex_attributes.t .. ok
+t/52_edge_attributes.t ......... ok
+t/53_multiedge_attributes.t .... ok
+t/54_graph_attributes.t ........ ok
+t/55_attributes.t .............. ok
+t/56_neighbourhood.t ........... ok
+t/57_degree.t .................. ok
+t/58_connections.t ............. ok
+t/59_dfs.t ..................... ok
+t/60_bfs.t ..................... ok
+t/61_connected.t ............... ok
+t/62_bcc.t ..................... ok
+t/63_scc.t ..................... ok
+t/64_mst.t ..................... ok
+t/65_ref.t ..................... ok
+t/66_simple.t .................. ok
+t/67_copy.t .................... ok
+t/68_transpose.t ............... ok
+t/69_complete.t ................ ok
+t/70_complement.t .............. ok
+t/71_spt.t ..................... ok
+t/72_transitive.t .............. ok
+t/73_diameter.t ................ ok
+t/74_random.t .................. ok
+t/75_attribute_array.t ......... ok
+t/76_attribute_hash.t .......... ok
+t/77_adjacency.t ............... ok
+t/78_expect.t .................. ok
+t/79_unionfind.t ............... ok
+t/80_isomorphic.t .............. ok
+t/81_dump.t .................... ok
+t/82_cycle.t ................... ok
+t/83_bitmatrix.t ............... ok
+t/84_all_cessors.t ............. ok
+t/85_subgraph.t ................ ok
+t/99_misc.t .................... ok
+t/g02_00directed.t ............. ok
+t/g02_01undirected.t ........... ok
+t/g02_02multiple.t ............. ok
+t/g02_03degree.t ............... ok
+t/g02_04attribute.t ............ ok
+t/g02_05copy.t ................. ok
+t/g02_06transpose.t ............ ok
+t/g02_07complete.t ............. ok
+t/g02_08complement.t ........... ok
+t/g02_09scc.t .................. ok
+t/pod-coverage.t ............... skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+t/pod.t ........................ skipped: Test::Pod 1.00 required for testing POD
+t/u_an_uf.t .................... ok
+t/u_at1.t ...................... ok
+t/u_at2.t ...................... ok
+t/u_at3.t ...................... ok
+t/u_bb_rv.t .................... ok
+t/u_bf.t ....................... ok
+t/u_bill.t ..................... ok
+t/u_bo_ap1.t ................... ok
+t/u_bo_ap2.t ................... ok
+t/u_bo_apx.t ................... ok
+t/u_cd_rv.t .................... ok
+t/u_dl_uf.t .................... ok
+t/u_jh_va.t .................... ok
+t/u_mn_va.t .................... ok
+t/u_mo_rv.t .................... ok
+t/u_ng_mst.t ................... ok
+t/u_ng_path.t .................. ok
+t/u_ng_scc.t ................... ok
+t/u_rb_cc.t .................... ok
+t/u_re_sd.t .................... ok
+t/u_ro_ra.t .................... ok
+t/u_sc_me.t .................... ok
+t/u_sn_sva.t ................... ok
+t/u_te_ae.t .................... ok
+t/u_te_ea.t .................... ok
+t/u_te_me.t .................... ok
+All tests successful.
+Files=125, Tests=8647, 19 wallclock secs ( 0.77 usr  0.14 sys + 17.69 cusr  1.58 csys = 20.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/pkgconfig m4datadir=/nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/aclocal aclocaldir=/nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/aclocal install
+Manifying 16 pod documents
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph.pod
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/AdjacencyMatrix.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/SPTHeapElem.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/UnionFind.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/AdjacencyMap.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Attribute.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/MSTHeapElem.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/TransitiveClosure.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Traversal.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Directed.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Matrix.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Undirected.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/BitMatrix.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/TransitiveClosure/Matrix.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/AdjacencyMap/Vertex.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/AdjacencyMap/Light.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/AdjacencyMap/Heavy.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Traversal/DFS.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Graph/Traversal/BFS.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/auto/Heap071/Elem/autosplit.ix
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/auto/Heap071/Fibonacci/autosplit.ix
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Heap071/Fibonacci.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/site_perl/5.32.0/Heap071/Elem.pm
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::AdjacencyMatrix.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::AdjacencyMap::Vertex.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Heap071::Elem.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Traversal::BFS.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Traversal::DFS.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Directed.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::UnionFind.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Traversal.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::TransitiveClosure::Matrix.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::AdjacencyMap.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Matrix.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::BitMatrix.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::TransitiveClosure.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Graph::Undirected.3
+Installing /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3/Heap071::Fibonacci.3
+Appending installation info to /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/man3 to /nix/store/891kx4s92q3xq166mhrd29ybzsjikp4f-perl5.32.0-Graph-0.9704-devdoc/share/man/man3
+Removing empty /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704/lib
+patching script interpreter paths in /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704
+checking for references to /build/ in /nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704...
+shrinking RPATHs of ELF executables and libraries in /nix/store/891kx4s92q3xq166mhrd29ybzsjikp4f-perl5.32.0-Graph-0.9704-devdoc
+gzipping man pages under /nix/store/891kx4s92q3xq166mhrd29ybzsjikp4f-perl5.32.0-Graph-0.9704-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/891kx4s92q3xq166mhrd29ybzsjikp4f-perl5.32.0-Graph-0.9704-devdoc
+checking for references to /build/ in /nix/store/891kx4s92q3xq166mhrd29ybzsjikp4f-perl5.32.0-Graph-0.9704-devdoc...
+/nix/store/n1iqqyp7fv6zf10ilnxd6bwa14i0v3q6-perl5.32.0-Graph-0.9704

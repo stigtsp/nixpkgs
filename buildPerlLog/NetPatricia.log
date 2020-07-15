@@ -1,0 +1,115 @@
+these derivations will be built:
+  /nix/store/7d688xkvn710ib28sw2p64ayfiwnjp24-perl5.32.0-Net-Patricia-1.22.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/g8kw05wr5kdh0rdgi88jhplyxicqj18i-Net-Patricia-1.22.tar.gz
+copying path '/nix/store/g8kw05wr5kdh0rdgi88jhplyxicqj18i-Net-Patricia-1.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7d688xkvn710ib28sw2p64ayfiwnjp24-perl5.32.0-Net-Patricia-1.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/g8kw05wr5kdh0rdgi88jhplyxicqj18i-Net-Patricia-1.22.tar.gz
+source root is Net-Patricia-1.22
+setting SOURCE_DATE_EPOCH to timestamp 1381866155 of file Net-Patricia-1.22/META.json
+patching sources
+configuring
+patching ./t/01everything.t...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lnsl
+MakeMaker (v7.44)
+Warning (non-fatal): Target 'dynamic' depends on targets in skipped section 'dynamic_lib'
+Warning (non-fatal): Target 'static' depends on targets in skipped section 'static_lib'
+Generating a Unix-style Makefile
+Writing Makefile for Net::Patricia::libpatricia
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Net::Patricia
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Patricia.pm blib/lib/Net/Patricia.pm
+cd libpatricia && make LIBPERL_A="libperl.a" LINKTYPE="dynamic" OPTIMIZE="-O2" PREFIX="/nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22" PASTHRU_DEFINE=' ' PASTHRU_INC=' '
+make[1]: Entering directory '/build/Net-Patricia-1.22/libpatricia'
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   patricia.c
+ar cr libpatricia.a patricia.o
+: libpatricia.a
+make[1]: Leaving directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Entering directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Net-Patricia-1.22/libpatricia'
+Running Mkbootstrap for Patricia ()
+chmod 644 "Patricia.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Patricia.bs blib/arch/auto/Net/Patricia/Patricia.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Net-Patricia-1.22/typemap'  Patricia.xs > Patricia.xsc
+mv Patricia.xsc Patricia.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.22\" -DXS_VERSION=\"1.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Patricia.c
+rm -f blib/arch/auto/Net/Patricia/Patricia.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Patricia.o  -o blib/arch/auto/Net/Patricia/Patricia.so libpatricia/libpatricia.a \
+      \
+
+chmod 755 blib/arch/auto/Net/Patricia/Patricia.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Patricia.bs blib/arch/auto/Net/Patricia/Patricia.bs 644
+make[1]: Entering directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Entering directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Nothing to be done for 'test_dynamic'.
+make[1]: Leaving directory '/build/Net-Patricia-1.22/libpatricia'
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01everything.t .. 1/48 20 What a world, what a world...
+# Destructor 10 should *not* have run yet (but 20 should have).
+10 What a world, what a world...
+10 What a world, what a world...
+# Destructor 10 should have just run (twice, once for the destroyed clone).
+# original: climbing at 10.42.42.0/32
+# original: climbing at 10.42.42.0/31
+# original: climbing at 10.42.42.0/26
+# original: climbing at 10.42.42.0/24
+# original: climbing at 10.42.69.0/24
+# original: climbing at 127.0.0.0/8
+# thawed: climbing at 10.42.42.0/32
+# thawed: climbing at 10.42.42.0/31
+# thawed: climbing at 10.42.42.0/26
+# thawed: climbing at 10.42.42.0/24
+# thawed: climbing at 10.42.69.0/24
+# thawed: climbing at 127.0.0.0/8
+t/01everything.t .. ok
+All tests successful.
+Files=1, Tests=48,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.20 cusr  0.02 csys =  0.25 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib/pkgconfig m4datadir=/nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/share/aclocal aclocaldir=/nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/share/aclocal install
+make[1]: Entering directory '/build/Net-Patricia-1.22/libpatricia'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/build/Net-Patricia-1.22/libpatricia'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Patricia.bs blib/arch/auto/Net/Patricia/Patricia.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/Patricia/Patricia.so
+Installing /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Net/Patricia.pm
+Installing /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/share/man/man3/Net::Patricia.3
+Appending installation info to /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/share/man/man3 to /nix/store/335jn94gcjfy7j6f1kbwrcx9azvfj123-perl5.32.0-Net-Patricia-1.22-devdoc/share/man/man3
+Removing empty /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22
+shrinking /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Net/Patricia/Patricia.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22/lib
+patching script interpreter paths in /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22
+checking for references to /build/ in /nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/335jn94gcjfy7j6f1kbwrcx9azvfj123-perl5.32.0-Net-Patricia-1.22-devdoc
+gzipping man pages under /nix/store/335jn94gcjfy7j6f1kbwrcx9azvfj123-perl5.32.0-Net-Patricia-1.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/335jn94gcjfy7j6f1kbwrcx9azvfj123-perl5.32.0-Net-Patricia-1.22-devdoc
+checking for references to /build/ in /nix/store/335jn94gcjfy7j6f1kbwrcx9azvfj123-perl5.32.0-Net-Patricia-1.22-devdoc...
+/nix/store/5g6r2vibn4szd4r1b267ihf8pzczys2p-perl5.32.0-Net-Patricia-1.22

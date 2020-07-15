@@ -1,0 +1,73 @@
+these derivations will be built:
+  /nix/store/54vllw3xqh31xm95pbwmi4cp8grhml09-perl5.32.0-Number-Bytes-Human-0.11.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/fwxqqgqd0c8idcd59j19bbh7x2npqqvb-Number-Bytes-Human-0.11.tar.gz
+copying path '/nix/store/fwxqqgqd0c8idcd59j19bbh7x2npqqvb-Number-Bytes-Human-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/54vllw3xqh31xm95pbwmi4cp8grhml09-perl5.32.0-Number-Bytes-Human-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/fwxqqgqd0c8idcd59j19bbh7x2npqqvb-Number-Bytes-Human-0.11.tar.gz
+source root is Number-Bytes-Human-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1483929562 of file Number-Bytes-Human-0.11/META.yml
+patching sources
+configuring
+patching ./t/07unit.t...
+patching ./t/10parse_args.t...
+patching ./t/02basic.t...
+patching ./t/90pod.t...
+patching ./t/03large.t...
+patching ./t/08base1M.t...
+patching ./t/06si.t...
+patching ./t/20oo.t...
+patching ./t/05zero.t...
+patching ./t/04base1000.t...
+patching ./t/01use.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Number::Bytes::Human
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Human.pm blib/lib/Number/Bytes/Human.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t ........... 1/1 # Testing Number::Bytes::Human 0.11, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/01use.t ........... ok
+t/02basic.t ......... ok
+t/03large.t ......... ok
+t/04base1000.t ...... ok
+t/05zero.t .......... ok
+t/06si.t ............ ok
+t/07unit.t .......... ok
+t/08base1M.t ........ ok
+t/10parse_args.t .... ok
+t/20oo.t ............ ok
+t/90pod.t ........... skipped: Test::Pod 1.18 required for testing POD
+t/98pod-coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+All tests successful.
+Files=12, Tests=207,  0 wallclock secs ( 0.05 usr  0.01 sys +  0.60 cusr  0.10 csys =  0.76 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/lib/pkgconfig m4datadir=/nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/share/aclocal aclocaldir=/nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/lib/perl5/site_perl/5.32.0/Number/Bytes/Human.pm
+Installing /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/share/man/man3/Number::Bytes::Human.3
+Appending installation info to /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/share/man/man3 to /nix/store/vmrw9wlxb6cjw76swzv1djjn846bhbp2-perl5.32.0-Number-Bytes-Human-0.11-devdoc/share/man/man3
+Removing empty /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11/lib
+patching script interpreter paths in /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11
+checking for references to /build/ in /nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vmrw9wlxb6cjw76swzv1djjn846bhbp2-perl5.32.0-Number-Bytes-Human-0.11-devdoc
+gzipping man pages under /nix/store/vmrw9wlxb6cjw76swzv1djjn846bhbp2-perl5.32.0-Number-Bytes-Human-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vmrw9wlxb6cjw76swzv1djjn846bhbp2-perl5.32.0-Number-Bytes-Human-0.11-devdoc
+checking for references to /build/ in /nix/store/vmrw9wlxb6cjw76swzv1djjn846bhbp2-perl5.32.0-Number-Bytes-Human-0.11-devdoc...
+/nix/store/dxnl0bjybvsg6yxs9wl04pni371f7452-perl5.32.0-Number-Bytes-Human-0.11

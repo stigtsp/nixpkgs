@@ -1,0 +1,82 @@
+these derivations will be built:
+  /nix/store/i83dyhmck2x69hsiy45fyabm4lc4hlb7-perl5.32.0-Clipboard-0.26.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/597rgrwkj2844l4kway5bbnq78nw8z9z-Clipboard-0.26.tar.gz
+copying path '/nix/store/597rgrwkj2844l4kway5bbnq78nw8z9z-Clipboard-0.26.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/i83dyhmck2x69hsiy45fyabm4lc4hlb7-perl5.32.0-Clipboard-0.26.drv'...
+unpacking sources
+unpacking source archive /nix/store/597rgrwkj2844l4kway5bbnq78nw8z9z-Clipboard-0.26.tar.gz
+source root is Clipboard-0.26
+setting SOURCE_DATE_EPOCH to timestamp 1589615796 of file Clipboard-0.26/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./scripts/clipaccumulate...
+patching ./scripts/clipjoin...
+patching ./scripts/clipbrowse...
+patching ./scripts/clipedit...
+patching ./scripts/clipfilter...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-syntax.t...
+patching ./at/clipjoin-test...
+patching ./at/all...
+patching ./at/clipbrowse-test...
+patching ./at/all-xclip-selections...
+patching ./at/pxclip...
+patching ./at/run...
+patching ./at/clipfilter-test...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Clipboard' version '0.26'
+Building Clipboard
+running tests
+t/drivers.t ..
+Can't find the 'xclip' script.  Clipboard.pm's X support depends on it.
+
+Here's the project homepage: http://sourceforge.net/projects/xclip/
+
+t/drivers.t .. ok
+t/mock.t .....
+Can't find the 'xclip' script.  Clipboard.pm's X support depends on it.
+
+Here's the project homepage: http://sourceforge.net/projects/xclip/
+
+t/mock.t ..... ok
+All tests successful.
+Files=2, Tests=16,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.11 cusr  0.01 csys =  0.15 CPU)
+Result: PASS
+installing
+Building Clipboard
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man1/clipedit.1
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man1/clipfilter.1
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man1/clipbrowse.1
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man1/clipjoin.1
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man1/clipaccumulate.1
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/lib/perl5/site_perl/5.32.0/Clipboard.pm
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/lib/perl5/site_perl/5.32.0/Clipboard/Xclip.pm
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/lib/perl5/site_perl/5.32.0/Clipboard/MacPasteboard.pm
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/lib/perl5/site_perl/5.32.0/Clipboard/Win32.pm
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man3/Clipboard::MacPasteboard.3
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man3/Clipboard::Xclip.3
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man3/Clipboard.3
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man3/Clipboard::Win32.3
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin/clipaccumulate
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin/clipjoin
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin/clipbrowse
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin/clipedit
+Installing /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin/clipfilter
+post-installation fixup
+Moving /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/man3 to /nix/store/bxq6mmmswlnn018i9im8iyv984caxa5v-perl5.32.0-Clipboard-0.26-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26
+gzipping man pages under /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/lib  /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26/bin
+patching script interpreter paths in /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26
+checking for references to /build/ in /nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bxq6mmmswlnn018i9im8iyv984caxa5v-perl5.32.0-Clipboard-0.26-devdoc
+gzipping man pages under /nix/store/bxq6mmmswlnn018i9im8iyv984caxa5v-perl5.32.0-Clipboard-0.26-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bxq6mmmswlnn018i9im8iyv984caxa5v-perl5.32.0-Clipboard-0.26-devdoc
+checking for references to /build/ in /nix/store/bxq6mmmswlnn018i9im8iyv984caxa5v-perl5.32.0-Clipboard-0.26-devdoc...
+/nix/store/vd7x2jianxahvv28q8y8nf5gh3j5yab5-perl5.32.0-Clipboard-0.26

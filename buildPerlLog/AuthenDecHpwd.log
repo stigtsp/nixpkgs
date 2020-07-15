@@ -1,0 +1,219 @@
+these derivations will be built:
+  /nix/store/7qaw4j2n5nwqx5vpis11kq5kq2r3kr55-perl5.32.0-Digest-CRC-0.22.2.drv
+  /nix/store/m8ayz23ds96zsngi3fk25x3b6pwryy65-perl5.32.0-Scalar-String-0.003.drv
+  /nix/store/vn0j8b4765hg4sdwy3pwmpzqwm2j2gz5-perl5.32.0-Data-Integer-0.006.drv
+  /nix/store/w1m95srs21v5w00dnk1d2n636m6nj0yq-perl5.32.0-Authen-DecHpwd-2.007.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/hicprnz8ij6g2r7gis4xkbdbxj9afagh-Data-Integer-0.006.tar.gz
+  /nix/store/kyxkhri07wx8879bch9ck6ma5554i2w0-Authen-DecHpwd-2.007.tar.gz
+  /nix/store/sinh7rcnv7zfv0sm55pq61zd9dkmx5p0-Digest-CRC-0.22.2.tar.gz
+  /nix/store/w0i0pd9qvclav4b4gfmqvmmq91fhi514-Scalar-String-0.003.tar.gz
+copying path '/nix/store/kyxkhri07wx8879bch9ck6ma5554i2w0-Authen-DecHpwd-2.007.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/sinh7rcnv7zfv0sm55pq61zd9dkmx5p0-Digest-CRC-0.22.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/w0i0pd9qvclav4b4gfmqvmmq91fhi514-Scalar-String-0.003.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/hicprnz8ij6g2r7gis4xkbdbxj9afagh-Data-Integer-0.006.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m8ayz23ds96zsngi3fk25x3b6pwryy65-perl5.32.0-Scalar-String-0.003.drv'...
+building '/nix/store/7qaw4j2n5nwqx5vpis11kq5kq2r3kr55-perl5.32.0-Digest-CRC-0.22.2.drv'...
+building '/nix/store/vn0j8b4765hg4sdwy3pwmpzqwm2j2gz5-perl5.32.0-Data-Integer-0.006.drv'...
+unpacking sources
+unpacking source archive /nix/store/w0i0pd9qvclav4b4gfmqvmmq91fhi514-Scalar-String-0.003.tar.gz
+source root is Scalar-String-0.003
+setting SOURCE_DATE_EPOCH to timestamp 1500800313 of file Scalar-String-0.003/SIGNATURE
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/sinh7rcnv7zfv0sm55pq61zd9dkmx5p0-Digest-CRC-0.22.2.tar.gz
+source root is Digest-CRC-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1487524785 of file Digest-CRC-0.22/t/crc.t
+patching sources
+unpacking sources
+configuring
+unpacking source archive /nix/store/hicprnz8ij6g2r7gis4xkbdbxj9afagh-Data-Integer-0.006.tar.gz
+source root is Data-Integer-0.006
+setting SOURCE_DATE_EPOCH to timestamp 1502140139 of file Data-Integer-0.006/SIGNATURE
+patching sources
+configuring
+no configure script, doing nothing
+building
+no configure script, doing nothing
+building
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Digest::CRC
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Data-Integer' version '0.006'
+Writing MYMETA.yml and MYMETA.json
+Testing if you have a C compiler
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.22\" -DXS_VERSION=\"0.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   test.c
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Scalar-String' version '0.003'
+Building Data-Integer
+running tests
+Building Scalar-String
+cp lib/Digest/CRC.pm blib/lib/Digest/CRC.pm
+Running Mkbootstrap for CRC ()
+chmod 644 "CRC.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC.bs blib/arch/auto/Digest/CRC/CRC.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  CRC.xs > CRC.xsc
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.003" -DXS_VERSION="0.003" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Scalar/String.o lib/Scalar/String.c
+mv CRC.xsc CRC.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.22\" -DXS_VERSION=\"0.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   CRC.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Scalar/String/String.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Scalar/String/String.so lib/Scalar/String.o
+rm -f blib/arch/auto/Digest/CRC/CRC.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  CRC.o  -o blib/arch/auto/Digest/CRC/CRC.so  \
+      \
+
+chmod 755 blib/arch/auto/Digest/CRC/CRC.so
+running tests
+Manifying 1 pod document
+t/arith.t .... ok
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC.bs blib/arch/auto/Digest/CRC/CRC.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/bitwise.t .. ok
+t/canon.t .... ok
+t/crc.t .. ok
+All tests successful.
+Files=1, Tests=31,  1 wallclock secs ( 0.03 usr  0.00 sys +  0.06 cusr  0.01 csys =  0.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib/pkgconfig m4datadir=/nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/share/aclocal aclocaldir=/nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- CRC.bs blib/arch/auto/Digest/CRC/CRC.bs 644
+t/const.t .... ok
+Manifying 1 pod document
+t/grade.t ....... ok
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Digest/CRC/CRC.so
+Installing /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Digest/CRC.pm
+Installing /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/share/man/man3/Digest::CRC.3
+t/fmt.t ...... ok
+Appending installation info to /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/share/man/man3 to /nix/store/zim683qcdimrqlaq1y7xx4v1vp475ilw-perl5.32.0-Digest-CRC-0.22.2-devdoc/share/man/man3
+Removing empty /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2
+shrinking /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Digest/CRC/CRC.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2/lib
+patching script interpreter paths in /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2
+checking for references to /build/ in /nix/store/9xf9qa52ir1hsfs3s848g40gcc5f2l5w-perl5.32.0-Digest-CRC-0.22.2...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zim683qcdimrqlaq1y7xx4v1vp475ilw-perl5.32.0-Digest-CRC-0.22.2-devdoc
+gzipping man pages under /nix/store/zim683qcdimrqlaq1y7xx4v1vp475ilw-perl5.32.0-Digest-CRC-0.22.2-devdoc/share/man/
+t/grade_pp.t .... ok
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zim683qcdimrqlaq1y7xx4v1vp475ilw-perl5.32.0-Digest-CRC-0.22.2-devdoc
+checking for references to /build/ in /nix/store/zim683qcdimrqlaq1y7xx4v1vp475ilw-perl5.32.0-Digest-CRC-0.22.2-devdoc...
+t/hex.t ...... ok
+t/pod_cvg.t ..... skipped: Test::Pod::Coverage not available
+t/pod_cvg_pp.t .. skipped: Test::Pod::Coverage not available
+t/pod_syn.t ..... skipped: Test::Pod not available
+All tests successful.
+Files=5, Tests=1058,  1 wallclock secs ( 0.12 usr  0.01 sys +  0.40 cusr  0.08 csys =  0.61 CPU)
+Result: PASS
+installing
+t/marith.t ... ok
+Building Scalar-String
+t/pod_cvg.t .. skipped: Test::Pod::Coverage not available
+t/pod_syn.t .. skipped: Test::Pod not available
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Scalar/String/String.so
+Installing /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Scalar/String/String.bs
+Installing /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Scalar/String.pm
+Installing /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/share/man/man3/Scalar::String.3
+post-installation fixup
+Moving /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/share/man/man3 to /nix/store/k1mrf1bddx3wljdn1ym3srqpin3vampw-perl5.32.0-Scalar-String-0.003-devdoc/share/man/man3
+Removing empty /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003
+shrinking /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Scalar/String/String.so
+t/shift.t .... ok
+All tests successful.
+Files=10, Tests=6269,  1 wallclock secs ( 0.50 usr  0.03 sys +  1.31 cusr  0.16 csys =  2.00 CPU)
+Result: PASS
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003/lib
+installing
+patching script interpreter paths in /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003
+checking for references to /build/ in /nix/store/xvrccmmsmlqqg6gbg5ac8awdygiq2v7a-perl5.32.0-Scalar-String-0.003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/k1mrf1bddx3wljdn1ym3srqpin3vampw-perl5.32.0-Scalar-String-0.003-devdoc
+gzipping man pages under /nix/store/k1mrf1bddx3wljdn1ym3srqpin3vampw-perl5.32.0-Scalar-String-0.003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/k1mrf1bddx3wljdn1ym3srqpin3vampw-perl5.32.0-Scalar-String-0.003-devdoc
+checking for references to /build/ in /nix/store/k1mrf1bddx3wljdn1ym3srqpin3vampw-perl5.32.0-Scalar-String-0.003-devdoc...
+Building Data-Integer
+Installing /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006/lib/perl5/site_perl/5.32.0/Data/Integer.pm
+Installing /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006/share/man/man3/Data::Integer.3
+post-installation fixup
+Moving /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006/share/man/man3 to /nix/store/mxp2mikiqhvi5b99rsh2l09fiynnqy94-perl5.32.0-Data-Integer-0.006-devdoc/share/man/man3
+Removing empty /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006/lib
+patching script interpreter paths in /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006
+checking for references to /build/ in /nix/store/z92phv5ravwlhl68m4nl8d4lqhr9fkqp-perl5.32.0-Data-Integer-0.006...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mxp2mikiqhvi5b99rsh2l09fiynnqy94-perl5.32.0-Data-Integer-0.006-devdoc
+gzipping man pages under /nix/store/mxp2mikiqhvi5b99rsh2l09fiynnqy94-perl5.32.0-Data-Integer-0.006-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mxp2mikiqhvi5b99rsh2l09fiynnqy94-perl5.32.0-Data-Integer-0.006-devdoc
+checking for references to /build/ in /nix/store/mxp2mikiqhvi5b99rsh2l09fiynnqy94-perl5.32.0-Data-Integer-0.006-devdoc...
+building '/nix/store/w1m95srs21v5w00dnk1d2n636m6nj0yq-perl5.32.0-Authen-DecHpwd-2.007.drv'...
+unpacking sources
+unpacking source archive /nix/store/kyxkhri07wx8879bch9ck6ma5554i2w0-Authen-DecHpwd-2.007.tar.gz
+source root is Authen-DecHpwd-2.007
+setting SOURCE_DATE_EPOCH to timestamp 1500452246 of file Authen-DecHpwd-2.007/SIGNATURE
+patching sources
+configuring
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Authen-DecHpwd' version '2.007'
+Building Authen-DecHpwd
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="2.007" -DXS_VERSION="2.007" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Authen/DecHpwd.o lib/Authen/DecHpwd.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Authen/DecHpwd/DecHpwd.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Authen/DecHpwd/DecHpwd.so lib/Authen/DecHpwd.o
+running tests
+t/ad_ii.t ....... ok
+t/ad_ii_pp.t .... ok
+t/error.t ....... ok
+t/error_pp.t .... ok
+t/pod_cvg.t ..... skipped: Test::Pod::Coverage not available
+t/pod_cvg_pp.t .. skipped: Test::Pod::Coverage not available
+t/pod_syn.t ..... skipped: Test::Pod not available
+t/purdy.t ....... ok
+t/purdy_pp.t .... ok
+t/purdy_s.t ..... ok
+t/purdy_s_pp.t .. ok
+t/purdy_v.t ..... ok
+t/purdy_v_pp.t .. ok
+t/vms_pass.t .... ok
+t/vms_user.t .... ok
+All tests successful.
+Files=15, Tests=3247, 31 wallclock secs ( 0.36 usr  0.03 sys + 31.04 cusr  0.26 csys = 31.69 CPU)
+Result: PASS
+installing
+Building Authen-DecHpwd
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/DecHpwd/DecHpwd.bs
+Installing /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/DecHpwd/DecHpwd.so
+Installing /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Authen/DecHpwd.pm
+Installing /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/share/man/man3/Authen::DecHpwd.3
+post-installation fixup
+Moving /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/share/man/man3 to /nix/store/a3b34v21q4py55bp63ln3ld051rsdgmy-perl5.32.0-Authen-DecHpwd-2.007-devdoc/share/man/man3
+Removing empty /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007
+shrinking /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Authen/DecHpwd/DecHpwd.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007/lib
+patching script interpreter paths in /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007
+checking for references to /build/ in /nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/a3b34v21q4py55bp63ln3ld051rsdgmy-perl5.32.0-Authen-DecHpwd-2.007-devdoc
+gzipping man pages under /nix/store/a3b34v21q4py55bp63ln3ld051rsdgmy-perl5.32.0-Authen-DecHpwd-2.007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/a3b34v21q4py55bp63ln3ld051rsdgmy-perl5.32.0-Authen-DecHpwd-2.007-devdoc
+checking for references to /build/ in /nix/store/a3b34v21q4py55bp63ln3ld051rsdgmy-perl5.32.0-Authen-DecHpwd-2.007-devdoc...
+/nix/store/ivnjzpcdcx7nks0i83jypnv84ax81201-perl5.32.0-Authen-DecHpwd-2.007

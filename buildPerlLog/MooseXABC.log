@@ -1,0 +1,72 @@
+these derivations will be built:
+  /nix/store/69cphablqyg6ws2dpw1s492lxhp2kcni-perl5.32.0-MooseX-ABC-0.06.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/j992zm183sab8mbkh0lrk8qp1ngn2947-MooseX-ABC-0.06.tar.gz
+copying path '/nix/store/j992zm183sab8mbkh0lrk8qp1ngn2947-MooseX-ABC-0.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/69cphablqyg6ws2dpw1s492lxhp2kcni-perl5.32.0-MooseX-ABC-0.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/j992zm183sab8mbkh0lrk8qp1ngn2947-MooseX-ABC-0.06.tar.gz
+source root is MooseX-ABC-0.06
+setting SOURCE_DATE_EPOCH to timestamp 1335336650 of file MooseX-ABC-0.06/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/00-compile.t...
+patching ./t/abstract-subclass.t...
+patching ./t/custom-constructor.t...
+patching ./t/immutable.t...
+patching ./t/release-pod-syntax.t...
+patching ./t/basic.t...
+patching ./t/release-pod-coverage.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for MooseX::ABC
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/MooseX/ABC.pm blib/lib/MooseX/ABC.pm
+cp lib/MooseX/ABC/Trait/Class.pm blib/lib/MooseX/ABC/Trait/Class.pm
+cp lib/MooseX/ABC/Role/Object.pm blib/lib/MooseX/ABC/Role/Object.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t ............ ok
+t/abstract-subclass.t ..... ok
+t/basic.t ................. ok
+t/custom-constructor.t .... ok
+t/immutable.t ............. 1/? Argument "Moose::Meta::Method=HASH(0x1b1f640)" isn't numeric in numeric eq (==) at /build/MooseX-ABC-0.06/blib/lib/MooseX/ABC/Trait/Class.pm line 61.
+Argument "Moose::Meta::Method=HASH(0x1b1f640)" isn't numeric in numeric eq (==) at /build/MooseX-ABC-0.06/blib/lib/MooseX/ABC/Trait/Class.pm line 61.
+t/immutable.t ............. ok
+t/release-eol.t ........... skipped: these tests are for release candidate testing
+t/release-no-tabs.t ....... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-pod-syntax.t .... skipped: these tests are for release candidate testing
+All tests successful.
+Files=9, Tests=25,  3 wallclock secs ( 0.06 usr  0.03 sys +  2.08 cusr  1.10 csys =  3.27 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib/pkgconfig m4datadir=/nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/aclocal aclocaldir=/nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib/perl5/site_perl/5.32.0/MooseX/ABC.pm
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib/perl5/site_perl/5.32.0/MooseX/ABC/Trait/Class.pm
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib/perl5/site_perl/5.32.0/MooseX/ABC/Role/Object.pm
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/man/man3/MooseX::ABC::Trait::Class.3
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/man/man3/MooseX::ABC::Role::Object.3
+Installing /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/man/man3/MooseX::ABC.3
+Appending installation info to /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/man/man3 to /nix/store/iznr6rm844623dmcblcng0nr2hadq6dl-perl5.32.0-MooseX-ABC-0.06-devdoc/share/man/man3
+Removing empty /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06/lib
+patching script interpreter paths in /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06
+checking for references to /build/ in /nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/iznr6rm844623dmcblcng0nr2hadq6dl-perl5.32.0-MooseX-ABC-0.06-devdoc
+gzipping man pages under /nix/store/iznr6rm844623dmcblcng0nr2hadq6dl-perl5.32.0-MooseX-ABC-0.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/iznr6rm844623dmcblcng0nr2hadq6dl-perl5.32.0-MooseX-ABC-0.06-devdoc
+checking for references to /build/ in /nix/store/iznr6rm844623dmcblcng0nr2hadq6dl-perl5.32.0-MooseX-ABC-0.06-devdoc...
+/nix/store/1crfsr9ypiamm73l2q06y894cimwqzsf-perl5.32.0-MooseX-ABC-0.06

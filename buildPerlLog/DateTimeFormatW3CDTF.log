@@ -1,0 +1,57 @@
+these derivations will be built:
+  /nix/store/myy5wcsxdmyqm18ip1c5svhb46zqk4ls-perl5.32.0-DateTime-Format-W3CDTF-0.07.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/8l3carpls0b1h85kw9q9mxg3jk7hw02k-DateTime-Format-W3CDTF-0.07.tar.gz
+copying path '/nix/store/8l3carpls0b1h85kw9q9mxg3jk7hw02k-DateTime-Format-W3CDTF-0.07.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/myy5wcsxdmyqm18ip1c5svhb46zqk4ls-perl5.32.0-DateTime-Format-W3CDTF-0.07.drv'...
+unpacking sources
+unpacking source archive /nix/store/8l3carpls0b1h85kw9q9mxg3jk7hw02k-DateTime-Format-W3CDTF-0.07.tar.gz
+source root is DateTime-Format-W3CDTF-0.07
+setting SOURCE_DATE_EPOCH to timestamp 1491595909 of file DateTime-Format-W3CDTF-0.07/MANIFEST
+patching sources
+configuring
+patching ./examples/now.pl...
+patching ./t/02bugs.t...
+patching ./t/01parse.t...
+Cannot determine perl version info from lib/DateTime/Format/W3CDTF.pm
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Format::W3CDTF
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DateTime/Format/W3CDTF.pm blib/lib/DateTime/Format/W3CDTF.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/00load.t ........ ok
+t/01parse.t ....... ok
+t/02bugs.t ........ ok
+t/pod.t ........... skipped: Test::Pod 1.14 required for testing POD
+t/pod_coverage.t .. skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+All tests successful.
+Files=5, Tests=24,  2 wallclock secs ( 0.04 usr  0.03 sys +  0.90 cusr  0.54 csys =  1.51 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/lib/pkgconfig m4datadir=/nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/share/aclocal aclocaldir=/nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/lib/perl5/site_perl/5.32.0/DateTime/Format/W3CDTF.pm
+Installing /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/share/man/man3/DateTime::Format::W3CDTF.3
+Appending installation info to /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/share/man/man3 to /nix/store/css05x5190fvxs9bh4w6vqmq934xh52z-perl5.32.0-DateTime-Format-W3CDTF-0.07-devdoc/share/man/man3
+Removing empty /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07/lib
+patching script interpreter paths in /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07
+checking for references to /build/ in /nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07...
+shrinking RPATHs of ELF executables and libraries in /nix/store/css05x5190fvxs9bh4w6vqmq934xh52z-perl5.32.0-DateTime-Format-W3CDTF-0.07-devdoc
+gzipping man pages under /nix/store/css05x5190fvxs9bh4w6vqmq934xh52z-perl5.32.0-DateTime-Format-W3CDTF-0.07-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/css05x5190fvxs9bh4w6vqmq934xh52z-perl5.32.0-DateTime-Format-W3CDTF-0.07-devdoc
+checking for references to /build/ in /nix/store/css05x5190fvxs9bh4w6vqmq934xh52z-perl5.32.0-DateTime-Format-W3CDTF-0.07-devdoc...
+/nix/store/z5fyrfgvh7h30svbvdmggb6zm4f4bbi6-perl5.32.0-DateTime-Format-W3CDTF-0.07

@@ -1,0 +1,223 @@
+these derivations will be built:
+  /nix/store/zaafpj0p8shpd8fq7qm0nq2b58sba9qh-perl5.32.0-Devel-Declare-0.006022.drv
+these paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/zh5brv9jfblrcc96flngkiwdglwxsyid-Devel-Declare-0.006022.tar.gz
+copying path '/nix/store/zh5brv9jfblrcc96flngkiwdglwxsyid-Devel-Declare-0.006022.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zaafpj0p8shpd8fq7qm0nq2b58sba9qh-perl5.32.0-Devel-Declare-0.006022.drv'...
+unpacking sources
+unpacking source archive /nix/store/zh5brv9jfblrcc96flngkiwdglwxsyid-Devel-Declare-0.006022.tar.gz
+source root is Devel-Declare-0.006022
+setting SOURCE_DATE_EPOCH to timestamp 1587925828 of file Devel-Declare-0.006022/README
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Devel::Declare
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Devel/Declare/Context/Simple.pm blib/lib/Devel/Declare/Context/Simple.pm
+cp lib/Devel/Declare.pm blib/lib/Devel/Declare.pm
+cp lib/Devel/Declare/MethodInstaller/Simple.pm blib/lib/Devel/Declare/MethodInstaller/Simple.pm
+Running Mkbootstrap for Declare ()
+chmod 644 "Declare.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Declare.bs blib/arch/auto/Devel/Declare/Declare.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Declare.xs > Declare.xsc
+mv Declare.xsc Declare.c
+cc -c  -I/nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/B/Hooks/OP/Check/Install -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.006022\" -DXS_VERSION=\"0.006022\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Declare.c
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:145: warning: "PL_lex_stuff" redefined
+  145 | #define PL_lex_stuff            (PL_parser->lex_stuff)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4928: note: this is the location of the previous definition
+ 4928 | # define PL_lex_stuff      D_PPP_my_PL_parser_var(lex_stuff)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:152: warning: "PL_linestr" redefined
+  152 | #define PL_linestr              (PL_parser->linestr)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4924: note: this is the location of the previous definition
+ 4924 | # define PL_linestr        D_PPP_my_PL_parser_var(linestr)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:155: warning: "PL_expect" redefined
+  155 | #define PL_expect               (PL_parser->expect)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4920: note: this is the location of the previous definition
+ 4920 | # define PL_expect         D_PPP_my_PL_parser_var(expect)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:156: warning: "PL_copline" redefined
+  156 | #define PL_copline              (PL_parser->copline)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4921: note: this is the location of the previous definition
+ 4921 | # define PL_copline        D_PPP_my_PL_parser_var(copline)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:157: warning: "PL_bufptr" redefined
+  157 | #define PL_bufptr               (PL_parser->bufptr)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4925: note: this is the location of the previous definition
+ 4925 | # define PL_bufptr         D_PPP_my_PL_parser_var(bufptr)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:161: warning: "PL_bufend" redefined
+  161 | #define PL_bufend               (PL_parser->bufend)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4926: note: this is the location of the previous definition
+ 4926 | # define PL_bufend         D_PPP_my_PL_parser_var(bufend)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:165: warning: "PL_lex_state" redefined
+  165 | #define PL_lex_state            (PL_parser->lex_state)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4927: note: this is the location of the previous definition
+ 4927 | # define PL_lex_state      D_PPP_my_PL_parser_var(lex_state)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:166: warning: "PL_rsfp" redefined
+  166 | #define PL_rsfp                 (PL_parser->rsfp)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4922: note: this is the location of the previous definition
+ 4922 | # define PL_rsfp           D_PPP_my_PL_parser_var(rsfp)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:167: warning: "PL_rsfp_filters" redefined
+  167 | #define PL_rsfp_filters         (PL_parser->rsfp_filters)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4923: note: this is the location of the previous definition
+ 4923 | # define PL_rsfp_filters   D_PPP_my_PL_parser_var(rsfp_filters)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:168: warning: "PL_in_my" redefined
+  168 | #define PL_in_my                (PL_parser->in_my)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4930: note: this is the location of the previous definition
+ 4930 | # define PL_in_my          D_PPP_my_PL_parser_var(in_my)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:169: warning: "PL_in_my_stash" redefined
+  169 | #define PL_in_my_stash          (PL_parser->in_my_stash)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4931: note: this is the location of the previous definition
+ 4931 | # define PL_in_my_stash    D_PPP_my_PL_parser_var(in_my_stash)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:170: warning: "PL_tokenbuf" redefined
+  170 | #define PL_tokenbuf             (PL_parser->tokenbuf)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4929: note: this is the location of the previous definition
+ 4929 | # define PL_tokenbuf       D_PPP_my_PL_parser_var(tokenbuf)
+      |
+In file included from Declare.xs:7:
+stolen_chunk_of_toke.c:172: warning: "PL_error_count" redefined
+  172 | #define PL_error_count          (PL_parser->error_count)
+      |
+In file included from stolen_chunk_of_toke.c:20,
+                 from Declare.xs:7:
+ppport.h:4932: note: this is the location of the previous definition
+ 4932 | # define PL_error_count    D_PPP_my_PL_parser_var(error_count)
+      |
+rm -f blib/arch/auto/Devel/Declare/Declare.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Declare.o  -o blib/arch/auto/Devel/Declare/Declare.so  \
+      \
+
+chmod 755 blib/arch/auto/Devel/Declare/Declare.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Declare.bs blib/arch/auto/Devel/Declare/Declare.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00load.t ..................... ok
+t/block_size.t ................. ok
+t/build_sub_installer.t ........ ok
+t/combi.t ...................... Useless assignment to a temporary at t/combi.t line 25.
+t/combi.t ...................... ok
+t/ctx-simple-like-mxms.t ....... ok
+t/ctx-simple.t ................. ok
+t/debug.t ...................... ok
+t/devel_callparser.t ........... skipped: Test requires module 'Devel::CallParser' but it's not found
+t/early0.t ..................... ok
+t/early1.t ..................... ok
+t/early2.t ..................... ok
+t/eval.t ....................... ok
+t/fail.t ....................... ok
+t/filter0.t .................... ok
+t/filter1.t .................... ok
+t/lines.t ...................... skipped: Test requires module 'B::Compiling' but it's not found
+t/load_module.t ................ ok
+t/methinstaller-simple.t ....... ok
+t/method-installer-redefine.t .. ok
+t/method-installer-runtime.t ... ok
+t/method-no-semi.t ............. ok
+t/method.t ..................... ok
+t/multiline-proto.t ............ Useless assignment to a temporary at t/multiline-proto.t line 22.
+t/multiline-proto.t ............ ok
+t/new.t ........................ ok
+t/no-bareword.t ................ ok
+t/pack.t ....................... ok
+t/padstuff.t ................... ok
+t/proto.t ...................... Useless assignment to a temporary at t/proto.t line 23.
+t/proto.t ...................... ok
+t/quote.t ...................... ok
+t/scanstr.t .................... ok
+t/scanstr_fail.t ............... ok
+t/simple.t ..................... ok
+t/statement.t .................. ok
+t/sugar.t ...................... Useless assignment to a temporary at t/sugar.t line 61.
+t/sugar.t ...................... ok
+All tests successful.
+Files=34, Tests=141,  3 wallclock secs ( 0.10 usr  0.04 sys +  2.14 cusr  1.00 csys =  3.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/pkgconfig m4datadir=/nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/share/aclocal aclocaldir=/nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Declare.bs blib/arch/auto/Devel/Declare/Declare.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/Declare/Declare.so
+Installing /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/Declare.pm
+Installing /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/Declare/MethodInstaller/Simple.pm
+Installing /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/Declare/Context/Simple.pm
+Installing /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/share/man/man3/Devel::Declare.3
+Appending installation info to /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/share/man/man3 to /nix/store/yh2s754qmcab9mp4cpp8xc4s2z8029rx-perl5.32.0-Devel-Declare-0.006022-devdoc/share/man/man3
+Removing empty /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022
+shrinking /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/Declare/Declare.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022/lib
+patching script interpreter paths in /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022
+checking for references to /build/ in /nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yh2s754qmcab9mp4cpp8xc4s2z8029rx-perl5.32.0-Devel-Declare-0.006022-devdoc
+gzipping man pages under /nix/store/yh2s754qmcab9mp4cpp8xc4s2z8029rx-perl5.32.0-Devel-Declare-0.006022-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yh2s754qmcab9mp4cpp8xc4s2z8029rx-perl5.32.0-Devel-Declare-0.006022-devdoc
+checking for references to /build/ in /nix/store/yh2s754qmcab9mp4cpp8xc4s2z8029rx-perl5.32.0-Devel-Declare-0.006022-devdoc...
+/nix/store/00rklml17728w6k864rdvjs9gf8qfg8s-perl5.32.0-Devel-Declare-0.006022

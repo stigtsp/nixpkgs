@@ -1,0 +1,102 @@
+these derivations will be built:
+  /nix/store/f95q98yfhc91x9qw453kr0qhi3c9nrk7-perl5.32.0-Mojo-SQLite-3.003.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/0zvfww66idpfhiyxp2yxg2nn2czyljjx-Mojo-SQLite-3.003.tar.gz
+copying path '/nix/store/0zvfww66idpfhiyxp2yxg2nn2czyljjx-Mojo-SQLite-3.003.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f95q98yfhc91x9qw453kr0qhi3c9nrk7-perl5.32.0-Mojo-SQLite-3.003.drv'...
+unpacking sources
+unpacking source archive /nix/store/0zvfww66idpfhiyxp2yxg2nn2czyljjx-Mojo-SQLite-3.003.tar.gz
+source root is Mojo-SQLite-3.003
+setting SOURCE_DATE_EPOCH to timestamp 1569959385 of file Mojo-SQLite-3.003/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./examples/blog/script/blog...
+patching ./t/00-report-prereqs.t...
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Mojo-SQLite' version '3.003'
+cp lib/Mojo/SQLite.pm blib/lib/Mojo/SQLite.pm
+cp lib/Mojo/SQLite/Migrations.pm blib/lib/Mojo/SQLite/Migrations.pm
+cp lib/Mojo/SQLite/Results.pm blib/lib/Mojo/SQLite/Results.pm
+cp lib/Mojo/SQLite/Database.pm blib/lib/Mojo/SQLite/Database.pm
+cp lib/Mojo/SQLite/PubSub.pm blib/lib/Mojo/SQLite/PubSub.pm
+cp lib/Mojo/SQLite/Transaction.pm blib/lib/Mojo/SQLite/Transaction.pm
+running tests
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module           Want     Have
+#     ---------------- ---- --------
+#     File::Spec        any     3.78
+#     Module::Metadata  any 1.000037
+#     Test::More       0.88 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                 Want   Have
+#     --------------------- ----- ------
+#     Carp                    any   1.50
+#     DBD::SQLite            1.64   1.64
+#     DBI                   1.627  1.643
+#     File::Spec::Functions   any   3.78
+#     File::Temp              any 0.2309
+#     Mojolicious            7.32   8.55
+#     SQL::Abstract          1.81   1.87
+#     Scalar::Util            any   1.55
+#     URI                    1.69   1.76
+#     URI::db                0.15   0.19
+#     URI::file              4.21   4.21
+#
+t/00-report-prereqs.t .. ok
+t/connection.t ......... ok
+t/crud.t ............... ok
+t/database.t ........... ok
+t/migrations.t ......... ok
+t/results.t ............ ok
+t/sqlite_lite_app.t .... ok
+All tests successful.
+Files=7, Tests=190,  3 wallclock secs ( 0.05 usr  0.03 sys +  1.80 cusr  0.75 csys =  2.63 CPU)
+Result: PASS
+installing
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite/PubSub.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite/Transaction.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite/Database.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite/Results.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib/perl5/site_perl/5.32.0/Mojo/SQLite/Migrations.pm
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite::Results.3
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite::PubSub.3
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite::Database.3
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite.3
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite::Migrations.3
+Installing /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3/Mojo::SQLite::Transaction.3
+post-installation fixup
+Moving /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/man3 to /nix/store/axdg4flcg2pdhwl9lcahcaj3229c2v6s-perl5.32.0-Mojo-SQLite-3.003-devdoc/share/man/man3
+Removing empty /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003/lib
+patching script interpreter paths in /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003
+checking for references to /build/ in /nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/axdg4flcg2pdhwl9lcahcaj3229c2v6s-perl5.32.0-Mojo-SQLite-3.003-devdoc
+gzipping man pages under /nix/store/axdg4flcg2pdhwl9lcahcaj3229c2v6s-perl5.32.0-Mojo-SQLite-3.003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/axdg4flcg2pdhwl9lcahcaj3229c2v6s-perl5.32.0-Mojo-SQLite-3.003-devdoc
+checking for references to /build/ in /nix/store/axdg4flcg2pdhwl9lcahcaj3229c2v6s-perl5.32.0-Mojo-SQLite-3.003-devdoc...
+/nix/store/ikxlgfj5pxz9akf7sqmlm0z8kk995pds-perl5.32.0-Mojo-SQLite-3.003

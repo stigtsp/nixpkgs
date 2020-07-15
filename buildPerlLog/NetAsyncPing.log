@@ -1,0 +1,381 @@
+these derivations will be built:
+  /nix/store/9ncl7yqc3g0ipyq5mkv10v5f4a4p9kmf-perl5.32.0-Net-IPv4Addr-0.10.drv
+  /nix/store/5ii3v2rnpjb646wsl581p63qbmnid61a-perl5.32.0-Net-IPv6Addr-0.96.drv
+  /nix/store/xp4ldfl5sqag5pf10561ld5n9m28jb10-perl5.32.0-Net-Frame-1.21.drv
+  /nix/store/i64jh1s9g5kva5hf99vzvgx97x4vw1b7-perl5.32.0-Net-Frame-Layer-IPv6-1.08.drv
+  /nix/store/5ayxqnbl1b9arsc0kf2b5vxh8a411xfx-perl5.32.0-Net-Async-Ping-0.004001.drv
+these paths will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/7ghfaxpprpn1vdfw3f3x31xmrbcx0psz-Net-IPv6Addr-0.96.tar.gz
+  /nix/store/fxd1lzmjvv6zq4sh4w7mx4vssrxhfipw-Net-Frame-Layer-IPv6-1.08.tar.gz
+  /nix/store/j4dzarvskzkdcj84yhi101fl18vh0r7s-Net-Async-Ping-0.004001.tar.gz
+  /nix/store/nf5vhzrk90a7q5yz8azw1k9h2gy1v4qc-Net-IPv4Addr-0.10.tar.gz
+  /nix/store/qj6l0nhr5hl9lz57jh8ikgmr61r65k0a-Net-Frame-1.21.tar.gz
+copying path '/nix/store/j4dzarvskzkdcj84yhi101fl18vh0r7s-Net-Async-Ping-0.004001.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/fxd1lzmjvv6zq4sh4w7mx4vssrxhfipw-Net-Frame-Layer-IPv6-1.08.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qj6l0nhr5hl9lz57jh8ikgmr61r65k0a-Net-Frame-1.21.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/7ghfaxpprpn1vdfw3f3x31xmrbcx0psz-Net-IPv6Addr-0.96.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/nf5vhzrk90a7q5yz8azw1k9h2gy1v4qc-Net-IPv4Addr-0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9ncl7yqc3g0ipyq5mkv10v5f4a4p9kmf-perl5.32.0-Net-IPv4Addr-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/nf5vhzrk90a7q5yz8azw1k9h2gy1v4qc-Net-IPv4Addr-0.10.tar.gz
+source root is Net-IPv4Addr-0.10
+setting SOURCE_DATE_EPOCH to timestamp 965174992 of file Net-IPv4Addr-0.10/ChangeLog
+patching sources
+configuring
+patching ./debian/rules...
+patching ./ipv4calc...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IPv4Addr
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp IPv4Addr.pm blib/lib/Net/IPv4Addr.pm
+AutoSplitting blib/lib/Net/IPv4Addr.pm (blib/lib/auto/Net/IPv4Addr)
+cp ipv4calc blib/script/ipv4calc
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ipv4calc
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..37
+# Running under perl version 5.032000 for linux
+# Current time local: Wed Jul 15 06:07:37 2020
+# Current time GMT:   Wed Jul 15 06:07:37 2020
+# Using Test.pm version 1.31
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+ok 7
+ok 8
+ok 9
+ok 10
+ok 11
+ok 12
+ok 13
+ok 14
+ok 15
+ok 16
+ok 17
+ok 18
+ok 19
+ok 20
+ok 21
+ok 22
+ok 23
+ok 24
+ok 25
+ok 26
+ok 27
+ok 28
+ok 29
+ok 30
+ok 31
+ok 32
+ok 33
+ok 34
+ok 35
+ok 36
+ok 37
+ok 38
+ok 39
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/lib/pkgconfig m4datadir=/nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/aclocal aclocaldir=/nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/lib/perl5/site_perl/5.32.0/Net/IPv4Addr.pm
+Installing /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/lib/perl5/site_perl/5.32.0/auto/Net/IPv4Addr/autosplit.ix
+Installing /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/man/man1/ipv4calc.1
+Installing /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/man/man3/Net::IPv4Addr.3
+Installing /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/bin/ipv4calc
+Appending installation info to /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/man/man3 to /nix/store/88hs5kqml8ma94wq1bypyivdqh2vmww9-perl5.32.0-Net-IPv4Addr-0.10-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10
+gzipping man pages under /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/lib  /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10/bin
+patching script interpreter paths in /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10
+checking for references to /build/ in /nix/store/pbgxn1f20vw1yq9fwhd8bzpz5v6xdqpm-perl5.32.0-Net-IPv4Addr-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/88hs5kqml8ma94wq1bypyivdqh2vmww9-perl5.32.0-Net-IPv4Addr-0.10-devdoc
+gzipping man pages under /nix/store/88hs5kqml8ma94wq1bypyivdqh2vmww9-perl5.32.0-Net-IPv4Addr-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/88hs5kqml8ma94wq1bypyivdqh2vmww9-perl5.32.0-Net-IPv4Addr-0.10-devdoc
+checking for references to /build/ in /nix/store/88hs5kqml8ma94wq1bypyivdqh2vmww9-perl5.32.0-Net-IPv4Addr-0.10-devdoc...
+building '/nix/store/5ii3v2rnpjb646wsl581p63qbmnid61a-perl5.32.0-Net-IPv6Addr-0.96.drv'...
+unpacking sources
+unpacking source archive /nix/store/7ghfaxpprpn1vdfw3f3x31xmrbcx0psz-Net-IPv6Addr-0.96.tar.gz
+source root is Net-IPv6Addr-0.96
+setting SOURCE_DATE_EPOCH to timestamp 1538805970 of file Net-IPv6Addr-0.96/META.yml
+patching sources
+configuring
+patching ./examples/compressed.pl...
+patching ./examples/bigint.pl...
+patching ./examples/inet.pl...
+patching ./examples/array.pl...
+patching ./examples/synopsis.pl...
+patching ./examples/intarray.pl...
+patching ./examples/string-ip6-int.pl...
+patching ./examples/from-bigint.pl...
+patching ./examples/inos.pl...
+patching ./examples/to-string-ipv4.pl...
+patching ./examples/to-string-ipv4-comp.pl...
+patching ./examples/preferred.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::IPv6Addr
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/IPv6Addr.pm blib/lib/Net/IPv6Addr.pm
+cp lib/Net/IPv6Addr.pod blib/lib/Net/IPv6Addr.pod
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/base85.t ....... ok
+t/bigint.t ....... ok
+t/chkip.t ........ ok
+t/compressed.t ... ok
+t/in-network.t ... ok
+t/ipv4.t ......... ok
+t/ipv4comp.t ..... ok
+t/new.t .......... ok
+t/parse.t ........ ok
+t/preferred.t .... ok
+t/Regexp-IPv6.t .. ok
+t/rfc5952.t ...... ok
+t/string.t ....... ok
+t/synopsis.t ..... ok
+t/vietnam.t ...... ok
+All tests successful.
+Files=15, Tests=827,  2 wallclock secs ( 0.09 usr  0.02 sys +  1.21 cusr  0.21 csys =  1.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/lib/pkgconfig m4datadir=/nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/share/aclocal aclocaldir=/nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/lib/perl5/site_perl/5.32.0/Net/IPv6Addr.pm
+Installing /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/lib/perl5/site_perl/5.32.0/Net/IPv6Addr.pod
+Installing /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/share/man/man3/Net::IPv6Addr.3
+Appending installation info to /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/share/man/man3 to /nix/store/8287v4wncpvmckqf4qq78pz4fd6djd3a-perl5.32.0-Net-IPv6Addr-0.96-devdoc/share/man/man3
+Removing empty /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96/lib
+patching script interpreter paths in /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96
+checking for references to /build/ in /nix/store/l5pwx7cmxcp3blvcpgwzh92s3c2jrd3x-perl5.32.0-Net-IPv6Addr-0.96...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8287v4wncpvmckqf4qq78pz4fd6djd3a-perl5.32.0-Net-IPv6Addr-0.96-devdoc
+gzipping man pages under /nix/store/8287v4wncpvmckqf4qq78pz4fd6djd3a-perl5.32.0-Net-IPv6Addr-0.96-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8287v4wncpvmckqf4qq78pz4fd6djd3a-perl5.32.0-Net-IPv6Addr-0.96-devdoc
+checking for references to /build/ in /nix/store/8287v4wncpvmckqf4qq78pz4fd6djd3a-perl5.32.0-Net-IPv6Addr-0.96-devdoc...
+building '/nix/store/xp4ldfl5sqag5pf10561ld5n9m28jb10-perl5.32.0-Net-Frame-1.21.drv'...
+unpacking sources
+unpacking source archive /nix/store/qj6l0nhr5hl9lz57jh8ikgmr61r65k0a-Net-Frame-1.21.tar.gz
+source root is Net-Frame-1.21
+setting SOURCE_DATE_EPOCH to timestamp 1558591126 of file Net-Frame-1.21/t/13-gethostsubs.t
+patching sources
+configuring
+patching ./examples/send-tcp-with-payload.pl...
+patching ./examples/send-recv-udp.pl...
+patching ./examples/arp-lookup.pl...
+patching ./examples/unpack-eth-ipv4-tcp.pl...
+patching ./examples/pack-eth-ipv4-tcp-compute.pl...
+patching ./examples/send-recv-tcp.pl...
+patching ./examples/pack-eth-ipv4-tcp.pl...
+patching ./examples/resolv-ipv6.pl...
+patching ./examples/build-tcp-syn.pl...
+patching ./examples/send-tcp-with-padding.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Frame
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-Frame' version '1.21'
+Building Net-Frame
+running tests
+t/01-use.t ........... ok
+t/02-pod-coverage.t .. ok
+t/03-test-pod.t ...... ok
+t/04-eth.t ........... ok
+t/05-arp.t ........... ok
+t/06-ipv4.t .......... ok
+t/07-raw.t ........... ok
+t/08-sll.t ........... ok
+t/09-tcp.t ........... ok
+t/10-null.t .......... ok
+t/11-udp.t ........... ok
+t/12-ppp.t ........... ok
+All tests successful.
+Files=12, Tests=12,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.59 cusr  0.13 csys =  0.77 CPU)
+Result: PASS
+installing
+Building Net-Frame
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/TCP.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/NULL.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv4.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/SLL.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/UDP.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/ARP.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/ETH.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/RAW.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/PPP.pm
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::ARP.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::RAW.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::ETH.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::IPv4.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::SLL.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::UDP.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::PPP.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::TCP.3
+Installing /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3/Net::Frame::Layer::NULL.3
+post-installation fixup
+Moving /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/man3 to /nix/store/zmar77f0x7dsrdfyxyqs8vkmbiripy2x-perl5.32.0-Net-Frame-1.21-devdoc/share/man/man3
+Removing empty /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21/lib
+patching script interpreter paths in /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21
+checking for references to /build/ in /nix/store/7mly53gsxvw75z9k3ck6wf0wppf5lgsh-perl5.32.0-Net-Frame-1.21...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zmar77f0x7dsrdfyxyqs8vkmbiripy2x-perl5.32.0-Net-Frame-1.21-devdoc
+gzipping man pages under /nix/store/zmar77f0x7dsrdfyxyqs8vkmbiripy2x-perl5.32.0-Net-Frame-1.21-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zmar77f0x7dsrdfyxyqs8vkmbiripy2x-perl5.32.0-Net-Frame-1.21-devdoc
+checking for references to /build/ in /nix/store/zmar77f0x7dsrdfyxyqs8vkmbiripy2x-perl5.32.0-Net-Frame-1.21-devdoc...
+building '/nix/store/i64jh1s9g5kva5hf99vzvgx97x4vw1b7-perl5.32.0-Net-Frame-Layer-IPv6-1.08.drv'...
+unpacking sources
+unpacking source archive /nix/store/fxd1lzmjvv6zq4sh4w7mx4vssrxhfipw-Net-Frame-Layer-IPv6-1.08.tar.gz
+source root is Net-Frame-Layer-IPv6-1.08
+setting SOURCE_DATE_EPOCH to timestamp 1494161739 of file Net-Frame-Layer-IPv6-1.08/t/04-layer-create.t
+patching sources
+configuring
+patching ./examples/destination.pl...
+patching ./examples/fragment-NxM.pl...
+patching ./examples/fragment-2x8.pl...
+patching ./examples/build-tcp-syn.pl...
+patching ./examples/routing.pl...
+patching ./examples/fragment-8x1024.pl...
+patching ./examples/hopbyhop.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Frame::Layer::IPv6
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-Frame-Layer-IPv6' version '1.08'
+Building Net-Frame-Layer-IPv6
+running tests
+t/01-use.t ........... ok
+t/02-pod-coverage.t .. ok
+t/03-test-pod.t ...... ok
+t/04-layer-create.t .. ok
+All tests successful.
+Files=4, Tests=4,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.14 cusr  0.03 csys =  0.21 CPU)
+Result: PASS
+installing
+Building Net-Frame-Layer-IPv6
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6/HopByHop.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6/Destination.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6/Option.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6/Fragment.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib/perl5/site_perl/5.32.0/Net/Frame/Layer/IPv6/Routing.pm
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6::Routing.3
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6::HopByHop.3
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6.3
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6::Option.3
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6::Destination.3
+Installing /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3/Net::Frame::Layer::IPv6::Fragment.3
+post-installation fixup
+Moving /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/man3 to /nix/store/0hb2rb6vjc83yi40b993ihdznyr9bmy4-perl5.32.0-Net-Frame-Layer-IPv6-1.08-devdoc/share/man/man3
+Removing empty /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08/lib
+patching script interpreter paths in /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08
+checking for references to /build/ in /nix/store/h5phbrawn88a1ssvqwnn5liylrmsi9jy-perl5.32.0-Net-Frame-Layer-IPv6-1.08...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0hb2rb6vjc83yi40b993ihdznyr9bmy4-perl5.32.0-Net-Frame-Layer-IPv6-1.08-devdoc
+gzipping man pages under /nix/store/0hb2rb6vjc83yi40b993ihdznyr9bmy4-perl5.32.0-Net-Frame-Layer-IPv6-1.08-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0hb2rb6vjc83yi40b993ihdznyr9bmy4-perl5.32.0-Net-Frame-Layer-IPv6-1.08-devdoc
+checking for references to /build/ in /nix/store/0hb2rb6vjc83yi40b993ihdznyr9bmy4-perl5.32.0-Net-Frame-Layer-IPv6-1.08-devdoc...
+building '/nix/store/5ayxqnbl1b9arsc0kf2b5vxh8a411xfx-perl5.32.0-Net-Async-Ping-0.004001.drv'...
+unpacking sources
+unpacking source archive /nix/store/j4dzarvskzkdcj84yhi101fl18vh0r7s-Net-Async-Ping-0.004001.tar.gz
+source root is Net-Async-Ping-0.004001
+setting SOURCE_DATE_EPOCH to timestamp 1516785878 of file Net-Async-Ping-0.004001/t/test.pm
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::Async::Ping
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/Async/Ping/ICMPv6.pm blib/lib/Net/Async/Ping/ICMPv6.pm
+cp lib/Net/Async/Ping/TCP.pm blib/lib/Net/Async/Ping/TCP.pm
+cp lib/Net/Async/Ping/ICMP.pm blib/lib/Net/Async/Ping/ICMP.pm
+cp lib/Net/Async/Ping.pm blib/lib/Net/Async/Ping.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+t/icmp.t ............... skipped: Not running as root; skipping ICMP raw socket pings
+t/icmp_ps.t ............ skipped: Current user's group is not allowed to use ping sockets: skipping ping socket tests
+t/icmpv6.t ............. skipped: Not running as root; skipping ICMPv6 raw socket pings
+t/icmpv6_ps.t .......... skipped: Current user's group is not allowed to use ping sockets: skipping ping socket tests
+t/tcp.t ................ Can't exec "ping": No such file or directory at t/test.pm line 28.
+t/tcp.t ................ ok
+All tests successful.
+Files=6, Tests=12,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.53 cusr  0.33 csys =  0.92 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/pkgconfig m4datadir=/nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/aclocal aclocaldir=/nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/perl5/site_perl/5.32.0/Net/Async/Ping.pm
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/perl5/site_perl/5.32.0/Net/Async/Ping/TCP.pm
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/perl5/site_perl/5.32.0/Net/Async/Ping/ICMPv6.pm
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/perl5/site_perl/5.32.0/Net/Async/Ping/ICMP.pm
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/man3/Net::Async::Ping.3
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/man3/Net::Async::Ping::ICMPv6.3
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/man3/Net::Async::Ping::TCP.3
+Installing /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/man3/Net::Async::Ping::ICMP.3
+Appending installation info to /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/man3 to /nix/store/v31129b5azvzx3jw2h1dykzm512ln7pw-perl5.32.0-Net-Async-Ping-0.004001-devdoc/share/man/man3
+Removing empty /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001/lib
+patching script interpreter paths in /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001
+checking for references to /build/ in /nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v31129b5azvzx3jw2h1dykzm512ln7pw-perl5.32.0-Net-Async-Ping-0.004001-devdoc
+gzipping man pages under /nix/store/v31129b5azvzx3jw2h1dykzm512ln7pw-perl5.32.0-Net-Async-Ping-0.004001-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v31129b5azvzx3jw2h1dykzm512ln7pw-perl5.32.0-Net-Async-Ping-0.004001-devdoc
+checking for references to /build/ in /nix/store/v31129b5azvzx3jw2h1dykzm512ln7pw-perl5.32.0-Net-Async-Ping-0.004001-devdoc...
+/nix/store/y5lvi16hfvx8hyha28m692nrj0rqxfs5-perl5.32.0-Net-Async-Ping-0.004001

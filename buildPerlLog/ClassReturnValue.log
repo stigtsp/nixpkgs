@@ -1,0 +1,50 @@
+these derivations will be built:
+  /nix/store/zgay7chg9fav2z870khhll2cxmsqmcsz-perl5.32.0-Class-ReturnValue-0.55.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/sfpy5bs7vhvpzix89pbvzl91wrp30k3x-Class-ReturnValue-0.55.tar.gz
+copying path '/nix/store/sfpy5bs7vhvpzix89pbvzl91wrp30k3x-Class-ReturnValue-0.55.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zgay7chg9fav2z870khhll2cxmsqmcsz-perl5.32.0-Class-ReturnValue-0.55.drv'...
+unpacking sources
+unpacking source archive /nix/store/sfpy5bs7vhvpzix89pbvzl91wrp30k3x-Class-ReturnValue-0.55.tar.gz
+source root is Class-ReturnValue-0.55
+setting SOURCE_DATE_EPOCH to timestamp 1187642473 of file Class-ReturnValue-0.55/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./t/basic.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::ReturnValue
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/ReturnValue.pm blib/lib/Class/ReturnValue.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t .. ok
+All tests successful.
+Files=1, Tests=32,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.06 cusr  0.01 csys =  0.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/lib/pkgconfig m4datadir=/nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/share/aclocal aclocaldir=/nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/lib/perl5/site_perl/5.32.0/Class/ReturnValue.pm
+Installing /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/share/man/man3/Class::ReturnValue.3
+Appending installation info to /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/share/man/man3 to /nix/store/qdngn44hpmxvbadbfkgvzxsrx2pbwrrn-perl5.32.0-Class-ReturnValue-0.55-devdoc/share/man/man3
+Removing empty /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55/lib
+patching script interpreter paths in /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55
+checking for references to /build/ in /nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qdngn44hpmxvbadbfkgvzxsrx2pbwrrn-perl5.32.0-Class-ReturnValue-0.55-devdoc
+gzipping man pages under /nix/store/qdngn44hpmxvbadbfkgvzxsrx2pbwrrn-perl5.32.0-Class-ReturnValue-0.55-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qdngn44hpmxvbadbfkgvzxsrx2pbwrrn-perl5.32.0-Class-ReturnValue-0.55-devdoc
+checking for references to /build/ in /nix/store/qdngn44hpmxvbadbfkgvzxsrx2pbwrrn-perl5.32.0-Class-ReturnValue-0.55-devdoc...
+/nix/store/fnrxpapbkylg7x96ff86q8bmg4qfhn6z-perl5.32.0-Class-ReturnValue-0.55

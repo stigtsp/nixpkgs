@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/x7r6lypd219df9sr5h1k9x9r1pzjzfqb-perl5.32.0-File-DesktopEntry-0.22.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/f63d2hbs35by1vn5iqdgy0wayhnl152f-File-DesktopEntry-0.22.tar.gz
+copying path '/nix/store/f63d2hbs35by1vn5iqdgy0wayhnl152f-File-DesktopEntry-0.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x7r6lypd219df9sr5h1k9x9r1pzjzfqb-perl5.32.0-File-DesktopEntry-0.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/f63d2hbs35by1vn5iqdgy0wayhnl152f-File-DesktopEntry-0.22.tar.gz
+source root is File-DesktopEntry-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1449788195 of file File-DesktopEntry-0.22/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::DesktopEntry
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/DesktopEntry.pm blib/lib/File/DesktopEntry.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_data.t .......... ok
+t/02_DesktopEntry.t .. ok
+t/03_run.t ........... ok
+t/04_pod_ok.t ........ skipped: Test::Pod 1.00 required for testing POD
+t/05_pod_cover.t ..... skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+t/06_changes.t ....... skipped: Test::CPAN::Changes required for this test
+t/uri_escape.t ....... ok
+All tests successful.
+Files=7, Tests=64,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.38 cusr  0.11 csys =  0.53 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/lib/pkgconfig m4datadir=/nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/share/aclocal aclocaldir=/nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/lib/perl5/site_perl/5.32.0/File/DesktopEntry.pm
+Installing /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/share/man/man3/File::DesktopEntry.3
+Appending installation info to /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/share/man/man3 to /nix/store/phskyi4d3v7s5wn65kljsbxjjlwas2la-perl5.32.0-File-DesktopEntry-0.22-devdoc/share/man/man3
+Removing empty /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22/lib
+patching script interpreter paths in /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22
+checking for references to /build/ in /nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/phskyi4d3v7s5wn65kljsbxjjlwas2la-perl5.32.0-File-DesktopEntry-0.22-devdoc
+gzipping man pages under /nix/store/phskyi4d3v7s5wn65kljsbxjjlwas2la-perl5.32.0-File-DesktopEntry-0.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/phskyi4d3v7s5wn65kljsbxjjlwas2la-perl5.32.0-File-DesktopEntry-0.22-devdoc
+checking for references to /build/ in /nix/store/phskyi4d3v7s5wn65kljsbxjjlwas2la-perl5.32.0-File-DesktopEntry-0.22-devdoc...
+/nix/store/6rcwnr20k8vwry1paa6mrmxgrj0nyiy2-perl5.32.0-File-DesktopEntry-0.22

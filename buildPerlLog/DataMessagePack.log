@@ -1,0 +1,138 @@
+these derivations will be built:
+  /nix/store/fxldp1a4cd4xz7mmh4d5s1mias8490rg-perl5.32.0-Data-MessagePack-1.01.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/5b82k2y6d7jnl3977vv6vaxav2scql7q-Data-MessagePack-1.01.tar.gz
+copying path '/nix/store/5b82k2y6d7jnl3977vv6vaxav2scql7q-Data-MessagePack-1.01.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fxldp1a4cd4xz7mmh4d5s1mias8490rg-perl5.32.0-Data-MessagePack-1.01.drv'...
+unpacking sources
+unpacking source archive /nix/store/5b82k2y6d7jnl3977vv6vaxav2scql7q-Data-MessagePack-1.01.tar.gz
+source root is Data-MessagePack-1.01
+setting SOURCE_DATE_EPOCH to timestamp 1584464829 of file Data-MessagePack-1.01/xt/leaks/stream.t
+patching sources
+configuring
+patching ./t/40_threads.t...
+patching ./t/09_stddata.t...
+patching ./t/23-empty-key.t...
+patching ./t/50_leaktrace.t...
+patching ./t/13_booleans.t...
+patching ./t/21_dirty_float.t...
+patching ./t/22_pid_pack_unpack.t...
+patching ./t/10_splitted_bytes.t...
+patching ./t/20_de.t...
+patching ./t/19_utf8_property.t...
+patching ./t/15_utf8.t...
+patching ./t/18_new_interface.t...
+patching ./author/update-msgpack-c.pl...
+patching ./benchmark/size.pl...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Data-MessagePack' version '1.01'
+Building Data-MessagePack
+gcc -Iinclude -Ixs-src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -Wall -Wextra -Wc++-compat -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o xs-src/pack.o xs-src/pack.c
+gcc -Iinclude -Ixs-src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -Wall -Wextra -Wc++-compat -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o xs-src/unpack.o xs-src/unpack.c
+In file included from xs-src/unpack.c:286:
+include/msgpack/unpack_template.h: In function 'template_execute':
+include/msgpack/unpack_template.h:250:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  250 |                 ++p;
+      |                 ^~~
+include/msgpack/unpack_template.h:252:13: note: here
+  252 |             default:
+      |             ^~~~~~~
+gcc -Iinclude -Ixs-src -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="1.01" -DXS_VERSION="1.01" -fPIC -Wall -Wextra -Wc++-compat -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Data/MessagePack.o lib/Data/MessagePack.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Data/MessagePack/MessagePack.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Data/MessagePack/MessagePack.so lib/Data/MessagePack.o xs-src/pack.o xs-src/unpack.o
+running tests
+pp tests
+t/00_compile.t .............. 1/1 # Testing Data::MessagePack/1.01 (PP)
+# byteoder: 12345678, ivsize=8
+t/00_compile.t .............. ok
+t/01_pack.t ................. ok
+t/02_unpack.t ............... ok
+t/03_stream_unpack.t ........ ok
+t/04_invert.t ............... ok
+t/05_preferred_int.t ........ ok
+t/06_stream_unpack2.t ....... ok
+t/07_break.t ................ ok
+t/08_cycle.t ................ ok
+t/09_stddata.t .............. ok
+t/10_splitted_bytes.t ....... ok
+t/11_stream_unpack3.t ....... ok
+t/12_stream_unpack4.t ....... ok
+t/13_booleans.t ............. ok
+t/14_invalid_data.t ......... ok
+t/15_utf8.t ................. ok
+t/16_unpacker_for_larges.t .. ok
+t/17_canonical.t ............ ok
+t/18_new_interface.t ........ ok
+t/19_utf8_property.t ........ ok
+t/20_de.t ................... ok
+t/21_dirty_float.t .......... ok
+t/22_pid_pack_unpack.t ...... ok
+t/23-empty-key.t ............ ok
+t/24_tied.t ................. ok
+t/40_threads.t .............. ok
+t/50_leaktrace.t ............ skipped: Test requires module 'Test::LeakTrace' but it's not found
+All tests successful.
+Files=27, Tests=569,  3 wallclock secs ( 0.13 usr  0.04 sys +  1.91 cusr  0.67 csys =  2.75 CPU)
+Result: PASS
+xs tests
+t/00_compile.t .............. 1/1 # Testing Data::MessagePack/1.01 (XS)
+# byteoder: 12345678, ivsize=8
+t/00_compile.t .............. ok
+t/01_pack.t ................. ok
+t/02_unpack.t ............... ok
+t/03_stream_unpack.t ........ ok
+t/04_invert.t ............... ok
+t/05_preferred_int.t ........ ok
+t/06_stream_unpack2.t ....... ok
+t/07_break.t ................ ok
+t/08_cycle.t ................ ok
+t/09_stddata.t .............. ok
+t/10_splitted_bytes.t ....... ok
+t/11_stream_unpack3.t ....... ok
+t/12_stream_unpack4.t ....... ok
+t/13_booleans.t ............. ok
+t/14_invalid_data.t ......... ok
+t/15_utf8.t ................. ok
+t/16_unpacker_for_larges.t .. ok
+t/17_canonical.t ............ ok
+t/18_new_interface.t ........ ok
+t/19_utf8_property.t ........ ok
+t/20_de.t ................... ok
+t/21_dirty_float.t .......... ok
+t/22_pid_pack_unpack.t ...... ok
+t/23-empty-key.t ............ ok
+t/24_tied.t ................. ok
+t/40_threads.t .............. ok
+t/50_leaktrace.t ............ skipped: Test requires module 'Test::LeakTrace' but it's not found
+All tests successful.
+Files=27, Tests=569,  3 wallclock secs ( 0.10 usr  0.05 sys +  1.72 cusr  0.66 csys =  2.53 CPU)
+Result: PASS
+installing
+Building Data-MessagePack
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/MessagePack/MessagePack.bs
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/MessagePack/MessagePack.so
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/MessagePack.pm
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/MessagePack/Unpacker.pod
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/MessagePack/PP.pm
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Data/MessagePack/Boolean.pm
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/share/man/man3/Data::MessagePack.3
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/share/man/man3/Data::MessagePack::Unpacker.3
+Installing /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/share/man/man3/Data::MessagePack::PP.3
+post-installation fixup
+Moving /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/share/man/man3 to /nix/store/5a3gij8lpf3skn3kyfkvqax3gxdkfsq7-perl5.32.0-Data-MessagePack-1.01-devdoc/share/man/man3
+Removing empty /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01
+shrinking /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Data/MessagePack/MessagePack.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01/lib
+patching script interpreter paths in /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01
+checking for references to /build/ in /nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5a3gij8lpf3skn3kyfkvqax3gxdkfsq7-perl5.32.0-Data-MessagePack-1.01-devdoc
+gzipping man pages under /nix/store/5a3gij8lpf3skn3kyfkvqax3gxdkfsq7-perl5.32.0-Data-MessagePack-1.01-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5a3gij8lpf3skn3kyfkvqax3gxdkfsq7-perl5.32.0-Data-MessagePack-1.01-devdoc
+checking for references to /build/ in /nix/store/5a3gij8lpf3skn3kyfkvqax3gxdkfsq7-perl5.32.0-Data-MessagePack-1.01-devdoc...
+/nix/store/1jglmady6g0hz9d6yy994d6cfifq38ix-perl5.32.0-Data-MessagePack-1.01

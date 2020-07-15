@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/kwmf2z4scnazxgjzygzjiinr9mylz9nz-perl5.32.0-File-FnMatch-0.02.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/906nlg39jkcznq251cqjygcli6ai7zlw-File-FnMatch-0.02.tar.gz
+copying path '/nix/store/906nlg39jkcznq251cqjygcli6ai7zlw-File-FnMatch-0.02.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kwmf2z4scnazxgjzygzjiinr9mylz9nz-perl5.32.0-File-FnMatch-0.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/906nlg39jkcznq251cqjygcli6ai7zlw-File-FnMatch-0.02.tar.gz
+source root is File-FnMatch-0.02
+setting SOURCE_DATE_EPOCH to timestamp 1112160897 of file File-FnMatch-0.02/Makefile.PL
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::FnMatch
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp FnMatch.pm blib/lib/File/FnMatch.pm
+Running Mkbootstrap for FnMatch ()
+chmod 644 "FnMatch.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FnMatch.bs blib/arch/auto/File/FnMatch/FnMatch.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  FnMatch.xs > FnMatch.xsc
+mv FnMatch.xsc FnMatch.c
+cc -c  -I. -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.02\" -DXS_VERSION=\"0.02\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   FnMatch.c
+In file included from FnMatch.xs:7:
+ppport.h:2979: warning: "PERL_UNUSED_DECL" redefined
+ 2979 | #  define PERL_UNUSED_DECL
+      |
+In file included from FnMatch.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:435: note: this is the location of the previous definition
+  435 | #  define PERL_UNUSED_DECL __attribute__unused__
+      |
+rm -f blib/arch/auto/File/FnMatch/FnMatch.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  FnMatch.o  -o blib/arch/auto/File/FnMatch/FnMatch.so  \
+      \
+
+chmod 755 blib/arch/auto/File/FnMatch/FnMatch.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FnMatch.bs blib/arch/auto/File/FnMatch/FnMatch.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01use.t .......... ok
+t/10use_fnmatch.t .. ok
+All tests successful.
+Files=2, Tests=14,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.02 cusr  0.00 csys =  0.04 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib/pkgconfig m4datadir=/nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/share/aclocal aclocaldir=/nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FnMatch.bs blib/arch/auto/File/FnMatch/FnMatch.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/FnMatch/FnMatch.so
+Installing /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/FnMatch.pm
+Installing /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/share/man/man3/File::FnMatch.3
+Appending installation info to /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/share/man/man3 to /nix/store/h1piw5w8hpdz9sclmz40xxy7vmp9nmlw-perl5.32.0-File-FnMatch-0.02-devdoc/share/man/man3
+Removing empty /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02
+shrinking /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/FnMatch/FnMatch.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02/lib
+patching script interpreter paths in /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02
+checking for references to /build/ in /nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/h1piw5w8hpdz9sclmz40xxy7vmp9nmlw-perl5.32.0-File-FnMatch-0.02-devdoc
+gzipping man pages under /nix/store/h1piw5w8hpdz9sclmz40xxy7vmp9nmlw-perl5.32.0-File-FnMatch-0.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/h1piw5w8hpdz9sclmz40xxy7vmp9nmlw-perl5.32.0-File-FnMatch-0.02-devdoc
+checking for references to /build/ in /nix/store/h1piw5w8hpdz9sclmz40xxy7vmp9nmlw-perl5.32.0-File-FnMatch-0.02-devdoc...
+/nix/store/7y7wh8qccv5fzsqm6q03ryy2gi6b5cc7-perl5.32.0-File-FnMatch-0.02

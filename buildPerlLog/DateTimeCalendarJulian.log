@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/axmahxx1jx8rd9icbwg15lkwzyb7zf4p-perl5.32.0-DateTime-Calendar-Julian-0.102.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/f0dqdywac8cv91b6bnj5a4jpmsrgnhc6-DateTime-Calendar-Julian-0.102.tar.gz
+copying path '/nix/store/f0dqdywac8cv91b6bnj5a4jpmsrgnhc6-DateTime-Calendar-Julian-0.102.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/axmahxx1jx8rd9icbwg15lkwzyb7zf4p-perl5.32.0-DateTime-Calendar-Julian-0.102.drv'...
+unpacking sources
+unpacking source archive /nix/store/f0dqdywac8cv91b6bnj5a4jpmsrgnhc6-DateTime-Calendar-Julian-0.102.tar.gz
+source root is DateTime-Calendar-Julian-0.102
+setting SOURCE_DATE_EPOCH to timestamp 1573313931 of file DateTime-Calendar-Julian-0.102/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Calendar::Julian
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DateTime/Calendar/Julian.pm blib/lib/DateTime/Calendar/Julian.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1.t ...... ok
+t/4doy.t ... ok
+t/5week.t .. ok
+All tests successful.
+Files=3, Tests=61,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.70 cusr  0.30 csys =  1.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/lib/pkgconfig m4datadir=/nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/share/aclocal aclocaldir=/nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/lib/perl5/site_perl/5.32.0/DateTime/Calendar/Julian.pm
+Installing /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/share/man/man3/DateTime::Calendar::Julian.3
+Appending installation info to /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/share/man/man3 to /nix/store/9k1461z5nl5hh5867x9vj03nh0sgqjnl-perl5.32.0-DateTime-Calendar-Julian-0.102-devdoc/share/man/man3
+Removing empty /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102/lib
+patching script interpreter paths in /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102
+checking for references to /build/ in /nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9k1461z5nl5hh5867x9vj03nh0sgqjnl-perl5.32.0-DateTime-Calendar-Julian-0.102-devdoc
+gzipping man pages under /nix/store/9k1461z5nl5hh5867x9vj03nh0sgqjnl-perl5.32.0-DateTime-Calendar-Julian-0.102-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9k1461z5nl5hh5867x9vj03nh0sgqjnl-perl5.32.0-DateTime-Calendar-Julian-0.102-devdoc
+checking for references to /build/ in /nix/store/9k1461z5nl5hh5867x9vj03nh0sgqjnl-perl5.32.0-DateTime-Calendar-Julian-0.102-devdoc...
+/nix/store/4r323fdgnr420r8y5n50qnpjd6jd26yn-perl5.32.0-DateTime-Calendar-Julian-0.102

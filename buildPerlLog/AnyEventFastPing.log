@@ -1,0 +1,140 @@
+these derivations will be built:
+  /nix/store/zgbis9xg42il5amqynkxjv7j8zcxcmya-perl5.32.0-common-sense-3.75.drv
+  /nix/store/sgrak4pxc1w3hwii8yla491c0fbzfb5q-perl5.32.0-AnyEvent-FastPing-2.1.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/mj4nhpjld4kymp5wpibhw0p3bg6p2qqv-AnyEvent-FastPing-2.1.tar.gz
+copying path '/nix/store/mj4nhpjld4kymp5wpibhw0p3bg6p2qqv-AnyEvent-FastPing-2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zgbis9xg42il5amqynkxjv7j8zcxcmya-perl5.32.0-common-sense-3.75.drv'...
+unpacking sources
+unpacking source archive /nix/store/13p0j4qyw9zxkmf12yf241iwgwila66y-common-sense-3.75.tar.gz
+source root is common-sense-3.75
+setting SOURCE_DATE_EPOCH to timestamp 1585814013 of file common-sense-3.75/README
+patching sources
+configuring
+patching ./sense.pm.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for common::sense
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" sense.pm.PL sense.pm
+cp sense.pm blib/arch/common/sense.pm
+cp sense.pod blib/lib/common/sense.pod
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t .. ok
+t/01_arch.t .. ok
+All tests successful.
+Files=2, Tests=2,  0 wallclock secs ( 0.02 usr +  0.01 sys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/pkgconfig m4datadir=/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/share/aclocal aclocaldir=/nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/share/aclocal install
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/common/sense.pm
+Installing /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/common/sense.pod
+Installing /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/share/man/man3/common::sense.3
+Appending installation info to /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/share/man/man3 to /nix/store/y7xpxiq9im90d6k9pxb6yrmjynixzl2m-perl5.32.0-common-sense-3.75-devdoc/share/man/man3
+Removing empty /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75/lib
+patching script interpreter paths in /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75
+checking for references to /build/ in /nix/store/z5phk6cnzbylk74qs1phhc3is70bgdwq-perl5.32.0-common-sense-3.75...
+shrinking RPATHs of ELF executables and libraries in /nix/store/y7xpxiq9im90d6k9pxb6yrmjynixzl2m-perl5.32.0-common-sense-3.75-devdoc
+gzipping man pages under /nix/store/y7xpxiq9im90d6k9pxb6yrmjynixzl2m-perl5.32.0-common-sense-3.75-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/y7xpxiq9im90d6k9pxb6yrmjynixzl2m-perl5.32.0-common-sense-3.75-devdoc
+checking for references to /build/ in /nix/store/y7xpxiq9im90d6k9pxb6yrmjynixzl2m-perl5.32.0-common-sense-3.75-devdoc...
+building '/nix/store/sgrak4pxc1w3hwii8yla491c0fbzfb5q-perl5.32.0-AnyEvent-FastPing-2.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/mj4nhpjld4kymp5wpibhw0p3bg6p2qqv-AnyEvent-FastPing-2.1.tar.gz
+source root is AnyEvent-FastPing-2.1
+setting SOURCE_DATE_EPOCH to timestamp 1478913640 of file AnyEvent-FastPing-2.1/README
+patching sources
+configuring
+patching ./bin/fastping...
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lpthread
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lm
+Generating a Unix-style Makefile
+Writing Makefile for AnyEvent::FastPing
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp FastPing.pm blib/lib/AnyEvent/FastPing.pm
+Running Mkbootstrap for FastPing ()
+chmod 644 "FastPing.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FastPing.bs blib/arch/auto/AnyEvent/FastPing/FastPing.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/AnyEvent-FastPing-2.1/typemap'  FastPing.xs > FastPing.xsc
+mv FastPing.xsc FastPing.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.1\" -DXS_VERSION=\"2.1\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   FastPing.c
+FastPing.xs: In function 'ping_proc':
+FastPing.xs:438:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  438 |     write (thr_res [1], &id, sizeof (id));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f blib/arch/auto/AnyEvent/FastPing/FastPing.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  FastPing.o  -o blib/arch/auto/AnyEvent/FastPing/FastPing.so  \
+      \
+
+chmod 755 blib/arch/auto/AnyEvent/FastPing/FastPing.so
+cp bin/fastping blib/script/fastping
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/fastping
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FastPing.bs blib/arch/auto/AnyEvent/FastPing/FastPing.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_load.t .. ok
+t/01_ping.t .. skipped: will only run ping tests as root
+All tests successful.
+Files=2, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib/pkgconfig m4datadir=/nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/share/aclocal aclocaldir=/nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- FastPing.bs blib/arch/auto/AnyEvent/FastPing/FastPing.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/AnyEvent/FastPing/FastPing.so
+Installing /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/AnyEvent/FastPing.pm
+Installing /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/share/man/man3/AnyEvent::FastPing.3
+Installing /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/bin/fastping
+Appending installation info to /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/share/man/man3 to /nix/store/030nk6vj5yldfg1h6nh0c8h1f0jpq21y-perl5.32.0-AnyEvent-FastPing-2.1-devdoc/share/man/man3
+Removing empty /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1
+shrinking /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/AnyEvent/FastPing/FastPing.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/lib  /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1/bin
+patching script interpreter paths in /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1
+checking for references to /build/ in /nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/030nk6vj5yldfg1h6nh0c8h1f0jpq21y-perl5.32.0-AnyEvent-FastPing-2.1-devdoc
+gzipping man pages under /nix/store/030nk6vj5yldfg1h6nh0c8h1f0jpq21y-perl5.32.0-AnyEvent-FastPing-2.1-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/030nk6vj5yldfg1h6nh0c8h1f0jpq21y-perl5.32.0-AnyEvent-FastPing-2.1-devdoc
+checking for references to /build/ in /nix/store/030nk6vj5yldfg1h6nh0c8h1f0jpq21y-perl5.32.0-AnyEvent-FastPing-2.1-devdoc...
+/nix/store/krwgdq44wjqwkd7168jyc7f8nq31lwgk-perl5.32.0-AnyEvent-FastPing-2.1

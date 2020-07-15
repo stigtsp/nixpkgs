@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/s6x4wf3v5xhnd4lhf96xy6x4mn0fx8av-perl5.32.0-pcsc-perl-1.4.14.drv
+these paths will be fetched (0.04 MiB download, 0.03 MiB unpacked):
+  /nix/store/zmqzwlf2yzi26rnqlafikka4siidmfdc-pcsc-perl-1.4.14.tar.bz2
+copying path '/nix/store/zmqzwlf2yzi26rnqlafikka4siidmfdc-pcsc-perl-1.4.14.tar.bz2' from 'https://cache.nixos.org'...
+building '/nix/store/s6x4wf3v5xhnd4lhf96xy6x4mn0fx8av-perl5.32.0-pcsc-perl-1.4.14.drv'...
+unpacking sources
+unpacking source archive /nix/store/zmqzwlf2yzi26rnqlafikka4siidmfdc-pcsc-perl-1.4.14.tar.bz2
+source root is pcsc-perl-1.4.14
+setting SOURCE_DATE_EPOCH to timestamp 1447950188 of file pcsc-perl-1.4.14/Changelog
+patching sources
+configuring
+patching ./Card/t/test.t...
+patching ./test/multiple_readers.pl...
+patching ./test/single_reader.pl...
+patching ./examples/gsm_directory.pl...
+patching ./examples/test_iso_error.pl...
+patching ./t/test.t...
+patching ./test.pl...
+osname: linux
+LDDFLAGS:
+INC: `pkg-config --cflags libpcsclite`
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for Chipcard::PCSC
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp PCSC.pod blib/lib/Chipcard/PCSC.pod
+cp PCSC.pm blib/lib/Chipcard/PCSC.pm
+make[1]: Entering directory '/build/pcsc-perl-1.4.14/Card'
+cp Card.pod ../blib/lib/Chipcard/PCSC/Card.pod
+cp Card.pm ../blib/lib/Chipcard/PCSC/Card.pm
+Manifying 1 pod document
+make[1]: Leaving directory '/build/pcsc-perl-1.4.14/Card'
+Running Mkbootstrap for PCSC ()
+chmod 644 "PCSC.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- PCSC.bs blib/arch/auto/Chipcard/PCSC/PCSC.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/pcsc-perl-1.4.14/typemap'  PCSC.xs > PCSC.xsc
+mv PCSC.xsc PCSC.c
+cc -c  `pkg-config --cflags libpcsclite` -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.05\" -DXS_VERSION=\"0.05\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -O2 -Wall PCSC.c
+PCSC.c: In function 'XS_Chipcard__PCSC__EstablishContext':
+PCSC.c:567:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  567 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__ListReaders':
+PCSC.c:629:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  629 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__Connect':
+PCSC.c:730:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  730 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__Reconnect':
+PCSC.c:766:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  766 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__Status':
+PCSC.c:840:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  840 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__Transmit':
+PCSC.c:970:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+  970 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__Control':
+PCSC.c:1089:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+ 1089 |  SV * RETVAL;
+      |       ^~~~~~
+PCSC.c: In function 'XS_Chipcard__PCSC__GetStatusChange':
+PCSC.c:1241:7: warning: unused variable 'RETVAL' [-Wunused-variable]
+ 1241 |  bool RETVAL;
+      |       ^~~~~~
+rm -f blib/arch/auto/Chipcard/PCSC/PCSC.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  PCSC.o  -o blib/arch/auto/Chipcard/PCSC/PCSC.so  \
+      \
+
+chmod 755 blib/arch/auto/Chipcard/PCSC/PCSC.so
+Manifying 1 pod document
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/pkgconfig m4datadir=/nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/aclocal aclocaldir=/nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/aclocal install
+make[1]: Entering directory '/build/pcsc-perl-1.4.14/Card'
+Manifying 1 pod document
+make[1]: Leaving directory '/build/pcsc-perl-1.4.14/Card'
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- PCSC.bs blib/arch/auto/Chipcard/PCSC/PCSC.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Chipcard/PCSC/PCSC.so
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Chipcard/PCSC.pm
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Chipcard/PCSC.pod
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Chipcard/PCSC/Card.pm
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Chipcard/PCSC/Card.pod
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/man/man3/Chipcard::PCSC.3
+Installing /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/man/man3/Chipcard::PCSC::Card.3
+Appending installation info to /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/man/man3 to /nix/store/b533f0j2rn64kkskrcx0z18ghdlcdhkw-perl5.32.0-pcsc-perl-1.4.14-devdoc/share/man/man3
+Removing empty /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14
+shrinking /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Chipcard/PCSC/PCSC.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14/lib
+patching script interpreter paths in /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14
+checking for references to /build/ in /nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b533f0j2rn64kkskrcx0z18ghdlcdhkw-perl5.32.0-pcsc-perl-1.4.14-devdoc
+gzipping man pages under /nix/store/b533f0j2rn64kkskrcx0z18ghdlcdhkw-perl5.32.0-pcsc-perl-1.4.14-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b533f0j2rn64kkskrcx0z18ghdlcdhkw-perl5.32.0-pcsc-perl-1.4.14-devdoc
+checking for references to /build/ in /nix/store/b533f0j2rn64kkskrcx0z18ghdlcdhkw-perl5.32.0-pcsc-perl-1.4.14-devdoc...
+/nix/store/fd56hqdrw94hyrn25wwxvfl6f6720hji-perl5.32.0-pcsc-perl-1.4.14

@@ -1,0 +1,106 @@
+these derivations will be built:
+  /nix/store/q8il97n07id5mwwb380pxzl20v1zzh77-perl5.32.0-Convert-ASN1-0.27.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/3g6g9sdiwq12amdn31pj3qprxfkk9bcg-Convert-ASN1-0.27.tar.gz
+copying path '/nix/store/3g6g9sdiwq12amdn31pj3qprxfkk9bcg-Convert-ASN1-0.27.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q8il97n07id5mwwb380pxzl20v1zzh77-perl5.32.0-Convert-ASN1-0.27.drv'...
+unpacking sources
+unpacking source archive /nix/store/3g6g9sdiwq12amdn31pj3qprxfkk9bcg-Convert-ASN1-0.27.tar.gz
+source root is Convert-ASN1-0.27
+setting SOURCE_DATE_EPOCH to timestamp 1403722054 of file Convert-ASN1-0.27/t/x509.t
+patching sources
+configuring
+patching ./examples/x509decode...
+patching ./t/02seq.t...
+patching ./t/05time.t...
+patching ./t/03seqof.t...
+patching ./t/13utf8.t...
+patching ./t/00prim.t...
+patching ./t/06bigint.t...
+patching ./t/11indef.t...
+patching ./t/x509.t...
+patching ./t/01tag.t...
+patching ./t/14any.t...
+patching ./t/12der.t...
+patching ./t/10choice.t...
+patching ./t/04opt.t...
+patching ./t/08set.t...
+patching ./t/17extchoice.t...
+patching ./t/09contr.t...
+patching ./t/07io.t...
+patching ./t/15extseq.t...
+patching ./t/11explicit.t...
+patching ./t/99misc.t...
+patching ./t/18tagdefault.t...
+patching ./t/16extset.t...
+patching ./mkparse...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Convert::ASN1
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Convert/ASN1/_encode.pm blib/lib/Convert/ASN1/_encode.pm
+cp lib/Convert/ASN1/parser.pm blib/lib/Convert/ASN1/parser.pm
+cp lib/Convert/ASN1/_decode.pm blib/lib/Convert/ASN1/_decode.pm
+cp lib/Convert/ASN1/IO.pm blib/lib/Convert/ASN1/IO.pm
+cp lib/Convert/ASN1.pod blib/lib/Convert/ASN1.pod
+cp lib/Convert/ASN1/Debug.pm blib/lib/Convert/ASN1/Debug.pm
+cp lib/Convert/ASN1.pm blib/lib/Convert/ASN1.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00prim.t ........ ok
+t/01tag.t ......... ok
+t/02seq.t ......... ok
+t/03seqof.t ....... ok
+t/04opt.t ......... ok
+t/05time.t ........ ok
+t/06bigint.t ...... ok
+t/07io.t .......... ok
+t/08set.t ......... ok
+t/09contr.t ....... ok
+t/10choice.t ...... ok
+t/11explicit.t .... ok
+t/11indef.t ....... ok
+t/12der.t ......... ok
+t/13utf8.t ........ ok
+t/14any.t ......... ok
+t/15extseq.t ...... ok
+t/16extset.t ...... ok
+t/17extchoice.t ... ok
+t/18tagdefault.t .. ok
+t/99misc.t ........ ok
+t/x509.t .......... ok
+All tests successful.
+Files=22, Tests=593,  1 wallclock secs ( 0.08 usr  0.01 sys +  0.76 cusr  0.11 csys =  0.96 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/pkgconfig m4datadir=/nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/share/aclocal aclocaldir=/nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1.pod
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1/Debug.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1/_encode.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1/_decode.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1/IO.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/site_perl/5.32.0/Convert/ASN1/parser.pm
+Installing /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/share/man/man3/Convert::ASN1.3
+Appending installation info to /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/share/man/man3 to /nix/store/qslvgj64k56xsznrjhwyx1h7vap1a3rk-perl5.32.0-Convert-ASN1-0.27-devdoc/share/man/man3
+Removing empty /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27/lib
+patching script interpreter paths in /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27
+checking for references to /build/ in /nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27...
+shrinking RPATHs of ELF executables and libraries in /nix/store/qslvgj64k56xsznrjhwyx1h7vap1a3rk-perl5.32.0-Convert-ASN1-0.27-devdoc
+gzipping man pages under /nix/store/qslvgj64k56xsznrjhwyx1h7vap1a3rk-perl5.32.0-Convert-ASN1-0.27-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/qslvgj64k56xsznrjhwyx1h7vap1a3rk-perl5.32.0-Convert-ASN1-0.27-devdoc
+checking for references to /build/ in /nix/store/qslvgj64k56xsznrjhwyx1h7vap1a3rk-perl5.32.0-Convert-ASN1-0.27-devdoc...
+/nix/store/1js3bl35a8c72lgxp33q5xxn1qbj9jgr-perl5.32.0-Convert-ASN1-0.27

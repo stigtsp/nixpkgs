@@ -1,0 +1,51 @@
+these derivations will be built:
+  /nix/store/cdwphd26dfhac3xvf53mnshcrmap7a5l-perl5.32.0-Crypt-ScryptKDF-0.010.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/6jbs3ss3bdb6d0f62f3y2qb58iyfssij-Crypt-ScryptKDF-0.010.tar.gz
+copying path '/nix/store/6jbs3ss3bdb6d0f62f3y2qb58iyfssij-Crypt-ScryptKDF-0.010.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cdwphd26dfhac3xvf53mnshcrmap7a5l-perl5.32.0-Crypt-ScryptKDF-0.010.drv'...
+unpacking sources
+unpacking source archive /nix/store/6jbs3ss3bdb6d0f62f3y2qb58iyfssij-Crypt-ScryptKDF-0.010.tar.gz
+source root is Crypt-ScryptKDF-0.010
+setting SOURCE_DATE_EPOCH to timestamp 1448710497 of file Crypt-ScryptKDF-0.010/t/test_vectors.t
+patching sources
+configuring
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Crypt-ScryptKDF' version '0.010'
+Building Crypt-ScryptKDF
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o src/crypto_scrypt-nosse.o src/crypto_scrypt-nosse.c
+gcc -Isrc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.010" -DXS_VERSION="0.010" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/Crypt/ScryptKDF.o lib/Crypt/ScryptKDF.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Crypt/ScryptKDF/ScryptKDF.bs')
+gcc -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/Crypt/ScryptKDF/ScryptKDF.so lib/Crypt/ScryptKDF.o src/crypto_scrypt-nosse.o
+running tests
+t/compile.t ....... ok
+t/interface.t ..... ok
+t/internal.t ...... ok
+t/test_vectors.t .. ok
+All tests successful.
+Files=4, Tests=39,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.73 cusr  0.07 csys =  0.83 CPU)
+Result: PASS
+installing
+Building Crypt-ScryptKDF
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/ScryptKDF/ScryptKDF.bs
+Installing /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/ScryptKDF/ScryptKDF.so
+Installing /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/ScryptKDF.pm
+Installing /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/share/man/man3/Crypt::ScryptKDF.3
+post-installation fixup
+Moving /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/share/man/man3 to /nix/store/n52vs7q8y41p4wghagy0js93c362jsgb-perl5.32.0-Crypt-ScryptKDF-0.010-devdoc/share/man/man3
+Removing empty /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010
+shrinking /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/ScryptKDF/ScryptKDF.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010/lib
+patching script interpreter paths in /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010
+checking for references to /build/ in /nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n52vs7q8y41p4wghagy0js93c362jsgb-perl5.32.0-Crypt-ScryptKDF-0.010-devdoc
+gzipping man pages under /nix/store/n52vs7q8y41p4wghagy0js93c362jsgb-perl5.32.0-Crypt-ScryptKDF-0.010-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n52vs7q8y41p4wghagy0js93c362jsgb-perl5.32.0-Crypt-ScryptKDF-0.010-devdoc
+checking for references to /build/ in /nix/store/n52vs7q8y41p4wghagy0js93c362jsgb-perl5.32.0-Crypt-ScryptKDF-0.010-devdoc...
+/nix/store/lk1m4nxl2cnfp9lkgsads4pj196fr1yj-perl5.32.0-Crypt-ScryptKDF-0.010

@@ -1,0 +1,110 @@
+these derivations will be built:
+  /nix/store/jygs7n9ni6qr1dzgglvvhzb7cn7h7sh7-perl5.32.0-PerlIO-Layers-0.012.drv
+  /nix/store/zpad78z13qhlbbqbz29l0z5xf66kjdwv-perl5.32.0-File-Map-0.66.drv
+these paths will be fetched (0.14 MiB download, 0.14 MiB unpacked):
+  /nix/store/g88hv9w3853fi5f2cwjnjmqlqh5sf8qh-File-Map-0.66.tar.gz
+  /nix/store/qxiwa8vhg4lvfbmsqvf2fvabsdn00rql-PerlIO-Layers-0.012.tar.gz
+copying path '/nix/store/g88hv9w3853fi5f2cwjnjmqlqh5sf8qh-File-Map-0.66.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qxiwa8vhg4lvfbmsqvf2fvabsdn00rql-PerlIO-Layers-0.012.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jygs7n9ni6qr1dzgglvvhzb7cn7h7sh7-perl5.32.0-PerlIO-Layers-0.012.drv'...
+unpacking sources
+unpacking source archive /nix/store/qxiwa8vhg4lvfbmsqvf2fvabsdn00rql-PerlIO-Layers-0.012.tar.gz
+source root is PerlIO-Layers-0.012
+setting SOURCE_DATE_EPOCH to timestamp 1581985836 of file PerlIO-Layers-0.012/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/10-basics.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'PerlIO-Layers' version '0.012'
+Building PerlIO-Layers
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.012" -DXS_VERSION="0.012" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/PerlIO/Layers.o lib/PerlIO/Layers.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/PerlIO/Layers/Layers.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/PerlIO/Layers/Layers.so lib/PerlIO/Layers.o
+running tests
+t/10-basics.t .. ok
+All tests successful.
+Files=1, Tests=81,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.07 cusr  0.01 csys =  0.10 CPU)
+Result: PASS
+installing
+Building PerlIO-Layers
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/Layers/Layers.bs
+Installing /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/Layers/Layers.so
+Installing /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/PerlIO/Layers.pm
+Installing /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/share/man/man3/PerlIO::Layers.3
+post-installation fixup
+Moving /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/share/man/man3 to /nix/store/40zhs0fz6d7yvqjw6pyrh6a39lscr9ya-perl5.32.0-PerlIO-Layers-0.012-devdoc/share/man/man3
+Removing empty /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012
+shrinking /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/PerlIO/Layers/Layers.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012/lib
+patching script interpreter paths in /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012
+checking for references to /build/ in /nix/store/rb66k3wa4j33ydf97z5xq34k7hbgd6i5-perl5.32.0-PerlIO-Layers-0.012...
+shrinking RPATHs of ELF executables and libraries in /nix/store/40zhs0fz6d7yvqjw6pyrh6a39lscr9ya-perl5.32.0-PerlIO-Layers-0.012-devdoc
+gzipping man pages under /nix/store/40zhs0fz6d7yvqjw6pyrh6a39lscr9ya-perl5.32.0-PerlIO-Layers-0.012-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/40zhs0fz6d7yvqjw6pyrh6a39lscr9ya-perl5.32.0-PerlIO-Layers-0.012-devdoc
+checking for references to /build/ in /nix/store/40zhs0fz6d7yvqjw6pyrh6a39lscr9ya-perl5.32.0-PerlIO-Layers-0.012-devdoc...
+building '/nix/store/zpad78z13qhlbbqbz29l0z5xf66kjdwv-perl5.32.0-File-Map-0.66.drv'...
+unpacking sources
+unpacking source archive /nix/store/g88hv9w3853fi5f2cwjnjmqlqh5sf8qh-File-Map-0.66.tar.gz
+source root is File-Map-0.66
+setting SOURCE_DATE_EPOCH to timestamp 1545148680 of file File-Map-0.66/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./examples/fastsearch.pl...
+patching ./t/20-errors.t...
+patching ./t/20-protect.t...
+patching ./t/20-threads.t...
+patching ./t/10-empty.t...
+patching ./t/20-remap.t...
+patching ./t/20-unicode.t...
+patching ./t/20-tainting.t...
+patching ./t/10-basics.t...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-Map' version '0.66'
+Building File-Map
+gcc -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE -DVERSION="0.66" -DXS_VERSION="0.66" -fPIC -c -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -o lib/File/Map.o lib/File/Map.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/File/Map/Map.bs')
+ld -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong -o blib/arch/auto/File/Map/Map.so lib/File/Map.o
+running tests
+t/10-basics.t .... ok
+t/10-empty.t ..... ok
+t/20-errors.t .... ok
+t/20-protect.t ... ok
+t/20-remap.t ..... ok
+t/20-tainting.t .. ok
+t/20-threads.t ... ok
+t/20-unicode.t ... ok
+All tests successful.
+Files=8, Tests=108,  2 wallclock secs ( 0.03 usr  0.01 sys +  0.62 cusr  0.32 csys =  0.98 CPU)
+Result: PASS
+installing
+Building File-Map
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/Map/Map.bs
+Installing /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/Map/Map.so
+Installing /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/Map.pm
+Installing /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/share/man/man3/File::Map.3
+post-installation fixup
+Moving /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/share/man/man3 to /nix/store/2bgxr1y84cbdx9vl72049jgnzsn3rq8c-perl5.32.0-File-Map-0.66-devdoc/share/man/man3
+Removing empty /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66
+shrinking /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/Map/Map.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66/lib
+patching script interpreter paths in /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66
+checking for references to /build/ in /nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2bgxr1y84cbdx9vl72049jgnzsn3rq8c-perl5.32.0-File-Map-0.66-devdoc
+gzipping man pages under /nix/store/2bgxr1y84cbdx9vl72049jgnzsn3rq8c-perl5.32.0-File-Map-0.66-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2bgxr1y84cbdx9vl72049jgnzsn3rq8c-perl5.32.0-File-Map-0.66-devdoc
+checking for references to /build/ in /nix/store/2bgxr1y84cbdx9vl72049jgnzsn3rq8c-perl5.32.0-File-Map-0.66-devdoc...
+/nix/store/7n67hlzb98fyc8pfbac8y89gmjcmmh02-perl5.32.0-File-Map-0.66

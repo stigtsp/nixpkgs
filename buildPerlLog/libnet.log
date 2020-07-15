@@ -1,0 +1,198 @@
+these derivations will be built:
+  /nix/store/1p5w30nprwnwif2p68pb076amrlcdq15-perl5.32.0-libnet-3.11.drv
+building '/nix/store/1p5w30nprwnwif2p68pb076amrlcdq15-perl5.32.0-libnet-3.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/3jsm7visnyh2p9jxwnqgn3acnrksjccy-libnet-3.11.tar.gz
+source root is libnet-3.11
+setting SOURCE_DATE_EPOCH to timestamp 1510667450 of file libnet-3.11/t/time.t
+patching sources
+configuring
+patching ./t/time.t...
+patching ./t/datasend.t...
+patching ./t/critic.t...
+patching ./t/nntp_ssl.t...
+patching ./t/config.t...
+patching ./t/pod.t...
+patching ./t/require.t...
+patching ./t/pod_coverage.t...
+patching ./t/smtp_ipv6.t...
+patching ./t/nntp.t...
+patching ./t/smtp_ssl.t...
+patching ./t/smtp.t...
+patching ./t/hostname.t...
+patching ./t/changes.t...
+patching ./t/netrc.t...
+patching ./t/ftp.t...
+patching ./t/pop3_ssl.t...
+patching ./t/external/pop3-ssl.t...
+patching ./t/external/smtp-ssl.t...
+patching ./t/external/ftp-ssl.t...
+patching ./t/pop3_ipv6.t...
+patching ./t/nntp_ipv6.t...
+patching ./Configure...
+patching ./Makefile.PL...
+patching ./demos/nntp...
+patching ./demos/nntp.mirror...
+patching ./demos/pop3...
+patching ./demos/smtp.self...
+patching ./demos/time...
+patching ./demos/ftp...
+Should I do external tests?
+These tests will fail if there is no internet connection or if a firewall
+blocks or modifies some traffic.
+[y/N] [n] n
+Checking if your kit is complete...
+Looks good
+
+Ah, I see you already have installed libnet before.
+
+Do you want to modify/update your configuration (y|n) ? [no] no
+
+This script will prompt you to enter hostnames that can be used as
+defaults for some of the modules in the libnet distribution.
+
+To ensure that you do not enter an invalid hostname, I can perform a
+lookup on each hostname you enter. If your internet connection is via
+a dialup line then you may not want me to perform these lookups, as
+it will require you to be on-line.
+
+Do you want me to perform hostname lookups (y|n) ? [yes]
+
+The following questions all require a list of host names, separated
+with spaces. If you do not have a host available for any of the
+services, then enter a single space, followed by <CR>. To accept the
+default, hit <CR>
+
+Enter a list of available NNTP hosts : []
+Enter a list of available SMTP hosts : []
+Enter a list of available POP3 hosts : []
+Enter a list of available SNPP hosts : []
+Enter a list of available PH Hosts   : []
+Enter a list of available TIME Hosts   : []
+Enter a list of available DAYTIME Hosts   : []
+
+Do you have a firewall/ftp proxy  between your machine and the internet
+
+If you use a SOCKS firewall answer no
+
+(y|n) ? [no]
+
+Normally when FTP needs a data connection the client tells the server
+a port to connect to, and the server initiates a connection to the client.
+
+Some setups, in particular firewall setups, can/do not work using this
+protocol. In these situations the client must make the connection to the
+server, this is called a passive transfer.
+
+Should all FTP connections be passive (y|n) ? [yes]
+
+What is your local internet domain name : []
+
+If you specified some default hosts above, it is possible for me to
+do some basic tests when you run `make test'
+
+This will cause `make test' to be quite a bit slower and, if your
+internet connection is via dialup, will require you to be on-line
+unless the hosts are local.
+
+Do you want me to run these tests (y|n) ? [yes]
+
+To allow Net::FTP to be tested I will need a hostname. This host
+should allow anonymous access and have a /pub directory
+
+What host can I use : []
+
+Writing libnet.cfg
+Generating a Unix-style Makefile
+Writing Makefile for Net
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp libnet.cfg blib/lib/Net/libnet.cfg
+cp lib/Net/SMTP.pm blib/lib/Net/SMTP.pm
+cp lib/Net/FTP/E.pm blib/lib/Net/FTP/E.pm
+cp lib/Net/FTP/L.pm blib/lib/Net/FTP/L.pm
+cp lib/Net/FTP.pm blib/lib/Net/FTP.pm
+cp lib/Net/Config.pm blib/lib/Net/Config.pm
+cp lib/Net/FTP/A.pm blib/lib/Net/FTP/A.pm
+cp lib/Net/Netrc.pm blib/lib/Net/Netrc.pm
+cp lib/Net/Cmd.pm blib/lib/Net/Cmd.pm
+cp lib/Net/NNTP.pm blib/lib/Net/NNTP.pm
+cp lib/Net/Domain.pm blib/lib/Net/Domain.pm
+cp lib/Net/FTP/I.pm blib/lib/Net/FTP/I.pm
+cp lib/Net/libnetFAQ.pod blib/lib/Net/libnetFAQ.pod
+cp lib/Net/FTP/dataconn.pm blib/lib/Net/FTP/dataconn.pm
+cp lib/Net/POP3.pm blib/lib/Net/POP3.pm
+cp lib/Net/Time.pm blib/lib/Net/Time.pm
+Manifying 11 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/changes.t ....... skipped: Author testing only
+t/config.t ........ ok
+t/critic.t ........ skipped: Author testing only
+t/datasend.t ...... ok
+t/ftp.t ........... skipped: no ftp_testhost defined in config
+t/hostname.t ...... ok
+t/netrc.t ......... ok
+t/nntp.t .......... skipped: (no reason given)
+t/nntp_ipv6.t ..... skipped: cannot create listener on ::1: Address family not supported by protocol
+t/nntp_ssl.t ...... skipped: no SSL support found in Net::NNTP
+t/pod.t ........... skipped: Author testing only
+t/pod_coverage.t .. skipped: Author testing only
+t/pop3_ipv6.t ..... skipped: cannot create listener on ::1: Address family not supported by protocol
+t/pop3_ssl.t ...... skipped: no SSL support found in Net::POP3
+t/require.t ....... ok
+t/smtp.t .......... skipped: (no reason given)
+t/smtp_ipv6.t ..... skipped: cannot create listener on ::1: Address family not supported by protocol
+t/smtp_ssl.t ...... skipped: no SSL support found in Net::SMTP
+t/time.t .......... ok
+All tests successful.
+Files=19, Tests=110,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.90 cusr  0.14 csys =  1.10 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/pkgconfig m4datadir=/nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/aclocal aclocaldir=/nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/aclocal install
+Manifying 11 pod documents
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/Config.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/Cmd.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/POP3.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/Time.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/SMTP.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/libnetFAQ.pod
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/libnet.cfg
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/Netrc.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/Domain.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/NNTP.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP/E.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP/dataconn.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP/I.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP/L.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/site_perl/5.32.0/Net/FTP/A.pm
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::POP3.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::Domain.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::Netrc.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::FTP::dataconn.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::Config.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::NNTP.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::Cmd.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::libnetFAQ.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::Time.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::SMTP.3
+Installing /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3/Net::FTP.3
+Appending installation info to /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/man3 to /nix/store/8g2hicy74ynsfrqa8lp10mxr8kll1jd6-perl5.32.0-libnet-3.11-devdoc/share/man/man3
+Removing empty /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11/lib
+patching script interpreter paths in /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11
+checking for references to /build/ in /nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/8g2hicy74ynsfrqa8lp10mxr8kll1jd6-perl5.32.0-libnet-3.11-devdoc
+gzipping man pages under /nix/store/8g2hicy74ynsfrqa8lp10mxr8kll1jd6-perl5.32.0-libnet-3.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/8g2hicy74ynsfrqa8lp10mxr8kll1jd6-perl5.32.0-libnet-3.11-devdoc
+checking for references to /build/ in /nix/store/8g2hicy74ynsfrqa8lp10mxr8kll1jd6-perl5.32.0-libnet-3.11-devdoc...
+/nix/store/pq289b406s5gvmp171apch9wx9zm0v2x-perl5.32.0-libnet-3.11

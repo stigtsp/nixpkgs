@@ -1,0 +1,265 @@
+these derivations will be built:
+  /nix/store/9vr1ydixj7hjbq2lbi7fr8v7x5cdk7p2-perl5.32.0-Devel-NYTProf-6.06.drv
+these paths will be fetched (0.45 MiB download, 0.45 MiB unpacked):
+  /nix/store/s19d6zq9zprpvwgr6975kqgd8lb7mhgg-Devel-NYTProf-6.06.tar.gz
+copying path '/nix/store/s19d6zq9zprpvwgr6975kqgd8lb7mhgg-Devel-NYTProf-6.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9vr1ydixj7hjbq2lbi7fr8v7x5cdk7p2-perl5.32.0-Devel-NYTProf-6.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/s19d6zq9zprpvwgr6975kqgd8lb7mhgg-Devel-NYTProf-6.06.tar.gz
+source root is Devel-NYTProf-6.06
+setting SOURCE_DATE_EPOCH to timestamp 1528122061 of file Devel-NYTProf-6.06/META.json
+patching sources
+configuring
+patching ./demo/demo-run.pl...
+patching ./t/91-pod_coverage.t...
+patching ./t/92-file_port.t...
+patching ./t/90-pod.t...
+patching ./lib/Devel/NYTProf/FileHandle.pm...
+patching ./bin/nytprofcalls...
+patching ./bin/nytprofmerge...
+patching ./bin/nytprofpf...
+patching ./bin/nytprofcg...
+patching ./bin/nytprofhtml...
+patching ./bin/nytprofcsv...
+patching ./bin/flamegraph.pl...
+Looking for header files and functions...
+Assertion testing enabled
+Your perl was compiled with gcc (version 9.3.0), okay.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Devel::NYTProf
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Devel/NYTProf/js/jit/gradient20.png blib/lib/Devel/NYTProf/js/jit/gradient20.png
+cp lib/Devel/NYTProf/js/jit/gradient.png blib/lib/Devel/NYTProf/js/jit/gradient.png
+cp lib/Devel/NYTProf/Test.pm blib/lib/Devel/NYTProf/Test.pm
+cp lib/Devel/NYTProf/js/jit/jit-yc.js blib/lib/Devel/NYTProf/js/jit/jit-yc.js
+cp lib/Devel/NYTProf/js/bg.png blib/lib/Devel/NYTProf/js/bg.png
+cp lib/Devel/NYTProf/SubInfo.pm blib/lib/Devel/NYTProf/SubInfo.pm
+cp lib/Devel/NYTProf/js/jquery-tablesorter-min.js blib/lib/Devel/NYTProf/js/jquery-tablesorter-min.js
+cp lib/Devel/NYTProf/Run.pm blib/lib/Devel/NYTProf/Run.pm
+cp lib/Devel/NYTProf/SubCallInfo.pm blib/lib/Devel/NYTProf/SubCallInfo.pm
+cp lib/Devel/NYTProf/js/style-tablesorter.css blib/lib/Devel/NYTProf/js/style-tablesorter.css
+cp lib/Devel/NYTProf/Constants.pm blib/lib/Devel/NYTProf/Constants.pm
+cp lib/Devel/NYTProf.pm blib/lib/Devel/NYTProf.pm
+cp lib/Devel/NYTProf/Data.pm blib/lib/Devel/NYTProf/Data.pm
+cp lib/Devel/NYTProf/js/jit/jit.js blib/lib/Devel/NYTProf/js/jit/jit.js
+cp lib/Devel/NYTProf/Apache.pm blib/lib/Devel/NYTProf/Apache.pm
+cp lib/Devel/NYTProf/Core.pm blib/lib/Devel/NYTProf/Core.pm
+cp MemoryProfiling.pod blib/lib/Devel/MemoryProfiling.pod
+cp lib/Devel/NYTProf/Reader.pm blib/lib/Devel/NYTProf/Reader.pm
+cp lib/Devel/NYTProf/FileInfo.pm blib/lib/Devel/NYTProf/FileInfo.pm
+cp lib/Devel/NYTProf/js/jit/gradient-cushion1.png blib/lib/Devel/NYTProf/js/jit/gradient-cushion1.png
+cp lib/Devel/NYTProf/js/desc.png blib/lib/Devel/NYTProf/js/desc.png
+cp lib/Devel/NYTProf/js/asc.png blib/lib/Devel/NYTProf/js/asc.png
+cp lib/Devel/NYTProf/ReadStream.pm blib/lib/Devel/NYTProf/ReadStream.pm
+cp lib/Devel/NYTProf/js/jit/gradient40.png blib/lib/Devel/NYTProf/js/jit/gradient40.png
+cp lib/Devel/NYTProf/js/jquery-min.js blib/lib/Devel/NYTProf/js/jquery-min.js
+cp lib/Devel/NYTProf/FileHandle.pm blib/lib/Devel/NYTProf/FileHandle.pm
+cp lib/Devel/NYTProf/js/jit/gradient50.png blib/lib/Devel/NYTProf/js/jit/gradient50.png
+cp lib/Devel/NYTProf/Util.pm blib/lib/Devel/NYTProf/Util.pm
+cp lib/Devel/NYTProf/js/jit/Treemap.css blib/lib/Devel/NYTProf/js/jit/Treemap.css
+cp lib/Devel/NYTProf/js/jit/gradient30.png blib/lib/Devel/NYTProf/js/jit/gradient30.png
+Running Mkbootstrap for NYTProf ()
+chmod 644 "NYTProf.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- NYTProf.bs blib/arch/auto/Devel/NYTProf/NYTProf.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Devel-NYTProf-6.06/typemap'  FileHandle.xs > FileHandle.xsc
+mv FileHandle.xsc FileHandle.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"6.06\" -DXS_VERSION=\"6.06\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_HARD_ASSERT -W -Wall -Wpointer-arith -Wbad-function-cast -Wno-comment -Wno-sign-compare -Wno-cast-qual -Wmissing-noreturn -Wno-unused-parameter FileHandle.c
+In file included from FileHandle.xs:24:
+ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from FileHandle.xs:12:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Devel-NYTProf-6.06/typemap'  NYTProf.xs > NYTProf.xsc
+mv NYTProf.xsc NYTProf.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"6.06\" -DXS_VERSION=\"6.06\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DUSE_HARD_ASSERT -W -Wall -Wpointer-arith -Wbad-function-cast -Wno-comment -Wno-sign-compare -Wno-cast-qual -Wmissing-noreturn -Wno-unused-parameter NYTProf.c
+In file included from NYTProf.xs:36:
+ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from NYTProf.xs:20:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+NYTProf.xs:1220:1: warning: 'get_str_id' defined but not used [-Wunused-function]
+ 1220 | get_str_id(pTHX_ char* str, STRLEN len)
+      | ^~~~~~~~~~
+rm -f blib/arch/auto/Devel/NYTProf/NYTProf.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  FileHandle.o NYTProf.o  -o blib/arch/auto/Devel/NYTProf/NYTProf.so  \
+      \
+
+chmod 755 blib/arch/auto/Devel/NYTProf/NYTProf.so
+cp blib/arch/auto/Devel/NYTProf/NYTProf.so blib/lib/Devel/auto/Devel/NYTProf/NYTProf.so
+cp bin/flamegraph.pl blib/script/flamegraph.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/flamegraph.pl
+cp bin/nytprofcalls blib/script/nytprofcalls
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofcalls
+cp bin/nytprofcg blib/script/nytprofcg
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofcg
+cp bin/nytprofcsv blib/script/nytprofcsv
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofcsv
+cp bin/nytprofhtml blib/script/nytprofhtml
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofhtml
+cp bin/nytprofmerge blib/script/nytprofmerge
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofmerge
+cp bin/nytprofpf blib/script/nytprofpf
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/nytprofpf
+Manifying 6 pod documents
+Manifying 9 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- NYTProf.bs blib/arch/auto/Devel/NYTProf/NYTProf.bs 644
+cp blib/arch/auto/Devel/NYTProf/NYTProf.so blib/lib/Devel/auto/Devel/NYTProf/NYTProf.so
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ 1/2 # Testing Devel::NYTProf 6.06 started at Wed Jul 15 03:21:26 2020
+# Compression: default level is 0, zlib version 0
+# --- Perl 5.032000 Config on x86_64-linux-thread-multi:
+#       d_gettimeod: define
+#       d_sysconf: define
+t/00-load.t ............ ok
+t/10-run.t ............. ok
+t/22-readstream.t ...... ok
+t/30-util.t ............ ok
+t/31-env.t ............. ok
+t/40-savesrc.t ......... ok
+t/42-global.t .......... ok
+t/44-model.t ........... ok
+t/50-errno.t ........... ok
+t/60-forkdepth.t ....... ok
+t/68-hashline.t ........ skipped: Currently a developer-only test
+t/70-subname.t ......... skipped: Sub::Name 0.11 or later required
+t/71-moose.t ........... skipped: Moose 2.0 required
+t/72-autodie.t ......... skipped: Currently a developer-only test
+t/80-version.t ......... ok
+t/90-pod.t ............. skipped: Test::Pod 1.00 required for testing POD
+t/91-pod_coverage.t .... skipped: Test::Pod::Coverage 1.04 required for testing POD coverage
+t/92-file_port.t ....... skipped: Test::Portability::Files required for testing filename portability. Can't locate Test/Portability/Files.pm
+t/test01.t ............. ok
+t/test02.t ............. ok
+t/test03.t ............. ok
+t/test05.t ............. ok
+t/test06.t ............. ok
+t/test07.t ............. ok
+t/test08.t ............. ok
+t/test09.t ............. ok
+t/test10.t ............. ok
+t/test11.t ............. ok
+t/test12.t ............. ok
+t/test13.t ............. ok
+t/test14.t ............. ok
+t/test16.t ............. ok
+t/test17-goto.t ........ ok
+t/test18-goto2.t ....... ok
+t/test20-streval.t ..... ok
+t/test21-streval3.t .... ok
+t/test22-strevala.t .... ok
+t/test23-strevall.t .... ok
+t/test24-strevalc.t .... ok
+t/test25-strevalb.t .... ok
+t/test30-fork-0.t ...... ok
+t/test40pmc.t .......... ok
+t/test50-disable.t ..... ok
+t/test51-enable.t ...... ok
+t/test60-subname.t ..... ok
+t/test61-submerge.t .... ok
+t/test62-subcaller1.t .. ok
+t/test62-tie-a.t ....... skipped: needs perl < 5.21.1 (see t/test62-tie-b.t)
+t/test62-tie-b.t ....... ok
+t/test70-subexcl.t ..... ok
+t/test80-recurs.t ...... ok
+t/test81-swash.t ....... ok
+t/test82-version.t ..... ok
+t/test90-strsubref.t ... ok
+t/zzz.t ................ 1/? # Tests ended at Wed Jul 15 03:23:08 2020
+t/zzz.t ................ ok
+All tests successful.
+Files=55, Tests=4697, 103 wallclock secs ( 0.85 usr  0.09 sys + 38.25 cusr 11.60 csys = 50.79 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/pkgconfig m4datadir=/nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/aclocal aclocaldir=/nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- NYTProf.bs blib/arch/auto/Devel/NYTProf/NYTProf.bs 644
+cp blib/arch/auto/Devel/NYTProf/NYTProf.so blib/lib/Devel/auto/Devel/NYTProf/NYTProf.so
+Manifying 6 pod documents
+Manifying 9 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/NYTProf/NYTProf.so
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/MemoryProfiling.pod
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/auto/Devel/NYTProf/NYTProf.so
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/FileHandle.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/FileInfo.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Util.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Run.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Apache.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Test.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/SubInfo.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Reader.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Core.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/ReadStream.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Data.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/SubCallInfo.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/Constants.pm
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/bg.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/style-tablesorter.css
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/asc.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/desc.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jquery-tablesorter-min.js
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jquery-min.js
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient50.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient30.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient-cushion1.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient40.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient20.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/gradient.png
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/jit.js
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/Treemap.css
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/NYTProf/js/jit/jit-yc.js
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofmerge.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofpf.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofhtml.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofcg.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofcsv.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man1/nytprofcalls.1
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::Data.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::ReadStream.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::Core.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::FileInfo.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::Run.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::Apache.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf::Util.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::MemoryProfiling.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3/Devel::NYTProf.3
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofcalls
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofmerge
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofpf
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofcg
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofhtml
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/nytprofcsv
+Installing /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin/flamegraph.pl
+Appending installation info to /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/man3 to /nix/store/xyszhzgiqizrm2balnbh0wq4869dsxg1-perl5.32.0-Devel-NYTProf-6.06-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06
+shrinking /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Devel/NYTProf/NYTProf.so
+shrinking /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Devel/auto/Devel/NYTProf/NYTProf.so
+gzipping man pages under /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/lib  /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06/bin
+patching script interpreter paths in /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06
+checking for references to /build/ in /nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xyszhzgiqizrm2balnbh0wq4869dsxg1-perl5.32.0-Devel-NYTProf-6.06-devdoc
+gzipping man pages under /nix/store/xyszhzgiqizrm2balnbh0wq4869dsxg1-perl5.32.0-Devel-NYTProf-6.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xyszhzgiqizrm2balnbh0wq4869dsxg1-perl5.32.0-Devel-NYTProf-6.06-devdoc
+checking for references to /build/ in /nix/store/xyszhzgiqizrm2balnbh0wq4869dsxg1-perl5.32.0-Devel-NYTProf-6.06-devdoc...
+/nix/store/kh0rvjqxlmp6wqh169nbfshmsflvb03n-perl5.32.0-Devel-NYTProf-6.06

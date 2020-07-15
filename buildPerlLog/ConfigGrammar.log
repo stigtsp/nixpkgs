@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/rlqrh8yf93vg65gswh7zs8an52504ry8-perl5.32.0-Config-Grammar-1.13.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/hs13j683pfrzcymm2bsgxqsb3knr3mlm-Config-Grammar-1.13.tar.gz
+copying path '/nix/store/hs13j683pfrzcymm2bsgxqsb3knr3mlm-Config-Grammar-1.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rlqrh8yf93vg65gswh7zs8an52504ry8-perl5.32.0-Config-Grammar-1.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/hs13j683pfrzcymm2bsgxqsb3knr3mlm-Config-Grammar-1.13.tar.gz
+source root is Config-Grammar-1.13
+setting SOURCE_DATE_EPOCH to timestamp 1553112568 of file Config-Grammar-1.13/t/sub_error2.conf
+patching sources
+configuring
+patching ./t/sub_error.t...
+patching ./t/dyn.t...
+patching ./t/example.t...
+patching ./t/inherit.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Config::Grammar
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Config/Grammar/Document.pm blib/lib/Config/Grammar/Document.pm
+cp lib/Config/Grammar.pm blib/lib/Config/Grammar.pm
+cp lib/Config/Grammar/Dynamic.pm blib/lib/Config/Grammar/Dynamic.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/dyn.t ........ ok
+t/example.t .... ok
+t/inherit.t .... ok
+t/sub_error.t .. ok
+All tests successful.
+Files=4, Tests=44,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.14 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib/pkgconfig m4datadir=/nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/aclocal aclocaldir=/nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib/perl5/site_perl/5.32.0/Config/Grammar.pm
+Installing /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib/perl5/site_perl/5.32.0/Config/Grammar/Dynamic.pm
+Installing /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib/perl5/site_perl/5.32.0/Config/Grammar/Document.pm
+Installing /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/man/man3/Config::Grammar::Dynamic.3
+Installing /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/man/man3/Config::Grammar.3
+Appending installation info to /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/man/man3 to /nix/store/j0r15pasb69jx0m64nnv8fah4dglnrhb-perl5.32.0-Config-Grammar-1.13-devdoc/share/man/man3
+Removing empty /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13/lib
+patching script interpreter paths in /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13
+checking for references to /build/ in /nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/j0r15pasb69jx0m64nnv8fah4dglnrhb-perl5.32.0-Config-Grammar-1.13-devdoc
+gzipping man pages under /nix/store/j0r15pasb69jx0m64nnv8fah4dglnrhb-perl5.32.0-Config-Grammar-1.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/j0r15pasb69jx0m64nnv8fah4dglnrhb-perl5.32.0-Config-Grammar-1.13-devdoc
+checking for references to /build/ in /nix/store/j0r15pasb69jx0m64nnv8fah4dglnrhb-perl5.32.0-Config-Grammar-1.13-devdoc...
+/nix/store/xrw4pzxbkgsc6clgn8j4h6z33xw5hzzr-perl5.32.0-Config-Grammar-1.13

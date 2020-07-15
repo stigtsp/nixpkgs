@@ -1,0 +1,59 @@
+these derivations will be built:
+  /nix/store/23wdwdhiqqljq43d19wfg5vq35wib4lc-perl5.32.0-Class-Loader-2.03.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/4rhizgqizyrssn88w857lh8ymv21b2h2-Class-Loader-2.03.tar.gz
+copying path '/nix/store/4rhizgqizyrssn88w857lh8ymv21b2h2-Class-Loader-2.03.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/23wdwdhiqqljq43d19wfg5vq35wib4lc-perl5.32.0-Class-Loader-2.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/4rhizgqizyrssn88w857lh8ymv21b2h2-Class-Loader-2.03.tar.gz
+source root is Class-Loader-2.03
+setting SOURCE_DATE_EPOCH to timestamp 1114646165 of file Class-Loader-2.03/META.yml
+patching sources
+configuring
+patching ./t/02-map.t...
+patching ./t/03-args.t...
+patching ./t/01-require.t...
+patching ./lib/Class/Loader.pm...
+patching ./lib/Class/LoaderTest.pm...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Class::Loader
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Class/Loader.pm blib/lib/Class/Loader.pm
+cp lib/Class/LoaderTest.pm blib/lib/Class/LoaderTest.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-require.t .. ok
+t/02-map.t ...... ok
+t/03-args.t ..... ok
+All tests successful.
+Files=3, Tests=12,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.04 cusr  0.00 csys =  0.06 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/lib/pkgconfig m4datadir=/nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/share/aclocal aclocaldir=/nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/lib/perl5/site_perl/5.32.0/Class/Loader.pm
+Installing /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/lib/perl5/site_perl/5.32.0/Class/LoaderTest.pm
+Installing /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/share/man/man3/Class::Loader.3
+Appending installation info to /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/share/man/man3 to /nix/store/gcknzv59kjwgf2kzc02d3rnfjpnaqv1z-perl5.32.0-Class-Loader-2.03-devdoc/share/man/man3
+Removing empty /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03/lib
+patching script interpreter paths in /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03
+checking for references to /build/ in /nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gcknzv59kjwgf2kzc02d3rnfjpnaqv1z-perl5.32.0-Class-Loader-2.03-devdoc
+gzipping man pages under /nix/store/gcknzv59kjwgf2kzc02d3rnfjpnaqv1z-perl5.32.0-Class-Loader-2.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gcknzv59kjwgf2kzc02d3rnfjpnaqv1z-perl5.32.0-Class-Loader-2.03-devdoc
+checking for references to /build/ in /nix/store/gcknzv59kjwgf2kzc02d3rnfjpnaqv1z-perl5.32.0-Class-Loader-2.03-devdoc...
+/nix/store/qiyk4znsc08jiphxrf1jy0sni5inlszz-perl5.32.0-Class-Loader-2.03

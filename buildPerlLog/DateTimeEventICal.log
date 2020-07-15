@@ -1,0 +1,319 @@
+these derivations will be built:
+  /nix/store/9ymkcx4f8wc6gqnm7jvlnhn3qizr1xxf-perl5.32.0-Set-Infinite-0.65.drv
+  /nix/store/dl1x275zv83h3zj059ss00x2lbycgnla-perl5.32.0-DateTime-Set-0.3900.drv
+  /nix/store/d8589lghf12vkyqnlnx1767dr7j1na4v-perl5.32.0-DateTime-Event-Recurrence-0.19.drv
+  /nix/store/wd0dnvqx42yqdfm883xfxxnv01mjv963-perl5.32.0-DateTime-Event-ICal-0.13.drv
+building '/nix/store/9ymkcx4f8wc6gqnm7jvlnhn3qizr1xxf-perl5.32.0-Set-Infinite-0.65.drv'...
+unpacking sources
+unpacking source archive /nix/store/ds7dsxrghvdlc8nc2hdclbdxksxywj3w-Set-Infinite-0.65.tar.gz
+source root is Set-Infinite-0.65
+setting SOURCE_DATE_EPOCH to timestamp 1272306909 of file Set-Infinite-0.65/META.yml
+patching sources
+configuring
+patching ./t/basic_intersects.t...
+patching ./t/until.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Set::Infinite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Set/Infinite/Basic.pm blib/lib/Set/Infinite/Basic.pm
+cp lib/Set/Infinite/Arithmetic.pm blib/lib/Set/Infinite/Arithmetic.pm
+cp lib/Set/Infinite.pm blib/lib/Set/Infinite.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/backtrack.t ......... ok
+t/basic_intersects.t .. ok
+t/first.t ............. ok
+t/infinite.t .......... ok
+t/last.t .............. ok
+t/quantize.t .......... ok
+t/select.t ............ ok
+t/select_offset.t ..... ok
+t/size.t .............. ok
+t/union.t ............. ok
+t/until.t ............. ok
+All tests successful.
+Files=11, Tests=446,  0 wallclock secs ( 0.07 usr  0.01 sys +  0.75 cusr  0.05 csys =  0.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib/pkgconfig m4datadir=/nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/aclocal aclocaldir=/nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib/perl5/site_perl/5.32.0/Set/Infinite.pm
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib/perl5/site_perl/5.32.0/Set/Infinite/Arithmetic.pm
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib/perl5/site_perl/5.32.0/Set/Infinite/Basic.pm
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/man/man3/Set::Infinite::Arithmetic.3
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/man/man3/Set::Infinite.3
+Installing /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/man/man3/Set::Infinite::Basic.3
+Appending installation info to /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/man/man3 to /nix/store/agmfrz6l7rvhgzyc0wwry70qhcarc5vv-perl5.32.0-Set-Infinite-0.65-devdoc/share/man/man3
+Removing empty /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65/lib
+patching script interpreter paths in /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65
+checking for references to /build/ in /nix/store/qpzms3xx5a6jdnxmi3p6yr53i2dkx5a2-perl5.32.0-Set-Infinite-0.65...
+shrinking RPATHs of ELF executables and libraries in /nix/store/agmfrz6l7rvhgzyc0wwry70qhcarc5vv-perl5.32.0-Set-Infinite-0.65-devdoc
+gzipping man pages under /nix/store/agmfrz6l7rvhgzyc0wwry70qhcarc5vv-perl5.32.0-Set-Infinite-0.65-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/agmfrz6l7rvhgzyc0wwry70qhcarc5vv-perl5.32.0-Set-Infinite-0.65-devdoc
+checking for references to /build/ in /nix/store/agmfrz6l7rvhgzyc0wwry70qhcarc5vv-perl5.32.0-Set-Infinite-0.65-devdoc...
+building '/nix/store/dl1x275zv83h3zj059ss00x2lbycgnla-perl5.32.0-DateTime-Set-0.3900.drv'...
+unpacking sources
+unpacking source archive /nix/store/iraiw7j5i7z9lkzhj6mklclii0plz7vs-DateTime-Set-0.3900.tar.gz
+source root is DateTime-Set-0.3900
+setting SOURCE_DATE_EPOCH to timestamp 1475999511 of file DateTime-Set-0.3900/META.yml
+patching sources
+configuring
+patching ./t/04recurrence.t...
+patching ./t/13add_recurrence.t...
+patching ./t/19spanset_daylight_savings.t...
+patching ./t/01sanity.t...
+patching ./t/17quantize.t...
+patching ./t/07previous.t...
+patching ./t/22start_end.t...
+patching ./t/10previous-2.t...
+patching ./t/14complement.t...
+patching ./t/00load.t...
+patching ./t/06backtrack.t...
+patching ./t/20spanset_week_wrapped_recurrence.t...
+patching ./t/11next.t...
+patching ./t/09spanset.t...
+patching ./t/16bounded_recurrence.t...
+patching ./t/15time_zone.t...
+patching ./t/18as_list_empty.t...
+patching ./t/03add_subtract.t...
+patching ./t/08span.t...
+patching ./t/02immutable.t...
+patching ./t/05iterator.t...
+patching ./t/12iterator_intersection.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Set
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'DateTime-Set' version '0.3900'
+Building DateTime-Set
+running tests
+t/00load.t ............................. ok
+t/01sanity.t ........................... ok
+t/02immutable.t ........................ ok
+t/03add_subtract.t ..................... ok
+t/04recurrence.t ....................... ok
+t/05iterator.t ......................... ok
+t/06backtrack.t ........................ ok
+t/07previous.t ......................... ok
+t/08span.t ............................. ok
+t/09spanset.t .......................... ok
+t/10previous-2.t ....................... ok
+t/11next.t ............................. ok
+t/12iterator_intersection.t ............ ok
+t/13add_recurrence.t ................... ok
+t/14complement.t ....................... ok
+t/15time_zone.t ........................ 1/14 You passed a locale to the set() method. You should use set_locale() instead, as using set() may alter the local time near a DST boundary. at /build/DateTime-Set-0.3900/blib/lib/DateTime/Set.pm line 183.
+You passed a locale to the set() method. You should use set_locale() instead, as using set() may alter the local time near a DST boundary. at /build/DateTime-Set-0.3900/blib/lib/DateTime/Set.pm line 183.
+t/15time_zone.t ........................ ok
+t/16bounded_recurrence.t ............... ok
+t/17quantize.t ......................... ok
+t/18as_list_empty.t .................... ok
+t/19spanset_daylight_savings.t ......... skipped: DateTime::Event::Recurrence required for this test.
+t/20spanset_week_wrapped_recurrence.t .. skipped: DateTime::Event::Recurrence required for this test.
+t/21from_recurrence.t .................. # Test suite by Olivier Mengue < dolmen cpan org >
+# previous(Inf)
+# => 2009-03-03T09:20:05
+# next(-Inf)
+# => 2009-02-27T08:50:05
+# next(2009-02-27T08:50:05)
+# => 2009-02-27T09:05:05
+# previous(2009-02-27T09:05:05)
+# => 2009-02-27T08:50:05
+# next(2009-02-27T08:50:05)
+# => 2009-02-27T09:05:05
+# next(2009-02-27T09:05:05)
+# => 2009-02-27T09:20:05
+# next(2009-02-27T09:20:05)
+# => 2009-03-02T09:05:05
+# next(2009-03-02T09:05:05)
+# => 2009-03-02T09:20:05
+# next(2009-03-02T09:20:05)
+# => 2009-03-03T09:05:05
+# next(2009-03-03T09:05:05)
+# => 2009-03-03T09:20:05
+# next(2009-03-03T09:20:05)
+# => Inf
+# no span, next()
+t/21from_recurrence.t .................. 1/106 # no span, previous()
+# start, next()
+# after, next()
+# end, previous()
+# before, previous()
+# start, previous()
+# after, previous()
+# end, next()
+# before, next()
+t/21from_recurrence.t .................. ok
+t/22start_end.t ........................ ok
+All tests successful.
+Files=23, Tests=347, 13 wallclock secs ( 0.12 usr  0.03 sys +  8.41 cusr  4.25 csys = 12.81 CPU)
+Result: PASS
+installing
+Building DateTime-Set
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/lib/perl5/site_perl/5.32.0/Set/Infinite/_recurrence.pm
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/lib/perl5/site_perl/5.32.0/DateTime/Span.pm
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/lib/perl5/site_perl/5.32.0/DateTime/SpanSet.pm
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/lib/perl5/site_perl/5.32.0/DateTime/Set.pm
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/man3/Set::Infinite::_recurrence.3
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/man3/DateTime::Span.3
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/man3/DateTime::SpanSet.3
+Installing /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/man3/DateTime::Set.3
+post-installation fixup
+Moving /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/man3 to /nix/store/zffpkbh89kphph4wyyail3x3z6h8cs94-perl5.32.0-DateTime-Set-0.3900-devdoc/share/man/man3
+Removing empty /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900/lib
+patching script interpreter paths in /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900
+checking for references to /build/ in /nix/store/la7b2n6fgzvqxspmbhf6a7pjxxgz57dc-perl5.32.0-DateTime-Set-0.3900...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zffpkbh89kphph4wyyail3x3z6h8cs94-perl5.32.0-DateTime-Set-0.3900-devdoc
+gzipping man pages under /nix/store/zffpkbh89kphph4wyyail3x3z6h8cs94-perl5.32.0-DateTime-Set-0.3900-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zffpkbh89kphph4wyyail3x3z6h8cs94-perl5.32.0-DateTime-Set-0.3900-devdoc
+checking for references to /build/ in /nix/store/zffpkbh89kphph4wyyail3x3z6h8cs94-perl5.32.0-DateTime-Set-0.3900-devdoc...
+building '/nix/store/d8589lghf12vkyqnlnx1767dr7j1na4v-perl5.32.0-DateTime-Event-Recurrence-0.19.drv'...
+unpacking sources
+unpacking source archive /nix/store/3dfas07h66racb0v7rwy91nxlcbwsj45-DateTime-Event-Recurrence-0.19.tar.gz
+source root is DateTime-Event-Recurrence-0.19
+setting SOURCE_DATE_EPOCH to timestamp 1488918139 of file DateTime-Event-Recurrence-0.19/META.yml
+patching sources
+configuring
+patching ./t/03offset.t...
+patching ./t/04neg_offset.t...
+patching ./t/09yearly_weekly.t...
+patching ./t/02next.t...
+patching ./t/12monthly_weekly.t...
+patching ./t/05set.t...
+patching ./t/01sanity.t...
+patching ./t/11mixed_offset.t...
+patching ./t/00load.t...
+patching ./t/07set-2.t...
+patching ./t/08stress.t...
+patching ./t/06overflow.t...
+patching ./t/10weekly_more.t...
+patching ./t/13yearly_by_day.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Event::Recurrence
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DateTime/Event/Recurrence.pm blib/lib/DateTime/Event/Recurrence.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00load.t ............ ok
+t/01sanity.t .......... ok
+t/02next.t ............ ok
+t/03offset.t .......... ok
+t/04neg_offset.t ...... ok
+t/05set.t ............. ok
+t/06overflow.t ........ ok
+t/07set-2.t ........... ok
+t/08stress.t .......... ok
+t/09yearly_weekly.t ... ok
+t/10weekly_more.t ..... ok
+t/11mixed_offset.t .... ok
+t/12monthly_weekly.t .. ok
+t/13yearly_by_day.t ... ok
+t/22intersects.t ...... ok
+All tests successful.
+Files=15, Tests=198, 10 wallclock secs ( 0.10 usr  0.04 sys +  7.00 cusr  2.71 csys =  9.85 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/lib/pkgconfig m4datadir=/nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/share/aclocal aclocaldir=/nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/lib/perl5/site_perl/5.32.0/DateTime/Event/Recurrence.pm
+Installing /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/share/man/man3/DateTime::Event::Recurrence.3
+Appending installation info to /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/share/man/man3 to /nix/store/zp6gqbbfz1nkjvzh6ycw6cm084kcfwvc-perl5.32.0-DateTime-Event-Recurrence-0.19-devdoc/share/man/man3
+Removing empty /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19/lib
+patching script interpreter paths in /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19
+checking for references to /build/ in /nix/store/39djjnn5sxh9y48q4s7icn7wdk4savxy-perl5.32.0-DateTime-Event-Recurrence-0.19...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zp6gqbbfz1nkjvzh6ycw6cm084kcfwvc-perl5.32.0-DateTime-Event-Recurrence-0.19-devdoc
+gzipping man pages under /nix/store/zp6gqbbfz1nkjvzh6ycw6cm084kcfwvc-perl5.32.0-DateTime-Event-Recurrence-0.19-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zp6gqbbfz1nkjvzh6ycw6cm084kcfwvc-perl5.32.0-DateTime-Event-Recurrence-0.19-devdoc
+checking for references to /build/ in /nix/store/zp6gqbbfz1nkjvzh6ycw6cm084kcfwvc-perl5.32.0-DateTime-Event-Recurrence-0.19-devdoc...
+building '/nix/store/wd0dnvqx42yqdfm883xfxxnv01mjv963-perl5.32.0-DateTime-Event-ICal-0.13.drv'...
+unpacking sources
+unpacking source archive /nix/store/bvrlbkfjsrnc3p47c3apa1ibmilcjqfs-DateTime-Event-ICal-0.13.tar.gz
+source root is DateTime-Event-ICal-0.13
+setting SOURCE_DATE_EPOCH to timestamp 1443697071 of file DateTime-Event-ICal-0.13/META.yml
+patching sources
+configuring
+patching ./t/02interval.t...
+patching ./t/01sanity.t...
+patching ./t/06hms-byetc.t...
+patching ./t/00load.t...
+patching ./t/04rfc2445.t...
+patching ./t/05byday.t...
+patching ./t/03by.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for DateTime::Event::ICal
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DateTime/Event/ICal.pm blib/lib/DateTime/Event/ICal.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00load.t ....... ok
+t/01sanity.t ..... ok
+t/02interval.t ... ok
+t/03by.t ......... ok
+t/04rfc2445.t .... ok
+t/05byday.t ...... ok
+t/06hms-byetc.t .. ok
+All tests successful.
+Files=7, Tests=89, 22 wallclock secs ( 0.06 usr  0.03 sys + 21.03 cusr  1.33 csys = 22.45 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/lib/pkgconfig m4datadir=/nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/share/aclocal aclocaldir=/nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/lib/perl5/site_perl/5.32.0/DateTime/Event/ICal.pm
+Installing /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/share/man/man3/DateTime::Event::ICal.3
+Appending installation info to /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/share/man/man3 to /nix/store/483kc686w54rlv5xhp4nj1qpihw2a16n-perl5.32.0-DateTime-Event-ICal-0.13-devdoc/share/man/man3
+Removing empty /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13/lib
+patching script interpreter paths in /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13
+checking for references to /build/ in /nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13...
+shrinking RPATHs of ELF executables and libraries in /nix/store/483kc686w54rlv5xhp4nj1qpihw2a16n-perl5.32.0-DateTime-Event-ICal-0.13-devdoc
+gzipping man pages under /nix/store/483kc686w54rlv5xhp4nj1qpihw2a16n-perl5.32.0-DateTime-Event-ICal-0.13-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/483kc686w54rlv5xhp4nj1qpihw2a16n-perl5.32.0-DateTime-Event-ICal-0.13-devdoc
+checking for references to /build/ in /nix/store/483kc686w54rlv5xhp4nj1qpihw2a16n-perl5.32.0-DateTime-Event-ICal-0.13-devdoc...
+/nix/store/wpv3jmayv044m5h10bnn4vl43fahfgr2-perl5.32.0-DateTime-Event-ICal-0.13

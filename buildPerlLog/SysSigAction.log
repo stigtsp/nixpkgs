@@ -1,0 +1,106 @@
+these derivations will be built:
+  /nix/store/b2pacsl3hj5q8q4sc4idjknsv08gan1s-perl5.32.0-Sys-SigAction-0.23.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/l3xaqwzgrhfz06mzabhlnj5yzcgcky51-Sys-SigAction-0.23.tar.gz
+copying path '/nix/store/l3xaqwzgrhfz06mzabhlnj5yzcgcky51-Sys-SigAction-0.23.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/b2pacsl3hj5q8q4sc4idjknsv08gan1s-perl5.32.0-Sys-SigAction-0.23.drv'...
+unpacking sources
+unpacking source archive /nix/store/l3xaqwzgrhfz06mzabhlnj5yzcgcky51-Sys-SigAction-0.23.tar.gz
+source root is Sys-SigAction-0.23
+setting SOURCE_DATE_EPOCH to timestamp 1473555862 of file Sys-SigAction-0.23/META.yml
+patching sources
+configuring
+patching ./dbd-oracle-timeout.POD...
+OS= linux
+archname = x86_64-linux-thread-multi
+Checking for Microsoft Windows... (not supported)
+Checking for multi-threaded Perl... (warning)
+
+   NOTE: This perl has multithread support enabled, this is not a problem for
+   single threaded perl applications.
+
+   Please see "MULTITHREAD PERL" in the Sys::SigAction POD for more information.
+
+Checking support for signals... (required)... OK
+Checking support for POSIX::sigaction... (required)... OK
+Checking for arm platforms... OK
+Checking for cygwin... (masking signals is broken on some versions at least)... OK
+Writing lib/Sys/SigAction/Alarm.pm
+Looking for Time::HiRes with a working ualarm()...
+Testing Time::HiRes::ualarm()...
+
+
+   Time::HiRes::ualarm() exists and works.
+   High resolution timeouts enabled."
+
+Wrote lib/Sys/SigAction/Alarm.pm
+MakeMaker version = 7.44
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Sys::SigAction
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Sys/SigAction.pm blib/lib/Sys/SigAction.pm
+cp lib/Sys/SigAction/Alarm.pm blib/lib/Sys/SigAction/Alarm.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/alternatives.t ...... ok
+t/inline_nested.t ..... ok
+t/mask.t .............. ok
+t/name.t .............. ok
+t/number.t ............ ok
+t/recursive_nested.t .. ok
+t/safe.t .............. 1/1
+
+     NOTE: Setting safe=>1... with masked signals does not seem to work.
+     The problem is that the masked signals are not masked when safe=>1.
+     When safe=>0 they are.
+
+     If you have an application for safe=>1 and can come up with a patch
+     for this module that gets this test working, or a patch to the test
+     that shows how to fix it, please send it to me.
+
+     See the block below this one... which if executed would test safe mode
+     with masked signals... it is a clone of part of mask.t that proves this
+     is broken.
+
+     This test can be executed from the command line as follows:
+
+         SAFE_T=1 perl -Ilib t/safe.t
+
+     Lincoln
+
+
+
+t/safe.t .............. ok
+t/timeout.t ........... 11/19 # delta time was 0.100146, timer was for 0.1 secconds
+t/timeout.t ........... ok
+All tests successful.
+Files=8, Tests=87,  9 wallclock secs ( 0.04 usr  0.01 sys +  0.40 cusr  0.07 csys =  0.52 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/lib/pkgconfig m4datadir=/nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/share/aclocal aclocaldir=/nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/lib/perl5/site_perl/5.32.0/Sys/SigAction.pm
+Installing /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/lib/perl5/site_perl/5.32.0/Sys/SigAction/Alarm.pm
+Installing /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/share/man/man3/Sys::SigAction.3
+Appending installation info to /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/share/man/man3 to /nix/store/4m9gza3a0ayg11b2fsqd1l9fm5m9rs50-perl5.32.0-Sys-SigAction-0.23-devdoc/share/man/man3
+Removing empty /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23/lib
+patching script interpreter paths in /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23
+checking for references to /build/ in /nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4m9gza3a0ayg11b2fsqd1l9fm5m9rs50-perl5.32.0-Sys-SigAction-0.23-devdoc
+gzipping man pages under /nix/store/4m9gza3a0ayg11b2fsqd1l9fm5m9rs50-perl5.32.0-Sys-SigAction-0.23-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4m9gza3a0ayg11b2fsqd1l9fm5m9rs50-perl5.32.0-Sys-SigAction-0.23-devdoc
+checking for references to /build/ in /nix/store/4m9gza3a0ayg11b2fsqd1l9fm5m9rs50-perl5.32.0-Sys-SigAction-0.23-devdoc...
+/nix/store/p2c7ckwkkmqldmdfx73jrnkxk27s21b1-perl5.32.0-Sys-SigAction-0.23

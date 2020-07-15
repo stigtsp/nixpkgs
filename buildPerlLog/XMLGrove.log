@@ -1,0 +1,85 @@
+these derivations will be built:
+  /nix/store/g3p7gc3zg99bafb14q7sfhfrkg7670sk-perl5.32.0-XML-Grove-0.46alpha.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/5cnh59yf61j5d3zkbwn2qpa9ihxzzfpc-XML-Grove-0.46alpha.tar.gz
+copying path '/nix/store/5cnh59yf61j5d3zkbwn2qpa9ihxzzfpc-XML-Grove-0.46alpha.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g3p7gc3zg99bafb14q7sfhfrkg7670sk-perl5.32.0-XML-Grove-0.46alpha.drv'...
+unpacking sources
+unpacking source archive /nix/store/5cnh59yf61j5d3zkbwn2qpa9ihxzzfpc-XML-Grove-0.46alpha.tar.gz
+source root is XML-Grove-0.46alpha
+setting SOURCE_DATE_EPOCH to timestamp 936917492 of file XML-Grove-0.46alpha/lib/XML/Grove.pm
+patching sources
+applying patch /nix/store/4pfii1h1za9pw78jv1h0rcpwf6g46igq-xml-grove-utf8.patch
+patching file t/grove.t
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::Grove
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/Grove.pm blib/lib/XML/Grove.pm
+cp lib/XML/Grove/Factory.pm blib/lib/XML/Grove/Factory.pm
+cp lib/XML/Grove/Subst.pm blib/lib/XML/Grove/Subst.pm
+cp lib/XML/Grove/Sub.pm blib/lib/XML/Grove/Sub.pm
+cp lib/XML/Grove/AsCanonXML.pm blib/lib/XML/Grove/AsCanonXML.pm
+cp DOM-ecmascript.pod blib/lib/XML/DOM-ecmascript.pod
+cp lib/XML/Grove/XPointer.pm blib/lib/XML/Grove/XPointer.pm
+cp lib/XML/Grove/IDs.pm blib/lib/XML/Grove/IDs.pm
+cp lib/XML/Grove/Builder.pm blib/lib/XML/Grove/Builder.pm
+cp lib/XML/Grove/PerlSAX.pm blib/lib/XML/Grove/PerlSAX.pm
+cp lib/XML/Grove/AsString.pm blib/lib/XML/Grove/AsString.pm
+cp lib/XML/Grove/Path.pm blib/lib/XML/Grove/Path.pm
+Manifying 12 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/factory.t .. ok
+t/grove.t .... ok
+All tests successful.
+Files=2, Tests=10,  0 wallclock secs ( 0.03 usr  0.02 sys +  0.04 cusr  0.02 csys =  0.11 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/pkgconfig m4datadir=/nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/aclocal aclocaldir=/nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/aclocal install
+Manifying 12 pod documents
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/DOM-ecmascript.pod
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/PerlSAX.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/Path.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/AsCanonXML.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/XPointer.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/AsString.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/Sub.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/IDs.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/Subst.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/Factory.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/site_perl/5.32.0/XML/Grove/Builder.pm
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::IDs.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::Builder.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::PerlSAX.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::DOM-ecmascript.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::Sub.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::AsString.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::AsCanonXML.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::Factory.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::Path.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::XPointer.3
+Installing /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3/XML::Grove::Subst.3
+Appending installation info to /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/man3 to /nix/store/gq9rhqyyxnngzmgml2qkxravdf7fwjz2-perl5.32.0-XML-Grove-0.46alpha-devdoc/share/man/man3
+Removing empty /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha/lib
+patching script interpreter paths in /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha
+checking for references to /build/ in /nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha...
+shrinking RPATHs of ELF executables and libraries in /nix/store/gq9rhqyyxnngzmgml2qkxravdf7fwjz2-perl5.32.0-XML-Grove-0.46alpha-devdoc
+gzipping man pages under /nix/store/gq9rhqyyxnngzmgml2qkxravdf7fwjz2-perl5.32.0-XML-Grove-0.46alpha-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/gq9rhqyyxnngzmgml2qkxravdf7fwjz2-perl5.32.0-XML-Grove-0.46alpha-devdoc
+checking for references to /build/ in /nix/store/gq9rhqyyxnngzmgml2qkxravdf7fwjz2-perl5.32.0-XML-Grove-0.46alpha-devdoc...
+/nix/store/5hziflw3njbf3rzj5m83kv0xsqc5bdxk-perl5.32.0-XML-Grove-0.46alpha

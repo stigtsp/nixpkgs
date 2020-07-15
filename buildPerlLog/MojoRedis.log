@@ -1,0 +1,228 @@
+these derivations will be built:
+  /nix/store/6nv3l7dmm4zm0f4skhb591ks005aaw7g-perl5.32.0-Protocol-Redis-1.0011.drv
+  /nix/store/9qswi1d4pn6ymig0dz90mfyannzrf4kj-perl5.32.0-Protocol-Redis-Faster-0.003.drv
+  /nix/store/rly2cwijix8zqi9fm9xd2jqq401pa76b-perl5.32.0-Mojo-Redis-3.24.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/35a9h1lwxmxjk1vqz7psgsi6s7yp9v66-Protocol-Redis-1.0011.tar.gz
+  /nix/store/4rnq0y9sgrmh13nd1p8sg18b06wlri8n-Mojo-Redis-3.24.tar.gz
+  /nix/store/m3jmc2s17j5x9660mlsqb7pdkjjgfvy1-Protocol-Redis-Faster-0.003.tar.gz
+copying path '/nix/store/4rnq0y9sgrmh13nd1p8sg18b06wlri8n-Mojo-Redis-3.24.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/m3jmc2s17j5x9660mlsqb7pdkjjgfvy1-Protocol-Redis-Faster-0.003.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/35a9h1lwxmxjk1vqz7psgsi6s7yp9v66-Protocol-Redis-1.0011.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6nv3l7dmm4zm0f4skhb591ks005aaw7g-perl5.32.0-Protocol-Redis-1.0011.drv'...
+unpacking sources
+unpacking source archive /nix/store/35a9h1lwxmxjk1vqz7psgsi6s7yp9v66-Protocol-Redis-1.0011.tar.gz
+source root is Protocol-Redis-1.0011
+setting SOURCE_DATE_EPOCH to timestamp 1577288377 of file Protocol-Redis-1.0011/META.yml
+patching sources
+configuring
+patching ./xt/pod.t...
+patching ./t/redis.t...
+patching ./benchmark.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Protocol::Redis
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp benchmark.pl blib/lib/Protocol/benchmark.pl
+cp lib/Protocol/Redis.pm blib/lib/Protocol/Redis.pm
+cp lib/Protocol/Redis/Test.pm blib/lib/Protocol/Redis/Test.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/redis.t .. ok
+All tests successful.
+Files=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.05 cusr  0.01 csys =  0.08 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/pkgconfig m4datadir=/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/aclocal aclocaldir=/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl/5.32.0/Protocol/Redis.pm
+Installing /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl/5.32.0/Protocol/benchmark.pl
+Installing /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl/5.32.0/Protocol/Redis/Test.pm
+Installing /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/man/man3/Protocol::Redis::Test.3
+Installing /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/man/man3/Protocol::Redis.3
+Appending installation info to /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/man/man3 to /nix/store/l8dh09y1pnqaiw5wpjas43cvxh9iwz2g-perl5.32.0-Protocol-Redis-1.0011-devdoc/share/man/man3
+Removing empty /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib
+patching script interpreter paths in /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011
+/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl/5.32.0/Protocol/benchmark.pl: interpreter directive changed from "/usr/bin/env perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/smnabmn53f6blznxaakg7f29hvwwqffq-perl5.32.0-Protocol-Redis-1.0011...
+shrinking RPATHs of ELF executables and libraries in /nix/store/l8dh09y1pnqaiw5wpjas43cvxh9iwz2g-perl5.32.0-Protocol-Redis-1.0011-devdoc
+gzipping man pages under /nix/store/l8dh09y1pnqaiw5wpjas43cvxh9iwz2g-perl5.32.0-Protocol-Redis-1.0011-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/l8dh09y1pnqaiw5wpjas43cvxh9iwz2g-perl5.32.0-Protocol-Redis-1.0011-devdoc
+checking for references to /build/ in /nix/store/l8dh09y1pnqaiw5wpjas43cvxh9iwz2g-perl5.32.0-Protocol-Redis-1.0011-devdoc...
+building '/nix/store/9qswi1d4pn6ymig0dz90mfyannzrf4kj-perl5.32.0-Protocol-Redis-Faster-0.003.drv'...
+unpacking sources
+unpacking source archive /nix/store/m3jmc2s17j5x9660mlsqb7pdkjjgfvy1-Protocol-Redis-Faster-0.003.tar.gz
+source root is Protocol-Redis-Faster-0.003
+setting SOURCE_DATE_EPOCH to timestamp 1567345341 of file Protocol-Redis-Faster-0.003/xt/author/pod-syntax.t
+patching sources
+configuring
+patching ./xt/author/pod-syntax.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Protocol::Redis::Faster
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Protocol/Redis/Faster.pm blib/lib/Protocol/Redis/Faster.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     Protocol::Redis::Test  any    undef
+#     Test::More            0.88 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module            Want   Have
+#     --------------- ------ ------
+#     Carp               any   1.50
+#     Protocol::Redis 1.0000 1.0011
+#     parent             any  0.238
+#
+t/00-report-prereqs.t .. ok
+t/redis.t .............. ok
+All tests successful.
+Files=2, Tests=4,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.21 cusr  0.04 csys =  0.28 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/lib/pkgconfig m4datadir=/nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/share/aclocal aclocaldir=/nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/lib/perl5/site_perl/5.32.0/Protocol/Redis/Faster.pm
+Installing /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/share/man/man3/Protocol::Redis::Faster.3
+Appending installation info to /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/share/man/man3 to /nix/store/g6bff1ic7imbnbyagzk38rx5qvcmk8ka-perl5.32.0-Protocol-Redis-Faster-0.003-devdoc/share/man/man3
+Removing empty /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003/lib
+patching script interpreter paths in /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003
+checking for references to /build/ in /nix/store/hqwym4mnmkirmrpr64dm78rp5b5dabsp-perl5.32.0-Protocol-Redis-Faster-0.003...
+shrinking RPATHs of ELF executables and libraries in /nix/store/g6bff1ic7imbnbyagzk38rx5qvcmk8ka-perl5.32.0-Protocol-Redis-Faster-0.003-devdoc
+gzipping man pages under /nix/store/g6bff1ic7imbnbyagzk38rx5qvcmk8ka-perl5.32.0-Protocol-Redis-Faster-0.003-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/g6bff1ic7imbnbyagzk38rx5qvcmk8ka-perl5.32.0-Protocol-Redis-Faster-0.003-devdoc
+checking for references to /build/ in /nix/store/g6bff1ic7imbnbyagzk38rx5qvcmk8ka-perl5.32.0-Protocol-Redis-Faster-0.003-devdoc...
+building '/nix/store/rly2cwijix8zqi9fm9xd2jqq401pa76b-perl5.32.0-Mojo-Redis-3.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/4rnq0y9sgrmh13nd1p8sg18b06wlri8n-Mojo-Redis-3.24.tar.gz
+source root is Mojo-Redis-3.24
+setting SOURCE_DATE_EPOCH to timestamp 1557242751 of file Mojo-Redis-3.24/META.yml
+patching sources
+configuring
+patching ./examples/twitter.pl...
+patching ./examples/chat.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mojo::Redis
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojo/Redis/PubSub.pm blib/lib/Mojo/Redis/PubSub.pm
+cp lib/Mojo/Redis/Cursor.pm blib/lib/Mojo/Redis/Cursor.pm
+cp lib/Mojo/Redis.pm blib/lib/Mojo/Redis.pm
+cp lib/Mojo/Redis/Database.pm blib/lib/Mojo/Redis/Database.pm
+cp lib/Mojo/Redis/Cache.pm blib/lib/Mojo/Redis/Cache.pm
+cp lib/Mojo/Redis/Connection.pm blib/lib/Mojo/Redis/Connection.pm
+Manifying 6 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ............. ok
+t/benchmark.t ............ skipped: TEST_ONLINE=redis://localhost
+t/cache-offline.t ........ ok
+t/cache.t ................ skipped: TEST_ONLINE=redis://localhost
+t/connection-auth.t ...... ok
+t/connection-lost.t ...... ok
+t/connection-sentinel.t .. ok
+t/connection-unix.t ...... ok
+t/connection.t ........... skipped: TEST_ONLINE=redis://localhost/8
+t/cursor.t ............... skipped: TEST_ONLINE=redis://localhost
+t/db.t ................... skipped: TEST_ONLINE=redis://localhost
+t/geo.t .................. skipped: TEST_ONLINE=redis://localhost
+t/keyspace-listen.t ...... ok
+t/method-coverage.t ...... skipped: CHECK_METHOD_COVERAGE=1
+t/pipelining.t ........... skipped: TEST_ONLINE=redis://localhost
+t/pubsub-reconnect.t ..... skipped: TEST_ONLINE=redis://localhost
+t/pubsub.t ............... skipped: TEST_ONLINE=redis://localhost
+t/redis.t ................ ok
+t/scripting.t ............ skipped: TEST_ONLINE=redis://localhost
+t/txn.t .................. skipped: TEST_ONLINE=redis://localhost
+t/xread.t ................ skipped: TEST_ONLINE=redis://localhost/8
+All tests successful.
+Files=21, Tests=68,  5 wallclock secs ( 0.06 usr  0.01 sys +  4.06 cusr  0.77 csys =  4.90 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/pkgconfig m4datadir=/nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/aclocal aclocaldir=/nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/aclocal install
+Manifying 6 pod documents
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis/Cursor.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis/PubSub.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis/Connection.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis/Database.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/site_perl/5.32.0/Mojo/Redis/Cache.pm
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis::Database.3
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis::Cursor.3
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis::Connection.3
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis::Cache.3
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis::PubSub.3
+Installing /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3/Mojo::Redis.3
+Appending installation info to /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/man3 to /nix/store/dqp4n9ldd886d2596y92636p3sxsxpb2-perl5.32.0-Mojo-Redis-3.24-devdoc/share/man/man3
+Removing empty /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24/lib
+patching script interpreter paths in /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24
+checking for references to /build/ in /nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dqp4n9ldd886d2596y92636p3sxsxpb2-perl5.32.0-Mojo-Redis-3.24-devdoc
+gzipping man pages under /nix/store/dqp4n9ldd886d2596y92636p3sxsxpb2-perl5.32.0-Mojo-Redis-3.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dqp4n9ldd886d2596y92636p3sxsxpb2-perl5.32.0-Mojo-Redis-3.24-devdoc
+checking for references to /build/ in /nix/store/dqp4n9ldd886d2596y92636p3sxsxpb2-perl5.32.0-Mojo-Redis-3.24-devdoc...
+/nix/store/s3931r770rdd8kk6arvc15w6rqvniqg0-perl5.32.0-Mojo-Redis-3.24

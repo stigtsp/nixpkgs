@@ -1,0 +1,87 @@
+these derivations will be built:
+  /nix/store/h0z2mjnhx0cx92g6icwg2fq1760zwm73-perl5.32.0-Crypt-OpenSSL-X509-1.813.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/xd0pg7ynd39m8wp3l2vygk97xaymlmgh-Crypt-OpenSSL-X509-1.813.tar.gz
+copying path '/nix/store/xd0pg7ynd39m8wp3l2vygk97xaymlmgh-Crypt-OpenSSL-X509-1.813.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h0z2mjnhx0cx92g6icwg2fq1760zwm73-perl5.32.0-Crypt-OpenSSL-X509-1.813.drv'...
+unpacking sources
+unpacking source archive /nix/store/xd0pg7ynd39m8wp3l2vygk97xaymlmgh-Crypt-OpenSSL-X509-1.813.tar.gz
+source root is Crypt-OpenSSL-X509-1.813
+setting SOURCE_DATE_EPOCH to timestamp 1571945255 of file Crypt-OpenSSL-X509-1.813/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lcrypto
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 162.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 166.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 171.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 173.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 177.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 179.
+Use of uninitialized value $thispth in concatenation (.) or string at /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/Liblist/Kid.pm line 183.
+Warning (mostly harmless): No library found for -lssl
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::OpenSSL::X509
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp X509.pm blib/lib/Crypt/OpenSSL/X509.pm
+Running Mkbootstrap for X509 ()
+chmod 644 "X509.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- X509.bs blib/arch/auto/Crypt/OpenSSL/X509/X509.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap' -typemap '/build/Crypt-OpenSSL-X509-1.813/typemap'  X509.xs > X509.xsc
+Warning: Aliases 'subject_hash' and 'hash' have identical values in X509.xs, line 422
+mv X509.xsc X509.c
+cc -c  -I/usr/local/opt/openssl/include -I/usr/local/include/openssl -I/usr/include/openssl -I/usr/local/include/ssl -I/usr/local/ssl/include -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -Wall -Werror   -DVERSION=\"1.813\" -DXS_VERSION=\"1.813\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   X509.c
+rm -f blib/arch/auto/Crypt/OpenSSL/X509/X509.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  X509.o  -o blib/arch/auto/Crypt/OpenSSL/X509/X509.so  \
+      \
+
+chmod 755 blib/arch/auto/Crypt/OpenSSL/X509/X509.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- X509.bs blib/arch/auto/Crypt/OpenSSL/X509/X509.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/00-version.t t/pod.t t/utf8.t t/x509-ec.t t/x509.t
+t/00-version.t .. # Running Crypt::OpenSSL::X509 test suite against
+t/00-version.t .. ok
+t/pod.t ......... skipped: Test::Pod 1.00 required for testing POD
+t/utf8.t ........ ok
+t/x509-ec.t ..... ok
+t/x509.t ........ ok
+All tests successful.
+Files=5, Tests=75,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.26 cusr  0.02 csys =  0.31 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib/pkgconfig m4datadir=/nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/share/aclocal aclocaldir=/nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iinc" -MExtUtils::Command::MM -e 'cp_nonempty' -- X509.bs blib/arch/auto/Crypt/OpenSSL/X509/X509.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/OpenSSL/X509/X509.so
+Installing /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Crypt/OpenSSL/X509.pm
+Installing /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/share/man/man3/Crypt::OpenSSL::X509.3
+Appending installation info to /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/share/man/man3 to /nix/store/hpg5ghh54jxilv5z6vf3kq611kx6rn2r-perl5.32.0-Crypt-OpenSSL-X509-1.813-devdoc/share/man/man3
+Removing empty /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813
+shrinking /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Crypt/OpenSSL/X509/X509.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813/lib
+patching script interpreter paths in /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813
+checking for references to /build/ in /nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hpg5ghh54jxilv5z6vf3kq611kx6rn2r-perl5.32.0-Crypt-OpenSSL-X509-1.813-devdoc
+gzipping man pages under /nix/store/hpg5ghh54jxilv5z6vf3kq611kx6rn2r-perl5.32.0-Crypt-OpenSSL-X509-1.813-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hpg5ghh54jxilv5z6vf3kq611kx6rn2r-perl5.32.0-Crypt-OpenSSL-X509-1.813-devdoc
+checking for references to /build/ in /nix/store/hpg5ghh54jxilv5z6vf3kq611kx6rn2r-perl5.32.0-Crypt-OpenSSL-X509-1.813-devdoc...
+/nix/store/xls2mrp2bhpkc54m2anbm1dpysghbvmf-perl5.32.0-Crypt-OpenSSL-X509-1.813

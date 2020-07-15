@@ -1,0 +1,53 @@
+these derivations will be built:
+  /nix/store/61p50yd0j5p4ka8d420cf1b98xs9m9rw-perl5.32.0-enum-1.11.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/wspjbc6kpy3qin62w96v55wv629svmgz-enum-1.11.tar.gz
+copying path '/nix/store/wspjbc6kpy3qin62w96v55wv629svmgz-enum-1.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/61p50yd0j5p4ka8d420cf1b98xs9m9rw-perl5.32.0-enum-1.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/wspjbc6kpy3qin62w96v55wv629svmgz-enum-1.11.tar.gz
+source root is enum-1.11
+setting SOURCE_DATE_EPOCH to timestamp 1445981959 of file enum-1.11/META.json
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for enum
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/enum.pm blib/lib/enum.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/dot_dot.t ...... ok
+t/new_index.t .... ok
+t/new_package.t .. ok
+t/new_tag.t ...... ok
+t/simple_tags.t .. ok
+All tests successful.
+Files=5, Tests=14,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.04 cusr  0.00 csys =  0.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/lib/pkgconfig m4datadir=/nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/share/aclocal aclocaldir=/nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/lib/perl5/site_perl/5.32.0/enum.pm
+Installing /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/share/man/man3/enum.3
+Appending installation info to /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/share/man/man3 to /nix/store/1ildfvncgppafvnywyw0sdj2qisr0wbn-perl5.32.0-enum-1.11-devdoc/share/man/man3
+Removing empty /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11/lib
+patching script interpreter paths in /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11
+checking for references to /build/ in /nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1ildfvncgppafvnywyw0sdj2qisr0wbn-perl5.32.0-enum-1.11-devdoc
+gzipping man pages under /nix/store/1ildfvncgppafvnywyw0sdj2qisr0wbn-perl5.32.0-enum-1.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1ildfvncgppafvnywyw0sdj2qisr0wbn-perl5.32.0-enum-1.11-devdoc
+checking for references to /build/ in /nix/store/1ildfvncgppafvnywyw0sdj2qisr0wbn-perl5.32.0-enum-1.11-devdoc...
+/nix/store/f52ps7zr981avlrw43mm5zb80cjcir8l-perl5.32.0-enum-1.11

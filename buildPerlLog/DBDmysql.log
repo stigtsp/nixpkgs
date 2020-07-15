@@ -1,0 +1,911 @@
+these derivations will be built:
+  /nix/store/53rvhk9gjccipjnqqj6wnl6x6ypa39qy-mariadb-connector-c-3.1.8.drv
+  /nix/store/f6af8qrdzh72a4vs19xx6gv7al0cg0i9-perl5.32.0-Module-Manifest-1.09.drv
+  /nix/store/ldzx6vailr9z1z24cwd93bfapv682yia-perl5.32.0-Test-DistManifest-1.014.drv
+  /nix/store/421vsv7x1bas6q5i9p6mif620vkg65nk-perl5.32.0-DBD-mysql-4.050.drv
+these paths will be fetched (0.93 MiB download, 0.93 MiB unpacked):
+  /nix/store/n75w93ig7bv4wn1x55w3j9vgmh6w58lm-Module-Manifest-1.09.tar.gz
+  /nix/store/q4adddrzf8v8va4zwjqxp4ha9j8f19xp-Test-DistManifest-1.014.tar.gz
+  /nix/store/rdqnq3bzqghch38yzyys65d7f3kwa0br-mariadb-connector-c-3.1.8-src.tar.gz
+  /nix/store/yfyjaacv1q6cdvf48i9p16phb0asqkiq-DBD-mysql-4.050.tar.gz
+copying path '/nix/store/yfyjaacv1q6cdvf48i9p16phb0asqkiq-DBD-mysql-4.050.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rdqnq3bzqghch38yzyys65d7f3kwa0br-mariadb-connector-c-3.1.8-src.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/q4adddrzf8v8va4zwjqxp4ha9j8f19xp-Test-DistManifest-1.014.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/n75w93ig7bv4wn1x55w3j9vgmh6w58lm-Module-Manifest-1.09.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/53rvhk9gjccipjnqqj6wnl6x6ypa39qy-mariadb-connector-c-3.1.8.drv'...
+building '/nix/store/f6af8qrdzh72a4vs19xx6gv7al0cg0i9-perl5.32.0-Module-Manifest-1.09.drv'...
+unpacking sources
+unpacking source archive /nix/store/rdqnq3bzqghch38yzyys65d7f3kwa0br-mariadb-connector-c-3.1.8-src.tar.gz
+unpacking sources
+unpacking source archive /nix/store/n75w93ig7bv4wn1x55w3j9vgmh6w58lm-Module-Manifest-1.09.tar.gz
+source root is Module-Manifest-1.09
+setting SOURCE_DATE_EPOCH to timestamp 1513733659 of file Module-Manifest-1.09/xt/release/minimum-version.t
+patching sources
+configuring
+source root is mariadb-connector-c-3.1.8-src
+setting SOURCE_DATE_EPOCH to timestamp 1588856792 of file mariadb-connector-c-3.1.8-src/zlib/zutil.h
+patching sources
+patching ./xt/release/distmeta.t...
+configuring
+fixing cmake files...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./examples/difference.pl...
+patching ./t/00-report-prereqs.t...
+patching ./t/01_compile.t...
+patching ./t/03_error.t...
+patching ./t/02_main.t...
+cmake flags: -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_SKIP_BUILD_RPATH=ON -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/share/doc/ -DCMAKE_INSTALL_INFODIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include -DCMAKE_INSTALL_SBINDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_OSX_ARCHITECTURES=x86_64 -DCMAKE_FIND_FRAMEWORK=last -DCMAKE_STRIP=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip -DCMAKE_RANLIB=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/ranlib -DCMAKE_AR=/nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8 -DMARIADB_UNIX_ADDR=/run/mysqld/mysqld.sock -DWITH_CURL=ON -DWITH_EXTERNAL_ZLIB=ON -DWITH_MYSQLCOMPAT=ON
+Checking if your kit is complete...
+Looks good
+-- The C compiler identification is GNU 9.3.0
+-- Check for working C compiler: /nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin/gcc
+Generating a Unix-style Makefile
+Writing Makefile for Module::Manifest
+-- Check for working C compiler: /nix/store/xl5mvl2ralv2p2jrrs82nrs2dz0d131s-gcc-wrapper-9.3.0/bin/gcc - works
+-- Detecting C compiler ABI info
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found CURL: /nix/store/fiqgxbhlpm8j0ry7q25ymww41da75fns-curl-7.71.0/lib/libcurl.so (found version "7.71.0")
+-- Found GSSAPI: -L/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/nix/store/lmv8rg2vjbj6vys7axk5h5y0abasdbl9-libkrb5-1.18/lib -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err
+-- Performing Test HAS_-Wunused_FLAG
+-- Performing Test HAS_-Wunused_FLAG - Success
+cp lib/Module/Manifest.pm blib/lib/Module/Manifest.pm
+-- Performing Test HAS_-Wlogical-op_FLAG
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+-- Performing Test HAS_-Wlogical-op_FLAG - Success
+-- Performing Test HAS_-Wno-uninitialized_FLAG
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+-- Performing Test HAS_-Wno-uninitialized_FLAG - Success
+-- Performing Test HAS_-Wall_FLAG
+-- Performing Test HAS_-Wall_FLAG - Success
+-- Performing Test HAS_-Wextra_FLAG
+-- Performing Test HAS_-Wextra_FLAG - Success
+-- Performing Test HAS_-Wformat-security_FLAG
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec            0.80     3.78
+#     File::Spec::Functions  any     3.78
+#     Test::Exception        any     0.43
+#     Test::More             any 1.302175
+#     Test::Warn             any     0.36
+#     warnings               any     1.47
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module           Want Have
+#     ---------------- ---- ----
+#     Carp              any 1.50
+#     File::Basename    any 2.85
+#     File::Spec       0.80 3.78
+#     File::Spec::Unix  any 3.78
+#     Params::Util     0.10 1.07
+#     strict            any 1.11
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     JSON::PP         4.04
+#     Pod::Coverage missing
+#     Sub::Name     missing
+#     YAML          missing
+#     autodie          2.32
+#
+t/00-report-prereqs.t .. ok
+-- Performing Test HAS_-Wformat-security_FLAG - Success
+-- Performing Test HAS_-Wno-init-self_FLAG
+t/01_compile.t ......... ok
+-- Performing Test HAS_-Wno-init-self_FLAG - Success
+-- Performing Test HAS_-Wwrite-strings_FLAG
+t/02_main.t ............ ok
+-- Performing Test HAS_-Wwrite-strings_FLAG - Success
+-- Performing Test HAS_-Wshift-count-overflow_FLAG
+t/03_error.t ........... ok
+All tests successful.
+Files=4, Tests=34,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.44 cusr  0.13 csys =  0.61 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/lib/pkgconfig m4datadir=/nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/share/aclocal aclocaldir=/nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/share/aclocal install
+-- Performing Test HAS_-Wshift-count-overflow_FLAG - Success
+-- Performing Test HAS_-Wdeclaration-after-statement_FLAG
+Manifying 1 pod document
+-- Performing Test HAS_-Wdeclaration-after-statement_FLAG - Success
+-- Performing Test HAS_-Wno-undef_FLAG
+Installing /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/lib/perl5/site_perl/5.32.0/Module/Manifest.pm
+Installing /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/share/man/man3/Module::Manifest.3
+Appending installation info to /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/share/man/man3 to /nix/store/q63wmw7z21812sybyasv3k3ki420n5y9-perl5.32.0-Module-Manifest-1.09-devdoc/share/man/man3
+Removing empty /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09/lib
+patching script interpreter paths in /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09
+checking for references to /build/ in /nix/store/2hp7gwywvjbs8aq7zcs3df4a50vl2qad-perl5.32.0-Module-Manifest-1.09...
+shrinking RPATHs of ELF executables and libraries in /nix/store/q63wmw7z21812sybyasv3k3ki420n5y9-perl5.32.0-Module-Manifest-1.09-devdoc
+gzipping man pages under /nix/store/q63wmw7z21812sybyasv3k3ki420n5y9-perl5.32.0-Module-Manifest-1.09-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/q63wmw7z21812sybyasv3k3ki420n5y9-perl5.32.0-Module-Manifest-1.09-devdoc
+checking for references to /build/ in /nix/store/q63wmw7z21812sybyasv3k3ki420n5y9-perl5.32.0-Module-Manifest-1.09-devdoc...
+-- Performing Test HAS_-Wno-undef_FLAG - Success
+-- Performing Test HAS_-Wno-unknown-pragmas_FLAG
+building '/nix/store/ldzx6vailr9z1z24cwd93bfapv682yia-perl5.32.0-Test-DistManifest-1.014.drv'...
+unpacking sources
+unpacking source archive /nix/store/q4adddrzf8v8va4zwjqxp4ha9j8f19xp-Test-DistManifest-1.014.tar.gz
+-- Performing Test HAS_-Wno-unknown-pragmas_FLAG - Success
+-- Could NOT find Git (missing: GIT_EXECUTABLE)
+source root is Test-DistManifest-1.014
+-- MariaDB Connector C: INSTALL_BINDIR=bin
+-- MariaDB Connector C: INSTALL_LIBDIR=lib/mariadb
+-- MariaDB Connector C: INSTALL_PCDIR=lib/pkgconfig
+-- MariaDB Connector C: INSTALL_INCLUDEDIR=include/mariadb
+-- MariaDB Connector C: INSTALL_DOCSDIR=
+-- MariaDB Connector C: INSTALL_PLUGINDIR=lib/mariadb/plugin
+-- MariaDB Connector C: LIBMARIADB_STATIC_NAME mariadbclient
+setting SOURCE_DATE_EPOCH to timestamp 1423616865 of file Test-DistManifest-1.014/xt/release/portability.t
+patching sources
+configuring
+-- Found ZLIB: /nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib/libz.so (found version "1.2.11")
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+patching ./xt/release/pod-coverage.t...
+patching ./xt/release/mojibake.t...
+patching ./xt/release/pod-syntax.t...
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/portability.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/pod-no404s.t...
+patching ./xt/release/cpan-changes.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/00-report-prereqs.t...
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+Congratulations, your toolchain understands 'configure_requires'!
+
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::DistManifest
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+-- Check size of unsigned short - done
+-- Searching 16 bit integer - Using unsigned short
+-- Check if the system is big endian - little endian
+-- Looking for include file alloca.h
+Creating new 'Build' script for 'Test-DistManifest' version '1.014'
+-- Looking for include file alloca.h - found
+-- Looking for include file arpa/inet.h
+cp lib/Test/DistManifest.pm blib/lib/Test/DistManifest.pm
+-- Looking for include file arpa/inet.h - found
+-- Looking for include file dlfcn.h
+running tests
+-- Looking for include file dlfcn.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file float.h
+-- Looking for include file float.h - found
+-- Looking for include file limits.h
+-- Looking for include file limits.h - found
+-- Looking for include file pwd.h
+-- Looking for include file pwd.h - found
+-- Looking for include file sched.h
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.039 0.039
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     Test::Builder::Tester  any 1.302175
+#     Test::More             any 1.302175
+#     if                     any   0.0608
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module             Want     Have
+#     ------------------ ---- --------
+#     Cwd                 any     3.78
+#     ExtUtils::Manifest  any     1.72
+#     File::Find          any     1.37
+#     File::Spec          any     3.78
+#     File::Spec::Unix    any     3.78
+#     Module::Manifest   0.07     1.09
+#     Test::Builder       any 1.302175
+#     strict              any     1.11
+#     warnings            any     1.47
+#
+# === Runtime Recommends ===
+#
+#     Module             Want Have
+#     ------------------ ---- ----
+#     ExtUtils::Manifest 1.70 1.72
+#
+t/00-report-prereqs.t .. ok
+-- Looking for include file sched.h - found
+-- Looking for include file select.h
+t/02manifest.t ......... 1/4 # Unable to parse MANIFEST.SKIP file:
+# No such file or directory
+# Using default skip data from ExtUtils::Manifest 1.72
+t/02manifest.t ......... ok
+-- Looking for include file select.h - not found
+-- Looking for include file signal.h
+-- Looking for include file signal.h - found
+-- Looking for include file stdlib.h
+t/03core.t ............. ok
+-- Looking for include file stdlib.h - found
+-- Looking for include file string.h
+t/04warn-only.t ........ ok
+-- Looking for include file string.h - found
+-- Looking for include file strings.h
+t/05-no-manifest.t ..... ok
+All tests successful.
+Files=5, Tests=20,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.57 cusr  0.15 csys =  0.77 CPU)
+Result: PASS
+installing
+-- Looking for include file strings.h - found
+-- Looking for include file sys/ioctl.h
+Installing /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014/lib/perl5/site_perl/5.32.0/Test/DistManifest.pm
+Installing /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014/share/man/man3/Test::DistManifest.3
+post-installation fixup
+Moving /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014/share/man/man3 to /nix/store/xvdxibl3z6l3ll7hf46s4ski13z26v0w-perl5.32.0-Test-DistManifest-1.014-devdoc/share/man/man3
+Removing empty /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014/lib
+patching script interpreter paths in /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014
+-- Looking for include file sys/ioctl.h - found
+-- Looking for include file sys/select.h
+checking for references to /build/ in /nix/store/7nqpfhynavv95rlf6z37530jcafaklnm-perl5.32.0-Test-DistManifest-1.014...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xvdxibl3z6l3ll7hf46s4ski13z26v0w-perl5.32.0-Test-DistManifest-1.014-devdoc
+gzipping man pages under /nix/store/xvdxibl3z6l3ll7hf46s4ski13z26v0w-perl5.32.0-Test-DistManifest-1.014-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xvdxibl3z6l3ll7hf46s4ski13z26v0w-perl5.32.0-Test-DistManifest-1.014-devdoc
+checking for references to /build/ in /nix/store/xvdxibl3z6l3ll7hf46s4ski13z26v0w-perl5.32.0-Test-DistManifest-1.014-devdoc...
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/socket.h
+-- Looking for include file sys/socket.h - found
+-- Looking for include file sys/un.h
+-- Looking for include file sys/un.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file utime.h
+-- Looking for include file utime.h - found
+-- Looking for include file ucontext.h
+-- Looking for include file ucontext.h - found
+-- Looking for alloca
+-- Looking for alloca - not found
+-- Looking for dlerror
+-- Looking for dlerror - not found
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for nl_langinfo
+-- Looking for nl_langinfo - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for getpwuid
+-- Looking for getpwuid - found
+-- Looking for cuserid
+-- Looking for cuserid - found
+-- Check size of char *
+-- Check size of char * - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of uchar
+-- Check size of uchar - failed
+-- Check size of uint
+-- Check size of uint - done
+-- Check size of ulong
+-- Check size of ulong - done
+-- Check size of int8
+-- Check size of int8 - failed
+-- Check size of uint8
+-- Check size of uint8 - failed
+-- Check size of int16
+-- Check size of int16 - failed
+-- Check size of uint16
+-- Check size of uint16 - failed
+-- Check size of int32
+-- Check size of int32 - failed
+-- Check size of uint32
+-- Check size of uint32 - failed
+-- Check size of int64
+-- Check size of int64 - failed
+-- Check size of uint64
+-- Check size of uint64 - failed
+-- Check size of socklen_t
+-- Check size of socklen_t - failed
+-- Performing Test SOCKET_SIZE_FOUND_socklen_t
+-- Performing Test SOCKET_SIZE_FOUND_socklen_t - Success
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for dlsym
+-- Looking for dlsym - not found
+-- Looking for dlsym in dl
+-- Looking for dlsym in dl - found
+-- Looking for floor
+-- Looking for floor - not found
+-- Looking for floor in m
+-- Looking for floor in m - found
+-- Looking for pthread_getspecific
+-- Looking for pthread_getspecific - not found
+-- Looking for pthread_getspecific in pthread
+-- Looking for pthread_getspecific in pthread - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - found
+-- Looking for setsockopt
+-- Looking for setsockopt - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Found OpenSSL: /nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib/libcrypto.so (found version "1.1.1g")
+-- TLS library/version: OpenSSL 1.1.1g
+-- SYSTEM_LIBS /nix/store/15d6yyvpgf92gb0z59w4nzhiwxg3dzzn-zlib-1.2.11/lib/libz.so;dl;m;pthread;pthread;dl;m;/nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib/libssl.so;/nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib/libcrypto.so
+-- Dynamic column API support: ON
+-- SYSTEM processor: x86_64
+-- MariaDB Connector/c configuration:
+-- Static PLUGINS mysql_native_password;mysql_old_password;pvio_socket
+-- Dynamic PLUGINS dialog;client_ed25519;caching_sha2_password;sha256_password;auth_gssapi_client;mysql_clear_password;remote_io
+-- CPack generation: TGZ
+-- SSL support: OPENSSL Libs: /nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib/libssl.so;/nix/store/chi6zkz1xqdmwwd9qh9rhgwfgrybwnlr-openssl-1.1.1g/lib/libcrypto.so
+-- Zlib support: ON
+-- Installation layout: DEFAULT
+-- Include files will be installed in include/mariadb
+-- Libraries will be installed in lib/mariadb
+-- Binaries will be installed in bin
+-- Documentation included from
+-- Required:
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_CXX_COMPILER
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DOCDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_INFODIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_LOCALEDIR
+    CMAKE_INSTALL_MANDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+
+
+-- Build files have been written to: /build/mariadb-connector-c-3.1.8-src/build
+building
+build flags: -j8 -l8 SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Scanning dependencies of target remote_io
+Scanning dependencies of target sha256_password
+Scanning dependencies of target caching_sha2_password
+Scanning dependencies of target auth_gssapi_client
+Scanning dependencies of target dialog
+Scanning dependencies of target mysql_clear_password
+Scanning dependencies of target client_ed25519
+Scanning dependencies of target mariadb_obj
+[  0%] Building C object CMakeFiles/remote_io.dir/plugins/io/remote_io.c.o
+[  0%] Building C object CMakeFiles/sha256_password.dir/plugins/auth/sha256_pw.c.o
+[  1%] Building C object CMakeFiles/mysql_clear_password.dir/plugins/auth/mariadb_cleartext.c.o
+[  1%] Building C object CMakeFiles/dialog.dir/plugins/auth/dialog.c.o
+[  1%] Building C object CMakeFiles/caching_sha2_password.dir/plugins/auth/caching_sha2_pw.c.o
+[  2%] Building C object CMakeFiles/auth_gssapi_client.dir/plugins/auth/auth_gssapi_client.c.o
+[  3%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ed25519.c.o
+[  4%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/auth/my_auth.c.o
+[  5%] Building C object CMakeFiles/auth_gssapi_client.dir/plugins/auth/gssapi_client.c.o
+[  5%] Linking C shared module mysql_clear_password.so
+[  6%] Building C object CMakeFiles/dialog.dir/libmariadb/get_password.c.o
+[  7%] Linking C shared module remote_io.so
+[  8%] Linking C shared module sha256_password.so
+[  8%] Building C object CMakeFiles/auth_gssapi_client.dir/plugins/auth/gssapi_errmsg.c.o
+[  9%] Building C object CMakeFiles/caching_sha2_password.dir/libmariadb/secure/openssl_crypt.c.o
+[  9%] Built target mysql_clear_password
+[ 10%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_0.c.o
+[ 10%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_isnegative.c.o
+[ 11%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/auth/old_password.c.o
+[ 11%] Built target remote_io
+[ 12%] Linking C shared module auth_gssapi_client.so
+Scanning dependencies of target mariadb_config
+[ 13%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sub.c.o
+[ 14%] Linking C shared module dialog.so
+[ 15%] Building C object mariadb_config/CMakeFiles/mariadb_config.dir/mariadb_config.c.o
+[ 16%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p1p1_to_p2.c.o
+[ 16%] Built target sha256_password
+Scanning dependencies of target cctap
+[ 16%] Building C object unittest/mytap/CMakeFiles/cctap.dir/tap.c.o
+[ 17%] Linking C shared module caching_sha2_password.so
+[ 17%] Built target auth_gssapi_client
+[ 17%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_to_cached.c.o
+[ 18%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/open.c.o
+[ 18%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/pvio/pvio_socket.c.o
+[ 18%] Linking C executable mariadb_config
+[ 19%] Built target dialog
+[ 19%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_array.c.o
+Scanning dependencies of target ma_getopt
+[ 19%] Building C object unittest/libmariadb/CMakeFiles/ma_getopt.dir/ma_getopt.c.o
+[ 20%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_1.c.o
+[ 20%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_isnonzero.c.o
+[ 21%] Linking C static library libma_getopt.a
+[ 21%] Built target mariadb_config
+[ 22%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_tobytes.c.o
+[ 22%] Built target caching_sha2_password
+[ 22%] Built target ma_getopt
+[ 23%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_charset.c.o
+[ 24%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p1p1_to_p3.c.o
+[ 24%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_to_p2.c.o
+[ 25%] Linking C static library libcctap.a
+[ 26%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sc_muladd.c.o
+[ 26%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_hash.c.o
+[ 26%] Built target cctap
+[ 27%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_net.c.o
+[ 28%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_add.c.o
+[ 28%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_mul.c.o
+[ 29%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_add.c.o
+[ 30%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p2_0.c.o
+[ 31%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_charset.c.o
+[ 31%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_precomp_0.c.o
+[ 32%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sc_reduce.c.o
+[ 32%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_cmov.c.o
+[ 32%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_time.c.o
+[ 33%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_default.c.o
+In file included from /nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/string.h:495,
+                 from /build/mariadb-connector-c-3.1.8-src/libmariadb/ma_charset.c:48:
+In function 'strncpy',
+    inlined from 'map_charset_name' at /build/mariadb-connector-c-3.1.8-src/libmariadb/ma_charset.c:1406:5,
+    inlined from 'mariadb_convert_string' at /build/mariadb-connector-c-3.1.8-src/libmariadb/ma_charset.c:1446:3:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'map_charset_name' at /build/mariadb-connector-c-3.1.8-src/libmariadb/ma_charset.c:1406:5,
+    inlined from 'mariadb_convert_string' at /build/mariadb-connector-c-3.1.8-src/libmariadb/ma_charset.c:1447:3:
+/nix/store/i7rkdnxf8xsz4a5m468l921jxwyix4wg-glibc-2.31-dev/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 34%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_neg.c.o
+[ 35%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_errmsg.c.o
+[ 36%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_double_scalarmult.c.o
+[ 36%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_lib.c.o
+[ 37%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_list.c.o
+[ 37%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p2_dbl.c.o
+[ 38%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_scalarmult_base.c.o
+[ 39%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_pvio.c.o
+[ 40%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sign.c.o
+[ 40%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_copy.c.o
+[ 40%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_tls.c.o
+[ 41%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_alloc.c.o
+[ 42%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_compress.c.o
+[ 43%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_pow22523.c.o
+[ 44%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_frombytes.c.o
+[ 44%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_init.c.o
+[ 44%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_0.c.o
+[ 45%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_sub.c.o
+[ 46%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_password.c.o
+[ 47%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_ll2str.c.o
+[ 47%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_sha1.c.o
+[ 48%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/verify.c.o
+[ 48%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_frombytes.c.o
+[ 49%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_stmt.c.o
+[ 50%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sq2.c.o
+[ 51%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_madd.c.o
+[ 51%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_dbl.c.o
+[ 52%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_loaddata.c.o
+[ 52%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_stmt_codec.c.o
+[ 53%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_tobytes.c.o
+[ 54%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_invert.c.o
+[ 54%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sq.c.o
+[ 55%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_msub.c.o
+[ 56%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_string.c.o
+[ 57%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_tobytes.c.o
+[ 58%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_dtoa.c.o
+[ 58%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/keypair.c.o
+[ 59%] Building C object CMakeFiles/client_ed25519.dir/libmariadb/secure/openssl_crypt.c.o
+[ 59%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_rpl.c.o
+[ 60%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_client_plugin.c.o
+[ 60%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_io.c.o
+[ 61%] Linking C shared module client_ed25519.so
+[ 62%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/secure/openssl.c.o
+[ 63%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_dyncol.c.o
+[ 63%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_async.c.o
+[ 64%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_context.c.o
+[ 64%] Built target client_ed25519
+[ 64%] Built target mariadb_obj
+Scanning dependencies of target mariadbclient
+Scanning dependencies of target libmariadb
+[ 65%] Linking C shared library libmariadb.so
+[ 65%] Linking C static library libmariadbclient.a
+[ 65%] Built target mariadbclient
+Scanning dependencies of target SYM_libmysqlclient_r.a
+Scanning dependencies of target SYM_libmysqlclient.a
+Scanning dependencies of target view
+Scanning dependencies of target conc336
+Scanning dependencies of target errors
+Scanning dependencies of target cursor
+[ 65%] Generating libmysqlclient.a
+[ 65%] Generating libmysqlclient_r.a
+Scanning dependencies of target performance
+[ 65%] Building C object unittest/libmariadb/CMakeFiles/conc336.dir/conc336.c.o
+[ 66%] Building C object unittest/libmariadb/CMakeFiles/view.dir/view.c.o
+[ 67%] Building C object unittest/libmariadb/CMakeFiles/errors.dir/errors.c.o
+[ 68%] Building C object unittest/libmariadb/CMakeFiles/cursor.dir/cursor.c.o
+[ 69%] Building C object unittest/libmariadb/CMakeFiles/performance.dir/performance.c.o
+[ 69%] Built target SYM_libmysqlclient_r.a
+[ 69%] Built target SYM_libmysqlclient.a
+Scanning dependencies of target charset
+Scanning dependencies of target async
+[ 70%] Building C object unittest/libmariadb/CMakeFiles/async.dir/async.c.o
+[ 71%] Building C object unittest/libmariadb/CMakeFiles/charset.dir/charset.c.o
+[ 71%] Built target libmariadb
+Scanning dependencies of target fetch
+[ 72%] Building C object unittest/libmariadb/CMakeFiles/fetch.dir/fetch.c.o
+[ 73%] Linking C executable conc336
+[ 74%] Linking C executable performance
+[ 74%] Linking C executable errors
+[ 74%] Linking C executable async
+[ 74%] Built target conc336
+[ 74%] Built target performance
+Scanning dependencies of target connection
+Scanning dependencies of target t_conc173
+[ 75%] Building C object unittest/libmariadb/CMakeFiles/connection.dir/connection.c.o
+[ 76%] Linking C executable view
+[ 76%] Building C object unittest/libmariadb/CMakeFiles/t_conc173.dir/t_conc173.c.o
+[ 76%] Built target async
+Scanning dependencies of target basic-t
+[ 76%] Built target errors
+[ 77%] Building C object unittest/libmariadb/CMakeFiles/basic-t.dir/basic-t.c.o
+[ 77%] Linking C executable charset
+Scanning dependencies of target logs
+[ 78%] Building C object unittest/libmariadb/CMakeFiles/logs.dir/logs.c.o
+[ 78%] Built target view
+Scanning dependencies of target rpl_api
+[ 78%] Built target charset
+[ 79%] Building C object unittest/libmariadb/CMakeFiles/rpl_api.dir/rpl_api.c.o
+Scanning dependencies of target bulk1
+[ 80%] Building C object unittest/libmariadb/CMakeFiles/bulk1.dir/bulk1.c.o
+[ 81%] Linking C executable t_conc173
+[ 82%] Linking C executable cursor
+[ 83%] Linking C executable fetch
+[ 84%] Linking C executable logs
+[ 84%] Built target t_conc173
+Scanning dependencies of target ps
+[ 84%] Building C object unittest/libmariadb/CMakeFiles/ps.dir/ps.c.o
+[ 84%] Built target cursor
+[ 85%] Linking C executable rpl_api
+Scanning dependencies of target ps_bugs
+[ 86%] Building C object unittest/libmariadb/CMakeFiles/ps_bugs.dir/ps_bugs.c.o
+[ 86%] Built target fetch
+[ 86%] Linking C executable basic-t
+Scanning dependencies of target result
+[ 86%] Built target logs
+[ 87%] Building C object unittest/libmariadb/CMakeFiles/result.dir/result.c.o
+Scanning dependencies of target sp
+[ 88%] Building C object unittest/libmariadb/CMakeFiles/sp.dir/sp.c.o
+[ 88%] Linking C executable connection
+[ 88%] Built target rpl_api
+Scanning dependencies of target misc
+[ 88%] Building C object unittest/libmariadb/CMakeFiles/misc.dir/misc.c.o
+[ 88%] Built target basic-t
+Scanning dependencies of target ps_new
+[ 88%] Built target connection
+[ 89%] Building C object unittest/libmariadb/CMakeFiles/ps_new.dir/ps_new.c.o
+Scanning dependencies of target features-10_2
+[ 90%] Building C object unittest/libmariadb/CMakeFiles/features-10_2.dir/features-10_2.c.o
+[ 91%] Linking C executable bulk1
+[ 91%] Linking C executable sp
+[ 91%] Built target bulk1
+Scanning dependencies of target dyncol
+[ 91%] Building C object unittest/libmariadb/CMakeFiles/dyncol.dir/dyncol.c.o
+[ 91%] Built target sp
+Scanning dependencies of target thread
+[ 92%] Building C object unittest/libmariadb/CMakeFiles/thread.dir/thread.c.o
+[ 92%] Linking C executable features-10_2
+[ 92%] Linking C executable result
+[ 93%] Linking C executable ps_new
+[ 93%] Built target features-10_2
+Scanning dependencies of target t_aurora
+[ 94%] Building C object unittest/libmariadb/CMakeFiles/t_aurora.dir/t_aurora.c.o
+[ 95%] Linking C executable misc
+[ 95%] Built target result
+Scanning dependencies of target SYM_libmysqlclient_r.so
+[ 96%] Generating libmysqlclient_r.so
+[ 96%] Built target ps_new
+[ 96%] Linking C executable thread
+Scanning dependencies of target SYM_libmysqlclient.so
+[ 97%] Generating libmysqlclient.so
+[ 97%] Built target SYM_libmysqlclient_r.so
+[ 98%] Linking C executable dyncol
+[ 98%] Built target SYM_libmysqlclient.so
+[ 98%] Built target misc
+[ 98%] Built target thread
+[ 98%] Built target dyncol
+[ 99%] Linking C executable t_aurora
+[ 99%] Built target t_aurora
+[ 99%] Linking C executable ps_bugs
+[ 99%] Built target ps_bugs
+[100%] Linking C executable ps
+[100%] Built target ps
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+[  1%] Built target remote_io
+[  2%] Built target sha256_password
+[  4%] Built target caching_sha2_password
+[  7%] Built target auth_gssapi_client
+[  9%] Built target dialog
+[ 38%] Built target client_ed25519
+[ 39%] Built target mysql_clear_password
+[ 61%] Built target mariadb_obj
+[ 61%] Built target libmariadb
+[ 62%] Built target SYM_libmysqlclient_r.so
+[ 63%] Built target mariadbclient
+[ 64%] Built target SYM_libmysqlclient.so
+[ 64%] Built target SYM_libmysqlclient.a
+[ 64%] Built target SYM_libmysqlclient_r.a
+[ 65%] Built target mariadb_config
+[ 66%] Built target cctap
+[ 67%] Built target ma_getopt
+[ 69%] Built target view
+[ 70%] Built target conc336
+[ 71%] Built target errors
+[ 73%] Built target cursor
+[ 75%] Built target performance
+[ 76%] Built target charset
+[ 77%] Built target async
+[ 79%] Built target fetch
+[ 80%] Built target connection
+[ 81%] Built target t_conc173
+[ 82%] Built target basic-t
+[ 84%] Built target logs
+[ 86%] Built target rpl_api
+[ 88%] Built target bulk1
+[ 89%] Built target ps
+[ 90%] Built target ps_bugs
+[ 91%] Built target result
+[ 92%] Built target sp
+[ 93%] Built target misc
+[ 95%] Built target ps_new
+[ 96%] Built target features-10_2
+[ 97%] Built target dyncol
+[ 98%] Built target thread
+[100%] Built target t_aurora
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/dialog.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/client_ed25519.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/caching_sha2_password.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/sha256_password.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/auth_gssapi_client.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/mysql_clear_password.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/remote_io.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_com.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_stmt.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/ma_pvio.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/ma_tls.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_version.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/ma_list.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/errmsg.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_dyncol.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_ctype.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb_rpl.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysqld_error.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql/client_plugin.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql/plugin_auth_common.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql/plugin_auth.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mariadb/ma_io.h
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmysqlclient.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmysqlclient_r.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmysqlclient.a
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmysqlclient_r.a
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmariadbclient.a
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmariadb.so.3
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmariadb.so
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/bin/mariadb_config
+-- Installing: /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/pkgconfig/libmariadb.pc
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/auth_gssapi_client.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/remote_io.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/dialog.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/client_ed25519.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/sha256_password.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/mysql_clear_password.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/plugin/caching_sha2_password.so
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/libmariadb.so.3
+shrinking /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/bin/mariadb_config
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib  /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/bin
+patching script interpreter paths in /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8
+checking for references to /build/ in /nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8...
+'/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/bin/mysql_config' -> 'mariadb_config'
+'/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mysql' -> 'mariadb'
+'/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mysql' -> 'mariadb'
+'/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql_version.h' -> 'mariadb_version.h'
+'/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/pkgconfig/mysqlclient.pc' -> 'libmariadb.pc'
+building '/nix/store/421vsv7x1bas6q5i9p6mif620vkg65nk-perl5.32.0-DBD-mysql-4.050.drv'...
+unpacking sources
+unpacking source archive /nix/store/yfyjaacv1q6cdvf48i9p16phb0asqkiq-DBD-mysql-4.050.tar.gz
+source root is DBD-mysql-4.050
+setting SOURCE_DATE_EPOCH to timestamp 1547024428 of file DBD-mysql-4.050/META.json
+patching sources
+configuring
+patching ./t/56connattr.t...
+patching ./lib/DBD/mysql.pm...
+
+
+PLEASE NOTE:
+
+For 'make test' to run properly, you must ensure that the
+database user '' can connect to your MySQL server
+and has the proper privileges that these tests require such
+as 'drop table', 'create table', 'drop procedure', 'create procedure'
+as well as others.
+
+mysql> grant all privileges on test.* to ''@'localhost' identified by 's3kr1t';
+
+You can also optionally set the user to run 'make test' with:
+
+perl Makefile.PL --testuser=username
+
+mysql_config: unrecognized option '--embedded'
+I will use the following settings for compiling and testing:
+
+  cflags        (mysql_config) = -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql
+  embedded      (guessed     ) =
+  ldflags       (guessed     ) =
+  libs          (mysql_config) = -L/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/ -lmariadb
+  mysql_config  (guessed     ) = mysql_config
+  nocatchstderr (default     ) = 0
+  nofoundrows   (default     ) = 0
+  nossl         (default     ) = 0
+  testdb        (default     ) = test
+  testhost      (default     ) =
+  testpassword  (default     ) =
+  testport      (default     ) =
+  testsocket    (default     ) =
+  testuser      (guessed     ) =
+
+To change these settings, see 'perl Makefile.PL --help' and
+'perldoc DBD::mysql::INSTALL'.
+
+Checking if libs are available for compiling...
+Looks good.
+
+Checking if your kit is complete...
+Looks good
+Using DBI 1.643 (for perl 5.032000 on x86_64-linux-thread-multi) installed in /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/
+Generating a Unix-style Makefile
+Writing Makefile for DBD::mysql
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/DBD/mysql.pm blib/lib/DBD/mysql.pm
+cp lib/DBD/mysql/INSTALL.pod blib/lib/DBD/mysql/INSTALL.pod
+cp lib/DBD/mysql/GetInfo.pm blib/lib/DBD/mysql/GetInfo.pm
+cp lib/Bundle/DBD/mysql.pm blib/lib/Bundle/DBD/mysql.pm
+Running Mkbootstrap for mysql ()
+chmod 644 "mysql.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- mysql.bs blib/arch/auto/DBD/mysql/mysql.bs 644
+cc -c  -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql -DDBD_MYSQL_WITH_SSL -g  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"4.050\" -DXS_VERSION=\"4.050\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   dbdimp.c
+dbdimp.c: In function 'mysql_st_prepare':
+dbdimp.c:3207:24: warning: assignment to 'my_bool *' {aka 'char *'} from incompatible pointer type '_Bool *' [-Wincompatible-pointer-types]
+ 3207 |           bind->is_null=      (_Bool*) &(fbind->is_null);
+      |                        ^
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -p -e "s/~DRIVER~/mysql/g" /nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI/Driver.xst > mysql.xsi
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  mysql.xs > mysql.xsc
+Warning: duplicate function definition 'do' detected in mysql.xs, line 247
+Warning: duplicate function definition 'rows' detected in mysql.xs, line 683
+mv mysql.xsc mysql.c
+cc -c  -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql -DDBD_MYSQL_WITH_SSL -g  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"4.050\" -DXS_VERSION=\"4.050\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   mysql.c
+cc -c  -I/nix/store/2gllx3dxqgl7kgqf3p32xy3f89apkxfc-perl5.32.0-DBI-1.643/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBI -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb -I/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/include/mariadb/mysql -DDBD_MYSQL_WITH_SSL -g  -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"4.050\" -DXS_VERSION=\"4.050\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   socket.c
+rm -f blib/arch/auto/DBD/mysql/mysql.so
+LD_RUN_PATH="/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  dbdimp.o mysql.o socket.o  -o blib/arch/auto/DBD/mysql/mysql.so  \
+   -L/nix/store/68rf6wwxf263kbp2li5vc4dyfgn5qz48-mariadb-connector-c-3.1.8/lib/mariadb/ -lmariadb   \
+
+chmod 755 blib/arch/auto/DBD/mysql/mysql.so
+Manifying 3 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/pkgconfig m4datadir=/nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/aclocal aclocaldir=/nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- mysql.bs blib/arch/auto/DBD/mysql/mysql.bs 644
+Manifying 3 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBD/mysql/mysql.so
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DBD/mysql.pm
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DBD/mysql/INSTALL.pod
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/DBD/mysql/GetInfo.pm
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Bundle/DBD/mysql.pm
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/man/man3/DBD::mysql::INSTALL.3
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/man/man3/DBD::mysql.3
+Installing /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/man/man3/Bundle::DBD::mysql.3
+Appending installation info to /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/man/man3 to /nix/store/aa7sv1mp79njjq53vz9qgn9p263bdkck-perl5.32.0-DBD-mysql-4.050-devdoc/share/man/man3
+Removing empty /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050
+shrinking /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/DBD/mysql/mysql.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050/lib
+patching script interpreter paths in /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050
+checking for references to /build/ in /nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050...
+shrinking RPATHs of ELF executables and libraries in /nix/store/aa7sv1mp79njjq53vz9qgn9p263bdkck-perl5.32.0-DBD-mysql-4.050-devdoc
+gzipping man pages under /nix/store/aa7sv1mp79njjq53vz9qgn9p263bdkck-perl5.32.0-DBD-mysql-4.050-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/aa7sv1mp79njjq53vz9qgn9p263bdkck-perl5.32.0-DBD-mysql-4.050-devdoc
+checking for references to /build/ in /nix/store/aa7sv1mp79njjq53vz9qgn9p263bdkck-perl5.32.0-DBD-mysql-4.050-devdoc...
+/nix/store/a1jiqgh9lvpzs55wgy7smyji7c18k9ss-perl5.32.0-DBD-mysql-4.050

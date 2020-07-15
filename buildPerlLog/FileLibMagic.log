@@ -1,0 +1,161 @@
+these derivations will be built:
+  /nix/store/dlqqk7wmd81xrgbcdan7rr5h4yncman9-perl5.32.0-File-LibMagic-1.22.drv
+these paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/w8w29pv984hfn3nr8hp1l9ywc2zjd3gq-File-LibMagic-1.22.tar.gz
+copying path '/nix/store/w8w29pv984hfn3nr8hp1l9ywc2zjd3gq-File-LibMagic-1.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dlqqk7wmd81xrgbcdan7rr5h4yncman9-perl5.32.0-File-LibMagic-1.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/w8w29pv984hfn3nr8hp1l9ywc2zjd3gq-File-LibMagic-1.22.tar.gz
+source root is File-LibMagic-1.22
+setting SOURCE_DATE_EPOCH to timestamp 1587913575 of file File-LibMagic-1.22/xt/release/meta-json.t
+patching sources
+configuring
+patching ./xt/release/meta-json.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/synopsis.t...
+patching ./t/00-report-prereqs.t...
+patching ./dev-bin/regen-constants.pl...
+Checking for magic.h... Checking for cc... gcc
+yes
+Checking for magic_open in -lmagic... yes
+Checking for magic_version in -lmagic... yes
+Checking for magic_setparam in -lmagic... yes
+Checking for magic_getparam in -lmagic... yes
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::LibMagic
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/LibMagic/Constants.pm blib/lib/File/LibMagic/Constants.pm
+cp lib/File/LibMagic.pm blib/lib/File/LibMagic.pm
+Running Mkbootstrap for LibMagic ()
+chmod 644 "LibMagic.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibMagic.bs blib/arch/auto/File/LibMagic/LibMagic.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  lib/File/LibMagic.xs > lib/File/LibMagic.xsc
+mv lib/File/LibMagic.xsc lib/File/LibMagic.c
+cc -c  -I. -Ic -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.22\" -DXS_VERSION=\"1.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_MAGIC_VERSION -DHAVE_MAGIC_SETPARAM -DHAVE_MAGIC_GETPARAM lib/File/LibMagic.c
+rm -f blib/arch/auto/File/LibMagic/LibMagic.so
+LD_RUN_PATH="/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  LibMagic.o  -o blib/arch/auto/File/LibMagic/LibMagic.so  \
+   -L/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib -lmagic   \
+
+chmod 755 blib/arch/auto/File/LibMagic/LibMagic.so
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibMagic.bs blib/arch/auto/File/LibMagic/LibMagic.bs 644
+cc -c  -I. -Ic -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.22\" -DXS_VERSION=\"1.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_MAGIC_VERSION -DHAVE_MAGIC_SETPARAM -DHAVE_MAGIC_GETPARAM lib/File/LibMagic.c
+rm -f blib/arch/auto/File/LibMagic/LibMagic.so
+LD_RUN_PATH="/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  LibMagic.o  -o blib/arch/auto/File/LibMagic/LibMagic.so  \
+   -L/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib -lmagic   \
+
+chmod 755 blib/arch/auto/File/LibMagic/LibMagic.so
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/old-apis/*.t
+t/00-report-prereqs.t ................... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Config::AutoConf     any    0.318
+#     ExtUtils::CBuilder   any 0.280234
+#     ExtUtils::MakeMaker  any     7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     Cwd                  any     3.78
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     File::Temp           any   0.2309
+#     FindBin              any     1.51
+#     Test::Fatal          any    0.014
+#     Test::More          0.96 1.302175
+#     base                 any     2.27
+#     lib                  any     0.65
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module       Want Have
+#     ------------ ---- ----
+#     Carp          any 1.50
+#     Exporter      any 5.74
+#     List::Util    any 1.55
+#     Scalar::Util  any 1.55
+#     XSLoader      any 0.30
+#     strict        any 1.11
+#     warnings      any 1.47
+#
+t/00-report-prereqs.t ................... ok
+t/constructor-params.t .................. ok
+t/old-apis/all-exports.t ................ ok
+t/old-apis/complete-interface-errors.t .. ok
+t/old-apis/complete-interface.t ......... ok
+t/old-apis/easy-interface.t ............. ok
+t/oo-api.t .............................. 1/? Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 93.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 165.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 160.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 160.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 170.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 170.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 165.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 160.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 160.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 170.
+Use of uninitialized value in subroutine entry at /build/File-LibMagic-1.22/blib/lib/File/LibMagic.pm line 170.
+t/oo-api.t .............................. ok
+t/version.t ............................. # libmagic version 539
+t/version.t ............................. ok
+All tests successful.
+Files=8, Tests=33,  1 wallclock secs ( 0.06 usr  0.01 sys +  0.83 cusr  0.15 csys =  1.05 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/pkgconfig m4datadir=/nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/aclocal aclocaldir=/nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibMagic.bs blib/arch/auto/File/LibMagic/LibMagic.bs 644
+cc -c  -I. -Ic -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"1.22\" -DXS_VERSION=\"1.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"  -DHAVE_MAGIC_VERSION -DHAVE_MAGIC_SETPARAM -DHAVE_MAGIC_GETPARAM lib/File/LibMagic.c
+rm -f blib/arch/auto/File/LibMagic/LibMagic.so
+LD_RUN_PATH="/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib" cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  LibMagic.o  -o blib/arch/auto/File/LibMagic/LibMagic.so  \
+   -L/nix/store/lws20vx191r5441gms7r5f1j4ab9hjzd-file-5.39/lib -lmagic   \
+
+chmod 755 blib/arch/auto/File/LibMagic/LibMagic.so
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/LibMagic/LibMagic.so
+Installing /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/LibMagic.pm
+Installing /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/File/LibMagic/Constants.pm
+Installing /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/man/man3/File::LibMagic::Constants.3
+Installing /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/man/man3/File::LibMagic.3
+Appending installation info to /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/man/man3 to /nix/store/xq3z3dvizpaqzpjjjd5qv0mybb72mi73-perl5.32.0-File-LibMagic-1.22-devdoc/share/man/man3
+Removing empty /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22
+shrinking /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/File/LibMagic/LibMagic.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22/lib
+patching script interpreter paths in /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22
+checking for references to /build/ in /nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xq3z3dvizpaqzpjjjd5qv0mybb72mi73-perl5.32.0-File-LibMagic-1.22-devdoc
+gzipping man pages under /nix/store/xq3z3dvizpaqzpjjjd5qv0mybb72mi73-perl5.32.0-File-LibMagic-1.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xq3z3dvizpaqzpjjjd5qv0mybb72mi73-perl5.32.0-File-LibMagic-1.22-devdoc
+checking for references to /build/ in /nix/store/xq3z3dvizpaqzpjjjd5qv0mybb72mi73-perl5.32.0-File-LibMagic-1.22-devdoc...
+/nix/store/hpn261fkl347015w15hnbqxrd8vwxfkc-perl5.32.0-File-LibMagic-1.22

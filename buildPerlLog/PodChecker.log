@@ -1,0 +1,65 @@
+these derivations will be built:
+  /nix/store/fp8phhvzfnbzfc2fxgcvkgxiqmhxfwaz-perl5.32.0-Pod-Checker-1.73.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/kwpb9zhpiki4h530418mq69bhvlb80a6-Pod-Checker-1.73.tar.gz
+copying path '/nix/store/kwpb9zhpiki4h530418mq69bhvlb80a6-Pod-Checker-1.73.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fp8phhvzfnbzfc2fxgcvkgxiqmhxfwaz-perl5.32.0-Pod-Checker-1.73.drv'...
+unpacking sources
+unpacking source archive /nix/store/kwpb9zhpiki4h530418mq69bhvlb80a6-Pod-Checker-1.73.tar.gz
+source root is Pod-Checker-1.73
+setting SOURCE_DATE_EPOCH to timestamp 1464636456 of file Pod-Checker-1.73/META.yml
+patching sources
+configuring
+patching ./scripts/podchecker.PL...
+patching ./t/pod/podchklink.t...
+patching ./t/pod/podchkenc.t...
+patching ./t/pod/selfcheck.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Checker
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/Checker.pm blib/lib/Pod/Checker.pm
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/arch" "-Iblib/lib" scripts/podchecker.PL scripts/podchecker
+Extracting podchecker (with variable substitutions)
+cp scripts/podchecker blib/script/podchecker
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/podchecker
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/pod/*.t
+t/pod/podchkenc.t ... ok
+t/pod/podchklink.t .. ok
+t/pod/poderrs.t ..... ok
+t/pod/selfcheck.t ... ok
+All tests successful.
+Files=4, Tests=109,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.23 cusr  0.02 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/lib/pkgconfig m4datadir=/nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/aclocal aclocaldir=/nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/lib/perl5/site_perl/5.32.0/Pod/Checker.pm
+Installing /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/man/man1/podchecker.1
+Installing /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/man/man3/Pod::Checker.3
+Installing /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/bin/podchecker
+Appending installation info to /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/man/man3 to /nix/store/mn8y6k0ipx1awlwm4rr8gwn02yd95xky-perl5.32.0-Pod-Checker-1.73-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73
+gzipping man pages under /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/lib  /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73/bin
+patching script interpreter paths in /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73
+checking for references to /build/ in /nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mn8y6k0ipx1awlwm4rr8gwn02yd95xky-perl5.32.0-Pod-Checker-1.73-devdoc
+gzipping man pages under /nix/store/mn8y6k0ipx1awlwm4rr8gwn02yd95xky-perl5.32.0-Pod-Checker-1.73-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mn8y6k0ipx1awlwm4rr8gwn02yd95xky-perl5.32.0-Pod-Checker-1.73-devdoc
+checking for references to /build/ in /nix/store/mn8y6k0ipx1awlwm4rr8gwn02yd95xky-perl5.32.0-Pod-Checker-1.73-devdoc...
+/nix/store/yb3ibik1qk5jl2y4qw22i6wgc8m5l0l5-perl5.32.0-Pod-Checker-1.73

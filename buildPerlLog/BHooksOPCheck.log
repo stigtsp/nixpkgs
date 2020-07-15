@@ -1,0 +1,186 @@
+these derivations will be built:
+  /nix/store/h1qsdqrjyplw01dnl3d7w49idnngk35f-perl5.32.0-ExtUtils-Depends-0.8000.drv
+  /nix/store/gbfdh94qpiqsxn8wjb4zgxlzvd3w20il-perl5.32.0-B-Hooks-OP-Check-0.22.drv
+these paths will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/3yrhvvnb2q1rza73vxlbgw75nyiswncf-B-Hooks-OP-Check-0.22.tar.gz
+copying path '/nix/store/3yrhvvnb2q1rza73vxlbgw75nyiswncf-B-Hooks-OP-Check-0.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h1qsdqrjyplw01dnl3d7w49idnngk35f-perl5.32.0-ExtUtils-Depends-0.8000.drv'...
+unpacking sources
+unpacking source archive /nix/store/q512adzsfdy6bsjz70qlib4kf1wflc9s-ExtUtils-Depends-0.8000.tar.gz
+source root is ExtUtils-Depends-0.8000
+setting SOURCE_DATE_EPOCH to timestamp 1554822769 of file ExtUtils-Depends-0.8000/README
+patching sources
+configuring
+patching ./t/02_save_load.t...
+patching ./t/04_extra_libs.t...
+patching ./t/01_load.t...
+patching ./t/03_deps.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::Depends
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/ExtUtils/Depends.pm blib/lib/ExtUtils/Depends.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_load.t ........ ok
+t/02_save_load.t ... ok
+t/03_deps.t ........ ok
+t/04_extra_libs.t .. skipped: test only for 'MSWin32', 'cygwin', and 'android'
+All tests successful.
+Files=4, Tests=43,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.29 cusr  0.04 csys =  0.36 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/lib/pkgconfig m4datadir=/nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/share/aclocal aclocaldir=/nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/lib/perl5/site_perl/5.32.0/ExtUtils/Depends.pm
+Installing /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/share/man/man3/ExtUtils::Depends.3
+Appending installation info to /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/share/man/man3 to /nix/store/27vj1sw0v42vnh2p7f06ancvr543nlsb-perl5.32.0-ExtUtils-Depends-0.8000-devdoc/share/man/man3
+Removing empty /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000/lib
+patching script interpreter paths in /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000
+checking for references to /build/ in /nix/store/357gg55zhibqj1s5ycdn8asqn2yj6aig-perl5.32.0-ExtUtils-Depends-0.8000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/27vj1sw0v42vnh2p7f06ancvr543nlsb-perl5.32.0-ExtUtils-Depends-0.8000-devdoc
+gzipping man pages under /nix/store/27vj1sw0v42vnh2p7f06ancvr543nlsb-perl5.32.0-ExtUtils-Depends-0.8000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/27vj1sw0v42vnh2p7f06ancvr543nlsb-perl5.32.0-ExtUtils-Depends-0.8000-devdoc
+checking for references to /build/ in /nix/store/27vj1sw0v42vnh2p7f06ancvr543nlsb-perl5.32.0-ExtUtils-Depends-0.8000-devdoc...
+building '/nix/store/gbfdh94qpiqsxn8wjb4zgxlzvd3w20il-perl5.32.0-B-Hooks-OP-Check-0.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/3yrhvvnb2q1rza73vxlbgw75nyiswncf-B-Hooks-OP-Check-0.22.tar.gz
+source root is B-Hooks-OP-Check-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1501518308 of file B-Hooks-OP-Check-0.22/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for B::Hooks::OP::Check
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/B/Hooks/OP/Check.pm blib/lib/B/Hooks/OP/Check.pm
+cp build/IFiles.pm blib/arch/B/Hooks/OP/Check/Install/Files.pm
+cp hook_op_check.h blib/arch/B/Hooks/OP/Check/Install/hook_op_check.h
+Running Mkbootstrap for Check ()
+chmod 644 "Check.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Check.bs blib/arch/auto/B/Hooks/OP/Check/Check.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Check.xs > Check.xsc
+mv Check.xsc Check.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.22\" -DXS_VERSION=\"0.22\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Check.c
+In file included from Check.xs:5:
+ppport.h:4594: warning: "WIDEST_UTYPE" redefined
+ 4594 | #  define WIDEST_UTYPE U64TYPE
+      |
+In file included from /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/perl.h:2753,
+                 from Check.xs:2:
+/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE/handy.h:1251: note: this is the location of the previous definition
+ 1251 | #   define WIDEST_UTYPE U64
+      |
+rm -f blib/arch/auto/B/Hooks/OP/Check/Check.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Check.o  -o blib/arch/auto/B/Hooks/OP/Check/Check.so  \
+      \
+
+chmod 755 blib/arch/auto/B/Hooks/OP/Check/Check.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Check.bs blib/arch/auto/B/Hooks/OP/Check/Check.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-report-prereqs.t .. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want   Have
+#     ------------------- ----- ------
+#     ExtUtils::Depends   0.302 0.8000
+#     ExtUtils::MakeMaker   any   7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module              Want     Have
+#     ------------------- ---- --------
+#     ExtUtils::MakeMaker  any     7.44
+#     File::Spec           any     3.78
+#     Test::More           any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module     Want  Have
+#     ---------- ---- -----
+#     DynaLoader  any  1.47
+#     parent      any 0.238
+#     strict      any  1.11
+#     warnings    any  1.47
+#
+# === Other Modules ===
+#
+#     Module       Have
+#     --------- -------
+#     JSON::PP     4.04
+#     Sub::Name missing
+#     YAML      missing
+#     autodie      2.32
+#
+t/00-report-prereqs.t .. ok
+t/use.t ................ ok
+All tests successful.
+Files=2, Tests=2,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.24 cusr  0.03 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/pkgconfig m4datadir=/nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/share/aclocal aclocaldir=/nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Check.bs blib/arch/auto/B/Hooks/OP/Check/Check.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/B/Hooks/OP/Check/Check.so
+Installing /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/B/Hooks/OP/Check/Install/Files.pm
+Installing /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/B/Hooks/OP/Check/Install/hook_op_check.h
+Installing /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/B/Hooks/OP/Check.pm
+Installing /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/share/man/man3/B::Hooks::OP::Check.3
+Appending installation info to /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/share/man/man3 to /nix/store/n3kldjsijc39y1shz1bd196m8asarqh9-perl5.32.0-B-Hooks-OP-Check-0.22-devdoc/share/man/man3
+Removing empty /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22
+shrinking /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/B/Hooks/OP/Check/Check.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22/lib
+patching script interpreter paths in /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22
+checking for references to /build/ in /nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n3kldjsijc39y1shz1bd196m8asarqh9-perl5.32.0-B-Hooks-OP-Check-0.22-devdoc
+gzipping man pages under /nix/store/n3kldjsijc39y1shz1bd196m8asarqh9-perl5.32.0-B-Hooks-OP-Check-0.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n3kldjsijc39y1shz1bd196m8asarqh9-perl5.32.0-B-Hooks-OP-Check-0.22-devdoc
+checking for references to /build/ in /nix/store/n3kldjsijc39y1shz1bd196m8asarqh9-perl5.32.0-B-Hooks-OP-Check-0.22-devdoc...
+/nix/store/314wcr3qcakwk0ij95mylzphjg69xqv7-perl5.32.0-B-Hooks-OP-Check-0.22

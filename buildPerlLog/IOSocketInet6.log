@@ -1,0 +1,218 @@
+these derivations will be built:
+  /nix/store/k23i17vdrlsh1aps7acqk4bkhgm9l1z6-perl5.32.0-Socket6-0.29.drv
+  /nix/store/bsmb1i1dr53r6ppjcf3h1v1q4q4j7z8a-perl5.32.0-IO-Socket-INET6-2.72.drv
+building '/nix/store/k23i17vdrlsh1aps7acqk4bkhgm9l1z6-perl5.32.0-Socket6-0.29.drv'...
+unpacking sources
+unpacking source archive /nix/store/27p1pdjpbxkdvg35q3b6cjvfd2a51wjj-Socket6-0.29.tar.gz
+source root is Socket6-0.29
+setting SOURCE_DATE_EPOCH to timestamp 1538288892 of file Socket6-0.29/META.json
+patching sources
+applying patch /nix/store/nx6d32szg6bnwyra727kyrr0r1w839px-Socket6-sv_undef.patch
+patching file Socket6.xs
+Hunk #1 succeeded at 106 (offset 1 line).
+configuring
+patching ./configure...
+patching ./gailookup.pl.in...
+patching ./t/use.t...
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking whether your Perl5 have PL_sv_undef... yes
+checking how to run the C preprocessor... cc -E
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for getaddrinfo... yes
+checking for getnameinfo... yes
+checking for gethostbyname2... yes
+checking for getipnodebyname... no
+checking for getipnodebyname in -lsocket... no
+checking whether your system has IPv6 directory... no
+checking for getipnodebyaddr... no
+checking for getipnodebyaddr in -lsocket... no
+checking whether your system has IPv6 directory... (cached) no
+checking for inet_pton... yes
+checking for inet_ntop... yes
+checking for working inet_ntop... yes
+checking whether you have sa_len in struct sockaddr... no
+checking whether you have sin6_scope_id in struct sockaddr_in6... yes
+checking for socklen_t... yes
+configure: creating ./config.status
+config.status: creating config.pl
+config.status: creating gailookup.pl
+config.status: creating config.h
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Socket6
+Writing MYMETA.yml and MYMETA.json
+configure flags: --prefix=/nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for perl5... no
+checking for jperl5... no
+checking for perl... /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+checking whether your Perl5 have PL_sv_undef... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep
+checking for egrep... /nix/store/0b0kdaczss42xfn3wdpz83sjhnsk2708-gnugrep-3.4/bin/grep -E
+checking for getaddrinfo... yes
+checking for getnameinfo... yes
+checking for gethostbyname2... yes
+checking for getipnodebyname... no
+checking for getipnodebyname in -lsocket... no
+checking whether your system has IPv6 directory... no
+checking for getipnodebyaddr... no
+checking for getipnodebyaddr in -lsocket... no
+checking whether your system has IPv6 directory... (cached) no
+checking for inet_pton... yes
+checking for inet_ntop... yes
+checking for working inet_ntop... yes
+checking whether you have sa_len in struct sockaddr... no
+checking whether you have sin6_scope_id in struct sockaddr_in6... yes
+checking for socklen_t... yes
+configure: creating ./config.status
+config.status: creating config.pl
+config.status: creating gailookup.pl
+config.status: creating config.h
+config.status: config.h is unchanged
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp Socket6.pm blib/lib/Socket6.pm
+Running Mkbootstrap for Socket6 ()
+chmod 644 "Socket6.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Socket6.bs blib/arch/auto/Socket6/Socket6.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp" -noprototypes -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  Socket6.xs > Socket6.xsc
+mv Socket6.xsc Socket6.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.29\" -DXS_VERSION=\"0.29\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   Socket6.c
+Socket6.xs: In function 'XS_Socket6_inet_ntop':
+Socket6.xs:539:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+  539 |   croak("Bad arg length for %s, length is %d, should be %d",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  540 |         "Socket6::inet_ntop",
+  541 |         addrlen, alen);
+      |         ~~~~~~~
+      |         |
+      |         STRLEN {aka long unsigned int}
+Socket6.xs:539:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+Socket6.xs: In function 'XS_Socket6_unpack_sockaddr_in6':
+Socket6.xs:618:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+  618 |   croak("Bad arg length for %s, length is %d, should be %d",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  619 |         "Socket6::unpack_sockaddr_in6",
+  620 |         sockaddrlen, sizeof(addr));
+      |         ~~~~~~~~~~~
+      |         |
+      |         STRLEN {aka long unsigned int}
+Socket6.xs:618:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+Socket6.xs: In function 'XS_Socket6_unpack_sockaddr_in6_all':
+Socket6.xs:654:9: warning: format '%d' expects argument of type 'int', but argument 3 has type 'STRLEN' {aka 'long unsigned int'} [-Wformat=]
+  654 |   croak("Bad arg length for %s, length is %d, should be %d",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  655 |         "Socket6::unpack_sockaddr_in6",
+  656 |         sockaddrlen, sizeof(addr));
+      |         ~~~~~~~~~~~
+      |         |
+      |         STRLEN {aka long unsigned int}
+Socket6.xs:654:9: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+Socket6.xs: In function 'XS_Socket6_getipnodebyname':
+Socket6.xs:868:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  868 |  ST(0) = (SV *) not_here("getipnodebyname");
+      |          ^
+Socket6.xs: In function 'XS_Socket6_getipnodebyaddr':
+Socket6.xs:939:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  939 |  ST(0) = (SV *) not_here("getipnodebyaddr");
+      |          ^
+rm -f blib/arch/auto/Socket6/Socket6.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  Socket6.o  -o blib/arch/auto/Socket6/Socket6.so  \
+      \
+
+chmod 755 blib/arch/auto/Socket6/Socket6.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Socket6.bs blib/arch/auto/Socket6/Socket6.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/use.t .. ok
+All tests successful.
+Files=1, Tests=9,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.03 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Socket6.bs blib/arch/auto/Socket6/Socket6.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Socket6/Socket6.so
+Installing /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/Socket6.pm
+Installing /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/share/man/man3/Socket6.3
+Appending installation info to /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/share/man/man3 to /nix/store/fhh40bipimvbccbvnq42bnxprd7qss95-perl5.32.0-Socket6-0.29-devdoc/share/man/man3
+Removing empty /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29
+shrinking /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/Socket6/Socket6.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29/lib
+patching script interpreter paths in /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29
+checking for references to /build/ in /nix/store/4lf37yjcw1cq8jcqr9aw5hx8vljvxggl-perl5.32.0-Socket6-0.29...
+shrinking RPATHs of ELF executables and libraries in /nix/store/fhh40bipimvbccbvnq42bnxprd7qss95-perl5.32.0-Socket6-0.29-devdoc
+gzipping man pages under /nix/store/fhh40bipimvbccbvnq42bnxprd7qss95-perl5.32.0-Socket6-0.29-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/fhh40bipimvbccbvnq42bnxprd7qss95-perl5.32.0-Socket6-0.29-devdoc
+checking for references to /build/ in /nix/store/fhh40bipimvbccbvnq42bnxprd7qss95-perl5.32.0-Socket6-0.29-devdoc...
+building '/nix/store/bsmb1i1dr53r6ppjcf3h1v1q4q4j7z8a-perl5.32.0-IO-Socket-INET6-2.72.drv'...
+unpacking sources
+unpacking source archive /nix/store/5s4xg788ah8kf0bijw22j0cw5v9yn119-IO-Socket-INET6-2.72.tar.gz
+source root is IO-Socket-INET6-2.72
+setting SOURCE_DATE_EPOCH to timestamp 1391163481 of file IO-Socket-INET6-2.72/t/style-trailing-space.t
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/host6.t...
+patching ./t/listen_port_only.t...
+patching ./t/pod.t...
+patching ./t/style-trailing-space.t...
+patching ./t/io_multihomed6.t...
+patching ./t/io_sock6.t...
+patching ./t/io_udp6.t...
+patching ./t/blocking.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::Socket::INET6
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'IO-Socket-INET6' version '2.72'
+Building IO-Socket-INET6
+installing
+Building IO-Socket-INET6
+Installing /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72/lib/perl5/site_perl/5.32.0/IO/Socket/INET6.pm
+Installing /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72/share/man/man3/IO::Socket::INET6.3
+post-installation fixup
+Moving /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72/share/man/man3 to /nix/store/5fgw680jdn87pfs1y5k8qxcyyankcz7p-perl5.32.0-IO-Socket-INET6-2.72-devdoc/share/man/man3
+Removing empty /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72/lib
+patching script interpreter paths in /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72
+checking for references to /build/ in /nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72...
+shrinking RPATHs of ELF executables and libraries in /nix/store/5fgw680jdn87pfs1y5k8qxcyyankcz7p-perl5.32.0-IO-Socket-INET6-2.72-devdoc
+gzipping man pages under /nix/store/5fgw680jdn87pfs1y5k8qxcyyankcz7p-perl5.32.0-IO-Socket-INET6-2.72-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/5fgw680jdn87pfs1y5k8qxcyyankcz7p-perl5.32.0-IO-Socket-INET6-2.72-devdoc
+checking for references to /build/ in /nix/store/5fgw680jdn87pfs1y5k8qxcyyankcz7p-perl5.32.0-IO-Socket-INET6-2.72-devdoc...
+/nix/store/i8179gxx51168xcrmzd3kl1y0qsmik5l-perl5.32.0-IO-Socket-INET6-2.72

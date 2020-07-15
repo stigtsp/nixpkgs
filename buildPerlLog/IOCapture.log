@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/cvs0wq7qlaz4frw92ck3xlgl7ad045v0-perl5.32.0-IO-Capture-0.05.drv
+building '/nix/store/cvs0wq7qlaz4frw92ck3xlgl7ad045v0-perl5.32.0-IO-Capture-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/4q4q6wp7rafbmsxcf0dpcl12srqvshr2-IO-Capture-0.05.tar.gz
+source root is IO-Capture-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1114831838 of file IO-Capture-0.05/BUGS
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::Capture
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/IO/Capture/Tie_STDx.pm blib/lib/IO/Capture/Tie_STDx.pm
+cp lib/IO/Capture.pm blib/lib/IO/Capture.pm
+cp lib/IO/Capture/Stdout.pm blib/lib/IO/Capture/Stdout.pm
+cp lib/IO/Capture/Overview.pod blib/lib/IO/Capture/Overview.pod
+cp lib/IO/Capture/Stderr.pm blib/lib/IO/Capture/Stderr.pm
+Manifying 5 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_1_Published_Methods.t ......... ok
+t/01_2_Published_Methods_Stdout.t .. ok
+t/01_3_Published_Methods_Stderr.t .. ok
+t/02_1_basic_base.t ................ ok
+t/02_2_basic_Stdout.t .............. ok
+t/02_3_basic_Stderr.t .............. 1/15 Use of uninitialized value $got in string eq at (eval in cmp_ok) t/02_3_basic_Stderr.t line 92.
+t/02_3_basic_Stderr.t .............. ok
+t/03_1_Errorcheck_Stdout.t ......... ok
+t/03_2_Errorcheck_Stderr.t ......... ok
+t/04_1_Side-effects_base.t ......... ok
+t/04_2_Side-effects_Stdout.t ....... ok
+t/04_3_Side-effects_Stderr.t ....... ok
+t/05_2_regression.t ................ ok
+t/06_2_printf_Stdout.t ............. ok
+t/06_3_printf_Stderr.t ............. ok
+t/06_printf_stdout.t ............... ok
+t/07_3_warn_Stderr.t ............... ok
+All tests successful.
+Files=16, Tests=121,  1 wallclock secs ( 0.04 usr  0.02 sys +  0.72 cusr  0.11 csys =  0.89 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/pkgconfig m4datadir=/nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/aclocal aclocaldir=/nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/aclocal install
+Manifying 5 pod documents
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/site_perl/5.32.0/IO/Capture.pm
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/site_perl/5.32.0/IO/Capture/Tie_STDx.pm
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/site_perl/5.32.0/IO/Capture/Stdout.pm
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/site_perl/5.32.0/IO/Capture/Overview.pod
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/site_perl/5.32.0/IO/Capture/Stderr.pm
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3/IO::Capture::Stderr.3
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3/IO::Capture::Stdout.3
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3/IO::Capture::Tie_STDx.3
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3/IO::Capture::Overview.3
+Installing /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3/IO::Capture.3
+Appending installation info to /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/man3 to /nix/store/g0k1np2sm3ivnkdiv2j20h72jzzmh40l-perl5.32.0-IO-Capture-0.05-devdoc/share/man/man3
+Removing empty /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05/lib
+patching script interpreter paths in /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05
+checking for references to /build/ in /nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/g0k1np2sm3ivnkdiv2j20h72jzzmh40l-perl5.32.0-IO-Capture-0.05-devdoc
+gzipping man pages under /nix/store/g0k1np2sm3ivnkdiv2j20h72jzzmh40l-perl5.32.0-IO-Capture-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/g0k1np2sm3ivnkdiv2j20h72jzzmh40l-perl5.32.0-IO-Capture-0.05-devdoc
+checking for references to /build/ in /nix/store/g0k1np2sm3ivnkdiv2j20h72jzzmh40l-perl5.32.0-IO-Capture-0.05-devdoc...
+/nix/store/28kalvj5w8r5flz29kwn1bxx1r66ak1f-perl5.32.0-IO-Capture-0.05

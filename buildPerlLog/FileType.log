@@ -1,0 +1,57 @@
+these derivations will be built:
+  /nix/store/748r46z67l13w0dflbmbyy2f1z8pg4w4-perl5.32.0-File-Type-0.22.drv
+these paths will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/5jksmxlrgk2pdb66rq8ad2xjwpqra0mr-File-Type-0.22.tar.gz
+copying path '/nix/store/5jksmxlrgk2pdb66rq8ad2xjwpqra0mr-File-Type-0.22.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/748r46z67l13w0dflbmbyy2f1z8pg4w4-perl5.32.0-File-Type-0.22.drv'...
+unpacking sources
+unpacking source archive /nix/store/5jksmxlrgk2pdb66rq8ad2xjwpqra0mr-File-Type-0.22.tar.gz
+source root is File-Type-0.22
+setting SOURCE_DATE_EPOCH to timestamp 1083840903 of file File-Type-0.22/Makefile.PL
+patching sources
+configuring
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+/nix/store/qf3mzpvsmkrw963xchbivcci06078n13-builder.sh: line 17: warning: command substitution: ignored null byte in input
+patching ./t/00setup.t...
+patching ./t/01type.t...
+patching ./t/02mime.t...
+patching ./data/wizard.pl...
+patching ./Build.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Type
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-Type' version '0.22'
+Building File-Type
+running tests
+t/00setup.t .. ok
+t/01type.t ... ok
+t/02mime.t ... 1/18 Invalid \0 character in pathname for ftis: GIF89a\0 at lib/File/Type.pm line 27.
+t/02mime.t ... ok
+All tests successful.
+Files=3, Tests=58,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.17 cusr  0.01 csys =  0.20 CPU)
+Result: PASS
+installing
+Building File-Type
+Installing /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/lib/perl5/site_perl/5.32.0/File/Type.pm
+Installing /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/lib/perl5/site_perl/5.32.0/File/Type/Builder.pm
+Installing /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/share/man/man3/File::Type::Builder.3
+Installing /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/share/man/man3/File::Type.3
+post-installation fixup
+Moving /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/share/man/man3 to /nix/store/ag2h7qxp2jya86qf1rzxcpgv0fahfrzx-perl5.32.0-File-Type-0.22-devdoc/share/man/man3
+Removing empty /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22/lib
+patching script interpreter paths in /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22
+checking for references to /build/ in /nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ag2h7qxp2jya86qf1rzxcpgv0fahfrzx-perl5.32.0-File-Type-0.22-devdoc
+gzipping man pages under /nix/store/ag2h7qxp2jya86qf1rzxcpgv0fahfrzx-perl5.32.0-File-Type-0.22-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ag2h7qxp2jya86qf1rzxcpgv0fahfrzx-perl5.32.0-File-Type-0.22-devdoc
+checking for references to /build/ in /nix/store/ag2h7qxp2jya86qf1rzxcpgv0fahfrzx-perl5.32.0-File-Type-0.22-devdoc...
+/nix/store/bnqny8dqly71qdriqw244jvv6nsd767g-perl5.32.0-File-Type-0.22

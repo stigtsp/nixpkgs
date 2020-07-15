@@ -1,0 +1,186 @@
+these derivations will be built:
+  /nix/store/3n04vh6pmp748c4qps30830pw9f1jv6m-perl5.32.0-Term-VT102-0.91.drv
+  /nix/store/z8r0ddmbzq5cq8zamcws3fvadi1fnmwq-perl5.32.0-Term-VT102-Boundless-0.05.drv
+  /nix/store/k6m2wzhnqwk35cxa2q5mww0nbgkyjkrn-perl5.32.0-HTML-FromANSI-2.03.drv
+building '/nix/store/3n04vh6pmp748c4qps30830pw9f1jv6m-perl5.32.0-Term-VT102-0.91.drv'...
+unpacking sources
+unpacking source archive /nix/store/dkkz1y69z7c3dhj24d16qya2cnjflcag-Term-VT102-0.91.tar.gz
+source root is Term-VT102-0.91
+setting SOURCE_DATE_EPOCH to timestamp 1226265872 of file Term-VT102-0.91/META.yml
+patching sources
+configuring
+patching ./VT102/examples/telnet-usage.pl...
+patching ./t/04-cursor.t...
+patching ./t/01-load.t...
+patching ./t/08-options.t...
+patching ./t/06-insdel.t...
+patching ./t/10-decaln.t...
+patching ./t/11-decscrc.t...
+patching ./t/09-callback.t...
+patching ./t/02-setsize.t...
+patching ./t/14-tabstop.t...
+patching ./t/12-cupsvrs.t...
+patching ./t/05-scrolling.t...
+patching ./t/testbase...
+patching ./t/03-text.t...
+patching ./t/13-xonxoff.t...
+patching ./t/07-colour.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::VT102
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp VT102/examples/ssh-usage.pl blib/lib/Term/VT102/examples/ssh-usage.pl
+cp VT102/examples/sanitize-dump.pl blib/lib/Term/VT102/examples/sanitize-dump.pl
+cp VT102/examples/telnet-usage.pl blib/lib/Term/VT102/examples/telnet-usage.pl
+cp VT102.pm blib/lib/Term/VT102.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01-load.t ....... ok
+t/02-setsize.t .... ok
+t/03-text.t ....... ok
+t/04-cursor.t ..... ok
+t/05-scrolling.t .. ok
+t/06-insdel.t ..... ok
+t/07-colour.t ..... ok
+t/08-options.t .... ok
+t/09-callback.t ... ok
+t/10-decaln.t ..... ok
+t/11-decscrc.t .... ok
+t/12-cupsvrs.t .... ok
+t/13-xonxoff.t .... ok
+t/14-tabstop.t .... ok
+All tests successful.
+Files=14, Tests=85,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.16 cusr  0.02 csys =  0.23 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/pkgconfig m4datadir=/nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/share/aclocal aclocaldir=/nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/perl5/site_perl/5.32.0/Term/VT102.pm
+Installing /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/perl5/site_perl/5.32.0/Term/VT102/examples/sanitize-dump.pl
+Installing /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/perl5/site_perl/5.32.0/Term/VT102/examples/telnet-usage.pl
+Installing /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/perl5/site_perl/5.32.0/Term/VT102/examples/ssh-usage.pl
+Installing /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/share/man/man3/Term::VT102.3
+Appending installation info to /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/share/man/man3 to /nix/store/vm6m9akcfwq7fkms5z47cj73jbwas95m-perl5.32.0-Term-VT102-0.91-devdoc/share/man/man3
+Removing empty /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91/lib
+patching script interpreter paths in /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91
+checking for references to /build/ in /nix/store/0ig6vvawyiqnhkbmlpqd0ai6y7rlyhvb-perl5.32.0-Term-VT102-0.91...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vm6m9akcfwq7fkms5z47cj73jbwas95m-perl5.32.0-Term-VT102-0.91-devdoc
+gzipping man pages under /nix/store/vm6m9akcfwq7fkms5z47cj73jbwas95m-perl5.32.0-Term-VT102-0.91-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vm6m9akcfwq7fkms5z47cj73jbwas95m-perl5.32.0-Term-VT102-0.91-devdoc
+checking for references to /build/ in /nix/store/vm6m9akcfwq7fkms5z47cj73jbwas95m-perl5.32.0-Term-VT102-0.91-devdoc...
+building '/nix/store/z8r0ddmbzq5cq8zamcws3fvadi1fnmwq-perl5.32.0-Term-VT102-Boundless-0.05.drv'...
+unpacking sources
+unpacking source archive /nix/store/bnip3kmkifzlkpsfrrlg65q41x4xzhld-Term-VT102-Boundless-0.05.tar.gz
+source root is Term-VT102-Boundless-0.05
+setting SOURCE_DATE_EPOCH to timestamp 1539543192 of file Term-VT102-Boundless-0.05/META.yml
+patching sources
+configuring
+patching ./t/basic.t...
+patching ./lib/Term/VT102/Boundless.pm...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Term::VT102::Boundless
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Term/VT102/Boundless.pm blib/lib/Term/VT102/Boundless.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/basic.t .. ok
+All tests successful.
+Files=1, Tests=14,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.06 cusr  0.00 csys =  0.07 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/lib/pkgconfig m4datadir=/nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/share/aclocal aclocaldir=/nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/lib/perl5/site_perl/5.32.0/Term/VT102/Boundless.pm
+Installing /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/share/man/man3/Term::VT102::Boundless.3
+Appending installation info to /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/share/man/man3 to /nix/store/js55531wh6zk1ffwv2r70fh3zxpdjakx-perl5.32.0-Term-VT102-Boundless-0.05-devdoc/share/man/man3
+Removing empty /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05/lib
+patching script interpreter paths in /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05
+checking for references to /build/ in /nix/store/xqvlhz7p3sbvff2yq8bdhk2kz5cgkmpj-perl5.32.0-Term-VT102-Boundless-0.05...
+shrinking RPATHs of ELF executables and libraries in /nix/store/js55531wh6zk1ffwv2r70fh3zxpdjakx-perl5.32.0-Term-VT102-Boundless-0.05-devdoc
+gzipping man pages under /nix/store/js55531wh6zk1ffwv2r70fh3zxpdjakx-perl5.32.0-Term-VT102-Boundless-0.05-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/js55531wh6zk1ffwv2r70fh3zxpdjakx-perl5.32.0-Term-VT102-Boundless-0.05-devdoc
+checking for references to /build/ in /nix/store/js55531wh6zk1ffwv2r70fh3zxpdjakx-perl5.32.0-Term-VT102-Boundless-0.05-devdoc...
+building '/nix/store/k6m2wzhnqwk35cxa2q5mww0nbgkyjkrn-perl5.32.0-HTML-FromANSI-2.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/pq17n4nxp990w0w3905jj0kxj6c21cmw-HTML-FromANSI-2.03.tar.gz
+source root is HTML-FromANSI-2.03
+setting SOURCE_DATE_EPOCH to timestamp 1190247840 of file HTML-FromANSI-2.03/META.yml
+patching sources
+configuring
+patching ./script/ansi2html...
+patching ./t/1-basic.t...
+patching ./t/3-incr.t...
+patching ./t/2-oo.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for HTML::FromANSI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/HTML/FromANSI.pm blib/lib/HTML/FromANSI.pm
+cp script/ansi2html blib/script/ansi2html
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/ansi2html
+Manifying 1 pod document
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/1-basic.t .. ok
+t/2-oo.t ..... ok
+t/3-incr.t ... ok
+All tests successful.
+Files=3, Tests=7,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.19 cusr  0.08 csys =  0.29 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/lib/pkgconfig m4datadir=/nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/aclocal aclocaldir=/nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/aclocal install
+Manifying 1 pod document
+Manifying 1 pod document
+Installing /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/lib/perl5/site_perl/5.32.0/HTML/FromANSI.pm
+Installing /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/man/man1/ansi2html.1
+Installing /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/man/man3/HTML::FromANSI.3
+Installing /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/bin/ansi2html
+Appending installation info to /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/man/man3 to /nix/store/bkp58dzzyrbyi4mdq374sncaqwc8p8n7-perl5.32.0-HTML-FromANSI-2.03-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03
+gzipping man pages under /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/lib  /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03/bin
+patching script interpreter paths in /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03
+checking for references to /build/ in /nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/bkp58dzzyrbyi4mdq374sncaqwc8p8n7-perl5.32.0-HTML-FromANSI-2.03-devdoc
+gzipping man pages under /nix/store/bkp58dzzyrbyi4mdq374sncaqwc8p8n7-perl5.32.0-HTML-FromANSI-2.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/bkp58dzzyrbyi4mdq374sncaqwc8p8n7-perl5.32.0-HTML-FromANSI-2.03-devdoc
+checking for references to /build/ in /nix/store/bkp58dzzyrbyi4mdq374sncaqwc8p8n7-perl5.32.0-HTML-FromANSI-2.03-devdoc...
+/nix/store/rh4q7673whz9x51fk4a0ivpipnv22zv0-perl5.32.0-HTML-FromANSI-2.03

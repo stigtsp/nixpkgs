@@ -1,0 +1,116 @@
+these derivations will be built:
+  /nix/store/9790hr9g123irxqsh4y2q4wp4nfyjflx-perl5.32.0-Text-Trim-1.03.drv
+  /nix/store/m4i4qmychrmgvd2m2n0ixnjy8813kkhm-perl5.32.0-Text-Hogan-2.03.drv
+building '/nix/store/9790hr9g123irxqsh4y2q4wp4nfyjflx-perl5.32.0-Text-Trim-1.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/x4p5f68y869fwws5ryw801pzra127bzn-Text-Trim-1.03.tar.gz
+source root is Text-Trim-1.03
+setting SOURCE_DATE_EPOCH to timestamp 1569179077 of file Text-Trim-1.03/META.yml
+patching sources
+configuring
+patching ./t/00..load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::Trim
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Trim.pm blib/lib/Text/Trim.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00..load.t ..... 1/? # Testing Text::Trim 1.03, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00..load.t ..... ok
+t/01..trim.t ..... ok
+t/02..ltrim.t .... ok
+t/03..rtrim.t .... ok
+t/04..unicode.t .. ok
+t/05..undef.t .... ok
+t/99..pod.t ...... ok
+All tests successful.
+Files=7, Tests=64,  1 wallclock secs ( 0.03 usr  0.01 sys +  0.32 cusr  0.06 csys =  0.42 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/lib/pkgconfig m4datadir=/nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/share/aclocal aclocaldir=/nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/lib/perl5/site_perl/5.32.0/Text/Trim.pm
+Installing /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/share/man/man3/Text::Trim.3
+Appending installation info to /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/share/man/man3 to /nix/store/dihc03vv07sn9y97arsqw43dpg9p7dcj-perl5.32.0-Text-Trim-1.03-devdoc/share/man/man3
+Removing empty /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03/lib
+patching script interpreter paths in /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03
+checking for references to /build/ in /nix/store/ifcj8nnidlahdfv1j3pdyq7w10k9m9lz-perl5.32.0-Text-Trim-1.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/dihc03vv07sn9y97arsqw43dpg9p7dcj-perl5.32.0-Text-Trim-1.03-devdoc
+gzipping man pages under /nix/store/dihc03vv07sn9y97arsqw43dpg9p7dcj-perl5.32.0-Text-Trim-1.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/dihc03vv07sn9y97arsqw43dpg9p7dcj-perl5.32.0-Text-Trim-1.03-devdoc
+checking for references to /build/ in /nix/store/dihc03vv07sn9y97arsqw43dpg9p7dcj-perl5.32.0-Text-Trim-1.03-devdoc...
+building '/nix/store/m4i4qmychrmgvd2m2n0ixnjy8813kkhm-perl5.32.0-Text-Hogan-2.03.drv'...
+unpacking sources
+unpacking source archive /nix/store/zvngcmmdq5iv1ijjnbp751fkb4sy3ydn-Text-Hogan-2.03.tar.gz
+source root is Text-Hogan-2.03
+setting SOURCE_DATE_EPOCH to timestamp 1576619662 of file Text-Hogan-2.03/t/synopsis_text_hogan_template.t
+patching sources
+configuring
+patching ./t/author-pod-syntax.t...
+patching ./t/spec_test.t...
+patching ./t/synopsis_text_hogan_compiler.t...
+patching ./t/synopsis_text_hogan_template.t...
+patching ./t/release-cpan-changes.t...
+patching ./t/synopsis_text_hogan.t...
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for Text::Hogan
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/Hogan/Compiler.pm blib/lib/Text/Hogan/Compiler.pm
+cp lib/Text/Hogan.pm blib/lib/Text/Hogan.pm
+cp lib/Text/Hogan/Template.pm blib/lib/Text/Hogan/Template.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/author-pod-syntax.t ............. skipped: these tests are for testing by the author
+t/release-cpan-changes.t .......... skipped: these tests are for release candidate testing
+t/spec_test.t ..................... ok
+t/synopsis_text_hogan.t ........... ok
+t/synopsis_text_hogan_compiler.t .. ok
+t/synopsis_text_hogan_template.t .. ok
+All tests successful.
+Files=6, Tests=134,  2 wallclock secs ( 0.06 usr  0.03 sys +  0.88 cusr  0.72 csys =  1.69 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib/pkgconfig m4datadir=/nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/aclocal aclocaldir=/nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib/perl5/site_perl/5.32.0/Text/Hogan.pm
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib/perl5/site_perl/5.32.0/Text/Hogan/Template.pm
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib/perl5/site_perl/5.32.0/Text/Hogan/Compiler.pm
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/man/man3/Text::Hogan::Template.3
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/man/man3/Text::Hogan::Compiler.3
+Installing /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/man/man3/Text::Hogan.3
+Appending installation info to /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/man/man3 to /nix/store/rxq5ghpc1h3075iqpi14jhrcan7l7i5r-perl5.32.0-Text-Hogan-2.03-devdoc/share/man/man3
+Removing empty /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03/lib
+patching script interpreter paths in /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03
+checking for references to /build/ in /nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/rxq5ghpc1h3075iqpi14jhrcan7l7i5r-perl5.32.0-Text-Hogan-2.03-devdoc
+gzipping man pages under /nix/store/rxq5ghpc1h3075iqpi14jhrcan7l7i5r-perl5.32.0-Text-Hogan-2.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/rxq5ghpc1h3075iqpi14jhrcan7l7i5r-perl5.32.0-Text-Hogan-2.03-devdoc
+checking for references to /build/ in /nix/store/rxq5ghpc1h3075iqpi14jhrcan7l7i5r-perl5.32.0-Text-Hogan-2.03-devdoc...
+/nix/store/cdhf2cl04sr8v1h5wpfg3z2jrd72lsa3-perl5.32.0-Text-Hogan-2.03

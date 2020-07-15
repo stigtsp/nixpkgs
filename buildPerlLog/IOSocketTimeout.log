@@ -1,0 +1,99 @@
+these derivations will be built:
+  /nix/store/02707zx5rj3pqmjf0dab9gddh3vzai5a-perl5.32.0-PerlIO-via-Timeout-0.32.drv
+  /nix/store/6jjj6xmhv1vpy50zbi9fnkx4pjvprivw-perl5.32.0-IO-Socket-Timeout-0.32.drv
+building '/nix/store/02707zx5rj3pqmjf0dab9gddh3vzai5a-perl5.32.0-PerlIO-via-Timeout-0.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/hm5crnd9anvyrycmfrasxp5680k41nj3-PerlIO-via-Timeout-0.32.tar.gz
+source root is PerlIO-via-Timeout-0.32
+setting SOURCE_DATE_EPOCH to timestamp 1438259130 of file PerlIO-via-Timeout-0.32/t/release-pod-coverage.t
+patching sources
+configuring
+patching ./t/release-distmeta.t...
+patching ./t/release-pod-coverage.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+WARNING: Older versions of ExtUtils::MakeMaker may errantly install README.pod as part of this distribution. It is recommended to avoid using this path in CPAN modules.
+Generating a Unix-style Makefile
+Writing Makefile for PerlIO::via::Timeout
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'PerlIO-via-Timeout' version '0.32'
+cp lib/PerlIO/via/Timeout.pm blib/lib/PerlIO/via/Timeout.pm
+running tests
+t/00-compile.t ............ ok
+t/01_socket_timeout.t ..... ok
+t/release-distmeta.t ...... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=4, Tests=4,  3 wallclock secs ( 0.03 usr  0.01 sys +  0.30 cusr  0.11 csys =  0.45 CPU)
+Result: PASS
+installing
+Installing /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32/lib/perl5/site_perl/5.32.0/PerlIO/via/Timeout.pm
+Installing /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32/share/man/man3/PerlIO::via::Timeout.3
+post-installation fixup
+Moving /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32/share/man/man3 to /nix/store/52c67sih4fb2sqndrk11whvp81qp4brq-perl5.32.0-PerlIO-via-Timeout-0.32-devdoc/share/man/man3
+Removing empty /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32/lib
+patching script interpreter paths in /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32
+checking for references to /build/ in /nix/store/51vb14f5i7334qwdbmi0z3lvxr4g5l68-perl5.32.0-PerlIO-via-Timeout-0.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/52c67sih4fb2sqndrk11whvp81qp4brq-perl5.32.0-PerlIO-via-Timeout-0.32-devdoc
+gzipping man pages under /nix/store/52c67sih4fb2sqndrk11whvp81qp4brq-perl5.32.0-PerlIO-via-Timeout-0.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/52c67sih4fb2sqndrk11whvp81qp4brq-perl5.32.0-PerlIO-via-Timeout-0.32-devdoc
+checking for references to /build/ in /nix/store/52c67sih4fb2sqndrk11whvp81qp4brq-perl5.32.0-PerlIO-via-Timeout-0.32-devdoc...
+building '/nix/store/6jjj6xmhv1vpy50zbi9fnkx4pjvprivw-perl5.32.0-IO-Socket-Timeout-0.32.drv'...
+unpacking sources
+unpacking source archive /nix/store/aja0d9xc7mcv4dxnwxgdqacqfy08pjw0-IO-Socket-Timeout-0.32.tar.gz
+source root is IO-Socket-Timeout-0.32
+setting SOURCE_DATE_EPOCH to timestamp 1443521066 of file IO-Socket-Timeout-0.32/t/tlib/TestTimeout.pm
+patching sources
+configuring
+patching ./t/release-synopsis.t...
+patching ./t/io_unix.t...
+patching ./t/release-distmeta.t...
+patching ./t/release-pod-coverage.t...
+Congratulations, your toolchain understands 'configure_requires'!
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for IO::Socket::Timeout
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'IO-Socket-Timeout' version '0.32'
+cp lib/IO/Socket/Timeout.pm blib/lib/IO/Socket/Timeout.pm
+running tests
+t/00-compile.t ............ ok
+t/io_unix.t ............... ok
+t/preload.t ............... ok
+t/release-distmeta.t ...... skipped: these tests are for release candidate testing
+t/release-pod-coverage.t .. skipped: these tests are for release candidate testing
+t/release-synopsis.t ...... skipped: these tests are for release candidate testing
+t/timeout.t ............... ok
+t/timeout_setsockopt.t .... ok
+All tests successful.
+Files=8, Tests=20,  2 wallclock secs ( 0.05 usr  0.02 sys +  0.55 cusr  0.22 csys =  0.84 CPU)
+Result: PASS
+installing
+Installing /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32/lib/perl5/site_perl/5.32.0/IO/Socket/Timeout.pm
+Installing /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32/share/man/man3/IO::Socket::Timeout.3
+post-installation fixup
+Moving /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32/share/man/man3 to /nix/store/zkvjk2ip6gljpfgjksfkq48v2x0g72d1-perl5.32.0-IO-Socket-Timeout-0.32-devdoc/share/man/man3
+Removing empty /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32/lib
+patching script interpreter paths in /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32
+checking for references to /build/ in /nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32...
+shrinking RPATHs of ELF executables and libraries in /nix/store/zkvjk2ip6gljpfgjksfkq48v2x0g72d1-perl5.32.0-IO-Socket-Timeout-0.32-devdoc
+gzipping man pages under /nix/store/zkvjk2ip6gljpfgjksfkq48v2x0g72d1-perl5.32.0-IO-Socket-Timeout-0.32-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/zkvjk2ip6gljpfgjksfkq48v2x0g72d1-perl5.32.0-IO-Socket-Timeout-0.32-devdoc
+checking for references to /build/ in /nix/store/zkvjk2ip6gljpfgjksfkq48v2x0g72d1-perl5.32.0-IO-Socket-Timeout-0.32-devdoc...
+/nix/store/i1gn4ssac5cp9xvg98gszxa5yg9kx82i-perl5.32.0-IO-Socket-Timeout-0.32

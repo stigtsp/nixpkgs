@@ -1,0 +1,275 @@
+these derivations will be built:
+  /nix/store/0f2594wnbwllhhy855ian7rd0gdap9yl-perl5.32.0-Test-Number-Delta-1.06.drv
+  /nix/store/l66p0vpdgccm9r0f0mk5pgqchqsld3ds-perl5.32.0-List-UtilsBy-0.11.drv
+  /nix/store/azvd72cgpmv6k8yd62slq8csb40hh7rq-perl5.32.0-Convert-Color-0.11.drv
+these paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/6qpnzjjbj0w0klm6qkmpgfa5il8b9zq0-List-UtilsBy-0.11.tar.gz
+  /nix/store/72i15ii12xciphfivh3anw3xf20yxs18-Test-Number-Delta-1.06.tar.gz
+  /nix/store/dvfywixpfkycxkyd8m7d50r6fayh2n1m-Convert-Color-0.11.tar.gz
+copying path '/nix/store/dvfywixpfkycxkyd8m7d50r6fayh2n1m-Convert-Color-0.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/6qpnzjjbj0w0klm6qkmpgfa5il8b9zq0-List-UtilsBy-0.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/72i15ii12xciphfivh3anw3xf20yxs18-Test-Number-Delta-1.06.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/l66p0vpdgccm9r0f0mk5pgqchqsld3ds-perl5.32.0-List-UtilsBy-0.11.drv'...
+building '/nix/store/0f2594wnbwllhhy855ian7rd0gdap9yl-perl5.32.0-Test-Number-Delta-1.06.drv'...
+unpacking sources
+unpacking source archive /nix/store/6qpnzjjbj0w0klm6qkmpgfa5il8b9zq0-List-UtilsBy-0.11.tar.gz
+source root is List-UtilsBy-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1517440887 of file List-UtilsBy-0.11/t/Unrandom.pm
+patching sources
+configuring
+unpacking sources
+unpacking source archive /nix/store/72i15ii12xciphfivh3anw3xf20yxs18-Test-Number-Delta-1.06.tar.gz
+source root is Test-Number-Delta-1.06
+setting SOURCE_DATE_EPOCH to timestamp 1416917352 of file Test-Number-Delta-1.06/xt/release/test-version.t
+patching ./t/11weighted_shuffle_by.t...
+patching sources
+configuring
+patching ./t/01sort_by.t...
+patching ./t/08zip_by.t...
+patching ./t/09unzip_by.t...
+patching ./t/02nsort_by.t...
+patching ./t/07count_by.t...
+patching ./t/05uniq_by.t...
+patching ./xt/release/pod-coverage.t...
+patching ./t/99pod.t...
+patching ./xt/release/pod-syntax.t...
+patching ./t/10extract_by.t...
+patching ./t/03max_min_by.t...
+patching ./xt/release/portability.t...
+patching ./t/00use.t...
+patching ./xt/release/distmeta.t...
+patching ./xt/release/minimum-version.t...
+patching ./t/06partition_by.t...
+patching ./t/12bundle_by.t...
+patching ./xt/author/critic.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for List::UtilsBy
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Generating a Unix-style Makefile
+Writing Makefile for Test::Number::Delta
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'List-UtilsBy' version '0.11'
+cp lib/Test/Number/Delta.pm blib/lib/Test/Number/Delta.pm
+Building List-UtilsBy
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+running tests
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00use.t .................. ok
+t/00-report-prereqs.t .............. #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker 6.17 7.44
+#
+# === Build Requires ===
+#
+#     Module              Want Have
+#     ------------------- ---- ----
+#     ExtUtils::MakeMaker  any 7.44
+#
+# === Test Requires ===
+#
+#     Module                Want     Have
+#     --------------------- ---- --------
+#     ExtUtils::MakeMaker    any     7.44
+#     File::Spec             any     3.78
+#     Test::Builder::Tester 1.02 1.302175
+#     Test::More             any 1.302175
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module        Want     Have
+#     ------------- ---- --------
+#     Carp           any     1.50
+#     Exporter       any     5.74
+#     Test::Builder  any 1.302175
+#     strict         any     1.11
+#     vars           any     1.05
+#     warnings       any     1.47
+#
+t/00-report-prereqs.t .............. ok
+t/01sort_by.t .............. ok
+t/01-module-basics.t ............... ok
+t/02nsort_by.t ............. ok
+t/02-delta.t ....................... ok
+t/03max_min_by.t ........... ok
+t/03-specify_epsilon.t ............. ok
+t/05uniq_by.t .............. ok
+t/04-specify_relative.t ............ ok
+t/06partition_by.t ......... ok
+t/05-check_bad_param.t ............. ok
+t/07count_by.t ............. ok
+t/06-plan_passthrough.t ............ ok
+t/07-noplan_passthrough.t .......... ok
+t/08zip_by.t ............... ok
+t/08-param_and_plan_passthrough.t .. ok
+t/09unzip_by.t ............. ok
+t/09-bad_param_plan_order.t ........ ok
+t/10extract_by.t ........... ok
+t/10-specify_negative_epsilon.t .... ok
+t/11weighted_shuffle_by.t .. ok
+t/11-specify_negative_relative.t ... ok
+All tests successful.
+Files=12, Tests=72,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.72 cusr  0.10 csys =  0.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/lib/pkgconfig m4datadir=/nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/share/aclocal aclocaldir=/nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/share/aclocal install
+t/12bundle_by.t ............ ok
+Manifying 1 pod document
+Installing /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/lib/perl5/site_perl/5.32.0/Test/Number/Delta.pm
+Installing /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/share/man/man3/Test::Number::Delta.3
+t/99pod.t .................. skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=13, Tests=101,  1 wallclock secs ( 0.05 usr  0.02 sys +  0.70 cusr  0.17 csys =  0.94 CPU)
+Result: PASS
+Appending installation info to /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+installing
+post-installation fixup
+Moving /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/share/man/man3 to /nix/store/pfz48mm384xvsfzc522v7i06h95abbfk-perl5.32.0-Test-Number-Delta-1.06-devdoc/share/man/man3
+Removing empty /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06/lib
+patching script interpreter paths in /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06
+checking for references to /build/ in /nix/store/y97k1yl5b0y0829manxy7i9sj7fz7rxk-perl5.32.0-Test-Number-Delta-1.06...
+shrinking RPATHs of ELF executables and libraries in /nix/store/pfz48mm384xvsfzc522v7i06h95abbfk-perl5.32.0-Test-Number-Delta-1.06-devdoc
+gzipping man pages under /nix/store/pfz48mm384xvsfzc522v7i06h95abbfk-perl5.32.0-Test-Number-Delta-1.06-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/pfz48mm384xvsfzc522v7i06h95abbfk-perl5.32.0-Test-Number-Delta-1.06-devdoc
+checking for references to /build/ in /nix/store/pfz48mm384xvsfzc522v7i06h95abbfk-perl5.32.0-Test-Number-Delta-1.06-devdoc...
+Building List-UtilsBy
+Installing /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11/lib/perl5/site_perl/5.32.0/List/UtilsBy.pm
+Installing /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11/share/man/man3/List::UtilsBy.3
+post-installation fixup
+Moving /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11/share/man/man3 to /nix/store/2ha2x1wprpm9y20h73xh5fiyjydxdf3a-perl5.32.0-List-UtilsBy-0.11-devdoc/share/man/man3
+Removing empty /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11/lib
+patching script interpreter paths in /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11
+checking for references to /build/ in /nix/store/9qa6fq172ifh1whp6ayj384p8ldwnzd9-perl5.32.0-List-UtilsBy-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/2ha2x1wprpm9y20h73xh5fiyjydxdf3a-perl5.32.0-List-UtilsBy-0.11-devdoc
+gzipping man pages under /nix/store/2ha2x1wprpm9y20h73xh5fiyjydxdf3a-perl5.32.0-List-UtilsBy-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/2ha2x1wprpm9y20h73xh5fiyjydxdf3a-perl5.32.0-List-UtilsBy-0.11-devdoc
+checking for references to /build/ in /nix/store/2ha2x1wprpm9y20h73xh5fiyjydxdf3a-perl5.32.0-List-UtilsBy-0.11-devdoc...
+building '/nix/store/azvd72cgpmv6k8yd62slq8csb40hh7rq-perl5.32.0-Convert-Color-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/dvfywixpfkycxkyd8m7d50r6fayh2n1m-Convert-Color-0.11.tar.gz
+source root is Convert-Color-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1401653545 of file Convert-Color-0.11/t/99pod.t
+patching sources
+configuring
+patching ./examples/html-sample.pl...
+patching ./examples/gradient.pl...
+patching ./t/13convert-hsl.t...
+patching ./t/02hsv.t...
+patching ./t/15convert-cmyk.t...
+patching ./t/30vga.t...
+patching ./t/24hsl-dst.t...
+patching ./t/20magic-const.t...
+patching ./t/22rgb-dst.t...
+patching ./t/31x11.t...
+patching ./t/99pod.t...
+patching ./t/05cmyk.t...
+patching ./t/23hsv-dst.t...
+patching ./t/01rgb.t...
+patching ./t/03hsl.t...
+patching ./t/11convert-rgb.t...
+patching ./t/21rgb-blend.t...
+patching ./t/12convert-hsv.t...
+patching ./t/00use.t...
+patching ./t/04cmy.t...
+patching ./t/14convert-cmy.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Convert::Color
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Convert-Color' version '0.11'
+Building Convert-Color
+running tests
+t/00use.t ........... ok
+t/01rgb.t ........... ok
+t/02hsv.t ........... ok
+t/03hsl.t ........... ok
+t/04cmy.t ........... ok
+t/05cmyk.t .......... ok
+t/11convert-rgb.t ... ok
+t/12convert-hsv.t ... ok
+t/13convert-hsl.t ... ok
+t/14convert-cmy.t ... ok
+t/15convert-cmyk.t .. ok
+t/20magic-const.t ... ok
+t/21rgb-blend.t ..... ok
+t/22rgb-dst.t ....... ok
+t/23hsv-dst.t ....... ok
+t/24hsl-dst.t ....... ok
+t/30vga.t ........... ok
+t/31x11.t ........... skipped: Cannot load X11 rgb.txt database
+t/99pod.t ........... skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=19, Tests=421,  2 wallclock secs ( 0.07 usr  0.02 sys +  1.40 cusr  0.63 csys =  2.12 CPU)
+Result: PASS
+installing
+Building Convert-Color
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/HSV.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/X11.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/HueChromaBased.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/CMY.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/RGB8.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/HSL.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/VGA.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/RGB16.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/CMYK.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib/perl5/site_perl/5.32.0/Convert/Color/RGB.pm
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::VGA.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::CMY.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::CMYK.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::HSL.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::X11.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::HSV.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::RGB8.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::RGB16.3
+Installing /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3/Convert::Color::RGB.3
+post-installation fixup
+Moving /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/man3 to /nix/store/9cnm1k9dkm0j2rhcxb3nwnli7fdav76f-perl5.32.0-Convert-Color-0.11-devdoc/share/man/man3
+Removing empty /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11/lib
+patching script interpreter paths in /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11
+checking for references to /build/ in /nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/9cnm1k9dkm0j2rhcxb3nwnli7fdav76f-perl5.32.0-Convert-Color-0.11-devdoc
+gzipping man pages under /nix/store/9cnm1k9dkm0j2rhcxb3nwnli7fdav76f-perl5.32.0-Convert-Color-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/9cnm1k9dkm0j2rhcxb3nwnli7fdav76f-perl5.32.0-Convert-Color-0.11-devdoc
+checking for references to /build/ in /nix/store/9cnm1k9dkm0j2rhcxb3nwnli7fdav76f-perl5.32.0-Convert-Color-0.11-devdoc...
+/nix/store/g2s47ymja3laah80sq465jp0sg7z95qw-perl5.32.0-Convert-Color-0.11

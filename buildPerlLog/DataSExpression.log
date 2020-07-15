@@ -1,0 +1,79 @@
+these derivations will be built:
+  /nix/store/p7f0g0dyqjha5nq9dpqk4pr3k3ywpwkv-perl5.32.0-Data-SExpression-0.41.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/mczxj0b66hb1q65xdqxj419bdi654xrx-Data-SExpression-0.41.tar.gz
+copying path '/nix/store/mczxj0b66hb1q65xdqxj419bdi654xrx-Data-SExpression-0.41.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p7f0g0dyqjha5nq9dpqk4pr3k3ywpwkv-perl5.32.0-Data-SExpression-0.41.drv'...
+unpacking sources
+unpacking source archive /nix/store/mczxj0b66hb1q65xdqxj419bdi654xrx-Data-SExpression-0.41.tar.gz
+source root is Data-SExpression-0.41
+setting SOURCE_DATE_EPOCH to timestamp 1247592086 of file Data-SExpression-0.41/inc/Module/Install/WriteAll.pm
+patching sources
+configuring
+patching ./build/regen_parser.pl...
+patching ./t/01-lexer.t...
+patching ./t/07-symbols.t...
+patching ./t/03-lists.t...
+patching ./t/01-basic.t...
+patching ./t/06-read-multi.t...
+patching ./t/04-folding.t...
+patching ./t/05-special.t...
+patching ./t/09-memleak.t...
+patching ./t/02-scalars.t...
+patching ./t/08-read-options.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Data::SExpression
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Data/SExpression/Symbol.pm blib/lib/Data/SExpression/Symbol.pm
+cp lib/Data/SExpression/Parser.yp blib/lib/Data/SExpression/Parser.yp
+cp lib/Data/SExpression.pm blib/lib/Data/SExpression.pm
+cp lib/Data/SExpression/Cons.pm blib/lib/Data/SExpression/Cons.pm
+cp lib/Data/SExpression/Parser.pm blib/lib/Data/SExpression/Parser.pm
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/01-basic.t ......... ok
+t/01-lexer.t ......... ok
+t/02-scalars.t ....... ok
+t/03-lists.t ......... ok
+t/04-folding.t ....... ok
+t/05-special.t ....... ok
+t/06-read-multi.t .... ok
+t/07-symbols.t ....... ok
+t/08-read-options.t .. ok
+t/09-memleak.t ....... skipped: Not checking for cycles because Test::Memory::Cycle uninstalled
+All tests successful.
+Files=10, Tests=83,  1 wallclock secs ( 0.04 usr  0.01 sys +  0.63 cusr  0.17 csys =  0.85 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/pkgconfig m4datadir=/nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/aclocal aclocaldir=/nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/aclocal install
+Manifying 3 pod documents
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/site_perl/5.32.0/Data/SExpression.pm
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/site_perl/5.32.0/Data/SExpression/Parser.yp
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/site_perl/5.32.0/Data/SExpression/Parser.pm
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/site_perl/5.32.0/Data/SExpression/Cons.pm
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/site_perl/5.32.0/Data/SExpression/Symbol.pm
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/man/man3/Data::SExpression.3
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/man/man3/Data::SExpression::Cons.3
+Installing /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/man/man3/Data::SExpression::Symbol.3
+Appending installation info to /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/man/man3 to /nix/store/n3albaapz49wn9afrjz91dndvpzh8s55-perl5.32.0-Data-SExpression-0.41-devdoc/share/man/man3
+Removing empty /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41/lib
+patching script interpreter paths in /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41
+checking for references to /build/ in /nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41...
+shrinking RPATHs of ELF executables and libraries in /nix/store/n3albaapz49wn9afrjz91dndvpzh8s55-perl5.32.0-Data-SExpression-0.41-devdoc
+gzipping man pages under /nix/store/n3albaapz49wn9afrjz91dndvpzh8s55-perl5.32.0-Data-SExpression-0.41-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/n3albaapz49wn9afrjz91dndvpzh8s55-perl5.32.0-Data-SExpression-0.41-devdoc
+checking for references to /build/ in /nix/store/n3albaapz49wn9afrjz91dndvpzh8s55-perl5.32.0-Data-SExpression-0.41-devdoc...
+/nix/store/jy8hb6xagb8y2z3ghn6rb2xqjmjspm8c-perl5.32.0-Data-SExpression-0.41

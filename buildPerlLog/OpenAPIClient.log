@@ -1,0 +1,86 @@
+these derivations will be built:
+  /nix/store/7lggrdl48qxm7l2h0q7c57zsvygsm2fh-perl5.32.0-OpenAPI-Client-0.24.drv
+these paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/gisq4plhzwvwpfjvvw95ncgfqikp9naw-OpenAPI-Client-0.24.tar.gz
+copying path '/nix/store/gisq4plhzwvwpfjvvw95ncgfqikp9naw-OpenAPI-Client-0.24.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7lggrdl48qxm7l2h0q7c57zsvygsm2fh-perl5.32.0-OpenAPI-Client-0.24.drv'...
+unpacking sources
+unpacking source archive /nix/store/gisq4plhzwvwpfjvvw95ncgfqikp9naw-OpenAPI-Client-0.24.tar.gz
+source root is OpenAPI-Client-0.24
+setting SOURCE_DATE_EPOCH to timestamp 1557041772 of file OpenAPI-Client-0.24/META.yml
+patching sources
+configuring
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for OpenAPI::Client
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mojolicious/Command/openapi.pm blib/lib/Mojolicious/Command/openapi.pm
+cp lib/OpenAPI/Client.pm blib/lib/OpenAPI/Client.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-basic.t ................ ok
+t/body-validation.t ......... ok
+t/client.t .................. ok
+t/command-local-with-ref.t .. [2020-07-15 06:10:55.83354] [125] [debug] [qtkcPh0c] GET "/api"
+[2020-07-15 06:10:55.83386] [125] [debug] [qtkcPh0c] Routing to a callback
+[2020-07-15 06:10:55.83461] [125] [debug] [qtkcPh0c] 200 OK (0.001067s, 937.207/s)
+[2020-07-15 06:10:55.83728] [125] [debug] [MN2YUE8g] GET "/api"
+[2020-07-15 06:10:55.83739] [125] [debug] [MN2YUE8g] Routing to a callback
+[2020-07-15 06:10:55.83787] [125] [debug] [MN2YUE8g] 200 OK (0.000589s, 1697.793/s)
+t/command-local-with-ref.t .. 1/? [2020-07-15 06:10:55.91895] [125] [debug] [f6ffjpg5] GET "/ext"
+[2020-07-15 06:10:55.91925] [125] [debug] [f6ffjpg5] Routing to a callback
+[2020-07-15 06:10:55.92003] [125] [debug] [f6ffjpg5] 200 OK (0.00107s, 934.579/s)
+[2020-07-15 06:10:55.92303] [125] [debug] [yLFcqsyu] GET "/ext"
+[2020-07-15 06:10:55.92316] [125] [debug] [yLFcqsyu] Routing to a callback
+[2020-07-15 06:10:55.92361] [125] [debug] [yLFcqsyu] 200 OK (0.000567s, 1763.668/s)
+t/command-local-with-ref.t .. ok
+t/command-local.t ........... [2020-07-15 06:10:56.51796] [126] [debug] [uDrBDHOr] GET "/v1"
+[2020-07-15 06:10:56.51832] [126] [debug] [uDrBDHOr] Routing to a callback
+[2020-07-15 06:10:56.51953] [126] [debug] [uDrBDHOr] 200 OK (0.001561s, 640.615/s)
+[2020-07-15 06:10:56.52367] [126] [debug] [fg9ldsXO] GET "/v1"
+[2020-07-15 06:10:56.52379] [126] [debug] [fg9ldsXO] Routing to a callback
+[2020-07-15 06:10:56.52439] [126] [debug] [fg9ldsXO] 200 OK (0.000709s, 1410.437/s)
+t/command-local.t ........... 1/? [2020-07-15 06:10:56.61118] [126] [debug] [hx5M2J7H] POST "/v1/pets"
+[2020-07-15 06:10:56.61155] [126] [debug] [hx5M2J7H] Routing to a callback
+[2020-07-15 06:10:56.61222] [126] [debug] [hx5M2J7H] 200 OK (0.001036s, 965.251/s)
+[2020-07-15 06:10:56.61684] [126] [debug] [-xaEgluh] POST "/v1/pets"
+[2020-07-15 06:10:56.61699] [126] [debug] [-xaEgluh] Routing to a callback
+[2020-07-15 06:10:56.61757] [126] [debug] [-xaEgluh] 200 OK (0.000729s, 1371.742/s)
+t/command-local.t ........... ok
+t/command-remote.t .......... skipped: TEST_ONLINE=1
+t/command.t ................. ok
+t/default-base-url.t ........ ok
+t/json-request.t ............ Use of uninitialized value $type in string eq at /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/JSON/Validator/OpenAPI/Mojolicious.pm line 88.
+t/json-request.t ............ 1/? Use of uninitialized value $type in string eq at /nix/store/c60v98h5wncnwl8gvnlfk3c0lv64071y-perl5.32.0-Mojolicious-Plugin-OpenAPI-3.33/lib/perl5/site_perl/5.32.0/JSON/Validator/OpenAPI/Mojolicious.pm line 88.
+t/json-request.t ............ ok
+All tests successful.
+Files=9, Tests=69,  5 wallclock secs ( 0.04 usr  0.02 sys +  4.15 cusr  0.70 csys =  4.91 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/lib/pkgconfig m4datadir=/nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/aclocal aclocaldir=/nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/lib/perl5/site_perl/5.32.0/Mojolicious/Command/openapi.pm
+Installing /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/lib/perl5/site_perl/5.32.0/OpenAPI/Client.pm
+Installing /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/man/man3/Mojolicious::Command::openapi.3
+Installing /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/man/man3/OpenAPI::Client.3
+Appending installation info to /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/man/man3 to /nix/store/hwb4ks0k6cch3xyasla9p66d918jpfcx-perl5.32.0-OpenAPI-Client-0.24-devdoc/share/man/man3
+Removing empty /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24/lib
+patching script interpreter paths in /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24
+checking for references to /build/ in /nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24...
+shrinking RPATHs of ELF executables and libraries in /nix/store/hwb4ks0k6cch3xyasla9p66d918jpfcx-perl5.32.0-OpenAPI-Client-0.24-devdoc
+gzipping man pages under /nix/store/hwb4ks0k6cch3xyasla9p66d918jpfcx-perl5.32.0-OpenAPI-Client-0.24-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/hwb4ks0k6cch3xyasla9p66d918jpfcx-perl5.32.0-OpenAPI-Client-0.24-devdoc
+checking for references to /build/ in /nix/store/hwb4ks0k6cch3xyasla9p66d918jpfcx-perl5.32.0-OpenAPI-Client-0.24-devdoc...
+/nix/store/8jyc51qprldam3iwb6017rh2lsy2dsds-perl5.32.0-OpenAPI-Client-0.24

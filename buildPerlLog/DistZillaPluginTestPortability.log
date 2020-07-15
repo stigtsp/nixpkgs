@@ -1,0 +1,180 @@
+these derivations will be built:
+  /nix/store/c4s3bp74pzxmclp9b006pcd9gjrsz37c-perl5.32.0-Test-Portability-Files-0.10.drv
+  /nix/store/pclk0daicgh6drppdndvz5nrsacvy3vd-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000.drv
+building '/nix/store/c4s3bp74pzxmclp9b006pcd9gjrsz37c-perl5.32.0-Test-Portability-Files-0.10.drv'...
+unpacking sources
+unpacking source archive /nix/store/32xq0rhsd9dc5v8hbzhz4ma3kqr41wly-Test-Portability-Files-0.10.tar.gz
+source root is Test-Portability-Files-0.10
+setting SOURCE_DATE_EPOCH to timestamp 1546785790 of file Test-Portability-Files-0.10/weaver.ini
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/release-unused-vars.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/author-pod-coverage.t...
+patching ./t/author-pod-linkcheck.t...
+patching ./t/author-minimum-version.t...
+patching ./t/release-meta-json.t...
+patching ./t/author-mojibake.t...
+patching ./t/release-distmeta.t...
+patching ./t/author-synopsis.t...
+patching ./t/release-dist-manifest.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Test::Portability::Files
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Test/Portability/Files.pm blib/lib/Test/Portability/Files.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .............. ok
+t/01basic.t ................. ok
+t/02filenames.t ............. ok
+t/author-critic.t ........... skipped: these tests are for testing by the author
+t/author-eol.t .............. skipped: these tests are for testing by the author
+t/author-minimum-version.t .. skipped: these tests are for testing by the author
+t/author-mojibake.t ......... skipped: these tests are for testing by the author
+t/author-no-tabs.t .......... skipped: these tests are for testing by the author
+t/author-pod-coverage.t ..... skipped: these tests are for testing by the author
+t/author-pod-linkcheck.t .... skipped: these tests are for testing by the author
+t/author-pod-syntax.t ....... skipped: these tests are for testing by the author
+t/author-portability.t ...... skipped: these tests are for testing by the author
+t/author-synopsis.t ......... skipped: these tests are for testing by the author
+t/author-test-version.t ..... skipped: these tests are for testing by the author
+t/portfs.t .................. ok
+t/release-cpan-changes.t .... skipped: these tests are for release candidate testing
+t/release-dist-manifest.t ... skipped: these tests are for release candidate testing
+t/release-distmeta.t ........ skipped: these tests are for release candidate testing
+t/release-kwalitee.t ........ skipped: these tests are for release candidate testing
+t/release-meta-json.t ....... skipped: these tests are for release candidate testing
+t/release-unused-vars.t ..... skipped: these tests are for release candidate testing
+All tests successful.
+Files=21, Tests=23,  1 wallclock secs ( 0.05 usr  0.01 sys +  0.32 cusr  0.06 csys =  0.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/lib/pkgconfig m4datadir=/nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/share/aclocal aclocaldir=/nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/lib/perl5/site_perl/5.32.0/Test/Portability/Files.pm
+Installing /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/share/man/man3/Test::Portability::Files.3
+Appending installation info to /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/share/man/man3 to /nix/store/3pzzlh204ksklaa68vvjg6j3w7bb60c9-perl5.32.0-Test-Portability-Files-0.10-devdoc/share/man/man3
+Removing empty /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10/lib
+patching script interpreter paths in /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10
+checking for references to /build/ in /nix/store/fgn936jnc91h5vxi8k1gvyjd0x4cal5g-perl5.32.0-Test-Portability-Files-0.10...
+shrinking RPATHs of ELF executables and libraries in /nix/store/3pzzlh204ksklaa68vvjg6j3w7bb60c9-perl5.32.0-Test-Portability-Files-0.10-devdoc
+gzipping man pages under /nix/store/3pzzlh204ksklaa68vvjg6j3w7bb60c9-perl5.32.0-Test-Portability-Files-0.10-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/3pzzlh204ksklaa68vvjg6j3w7bb60c9-perl5.32.0-Test-Portability-Files-0.10-devdoc
+checking for references to /build/ in /nix/store/3pzzlh204ksklaa68vvjg6j3w7bb60c9-perl5.32.0-Test-Portability-Files-0.10-devdoc...
+building '/nix/store/pclk0daicgh6drppdndvz5nrsacvy3vd-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000.drv'...
+unpacking sources
+unpacking source archive /nix/store/kxrwxdwpb6r0c08j2h8kl5p0rhqps8i7-Dist-Zilla-Plugin-Test-Portability-2.001000.tar.gz
+source root is Dist-Zilla-Plugin-Test-Portability-2.001000
+setting SOURCE_DATE_EPOCH to timestamp 1471231450 of file Dist-Zilla-Plugin-Test-Portability-2.001000/xt/release/minimum-version.t
+patching sources
+configuring
+patching ./xt/release/changes_has_content.t...
+patching ./xt/release/minimum-version.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/mojibake.t...
+patching ./xt/author/pod-syntax.t...
+patching ./xt/author/pod-no404s.t...
+patching ./t/00-report-prereqs.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Dist::Zilla::Plugin::Test::Portability
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Creating new 'Build' script for 'Dist-Zilla-Plugin-Test-Portability' version '2.001000'
+cp lib/Dist/Zilla/Plugin/Test/Portability.pm blib/lib/Dist/Zilla/Plugin/Test/Portability.pm
+cp lib/Dist/Zilla/Plugin/PortabilityTests.pm blib/lib/Dist/Zilla/Plugin/PortabilityTests.pm
+running tests
+t/00-report-prereqs.t .... #
+# Versions for all modules listed in MYMETA.json (including optional ones):
+#
+# === Configure Requires ===
+#
+#     Module               Want  Have
+#     ------------------- ----- -----
+#     Module::Build::Tiny 0.034 0.039
+#
+# === Test Requires ===
+#
+#     Module            Want     Have
+#     ---------------- ----- --------
+#     File::Spec         any     3.78
+#     File::pushd        any    1.016
+#     Module::Metadata   any 1.000037
+#     Path::Tiny         any    0.114
+#     Test::DZil         any    6.015
+#     Test::Deep         any    1.130
+#     Test::More        0.88 1.302175
+#     Test::Warnings   0.009    0.030
+#
+# === Test Recommends ===
+#
+#     Module         Want     Have
+#     ---------- -------- --------
+#     CPAN::Meta 2.120900 2.150010
+#
+# === Runtime Requires ===
+#
+#     Module                          Want     Have
+#     ------------------------------- ---- --------
+#     Data::Section                    any 0.200007
+#     Dist::Zilla::File::InMemory      any    6.015
+#     Dist::Zilla::Role::FileGatherer  any    6.015
+#     Dist::Zilla::Role::FileInjector  any    6.015
+#     Dist::Zilla::Role::PrereqSource  any    6.015
+#     Dist::Zilla::Role::TextTemplate  any    6.015
+#     Moose                            any   2.2012
+#     Test::Portability::Files         any     0.10
+#     strict                           any     1.11
+#     warnings                         any     1.47
+#
+# === Other Modules ===
+#
+#     Module           Have
+#     ------------- -------
+#     JSON::PP         4.04
+#     Pod::Coverage missing
+#     YAML          missing
+#     autodie          2.32
+#
+t/00-report-prereqs.t .... ok
+t/01-basic.t ............. ok
+t/02-portabilitytests.t .. ok
+t/options.t .............. ok
+All tests successful.
+Files=4, Tests=16,  7 wallclock secs ( 0.10 usr  0.12 sys +  3.88 cusr  2.60 csys =  6.70 CPU)
+Result: PASS
+installing
+Installing /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/PortabilityTests.pm
+Installing /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/lib/perl5/site_perl/5.32.0/Dist/Zilla/Plugin/Test/Portability.pm
+Installing /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/share/man/man3/Dist::Zilla::Plugin::PortabilityTests.3
+Installing /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/share/man/man3/Dist::Zilla::Plugin::Test::Portability.3
+post-installation fixup
+Moving /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/share/man/man3 to /nix/store/4162gjmy368q69h4z5lfkq116pl7x5yh-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000-devdoc/share/man/man3
+Removing empty /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000/lib
+patching script interpreter paths in /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000
+checking for references to /build/ in /nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000...
+shrinking RPATHs of ELF executables and libraries in /nix/store/4162gjmy368q69h4z5lfkq116pl7x5yh-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000-devdoc
+gzipping man pages under /nix/store/4162gjmy368q69h4z5lfkq116pl7x5yh-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/4162gjmy368q69h4z5lfkq116pl7x5yh-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000-devdoc
+checking for references to /build/ in /nix/store/4162gjmy368q69h4z5lfkq116pl7x5yh-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000-devdoc...
+/nix/store/h5cbp50x31kfk6264crw22z6ys1vjx4i-perl5.32.0-Dist-Zilla-Plugin-Test-Portability-2.001000

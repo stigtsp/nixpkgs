@@ -1,0 +1,175 @@
+these derivations will be built:
+  /nix/store/xbfdjcawf7wvdz1k49h99g03lb1il6vf-perl5.32.0-CSS-DOM-0.17.drv
+these paths will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/02qxhzjgwzng6zpm8r19d1k0771r4dyx-CSS-DOM-0.17.tar.gz
+copying path '/nix/store/02qxhzjgwzng6zpm8r19d1k0771r4dyx-CSS-DOM-0.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xbfdjcawf7wvdz1k49h99g03lb1il6vf-perl5.32.0-CSS-DOM-0.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/02qxhzjgwzng6zpm8r19d1k0771r4dyx-CSS-DOM-0.17.tar.gz
+source root is CSS-DOM-0.17
+setting SOURCE_DATE_EPOCH to timestamp 1517245745 of file CSS-DOM-0.17/META.yml
+patching sources
+configuring
+patching ./t/CSSFontFaceRule.t...
+patching ./t/CSSStyleDeclaration.t...
+patching ./t/css-dom.t...
+patching ./t/StyleSheet.t...
+patching ./t/CSSValue-prim-cssText.t...
+patching ./t/CSSRuleList.t...
+patching ./t/CSS2Properties.t...
+patching ./t/MediaList.t...
+patching ./t/parser-tokens.t...
+patching ./t/CSSMediaRule.t...
+patching ./t/css-dom-util.t...
+patching ./t/Rect.t...
+patching ./t/CSSValueList.t...
+patching ./t/CSSCharsetRule.t...
+patching ./t/CSSStyleDeclaration-setProperty.t...
+patching ./t/CSSStyleSheet-insertRule.t...
+patching ./t/hasFeature.t...
+patching ./t/StyleSheetList.t...
+patching ./t/css-dom-interface.t...
+patching ./t/CSSValue.t...
+patching ./t/CSSImportRule.t...
+patching ./t/CSSStyleSheet.t...
+patching ./t/CSSPageRule.t...
+patching ./t/CSSStyleRule.t...
+patching ./t/parser-rules.t...
+patching ./t/CSSRule.t...
+patching ./t/charset.t...
+patching ./t/property-parser.t...
+patching ./t/RGBColor.t...
+patching ./t/css-dom-style.t...
+patching ./t/CSSPrimitiveValue.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CSS::DOM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/CSS/DOM/Parser.pm blib/lib/CSS/DOM/Parser.pm
+cp lib/CSS/DOM/Style.pm blib/lib/CSS/DOM/Style.pm
+cp lib/CSS/DOM/Constants.pm blib/lib/CSS/DOM/Constants.pm
+cp lib/CSS/DOM/Rule.pm blib/lib/CSS/DOM/Rule.pm
+cp lib/CSS/DOM/MediaList.pm blib/lib/CSS/DOM/MediaList.pm
+cp lib/CSS/DOM/Value.pm blib/lib/CSS/DOM/Value.pm
+cp lib/CSS/DOM/Rule/Media.pm blib/lib/CSS/DOM/Rule/Media.pm
+cp lib/CSS/DOM/Exception.pm blib/lib/CSS/DOM/Exception.pm
+cp lib/CSS/DOM/Array.pm blib/lib/CSS/DOM/Array.pm
+cp lib/CSS/DOM/Rule/FontFace.pm blib/lib/CSS/DOM/Rule/FontFace.pm
+cp lib/CSS/DOM/Rule/Style.pm blib/lib/CSS/DOM/Rule/Style.pm
+cp lib/CSS/DOM/PropertyParser.pm blib/lib/CSS/DOM/PropertyParser.pm
+cp lib/CSS/DOM/Interface.pm blib/lib/CSS/DOM/Interface.pm
+cp lib/CSS/DOM/Rule/Charset.pm blib/lib/CSS/DOM/Rule/Charset.pm
+cp lib/CSS/DOM/Util.pm blib/lib/CSS/DOM/Util.pm
+cp lib/CSS/DOM/Rule/Import.pm blib/lib/CSS/DOM/Rule/Import.pm
+cp lib/CSS/DOM.pm blib/lib/CSS/DOM.pm
+cp lib/CSS/DOM/RuleList.pm blib/lib/CSS/DOM/RuleList.pm
+cp lib/CSS/DOM/Value/Primitive.pm blib/lib/CSS/DOM/Value/Primitive.pm
+cp lib/CSS/DOM/StyleSheetList.pm blib/lib/CSS/DOM/StyleSheetList.pm
+cp lib/CSS/DOM/Value/List.pm blib/lib/CSS/DOM/Value/List.pm
+cp lib/CSS/DOM/Rule/Page.pm blib/lib/CSS/DOM/Rule/Page.pm
+cp lib/CSS/DOM/Value/Primitive/colours.pl blib/lib/CSS/DOM/Value/Primitive/colours.pl
+Manifying 22 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/charset.t .......................... ok
+t/css-dom-interface.t ................ ok
+t/css-dom-style.t .................... ok
+t/css-dom-util.t ..................... ok
+t/css-dom.t .......................... ok
+t/CSS2Properties.t ................... ok
+t/CSSCharsetRule.t ................... ok
+t/CSSFontFaceRule.t .................. ok
+t/CSSImportRule.t .................... ok
+t/CSSMediaRule.t ..................... ok
+t/CSSPageRule.t ...................... ok
+t/CSSPrimitiveValue.t ................ ok
+t/CSSRule.t .......................... ok
+t/CSSRuleList.t ...................... ok
+t/CSSStyleDeclaration-setProperty.t .. ok
+t/CSSStyleDeclaration.t .............. ok
+t/CSSStyleRule.t ..................... ok
+t/CSSStyleSheet-insertRule.t ......... ok
+t/CSSStyleSheet.t .................... ok
+t/CSSValue-prim-cssText.t ............ ok
+t/CSSValue.t ......................... ok
+t/CSSValueList.t ..................... ok
+t/hasFeature.t ....................... ok
+t/MediaList.t ........................ ok
+t/parser-rules.t ..................... ok
+t/parser-tokens.t .................... ok
+t/property-parser.t .................. ok
+t/Rect.t ............................. ok
+t/RGBColor.t ......................... ok
+t/StyleSheet.t ....................... ok
+t/StyleSheetList.t ................... ok
+All tests successful.
+Files=31, Tests=3203,  4 wallclock secs ( 0.31 usr  0.05 sys +  2.95 cusr  0.50 csys =  3.81 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/pkgconfig m4datadir=/nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/aclocal aclocaldir=/nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/aclocal install
+Manifying 22 pod documents
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/PropertyParser.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Exception.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Parser.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Util.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/MediaList.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Interface.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Value.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/StyleSheetList.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Array.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Style.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/RuleList.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Constants.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Value/List.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Value/Primitive.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Value/Primitive/colours.pl
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/Media.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/Import.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/Charset.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/FontFace.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/Page.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/site_perl/5.32.0/CSS/DOM/Rule/Style.pm
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::PropertyParser.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Style.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Value.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::Style.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::MediaList.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Value::List.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Array.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::StyleSheetList.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Parser.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Interface.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::Page.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Value::Primitive.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::FontFace.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::Charset.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::RuleList.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::Media.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule::Import.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Constants.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Exception.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Rule.3
+Installing /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3/CSS::DOM::Util.3
+Appending installation info to /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/man3 to /nix/store/mb5gbgpvx324m82h3p0fsnixmipjjwqq-perl5.32.0-CSS-DOM-0.17-devdoc/share/man/man3
+Removing empty /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17/lib
+patching script interpreter paths in /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17
+checking for references to /build/ in /nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mb5gbgpvx324m82h3p0fsnixmipjjwqq-perl5.32.0-CSS-DOM-0.17-devdoc
+gzipping man pages under /nix/store/mb5gbgpvx324m82h3p0fsnixmipjjwqq-perl5.32.0-CSS-DOM-0.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mb5gbgpvx324m82h3p0fsnixmipjjwqq-perl5.32.0-CSS-DOM-0.17-devdoc
+checking for references to /build/ in /nix/store/mb5gbgpvx324m82h3p0fsnixmipjjwqq-perl5.32.0-CSS-DOM-0.17-devdoc...
+/nix/store/y2rfw8rlnb67kqzjd4wcyckc9hw590zq-perl5.32.0-CSS-DOM-0.17

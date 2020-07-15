@@ -1,0 +1,329 @@
+these derivations will be built:
+  /nix/store/21qa4b1hscn2bh85m0yk781fw1db0ib5-perl5.32.0-Text-PDF-0.31.drv
+  /nix/store/jyqwd6nd1r52vl6sdvnr90igw0na6hb1-perl5.32.0-Crypt-RC4-2.02.drv
+  /nix/store/z9b3k7dpllkhzgafzsrwsr6xwnwardf5-perl5.32.0-CAM-PDF-1.60.drv
+these paths will be fetched (0.74 MiB download, 0.79 MiB unpacked):
+  /nix/store/7n8ls3v03xvky061pd2k80bkwsv0zgzb-Crypt-RC4-2.02.tar.gz
+  /nix/store/8lvrjgbl5m8y97cxgkpym2sg52fn8h00-Text-PDF-0.31.tar.gz
+  /nix/store/y8vjmj5nz2d923zwvk9pid9q3afi8qz9-CAM-PDF-1.60.tar.gz
+copying path '/nix/store/y8vjmj5nz2d923zwvk9pid9q3afi8qz9-CAM-PDF-1.60.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/7n8ls3v03xvky061pd2k80bkwsv0zgzb-Crypt-RC4-2.02.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/8lvrjgbl5m8y97cxgkpym2sg52fn8h00-Text-PDF-0.31.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/21qa4b1hscn2bh85m0yk781fw1db0ib5-perl5.32.0-Text-PDF-0.31.drv'...
+building '/nix/store/jyqwd6nd1r52vl6sdvnr90igw0na6hb1-perl5.32.0-Crypt-RC4-2.02.drv'...
+unpacking sources
+unpacking source archive /nix/store/8lvrjgbl5m8y97cxgkpym2sg52fn8h00-Text-PDF-0.31.tar.gz
+source root is Text-PDF-0.31
+setting SOURCE_DATE_EPOCH to timestamp 1472082522 of file Text-PDF-0.31/MANIFEST
+patching sources
+configuring
+patching ./scripts/pdfbklt...
+patching ./scripts/pdfrevert...
+patching ./scripts/pdfstamp...
+unpacking sources
+unpacking source archive /nix/store/7n8ls3v03xvky061pd2k80bkwsv0zgzb-Crypt-RC4-2.02.tar.gz
+source root is Crypt-RC4-2.02
+setting SOURCE_DATE_EPOCH to timestamp 1008279706 of file Crypt-RC4-2.02/RC4.pm
+patching sources
+configuring
+patching ./t/hello.t...
+Checking if your kit is complete...
+Looks good
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Crypt::RC4
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for Text::PDF
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp RC4.pm blib/lib/Crypt/RC4.pm
+cp lib/Text/PDF/Utils.pm blib/lib/Text/PDF/Utils.pm
+cp lib/Text/PDF/TTFont.pm blib/lib/Text/PDF/TTFont.pm
+cp lib/Text/PDF/TTFont0.pm blib/lib/Text/PDF/TTFont0.pm
+cp lib/Text/PDF/Number.pm blib/lib/Text/PDF/Number.pm
+cp lib/Text/PDF.pm blib/lib/Text/PDF.pm
+cp lib/Text/PDF/String.pm blib/lib/Text/PDF/String.pm
+cp lib/Text/PDF/Pages.pm blib/lib/Text/PDF/Pages.pm
+cp lib/Text/PDF/Page.pm blib/lib/Text/PDF/Page.pm
+cp lib/Text/PDF/Array.pm blib/lib/Text/PDF/Array.pm
+cp lib/Text/PDF/Bool.pm blib/lib/Text/PDF/Bool.pm
+cp lib/Text/PDF/Name.pm blib/lib/Text/PDF/Name.pm
+cp lib/Text/PDF/Dict.pm blib/lib/Text/PDF/Dict.pm
+cp lib/Text/PDF/Objind.pm blib/lib/Text/PDF/Objind.pm
+cp lib/Text/PDF/SFont.pm blib/lib/Text/PDF/SFont.pm
+cp lib/Text/PDF/Filter.pm blib/lib/Text/PDF/Filter.pm
+cp lib/Text/PDF/Null.pm blib/lib/Text/PDF/Null.pm
+cp lib/Text/PDF/File.pm blib/lib/Text/PDF/File.pm
+Manifying 1 pod document
+cp scripts/pdfbklt blib/script/pdfbklt
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pdfbklt
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-Iblib/lib" "-Iblib/arch" test.pl
+1..9
+ok 1
+ok 2
+ok 3
+ok 4
+ok 5
+ok 6
+ok 7
+ok 8
+ok 9
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/lib/pkgconfig m4datadir=/nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/share/aclocal aclocaldir=/nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/share/aclocal install
+cp scripts/pdfrevert blib/script/pdfrevert
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pdfrevert
+Manifying 1 pod document
+Installing /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/lib/perl5/site_perl/5.32.0/Crypt/RC4.pm
+Installing /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/share/man/man3/Crypt::RC4.3
+Appending installation info to /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/share/man/man3 to /nix/store/1yd0nx6z7yb7nysxwz45vah9mdlx7n3p-perl5.32.0-Crypt-RC4-2.02-devdoc/share/man/man3
+cp scripts/pdfstamp blib/script/pdfstamp
+Removing empty /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/share/man/ and (possibly) its parents
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/pdfstamp
+shrinking RPATHs of ELF executables and libraries in /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02/lib
+patching script interpreter paths in /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02
+checking for references to /build/ in /nix/store/yrsbv6w3ajiqiy1q9h1prlpg6padggik-perl5.32.0-Crypt-RC4-2.02...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1yd0nx6z7yb7nysxwz45vah9mdlx7n3p-perl5.32.0-Crypt-RC4-2.02-devdoc
+gzipping man pages under /nix/store/1yd0nx6z7yb7nysxwz45vah9mdlx7n3p-perl5.32.0-Crypt-RC4-2.02-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1yd0nx6z7yb7nysxwz45vah9mdlx7n3p-perl5.32.0-Crypt-RC4-2.02-devdoc
+checking for references to /build/ in /nix/store/1yd0nx6z7yb7nysxwz45vah9mdlx7n3p-perl5.32.0-Crypt-RC4-2.02-devdoc...
+Manifying 17 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/hello.t .. ok
+All tests successful.
+Files=1, Tests=7,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.08 cusr  0.01 csys =  0.11 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/pkgconfig m4datadir=/nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/aclocal aclocaldir=/nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/aclocal install
+Manifying 17 pod documents
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Name.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Objind.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/TTFont0.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/TTFont.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/File.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Null.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Bool.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Filter.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Pages.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Dict.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/SFont.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/String.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Array.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Number.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Page.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/site_perl/5.32.0/Text/PDF/Utils.pm
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Utils.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::String.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::TTFont0.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::File.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Objind.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Filter.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Pages.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Name.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Page.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Bool.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Dict.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Number.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Array.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::Null.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::TTFont.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3/Text::PDF::SFont.3
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/bin/pdfbklt
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/bin/pdfrevert
+Installing /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/bin/pdfstamp
+Appending installation info to /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/man3 to /nix/store/0xgx0yrhh6l0lvgygp6m0v6wjqyz93j5-perl5.32.0-Text-PDF-0.31-devdoc/share/man/man3
+Removing empty /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/lib  /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31/bin
+patching script interpreter paths in /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31
+checking for references to /build/ in /nix/store/f8gx761v7lqzql4ys12lylnnp98m25zj-perl5.32.0-Text-PDF-0.31...
+shrinking RPATHs of ELF executables and libraries in /nix/store/0xgx0yrhh6l0lvgygp6m0v6wjqyz93j5-perl5.32.0-Text-PDF-0.31-devdoc
+gzipping man pages under /nix/store/0xgx0yrhh6l0lvgygp6m0v6wjqyz93j5-perl5.32.0-Text-PDF-0.31-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/0xgx0yrhh6l0lvgygp6m0v6wjqyz93j5-perl5.32.0-Text-PDF-0.31-devdoc
+checking for references to /build/ in /nix/store/0xgx0yrhh6l0lvgygp6m0v6wjqyz93j5-perl5.32.0-Text-PDF-0.31-devdoc...
+building '/nix/store/z9b3k7dpllkhzgafzsrwsr6xwnwardf5-perl5.32.0-CAM-PDF-1.60.drv'...
+unpacking sources
+unpacking source archive /nix/store/y8vjmj5nz2d923zwvk9pid9q3afi8qz9-CAM-PDF-1.60.tar.gz
+source root is CAM-PDF-1.60
+setting SOURCE_DATE_EPOCH to timestamp 1376532506 of file CAM-PDF-1.60/t/sample1.pdf
+patching sources
+configuring
+patching ./t/pod-coverage.t...
+patching ./t/pod.t...
+patching ./t/bugreports.t...
+patching ./t/basic.t...
+patching ./t/pdf.t...
+patching ./bin/extractallimages.pl...
+patching ./bin/asciify...
+patching ./bin/changerefkeys.pl...
+patching ./bin/setpdfbackground.pl...
+patching ./bin/deillustrate.pl...
+patching ./bin/stamppdf.pl...
+patching ./bin/getpdfpageobject.pl...
+patching ./bin/uninlinepdfimages.pl...
+patching ./bin/getpdfpage.pl...
+patching ./bin/appendpdf.pl...
+patching ./bin/setpdfpage.pl...
+patching ./bin/listfonts.pl...
+patching ./bin/getpdftext.pl...
+patching ./bin/rewritepdf.pl...
+patching ./bin/listimages.pl...
+patching ./bin/crunchjpgs.pl...
+patching ./bin/changepdfstring.pl...
+patching ./bin/deletepdfpage.pl...
+patching ./bin/revertpdf.pl...
+patching ./bin/readpdf.pl...
+patching ./bin/listpdffields.pl...
+patching ./bin/changepagestring.pl...
+patching ./bin/fillpdffields.pl...
+patching ./bin/replacepdfobj.pl...
+patching ./bin/extractjpgs.pl...
+patching ./bin/renderpdf.pl...
+patching ./bin/getpdffontobject.pl...
+patching ./bin/pdfinfo.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for CAM::PDF
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Test::Memory::Cycle is not installed
+    *  Test::Pod is not installed
+    *  Test::Pod::Coverage is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'CAM-PDF' version '1.60'
+Building CAM-PDF
+running tests
+t/basic.t ......... ok
+t/bugreports.t .... ok
+t/pdf.t ........... ok
+t/pod-coverage.t .. skipped: Author test
+t/pod.t ........... skipped: Author test
+All tests successful.
+Files=5, Tests=215,  2 wallclock secs ( 0.04 usr  0.01 sys +  1.97 cusr  0.13 csys =  2.15 CPU)
+Result: PASS
+installing
+Building CAM-PDF
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/listimages.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/deletepdfpage.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/fillpdffields.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/extractjpgs.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/getpdftext.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/pdfinfo.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/deillustrate.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/stamppdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/listfonts.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/getpdfpageobject.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/readpdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/changepdfstring.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/getpdfpage.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/revertpdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/setpdfpage.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/rewritepdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/getpdffontobject.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/uninlinepdfimages.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/setpdfbackground.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/extractallimages.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/renderpdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/changepagestring.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/listpdffields.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/crunchjpgs.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/changerefkeys.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/replacepdfobj.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man1/appendpdf.pl.1
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/PageText.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Content.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Decrypt.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/GS.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Node.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/GS/NoText.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Renderer/Images.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Renderer/Dump.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Renderer/Text.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib/perl5/site_perl/5.32.0/CAM/PDF/Renderer/TextFB.pm
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Content.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::PageText.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::GS::NoText.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Renderer::Dump.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Decrypt.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Renderer::TextFB.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Renderer::Text.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::GS.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Node.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3/CAM::PDF::Renderer::Images.3
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/extractallimages.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/asciify
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/changerefkeys.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/setpdfbackground.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/deillustrate.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/stamppdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/getpdfpageobject.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/uninlinepdfimages.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/getpdfpage.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/appendpdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/setpdfpage.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/listfonts.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/getpdftext.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/rewritepdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/listimages.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/crunchjpgs.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/changepdfstring.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/deletepdfpage.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/revertpdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/readpdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/listpdffields.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/changepagestring.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/fillpdffields.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/replacepdfobj.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/extractjpgs.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/renderpdf.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/getpdffontobject.pl
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/crunchjpg_tmpl.pdf
+Installing /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin/pdfinfo.pl
+post-installation fixup
+Moving /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/man3 to /nix/store/sbrrxik7iddvvfyhfvghk9sd15g17vr3-perl5.32.0-CAM-PDF-1.60-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60
+gzipping man pages under /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/lib  /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60/bin
+patching script interpreter paths in /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60
+checking for references to /build/ in /nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sbrrxik7iddvvfyhfvghk9sd15g17vr3-perl5.32.0-CAM-PDF-1.60-devdoc
+gzipping man pages under /nix/store/sbrrxik7iddvvfyhfvghk9sd15g17vr3-perl5.32.0-CAM-PDF-1.60-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sbrrxik7iddvvfyhfvghk9sd15g17vr3-perl5.32.0-CAM-PDF-1.60-devdoc
+checking for references to /build/ in /nix/store/sbrrxik7iddvvfyhfvghk9sd15g17vr3-perl5.32.0-CAM-PDF-1.60-devdoc...
+/nix/store/6sdjdzmaa503li4mzxqpsadmlw46xqi5-perl5.32.0-CAM-PDF-1.60

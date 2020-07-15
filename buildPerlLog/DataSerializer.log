@@ -1,0 +1,164 @@
+these derivations will be built:
+  /nix/store/pvy14inh1asdnvjdgx759jl1lap9d9pq-perl5.32.0-Data-Serializer-0.65.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/hfqj0hs448p6cnl8zxg2kx9x5ix6zs8l-Data-Serializer-0.65.tar.gz
+copying path '/nix/store/hfqj0hs448p6cnl8zxg2kx9x5ix6zs8l-Data-Serializer-0.65.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pvy14inh1asdnvjdgx759jl1lap9d9pq-perl5.32.0-Data-Serializer-0.65.drv'...
+unpacking sources
+unpacking source archive /nix/store/hfqj0hs448p6cnl8zxg2kx9x5ix6zs8l-Data-Serializer-0.65.tar.gz
+source root is Data-Serializer-0.65
+setting SOURCE_DATE_EPOCH to timestamp 1580575959 of file Data-Serializer-0.65/t/serializer-testlib
+patching sources
+configuring
+# running Build.PL --prefix /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Checking prerequisites...
+  recommends:
+    *  Bencode is not installed
+    *  Compress::PPMd is not installed
+    *  Config::General is not installed
+    *  Convert::Bencode is not installed
+    *  Convert::Bencode_XS is not installed
+    *  Crypt::Blowfish is not installed
+    *  Crypt::CBC is not installed
+    *  Data::Denter is not installed
+    *  Data::Taxi is not installed
+    *  FreezeThaw is not installed
+    *  JSON is not installed
+    *  JSON::Syck is not installed
+    *  JSON::XS is not installed
+    *  PHP::Serialization is not installed
+    *  XML::Dumper is not installed
+    *  XML::Simple is not installed
+    *  YAML is not installed
+    *  YAML::Syck is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Data-Serializer' version '0.65'
+no configure script, doing nothing
+building
+Checking prerequisites...
+  recommends:
+    *  Bencode is not installed
+    *  Compress::PPMd is not installed
+    *  Config::General is not installed
+    *  Convert::Bencode is not installed
+    *  Convert::Bencode_XS is not installed
+    *  Crypt::Blowfish is not installed
+    *  Crypt::CBC is not installed
+    *  Data::Denter is not installed
+    *  Data::Taxi is not installed
+    *  FreezeThaw is not installed
+    *  JSON is not installed
+    *  JSON::Syck is not installed
+    *  JSON::XS is not installed
+    *  PHP::Serialization is not installed
+    *  XML::Dumper is not installed
+    *  XML::Simple is not installed
+    *  YAML is not installed
+    *  YAML::Syck is not installed
+
+ERRORS/WARNINGS FOUND IN PREREQUISITES.  You may wish to install the versions
+of the modules indicated above before proceeding with this installation
+
+Run 'Build installdeps' to install missing prerequisites.
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Data-Serializer' version '0.65'
+Building Data-Serializer
+running tests
+t/00-01-Signature.t ........... skipped: (no reason given)
+t/00-02-Kwalitee.t ............ skipped: Test::Kwalitee not installed; skipping
+t/01-01-Data-Dumper.t ......... ok
+t/01-02-Data-Denter.t ......... skipped: Data::Denter not installed
+t/01-03-Storable.t ............ ok
+t/01-04-FreezeThaw.t .......... skipped: FreezeThaw not installed
+t/01-05-Config-General.t ...... skipped: Config::General not installed
+t/01-06-YAML.t ................ skipped: YAML not installed
+t/01-07-XML-Dumper.t .......... skipped: XML::Dumper not installed
+t/01-08-PHP-Serialization.t ... skipped: PHP::Serialization not installed
+t/01-09-XML-Simple.t .......... skipped: XML::Simple not installed
+t/01-10-Data-Taxi.t ........... skipped: Data::Taxi not installed
+t/01-11-YAML-Syck.t ........... skipped: YAML::Syck not installed
+t/01-12-JSON.t ................ skipped: JSON not installed
+t/01-13-JSON-Syck.t ........... skipped: JSON::Syck not installed
+t/01-14-Bencode.t ............. skipped: Bencode not installed
+t/01-15-Convert-Bencode.t ..... skipped: Convert::Bencode not installed
+t/01-16-Convert-Bencode_XS.t .. skipped: Convert::Bencode_XS not installed
+t/02-01-Orig-Raw.t ............ ok
+t/02-02-Fast-Raw.t ............ ok
+t/03-Non-Portable.t ........... ok
+t/04-01-Compress-Zlib.t ....... ok
+t/04-02-Compress-PPMd.t ....... skipped: compressppmd not installed
+t/05-Encryption.t ............. skipped: encryption not installed
+t/06-B64-Encoding.t ........... ok
+t/07-01-MD5-Digest.t .......... skipped: md5 not installed
+t/07-02-SHA1-Digest.t ......... skipped: sha1 not installed
+t/07-03-SHA-256-Digest.t ...... skipped: sha-256 not installed
+t/08-Store-Retrieve.t ......... ok
+t/09-Feature-Combos.t ......... ok
+t/10-01-Pod.t ................. skipped: Test::Pod 1.00 required for testing POD
+t/10-02-Pod-Coverage.t ........ skipped: Test::Pod::Coverage 1.00 required for testing POD coverage
+All tests successful.
+Files=32, Tests=390,  1 wallclock secs ( 0.07 usr  0.04 sys +  0.90 cusr  0.14 csys =  1.15 CPU)
+Result: PASS
+installing
+Building Data-Serializer
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Cookbook.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/FreezeThaw.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Storable.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Persistent.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Bencode.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/JSON.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Raw.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/YAML.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Convert/Bencode.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Convert/Bencode_XS.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/XML/Dumper.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/XML/Simple.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Data/Taxi.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Data/Dumper.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Data/Denter.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/JSON/Syck.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/YAML/Syck.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/PHP/Serialization.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib/perl5/site_perl/5.32.0/Data/Serializer/Config/General.pm
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Persistent.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Data::Denter.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Bencode.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Data::Dumper.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::XML::Dumper.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::JSON.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Convert::Bencode.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::JSON::Syck.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::YAML::Syck.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Convert::Bencode_XS.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Data::Taxi.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Config::General.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Cookbook.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Raw.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::Storable.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::YAML.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::FreezeThaw.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::XML::Simple.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer::PHP::Serialization.3
+Installing /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3/Data::Serializer.3
+post-installation fixup
+Moving /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/man3 to /nix/store/g57fp6m2fa6ls037awgs4bfsf38p4b53-perl5.32.0-Data-Serializer-0.65-devdoc/share/man/man3
+Removing empty /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65/lib
+patching script interpreter paths in /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65
+checking for references to /build/ in /nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65...
+shrinking RPATHs of ELF executables and libraries in /nix/store/g57fp6m2fa6ls037awgs4bfsf38p4b53-perl5.32.0-Data-Serializer-0.65-devdoc
+gzipping man pages under /nix/store/g57fp6m2fa6ls037awgs4bfsf38p4b53-perl5.32.0-Data-Serializer-0.65-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/g57fp6m2fa6ls037awgs4bfsf38p4b53-perl5.32.0-Data-Serializer-0.65-devdoc
+checking for references to /build/ in /nix/store/g57fp6m2fa6ls037awgs4bfsf38p4b53-perl5.32.0-Data-Serializer-0.65-devdoc...
+/nix/store/l5mh9qrkcrfpsi70qcc21crzs6br5xz7-perl5.32.0-Data-Serializer-0.65

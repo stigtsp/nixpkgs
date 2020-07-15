@@ -1,0 +1,74 @@
+these derivations will be built:
+  /nix/store/q849xfmh9al9ihdw00v1543sxir43sr4-perl5.32.0-Net-OpenID-Consumer-1.18.drv
+these paths will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/w7f8b9acg0irgry1cglldhf300psflq7-Net-OpenID-Consumer-1.18.tar.gz
+copying path '/nix/store/w7f8b9acg0irgry1cglldhf300psflq7-Net-OpenID-Consumer-1.18.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q849xfmh9al9ihdw00v1543sxir43sr4-perl5.32.0-Net-OpenID-Consumer-1.18.drv'...
+unpacking sources
+unpacking source archive /nix/store/w7f8b9acg0irgry1cglldhf300psflq7-Net-OpenID-Consumer-1.18.tar.gz
+source root is Net-OpenID-Consumer-1.18
+setting SOURCE_DATE_EPOCH to timestamp 1454895546 of file Net-OpenID-Consumer-1.18/xt/04-handler.t
+patching sources
+configuring
+patching ./xt/03-providers.t...
+patching ./xt/04-handler.t...
+patching ./examples/consumer.cgi...
+patching ./t/00-use.t...
+patching ./t/99-rt80329.t...
+patching ./t/04-handler.t...
+patching ./t/03-seminfo.t...
+patching ./t/01-misc.t...
+patching ./t/release-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::OpenID::Consumer
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/OpenID/Consumer.pm blib/lib/Net/OpenID/Consumer.pm
+cp lib/Net/OpenID/VerifiedIdentity.pm blib/lib/Net/OpenID/VerifiedIdentity.pm
+cp lib/Net/OpenID/ClaimedIdentity.pm blib/lib/Net/OpenID/ClaimedIdentity.pm
+cp lib/Net/OpenID/Association.pm blib/lib/Net/OpenID/Association.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-use.t .............. ok
+t/01-misc.t ............. ok
+t/02-canonical.t ........ ok
+t/03-seminfo.t .......... ok
+t/04-handler.t .......... 1/180 'setup_required' callback is deprecated, use 'setup_needed' at t/04-handler.t line 66.
+t/04-handler.t .......... ok
+t/99-rt80329.t .......... ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=7, Tests=201,  2 wallclock secs ( 0.06 usr  0.04 sys +  1.46 cusr  1.15 csys =  2.71 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/pkgconfig m4datadir=/nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/aclocal aclocaldir=/nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/perl5/site_perl/5.32.0/Net/OpenID/ClaimedIdentity.pm
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/perl5/site_perl/5.32.0/Net/OpenID/VerifiedIdentity.pm
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/perl5/site_perl/5.32.0/Net/OpenID/Association.pm
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/perl5/site_perl/5.32.0/Net/OpenID/Consumer.pm
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/man3/Net::OpenID::Association.3
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/man3/Net::OpenID::ClaimedIdentity.3
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/man3/Net::OpenID::VerifiedIdentity.3
+Installing /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/man3/Net::OpenID::Consumer.3
+Appending installation info to /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/man3 to /nix/store/xnp1hlzwzascdn1lbfxj6bbmw76hn30i-perl5.32.0-Net-OpenID-Consumer-1.18-devdoc/share/man/man3
+Removing empty /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18/lib
+patching script interpreter paths in /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18
+checking for references to /build/ in /nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18...
+shrinking RPATHs of ELF executables and libraries in /nix/store/xnp1hlzwzascdn1lbfxj6bbmw76hn30i-perl5.32.0-Net-OpenID-Consumer-1.18-devdoc
+gzipping man pages under /nix/store/xnp1hlzwzascdn1lbfxj6bbmw76hn30i-perl5.32.0-Net-OpenID-Consumer-1.18-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/xnp1hlzwzascdn1lbfxj6bbmw76hn30i-perl5.32.0-Net-OpenID-Consumer-1.18-devdoc
+checking for references to /build/ in /nix/store/xnp1hlzwzascdn1lbfxj6bbmw76hn30i-perl5.32.0-Net-OpenID-Consumer-1.18-devdoc...
+/nix/store/jn9cwanhhjx8vhiagmiq242806fw3xhb-perl5.32.0-Net-OpenID-Consumer-1.18

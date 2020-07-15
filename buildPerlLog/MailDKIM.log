@@ -1,0 +1,229 @@
+these derivations will be built:
+  /nix/store/44sfdks10s0pwh3mjmfx2l2j9rjvwyln-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215.drv
+  /nix/store/8f08jzqmazadh06lz8rn5l5cklvrf3ip-perl5.32.0-Mail-DKIM-1.20200513.1.drv
+these paths will be fetched (0.18 MiB download, 0.18 MiB unpacked):
+  /nix/store/mjrfvysff73abjzx7jwgjsqw9zxj6j3j-Net-DNS-Resolver-Mock-1.20200215.tar.gz
+  /nix/store/xpzcmxak848rnazhribrhpiyp1bkdj2f-Mail-DKIM-1.20200513.1.tar.gz
+copying path '/nix/store/xpzcmxak848rnazhribrhpiyp1bkdj2f-Mail-DKIM-1.20200513.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/mjrfvysff73abjzx7jwgjsqw9zxj6j3j-Net-DNS-Resolver-Mock-1.20200215.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/44sfdks10s0pwh3mjmfx2l2j9rjvwyln-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215.drv'...
+unpacking sources
+unpacking source archive /nix/store/mjrfvysff73abjzx7jwgjsqw9zxj6j3j-Net-DNS-Resolver-Mock-1.20200215.tar.gz
+source root is Net-DNS-Resolver-Mock-1.20200215
+setting SOURCE_DATE_EPOCH to timestamp 1581779271 of file Net-DNS-Resolver-Mock-1.20200215/t/zonefile
+patching sources
+configuring
+patching ./t/author-critic.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/01-debug.t...
+patching ./t/01-test.t...
+patching ./t/00-load.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Net::DNS::Resolver::Mock
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Net/DNS/Resolver/Mock.pm blib/lib/Net/DNS/Resolver/Mock.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t ............ ok
+t/01-debug.t ........... 1/10 Net::DNS::Resolver::Mock Debugging enabled at /build/Net-DNS-Resolver-Mock-1.20200215/blib/lib/Net/DNS/Resolver/Mock.pm line 32.
+DNS Lookup 'google.com' 'A' at /build/Net-DNS-Resolver-Mock-1.20200215/blib/lib/Net/DNS/Resolver/Mock.pm line 32.
+DNS Lookup 'google.com.au' 'TXT' at /build/Net-DNS-Resolver-Mock-1.20200215/blib/lib/Net/DNS/Resolver/Mock.pm line 32.
+DNS Lookup 'google.com.au' 'TXT' at /build/Net-DNS-Resolver-Mock-1.20200215/blib/lib/Net/DNS/Resolver/Mock.pm line 32.
+t/01-debug.t ........... ok
+t/01-test.t ............ ok
+t/author-critic.t ...... skipped: these tests are for testing by the author
+t/author-pod-syntax.t .. skipped: these tests are for testing by the author
+All tests successful.
+Files=5, Tests=31,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.32 cusr  0.12 csys =  0.48 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/lib/pkgconfig m4datadir=/nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/share/aclocal aclocaldir=/nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/lib/perl5/site_perl/5.32.0/Net/DNS/Resolver/Mock.pm
+Installing /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/share/man/man3/Net::DNS::Resolver::Mock.3
+Appending installation info to /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/share/man/man3 to /nix/store/1vgya6z8q9mhknc4f2f5jhzxx42ydhgn-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215-devdoc/share/man/man3
+Removing empty /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215/lib
+patching script interpreter paths in /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215
+checking for references to /build/ in /nix/store/2b2nprcqkbhvg6ikhgbpw6z9hn3a2qs6-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1vgya6z8q9mhknc4f2f5jhzxx42ydhgn-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215-devdoc
+gzipping man pages under /nix/store/1vgya6z8q9mhknc4f2f5jhzxx42ydhgn-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1vgya6z8q9mhknc4f2f5jhzxx42ydhgn-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215-devdoc
+checking for references to /build/ in /nix/store/1vgya6z8q9mhknc4f2f5jhzxx42ydhgn-perl5.32.0-Net-DNS-Resolver-Mock-1.20200215-devdoc...
+building '/nix/store/8f08jzqmazadh06lz8rn5l5cklvrf3ip-perl5.32.0-Mail-DKIM-1.20200513.1.drv'...
+unpacking sources
+unpacking source archive /nix/store/xpzcmxak848rnazhribrhpiyp1bkdj2f-Mail-DKIM-1.20200513.1.tar.gz
+source root is Mail-DKIM-1.20200513.1
+setting SOURCE_DATE_EPOCH to timestamp 1589335958 of file Mail-DKIM-1.20200513.1/weaver.ini
+patching sources
+configuring
+patching ./scripts/test_canonicalization.pl...
+patching ./scripts/arcverify.pl...
+patching ./scripts/arcsign.pl...
+patching ./scripts/dkimsign.pl...
+patching ./scripts/dkimverify.pl...
+patching ./scripts/sample_mime_lite.pl...
+patching ./scripts/test_bare_rsa_sha1.pl...
+patching ./scripts/test_nowsp_rsa_sha1.pl...
+patching ./t/signer_dk.t...
+patching ./t/signature.t...
+patching ./t/policy.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/simple_canonicalization.t...
+patching ./t/verifier.t...
+patching ./t/dev-manifest.t...
+patching ./t/public_key.t...
+patching ./t/arc-draft-validation-tests.t...
+patching ./t/verifier_strict.t...
+patching ./t/arc-draft-sign-tests.t...
+patching ./t/signer_policy.t...
+patching ./t/signer.t...
+patching ./t/external_signer.t...
+patching ./t/adsp.t...
+patching ./t/textwrap.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Mail::DKIM
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Mail/DKIM/ARC/MessageSignature.pm blib/lib/Mail/DKIM/ARC/MessageSignature.pm
+cp lib/Mail/DKIM/ARC/Seal.pm blib/lib/Mail/DKIM/ARC/Seal.pm
+cp lib/Mail/DKIM/DkSignature.pm blib/lib/Mail/DKIM/DkSignature.pm
+cp lib/Mail/DKIM/Canonicalization/seal.pm blib/lib/Mail/DKIM/Canonicalization/seal.pm
+cp lib/Mail/DKIM/Canonicalization/Base.pm blib/lib/Mail/DKIM/Canonicalization/Base.pm
+cp lib/Mail/DKIM/Common.pm blib/lib/Mail/DKIM/Common.pm
+cp lib/Mail/DKIM/Algorithm/dk_rsa_sha1.pm blib/lib/Mail/DKIM/Algorithm/dk_rsa_sha1.pm
+cp lib/Mail/DKIM/PublicKey.pm blib/lib/Mail/DKIM/PublicKey.pm
+cp lib/Mail/DKIM/Key.pm blib/lib/Mail/DKIM/Key.pm
+cp lib/Mail/DKIM/Canonicalization/nowsp.pm blib/lib/Mail/DKIM/Canonicalization/nowsp.pm
+cp lib/Mail/DKIM/Algorithm/Base.pm blib/lib/Mail/DKIM/Algorithm/Base.pm
+cp lib/Mail/DKIM/Verifier.pm blib/lib/Mail/DKIM/Verifier.pm
+cp lib/Mail/DKIM/Canonicalization/DkimCommon.pm blib/lib/Mail/DKIM/Canonicalization/DkimCommon.pm
+cp lib/Mail/DKIM/Algorithm/rsa_sha1.pm blib/lib/Mail/DKIM/Algorithm/rsa_sha1.pm
+cp lib/Mail/DKIM/ARC/Signer.pm blib/lib/Mail/DKIM/ARC/Signer.pm
+cp lib/Mail/DKIM/DNS.pm blib/lib/Mail/DKIM/DNS.pm
+cp lib/Mail/DKIM/TextWrap.pm blib/lib/Mail/DKIM/TextWrap.pm
+cp lib/Mail/DKIM/Canonicalization/dk_simple.pm blib/lib/Mail/DKIM/Canonicalization/dk_simple.pm
+cp lib/Mail/DKIM/DkimPolicy.pm blib/lib/Mail/DKIM/DkimPolicy.pm
+cp lib/Mail/DKIM/SignerPolicy.pm blib/lib/Mail/DKIM/SignerPolicy.pm
+cp lib/Mail/DKIM/Canonicalization/simple.pm blib/lib/Mail/DKIM/Canonicalization/simple.pm
+cp lib/Mail/DKIM/PrivateKey.pm blib/lib/Mail/DKIM/PrivateKey.pm
+cp lib/Mail/DKIM/Canonicalization/relaxed.pm blib/lib/Mail/DKIM/Canonicalization/relaxed.pm
+cp lib/Mail/DKIM/Signature.pm blib/lib/Mail/DKIM/Signature.pm
+cp lib/Mail/DKIM/AuthorDomainPolicy.pm blib/lib/Mail/DKIM/AuthorDomainPolicy.pm
+cp lib/Mail/DKIM/Canonicalization/DkCommon.pm blib/lib/Mail/DKIM/Canonicalization/DkCommon.pm
+cp lib/Mail/DKIM/DkPolicy.pm blib/lib/Mail/DKIM/DkPolicy.pm
+cp lib/Mail/DKIM/KeyValueList.pm blib/lib/Mail/DKIM/KeyValueList.pm
+cp lib/Mail/DKIM/Canonicalization/dk_nofws.pm blib/lib/Mail/DKIM/Canonicalization/dk_nofws.pm
+cp lib/Mail/DKIM/ARC/Verifier.pm blib/lib/Mail/DKIM/ARC/Verifier.pm
+cp lib/Mail/DKIM/MessageParser.pm blib/lib/Mail/DKIM/MessageParser.pm
+cp lib/Mail/DKIM.pm blib/lib/Mail/DKIM.pm
+cp lib/Mail/DKIM/Signer.pm blib/lib/Mail/DKIM/Signer.pm
+cp lib/Mail/DKIM/Algorithm/rsa_sha256.pm blib/lib/Mail/DKIM/Algorithm/rsa_sha256.pm
+cp lib/Mail/DKIM/Policy.pm blib/lib/Mail/DKIM/Policy.pm
+Manifying 30 pod documents
+Manifying 5 pod documents
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/pkgconfig m4datadir=/nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/aclocal aclocaldir=/nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/aclocal install
+Manifying 30 pod documents
+Manifying 5 pod documents
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/TextWrap.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/DNS.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/SignerPolicy.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Key.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/DkSignature.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Verifier.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/KeyValueList.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Common.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Policy.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/DkimPolicy.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/PrivateKey.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Signer.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/DkPolicy.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Signature.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/PublicKey.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/AuthorDomainPolicy.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/MessageParser.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/dk_simple.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/relaxed.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/DkimCommon.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/DkCommon.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/nowsp.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/dk_nofws.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/seal.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/Base.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Canonicalization/simple.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Algorithm/dk_rsa_sha1.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Algorithm/rsa_sha256.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Algorithm/rsa_sha1.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/Algorithm/Base.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/ARC/MessageSignature.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/ARC/Verifier.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/ARC/Seal.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/site_perl/5.32.0/Mail/DKIM/ARC/Signer.pm
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Common.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::nowsp.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::relaxed.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Algorithm::rsa_sha256.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::TextWrap.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::KeyValueList.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::SignerPolicy.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Algorithm::rsa_sha1.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::DkimPolicy.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::dk_simple.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Algorithm::dk_rsa_sha1.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::ARC::Seal.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::DkimCommon.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::PrivateKey.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Key.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::DNS.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::DkCommon.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::DkSignature.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::PublicKey.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::simple.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::AuthorDomainPolicy.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::DkPolicy.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Signer.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::ARC::MessageSignature.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::MessageParser.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Verifier.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::Base.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Signature.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Policy.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::dk_nofws.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::ARC::Verifier.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Canonicalization::seal.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::Algorithm::Base.3
+Installing /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3/Mail::DKIM::ARC::Signer.3
+Appending installation info to /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/man3 to /nix/store/snyq0g2yi188jdlqb4nk2szvhg87zm6k-perl5.32.0-Mail-DKIM-1.20200513.1-devdoc/share/man/man3
+Removing empty /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1/lib
+patching script interpreter paths in /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1
+checking for references to /build/ in /nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1...
+shrinking RPATHs of ELF executables and libraries in /nix/store/snyq0g2yi188jdlqb4nk2szvhg87zm6k-perl5.32.0-Mail-DKIM-1.20200513.1-devdoc
+gzipping man pages under /nix/store/snyq0g2yi188jdlqb4nk2szvhg87zm6k-perl5.32.0-Mail-DKIM-1.20200513.1-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/snyq0g2yi188jdlqb4nk2szvhg87zm6k-perl5.32.0-Mail-DKIM-1.20200513.1-devdoc
+checking for references to /build/ in /nix/store/snyq0g2yi188jdlqb4nk2szvhg87zm6k-perl5.32.0-Mail-DKIM-1.20200513.1-devdoc...
+/nix/store/6p3yd6g7zm7wrxz3nlhj3w0cyrm1q7jp-perl5.32.0-Mail-DKIM-1.20200513.1

@@ -1,0 +1,66 @@
+these derivations will be built:
+  /nix/store/6hlq76v5giwzls4330a4hkgm5fmpv6cs-perl5.32.0-XML-SemanticDiff-1.0007.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/lbykx9vxxbkbf1jza62wz3fv11ns59gy-XML-SemanticDiff-1.0007.tar.gz
+copying path '/nix/store/lbykx9vxxbkbf1jza62wz3fv11ns59gy-XML-SemanticDiff-1.0007.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6hlq76v5giwzls4330a4hkgm5fmpv6cs-perl5.32.0-XML-SemanticDiff-1.0007.drv'...
+unpacking sources
+unpacking source archive /nix/store/lbykx9vxxbkbf1jza62wz3fv11ns59gy-XML-SemanticDiff-1.0007.tar.gz
+source root is XML-SemanticDiff-1.0007
+setting SOURCE_DATE_EPOCH to timestamp 1534372555 of file XML-SemanticDiff-1.0007/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/08nonexist_ns.t...
+patching ./t/style-trailing-space.t...
+patching ./t/16zero_to_empty_str_cmp.t...
+patching ./eg/xmlsemdiff...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'XML-SemanticDiff' version '1.0007'
+Building XML-SemanticDiff
+running tests
+t/00-compile.t ........................ ok
+t/01basic.t ........................... ok
+t/02load_xml.t ........................ ok
+t/03simple_compare.t .................. ok
+t/04namespaces.t ...................... ok
+t/05simple_handler.t .................. ok
+t/06pass_to_handler.t ................. ok
+t/07pitest.t .......................... ok
+t/08nonexist_ns.t ..................... ok
+t/09two-tags.t ........................ ok
+t/10wide-chars.t ...................... ok
+t/11tag-in-different-locations.t ...... ok
+t/12missing-element-has-o-as-cdata.t .. ok
+t/13to-doc-read.t ..................... ok
+t/14ignore_xpath.t .................... ok
+t/15ignore_multi.t .................... ok
+t/16zero_to_empty_str_cmp.t ........... ok
+t/style-trailing-space.t .............. skipped: Test::TrailingSpace required for trailing space test.
+All tests successful.
+Files=18, Tests=47,  3 wallclock secs ( 0.08 usr  0.03 sys +  1.79 cusr  1.38 csys =  3.28 CPU)
+Result: PASS
+installing
+Building XML-SemanticDiff
+Installing /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/lib/perl5/site_perl/5.32.0/XML/SemanticDiff.pm
+Installing /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/lib/perl5/site_perl/5.32.0/XML/SemanticDiff/BasicHandler.pm
+Installing /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/share/man/man3/XML::SemanticDiff.3
+Installing /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/share/man/man3/XML::SemanticDiff::BasicHandler.3
+post-installation fixup
+Moving /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/share/man/man3 to /nix/store/w7ipy02fxzdbvw5l6qfhglcqkvy2ndf3-perl5.32.0-XML-SemanticDiff-1.0007-devdoc/share/man/man3
+Removing empty /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007/lib
+patching script interpreter paths in /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007
+checking for references to /build/ in /nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007...
+shrinking RPATHs of ELF executables and libraries in /nix/store/w7ipy02fxzdbvw5l6qfhglcqkvy2ndf3-perl5.32.0-XML-SemanticDiff-1.0007-devdoc
+gzipping man pages under /nix/store/w7ipy02fxzdbvw5l6qfhglcqkvy2ndf3-perl5.32.0-XML-SemanticDiff-1.0007-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/w7ipy02fxzdbvw5l6qfhglcqkvy2ndf3-perl5.32.0-XML-SemanticDiff-1.0007-devdoc
+checking for references to /build/ in /nix/store/w7ipy02fxzdbvw5l6qfhglcqkvy2ndf3-perl5.32.0-XML-SemanticDiff-1.0007-devdoc...
+/nix/store/f6iwl2rp76212lmi5k48bjah1il0c3z0-perl5.32.0-XML-SemanticDiff-1.0007

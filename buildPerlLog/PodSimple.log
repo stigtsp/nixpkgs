@@ -1,0 +1,216 @@
+these derivations will be built:
+  /nix/store/9a2bpk0z5c44jf2hxnnmprw6k2z6qfib-perl5.32.0-Pod-Simple-3.40.drv
+these paths will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/15gl2rvx5jay286418yf39370lwrxmfd-Pod-Simple-3.40.tar.gz
+copying path '/nix/store/15gl2rvx5jay286418yf39370lwrxmfd-Pod-Simple-3.40.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9a2bpk0z5c44jf2hxnnmprw6k2z6qfib-perl5.32.0-Pod-Simple-3.40.drv'...
+unpacking sources
+unpacking source archive /nix/store/15gl2rvx5jay286418yf39370lwrxmfd-Pod-Simple-3.40.tar.gz
+source root is Pod-Simple-3.40
+setting SOURCE_DATE_EPOCH to timestamp 1572097600 of file Pod-Simple-3.40/META.yml
+patching sources
+configuring
+patching ./MANIFEST.SKIP...
+patching ./t/xhtml-bkb.t...
+patching ./t/strpvbtm.t...
+patching ./t/JustPod01.t...
+patching ./t/xhtml20.t...
+patching ./t/github_issue_79.t...
+patching ./t/eol.t...
+patching ./t/xhtml15.t...
+patching ./t/xhtml05.t...
+patching ./t/output.t...
+patching ./t/rtf_utf8.t...
+patching ./t/xhtml01.t...
+patching ./t/xhtml10.t...
+patching ./t/eol2.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Pod::Simple
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Pod/Simple/LinkSection.pm blib/lib/Pod/Simple/LinkSection.pm
+cp lib/Pod/Simple/Subclassing.pod blib/lib/Pod/Simple/Subclassing.pod
+cp lib/Pod/Simple/Progress.pm blib/lib/Pod/Simple/Progress.pm
+cp lib/Pod/Simple/Checker.pm blib/lib/Pod/Simple/Checker.pm
+cp lib/Pod/Simple/PullParserStartToken.pm blib/lib/Pod/Simple/PullParserStartToken.pm
+cp lib/Pod/Simple/DumpAsXML.pm blib/lib/Pod/Simple/DumpAsXML.pm
+cp lib/Pod/Simple/PullParserToken.pm blib/lib/Pod/Simple/PullParserToken.pm
+cp lib/Pod/Simple/PullParserEndToken.pm blib/lib/Pod/Simple/PullParserEndToken.pm
+cp lib/Pod/Simple/RTF.pm blib/lib/Pod/Simple/RTF.pm
+cp lib/Pod/Simple.pm blib/lib/Pod/Simple.pm
+cp lib/Pod/Simple/Search.pm blib/lib/Pod/Simple/Search.pm
+cp lib/Pod/Simple.pod blib/lib/Pod/Simple.pod
+cp lib/Pod/Simple/TranscodeDumb.pm blib/lib/Pod/Simple/TranscodeDumb.pm
+cp lib/Pod/Simple/BlackBox.pm blib/lib/Pod/Simple/BlackBox.pm
+cp lib/Pod/Simple/Text.pm blib/lib/Pod/Simple/Text.pm
+cp lib/Pod/Simple/Debug.pm blib/lib/Pod/Simple/Debug.pm
+cp lib/Pod/Simple/JustPod.pm blib/lib/Pod/Simple/JustPod.pm
+cp lib/Pod/Simple/TextContent.pm blib/lib/Pod/Simple/TextContent.pm
+cp lib/Pod/Simple/XMLOutStream.pm blib/lib/Pod/Simple/XMLOutStream.pm
+cp lib/Pod/Simple/DumpAsText.pm blib/lib/Pod/Simple/DumpAsText.pm
+cp lib/Pod/Simple/XHTML.pm blib/lib/Pod/Simple/XHTML.pm
+cp lib/Pod/Simple/HTML.pm blib/lib/Pod/Simple/HTML.pm
+cp lib/Pod/Simple/PullParserTextToken.pm blib/lib/Pod/Simple/PullParserTextToken.pm
+cp lib/Pod/Simple/HTMLLegacy.pm blib/lib/Pod/Simple/HTMLLegacy.pm
+cp lib/Pod/Simple/Methody.pm blib/lib/Pod/Simple/Methody.pm
+cp lib/Pod/Simple/TranscodeSmart.pm blib/lib/Pod/Simple/TranscodeSmart.pm
+cp lib/Pod/Simple/HTMLBatch.pm blib/lib/Pod/Simple/HTMLBatch.pm
+cp lib/Pod/Simple/Transcode.pm blib/lib/Pod/Simple/Transcode.pm
+cp lib/Pod/Simple/SimpleTree.pm blib/lib/Pod/Simple/SimpleTree.pm
+cp lib/Pod/Simple/TiedOutFH.pm blib/lib/Pod/Simple/TiedOutFH.pm
+cp lib/Pod/Simple/PullParser.pm blib/lib/Pod/Simple/PullParser.pm
+Manifying 23 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00about.t .......... ok
+t/20_skip.t .......... ok
+t/ac_d.t ............. ok
+t/accept01.t ......... ok
+t/accept05.t ......... ok
+t/basic.t ............ ok
+t/begin.t ............ ok
+t/cbacks.t ........... ok
+t/chunking.t ......... ok
+t/closeys.t .......... ok
+t/content_seen.t ..... ok
+t/corpus.t ........... ok
+t/emptylists.t ....... ok
+t/enc-chars.t ........ ok
+t/encod01.t .......... ok
+t/encod02.t .......... ok
+t/encod03.t .......... ok
+t/encod04.t .......... ok
+t/end_over.t ......... ok
+t/eol.t .............. ok
+t/eol2.t ............. ok
+t/fake-closers.t ..... ok
+t/fcodes.t ........... ok
+t/fcodes_e.t ......... ok
+t/fcodes_l.t ......... ok
+t/fcodes_s.t ......... ok
+t/for.t .............. ok
+t/fornot.t ........... ok
+t/github_issue_79.t .. skipped: Need Test::Deep to test
+t/heads.t ............ ok
+t/html01.t ........... ok
+t/html02.t ........... ok
+t/html03.t ........... ok
+t/htmlbat.t .......... ok
+t/items.t ............ ok
+t/items02.t .......... ok
+t/itemstar.t ......... ok
+t/JustPod01.t ........ ok
+t/JustPod02.t ........ ok
+t/JustPod_corpus.t ... ok
+t/linkclas.t ......... ok
+t/output.t ........... ok
+t/puller.t ........... ok
+t/pulltitl.t ......... ok
+t/reinit.t ........... ok
+t/render.t ........... ok
+t/rtf_utf8.t ......... ok
+t/search05.t ......... ok
+t/search10.t ......... ok
+t/search12.t ......... ok
+t/search20.t ......... ok
+t/search22.t ......... ok
+t/search25.t ......... ok
+t/search26.t ......... ok
+t/search27.t ......... ok
+t/search28.t ......... ok
+t/search29.t ......... ok
+t/search50.t ......... ok
+t/search60.t ......... ok
+t/stree.t ............ ok
+t/strpvbtm.t ......... ok
+t/tiedfh.t ........... ok
+t/verb_fmt.t ......... ok
+t/verbatim.t ......... ok
+t/whine.t ............ ok
+t/x_nixer.t .......... ok
+t/xhtml-bkb.t ........ ok
+t/xhtml01.t .......... ok
+t/xhtml05.t .......... ok
+t/xhtml10.t .......... ok
+t/xhtml15.t .......... ok
+t/xhtml20.t .......... ok
+All tests successful.
+Files=72, Tests=2350,  6 wallclock secs ( 0.36 usr  0.07 sys +  4.33 cusr  0.57 csys =  5.33 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/pkgconfig m4datadir=/nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/aclocal aclocaldir=/nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/aclocal install
+Manifying 23 pod documents
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple.pod
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Debug.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/RTF.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/TranscodeDumb.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Search.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/DumpAsXML.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/LinkSection.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/HTMLBatch.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/XHTML.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/PullParserEndToken.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/TiedOutFH.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/PullParser.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/PullParserTextToken.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/PullParserToken.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Transcode.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/PullParserStartToken.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/HTMLLegacy.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/HTML.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/TextContent.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Methody.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Checker.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/JustPod.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Text.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/SimpleTree.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/TranscodeSmart.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/DumpAsText.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Subclassing.pod
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/BlackBox.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/XMLOutStream.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/site_perl/5.32.0/Pod/Simple/Progress.pm
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::PullParserEndToken.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::PullParser.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Debug.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::HTMLBatch.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Search.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Subclassing.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::SimpleTree.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::XHTML.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::PullParserToken.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::PullParserTextToken.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::DumpAsText.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::XMLOutStream.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::RTF.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::DumpAsXML.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::PullParserStartToken.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Methody.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Checker.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::HTML.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::TextContent.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::Text.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::LinkSection.3
+Installing /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3/Pod::Simple::JustPod.3
+Appending installation info to /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/man3 to /nix/store/1d984w67818brwa4i48141h4an0lsdgh-perl5.32.0-Pod-Simple-3.40-devdoc/share/man/man3
+Removing empty /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40/lib
+patching script interpreter paths in /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40
+checking for references to /build/ in /nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40...
+shrinking RPATHs of ELF executables and libraries in /nix/store/1d984w67818brwa4i48141h4an0lsdgh-perl5.32.0-Pod-Simple-3.40-devdoc
+gzipping man pages under /nix/store/1d984w67818brwa4i48141h4an0lsdgh-perl5.32.0-Pod-Simple-3.40-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/1d984w67818brwa4i48141h4an0lsdgh-perl5.32.0-Pod-Simple-3.40-devdoc
+checking for references to /build/ in /nix/store/1d984w67818brwa4i48141h4an0lsdgh-perl5.32.0-Pod-Simple-3.40-devdoc...
+/nix/store/8gyxn8snng392q0j64imazhp288vnkkb-perl5.32.0-Pod-Simple-3.40

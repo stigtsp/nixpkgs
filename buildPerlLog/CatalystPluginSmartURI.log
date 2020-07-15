@@ -1,0 +1,331 @@
+these derivations will be built:
+  /nix/store/0pxbizixqbsjn1lhcyk1asd6cg3cmlzz-perl5.32.0-Text-Glob-0.11.drv
+  /nix/store/8ryi97whj9j60dfm4qrnzwxzd78kx3x0-perl5.32.0-Number-Compare-0.03.drv
+  /nix/store/lsnw7c4fdrw9c1wjr2saqa3x7ri040ar-perl5.32.0-Time-Out-0.11.drv
+  /nix/store/xscz5l3fnv6bdq74x06rds772xizhhhs-perl5.32.0-File-Find-Rule-0.34.drv
+  /nix/store/vwmjckpy7902w6icxl8qg9y1rnh9l7aa-perl5.32.0-URI-SmartURI-0.032.drv
+  /nix/store/f10i2sqj3pas1i4pjp6zg2qgx6a5ils2-perl5.32.0-Catalyst-Plugin-SmartURI-0.041.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/ny0dn4nmh2d1bym0q49biv7m6kss6bl5-Catalyst-Plugin-SmartURI-0.041.tar.gz
+  /nix/store/rikv5drjcmk16vgc91l496ffa00j5q61-URI-SmartURI-0.032.tar.gz
+  /nix/store/z0050mx25phh0ma64r8di675j7npqaiv-Time-Out-0.11.tar.gz
+copying path '/nix/store/ny0dn4nmh2d1bym0q49biv7m6kss6bl5-Catalyst-Plugin-SmartURI-0.041.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rikv5drjcmk16vgc91l496ffa00j5q61-URI-SmartURI-0.032.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/z0050mx25phh0ma64r8di675j7npqaiv-Time-Out-0.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8ryi97whj9j60dfm4qrnzwxzd78kx3x0-perl5.32.0-Number-Compare-0.03.drv'...
+building '/nix/store/0pxbizixqbsjn1lhcyk1asd6cg3cmlzz-perl5.32.0-Text-Glob-0.11.drv'...
+unpacking sources
+unpacking source archive /nix/store/znd42049chfxrhmn1mdr2a9lkc6yd659-Number-Compare-0.03.tar.gz
+source root is Number-Compare-0.03
+unpacking sources
+setting SOURCE_DATE_EPOCH to timestamp 1316615086 of file Number-Compare-0.03/META.yml
+unpacking source archive /nix/store/0vzjiqrcqqwcdjbj9a915rrvvs489di3-Text-Glob-0.11.tar.gz
+patching sources
+configuring
+source root is Text-Glob-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1488992160 of file Text-Glob-0.11/MANIFEST
+patching sources
+configuring
+patching ./t/Number-Compare.t...
+patching ./t/Text-Glob.t...
+patching ./t/Text-Glob_Sep.t...
+building '/nix/store/lsnw7c4fdrw9c1wjr2saqa3x7ri040ar-perl5.32.0-Time-Out-0.11.drv'...
+Checking if your kit is complete...
+Checking if your kit is complete...
+Looks good
+Looks good
+unpacking sources
+unpacking source archive /nix/store/z0050mx25phh0ma64r8di675j7npqaiv-Time-Out-0.11.tar.gz
+source root is Time-Out-0.11
+setting SOURCE_DATE_EPOCH to timestamp 1257790111 of file Time-Out-0.11/META.yml
+patching sources
+configuring
+Generating a Unix-style Makefile
+Writing Makefile for Number::Compare
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Generating a Unix-style Makefile
+Writing Makefile for Text::Glob
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Time::Out
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Number/Compare.pm blib/lib/Number/Compare.pm
+cp lib/Text/Glob.pm blib/lib/Text/Glob.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+cp Out.pm blib/lib/Time/Out.pm
+cp Out.pod blib/lib/Time/Out.pod
+t/Number-Compare.t .. ok
+All tests successful.
+Files=1, Tests=24,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.05 cusr  0.01 csys =  0.08 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/pkgconfig m4datadir=/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/share/aclocal aclocaldir=/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/share/aclocal install
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/Text-Glob.t ...... ok
+Manifying 1 pod document
+t/01_init.t ........ ok
+Installing /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl/5.32.0/Number/Compare.pm
+Installing /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/share/man/man3/Number::Compare.3
+t/02_usage.t .......
+The following tests use sleep() so please be patient...
+Appending installation info to /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+t/Text-Glob_Sep.t .. ok
+All tests successful.
+Files=2, Tests=74,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.14 cusr  0.02 csys =  0.18 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/pkgconfig m4datadir=/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/share/aclocal aclocaldir=/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/share/aclocal install
+post-installation fixup
+Moving /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/share/man/man3 to /nix/store/anszqqvipwys6iw9410yk6y0cvcygzad-perl5.32.0-Number-Compare-0.03-devdoc/share/man/man3
+Removing empty /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib
+patching script interpreter paths in /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03
+checking for references to /build/ in /nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03...
+shrinking RPATHs of ELF executables and libraries in /nix/store/anszqqvipwys6iw9410yk6y0cvcygzad-perl5.32.0-Number-Compare-0.03-devdoc
+gzipping man pages under /nix/store/anszqqvipwys6iw9410yk6y0cvcygzad-perl5.32.0-Number-Compare-0.03-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/anszqqvipwys6iw9410yk6y0cvcygzad-perl5.32.0-Number-Compare-0.03-devdoc
+checking for references to /build/ in /nix/store/anszqqvipwys6iw9410yk6y0cvcygzad-perl5.32.0-Number-Compare-0.03-devdoc...
+Manifying 1 pod document
+Installing /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl/5.32.0/Text/Glob.pm
+Installing /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/share/man/man3/Text::Glob.3
+Appending installation info to /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/share/man/man3 to /nix/store/96kx2dwsa7lxybgyyjbv0djq29n1hsgj-perl5.32.0-Text-Glob-0.11-devdoc/share/man/man3
+Removing empty /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib
+patching script interpreter paths in /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11
+checking for references to /build/ in /nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/96kx2dwsa7lxybgyyjbv0djq29n1hsgj-perl5.32.0-Text-Glob-0.11-devdoc
+gzipping man pages under /nix/store/96kx2dwsa7lxybgyyjbv0djq29n1hsgj-perl5.32.0-Text-Glob-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/96kx2dwsa7lxybgyyjbv0djq29n1hsgj-perl5.32.0-Text-Glob-0.11-devdoc
+checking for references to /build/ in /nix/store/96kx2dwsa7lxybgyyjbv0djq29n1hsgj-perl5.32.0-Text-Glob-0.11-devdoc...
+building '/nix/store/xscz5l3fnv6bdq74x06rds772xizhhhs-perl5.32.0-File-Find-Rule-0.34.drv'...
+unpacking sources
+unpacking source archive /nix/store/rq604kj14lz43j1206yzn8hzvhcy9rzr-File-Find-Rule-0.34.tar.gz
+source root is File-Find-Rule-0.34
+setting SOURCE_DATE_EPOCH to timestamp 1449153012 of file File-Find-Rule-0.34/META.yml
+patching sources
+configuring
+patching ./findrule...
+patching ./testdir/File-Find-Rule.t...
+patching ./testdir/findrule.t...
+patching ./t/File-Find-Rule.t...
+patching ./t/findrule.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for File::Find::Rule
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/File/Find/Rule/Extending.pod blib/lib/File/Find/Rule/Extending.pod
+cp lib/File/Find/Rule.pm blib/lib/File/Find/Rule.pm
+cp lib/File/Find/Rule/Procedural.pod blib/lib/File/Find/Rule/Procedural.pod
+cp findrule blib/script/findrule
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/findrule
+Manifying 1 pod document
+Manifying 3 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/File-Find-Rule.t .. ok
+t/findrule.t ........ ok
+All tests successful.
+Files=2, Tests=52,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.27 cusr  0.07 csys =  0.38 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib/pkgconfig m4datadir=/nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/aclocal aclocaldir=/nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/aclocal install
+Manifying 1 pod document
+Manifying 3 pod documents
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib/perl5/site_perl/5.32.0/File/Find/Rule.pm
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib/perl5/site_perl/5.32.0/File/Find/Rule/Extending.pod
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib/perl5/site_perl/5.32.0/File/Find/Rule/Procedural.pod
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/man1/findrule.1
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/man3/File::Find::Rule.3
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/man3/File::Find::Rule::Procedural.3
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/man3/File::Find::Rule::Extending.3
+Installing /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/bin/findrule
+Appending installation info to /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/man3 to /nix/store/64hw0bkkzkky47xqa0qd5zqaambz4fpw-perl5.32.0-File-Find-Rule-0.34-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34
+gzipping man pages under /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/lib  /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34/bin
+patching script interpreter paths in /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34
+checking for references to /build/ in /nix/store/jrcpf6pikc3b2330n3qg94rqd810l6a5-perl5.32.0-File-Find-Rule-0.34...
+shrinking RPATHs of ELF executables and libraries in /nix/store/64hw0bkkzkky47xqa0qd5zqaambz4fpw-perl5.32.0-File-Find-Rule-0.34-devdoc
+gzipping man pages under /nix/store/64hw0bkkzkky47xqa0qd5zqaambz4fpw-perl5.32.0-File-Find-Rule-0.34-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/64hw0bkkzkky47xqa0qd5zqaambz4fpw-perl5.32.0-File-Find-Rule-0.34-devdoc
+checking for references to /build/ in /nix/store/64hw0bkkzkky47xqa0qd5zqaambz4fpw-perl5.32.0-File-Find-Rule-0.34-devdoc...
+building '/nix/store/vwmjckpy7902w6icxl8qg9y1rnh9l7aa-perl5.32.0-URI-SmartURI-0.032.drv'...
+unpacking sources
+unpacking source archive /nix/store/rikv5drjcmk16vgc91l496ffa00j5q61-URI-SmartURI-0.032.tar.gz
+source root is URI-SmartURI-0.032
+setting SOURCE_DATE_EPOCH to timestamp 1344806336 of file URI-SmartURI-0.032/META.yml
+patching sources
+configuring
+patching ./t/01-smart-uris.t...
+Cannot determine perl version info from lib/URI/SmartURI.pm
+*** Module::AutoInstall version 1.06
+*** Checking for Perl dependencies...
+[Core Features]
+- Test::More               ...loaded. (1.302175 >= 0.94)
+- Test::NoWarnings         ...loaded. (1.04)
+- Test::Fatal              ...loaded. (0.014)
+- URI                      ...loaded. (1.76 >= 1.51)
+- Class::C3::Componentised ...loaded. (1.001002)
+- File::Find::Rule         ...loaded. (0.34)
+- List::Util               ...loaded. (1.55)
+- List::MoreUtils          ...loaded. (0.428)
+- Scalar::Util             ...loaded. (1.55)
+- Moose                    ...loaded. (2.2012)
+- namespace::clean         ...loaded. (0.27)
+*** Module::AutoInstall configuration finished.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for URI::SmartURI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/URI/SmartURI.pm blib/lib/URI/SmartURI.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/01-smart-uris.t t/02-subclass.t
+t/01-smart-uris.t .. ok
+t/02-subclass.t .... ok
+All tests successful.
+Files=2, Tests=16,  1 wallclock secs ( 0.04 usr  0.03 sys +  0.68 cusr  0.42 csys =  1.17 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/lib/pkgconfig m4datadir=/nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/share/aclocal aclocaldir=/nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/lib/perl5/site_perl/5.32.0/URI/SmartURI.pm
+Installing /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/share/man/man3/URI::SmartURI.3
+Appending installation info to /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/share/man/man3 to /nix/store/sk00zaf3mqnlkq6wx0ixmcqfkp47zipi-perl5.32.0-URI-SmartURI-0.032-devdoc/share/man/man3
+Removing empty /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032/lib
+patching script interpreter paths in /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032
+checking for references to /build/ in /nix/store/r41nhh1gm098l83yrc8jvy7p3nb9gs70-perl5.32.0-URI-SmartURI-0.032...
+shrinking RPATHs of ELF executables and libraries in /nix/store/sk00zaf3mqnlkq6wx0ixmcqfkp47zipi-perl5.32.0-URI-SmartURI-0.032-devdoc
+gzipping man pages under /nix/store/sk00zaf3mqnlkq6wx0ixmcqfkp47zipi-perl5.32.0-URI-SmartURI-0.032-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/sk00zaf3mqnlkq6wx0ixmcqfkp47zipi-perl5.32.0-URI-SmartURI-0.032-devdoc
+checking for references to /build/ in /nix/store/sk00zaf3mqnlkq6wx0ixmcqfkp47zipi-perl5.32.0-URI-SmartURI-0.032-devdoc...
+t/02_usage.t ....... ok
+t/03_exceptions.t .. ok
+t/pod.t ............ skipped: Test::Pod 1.00 required for testing POD
+All tests successful.
+Files=4, Tests=19, 20 wallclock secs ( 0.02 usr  0.01 sys +  1.08 cusr  0.01 csys =  1.12 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/lib/pkgconfig m4datadir=/nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/share/aclocal aclocaldir=/nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/lib/perl5/site_perl/5.32.0/Time/Out.pm
+Installing /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/lib/perl5/site_perl/5.32.0/Time/Out.pod
+Installing /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/share/man/man3/Time::Out.3
+Appending installation info to /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/share/man/man3 to /nix/store/ysdxrydkgahv1i0pknb3dln51pwbyigc-perl5.32.0-Time-Out-0.11-devdoc/share/man/man3
+Removing empty /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11/lib
+patching script interpreter paths in /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11
+checking for references to /build/ in /nix/store/cz3xzp65q6f2ygr0fmmr5n1nd99vh3r7-perl5.32.0-Time-Out-0.11...
+shrinking RPATHs of ELF executables and libraries in /nix/store/ysdxrydkgahv1i0pknb3dln51pwbyigc-perl5.32.0-Time-Out-0.11-devdoc
+gzipping man pages under /nix/store/ysdxrydkgahv1i0pknb3dln51pwbyigc-perl5.32.0-Time-Out-0.11-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/ysdxrydkgahv1i0pknb3dln51pwbyigc-perl5.32.0-Time-Out-0.11-devdoc
+checking for references to /build/ in /nix/store/ysdxrydkgahv1i0pknb3dln51pwbyigc-perl5.32.0-Time-Out-0.11-devdoc...
+building '/nix/store/f10i2sqj3pas1i4pjp6zg2qgx6a5ils2-perl5.32.0-Catalyst-Plugin-SmartURI-0.041.drv'...
+unpacking sources
+unpacking source archive /nix/store/ny0dn4nmh2d1bym0q49biv7m6kss6bl5-Catalyst-Plugin-SmartURI-0.041.tar.gz
+source root is Catalyst-Plugin-SmartURI-0.041
+setting SOURCE_DATE_EPOCH to timestamp 1443947281 of file Catalyst-Plugin-SmartURI-0.041/t/release-pod-syntax.t
+patching sources
+configuring
+patching ./t/04-no-uri.t...
+patching ./t/02-c-a-rest-compat.t...
+patching ./t/01-basic.t...
+patching ./t/03-uri-class.t...
+patching ./t/release-pod-syntax.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::Plugin::SmartURI
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/Plugin/SmartURI.pm blib/lib/Catalyst/Plugin/SmartURI.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-compile.t .......... ok
+t/01-basic.t ............ ok
+t/02-c-a-rest-compat.t .. ok
+t/03-uri-class.t ........ ok
+t/04-no-uri.t ........... ok
+t/release-pod-syntax.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=6, Tests=16,  8 wallclock secs ( 0.12 usr  0.08 sys +  4.37 cusr  3.32 csys =  7.89 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/lib/pkgconfig m4datadir=/nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/share/aclocal aclocaldir=/nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/lib/perl5/site_perl/5.32.0/Catalyst/Plugin/SmartURI.pm
+Installing /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/share/man/man3/Catalyst::Plugin::SmartURI.3
+Appending installation info to /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/share/man/man3 to /nix/store/lw22y2x9s228bz9z8z45vxn4dh158sd5-perl5.32.0-Catalyst-Plugin-SmartURI-0.041-devdoc/share/man/man3
+Removing empty /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041/lib
+patching script interpreter paths in /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041
+checking for references to /build/ in /nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041...
+shrinking RPATHs of ELF executables and libraries in /nix/store/lw22y2x9s228bz9z8z45vxn4dh158sd5-perl5.32.0-Catalyst-Plugin-SmartURI-0.041-devdoc
+gzipping man pages under /nix/store/lw22y2x9s228bz9z8z45vxn4dh158sd5-perl5.32.0-Catalyst-Plugin-SmartURI-0.041-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/lw22y2x9s228bz9z8z45vxn4dh158sd5-perl5.32.0-Catalyst-Plugin-SmartURI-0.041-devdoc
+checking for references to /build/ in /nix/store/lw22y2x9s228bz9z8z45vxn4dh158sd5-perl5.32.0-Catalyst-Plugin-SmartURI-0.041-devdoc...
+/nix/store/riphm33wasdxs8p6cfxrrpwsa49qmklk-perl5.32.0-Catalyst-Plugin-SmartURI-0.041

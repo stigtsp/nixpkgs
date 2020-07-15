@@ -1,0 +1,55 @@
+these derivations will be built:
+  /nix/store/hpiflwnm3lxz0mgsx7wxm0azp2wsbsfr-perl5.32.0-Module-Refresh-0.17.drv
+these paths will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/3nvf7f724ldkz79yn8d8w6c9dcr1qkhx-Module-Refresh-0.17.tar.gz
+copying path '/nix/store/3nvf7f724ldkz79yn8d8w6c9dcr1qkhx-Module-Refresh-0.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hpiflwnm3lxz0mgsx7wxm0azp2wsbsfr-perl5.32.0-Module-Refresh-0.17.drv'...
+unpacking sources
+unpacking source archive /nix/store/3nvf7f724ldkz79yn8d8w6c9dcr1qkhx-Module-Refresh-0.17.tar.gz
+source root is Module-Refresh-0.17
+setting SOURCE_DATE_EPOCH to timestamp 1319632785 of file Module-Refresh-0.17/SIGNATURE
+patching sources
+configuring
+patching ./t/clear_symtable.t...
+patching ./t/2lateuse.t...
+patching ./t/1api.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Module::Refresh
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Module/Refresh.pm blib/lib/Module/Refresh.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/0-smoke.t ......... ok
+t/1api.t ............ ok
+t/2lateuse.t ........ ok
+t/clear_symtable.t .. ok
+All tests successful.
+Files=4, Tests=16,  2 wallclock secs ( 0.02 usr  0.02 sys +  0.24 cusr  0.06 csys =  0.34 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/lib/pkgconfig m4datadir=/nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/share/aclocal aclocaldir=/nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/lib/perl5/site_perl/5.32.0/Module/Refresh.pm
+Installing /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/share/man/man3/Module::Refresh.3
+Appending installation info to /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/share/man/man3 to /nix/store/al0v88wqhz8nka6vqb1p5wldbm78c8gw-perl5.32.0-Module-Refresh-0.17-devdoc/share/man/man3
+Removing empty /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17/lib
+patching script interpreter paths in /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17
+checking for references to /build/ in /nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17...
+shrinking RPATHs of ELF executables and libraries in /nix/store/al0v88wqhz8nka6vqb1p5wldbm78c8gw-perl5.32.0-Module-Refresh-0.17-devdoc
+gzipping man pages under /nix/store/al0v88wqhz8nka6vqb1p5wldbm78c8gw-perl5.32.0-Module-Refresh-0.17-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/al0v88wqhz8nka6vqb1p5wldbm78c8gw-perl5.32.0-Module-Refresh-0.17-devdoc
+checking for references to /build/ in /nix/store/al0v88wqhz8nka6vqb1p5wldbm78c8gw-perl5.32.0-Module-Refresh-0.17-devdoc...
+/nix/store/6fgclzfxmf3i3pqb33rjbsbp67xkhyi3-perl5.32.0-Module-Refresh-0.17

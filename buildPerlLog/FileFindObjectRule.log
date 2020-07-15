@@ -1,0 +1,61 @@
+these derivations will be built:
+  /nix/store/mklg9ffa8qnpz13bzg37mzyh6sjn4y7f-perl5.32.0-File-Find-Object-Rule-0.0312.drv
+these paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/3jhdb88x8lynyz1bd1j31s6k4xwn901p-File-Find-Object-Rule-0.0312.tar.gz
+copying path '/nix/store/3jhdb88x8lynyz1bd1j31s6k4xwn901p-File-Find-Object-Rule-0.0312.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mklg9ffa8qnpz13bzg37mzyh6sjn4y7f-perl5.32.0-File-Find-Object-Rule-0.0312.drv'...
+unpacking sources
+unpacking source archive /nix/store/3jhdb88x8lynyz1bd1j31s6k4xwn901p-File-Find-Object-Rule-0.0312.tar.gz
+source root is File-Find-Object-Rule-0.0312
+setting SOURCE_DATE_EPOCH to timestamp 1580225993 of file File-Find-Object-Rule-0.0312/xt/release/trailing-space.t
+patching sources
+configuring
+patching ./scripts/tag-release.pl...
+patching ./xt/release/trailing-space.t...
+patching ./xt/author/pod-coverage.t...
+patching ./xt/author/pod-syntax.t...
+patching ./t/findorule.t...
+patching ./t/File-Find-Rule.t...
+patching ./t/release-trailing-space.t...
+patching ./t/sample-data/to-copy-from/findorule.txt...
+patching ./t/sample-data/to-copy-from/File-Find-Rule.txt...
+patching ./bin/findorule...
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'File-Find-Object-Rule' version '0.0312'
+Building File-Find-Object-Rule
+running tests
+t/00-compile.t .............. ok
+t/File-Find-Rule.t .......... ok
+t/findorule.t ............... ok
+t/release-trailing-space.t .. skipped: these tests are for release candidate testing
+All tests successful.
+Files=4, Tests=49,  0 wallclock secs ( 0.03 usr  0.01 sys +  0.41 cusr  0.13 csys =  0.58 CPU)
+Result: PASS
+installing
+Building File-Find-Object-Rule
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/man1/findorule.1
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib/perl5/site_perl/5.32.0/File/Find/Object/Rule.pm
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib/perl5/site_perl/5.32.0/File/Find/Object/Rule/Extending.pod
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib/perl5/site_perl/5.32.0/File/Find/Object/Rule/Procedural.pod
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/man3/File::Find::Object::Rule::Extending.3
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/man3/File::Find::Object::Rule::Procedural.3
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/man3/File::Find::Object::Rule.3
+Installing /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/bin/findorule
+post-installation fixup
+Moving /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/man3 to /nix/store/v8v0rsbpc1vinb6a7bpcr9yvv9c4yhii-perl5.32.0-File-Find-Object-Rule-0.0312-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312
+gzipping man pages under /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib  /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/bin
+patching script interpreter paths in /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312
+/nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/bin/findorule: interpreter directive changed from "/usr/bin/env perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib/perl5/site_perl" to "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/site_perl -I/nix/store/fznxrsrf0z6vhr2i509i7hsa5sgffbl1-perl5.32.0-Module-Build-0.4231/lib/perl5/site_perl -I/nix/store/9vq9z3fvms42bjzl7w58np87i7zbm9lz-perl5.32.0-File-Find-Object-0.3.5/lib/perl5/site_perl -I/nix/store/xi7cqpp8ippj9ldlx2hx4cxvbglss0jw-perl5.32.0-Class-XSAccessor-1.19/lib/perl5/site_perl -I/nix/store/n9dpr3gda4gwgfja5ssmj2jhs6zbjjc3-perl5.32.0-Number-Compare-0.03/lib/perl5/site_perl -I/nix/store/0p9r8fymdn1cvwsjhbx88fvbb667xfry-perl5.32.0-Text-Glob-0.11/lib/perl5/site_perl -I/nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312/lib/perl5/site_perl"
+checking for references to /build/ in /nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312...
+shrinking RPATHs of ELF executables and libraries in /nix/store/v8v0rsbpc1vinb6a7bpcr9yvv9c4yhii-perl5.32.0-File-Find-Object-Rule-0.0312-devdoc
+gzipping man pages under /nix/store/v8v0rsbpc1vinb6a7bpcr9yvv9c4yhii-perl5.32.0-File-Find-Object-Rule-0.0312-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/v8v0rsbpc1vinb6a7bpcr9yvv9c4yhii-perl5.32.0-File-Find-Object-Rule-0.0312-devdoc
+checking for references to /build/ in /nix/store/v8v0rsbpc1vinb6a7bpcr9yvv9c4yhii-perl5.32.0-File-Find-Object-Rule-0.0312-devdoc...
+/nix/store/wv04rqp6xqikrzk69zp0vk842bxfjxr2-perl5.32.0-File-Find-Object-Rule-0.0312

@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/x2h6c3v4cg9781mg8b76r2f0lmwqwpix-perl5.32.0-Net-OAuth-0.28.drv
+these paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/lvhf80v6c604hklrkk73rj2hhmc857pw-Net-OAuth-0.28.tar.gz
+copying path '/nix/store/lvhf80v6c604hklrkk73rj2hhmc857pw-Net-OAuth-0.28.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x2h6c3v4cg9781mg8b76r2f0lmwqwpix-perl5.32.0-Net-OAuth-0.28.drv'...
+unpacking sources
+unpacking source archive /nix/store/lvhf80v6c604hklrkk73rj2hhmc857pw-Net-OAuth-0.28.tar.gz
+source root is Net-OAuth-0.28
+setting SOURCE_DATE_EPOCH to timestamp 1325829678 of file Net-OAuth-0.28/t/rsakey.pub
+patching sources
+configuring
+patching ./demo/dispatch.cgi...
+patching ./demo/app.psgi...
+patching ./t/11-spec-1.0a.t...
+patching ./t/04-response.t...
+patching ./t/13-hmac-sha256.t...
+patching ./t/05-auth.t...
+patching ./t/01-spec.t...
+patching ./t/02-rsa.t...
+patching ./t/07-consumer-request.t...
+patching ./t/12-xauth.t...
+patching ./t/03-header.t...
+patching ./t/09-encoding.t...
+# running Build.PL --prefix /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28 --installdirs site --config perl=/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl --fullperl "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl"
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-OAuth' version '0.28'
+no configure script, doing nothing
+building
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Net-OAuth' version '0.28'
+Building Net-OAuth
+running tests
+t/01-spec.t .............. 1/20 # Testing Net::OAuth 0.28, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/01-spec.t .............. ok
+t/02-rsa.t ............... ok
+t/03-header.t ............ ok
+t/04-response.t .......... ok
+t/05-auth.t .............. ok
+t/06-factory.t ........... ok
+t/07-consumer-request.t .. ok
+t/09-encoding.t .......... ok
+t/10-misc.t .............. ok
+t/11-spec-1.0a.t ......... ok
+t/12-xauth.t ............. ok
+t/13-hmac-sha256.t ....... ok
+All tests successful.
+Files=12, Tests=112,  3 wallclock secs ( 0.06 usr  0.03 sys +  1.44 cusr  1.50 csys =  3.03 CPU)
+Result: PASS
+installing
+Building Net-OAuth
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/ProtectedResourceRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/RequestTokenResponse.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/YahooAccessTokenRefreshRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/ConsumerRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/XauthAccessTokenRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/UserAuthRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/RequestTokenRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/Request.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/Message.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/Response.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/AccessToken.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/Client.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/UserAuthResponse.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/AccessTokenResponse.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/AccessTokenRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/V1_0A/RequestTokenResponse.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/V1_0A/RequestTokenRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/V1_0A/UserAuthResponse.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/V1_0A/AccessTokenRequest.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/SignatureMethod/HMAC_SHA256.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/SignatureMethod/RSA_SHA1.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/SignatureMethod/HMAC_SHA1.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib/perl5/site_perl/5.32.0/Net/OAuth/SignatureMethod/PLAINTEXT.pm
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::AccessTokenResponse.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::RequestTokenResponse.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::ProtectedResourceRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::SignatureMethod::RSA_SHA1.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::V1_0A::AccessTokenRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::SignatureMethod::HMAC_SHA1.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::YahooAccessTokenRefreshRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::Response.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::AccessToken.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::Client.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::SignatureMethod::HMAC_SHA256.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::Request.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::XauthAccessTokenRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::ConsumerRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::AccessTokenRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::RequestTokenRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::V1_0A::RequestTokenRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::Message.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::UserAuthRequest.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::UserAuthResponse.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::V1_0A::UserAuthResponse.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::SignatureMethod::PLAINTEXT.3
+Installing /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3/Net::OAuth::V1_0A::RequestTokenResponse.3
+post-installation fixup
+Moving /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/man3 to /nix/store/vxwmb11biwx8hbga1i80s1ha9nax637i-perl5.32.0-Net-OAuth-0.28-devdoc/share/man/man3
+Removing empty /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28/lib
+patching script interpreter paths in /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28
+checking for references to /build/ in /nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28...
+shrinking RPATHs of ELF executables and libraries in /nix/store/vxwmb11biwx8hbga1i80s1ha9nax637i-perl5.32.0-Net-OAuth-0.28-devdoc
+gzipping man pages under /nix/store/vxwmb11biwx8hbga1i80s1ha9nax637i-perl5.32.0-Net-OAuth-0.28-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/vxwmb11biwx8hbga1i80s1ha9nax637i-perl5.32.0-Net-OAuth-0.28-devdoc
+checking for references to /build/ in /nix/store/vxwmb11biwx8hbga1i80s1ha9nax637i-perl5.32.0-Net-OAuth-0.28-devdoc...
+/nix/store/cd8axprlsq6cxlzdx5230j7kvw8nfz3s-perl5.32.0-Net-OAuth-0.28

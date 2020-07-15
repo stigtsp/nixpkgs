@@ -1,0 +1,113 @@
+these derivations will be built:
+  /nix/store/z6rwc4xy9q5k25pwxm5kd372hliq0xga-perl5.32.0-autovivification-0.18.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/xkyw61zhg5pdk6vyd922dbfxpnvqlw51-autovivification-0.18.tar.gz
+copying path '/nix/store/xkyw61zhg5pdk6vyd922dbfxpnvqlw51-autovivification-0.18.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z6rwc4xy9q5k25pwxm5kd372hliq0xga-perl5.32.0-autovivification-0.18.drv'...
+unpacking sources
+unpacking source archive /nix/store/xkyw61zhg5pdk6vyd922dbfxpnvqlw51-autovivification-0.18.tar.gz
+source root is autovivification-0.18
+setting SOURCE_DATE_EPOCH to timestamp 1509808704 of file autovivification-0.18/README
+patching sources
+configuring
+patching ./samples/bench.pl...
+patching ./samples/hash2array.pl...
+patching ./t/43-peep.t...
+patching ./t/20-hash.t...
+patching ./t/31-array-fast.t...
+patching ./t/32-array-kv.t...
+patching ./t/44-multideref.t...
+patching ./t/09-load-threads.t...
+patching ./t/41-padsv.t...
+patching ./t/23-hash-tied.t...
+patching ./t/22-hash-kv.t...
+patching ./t/50-threads.t...
+patching ./t/33-array-tied.t...
+patching ./t/00-load.t...
+patching ./t/40-scope.t...
+patching ./t/24-hash-numerous.t...
+patching ./t/30-array.t...
+patching ./t/51-threads-teardown.t...
+patching ./t/42-deparse.t...
+patching ./t/34-array-numerous.t...
+Checking if this is gcc 3.4 on Windows trying to link against an import library... no
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for autovivification
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/autovivification.pm blib/lib/autovivification.pm
+Running Mkbootstrap for autovivification ()
+chmod 644 "autovivification.bs"
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- autovivification.bs blib/arch/auto/autovivification/autovivification.bs 644
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/xsubpp"  -typemap '/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/ExtUtils/typemap'  autovivification.xs > autovivification.xsc
+mv autovivification.xsc autovivification.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/no-such-path/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"0.18\" -DXS_VERSION=\"0.18\" -fPIC "-I/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/lib/perl5/5.32.0/x86_64-linux-thread-multi/CORE"   autovivification.c
+rm -f blib/arch/auto/autovivification/autovivification.so
+cc  -shared -O2 -L/nix/store/68pw3wxwkrx0rwzjifm7g1jxy5g2sg1p-glibc-2.31/lib -fstack-protector-strong  autovivification.o  -o blib/arch/auto/autovivification/autovivification.so  \
+      \
+
+chmod 755 blib/arch/auto/autovivification/autovivification.so
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- autovivification.bs blib/arch/auto/autovivification/autovivification.bs 644
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00-load.t .............. 1/1 # Testing autovivification 0.18, Perl 5.032000, /nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl
+t/00-load.t .............. ok
+t/09-load-threads.t ...... # Using threads 2.25
+# Using threads::shared 1.61
+t/09-load-threads.t ...... ok
+t/20-hash.t .............. ok
+t/22-hash-kv.t ........... ok
+t/23-hash-tied.t ......... # Using Tie::StdHash 1.05
+t/23-hash-tied.t ......... ok
+t/24-hash-numerous.t ..... ok
+t/30-array.t ............. ok
+t/31-array-fast.t ........ ok
+t/32-array-kv.t .......... ok
+t/33-array-tied.t ........ # Using Tie::StdArray 1.07
+t/33-array-tied.t ........ ok
+t/34-array-numerous.t .... ok
+t/40-scope.t ............. ok
+t/41-padsv.t ............. ok
+t/42-deparse.t ........... # Using B::Deparse 1.54
+t/42-deparse.t ........... ok
+t/43-peep.t .............. ok
+t/44-multideref.t ........ ok
+t/50-threads.t ........... # Using threads 2.25
+# Using threads::shared 1.61
+t/50-threads.t ........... ok
+t/51-threads-teardown.t .. # Using threads 2.25
+# Using threads::shared 1.61
+t/51-threads-teardown.t .. ok
+All tests successful.
+Files=18, Tests=44617,  3 wallclock secs ( 2.10 usr  0.05 sys +  3.34 cusr  0.24 csys =  5.73 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib/pkgconfig m4datadir=/nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/share/aclocal aclocaldir=/nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/share/aclocal install
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- autovivification.bs blib/arch/auto/autovivification/autovivification.bs 644
+Manifying 1 pod document
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/autovivification/autovivification.so
+Installing /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/autovivification.pm
+Installing /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/share/man/man3/autovivification.3
+Appending installation info to /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/share/man/man3 to /nix/store/14mzrp73rvv62d48p7zn12p83yzc2lvm-perl5.32.0-autovivification-0.18-devdoc/share/man/man3
+Removing empty /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18
+shrinking /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib/perl5/site_perl/5.32.0/x86_64-linux-thread-multi/auto/autovivification/autovivification.so
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18/lib
+patching script interpreter paths in /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18
+checking for references to /build/ in /nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18...
+shrinking RPATHs of ELF executables and libraries in /nix/store/14mzrp73rvv62d48p7zn12p83yzc2lvm-perl5.32.0-autovivification-0.18-devdoc
+gzipping man pages under /nix/store/14mzrp73rvv62d48p7zn12p83yzc2lvm-perl5.32.0-autovivification-0.18-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/14mzrp73rvv62d48p7zn12p83yzc2lvm-perl5.32.0-autovivification-0.18-devdoc
+checking for references to /build/ in /nix/store/14mzrp73rvv62d48p7zn12p83yzc2lvm-perl5.32.0-autovivification-0.18-devdoc...
+/nix/store/f4qlrrg33cngk5pkny3l8ks2ydml5ay8-perl5.32.0-autovivification-0.18

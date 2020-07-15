@@ -1,0 +1,67 @@
+these derivations will be built:
+  /nix/store/9bs9rn98f0x7a6l23jsa78lw37nm0qz4-perl5.32.0-ExtUtils-Typemap-1.00.drv
+these paths will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/a2pfy3bg40f037dg1s3wrq9kr4amv5z8-ExtUtils-Typemap-1.00.tar.gz
+copying path '/nix/store/a2pfy3bg40f037dg1s3wrq9kr4amv5z8-ExtUtils-Typemap-1.00.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9bs9rn98f0x7a6l23jsa78lw37nm0qz4-perl5.32.0-ExtUtils-Typemap-1.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/a2pfy3bg40f037dg1s3wrq9kr4amv5z8-ExtUtils-Typemap-1.00.tar.gz
+source root is ExtUtils-Typemap-1.00
+setting SOURCE_DATE_EPOCH to timestamp 1312390514 of file ExtUtils-Typemap-1.00/META.yml
+patching sources
+configuring
+patching ./t/11_whitespace.t...
+patching ./t/12_file.t...
+patching ./t/13_merge.t...
+patching ./t/01_compile.t...
+patching ./t/10_bare.t...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for ExtUtils::Typemap
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/ExtUtils/Typemap/InputMap.pm blib/lib/ExtUtils/Typemap/InputMap.pm
+cp lib/ExtUtils/Typemap.pm blib/lib/ExtUtils/Typemap.pm
+cp lib/ExtUtils/Typemap/OutputMap.pm blib/lib/ExtUtils/Typemap/OutputMap.pm
+cp lib/ExtUtils/Typemap/Type.pm blib/lib/ExtUtils/Typemap/Type.pm
+Manifying 4 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/01_compile.t ..... ok
+t/10_bare.t ........ ok
+t/11_whitespace.t .. ok
+t/12_file.t ........ ok
+t/13_merge.t ....... ok
+All tests successful.
+Files=5, Tests=44,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.36 cusr  0.05 csys =  0.44 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/pkgconfig m4datadir=/nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/aclocal aclocaldir=/nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/aclocal install
+Manifying 4 pod documents
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/perl5/site_perl/5.32.0/ExtUtils/Typemap.pm
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/perl5/site_perl/5.32.0/ExtUtils/Typemap/InputMap.pm
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/perl5/site_perl/5.32.0/ExtUtils/Typemap/Type.pm
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/perl5/site_perl/5.32.0/ExtUtils/Typemap/OutputMap.pm
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/man3/ExtUtils::Typemap::InputMap.3
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/man3/ExtUtils::Typemap::Type.3
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/man3/ExtUtils::Typemap.3
+Installing /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/man3/ExtUtils::Typemap::OutputMap.3
+Appending installation info to /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/man3 to /nix/store/yizxi65v5cahj63jyj2s8i33id7n5ig7-perl5.32.0-ExtUtils-Typemap-1.00-devdoc/share/man/man3
+Removing empty /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00/lib
+patching script interpreter paths in /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00
+checking for references to /build/ in /nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/yizxi65v5cahj63jyj2s8i33id7n5ig7-perl5.32.0-ExtUtils-Typemap-1.00-devdoc
+gzipping man pages under /nix/store/yizxi65v5cahj63jyj2s8i33id7n5ig7-perl5.32.0-ExtUtils-Typemap-1.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/yizxi65v5cahj63jyj2s8i33id7n5ig7-perl5.32.0-ExtUtils-Typemap-1.00-devdoc
+checking for references to /build/ in /nix/store/yizxi65v5cahj63jyj2s8i33id7n5ig7-perl5.32.0-ExtUtils-Typemap-1.00-devdoc...
+/nix/store/yc3055yj5283bxkgw7cflaygg0b0pi27-perl5.32.0-ExtUtils-Typemap-1.00

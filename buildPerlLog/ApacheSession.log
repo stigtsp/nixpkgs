@@ -1,0 +1,134 @@
+these derivations will be built:
+  /nix/store/79sq1gia13rl1yk96d5s6yld8x56x3xs-perl5.32.0-Apache-Session-1.93.drv
+these paths will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/21xvi4g3clp3m7r86q9lin8kqqkyk5wk-Apache-Session-1.93.tar.gz
+copying path '/nix/store/21xvi4g3clp3m7r86q9lin8kqqkyk5wk-Apache-Session-1.93.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/79sq1gia13rl1yk96d5s6yld8x56x3xs-perl5.32.0-Apache-Session-1.93.drv'...
+unpacking sources
+unpacking source archive /nix/store/21xvi4g3clp3m7r86q9lin8kqqkyk5wk-Apache-Session-1.93.tar.gz
+source root is Apache-Session-1.93
+setting SOURCE_DATE_EPOCH to timestamp 1397331248 of file Apache-Session-1.93/META.yml
+patching sources
+configuring
+patching ./t/pod.t...
+patching ./b/gdbm.b...
+
+*** REQUEST ***
+Please use Test::Reporter to report test results - it's the only way to measure
+popularity of distribution.
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Apache::Session
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+
+*** REQUEST ***
+Please use Test::Reporter to report test results - it's the only way to measure
+popularity of distribution.
+
+Or you can add it to stack (means that you use it) on Ohloh: https://www.ohloh.net/p/Apache-Session
+
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Apache-Session' version '1.93'
+Building Apache-Session
+running tests
+t/99base64.t ....... ok
+t/99dbfile.t ....... skipped: Optional module (DB_File) not installed
+t/99dbfilestore.t .. skipped: Optional module (DB_File) not installed
+t/99file.t ......... ok
+t/99filelock.t ..... ok
+t/99filestore.t .... ok
+t/99flex.t ......... ok
+t/99md5gen.t ....... ok
+t/99moduniqgen.t ... ok
+t/99mysql.t ........ skipped: Optional modules (Test::Database, DBD::mysql, DBI) not installed
+t/99mysqllock.t .... skipped: Optional modules (Test::Database, DBD::mysql, DBI) not installed
+t/99mysqlstore.t ... skipped: Optional modules (DBD::mysql, DBI) not installed
+t/99nulllock.t ..... ok
+t/99oracle.t ....... skipped: Not running RDBM tests without APACHE_SESSION_MAINTAINER=1
+t/99postgres.t ..... skipped: Not running RDBM tests without APACHE_SESSION_MAINTAINER=1
+t/99semaphore.t .... skipped: Can't tune this test. Help needed.
+t/99storable.t ..... ok
+t/99uue.t .......... ok
+t/pod.t ............ skipped: Test::Pod 1.14 required for testing POD
+All tests successful.
+Files=19, Tests=75,  2 wallclock secs ( 0.06 usr  0.02 sys +  1.24 cusr  0.37 csys =  1.69 CPU)
+Result: PASS
+installing
+Building Apache-Session
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/File.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Sybase.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Oracle.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/DB_File.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Flex.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/MySQL.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Postgres.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Informix.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Serialize/Base64.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Serialize/Storable.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Serialize/Sybase.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Serialize/UUEncode.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/DBI.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/File.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/Sybase.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/Oracle.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/DB_File.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/MySQL.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/Postgres.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Store/Informix.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Generate/MD5.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Generate/ModUniqueId.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Generate/ModUsertrack.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Lock/Semaphore.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Lock/File.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Lock/Sybase.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Lock/Null.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/Lock/MySQL.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib/perl5/site_perl/5.32.0/Apache/Session/MySQL/NoLock.pm
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Lock::Null.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::DB_File.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Postgres.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Serialize::Base64.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::File.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Serialize::UUEncode.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::Sybase.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Generate::MD5.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Serialize::Sybase.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::Postgres.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Lock::MySQL.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::DB_File.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::File.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Lock::Sybase.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Lock::File.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::Oracle.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Oracle.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::MySQL.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Informix.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Serialize::Storable.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Generate::ModUsertrack.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::MySQL.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Lock::Semaphore.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::MySQL::NoLock.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Generate::ModUniqueId.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Flex.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Sybase.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session::Store::Informix.3
+Installing /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3/Apache::Session.3
+post-installation fixup
+Moving /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/man3 to /nix/store/48yaffgif6qmli8gi576i64j00rphjlv-perl5.32.0-Apache-Session-1.93-devdoc/share/man/man3
+Removing empty /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93/lib
+patching script interpreter paths in /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93
+checking for references to /build/ in /nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93...
+shrinking RPATHs of ELF executables and libraries in /nix/store/48yaffgif6qmli8gi576i64j00rphjlv-perl5.32.0-Apache-Session-1.93-devdoc
+gzipping man pages under /nix/store/48yaffgif6qmli8gi576i64j00rphjlv-perl5.32.0-Apache-Session-1.93-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/48yaffgif6qmli8gi576i64j00rphjlv-perl5.32.0-Apache-Session-1.93-devdoc
+checking for references to /build/ in /nix/store/48yaffgif6qmli8gi576i64j00rphjlv-perl5.32.0-Apache-Session-1.93-devdoc...
+/nix/store/jh99dhxnnav71wa1nd4zl13rl41a8afv-perl5.32.0-Apache-Session-1.93

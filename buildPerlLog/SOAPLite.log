@@ -1,0 +1,327 @@
+these derivations will be built:
+  /nix/store/frljsy2ckv41za9mixy4vas23gj89hj3-perl5.32.0-XML-Parser-Lite-0.722.drv
+  /nix/store/c9jcqb0yng13yaq3g0haqw4q39gsk3nh-perl5.32.0-SOAP-Lite-1.27.drv
+these paths will be fetched (0.27 MiB download, 0.27 MiB unpacked):
+  /nix/store/gx3aj3513qaldh9kk1m7kbvppy4yj5by-SOAP-Lite-1.27.tar.gz
+  /nix/store/svr3mqdami9jv58yzjw70akwdadi4q71-XML-Parser-Lite-0.722.tar.gz
+copying path '/nix/store/gx3aj3513qaldh9kk1m7kbvppy4yj5by-SOAP-Lite-1.27.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/svr3mqdami9jv58yzjw70akwdadi4q71-XML-Parser-Lite-0.722.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/frljsy2ckv41za9mixy4vas23gj89hj3-perl5.32.0-XML-Parser-Lite-0.722.drv'...
+unpacking sources
+unpacking source archive /nix/store/svr3mqdami9jv58yzjw70akwdadi4q71-XML-Parser-Lite-0.722.tar.gz
+source root is XML-Parser-Lite-0.722
+setting SOURCE_DATE_EPOCH to timestamp 1534735432 of file XML-Parser-Lite-0.722/META.json
+patching sources
+configuring
+patching ./t/27-xmlparserlite.t...
+patching ./Makefile.PL...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for XML::Parser::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/XML/Parser/Lite.pm blib/lib/XML/Parser/Lite.pm
+Manifying 1 pod document
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/27-xmlparserlite.t .. ok
+t/Lite.t .............. ok
+All tests successful.
+Files=2, Tests=55,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.20 cusr  0.01 csys =  0.23 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/lib/pkgconfig m4datadir=/nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/share/aclocal aclocaldir=/nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/share/aclocal install
+Manifying 1 pod document
+Installing /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/lib/perl5/site_perl/5.32.0/XML/Parser/Lite.pm
+Installing /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/share/man/man3/XML::Parser::Lite.3
+Appending installation info to /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/share/man/man3 to /nix/store/b04qnx1wa9i9cjzgn312hmfz0rrvmhrk-perl5.32.0-XML-Parser-Lite-0.722-devdoc/share/man/man3
+Removing empty /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722/lib
+patching script interpreter paths in /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722
+checking for references to /build/ in /nix/store/kzjf35pg7i0vbksnh8vabla9sr45x8lr-perl5.32.0-XML-Parser-Lite-0.722...
+shrinking RPATHs of ELF executables and libraries in /nix/store/b04qnx1wa9i9cjzgn312hmfz0rrvmhrk-perl5.32.0-XML-Parser-Lite-0.722-devdoc
+gzipping man pages under /nix/store/b04qnx1wa9i9cjzgn312hmfz0rrvmhrk-perl5.32.0-XML-Parser-Lite-0.722-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/b04qnx1wa9i9cjzgn312hmfz0rrvmhrk-perl5.32.0-XML-Parser-Lite-0.722-devdoc
+checking for references to /build/ in /nix/store/b04qnx1wa9i9cjzgn312hmfz0rrvmhrk-perl5.32.0-XML-Parser-Lite-0.722-devdoc...
+building '/nix/store/c9jcqb0yng13yaq3g0haqw4q39gsk3nh-perl5.32.0-SOAP-Lite-1.27.drv'...
+unpacking sources
+unpacking source archive /nix/store/gx3aj3513qaldh9kk1m7kbvppy4yj5by-SOAP-Lite-1.27.tar.gz
+source root is SOAP-Lite-1.27
+setting SOURCE_DATE_EPOCH to timestamp 1526330135 of file SOAP-Lite-1.27/t/release-kwalitee.t
+patching sources
+configuring
+patching ./examples/UDDI/syntax1.pl...
+patching ./examples/UDDI/syntax2.pl...
+patching ./examples/UDDI/inquire1.pl...
+patching ./examples/UDDI/publish1.pl...
+patching ./examples/UDDI/simple1.pl...
+patching ./examples/UDDI/syntax3.pl...
+patching ./examples/UDDI/simple2.pl...
+patching ./examples/customschema.pl...
+patching ./examples/pingpong.pl...
+patching ./examples/XML/customxml.pl...
+patching ./examples/authentication.pl...
+patching ./examples/weblog.pl...
+patching ./examples/soapsmtp.pl...
+patching ./examples/google.pl...
+patching ./examples/forms/style.cgi...
+patching ./examples/inline.daemon...
+patching ./examples/soapmark.pl...
+patching ./examples/allclients.pl...
+patching ./examples/server/soap.pop3...
+patching ./examples/server/soap.cgi...
+patching ./examples/server/soap.daemon.forkafterprocessing...
+patching ./examples/server/soap.io...
+patching ./examples/server/soap.tcp...
+patching ./examples/server/soap.fcgi...
+patching ./examples/server/soap.daemon.forkonaccept...
+patching ./examples/server/soap.mod_cgi...
+patching ./examples/server/soap.jabber...
+patching ./examples/server/soap.mq...
+patching ./examples/server/soap.daemon...
+patching ./examples/oo-apache.pl...
+patching ./examples/joke.pl...
+patching ./examples/SOAP/simple3.pl...
+patching ./examples/SOAP/simple1.pl...
+patching ./examples/SOAP/simple2.pl...
+patching ./examples/terraserver.pl...
+patching ./examples/cookieauth.pl...
+patching ./examples/parametersbyname.pl...
+patching ./examples/cookie.pl...
+patching ./examples/tcpclient.pl...
+patching ./examples/chat.pl...
+patching ./examples/autoexamples.pl...
+patching ./examples/iterator.pl...
+patching ./examples/COM/states.pl...
+patching ./examples/WSDL/stub3.pl...
+patching ./examples/WSDL/dynamic1.pl...
+patching ./examples/WSDL/dynamic2.pl...
+patching ./examples/WSDL/dynamic3.pl...
+patching ./examples/WSDL/stub1.pl...
+patching ./examples/WSDL/dynamic4.pl...
+patching ./examples/WSDL/stub2.pl...
+patching ./examples/fullsearch.pl...
+patching ./examples/compress.pl...
+patching ./examples/getdom.pl...
+patching ./examples/XMLRPC/simple1.pl...
+patching ./examples/XMLRPC/xmlrpc.cgi...
+patching ./examples/XMLRPC/xmlrpc.daemon...
+patching ./t/21-public.t...
+patching ./t/22-interop_apache.t...
+patching ./t/14-cgi_apache.t...
+patching ./t/02-payload.t...
+patching ./t/38-packager.t...
+patching ./t/author-pod-syntax.t...
+patching ./t/36-leaks.t...
+patching ./t/release-kwalitee.t...
+patching ./t/24-wsdl.t...
+patching ./t/15-daemon.t...
+patching ./t/04-attach-cid-encoded.t...
+patching ./t/013-array-deserialization.t...
+patching ./t/08-schema.t...
+patching ./t/Issues/rt70329.t...
+patching ./t/Issues/rt74029.t...
+patching ./t/03-server.t...
+patching ./t/11-cgi.t...
+patching ./t/015_UNIVERSAL_can.t...
+patching ./t/23-ppm.t...
+patching ./t/17-mod_soap.t...
+patching ./t/05-customxml.t...
+patching ./t/04-attach.t...
+patching ./t/06-modules.t...
+patching ./t/01-core.t...
+patching ./t/19-apachesoap.t...
+patching ./t/12-cgi_https.t...
+patching ./t/13-mod_perl.t...
+patching ./bin/SOAPsh.pl...
+patching ./bin/stubmaker.pl...
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for SOAP::Lite
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/SOAP/Transport/POP3.pm blib/lib/SOAP/Transport/POP3.pm
+cp lib/SOAP/Client.pod blib/lib/SOAP/Client.pod
+cp lib/SOAP/Transport/LOCAL.pm blib/lib/SOAP/Transport/LOCAL.pm
+cp lib/SOAP/Lite.pm blib/lib/SOAP/Lite.pm
+cp lib/SOAP/Transport/LOOPBACK.pm blib/lib/SOAP/Transport/LOOPBACK.pm
+cp lib/SOAP/Lite/Deserializer/XMLSchemaSOAP1_2.pm blib/lib/SOAP/Lite/Deserializer/XMLSchemaSOAP1_2.pm
+cp lib/SOAP/Transport/MAILTO.pm blib/lib/SOAP/Transport/MAILTO.pm
+cp lib/SOAP/Lite/Packager.pm blib/lib/SOAP/Lite/Packager.pm
+cp lib/SOAP/Deserializer.pod blib/lib/SOAP/Deserializer.pod
+cp lib/SOAP/Lite/Deserializer/XMLSchema2001.pm blib/lib/SOAP/Lite/Deserializer/XMLSchema2001.pm
+cp lib/SOAP/Header.pod blib/lib/SOAP/Header.pod
+cp lib/SOAP/Data.pod blib/lib/SOAP/Data.pod
+cp lib/SOAP/SOM.pod blib/lib/SOAP/SOM.pod
+cp lib/SOAP/Lite/Deserializer/XMLSchema1999.pm blib/lib/SOAP/Lite/Deserializer/XMLSchema1999.pm
+cp lib/SOAP/Transport/IO.pm blib/lib/SOAP/Transport/IO.pm
+cp lib/SOAP/Test.pm blib/lib/SOAP/Test.pm
+cp lib/SOAP/Serializer.pod blib/lib/SOAP/Serializer.pod
+cp lib/SOAP/Transport/HTTP.pm blib/lib/SOAP/Transport/HTTP.pm
+cp lib/SOAP/Transport/TCP.pm blib/lib/SOAP/Transport/TCP.pm
+cp lib/SOAP/Server.pod blib/lib/SOAP/Server.pod
+cp lib/SOAP/Schema.pod blib/lib/SOAP/Schema.pod
+cp lib/SOAP/Lite/Utils.pm blib/lib/SOAP/Lite/Utils.pm
+cp lib/SOAP/Packager.pm blib/lib/SOAP/Packager.pm
+cp lib/SOAP/Constants.pm blib/lib/SOAP/Constants.pm
+cp lib/SOAP/Utils.pod blib/lib/SOAP/Utils.pod
+cp lib/SOAP/Fault.pod blib/lib/SOAP/Fault.pod
+cp lib/SOAP/Lite/Deserializer/XMLSchemaSOAP1_1.pm blib/lib/SOAP/Lite/Deserializer/XMLSchemaSOAP1_1.pm
+cp lib/Apache/SOAP.pm blib/lib/Apache/SOAP.pm
+cp lib/SOAP/Trace.pod blib/lib/SOAP/Trace.pod
+cp lib/SOAP/Transport.pod blib/lib/SOAP/Transport.pod
+cp bin/SOAPsh.pl blib/script/SOAPsh.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/SOAPsh.pl
+cp bin/stubmaker.pl blib/script/stubmaker.pl
+"/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/stubmaker.pl
+Manifying 2 pod documents
+Manifying 21 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t t/Issues/*.t t/SOAP/*.t t/SOAP/Lite/*.t t/SOAP/Lite/Deserializer/*.t t/SOAP/Schema/*.t t/SOAP/Transport/*.t t/SOAP/Transport/HTTP/*.t
+t/01-core.t .................................. ok
+t/010-serializer.t ........................... ok
+t/012-cloneable.t ............................ ok
+t/013-array-deserialization.t ................ ok
+t/014_UNIVERSAL_use.t ........................ ok
+t/015_UNIVERSAL_can.t ........................ ok
+t/02-payload.t ............................... ok
+t/03-server.t ................................ ok
+t/04-attach-cid-encoded.t .................... skipped: Could not find MIME::Parser - is MIME::Tools installed? Aborting.
+t/04-attach.t ................................ skipped: Could not find MIME::Parser - is MIME::Tools installed? Aborting.
+t/05-customxml.t ............................. ok
+t/06-modules.t ............................... ok
+t/08-schema.t ................................ ok
+t/11-cgi.t ................................... skipped: 500 Can't connect to localhost:80 (Connection refused)
+t/12-cgi_https.t ............................. skipped: 500 SSL_ca_file /no-cert-file.crt can't be used: No such file or directory
+t/13-mod_perl.t .............................. skipped: 500 Can't connect to localhost:80 (Connection refused)
+t/14-cgi_apache.t ............................ skipped: 500 Can't connect to localhost:80 (Connection refused)
+t/15-daemon.t ................................ skipped: 500 Can't connect to localhost:80 (Connection refused)
+t/17-mod_soap.t .............................. skipped: 500 Can't connect to localhost:80 (Connection refused)
+t/19-apachesoap.t ............................ skipped: 500 Can't connect to localhost:8080 (Connection refused)
+t/21-public.t ................................ skipped: 500 Can't connect to services.xmethods.net:80 (Name or service not known)
+t/22-interop_apache.t ........................ skipped: 500 Can't connect to nagoya.apache.org:5049 (Name or service not known)
+t/23-ppm.t ................................... skipped: ActiveState's ppmserver.pl server seems to be broken - skipping tests
+t/24-wsdl.t .................................. skipped: 500 Can't connect to services.xmethods.net:80 (Name or service not known)
+t/36-leaks.t ................................. skipped: 500 Can't connect to services.soaplite.com:80 (Name or service not known)
+t/38-packager.t .............................. skipped: MIME::Parser not installed
+t/40-loopback.t .............................. ok
+t/author-pod-syntax.t ........................ skipped: these tests are for testing by the author
+t/Issues/rt107924.t .......................... ok
+t/Issues/rt15176.t ........................... ok
+t/Issues/rt53375.t ........................... ok
+t/Issues/rt70329.t ........................... ok
+t/Issues/rt70381.t ........................... skipped: This is a performance test. Set PROFILE_PERFORMANCE env var to a true value to run
+t/Issues/rt72836.t ........................... skipped: Cannot test without Test::XML
+t/Issues/rt74029.t ........................... skipped: not fixed yet
+t/Issues/rt74308.t ........................... ok
+t/Issues/rt75169.t ........................... ok
+t/Issues/rt78588.t ........................... ok
+t/Issues/rt88915.t ........................... ok
+t/release-kwalitee.t ......................... skipped: these tests are for release candidate testing
+t/SOAP/Data.t ................................ ok
+t/SOAP/Lite/Deserializer/XMLSchema1999.t ..... ok
+t/SOAP/Lite/Deserializer/XMLSchema2001.t ..... ok
+t/SOAP/Lite/Deserializer/XMLSchemaSOAP1_1.t .. ok
+t/SOAP/Lite/Deserializer/XMLSchemaSOAP1_2.t .. ok
+t/SOAP/Lite/Packager.t ....................... ok
+t/SOAP/Schema/WSDL.t ......................... ok
+t/SOAP/Serializer.t .......................... ok
+t/SOAP/Transport/HTTP.t ...................... ok
+t/SOAP/Transport/HTTP/CGI.t .................. ok
+t/SOAP/Transport/IO.t ........................ ok
+t/SOAP/Transport/LOCAL.t ..................... ok
+t/SOAP/Transport/LOOPBACK.t .................. ok
+t/SOAP/Transport/MAILTO.t .................... skipped: Cannot test without Test::MockObject
+t/SOAP/Transport/POP3.t ...................... ok
+t/SOAP/Transport/TCP.t ....................... ok
+All tests successful.
+Files=56, Tests=838, 12 wallclock secs ( 0.27 usr  0.07 sys +  6.83 cusr  5.03 csys = 12.20 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/pkgconfig m4datadir=/nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/aclocal aclocaldir=/nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/aclocal install
+Manifying 2 pod documents
+Manifying 21 pod documents
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Schema.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Client.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Utils.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Packager.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Test.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/SOM.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Fault.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Header.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Server.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Serializer.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Data.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Deserializer.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Trace.pod
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Constants.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/LOCAL.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/POP3.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/HTTP.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/TCP.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/MAILTO.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/LOOPBACK.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Transport/IO.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Packager.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Utils.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Deserializer/XMLSchemaSOAP1_2.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Deserializer/XMLSchema1999.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Deserializer/XMLSchemaSOAP1_1.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/SOAP/Lite/Deserializer/XMLSchema2001.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/site_perl/5.32.0/Apache/SOAP.pm
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man1/SOAPsh.pl.1
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man1/stubmaker.pl.1
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Utils.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Transport.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Lite.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Serializer.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/Apache::SOAP.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Deserializer.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::SOM.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Client.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Packager.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Test.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Lite::Packager.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Server.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Constants.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Transport::POP3.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Transport::LOOPBACK.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Transport::TCP.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Data.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Trace.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Schema.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Header.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3/SOAP::Fault.3
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/bin/SOAPsh.pl
+Installing /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/bin/stubmaker.pl
+Appending installation info to /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/man3 to /nix/store/mz1rffx3n43b893cn954lcc8852dypim-perl5.32.0-SOAP-Lite-1.27-devdoc/share/man/man3
+rmdir: failed to remove '/nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man': Directory not empty
+shrinking RPATHs of ELF executables and libraries in /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27
+gzipping man pages under /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/lib  /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27/bin
+patching script interpreter paths in /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27
+checking for references to /build/ in /nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27...
+shrinking RPATHs of ELF executables and libraries in /nix/store/mz1rffx3n43b893cn954lcc8852dypim-perl5.32.0-SOAP-Lite-1.27-devdoc
+gzipping man pages under /nix/store/mz1rffx3n43b893cn954lcc8852dypim-perl5.32.0-SOAP-Lite-1.27-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/mz1rffx3n43b893cn954lcc8852dypim-perl5.32.0-SOAP-Lite-1.27-devdoc
+checking for references to /build/ in /nix/store/mz1rffx3n43b893cn954lcc8852dypim-perl5.32.0-SOAP-Lite-1.27-devdoc...
+/nix/store/clyqg5igndlqiqq75xx7qzgcymr2wn4a-perl5.32.0-SOAP-Lite-1.27

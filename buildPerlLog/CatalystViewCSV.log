@@ -1,0 +1,169 @@
+these derivations will be built:
+  /nix/store/17jlp4pnfv8ggw0vkhcd15gq20hxbf8w-perl5.32.0-Text-CSV-2.00.drv
+  /nix/store/5b5rlwwkgjg5f16g6lyan46077v9h8jp-perl5.32.0-Catalyst-View-CSV-1.7.drv
+these paths will be fetched (0.14 MiB download, 0.14 MiB unpacked):
+  /nix/store/iqkakz5rwlad7d7lmx524xcmj40s6r1d-Catalyst-View-CSV-1.7.tar.gz
+  /nix/store/qr3flbs9r8dx5jskgih9p8c9qki8szfw-Text-CSV-2.00.tar.gz
+copying path '/nix/store/iqkakz5rwlad7d7lmx524xcmj40s6r1d-Catalyst-View-CSV-1.7.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qr3flbs9r8dx5jskgih9p8c9qki8szfw-Text-CSV-2.00.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/17jlp4pnfv8ggw0vkhcd15gq20hxbf8w-perl5.32.0-Text-CSV-2.00.drv'...
+unpacking sources
+unpacking source archive /nix/store/qr3flbs9r8dx5jskgih9p8c9qki8szfw-Text-CSV-2.00.tar.gz
+source root is Text-CSV-2.00
+setting SOURCE_DATE_EPOCH to timestamp 1557543476 of file Text-CSV-2.00/META.yml
+patching sources
+configuring
+patching ./t/41_null.t...
+patching ./t/01_is_pp.t...
+patching ./t/40_misc.t...
+patching ./t/65_allow.t...
+patching ./t/46_eol_si.t...
+patching ./t/30_types.t...
+patching ./t/60_samples.t...
+patching ./t/12_acc.t...
+patching ./t/20_file.t...
+patching ./t/66_formula.t...
+patching ./t/77_getall.t...
+patching ./t/80_diag.t...
+patching ./t/50_utf8.t...
+patching ./t/90_csv.t...
+patching ./t/71_pp.t...
+patching ./t/10_base.t...
+patching ./t/15_flags.t...
+patching ./t/75_hashref.t...
+patching ./t/70_rt.t...
+patching ./t/55_combi.t...
+patching ./t/21_lexicalio.t...
+patching ./t/91_csv_cb.t...
+patching ./t/85_util.t...
+patching ./t/76_magic.t...
+patching ./t/51_utf8.t...
+patching ./t/78_fragment.t...
+patching ./t/fields_containing_0.t...
+patching ./t/81_subclass.t...
+patching ./t/22_scalario.t...
+patching ./t/45_eol.t...
+patching ./t/79_callbacks.t...
+Welcome to Text::CSV (v.2.00)
+=============================
+If you install Text::CSV_XS v.1.02, it makes Text::CSV faster.
+
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Text::CSV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Text/CSV_PP.pm blib/lib/Text/CSV_PP.pm
+cp lib/Text/CSV.pm blib/lib/Text/CSV.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/00_pod.t ............... # PERL_TEXT_CSV: undef
+t/00_pod.t ............... skipped: Test::Pod 1.00 required for testing POD
+t/01_is_pp.t ............. ok
+t/10_base.t .............. ok
+t/12_acc.t ............... ok
+t/15_flags.t ............. ok
+t/20_file.t .............. ok
+t/21_lexicalio.t ......... ok
+t/22_scalario.t .......... ok
+t/30_types.t ............. ok
+t/40_misc.t .............. ok
+t/41_null.t .............. ok
+t/45_eol.t ............... ok
+t/46_eol_si.t ............ ok
+t/50_utf8.t .............. ok
+t/51_utf8.t .............. ok
+t/55_combi.t ............. ok
+t/60_samples.t ........... ok
+t/65_allow.t ............. ok
+t/66_formula.t ........... ok
+t/70_rt.t ................ ok
+t/71_pp.t ................ ok
+t/75_hashref.t ........... ok
+t/76_magic.t ............. ok
+t/77_getall.t ............ ok
+t/78_fragment.t .......... ok
+t/79_callbacks.t ......... ok
+t/80_diag.t .............. ok
+t/81_subclass.t .......... ok
+t/85_util.t .............. ok
+t/90_csv.t ............... ok
+t/91_csv_cb.t ............ ok
+t/fields_containing_0.t .. ok
+t/rt99774.t .............. ok
+All tests successful.
+Files=33, Tests=52229, 18 wallclock secs ( 4.00 usr  0.28 sys + 17.09 cusr  0.63 csys = 22.00 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/lib/pkgconfig m4datadir=/nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/aclocal aclocaldir=/nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/lib/perl5/site_perl/5.32.0/Text/CSV.pm
+Installing /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/lib/perl5/site_perl/5.32.0/Text/CSV_PP.pm
+Installing /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/man/man3/Text::CSV_PP.3
+Installing /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/man/man3/Text::CSV.3
+Appending installation info to /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/man/man3 to /nix/store/z8hyjy9jvhg3mz3rppnbyzf14bab2br6-perl5.32.0-Text-CSV-2.00-devdoc/share/man/man3
+Removing empty /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00/lib
+patching script interpreter paths in /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00
+checking for references to /build/ in /nix/store/fh25s9iayi6sd9h2f0ydpkmbvrl4lqmq-perl5.32.0-Text-CSV-2.00...
+shrinking RPATHs of ELF executables and libraries in /nix/store/z8hyjy9jvhg3mz3rppnbyzf14bab2br6-perl5.32.0-Text-CSV-2.00-devdoc
+gzipping man pages under /nix/store/z8hyjy9jvhg3mz3rppnbyzf14bab2br6-perl5.32.0-Text-CSV-2.00-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/z8hyjy9jvhg3mz3rppnbyzf14bab2br6-perl5.32.0-Text-CSV-2.00-devdoc
+checking for references to /build/ in /nix/store/z8hyjy9jvhg3mz3rppnbyzf14bab2br6-perl5.32.0-Text-CSV-2.00-devdoc...
+building '/nix/store/5b5rlwwkgjg5f16g6lyan46077v9h8jp-perl5.32.0-Catalyst-View-CSV-1.7.drv'...
+unpacking sources
+unpacking source archive /nix/store/iqkakz5rwlad7d7lmx524xcmj40s6r1d-Catalyst-View-CSV-1.7.tar.gz
+source root is Catalyst-View-CSV-1.7
+setting SOURCE_DATE_EPOCH to timestamp 1446214163 of file Catalyst-View-CSV-1.7/lib/Catalyst/View/CSV.pm
+patching sources
+configuring
+patching ./t/Catalyst-View-CSV.t...
+patching ./t/lib/mkdb.sh...
+Generating a Unix-style Makefile
+Writing Makefile for Catalyst::View::CSV
+Writing MYMETA.yml and MYMETA.json
+no configure script, doing nothing
+building
+build flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash
+cp lib/Catalyst/View/CSV.pm blib/lib/Catalyst/View/CSV.pm
+cp lib/Catalyst/Helper/View/CSV.pm blib/lib/Catalyst/Helper/View/CSV.pm
+Manifying 2 pod documents
+running tests
+check flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash VERBOSE=y test
+PERL_DL_NONLAZY=1 "/nix/store/7c044di03qa7qgr5kjjc2d787aspzp0m-perl-5.32.0/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'inc', 'blib/lib', 'blib/arch')" t/*.t
+t/Catalyst-View-CSV.t .. ok
+All tests successful.
+Files=1, Tests=25,  2 wallclock secs ( 0.10 usr  0.12 sys +  1.13 cusr  0.53 csys =  1.88 CPU)
+Result: PASS
+installing
+install flags: SHELL=/nix/store/9fqwwd4iybmhjqyxiaxycknslw6bgwh1-bash-4.4-p23/bin/bash pkgconfigdir=/nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/lib/pkgconfig m4datadir=/nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/aclocal aclocaldir=/nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/aclocal install
+Manifying 2 pod documents
+Installing /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/lib/perl5/site_perl/5.32.0/Catalyst/View/CSV.pm
+Installing /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/lib/perl5/site_perl/5.32.0/Catalyst/Helper/View/CSV.pm
+Installing /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/man/man3/Catalyst::Helper::View::CSV.3
+Installing /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/man/man3/Catalyst::View::CSV.3
+Appending installation info to /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/lib/perl5/5.32.0/x86_64-linux-thread-multi/perllocal.pod
+post-installation fixup
+Moving /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/man/man3 to /nix/store/pjy4kvbg3g9aavz66414r2bnn5r08dda-perl5.32.0-Catalyst-View-CSV-1.7-devdoc/share/man/man3
+Removing empty /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/share/man/ and (possibly) its parents
+shrinking RPATHs of ELF executables and libraries in /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7/lib
+patching script interpreter paths in /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7
+checking for references to /build/ in /nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7...
+shrinking RPATHs of ELF executables and libraries in /nix/store/pjy4kvbg3g9aavz66414r2bnn5r08dda-perl5.32.0-Catalyst-View-CSV-1.7-devdoc
+gzipping man pages under /nix/store/pjy4kvbg3g9aavz66414r2bnn5r08dda-perl5.32.0-Catalyst-View-CSV-1.7-devdoc/share/man/
+strip is /nix/store/psyzbhp4p088sb9qcs378hfbslcalasl-binutils-2.31.1/bin/strip
+patching script interpreter paths in /nix/store/pjy4kvbg3g9aavz66414r2bnn5r08dda-perl5.32.0-Catalyst-View-CSV-1.7-devdoc
+checking for references to /build/ in /nix/store/pjy4kvbg3g9aavz66414r2bnn5r08dda-perl5.32.0-Catalyst-View-CSV-1.7-devdoc...
+/nix/store/jf0ydyihjfhmn9v8bb0mif45xz8ivwvy-perl5.32.0-Catalyst-View-CSV-1.7
