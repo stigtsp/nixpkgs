@@ -381,7 +381,10 @@ INFO( "path: ",    $module->path );
 
 my $tar_path = $module->fetch();
 INFO( "downloaded to: ", $tar_path );
-INFO( "sha-256: ",       $module->status->checksum_value );
+
+my $sha256_hex = $module->status->checksum_value;
+chomp(my $sha256 = qx(nix-hash --type sha256 --to-base32 \Q$sha256_hex) || die $!);
+INFO( "sha-256: ", $sha256);
 
 my $pkg_path = $module->extract();
 INFO( "unpacked to: ", $pkg_path );
@@ -436,7 +439,7 @@ print <<EOF;
     version = "$pkg_version";
     src = fetchurl {
       url = "mirror://cpan/${\$module->path}/${\$module->package}";
-      sha256 = "${\$module->status->checksum_value}";
+      sha256 = "$sha256";
     };
 EOF
 print <<EOF if scalar @build_deps > 0;
