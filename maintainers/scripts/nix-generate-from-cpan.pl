@@ -452,7 +452,7 @@ print <<EOF;
     meta = {
 EOF
 print <<EOF if defined $homepage;
-      homepage = $homepage;
+      homepage = "$homepage";
 EOF
 print <<EOF if defined $description && $description ne "Unknown";
       description = "$description";
