@@ -7226,6 +7226,27 @@ let
     };
   };
 
+  ExtUtilsModuleMaker = buildPerlPackage {
+    pname = "ExtUtils-ModuleMaker";
+    version = "0.63";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JK/JKEENAN/ExtUtils-ModuleMaker-0.63.tar.gz";
+      sha256 = "10vbl92fzzswypj21s1c1ly5g86n9kqwwsi592q8sgzcvvk87xng";
+    };
+    buildInputs = [ CaptureTiny FileCopyRecursiveReduced IOCapture ModuleBuild ];
+    propagatedBuildInputs = [ FileHomeDir ];
+    nativeBuildInputs = stdenv.lib.optional stdenv.isDarwin shortenPerlShebang;
+    postInstall = stdenv.lib.optionalString stdenv.isDarwin ''
+      shortenPerlShebang $out/bin/modulemaker
+    '';
+    meta = {
+      homepage = "http://thenceforward.net/perl/modules/ExtUtils-ModuleMaker/";
+      description = "Better than h2xs for creating modules";
+      license = with stdenv.lib.licenses; [ artistic1 gpl1Plus ];
+      maintainers = [ maintainers.sgo ];
+    };
+  };
+
   ExtUtilsPkgConfig = buildPerlPackage {
     pname = "ExtUtils-PkgConfig";
     version = "1.16";
