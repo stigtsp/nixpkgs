@@ -17249,10 +17249,10 @@ let
 
   podlators = buildPerlPackage {
     pname = "podlators";
-    version = "4.10";
+    version = "4.14";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RR/RRA/podlators-4.10.tar.gz";
-      sha256 = "008b4j41ijrfyyq5nd3y7pqyww6rg49fjg2c6kmpnqrmgs347qqp";
+      url = "mirror://cpan/authors/id/R/RR/RRA/podlators-4.14.tar.gz";
+      sha256 = "10hgvdyp0969a1222hk1y5n2p72lhxrrv8h0yyzlsbjbwcfw9wbs";
     };
     meta = {
       description = "Convert POD data to various other formats";
