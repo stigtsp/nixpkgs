@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, perl, perlPackages, makeWrapper, shortenPerlShebang
+{ stdenv, fetchFromGitHub, perl, perlPackages, makeWrapper, shortenPerlShebang, openssl
 , nixosTests
 }:
 
@@ -6,13 +6,13 @@ with stdenv.lib;
 
 perlPackages.buildPerlPackage rec {
   pname = "convos";
-  version = "5.00";
+  version = "5.07";
 
   src = fetchFromGitHub {
     owner = "Nordaaker";
     repo = pname;
     rev = version;
-    sha256 = "0mdbh9q1vclwgnjwvb3z637s7v804h65zxazbhmd7qi3zislnhg1";
+    sha256 = "0qz4n054kvyxwjcclhjlyh7lsjn979lng76zzzy8v52ni2f8xyzf";
   };
 
   nativeBuildInputs = [ makeWrapper ]
@@ -24,8 +24,13 @@ perlPackages.buildPerlPackage rec {
     Mojolicious MojoliciousPluginOpenAPI MojoliciousPluginWebpack
     ParseIRC TextMarkdown TimePiece UnicodeUTF8
     CpanelJSONXS EV
+    Hailo MathCalcParser
   ];
 
+  propagatedBuildInputs = [ openssl ];
+
+
+  TEST_BOT = true;
   checkInputs = with perlPackages; [ TestDeep TestMore ];
 
   postPatch = ''
@@ -33,6 +38,11 @@ perlPackages.buildPerlPackage rec {
   '';
 
   preCheck = ''
+    # Unstable test json_is('/connections', ...) where `state` can be `queued`
+    # as well as `disconnected`, first seen in 5.07.
+    #
+    rm t/web-user.t
+
     # Remove online test
     #
     rm t/web-pwa.t
