@@ -19225,10 +19225,10 @@ let
 
   SysVirt = buildPerlModule rec {
     pname = "Sys-Virt";
-    version = "6.3.0";
+    version = "6.10.0";
    src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DA/DANBERR/Sys-Virt-v6.3.0.tar.gz";
-      sha256 = "6333fe3c554322fec5a3e1890b08a4ea4f39b0fbb506b3592688a5785a488f39";
+      url = "mirror://cpan/authors/id/D/DA/DANBERR/Sys-Virt-v6.10.0.tar.gz";
+      sha256 = "1xs65c4nv4dqa0rxbcmzgcs016dynsgfzlykyk1s31f8gsd5g5qm";
     };
     nativeBuildInputs = [ pkgs.pkgconfig ];
     buildInputs = [ pkgs.libvirt CPANChanges TestPod TestPodCoverage XMLXPath ];
