@@ -13611,10 +13611,10 @@ let
 
   MojoPg = buildPerlPackage {
     pname = "Mojo-Pg";
-    version = "4.22";
+    version = "4.23";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SR/SRI/Mojo-Pg-4.22.tar.gz";
-      sha256 = "11s3f3km6i3in9wx9q4rkxgvj9rc6w8pdahrc19hi6zkxz3i87nr";
+      url = "mirror://cpan/authors/id/S/SR/SRI/Mojo-Pg-4.23.tar.gz";
+      sha256 = "12xh7a8fgpnsd7y46k714cdn792zy1b3gnwyp43mkikm9wm0bmbk";
     };
     propagatedBuildInputs = [ DBDPg Mojolicious SQLAbstract ];
     buildInputs = [ TestDeep ];
