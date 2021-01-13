@@ -10647,10 +10647,10 @@ let
 
   JavaScriptMinifierXS = buildPerlModule {
     pname = "JavaScript-Minifier-XS";
-    version = "0.11";
+    version = "0.13";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/G/GT/GTERMARS/JavaScript-Minifier-XS-0.11.tar.gz";
-      sha256 = "1vlyhckpjbrg2v4dy9szsxxl0q44n0y1xl763mg2y2ym9g5144hm";
+      url = "mirror://cpan/authors/id/G/GT/GTERMARS/JavaScript-Minifier-XS-0.13.tar.gz";
+      sha256 = "0i81i6q76agf06yd2kd2bdar5ffcx5scv9klp0zgb3fb1nxqllz0";
     };
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC";
     meta = {
