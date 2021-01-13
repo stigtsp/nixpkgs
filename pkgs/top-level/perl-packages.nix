@@ -12326,10 +12326,10 @@ let
 
   MathPlanePath = buildPerlPackage {
     pname = "Math-PlanePath";
-    version = "127";
+    version = "128";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/K/KR/KRYDE/Math-PlanePath-127.tar.gz";
-      sha256 = "1dzywpydigwyr38vz9f4yn7xkkk21vi6lyzjlyqv8iny0y0c7w20";
+      url = "mirror://cpan/authors/id/K/KR/KRYDE/Math-PlanePath-128.tar.gz";
+      sha256 = "0srd8b99byx5sbp1d3izjfd9lx079xa5rrrg325k928gn5n6x0zq";
     };
     propagatedBuildInputs = [ MathLibm constant-defer ];
     buildInputs = [ DataFloat MathBigIntLite NumberFraction ];
