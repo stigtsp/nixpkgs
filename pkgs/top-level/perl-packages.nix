@@ -16611,15 +16611,15 @@ let
 
   PerlMagick = buildPerlPackage {
     pname = "PerlMagick";
-    version = "6.89-1";
+    version = "7.0.10";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/J/JC/JCRISTY/PerlMagick-6.89-1.tar.gz";
-      sha256 = "0n9afy1z5bhf9phrbahnkwhgcmijn8jggpbzwrivw1zhliliiy68";
+      url = "mirror://cpan/authors/id/J/JC/JCRISTY/PerlMagick-7.0.10.tar.gz";
+      sha256 = "1x05hdb3b6qs36x958b4w46qanvkqm6rpc44rlq4rd2w3gbp4lhx";
     };
-    buildInputs = [ pkgs.imagemagick ];
+    buildInputs = [ pkgs.imagemagick7 ];
     preConfigure =
       ''
-        sed -i -e 's|my \$INC_magick = .*|my $INC_magick = "-I${pkgs.imagemagick.dev}/include/ImageMagick";|' Makefile.PL
+        sed -i -e 's|my \$INC_magick = .*|my $INC_magick = "-I${pkgs.imagemagick7.dev}/include/ImageMagick";|' Makefile.PL
       '';
     doCheck = false;
   };
