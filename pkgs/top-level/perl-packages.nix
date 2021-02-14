@@ -7752,7 +7752,7 @@ let
      };
   };
 
-  FileCountLines = buildPerlPackage {
+  FileCountLines = buildPerlModule {
     pname = "File-CountLines";
     version = "0.0.3";
     src = fetchurl {
