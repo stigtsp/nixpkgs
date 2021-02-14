@@ -21488,6 +21488,7 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
+    buildInputs = [ ModuleInstall ];
   };
 
   TextGerman = buildPerlPackage {
