@@ -14716,6 +14716,7 @@ let
     doCheck = false; # The main test performs network access
     nativeBuildInputs = [ pkgs.pkg-config ];
     propagatedBuildInputs = [ pkgs.libdiscid ];
+    buildInputs = [ TestPod ];
   };
 
   MusicBrainz = buildPerlModule {
