@@ -18504,7 +18504,7 @@ let
     };
     buildInputs = [ LWP ModuleBuildTiny TestRequires TestTCP ];
     nativeBuildInputs = lib.optional stdenv.isDarwin shortenPerlShebang;
-    propagatedBuildInputs = [ DataDump HTTPParserXS NetServer Plack NetServerSSPrefork ];
+    propagatedBuildInputs = [ DataDump HTTPParserXS NetServer Plack ];
     postInstall = lib.optionalString stdenv.isDarwin ''
       shortenPerlShebang $out/bin/starman
     '';
