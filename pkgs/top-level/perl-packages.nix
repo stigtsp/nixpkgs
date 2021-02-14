@@ -16056,6 +16056,7 @@ let
       description = "Simple, compact and correct param-checking functions";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
+    buildInputs = [ TestLeakTrace ];
   };
 
   ParamsValidate = buildPerlModule {
