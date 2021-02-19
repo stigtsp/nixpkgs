@@ -21066,6 +21066,20 @@ let
     };
   };
 
+  PlackMiddlewareScopeContainer = buildPerlModule {
+    pname = "Plack-Middleware-Scope-Container";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-Scope-Container-0.04.tar.gz";
+      sha256 = "0drs506ycg7n71b14scw705acicvkb3wiyk1syw8l24qa4igax47";
+    };
+    propagatedBuildInputs = [ Plack ScopeContainer ];
+    meta = {
+      description = "per-request container";
+      homepage = "https://github.com/kazeburo/Plack-Middleware-Scope-Container";
+    };
+  };
+
   PlackMiddlewareSecuritySimple = buildPerlPackage {
     pname = "Plack-Middleware-Security-Simple";
     version = "v0.4.2";
@@ -23177,6 +23191,19 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Scalar-String-0.003.tar.gz";
       sha256 = "f54a17c9b78713b02cc43adfadf60b49467e7634d31317e8b9e9e97c26d68b52";
+    };
+  };
+
+  ScopeContainer = buildPerlPackage {
+    pname = "Scope-Container";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Scope-Container-0.04.tar.gz";
+      sha256 = "093djxzszsrkhcmsafcaqkfnk1j4qfybiqvq3i8ifsn52cspq835";
+    };
+    meta = {
+      description = "scope based container";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
