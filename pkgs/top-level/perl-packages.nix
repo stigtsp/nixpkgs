@@ -17306,6 +17306,20 @@ let
     };
   };
 
+  PlackHandlerNetFastCGI = buildPerlPackage {
+    pname = "Plack-Handler-Net-FastCGI";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHANSEN/Plack-Handler-Net-FastCGI-0.01.tar.gz";
+      sha256 = "1szxfvv89cyrmagjd67svc94747y2jg16fwljh3k46xxw66zkvxz";
+    };
+    propagatedBuildInputs = [ NetFastCGI Plack ];
+    meta = {
+      description = "FastCGI handler for Plack using Net::FastCGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackHandlerSCGI = buildPerlPackage {
     pname = "Plack-Handler-SCGI";
     version = "0.02";
