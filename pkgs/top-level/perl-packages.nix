@@ -8601,6 +8601,19 @@ let
     buildInputs = [ TestPod ];
   };
 
+  FindBinlibs = buildPerlPackage {
+    pname = "FindBin-libs";
+    version = "v2.20.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEMBARK/FindBin-libs-v2.20.2.tar.gz";
+      sha256 = "1b9fs7w4wrrrymyn4yi7hamkbl3wigbz0p0vz9x4y3023i3d0y00";
+    };
+    propagatedBuildInputs = [ FileCopyRecursiveReduced ];
+    meta = {
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FindLib = buildPerlPackage {
     pname = "Find-Lib";
     version = "1.04";
@@ -18186,6 +18199,21 @@ let
     buildInputs = [ FileTouch XMLLibXMLCache ];
     meta = {
       description = "XSLT transformations with Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareXSRFBlock = buildPerlPackage {
+    pname = "Plack-Middleware-XSRFBlock";
+    version = "0.0.16";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHISEL/Plack-Middleware-XSRFBlock-0.0.16.tar.gz";
+      sha256 = "1d2kcsybaqglmg2q3prqwblm6dcca5sjm9s6a5axrq2g485jrdz4";
+    };
+    propagatedBuildInputs = [ DigestHMAC HTMLEscape HTMLParser Plack ];
+    buildInputs = [ FindBinlibs HTTPCookies LWP LogDispatch PlackMiddlewareSession PodCoverageTrustPod SubExporter TestKwalitee TestNoTabs TestPod TestPodCoverage TestUseAllModules ];
+    meta = {
+      description = "Block XSRF Attacks with minimal changes to your app";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
