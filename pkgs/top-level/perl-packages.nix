@@ -20537,6 +20537,21 @@ let
     };
   };
 
+  PlackAppPubSubHubbubSubscriber = buildPerlModule {
+    pname = "Plack-App-PubSubHubbub-Subscriber";
+    version = "0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AI/AIMBERT/Plack-App-PubSubHubbub-Subscriber-0.2.tar.gz";
+      sha256 = "1a1a1wfq13qsyx6bkm64arfj6x9gi5aibm2lwca43fn5yssds72l";
+    };
+    propagatedBuildInputs = [ LWP Plack ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "PubSubHubbub subscriber implementation as a Plack App";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppRDFFiles = buildPerlModule {
     pname = "Plack-App-RDF-Files";
     version = "0.12";
