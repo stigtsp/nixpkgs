@@ -9790,6 +9790,15 @@ let
     };
   };
 
+  FilesysDfPortable = buildPerlPackage {
+    pname = "Filesys-DfPortable";
+    version = "0.85";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IG/IGUTHRIE/Filesys-DfPortable-0.85.tar.gz";
+      sha256 = "0qa6ly74p060lm2v06aji3bzx85xhbyjz4i9hq2hsxyyk01xnjbq";
+    };
+  };
+
   FilesysNotifySimple = buildPerlPackage {
     pname = "Filesys-Notify-Simple";
     version = "0.14";
@@ -23673,6 +23682,21 @@ let
     };
   };
 
+  PlackMiddlewareRaygun = buildPerlPackage {
+    pname = "Plack-Middleware-Raygun";
+    version = "v0.4";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HE/HEYTRAV/Plack-Middleware-Raygun-v0.4.tar.gz";
+      sha256 = "16x5jvkhqmx1dw6ivfn3xcff89sz4mykn468ysqvg1x0dpgvih3x";
+    };
+    propagatedBuildInputs = [ Plack WebServiceRaygun ];
+    buildInputs = [ TestClass TestDeep TestException TestMockModule ];
+    meta = {
+      description = "wrap around psgi application to send stuff to raygun.io";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareRealIP = buildPerlPackage {
     pname = "Plack-Middleware-RealIP";
     version = "0.03";
@@ -27979,6 +28003,35 @@ let
     doCheck = false; # no `hostname' in stdenv
   };
 
+  SysInfo = buildPerlPackage {
+    pname = "Sys-Info";
+    version = "0.7811";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURAK/Sys-Info-0.7811.tar.gz";
+      sha256 = "1q81lkw1x04nxzym2lcjlb23drx88pcqwijmg66ijz22yfzq4r2n";
+    };
+    propagatedBuildInputs = [ SysInfoBase ];
+    buildInputs = [ TestSysInfo ];
+    meta = {
+      description = "Fetch information from the host system";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SysInfoBase = buildPerlPackage {
+    pname = "Sys-Info-Base";
+    version = "0.7807";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURAK/Sys-Info-Base-0.7807.tar.gz";
+      sha256 = "1jrab153z3fljffw5wcvs1qqi2m84cv90q0m5vqw93bf0jq648qk";
+    };
+    propagatedBuildInputs = [ TextTemplateSimple ];
+    meta = {
+      description = "Base class for Sys::Info";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   SysSigAction = buildPerlPackage {
     pname = "Sys-SigAction";
     version = "0.23";
@@ -30270,6 +30323,19 @@ let
     };
   };
 
+  TestSysInfo = buildPerlPackage {
+    pname = "Test-Sys-Info";
+    version = "0.23";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURAK/Test-Sys-Info-0.23.tar.gz";
+      sha256 = "0nn9zcc0ylilw2qsbvx4kdrzbgyxkbvr2qpvv7k1m3pfrz2g5i9h";
+    };
+    meta = {
+      description = "Centralized test suite for Sys::Info";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TestTableDriven = buildPerlPackage {
     pname = "Test-TableDriven";
     version = "0.02";
@@ -31132,6 +31198,19 @@ let
       sha256 = "1dd2c788c05303ed9a970e1881109642151fa93e02c7a80d4c70608276bab1ee";
     };
     buildInputs = [ TestMoreUTF8 TestWarnings ];
+  };
+
+  TextTemplateSimple = buildPerlPackage {
+    pname = "Text-Template-Simple";
+    version = "0.91";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURAK/Text-Template-Simple-0.91.tar.gz";
+      sha256 = "1b0rw6al9mpbl00dx2djfbzkxm57v1ln4ac7ikl9mpl7aj76gxpm";
+    };
+    meta = {
+      description = "Simple text template engine";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   TextTestBase = buildPerlModule {
@@ -33367,6 +33446,21 @@ let
     meta = {
       homepage = "https://github.com/mikegrb/WebService-Linode";
       description = "Perl Interface to the Linode.com API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  WebServiceRaygun = buildPerlPackage {
+    pname = "WebService-Raygun";
+    version = "0.030";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HE/HEYTRAV/WebService-Raygun-0.030.tar.gz";
+      sha256 = "14kx1ic4qvsjpxyq8rywxd4xdf4qrfqh6hp7878ljf73vfz5913d";
+    };
+    propagatedBuildInputs = [ DataGUID DateTimeFormatStrptime FilesysDfPortable JSON LWP Mouse MozillaCA SysInfo ];
+    buildInputs = [ Moose TestClass TestDeep TestException ];
+    meta = {
+      description = "Connect to the Raygun.io API";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
