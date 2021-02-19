@@ -1482,6 +1482,18 @@ let
     };
   };
 
+  BSize2 = buildPerlPackage {
+    pname = "B-Size2";
+    version = "2.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GF/GFUJI/B-Size2-2.07.tar.gz";
+      sha256 = "0valpz913vzc7zkxy5bb8v4dzyp41kavzp53z1raa41xy438i2n5";
+    };
+    meta = {
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   BUtils = buildPerlPackage {
      pname = "B-Utils";
      version = "0.27";
@@ -18573,6 +18585,20 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Make everything lower!";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareMemoryUsage = buildPerlPackage {
+    pname = "Plack-Middleware-MemoryUsage";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HI/HIROSE/Plack-Middleware-MemoryUsage-0.03.tar.gz";
+      sha256 = "0w6scjf7klbszzgdqx96cxkx8lvc9lf9bmpj3c84p24mcc2j6066";
+    };
+    propagatedBuildInputs = [ BSize2 DevelSymdump Plack ];
+    meta = {
+      description = "for measuring process memory";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
