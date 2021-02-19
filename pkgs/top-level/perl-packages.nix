@@ -17848,6 +17848,21 @@ let
     };
   };
 
+  PlackAppFCGIDispatcher = buildPerlPackage {
+    pname = "Plack-App-FCGIDispatcher";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-App-FCGIDispatcher-0.10.tar.gz";
+      sha256 = "0rjs43b7q72zqj5p1w8wfbmxibqjwhjkikigp9jbl1x5gnf61cnk";
+    };
+    propagatedBuildInputs = [ FCGI FCGIClient Plack ];
+    buildInputs = [ TestRequires TestTCP ];
+    meta = {
+      description = "Dispatch requests to FCGI servers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
