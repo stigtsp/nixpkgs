@@ -17917,6 +17917,20 @@ let
     };
   };
 
+  PlackAppURLMux = buildPerlPackage {
+    pname = "Plack-App-URLMux";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURNES/Plack-App-URLMux-0.08.tar.gz";
+      sha256 = "1s44xhxjfamlqb09bdzlkh3rw832g5qxlavagsxzzmgkfdn8r8m9";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Map multiple applications in defferent url path";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppVhost = buildPerlModule {
     pname = "Plack-App-Vhost";
     version = "0.01";
