@@ -17105,6 +17105,21 @@ let
     };
   };
 
+  PlackMiddlewareChromeLogger = buildPerlModule {
+    pname = "Plack-Middleware-ChromeLogger";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-ChromeLogger-0.01.tar.gz";
+      sha256 = "0fjkskxd7vmwpjnp10f9i6cjxjrkgl19bp9nd1vi247sbz2rpmh7";
+    };
+    propagatedBuildInputs = [ Plack WebChromeLogger ];
+    buildInputs = [ JSON LWP ];
+    meta = {
+      description = "The Chrome Logger Middleware for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCleanup = buildPerlPackage {
     pname = "Plack-Middleware-Cleanup";
     version = "0.003";
@@ -23797,6 +23812,21 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RO/ROBIN/Want-0.29.tar.gz";
       sha256 = "1xsjylbxxcbkjazqms49ipi94j1hd2ykdikk29cq7dscil5p9r5l";
+    };
+  };
+
+  WebChromeLogger = buildPerlModule {
+    pname = "Web-ChromeLogger";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Web-ChromeLogger-0.06.tar.gz";
+      sha256 = "18qn2kg7n40vsjig9xrnn0vqj1if1b1w41xvdjjmnvibzgsjiif4";
+    };
+    propagatedBuildInputs = [ JSONXS ];
+    meta = {
+      description = "ChromeLogger for Perl";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Web-ChromeLogger";
     };
   };
 
