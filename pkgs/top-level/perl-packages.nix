@@ -18626,6 +18626,20 @@ let
     };
   };
 
+  PlackMiddlewareCrossOrigin = buildPerlPackage {
+    pname = "Plack-Middleware-CrossOrigin";
+    version = "0.014";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Plack-Middleware-CrossOrigin-0.014.tar.gz";
+      sha256 = "1dzk0hqckarjk7kmqybsmfx99bn4x7yj027f3ayacmc4rjmhzs1m";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Adds headers to allow Cross-Origin Resource Sharing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDBICQueryLog = buildPerlPackage {
     pname = "Plack-Middleware-DBIC-QueryLog";
     version = "0.05";
