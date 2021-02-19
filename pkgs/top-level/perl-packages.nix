@@ -17688,6 +17688,20 @@ let
     };
   };
 
+  PlackMiddlewarePyeLogger = buildPerlPackage {
+    pname = "Plack-Middleware-PyeLogger";
+    version = "2.000001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/ID/IDOPEREL/Plack-Middleware-PyeLogger-2.000001.tar.gz";
+      sha256 = "066zda86ri26dy4436q916jnvl4gjkbp7sjffvfs61g1zw4bvm8b";
+    };
+    propagatedBuildInputs = [ Plack Pye ];
+    meta = {
+      description = "Use Pye as a Plack logger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareREST = buildPerlModule {
     pname = "Plack-Middleware-REST";
     version = "0.10";
@@ -18229,6 +18243,20 @@ let
       sha256 = "08jmazvrmvp8jn15p2n3c1h3f2cbkr07xjzy197jb8x724vx0dsq";
     };
     buildInputs = [ ModuleBuildTiny ];
+  };
+
+  Pye = buildPerlPackage {
+    pname = "Pye";
+    version = "2.001001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/ID/IDOPEREL/Pye-2.001001.tar.gz";
+      sha256 = "126xq2nvdc3fl2ag17n2nyq375qw89hd6nkjpyz7prsa1pvss4sz";
+    };
+    propagatedBuildInputs = [ JSONMaybeXS RoleTiny TextSpanningTable ];
+    meta = {
+      description = "Session-based logging platform on top of SQL/NoSQL databases";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   ProtocolHTTP2 = buildPerlModule {
@@ -23054,6 +23082,20 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RJ/RJBS/Text-Soundex-3.05.tar.gz";
       sha256 = "f6dd55b4280b25dea978221839864382560074e1d6933395faee2510c2db60ed";
+    };
+  };
+
+  TextSpanningTable = buildPerlPackage {
+    pname = "Text-SpanningTable";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/ID/IDOPEREL/Text-SpanningTable-1.000000.tar.gz";
+      sha256 = "0kaqkvp25nz4sij0jy7b9rlwvd2bpvv5p15g428agh646sq2fqbx";
+    };
+    meta = {
+      description = "ASCII tables with support for column spanning";
+      license = with lib.licenses; [ asl20 ];
+      homepage = "http://search.cpan.org/dist/Text-SpanningTable";
     };
   };
 
