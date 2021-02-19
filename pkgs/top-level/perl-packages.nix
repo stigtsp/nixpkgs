@@ -18599,6 +18599,21 @@ let
     };
   };
 
+  PlackAppHipChatWebHook = buildPerlPackage {
+    pname = "Plack-App-HipChat-WebHook";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHRISJH/Plack-App-HipChat-WebHook-0.001.tar.gz";
+      sha256 = "01c75wvdwppw4yliz748raqkq8cibavvhlgqi4vchh3nsppyf294";
+    };
+    propagatedBuildInputs = [ JSON Plack ];
+    buildInputs = [ DataPrinter ];
+    meta = {
+      description = "HipChat WebHook Plack Application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppHostMap = buildPerlModule {
     pname = "Plack-App-HostMap";
     version = "0.007";
