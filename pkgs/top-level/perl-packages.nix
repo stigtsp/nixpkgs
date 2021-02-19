@@ -18785,6 +18785,21 @@ let
     };
   };
 
+  PlackMiddlewareBotDetector = buildPerlModule {
+    pname = "Plack-Middleware-BotDetector";
+    version = "1.20170315.1614";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHROMATIC/Plack-Middleware-BotDetector-1.20170315.1614.tar.gz";
+      sha256 = "1d98sddiyc6bk0kl9zm7mxmvrpl6w9whg3nx6fj552d5l7cyafw0";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Plack middleware to identify bots and spiders";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCSSCompressor = buildPerlPackage {
     pname = "Plack-Middleware-CSS-Compressor";
     version = "0.01";
