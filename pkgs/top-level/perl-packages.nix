@@ -808,6 +808,15 @@ let
     };
   };
 
+  ArrayRefElem = buildPerlPackage {
+    pname = "Array-RefElem";
+    version = "1.00";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GA/GAAS/Array-RefElem-1.00.tar.gz";
+      sha256 = "1qzg7i2ia6p29wlmgardfkflbpjn8wmnh4nff3iy8hy0msiq1f2k";
+    };
+  };
+
   AsyncPing = buildPerlPackage {
     pname = "AsyncPing";
     version = "2016.1207";
@@ -16845,6 +16854,21 @@ let
     meta = {
       description = "Override REST methods to Plack apps via POST";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewarePrecompressed = buildPerlPackage {
+    pname = "Plack-Middleware-Precompressed";
+    version = "1.103";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-Precompressed-1.103.tar.gz";
+      sha256 = "0v4b19mjzzb8giwya5l9bssk5gdx0bk4jrqxal5knycvlddfangd";
+    };
+    propagatedBuildInputs = [ ArrayRefElem Plack ];
+    meta = {
+      description = "serve pre-gzipped content to compression-enabled clients";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/ap/Plack-Middleware-Precompressed";
     };
   };
 
