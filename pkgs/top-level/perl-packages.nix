@@ -20581,6 +20581,21 @@ let
      };
   };
 
+  PlackMiddlewareSessionRemoveCookies = buildPerlPackage {
+    pname = "Plack-Middleware-Session-RemoveCookies";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/W/WR/WREIS/Plack-Middleware-Session-RemoveCookies-0.02.tar.gz";
+      sha256 = "13lgkpw6kh0101f09fw8icn2scxv2jkvh03klhri16042zm88h98";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "remove cookies from the requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/wreis/Plack-Middleware-Session-RemoveCookies";
+    };
+  };
+
   PlackMiddlewareSessionSimple = buildPerlModule {
     pname = "Plack-Middleware-Session-Simple";
     version = "0.04";
