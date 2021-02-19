@@ -17105,6 +17105,20 @@ let
     };
   };
 
+  PlackMiddlewareCleanup = buildPerlPackage {
+    pname = "Plack-Middleware-Cleanup";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HD/HDP/Plack-Middleware-Cleanup-0.003.tar.gz";
+      sha256 = "0slwqs2kjwdypkb4fjpkw8fzcd87raqsmmixi30qzk5zl28azk07";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Run cleanup code after request completion";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareComboLoader = buildPerlPackage {
     pname = "Plack-Middleware-ComboLoader";
     version = "0.04";
