@@ -164,6 +164,18 @@ let
     };
   };
 
+  AlgorithmLoops = buildPerlPackage {
+    pname = "Algorithm-Loops";
+    version = "1.032";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TY/TYEMQ/Algorithm-Loops-1.032.tar.gz";
+      sha256 = "01n0qsirv7zy8pl0m6l8vmcjijpr7gjna359q5jv74r00knynzj3";
+    };
+    meta = {
+      license = with lib.licenses; [ wtfpl ];
+    };
+  };
+
   AlgorithmMerge = buildPerlPackage {
     pname = "Algorithm-Merge";
     version = "0.08";
@@ -9009,6 +9021,19 @@ let
     };
   };
 
+  Filtersignatures = buildPerlPackage {
+    pname = "Filter-signatures";
+    version = "0.17";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/Filter-signatures-0.17.tar.gz";
+      sha256 = "0i1421xmb56hkpr2zz6igp1ljqypa15k5sb656i6vcls74kc7pcn";
+    };
+    meta = {
+      description = "very simplistic signatures for Perl < 5.20";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FinanceQuote = buildPerlPackage {
     pname = "Finance-Quote";
     version = "1.49";
@@ -9184,6 +9209,21 @@ let
       description = "Deferred subroutine syntax for futures";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.zakame ];
+    };
+  };
+
+  FutureHTTP = buildPerlPackage {
+    pname = "Future-HTTP";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/Future-HTTP-0.14.tar.gz";
+      sha256 = "03grasnwc8sr9kcijnsi5f6cgxidsc52202k5am5dgi8q6rmiyc0";
+    };
+    propagatedBuildInputs = [ Filtersignatures Future HTTPMessage Moo ];
+    buildInputs = [ TestHTTPLocalServer ];
+    meta = {
+      description = "provide the most appropriate HTTP client with a Future API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -10892,6 +10932,21 @@ let
       homepage = "http://imager.perl.org/";
       description = "Perl extension for Generating 24 bit Images";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ImagerFilePNG = buildPerlPackage {
+    pname = "Imager-File-PNG";
+    version = "0.95";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TONYC/Imager-File-PNG-0.95.tar.gz";
+      sha256 = "1lr6mxlrxhwdmygn6g6s5sixzkkwixknvzqnyv09wxvmg86hcsb5";
+    };
+    propagatedBuildInputs = [ Imager ];
+    meta = {
+      description = "PNG Image file support for Imager";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://imager.perl.org/";
     };
   };
 
@@ -17070,6 +17125,19 @@ let
     };
   };
 
+  ObjectImport = buildPerlPackage {
+    pname = "Object-Import";
+    version = "1.005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/Object-Import-1.005.tar.gz";
+      sha256 = "13y0lr4dwqsc6p8771ksidrxzxixway4jysrnbgxz2fn3x7fpr6d";
+    };
+    propagatedBuildInputs = [ MROCompat ];
+    meta = {
+      description = "import methods of an object as functions to a package";
+    };
+  };
+
   ObjectInsideOut = buildPerlModule {
     pname = "Object-InsideOut";
     version = "4.05";
@@ -18400,6 +18468,21 @@ let
     meta = {
       description = "A Plack component for dispatching with Path::Router";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppPrerender = buildPerlPackage {
+    pname = "Plack-App-Prerender";
+    version = "v0.2.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-App-Prerender-v0.2.0.tar.gz";
+      sha256 = "0gqw2prgz5c7m460n0ij3bfwv57qmk9pdbpc5nb1g2sfvz4c27ih";
+    };
+    propagatedBuildInputs = [ Plack RefUtil WWWMechanizeChrome ];
+    buildInputs = [ CHI Test2Suite Test2ToolsHTTP TestDifferences ];
+    meta = {
+      description = "a simple prerendering proxy for Plack";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
@@ -21683,6 +21766,19 @@ let
     };
   };
 
+  PerlXMaybe = buildPerlPackage {
+    pname = "PerlX-Maybe";
+    version = "1.201";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/PerlX-Maybe-1.201.tar.gz";
+      sha256 = "0pncypafka4rak38akqdg16w3va1ikdbi2cb7pmmc7qksd0r5fp5";
+    };
+    meta = {
+      description = "return a pair only if they are both defined";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PodAbstract = buildPerlPackage {
     pname = "Pod-Abstract";
     version = "0.20";
@@ -24415,6 +24511,35 @@ let
     };
   };
 
+  Test2ToolsHTTP = buildPerlPackage {
+    pname = "Test2-Tools-HTTP";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/Test2-Tools-HTTP-0.09.tar.gz";
+      sha256 = "03d7lngmbbdgp67kszsmdcj4y46mfpvhgzyk19ihnb2yx6hzakgx";
+    };
+    propagatedBuildInputs = [ LWP Plack Test2Suite ];
+    buildInputs = [ Test2ToolsURL ];
+    meta = {
+      description = "Test HTTP / PSGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  Test2ToolsURL = buildPerlPackage {
+    pname = "Test2-Tools-URL";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/Test2-Tools-URL-0.05.tar.gz";
+      sha256 = "0bijycs1m9l9gx03yifmg4q8z3hc2zrv1szmwqhqrqh71cl20wmw";
+    };
+    propagatedBuildInputs = [ Test2Suite URI ];
+    meta = {
+      description = "Compare a URL in your Test2 test";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TestAbortable = buildPerlPackage {
      pname = "Test-Abortable";
      version = "0.002";
@@ -24931,6 +25056,20 @@ let
     };
     meta = {
       description = "test code which forks";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestHTTPLocalServer = buildPerlPackage {
+    pname = "Test-HTTP-LocalServer";
+    version = "0.71";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/Test-HTTP-LocalServer-0.71.tar.gz";
+      sha256 = "0nvqr8ynjfc199nhl97ijv0gpivvrkii5jk380dhal6331kk2s97";
+    };
+    propagatedBuildInputs = [ CGI HTTPDaemon HTTPRequestAsCGI ];
+    meta = {
+      description = "spawn a local HTTP server for testing";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -27904,6 +28043,21 @@ let
       substituteInPlace t/cgi-bin/script.cgi \
         --replace '#!/usr/bin/perl' '#!${perl}/bin/perl'
     '';
+  };
+
+  WWWMechanizeChrome = buildPerlPackage {
+    pname = "WWW-Mechanize-Chrome";
+    version = "0.65";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/WWW-Mechanize-Chrome-0.65.tar.gz";
+      sha256 = "0z0f465z630p0h3j42zvqk75jp3afamfyvc5965y6byy71g9z2f0";
+    };
+    propagatedBuildInputs = [ AlgorithmLoops FutureHTTP HTMLSelectorXPath ImagerFilePNG JSON LogLog4perl NetAsyncWebSocket ObjectImport PerlXMaybe URIws WWWMechanize ];
+    buildInputs = [ DataDump ImageInfo TestDeep TestHTTPLocalServer TestMemoryCycle TestWithoutModule ];
+    meta = {
+      description = "automate the Chrome browser";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   WWWRobotRules = buildPerlPackage {
