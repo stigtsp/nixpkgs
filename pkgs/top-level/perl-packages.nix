@@ -19593,6 +19593,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugCatalystPluginCache = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-CatalystPluginCache";
+    version = "0.101";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TI/TIMB/Plack-Middleware-Debug-CatalystPluginCache-0.101.tar.gz";
+      sha256 = "1yi33ykip6610aycp4fbvj1lsm5xi9b5h9sy1dn82m6v6wqz67qn";
+    };
+    propagatedBuildInputs = [ CatalystPluginCache PlackMiddlewareDebug ];
+    meta = {
+      description = "Panel for monitoring Catalyst::Plugin::Cache's";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/timbunce/Plack-Middleware-Debug-CatalystPluginCache/tree";
+    };
+  };
+
   PlackMiddlewareDebugCatalystSession = buildPerlPackage {
     pname = "Plack-Middleware-Debug-CatalystSession";
     version = "0.01004";
