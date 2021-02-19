@@ -17944,6 +17944,20 @@ let
     };
   };
 
+  PlackMiddlewareJSON = buildPerlPackage {
+    pname = "Plack-Middleware-JSON";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FU/FUKAI/Plack-Middleware-JSON-0.01.tar.gz";
+      sha256 = "10ay1yrpva0xpx2xr0n9g648skd5swgwhlfycgaihbiy8yh9sz0x";
+    };
+    propagatedBuildInputs = [ JSONXS Plack ];
+    meta = {
+      description = "给输出内容转换成 JSON, 并且自动兼容 JSONP";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogContextual = buildPerlPackage {
     pname = "Plack-Middleware-Log-Contextual";
     version = "0.01";
