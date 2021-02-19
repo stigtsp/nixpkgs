@@ -17214,6 +17214,21 @@ let
     };
   };
 
+  PlackMiddlewareAutoReloadCSS = buildPerlModule {
+    pname = "Plack-Middleware-AutoReloadCSS";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KE/KENTARO/Plack-Middleware-AutoReloadCSS-0.02.tar.gz";
+      sha256 = "0c0c01arwnqy8s3ilaaxvbighs166m1lz7dv1akm7905zpi7f082";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Enables CSS Refreshing without\nReloading Whole Page";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCamelcadedb = buildPerlModule {
     pname = "Plack-Middleware-Camelcadedb";
     version = "0.03";
