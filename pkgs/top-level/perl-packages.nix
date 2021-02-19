@@ -18147,6 +18147,21 @@ let
     };
   };
 
+  PlackMiddlewareMirror = buildPerlModule {
+    pname = "Plack-Middleware-Mirror";
+    version = "0.401";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RW/RWSTAUNER/Plack-Middleware-Mirror-0.401.tar.gz";
+      sha256 = "0n9d8vvczqz3c29h06cwpxxcg82l1xaxglm92w9rvli94w1daiff";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Save responses to disk to mirror a site";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/rwstauner/Plack-Middleware-Mirror";
+    };
+  };
+
   PlackMiddlewareMockProxyFrontend = buildPerlPackage {
     pname = "Plack-Middleware-MockProxyFrontend";
     version = "0.003";
