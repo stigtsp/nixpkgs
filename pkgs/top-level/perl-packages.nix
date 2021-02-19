@@ -17661,6 +17661,22 @@ let
     };
   };
 
+  PlackMiddlewareServerStatusTiny = buildPerlModule {
+    pname = "Plack-Middleware-ServerStatus-Tiny";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Plack-Middleware-ServerStatus-Tiny-0.002.tar.gz";
+      sha256 = "0m75rxvdwsnxblshafjrpv9dmkyrm4p8c9bc1j6z8mgchl88zksc";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny TestCheckDeps TestDeep TestDeepUnorderedPairs TestFatal TestWarnings ];
+    meta = {
+      description = "tiny middleware for providing server status information";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Plack-Middleware-ServerStatus-Tiny";
+    };
+  };
+
   PlackMiddlewareServerTiming = buildPerlModule {
     pname = "Plack-Middleware-ServerTiming";
     version = "0.04";
@@ -21098,6 +21114,21 @@ let
       sha256 = "0mkw18q5agr30djxr1y68rcfw8aq20ws872hmv88f9gnynag8r20";
     };
     meta = {
+    };
+  };
+
+  TestDeepUnorderedPairs = buildPerlPackage {
+    pname = "Test-Deep-UnorderedPairs";
+    version = "0.006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Test-Deep-UnorderedPairs-0.006.tar.gz";
+      sha256 = "1ifc4mard6yalzcc6kzcdjfjmzaw8kk3500rmmna48lvqsli2scx";
+    };
+    buildInputs = [ TestDeep TestFatal ];
+    meta = {
+      description = "A Test::Deep plugin for comparing an unordered list of tuples";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-Deep-UnorderedPairs";
     };
   };
 
