@@ -19986,6 +19986,20 @@ let
     };
   };
 
+  PlackMiddlewareModuleInfo = buildPerlModule {
+    pname = "Plack-Middleware-ModuleInfo";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-ModuleInfo-0.04.tar.gz";
+      sha256 = "1n9dr2pzck74rg8xxa92ahg8phnvyzgdq39p972hn645mfp5zln0";
+    };
+    propagatedBuildInputs = [ ModuleInfo NetCIDRLite Plack YAML ];
+    meta = {
+      description = "show the perl module information";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareNegotiate = buildPerlModule {
     pname = "Plack-Middleware-Negotiate";
     version = "0.20";
