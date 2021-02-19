@@ -19567,6 +19567,21 @@ let
     };
   };
 
+  PlackMiddlewareCSRFBlock = buildPerlPackage {
+    pname = "Plack-Middleware-CSRFBlock";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MATTP/Plack-Middleware-CSRFBlock-0.10.tar.gz";
+      sha256 = "0gqxlcpsfymra24914zc5g0c5fh5b7dif68i2sf6s8wingsa8nzb";
+    };
+    propagatedBuildInputs = [ DigestSHA1 HTMLParser Plack ];
+    buildInputs = [ PlackMiddlewareSession ];
+    meta = {
+      description = "Block CSRF Attacks with minimal changes to your app";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCSSCompressor = buildPerlPackage {
     pname = "Plack-Middleware-CSS-Compressor";
     version = "0.01";
