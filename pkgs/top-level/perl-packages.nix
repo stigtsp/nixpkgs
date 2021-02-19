@@ -17198,6 +17198,21 @@ let
     };
   };
 
+  PlackAppunAPI = buildPerlPackage {
+    pname = "Plack-App-unAPI";
+    version = "0.61";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-unAPI-0.61.tar.gz";
+      sha256 = "10p0w7nsrqsjpf9pm4slw0q78728pqr5sy3k00k8asq1lwc0p83l";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Serve via unAPI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-unAPI";
+    };
+  };
+
   PlackClient = buildPerlPackage {
     pname = "Plack-Client";
     version = "0.06";
