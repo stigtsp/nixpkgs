@@ -19127,6 +19127,21 @@ let
     };
   };
 
+  PlackMiddlewareSizeLimit = buildPerlPackage {
+    pname = "Plack-Middleware-SizeLimit";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/Plack-Middleware-SizeLimit-0.11.tar.gz";
+      sha256 = "11c6wshdbz0fnq4jaxiijbxg8hbp11dfgg2ca24ba02lj1jy152s";
+    };
+    propagatedBuildInputs = [ Plack ProcessSizeLimitCore ];
+    meta = {
+      description = "Terminate processes if they grow too large";
+      license = with lib.licenses; [ wtfpl ];
+      homepage = "https://github.com/audreyt/plack-middleware-sizelimit/tree";
+    };
+  };
+
   PlackMiddlewareSocketIO = buildPerlPackage {
     pname = "Plack-Middleware-SocketIO";
     version = "0.00904";
@@ -19591,6 +19606,20 @@ let
       sha256 = "1g3l8jzx06x4l4p0x7fyn4wvg6plfzl420irwwb9v447wzsn6xfh";
     };
     propagatedBuildInputs = [ IPCSignal ];
+  };
+
+  ProcessSizeLimitCore = buildPerlPackage {
+    pname = "Process-SizeLimit-Core";
+    version = "0.9508";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/Process-SizeLimit-Core-0.9508.tar.gz";
+      sha256 = "1r46z3y1jm3wy2w5i555g7bas51b77bphihyw6i58vldv5jlpzi0";
+    };
+    propagatedBuildInputs = [ BSDResource ];
+    meta = {
+      description = "Apache::SizeLimit::Core, repackaged";
+      homepage = "https://github.com/audreyt/process-sizelimit-core/";
+    };
   };
 
   ProtocolRedis = buildPerlPackage {
