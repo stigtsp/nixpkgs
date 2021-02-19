@@ -12771,6 +12771,33 @@ let
     };
   };
 
+  JavaScriptEctype = buildPerlPackage {
+    pname = "JavaScript-Ectype";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HD/HDAICHI/JavaScript-Ectype-0.01.tar.gz";
+      sha256 = "0kb3flyv1wy8kxvxf5j9p6mpgzv4rcz0halp9jm5m4as1g3ygqf0";
+    };
+    propagatedBuildInputs = [ ClassAccessor ClassDataInheritable FileSlurp JSON JavaScriptMinifier ];
+    meta = {
+      description = "A JavaScript Preprocessor designed for large scale javascript development";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  JavaScriptMinifier = buildPerlPackage {
+    pname = "JavaScript-Minifier";
+    version = "1.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZO/ZOFFIX/JavaScript-Minifier-1.15.tar.gz";
+      sha256 = "1ixv958kncnbifgy55ynry644q1hyvw1bfxqsvj558wh2myzyrgf";
+    };
+    meta = {
+      description = "Perl extension for minifying JavaScript code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Later = buildPerlPackage {
     version = "0.21";
     pname = "Object-Realize-Later";
@@ -22026,6 +22053,19 @@ let
     buildInputs = [ TestClass ];
     meta = {
       description = "Plack middleware which turns application/json responses into HTML";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareJavaScriptEctype = buildPerlPackage {
+    pname = "Plack-Middleware-JavaScript-Ectype";
+    version = "0.0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HD/HDAICHI/Plack-Middleware-JavaScript-Ectype-0.0.1.tar.gz";
+      sha256 = "1l6vy2y36qlra9vdi9amf5gbq9vy66xbwvzddf2ncrw57xa4gbsr";
+    };
+    propagatedBuildInputs = [ JavaScriptEctype Plack ];
+    meta = {
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
