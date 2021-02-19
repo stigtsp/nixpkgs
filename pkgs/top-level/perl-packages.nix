@@ -23897,6 +23897,22 @@ let
     };
   };
 
+  PlackMiddlewareStaticShared = buildPerlModule {
+    pname = "Plack-Middleware-StaticShared";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SA/SATOH/Plack-Middleware-StaticShared-0.06.tar.gz";
+      sha256 = "129338hkcdqnkycs7pzina1p30ds0wryh36dd4hypg84xr7iq5rd";
+    };
+    propagatedBuildInputs = [ DateTimeFormatHTTP DigestSHA1 PathClass Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "concat some static files to one resource";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/cho45/Plack-Middleware-StaticShared";
+    };
+  };
+
   PlackMiddlewareStatsPerRequest = buildPerlModule {
     pname = "Plack-Middleware-StatsPerRequest";
     version = "0.902";
