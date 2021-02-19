@@ -16963,6 +16963,21 @@ let
      };
   };
 
+  PlackMiddlewareLogContextual = buildPerlPackage {
+    pname = "Plack-Middleware-Log-Contextual";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Middleware-Log-Contextual-0.01.tar.gz";
+      sha256 = "0mwk21r8961yh8c8p49yz1gbi9nskg2l6f02j66jbf9x9dpzpxz2";
+    };
+    propagatedBuildInputs = [ LogContextual Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "integrate Log::Contextual with Plack/PSGI logger middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareMethodOverride = buildPerlPackage {
     pname = "Plack-Middleware-MethodOverride";
     version = "0.20";
