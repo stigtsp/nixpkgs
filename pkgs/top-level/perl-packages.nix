@@ -17004,6 +17004,21 @@ let
     };
   };
 
+  PlackMiddlewareGNUTerryPratchett = buildPerlPackage {
+    pname = "Plack-Middleware-GNUTerryPratchett";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PA/PACMAN/Plack-Middleware-GNUTerryPratchett-0.01.tar.gz";
+      sha256 = "0xhw2lwx31bp51a4qcsg8qlkxm558pch9bqhda0hl6x8c191qzip";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Adds automatically an X-Clacks-Overhead header";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com///github.com/peczenyj/Plack-Middleware-Pratchett";
+    };
+  };
+
   PlackMiddlewareHeader = buildPerlPackage {
      pname = "Plack-Middleware-Header";
      version = "0.04";
