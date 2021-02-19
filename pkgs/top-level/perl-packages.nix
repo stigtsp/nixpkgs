@@ -23454,6 +23454,21 @@ let
     };
   };
 
+  PlackMiddlewareProcessTimes = buildPerlPackage {
+    pname = "Plack-Middleware-ProcessTimes";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FREW/Plack-Middleware-ProcessTimes-1.000000.tar.gz";
+      sha256 = "0v7qnd5h8h3qq6c4b08lgi34nhb616lb7q3kn5d6jryk63wj803z";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Include process times of a request in the Plack env";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/frioux/Plack-Middleware-ProcessTimes";
+    };
+  };
+
   PlackMiddlewareProfilerKYTProf = buildPerlPackage {
     pname = "Plack-Middleware-Profiler-KYTProf";
     version = "0.08";
