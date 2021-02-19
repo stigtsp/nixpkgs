@@ -5482,6 +5482,19 @@ let
     };
   };
 
+  DevelCamelcadedb = buildPerlPackage {
+    pname = "Devel-Camelcadedb";
+    version = "v2020.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HU/HURRICUP/Devel-Camelcadedb-v2020.3.tar.gz";
+      sha256 = "182y4mhp7hxa6fjcmnf9pwjxf46rl5qsxfdld08lykz8fl1wf7ic";
+    };
+    propagatedBuildInputs = [ HashStoredIterator JSONXS PadWalker ];
+    meta = {
+      license = with lib.licenses; [ mit ];
+    };
+  };
+
   DevelCheckBin = buildPerlPackage {
      pname = "Devel-CheckBin";
      version = "0.04";
@@ -9285,6 +9298,20 @@ let
     };
     meta = {
       description = "Store multiple values per key";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HashStoredIterator = buildPerlModule {
+    pname = "Hash-StoredIterator";
+    version = "0.008";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSCHWERN/Hash-StoredIterator-0.008.tar.gz";
+      sha256 = "037acmgf1gmwnh1fzcqc32vrspsakavxv08lgwfqsgi3v3fc9jxr";
+    };
+    buildInputs = [ Test2Suite ];
+    meta = {
+      description = "Functions for accessing a hashes internal iterator";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -16868,6 +16895,20 @@ let
     propagatedBuildInputs = [ AuthenHtpasswd PathClass Plack ];
     meta = {
       description = "http basic authentication through apache-style .htpasswd files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareCamelcadedb = buildPerlModule {
+    pname = "Plack-Middleware-Camelcadedb";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MB/MBARBON/Plack-Middleware-Camelcadedb-0.03.tar.gz";
+      sha256 = "179r1wzbvbzfx8d9j22s7s9vjkvzm47iqf6fdrgldc6y4g6xf3hf";
+    };
+    propagatedBuildInputs = [ DevelCamelcadedb Plack ];
+    meta = {
+      description = "interactive debugging for Plack applications";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
