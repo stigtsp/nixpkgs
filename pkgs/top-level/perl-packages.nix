@@ -18122,6 +18122,20 @@ let
     };
   };
 
+  PlackMiddlewareProxyRequests = buildPerlModule {
+    pname = "Plack-Middleware-Proxy-Requests";
+    version = "0.0102";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DE/DEXTER/Plack-Middleware-Proxy-Requests-0.0102.tar.gz";
+      sha256 = "1f9pahcx1qlv9xprqdfag0lmvqrym6ypww46cx22fk9a7z23c8ix";
+    };
+    propagatedBuildInputs = [ PlackAppProxy ];
+    meta = {
+      description = "Forward proxy server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePyeLogger = buildPerlPackage {
     pname = "Plack-Middleware-PyeLogger";
     version = "2.000001";
