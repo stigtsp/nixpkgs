@@ -20517,6 +20517,22 @@ let
     };
   };
 
+  PlackMiddlewareParseContent = buildPerlModule {
+    pname = "Plack-Middleware-ParseContent";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VA/VASEKD/Plack-Middleware-ParseContent-0.09.tar.gz";
+      sha256 = "05bgm9pdhxcljcpzzy6i85vz8b9s850njic58qkilcj0cwxck8s2";
+    };
+    propagatedBuildInputs = [ HTTPException JSONXS Plack YAMLSyck ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Parse content of input data by Content-Type header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/vasekd/Plack-Middleware-ParseContent";
+    };
+  };
+
   PlackMiddlewarePjax = buildPerlPackage {
     pname = "Plack-Middleware-Pjax";
     version = "1.114400";
