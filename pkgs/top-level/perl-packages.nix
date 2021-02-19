@@ -22592,6 +22592,20 @@ let
     };
   };
 
+  PlackMiddlewareForceEnv = buildPerlPackage {
+    pname = "Plack-Middleware-ForceEnv";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TS/TSIBLEY/Plack-Middleware-ForceEnv-0.02.tar.gz";
+      sha256 = "0srkya9xqz3g2sfcfihpwcbwlakrwm3x93av1kl4qb6y79zj7x8k";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Force set environment variables for testing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareFormatOutput = buildPerlModule {
     pname = "Plack-Middleware-FormatOutput";
     version = "0.10";
