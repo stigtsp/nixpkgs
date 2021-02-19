@@ -23585,6 +23585,21 @@ let
     };
   };
 
+  PlackMiddlewareSuppressResponseCodes = buildPerlPackage {
+    pname = "Plack-Middleware-SuppressResponseCodes";
+    version = "0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-SuppressResponseCodes-0.2.tar.gz";
+      sha256 = "1pcj5qzqd62j3yyc9bhdxscx8spczb604yh6v2128vc0gdknmks6";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Return HTTP Status code 200 for errors on request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-SuppressResponseCodes";
+    };
+  };
+
   PlackMiddlewareTMT = buildPerlModule {
     pname = "Plack-Middleware-TMT";
     version = "0.04";
