@@ -18497,6 +18497,21 @@ let
     };
   };
 
+  PlackAppHash = buildPerlPackage {
+    pname = "Plack-App-Hash";
+    version = "1.000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-App-Hash-1.000.tar.gz";
+      sha256 = "0rcfm0g5q4z6bwp1nppcifp2cxl2lhlbpabs3x4njigf7bllibsm";
+    };
+    propagatedBuildInputs = [ ArrayRefElem Plack ];
+    meta = {
+      description = "Serve up the contents of a hash as a website";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/ap/Plack-App-Hash";
+    };
+  };
+
   PlackAppHostMap = buildPerlModule {
     pname = "Plack-App-HostMap";
     version = "0.007";
