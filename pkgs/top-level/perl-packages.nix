@@ -18437,6 +18437,21 @@ let
     };
   };
 
+  PlackMiddlewareDevFavicon = buildPerlModule {
+    pname = "Plack-Middleware-DevFavicon";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GF/GFUJI/Plack-Middleware-DevFavicon-0.02.tar.gz";
+      sha256 = "0xb0bhq73i9rppgafbqxka0k2d3n62y2v4r5j471nvy5gdk0cwki";
+    };
+    propagatedBuildInputs = [ Imager Plack ];
+    meta = {
+      description = "Shows gray favicon for development env";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/gfx/Plack-Middleware-DevFavicon";
+    };
+  };
+
   PlackMiddlewareEasyHooks = buildPerlPackage {
     pname = "Plack-Middleware-EasyHooks";
     version = "0.02";
