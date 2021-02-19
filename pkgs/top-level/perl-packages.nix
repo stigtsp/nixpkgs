@@ -11725,6 +11725,19 @@ let
     };
   };
 
+  LexicalSealRequireHints = buildPerlModule {
+    pname = "Lexical-SealRequireHints";
+    version = "0.011";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Lexical-SealRequireHints-0.011.tar.gz";
+      sha256 = "0fh1arpr0hsj7skbn97yfvbk22pfcrpcvcfs15p5ss7g338qx4cy";
+    };
+    meta = {
+      description = "prevent leakage of lexical hints";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   LaTeXML = buildPerlPackage rec {
     pname = "LaTeXML";
     version = "0.8.5";
@@ -13596,6 +13609,21 @@ let
       description = "A comprehensive, DWIM-featured client to the MetaCPAN API";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
+    };
+  };
+
+  MethodSignatures = buildPerlModule {
+    pname = "Method-Signatures";
+    version = "20170211";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAREFOOT/Method-Signatures-20170211.tar.gz";
+      sha256 = "1rf44anhzg0dzs4z8qk6fw5lam4w99aa3zzsa0d8fh1jn95pq6l9";
+    };
+    propagatedBuildInputs = [ AnyMoose ConstFast DevelDeclare LexicalSealRequireHints PPI ];
+    buildInputs = [ TestException TestWarn ];
+    meta = {
+      description = "method and function declarations with signatures and no source filter";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -16806,6 +16834,20 @@ let
     };
   };
 
+  NewRelicAgent = buildPerlPackage {
+    pname = "NewRelic-Agent";
+    version = "0.0532";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TI/TIMB/NewRelic-Agent-0.0532.tar.gz";
+      sha256 = "0dxf1j7w5fymsai7d2x78a2mp4jdz36y7rhjlnanrnjzr3xfv0yd";
+    };
+    buildInputs = [ ExtUtilsXSpp ];
+    meta = {
+      description = "Perl Agent for NewRelic APM";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NumberBytesHuman = buildPerlPackage {
     pname = "Number-Bytes-Human";
     version = "0.11";
@@ -19716,6 +19758,20 @@ let
       description = "set expiration headers far in the future";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://github.com/ap/Plack-Middleware-NeverExpire";
+    };
+  };
+
+  PlackMiddlewareNewRelic = buildPerlPackage {
+    pname = "Plack-Middleware-NewRelic";
+    version = "0.0502";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AA/AANARI/Plack-Middleware-NewRelic-0.0502.tar.gz";
+      sha256 = "121ni53i2624y3520vpil4j2rd7z15b23a5x38qhpjm6v7hz56hd";
+    };
+    propagatedBuildInputs = [ CHI MethodSignatures NewRelicAgent Plack ];
+    meta = {
+      description = "Plack middleware for NewRelic APM instrumentation";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
