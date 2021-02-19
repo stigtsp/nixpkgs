@@ -21488,6 +21488,21 @@ let
     };
   };
 
+  PlackMiddlewareCache = buildPerlPackage {
+    pname = "Plack-Middleware-Cache";
+    version = "0.19";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IN/INGY/Plack-Middleware-Cache-0.19.tar.gz";
+      sha256 = "09imajx6z75qgffy3krbimllfy91rh1hxqcn485149fmjqzcddwy";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Use Cached Responses of Certain URIs";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/plack-middleware-cache-pm";
+    };
+  };
+
   PlackMiddlewareCacheCHI = buildPerlPackage {
     pname = "Plack-Middleware-Cache-CHI";
     version = "0.102";
