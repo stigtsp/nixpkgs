@@ -1466,6 +1466,20 @@ let
     };
   };
 
+  BHooksOPAnnotation = buildPerlPackage {
+    pname = "B-Hooks-OP-Annotation";
+    version = "0.44";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHOCOLATE/B-Hooks-OP-Annotation-0.44.tar.gz";
+      sha256 = "05kv45imlyybzk78xji44h434y069p7havngd50r9splcy9zj9kf";
+    };
+    propagatedBuildInputs = [ ExtUtilsDepends ];
+    meta = {
+      description = "annotate and delegate hooked OPs";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   BHooksOPCheck = buildPerlPackage {
     pname = "B-Hooks-OP-Check";
     version = "0.22";
@@ -1515,6 +1529,22 @@ let
     meta = {
       description = "Lists of reserved barewords and symbol names";
       license = with lib.licenses; [ artistic1 gpl2 ];
+    };
+  };
+
+  BOPCheck = buildPerlPackage {
+    pname = "B-OPCheck";
+    version = "0.32";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/B-OPCheck-0.32.tar.gz";
+      sha256 = "10hs3xmb62gwqpzlqqzdp7h4p2kizgclhd0ifn7pa40xgyl3vhif";
+    };
+    propagatedBuildInputs = [ BUtils ScopeGuard ];
+    buildInputs = [ ExtUtilsDepends ];
+    meta = {
+      description = "PL_check hacks using Perl callbacks";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/B-OPCheck";
     };
   };
 
@@ -11840,6 +11870,21 @@ let
     };
   };
 
+  invoker = buildPerlPackage {
+    pname = "invoker";
+    version = "0.36";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GU/GUGOD/invoker-0.36.tar.gz";
+      sha256 = "0v1hq3k3jkxvyg6xycbqbqqzxnad8f1jl2zc1x303pq9pd2cs5rb";
+    };
+    propagatedBuildInputs = [ BOPCheck DevelDeclare ];
+    buildInputs = [ ExtUtilsDepends ];
+    meta = {
+      description = "implicit invoker, sort of";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   libabs = buildPerlPackage {
     pname = "lib-abs";
     version = "0.95";
@@ -13643,6 +13688,21 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     propagatedBuildInputs = [ ModuleBuild ];
+  };
+
+  methods = buildPerlPackage {
+    pname = "methods";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/methods-0.12.tar.gz";
+      sha256 = "1c9aqwhrfmh704dwhzp7dmssr9d33vfhhnx4lpkds1zy8ish13xi";
+    };
+    propagatedBuildInputs = [ MethodSignaturesSimple invoker namespacesweep true ];
+    meta = {
+      description = "Provide method syntax and sweep namespaces";
+      license = with lib.licenses; [ wtfpl ];
+      homepage = "https://github.com/audreyt/methods/tree";
+    };
   };
 
   LockFileSimple = buildPerlPackage {
@@ -17238,6 +17298,21 @@ let
     };
   };
 
+  namespacesweep = buildPerlPackage {
+    pname = "namespace-sweep";
+    version = "0.006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRIEDO/namespace-sweep-0.006.tar.gz";
+      sha256 = "0lqr1fn30q0c50xif9wng2i8a9cwvkbk6d0fb20kgydhba8wx6fy";
+    };
+    propagatedBuildInputs = [ BHooksEndOfScope PackageStash SubIdentify ];
+    buildInputs = [ SubName ];
+    meta = {
+      description = "Sweep up imported subs in your classes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   opts = buildPerlModule {
     pname = "opts";
     version = "0.07";
@@ -20164,6 +20239,20 @@ let
     propagatedBuildInputs = [ MooseXNonMoose PathRouter Plack ];
     meta = {
       description = "A Plack component for dispatching with Path::Router";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppPgREST = buildPerlPackage {
+    pname = "Plack-App-PgREST";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CL/CLKAO/Plack-App-PgREST-0.06.tar.gz";
+      sha256 = "06d3r3rs0ws95z7rfvb4rv16009cig169p3ix0y7qm3dm7932p40";
+    };
+    propagatedBuildInputs = [ DBDPg DBIxConnector JSONXS Plack RouterResource TieIxHash methods ];
+    meta = {
+      description = "http://postgre.st/";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -25298,6 +25387,21 @@ let
     };
   };
 
+  RouterResource = buildPerlModule {
+    pname = "Router-Resource";
+    version = "0.21";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DW/DWHEELER/Router-Resource-0.21.tar.gz";
+      sha256 = "07n8j01z90wkv2smvx63xax629y2mr3aqri8vi7yn8vgx34dalc2";
+    };
+    propagatedBuildInputs = [ RouterSimple SubExporter ];
+    meta = {
+      description = "Build REST-inspired routing tables";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Router-Resource/";
+    };
+  };
+
   RouterSimple = buildPerlModule {
     pname = "Router-Simple";
     version = "0.17";
@@ -26927,6 +27031,21 @@ let
     meta = {
       description = "Enable taint mode lexically";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  true = buildPerlPackage {
+    pname = "true";
+    version = "v1.0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHOCOLATE/true-v1.0.2.tar.gz";
+      sha256 = "1152w8mvl4h02ra16vi7brjxf89abd5nk8g2skg6dk6l110cs73a";
+    };
+    propagatedBuildInputs = [ BHooksOPAnnotation BHooksOPCheck DevelStackTrace ];
+    buildInputs = [ FunctionParameters Moo ];
+    meta = {
+      description = "automatically return a true value when a file is required";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
