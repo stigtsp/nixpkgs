@@ -450,6 +450,21 @@ let
     };
   };
 
+  AnyEventHandleUDP = buildPerlModule {
+    pname = "AnyEvent-Handle-UDP";
+    version = "0.050";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEONT/AnyEvent-Handle-UDP-0.050.tar.gz";
+      sha256 = "0vfxlk3gfla183p3frb2v23m8njsa683n0c5klrz85r0cray6bsf";
+    };
+    propagatedBuildInputs = [ AnyEvent ];
+    buildInputs = [ ModuleBuildTiny TestFatal ];
+    meta = {
+      description = "client/server UDP handles for AnyEvent";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyEventI3 = buildPerlPackage {
     pname = "AnyEvent-I3";
     version = "0.17";
@@ -8137,6 +8152,20 @@ let
     };
   };
 
+  FFIPlatypus = buildPerlPackage {
+    pname = "FFI-Platypus";
+    version = "1.34";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/FFI-Platypus-1.34.tar.gz";
+      sha256 = "0fc57ca27q1z5x7vds9qzicp1m663hlrdbwagnm4jgmn1fgqprac";
+    };
+    propagatedBuildInputs = [ CaptureTiny FFICheckLib ];
+    meta = {
+      description = "Write Perl bindings to non-Perl libraries with FFI. No XS required";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FennecLite = buildPerlModule {
     pname = "Fennec-Lite";
     version = "0.004";
@@ -13453,6 +13482,33 @@ let
     };
   };
 
+  MessagePassing = buildPerlPackage {
+    pname = "Message-Passing";
+    version = "0.117";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSTROUT/Message-Passing-0.117.tar.gz";
+      sha256 = "1a63y6y53qq518w2zb28511qrvs75n8lkq9v65cgkry8b3mvzwhl";
+    };
+    propagatedBuildInputs = [ AnyEventHandleUDP ConfigAny DateTime JSONMaybeXS MooXOptions MooXTypesMooseLike PackageVariant StringRewritePrefix SysHostnameLong TaskWeaken ];
+    meta = {
+      description = "a simple way of doing messaging";
+      license = with lib.licenses; [ lgpl21Plus lgpl3Plus ];
+    };
+  };
+
+  MessagePassingZeroMQ = buildPerlPackage {
+    pname = "Message-Passing-ZeroMQ";
+    version = "0.010";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/W/WR/WREIS/Message-Passing-ZeroMQ-0.010.tar.gz";
+      sha256 = "103kmsq5mdf0z67v2cmynwli9qvxffkpj3k8phw9xsmwynr2bcrl";
+    };
+    propagatedBuildInputs = [ Filepushd MessagePassing POSIXAtFork SubName ZMQFFI ];
+    meta = {
+      description = "input and output messages to ZeroMQ";
+    };
+  };
+
   MetaBuilder = buildPerlModule {
     pname = "Meta-Builder";
     version = "0.004";
@@ -18368,6 +18424,21 @@ let
     };
   };
 
+  PlackMiddlewareAccessLogStructuredZeroMQ = buildPerlModule {
+    pname = "Plack-Middleware-AccessLog-Structured-ZeroMQ";
+    version = "0.001001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSTOCK/Plack-Middleware-AccessLog-Structured-ZeroMQ-0.001001.tar.gz";
+      sha256 = "0jdizihk7vmf1kjm68r0l2ljchf2hisxry81sq8kypnbsfajx5jh";
+    };
+    propagatedBuildInputs = [ MessagePassingZeroMQ PlackMiddlewareAccessLogStructured ];
+    buildInputs = [ TestClass TestDeep TestTCP ];
+    meta = {
+      description = "Access log middleware which passes structured log messages into ZeroMQ";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAcmeAAHTTPHeader = buildPerlModule {
     pname = "Plack-Middleware-Acme-AAHTTPHeader";
     version = "0.01";
@@ -20283,6 +20354,20 @@ let
       maintainers = teams.deshaw.members;
       description = "Reusable tests for POE::Loop authors";
       license = lib.licenses.artistic2;
+    };
+  };
+
+  POSIXAtFork = buildPerlPackage {
+    pname = "POSIX-AtFork";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NIKOLAS/POSIX-AtFork-0.04.tar.gz";
+      sha256 = "03p60zx0xls5k2043p6zwjq12sxpqkkhifppr15i91ylhqx2kqn2";
+    };
+    buildInputs = [ TestSharedFork ];
+    meta = {
+      description = "Hook registrations at fork(2)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -27369,6 +27454,21 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/E/ET/ETHER/YAML-Tiny-1.73.tar.gz";
       sha256 = "0i3p4nz8ysrsrs6vlzc6gkjcfpcaf05xjc7lwbjkw7lg5shmycdw";
+    };
+  };
+
+  ZMQFFI = buildPerlPackage {
+    pname = "ZMQ-FFI";
+    version = "1.17";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CA/CALID/ZMQ-FFI-1.17.tar.gz";
+      sha256 = "1gay0jfd1vs7pksbp53x2r96lrrlknk1nf1r10b6qr4sa3fbxx0a";
+    };
+    propagatedBuildInputs = [ ClassXSAccessor FFIPlatypus ImportInto Moo SubExporter namespaceclean ];
+    buildInputs = [ AnyEvent SubOverride SysSigAction TestDeep TestException TestNoWarnings TestWarnings ];
+    meta = {
+      description = "version agnostic Perl bindings for zeromq using ffi";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
