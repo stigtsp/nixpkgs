@@ -20402,6 +20402,20 @@ let
     };
   };
 
+  PlackMiddlewareGoogleAnalytics = buildPerlPackage {
+    pname = "Plack-Middleware-GoogleAnalytics";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LO/LOGIE/Plack-Middleware-GoogleAnalytics-0.001.tar.gz";
+      sha256 = "07s4cnr3qna8ykqbzmyq51jwdi925nmjr2sc9mmkv08i4vagskh7";
+    };
+    propagatedBuildInputs = [ Moo Plack TextMicroTemplate ];
+    meta = {
+      description = "Middleware to apply Google Anlytics javascript code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareHTMLMinify = buildPerlModule {
     pname = "Plack-Middleware-HTMLMinify";
     version = "1.0.0";
