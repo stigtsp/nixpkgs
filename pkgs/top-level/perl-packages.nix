@@ -10362,6 +10362,20 @@ let
     buildInputs = [ TestBase ];
   };
 
+  HTMLStickyQuery = buildPerlPackage {
+    pname = "HTML-StickyQuery";
+    version = "0.13";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IK/IKEBE/HTML-StickyQuery-0.13.tar.gz";
+      sha256 = "1ikrmhij3jci84c0lm5p6nycy88897fcxwmr538v72czn390r35l";
+    };
+    propagatedBuildInputs = [ HTMLParser ];
+    meta = {
+      description = "add sticky QUERY_STRING";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   HTMLScrubber = buildPerlPackage {
     pname = "HTML-Scrubber";
     version = "0.19";
@@ -21330,6 +21344,21 @@ let
     meta = {
       description = "DEPRECATED. Use Twiggy";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackSessionStateURI = buildPerlModule {
+    pname = "Plack-Session-State-URI";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AS/ASKADNA/Plack-Session-State-URI-0.06.tar.gz";
+      sha256 = "1jc9qhvvrj8x3xkafihlv5pf47rwqx6cynyziw4vflmfbjjxbyd8";
+    };
+    propagatedBuildInputs = [ HTMLStickyQuery PlackMiddlewareSession ];
+    meta = {
+      description = "uri-based session state";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/s-aska/p5-Plack-Session-State-URI";
     };
   };
 
