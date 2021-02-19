@@ -11422,6 +11422,21 @@ let
     };
   };
 
+  HTTPBrowserDetect = buildPerlPackage {
+    pname = "HTTP-BrowserDetect";
+    version = "3.31";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OA/OALDERS/HTTP-BrowserDetect-3.31.tar.gz";
+      sha256 = "0gzfxlp9x1mb92pxbwy7vic720if8ajpi2s18ih9n0g438xg6mr1";
+    };
+    buildInputs = [ HashMerge JSONPP PathTiny TestFailWarnings TestMost TestNoWarnings ];
+    meta = {
+      description = "Determine Web browser, version, and platform from an HTTP user agent string";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/oalders/http-browserdetect";
+    };
+  };
+
   HTTPCookieJar = buildPerlPackage {
     pname = "HTTP-CookieJar";
     version = "0.010";
@@ -20969,6 +20984,20 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Plack middleware to identify bots and spiders";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareBrowserDetector = buildPerlPackage {
+    pname = "Plack-Middleware-BrowserDetector";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DC/DCPETROV/Plack-Middleware-BrowserDetector-0.04.tar.gz";
+      sha256 = "1c21yi3lpqc846lqgm0l9m5lpna3zh71n09baxhdjvh7yqi3kmh4";
+    };
+    propagatedBuildInputs = [ HTTPBrowserDetect Plack ];
+    meta = {
+      description = "Plack middleware to identify browsers";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
