@@ -18697,6 +18697,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugW3CValidate = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-W3CValidate";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-Debug-W3CValidate-0.04.tar.gz";
+      sha256 = "01qmkgbbqgfx32hxscs93hrf4chr2a0y9zxc0gfaj0yj5jl0cqg1";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug WebServiceValidatorHTMLW3C XMLXPath ];
+    meta = {
+      description = "Validate your Response Content";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDeflater = buildPerlPackage {
      pname = "Plack-Middleware-Deflater";
      version = "0.12";
@@ -27062,6 +27076,20 @@ let
     meta = {
       homepage = "https://github.com/mikegrb/WebService-Linode";
       description = "Perl Interface to the Linode.com API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  WebServiceValidatorHTMLW3C = buildPerlModule {
+    pname = "WebService-Validator-HTML-W3C";
+    version = "0.28";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/ST/STRUAN/WebService-Validator-HTML-W3C-0.28.tar.gz";
+      sha256 = "042i2w7i7ndr6addyrxkbgzr2ilmsafai85yl60yqfm06z9pmc6c";
+    };
+    propagatedBuildInputs = [ ClassAccessor LWP ];
+    meta = {
+      description = "Access the W3Cs online HTML validator";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
