@@ -23716,6 +23716,21 @@ let
     };
   };
 
+  PlackMiddlewareTazXSLT = buildPerlModule {
+    pname = "Plack-Middleware-TazXSLT";
+    version = "0.55";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MD/MDOM/Plack-Middleware-TazXSLT-0.55.tar.gz";
+      sha256 = "1cyhw89qmkg7sixz9538jbnjfi4vnfcjnz3nskmk1kdsab7c447q";
+    };
+    propagatedBuildInputs = [ CaptureTiny LWP Plack XMLLibXSLT ];
+    buildInputs = [ TestMockObject ];
+    meta = {
+      description = "transform xml documents by applying xsl stylesheets on the fly";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTemplateToolkit = buildPerlPackage {
     pname = "Plack-Middleware-TemplateToolkit";
     version = "0.28";
