@@ -7403,6 +7403,21 @@ let
     };
   };
 
+  DevelGladiator = buildPerlPackage {
+    pname = "Devel-Gladiator";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Devel-Gladiator-0.08.tar.gz";
+      sha256 = "1dk6nlc3gw1pqqw72736ybvbh8g5rjh6a6w3c4njwlnpmdfdgvpy";
+    };
+    buildInputs = [ PadWalker ];
+    meta = {
+      description = "Walk Perl's arena";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Devel-Gladiator";
+    };
+  };
+
   DevelGlobalDestruction = buildPerlPackage {
     pname = "Devel-GlobalDestruction";
     version = "0.14";
@@ -22229,6 +22244,21 @@ let
     meta = {
       description = "Extend Plack::Middleware::Debug with Redis panels";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareDebugRefCounts = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-RefCounts";
+    version = "v0.910.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSG/Plack-Middleware-Debug-RefCounts-v0.910.1.tar.gz";
+      sha256 = "1c4g545fdaydy7f6k9580zyx17aiaj5vnk8v8nsf999gmgz44kg4";
+    };
+    propagatedBuildInputs = [ DevelGladiator PlackMiddlewareDebug namespaceclean ];
+    buildInputs = [ CaptureTiny ];
+    meta = {
+      description = "Reference count debugging for Plack apps";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
