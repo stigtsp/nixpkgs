@@ -6657,6 +6657,20 @@ let
     };
   };
 
+  Develebug = buildPerlPackage {
+    pname = "Devel-ebug";
+    version = "0.63";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/Devel-ebug-0.63.tar.gz";
+      sha256 = "19jy3ck067gp17mkdy2ddmh4dldap6bwsshfr74ijxi0c3iia5sv";
+    };
+    propagatedBuildInputs = [ ClassAccessorChained DevelStackTrace FileWhich ModulePluggable PadWalker ProcBackground StringKoremutake YAML ];
+    meta = {
+      description = "A simple, extensible Perl debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DeviceMAC = buildPerlPackage {
     pname = "Device-MAC";
     version = "1.00";
@@ -8423,6 +8437,21 @@ let
     propagatedBuildInputs = [ EmailValid ];
     meta = {
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  Enbugger = buildPerlPackage {
+    pname = "Enbugger";
+    version = "2.016";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJORE/Enbugger-2.016.tar.gz";
+      sha256 = "0v4p707qicgjn2n9zcsffwgyxs89gvwxckygwplphmxmcyi6gwg1";
+    };
+    propagatedBuildInputs = [ BUtils ];
+    meta = {
+      description = "\"Enables the debugger at runtime\"";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Enbugger";
     };
   };
 
@@ -23781,6 +23810,21 @@ let
     };
   };
 
+  PlackMiddlewareScrutiny = buildPerlPackage {
+    pname = "Plack-Middleware-Scrutiny";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AW/AWWAIID/Plack-Middleware-Scrutiny-0.02.tar.gz";
+      sha256 = "0xjamlg2gy781yb6qvcwa2hfb4amib153kacap1j5g248kscmpmd";
+    };
+    propagatedBuildInputs = [ Develebug Enbugger IOString Twiggy ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "Scrutinize your [psgi] app with an [inline] debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareSecuritySimple = buildPerlPackage {
     pname = "Plack-Middleware-Security-Simple";
     version = "v0.4.2";
@@ -27166,6 +27210,21 @@ let
     };
     meta = {
       description = "Interpolated named arguments in string";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  StringKoremutake = buildPerlModule {
+    pname = "String-Koremutake";
+    version = "0.30";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LB/LBROCARD/String-Koremutake-0.30.tar.gz";
+      sha256 = "1fipslj30nfik4dfphcmr8n5p0jbz1r192v7jwq9nbnaiwpg0q9d";
+    };
+    propagatedBuildInputs = [ Error ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Convert to/from Koremutake Memorable Random Strings";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
