@@ -7989,6 +7989,21 @@ let
     propagatedBuildInputs = [ ExceptionDied ];
   };
 
+  Feersum = buildPerlPackage {
+    pname = "Feersum";
+    version = "1.410";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/Feersum-1.410.tar.gz";
+      sha256 = "02pfiiplbcmcmcnlgc32gjam57l7k1ib3bpz6agb43llx7ji90wk";
+    };
+    propagatedBuildInputs = [ EV Plack ];
+    buildInputs = [ AnyEvent Guard TestFatal TestLeakTrace TestSharedFork TestTCP ];
+    meta = {
+      description = "A PSGI engine for Perl based on EV/libev";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FCGI = buildPerlPackage {
     pname = "FCGI";
     version = "0.79";
@@ -17836,6 +17851,20 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "PSGI handler for FCGI::EV";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerFeersumSS = buildPerlPackage {
+    pname = "Plack-Handler-Feersum-SS";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/EG/EGOR/Plack-Handler-Feersum-SS-0.02.tar.gz";
+      sha256 = "1w8c2h8lfj3r1l6f40c48smwrwdv6vwirqhvik7gbpzvrw5jqq4q";
+    };
+    propagatedBuildInputs = [ Feersum ServerStarter ];
+    meta = {
+      description = "Server::Starter adapter for Feersum Plack handler";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
