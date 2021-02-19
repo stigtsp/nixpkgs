@@ -19243,6 +19243,20 @@ let
     };
   };
 
+  PlackMiddlewareFavicon = buildPerlModule {
+    pname = "Plack-Middleware-Favicon";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Favicon-0.05.tar.gz";
+      sha256 = "1scwpp3mxhvvxrf9780l1xg339ld6hb2ama8i9ind2sjwq9p0c4z";
+    };
+    propagatedBuildInputs = [ Imager Plack ];
+    meta = {
+      description = "deliver common favicon images";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareFileLess = buildPerlPackage {
     pname = "Plack-Middleware-File-Less";
     version = "0.04";
