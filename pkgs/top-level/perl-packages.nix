@@ -528,6 +528,20 @@ let
     buildInputs = [ TestKwalitee TestPod ];
   };
 
+  AppCerberusclient = buildPerlPackage {
+    pname = "App-Cerberus-client";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DR/DRTECH/App-Cerberus-client-0.08.tar.gz";
+      sha256 = "12df8f5ma609zpiy1i35b4v5jzx1g09m4l32mck2anhns3yjiphf";
+    };
+    propagatedBuildInputs = [ AnyURIEscape JSON ListMoreUtils ];
+    meta = {
+      description = "A multi-server client for speaking to App::Cerebrus";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AppClusterSSH = buildPerlModule {
     pname = "App-ClusterSSH";
     version = "4.16";
@@ -16968,6 +16982,20 @@ let
     propagatedBuildInputs = [ DevelCamelcadedb Plack ];
     meta = {
       description = "interactive debugging for Plack applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareCerberus = buildPerlPackage {
+    pname = "Plack-Middleware-Cerberus";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DR/DRTECH/Plack-Middleware-Cerberus-0.04.tar.gz";
+      sha256 = "1zvxflv3cz80v6bx7ym2pkiga2ajp3i94y6s87w4048v6q0r031h";
+    };
+    propagatedBuildInputs = [ AppCerberusclient Plack ];
+    meta = {
+      description = "Include geo, time zone, user-agent and throttling from App::Cerberus";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
