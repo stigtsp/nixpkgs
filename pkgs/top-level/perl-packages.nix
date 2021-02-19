@@ -18359,6 +18359,21 @@ let
     };
   };
 
+  PlackMiddlewareAssetsRailsLike = buildPerlModule {
+    pname = "Plack-Middleware-Assets-RailsLike";
+    version = "0.13";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YS/YSASAKI/Plack-Middleware-Assets-RailsLike-0.13.tar.gz";
+      sha256 = "17a78sriz8xdsn378yrb4g64jmv58a4v2z39in590gcv22k3vpij";
+    };
+    propagatedBuildInputs = [ CSSLESSp CSSMinifierXS CacheCache FileSlurp JavaScriptMinifierXS Plack TextSass TextSassXS ];
+    buildInputs = [ TestNameFromLine TestTime ];
+    meta = {
+      description = "Bundle and minify JavaScript and CSS files";
+      homepage = "https://github.com/ysasaki/p5-plack-middleware-assets-railslike";
+    };
+  };
+
   PlackMiddlewareAuthBrowserID = buildPerlPackage {
     pname = "Plack-Middleware-Auth-BrowserID";
     version = "0.0.7";
@@ -25252,6 +25267,35 @@ let
     meta = {
       description = "Allows conversion between Roman and Arabic algarisms";
       license = lib.licenses.bsd3;
+    };
+  };
+
+  TextSass = buildPerlModule {
+    pname = "Text-Sass";
+    version = "v1.0.4";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RP/RPETTETT/Text-Sass-v1.0.4.tar.gz";
+      sha256 = "1hzzq23v8clqqw8wzi1h1i23bpm0flzc3xa2hwrkk5iqr0yvahsw";
+    };
+    propagatedBuildInputs = [ ConvertColor Readonly ];
+    buildInputs = [ TryTiny ];
+    meta = {
+      description = "Text-Sass - Perl implementation of http://sass-lang.com/";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextSassXS = buildPerlModule {
+    pname = "Text-Sass-XS";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YS/YSASAKI/Text-Sass-XS-0.11.tar.gz";
+      sha256 = "16nm3c22zjyb2vygj8m1rwzlqrf2fs25n1rkh815gvcv0gn37gxx";
+    };
+    buildInputs = [ TestNameFromLine ];
+    meta = {
+      description = "Perl Binding for libsass";
+      homepage = "https://github.com/ysasaki/Text-Sass-XS";
     };
   };
 
