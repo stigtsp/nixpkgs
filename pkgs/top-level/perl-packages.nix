@@ -18898,6 +18898,22 @@ let
     };
   };
 
+  PlackAppREST = buildPerlModule {
+    pname = "Plack-App-REST";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VA/VASEKD/Plack-App-REST-0.04.tar.gz";
+      sha256 = "19clx2lh83z5zgm9plc6k54dbs2c8l9vw6m878psmpzap7d44cwp";
+    };
+    propagatedBuildInputs = [ HTTPException Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Perl PSGI App that just call http method from object";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/vasekd/Plack-App-REST";
+    };
+  };
+
   PlackAppServiceStatus = buildPerlModule {
     pname = "Plack-App-ServiceStatus";
     version = "0.904";
