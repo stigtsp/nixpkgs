@@ -520,6 +520,20 @@ let
     };
   };
 
+  AnyEventSCGI = buildPerlPackage {
+    pname = "AnyEvent-SCGI";
+    version = "1.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KE/KEVINJ/AnyEvent-SCGI-1.1.tar.gz";
+      sha256 = "0abndp9lqwdip4n4gag0a2r1wjnlpf8cm8wk5q4lwj7jj3sfnqgv";
+    };
+    propagatedBuildInputs = [ AnyEvent ];
+    meta = {
+      description = "Event based SCGI server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyMoose = buildPerlPackage {
     pname = "Any-Moose";
     version = "0.27";
@@ -18836,6 +18850,22 @@ let
     meta = {
       description = "reversehttp gateway for PSGI application";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerAnyEventSCGI = buildPerlModule {
+    pname = "Plack-Handler-AnyEvent-SCGI";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-AnyEvent-SCGI-0.03.tar.gz";
+      sha256 = "04xf3l5q2gjxnd5hjfhwcb4n5h2xgzzr7c3qjl0v0c6brcmv3sp4";
+    };
+    propagatedBuildInputs = [ AnyEventSCGI Plack ];
+    buildInputs = [ ModuleBuildTiny TestRequires ];
+    meta = {
+      description = "PSGI handler on AnyEvent::SCGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Plack-Handler-AnyEvent-SCGI";
     };
   };
 
