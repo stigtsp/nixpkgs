@@ -21915,6 +21915,21 @@ let
     };
   };
 
+  PlackMiddlewareClientCert = buildPerlPackage {
+    pname = "Plack-Middleware-ClientCert";
+    version = "0.100";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JO/JOSERIJO/Plack-Middleware-ClientCert-0.100.tar.gz";
+      sha256 = "1k5r1zaar5v80i6rg7xcvwpfgkvvij6gszl687sx6fnjfqx3ahq9";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Parse a client certificate and put details in the env";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kcaran/Plack-Middleware-ClientCert";
+    };
+  };
+
   PlackMiddlewareComboLoader = buildPerlPackage {
     pname = "Plack-Middleware-ComboLoader";
     version = "0.04";
