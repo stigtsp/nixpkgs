@@ -11349,6 +11349,37 @@ let
     };
   };
 
+  HTMLLint = buildPerlPackage {
+    pname = "HTML-Lint";
+    version = "2.32";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PETDANCE/HTML-Lint-2.32.tar.gz";
+      sha256 = "0lk02xpfxcg7ij4dvpsa4wjlzhmiizj0jfr3rwmdpbj69nvc93br";
+    };
+    propagatedBuildInputs = [ HTMLParser ];
+    meta = {
+      description = "check for HTML errors in a string or file";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "http://search.cpan.org/dist/html-lint";
+    };
+  };
+
+  HTMLLintPluggable = buildPerlModule {
+    pname = "HTML-Lint-Pluggable";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/HTML-Lint-Pluggable-0.10.tar.gz";
+      sha256 = "0xn92si63579g4xs9qjf210qcky905f2vymkjyzs6vdbpzhw7kj8";
+    };
+    propagatedBuildInputs = [ HTMLLint ListMoreUtils PackageStash ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "plugin system for HTML::Lint";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karupanerura/p5-HTML-Lint-Pluggable";
+    };
+  };
+
   HTMLForm = buildPerlPackage {
     pname = "HTML-Form";
     version = "6.07";
@@ -23077,6 +23108,22 @@ let
     meta = {
       description = "Middleware to apply Google Anlytics javascript code";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareHTMLLint = buildPerlModule {
+    pname = "Plack-Middleware-HTMLLint";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/Plack-Middleware-HTMLLint-0.03.tar.gz";
+      sha256 = "0qsqm05h9z7dvpphis3b3j10a6igvrv0g52qcs42zyrx02fas84a";
+    };
+    propagatedBuildInputs = [ HTMLEscape HTMLLintPluggable Plack ];
+    buildInputs = [ ModuleBuildTiny TestRequires ];
+    meta = {
+      description = "check syntax with HTML::Lint for PSGI application's response HTML";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint";
     };
   };
 
