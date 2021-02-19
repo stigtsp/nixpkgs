@@ -6736,6 +6736,21 @@ let
      };
   };
 
+  DomainPublicSuffix = buildPerlPackage {
+    pname = "Domain-PublicSuffix";
+    version = "0.19";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NM/NMELNICK/Domain-PublicSuffix-0.19.tar.gz";
+      sha256 = "1rpx4gihcmkiqjdvxg0azalybhs0x4bvbwq1vriy6qp3qhzgycsp";
+    };
+    propagatedBuildInputs = [ ClassAccessor NetIDNEncode ];
+    meta = {
+      description = "Parse a domain down to root";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nmelnick/domain-publicsuffix";
+    };
+  };
+
   Dotenv = buildPerlPackage {
     pname = "Dotenv";
     version = "0.002";
@@ -16693,6 +16708,22 @@ let
       homepage = "https://github.com/plack/Plack";
       description = "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppHostMap = buildPerlModule {
+    pname = "Plack-App-HostMap";
+    version = "0.007";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SR/SRCHULO/Plack-App-HostMap-0.007.tar.gz";
+      sha256 = "04cy0fmd61l36cl2qg8dc47w1pii531swld0cds1girlzraqf0v1";
+    };
+    propagatedBuildInputs = [ DomainPublicSuffix Plack strictures ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Map multiple Plack apps by host";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/srchulo/Plack--App--HostMap";
     };
   };
 
