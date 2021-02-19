@@ -23038,6 +23038,22 @@ let
     };
   };
 
+  PlackMiddlewareLogErrors = buildPerlModule {
+    pname = "Plack-Middleware-LogErrors";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Plack-Middleware-LogErrors-0.003.tar.gz";
+      sha256 = "0lqwlg2bakl7ml10rqjfpssqv3rai351w5kpvgv3wnny1r7yvn35";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny TestFatal ];
+    meta = {
+      description = "Map psgi.errors to psgix.logger or other logger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Plack-Middleware-LogErrors";
+    };
+  };
+
   PlackMiddlewareLogFilter = buildPerlModule {
     pname = "Plack-Middleware-LogFilter";
     version = "0.01";
