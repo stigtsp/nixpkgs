@@ -18061,6 +18061,21 @@ let
     };
   };
 
+  PlackHandlerCLI = buildPerlModule {
+    pname = "Plack-Handler-CLI";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GF/GFUJI/Plack-Handler-CLI-0.05.tar.gz";
+      sha256 = "0lf6ajnqh6xryy7hxdad4plg1vcqww7arl569625nzyza2x0gfd9";
+    };
+    propagatedBuildInputs = [ Mouse Plack ];
+    buildInputs = [ HTTPRequestAsCGI TestRequires ];
+    meta = {
+      description = "Command line interface to PSGI applications";
+      homepage = "https://github.com/gfx/p5-Plack-Handler-CLI";
+    };
+  };
+
   PlackHandlerFCGIEV = buildPerlPackage {
     pname = "Plack-Handler-FCGI-EV";
     version = "0.01";
