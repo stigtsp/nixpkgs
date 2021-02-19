@@ -22055,6 +22055,20 @@ let
     };
   };
 
+  PlackMiddlewareESI = buildPerlPackage {
+    pname = "Plack-Middleware-ESI";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BALDUR/Plack-Middleware-ESI-0.1.tar.gz";
+      sha256 = "06rv2zcaqkbs8riyvxhbvrmisavndx3n72lriqm54zagicgz4s5g";
+    };
+    propagatedBuildInputs = [ LWP Plack ];
+    meta = {
+      description = "PSGI middleware for Edge Side Includes (ESI)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareETag = buildPerlPackage {
     pname = "Plack-Middleware-ETag";
     version = "0.05";
