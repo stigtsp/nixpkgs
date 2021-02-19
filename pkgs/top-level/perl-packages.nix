@@ -24198,6 +24198,22 @@ let
     };
   };
 
+  PlackMiddlewareServerStatusAvailability = buildPerlModule {
+    pname = "Plack-Middleware-ServerStatus-Availability";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TA/TARAO/Plack-Middleware-ServerStatus-Availability-0.02.tar.gz";
+      sha256 = "0z2hmhz4vfn6g7i8r64l71yx286q89viln5d1j3jfql9mppz6n9j";
+    };
+    propagatedBuildInputs = [ NetCIDRLite PathClass Plack ];
+    buildInputs = [ LWP ModuleBuildTiny Starlet TestBase TestRequires TestTCP ];
+    meta = {
+      description = "manually set server status";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tarao/perl5-Plack-Middleware-ServerStatus-Availability";
+    };
+  };
+
   PlackMiddlewareServerStatusLite = buildPerlModule {
     pname = "Plack-Middleware-ServerStatus-Lite";
     version = "0.36";
