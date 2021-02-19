@@ -8226,6 +8226,21 @@ let
     propagatedBuildInputs = [ NumberCompare TextGlob ];
   };
 
+  FileFindRuleFilesysVirtual = buildPerlModule {
+    pname = "File-Find-Rule-Filesys-Virtual";
+    version = "1.22";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RC/RCLAMP/File-Find-Rule-Filesys-Virtual-1.22.tar.gz";
+      sha256 = "04rbrn0k25fhrjmklbcfr70d8ngyyd5f4k9l897883a5zc4as6gc";
+    };
+    propagatedBuildInputs = [ FileFindRule FilesysVirtual ];
+    buildInputs = [ FilesysVirtualPlain ];
+    meta = {
+      description = "File::Find::Rule adapted to Filesys::Virtual";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FileFindRulePerl = buildPerlPackage {
     pname = "File-Find-Rule-Perl";
     version = "1.15";
@@ -8604,6 +8619,25 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ TestSharedFork ];
+  };
+
+  FilesysVirtual = buildPerlPackage {
+    pname = "Filesys-Virtual";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/X/XA/XANTUS/Filesys-Virtual-0.06.tar.gz";
+      sha256 = "0nsij34xqd7s6ykxjz70qs0z7iqwm6j3ck14h6bs0d5r7dphpb9r";
+    };
+  };
+
+  FilesysVirtualPlain = buildPerlPackage {
+    pname = "Filesys-Virtual-Plain";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/X/XA/XANTUS/Filesys-Virtual-Plain-0.10.tar.gz";
+      sha256 = "1znmfsicd7wyvgg8a2b8bh6bw2fi5an8x47ncqqccypv749v4kdl";
+    };
+    propagatedBuildInputs = [ FilesysVirtual ];
   };
 
   FilesysDiskUsage = buildPerlPackage {
@@ -15671,6 +15705,16 @@ let
     };
   };
 
+  NetDAVServer = buildPerlModule {
+    pname = "Net-DAV-Server";
+    version = "1.304";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GW/GWADEJ/Net-DAV-Server-1.304.tar.gz";
+      sha256 = "09dxr5n75z89z8l1n81f2y23n3xfic2hzmxpih1gl0ssrsppfvx9";
+    };
+    propagatedBuildInputs = [ DBDSQLite DigestSHA1 FileFindRuleFilesysVirtual FileSlurp HTTPMessage XMLLibXML ];
+  };
+
   NetDBus = buildPerlPackage {
     pname = "Net-DBus";
     version = "1.2.0";
@@ -17416,6 +17460,20 @@ let
       description = "DAIA Server as Plack application";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-DAIA";
+    };
+  };
+
+  PlackAppDAV = buildPerlPackage {
+    pname = "Plack-App-DAV";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DANJOU/Plack-App-DAV-0.03.tar.gz";
+      sha256 = "13a4w4j9146jaxmv3fljrmlzhmsl12c78277w2hki3wc84ybs82c";
+    };
+    propagatedBuildInputs = [ FilesysVirtualPlain NetDAVServer Plack ];
+    meta = {
+      description = "simple DAV server for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
