@@ -18435,6 +18435,19 @@ let
     };
   };
 
+  PlackMiddlewareDebugTemplate = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Template";
+    version = "1.00";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MY/MYSOCIETY/Plack-Middleware-Debug-Template-1.00.tar.gz";
+      sha256 = "0wcl37akwblibbmkqfdj1dvyk8v28g68s3vjm6ml6fzp2clvdvn2";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug ];
+    meta = {
+      description = "storing profiling information on template use";
+    };
+  };
+
   PlackMiddlewareDebugTraceENV = buildPerlModule {
     pname = "Plack-Middleware-Debug-TraceENV";
     version = "0.043";
