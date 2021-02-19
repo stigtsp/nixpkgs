@@ -19740,6 +19740,22 @@ let
     };
   };
 
+  PlackTestAgent = buildPerlPackage {
+    pname = "Plack-Test-Agent";
+    version = "1.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OA/OALDERS/Plack-Test-Agent-1.5.tar.gz";
+      sha256 = "0i95aa3199pir5v26c45vkh3srl9j2fb7g7cjg4qd7c6givxq5iq";
+    };
+    propagatedBuildInputs = [ HTTPCookies Plack ];
+    buildInputs = [ HTTPServerSimplePSGI ModernPerl TestMemoryCycle TestRequires TestTCP TestWWWMechanize ];
+    meta = {
+      description = "OO interface for testing low-level Plack/PSGI apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/oalders/Plack-Test-Agent";
+    };
+  };
+
   PlackTestAnyEvent = buildPerlModule {
     pname = "Plack-Test-AnyEvent";
     version = "0.08";
