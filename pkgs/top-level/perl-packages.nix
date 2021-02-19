@@ -20474,6 +20474,20 @@ let
     };
   };
 
+  PlackMiddlewareProxyConnectIO = buildPerlModule {
+    pname = "Plack-Middleware-Proxy-Connect-IO";
+    version = "0.0200";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DE/DEXTER/Plack-Middleware-Proxy-Connect-IO-0.0200.tar.gz";
+      sha256 = "0hhbfhb6xbimnlpmfxkwa2dlswzjhjaxbnsi6d0462pq3iq884h3";
+    };
+    propagatedBuildInputs = [ PlackAppProxy ];
+    meta = {
+      description = "CONNECT method";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareProxyMap = buildPerlPackage {
     pname = "Plack-Middleware-ProxyMap";
     version = "0.20";
