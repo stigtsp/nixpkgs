@@ -18157,6 +18157,20 @@ let
     };
   };
 
+  PlackMiddlewareGeoIP = buildPerlPackage {
+    pname = "Plack-Middleware-GeoIP";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHERWIN/Plack-Middleware-GeoIP-0.05.tar.gz";
+      sha256 = "0b1jd5d94xr0chnn0iirq5ygyzr2czfyg8zh7yrpbkgj21jjlv3r";
+    };
+    propagatedBuildInputs = [ GeoIP GeoIP2 Plack ];
+    meta = {
+      description = "Find country and city of origin of a web request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareGitRevisionInfo = buildPerlPackage {
     pname = "Plack-Middleware-GitRevisionInfo";
     version = "0.002";
