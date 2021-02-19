@@ -7350,6 +7350,20 @@ let
     };
   };
 
+  DevelTimeStats = buildPerlModule {
+    pname = "Devel-TimeStats";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CA/CAFEGRATZ/Devel-TimeStats-0.04.tar.gz";
+      sha256 = "1xpj94kq3f8f8yxm8mq5isszgq57gk15z3zfc4lz6kyvp3lhxlp9";
+    };
+    propagatedBuildInputs = [ Moo TermExtendedColor TextUnicodeTableSimple TreeSimpleVisitorFactory namespaceautoclean ];
+    meta = {
+      description = "Timing Statistics Class (Catalyst::Stats fork)";
+      homepage = "https://github.com/cafe01/Devel-TimeStats";
+    };
+  };
+
   DigestCRC = buildPerlPackage {
     pname = "Digest-CRC";
     version = "0.22.2";
@@ -23183,6 +23197,21 @@ let
     };
   };
 
+  PlackMiddlewareTimeStats = buildPerlModule {
+    pname = "Plack-Middleware-TimeStats";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-TimeStats-0.05.tar.gz";
+      sha256 = "0j1sh511srxgpvn5iivmvndqjln6af1sz6gkvd3nrax1l96w5p4y";
+    };
+    propagatedBuildInputs = [ DevelTimeStats Plack ];
+    buildInputs = [ CaptureTiny ];
+    meta = {
+      description = "Plack Timing Statistics Middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTimedLogger = buildPerlPackage {
     pname = "Plack-Middleware-Timed-Logger";
     version = "0.0.5";
@@ -26833,6 +26862,20 @@ let
     };
   };
 
+  TermExtendedColor = buildPerlPackage {
+    pname = "Term-ExtendedColor";
+    version = "0.504";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/W/WO/WOLDRICH/Term-ExtendedColor-0.504.tar.gz";
+      sha256 = "1003q39w9xf773xgdh3q07pb5nxh05ws09rbp5azfzd26bqghrc9";
+    };
+    meta = {
+      description = "Color screen output using extended escape sequences";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://japh.se/";
+    };
+  };
+
   TermProgressBar = buildPerlPackage {
     pname = "Term-ProgressBar";
     version = "2.22";
@@ -29662,6 +29705,21 @@ let
     NIX_CFLAGS_COMPILE = "-DHAS_VPRINTF";
   };
 
+  TextUnicodeTableSimple = buildPerlModule {
+    pname = "Text-UnicodeTable-Simple";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SY/SYOHEX/Text-UnicodeTable-Simple-0.10.tar.gz";
+      sha256 = "10hpzpjlmd45cbbvhmh7ba2k3bps0vyaxp8f7sg7bwlk4a00vfb7";
+    };
+    propagatedBuildInputs = [ UnicodeEastAsianWidth ];
+    meta = {
+      description = "Create a formatted table using characters";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/syohex/p5-Text-UnicodeTable-Simple";
+    };
+  };
+
   TextUnidecode = buildPerlPackage {
     pname = "Text-Unidecode";
     version = "1.30";
@@ -30443,6 +30501,19 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/B/BR/BRADFITZ/Unicode-CheckUTF8-1.03.tar.gz";
       sha256 = "97f84daf033eb9b49cd8fe31db221fef035a5c2ee1d757f3122c88cf9762414c";
+    };
+  };
+
+  UnicodeEastAsianWidth = buildPerlPackage {
+    pname = "Unicode-EastAsianWidth";
+    version = "12.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/Unicode-EastAsianWidth-12.0.tar.gz";
+      sha256 = "1x0gm5akah6x1ypykipywlm2hi95mhqjrnipc5zggragdj9gsnra";
+    };
+    meta = {
+      description = "East Asian Width properties";
+      homepage = "https://github.com/audreyt/Unicode-EastAsianWidth/";
     };
   };
 
