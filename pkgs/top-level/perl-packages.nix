@@ -22680,6 +22680,20 @@ let
     };
   };
 
+  PlackMiddlewareReproxy = buildPerlPackage {
+    pname = "Plack-Middleware-Reproxy";
+    version = "0.00004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DM/DMAKI/Plack-Middleware-Reproxy-0.00004.tar.gz";
+      sha256 = "0sw68ajqzc43firycq0hcawgw8z7yxv7q0k0yy8s7n4qf6jg5whx";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestTCP ];
+    meta = {
+      description = "Handle X-Reproxy-URL From Within Plack";
+    };
+  };
+
   PlackMiddlewareReturnMultiLevel = buildPerlPackage {
     pname = "Plack-Middleware-Return-MultiLevel";
     version = "0.002";
