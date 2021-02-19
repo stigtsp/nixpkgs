@@ -17658,6 +17658,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugProfilerNYTProf = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Profiler-NYTProf";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SD/SDECASTE/Plack-Middleware-Debug-Profiler-NYTProf-0.06.tar.gz";
+      sha256 = "1ixk8cxam6f1fdz677qmnnywv8xh7q3l8n9qjkrgdqnqw7cjyw91";
+    };
+    propagatedBuildInputs = [ DevelNYTProf PlackMiddlewareDebug ];
+    meta = {
+      description = "Runs NYTProf on your app";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugTraceENV = buildPerlModule {
     pname = "Plack-Middleware-Debug-TraceENV";
     version = "0.043";
