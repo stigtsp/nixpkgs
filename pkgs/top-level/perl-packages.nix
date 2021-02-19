@@ -16796,6 +16796,22 @@ let
      };
   };
 
+  PlackAppVhost = buildPerlModule {
+    pname = "Plack-App-Vhost";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/Plack-App-Vhost-0.01.tar.gz";
+      sha256 = "0w1cgq2hmy90bxi28x6dymigs754qfjgqjswndfah8qc1n6xz7ss";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Simple virtual host implementation on Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://git@github.com/karupanerura/Plack-App-Vhost";
+    };
+  };
+
   PlackMiddlewareAuthDigest = buildPerlModule {
      pname = "Plack-Middleware-Auth-Digest";
      version = "0.05";
