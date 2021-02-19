@@ -20869,6 +20869,20 @@ let
     };
   };
 
+  PlackAppURLHashMap = buildPerlPackage {
+    pname = "Plack-App-URLHashMap";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CV/CVLIBRARY/Plack-App-URLHashMap-0.1.tar.gz";
+      sha256 = "0clzaqx8xaak4vsjzysaazlmpylc2rkwq5gj4526zljl67wgw9ib";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Map multiple apps in different paths";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppURLMux = buildPerlPackage {
     pname = "Plack-App-URLMux";
     version = "0.08";
