@@ -19991,6 +19991,22 @@ let
     };
   };
 
+  PlackAppEnv = buildPerlPackage {
+    pname = "Plack-App-Env";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Plack-App-Env-0.07.tar.gz";
+      sha256 = "1zbjbhff2gizkbxal11wb8aphzw16xblfca2b1xz4nlfjc8avjs8";
+    };
+    propagatedBuildInputs = [ DataPrinter Plack ];
+    buildInputs = [ ErrorPure FileObject TestNoWarnings ];
+    meta = {
+      description = "Plack env dump application";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Plack-App-Env";
+    };
+  };
+
   PlackAppFCGIDispatcher = buildPerlPackage {
     pname = "Plack-App-FCGIDispatcher";
     version = "0.10";
