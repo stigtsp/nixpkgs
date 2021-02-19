@@ -16941,6 +16941,22 @@ let
      };
   };
 
+  PlackAppServiceStatus = buildPerlModule {
+    pname = "Plack-App-ServiceStatus";
+    version = "0.904";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/Plack-App-ServiceStatus-0.904.tar.gz";
+      sha256 = "0cy7z646j5f3s0wh1wd8gflaz8mcv3x7gv14v9zk4j9phnw2y70g";
+    };
+    propagatedBuildInputs = [ ClassAccessor LogAny ModuleRuntime Plack ];
+    buildInputs = [ TestMockModule TestMockObject ];
+    meta = {
+      description = "Check and report status of various services needed by your app";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/Plack-App-ServiceStatus";
+    };
+  };
+
   PlackAppSourceViewer = buildPerlModule {
     pname = "Plack-App-SourceViewer";
     version = "0.02";
