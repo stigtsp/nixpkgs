@@ -19875,6 +19875,20 @@ let
     };
   };
 
+  PlackMiddlewareJSConcat = buildPerlPackage {
+    pname = "Plack-Middleware-JSConcat";
+    version = "0.29";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CL/CLKAO/Plack-Middleware-JSConcat-0.29.tar.gz";
+      sha256 = "0pkw1pwlazq6z01ywn8y06170v51hlg3arrpg1z8cjr91c6b8ssq";
+    };
+    propagatedBuildInputs = [ IPCRun3 Plack ];
+    meta = {
+      description = "Concatenate javascripts";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareJSON = buildPerlPackage {
     pname = "Plack-Middleware-JSON";
     version = "0.01";
