@@ -1621,6 +1621,21 @@ let
     doCheck = false; # can time out
   };
 
+  CacheMemorySimple = buildPerlModule {
+    pname = "Cache-Memory-Simple";
+    version = "1.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Cache-Memory-Simple-1.03.tar.gz";
+      sha256 = "0wi75sbf1wpad113pdcg81q0784hbybgh8vasfpjzy6zszar16n2";
+    };
+    buildInputs = [ TestTime ];
+    meta = {
+      description = "Yet another on memory cache";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Cache-Memory-Simple";
+    };
+  };
+
   CacheSimpleTimedExpiry = buildPerlPackage {
     pname = "Cache-Simple-TimedExpiry";
     version = "0.27";
@@ -17166,6 +17181,38 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/plack/Plack-Middleware-Session";
      };
+  };
+
+  PlackMiddlewareSessionSimple = buildPerlModule {
+    pname = "Plack-Middleware-Session-Simple";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-Session-Simple-0.04.tar.gz";
+      sha256 = "01qw8s6rfh9wqdjajdrzym0iv7kp877wz501hrlqf1qgy1f9qrrj";
+    };
+    propagatedBuildInputs = [ DigestSHA1 Plack ];
+    buildInputs = [ CacheMemorySimple HTTPCookieJar ModuleBuildTiny TestRequires TestTCP ];
+    meta = {
+      description = "Make Session Simple";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-Middleware-Session-Simple";
+    };
+  };
+
+  PlackMiddlewareSessionSimpleJWSCookie = buildPerlModule {
+    pname = "Plack-Middleware-Session-Simple-JWSCookie";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RI/RITOU/Plack-Middleware-Session-Simple-JWSCookie-0.01.tar.gz";
+      sha256 = "056xkcnsbvkwrvfnf8xx7795ikir72zn20wqy7sxpic7ajr68wbz";
+    };
+    propagatedBuildInputs = [ JSONWebToken PlackMiddlewareSessionSimple ];
+    buildInputs = [ CacheMemorySimple HTTPCookieJar ModuleBuildTiny TestRequires TestTCP ];
+    meta = {
+      description = "Session::Simple with JWS(JSON Web Sigmature) Cookie";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ritou/p5-plack-middleware-session-simple-jwscookie";
+    };
   };
 
   PlackMiddlewareStackTraceLinkedSource = buildPerlModule {
