@@ -3333,6 +3333,18 @@ let
     '';
   };
 
+  ClassMember = buildPerlPackage {
+    pname = "Class-Member";
+    version = "1.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OP/OPI/Class-Member-1.6.tar.gz";
+      sha256 = "14drhx7nz2synn9vk0ajv6knzb3lgpg92nnjvh2i4fps57r8llm7";
+    };
+    meta = {
+      description = "A set of modules to make the module developement easier";
+    };
+  };
+
   ClassMethodMaker = buildPerlPackage {
     pname = "Class-MethodMaker";
     version = "2.24";
@@ -5317,6 +5329,19 @@ let
     meta = {
       description = "Crypto toolkit";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CryptX509 = buildPerlPackage {
+    pname = "Crypt-X509";
+    version = "0.53";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MR/MRSCOTTY/Crypt-X509-0.53.tar.gz";
+      sha256 = "03v6ks64isgvmqdadfbkkcqfvhrj6pnvr0bv4ymqgp2pji7n3zyj";
+    };
+    propagatedBuildInputs = [ ConvertASN1 ];
+    meta = {
+      description = "Parse a X.509 certificate";
     };
   };
 
@@ -11862,6 +11887,48 @@ let
     };
   };
 
+  HTTPDaemonPatchIPv6 = buildPerlModule {
+    pname = "HTTP-Daemon-Patch-IPv6";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHARYANTO/HTTP-Daemon-Patch-IPv6-0.06.tar.gz";
+      sha256 = "00k74b9maaxba3jh9q7s2qav5ma8q19wf1smaivq4ngaqig99d2b";
+    };
+    propagatedBuildInputs = [ HTTPDaemon ModulePatch ];
+    meta = {
+      description = "Avoid error when IO::Socket::INET6 is around";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/HTTP-Daemon-Patch-IPv6/";
+    };
+  };
+
+  HTTPDaemonSSL = buildPerlPackage {
+    pname = "HTTP-Daemon-SSL";
+    version = "1.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUFFLICK/HTTP-Daemon-SSL-1.04.tar.gz";
+      sha256 = "0bn2blg2dzbyqnvbxs4ch2chqnfn9xvmnl6kvy988k4k5m10bbky";
+    };
+    propagatedBuildInputs = [ HTTPDaemon IOSocketSSL ];
+    meta = {
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HTTPDaemonUNIX = buildPerlPackage {
+    pname = "HTTP-Daemon-UNIX";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/HTTP-Daemon-UNIX-0.06.tar.gz";
+      sha256 = "0bp039i0bi40i5xylgl1i9y789vlzaby8daz2idkfr6dsjzl41ry";
+    };
+    propagatedBuildInputs = [ HTTPDaemon IOHandleRecord IOSocketUNIXUtil ];
+    meta = {
+      description = "HTTP::Daemon over Unix sockets";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   HTTPDate = buildPerlPackage {
     pname = "HTTP-Date";
     version = "6.05";
@@ -12571,6 +12638,20 @@ let
     };
   };
 
+  IOHandleRecord = buildPerlModule {
+    pname = "IO-Handle-Record";
+    version = "0.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OP/OPI/IO-Handle-Record-0.15.tar.gz";
+      sha256 = "01mlh5qvkfyfz16clcrm7hfk901gnr0zmgwr5z39ac117rzi4ifx";
+    };
+    propagatedBuildInputs = [ ClassMember ];
+    buildInputs = [ TestDeep ];
+    meta = {
+      description = "IO::Handle extension to pass perl data structures";
+    };
+  };
+
   IOHandleUtil = buildPerlModule {
      pname = "IO-Handle-Util";
      version = "0.02";
@@ -12713,6 +12794,19 @@ let
     };
   };
 
+  IOSocketUNIXUtil = buildPerlPackage {
+    pname = "IO-Socket-UNIX-Util";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/IO-Socket-UNIX-Util-0.05.tar.gz";
+      sha256 = "16g12apfa8zh7y3gziyf2xnlx425bsc481ywbip7pvg8cr9rwncp";
+    };
+    meta = {
+      description = "Unix domain socket utilities";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   IOStream = buildPerlModule {
     pname = "IO-Stream";
     version = "v2.0.3";
@@ -12804,6 +12898,21 @@ let
     meta = {
       description = "2-letter, 3-letter, and numerical codes for countries";
       license = lib.licenses.mit;
+    };
+  };
+
+  Gepok = buildPerlPackage {
+    pname = "Gepok";
+    version = "0.292";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Gepok-0.292.tar.gz";
+      sha256 = "0l906cbb1ck22lkb0d5jx6naxl7pq7fn84ibyzp7ahvbq7lqy5ws";
+    };
+    propagatedBuildInputs = [ ClassXSAccessor FileHomeDir HTTPDaemonPatchIPv6 HTTPDaemonSSL HTTPDaemonUNIX IOStringy Moo Plack ProcDaemonPrefork ];
+    buildInputs = [ CryptSSLeay ];
+    meta = {
+      description = "PSGI server with built-in HTTPS support, Unix sockets, preforking";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -19395,6 +19504,20 @@ let
     };
   };
 
+  ParseNetstat = buildPerlPackage {
+    pname = "Parse-Netstat";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Parse-Netstat-0.14.tar.gz";
+      sha256 = "1k7ir8r7w4anscnw0aq8kcbdng4g0vd51rk721ik91gmrk5ibfvx";
+    };
+    buildInputs = [ FileShareDirInstall FileSlurper ];
+    meta = {
+      description = "Parse the output of \"netstat\" command";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ParsePlainConfig = buildPerlPackage {
     pname = "Parse-PlainConfig";
     version = "3.05";
@@ -23067,6 +23190,21 @@ let
     };
   };
 
+  PlackMiddlewareGepokXModSSL = buildPerlPackage {
+    pname = "Plack-Middleware-GepokX-ModSSL";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Plack-Middleware-GepokX-ModSSL-0.002.tar.gz";
+      sha256 = "10i353p11fckimlfq34lxqz8k6xv1cpyicpvh6c48vpk7w7kbw2a";
+    };
+    propagatedBuildInputs = [ CryptX509 DateTime Gepok ];
+    buildInputs = [ CryptSSLeay ];
+    meta = {
+      description = "roughly compatible with Plack::Middleware::Apache2::ModSSL";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareGitRevisionInfo = buildPerlPackage {
     pname = "Plack-Middleware-GitRevisionInfo";
     version = "0.002";
@@ -25744,6 +25882,20 @@ let
     };
     meta = {
       description = "Explain process child error";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ProcDaemonPrefork = buildPerlPackage {
+    pname = "Proc-Daemon-Prefork";
+    version = "0.711";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Proc-Daemon-Prefork-0.711.tar.gz";
+      sha256 = "0w2q4f3rx38jr2lvy01ww6py1x1ll0sf5cql4b2jcnm3wxv0ay48";
+    };
+    propagatedBuildInputs = [ FileWhich ParseNetstat ];
+    meta = {
+      description = "Create preforking, autoreloading daemon";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
