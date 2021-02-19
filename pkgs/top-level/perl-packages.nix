@@ -19810,6 +19810,22 @@ let
     };
   };
 
+  PlackAppFilePYX = buildPerlPackage {
+    pname = "Plack-App-File-PYX";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Plack-App-File-PYX-0.01.tar.gz";
+      sha256 = "1gb0d4gsvpqsjyhhqmkd3nj1c96ji5gmyxchdcj5wg1svy8c3zvc";
+    };
+    propagatedBuildInputs = [ PYXSGMLTags Plack UnicodeUTF8 ];
+    buildInputs = [ FileObject TagsOutputIndent TestNoWarnings ];
+    meta = {
+      description = "Plack PYX file application";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Plack-App-File-PYX";
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
