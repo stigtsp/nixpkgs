@@ -17603,6 +17603,22 @@ let
     };
   };
 
+  PlackMiddlewareAdaptFilehandleRead = buildPerlPackage {
+    pname = "Plack-Middleware-AdaptFilehandleRead";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-AdaptFilehandleRead-0.003.tar.gz";
+      sha256 = "1ck0pdp7jj6h71705wr9ix3dgagwl00wrd96w8zg0k5kkvxgil3z";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Let you use a filehandle in the response body that has ->read but not ->getline";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/jjn1056/Plack-Middleware-AdaptFilehandleRead";
+    };
+  };
+
   PlackMiddlewareAuthBrowserID = buildPerlPackage {
     pname = "Plack-Middleware-Auth-BrowserID";
     version = "0.0.7";
