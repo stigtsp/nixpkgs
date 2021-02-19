@@ -18003,6 +18003,22 @@ let
     };
   };
 
+  PlackAppPHPCGI = buildPerlModule {
+    pname = "Plack-App-PHPCGI";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-App-PHPCGI-0.05.tar.gz";
+      sha256 = "1an7326hrqv1mabvfkzan64l5nyrwyq93annca61fgxmanlzk4ma";
+    };
+    propagatedBuildInputs = [ CGIEmulatePSGI FileWhich Plack ];
+    buildInputs = [ DevelCheckBin ];
+    meta = {
+      description = "execute PHP script as CGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-App-PHPCGI";
+    };
+  };
+
   PlackAppProxy = buildPerlPackage {
      pname = "Plack-App-Proxy";
      version = "0.29";
