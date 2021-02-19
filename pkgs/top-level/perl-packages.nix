@@ -6428,6 +6428,22 @@ let
     };
   };
 
+  DBIxTracer = buildPerlModule {
+    pname = "DBIx-Tracer";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/DBIx-Tracer-0.03.tar.gz";
+      sha256 = "1g5km469b0hmb39r0hcda6r0hda4kamxwcbni507p1xvh3brbavq";
+    };
+    propagatedBuildInputs = [ DBDSQLite ];
+    buildInputs = [ ModuleBuildTiny TestRequires ];
+    meta = {
+      description = "Easy tracer for DBI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/DBIx-Tracer";
+    };
+  };
+
   Dancer = buildPerlPackage {
     pname = "Dancer";
     version = "1.3513";
@@ -20315,6 +20331,22 @@ let
     meta = {
       description = "Use Pye as a Plack logger";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareQueryCounter = buildPerlModule {
+    pname = "Plack-Middleware-QueryCounter";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AC/ACIDLEMON/Plack-Middleware-QueryCounter-0.01.tar.gz";
+      sha256 = "1b9q6c4b5yiay2ir8bwqyqjs67v4gnglmawph3xarahnkgp6w475";
+    };
+    propagatedBuildInputs = [ DBIxTracer Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "query counter per request middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/acidlemon/p5-Plack-Middleware-QueryCounter";
     };
   };
 
