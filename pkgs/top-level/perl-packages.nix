@@ -140,6 +140,18 @@ let
     };
   };
 
+  AlgorithmCombinatorics = buildPerlPackage {
+    pname = "Algorithm-Combinatorics";
+    version = "0.27";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FX/FXN/Algorithm-Combinatorics-0.27.tar.gz";
+      sha256 = "0cnibk1f8gs7fdb9143ndkapbzak2cxhl4yci76dadyvxhwxly43";
+    };
+    meta = {
+      description = "Efficient generation of combinatorial sequences";
+    };
+  };
+
   AlgorithmDiff = buildPerlPackage {
     pname = "Algorithm-Diff";
     version = "1.201";
@@ -12486,6 +12498,22 @@ let
     };
   };
 
+  IRI = buildPerlPackage {
+    pname = "IRI";
+    version = "0.011";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GW/GWILLIAMS/IRI-0.011.tar.gz";
+      sha256 = "16z8mc94p9lf9pp9kr1iwqrwipn5vcccj18gscvb4b0fw01p1p45";
+    };
+    propagatedBuildInputs = [ MooXHandlesVia TypeTiny ];
+    buildInputs = [ TryTiny URI ];
+    meta = {
+      description = "Internationalized Resource Identifiers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/IRI/";
+    };
+  };
+
   ImageEmpty = buildPerlPackage {
     pname = "Image-Empty";
     version = "0.20";
@@ -16294,6 +16322,20 @@ let
     meta = {
       homepage = "https://github.com/moose/MooseX-App-Cmd";
       description = "Mashes up MooseX::Getopt and App::Cmd";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  MooseXArrayRef = buildPerlPackage {
+    pname = "MooseX-ArrayRef";
+    version = "0.005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/MooseX-ArrayRef-0.005.tar.gz";
+      sha256 = "027azhghh2q2vpdc77g4kbribpsjg0zfmr42j7fvw461rfmq08cg";
+    };
+    propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "blessed arrayrefs with Moose";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -20210,6 +20252,22 @@ let
       description = "proxy HTTP and WebSocket connections";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/chazmcgarvey/p5-Plack-App-Proxy-WebSocket";
+    };
+  };
+
+  PlackAppRDFFiles = buildPerlModule {
+    pname = "Plack-App-RDF-Files";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-RDF-Files-0.12.tar.gz";
+      sha256 = "0bpdjhcii3mvx1hnc6fkdrd6s9az4dz5d4pl6v198pd7ryzvi1pb";
+    };
+    propagatedBuildInputs = [ Plack RDFTrine ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "serve RDF data from files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-RDF-Files";
     };
   };
 
@@ -24211,6 +24269,22 @@ let
     meta = {
       description = "Session-based logging platform on top of SQL/NoSQL databases";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RDFTrine = buildPerlPackage {
+    pname = "RDF-Trine";
+    version = "1.019";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GW/GWILLIAMS/RDF-Trine-1.019.tar.gz";
+      sha256 = "0q3hd7c05spnq4p5zw0hsgxp16lchrb03ryqxnp3h5vq22m7vc0v";
+    };
+    propagatedBuildInputs = [ AlgorithmCombinatorics CacheLRU DBDSQLite DBIxConnector DataUUID Error IRI JSON LWP LogLog4perl MooseXArrayRef SetScalar TextCSV_XS TextTable XMLCommonNS XMLNamespace XMLSAX ];
+    buildInputs = [ TestDeep TestException TestJSON ];
+    meta = {
+      description = "An RDF Framework for Perl";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/RDF-Trine/";
     };
   };
 
@@ -31539,6 +31613,20 @@ let
     };
   };
 
+  XMLCommonNS = buildPerlModule {
+    pname = "XML-CommonNS";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERIGRIN/XML-CommonNS-0.06.tar.gz";
+      sha256 = "188rygzah2p4h9fx9y3a9ak7nypfm9cm74sn0riipd1m0ah2zd75";
+    };
+    propagatedBuildInputs = [ XMLNamespaceFactory ];
+    meta = {
+      description = "A list of commonly used namespaces";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   XMLDescent = buildPerlModule {
     pname = "XML-Descent";
     version = "1.04";
@@ -31706,6 +31794,29 @@ let
     };
     meta = {
       license = "unknown";
+    };
+  };
+
+  XMLNamespace = buildPerlPackage {
+    pname = "XML-Namespace";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AB/ABW/XML-Namespace-0.02.tar.gz";
+      sha256 = "18srsj8pwwpfkciajdglb3yn3avmvfdd2820xjrmwyc5f4zrb8lz";
+    };
+  };
+
+  XMLNamespaceFactory = buildPerlPackage {
+    pname = "XML-NamespaceFactory";
+    version = "1.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERIGRIN/XML-NamespaceFactory-1.02.tar.gz";
+      sha256 = "08xv37nb26aj88aq4bih3ahg2gs32csd5r936vl8rp58yh6xvdll";
+    };
+    meta = {
+      description = "Simple factory objects for SAX namespaced names";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/perigrin/xml-namespacefactory";
     };
   };
 
