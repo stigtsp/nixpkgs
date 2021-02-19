@@ -18686,6 +18686,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugLazyLoadModules = buildPerlModule {
+    pname = "Plack-Middleware-Debug-LazyLoadModules";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Debug-LazyLoadModules-0.06.tar.gz";
+      sha256 = "0lgpzzhpp8wrxd986w0ghkv53l2f779q52wxzjlj3s3mc0s4jljg";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug ];
+    meta = {
+      description = "debug panel for Lazy Load Modules";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugLogging = buildPerlPackage {
     pname = "Plack-Middleware-DebugLogging";
     version = "0.001005";
