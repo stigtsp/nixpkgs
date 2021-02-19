@@ -18415,6 +18415,22 @@ let
      };
   };
 
+  PlackMiddlewareCookieMonster = buildPerlModule {
+    pname = "Plack-Middleware-CookieMonster";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MANNI/Plack-Middleware-CookieMonster-0.03.tar.gz";
+      sha256 = "1idimbjmij7avyaars6zgd132a55xk6x6qgb0rj7w9j01hjb7b9b";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Eats all your (session) cookies in case Plack::Middleware::StrackTrace ate your HTTP headers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/mannih/Plack-Middleware-CookieMonster";
+    };
+  };
+
   PlackMiddlewareDBICQueryLog = buildPerlPackage {
     pname = "Plack-Middleware-DBIC-QueryLog";
     version = "0.05";
