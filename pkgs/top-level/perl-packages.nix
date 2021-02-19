@@ -19592,6 +19592,20 @@ let
     };
   };
 
+  PlackMiddlewareDNSBL = buildPerlPackage {
+    pname = "Plack-Middleware-DNSBL";
+    version = "0.0304";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTFRVL/Plack-Middleware-DNSBL/Plack-Middleware-DNSBL-0.0304.tar.gz";
+      sha256 = "12sls8hxjb1wnw67p3w4rkq0b9rc16sqpdkva770yrdzgyr2cj9z";
+    };
+    propagatedBuildInputs = [ NetDNS Plack ];
+    meta = {
+      description = "An IPv4 DNS Blacklist middleware for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebug = buildPerlModule {
     pname = "Plack-Middleware-Debug";
     version = "0.18";
