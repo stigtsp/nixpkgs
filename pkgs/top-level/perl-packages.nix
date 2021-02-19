@@ -6444,6 +6444,20 @@ let
     };
   };
 
+  DataAMF = buildPerlPackage {
+    pname = "Data-AMF";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TY/TYPESTER/Data-AMF-0.09.tar.gz";
+      sha256 = "163qsf74ckzvxfch453hx8nmvjv7zfn98jbrk9n9hf4cv33is4m9";
+    };
+    propagatedBuildInputs = [ AnyMoose DateTime UNIVERSALrequire XMLLibXML ];
+    meta = {
+      description = "serialize / deserialize AMF data";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DataBinary = buildPerlPackage {
     pname = "Data-Binary";
     version = "0.01";
@@ -18666,6 +18680,20 @@ let
       description = "I18N for Plack";
       license = with lib.licenses; [ artistic2 ];
       homepage = "https://github.com/vti/plack-i18n";
+    };
+  };
+
+  PlackMiddlewareAMF = buildPerlPackage {
+    pname = "Plack-Middleware-AMF";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SE/SEAGIRL/Plack-Middleware-AMF-0.02.tar.gz";
+      sha256 = "0wk1rvsn03fdc55i07wzb3pphsymmklvj8cc47915jmbpr54rm0b";
+    };
+    propagatedBuildInputs = [ DataAMF Plack ];
+    meta = {
+      description = "The great new Plack::Middleware::AMF!";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
