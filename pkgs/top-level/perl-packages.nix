@@ -2869,6 +2869,20 @@ let
     };
   };
 
+  ClassErrorHandler = buildPerlPackage {
+    pname = "Class-ErrorHandler";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Class-ErrorHandler-0.04.tar.gz";
+      sha256 = "00j5f0z4riyq7i95jww291dpmbn0hmmvkcbrh7p0p8lpqz7jsb9l";
+    };
+    meta = {
+      description = "Base class for error handling";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Class-ErrorHandler";
+    };
+  };
+
   ClassFactory = buildPerlPackage {
     pname = "Class-Factory";
     version = "1.06";
@@ -16114,6 +16128,20 @@ let
     };
   };
 
+  OAuthLite = buildPerlPackage {
+    pname = "OAuth-Lite";
+    version = "1.34";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LY/LYOKATO/OAuth-Lite-1.34.tar.gz";
+      sha256 = "1jq36777kzw5bhv1vym9yjmb9520dsw8l4r1q56slkvnsl1wf34a";
+    };
+    propagatedBuildInputs = [ ClassAccessor ClassDataAccessor ClassErrorHandler CryptOpenSSLRSA LWP ListMoreUtils UNIVERSALrequire ];
+    meta = {
+      description = "OAuth framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NTLM = buildPerlPackage {
     pname = "NTLM";
     version = "1.09";
@@ -17419,6 +17447,20 @@ let
     propagatedBuildInputs = [ AuthenHtpasswd PathClass Plack ];
     meta = {
       description = "http basic authentication through apache-style .htpasswd files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareAuthOAuth = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-OAuth";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Plack-Middleware-Auth-OAuth-0.06.tar.gz";
+      sha256 = "0qmj773ma0khk0ymnygghy1gj2mq4z8flazjsh95666i6r0aa5cj";
+    };
+    propagatedBuildInputs = [ OAuthLite Plack ];
+    meta = {
+      description = "OAuth signature validation middleware";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
