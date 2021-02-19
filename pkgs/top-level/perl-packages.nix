@@ -17151,6 +17151,22 @@ let
     };
   };
 
+  PlackMiddlewareREST = buildPerlModule {
+    pname = "Plack-Middleware-REST";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-REST-0.10.tar.gz";
+      sha256 = "0lfks7ipkf3l6qlffx2sv536krqfqm52gxsgcfv1cm8nqf97wmrm";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Route PSGI requests for RESTful web applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-REST";
+    };
+  };
+
   PlackMiddlewareRemoveRedundantBody = buildPerlPackage {
     pname = "Plack-Middleware-RemoveRedundantBody";
     version = "0.09";
