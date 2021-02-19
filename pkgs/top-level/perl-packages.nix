@@ -20230,6 +20230,21 @@ let
     propagatedBuildInputs = [ Plack ];
   };
 
+  PlackMiddlewareP3P = buildPerlPackage {
+    pname = "Plack-Middleware-P3P";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/ST/STAUGAARD/Plack-Middleware-P3P-0.001.tar.gz";
+      sha256 = "0fszmzy6c7bczaa6fsk46vs1w3pzwc77lkxd605nbh7gz0k5mhkc";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Add standard (or custom) P3P header to response";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://bitbucket.org/hstaugaard/plack-middleware-p3p";
+    };
+  };
+
   PlackMiddlewarePjax = buildPerlPackage {
     pname = "Plack-Middleware-Pjax";
     version = "1.114400";
