@@ -19095,6 +19095,15 @@ let
     };
   };
 
+  PlackMiddlewareLogWarn = buildPerlPackage {
+    pname = "Plack-Middleware-LogWarn";
+    version = "0.001002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAESTRO/Plack-Middleware-LogWarn-0.001002.tar.gz";
+      sha256 = "01mrnmz0q6ix0fqr9hbbcnggfbkbhzk7xfnvk8gbcdww1vcwrgvw";
+    };
+  };
+
   PlackMiddlewareLowerUrl = buildPerlPackage {
     pname = "Plack-Middleware-LowerUrl";
     version = "0.01";
