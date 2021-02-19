@@ -24515,6 +24515,20 @@ let
     };
   };
 
+  PlackMiddlewareWatermark = buildPerlPackage {
+    pname = "Plack-Middleware-Watermark";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZI/ZIGUZAGU/Plack-Middleware-Watermark-0.01.tar.gz";
+      sha256 = "1nak7si2b4w8f0jbgnxivbq1l05qwn7cj5lnjbgwk0zipf190j9f";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Add watermark to response body";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareWoothee = buildPerlModule {
     pname = "Plack-Middleware-Woothee";
     version = "0.05";
