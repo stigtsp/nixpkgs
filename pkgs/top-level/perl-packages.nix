@@ -1270,6 +1270,19 @@ let
     };
   };
 
+  BDebug = buildPerlPackage {
+    pname = "B-Debug";
+    version = "1.26";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RU/RURBAN/B-Debug-1.26.tar.gz";
+      sha256 = "0fhdaxpkirgnwivd0a7x83dvfwqbngsq2rcfwvfxipgh6i8kyvcd";
+    };
+    meta = {
+      description = "print debug info about ops";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   BFlags = buildPerlPackage {
     pname = "B-Flags";
     version = "0.17";
@@ -4637,6 +4650,15 @@ let
     propagatedBuildInputs = [ Clone ];
   };
 
+  CSSLESSp = buildPerlPackage {
+    pname = "CSS-LESSp";
+    version = "0.86";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DR/DRINCHEV/CSS-LESSp-0.86.tar.gz";
+      sha256 = "0qzjwgzfrd36w5hq8mgfvgkbb8a9c9ji0va3rvdmiba9w22ljmz7";
+    };
+  };
+
   CSSMinifierXS = buildPerlPackage {
     pname = "CSS-Minifier-XS";
     version = "0.13";
@@ -5693,6 +5715,21 @@ let
       sha256 = "15621qh5gaan1sgmk9y9svl70nm8viw17x5h1kf0zknkk8lmw77j";
     };
     buildInputs = [ CaptureTiny MockConfig ];
+  };
+
+  DevelCover = buildPerlPackage {
+    pname = "Devel-Cover";
+    version = "1.36";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PJ/PJCJ/Devel-Cover-1.36.tar.gz";
+      sha256 = "0n9fvi1l15cbh35x7xk781n67lbbfsg5gamafixb48ccc08rfr2l";
+    };
+    propagatedBuildInputs = [ BDebug HTMLParser ];
+    meta = {
+      description = "Code coverage metrics for Perl";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://www.pjcj.net/perl.html";
+    };
   };
 
   DevelCheckOS = buildPerlPackage {
@@ -18169,6 +18206,21 @@ let
       description = "Cuts off language tags out of the request's PATH_INFO to simplify internationalization route handlers";
       license = with lib.licenses; [ artistic2 ];
       homepage = "http://p3rl.org/Plack::Middleware::ExtractUriLanguage";
+    };
+  };
+
+  PlackMiddlewareFileLess = buildPerlPackage {
+    pname = "Plack-Middleware-File-Less";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NA/NAOYA/Plack-Middleware-File-Less-0.04.tar.gz";
+      sha256 = "0psksrb0hwff180py7grs1n2y4s7hi91zzdl6gijlhn5hxzxglgg";
+    };
+    propagatedBuildInputs = [ CSSLESSp Plack ];
+    buildInputs = [ DevelCover TestRequires ];
+    meta = {
+      description = "compile LESS templates into CSS stylesheets";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
