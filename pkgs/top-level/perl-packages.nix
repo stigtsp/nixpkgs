@@ -390,6 +390,15 @@ let
     };
   };
 
+  AnyEventFCGI = buildPerlPackage {
+    pname = "AnyEvent-FCGI";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VK/VKRAMSKIH/AnyEvent-FCGI-0.04.tar.gz";
+      sha256 = "04ins4chpldddy5wbvj9i83k38s3i7z9ip9sng2w66mlzfn43mjj";
+    };
+  };
+
   AnyEventFastPing = buildPerlPackage {
     pname = "AnyEvent-FastPing";
     version = "2.1";
@@ -18193,6 +18202,21 @@ let
     propagatedBuildInputs = [ PlackDebugger PlackMiddlewareDBICQueryLog TextMicroTemplate ];
     meta = {
       description = "DBIC query log panel for Plack::Debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerAnyEventFCGI = buildPerlPackage {
+    pname = "Plack-Handler-AnyEvent-FCGI";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-AnyEvent-FCGI-0.01.tar.gz";
+      sha256 = "07zxgxg3wcywbc6hrpsc1bgr2cja5wxw8vfxr8n22zviblpqgn7d";
+    };
+    propagatedBuildInputs = [ AnyEventFCGI IOHandleUtil Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Asynchronous FCGI handler for PSGI using AnyEvent::FCGI";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
