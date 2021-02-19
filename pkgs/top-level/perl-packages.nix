@@ -23018,6 +23018,22 @@ let
     };
   };
 
+  PlackMiddlewareHubSignature = buildPerlModule {
+    pname = "Plack-Middleware-HubSignature";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Plack-Middleware-HubSignature-0.02.tar.gz";
+      sha256 = "12rmqx2xh2xmy6zd7p9q5nfjw64863ch17ah9pkiz5cf9yglmibn";
+    };
+    propagatedBuildInputs = [ Plack StringCompareConstantTime ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Validating payloads from GitHub";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Songmu/p5-Plack-Middleware-HubSignature";
+    };
+  };
+
   PlackMiddlewareIEnosniff = buildPerlModule {
     pname = "Plack-Middleware-IEnosniff";
     version = "0.02";
@@ -27519,6 +27535,19 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/H/HI/HIO/String-CamelCase-0.04.tar.gz";
       sha256 = "1a8i4yzv586svd0pbxls7642vvmyiwzh4x2xyij8gbnfxsydxhw9";
+    };
+  };
+
+  StringCompareConstantTime = buildPerlPackage {
+    pname = "String-Compare-ConstantTime";
+    version = "0.321";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRACTAL/String-Compare-ConstantTime-0.321.tar.gz";
+      sha256 = "1xyp6mvhs8pnvwj6d8isfs1iq02rdzad31a4bm10900x28mvl9hb";
+    };
+    meta = {
+      description = "Timing side-channel protected string compare";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
