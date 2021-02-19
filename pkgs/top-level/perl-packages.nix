@@ -17720,6 +17720,21 @@ let
     };
   };
 
+  PlackMiddlewareGitRevisionInfo = buildPerlPackage {
+    pname = "Plack-Middleware-GitRevisionInfo";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LO/LOGIE/Plack-Middleware-GitRevisionInfo-0.002.tar.gz";
+      sha256 = "1scy5jbl1pjm0hdbidix49w3ggyr065f4bss0gzis0mw29sbs1hn";
+    };
+    propagatedBuildInputs = [ Moo Plack ];
+    buildInputs = [ FileSlurp GitRepository ];
+    meta = {
+      description = "Middleware that appends git revision information to html";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareHTMLify = buildPerlModule {
     pname = "Plack-Middleware-HTMLify";
     version = "0.1.1";
