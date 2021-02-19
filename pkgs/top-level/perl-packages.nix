@@ -18018,6 +18018,21 @@ let
     };
   };
 
+  PlackAppFileCaseInsensitive = buildPerlPackage {
+    pname = "Plack-App-File-CaseInsensitive";
+    version = "0.001000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FREW/Plack-App-File-CaseInsensitive-0.001000.tar.gz";
+      sha256 = "0p12dpzh842p35z4cflaikil2a9sbwqlka0bfixkh7grnm6x6n0d";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Serve static files with case insensitive paths";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/frioux/Plack-App-File-CaseInsensitive";
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
