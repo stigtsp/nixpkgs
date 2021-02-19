@@ -21532,6 +21532,22 @@ let
     };
   };
 
+  PlackMiddlewareSetAccept = buildPerlModule {
+    pname = "Plack-Middleware-SetAccept";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Middleware-SetAccept-0.01.tar.gz";
+      sha256 = "14z2fmr1nqy7k27hzvay46gh59l0v4yq83dn3b1y9yj9j8z363sm";
+    };
+    propagatedBuildInputs = [ ListMoreUtils Plack ];
+    buildInputs = [ TestException TestXML ];
+    meta = {
+      description = "Sets the Accept header based on the suffix or query params of a request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/hoelzro/plack-middleware-setaccept";
+    };
+  };
+
   PlackMiddlewareSetEnvFromHeader = buildPerlPackage {
     pname = "Plack-Middleware-SetEnvFromHeader";
     version = "0.01";
@@ -27111,6 +27127,20 @@ let
     };
     meta = {
       description = "Test fallback behaviour in absence of modules";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestXML = buildPerlModule {
+    pname = "Test-XML";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SE/SEMANTICO/Test-XML-0.08.tar.gz";
+      sha256 = "1qiym068j0f3fpci5692jpn0v383pxy6k2mcv0x0v1pcrliwqm7b";
+    };
+    propagatedBuildInputs = [ XMLSemanticDiff ];
+    meta = {
+      description = "Compare XML in perl tests";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
