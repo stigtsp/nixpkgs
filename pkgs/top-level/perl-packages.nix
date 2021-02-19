@@ -17618,6 +17618,20 @@ let
     };
   };
 
+  PlackMiddlewareStatus = buildPerlModule {
+    pname = "Plack-Middleware-Status";
+    version = "1.101150";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PD/PDONELAN/Plack-Middleware-Status-1.101150.tar.gz";
+      sha256 = "1yz8n8gbw6cwpx2ck13a4ykh5q52v83zbh8bi6wwrw2270fan4q0";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Plack Middleware for mapping urls to status code-driven responses";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
