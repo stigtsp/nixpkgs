@@ -9869,6 +9869,21 @@ let
      };
   };
 
+  HTTPException = buildPerlPackage {
+    pname = "HTTP-Exception";
+    version = "0.04007";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TM/TMUELLER/HTTP-Exception-0.04007.tar.gz";
+      sha256 = "0hvlx95d7zpklnim8pz6hv36yz89qn27aykrp6brdvsz8pra4mpw";
+    };
+    propagatedBuildInputs = [ ExceptionClass HTTPMessage ];
+    buildInputs = [ TestException TestNoWarnings ];
+    meta = {
+      description = "throw HTTP-Errors as (Exception::Class-) Exceptions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   HTTPDAV = buildPerlPackage {
     pname = "HTTP-DAV";
     version = "0.49";
@@ -17062,6 +17077,22 @@ let
     };
   };
 
+  PlackMiddlewareFormatOutput = buildPerlModule {
+    pname = "Plack-Middleware-FormatOutput";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VA/VASEKD/Plack-Middleware-FormatOutput-0.10.tar.gz";
+      sha256 = "0735vpa7h4ln8vvbmivls3xdrw19jgfsh7q4nw0ix5lya3lbcxyq";
+    };
+    propagatedBuildInputs = [ HTTPException JSONXS Plack URIEscapeXS YAMLSyck ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Format output struct by Accept header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/vasekd/Plack-Middleware-FormatOutput";
+    };
+  };
+
   PlackMiddlewareGNUTerryPratchett = buildPerlPackage {
     pname = "Plack-Middleware-GNUTerryPratchett";
     version = "0.01";
@@ -23088,6 +23119,19 @@ let
     meta = {
       homepage = "https://github.com/libwww-perl/URI";
       description = "Uniform Resource Identifiers (absolute and relative)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  URIEscapeXS = buildPerlPackage {
+    pname = "URI-Escape-XS";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DANKOGAI/URI-Escape-XS-0.14.tar.gz";
+      sha256 = "0n97dk4f4qq6rg2gkmy4gp2zk8yllmn2ws88pzj1m0rbdh6cb6n3";
+    };
+    meta = {
+      description = "Drop-In replacement for URI::Escape";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
