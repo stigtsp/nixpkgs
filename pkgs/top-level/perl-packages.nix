@@ -20333,6 +20333,19 @@ let
     };
   };
 
+  PlackMiddlewareOAuth = buildPerlPackage {
+    pname = "Plack-Middleware-OAuth";
+    version = "0.071";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORNELIUS/Plack-Middleware-OAuth-0.071.tar.gz";
+      sha256 = "137s4hxm5p73nkp8r5a3nh79x9g7f3zwv3ybxa7428kx4apidza3";
+    };
+    propagatedBuildInputs = [ DateTime JSONAny LWPProtocolHttps NetOAuth PlackMiddlewareSession URIQuery YAML ];
+    meta = {
+      description = "Plack middleware for OAuth1, OAuth2 and builtin provider configs";
+    };
+  };
+
   PlackMiddlewareOptionsOK = buildPerlPackage {
     pname = "Plack-Middleware-OptionsOK";
     version = "0.02";
@@ -27882,6 +27895,21 @@ let
     propagatedBuildInputs = [ URI ];
     meta = {
       description = "Nested URIs";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  URIQuery = buildPerlPackage {
+    pname = "URI-Query";
+    version = "0.16";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GA/GAVINC/URI-Query-0.16.tar.gz";
+      sha256 = "064czf3h59frrndvfi3c5vwzm0sw0g8dzr1mx1zcv3a6kgkjvrml";
+    };
+    propagatedBuildInputs = [ Clone URI ];
+    buildInputs = [ YAML ];
+    meta = {
+      description = "class providing URI query string manipulation";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
