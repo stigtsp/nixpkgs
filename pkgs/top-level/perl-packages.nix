@@ -18083,6 +18083,22 @@ let
     };
   };
 
+  PlackMiddlewareExtractUriLanguage = buildPerlPackage {
+    pname = "Plack-Middleware-ExtractUriLanguage";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BU/BURNERSK/Plack-Middleware-ExtractUriLanguage-0.004.tar.gz";
+      sha256 = "0njswq0ph0yl9h3mq8bzxyqwlfscng0x0r46l625kmxmavm5pfax";
+    };
+    propagatedBuildInputs = [ ConstFast Plack ];
+    buildInputs = [ TestNoWarnings TestWarn ];
+    meta = {
+      description = "Cuts off language tags out of the request's PATH_INFO to simplify internationalization route handlers";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "http://p3rl.org/Plack::Middleware::ExtractUriLanguage";
+    };
+  };
+
   PlackMiddlewareFileSass = buildPerlPackage {
     pname = "Plack-Middleware-File-Sass";
     version = "0.03";
