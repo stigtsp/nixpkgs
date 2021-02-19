@@ -17077,6 +17077,20 @@ let
     };
   };
 
+  PlackAppDirectoryIndex = buildPerlPackage {
+    pname = "Plack-App-DirectoryIndex";
+    version = "0.0.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAVECROSS/Plack-App-DirectoryIndex-0.0.3.tar.gz";
+      sha256 = "1wn0q63d82h5g1203fzwhsis74pnz82dy8r8mdr08wkigrcfljjq";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Serve static files from document root with an index file";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
