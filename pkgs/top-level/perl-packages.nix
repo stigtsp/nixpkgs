@@ -23379,6 +23379,22 @@ let
     };
   };
 
+  PlackMiddlewareXRay = buildPerlModule {
+    pname = "Plack-Middleware-XRay";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FU/FUJIWARA/Plack-Middleware-XRay-0.07.tar.gz";
+      sha256 = "01kiz181lnx2bwqbda73f9xd46wqn3gqy7f3wxkdmbzkgaryw1lf";
+    };
+    propagatedBuildInputs = [ AWSXRay Plack ];
+    buildInputs = [ IOStringy ModuleBuildTiny ];
+    meta = {
+      description = "Plack middleware for AWS X-Ray tracing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/fujiwara/Plack-Middleware-XRay";
+    };
+  };
+
   PlackMiddlewareXSLT = buildPerlPackage {
     pname = "Plack-Middleware-XSLT";
     version = "0.30";
@@ -30897,6 +30913,22 @@ let
       maintainers = [ maintainers.chreekat ];
       description = "Edit a directory in $EDITOR";
       license = with lib.licenses; [ gpl1 ];
+    };
+  };
+
+  AWSXRay = buildPerlModule {
+    pname = "AWS-XRay";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FU/FUJIWARA/AWS-XRay-0.11.tar.gz";
+      sha256 = "1k3bs3cqj13ibpclg8cx5d09kcxqjjxyb1gfasyvvb1d9hkj5b93";
+    };
+    propagatedBuildInputs = [ CryptURandom JSONXS ];
+    buildInputs = [ IOStringy ModuleBuildTiny Plack TestTCP ];
+    meta = {
+      description = "AWS X-Ray tracing library";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/fujiwara/AWS-XRay";
     };
   };
 
