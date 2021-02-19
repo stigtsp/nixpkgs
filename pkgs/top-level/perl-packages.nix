@@ -23529,6 +23529,20 @@ let
     };
   };
 
+  PlackMiddlewareRDFFlow = buildPerlPackage {
+    pname = "Plack-Middleware-RDF-Flow";
+    version = "0.171";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-RDF-Flow-0.171.tar.gz";
+      sha256 = "0lk9hl6ssc3wxr560yxzl6pbc5mghb88j98awmx8xcz8kgpwxakx";
+    };
+    propagatedBuildInputs = [ Plack RDFFlow ];
+    meta = {
+      description = "Serve RDF as Linked Data for RDF::Flow";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareREST = buildPerlModule {
     pname = "Plack-Middleware-REST";
     version = "0.10";
@@ -25082,6 +25096,21 @@ let
     propagatedBuildInputs = [ JSONMaybeXS RoleTiny TextSpanningTable ];
     meta = {
       description = "Session-based logging platform on top of SQL/NoSQL databases";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RDFFlow = buildPerlPackage {
+    pname = "RDF-Flow";
+    version = "0.178";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/RDF-Flow-0.178.tar.gz";
+      sha256 = "19a6rj85zilgk4fahns84xs7858ahb5fh76bzlbc0x2xw39191bm";
+    };
+    propagatedBuildInputs = [ LogContextual RDFTrine ];
+    buildInputs = [ TestRDF ];
+    meta = {
+      description = "RDF data flow pipeline";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -29689,6 +29718,20 @@ let
     };
     meta = {
       description = "Check file names portability";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestRDF = buildPerlPackage {
+    pname = "Test-RDF";
+    version = "1.22";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KJ/KJETILK/Test-RDF-1.22.tar.gz";
+      sha256 = "0qg69yzd29v51bpirvlhd88hlr432vciwxq9vmh187nizy78a9az";
+    };
+    propagatedBuildInputs = [ RDFTrine ];
+    meta = {
+      description = "Test RDF data for validity and equality";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
