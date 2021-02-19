@@ -4005,6 +4005,20 @@ let
     buildInputs = [ TestException TestSimple13 ];
   };
 
+  ContextualReturn = buildPerlPackage {
+    pname = "Contextual-Return";
+    version = "0.004014";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DC/DCONWAY/Contextual-Return-0.004014.tar.gz";
+      sha256 = "0y4zf5qkpayp4kkg7lw9ydbbin1z99m6xvy02fgacjbfw4ai9zh9";
+    };
+    propagatedBuildInputs = [ Want ];
+    meta = {
+      description = "Create context-sensitive return values";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   CookieBaker = buildPerlModule {
     pname = "Cookie-Baker";
     version = "0.11";
@@ -11460,6 +11474,20 @@ let
     doCheck = false; # needs access to /dev/tty
     meta = {
       description = "Interactively prompt for user input";
+    };
+  };
+
+  IOPrompter = buildPerlPackage {
+    pname = "IO-Prompter";
+    version = "0.004015";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DC/DCONWAY/IO-Prompter-0.004015.tar.gz";
+      sha256 = "1yrziv7yw64350qjj00nw9yx18qxrk5a56yf0vk4f7lvk2rr4c8p";
+    };
+    propagatedBuildInputs = [ ContextualReturn ];
+    meta = {
+      description = "Prompt for input, read it, clean it, return it";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -19355,6 +19383,21 @@ let
     buildInputs = [ TestCompile ];
     meta = {
       description = "Plack Middleware to integrate with Mozilla Persona (Auth by email)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareAuthComplex = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-Complex";
+    version = "0.003001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MG/MGV/Plack-Middleware-Auth-Complex-0.003001.tar.gz";
+      sha256 = "09aj4159mh9asbq8yapp3jmv72bwh0c6a4hys3x0g25s3q4j1xfy";
+    };
+    propagatedBuildInputs = [ AuthenPassphrase DBI EmailSender IOPrompter Plack TieHashExpire ];
+    buildInputs = [ DBDSQLite ];
+    meta = {
+      description = "Feature-rich authentication system";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -28021,6 +28064,15 @@ let
       homepage = "https://github.com/dagolden/tie-handle-offset";
       description = "Tied handle that hides the beginning of a file";
       license = lib.licenses.asl20;
+    };
+  };
+
+  TieHashExpire = buildPerlPackage {
+    pname = "Tie-Hash-Expire";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JE/JEFFY/Tie-Hash-Expire-0.03.tar.gz";
+      sha256 = "10kg4a9mzha2cdpa6mrbqzdqi6yl9c5px3ssnkj21ly5mr5a8paw";
     };
   };
 
