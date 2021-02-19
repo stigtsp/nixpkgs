@@ -23587,6 +23587,20 @@ let
     };
   };
 
+  PlackMiddlewareTrailingSlash = buildPerlPackage {
+    pname = "Plack-Middleware-TrailingSlash";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OK/OKKO/Plack-Middleware-TrailingSlash-0.002.tar.gz";
+      sha256 = "1lf1m5xiln95fxgw47rjsdax29mcjwxzbsq46jispk0spk4y4cjw";
+    };
+    propagatedBuildInputs = [ HTMLParser Moose Plack namespaceautoclean ];
+    meta = {
+      description = "Append a trailing slash to GET requests whenever it is missing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
