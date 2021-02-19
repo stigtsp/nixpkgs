@@ -17749,6 +17749,22 @@ let
     };
   };
 
+  PlackMiddlewarePrettyException = buildPerlModule {
+    pname = "Plack-Middleware-PrettyException";
+    version = "1.009";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/Plack-Middleware-PrettyException-1.009.tar.gz";
+      sha256 = "1qwhqfq018q856ai46ilmi9fxyvwrbj91fd7mynb6kks4vk8a243";
+    };
+    propagatedBuildInputs = [ LogAny Plack ];
+    buildInputs = [ HTTPThrowable ];
+    meta = {
+      description = "Capture exceptions and present them as HTML or JSON";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/Plack-Middleware-PrettyException";
+    };
+  };
+
   PlackMiddlewareProxyMap = buildPerlPackage {
     pname = "Plack-Middleware-ProxyMap";
     version = "0.20";
