@@ -17895,6 +17895,20 @@ let
     };
   };
 
+  PlackAppFakeApache = buildPerlPackage {
+    pname = "Plack-App-FakeApache";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZA/ZARQUON/Plack-App-FakeApache-0.1.tar.gz";
+      sha256 = "1vgfx15xkz26dsq9d48x9v6xghwbp5hzfa8mix8spc55xy4g2z7j";
+    };
+    propagatedBuildInputs = [ CGIEmulatePSGI MooXHandlesVia Plack TypeTiny mod_perl2 ];
+    meta = {
+      description = "Wrapping mod_perl2 applications in Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
