@@ -7018,6 +7018,22 @@ let
     };
   };
 
+  Dancer2 = buildPerlPackage {
+    pname = "Dancer2";
+    version = "0.300005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CR/CROMEDOME/Dancer2-0.300005.tar.gz";
+      sha256 = "02qp29ilarrhhd7vfybz1gqxy87bqb4p5m0lamz73x7dmn3c2iyq";
+    };
+    propagatedBuildInputs = [ AppCmd ConfigAny FileShare HashMergeSimple ImportInto Moo PlackMiddlewareFixMissingBodyInRedirect PlackMiddlewareRemoveRedundantBody RefUtil SafeIsa TemplateTiny TemplateToolkit TypeTiny YAML ];
+    buildInputs = [ FileShareDirInstall HTTPCookies TestCPANMeta TestEOL TestFatal ];
+    meta = {
+      description = "Lightweight yet powerful web application framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://perldancer.org/";
+    };
+  };
+
   DancerMiddlewareRebase = buildPerlPackage {
     pname = "Dancer-Middleware-Rebase";
     version = "0.8.0";
@@ -20277,6 +20293,22 @@ let
       description = "A DBI::Profile panel for Plack::Debugger";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/davebaird/plack-debugger-panel-dbiprofile";
+    };
+  };
+
+  PlackDebuggerPanelDancer2Version = buildPerlPackage {
+    pname = "Plack-Debugger-Panel-Dancer2-Version";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MR/MRMALOOF/Plack-Debugger-Panel-Dancer2-Version-0.001.tar.gz";
+      sha256 = "0f6wi8sixsiy3i5izzv6x77fhf9vifpwvkl3g2lw9j27sw1hhnpf";
+    };
+    propagatedBuildInputs = [ PlackDebugger ];
+    buildInputs = [ Dancer2 PathClass ];
+    meta = {
+      description = "Plack Debugger Panel for displaying Dancer2 Version";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/mrmaloof/Plack-Debugger-Panel-Dancer2-Version";
     };
   };
 
