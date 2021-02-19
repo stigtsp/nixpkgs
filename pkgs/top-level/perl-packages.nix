@@ -20891,6 +20891,22 @@ let
     };
   };
 
+  PlackMiddlewareStackTraceRethrowFriendly = buildPerlModule {
+    pname = "Plack-Middleware-StackTrace-RethrowFriendly";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TA/TARAO/Plack-Middleware-StackTrace-RethrowFriendly-0.03.tar.gz";
+      sha256 = "0jswnj8lvv3dqvvbbpz5v57am7wmxz96apn9rhwj13vzhbj2kbqp";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny TestRequires ];
+    meta = {
+      description = "Display the original stack trace for rethrown errors";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tarao/perl5-Plack-Middleware-StackTrace-RethrowFriendly";
+    };
+  };
+
   PlackMiddlewareStaticCombine = buildPerlPackage {
     pname = "Plack-Middleware-Static-Combine";
     version = "0.01";
