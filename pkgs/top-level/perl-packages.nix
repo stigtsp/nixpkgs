@@ -10270,6 +10270,21 @@ let
     };
   };
 
+  InfluxDBLineProtocol = buildPerlModule {
+    pname = "InfluxDB-LineProtocol";
+    version = "1.014";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/InfluxDB-LineProtocol-1.014.tar.gz";
+      sha256 = "0z6a2cc2mjzvzsvnln54866id6waifqjbpjh1kciv6x1m8pbl9al";
+    };
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Write and read InfluxDB LineProtocol";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/InfluxDB-LineProtocol";
+    };
+  };
+
   ImportInto = buildPerlPackage {
     pname = "Import-Into";
     version = "1.002005";
@@ -12701,6 +12716,21 @@ let
     meta = {
       description = "Create MaxMind DB database files";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  MeasureEverything = buildPerlModule {
+    pname = "Measure-Everything";
+    version = "1.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/Measure-Everything-1.003.tar.gz";
+      sha256 = "1a3j2j08m2pflp5m50rarrq624cil9hs9lz7l5g0wwhx7z4s6fr2";
+    };
+    propagatedBuildInputs = [ InfluxDBLineProtocol ModuleRuntime ];
+    meta = {
+      description = "Log::Any for Stats";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/Measure-Everything";
     };
   };
 
@@ -17406,6 +17436,21 @@ let
       description = "Plack::Middleware::Static with open file cache";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-Static-OpenFileCache";
+    };
+  };
+
+  PlackMiddlewareStatsPerRequest = buildPerlModule {
+    pname = "Plack-Middleware-StatsPerRequest";
+    version = "0.902";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/Plack-Middleware-StatsPerRequest-0.902.tar.gz";
+      sha256 = "18fz2hp6d239iz3mx8j1g9kic4kgy44d77h9b3w9664jl3jw06h8";
+    };
+    propagatedBuildInputs = [ LogAny MeasureEverything Plack ];
+    meta = {
+      description = "Measure HTTP stats on each request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/Plack-Middleware-StatsPerRequest";
     };
   };
 
