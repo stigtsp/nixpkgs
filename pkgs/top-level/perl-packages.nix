@@ -4649,6 +4649,21 @@ let
     buildInputs = [ TestRequires ];
   };
 
+  DAIA = buildPerlPackage {
+    pname = "DAIA";
+    version = "0.43";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/DAIA-0.43.tar.gz";
+      sha256 = "0z03wdgw1qczz461ql8g8n5hp0sm08birs6hm7arfhrpfg4di1ha";
+    };
+    propagatedBuildInputs = [ CarpClan DataValidateURI DateTimeFormatDuration IOStringy JSON LWP XMLLibXMLSimple ];
+    meta = {
+      description = "Document Availability Information API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/DAIA";
+    };
+  };
+
   DataClone = buildPerlPackage {
     pname = "Data-Clone";
     version = "0.004";
@@ -5275,6 +5290,21 @@ let
     meta = {
       description = "Parses Date::Parse compatible formats";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DateTimeFormatDuration = buildPerlPackage {
+    pname = "DateTime-Format-Duration";
+    version = "1.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/DateTime-Format-Duration-1.04.tar.gz";
+      sha256 = "14k4zz49ylp80j3kz1kjam1a8844653b3a6x7v2nvqrzvsaq0sy8";
+    };
+    propagatedBuildInputs = [ DateTime ParamsValidate ];
+    meta = {
+      description = "Format and parse DateTime::Durations";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/DateTime-Format-Duration";
     };
   };
 
@@ -16954,6 +16984,22 @@ let
     };
   };
 
+  PlackAppDAIA = buildPerlPackage {
+    pname = "Plack-App-DAIA";
+    version = "0.55";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-DAIA-0.55.tar.gz";
+      sha256 = "0yj9bn37jk9rdlq9lmys3invp6i19wglnf59pdchb4pvq1dnqma7";
+    };
+    propagatedBuildInputs = [ CGI DAIA Plack ];
+    buildInputs = [ FileShareDirInstall TestJSONEntails TestWarn ];
+    meta = {
+      description = "DAIA Server as Plack application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-DAIA";
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
@@ -21203,6 +21249,20 @@ let
     };
     propagatedBuildInputs = [ JSONAny ];
     buildInputs = [ TestDifferences ];
+  };
+
+  TestJSONEntails = buildPerlPackage {
+    pname = "Test-JSON-Entails";
+    version = "0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Test-JSON-Entails-0.2.tar.gz";
+      sha256 = "0cwq0hk4mb9k5p3bxq40495d9kjzyls6hcj0rcn8lq36ycvd59c4";
+    };
+    propagatedBuildInputs = [ JSONAny ];
+    meta = {
+      description = "Test whether one JSON or Perl structure entails/subsumes another";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   TestKwalitee = buildPerlPackage {
