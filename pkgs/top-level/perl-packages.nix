@@ -21107,6 +21107,21 @@ let
     };
   };
 
+  PlackMiddlewareTemplateToolkit = buildPerlPackage {
+    pname = "Plack-Middleware-TemplateToolkit";
+    version = "0.28";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LL/LLAP/Plack-Middleware-TemplateToolkit-0.28.tar.gz";
+      sha256 = "16dm1vqrn6cncvnxjl9g73hzs5b355r0bb88sd4f364l6gshlr9m";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug TemplateToolkit ];
+    buildInputs = [ TestWarn ];
+    meta = {
+      description = "Serve files with Template Toolkit and Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTestStashWarnings = buildPerlPackage {
     pname = "Plack-Middleware-Test-StashWarnings";
     version = "0.08";
