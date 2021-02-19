@@ -15724,6 +15724,20 @@ let
     };
   };
 
+  NetTelnetGearman = buildPerlPackage {
+    pname = "Net-Telnet-Gearman";
+    version = "0.05000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLU/Net-Telnet-Gearman-0.05000.tar.gz";
+      sha256 = "0q9gx744m467wgykmmcqsa0n29q1a4bqbwf14gz2qk7xi6ma39yz";
+    };
+    propagatedBuildInputs = [ ClassAccessor NetTelnet ];
+    meta = {
+      description = "interact with a Gearman server through its telnet interface";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NetTwitterLite = buildPerlModule {
     pname = "Net-Twitter-Lite";
     version = "0.12008";
@@ -16818,6 +16832,21 @@ let
     meta = {
       homepage = "https://github.com/plack/Plack";
       description = "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppGearmanStatus = buildPerlModule {
+    pname = "Plack-App-Gearman-Status";
+    version = "0.001001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSTOCK/Plack-App-Gearman-Status-0.001001.tar.gz";
+      sha256 = "1ngvw1ij2m58ck7c18hqzciwccvsm7p89nzk1n4j0p79dy4snqxq";
+    };
+    propagatedBuildInputs = [ MROCompat NetTelnetGearman Plack TextMicroTemplate ];
+    buildInputs = [ TestClass TestException TestTCP ];
+    meta = {
+      description = "Plack application to display the status of Gearman job servers";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
