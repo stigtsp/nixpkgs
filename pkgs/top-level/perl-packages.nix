@@ -10710,6 +10710,19 @@ let
     propagatedBuildInputs = [ HeapFibonacci SetObject ];
   };
 
+  GraphEasy = buildPerlModule {
+    pname = "Graph-Easy";
+    version = "0.76";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Graph-Easy-0.76.tar.gz";
+      sha256 = "1yni1181bqfvqcr155mvzgqsqlmpwfiklzx3ircknrpgxc5c38nl";
+    };
+    meta = {
+      description = "Convert or render graphs (as ASCII, HTML, SVG or via Graphviz)";
+      license = with lib.licenses; [ gpl1Plus ];
+    };
+  };
+
   GraphQL = buildPerlPackage {
     pname = "GraphQL";
     version = "0.48";
@@ -20386,6 +20399,21 @@ let
       description = "Git Smart HTTP Server PSGI(Plack) Implementation";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/dragon3/Plack-App-GitSmartHttp";
+    };
+  };
+
+  PlackAppGraphEasy = buildPerlModule {
+    pname = "Plack-App-GraphEasy";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-App-GraphEasy-0.01.tar.gz";
+      sha256 = "0srk537jnsz7hfaiapqdpk25qv8d0vi6hnk09py7lhzf771g0dlv";
+    };
+    propagatedBuildInputs = [ GraphEasy Plack ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "The ASCII Graph Application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
