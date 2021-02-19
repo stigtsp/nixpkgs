@@ -17061,6 +17061,20 @@ let
      };
   };
 
+  PlackAppProxySelective = buildPerlPackage {
+    pname = "Plack-App-Proxy-Selective";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZE/ZENTOOO/Plack-App-Proxy-Selective-0.10.tar.gz";
+      sha256 = "0bb4k2g0avl2v6z2k96mnx4gs3gnpycsj1vzf06zxjf0pv0bcg7x";
+    };
+    propagatedBuildInputs = [ PathClass PlackAppProxy RegexpCommon ];
+    meta = {
+      description = "Proxy app that serves selected paths from local dir";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppServiceStatus = buildPerlModule {
     pname = "Plack-App-ServiceStatus";
     version = "0.904";
