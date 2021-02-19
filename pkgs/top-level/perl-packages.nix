@@ -23033,6 +23033,22 @@ let
     };
   };
 
+  PlackMiddlewareHatenaOAuth = buildPerlModule {
+    pname = "Plack-Middleware-HatenaOAuth";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AS/ASTJ/Plack-Middleware-HatenaOAuth-0.02.tar.gz";
+      sha256 = "16rdzj92mv955p09sv9izy2k12jhkmdkxyvl2j1hmcncs2q17r2h";
+    };
+    propagatedBuildInputs = [ JSONXS OAuthLite PlackMiddlewareSession ];
+    buildInputs = [ ModuleBuildTiny TestBase TestMockGuard ];
+    meta = {
+      description = "provide a login endpoint for Hatena OAuth";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hatena/Plack-Middleware-HatenaOAuth";
+    };
+  };
+
   PlackMiddlewareHeader = buildPerlPackage {
      pname = "Plack-Middleware-Header";
      version = "0.04";
