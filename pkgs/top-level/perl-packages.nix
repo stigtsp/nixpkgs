@@ -13133,6 +13133,22 @@ let
      };
   };
 
+  MarpaR2 = buildPerlModule {
+    pname = "Marpa-R2";
+    version = "8.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JK/JKEGL/Marpa-R2-8.000000.tar.gz";
+      sha256 = "1s4g0a20limfajf4p3rvh8k69a7mjp2ajqfyswfwi84f36kr9rjn";
+    };
+    propagatedBuildInputs = [ HTMLParser PPI ];
+    buildInputs = [ ConfigAutoConf ];
+    meta = {
+      description = "Release 2 of Marpa";
+      license = with lib.licenses; [ lgpl3Plus free ];
+      homepage = "http://savage.net.au/Marpa.html";
+    };
+  };
+
   MathBase85 = buildPerlPackage {
     pname = "Math-Base85";
     version = "0.5";
@@ -20128,6 +20144,20 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Remove multiple slashes in your paths automatically";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewarePjax = buildPerlPackage {
+    pname = "Plack-Middleware-Pjax";
+    version = "1.114400";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MATTP/Plack-Middleware-Pjax-1.114400.tar.gz";
+      sha256 = "1nb9wr9x6x2yv4d64ds1sawh80sq14ia0hz5a4yaphl2kr0a3iwf";
+    };
+    propagatedBuildInputs = [ MarpaR2 Plack ];
+    meta = {
+      description = "PJAX for your Plack";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
