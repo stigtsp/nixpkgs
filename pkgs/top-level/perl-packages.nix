@@ -21087,6 +21087,20 @@ let
      };
   };
 
+  PlackMiddlewareAuthFCGI = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-FCGI";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GU/GUIMARD/Plack-Middleware-Auth-FCGI-0.02.tar.gz";
+      sha256 = "05gzy8yh2g6wjad2v44x4r4jpqr5is63h089s1ggk23z5jvkrxx8";
+    };
+    propagatedBuildInputs = [ FCGIClient Plack ];
+    meta = {
+      description = "authentication middleware that query remote FastCGI server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAuthForm = buildPerlPackage {
     pname = "Plack-Middleware-Auth-Form";
     version = "0.012";
