@@ -19434,6 +19434,21 @@ let
      };
   };
 
+  PlackMiddlewareAuthForm = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-Form";
+    version = "0.012";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZB/ZBY/Plack-Middleware-Auth-Form-0.012.tar.gz";
+      sha256 = "0aws1m6cy5gkj5gfi5ziz8c82v7lr8ib6342l66ffbf5dzff7cb6";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareSession ];
+    buildInputs = [ TestWWWMechanizePSGI ];
+    meta = {
+      description = "Form Based Authentication for Plack (think L<CatalystX::SimpleLogin> but on Plack level)";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareAuthHtpasswd = buildPerlPackage {
     pname = "Plack-Middleware-Auth-Htpasswd";
     version = "0.02";
