@@ -18481,6 +18481,21 @@ let
     };
   };
 
+  PlackMiddlewareSignedCookies = buildPerlPackage {
+    pname = "Plack-Middleware-SignedCookies";
+    version = "1.203";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-SignedCookies-1.203.tar.gz";
+      sha256 = "1y1yxs7agwvx6qc4rx9cd13z74xhwa39hmpw5jc5hmh9bmfpd5n8";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ HTTPCookies ];
+    meta = {
+      description = "accept only server-minted cookies";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareSignposting = buildPerlModule {
     pname = "Plack-Middleware-Signposting";
     version = "0.05";
