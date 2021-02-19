@@ -16812,6 +16812,20 @@ let
      };
   };
 
+  PlackMiddlewareAuthHtpasswd = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-Htpasswd";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Plack-Middleware-Auth-Htpasswd-0.02.tar.gz";
+      sha256 = "1cp29xczvgdnn9ivmdb6f44nlwfz0ny5kaxcisjh2s0bzj74gp5c";
+    };
+    propagatedBuildInputs = [ AuthenHtpasswd PathClass Plack ];
+    meta = {
+      description = "http basic authentication through apache-style .htpasswd files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareComboLoader = buildPerlPackage {
     pname = "Plack-Middleware-ComboLoader";
     version = "0.04";
