@@ -20517,6 +20517,20 @@ let
     };
   };
 
+  PlackMiddlewareQRCode = buildPerlPackage {
+    pname = "Plack-Middleware-QRCode";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORNELIUS/Plack-Middleware-QRCode-0.02.tar.gz";
+      sha256 = "1dh96d6jl0aw0y88m0y0x61c83lz6bmj14khy4zqpb9bcmbavhh8";
+    };
+    propagatedBuildInputs = [ Imager ImagerQRCode ];
+    meta = {
+      description = "Mount QRCode Image service on your Plack application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareQueryCounter = buildPerlModule {
     pname = "Plack-Middleware-QueryCounter";
     version = "0.01";
