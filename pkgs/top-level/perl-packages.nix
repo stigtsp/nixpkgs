@@ -18258,6 +18258,22 @@ let
     };
   };
 
+  PlackAppDirectoryMarkdown = buildPerlModule {
+    pname = "Plack-App-Directory-Markdown";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Plack-App-Directory-Markdown-0.11.tar.gz";
+      sha256 = "1r1xq0agw574149yyd90j3ybnnsqn6a1s48srsrvh1vjsz3jxbvp";
+    };
+    propagatedBuildInputs = [ PathIteratorRule PlackMiddlewareBootstrap TextMarkdown TextXslate ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Serve translated HTML from markdown files from document root with directory index";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Songmu/p5-Plack-App-Directory-Markdown";
+    };
+  };
+
   PlackAppDirectoryPYX = buildPerlPackage {
     pname = "Plack-App-Directory-PYX";
     version = "0.04";
