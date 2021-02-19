@@ -13247,7 +13247,7 @@ let
     };
     meta = {
       description = "Load modules in a DWIM style";
-      license = with stdenv.lib.licenses; [ artistic1 gpl1Plus ];
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17515,7 +17515,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Catches common typos in POD";
-      license = with stdenv.lib.licenses; [ artistic1 gpl1Plus ];
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/apocalypse/perl-pod-spell-commonmistakes";
     };
   };
@@ -20043,7 +20043,7 @@ let
     buildInputs = [ ModuleBuildDeprecated ];
     meta = {
       description = "Check that the Changes file matches the distribution.";
-      license = with stdenv.lib.licenses; [ artistic1 gpl1Plus ];
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -21091,7 +21091,7 @@ let
     propagatedBuildInputs = [ IPCRun3 PodSpell ];
     meta = {
       description = "Check for spelling errors in POD files";
-      license = with stdenv.lib.licenses; [ artistic1 gpl1Plus ];
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/genio/test-spelling";
     };
   };
