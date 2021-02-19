@@ -18045,6 +18045,22 @@ let
     };
   };
 
+  PlackMiddlewareBootstrap = buildPerlModule {
+    pname = "Plack-Middleware-Bootstrap";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HI/HITODE/Plack-Middleware-Bootstrap-0.08.tar.gz";
+      sha256 = "1hay7jp336c9i85svcpa4rf24s7bvcj5hjiaaj77qghmvrnlq7xc";
+    };
+    propagatedBuildInputs = [ HTMLTreeBuilderXPath Plack TextMicroTemplateDataSection ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "A Plack Middleware to prettify simple HTML with Bootstrap design template";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hitode909/Plack-Middleware-Bootstrap";
+    };
+  };
+
   PlackMiddlewareCSSCompressor = buildPerlPackage {
     pname = "Plack-Middleware-CSS-Compressor";
     version = "0.01";
@@ -24277,6 +24293,20 @@ let
     };
     meta = {
       description = "Micro template engine with Perl5 language";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextMicroTemplateDataSection = buildPerlPackage {
+    pname = "Text-MicroTemplate-DataSection";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TY/TYPESTER/Text-MicroTemplate-DataSection-0.01.tar.gz";
+      sha256 = "1mi18bizvvf1czfl99p0jhqn1i9s5v0iq5h228dld7xpnkj201c8";
+    };
+    propagatedBuildInputs = [ DataSectionSimple TextMicroTemplate ];
+    meta = {
+      description = "Render Text::MicroTemplate from __DATA__";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
