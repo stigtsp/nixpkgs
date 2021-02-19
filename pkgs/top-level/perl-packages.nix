@@ -17227,6 +17227,21 @@ let
     };
   };
 
+  PlackMiddlewareSSI = buildPerlPackage {
+    pname = "Plack-Middleware-SSI";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZA/ZARQUON/Plack-Middleware-SSI-0.14.tar.gz";
+      sha256 = "1479ismg4i2lsnrqpdzppmwbvxavlf7r4wqn4bdfj25vjc4nqa27";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "PSGI middleware for server side include content";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-Middleware-SSI";
+    };
+  };
+
   PlackMiddlewareServerTiming = buildPerlModule {
     pname = "Plack-Middleware-ServerTiming";
     version = "0.04";
