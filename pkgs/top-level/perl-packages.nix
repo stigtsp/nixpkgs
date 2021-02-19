@@ -24093,6 +24093,21 @@ let
     };
   };
 
+  PlackMiddlewareRequestId = buildPerlModule {
+    pname = "Plack-Middleware-RequestId";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-RequestId-0.06.tar.gz";
+      sha256 = "1iarjfzzh02d87vv8jrvmpr571nidj44lcrbfyzx8hxn1jwxqycf";
+    };
+    propagatedBuildInputs = [ DataUUID Plack ];
+    buildInputs = [ LWP ];
+    meta = {
+      description = "generate the request id";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareReturnMultiLevel = buildPerlPackage {
     pname = "Plack-Middleware-Return-MultiLevel";
     version = "0.002";
