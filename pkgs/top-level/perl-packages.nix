@@ -20104,6 +20104,20 @@ let
     };
   };
 
+  PlackSessionStoreKyotoTycoon = buildPerlPackage {
+    pname = "Plack-Session-Store-KyotoTycoon";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NO/NORBU/Plack-Session-Store-KyotoTycoon-0.1.tar.gz";
+      sha256 = "19fm384mzja16hpwlpan3j4ywfp9hh116da3zg3v0sk5dxb7dirv";
+    };
+    propagatedBuildInputs = [ CacheKyotoTycoon PlackMiddlewareSession ];
+    meta = {
+      description = "Plack::Session storage for Kyoto Tycoon";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackSessionStoreMongoDB = buildPerlPackage {
     pname = "Plack-Session-Store-MongoDB";
     version = "1.000000";
