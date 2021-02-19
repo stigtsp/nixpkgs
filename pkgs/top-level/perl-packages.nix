@@ -6389,6 +6389,19 @@ let
     };
   };
 
+  DevelStrictMode = buildPerlPackage {
+    pname = "Devel-StrictMode";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Devel-StrictMode-0.003.tar.gz";
+      sha256 = "1w35wpnavg3snmy0gpzv50x0lmfiiw5xzrcswq187kdai9gxx9xh";
+    };
+    meta = {
+      description = "determine whether strict (but slow) tests should be enabled";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DevelSymdump = buildPerlPackage {
     pname = "Devel-Symdump";
     version = "2.18";
@@ -8718,6 +8731,20 @@ let
     doCheck = false;
   };
 
+  FunctionParameters = buildPerlPackage {
+    pname = "Function-Parameters";
+    version = "2.001003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAUKE/Function-Parameters-2.001003.tar.gz";
+      sha256 = "0hn22ghmw2q1z2yv45578ymv58qqs8nqqxdhgpn9j9608dmjr8pa";
+    };
+    buildInputs = [ DirSelf TestFatal ];
+    meta = {
+      description = "define functions and methods with parameter lists (\"subroutine signatures\")";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Furl = buildPerlModule {
     pname = "Furl";
     version = "3.13";
@@ -9173,6 +9200,21 @@ let
       sha256 = "14n4pfg05ly3hw4ivnxqk1vha5jkkx1ssg9iln56qfdjs7h0p58i";
     };
     propagatedBuildInputs = [ HeapFibonacci SetObject ];
+  };
+
+  GraphQL = buildPerlPackage {
+    pname = "GraphQL";
+    version = "0.48";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETJ/GraphQL-0.48.tar.gz";
+      sha256 = "0g2mz8hr7axgwqlgmih9n32i1jvxw1fchq6hyj4hc6gn156vph40";
+    };
+    propagatedBuildInputs = [ DateTimeFormatISO8601 DevelStrictMode FunctionParameters ImportInto JSONMaybeXS MooXThunking Pegex ReturnType curry ];
+    buildInputs = [ TestDeep TestException ];
+    meta = {
+      description = "Perl implementation of GraphQL";
+      license = with lib.licenses; [ artistic1 gpl1Plus artistic2 ];
+    };
   };
 
   GraphViz = buildPerlPackage {
@@ -14274,6 +14316,21 @@ let
      };
   };
 
+  MooXThunking = buildPerlPackage {
+    pname = "MooX-Thunking";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETJ/MooX-Thunking-0.08.tar.gz";
+      sha256 = "0z65i35j3j0cn8jln25vadvcln789zkb9wwzznbjvmj0fhy11p5z";
+    };
+    propagatedBuildInputs = [ Moo TypeTiny ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Allow Moo attributes to be \"thunked\"";
+      license = with lib.licenses; [ artistic1 gpl1Plus artistic2 ];
+    };
+  };
+
   MooXTypesMooseLike = buildPerlPackage {
     pname = "MooX-Types-MooseLike";
     version = "0.29";
@@ -17261,6 +17318,22 @@ let
     };
   };
 
+  PlackAppGraphQL = buildPerlPackage {
+    pname = "Plack-App-GraphQL";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-App-GraphQL-0.003.tar.gz";
+      sha256 = "0i3b150kmsxcfl2f5s6cs3p5wb8bgz1rg32kv0mrp70nkb9xb663";
+    };
+    propagatedBuildInputs = [ GraphQL Plack SafeIsa TemplateTiny ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Serve GraphQL from Plack / PSGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/jjn1056/Plack-App-GraphQL";
+    };
+  };
+
   PlackAppHostMap = buildPerlModule {
     pname = "Plack-App-HostMap";
     version = "0.007";
@@ -19453,6 +19526,21 @@ let
       sha256 = "1yn5l6x3xyic9jxw9jggqsbggcv7rc8ggj4zbnlz9hfvv17gjazv";
     };
     meta = {
+    };
+  };
+
+  ReturnType = buildPerlPackage {
+    pname = "Return-Type";
+    version = "0.007";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Return-Type-0.007.tar.gz";
+      sha256 = "1d71cnw9n84ya3a91f5k907lxl4rkpkh93wx0bd8af56lzis9zqd";
+    };
+    propagatedBuildInputs = [ TypeTiny ];
+    buildInputs = [ TestFatal ];
+    meta = {
+      description = "specify a return type for a function (optionally with coercion)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
