@@ -17350,6 +17350,21 @@ let
     };
   };
 
+  PlackMiddlewareXSLT = buildPerlPackage {
+    pname = "Plack-Middleware-XSLT";
+    version = "0.30";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NW/NWELLNHOF/Plack-Middleware-XSLT-0.30.tar.gz";
+      sha256 = "0c3hin2lgx4ba6pvjzpcx1skci1djz8yj0dz0gsbvy2bizj42dji";
+    };
+    propagatedBuildInputs = [ Plack XMLLibXSLT ];
+    buildInputs = [ FileTouch XMLLibXMLCache ];
+    meta = {
+      description = "XSLT transformations with Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackServerAnyEvent = buildPerlPackage {
     pname = "Plack-Server-AnyEvent";
     version = "0.04";
@@ -23771,6 +23786,21 @@ let
     SKIP_SAX_INSTALL = 1;
     buildInputs = [ AlienBuild AlienLibxml2 ];
     propagatedBuildInputs = [ XMLSAX ];
+  };
+
+  XMLLibXMLCache = buildPerlPackage {
+    pname = "XML-LibXML-Cache";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NW/NWELLNHOF/XML-LibXML-Cache-0.14.tar.gz";
+      sha256 = "1wyfca94sv3plrx89b2cgd5yzj3nr9zhv6i28wris34vv43xk437";
+    };
+    propagatedBuildInputs = [ URI XMLLibXML ];
+    buildInputs = [ FileTouch TestDeep XMLLibXSLT ];
+    meta = {
+      description = "Document cache for XML::LibXML";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   XMLLibXMLSimple = buildPerlPackage {
