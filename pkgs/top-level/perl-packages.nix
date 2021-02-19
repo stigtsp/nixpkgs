@@ -19854,6 +19854,20 @@ let
     };
   };
 
+  PlackMiddlewareDevFilter = buildPerlModule {
+    pname = "Plack-Middleware-DevFilter";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-DevFilter-0.01.tar.gz";
+      sha256 = "1yq7bbj2c1nmmgqfp64bdmi9vv3kp6q6vcvf043dpw8wk58s92xk";
+    };
+    propagatedBuildInputs = [ Imager Plack ];
+    meta = {
+      description = "filter a content for detecting environment";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDevelForceResponse = buildPerlModule {
     pname = "Plack-Middleware-Devel-ForceResponse";
     version = "0.01";
