@@ -17061,6 +17061,22 @@ let
     };
   };
 
+  PlackAppDirectoryApaxy = buildPerlPackage {
+    pname = "Plack-App-Directory-Apaxy";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KE/KEEDI/Plack-App-Directory-Apaxy-0.004.tar.gz";
+      sha256 = "1bwhm4d0aaxs7aszdrqkbh9vk961jzbbi6v2wkn16db772gfqx71";
+    };
+    propagatedBuildInputs = [ NumberBytesHuman PathTiny Plack ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "Serve static files from document root with directory index using Apaxy";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/keedi/Plack-App-Directory-Apaxy";
+    };
+  };
+
   PlackAppGearmanStatus = buildPerlModule {
     pname = "Plack-App-Gearman-Status";
     version = "0.001001";
