@@ -4878,6 +4878,29 @@ let
     propagatedBuildInputs = [ Clone FileFindRule ];
   };
 
+  DataDenter = buildPerlPackage {
+    pname = "Data-Denter";
+    version = "0.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IN/INGY/Data-Denter-0.15.tar.gz";
+      sha256 = "0mfvby7lvc9jfs3sjrdsgc54f45b1acqrkyw273vz5wlsjdzzd1s";
+    };
+  };
+
+  DataDifflet = buildPerlModule {
+    pname = "Data-Difflet";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Data-Difflet-0.11.tar.gz";
+      sha256 = "04d2m2ai3rkiw0162d6n2qlc0awjwsrm1irfsx2rx0l9chw8cayi";
+    };
+    meta = {
+      description = "Ultra special pretty cute diff generator Mark II";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Data-Difflet";
+    };
+  };
+
   DataDump = buildPerlPackage {
     pname = "Data-Dump";
     version = "1.23";
@@ -9050,6 +9073,19 @@ let
     };
   };
 
+  FunctionalUtility = buildPerlPackage {
+    pname = "Functional-Utility";
+    version = "1.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BE/BELDEN/Functional-Utility-1.02.tar.gz";
+      sha256 = "0121fd79rp1h6irvjxm5z1w1gf7c6d983v0fadmgsasj1ny8kq0y";
+    };
+    meta = {
+      description = "helper tools for light-weight functional programming";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Furl = buildPerlModule {
     pname = "Furl";
     version = "3.13";
@@ -9825,6 +9861,21 @@ let
     meta = {
       description = "Provide the stuff missing in Hash::Util";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HashMostUtils = buildPerlPackage {
+    pname = "Hash-MostUtils";
+    version = "1.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BE/BELDEN/Hash-MostUtils-1.07.tar.gz";
+      sha256 = "0j0vka4ygz28j5c93qa9c6l27bjhnkd2b1p3dwqi6s6m6rrmn5ix";
+    };
+    propagatedBuildInputs = [ provide ];
+    meta = {
+      description = "Pairwise list manipulators";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/belden/perl-hash-mostutils";
     };
   };
 
@@ -19000,6 +19051,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugTimedLogger = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Timed-Logger";
+    version = "0.0.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KO/KOLYA/Plack-Middleware-Debug-Timed-Logger-0.0.5.tar.gz";
+      sha256 = "0xxbx2h83a8ph3pndr7926dqyblwdrh1pwkfg3p3k58gq6qmc0w6";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug PlackMiddlewareTimedLogger ];
+    buildInputs = [ ModuleInstall TestCheckManifest TestPod TestPodCoverage ];
+    meta = {
+      description = "An Event Log Debug Panel";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugTraceENV = buildPerlModule {
     pname = "Plack-Middleware-Debug-TraceENV";
     version = "0.043";
@@ -20184,6 +20250,21 @@ let
     };
   };
 
+  PlackMiddlewareTimedLogger = buildPerlPackage {
+    pname = "Plack-Middleware-Timed-Logger";
+    version = "0.0.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KO/KOLYA/Plack-Middleware-Timed-Logger-0.0.5.tar.gz";
+      sha256 = "1jvabwb7igqfwhkpm4af5xhng71nygfz43q2zwzy3xql5qaxhpsg";
+    };
+    propagatedBuildInputs = [ Plack TimedLogger ];
+    buildInputs = [ DataDump ModuleInstall TestCheckManifest TestEasy TestException TestPod TestPodCoverage ];
+    meta = {
+      description = "Expose a Timed::Logger Instance in Middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTimeout = buildPerlPackage {
     pname = "Plack-Middleware-Timeout";
     version = "0.09";
@@ -21059,6 +21140,19 @@ let
     };
     meta = {
       description = "Optimized module loading for forking or non-forking processes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  provide = buildPerlPackage {
+    pname = "provide";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BE/BELDEN/provide-0.03.tar.gz";
+      sha256 = "0ii4zry7hbvs8lhmi0yjsxfw162f6sj37px2z15p5rh99dg8lp2n";
+    };
+    meta = {
+      description = "easily choose between different version-specific implementations";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -23661,6 +23755,21 @@ let
     };
   };
 
+  TestCheckManifest = buildPerlPackage {
+    pname = "Test-CheckManifest";
+    version = "1.42";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RE/RENEEB/Test-CheckManifest-1.42.tar.gz";
+      sha256 = "09i89nx1v5q8b49s06mkrs2yjmfr1garc3vg5za7n4x873m7naf7";
+    };
+    buildInputs = [ PodCoverageTrustPod ];
+    meta = {
+      description = "Check if your Manifest matches your distro";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "http://github.com/reneeb/Test-CheckManifest";
+    };
+  };
+
   TestClass = buildPerlPackage {
     pname = "Test-Class";
     version = "0.50";
@@ -23899,6 +24008,22 @@ let
     meta = {
       description = "Check the correct line endings in your project";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestEasy = buildPerlPackage {
+    pname = "Test-Easy";
+    version = "1.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BE/BELDEN/Test-Easy-1.11.tar.gz";
+      sha256 = "0pgjmdgdxkidvpy14j9gapixvmc4pwns2i5im8g7rgi5q7fkb28y";
+    };
+    propagatedBuildInputs = [ DataDenter DataDifflet FunctionalUtility HashMostUtils ];
+    buildInputs = [ TestResub ];
+    meta = {
+      description = "facilitates easy testing patterns";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/belden/perl-test-easy";
     };
   };
 
@@ -24666,6 +24791,19 @@ let
        description = "Easily test network connectivity";
        license = with lib.licenses; [ artistic1 gpl1Plus ];
      };
+  };
+
+  TestResub = buildPerlPackage {
+    pname = "Test-Resub";
+    version = "2.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KO/KOLYA/Test-Resub-2.03.tar.gz";
+      sha256 = "0lnsf3jkbyg3f87mpcjswnncd0lkpvqxlg8cgdkwh08bz5zlxh2v";
+    };
+    meta = {
+      description = "Lexically scoped monkey patching for testing";
+      homepage = "https://github.com/belden/test-resub";
+    };
   };
 
   TestRoo = buildPerlPackage {
@@ -26282,6 +26420,21 @@ let
       homepage = "https://metacpan.org/release/Time-Piece";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
+    };
+  };
+
+  TimedLogger = buildPerlPackage {
+    pname = "Timed-Logger";
+    version = "0.0.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KO/KOLYA/Timed-Logger-0.0.6.tar.gz";
+      sha256 = "1xarhlvv9zdkzyrkaflgvjnifzpqlxzxr7x707x4ak7v0w3ln5wp";
+    };
+    propagatedBuildInputs = [ Moose ];
+    buildInputs = [ ModuleInstall TestCheckManifest TestEasy TestPod TestPodCoverage ];
+    meta = {
+      description = "store events for later analysis";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
