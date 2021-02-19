@@ -24398,6 +24398,15 @@ let
     };
   };
 
+  PlackMiddlewareSessionSerializedCookie = buildPerlPackage {
+    pname = "Plack-Middleware-Session-SerializedCookie";
+    version = "1.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CI/CINDY/Plack-Middleware-Session-SerializedCookie-1.03.tar.gz";
+      sha256 = "1daj49nwk5q7mkwgs34ni178cpqw9rrjii7cllzcjxs9vi33jq8x";
+    };
+  };
+
   PlackMiddlewareSessionSimple = buildPerlModule {
     pname = "Plack-Middleware-Session-Simple";
     version = "0.04";
