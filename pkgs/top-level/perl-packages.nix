@@ -18691,6 +18691,20 @@ let
     };
   };
 
+  PlackAppPrack = buildPerlPackage {
+    pname = "Plack-App-Prack";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEDO/Plack-App-Prack-0.02.tar.gz";
+      sha256 = "0kdjf6ygzjs3k9yibf7sk4bmbdfcr3m26sy71r5g6c0r531n60jf";
+    };
+    propagatedBuildInputs = [ JSON Plack ];
+    meta = {
+      description = "Proxy plack requests to a rack application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppPrerender = buildPerlPackage {
     pname = "Plack-App-Prerender";
     version = "v0.2.0";
