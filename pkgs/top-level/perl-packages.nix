@@ -22974,6 +22974,21 @@ let
      };
   };
 
+  PlackMiddlewareHeaders = buildPerlPackage {
+    pname = "Plack-Middleware-Headers";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Headers-0.11.tar.gz";
+      sha256 = "0vn4j7bvzzjgrndhg4k10zvkjw89z5hgl05x5rm16g69kdqfxsbr";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "modify HTTP response headers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-Headers";
+    };
+  };
+
   PlackMiddlewareHealthCheck = buildPerlPackage {
     pname = "Plack-Middleware-HealthCheck";
     version = "v0.0.5";
