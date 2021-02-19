@@ -16984,6 +16984,21 @@ let
     };
   };
 
+  PlackAppCatmanduBag = buildPerlModule {
+    pname = "Plack-App-Catmandu-Bag";
+    version = "0.0102";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NICS/Plack-App-Catmandu-Bag-0.0102.tar.gz";
+      sha256 = "040vry4q2glpz49hdg5819j0jg6g8gp1wwb5bx2y0bgr0k6r4hiq";
+    };
+    propagatedBuildInputs = [ Catmandu JSON Plack RouterSimple ];
+    meta = {
+      description = "Wrap a REST API around a Catmandu::Bag";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-App-Catmandu-Bag";
+    };
+  };
+
   PlackAppDAIA = buildPerlPackage {
     pname = "Plack-App-DAIA";
     version = "0.55";
@@ -17631,6 +17646,22 @@ let
       description = "Session::Simple with JWS(JSON Web Sigmature) Cookie";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/ritou/p5-plack-middleware-session-simple-jwscookie";
+    };
+  };
+
+  PlackMiddlewareSignposting = buildPerlModule {
+    pname = "Plack-Middleware-Signposting";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VP/VPEIL/Plack-Middleware-Signposting-0.05.tar.gz";
+      sha256 = "13aw1d4pwmkypcdbjp1cv3zy8jg55b5a31kb01qh75m4li4krnjv";
+    };
+    propagatedBuildInputs = [ PlackAppCatmanduBag ];
+    buildInputs = [ FileSlurp ModuleBuildTiny ];
+    meta = {
+      description = "a base class for Plack implementations of the L<Signposting|https://signposting.org> protocol";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-Middleware-Signposting";
     };
   };
 
@@ -18764,6 +18795,21 @@ let
     meta = {
       description = "Roles. Like a nouvelle cuisine portion size slice of Moose";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RouterSimple = buildPerlModule {
+    pname = "Router-Simple";
+    version = "0.17";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Router-Simple-0.17.tar.gz";
+      sha256 = "17f8n07qnzbka5yv5r8h2sx0795hv3dz5nyc41bf3viq1xi1aiik";
+    };
+    propagatedBuildInputs = [ ClassAccessorLite ];
+    meta = {
+      description = "simple HTTP router";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/p5-router-simple";
     };
   };
 
