@@ -22531,6 +22531,20 @@ let
     };
   };
 
+  PlackMiddlewareRealIP = buildPerlPackage {
+    pname = "Plack-Middleware-RealIP";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHERWIN/Plack-Middleware-RealIP-0.03.tar.gz";
+      sha256 = "06hindyx30gdsf3cl91n821853wpdrszi8lqmih8yi0xkinhkm2f";
+    };
+    propagatedBuildInputs = [ NetNetmask Plack ];
+    meta = {
+      description = "Override client IP with header value provided by proxy/load balancer";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareRecorder = buildPerlModule {
     pname = "Plack-Middleware-Recorder";
     version = "0.06";
