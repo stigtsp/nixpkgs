@@ -25184,6 +25184,21 @@ let
     };
   };
 
+  PlackServerAnyEventServerStarter = buildPerlPackage {
+    pname = "Plack-Server-AnyEvent-Server-Starter";
+    version = "0.00002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DM/DMAKI/Plack-Server-AnyEvent-Server-Starter-0.00002.tar.gz";
+      sha256 = "0aaxyc56ia9cs76znbpznpfyglf05fgffqvln26vhfqdls8ys5h0";
+    };
+    propagatedBuildInputs = [ PlackServerAnyEvent ServerStarter ];
+    buildInputs = [ LWP TestTCP ];
+    meta = {
+      description = "Use AnyEvent-Based Plack Apps From Server::Starter";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackServerCoro = buildPerlPackage {
     pname = "Plack-Server-Coro";
     version = "0.02";
