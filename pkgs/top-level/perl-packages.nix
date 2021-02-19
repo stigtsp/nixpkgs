@@ -7289,6 +7289,39 @@ let
     };
   };
 
+  EncodeJPEmoji = buildPerlPackage {
+    pname = "Encode-JP-Emoji";
+    version = "0.60";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAWASAKI/Encode-JP-Emoji-0.60.tar.gz";
+      sha256 = "0bv48xqdxz06yd6k8gi3vsnp05j4df48xkfyc550vxn43a9x1m5g";
+    };
+  };
+
+  EncodeJPMobile = buildPerlPackage {
+    pname = "Encode-JP-Mobile";
+    version = "0.30";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Encode-JP-Mobile-0.30.tar.gz";
+      sha256 = "1cysfxk06k14wqgjm2m6lvmr50qlprxc5n3d9753pwzblvmhw0yv";
+    };
+    propagatedBuildInputs = [ FileShareDir MIMETools ];
+  };
+
+  EncodeJPMobileUnicodeEmoji = buildPerlPackage {
+    pname = "Encode-JP-Mobile-UnicodeEmoji";
+    version = "0.012";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Encode-JP-Mobile-UnicodeEmoji-0.012.tar.gz";
+      sha256 = "01y65j9nx7qjxfvyibynxnqns9vqvxg4x7h25q2875qsykh14i26";
+    };
+    propagatedBuildInputs = [ EncodeJPEmoji EncodeJPMobile ];
+    meta = {
+      description = "Unicode Emoji mapping for Encode::JP::Mobile";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   EncodeLocale = buildPerlPackage {
     pname = "Encode-Locale";
     version = "1.05";
@@ -18052,6 +18085,21 @@ let
       description = "Dealing with that pesky trailing slash/";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/b10m/p5-Plack-Middleware-TrailingSlashKiller";
+    };
+  };
+
+  PlackMiddlewareUnicodePictogramFallbackTypeCast = buildPerlModule {
+    pname = "Plack-Middleware-UnicodePictogramFallback-TypeCast";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Plack-Middleware-UnicodePictogramFallback-TypeCast-0.02.tar.gz";
+      sha256 = "0df7a3b1ykm3m1dhpqv0a93l4fjkfa13bxllzq23xqfp544fvbnd";
+    };
+    propagatedBuildInputs = [ EncodeJPMobileUnicodeEmoji Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "unicode pictogram fallback to html";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
