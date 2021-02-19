@@ -19988,6 +19988,21 @@ let
     };
   };
 
+  PlackMiddlewareXFrameOptionsAll = buildPerlModule {
+    pname = "Plack-Middleware-XFrameOptions-All";
+    version = "0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSLIN/Plack-Middleware-XFrameOptions-All-0.2.tar.gz";
+      sha256 = "17cq1yci1m5lqdlfw430g9w8cmq9wbl2xqa8mxxknc0xd3ncx8pl";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Plack middleware to set X-Frame-Options";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/gslin/plack-middleware-xframeoptions-all-perl";
+    };
+  };
+
   PlackMiddlewareXSLT = buildPerlPackage {
     pname = "Plack-Middleware-XSLT";
     version = "0.30";
