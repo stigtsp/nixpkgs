@@ -6698,6 +6698,21 @@ let
     '';
   };
 
+  DBGpClient = buildPerlPackage {
+    pname = "DBGp-Client";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MB/MBARBON/DBGp-Client-0.12.tar.gz";
+      sha256 = "0cd792jlcw92j61fv120m9m6w3x164n8izdh0k9xcx80pca35wc6";
+    };
+    propagatedBuildInputs = [ XMLParser XMLParserEasyTree ];
+    buildInputs = [ TestDBGp ];
+    meta = {
+      description = "simple client for the DBGp debugger protocol";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DBI = buildPerlPackage {
     pname = "DBI";
     version = "1.643";
@@ -7155,6 +7170,20 @@ let
     };
     meta = {
       description = "Find memory cycles in objects";
+    };
+  };
+
+  DevelDebugDBGp = buildPerlPackage {
+    pname = "Devel-Debug-DBGp";
+    version = "0.22";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MB/MBARBON/Devel-Debug-DBGp-0.22.tar.gz";
+      sha256 = "0wrrv8323cl34iqnrh59wvi4yh9qsnfs8n5p6ls17zrbsfz29yhi";
+    };
+    buildInputs = [ DBGpClient TestDBGp ];
+    meta = {
+      description = "Perl DBGp debugger (derived from Komodo remote debugging helper)";
+      license = with lib.licenses; [ artistic1 ];
     };
   };
 
@@ -21135,6 +21164,21 @@ let
     };
   };
 
+  PlackMiddlewareDBGp = buildPerlModule {
+    pname = "Plack-Middleware-DBGp";
+    version = "0.13";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MB/MBARBON/Plack-Middleware-DBGp-0.13.tar.gz";
+      sha256 = "10qvyvighxikkjv0fd11bvjny8ljgap1wqkikw2pv1sjpan2mj60";
+    };
+    propagatedBuildInputs = [ DevelDebugDBGp Plack ];
+    buildInputs = [ DBGpClient HTTPCookieJar TestDBGp ];
+    meta = {
+      description = "interactive debugging for Plack applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDBICQueryLog = buildPerlPackage {
     pname = "Plack-Middleware-DBIC-QueryLog";
     version = "0.05";
@@ -27658,6 +27702,20 @@ let
     };
   };
 
+  TestDBGp = buildPerlPackage {
+    pname = "Test-DBGp";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MB/MBARBON/Test-DBGp-0.07.tar.gz";
+      sha256 = "0y55z1nzyqr43qpcnvdb2czqs5pr41cai1bims9cfzhwd03hxxfg";
+    };
+    buildInputs = [ TestDifferences ];
+    meta = {
+      description = "Test helpers for debuggers using the DBGp protocol";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TestCPANMeta = buildPerlPackage {
     pname = "Test-CPAN-Meta";
     version = "0.25";
@@ -31589,6 +31647,15 @@ let
     '';
     makeMakerFlags = "EXPATLIBPATH=${pkgs.expat.out}/lib EXPATINCPATH=${pkgs.expat.dev}/include";
     propagatedBuildInputs = [ LWP ];
+  };
+
+  XMLParserEasyTree = buildPerlPackage {
+    pname = "XML-Parser-EasyTree";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/EB/EBOHLMAN/XML-Parser-EasyTree-0.01.tar.gz";
+      sha256 = "1djvvl81rxkxnh77hgjpqsy6x681ybvy2a0zkczav38ca93mfah2";
+    };
   };
 
   XMLParserLite = buildPerlPackage {
