@@ -10300,7 +10300,7 @@ let
     pname = "Future-AsyncAwait";
     version = "0.48";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PE/PEVANS/Future-AsyncAwait-${version}.tar.gz";
+      url = "mirror://cpan/authors/id/P/PE/PEVANS/Future-AsyncAwait-0.48.tar.gz";
       sha256 = "077jnf5a07x0p30iqcw3kh53xh3dplhb0jyyyq9b4c79ira3ds6r";
     };
     buildInputs = [ TestRefcount ];
