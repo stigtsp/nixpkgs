@@ -18509,6 +18509,20 @@ let
     };
   };
 
+  NetWURFLScientiaMobile = buildPerlPackage {
+    pname = "Net-WURFL-ScientiaMobile";
+    version = "1.0.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PA/PASSANI/Net-WURFL-ScientiaMobile-1.0.3.tar.gz";
+      sha256 = "0b7advdwzjqz8py91iwhg8cski8xpa6cbds8pinifa4rjp6mf8sz";
+    };
+    propagatedBuildInputs = [ ExceptionClass JSON LWP Moo Plack ];
+    meta = {
+      description = "Client for the ScientiaMobile cloud webservice";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NetWhoisIP = buildPerlPackage {
     pname = "Net-Whois-IP";
     version = "1.19";
@@ -24655,6 +24669,20 @@ let
       description = "Translates PSGI application by using WOVN.io";
       license = with lib.licenses; [ mit ];
       homepage = "https://github.com/masiuchi/p5-Plack-Middleware-WOVN";
+    };
+  };
+
+  PlackMiddlewareWURFLScientiaMobile = buildPerlPackage {
+    pname = "Plack-Middleware-WURFL-ScientiaMobile";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PA/PASSANI/Plack-Middleware-WURFL-ScientiaMobile-0.01.tar.gz";
+      sha256 = "1b085kmky8klhc66jm5z6h0kz7db36z9lxqj2glcv5pzgnqbfzkb";
+    };
+    propagatedBuildInputs = [ NetWURFLScientiaMobile ];
+    buildInputs = [ PlackMiddlewareDebug TestFatal ];
+    meta = {
+      description = "Plack module for the ScientiaMobile WURFL Cloud Service";
     };
   };
 
