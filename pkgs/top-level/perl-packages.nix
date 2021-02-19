@@ -19096,6 +19096,20 @@ let
     };
   };
 
+  PlackMiddlewareInline = buildPerlPackage {
+    pname = "Plack-Middleware-Inline";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRODWITH/Plack-Middleware-Inline-0.02.tar.gz";
+      sha256 = "0hd2y6kzaivl9xayx0bisi2lxj1fvbd4220f9k4giqgjpdvid2g6";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Anonymous Plack::Middlewares";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareJSON = buildPerlPackage {
     pname = "Plack-Middleware-JSON";
     version = "0.01";
