@@ -20350,6 +20350,21 @@ let
     };
   };
 
+  PlackMiddlewareRedirect = buildPerlModule {
+    pname = "Plack-Middleware-Redirect";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OK/OKAZUDM/Plack-Middleware-Redirect-0.01.tar.gz";
+      sha256 = "07kgdb6bvwcidwi1xvf6kzasa22nj3dikr4kqacjjbp9pxlbg1z0";
+    };
+    buildInputs = [ ModuleBuildTiny Plack ];
+    meta = {
+      description = "A simple redirector";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/okazu-dm/p5-plack-middleware-redirect";
+    };
+  };
+
   PlackMiddlewareRemoveRedundantBody = buildPerlPackage {
     pname = "Plack-Middleware-RemoveRedundantBody";
     version = "0.09";
