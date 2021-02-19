@@ -18803,6 +18803,20 @@ let
     };
   };
 
+  PlackMiddlewareAssets = buildPerlModule {
+    pname = "Plack-Middleware-Assets";
+    version = "1.0.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLER/Plack-Middleware-Assets-1.0.0.tar.gz";
+      sha256 = "116fw2n771jnn0w14xl7sdx6svallk0rvvdfbfvzqpirgvxwjhzv";
+    };
+    propagatedBuildInputs = [ CSSMinifierXS JavaScriptMinifierXS Plack ];
+    meta = {
+      description = "Concatenate and minify JavaScript and CSS files";
+      license = with lib.licenses; [ bsd3 ];
+    };
+  };
+
   PlackMiddlewareAssetsRailsLike = buildPerlModule {
     pname = "Plack-Middleware-Assets-RailsLike";
     version = "0.13";
