@@ -22847,6 +22847,21 @@ let
     };
   };
 
+  PlackMiddlewarePathToQuery = buildPerlPackage {
+    pname = "Plack-Middleware-PathToQuery";
+    version = "v0.0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YA/YAKEX/Plack-Middleware-PathToQuery-v0.0.1.tar.gz";
+      sha256 = "13np279jvc32v78r29vyvckxfz8ikwsw0lccwi5i3fgm13dbl8ib";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ JSON ];
+    meta = {
+      description = "Prepend converted PATH_INFO to QUERY_STRING";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePjax = buildPerlPackage {
     pname = "Plack-Middleware-Pjax";
     version = "1.114400";
