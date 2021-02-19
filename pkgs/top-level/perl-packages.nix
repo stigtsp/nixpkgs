@@ -24080,6 +24080,21 @@ let
     };
   };
 
+  PlackMiddlewareScopeSession = buildPerlPackage {
+    pname = "Plack-Middleware-Scope-Session";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HD/HDAICHI/Plack-Middleware-Scope-Session-0.01.tar.gz";
+      sha256 = "0pi712jmjidnza21mk54kyh2i4k62dv81jqg8by6vx2qh7dzxdg4";
+    };
+    propagatedBuildInputs = [ Plack ScopeSession ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Global Cache and Option per Request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareScrutiny = buildPerlPackage {
     pname = "Plack-Middleware-Scrutiny";
     version = "0.02";
@@ -26671,6 +26686,21 @@ let
     };
     meta = {
       description = "Lexically-scoped resource management";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ScopeSession = buildPerlPackage {
+    pname = "Scope-Session";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HD/HDAICHI/Scope-Session-0.02.tar.gz";
+      sha256 = "0wsz9n3j9hik4hn84ch1p3rdn0rq5k5xsr1ngazz5bq7ikzv1sx4";
+    };
+    propagatedBuildInputs = [ Error ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "a scope based object note and option store";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
