@@ -21226,6 +21226,20 @@ let
     };
   };
 
+  PlackMiddlewareRefererCheck = buildPerlPackage {
+    pname = "Plack-Middleware-RefererCheck";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIBA/Plack-Middleware-RefererCheck-0.03.tar.gz";
+      sha256 = "0s44xnarwd0ybbdm3hzizjz0wjrm10nl5xa33lnnaafy79c0lrpg";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "check referer for defensive CSRF attack.(DEPRECATED)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareRemoveRedundantBody = buildPerlPackage {
     pname = "Plack-Middleware-RemoveRedundantBody";
     version = "0.09";
