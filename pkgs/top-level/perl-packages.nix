@@ -24893,6 +24893,20 @@ let
     };
   };
 
+  PlackServerCoro = buildPerlPackage {
+    pname = "Plack-Server-Coro";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Server-Coro-0.02.tar.gz";
+      sha256 = "1c9892y663syz3f7c2fifvh92rpap4q4aba9j45pdik743ka1a6k";
+    };
+    propagatedBuildInputs = [ NetServerCoro Plack ];
+    meta = {
+      description = "Coro cooperative multithread web server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackSessionStateURI = buildPerlModule {
     pname = "Plack-Session-State-URI";
     version = "0.06";
