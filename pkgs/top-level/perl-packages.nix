@@ -23164,6 +23164,21 @@ let
     };
   };
 
+  PlackMiddlewareJSONParser = buildPerlModule {
+    pname = "Plack-Middleware-JSONParser";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YO/YOSUKEF/Plack-Middleware-JSONParser-0.02.tar.gz";
+      sha256 = "0hxz82i77jqldp21amva55h8m73zyg6syawmqz8zb2921my5bhs1";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "It's new $module";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/yosuke-furukawa/Plack-Middleware-JSONParser";
+    };
+  };
+
   PlackMiddlewareJavaScriptEctype = buildPerlPackage {
     pname = "Plack-Middleware-JavaScript-Ectype";
     version = "0.0.1";
