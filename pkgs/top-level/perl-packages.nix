@@ -19377,6 +19377,18 @@ let
     };
   };
 
+  PerlIOsubfile = buildPerlPackage {
+    pname = "PerlIO-subfile";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NW/NWCLARK/PerlIO-subfile-0.09.tar.gz";
+      sha256 = "1nf5adqpmhhkk2nbwa7lnbk5pj0188as8bx3vqgmavpmla6sd4ap";
+    };
+    meta = {
+      description = "Perl extension to provide a PerlIO layer to pretend a subsection of a file is a whole regular file";
+    };
+  };
+
   PerlIOutf8_strict = buildPerlPackage {
     pname = "PerlIO-utf8_strict";
     version = "0.008";
@@ -22961,6 +22973,21 @@ let
       description = "Plack::Middleware::Static with open file cache";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-Static-OpenFileCache";
+    };
+  };
+
+  PlackMiddlewareStaticRange = buildPerlPackage {
+    pname = "Plack-Middleware-Static-Range";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AU/AUDREYT/Plack-Middleware-Static-Range-0.01.tar.gz";
+      sha256 = "0ngbx4acx99y89r00q3mk05h4dprhla9x9bzzy49nzbk6sw9ng1i";
+    };
+    propagatedBuildInputs = [ PerlIOsubfile Plack ];
+    meta = {
+      description = "Serve static files with support for Range requests";
+      license = with lib.licenses; [ wtfpl ];
+      homepage = "http://github.com/audreyt/plack-middleware-static-range/tree";
     };
   };
 
