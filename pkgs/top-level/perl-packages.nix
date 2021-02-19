@@ -18765,6 +18765,21 @@ let
     };
   };
 
+  PlackDebuggerPanelDBIProfile = buildPerlPackage {
+    pname = "Plack-Debugger-Panel-DBIProfile";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAVEBAIRD/Plack-Debugger-Panel-DBIProfile-0.01.tar.gz";
+      sha256 = "0ddyyqbk5p0xi2wakss6rczdqkwigzi1db2n50h4bb90izmc1w4f";
+    };
+    propagatedBuildInputs = [ DBI PlackDebugger ];
+    meta = {
+      description = "A DBI::Profile panel for Plack::Debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/davebaird/plack-debugger-panel-dbiprofile";
+    };
+  };
+
   PlackHandlerAnyEventFCGI = buildPerlPackage {
     pname = "Plack-Handler-AnyEvent-FCGI";
     version = "0.01";
