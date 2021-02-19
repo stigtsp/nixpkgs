@@ -17786,6 +17786,20 @@ let
      };
   };
 
+  PlackAppProxyBackendHTTPTiny = buildPerlModule {
+    pname = "Plack-App-Proxy-Backend-HTTP-Tiny";
+    version = "0.0100";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DE/DEXTER/Plack-App-Proxy-Backend-HTTP-Tiny-0.0100.tar.gz";
+      sha256 = "0s0hixqwis0h2rkysvj4qizkvc61021rgxsjjph6jvmn6yhcx68f";
+    };
+    propagatedBuildInputs = [ PlackAppProxy ];
+    meta = {
+      description = "backend for Plack::App::Proxy";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppProxySelective = buildPerlPackage {
     pname = "Plack-App-Proxy-Selective";
     version = "0.10";
