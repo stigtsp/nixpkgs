@@ -18449,6 +18449,22 @@ let
     };
   };
 
+  PlackMiddlewareNegotiate = buildPerlModule {
+    pname = "Plack-Middleware-Negotiate";
+    version = "0.20";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Negotiate-0.20.tar.gz";
+      sha256 = "1cxqqrh31pmjavzhl8ydflr6x4zcgpy15a08nbkvj1zdkiw7300y";
+    };
+    propagatedBuildInputs = [ HTTPNegotiate LogContextual Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Apply HTTP content negotiation as Plack middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-Negotiate";
+    };
+  };
+
   PlackMiddlewareNeverExpire = buildPerlPackage {
     pname = "Plack-Middleware-NeverExpire";
     version = "1.006";
