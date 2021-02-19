@@ -10446,6 +10446,21 @@ let
     };
   };
 
+  HTMLStickyQueryDoCoMoGUID = buildPerlPackage {
+    pname = "HTML-StickyQuery-DoCoMoGUID";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YA/YAPPO/HTML-StickyQuery-DoCoMoGUID-0.03.tar.gz";
+      sha256 = "0k4zs3m9q986bzcdlkd7l13as150jc965lw3dlkyv69gqq3dzdj8";
+    };
+    propagatedBuildInputs = [ HTMLStickyQuery ];
+    meta = {
+      description = "add guid query for DoCoMo imode";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/yappo/p5-HTML-StickyQuery-DoCoMoGUID/tree";
+    };
+  };
+
   HTMLScrubber = buildPerlPackage {
     pname = "HTML-Scrubber";
     version = "0.19";
@@ -19909,6 +19924,21 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "dispatcher middleware for general purposes handling";
+    };
+  };
+
+  PlackMiddlewareDoCoMoGUID = buildPerlPackage {
+    pname = "Plack-Middleware-DoCoMoGUID";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YO/YOSHIMI/Plack-Middleware-DoCoMoGUID-0.06.tar.gz";
+      sha256 = "0qdjckiibdzwwydhbs14v6vsac0yrj4yxshgl4gibmn6521i2p00";
+    };
+    propagatedBuildInputs = [ HTMLStickyQueryDoCoMoGUID Plack ];
+    buildInputs = [ HTMLTreeBuilderXPath ModuleInstallReadmeFromPod TestLoadAllModules ];
+    meta = {
+      description = "combine DoCoMoGUID::RedirectFilter and DoCoMoGUID::HTMLStickyQuery";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
