@@ -23252,6 +23252,20 @@ let
     };
   };
 
+  PlackMiddlewareLimitRequest = buildPerlPackage {
+    pname = "Plack-Middleware-LimitRequest";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TA/TANIGUCHI/Plack-Middleware-LimitRequest-0.02.tar.gz";
+      sha256 = "1khqjqf89hbrj82w9fs3vqh5mf7hhlvcwqmhv4fv18byj0s9ldnn";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "HTTP Request Limitation for Plack apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogAny = buildPerlPackage {
     pname = "Plack-Middleware-LogAny";
     version = "0.001";
