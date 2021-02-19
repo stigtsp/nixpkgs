@@ -21987,6 +21987,21 @@ let
     };
   };
 
+  PlackMiddlewareLemonLDAPBasicAuth = buildPerlPackage {
+    pname = "Plack-Middleware-LemonLDAP-BasicAuth";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RE/RENEEB/Plack-Middleware-LemonLDAP-BasicAuth-0.02.tar.gz";
+      sha256 = "0d7w2x55f4mmh0xv6vhydgil3fjlgzyyyqybg69flxiszmdsjhpv";
+    };
+    propagatedBuildInputs = [ Plack SOAPLite ];
+    meta = {
+      description = "Middleware to provide LemonLDAP support for Plack applications";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "http://github.com/reneeb/Plack-Middleware-LemonLDAP-BasicAuth";
+    };
+  };
+
   PlackMiddlewareLogAny = buildPerlPackage {
     pname = "Plack-Middleware-LogAny";
     version = "0.001";
