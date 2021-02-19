@@ -19422,6 +19422,22 @@ let
     };
   };
 
+  PlackMiddlewareServerStatusLite = buildPerlModule {
+    pname = "Plack-Middleware-ServerStatus-Lite";
+    version = "0.36";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-ServerStatus-Lite-0.36.tar.gz";
+      sha256 = "1khlc59f2acy92997i9j15mln23nbxkkiyplpjyjv8h12npy789y";
+    };
+    propagatedBuildInputs = [ NetCIDRLite ParallelScoreboard Plack ];
+    buildInputs = [ CaptureTiny LWP Starman TestSharedFork TestTCP ];
+    meta = {
+      description = "show server status like Apache's mod_status";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-Middleware-ServerStatus-Lite";
+    };
+  };
+
   PlackMiddlewareServerStatusTiny = buildPerlModule {
     pname = "Plack-Middleware-ServerStatus-Tiny";
     version = "0.002";
