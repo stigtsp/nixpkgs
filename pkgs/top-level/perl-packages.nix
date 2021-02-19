@@ -3042,6 +3042,21 @@ let
     };
   };
 
+  ClassDataLite = buildPerlModule {
+    pname = "Class-Data-Lite";
+    version = "0.0010";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Class-Data-Lite-0.0010.tar.gz";
+      sha256 = "1hy805hakvwk48hzhl7a4m3ps77c8sjkidqmkhfz1zkqxvnahzgn";
+    };
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "a minimalistic class accessors";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Songmu/Class-Data-Lite";
+    };
+  };
+
   ClassEHierarchy = buildPerlPackage {
     pname = "Class-EHierarchy";
     version = "2.01";
@@ -6639,6 +6654,22 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DC/DCANTRELL/Devel-Hide-0.0013.tar.gz";
       sha256 = "1jvyy3yasiwyjsn9ay9sja3ch4wcjc4wk5l22vjsclq29z7vphvg";
+    };
+  };
+
+  DevelKYTProf = buildPerlModule {
+    pname = "Devel-KYTProf";
+    version = "0.9994";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Devel-KYTProf-0.9994.tar.gz";
+      sha256 = "1bdkx1qz688q8w4if2kcci759l6rcc7f5jr3128wmnllbp1hw4gl";
+    };
+    propagatedBuildInputs = [ ClassDataLite ClassInspector DBIxTracer ];
+    buildInputs = [ ModuleBuildTiny TestRequires ];
+    meta = {
+      description = "Simple profiler";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/onishi/perl5-devel-kytprof";
     };
   };
 
@@ -20897,6 +20928,20 @@ let
       description = "Capture exceptions and present them as HTML or JSON";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/domm/Plack-Middleware-PrettyException";
+    };
+  };
+
+  PlackMiddlewareProfilerKYTProf = buildPerlPackage {
+    pname = "Plack-Middleware-Profiler-KYTProf";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KI/KITANO/Plack-Middleware-Profiler-KYTProf-0.08.tar.gz";
+      sha256 = "1xsw9j2x6zwj12878f1pd7z00zdc53w307l3d317nbxk1jircbhl";
+    };
+    propagatedBuildInputs = [ DevelKYTProf Plack ];
+    meta = {
+      description = "Profile psgi app with KYTProf";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
