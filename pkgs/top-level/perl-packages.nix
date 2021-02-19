@@ -18318,6 +18318,21 @@ let
     };
   };
 
+  PlackAppDirectoryXslate = buildPerlModule {
+    pname = "Plack-App-Directory-Xslate";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/Plack-App-Directory-Xslate-0.07.tar.gz";
+      sha256 = "1bzxyk9ax18rxm1xdzcm1k8b9g2hhzprvh0plhr4047slklwzyks";
+    };
+    propagatedBuildInputs = [ Plack TextXslate ];
+    meta = {
+      description = "Serve static files and Text::Xslate template files from document root with directory index";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karupanerura/p5-Plack-App-Directory-Xslate";
+    };
+  };
+
   PlackAppDummyBox = buildPerlModule {
     pname = "Plack-App-DummyBox";
     version = "0.041";
