@@ -18396,6 +18396,36 @@ let
     };
   };
 
+  PlackMiddlewareThrottleLite = buildPerlPackage {
+    pname = "Plack-Middleware-Throttle-Lite";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-Middleware-Throttle-Lite-0.05.tar.gz";
+      sha256 = "0917fsnws6x674a0lzl36jlyld0zyly1w0qckdxh4zn1vnqygrrf";
+    };
+    propagatedBuildInputs = [ ListMoreUtils NetCIDRLite Plack ];
+    buildInputs = [ TestException TestPod ];
+    meta = {
+      description = "Requests throttling for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareThrottleLiteBackendRedis = buildPerlPackage {
+    pname = "Plack-Middleware-Throttle-Lite-Backend-Redis";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-Middleware-Throttle-Lite-Backend-Redis-0.04.tar.gz";
+      sha256 = "13qd9q5k7cssp7c4mz97b8fwi3fb2p67lfp665hcj431hbaxffqd";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareThrottleLite Redis ];
+    buildInputs = [ TestException TestPod ];
+    meta = {
+      description = "Redis-driven storage backend for Throttle-Lite";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
