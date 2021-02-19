@@ -7781,6 +7781,22 @@ let
     buildInputs = [ ModuleBuildTiny ];
   };
 
+  FCGIEV = buildPerlModule {
+    pname = "FCGI-EV";
+    version = "v2.0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PO/POWERMAN/FCGI-EV-v2.0.1.tar.gz";
+      sha256 = "0iybi2zcb3qv3svh0khddwaq18k3639r0g15avq0ihqlys5vcd33";
+    };
+    propagatedBuildInputs = [ IOStream ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Implement FastCGI protocol for use in EV-based applications";
+      license = with lib.licenses; [ mit ];
+      homepage = "https://github.com/powerman/perl-FCGI-EV";
+    };
+  };
+
   FCGIProcManager = buildPerlPackage {
     pname = "FCGI-ProcManager";
     version = "0.28";
@@ -10657,6 +10673,22 @@ let
     meta = {
       description = "IO::Socket with read/write timeout";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  IOStream = buildPerlModule {
+    pname = "IO-Stream";
+    version = "v2.0.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PO/POWERMAN/IO-Stream-v2.0.3.tar.gz";
+      sha256 = "043vl1qjrr1r7ryds11qn4h02vbw7y9ki8j1kfa1mdpl9l61i33h";
+    };
+    propagatedBuildInputs = [ AnyEvent EV ];
+    buildInputs = [ ModuleBuildTiny TestDifferences TestException ];
+    meta = {
+      description = "ease non-blocking I/O streams based on EV";
+      license = with lib.licenses; [ mit ];
+      homepage = "https://github.com/powerman/perl-IO-Stream";
     };
   };
 
@@ -17119,6 +17151,21 @@ let
       description = "Simple virtual host implementation on Plack";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://git@github.com/karupanerura/Plack-App-Vhost";
+    };
+  };
+
+  PlackHandlerFCGIEV = buildPerlPackage {
+    pname = "Plack-Handler-FCGI-EV";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-FCGI-EV-0.01.tar.gz";
+      sha256 = "1cfgdc7ma7q7nih0jr0dkxldafngwkby4gail4z74x3hnkq3kdyx";
+    };
+    propagatedBuildInputs = [ FCGIEV Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "PSGI handler for FCGI::EV";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
