@@ -13039,6 +13039,21 @@ let
     buildInputs = [ TestSharedFork ];
   };
 
+  ModuleBuildPluggableCPANfile = buildPerlModule {
+    pname = "Module-Build-Pluggable-CPANfile";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Module-Build-Pluggable-CPANfile-0.05.tar.gz";
+      sha256 = "0z0y1v2cv89dazqwbzq8xhmcqd2nhwx6lss02s0fgdhc4jx6rv2a";
+    };
+    propagatedBuildInputs = [ ModuleBuildPluggable ModuleCPANfile ];
+    buildInputs = [ CaptureTiny TestRequires ];
+    meta = {
+      description = "Include cpanfile";
+      homepage = "https://github.com/kazeburo/Module-Build-Pluggable-CPANfile";
+    };
+  };
+
   ModuleBuildPluggablePPPort = buildPerlModule {
     pname = "Module-Build-Pluggable-PPPort";
     version = "0.04";
@@ -16796,6 +16811,21 @@ let
      };
   };
 
+  PlackAppSourceViewer = buildPerlModule {
+    pname = "Plack-App-SourceViewer";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-App-SourceViewer-0.02.tar.gz";
+      sha256 = "1l58iiax7q2kha7skwlf1hz5dfsrc4n85bx2rf7g2x373lrisk19";
+    };
+    propagatedBuildInputs = [ Plack SyntaxHighlightEngineKate ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "The Source Code Viewer for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppVhost = buildPerlModule {
     pname = "Plack-App-Vhost";
     version = "0.01";
@@ -17021,6 +17051,21 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/plack/Plack-Middleware-Session";
      };
+  };
+
+  PlackMiddlewareStackTraceLinkedSource = buildPerlModule {
+    pname = "Plack-Middleware-StackTrace-LinkedSource";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-StackTrace-LinkedSource-0.14.tar.gz";
+      sha256 = "1l3psvmvzz36cpvr9zv6v7nbsdqgnn0w71fllm53q9j0ir55bs70";
+    };
+    propagatedBuildInputs = [ PlackAppSourceViewer ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "Adding links to library source codes in stacktrace";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   PlackMiddlewareStaticOpenFileCache = buildPerlModule {
@@ -19367,6 +19412,22 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DE/DEXTER/Symbol-Util-0.0203.tar.gz";
       sha256 = "0cnwwrd5d6i80f33s7n2ak90rh4s53ss7q57wndrpkpr4bfn3djm";
+    };
+  };
+
+  SyntaxHighlightEngineKate = buildPerlPackage {
+    pname = "Syntax-Highlight-Engine-Kate";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MANWAR/Syntax-Highlight-Engine-Kate-0.14.tar.gz";
+      sha256 = "15jal1f67x4p7mvi3d5i64lknw7jr2y4wxax0kw6gh0ab56fb8m2";
+    };
+    propagatedBuildInputs = [ PathTiny ];
+    buildInputs = [ TestDifferences TestWarn ];
+    meta = {
+      description = "a port to Perl of the syntax highlight engine of the Kate text editor";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://padre.perlide.org/";
     };
   };
 
