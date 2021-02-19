@@ -17154,6 +17154,21 @@ let
     };
   };
 
+  PlackClient = buildPerlPackage {
+    pname = "Plack-Client";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Plack-Client-0.06.tar.gz";
+      sha256 = "1hz2n5lh0jif0ahmh4kq7py4zll53k1fr53m62zy7afdxrhg76yg";
+    };
+    propagatedBuildInputs = [ ClassLoad PlackAppProxy ];
+    buildInputs = [ TestTCP ];
+    meta = {
+      description = "abstract interface to remote web servers and local PSGI apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackHandlerFCGIEV = buildPerlPackage {
     pname = "Plack-Handler-FCGI-EV";
     version = "0.01";
@@ -17644,6 +17659,22 @@ let
       description = "Route PSGI requests for RESTful web applications";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-REST";
+    };
+  };
+
+  PlackMiddlewareRecorder = buildPerlModule {
+    pname = "Plack-Middleware-Recorder";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Middleware-Recorder-0.06.tar.gz";
+      sha256 = "1zg15vy54411p7ww40rp4wrh0xgsbsqpxq1bqx475fr2mqqmvfjq";
+    };
+    propagatedBuildInputs = [ IOString PlackClient PlackMiddlewareDebug ScopeGuard Sereal namespaceclean ];
+    buildInputs = [ HTMLTree TestException TestTCP ];
+    meta = {
+      description = "Plack middleware that records your client-server interactions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hoelzro/plack-middleware-recorder";
     };
   };
 
