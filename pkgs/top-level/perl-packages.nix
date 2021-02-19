@@ -18459,6 +18459,21 @@ let
     };
   };
 
+  PlackMiddlewareAuthNegotiate = buildPerlModule {
+    pname = "Plack-Middleware-Auth-Negotiate";
+    version = "0.172130";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IO/IOANR/Plack-Middleware-Auth-Negotiate-0.172130.tar.gz";
+      sha256 = "18dg4zjhk5vfr6skp41q60a8icm1gs5a4xm94qz6z7zdsd3gkm12";
+    };
+    propagatedBuildInputs = [ GSSAPI Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Negotiate authentication middleware (SPNEGO)";
+      license = with lib.licenses; [ bsd3 ];
+    };
+  };
+
   PlackMiddlewareAuthOAuth = buildPerlPackage {
     pname = "Plack-Middleware-Auth-OAuth";
     version = "0.06";
