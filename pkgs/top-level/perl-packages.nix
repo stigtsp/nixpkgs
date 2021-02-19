@@ -17048,6 +17048,22 @@ let
      };
   };
 
+  PlackMiddlewareDelay = buildPerlModule {
+    pname = "Plack-Middleware-Delay";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Middleware-Delay-0.01.tar.gz";
+      sha256 = "1rwbvpqpczn79v7y6jyansn1al6lwjs5b0kw10v3sfb5kpn4frdi";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ AnyEventHTTP TestTCP Twiggy ];
+    meta = {
+      description = "Put delays on your requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/hoelzro/plack-middleware-delay";
+    };
+  };
+
   PlackMiddlewareDetectMobileBrowsers = buildPerlPackage {
     pname = "Plack-Middleware-DetectMobileBrowsers";
     version = "0.05";
