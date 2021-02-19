@@ -17836,6 +17836,20 @@ let
     };
   };
 
+  PlackMiddlewareMockProxyFrontend = buildPerlPackage {
+    pname = "Plack-Middleware-MockProxyFrontend";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-MockProxyFrontend-0.003.tar.gz";
+      sha256 = "0irbhnvcm8kch2dl8bzrxhnlqfrg0kfpr9xbmcxwsv9rvril0qy5";
+    };
+    propagatedBuildInputs = [ IOSocketSSL Plack ];
+    meta = {
+      description = "virtualhost-aware PSGI app developer tool";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareNeverExpire = buildPerlPackage {
     pname = "Plack-Middleware-NeverExpire";
     version = "1.006";
