@@ -1535,6 +1535,34 @@ let
     buildInputs = [ ExtUtilsCppGuess ExtUtilsTypemapsDefault ExtUtilsXSpp ModuleBuildWithXSpp ];
   };
 
+  BorderStyleBase = buildPerlPackage {
+    pname = "BorderStyleBase";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/BorderStyleBase-0.004.tar.gz";
+      sha256 = "18mbavlssfjqq4hzs04p3fxdzq9mwqjslkndgfpy3npg0is8dcgq";
+    };
+    buildInputs = [ TestException ];
+    meta = {
+      description = "A suitable base class for most BorderStyle::* modules";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  BorderStylesStandard = buildPerlPackage {
+    pname = "BorderStyles-Standard";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/BorderStyles-Standard-0.002.tar.gz";
+      sha256 = "0wdmamia3jsi3ccbanb5i22727ww2yqxj9wj4b8hxrdhf77ckh5s";
+    };
+    propagatedBuildInputs = [ BorderStyleBase ];
+    meta = {
+      description = "A standard collection of border styles";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   BotTraining = buildPerlPackage {
     pname = "Bot-Training";
     version = "0.07";
@@ -3526,6 +3554,77 @@ let
      };
   };
 
+  ColorANSIUtil = buildPerlPackage {
+    pname = "Color-ANSI-Util";
+    version = "0.164";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Color-ANSI-Util-0.164.tar.gz";
+      sha256 = "0qnhzp8pcbli317fb38ylfwh721bbn2xp0hlk1fn6vnhs241q738";
+    };
+    propagatedBuildInputs = [ ColorRGBUtil ];
+    meta = {
+      description = "Routines for dealing with ANSI colors";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ColorRGBUtil = buildPerlPackage {
+    pname = "Color-RGB-Util";
+    version = "0.601";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Color-RGB-Util-0.601.tar.gz";
+      sha256 = "0bcpsmyy3nwcgsxfvpb0m208wzb150ds833kycngxqy26cjfzy2g";
+    };
+    buildInputs = [ TestException TestRandomResult ];
+    meta = {
+      description = "Utilities related to RGB colors";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ColorThemeBaseStatic = buildPerlPackage {
+    pname = "ColorThemeBase-Static";
+    version = "0.008";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/ColorThemeBase-Static-0.008.tar.gz";
+      sha256 = "0cgvpakb3c8rjszzi04fz40d33kfw1l0w0v4n93mi4gl1clp7i5r";
+    };
+    propagatedBuildInputs = [ ColorRGBUtil ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Base class for color theme modules with static list of items (from object's colors key)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ColorThemeUtilANSI = buildPerlPackage {
+    pname = "ColorThemeUtil-ANSI";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/ColorThemeUtil-ANSI-0.002.tar.gz";
+      sha256 = "1ybw559ldj9pcqd60zdiikqsqpywhnircgh0a8mm88k7zwrzl62x";
+    };
+    propagatedBuildInputs = [ ColorANSIUtil ];
+    meta = {
+      description = "Utility routines related to color themes and ANSI code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ColorThemesStandard = buildPerlPackage {
+    pname = "ColorThemes-Standard";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/ColorThemes-Standard-0.002.tar.gz";
+      sha256 = "0cna0w2hq7p323yjg6rzx2vvzdxrdc2ijrwk0bilsagqs2v08csr";
+    };
+    propagatedBuildInputs = [ ColorThemeBaseStatic ];
+    meta = {
+      description = "A standard collection of generic color themes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   CommandRunner = buildPerlModule {
     pname = "Command-Runner";
     version = "0.103";
@@ -3540,6 +3639,135 @@ let
       description = "Run external commands and Perl code refs";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.zakame ];
+    };
+  };
+
+  CompleteBash = buildPerlPackage {
+    pname = "Complete-Bash";
+    version = "0.335";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Bash-0.335.tar.gz";
+      sha256 = "1zl3wynmdjwwr649ys055mjnlbgl63hhbaf20h6vq8zvvd4b8998";
+    };
+    propagatedBuildInputs = [ Logger ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Completion routines for bash shell";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteCommon = buildPerlPackage {
+    pname = "Complete-Common";
+    version = "0.22";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Common-0.22.tar.gz";
+      sha256 = "0bxicqrrmkflmjvb1yrwxz2vxv0y3cca9anq0b56pv22yxx7k4v2";
+    };
+    meta = {
+      description = "Common stuffs for completion routines";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteEnv = buildPerlPackage {
+    pname = "Complete-Env";
+    version = "0.400";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Env-0.400.tar.gz";
+      sha256 = "1709s4fsnb321qcg7dv63m6v2k776d8iw51a79vc7llvshnzicqs";
+    };
+    propagatedBuildInputs = [ CompleteUtil ];
+    meta = {
+      description = "Completion routines related to environment variables";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteFile = buildPerlPackage {
+    pname = "Complete-File";
+    version = "0.440";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-File-0.440.tar.gz";
+      sha256 = "1751s8g2hvpbkhvmv6p3jd3pxj1f0gvi2nd0k9m4dawd7wwhhi7m";
+    };
+    propagatedBuildInputs = [ CompletePath ];
+    buildInputs = [ Filechdir ];
+    meta = {
+      description = "Completion routines related to files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteGetoptLong = buildPerlPackage {
+    pname = "Complete-Getopt-Long";
+    version = "0.480";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Getopt-Long-0.480.tar.gz";
+      sha256 = "1jw84ysnv9prf62ys9gr8y21iwr44srdnq01h7nkq360yqh5gqj1";
+    };
+    propagatedBuildInputs = [ CompleteEnv CompleteFile GetoptLongUtil StringWildcardBash ];
+    buildInputs = [ CompleteBash Filechdir ];
+    meta = {
+      description = "Complete command-line argument using Getopt::Long specification";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompletePath = buildPerlPackage {
+    pname = "Complete-Path";
+    version = "0.24";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Path-0.24.tar.gz";
+      sha256 = "0kckqfx1zpdwy2s5cwngjpq86s3ca409b1zlc215cj53d9f8b40y";
+    };
+    propagatedBuildInputs = [ CompleteUtil ];
+    meta = {
+      description = "Complete path";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteSah = buildPerlPackage {
+    pname = "Complete-Sah";
+    version = "0.007";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Sah-0.007.tar.gz";
+      sha256 = "0wdfd7dr1dx70s1ncazlvg5m989k6ka0r072kfgim04an58wlq7d";
+    };
+    propagatedBuildInputs = [ CompleteUtil DataSahNormalize ModuleInstalledTiny ];
+    buildInputs = [ SahSchemasInt TestException ];
+    meta = {
+      description = "Sah-related completion routines";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteSequence = buildPerlPackage {
+    pname = "Complete-Sequence";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Sequence-0.002.tar.gz";
+      sha256 = "1c65lrnjjiimg9jp29chbszns5v8qi20gzsk71lv8smzyam3l90k";
+    };
+    propagatedBuildInputs = [ CompleteUtil SetCrossProduct ];
+    meta = {
+      description = "Complete string from a sequence of choices";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CompleteUtil = buildPerlPackage {
+    pname = "Complete-Util";
+    version = "0.611";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Complete-Util-0.611.tar.gz";
+      sha256 = "17qjy48q9lj9mif5f184aivkhjsank39plih3ld83qm05dmnafpk";
+    };
+    propagatedBuildInputs = [ CompleteCommon Logger ];
+    meta = {
+      description = "General completion routine";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -5009,6 +5237,20 @@ let
     };
   };
 
+  DataDmp = buildPerlPackage {
+    pname = "Data-Dmp";
+    version = "0.240";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Dmp-0.240.tar.gz";
+      sha256 = "0n8gkjic8pz5w8il9s9v4kzcrhbn9gfl80cklpwqww7vsq8wh52m";
+    };
+    propagatedBuildInputs = [ RegexpStringify ];
+    meta = {
+      description = "Dump Perl data structures as Perl code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DataDump = buildPerlPackage {
     pname = "Data-Dump";
     version = "1.23";
@@ -5018,6 +5260,34 @@ let
     };
     meta = {
       description = "Pretty printing of data structures";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataDumpOneLine = buildPerlPackage {
+    pname = "Data-Dump-OneLine";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Dump-OneLine-0.07.tar.gz";
+      sha256 = "15cqjhgs1l6xd5kv6k08y3kv6jvcw2v10lfl90c14ja5k6w7la38";
+    };
+    propagatedBuildInputs = [ DataDmp ];
+    meta = {
+      description = "Dump data structures as single-line strings";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataDumpPartial = buildPerlPackage {
+    pname = "Data-Dump-Partial";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHARYANTO/Data-Dump-Partial-0.05.tar.gz";
+      sha256 = "1m0ssl5sg07xbj2kwmw4hl6v1a0j76j95jk80an2b5572vyac22f";
+    };
+    propagatedBuildInputs = [ DataDump ];
+    meta = {
+      description = "Dump data structure compactly and potentially partially";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -5067,6 +5337,66 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ CGI ];
+  };
+
+  DataFormatPretty = buildPerlModule {
+    pname = "Data-Format-Pretty";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHARYANTO/Data-Format-Pretty-0.04.tar.gz";
+      sha256 = "1fhi0jn72jjlvr0x31fg8v1h6fhfpq6hxkjz1vjw5b0sjas4x2cp";
+    };
+    propagatedBuildInputs = [ DataFormatPrettyHTML ];
+    buildInputs = [ DataFormatPrettyJSON ];
+    meta = {
+      description = "Pretty-print data structure";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Data-Format-Pretty/";
+    };
+  };
+
+  DataFormatPrettyConsole = buildPerlPackage {
+    pname = "Data-Format-Pretty-Console";
+    version = "0.38";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Format-Pretty-Console-0.38.tar.gz";
+      sha256 = "1m0hmvb317f660l8a44qj4vlrdch8ymnnn6aq6h1k2ch9841jd18";
+    };
+    propagatedBuildInputs = [ TextANSITable YAML ];
+    buildInputs = [ DataDumpPartial DataUnixish ];
+    meta = {
+      description = "Pretty-print data structure for console output";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataFormatPrettyHTML = buildPerlPackage {
+    pname = "Data-Format-Pretty-HTML";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Format-Pretty-HTML-0.11.tar.gz";
+      sha256 = "1ia35prj50l707whryzk79kwdvrsibys55rp8ivx3l234pvpwc8l";
+    };
+    propagatedBuildInputs = [ DataFormatPrettyConsole HTMLParser URIFind ];
+    buildInputs = [ DataDumpPartial ];
+    meta = {
+      description = "Pretty-print data structure for HTML output";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataFormatPrettyJSON = buildPerlPackage {
+    pname = "Data-Format-Pretty-JSON";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Format-Pretty-JSON-0.12.tar.gz";
+      sha256 = "1q1dcmvl4yp4s66amlr0l1clbvw04b9kh7x9m6va16qli52d59xn";
+    };
+    propagatedBuildInputs = [ JSONColor JSONMaybeXS StringLineNumber ];
+    meta = {
+      description = "Pretty-print data structure as JSON";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   DataGUID = buildPerlPackage {
@@ -5172,6 +5502,21 @@ let
       description = "MessagePack serializing/deserializing";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
+    };
+  };
+
+  DataModeMerge = buildPerlPackage {
+    pname = "Data-ModeMerge";
+    version = "0.35";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-ModeMerge-0.35.tar.gz";
+      sha256 = "1xjr887qyf9qlyg7gnfw1lr55jzkvn5mfwhpbklavp2g23n97vwc";
+    };
+    propagatedBuildInputs = [ DataDmp Mo ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Merge two nested data structures, with merging modes and options";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -5326,6 +5671,94 @@ let
     };
   };
 
+  DataSah = buildPerlPackage {
+    pname = "Data-Sah";
+    version = "0.908";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-0.908.tar.gz";
+      sha256 = "13k3i5zp5d9k9n5h0v0l76wjjjb54gdkbi0j0pmg9d3qhnz2058i";
+    };
+    propagatedBuildInputs = [ DataDump DataSahCoerce DataSahFilter DataSahResolve FileShareDirTarball FileSlurper LanguageExpr LinguaENNumbersOrdinate ModuleInstalledTiny ScalarUtilNumericPP Textsprintfn TieIxHash ];
+    buildInputs = [ Sah TestException TestNoWarnings TestWarn libfilter ];
+    meta = {
+      description = "Fast and featureful data structure validation";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataSahCoerce = buildPerlPackage {
+    pname = "Data-Sah-Coerce";
+    version = "0.049";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-Coerce-0.049.tar.gz";
+      sha256 = "0h49bjm3w3pgj59cq44nd7zz99rkqwxc965is8qjd3y2qcx7mfi7";
+    };
+    propagatedBuildInputs = [ JSON NodejsUtil TimeDurationParseAsHash subroutines ];
+    buildInputs = [ TestException TestNeeds ];
+    meta = {
+      description = "Coercion rules for Data::Sah";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataSahFilter = buildPerlPackage {
+    pname = "Data-Sah-Filter";
+    version = "0.008";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-Filter-0.008.tar.gz";
+      sha256 = "08mw02d38gk80mb2vvs2hrwxrny9akkif35vcf9kkkgs7pbsmciw";
+    };
+    propagatedBuildInputs = [ DataDmp JSON NodejsUtil ];
+    buildInputs = [ TestException TestNeeds ];
+    meta = {
+      description = "Filtering for Data::Sah";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataSahNormalize = buildPerlPackage {
+    pname = "Data-Sah-Normalize";
+    version = "0.050";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-Normalize-0.050.tar.gz";
+      sha256 = "1yjl34hqzd3d3z4s5rz3m7lwy5pclp4r23dic6xk323z4vqm4d49";
+    };
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Normalize Sah schema";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataSahResolve = buildPerlPackage {
+    pname = "Data-Sah-Resolve";
+    version = "0.007";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-Resolve-0.007.tar.gz";
+      sha256 = "0chzpl8jn3amyzk16dv4kjpqbi0ckz6wr88f1hj7847fxb8r46sc";
+    };
+    propagatedBuildInputs = [ DataModeMerge DataSahNormalize ];
+    buildInputs = [ SahSchemasExamples SahSchemasInt TestException TestNeeds ];
+    meta = {
+      description = "Resolve Sah schema";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataSahUtilType = buildPerlPackage {
+    pname = "Data-Sah-Util-Type";
+    version = "0.46";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Sah-Util-Type-0.46.tar.gz";
+      sha256 = "1f4phixc8d357mqghi6qm20bqg3yrpqafzd8iywyqs6n4l19kvzg";
+    };
+    propagatedBuildInputs = [ DataSahNormalize ];
+    meta = {
+      description = "Utility functions related to types";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DataSpreadPagination = buildPerlPackage {
     pname = "Data-SpreadPagination";
     version = "0.1.2";
@@ -5400,6 +5833,20 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/M/MW/MWX/Data-Uniqid-0.12.tar.gz";
       sha256 = "b6919ba49b9fe98bfdf3e8accae7b9b7f78dc9e71ebbd0b7fef7a45d99324ccb";
+    };
+  };
+
+  DataUnixish = buildPerlPackage {
+    pname = "Data-Unixish";
+    version = "1.572";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Unixish-1.572.tar.gz";
+      sha256 = "1cb83yb79rjcsir0lfv04ylxjm11y8vhsa41756xb5h6z1bfzs9f";
+    };
+    propagatedBuildInputs = [ FileWhich JSONMaybeXS NumberFormat NumberFormatMetric PackageUtilLite SortSub StringPad StringShellQuote SyntaxFeatureEachOnArray TextANSIWideUtil Textsprintfn TieSimple ];
+    meta = {
+      description = "Implementation for Unixish, a data transformation framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -6497,6 +6944,20 @@ let
     propagatedBuildInputs = [ DBI ];
   };
 
+  DBIxFunctionalAPI = buildPerlPackage {
+    pname = "DBIx-FunctionalAPI";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/DBIx-FunctionalAPI-0.09.tar.gz";
+      sha256 = "0684jx1xkka4l26a48ixapskn27misjdvd11f81pv3gwbb9xvfdl";
+    };
+    propagatedBuildInputs = [ CompleteUtil ListMoreUtils ];
+    meta = {
+      description = "Some functions to expose your database as an API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DBIxSearchBuilder = buildPerlPackage {
     pname = "DBIx-SearchBuilder";
     version = "1.69";
@@ -6609,6 +7070,51 @@ let
       description = "Read/write buffer class";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
+    };
+  };
+
+  DataClean = buildPerlPackage {
+    pname = "Data-Clean";
+    version = "0.507";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Clean-0.507.tar.gz";
+      sha256 = "0ybmslsdqai0ss71vfr3i1lygbcz7fvq5mrxbxggjzmn89yknrh7";
+    };
+    propagatedBuildInputs = [ ClonePP DataDmp Logger StringLineNumber StringPerlQuote ];
+    buildInputs = [ DateTime TestException ];
+    meta = {
+      description = "Clean data structure";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataCleanForJSON = buildPerlPackage {
+    pname = "Data-Clean-ForJSON";
+    version = "0.395";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Clean-ForJSON-0.395.tar.gz";
+      sha256 = "01avz5q5jv3nd784ff2znv2xmr6jzd68j2b91v0kg71zhwkfa3x9";
+    };
+    propagatedBuildInputs = [ DataClean ];
+    buildInputs = [ DateTime TestException TestNeeds ];
+    meta = {
+      description = "Clean data so it is safe to output to JSON";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DataCleanJSON = buildPerlPackage {
+    pname = "Data-Clean-JSON";
+    version = "0.392";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Data-Clean-JSON-0.392.tar.gz";
+      sha256 = "1vhz77vsii2hbjv3fabkyn3xhxlvvclfs66n30s3sp53s0g3653r";
+    };
+    propagatedBuildInputs = [ DataClean ];
+    buildInputs = [ DateTime TestException TestNeeds ];
+    meta = {
+      description = "(DEPRECATED) Clean data so it is safe to output to JSON";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8611,6 +9117,20 @@ let
     };
   };
 
+  FileFlockRetry = buildPerlPackage {
+    pname = "File-Flock-Retry";
+    version = "0.631";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/File-Flock-Retry-0.631.tar.gz";
+      sha256 = "1r50al6xgcm1pv04awdkm26mklgq7v99w4fcmbg6q152qv3j97ij";
+    };
+    buildInputs = [ FileSlurper Filechdir ];
+    meta = {
+      description = "Yet another flock module";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FileFnMatch = buildPerlPackage {
     pname = "File-FnMatch";
     version = "0.02";
@@ -8937,6 +9457,22 @@ let
     };
   };
 
+  FileShareDirTarball = buildPerlModule {
+    pname = "File-ShareDir-Tarball";
+    version = "0.2.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YA/YANICK/File-ShareDir-Tarball-0.2.2.tar.gz";
+      sha256 = "1593s1gq5xvj25jcl4mdkyaav65mx9qj7yrn280fzqp3cvr8brs9";
+    };
+    propagatedBuildInputs = [ FileShareDir Filechdir ];
+    buildInputs = [ TestFileShareDir ];
+    meta = {
+      description = "Deal transparently with shared files distributed as tarballs";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/File-ShareDir-Tarball/";
+    };
+  };
+
   FilesysDf = buildPerlPackage {
     pname = "Filesys-Df";
     version = "0.92";
@@ -9124,6 +9660,21 @@ let
     };
   };
 
+  FileWriteRotate = buildPerlPackage {
+    pname = "File-Write-Rotate";
+    version = "0.321";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/File-Write-Rotate-0.321.tar.gz";
+      sha256 = "18z5fcb215nhjkz1k5083724gjw4qmnwksz5qz9lnk3zypm2jscr";
+    };
+    propagatedBuildInputs = [ FileFlockRetry ProcPIDFile ];
+    buildInputs = [ FileSlurper Filechdir MonkeyPatchAction TaintRuntime TestException TestWarnings tainting ];
+    meta = {
+      description = "Write to files that archive/rotate themselves";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FileZglob = buildPerlPackage {
      pname = "File-Zglob";
      version = "0.11";
@@ -9268,6 +9819,20 @@ let
     doCheck = false;
   };
 
+  FunctionFallbackCoreOrPP = buildPerlPackage {
+    pname = "Function-Fallback-CoreOrPP";
+    version = "0.090";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Function-Fallback-CoreOrPP-0.090.tar.gz";
+      sha256 = "1fajwacmmkc3ygs8f8yz9w6iia89zvc5zrgr746ipxnbj3czw7px";
+    };
+    propagatedBuildInputs = [ ClonePP ];
+    meta = {
+      description = "Functions that use non-core XS module but provide pure-Perl/core fallback";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   FunctionParameters = buildPerlPackage {
     pname = "Function-Parameters";
     version = "2.001003";
@@ -9368,6 +9933,21 @@ let
     meta = {
       description = "Verify solutions for solitaire games";
       license = lib.licenses.mit;
+    };
+  };
+
+  GenTestRinciFuncResult = buildPerlPackage {
+    pname = "Gen-Test-Rinci-FuncResult";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Gen-Test-Rinci-FuncResult-0.06.tar.gz";
+      sha256 = "1wyp77vaqmiv2q7dyl47qs74vg4pi3jsl5wk4d27zvs4drdmfccm";
+    };
+    propagatedBuildInputs = [ DataDumpOneLine ];
+    buildInputs = [ CaptureTiny FileSlurper ];
+    meta = {
+      description = "Generate a test function for a function";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -9489,6 +10069,32 @@ let
     meta = {
       homepage = "https://github.com/rjbs/Getopt-Long-Descriptive";
       description = "Getopt::Long, but simpler and more powerful";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  GetoptLongNegateEN = buildPerlPackage {
+    pname = "Getopt-Long-Negate-EN";
+    version = "0.060";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Getopt-Long-Negate-EN-0.060.tar.gz";
+      sha256 = "05fhls4cxhff2l0g98wdkvfig8nf948zgn781xb65mnd9wd7bva2";
+    };
+    meta = {
+      description = "Better negation of boolean option names";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  GetoptLongUtil = buildPerlPackage {
+    pname = "Getopt-Long-Util";
+    version = "0.892";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Getopt-Long-Util-0.892.tar.gz";
+      sha256 = "11xqf3knb9pzq82hhqmb0c1lpk40p4jsv1kcs533929mp5w7xgqr";
+    };
+    meta = {
+      description = "Utilities for Getopt::Long";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -9800,6 +10406,19 @@ let
     };
   };
 
+  GraphicsColorNamesLiteWWW = buildPerlPackage {
+    pname = "Graphics-ColorNamesLite-WWW";
+    version = "1.14.000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Graphics-ColorNamesLite-WWW-1.14.000.tar.gz";
+      sha256 = "0cvg4y9gi4h7xbcjnjnbpdi44y4cjrxmz7hajy36163s4w2am18b";
+    };
+    meta = {
+      description = "WWW color names and equivalent RGB values (lite version)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   grepmail = buildPerlPackage {
     pname = "grepmail";
     version = "5.3111";
@@ -10031,6 +10650,21 @@ let
       description = "Return difference between two hashes as a hash";
     };
     buildInputs = [ TestSimple13 ];
+  };
+
+  HashFieldHash = buildPerlModule {
+    pname = "Hash-FieldHash";
+    version = "0.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GF/GFUJI/Hash-FieldHash-0.15.tar.gz";
+      sha256 = "1wg8nzczfxif55j2nbymbhyd25pjy7dqs4bvd6jrcds3ll3mflaw";
+    };
+    buildInputs = [ TestLeakTrace ];
+    meta = {
+      description = "Lightweight field hash for inside-out objects";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/gfx/p5-Hash-FieldHash";
+    };
   };
 
   ham = callPackage ../development/perl-modules/ham { };
@@ -11734,6 +12368,21 @@ let
     };
   };
 
+  IPCSystemOptions = buildPerlPackage {
+    pname = "IPC-System-Options";
+    version = "0.340";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/IPC-System-Options-0.340.tar.gz";
+      sha256 = "08n8q3mpiskgy1hhyfxpsmajs6yldj40h570wvwg7jan1ghxykyx";
+    };
+    propagatedBuildInputs = [ CaptureTiny IPCRun Logger ProcChildError StringShellQuote ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Perl's system(), readpipe()/qx, IPC::Run's run(), start() (with more options)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   IRCUtils = buildPerlPackage {
     pname = "IRC-Utils";
     version = "0.12";
@@ -11952,6 +12601,20 @@ let
     buildInputs = [ TestFatal TestRequires TestWarnings TestWithoutModule ];
   };
 
+  JSONColor = buildPerlPackage {
+    pname = "JSON-Color";
+    version = "0.130";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/JSON-Color-0.130.tar.gz";
+      sha256 = "0q3vkpagk2sgrwkzmycqhlw2v31pfsfjjfjz8224fmn2ahfgn04f";
+    };
+    propagatedBuildInputs = [ ColorANSIUtil ColorThemeBaseStatic GraphicsColorNamesLiteWWW ModuleLoadUtil RoleTiny ];
+    meta = {
+      description = "Encode to colored JSON";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   JSONMaybeXS = buildPerlPackage {
     pname = "JSON-MaybeXS";
     version = "1.004003";
@@ -12126,6 +12789,21 @@ let
     };
   };
 
+  LanguageExpr = buildPerlPackage {
+    pname = "Language-Expr";
+    version = "0.29";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Language-Expr-0.29.tar.gz";
+      sha256 = "1sdx6wrwjszrn1i4xcwyz9mnqnv26dds7m0nsk54svkddsp255n7";
+    };
+    propagatedBuildInputs = [ JSONMaybeXS Mo NodejsUtil RegexpGrammars RoleTiny UUIDTiny boolean ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Simple minilanguage for use in expression";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   libapreq2 = buildPerlPackage {
     pname = "libapreq2";
     version = "2.13";
@@ -12181,6 +12859,20 @@ let
     doCheck = false; # test would need to start apache httpd
     meta = {
       license = lib.licenses.asl20;
+    };
+  };
+
+  libfilter = buildPerlPackage {
+    pname = "lib-filter";
+    version = "0.27";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/lib-filter-0.27.tar.gz";
+      sha256 = "0mb1r5cw9mlij5zrbcqi5n7fr4p8bd4zxy4l5lrmr3fikv7x8hld";
+    };
+    buildInputs = [ ModulePathMore TestNeeds ];
+    meta = {
+      description = "Allow/disallow loading modules";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12300,6 +12992,34 @@ let
     meta = {
       description = "Detect if English number is ordinal or cardinal";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  LinguaENNumbersOrdinate = buildPerlPackage {
+    pname = "Lingua-EN-Numbers-Ordinate";
+    version = "1.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NE/NEILB/Lingua-EN-Numbers-Ordinate-1.04.tar.gz";
+      sha256 = "17q11043w34i1ppa15549l1lmipi5vqzxlyp3bvc6winnhp3r5r6";
+    };
+    meta = {
+      description = "go from cardinal number (3) to ordinal (\"3rd\")";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Lingua-EN-Numbers-Ordinate";
+    };
+  };
+
+  LinguaENPluralToSingular = buildPerlPackage {
+    pname = "Lingua-EN-PluralToSingular";
+    version = "0.21";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BK/BKB/Lingua-EN-PluralToSingular-0.21.tar.gz";
+      sha256 = "078ddiagms7h85vcfd9qgx8vzffrb85wjj3z1lcrcp6253gbga7q";
+    };
+    meta = {
+      description = "change an English plural to a singular";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://prepan.org/module/3Yz7PYrBN8";
     };
   };
 
@@ -12898,6 +13618,20 @@ let
     };
   };
 
+  LoggerOutputCallback = buildPerlPackage {
+    pname = "Log-ger-Output-Callback";
+    version = "0.009";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Log-ger-Output-Callback-0.009.tar.gz";
+      sha256 = "0sjg6cajrr7gs3c59zafkdghszhkknm8hvfdjvc8ghg2mbn4i3pn";
+    };
+    buildInputs = [ Logger ];
+    meta = {
+      description = "Send logs to a subroutine";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   LogHandler = buildPerlModule {
     pname = "Log-Handler";
     version = "0.90";
@@ -13147,6 +13881,20 @@ let
        description = "Legacy HTTP/1.0 support for LWP";
        license = with lib.licenses; [ artistic1 gpl1Plus ];
      };
+  };
+
+  LWPProtocolhttpSocketUnixAlt = buildPerlPackage {
+    pname = "LWP-Protocol-http-SocketUnixAlt";
+    version = "0.0204";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHARYANTO/LWP-Protocol-http-SocketUnixAlt-0.0204.tar.gz";
+      sha256 = "1yrs3gfah2rjn000s4nqkpv8l5sljyijiyh6pkvm870ac474m7z5";
+    };
+    propagatedBuildInputs = [ LWP ];
+    meta = {
+      description = "Speak HTTP through Unix sockets";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   LWPUserAgentDNSHosts = buildPerlModule {
@@ -14602,6 +15350,33 @@ let
     };
   };
 
+  ModuleInstalledTiny = buildPerlPackage {
+    pname = "Module-Installed-Tiny";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Module-Installed-Tiny-0.004.tar.gz";
+      sha256 = "1cxcv1gh6h66ks6p5fjw00h160p5xgpgx4kdg170hwx7mv1hz20g";
+    };
+    buildInputs = [ TestNeeds ];
+    meta = {
+      description = "Check if a module is installed, with as little code as possible";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ModuleList = buildPerlModule {
+    pname = "Module-List";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Module-List-0.004.tar.gz";
+      sha256 = "1h7z8j7q270j2d3h2hha86mc0ibaz07n9j6pf2hr9vks78105l62";
+    };
+    meta = {
+      description = "module `directory' listing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ModuleLoad = buildPerlPackage {
     pname = "Module-Load";
     version = "0.36";
@@ -14611,6 +15386,21 @@ let
     };
     meta = {
       description = "Load modules in a DWIM style";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ModuleLoadUtil = buildPerlPackage {
+    pname = "Module-Load-Util";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Module-Load-Util-0.004.tar.gz";
+      sha256 = "0cfnxm79dkh42i60mfcl7iclhknplrn0pnw4ni5fcqmmmaaxhik0";
+    };
+    propagatedBuildInputs = [ RegexpPatternPerl ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Some utility routines related to module loading";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -14630,6 +15420,21 @@ let
     };
   };
 
+  ModulePatch = buildPerlPackage {
+    pname = "Module-Patch";
+    version = "0.276";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Module-Patch-0.276.tar.gz";
+      sha256 = "05qz207i3hjycapirj81lrw7j3dn8k9im4aw63h5d5sjpkg9jngj";
+    };
+    propagatedBuildInputs = [ Logger MonkeyPatchAction PackageStash PackageUtilLite ];
+    buildInputs = [ CaptureTiny TestException ];
+    meta = {
+      description = "Patch package with a set of patches";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ModulePath = buildPerlPackage {
     pname = "Module-Path";
     version = "0.19";
@@ -14641,6 +15446,20 @@ let
     meta = {
       homepage = "https://github.com/neilbowers/Module-Path";
       description = "Get the full path to a locally installed module";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ModulePathMore = buildPerlPackage {
+    pname = "Module-Path-More";
+    version = "0.33";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Module-Path-More-0.33.tar.gz";
+      sha256 = "0ffc9hmnwri5vvxajrh2hh8b8rzvrc296y2h3ahg5pfnqc5lfj27";
+    };
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Get path to locally installed Perl module";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -15111,6 +15930,20 @@ let
         A family of perl modules to streamline writing Naemon,
         Nagios, Icinga or Shinken (and compatible) plugins
       '';
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  MonkeyPatchAction = buildPerlPackage {
+    pname = "Monkey-Patch-Action";
+    version = "0.061";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Monkey-Patch-Action-0.061.tar.gz";
+      sha256 = "1msh5jy47qjvnz5g1rrdz2cj3jz7kk2f0zm4008rrq11g0b7qisp";
+    };
+    propagatedBuildInputs = [ SubDelete ];
+    meta = {
+      description = "Wrap/add/replace/delete subs from other package (with restore)";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -17226,6 +18059,21 @@ let
     };
   };
 
+  NodejsUtil = buildPerlPackage {
+    pname = "Nodejs-Util";
+    version = "0.012";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Nodejs-Util-0.012.tar.gz";
+      sha256 = "1ia4mm7zk3apypdpiar570fmgis6l9fbajvdqjaahvpvyn9g8c7y";
+    };
+    propagatedBuildInputs = [ FileWhich IPCSystemOptions ];
+    buildInputs = [ FileSlurper Filechdir ];
+    meta = {
+      description = "Utilities related to Node.js";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NumberBytesHuman = buildPerlPackage {
     pname = "Number-Bytes-Human";
     version = "0.11";
@@ -17253,6 +18101,19 @@ let
     };
     meta = {
       description = "Perl extension for formatting numbers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  NumberFormatMetric = buildPerlPackage {
+    pname = "Number-Format-Metric";
+    version = "0.60";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Number-Format-Metric-0.60.tar.gz";
+      sha256 = "1cxvaxl71pkv76cdpsabdlqdvdmd2zmm9w5siz6cx7cpy8r5qv7l";
+    };
+    meta = {
+      description = "Format number with metric prefix";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -17572,6 +18433,19 @@ let
     };
   };
 
+  PackageMoreUtil = buildPerlPackage {
+    pname = "Package-MoreUtil";
+    version = "0.592";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Package-MoreUtil-0.592.tar.gz";
+      sha256 = "0cm8rp5k3z9wv4xsaqc1fclq55l7q3aj8xndymqii8k1p5nff75p";
+    };
+    meta = {
+      description = "Package-related utilities";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PatchReader = buildPerlPackage {
     pname = "PatchReader";
     version = "0.9.6";
@@ -17610,6 +18484,19 @@ let
     buildInputs = [ TestFatal TestRequires ];
     meta = {
       description = "Faster and more correct implementation of the Package::Stash API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PackageUtilLite = buildPerlPackage {
+    pname = "Package-Util-Lite";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Package-Util-Lite-0.001.tar.gz";
+      sha256 = "09hxn2zw9rplmqvbxcm5avpx8mr670bvbgd5j15vfl6vybbdyj8c";
+    };
+    meta = {
+      description = "Package-related utilities";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -17913,6 +18800,19 @@ let
     };
   };
 
+  ParseVarName = buildPerlPackage {
+    pname = "Parse-VarName";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Parse-VarName-0.03.tar.gz";
+      sha256 = "0kvdnq9kgv9kkgh6z99lvjj0sllm3d9vfivnv02kx2nzx4q8g49c";
+    };
+    meta = {
+      description = "Routines to parse variable name";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ParserMGC = buildPerlModule {
     pname = "Parser-MGC";
     version = "0.16";
@@ -18113,6 +19013,250 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     propagatedBuildInputs = [ FileShareDirInstall XXX ];
+  };
+
+  PerinciAccessBase = buildPerlPackage {
+    pname = "Perinci-Access-Base";
+    version = "0.33";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Access-Base-0.33.tar.gz";
+      sha256 = "1zj56bkfqrw74yj4s18ngvwg0zmn343i6m9mb63b0vn2k9jii40j";
+    };
+    propagatedBuildInputs = [ URI ];
+    meta = {
+      description = "Base class for all Perinci Riap clients";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciAccessHTTPClient = buildPerlPackage {
+    pname = "Perinci-Access-HTTP-Client";
+    version = "0.24";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Access-HTTP-Client-0.24.tar.gz";
+      sha256 = "0cvzkv2ri97by9pakdlvny9avgyx4rpjzh852ijr357534bn4b5f";
+    };
+    propagatedBuildInputs = [ JSONMaybeXS LWPProtocolhttpSocketUnixAlt Logger PerinciAccessBase PerinciAccessUtil ];
+    meta = {
+      description = "Riap::HTTP client";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciAccessHTTPServer = buildPerlPackage {
+    pname = "Perinci-Access-HTTP-Server";
+    version = "0.620";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Access-HTTP-Server-0.620.tar.gz";
+      sha256 = "0d5h110bbpv7b35g0720g7gps2hnjrsc9b1ikpyvd611hf8f2mir";
+    };
+    propagatedBuildInputs = [ LoggerOutputCallback ModulePatch PerinciAccessHTTPClient PerinciAccessPerl PerinciResultFormat Plack StringUtilMatch YAMLSyck ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "PSGI application to implement Riap::HTTP";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciAccessPerl = buildPerlPackage {
+    pname = "Perinci-Access-Perl";
+    version = "0.893";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Access-Perl-0.893.tar.gz";
+      sha256 = "16rrw68vigciihqag3zp2vkkkg152lg5iivm034lwk1lvyvwjzk5";
+    };
+    propagatedBuildInputs = [ ModuleList ModulePathMore PackageUtilLite PerinciAccessBase PerinciObject PerinciSubComplete PerinciSubWrapper ProgressAny TieCache UUIDRandom ];
+    buildInputs = [ MonkeyPatchAction PerinciExamples TestException ];
+    meta = {
+      description = "Access Perl module, functions, variables through Riap";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciAccessUtil = buildPerlPackage {
+    pname = "Perinci-AccessUtil";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-AccessUtil-0.06.tar.gz";
+      sha256 = "1sjw8hzhcil764vlqbw7jpwfpp73ds2jga7z5p9yswzwarq2ldra";
+    };
+    meta = {
+      description = "Utility module for Riap client/server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciExamples = buildPerlPackage {
+    pname = "Perinci-Examples";
+    version = "0.820";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Examples-0.820.tar.gz";
+      sha256 = "0sscbar8vgyfsj0hkb46gv765m360s081yzqwics562pkgddclzx";
+    };
+    propagatedBuildInputs = [ Logger PerinciObject PerinciSubPropertyargcmdline PerinciSubUtil ScalarUtilNumeric ];
+    meta = {
+      description = "Various examples of Rinci metadata";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciObject = buildPerlPackage {
+    pname = "Perinci-Object";
+    version = "0.311";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Object-0.311.tar.gz";
+      sha256 = "1isb96fhpndy51002hkk6fr9jb6p9k0l0nzxisipksbcgx1bysql";
+    };
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Object-oriented interface for Rinci metadata";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciResultFormat = buildPerlPackage {
+    pname = "Perinci-Result-Format";
+    version = "0.45";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Result-Format-0.45.tar.gz";
+      sha256 = "1slsnmnlcmvgcvzdbycnrg6my40rk06saa0p6mxsqkvy3y4hi5rr";
+    };
+    propagatedBuildInputs = [ DataCleanJSON DataDumpOneLine DataFormatPretty DataFormatPrettyJSON ];
+    meta = {
+      description = "Format envelope result";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubComplete = buildPerlPackage {
+    pname = "Perinci-Sub-Complete";
+    version = "0.943";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-Complete-0.943.tar.gz";
+      sha256 = "0arprgd8ddxm5x3vlv11xw63kz95skkgwqcxn6mxcq6pkhid7a74";
+    };
+    propagatedBuildInputs = [ CompleteGetoptLong CompleteSah PerinciSubGetArgsArgv ];
+    buildInputs = [ CompleteBash MonkeyPatchAction PerinciExamples SahSchemasInt ];
+    meta = {
+      description = "Complete command-line argument using Rinci metadata";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubDepChecker = buildPerlPackage {
+    pname = "Perinci-Sub-DepChecker";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-DepChecker-0.11.tar.gz";
+      sha256 = "12xymqfwd65nbx1mwciw6jpjp11sdgwck0jyknrkrqsn45qam9gs";
+    };
+    propagatedBuildInputs = [ FileWhich ];
+    meta = {
+      description = "Check dependencies from 'deps' property";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubGetArgsArgv = buildPerlPackage {
+    pname = "Perinci-Sub-GetArgs-Argv";
+    version = "0.845";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-GetArgs-Argv-0.845.tar.gz";
+      sha256 = "1njy6vs8375jhglvlv31c7bfha2mrpbdsm9qa4sr53v1r9l4mn1d";
+    };
+    propagatedBuildInputs = [ DataCleanForJSON DataSahResolve DataSahUtilType GetoptLong GetoptLongNegateEN GetoptLongUtil LinguaENPluralToSingular PerinciSubGetArgsArray PerinciSubUtil YAMLOld ];
+    buildInputs = [ DataCleanJSON DataSah TestDeep TestNeeds ];
+    meta = {
+      description = "Get subroutine arguments from command line arguments (@ARGV)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubGetArgsArray = buildPerlPackage {
+    pname = "Perinci-Sub-GetArgs-Array";
+    version = "0.170";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-GetArgs-Array-0.170.tar.gz";
+      sha256 = "196jbscr3dayqz5v7glmnlp97khm717z9gq9m2i4dldcz71zhpls";
+    };
+    propagatedBuildInputs = [ PerinciSubNormalize ];
+    meta = {
+      description = "Get subroutine arguments (%args) from array";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubNormalize = buildPerlPackage {
+    pname = "Perinci-Sub-Normalize";
+    version = "0.200";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-Normalize-0.200.tar.gz";
+      sha256 = "0rdbvj9c8wk2hvi8f9a8281ki5fq2am97ycavkkkh0g2mj8ql83p";
+    };
+    propagatedBuildInputs = [ SahSchemasRinci ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Normalize Rinci function metadata";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubPropertyUtil = buildPerlPackage {
+    pname = "Perinci-Sub-PropertyUtil";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-PropertyUtil-0.11.tar.gz";
+      sha256 = "0k08vx1qmdjxgda4ab5sf0ar1lnb50l9mnydp534dmcj3li7vkg6";
+    };
+    propagatedBuildInputs = [ SahSchemasRinci ];
+    meta = {
+      description = "Utility routines for Perinci::Sub::Property::* modules";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubPropertyargcmdline = buildPerlPackage {
+    pname = "Perinci-Sub-Property-arg-cmdline";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-Property-arg-cmdline-0.02.tar.gz";
+      sha256 = "06jy1mli8yfq329jvz6w2l81w3fxh486z31rzfh7n1hxfa7ywx9m";
+    };
+    propagatedBuildInputs = [ PerinciSubNormalize PerinciSubPropertyUtil ];
+    meta = {
+      description = "Specify command-line-related attributes in argument specification";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubUtil = buildPerlPackage {
+    pname = "Perinci-Sub-Util";
+    version = "0.470";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-Util-0.470.tar.gz";
+      sha256 = "1n3jgm1ibvpb4ixjjf4bcrhhq0n5xx4zvblgn9yh8aadhy55dxk8";
+    };
+    propagatedBuildInputs = [ FunctionFallbackCoreOrPP ];
+    buildInputs = [ GenTestRinciFuncResult ];
+    meta = {
+      description = "Helper when writing functions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PerinciSubWrapper = buildPerlPackage {
+    pname = "Perinci-Sub-Wrapper";
+    version = "0.851";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Perinci-Sub-Wrapper-0.851.tar.gz";
+      sha256 = "1nnw7rl7cp8vkc6fip92qbmk26isjbxk9p0vq48y02bvvy4wy9br";
+    };
+    propagatedBuildInputs = [ DataSah PerinciSubDepChecker PerinciSubNormalize PerinciSubUtil StringLineNumber ];
+    buildInputs = [ SubIterator TestException ];
+    meta = {
+      description = "A multi-purpose subroutine wrapping framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   PerconaToolkit = callPackage ../development/perl-modules/Percona-Toolkit { };
@@ -19013,6 +20157,21 @@ let
     propagatedBuildInputs = [ CGICompile CGIEmulatePSGI DBDmysql FileShare ModuleBuildPluggableCPANfile PlackAppMCCS ];
     meta = {
       description = "WebMySQL web application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppdbi2http = buildPerlPackage {
+    pname = "Plack-App-dbi2http";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Plack-App-dbi2http-0.07.tar.gz";
+      sha256 = "1axsbaqzsymy9sb8rxfyanm17aw4im775ii6pddmvx4kz64fvr2g";
+    };
+    propagatedBuildInputs = [ DBI DBIxFunctionalAPI FileWriteRotate PerinciAccessHTTPServer ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "Export DBI database as HTTP API (Riap::HTTP)";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -22453,6 +23612,19 @@ let
     };
   };
 
+  ProcChildError = buildPerlPackage {
+    pname = "Proc-ChildError";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Proc-ChildError-0.04.tar.gz";
+      sha256 = "0c6f0y3q4zf58mdyxgvcf48r0g0kqlxry3qy9sq0igm3l4smvmgn";
+    };
+    meta = {
+      description = "Explain process child error";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ProcProcessTable = buildPerlPackage {
     pname = "Proc-ProcessTable";
     version = "0.59";
@@ -22477,6 +23649,18 @@ let
     meta = {
       description = "Find processes by name, PID, or some other attributes";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ProcPIDFile = buildPerlPackage {
+    pname = "Proc-PID-File";
+    version = "1.29";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DM/DMITRI/Proc-PID-File-1.29.tar.gz";
+      sha256 = "196lbhszv4lri91d19jhb7a2yvq5n98jl35pd20ksb8qvx4xmkiv";
+    };
+    meta = {
+      description = "A module to manage PID files";
     };
   };
 
@@ -22535,6 +23719,21 @@ let
     meta = {
       description = "Apache::SizeLimit::Core, repackaged";
       homepage = "https://github.com/audreyt/process-sizelimit-core/";
+    };
+  };
+
+  ProgressAny = buildPerlPackage {
+    pname = "Progress-Any";
+    version = "0.219";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Progress-Any-0.219.tar.gz";
+      sha256 = "0zj3zj45lax1c7chhb4b1frx0lhpac4x97pd6850c2r6i9iaxxxi";
+    };
+    propagatedBuildInputs = [ TimeDuration ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Record progress to any output";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -23330,6 +24529,19 @@ let
     };
   };
 
+  RegexpPatternPerl = buildPerlPackage {
+    pname = "Regexp-Pattern-Perl";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Regexp-Pattern-Perl-0.004.tar.gz";
+      sha256 = "0zfs6i15rqhd240b36hpfpc0j2r9aschd01bv6k4m70x9vyak9k3";
+    };
+    meta = {
+      description = "Regexp patterns related to Perl";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   RegexpRegGrp = buildPerlPackage {
     pname = "Regexp-RegGrp";
     version = "2.01";
@@ -23339,6 +24551,19 @@ let
     };
     meta = {
       description = "Groups a regular expressions collection";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RegexpStringify = buildPerlPackage {
+    pname = "Regexp-Stringify";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Regexp-Stringify-0.06.tar.gz";
+      sha256 = "1xan7dcqd6zlp6b8657rdc33yiqr8yanj6pmaz67r3b5l92gx0ks";
+    };
+    meta = {
+      description = "Stringify a Regexp object";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -23573,6 +24798,61 @@ let
     };
   };
 
+  Sah = buildPerlPackage {
+    pname = "Sah";
+    version = "0.9.49";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sah-0.9.49.tar.gz";
+      sha256 = "0wzzm6rfm9wzglj684vmavci1004b4ddvigxysb2d417c8ypyqrm";
+    };
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "Schema for data structures (specification)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SahSchemasExamples = buildPerlPackage {
+    pname = "Sah-Schemas-Examples";
+    version = "0.006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sah-Schemas-Examples-0.006.tar.gz";
+      sha256 = "0wfpigv7wd502h1sfi697f80c3411yl554w3vr9sjm10rp1m6nzh";
+    };
+    propagatedBuildInputs = [ SahSchemasInt ];
+    meta = {
+      description = "Various example Sah schemas";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SahSchemasInt = buildPerlPackage {
+    pname = "Sah-Schemas-Int";
+    version = "0.075";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sah-Schemas-Int-0.075.tar.gz";
+      sha256 = "092624kyizlgpky9g401pkgwv68jx495h2dk0w9am8r08y3w2nd6";
+    };
+    meta = {
+      description = "Sah schemas for various integers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SahSchemasRinci = buildPerlPackage {
+    pname = "Sah-Schemas-Rinci";
+    version = "1.1.94.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sah-Schemas-Rinci-1.1.94.0.tar.gz";
+      sha256 = "0y9nx2qfzcgq57y0pxf4msvfahbxdqaq7jlj07s12zplix6494ad";
+    };
+    propagatedBuildInputs = [ DataSahNormalize ];
+    meta = {
+      description = "Sah schemas for Rinci";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ScalarListUtils = buildPerlPackage {
     pname = "Scalar-List-Utils";
     version = "1.55";
@@ -23592,6 +24872,32 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Scalar-String-0.003.tar.gz";
       sha256 = "f54a17c9b78713b02cc43adfadf60b49467e7634d31317e8b9e9e97c26d68b52";
+    };
+  };
+
+  ScalarUtilNumeric = buildPerlPackage {
+    pname = "Scalar-Util-Numeric";
+    version = "0.40";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHOCOLATE/Scalar-Util-Numeric-0.40.tar.gz";
+      sha256 = "0h24rji5rkwa0mkggmr5anin92dg87ygnhhr3idxn0q785ninl6p";
+    };
+    meta = {
+      description = "numeric tests for perl scalars";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  ScalarUtilNumericPP = buildPerlPackage {
+    pname = "Scalar-Util-Numeric-PP";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Scalar-Util-Numeric-PP-0.04.tar.gz";
+      sha256 = "1q54amymrqssqavni3qnx3mprmam7fnv0c3ii8cm81w9iw69qj1v";
+    };
+    meta = {
+      description = "Pure-perl drop-in replacement/approximation of Scalar::Util::Numeric";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -23765,6 +25071,20 @@ let
       description = "Secure, efficient, simple random session token generation";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
+    };
+  };
+
+  SetCrossProduct = buildPerlPackage {
+    pname = "Set-CrossProduct";
+    version = "2.006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Set-CrossProduct-2.006.tar.gz";
+      sha256 = "0m2xdplg8b7m1cxvy9fi2g7dnj82k1fixabzd5lknn729vijbsv2";
+    };
+    meta = {
+      description = "work with the cross product of two or more sets";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/briandfoy/set-crossproduct";
     };
   };
 
@@ -24147,6 +25467,20 @@ let
     };
   };
 
+  SortSub = buildPerlPackage {
+    pname = "Sort-Sub";
+    version = "0.120";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sort-Sub-0.120.tar.gz";
+      sha256 = "01vfnmrpnqklwa70m6lwj565rb3238cx3h1zzr63by261w6v6lri";
+    };
+    propagatedBuildInputs = [ CompleteSah CompleteSequence SortNaturally ];
+    meta = {
+      description = "Collection of sort subroutines";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Starlet = buildPerlPackage {
     pname = "Starlet";
     version = "0.31";
@@ -24281,6 +25615,19 @@ let
     meta = {
       homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/strictures.git";
       description = "Turn on strict and make all warnings fatal";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  subroutines = buildPerlPackage {
+    pname = "subroutines";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/subroutines-0.001.tar.gz";
+      sha256 = "145sqfp0m186ips6cf8gkhskgjgxxx4xijsis1nf0iy12vwnfd06";
+    };
+    meta = {
+      description = "Use subroutines from another module";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -24441,12 +25788,51 @@ let
     };
   };
 
+  StringLineNumber = buildPerlPackage {
+    pname = "String-LineNumber";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/String-LineNumber-0.01.tar.gz";
+      sha256 = "02bjqk7w558z9w8sv9v1v5lnffbyizspv60rn7d16p6bk6gh7ppw";
+    };
+    meta = {
+      description = "Give line number to each line of string";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   StringMkPasswd = buildPerlPackage {
     pname = "String-MkPasswd";
     version = "0.05";
     src = fetchurl {
       url = "mirror://cpan/authors/id/C/CG/CGRAU/String-MkPasswd-0.05.tar.gz";
       sha256 = "15lvcc8c9hp6mg3jx02wd3b85aphn8yl5db62q3pam04c0sgh42k";
+    };
+  };
+
+  StringPad = buildPerlPackage {
+    pname = "String-Pad";
+    version = "0.020";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/String-Pad-0.020.tar.gz";
+      sha256 = "0g89q2ibrilj9hw6wrg58i60pa7l7a6f1awlccz4ckwr01difcpj";
+    };
+    meta = {
+      description = "String padding routines";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  StringPerlQuote = buildPerlPackage {
+    pname = "String-PerlQuote";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/String-PerlQuote-0.02.tar.gz";
+      sha256 = "1049z4jvm4rfsdyrc7f5rw96s0hxfvl50cqikwkflam3yfmrf4b0";
+    };
+    meta = {
+      description = "Quote a string as Perl does";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -24564,6 +25950,33 @@ let
     buildInputs = [ ModuleBuildTiny ];
   };
 
+  StringUtilMatch = buildPerlPackage {
+    pname = "String-Util-Match";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/String-Util-Match-0.002.tar.gz";
+      sha256 = "0p95gkxlnlnn3rj420i0w0hyj4ljhr03yr90ck54cgx3id8as2xh";
+    };
+    meta = {
+      description = "String utilities related to matching";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  StringWildcardBash = buildPerlPackage {
+    pname = "String-Wildcard-Bash";
+    version = "0.043";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/String-Wildcard-Bash-0.043.tar.gz";
+      sha256 = "0n19yjp5rp6kxs1xk7x1kchj4ygh6m9zyry4xjb7rbbf0mvsf7ds";
+    };
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Bash wildcard string routines";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   strip-nondeterminism = callPackage ../development/perl-modules/strip-nondeterminism { };
 
   StructDumb = buildPerlModule {
@@ -24577,6 +25990,15 @@ let
     meta = {
       description = "make simple lightweight record-like structures";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SubDelete = buildPerlPackage {
+    pname = "Sub-Delete";
+    version = "1.00002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SP/SPROUT/Sub-Delete-1.00002.tar.gz";
+      sha256 = "1vji57z33llniiym7svsgqh3cb6g6jbz4j9pvn8nw3d8045sfda4";
     };
   };
 
@@ -24690,6 +26112,20 @@ let
     };
     meta = {
       description = "Install subroutines into packages easily";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  SubIterator = buildPerlPackage {
+    pname = "Sub-Iterator";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Sub-Iterator-0.01.tar.gz";
+      sha256 = "1y19yakgg7s023f384xdxkdsygdncmmwrrkbgijd10az8s1n6scv";
+    };
+    buildInputs = [ Perlosnames ];
+    meta = {
+      description = "Generate iterator coderefs";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -24835,6 +26271,20 @@ let
     };
   };
 
+  SyntaxFeatureEachOnArray = buildPerlModule {
+    pname = "Syntax-Feature-EachOnArray";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHARYANTO/Syntax-Feature-EachOnArray-0.04.tar.gz";
+      sha256 = "0fh7dgkahm0yhm26nd8z4mg9gfx34g6h4imvkxwwmf926g8qby9a";
+    };
+    propagatedBuildInputs = [ HashFieldHash syntax ];
+    meta = {
+      description = "Emulate each(@array) on Perl < 5.12";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   SyntaxHighlightEngineKate = buildPerlPackage {
     pname = "Syntax-Highlight-Engine-Kate";
     version = "0.14";
@@ -24862,6 +26312,21 @@ let
     meta = {
       homepage = "https://github.com/phaylon/syntax/wiki";
       description = "Activate syntax extensions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  tainting = buildPerlPackage {
+    pname = "tainting";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/tainting-0.02.tar.gz";
+      sha256 = "1v0wh55vnd3zvs8d64za966n9yscm7z9w98r4ls886ap8kwz0qv3";
+    };
+    propagatedBuildInputs = [ TaintRuntime ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Enable taint mode lexically";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -25040,6 +26505,15 @@ let
       description = "Indented output for Tags";
       license = with lib.licenses; [ bsd3 ];
       homepage = "https://github.com/michal-josef-spacek/Tags-Output-Indent";
+    };
+  };
+
+  TaintRuntime = buildPerlPackage {
+    pname = "Taint-Runtime";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHANDOM/Taint-Runtime-0.03.tar.gz";
+      sha256 = "01m71ah9gcyc5myl2kf9dxgajx0klwlfqi0v90kzd9hr98irgkkf";
     };
   };
 
@@ -25396,6 +26870,19 @@ let
     };
   };
 
+  TermSize = buildPerlPackage {
+    pname = "Term-Size";
+    version = "0.211";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FE/FERREIRA/Term-Size-0.211.tar.gz";
+      sha256 = "1yxkj1vz4wphdhc947j5qkwsfvckbqqr4v19313pfa93wnyv8qjr";
+    };
+    meta = {
+      description = "Retrieve terminal size on Unix";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TermSizeAny = buildPerlPackage {
     pname = "Term-Size-Any";
     version = "0.002";
@@ -25495,6 +26982,75 @@ let
     propagatedBuildInputs = [ Curses ];
     meta = {
       description = "ASCII sprite animation framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TermAppRoles = buildPerlPackage {
+    pname = "Term-App-Roles";
+    version = "0.031";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Term-App-Roles-0.031.tar.gz";
+      sha256 = "18fhf2isicv7dxm0k6is6m1jaqwhpyyy6d5npjid05zs72y2r3k3";
+    };
+    propagatedBuildInputs = [ Moo TermAppUtilColor TermAppUtilSize ];
+    meta = {
+      description = "Collection of roles for terminal-based application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TermAppUtilColor = buildPerlPackage {
+    pname = "Term-App-Util-Color";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Term-App-Util-Color-0.001.tar.gz";
+      sha256 = "0agxamx4p30nnl51cqijs5lvn0k67kb2zskzfhgclv0x504miw7p";
+    };
+    propagatedBuildInputs = [ TermAppUtilInteractive TermDetectSoftware ];
+    meta = {
+      description = "Determine color depth and whether to use color or not";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TermAppUtilInteractive = buildPerlPackage {
+    pname = "Term-App-Util-Interactive";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Term-App-Util-Interactive-0.002.tar.gz";
+      sha256 = "0q0fzy7xarii15fp6p5j81f2vdmkrsglvlhlv7wajj6sdaw5hb3j";
+    };
+    meta = {
+      description = "Determine whether terminal application is running interactively";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TermAppUtilSize = buildPerlPackage {
+    pname = "Term-App-Util-Size";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Term-App-Util-Size-0.002.tar.gz";
+      sha256 = "18nv5l6cd7vs33r25zir2nj5a7n52lm6cvq20byp5b09w7k993ya";
+    };
+    propagatedBuildInputs = [ TermSize ];
+    meta = {
+      description = "Determine the sane terminal size (width, height)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TermDetectSoftware = buildPerlPackage {
+    pname = "Term-Detect-Software";
+    version = "0.223";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Term-Detect-Software-0.223.tar.gz";
+      sha256 = "0a4yscvnaccgvxw5gm5pfycxj12xvja61w2m9lrpkjn2a8x9xlwn";
+    };
+    propagatedBuildInputs = [ FileWhich ];
+    meta = {
+      description = "Detect terminal (emulator) software and its capabilities";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -26688,6 +28244,19 @@ let
     };
     meta = {
       description = "Check file names portability";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestRandomResult = buildPerlPackage {
+    pname = "Test-RandomResult";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Test-RandomResult-0.001.tar.gz";
+      sha256 = "1bhy5ibvlhf3cwwnxsrz3qbgpcxra36pkz3h9s2xhkmviyz4in86";
+    };
+    meta = {
+      description = "Test that results of a running code look random";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -27994,6 +29563,20 @@ let
     };
   };
 
+  TextWideCharUtil = buildPerlPackage {
+    pname = "Text-WideChar-Util";
+    version = "0.170";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Text-WideChar-Util-0.170.tar.gz";
+      sha256 = "00idl8l72lqyclkixskbvmcn14nd4diljfp218imfqam07zzafjb";
+    };
+    propagatedBuildInputs = [ UnicodeLineBreak ];
+    meta = {
+      description = "Routines for text containing wide characters";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Testutf8 = buildPerlPackage {
     pname = "Test-utf8";
     version = "1.02";
@@ -28008,6 +29591,21 @@ let
     };
   };
 
+  TextANSITable = buildPerlPackage {
+    pname = "Text-ANSITable";
+    version = "0.601";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Text-ANSITable-0.601.tar.gz";
+      sha256 = "0db1llgnw2b0n9wxc8i2k8pqpafixfnkppzm2f4kk8n30ga1c364";
+    };
+    propagatedBuildInputs = [ BorderStylesStandard ColorThemeUtilANSI ColorThemesStandard FunctionFallbackCoreOrPP JSONMaybeXS Logger ModuleList ModuleLoadUtil PackageMoreUtil ParseVarName TermAppRoles TextANSIUtil namespaceclean ];
+    buildInputs = [ TestException TestNeeds ];
+    meta = {
+      description = "Create nice formatted tables using extended ASCII and ANSI colors";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TextANSIUtil = buildPerlPackage {
     pname = "Text-ANSI-Util";
     version = "0.230";
@@ -28018,6 +29616,21 @@ let
     buildInputs = [ DataDump ];
     meta = {
       description = "Routines for text containing ANSI color codes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextANSIWideUtil = buildPerlPackage {
+    pname = "Text-ANSI-WideUtil";
+    version = "0.230";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Text-ANSI-WideUtil-0.230.tar.gz";
+      sha256 = "18w3sxbj6lhzv22510agj4ipv9dy5w7br3xx2jla7ljp6kjl6gxj";
+    };
+    propagatedBuildInputs = [ TextANSIUtil TextWideCharUtil ];
+    buildInputs = [ DataDump ];
+    meta = {
+      description = "Routines for text containing ANSI color codes (wide-character functions only)";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -28121,6 +29734,19 @@ let
     };
   };
 
+  Textsprintfn = buildPerlPackage {
+    pname = "Text-sprintfn";
+    version = "0.090";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Text-sprintfn-0.090.tar.gz";
+      sha256 = "1p7w75xdsmyzcz1jzgn7cqhq10dx4621nxd415qncfrddaxwzy8z";
+    };
+    meta = {
+      description = "Drop-in replacement for sprintf(), with named parameter support";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Throwable = buildPerlPackage {
     pname = "Throwable";
     version = "0.200013";
@@ -28133,6 +29759,15 @@ let
       homepage = "https://github.com/rjbs/Throwable";
       description = "A role for classes that can be thrown";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TieCache = buildPerlPackage {
+    pname = "Tie-Cache";
+    version = "0.21";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHAMAS/Tie-Cache-0.21.tar.gz";
+      sha256 = "12gyyqvzw94bpzbrqrb44d55hsi2shn7h5zx5dpj46x26lps5snp";
     };
   };
 
@@ -28342,6 +29977,19 @@ let
     };
     buildInputs = [ TimeDuration ];
     propagatedBuildInputs = [ ExporterLite ];
+    meta = {
+      description = "Parse string that represents time duration";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TimeDurationParseAsHash = buildPerlPackage {
+    pname = "Time-Duration-Parse-AsHash";
+    version = "0.10.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Time-Duration-Parse-AsHash-0.10.6.tar.gz";
+      sha256 = "0c98sp8926w9i2ddlpf3zrw4assk4dslhkmafjygc3nh17q6sxxn";
+    };
     meta = {
       description = "Parse string that represents time duration";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
@@ -28934,6 +30582,18 @@ let
       homepage = "https://metacpan.org/release/URI-ws";
       description = "WebSocket support for URI package";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  UUIDRandom = buildPerlPackage {
+    pname = "UUID-Random";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLER/UUID-Random-0.04.tar.gz";
+      sha256 = "1x43vpck4036cf7hiarjgl8kgrj4i0mifdywgj8pbb412fcxvz4z";
+    };
+    meta = {
+      description = "Generate random uuid strings";
     };
   };
 
@@ -29883,6 +31543,21 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/T/TI/TINITA/YAML-LibYAML-0.82.tar.gz";
       sha256 = "0j7yhxkaasccynl5iq1cqpf4x253p4bi5wsq6qbwwv2wjsiwgd02";
+    };
+  };
+
+  YAMLOld = buildPerlPackage {
+    pname = "YAML-Old";
+    version = "1.23";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IN/INGY/YAML-Old-1.23.tar.gz";
+      sha256 = "1kbys7kfq6mz19fcvic1qxyhx9gbq5zjz43ii2y3jnnckb6nym7s";
+    };
+    buildInputs = [ TestYAML ];
+    meta = {
+      description = "Old YAML.pm Legacy Code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/yaml-old-pm";
     };
   };
 
