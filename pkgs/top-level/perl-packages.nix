@@ -19336,6 +19336,21 @@ let
     };
   };
 
+  PlackMiddlewareJSONForBrowsers = buildPerlModule {
+    pname = "Plack-Middleware-JSON-ForBrowsers";
+    version = "0.002000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSTOCK/Plack-Middleware-JSON-ForBrowsers-0.002000.tar.gz";
+      sha256 = "0r4k6kmckm2mv1i7sav5s1xyabn3qx8ry3rpad26vnyzls20kgb1";
+    };
+    propagatedBuildInputs = [ HTMLParser JSON ListMoreUtils MROCompat Plack ];
+    buildInputs = [ TestClass ];
+    meta = {
+      description = "Plack middleware which turns application/json responses into HTML";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogContextual = buildPerlPackage {
     pname = "Plack-Middleware-Log-Contextual";
     version = "0.01";
