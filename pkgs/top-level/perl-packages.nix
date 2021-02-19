@@ -20318,6 +20318,21 @@ let
     };
   };
 
+  PlackAppTemplatedDirectory = buildPerlModule {
+    pname = "Plack-App-TemplatedDirectory";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAARE/Plack-App-TemplatedDirectory-0.001.tar.gz";
+      sha256 = "185i55b5jq3s6wxknin19wir9h09ds5sgj5l7h25yn9vgsrsjk6d";
+    };
+    propagatedBuildInputs = [ Plack TextXslate ];
+    meta = {
+      description = "Serve static files from document root with directory index";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kaare/Plack-App-TemplatedDirectory";
+    };
+  };
+
   PlackAppURLMux = buildPerlPackage {
     pname = "Plack-App-URLMux";
     version = "0.08";
