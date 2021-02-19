@@ -17486,6 +17486,35 @@ let
     };
   };
 
+  PlackDebugger = buildPerlPackage {
+    pname = "Plack-Debugger";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/ST/STEVAN/Plack-Debugger-0.03.tar.gz";
+      sha256 = "1glj6ijv0rkk0pv5vx2aamm16s4xa3lnxnw2ad1mkqidgapfjqzz";
+    };
+    propagatedBuildInputs = [ JSONXS ModuleVersions Plack ];
+    buildInputs = [ FileShareDirInstall PathClass TestFatal TestWarn UUIDTiny ];
+    meta = {
+      description = "Debugging tool for Plack web applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackDebuggerPanelDBICQueryLog = buildPerlPackage {
+    pname = "Plack-Debugger-Panel-DBIC-QueryLog";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SY/SYSPETE/Plack-Debugger-Panel-DBIC-QueryLog-0.002.tar.gz";
+      sha256 = "0if4h94nsma7cphlz0qay89xcf83a4illsnx0gjqx70cz7i8vxca";
+    };
+    propagatedBuildInputs = [ PlackDebugger PlackMiddlewareDBICQueryLog TextMicroTemplate ];
+    meta = {
+      description = "DBIC query log panel for Plack::Debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackHandlerAnyEventReverseHTTP = buildPerlPackage {
     pname = "Plack-Handler-AnyEvent-ReverseHTTP";
     version = "0.04";
