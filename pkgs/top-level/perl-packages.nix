@@ -20287,6 +20287,22 @@ let
     };
   };
 
+  PlackAppSeeAlso = buildPerlPackage {
+    pname = "Plack-App-SeeAlso";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-SeeAlso-0.14.tar.gz";
+      sha256 = "19pcf850q2gzgy5liwd9yiyx3gypilgys6cc2gqz236lxbh7rqwb";
+    };
+    propagatedBuildInputs = [ JSON PlackAppunAPI ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "SeeAlso Server as PSGI application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-SeeAlso";
+    };
+  };
+
   PlackAppServiceStatus = buildPerlModule {
     pname = "Plack-App-ServiceStatus";
     version = "0.904";
