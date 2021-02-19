@@ -9887,6 +9887,47 @@ let
     };
   };
 
+  HTMLHTML5Entities = buildPerlPackage {
+    pname = "HTML-HTML5-Entities";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/HTML-HTML5-Entities-0.004.tar.gz";
+      sha256 = "0m6w5wxhs93bakq5qa4zhgnn6xv8yxa45dzvfy7wvxckjizcxsyd";
+    };
+    meta = {
+      description = "drop-in replacement for HTML::Entities";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HTMLHTML5Parser = buildPerlPackage {
+    pname = "HTML-HTML5-Parser";
+    version = "0.301";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/HTML-HTML5-Parser-0.301.tar.gz";
+      sha256 = "08iyc917i27rhdd0szvdfvbcg2nf1c1gqnwsjfkshr8r7y9jzv78";
+    };
+    propagatedBuildInputs = [ HTMLHTML5Entities IOHTML TryTiny URI XMLLibXML ];
+    meta = {
+      description = "parse HTML reliably";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HTMLHTML5Writer = buildPerlPackage {
+    pname = "HTML-HTML5-Writer";
+    version = "0.201";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/HTML-HTML5-Writer-0.201.tar.gz";
+      sha256 = "085ld4f61nh11n5j71xng98wbk34za6hi5wf04j786xjhiwg6xjk";
+    };
+    propagatedBuildInputs = [ HTMLHTML5Entities XMLLibXML ];
+    meta = {
+      description = "output a DOM as HTML5";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   HTMLForm = buildPerlPackage {
     pname = "HTML-Form";
     version = "6.07";
@@ -19445,6 +19486,22 @@ let
     meta = {
       description = "unicode pictogram fallback to html";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareWOVN = buildPerlModule {
+    pname = "Plack-Middleware-WOVN";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MASIUCHI/Plack-Middleware-WOVN-0.09.tar.gz";
+      sha256 = "0r11zasa3xrzznws6mqpps4mxbqqplgpv960krrxlcm1b5sikanc";
+    };
+    propagatedBuildInputs = [ ClassAccessor HTMLHTML5Parser HTMLHTML5Writer JSON LWPProtocolHttps Mojolicious Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Translates PSGI application by using WOVN.io";
+      license = with lib.licenses; [ mit ];
+      homepage = "https://github.com/masiuchi/p5-Plack-Middleware-WOVN";
     };
   };
 
