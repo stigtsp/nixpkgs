@@ -16925,6 +16925,20 @@ let
     };
   };
 
+  ParallelScoreboard = buildPerlPackage {
+    pname = "Parallel-Scoreboard";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZUHO/Parallel-Scoreboard-0.08.tar.gz";
+      sha256 = "0larp79b3md5cz17pfxfcy5fd3f9my6fmhmar6q8mga012773c6h";
+    };
+    propagatedBuildInputs = [ ClassAccessorLite HTMLParser JSON ];
+    meta = {
+      description = "a scoreboard for monitoring status of many workers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ParamsClassify = buildPerlModule {
     pname = "Params-Classify";
     version = "0.015";
@@ -19026,6 +19040,21 @@ let
       description = "PSGI middleware for server side include content";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://search.cpan.org/dist/Plack-Middleware-SSI";
+    };
+  };
+
+  PlackMiddlewareServerName = buildPerlPackage {
+    pname = "Plack-Middleware-ServerName";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AS/ASP/Plack-Middleware-ServerName-0.02.tar.gz";
+      sha256 = "02d3j4x75l61ysdxlyd8cgswghknql64adfp2n9c370n76k5rm66";
+    };
+    propagatedBuildInputs = [ NetCIDRLite ParallelScoreboard Plack ];
+    buildInputs = [ TestTCP ];
+    meta = {
+      description = "sets/fakes the name of the webserver processing the requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
