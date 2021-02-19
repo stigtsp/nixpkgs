@@ -18328,6 +18328,20 @@ let
     };
   };
 
+  PlackAppJSP = buildPerlModule {
+    pname = "Plack-App-JSP";
+    version = "0.101680";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PD/PDONELAN/Plack-App-JSP-0.101680.tar.gz";
+      sha256 = "01r1nk947fss935qjl4s8cxiik00d0prbq6qjksazwgb8aj2ig9b";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Javascript PSGI apps via JSP";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppMCCS = buildPerlPackage {
     pname = "Plack-App-MCCS";
     version = "1.000000";
