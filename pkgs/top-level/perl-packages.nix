@@ -16931,6 +16931,22 @@ let
     };
   };
 
+  PlackMiddlewarePostErrorToSlack = buildPerlModule {
+    pname = "Plack-Middleware-PostErrorToSlack";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HI/HITODE/Plack-Middleware-PostErrorToSlack-0.01.tar.gz";
+      sha256 = "16zcqr6rvl7p4zzgalp1b53zxm67825ysa9jqgqnxjnxd5k1zajk";
+    };
+    propagatedBuildInputs = [ JSONXS Plack ];
+    buildInputs = [ ModuleBuildTiny TestMockGuard ];
+    meta = {
+      description = "Post error message to Slack when you app dies";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hitode909/Plack-Middleware-PostErrorToSlack";
+    };
+  };
+
   PlackMiddlewarePrecompressed = buildPerlPackage {
     pname = "Plack-Middleware-Precompressed";
     version = "1.103";
