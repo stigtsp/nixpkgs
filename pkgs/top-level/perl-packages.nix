@@ -14286,6 +14286,21 @@ let
     };
   };
 
+  ModuleUsed = buildPerlModule {
+    pname = "Module-Used";
+    version = "v1.3.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/EL/ELLIOTJS/Module-Used-v1.3.0.tar.gz";
+      sha256 = "1hvpfddr1g3qdv33c8yckrhj80ghrazakyk4l6dmdwpansbsdfar";
+    };
+    propagatedBuildInputs = [ ConstFast FileNext ModulePath PPI ];
+    buildInputs = [ TestDeep ];
+    meta = {
+      description = "Find modules loaded by Perl code without running it";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ModuleUtil = buildPerlModule {
     pname = "Module-Util";
     version = "1.09";
@@ -15773,6 +15788,21 @@ let
     meta = {
       description = "Keep imports and functions out of your namespace";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  opts = buildPerlModule {
+    pname = "opts";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIKIHOSHI/opts-0.07.tar.gz";
+      sha256 = "1am0zlp91603xa1s6ly4gzknh84l1lw080a46rhchf9q46wzvvbl";
+    };
+    propagatedBuildInputs = [ PadWalker TextTable ];
+    buildInputs = [ TestException TestModuleUsed TestPerlCritic ];
+    meta = {
+      description = "(DEPRECATED) simple command line option parser";
+      homepage = "https://github.com/kan/p5-opts";
     };
   };
 
@@ -17838,6 +17868,20 @@ let
       description = "Wrap a REST API around a Catmandu::Bag";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-App-Catmandu-Bag";
+    };
+  };
+
+  PlackAppCocProxy = buildPerlPackage {
+    pname = "Plack-App-CocProxy";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SA/SATOH/Plack-App-CocProxy-0.04.tar.gz";
+      sha256 = "1sypjk5598h6k4yzfgx1ckx6d8r9ws0qmc3ipb6bfgbayazjn74z";
+    };
+    propagatedBuildInputs = [ PlackAppProxy Starlet opts ];
+    meta = {
+      description = "proxy requests and replace by local file";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -24243,6 +24287,21 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/tarao/perl5-Test-MockTime-HiRes";
      };
+  };
+
+  TestModuleUsed = buildPerlModule {
+    pname = "Test-Module-Used";
+    version = "0.2.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TS/TSUCCHI/Test-Module-Used-0.2.6.tar.gz";
+      sha256 = "066h41nmx1nsrf6a9wnpcan8vvw7rxf1dsh04jdpkzz29359c769";
+    };
+    propagatedBuildInputs = [ ListMoreUtils ModuleUsed ];
+    meta = {
+      description = "Test required module is really used and vice versa between lib/t and META.yml";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tsucchi/Test-Module-Used";
+    };
   };
 
   TestMojibake = buildPerlPackage {
