@@ -21139,6 +21139,20 @@ let
     };
   };
 
+  PlackMiddlewareRedirectSSL = buildPerlPackage {
+    pname = "Plack-Middleware-RedirectSSL";
+    version = "1.301";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-RedirectSSL-1.301.tar.gz";
+      sha256 = "0c5vs1c308hxjdiq5gdxqpz0my24g9c1lwkkrsj7lylwh989mnba";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "force all requests to use in-/secure connections";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareRemoveRedundantBody = buildPerlPackage {
     pname = "Plack-Middleware-RemoveRedundantBody";
     version = "0.09";
