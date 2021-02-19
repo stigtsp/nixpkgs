@@ -21667,6 +21667,20 @@ let
     };
   };
 
+  PlackMiddlewareChromeFrame = buildPerlPackage {
+    pname = "Plack-Middleware-ChromeFrame";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GR/GRAY/Plack-Middleware-ChromeFrame-0.02.tar.gz";
+      sha256 = "0fiqghdrkzxfxaw4rjj8mg89jmab0am605ncj1h9jv8pdfgx61b1";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "injects Google Chrome Frame into IE";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareChromeLogger = buildPerlModule {
     pname = "Plack-Middleware-ChromeLogger";
     version = "0.01";
