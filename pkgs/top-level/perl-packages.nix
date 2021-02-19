@@ -24259,6 +24259,20 @@ let
     };
   };
 
+  PlackMiddlewareRewrite = buildPerlPackage {
+    pname = "Plack-Middleware-Rewrite";
+    version = "2.101";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-Rewrite-2.101.tar.gz";
+      sha256 = "1m7y0irs76fafp337md1ky7nyc924n90dqg7b1dsncshc3pad1bj";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "mod_rewrite for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareRewriteQuery = buildPerlPackage {
     pname = "Plack-Middleware-Rewrite-Query";
     version = "0.1.1";
