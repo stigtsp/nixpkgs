@@ -1044,6 +1044,20 @@ let
     };
   };
 
+  AuthenBitcard = buildPerlPackage {
+    pname = "Authen-Bitcard";
+    version = "0.90";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AB/ABH/Authen-Bitcard-0.90.tar.gz";
+      sha256 = "01ynzh70dx41ph8sp0mn9j77as6b7xb93rsc27alnf585zxi8fky";
+    };
+    propagatedBuildInputs = [ ClassErrorHandler JSON LWPProtocolHttps ];
+    meta = {
+      description = "Bitcard authentication verification";
+      homepage = "http://search.cpan.org/dist/Authen-Bitcard/";
+    };
+  };
+
   AuthenDecHpwd = buildPerlModule {
     pname = "Authen-DecHpwd";
     version = "2.007";
@@ -19029,6 +19043,20 @@ let
     meta = {
       description = "Bundle and minify JavaScript and CSS files";
       homepage = "https://github.com/ysasaki/p5-plack-middleware-assets-railslike";
+    };
+  };
+
+  PlackMiddlewareAuthBitcard = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-Bitcard";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Plack-Middleware-Auth-Bitcard-0.002.tar.gz";
+      sha256 = "1rsq521sh9n4nc72dyqbhgz7i72k9g19k4giaihbxgf3d4xd6vsy";
+    };
+    propagatedBuildInputs = [ AuthenBitcard Plack ];
+    meta = {
+      description = "Bitcard authentication for Plack, which I suppose is what you might have guessed from the name";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
