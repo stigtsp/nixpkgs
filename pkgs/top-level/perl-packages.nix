@@ -23693,6 +23693,20 @@ let
     };
   };
 
+  PlackMiddlewareXForwardedFor = buildPerlPackage {
+    pname = "Plack-Middleware-XForwardedFor";
+    version = "0.172050";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GB/GBARR/Plack-Middleware-XForwardedFor-0.172050.tar.gz";
+      sha256 = "0fkdxm17illsrznzgy1fisddd7m5n6cprp97b2pc6lbicfrw6rs5";
+    };
+    propagatedBuildInputs = [ NetIP Plack ];
+    meta = {
+      description = "Plack middleware to handle X-Forwarded-For headers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareXFrameOptionsAll = buildPerlModule {
     pname = "Plack-Middleware-XFrameOptions-All";
     version = "0.2";
