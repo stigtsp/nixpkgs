@@ -18632,6 +18632,20 @@ let
     };
   };
 
+  PlackSessionStoreEcho = buildPerlPackage {
+    pname = "Plack-Session-Store-Echo";
+    version = "1.00";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DI/DIONYS/Plack-Session-Store-Echo-1.00.tar.gz";
+      sha256 = "1k2ircybdg8kkh53zlg39rvhir7vjchsh8fxa7jf5jr04pn3qkin";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareSession ];
+    meta = {
+      description = "Echo store for Plack::Middleware::Session";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackTestExternalServer = buildPerlPackage {
     pname = "Plack-Test-ExternalServer";
     version = "0.02";
