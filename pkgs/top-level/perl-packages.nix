@@ -18541,6 +18541,20 @@ let
     };
   };
 
+  PlackMiddlewareProxyByHeader = buildPerlModule {
+    pname = "Plack-Middleware-Proxy-ByHeader";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MD/MDOM/Plack-Middleware-Proxy-ByHeader-0.01.tar.gz";
+      sha256 = "1gzgcqla1pz93ikdsqnyzanxb79zwrll4padjcm30303igzdwdry";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "choose remote host by header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareProxyMap = buildPerlPackage {
     pname = "Plack-Middleware-ProxyMap";
     version = "0.20";
