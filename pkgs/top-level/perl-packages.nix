@@ -19646,6 +19646,21 @@ let
     };
   };
 
+  PlackMiddlewareStaticCombine = buildPerlPackage {
+    pname = "Plack-Middleware-Static-Combine";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Static-Combine-0.01.tar.gz";
+      sha256 = "0fb8r9lfb4s506m3r464j1h9kxwr73cv4vdcp1svr4mhg3li3b7i";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Serve multiple static files combined";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-Static-Combine";
+    };
+  };
+
   PlackMiddlewareStaticOpenFileCache = buildPerlModule {
     pname = "Plack-Middleware-Static-OpenFileCache";
     version = "0.02";
