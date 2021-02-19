@@ -427,6 +427,20 @@ let
     propagatedBuildInputs = [ AnyEvent commonsense ];
   };
 
+  AnyEventHTTPD = buildPerlPackage {
+    pname = "AnyEvent-HTTPD";
+    version = "0.93";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/EL/ELMEX/AnyEvent-HTTPD-0.93.tar.gz";
+      sha256 = "18srp5dfa4pd53f6dq5s9jd1b8n4gqqirzbr43pw415i9xcddhh8";
+    };
+    propagatedBuildInputs = [ AnyEventHTTP ObjectEvent URI ];
+    meta = {
+      description = "A simple lightweight event based web (application) server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyEventI3 = buildPerlPackage {
     pname = "AnyEvent-I3";
     version = "0.17";
@@ -16700,6 +16714,20 @@ let
     };
   };
 
+  ObjectEvent = buildPerlPackage {
+    pname = "Object-Event";
+    version = "1.23";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/EL/ELMEX/Object-Event-1.23.tar.gz";
+      sha256 = "10iwyn5384al8gk2hlkbm218a0xbda3wl80vsprdmzgl102vhsxb";
+    };
+    propagatedBuildInputs = [ AnyEvent commonsense ];
+    meta = {
+      description = "A class that provides an event callback interface";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ObjectInsideOut = buildPerlModule {
     pname = "Object-InsideOut";
     version = "4.05";
@@ -18043,6 +18071,21 @@ let
     propagatedBuildInputs = [ PlackDebugger PlackMiddlewareDBICQueryLog TextMicroTemplate ];
     meta = {
       description = "DBIC query log panel for Plack::Debugger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerAnyEventHTTPD = buildPerlPackage {
+    pname = "Plack-Handler-AnyEvent-HTTPD";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-AnyEvent-HTTPD-0.03.tar.gz";
+      sha256 = "05x2s6my9c7hyyfpanq0h7binx8agjvlslxpxhzyzzsjn6l1f4k8";
+    };
+    propagatedBuildInputs = [ AnyEventHTTPD Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Plack handler to run PSGI apps on AnyEvent::HTTPD";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
