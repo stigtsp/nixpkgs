@@ -18564,6 +18564,20 @@ let
     };
   };
 
+  PlackMiddlewareAcmePHPE9568F34D42811d2A76900AA001ACF42 = buildPerlPackage {
+    pname = "Plack-Middleware-Acme-PHPE9568F34-D428-11d2-A769-00AA001ACF42";
+    version = "3.141000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FREW/Plack-Middleware-Acme-PHPE9568F34-D428-11d2-A769-00AA001ACF42-3.141000.tar.gz";
+      sha256 = "1ccnh3p7c76rndhcrgbif7gxjswvs4m8kf9vh511jkq78yjwm8aq";
+    };
+    propagatedBuildInputs = [ DataSection Plack ];
+    meta = {
+      description = "Implement PHP's best features with PSGI!";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAdaptFilehandleRead = buildPerlPackage {
     pname = "Plack-Middleware-AdaptFilehandleRead";
     version = "0.003";
