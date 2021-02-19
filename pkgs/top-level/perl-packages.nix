@@ -23729,6 +23729,21 @@ let
     };
   };
 
+  PlackMiddlewareRequestHeaders = buildPerlPackage {
+    pname = "Plack-Middleware-RequestHeaders";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/W/WR/WREIS/Plack-Middleware-RequestHeaders-0.05.tar.gz";
+      sha256 = "0kbfl9s50sc5cx2hrcdvx47p8vx9c5q7pxl5gk50ni3zvlb6d0v7";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "modify HTTP request headers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/wreis/Plack-Middleware-RequestHeaders";
+    };
+  };
+
   PlackMiddlewareReturnMultiLevel = buildPerlPackage {
     pname = "Plack-Middleware-Return-MultiLevel";
     version = "0.002";
