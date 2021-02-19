@@ -9891,6 +9891,15 @@ let
     };
   };
 
+  FileTempdir = buildPerlPackage {
+    pname = "File-Tempdir";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NA/NANARDON/File-Tempdir-0.02.tar.gz";
+      sha256 = "1s1vw4bypx8rqfcq28pn7xmry3dm32bfln0rrr4p53ww6mbx0ffk";
+    };
+  };
+
   FileTouch = buildPerlPackage {
     pname = "File-Touch";
     version = "0.11";
@@ -22151,6 +22160,22 @@ let
     meta = {
       description = "Extend Plack::Middleware::Debug with MongoDB panels";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareDebugNotepad = buildPerlModule {
+    pname = "Plack-Middleware-Debug-Notepad";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MANNI/Plack-Middleware-Debug-Notepad-0.12.tar.gz";
+      sha256 = "1ya1gm5kdi0h1bcny1s6rxxpa41dyyayh415fbbz79bvfhrg3pq3";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug TextMarkdown ];
+    buildInputs = [ FileTempdir ModuleBuildTiny TestMockModule TestMockObject TestMost ];
+    meta = {
+      description = "Abuse the plack debug panel and keep your todo list in it";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com//";
     };
   };
 
