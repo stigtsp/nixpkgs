@@ -21519,6 +21519,22 @@ let
     };
   };
 
+  PlackMiddlewareDebugDBICQueryLog = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-DBIC-QueryLog";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-Debug-DBIC-QueryLog-0.09.tar.gz";
+      sha256 = "0jgpim5a31brj7dzajvh7b1xh61b98g478j09h8bhsmh74gj1i4j";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDBICQueryLog PlackMiddlewareDebug ];
+    buildInputs = [ TestFatal ];
+    meta = {
+      description = "DBIC Query Log and Query Analyzer";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-Middleware-Debug-DBIC-QueryLog/";
+    };
+  };
+
   PlackMiddlewareDebugDBIProfile = buildPerlPackage {
     pname = "Plack-Middleware-Debug-DBIProfile";
     version = "0.102";
