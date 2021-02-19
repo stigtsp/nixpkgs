@@ -21517,6 +21517,20 @@ let
     };
   };
 
+  PlackMiddlewareExtDirect = buildPerlPackage {
+    pname = "Plack-Middleware-ExtDirect";
+    version = "3.20";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKAREV/Plack-Middleware-ExtDirect-3.20.tar.gz";
+      sha256 = "0dhckp7x3rxq0mslimx3av40xfsbm5brvra1iwn2l8cw6dpmfd4w";
+    };
+    propagatedBuildInputs = [ Plack RPCExtDirect ];
+    meta = {
+      description = "RPC::ExtDirect gateway for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareExtractUriLanguage = buildPerlPackage {
     pname = "Plack-Middleware-ExtractUriLanguage";
     version = "0.004";
@@ -24812,6 +24826,20 @@ let
     propagatedBuildInputs = [ AnyEvent DataSExpression ];
     meta = {
       description = "An Asynchronous Remote Procedure Stack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RPCExtDirect = buildPerlPackage {
+    pname = "RPC-ExtDirect";
+    version = "3.24";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKAREV/RPC-ExtDirect-3.24.tar.gz";
+      sha256 = "048339x4lgvd5i1z2dvrq8j745kl0dbrcn9hha01k4abdd4ja5pp";
+    };
+    propagatedBuildInputs = [ JSON ];
+    meta = {
+      description = "Core Ext.Direct implementation for Perl";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
