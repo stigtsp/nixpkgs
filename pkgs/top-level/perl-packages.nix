@@ -19589,6 +19589,20 @@ let
     };
   };
 
+  PlackMiddlewareLogAny = buildPerlPackage {
+    pname = "Plack-Middleware-LogAny";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MD/MDORMAN/Plack-Middleware-LogAny-0.001.tar.gz";
+      sha256 = "1jd0vky9hxs0frk7ixvadfdqv0x7v08wrm1jamic4gbl802jkhqk";
+    };
+    propagatedBuildInputs = [ LogAny Plack ];
+    meta = {
+      description = "Use Log::Any to handle logging from your Plack app";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogContextual = buildPerlPackage {
     pname = "Plack-Middleware-Log-Contextual";
     version = "0.01";
