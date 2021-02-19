@@ -20424,6 +20424,22 @@ let
     };
   };
 
+  PlackMiddlewareWoothee = buildPerlModule {
+    pname = "Plack-Middleware-Woothee";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Woothee-0.05.tar.gz";
+      sha256 = "12x1hrqg96dbidq8yq4k313ia6rl7qxh0shk25s8fwfcm6pj66s6";
+    };
+    propagatedBuildInputs = [ Plack Woothee ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Set woothee information based on User-Agent";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Songmu/p5-Plack-Middleware-Woothee";
+    };
+  };
+
   PlackMiddlewareXFrameOptionsAll = buildPerlModule {
     pname = "Plack-Middleware-XFrameOptions-All";
     version = "0.2";
@@ -27274,6 +27290,21 @@ let
     meta = {
       description = "Quote argument lists for Win32";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  Woothee = buildPerlModule {
+    pname = "Woothee";
+    version = "v1.10.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TA/TAGOMORIS/Woothee-v1.10.0.tar.gz";
+      sha256 = "060pqm2ci888ni1ahf5xk5l9fhjs7x11ggyid2jfkvg6mp0mnwka";
+    };
+    buildInputs = [ FileFindRule ModuleBuildTiny PathClass YAML ];
+    meta = {
+      description = "multi-language user-agent strings parsers (perl implementation)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/woothee/woothee-perl";
     };
   };
 
