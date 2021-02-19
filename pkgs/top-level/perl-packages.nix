@@ -10113,6 +10113,19 @@ let
     };
   };
 
+  HTMLDOM = buildPerlPackage {
+    pname = "HTML-DOM";
+    version = "0.058";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SP/SPROUT/HTML-DOM-0.058.tar.gz";
+      sha256 = "0xb3b14s9zkka70nqw7cl7r604cyravg80jdpmb8vy2xhc9yghgf";
+    };
+    propagatedBuildInputs = [ CSSDOM HTMLEncoding ];
+    meta = {
+      description = "A Perl implementation of the HTML Document Object Model";
+    };
+  };
+
   HTMLElementExtended = buildPerlPackage {
     pname = "HTML-Element-Extended";
     version = "1.18";
@@ -10121,6 +10134,20 @@ let
       sha256 = "f3ef1af108f27fef15ebec66479f251ce08aa49bd00b0462c9c80c86b4b6b32b";
     };
     propagatedBuildInputs = [ HTMLTree ];
+  };
+
+  HTMLEncoding = buildPerlPackage {
+    pname = "HTML-Encoding";
+    version = "0.61";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BJ/BJOERN/HTML-Encoding-0.61.tar.gz";
+      sha256 = "0s0s80gxksi4dfbmrisp3ssjjw3zlgd2ivgxrm0vwld1d3w83280";
+    };
+    propagatedBuildInputs = [ HTMLParser ];
+    meta = {
+      description = "Determine the encoding of HTML/XML/XHTML documents";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   HTMLEscape = buildPerlModule {
@@ -21526,6 +21553,21 @@ let
     meta = {
       description = "serve static templates with Plack";
       license = with lib.licenses; [ mit ];
+    };
+  };
+
+  PlackMiddlewareiPhone = buildPerlModule {
+    pname = "Plack-Middleware-iPhone";
+    version = "1.102060";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PD/PDONELAN/Plack-Middleware-iPhone-1.102060.tar.gz";
+      sha256 = "1g9lrbw9bd8xgiycfx2zjz11sq6806jhjfw443vwfva4zk0prxl7";
+    };
+    propagatedBuildInputs = [ FileSlurp HTMLDOM Plack UNIVERSALrequire ];
+    buildInputs = [ HTMLTidy ];
+    meta = {
+      description = "Make your html more iPhone friendly";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
