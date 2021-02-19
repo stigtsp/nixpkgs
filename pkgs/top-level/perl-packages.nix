@@ -2143,6 +2143,21 @@ let
     };
   };
 
+  CarpREPL = buildPerlPackage {
+    pname = "Carp-REPL";
+    version = "0.18";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Carp-REPL-0.18.tar.gz";
+      sha256 = "19yi2zxm4mvc4j06m7m237scpa360yzclf88qr43izfkpm7fzbvq";
+    };
+    propagatedBuildInputs = [ DataDumpStreamer DevelREPL DevelStackTraceWithLexicals LexicalPersistence ];
+    buildInputs = [ TestExpect ];
+    meta = {
+      description = "read-eval-print-loop on die and/or warn";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Carton = buildPerlPackage {
     pname = "Carton";
     version = "1.0.34";
@@ -6602,6 +6617,20 @@ let
     };
   };
 
+  DevelLexAlias = buildPerlPackage {
+    pname = "Devel-LexAlias";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RC/RCLAMP/Devel-LexAlias-0.05.tar.gz";
+      sha256 = "0wpfpjqlrncslnmxa37494sfdy0901510kj2ds2k6q167vadj2jy";
+    };
+    propagatedBuildInputs = [ DevelCaller ];
+    meta = {
+      description = "alias lexical variables";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DevelPatchPerl = buildPerlPackage {
     pname = "Devel-PatchPerl";
     version = "2.08";
@@ -6614,6 +6643,22 @@ let
       homepage = "https://github.com/bingos/devel-patchperl";
       description = "Patch perl source a la Devel::PPPort's buildperl.pl";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  DevelREPL = buildPerlPackage {
+    pname = "Devel-REPL";
+    version = "1.003028";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Devel-REPL-1.003028.tar.gz";
+      sha256 = "1ngl4pkw46f5vl7k74kaj1zb6ap21r7m13k5dg1h202581wxwjhs";
+    };
+    propagatedBuildInputs = [ FileHomeDir MooseXGetopt MooseXObjectPluggable TaskWeaken ];
+    buildInputs = [ TestFatal ];
+    meta = {
+      description = "A modern perl interactive shell";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Devel-REPL";
     };
   };
 
@@ -13217,6 +13262,21 @@ let
     };
   };
 
+  LexicalPersistence = buildPerlPackage {
+    pname = "Lexical-Persistence";
+    version = "1.023";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RC/RCAPUTO/Lexical-Persistence-1.023.tar.gz";
+      sha256 = "0i39wf55wzvz1iisl66csxdrz9m3wzcl4w4zxafcm19qfi5gmlll";
+    };
+    propagatedBuildInputs = [ DevelLexAlias ];
+    meta = {
+      description = "Persistent lexical variable values for arbitrary calls";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Lexical-Persistence/";
+    };
+  };
+
   LexicalSealRequireHints = buildPerlModule {
     pname = "Lexical-SealRequireHints";
     version = "0.011";
@@ -17061,6 +17121,22 @@ let
     meta = {
       description = "Easy subclassing of non-Moose classes";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  MooseXObjectPluggable = buildPerlModule {
+    pname = "MooseX-Object-Pluggable";
+    version = "0.0014";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/MooseX-Object-Pluggable-0.0014.tar.gz";
+      sha256 = "1q347v68dy6k6rpz60w97bxm7yk9ivfcgq332h8w4n9zx2xprgzk";
+    };
+    propagatedBuildInputs = [ ModulePluggable Moose namespaceautoclean ];
+    buildInputs = [ ModuleBuildTiny TestFatal ];
+    meta = {
+      description = "Make your classes pluggable";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Object-Pluggable";
     };
   };
 
@@ -24016,6 +24092,21 @@ let
     propagatedBuildInputs = [ Plack RDFFlow ];
     meta = {
       description = "Serve RDF as Linked Data for RDF::Flow";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareREPL = buildPerlPackage {
+    pname = "Plack-Middleware-REPL";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Middleware-REPL-0.01.tar.gz";
+      sha256 = "17qjaqj8y230sx3mk9yhfapqyqi1sp2x9s142zzk4cm3zip1vfcv";
+    };
+    propagatedBuildInputs = [ CarpREPL Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "REPL when your application throws errors or warnings";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
