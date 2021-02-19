@@ -18670,6 +18670,22 @@ let
     };
   };
 
+  PlackMiddlewareDebugLogging = buildPerlPackage {
+    pname = "Plack-Middleware-DebugLogging";
+    version = "0.001005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MATTP/Plack-Middleware-DebugLogging-0.001005.tar.gz";
+      sha256 = "13vpp7ci6fxkbw2i367pdiqz61z1snzghx67prj62jhr9zz4yv0r";
+    };
+    propagatedBuildInputs = [ DataDumperConcise DataSerializer ModuleRuntime Plack TermSizeAny TextSimpleTable ];
+    buildInputs = [ TestLongString ];
+    meta = {
+      description = "Catalyst style console debugging for plack apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/mattp-/Plack-Middleware-DebugLogging";
+    };
+  };
+
   PlackMiddlewareDebugProfilerNYTProf = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Profiler-NYTProf";
     version = "0.06";
