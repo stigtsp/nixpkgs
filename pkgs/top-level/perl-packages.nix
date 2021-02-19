@@ -22594,6 +22594,20 @@ let
     };
   };
 
+  PlackMiddlewareDiePretty = buildPerlPackage {
+    pname = "Plack-Middleware-DiePretty";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARCANEZ/Plack-Middleware-DiePretty-0.001.tar.gz";
+      sha256 = "03b8qahgfidma5q670jdgxnj84xsjppansx4w0aq9mivpca92fs6";
+    };
+    propagatedBuildInputs = [ PathClass Plack TemplateToolkit ];
+    meta = {
+      description = "Show a 500 error page if you die";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDirIndex = buildPerlPackage {
     pname = "Plack-Middleware-DirIndex";
     version = "1.00";
