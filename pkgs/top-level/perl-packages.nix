@@ -414,6 +414,21 @@ let
     };
   };
 
+  AnyEventConnector = buildPerlModule {
+    pname = "AnyEvent-Connector";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOSHIOITO/AnyEvent-Connector-0.03.tar.gz";
+      sha256 = "18bark415mrzxsf5mx08zmk4w31w9x2qpgk3q1crmc3lvaf1f5si";
+    };
+    propagatedBuildInputs = [ AnyEvent URI ];
+    buildInputs = [ ModuleBuildPrereqsFromCPANfile TestTCP ];
+    meta = {
+      description = "tcp_connect with transparent proxy handling";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyEventFCGI = buildPerlPackage {
     pname = "AnyEvent-FCGI";
     version = "0.04";
@@ -542,6 +557,36 @@ let
     propagatedBuildInputs = [ AnyEvent ];
     meta = {
       description = "Event based SCGI server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  AnyEventWebSocketClient = buildPerlPackage {
+    pname = "AnyEvent-WebSocket-Client";
+    version = "0.53";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/AnyEvent-WebSocket-Client-0.53.tar.gz";
+      sha256 = "0yc00hfvrgww6r1ni4bp7l1kyph722cmm7rqv34q906a4mynrpg7";
+    };
+    propagatedBuildInputs = [ AnyEventConnector Moo PerlXMaybe ProtocolWebSocket URIws ];
+    buildInputs = [ Test2Suite ];
+    meta = {
+      description = "WebSocket client for AnyEvent";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  AnyEventWebSocketServer = buildPerlModule {
+    pname = "AnyEvent-WebSocket-Server";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOSHIOITO/AnyEvent-WebSocket-Server-0.10.tar.gz";
+      sha256 = "0lj07w3f7fncnd6qngwnw7hz72hfj3sdwfcdpk057j9zp60lpdx9";
+    };
+    propagatedBuildInputs = [ AnyEventWebSocketClient TryTiny ];
+    buildInputs = [ ModuleBuildPrereqsFromCPANfile TestMemoryCycle TestRequires ];
+    meta = {
+      description = "WebSocket server for AnyEvent";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -15429,6 +15474,20 @@ let
     };
   };
 
+  ModuleBuildPrereqsFromCPANfile = buildPerlModule {
+    pname = "Module-Build-Prereqs-FromCPANfile";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOSHIOITO/Module-Build-Prereqs-FromCPANfile-0.02.tar.gz";
+      sha256 = "0acy10z9ihs5hjw4dq60zfw2qhsxijvvzg1nlvw4pq58prkpilcl";
+    };
+    propagatedBuildInputs = [ ModuleCPANfile ];
+    meta = {
+      description = "construct prereq parameters of Module::Build from cpanfile";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ModuleBuildTiny = buildPerlModule {
     pname = "Module-Build-Tiny";
     version = "0.039";
@@ -20686,6 +20745,21 @@ let
     propagatedBuildInputs = [ CGICompile CGIEmulatePSGI DBDmysql FileShare ModuleBuildPluggableCPANfile PlackAppMCCS ];
     meta = {
       description = "WebMySQL web application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppWebSocket = buildPerlModule {
+    pname = "Plack-App-WebSocket";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOSHIOITO/Plack-App-WebSocket-0.08.tar.gz";
+      sha256 = "16wndnqankamca7nmgw9phyrpzpwafhx1y6dww0fw80bx6fqc0qp";
+    };
+    propagatedBuildInputs = [ AnyEventWebSocketServer DevelGlobalDestruction Plack ];
+    buildInputs = [ ModuleBuildPrereqsFromCPANfile TestRequires TestTCP ];
+    meta = {
+      description = "WebSocket server as a PSGI application";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
