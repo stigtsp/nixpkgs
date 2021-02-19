@@ -17122,6 +17122,20 @@ let
      };
   };
 
+  PlackMiddlewareInflater = buildPerlPackage {
+    pname = "Plack-Middleware-Inflater";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/W/WE/WEBORAMA/Plack-Middleware-Inflater-0.001.tar.gz";
+      sha256 = "0yzgm13lmixps8gp6pjbx12ykhzq5xsiq7fg6xg57s9jmmrx4q86";
+    };
+    propagatedBuildInputs = [ IOStringy Plack ];
+    meta = {
+      description = "Inflate gzipped PSGI requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogContextual = buildPerlPackage {
     pname = "Plack-Middleware-Log-Contextual";
     version = "0.01";
