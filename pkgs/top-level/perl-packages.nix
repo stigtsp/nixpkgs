@@ -1557,6 +1557,35 @@ let
     };
   };
 
+  CacheLRU = buildPerlPackage {
+    pname = "Cache-LRU";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZUHO/Cache-LRU-0.04.tar.gz";
+      sha256 = "1i5xdad4i9im3bhkqii0pwq16zzpbcgw704aaqar7n6yclixcf0s";
+    };
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "a simple, fast implementation of LRU cache in pure perl";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  CacheLRUWithExpires = buildPerlModule {
+    pname = "Cache-LRU-WithExpires";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/X/XA/XAICRON/Cache-LRU-WithExpires-0.03.tar.gz";
+      sha256 = "0ls9bmz81xjypcx7jirkc893kgca84klzk8idjwkhqlaypjwaid6";
+    };
+    propagatedBuildInputs = [ CacheLRU ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "can set an expiration for the Cache::LRU";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   CacheMemcached = buildPerlPackage {
     pname = "Cache-Memcached";
     version = "1.30";
@@ -16946,6 +16975,21 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/plack/Plack-Middleware-Session";
      };
+  };
+
+  PlackMiddlewareStaticOpenFileCache = buildPerlModule {
+    pname = "Plack-Middleware-Static-OpenFileCache";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-Static-OpenFileCache-0.02.tar.gz";
+      sha256 = "1wr0gh3bx1lk0jm1m1scp7l46apkasvdkada0100vaa91c3mpkhz";
+    };
+    propagatedBuildInputs = [ CacheLRUWithExpires Plack ];
+    meta = {
+      description = "Plack::Middleware::Static with open file cache";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-Middleware-Static-OpenFileCache";
+    };
   };
 
   PlackTestExternalServer = buildPerlPackage {
