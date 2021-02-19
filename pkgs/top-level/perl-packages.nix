@@ -3176,6 +3176,22 @@ let
     buildInputs = [ TestRequires ];
   };
 
+  ClassUtils = buildPerlPackage {
+    pname = "Class-Utils";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Class-Utils-0.08.tar.gz";
+      sha256 = "1na5jha5fq1895q6c2391k0ca9iqcgs7ja324hjsbf6ba9jnidwa";
+    };
+    propagatedBuildInputs = [ ErrorPure ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Class utilities";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/tupinek/Class-Utils";
+    };
+  };
+
   ClassVirtual = buildPerlPackage {
     pname = "Class-Virtual";
     version = "0.08";
@@ -7467,6 +7483,38 @@ let
     };
   };
 
+  ErrorPure = buildPerlPackage {
+    pname = "Error-Pure";
+    version = "0.26";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Error-Pure-0.26.tar.gz";
+      sha256 = "1jp0bm0jwkh5l4jfli5klrbhcqymiajzb6vw05nz13damwp5s529";
+    };
+    propagatedBuildInputs = [ ErrorPureOutputText ListMoreUtils ];
+    buildInputs = [ IOCaptureOutput TestNoWarnings ];
+    meta = {
+      description = "Perl module for structured errors";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Error-Pure";
+    };
+  };
+
+  ErrorPureOutputText = buildPerlPackage {
+    pname = "Error-Pure-Output-Text";
+    version = "0.23";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Error-Pure-Output-Text-0.23.tar.gz";
+      sha256 = "0p6hs2p2f7cm068gyfc4j04mrjfc06y5d0sicwalw8sfm100i3k5";
+    };
+    propagatedBuildInputs = [ Readonly ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Output text subroutines for Error::Pure";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/tupinek/Error-Pure-Output-Text";
+    };
+  };
+
   EV = buildPerlPackage {
     pname = "EV";
     version = "4.33";
@@ -8324,6 +8372,22 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/P/PE/PETDANCE/File-Next-1.18.tar.gz";
       sha256 = "1vy2dqpc1nbjrnga08xr2hcxxfzifc5s2lfam5lf3djya0wwn07r";
+    };
+  };
+
+  FileObject = buildPerlPackage {
+    pname = "File-Object";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/File-Object-0.11.tar.gz";
+      sha256 = "0dr527y8xi1a1qdc45g0l66q2mr3yqy0lswy6rfxlcngbdsl9q1l";
+    };
+    propagatedBuildInputs = [ ClassUtils ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Object system for filesystem paths";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/tupinek/File-Object";
     };
   };
 
@@ -10517,6 +10581,22 @@ let
     meta = {
       description = "Alternative but compatible interface to modules that export symbols";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  Indent = buildPerlPackage {
+    pname = "Indent";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Indent-0.07.tar.gz";
+      sha256 = "01nsv2v47yp3g3xlhmb93aaxqjasv0maahdxk6kp2zhi3570z7i1";
+    };
+    propagatedBuildInputs = [ ClassUtils TextANSIUtil ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Classes for indent handling";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Indent";
     };
   };
 
@@ -17302,6 +17382,22 @@ let
     };
   };
 
+  PlackAppDirectoryPYX = buildPerlPackage {
+    pname = "Plack-App-Directory-PYX";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Plack-App-Directory-PYX-0.04.tar.gz";
+      sha256 = "0p0pl6ckjsc7ywrnv6dh47kxhshsws5s8953lqza74y7w1fkhgy1";
+    };
+    propagatedBuildInputs = [ PYXSGMLTags Plack UnicodeUTF8 ];
+    buildInputs = [ FileObject TagsOutputIndent TestNoWarnings ];
+    meta = {
+      description = "Plack PYX directory application";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Plack-App-Directory-PYX";
+    };
+  };
+
   PlackAppDummyBox = buildPerlModule {
     pname = "Plack-App-DummyBox";
     version = "0.041";
@@ -19048,6 +19144,54 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/PSGI-1.102.tar.gz";
       sha256 = "0iqzxs8fv63510knm3zr3jr3ky4x7diwd7y24mlshzci81kl8v55";
+    };
+  };
+
+  PYX = buildPerlPackage {
+    pname = "PYX";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/PYX-0.07.tar.gz";
+      sha256 = "13bn9rzsszm5107x2zwq4vi1f97sd0bj7n8mrqyqjhz95smh41yg";
+    };
+    propagatedBuildInputs = [ ClassUtils PYXUtils ];
+    buildInputs = [ FileObject TestNoWarnings TestOutput ];
+    meta = {
+      description = "A perl module for PYX handling";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/PYX";
+    };
+  };
+
+  PYXSGMLTags = buildPerlPackage {
+    pname = "PYX-SGML-Tags";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/PYX-SGML-Tags-0.06.tar.gz";
+      sha256 = "0nsr6jhq2j79jhwyk38446br37g7v4cx63s8n2czyl8fwl7x1h6r";
+    };
+    propagatedBuildInputs = [ PYX Tags ];
+    buildInputs = [ FileObject TagsOutputIndent TestNoWarnings UnicodeUTF8 ];
+    meta = {
+      description = "Processing PYX data or file and write as SGML via Tags";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/PYX-SGML-Tags";
+    };
+  };
+
+  PYXUtils = buildPerlPackage {
+    pname = "PYX-Utils";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/PYX-Utils-0.07.tar.gz";
+      sha256 = "04218lnkpj6wfw16j6qj1l9l99cqixf0wkw5srjsvl3wc8mih6yx";
+    };
+    propagatedBuildInputs = [ HTMLParser Readonly ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "A perl module for PYX common utilities";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/PYX-Utils";
     };
   };
 
@@ -21299,6 +21443,38 @@ let
     meta = {
       description = "Stream TAP from pgTAP test scripts";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  Tags = buildPerlPackage {
+    pname = "Tags";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Tags-0.10.tar.gz";
+      sha256 = "1069rmis1zv8250jawqss88da4q4h7pkywj7sqq94wgmfy4z8j4l";
+    };
+    propagatedBuildInputs = [ ClassUtils HTMLParser ];
+    buildInputs = [ FileObject IOStringy TestNoWarnings TestWarn ];
+    meta = {
+      description = "Structure oriented SGML/XML/HTML/etc. elements manipulation";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Tags";
+    };
+  };
+
+  TagsOutputIndent = buildPerlPackage {
+    pname = "Tags-Output-Indent";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Tags-Output-Indent-0.07.tar.gz";
+      sha256 = "0yq6ssmc8hl688mxa87izkwd48wdp1kjhjgf50n0f6rrnf5dpr12";
+    };
+    propagatedBuildInputs = [ Indent Tags ];
+    buildInputs = [ FileObject IOStringy TestNoWarnings TestWarn ];
+    meta = {
+      description = "Indented output for Tags";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Tags-Output-Indent";
     };
   };
 
@@ -24023,6 +24199,20 @@ let
     meta = {
       homepage = "https://github.com/2shortplanks/Test-utf8";
       description = "Handy utf8 tests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextANSIUtil = buildPerlPackage {
+    pname = "Text-ANSI-Util";
+    version = "0.230";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PE/PERLANCAR/Text-ANSI-Util-0.230.tar.gz";
+      sha256 = "0hjlmmi2q0qip6na7hw6l69g9a33508vb9lzcqz3b9mr1jrxdsrn";
+    };
+    buildInputs = [ DataDump ];
+    meta = {
+      description = "Routines for text containing ANSI color codes";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
