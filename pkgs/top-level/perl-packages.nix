@@ -17037,6 +17037,22 @@ let
     };
   };
 
+  PlackMiddlewareServerTiming = buildPerlModule {
+    pname = "Plack-Middleware-ServerTiming";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AK/AKIYM/Plack-Middleware-ServerTiming-0.04.tar.gz";
+      sha256 = "0na34gv05j0kifd2sixn659hy2z4v7f35fv82bj2k1v634xkbfnw";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Performance metrics in Server-Timing header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/akiym/Plack-Middleware-ServerTiming";
+    };
+  };
+
   PlackMiddlewareSession = buildPerlModule {
      pname = "Plack-Middleware-Session";
      version = "0.33";
