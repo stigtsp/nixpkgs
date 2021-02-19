@@ -20062,6 +20062,21 @@ let
     };
   };
 
+  PlackSessionStoreTransparent = buildPerlModule {
+    pname = "Plack-Session-Store-Transparent";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IL/ILLO/Plack-Session-Store-Transparent-0.03.tar.gz";
+      sha256 = "1sd7xv49m8rh04giclzkkj85n4bswvg1imvj2ramhmc7ys3dz3pa";
+    };
+    buildInputs = [ PlackMiddlewareSession TestException ];
+    meta = {
+      description = "Session store container which provides transparent access";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/i110/p5-Plack-Session-Store-Transparent";
+    };
+  };
+
   PlackTestAgent = buildPerlPackage {
     pname = "Plack-Test-Agent";
     version = "1.5";
