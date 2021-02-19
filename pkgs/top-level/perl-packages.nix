@@ -18794,6 +18794,20 @@ let
     };
   };
 
+  PlackAppWebMySQL = buildPerlModule {
+    pname = "Plack-App-WebMySQL";
+    version = "3.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DU/DUMB/Plack-App-WebMySQL/Plack-App-WebMySQL-3.03.tar.gz";
+      sha256 = "1y26ms0mqzx6i3vgkpl1wgx5fgnwrnzda12w3xkn9m7vrq0zjynl";
+    };
+    propagatedBuildInputs = [ CGICompile CGIEmulatePSGI DBDmysql FileShare ModuleBuildPluggableCPANfile PlackAppMCCS ];
+    meta = {
+      description = "WebMySQL web application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppunAPI = buildPerlPackage {
     pname = "Plack-App-unAPI";
     version = "0.61";
