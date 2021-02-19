@@ -6715,6 +6715,20 @@ let
     };
   };
 
+  DevelStackTraceExtract = buildPerlPackage {
+    pname = "Devel-StackTrace-Extract";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAXMIND/Devel-StackTrace-Extract-1.000000.tar.gz";
+      sha256 = "1hnxlg8ylm4p1baila55l1q103j48n8vmb0slncicaa8sjnc6rk3";
+    };
+    propagatedBuildInputs = [ DevelStackTrace ];
+    meta = {
+      description = "Extract a stack trace from an exception object";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DevelStrictMode = buildPerlPackage {
     pname = "Devel-StrictMode";
     version = "0.003";
@@ -20072,6 +20086,21 @@ let
       description = "Cuts off language tags out of the request's PATH_INFO to simplify internationalization route handlers";
       license = with lib.licenses; [ artistic2 ];
       homepage = "http://p3rl.org/Plack::Middleware::ExtractUriLanguage";
+    };
+  };
+
+  PlackMiddlewareExtractedStackTrace = buildPerlPackage {
+    pname = "Plack-Middleware-ExtractedStackTrace";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAXMIND/Plack-Middleware-ExtractedStackTrace-1.000000.tar.gz";
+      sha256 = "12s3n3vbvq41vlylk5dkf4hrvcik7fpj78swy52k0cjm7hs7kr9v";
+    };
+    propagatedBuildInputs = [ DevelStackTraceExtract Plack ];
+    buildInputs = [ ExceptionClass ];
+    meta = {
+      description = "Displays stack trace from your exception objects when your app dies";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
