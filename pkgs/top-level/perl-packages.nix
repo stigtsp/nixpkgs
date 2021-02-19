@@ -17927,6 +17927,20 @@ let
     };
   };
 
+  PlackMiddlewareFileSass = buildPerlPackage {
+    pname = "Plack-Middleware-File-Sass";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Middleware-File-Sass-0.03.tar.gz";
+      sha256 = "1dndnbbssqgyr3vq4y6mq4c7n9gfhxa935305qpx16874dxi1i5a";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Sass and SCSS support for all Plack frameworks";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareFirePHP = buildPerlPackage {
     pname = "Plack-Middleware-FirePHP";
     version = "0.01";
