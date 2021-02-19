@@ -3989,6 +3989,20 @@ let
     };
   };
 
+  CSSCompressor = buildPerlPackage {
+    pname = "CSS-Compressor";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JA/JANUS/CSS-Compressor-0.05.tar.gz";
+      sha256 = "0b2p5q15hhgwcw9gl6jvxdfpfwqlsjkp2drlw6k1r243lj0rib0s";
+    };
+    buildInputs = [ TestDifferences ];
+    meta = {
+      description = "Perl extension for CSS minification";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   CryptBlowfish = buildPerlPackage {
     pname = "Crypt-Blowfish";
     version = "2.14";
@@ -17271,6 +17285,19 @@ let
     meta = {
       description = "Enables CSS Refreshing without\nReloading Whole Page";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareCSSCompressor = buildPerlPackage {
+    pname = "Plack-Middleware-CSS-Compressor";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JA/JANUS/Plack-Middleware-CSS-Compressor-0.01.tar.gz";
+      sha256 = "1vr88y8scp2icdcwkwqwbhk4ckyvifl7f6v9b0dvavgh64mc26qk";
+    };
+    propagatedBuildInputs = [ CSSCompressor Plack ];
+    meta = {
+      description = "Plack middleware to compress stylesheets";
     };
   };
 
