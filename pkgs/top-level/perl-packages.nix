@@ -19454,6 +19454,21 @@ let
     };
   };
 
+  PlackMiddlewareLogFilter = buildPerlModule {
+    pname = "Plack-Middleware-LogFilter";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/U/UC/UCHIKO/Plack-Middleware-LogFilter-0.01.tar.gz";
+      sha256 = "0gal1rm0ic356dsdy5xdi72rlynqpz75vncxfg9j72wi2ilmyl93";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "modify log output";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/memememomo/Plack-Middleware-LogFilter";
+    };
+  };
+
   PlackMiddlewareLogHarakiri = buildPerlPackage {
     pname = "Plack-Middleware-LogHarakiri";
     version = "0.0301";
