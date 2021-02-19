@@ -19682,6 +19682,20 @@ let
     };
   };
 
+  PlackResponseHelper = buildPerlPackage {
+    pname = "Plack-ResponseHelper";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KO/KOMAROV/Plack-ResponseHelper-0.05.tar.gz";
+      sha256 = "0s6rlvn7aqavgll0np5pzs1yxvrsmsv3adarn25w5hk2xfh26p9a";
+    };
+    propagatedBuildInputs = [ JSON Plack ];
+    buildInputs = [ TestDeep TestException ];
+    meta = {
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackServerAnyEvent = buildPerlPackage {
     pname = "Plack-Server-AnyEvent";
     version = "0.04";
