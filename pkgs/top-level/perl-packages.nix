@@ -1466,6 +1466,22 @@ let
     };
   };
 
+  BSON = buildPerlPackage {
+    pname = "BSON";
+    version = "v1.12.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MO/MONGODB/BSON-v1.12.2.tar.gz";
+      sha256 = "1nx6vp7xachj74drn417r98330i6292jcvdbk4dp84236l62qqgl";
+    };
+    propagatedBuildInputs = [ CryptURandom Moo TieIxHash boolean namespaceclean ];
+    buildInputs = [ JSONMaybeXS PathTiny TestDeep TestFatal ];
+    meta = {
+      description = "BSON serialization and deserialization (EOL)";
+      license = with lib.licenses; [ asl20 ];
+      homepage = "https://github.com/mongodb-labs/mongo-perl-bson";
+    };
+  };
+
   BUtils = buildPerlPackage {
      pname = "B-Utils";
      version = "0.27";
@@ -14293,6 +14309,22 @@ let
     };
   };
 
+  MongoDB = buildPerlPackage {
+    pname = "MongoDB";
+    version = "v2.2.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MO/MONGODB/MongoDB-v2.2.2.tar.gz";
+      sha256 = "13r6qdbk5yazp1ynaa7jjvj3j915icg6cwyy6nfg755c5pwka690";
+    };
+    propagatedBuildInputs = [ AuthenSCRAM BSON NetDNS SafeIsa UUIDURandom ];
+    buildInputs = [ JSONMaybeXS PathTiny TestDeep TestFatal ];
+    meta = {
+      description = "Official MongoDB Driver for Perl (EOL)";
+      license = with lib.licenses; [ asl20 ];
+      homepage = "https://github.com/mongodb-labs/mongo-perl-driver";
+    };
+  };
+
   MojoIOLoopForkCall = buildPerlModule {
     pname = "Mojo-IOLoop-ForkCall";
     version = "0.20";
@@ -19130,6 +19162,22 @@ let
     meta = {
       description = "Echo store for Plack::Middleware::Session";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackSessionStoreMongoDB = buildPerlPackage {
+    pname = "Plack-Session-Store-MongoDB";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/ID/IDOPEREL/Plack-Session-Store-MongoDB-1.000000.tar.gz";
+      sha256 = "10xkhnx0iw50h43x7751nhg9a10fbandfwljnrjzqpqqsr0dcxhx";
+    };
+    propagatedBuildInputs = [ MongoDB PlackMiddlewareSession ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "MongoDB based session store for Plack apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-Session-Store-MongoDB";
     };
   };
 
@@ -25318,6 +25366,21 @@ let
     meta = {
       description = "Pure Perl UUID Support With Functional Interface";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  UUIDURandom = buildPerlPackage {
+    pname = "UUID-URandom";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAGOLDEN/UUID-URandom-0.001.tar.gz";
+      sha256 = "0ilgbzsvmmp9zbd9n8rpm11kf44zr6899672i6s4yq5r2cdn64rz";
+    };
+    propagatedBuildInputs = [ CryptURandom ];
+    meta = {
+      description = "UUIDs based on /dev/urandom or the Windows Crypto API";
+      license = with lib.licenses; [ asl20 ];
+      homepage = "https://github.com/dagolden/UUID-URandom";
     };
   };
 
