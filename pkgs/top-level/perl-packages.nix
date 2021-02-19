@@ -18147,6 +18147,20 @@ let
     };
   };
 
+  PlackMiddlewareNoDeflate = buildPerlModule {
+    pname = "Plack-Middleware-NoDeflate";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OA/OALDERS/Plack-Middleware-NoDeflate-0.01.tar.gz";
+      sha256 = "0770sdw8vamk3kycdcfldgq7dmbs780j8zxqlbcvs9449zs5zwbq";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Prevent content from being deflated";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePostErrorToSlack = buildPerlModule {
     pname = "Plack-Middleware-PostErrorToSlack";
     version = "0.01";
