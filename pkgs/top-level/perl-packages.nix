@@ -21608,6 +21608,21 @@ let
     };
   };
 
+  PlackMiddlewareTimeOverHTTP = buildPerlPackage {
+    pname = "Plack-Middleware-TimeOverHTTP";
+    version = "v0.1.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-TimeOverHTTP-v0.1.2.tar.gz";
+      sha256 = "19byld20q2vaa7nfg2q58df35vvmv5s75xv9kvapykqrhwnywqpy";
+    };
+    propagatedBuildInputs = [ Plack TimeHiRes ];
+    buildInputs = [ PathTiny TestMost ];
+    meta = {
+      description = "time over HTTP middleware";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareTimedLogger = buildPerlPackage {
     pname = "Plack-Middleware-Timed-Logger";
     version = "0.0.5";
@@ -28009,6 +28024,20 @@ let
     meta = {
       description = "Parse string that represents time duration";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TimeHiRes = buildPerlPackage {
+    pname = "Time-HiRes";
+    version = "1.9764";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AT/ATOOMIC/Time-HiRes-1.9764.tar.gz";
+      sha256 = "1cfp078spid9z5g7xiswkpkjbkh4mkjvarz25wgwvdxzhxavwhcq";
+    };
+    meta = {
+      description = "High resolution alarm, sleep, gettimeofday, interval timers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Perl/perl5";
     };
   };
 
