@@ -552,6 +552,16 @@ let
     };
   };
 
+  ApacheConfigParser = buildPerlPackage {
+    pname = "Apache-ConfigParser";
+    version = "1.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BZ/BZAJAC/Apache-ConfigParser-1.02.tar.gz";
+      sha256 = "0512b67lx2l53dcglcsmpbjmr94p2vdkx9cv1d9f29ysxzm33bv3";
+    };
+    propagatedBuildInputs = [ FileFnMatch TreeDAGNode ];
+  };
+
   ApacheLogFormatCompiler = buildPerlModule {
     pname = "Apache-LogFormat-Compiler";
     version = "0.36";
@@ -1401,6 +1411,21 @@ let
     meta = {
       description = "Wrap OP check callbacks";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  BHooksOPPPAddr = buildPerlPackage {
+    pname = "B-Hooks-OP-PPAddr";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/B-Hooks-OP-PPAddr-0.06.tar.gz";
+      sha256 = "12qzs6wx35anlqrwhksm3pc3qwl5ww8qq5hvmksvq0rxg9ncvnz9";
+    };
+    buildInputs = [ ExtUtilsDepends ];
+    meta = {
+      description = "Hook into opcode execution";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/B-Hooks-OP-PPAddr";
     };
   };
 
@@ -17477,6 +17502,22 @@ let
      };
   };
 
+  ParseMethodSignatures = buildPerlPackage {
+    pname = "Parse-Method-Signatures";
+    version = "1.003019";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KE/KENTNL/Parse-Method-Signatures-1.003019.tar.gz";
+      sha256 = "0zclmr00rq5x8vwjxg3vvy7mqf8vkgq2g19gidals0yzipgpf68f";
+    };
+    propagatedBuildInputs = [ ListMoreUtils MooseXTraits MooseXTypesStructured PPI ];
+    buildInputs = [ TestDifferences TestException aliased ];
+    meta = {
+      description = "Perl6 like method signature parser";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/ashb/Parse-Method-Signatures/tree/master";
+    };
+  };
+
   ParsePlainConfig = buildPerlPackage {
     pname = "Parse-PlainConfig";
     version = "3.05";
@@ -18144,6 +18185,21 @@ let
     propagatedBuildInputs = [ CGIEmulatePSGI MooXHandlesVia Plack TypeTiny mod_perl2 ];
     meta = {
       description = "Wrapping mod_perl2 applications in Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppFakeApache1 = buildPerlPackage {
+    pname = "Plack-App-FakeApache1";
+    version = "0.0.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHISEL/Plack-App-FakeApache1-0.0.6.tar.gz";
+      sha256 = "0fj4j46qjlai7kmjfhkb5wcwrcqy5fxwhzjj2d23fia41d425wig";
+    };
+    propagatedBuildInputs = [ ApacheConfigParser DataDump Plack TryCatch ];
+    buildInputs = [ DataPrinter FindBinlibs PodCoverageTrustPod TestDeep TestException TestKwalitee TestNoTabs TestPod TestPodCoverage TestUseAllModules ];
+    meta = {
+      description = "Perl distro to aid in mod_perl1->PSGI migration";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -26989,6 +27045,21 @@ let
     };
     propagatedBuildInputs = [ TreeSimple ];
     buildInputs = [ TestException ];
+  };
+
+  TryCatch = buildPerlPackage {
+    pname = "TryCatch";
+    version = "1.003002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AS/ASH/TryCatch-1.003002.tar.gz";
+      sha256 = "16ys6q9n3ikl2ays9rvzvw4dkyliiz7pdmw90npkrn1mxlyyg25s";
+    };
+    propagatedBuildInputs = [ BHooksOPPPAddr DevelDeclare ParseMethodSignatures ScopeUpper VariableMagic ];
+    buildInputs = [ ExtUtilsDepends TestException ];
+    meta = {
+      description = "first class try catch semantics for Perl, without source filters";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   TryTiny = buildPerlPackage {
