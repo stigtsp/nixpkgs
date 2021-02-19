@@ -22055,6 +22055,21 @@ let
     };
   };
 
+  PlackMiddlewareETag = buildPerlPackage {
+    pname = "Plack-Middleware-ETag";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRANCKC/Plack-Middleware-ETag-0.05.tar.gz";
+      sha256 = "04xz2sysjm5azbl1d8a2w268nch5x6lbfwy48b7p2grw0y9bn9va";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Adds automatically an ETag header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/perldoc?Plack::Middleware::ETag";
+    };
+  };
+
   PlackMiddlewareEasyHooks = buildPerlPackage {
     pname = "Plack-Middleware-EasyHooks";
     version = "0.02";
