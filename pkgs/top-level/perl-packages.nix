@@ -23385,6 +23385,22 @@ let
     };
   };
 
+  PlackMiddlewareLogStderr = buildPerlModule {
+    pname = "Plack-Middleware-LogStderr";
+    version = "1.000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AM/AMALEK/Plack-Middleware-LogStderr-1.000.tar.gz";
+      sha256 = "125gn52dk2mclk3q552yad5bfmdhsgd52sncpsi5svrx0hnn6z16";
+    };
+    propagatedBuildInputs = [ CaptureTiny Plack ];
+    buildInputs = [ TestFatal ];
+    meta = {
+      description = "Everything printed to STDERR sent to psgix.logger or other logger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/amalek215/Plack-Middleware-LogStderr";
+    };
+  };
+
   PlackMiddlewareLogWarn = buildPerlPackage {
     pname = "Plack-Middleware-LogWarn";
     version = "0.001002";
