@@ -17255,6 +17255,21 @@ let
     };
   };
 
+  PlackAppProxyWebSocket = buildPerlPackage {
+    pname = "Plack-App-Proxy-WebSocket";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CC/CCM/Plack-App-Proxy-WebSocket-0.04.tar.gz";
+      sha256 = "07b1s3imfrv3m7cs5w6b3qqicz7j3khq8czdwizjlrskd9j7nl52";
+    };
+    propagatedBuildInputs = [ HTTPParserXS PlackAppProxy namespaceclean ];
+    meta = {
+      description = "proxy HTTP and WebSocket connections";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/chazmcgarvey/p5-Plack-App-Proxy-WebSocket";
+    };
+  };
+
   PlackAppServiceStatus = buildPerlModule {
     pname = "Plack-App-ServiceStatus";
     version = "0.904";
