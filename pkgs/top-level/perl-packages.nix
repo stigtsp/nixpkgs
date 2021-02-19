@@ -22188,6 +22188,20 @@ let
     };
   };
 
+  PlackMiddlewareFileWrap = buildPerlPackage {
+    pname = "Plack-Middleware-FileWrap";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FA/FAYLAND/Plack-Middleware-FileWrap-0.01.tar.gz";
+      sha256 = "1f9xdz0adccr9fzvmyhqsv8zzpdxd3lahlx3czqimgprgzcir8is";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Wrap file with headers/footers in Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareFirePHP = buildPerlPackage {
     pname = "Plack-Middleware-FirePHP";
     version = "0.01";
