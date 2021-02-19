@@ -21096,6 +21096,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugDBIProfile = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-DBIProfile";
+    version = "0.102";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TI/TIMB/Plack-Middleware-Debug-DBIProfile-0.102.tar.gz";
+      sha256 = "15mqy0c26qz75ym5s99n65xkwbpir4b5z8yii83g9db2g9ac01jj";
+    };
+    propagatedBuildInputs = [ DBI PlackMiddlewareDebug ];
+    meta = {
+      description = "DBI::Profile panel";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/timbunce/Plack--Middleware--Debug--DBIProfile/tree";
+    };
+  };
+
   PlackMiddlewareDebugDancerTemplateTimer = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Dancer-TemplateTimer";
     version = "0.001";
