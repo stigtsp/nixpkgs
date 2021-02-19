@@ -21433,6 +21433,21 @@ let
     };
   };
 
+  PlackMiddlewareThrottleLiteBackendMemcached = buildPerlPackage {
+    pname = "Plack-Middleware-Throttle-Lite-Backend-Memcached";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-Middleware-Throttle-Lite-Backend-Memcached-0.03.tar.gz";
+      sha256 = "0aag5aa0idcr0fbhc5y8yj37adyq26xrii1mg47kk95splvcvb5r";
+    };
+    propagatedBuildInputs = [ CacheMemcachedFast PlackMiddlewareThrottleLite ];
+    buildInputs = [ TestException TestPod ];
+    meta = {
+      description = "Memcache-driven storage backend for Throttle-Lite";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareThrottleLiteBackendRedis = buildPerlPackage {
     pname = "Plack-Middleware-Throttle-Lite-Backend-Redis";
     version = "0.04";
