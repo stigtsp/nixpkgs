@@ -17093,6 +17093,21 @@ let
     };
   };
 
+  PlackMiddlewareAuthBrowserID = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-BrowserID";
+    version = "0.0.7";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BO/BOLILA/Plack-Middleware-Auth-BrowserID-0.0.7.tar.gz";
+      sha256 = "09f06mvqwljvjvq1gd99x9a9qlj8gs9pnnq2h87vd3gc1rbjl77a";
+    };
+    propagatedBuildInputs = [ JSON LWPProtocolHttps PlackMiddlewareSession ];
+    buildInputs = [ TestCompile ];
+    meta = {
+      description = "Plack Middleware to integrate with Mozilla Persona (Auth by email)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAuthDigest = buildPerlModule {
      pname = "Plack-Middleware-Auth-Digest";
      version = "0.05";
