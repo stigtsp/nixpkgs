@@ -17374,6 +17374,21 @@ let
     };
   };
 
+  PlackMiddlewareProxyMap = buildPerlPackage {
+    pname = "Plack-Middleware-ProxyMap";
+    version = "0.20";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IN/INGY/Plack-Middleware-ProxyMap-0.20.tar.gz";
+      sha256 = "15s8ngd1jwr791bcjvd0na1vn90x2g88gqyx3y3kmdqih53sfdwf";
+    };
+    propagatedBuildInputs = [ PlackAppProxy ];
+    meta = {
+      description = "Proxy Various URLs to Various Remotes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/plack-middleware-proxymap-pm";
+    };
+  };
+
   PlackMiddlewareREST = buildPerlModule {
     pname = "Plack-Middleware-REST";
     version = "0.10";
