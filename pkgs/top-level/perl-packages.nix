@@ -20686,6 +20686,20 @@ let
     };
   };
 
+  PlackMiddlewareXslate = buildPerlPackage {
+    pname = "Plack-Middleware-Xslate";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Plack-Middleware-Xslate-0.03.tar.gz";
+      sha256 = "1n0clabdn1nyn0p84mf60ca6wd9c9ylb19bipczzcc97gz0w42sg";
+    };
+    propagatedBuildInputs = [ Plack TextXslate ];
+    meta = {
+      description = "serve static templates with Plack";
+      license = with lib.licenses; [ mit ];
+    };
+  };
+
   PlackRequestWithEncoding = buildPerlModule {
     pname = "Plack-Request-WithEncoding";
     version = "0.14";
@@ -26512,6 +26526,22 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ TestDifferences ];
+  };
+
+  TextXslate = buildPerlModule {
+    pname = "Text-Xslate";
+    version = "v3.5.8";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKAJI/Text-Xslate-v3.5.8.tar.gz";
+      sha256 = "0pg78x0v020398lx5agnpf9ykn8qhf2ixi1b1z8pqc00z9y4s9il";
+    };
+    propagatedBuildInputs = [ DataMessagePack Mouse ];
+    buildInputs = [ FileCopyRecursive ModuleBuildXSUtil TestRequires ];
+    meta = {
+      description = "Scalable template engine for Perl5";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/xslate/p5-Text-Xslate";
+    };
   };
 
   Throwable = buildPerlPackage {
