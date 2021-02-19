@@ -18657,6 +18657,19 @@ let
     };
   };
 
+  PlackMiddlewareDebugCatalystSession = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-CatalystSession";
+    version = "0.01004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TK/TKUYPER/Plack-Middleware-Debug-CatalystSession-0.01004.tar.gz";
+      sha256 = "0da196ddk70izkdqadvrzq9fnnrai0jws1ib0c65q8w2z0h0va6j";
+    };
+    propagatedBuildInputs = [ CatalystPluginSession PlackMiddlewareDebug ];
+    meta = {
+      description = "Debug panel to inspect the Catalyst Session";
+    };
+  };
+
   PlackMiddlewareDebugDancerTemplateTimer = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Dancer-TemplateTimer";
     version = "0.001";
