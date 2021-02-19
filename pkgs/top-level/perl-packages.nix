@@ -19687,6 +19687,22 @@ let
     };
   };
 
+  PlackMiddlewareMatomo = buildPerlModule {
+    pname = "Plack-Middleware-Matomo";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VP/VPEIL/Plack-Middleware-Matomo-0.11.tar.gz";
+      sha256 = "0301gz10p9wv7g7syb0lzqylp488wv9g45csgw434gvcrcswcw43";
+    };
+    propagatedBuildInputs = [ AnyEventHTTP LogAny NetSSLeay Twiggy ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "a middleware to track usage information with Matomo";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/vpeil/Plack-Middleware-Matomo";
+    };
+  };
+
   PlackMiddlewareMemento = buildPerlModule {
     pname = "Plack-Middleware-Memento";
     version = "0.0102";
