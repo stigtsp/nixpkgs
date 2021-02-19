@@ -19051,6 +19051,21 @@ let
     };
   };
 
+  PlackMiddlewareLogHarakiri = buildPerlPackage {
+    pname = "Plack-Middleware-LogHarakiri";
+    version = "0.0301";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-LogHarakiri-0.0301.tar.gz";
+      sha256 = "0mgl0ypyw3j104gaaflvanm5v1fl3j6wppk3z35wb5f7vdg3wqcq";
+    };
+    propagatedBuildInputs = [ Plack ProcessSizeLimitCore ];
+    buildInputs = [ CaptureTiny ];
+    meta = {
+      description = "log when a process is killed";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogMinimal = buildPerlPackage {
     pname = "Plack-Middleware-Log-Minimal";
     version = "0.06";
