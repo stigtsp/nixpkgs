@@ -20917,6 +20917,22 @@ let
     };
   };
 
+  PlackMiddlewareCached = buildPerlPackage {
+    pname = "Plack-Middleware-Cached";
+    version = "0.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Cached-0.15.tar.gz";
+      sha256 = "0d29xn73i4lqfllg71wcczccw252nrzn5c5wvi5p7pf7m7b6ghdc";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ Clone ];
+    meta = {
+      description = "Glues a cache to your PSGI application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-Cached";
+    };
+  };
+
   PlackMiddlewareCamelcadedb = buildPerlModule {
     pname = "Plack-Middleware-Camelcadedb";
     version = "0.03";
