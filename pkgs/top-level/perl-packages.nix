@@ -20267,6 +20267,22 @@ let
     };
   };
 
+  PlackMiddlewareRevisionPlate = buildPerlModule {
+    pname = "Plack-Middleware-RevisionPlate";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AS/ASTJ/Plack-Middleware-RevisionPlate-0.01.tar.gz";
+      sha256 = "0ylik95928jza8bwa2i2m3y63dkj23krgg5s291c041bysljjadw";
+    };
+    propagatedBuildInputs = [ FileSlurp Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Serves an endpoint returns application's C<REVISION>";
+      license = with lib.licenses; [ mit ];
+      homepage = "https://github.com/astj/p5-Plack-Middleware-RevisionPlate";
+    };
+  };
+
   PlackMiddlewareRewriteQuery = buildPerlPackage {
     pname = "Plack-Middleware-Rewrite-Query";
     version = "0.1.1";
