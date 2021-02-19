@@ -19694,6 +19694,19 @@ let
     };
   };
 
+  PlackMiddlewareDebugLog4perl = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Log4perl";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIKET/Plack-Middleware-Debug-Log4perl-0.04.tar.gz";
+      sha256 = "1w6a6m0sfsam9gl71zlchadr0sg47i8nali7rqcrrk5i5fn789bj";
+    };
+    propagatedBuildInputs = [ LogLog4perl PlackMiddlewareDebug ];
+    meta = {
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugLogging = buildPerlPackage {
     pname = "Plack-Middleware-DebugLogging";
     version = "0.001005";
