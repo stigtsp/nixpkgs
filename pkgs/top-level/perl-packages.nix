@@ -10847,6 +10847,20 @@ let
     };
   };
 
+  HealthCheck = buildPerlPackage {
+    pname = "HealthCheck";
+    version = "v1.7.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSG/HealthCheck-v1.7.0.tar.gz";
+      sha256 = "017gbp8lidhdd4fnba4s6w5z7pd2mmacky3s1brk6y3mdi47rdlv";
+    };
+    buildInputs = [ Test2Suite TestStrict ];
+    meta = {
+      description = "A health check for your code";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   HeapFibonacci = buildPerlPackage {
     pname = "Heap";
     version = "0.80";
@@ -22000,6 +22014,21 @@ let
      };
   };
 
+  PlackMiddlewareHealthCheck = buildPerlPackage {
+    pname = "Plack-Middleware-HealthCheck";
+    version = "v0.0.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSG/Plack-Middleware-HealthCheck-v0.0.5.tar.gz";
+      sha256 = "11jnbgl8f7bgnw92l18yavbf3pazmi0fkqm5apw47bva3jk2mnky";
+    };
+    propagatedBuildInputs = [ JSON Plack ];
+    buildInputs = [ HealthCheck TestException ];
+    meta = {
+      description = "A health check endpoint for your Plack app";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareIEnosniff = buildPerlModule {
     pname = "Plack-Middleware-IEnosniff";
     version = "0.02";
@@ -28990,6 +29019,20 @@ let
       description = "Check for spelling errors in POD files";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/genio/test-spelling";
+    };
+  };
+
+  TestStrict = buildPerlPackage {
+    pname = "Test-Strict";
+    version = "0.52";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MANWAR/Test-Strict-0.52.tar.gz";
+      sha256 = "1n56dkgr4spvfsba3ayhds9zslbqmlyp4s54d3mgb9ng37rd5nr7";
+    };
+    buildInputs = [ IOStringy ];
+    meta = {
+      description = "Check syntax, presence of use strict; and test coverage";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
