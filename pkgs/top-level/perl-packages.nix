@@ -17240,6 +17240,21 @@ let
     };
   };
 
+  PlackAppMCCS = buildPerlPackage {
+    pname = "Plack-App-MCCS";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/ID/IDOPEREL/Plack-App-MCCS-1.000000.tar.gz";
+      sha256 = "1q8qvlhs9wlz1b2mz7h1yb8n8iz0f8qkl3yps7r1wvhh0rk6sxp4";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Minify, Compress, Cache-control and Serve static files from Plack applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-App-MCCS";
+    };
+  };
+
   PlackAppProxy = buildPerlPackage {
      pname = "Plack-App-Proxy";
      version = "0.29";
