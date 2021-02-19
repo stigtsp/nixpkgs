@@ -18068,6 +18068,21 @@ let
     };
   };
 
+  PlackMiddlewareEasyHooks = buildPerlPackage {
+    pname = "Plack-Middleware-EasyHooks";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PM/PMAKHOLM/Plack-Middleware-EasyHooks-0.02.tar.gz";
+      sha256 = "1lf8civpcdp529v377xgk575q339xyh6z83k48h7xfiv7rsxx6p9";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Writing PSGI Middleware using simple hooks";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/One-com/plack-middleware-easyhooks/tree";
+    };
+  };
+
   PlackMiddlewareFileSass = buildPerlPackage {
     pname = "Plack-Middleware-File-Sass";
     version = "0.03";
