@@ -20484,6 +20484,20 @@ let
     };
   };
 
+  PlackMiddlewareSetEnvFromHeader = buildPerlPackage {
+    pname = "Plack-Middleware-SetEnvFromHeader";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TS/TSIBLEY/Plack-Middleware-SetEnvFromHeader-0.01.tar.gz";
+      sha256 = "17drszhld3y475vv5v4jq6hsvi9g79rsjsgp0bbjwk2n9d8xl5s3";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Set environment variables from the values of request headers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareSetLocalEnv = buildPerlModule {
     pname = "Plack-Middleware-SetLocalEnv";
     version = "0.02";
