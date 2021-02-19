@@ -19252,6 +19252,22 @@ let
     };
   };
 
+  PlackTestAnyEvent = buildPerlModule {
+    pname = "Plack-Test-AnyEvent";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Test-AnyEvent-0.08.tar.gz";
+      sha256 = "1h990kpbgwima518r2rvakgwy6hcnbh03rz06zggsv1jyn5rm5nk";
+    };
+    propagatedBuildInputs = [ AnyEvent Plack ];
+    buildInputs = [ TestClass ];
+    meta = {
+      description = "Run Plack::Test on AnyEvent-based PSGI applications";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hoelzro/plack-test-anyevent";
+    };
+  };
+
   PlackTestExternalServer = buildPerlPackage {
     pname = "Plack-Test-ExternalServer";
     version = "0.02";
