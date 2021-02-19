@@ -18972,6 +18972,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugRequestParams = buildPerlModule {
+    pname = "Plack-Middleware-DebugRequestParams";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CS/CSIDE/Plack-Middleware-DebugRequestParams-0.06.tar.gz";
+      sha256 = "1n65rv0zssikn0skc5xd0xz5f5vwqs0b6bxc0qh4bfvjy2cahm2m";
+    };
+    propagatedBuildInputs = [ Plack TextASCIITable TextVisualWidth ];
+    buildInputs = [ CaptureTiny TestDifferences TextTestBase ];
+    meta = {
+      description = "debug request parameters (inspired by Catalyst)";
+      homepage = "https://github.com/Cside/Plack-Middleware-DebugRequestParameters";
+    };
+  };
+
   PlackMiddlewareDebugTemplate = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Template";
     version = "1.00";
@@ -25771,6 +25786,22 @@ let
     buildInputs = [ TestMoreUTF8 TestWarnings ];
   };
 
+  TextTestBase = buildPerlModule {
+    pname = "Text-TestBase";
+    version = "0.13";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOKUHIROM/Text-TestBase-0.13.tar.gz";
+      sha256 = "1ynjqi1p8kbwfjj5k2a5k9pbxz94cm8mi6krxxxn16a0yvb15995";
+    };
+    propagatedBuildInputs = [ ClassAccessorLite ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Parser for Test::Base format";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Text-TestBase";
+    };
+  };
+
   TestTrap = buildPerlModule {
     pname = "Test-Trap";
     version = "0.3.4";
@@ -25850,6 +25881,15 @@ let
     };
   };
 
+  TextVisualWidth = buildPerlPackage {
+    pname = "Text-VisualWidth";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NA/NANZOU/Text-VisualWidth-0.02.tar.gz";
+      sha256 = "0wybq55j1jmndlfjfz5rpw9rymk9y9x4jph9nnpzfcz1kqmrw09v";
+    };
+  };
+
   Testutf8 = buildPerlPackage {
     pname = "Test-utf8";
     version = "1.02";
@@ -25874,6 +25914,19 @@ let
     buildInputs = [ DataDump ];
     meta = {
       description = "Routines for text containing ANSI color codes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextASCIITable = buildPerlModule {
+    pname = "Text-ASCIITable";
+    version = "0.22";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LU/LUNATIC/Text-ASCIITable-0.22.tar.gz";
+      sha256 = "0hvyy2zw8gvkkhpj3sxsnqrzwcvpf1md5lijh2w5xmrmvcvrblz4";
+    };
+    meta = {
+      description = "Create a nice formatted table using ASCII characters";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
