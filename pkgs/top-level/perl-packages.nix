@@ -10811,6 +10811,19 @@ let
     };
   };
 
+  libabs = buildPerlPackage {
+    pname = "lib-abs";
+    version = "0.95";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MO/MONS/lib-abs-0.95.tar.gz";
+      sha256 = "02zwpzimyjicv04m8hi4bzvkgi86ypkv9ia7vs5szhfj2xl702il";
+    };
+    meta = {
+      description = "C<lib> that makes relative path absolute to caller";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Imager = buildPerlPackage {
     pname = "Imager";
     version = "1.012";
@@ -20802,6 +20815,22 @@ let
     };
   };
 
+  PlackSessionStoreRedisFast = buildPerlModule {
+    pname = "Plack-Session-Store-RedisFast";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AK/AKZHAN/Plack-Session-Store-RedisFast-0.05.tar.gz";
+      sha256 = "0pv1lahfnxrgig2nhvzvapagw4yj0zhfyckaykk8pb9sswl7fhgj";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareSession libabs ];
+    buildInputs = [ JSON ModuleBuildTiny RedisFast TestFatal ];
+    meta = {
+      description = "Redis session store";
+      license = with lib.licenses; [ mit ];
+      homepage = "https://github.com/akzhan/perl-Plack-Session-Store-RedisFast";
+    };
+  };
+
   PlackSessionStoreTransparent = buildPerlModule {
     pname = "Plack-Session-Store-Transparent";
     version = "0.03";
@@ -21781,6 +21810,22 @@ let
       homepage = "https://github.com/PerlRedis/perl-redis";
       description = "Perl binding for Redis database";
       license = lib.licenses.artistic2;
+    };
+  };
+
+  RedisFast = buildPerlModule {
+    pname = "Redis-Fast";
+    version = "0.29";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SH/SHOGO/Redis-Fast-0.29.tar.gz";
+      sha256 = "0iwdx0x0cbanal8j8r6q3m78m4qzjv5whdbv9m7gwqajh7m27xqz";
+    };
+    propagatedBuildInputs = [ TryTiny ];
+    buildInputs = [ FileWhich ModuleBuildXSUtil ParallelForkManager TestDeep TestFatal TestLeakTrace TestSharedFork TestTCP TestUNIXSock ];
+    meta = {
+      description = "Perl binding for Redis database";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/shogo82148/Redis-Fast";
     };
   };
 
