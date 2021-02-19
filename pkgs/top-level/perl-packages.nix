@@ -9959,6 +9959,21 @@ let
     propagatedBuildInputs = [ LogTrace ];
   };
 
+  HashMatch = buildPerlPackage {
+    pname = "Hash-Match";
+    version = "v0.7.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Hash-Match-v0.7.0.tar.gz";
+      sha256 = "01kq2q8xf84l49jpipdij2q7v2ss0lyjib4yma4kyiji64gddp5y";
+    };
+    propagatedBuildInputs = [ ListAllUtils RefUtil namespaceautoclean ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "match contents of a hash against rules";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   HashMerge = buildPerlPackage {
     pname = "Hash-Merge";
     version = "0.302";
@@ -20921,6 +20936,21 @@ let
       description = "PSGI middleware for server side include content";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://search.cpan.org/dist/Plack-Middleware-SSI";
+    };
+  };
+
+  PlackMiddlewareSecuritySimple = buildPerlPackage {
+    pname = "Plack-Middleware-Security-Simple";
+    version = "v0.4.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-Security-Simple-v0.4.2.tar.gz";
+      sha256 = "0jvnv503qr6wrvz9030zqqf9x6j3cmid4zacc7apblc8gs0b5bdj";
+    };
+    propagatedBuildInputs = [ ExporterTiny HashMatch Plack ];
+    buildInputs = [ HTTPException LogDispatch LogDispatchArray ];
+    meta = {
+      description = "A simple security filter for Plack";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
