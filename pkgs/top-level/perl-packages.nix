@@ -22389,6 +22389,20 @@ let
     };
   };
 
+  PlackMiddlewareDefaultDocument = buildPerlPackage {
+    pname = "Plack-Middleware-DefaultDocument";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZI/ZIGUZAGU/Plack-Middleware-DefaultDocument-0.02.tar.gz";
+      sha256 = "15k20gwxw1mm0s30js2p27cv2xc7vb9spqv91l7k2zm8mf4idjig";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Return default document with '200' instead of '404' error";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDeflater = buildPerlPackage {
      pname = "Plack-Middleware-Deflater";
      version = "0.12";
