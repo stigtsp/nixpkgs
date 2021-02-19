@@ -12016,6 +12016,20 @@ let
      };
   };
 
+  LogMinimal = buildPerlModule {
+    pname = "Log-Minimal";
+    version = "0.19";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Log-Minimal-0.19.tar.gz";
+      sha256 = "0s2za8g742jr776v9wsy63alh1ia870ymlsk23gm96vh3q25jjz4";
+    };
+    meta = {
+      description = "Minimal but customizable logger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Log-Minimal";
+    };
+  };
+
   LogTrace = buildPerlPackage {
     pname = "Log-Trace";
     version = "1.070";
@@ -17733,6 +17747,20 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "integrate Log::Contextual with Plack/PSGI logger middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareLogMinimal = buildPerlPackage {
+    pname = "Plack-Middleware-Log-Minimal";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-Log-Minimal-0.06.tar.gz";
+      sha256 = "0w9w02945pr9fjc07qwxxi8nlaxgx4x9zsfcmn05lh29xki9mwfm";
+    };
+    propagatedBuildInputs = [ LogMinimal Plack ];
+    meta = {
+      description = "Log::Minimal middleware to prints to psgi.errors";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
