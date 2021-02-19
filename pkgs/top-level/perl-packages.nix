@@ -18774,6 +18774,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugRedis = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Redis";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-Middleware-Debug-Redis-0.03.tar.gz";
+      sha256 = "0iw0vrmapirlsqjb15qg61g7bs4dsgyxc3kxh3s231xvji32c4di";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug Redis ];
+    buildInputs = [ TestMockObject TestPod ];
+    meta = {
+      description = "Extend Plack::Middleware::Debug with Redis panels";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugTemplate = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Template";
     version = "1.00";
