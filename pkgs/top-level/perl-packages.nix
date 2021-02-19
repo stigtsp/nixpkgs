@@ -10934,6 +10934,15 @@ let
     };
   };
 
+  ImageEmpty = buildPerlPackage {
+    pname = "Image-Empty";
+    version = "0.20";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CA/CAGAO/Image-Empty-0.20.tar.gz";
+      sha256 = "1n236qd85ydzamc1l3rdiswqi3anmbpjczs64kl233mf227skv3y";
+    };
+  };
+
   ImageExifTool = buildPerlPackage {
     pname = "Image-ExifTool";
     version = "12.16";
@@ -17203,6 +17212,20 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Serve static files from document root with an index file";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackAppDummyBox = buildPerlModule {
+    pname = "Plack-App-DummyBox";
+    version = "0.041";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-App-DummyBox-0.041.tar.gz";
+      sha256 = "14g2hcy91msqia0mxsx08dqhamg3xcl1k9fqdfkchzzfcmr9qnjj";
+    };
+    propagatedBuildInputs = [ ImageEmpty Imager Plack ];
+    meta = {
+      description = "generate dummy box image for web development";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
