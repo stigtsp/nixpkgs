@@ -17766,6 +17766,21 @@ let
     };
   };
 
+  PlackMiddlewareNeverExpire = buildPerlPackage {
+    pname = "Plack-Middleware-NeverExpire";
+    version = "1.006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-Middleware-NeverExpire-1.006.tar.gz";
+      sha256 = "1grxfxhi7w64hiska13l294a6bycz50p5q3ysv8d306q4agnggnp";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "set expiration headers far in the future";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/ap/Plack-Middleware-NeverExpire";
+    };
+  };
+
   PlackMiddlewarePostErrorToSlack = buildPerlModule {
     pname = "Plack-Middleware-PostErrorToSlack";
     version = "0.01";
