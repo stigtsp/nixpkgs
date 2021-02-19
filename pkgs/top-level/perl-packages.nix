@@ -20799,6 +20799,20 @@ let
     };
   };
 
+  PlackMiddlewareAuthQueryString = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-QueryString";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SO/SONGMU/Plack-Middleware-Auth-QueryString-0.02.tar.gz";
+      sha256 = "05r00z33hy9k8c87spa3hz49ysw2jnq2v6fqljmf0dzs0w8spsid";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "simple query string authentication";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAutoRefresh = buildPerlModule {
     pname = "Plack-Middleware-AutoRefresh";
     version = "0.09";
