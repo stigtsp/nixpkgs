@@ -19893,6 +19893,22 @@ let
     };
   };
 
+  PlackAppBeanstalkConsole = buildPerlModule {
+    pname = "Plack-App-BeanstalkConsole";
+    version = "0.010";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/E/ET/ETHER/Plack-App-BeanstalkConsole-0.010.tar.gz";
+      sha256 = "0ng4nhllqq9ara2d86qck5h2cr9vf5in7lqvsh22c9gyql8m652i";
+    };
+    propagatedBuildInputs = [ PlackAppPHPCGI ];
+    buildInputs = [ ArchiveExtract DevelCheckBin FileShareDirInstall ModuleBuildTiny TestFileShareDir ];
+    meta = {
+      description = "A web application that provides access to Beanstalk statistics and tools";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Plack-App-BeanstalkConsole";
+    };
+  };
+
   PlackAppCGIBinStreaming = buildPerlModule {
     pname = "Plack-App-CGIBin-Streaming";
     version = "0.06";
