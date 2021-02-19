@@ -18904,6 +18904,21 @@ let
     };
   };
 
+  PlackMiddlewareDevelForceResponse = buildPerlModule {
+    pname = "Plack-Middleware-Devel-ForceResponse";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Devel-ForceResponse-0.01.tar.gz";
+      sha256 = "1qklnz6ybhgmjglbw0rnhksxvvazwlh5h8m7qkd45wnrbhlabfqj";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "emulate a run-down server for development";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareEasyHooks = buildPerlPackage {
     pname = "Plack-Middleware-EasyHooks";
     version = "0.02";
