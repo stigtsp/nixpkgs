@@ -20311,6 +20311,22 @@ let
     };
   };
 
+  PlackMiddlewareReviseEnv = buildPerlModule {
+    pname = "Plack-Middleware-ReviseEnv";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PO/POLETTIX/Plack-Middleware-ReviseEnv-0.004.tar.gz";
+      sha256 = "1iyyrsxvb3dvx6avlk2bjci6d3h0nbi13j9xs2y2m9fzm4vkppzc";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny PathTiny TestException ];
+    meta = {
+      description = "Revise request environment at will";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "https://github.com/polettix/Plack-Middleware-ReviseEnv";
+    };
+  };
+
   PlackMiddlewareRevisionPlate = buildPerlModule {
     pname = "Plack-Middleware-RevisionPlate";
     version = "0.01";
