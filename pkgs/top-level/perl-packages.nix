@@ -18528,6 +18528,22 @@ let
     };
   };
 
+  PlackAppImageMagick = buildPerlModule {
+    pname = "Plack-App-ImageMagick";
+    version = "1.110990";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AJ/AJGB/Plack-App-ImageMagick-1.110990.tar.gz";
+      sha256 = "0d31p74n6qg7d7iga3fw2qfpdsaxdy5wk1vd6iwl7n5k12n1nvbm";
+    };
+    propagatedBuildInputs = [ JSONXS PerlMagick Plack StringBash ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Create and manipulate images with Image::Magick";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-App-ImageMagick";
+    };
+  };
+
   PlackAppJSP = buildPerlModule {
     pname = "Plack-App-JSP";
     version = "0.101680";
@@ -23660,6 +23676,22 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/J/JH/JHI/String-Approx-3.28.tar.gz";
       sha256 = "43201e762d8699cb0ac2c0764a5454bdc2306c0771014d6c8fba821480631342";
+    };
+  };
+
+  StringBash = buildPerlModule {
+    pname = "String-Bash";
+    version = "1.110960";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AJ/AJGB/String-Bash-1.110960.tar.gz";
+      sha256 = "0fs5zxnmv9x6cipbd8w53cjpnci5pcw6ps4avv1mlf605dlndnn7";
+    };
+    propagatedBuildInputs = [ PadWalker RegexpCommon SubExporter ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Parameter expansion in strings";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/String-Bash";
     };
   };
 
