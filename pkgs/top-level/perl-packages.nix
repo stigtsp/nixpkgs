@@ -23160,6 +23160,20 @@ let
     };
   };
 
+  PlackMiddlewarePod = buildPerlPackage {
+    pname = "Plack-Middleware-Pod";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/CORION/Plack-Middleware-Pod-0.05.tar.gz";
+      sha256 = "0pwgkykjp1n3kh42nk8a2xd69bn9j6i2l05ixb04j470dn42d443";
+    };
+    propagatedBuildInputs = [ Plack PodPOM ];
+    meta = {
+      description = "render POD files as HTML";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePostErrorToSlack = buildPerlModule {
     pname = "Plack-Middleware-PostErrorToSlack";
     version = "0.01";
