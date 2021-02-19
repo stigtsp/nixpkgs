@@ -21329,6 +21329,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugMongo = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Mongo";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-Middleware-Debug-Mongo-0.03.tar.gz";
+      sha256 = "1zk5xa8578sz200vf137y0mzlmmqq681hvcjgn6rpjdyxpd6kxnr";
+    };
+    propagatedBuildInputs = [ MongoDB PlackMiddlewareDebug ];
+    buildInputs = [ TestMockObject TestPod ];
+    meta = {
+      description = "Extend Plack::Middleware::Debug with MongoDB panels";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugProfilerNYTProf = buildPerlPackage {
     pname = "Plack-Middleware-Debug-Profiler-NYTProf";
     version = "0.06";
