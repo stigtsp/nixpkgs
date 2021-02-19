@@ -19293,6 +19293,20 @@ let
     };
   };
 
+  PlackMiddlewareDetectRobots = buildPerlPackage {
+    pname = "Plack-Middleware-DetectRobots";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HJ/HJANSEN/Plack-Middleware-DetectRobots-0.03.tar.gz";
+      sha256 = "184in2k0n7bk1gw9q3kx5aiqns3aixp61ywqmwnmla6i2yvl2myd";
+    };
+    propagatedBuildInputs = [ Plack RegexpAssemble ];
+    meta = {
+      description = "Automatically set a flag in the environment if a robot client is detected";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDevFavicon = buildPerlModule {
     pname = "Plack-Middleware-DevFavicon";
     version = "0.02";
