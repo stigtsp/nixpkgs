@@ -21046,6 +21046,20 @@ let
     };
   };
 
+  PlackMiddlewareActiveMirror = buildPerlPackage {
+    pname = "Plack-Middleware-ActiveMirror";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SA/SARTAK/Plack-Middleware-ActiveMirror-0.02.tar.gz";
+      sha256 = "1pb9b6mr9iysayf2l23rv33ivl5w5ca4fp4s73f7v1081bpj8qgb";
+    };
+    propagatedBuildInputs = [ CHI WebRequest ];
+    meta = {
+      description = "mirror parts of your app e.g. for offline hacking";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAdaptFilehandleRead = buildPerlPackage {
     pname = "Plack-Middleware-AdaptFilehandleRead";
     version = "0.003";
@@ -32106,6 +32120,21 @@ let
       description = "ChromeLogger for Perl";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Web-ChromeLogger";
+    };
+  };
+
+  WebRequest = buildPerlPackage {
+    pname = "Web-Request";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Web-Request-0.11.tar.gz";
+      sha256 = "12nx7zw6b8m2p9pw3gg8ykh4hd4gpkhj3fhdlmy4rr93hdny8gis";
+    };
+    propagatedBuildInputs = [ HTTPBody Moose Plack ];
+    buildInputs = [ IOString ];
+    meta = {
+      description = "common request class for web frameworks";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
