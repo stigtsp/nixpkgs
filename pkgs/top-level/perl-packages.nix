@@ -18921,6 +18921,21 @@ let
     };
   };
 
+  PlackMiddlewareGitStatus = buildPerlModule {
+    pname = "Plack-Middleware-GitStatus";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YU/YUUKI/Plack-Middleware-GitStatus-0.02.tar.gz";
+      sha256 = "0h6ql52rx90drg6h5i2w400n58x6gvq7d84znkn9fbwmk8mjj0bh";
+    };
+    propagatedBuildInputs = [ CacheCache GitRepository Plack ];
+    buildInputs = [ FileWhich ];
+    meta = {
+      description = "Provide Git status via HTTP";
+      homepage = "https://github.com/y-uuki/Plack-Middleware-GitStatus";
+    };
+  };
+
   PlackMiddlewareHTMLMinify = buildPerlModule {
     pname = "Plack-Middleware-HTMLMinify";
     version = "1.0.0";
