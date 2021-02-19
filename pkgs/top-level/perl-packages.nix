@@ -18403,6 +18403,22 @@ let
     };
   };
 
+  PlackAppDirectoryTemplate = buildPerlPackage {
+    pname = "Plack-App-Directory-Template";
+    version = "0.27";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-Directory-Template-0.27.tar.gz";
+      sha256 = "08izmv8j54f15r488mz83pf3cf0an3bda9igpmszhinq7w6bmv26";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareTemplateToolkit ];
+    buildInputs = [ FileShareDirInstall ];
+    meta = {
+      description = "Serve static files from document root with directory index template";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-Directory-Template";
+    };
+  };
+
   PlackAppDirectoryXslate = buildPerlModule {
     pname = "Plack-App-Directory-Xslate";
     version = "0.07";
