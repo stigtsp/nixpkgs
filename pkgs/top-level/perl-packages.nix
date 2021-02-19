@@ -5104,6 +5104,20 @@ let
     };
   };
 
+  DataMunge = buildPerlPackage {
+    pname = "Data-Munge";
+    version = "0.097";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAUKE/Data-Munge-0.097.tar.gz";
+      sha256 = "0rfx7cslig7gb6ihljlmqqyxdmzc71yiqc24r13l5dyfnv56jd6n";
+    };
+    buildInputs = [ TestWarnings ];
+    meta = {
+      description = "various utility functions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DataOptList = buildPerlPackage {
     pname = "Data-OptList";
     version = "0.110";
@@ -20538,6 +20552,22 @@ let
     };
   };
 
+  PlackMiddlewareReturnMultiLevel = buildPerlPackage {
+    pname = "Plack-Middleware-Return-MultiLevel";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-Return-MultiLevel-0.002.tar.gz";
+      sha256 = "0la8qfm2cfcs0c3slma9arzshcnif74bin3sb9ps5fiwm82267a8";
+    };
+    propagatedBuildInputs = [ Plack ReturnMultiLevel ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Use Return::MultiLevel as PSGI Middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/jjn1056/Plack-Middleware-Return-MultiLevel";
+    };
+  };
+
   PlackMiddlewareReverseProxy = buildPerlPackage {
     pname = "Plack-Middleware-ReverseProxy";
     version = "0.16";
@@ -22378,6 +22408,21 @@ let
       sha256 = "1yn5l6x3xyic9jxw9jggqsbggcv7rc8ggj4zbnlz9hfvv17gjazv";
     };
     meta = {
+    };
+  };
+
+  ReturnMultiLevel = buildPerlPackage {
+    pname = "Return-MultiLevel";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MAUKE/Return-MultiLevel-0.05.tar.gz";
+      sha256 = "07fr7sn7baqml0ix5ddk7nim5yv4dkz5jff57aahjg35pax6y1zz";
+    };
+    propagatedBuildInputs = [ DataMunge ];
+    buildInputs = [ TestFatal ];
+    meta = {
+      description = "return across multiple call levels";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
