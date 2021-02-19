@@ -23209,6 +23209,21 @@ let
     };
   };
 
+  PlackMiddlewareJSONPHeaders = buildPerlPackage {
+    pname = "Plack-Middleware-JSONP-Headers";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-JSONP-Headers-0.11.tar.gz";
+      sha256 = "0s3wj0qnkyq6k8hf34n9kid13dwhyp2v50ms1x61w82xkrakic3b";
+    };
+    propagatedBuildInputs = [ JSON Plack ];
+    meta = {
+      description = "Wraps JSON response with HTTP headers in JSONP";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-JSONP-Headers";
+    };
+  };
+
   PlackMiddlewareJSONParser = buildPerlModule {
     pname = "Plack-Middleware-JSONParser";
     version = "0.02";
