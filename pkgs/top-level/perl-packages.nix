@@ -12740,6 +12740,22 @@ let
     propagatedBuildInputs = [ LWP NetDNS ];
   };
 
+  LWPxProfile = buildPerlPackage {
+    pname = "LWPx-Profile";
+    version = "0.2";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CR/CREIN/LWPx-Profile-0.2.tar.gz";
+      sha256 = "02a5vmjzc1n1x9rnlpfabk9qa8s1hajwn53r7jlh4gwcb8nh473k";
+    };
+    propagatedBuildInputs = [ LWP ];
+    buildInputs = [ TestDeep TestSpec TestVCRLWP ];
+    meta = {
+      description = "Basic Timing of HTTP Requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ctriv/perl-LWPx-Profile";
+    };
+  };
+
   maatkit = callPackage ../development/perl-modules/maatkit { };
 
   MacPasteboard = buildPerlPackage {
@@ -14881,6 +14897,22 @@ let
     meta = {
       description = "Do use_ok() for all the MANIFESTed modules";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestVCRLWP = buildPerlPackage {
+    pname = "Test-VCR-LWP";
+    version = "0.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CR/CREIN/Test-VCR-LWP-0.5.tar.gz";
+      sha256 = "17qxqcb9cr6bw41zysffdcni3416v0af0v3zygni2g9nyzs9pfz6";
+    };
+    propagatedBuildInputs = [ LWP ];
+    buildInputs = [ SubName TestException TestFileContents TestSpec ];
+    meta = {
+      description = "Record and playback LWP interactions";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ctriv/perl-Test-VCR-LWP";
     };
   };
 
@@ -18606,6 +18638,21 @@ let
       description = "Debug info for old HTML::Mason apps";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/ctriv/perl-Plack-Middleware-Debug-HTML-Mason";
+    };
+  };
+
+  PlackMiddlewareDebugLWP = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-LWP";
+    version = "0.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CR/CREIN/Plack-Middleware-Debug-LWP-0.3.tar.gz";
+      sha256 = "1ix1gs9np391nr0wahfhz7h473wpvpa9jlq4xlg2hx6invnlgmx2";
+    };
+    propagatedBuildInputs = [ LWPxProfile PlackMiddlewareDebug ];
+    meta = {
+      description = "LWP Profiling Panel";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ctriv/perl-Plack-Middleware-Debug-LWP";
     };
   };
 
