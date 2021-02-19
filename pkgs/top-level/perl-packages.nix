@@ -19687,6 +19687,36 @@ let
     };
   };
 
+  PlackMiddlewareMemento = buildPerlModule {
+    pname = "Plack-Middleware-Memento";
+    version = "0.0102";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NICS/Plack-Middleware-Memento-0.0102.tar.gz";
+      sha256 = "0zjxgi3w0ij99f7qmbb1zkb8505b6d606nnx4dazsbfcf6wl09nq";
+    };
+    propagatedBuildInputs = [ DateTimeFormatHTTP Plack ];
+    meta = {
+      description = "Enable the Memento protocol";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-Middleware-Memento";
+    };
+  };
+
+  PlackMiddlewareMementoHandlerCatmanduBag = buildPerlModule {
+    pname = "Plack-Middleware-Memento-Handler-Catmandu-Bag";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NICS/Plack-Middleware-Memento-Handler-Catmandu-Bag-0.01.tar.gz";
+      sha256 = "1irlvxhndmgwc735vqidw0fs9y0z5vvg2z1diqhwi8yv0fl7z1p6";
+    };
+    propagatedBuildInputs = [ Catmandu DateTimeFormatISO8601 PlackMiddlewareMemento ];
+    meta = {
+      description = "Connect Plack::App::Catmandu::Bag to Plack::Middleware::Memento";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-Middleware-Memento-Handler-Catmandu-Bag";
+    };
+  };
+
   PlackMiddlewareMemoryUsage = buildPerlPackage {
     pname = "Plack-Middleware-MemoryUsage";
     version = "0.03";
