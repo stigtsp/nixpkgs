@@ -6047,6 +6047,21 @@ let
     };
   };
 
+  DBIxClassQueryLog = buildPerlPackage {
+    pname = "DBIx-Class-QueryLog";
+    version = "1.005001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FREW/DBIx-Class-QueryLog-1.005001.tar.gz";
+      sha256 = "1rzrdf3xsb87acdjr8qjp3295bvfj574dyv355n3yhdhd483aycp";
+    };
+    propagatedBuildInputs = [ DBIxClass TypeTiny ];
+    meta = {
+      description = "Log queries for later analysis";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/frioux/DBIx-Class-QueryLog";
+    };
+  };
+
   DBIxClassSchemaLoader = buildPerlPackage {
     pname = "DBIx-Class-Schema-Loader";
     version = "0.07049";
@@ -17119,6 +17134,22 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/miyagawa/Plack-Middleware-ConsoleLogger";
      };
+  };
+
+  PlackMiddlewareDBICQueryLog = buildPerlPackage {
+    pname = "Plack-Middleware-DBIC-QueryLog";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-DBIC-QueryLog-0.05.tar.gz";
+      sha256 = "17nzmsm1jxwrjja3zv0bpy55a97q6klv3s6p1657ahd9z13i0ccs";
+    };
+    propagatedBuildInputs = [ DBIxClassQueryLog Plack ];
+    buildInputs = [ DataDump PlackMiddlewareDebug TestFatal ];
+    meta = {
+      description = "Expose a DBIC QueryLog Instance in Middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Plack-Middleware-DBIC-QueryLog/";
+    };
   };
 
   PlackMiddlewareDebug = buildPerlModule {
