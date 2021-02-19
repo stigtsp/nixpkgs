@@ -17573,6 +17573,20 @@ let
     };
   };
 
+  PlackMiddlewareSocketIO = buildPerlPackage {
+    pname = "Plack-Middleware-SocketIO";
+    version = "0.00904";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTI/Plack-Middleware-SocketIO-0.00904.tar.gz";
+      sha256 = "0a8wsq4r1zjs5zny5q4fy4qyqgsr3yv5ss8f7mx1z2bhxgy1qwc3";
+    };
+    propagatedBuildInputs = [ AnyEvent JSON Plack ProtocolWebSocket ];
+    meta = {
+      description = "Socket.IO Plack middleware";
+      license = with lib.licenses; [ artistic2 artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareStackTraceLinkedSource = buildPerlModule {
     pname = "Plack-Middleware-StackTrace-LinkedSource";
     version = "0.14";
