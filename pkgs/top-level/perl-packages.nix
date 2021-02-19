@@ -19325,6 +19325,21 @@ let
     };
   };
 
+  PlackMiddlewareBlockHeaderInjection = buildPerlPackage {
+    pname = "Plack-Middleware-BlockHeaderInjection";
+    version = "v1.0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-BlockHeaderInjection-v1.0.1.tar.gz";
+      sha256 = "1x9sr2zm4clvssm7gsyb9qk3zagm8schr0f9knchziz15hbwyw10";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestDifferences ];
+    meta = {
+      description = "block header injections in responses";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareBootstrap = buildPerlModule {
     pname = "Plack-Middleware-Bootstrap";
     version = "0.08";
