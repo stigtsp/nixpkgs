@@ -5186,6 +5186,38 @@ let
     };
   };
 
+  CSSStruct = buildPerlPackage {
+    pname = "CSS-Struct";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/CSS-Struct-0.04.tar.gz";
+      sha256 = "1ircnh7hlb64crgsqpd02n3m1d2y60snckadnz7rqlpzzqgwfy5s";
+    };
+    propagatedBuildInputs = [ ClassUtils ];
+    buildInputs = [ FileObject TestNoWarnings TestOutput ];
+    meta = {
+      description = "Struct oriented CSS manipulation";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/CSS-Struct";
+    };
+  };
+
+  CSSStructOutputIndent = buildPerlPackage {
+    pname = "CSS-Struct-Output-Indent";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/CSS-Struct-Output-Indent-0.04.tar.gz";
+      sha256 = "0gimx2xy6xqkpc4ncr9d3p6khr67dh2xkpihjv52rvcn865hgyjj";
+    };
+    propagatedBuildInputs = [ CSSStruct Indent ];
+    buildInputs = [ FileObject TestNoWarnings TestOutput ];
+    meta = {
+      description = "Indent printing 'CSS::Struct' structure to CSS code";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/CSS-Struct-Output-Indent";
+    };
+  };
+
   Curses = buildPerlPackage {
     pname = "Curses";
     version = "1.37";
@@ -20312,6 +20344,22 @@ let
     };
   };
 
+  PlackAppLogin = buildPerlPackage {
+    pname = "Plack-App-Login";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Plack-App-Login-0.03.tar.gz";
+      sha256 = "12p7zdd6sv7qwyk8iqszm4q9c1vqcj9bgy42qkq9iwnpgskv65v9";
+    };
+    propagatedBuildInputs = [ CSSStruct Plack Tags TagsHTMLPageBegin TagsHTMLPageEnd UnicodeUTF8 ];
+    buildInputs = [ CSSStructOutputIndent TagsOutputIndent TestNoWarnings ];
+    meta = {
+      description = "Plack login application";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Plack-App-Login";
+    };
+  };
+
   PlackAppMCCS = buildPerlPackage {
     pname = "Plack-App-MCCS";
     version = "1.000000";
@@ -27559,6 +27607,38 @@ let
     };
   };
 
+  TagsHTMLPageBegin = buildPerlPackage {
+    pname = "Tags-HTML-Page-Begin";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Tags-HTML-Page-Begin-0.11.tar.gz";
+      sha256 = "0b7bvizlk94hr95cv0mplw439bz0h011xwfifjb3x9l37q4b3hig";
+    };
+    propagatedBuildInputs = [ ClassUtils ];
+    buildInputs = [ CSSStruct Tags TagsOutputStructure TestNoWarnings ];
+    meta = {
+      description = "Tags helper for HTML page begin";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Tags-HTML-Page-Begin";
+    };
+  };
+
+  TagsHTMLPageEnd = buildPerlPackage {
+    pname = "Tags-HTML-Page-End";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Tags-HTML-Page-End-0.04.tar.gz";
+      sha256 = "0jg1bnp9zcmpjgn7qm5m1h220zddng45zkhkn0004a81ask8hag2";
+    };
+    propagatedBuildInputs = [ ClassUtils ];
+    buildInputs = [ FileObject Tags TagsOutputStructure TestNoWarnings TestWarn ];
+    meta = {
+      description = "Tags helper for HTML page end";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Tags-HTML-Page-End";
+    };
+  };
+
   TagsOutputIndent = buildPerlPackage {
     pname = "Tags-Output-Indent";
     version = "0.07";
@@ -27572,6 +27652,22 @@ let
       description = "Indented output for Tags";
       license = with lib.licenses; [ bsd3 ];
       homepage = "https://github.com/michal-josef-spacek/Tags-Output-Indent";
+    };
+  };
+
+  TagsOutputStructure = buildPerlPackage {
+    pname = "Tags-Output-Structure";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKIM/Tags-Output-Structure-0.06.tar.gz";
+      sha256 = "0bv9apw0i2nzbdfkk5cv65b99sbp1mnfikspc4v96hdpa83106mn";
+    };
+    propagatedBuildInputs = [ Tags ];
+    buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "Structure class for 'Tags' output";
+      license = with lib.licenses; [ bsd3 ];
+      homepage = "https://github.com/michal-josef-spacek/Tags-Output-Structure";
     };
   };
 
