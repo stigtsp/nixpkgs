@@ -21311,6 +21311,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugCatalystStash = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-CatalystStash";
+    version = "1.000000";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MARKELLIS/Plack-Middleware-Debug-CatalystStash-1.000000.tar.gz";
+      sha256 = "14j1nm61i1ggg1g8v1sra9cwiynmk1vyx423dk3gxcf9dn9jx6ma";
+    };
+    propagatedBuildInputs = [ CatalystRuntime PlackMiddlewareDebug ];
+    meta = {
+      description = "Debug panel to inspect the Catalyst Stash";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugDBIProfile = buildPerlPackage {
     pname = "Plack-Middleware-Debug-DBIProfile";
     version = "0.102";
