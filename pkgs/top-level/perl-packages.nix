@@ -18772,6 +18772,21 @@ let
     };
   };
 
+  PlackMiddlewareExpires = buildPerlModule {
+    pname = "Plack-Middleware-Expires";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-Expires-0.06.tar.gz";
+      sha256 = "04r1ddi62d23zm390awvgfmm1qbn7rh4xyx9bvw55z9ggiqrwj67";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "mod_expires for plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-Middleware-Expires";
+    };
+  };
+
   PlackMiddlewareExtractUriLanguage = buildPerlPackage {
     pname = "Plack-Middleware-ExtractUriLanguage";
     version = "0.004";
