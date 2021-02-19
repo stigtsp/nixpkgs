@@ -23351,6 +23351,20 @@ let
     };
   };
 
+  PlackMiddlewareStaticMinifier = buildPerlModule {
+    pname = "Plack-Middleware-Static-Minifier";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Static-Minifier-0.08.tar.gz";
+      sha256 = "1v20mqni004qkzmqg20i6mrg58xvkys1dwy8yx0rgbg6s23j126r";
+    };
+    propagatedBuildInputs = [ CSSMinifierXS JavaScriptMinifierXS Plack ];
+    meta = {
+      description = "serves static files and minify CSS and JavaScript";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareStaticOpenFileCache = buildPerlModule {
     pname = "Plack-Middleware-Static-OpenFileCache";
     version = "0.02";
