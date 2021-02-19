@@ -20385,6 +20385,22 @@ let
     };
   };
 
+  PlackRequestWithEncoding = buildPerlModule {
+    pname = "Plack-Request-WithEncoding";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MO/MOZNION/Plack-Request-WithEncoding-0.14.tar.gz";
+      sha256 = "01xlzrc0838ipd2l3l6mkh2wykwr4nd4rxjvy1zgq62sxbal537v";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Subclass of L<Plack::Request> which supports encoded requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/moznion/Plack-Request-WithEncoding";
+    };
+  };
+
   PlackResponseHelper = buildPerlPackage {
     pname = "Plack-ResponseHelper";
     version = "0.05";
