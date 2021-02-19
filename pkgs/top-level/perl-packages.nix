@@ -19435,6 +19435,21 @@ let
     };
   };
 
+  PlackMiddlewareEnvTracer = buildPerlModule {
+    pname = "Plack-Middleware-EnvTracer";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-EnvTracer-0.02.tar.gz";
+      sha256 = "1mwyrmz9vagc982z138h383ifr84zcf4jl4da0c9fdnxc4vf23jg";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ CaptureTiny ];
+    meta = {
+      description = "The Plack middleware for tracing %ENV";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareExpires = buildPerlModule {
     pname = "Plack-Middleware-Expires";
     version = "0.06";
