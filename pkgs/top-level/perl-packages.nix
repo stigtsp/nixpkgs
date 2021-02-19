@@ -19200,6 +19200,21 @@ let
     };
   };
 
+  PlackMiddlewareTextMinify = buildPerlPackage {
+    pname = "Plack-Middleware-Text-Minify";
+    version = "v0.1.4";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-Text-Minify-v0.1.4.tar.gz";
+      sha256 = "0d14kh44pw8gyjmy9wsv6wb4j838pxm4pybijjcavd6dfgrpi0vm";
+    };
+    propagatedBuildInputs = [ Plack RefUtil TextMinifyXS ];
+    buildInputs = [ TestDifferences TestMost ];
+    meta = {
+      description = "minify text responses on the fly";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareThrottle = buildPerlPackage {
     pname = "Plack-Middleware-Throttle";
     version = "0.01";
@@ -24436,6 +24451,20 @@ let
     meta = {
       description = "Render Text::MicroTemplate from __DATA__";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TextMinifyXS = buildPerlPackage {
+    pname = "Text-Minify-XS";
+    version = "v0.3.6";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Text-Minify-XS-v0.3.6.tar.gz";
+      sha256 = "036q8f15239ndrq4nb28m00lw9s3vc9syn16hqxxpwg52s7ag2q7";
+    };
+    buildInputs = [ TestWarnings ];
+    meta = {
+      description = "Simple text minification";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
