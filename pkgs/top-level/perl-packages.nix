@@ -18306,6 +18306,22 @@ let
     };
   };
 
+  PlackMiddlewareSetLocalEnv = buildPerlModule {
+    pname = "Plack-Middleware-SetLocalEnv";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FU/FUJIWARA/Plack-Middleware-SetLocalEnv-0.02.tar.gz";
+      sha256 = "1cw1n30qb8y562ki7flvb4k4if7diaf2rxk17jdbga0qypjrhfi4";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Set localized environment variables from the value of PSGI environment";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/fujiwara/Plack-Middleware-SetLocalEnv";
+    };
+  };
+
   PlackMiddlewareSignposting = buildPerlModule {
     pname = "Plack-Middleware-Signposting";
     version = "0.05";
