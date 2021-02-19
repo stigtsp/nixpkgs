@@ -20725,6 +20725,21 @@ let
     };
   };
 
+  PlackMiddlewareAuthJWT = buildPerlModule {
+    pname = "Plack-Middleware-Auth-JWT";
+    version = "0.905";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOMM/Plack-Middleware-Auth-JWT-0.905.tar.gz";
+      sha256 = "0r5hslb615nbs2zm6ajj3cdwir8qmpysrwkzn8psz6c46mv25hbf";
+    };
+    propagatedBuildInputs = [ CryptJWT Plack ];
+    meta = {
+      description = "Token-based Auth (aka Bearer Token) using JSON Web Tokens (JWT)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/domm/Plack-Middleware-Auth-JWT";
+    };
+  };
+
   PlackMiddlewareAuthNegotiate = buildPerlModule {
     pname = "Plack-Middleware-Auth-Negotiate";
     version = "0.172130";
