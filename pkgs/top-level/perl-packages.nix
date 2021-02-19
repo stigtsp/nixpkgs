@@ -1072,6 +1072,20 @@ let
     };
   };
 
+  AuthenCASClient = buildPerlPackage {
+    pname = "Authen-CAS-Client";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PR/PRAVUS/Authen-CAS-Client-0.08.tar.gz";
+      sha256 = "04v2rx25n0axjdjpwr4zphzs87jpz1k9342ssjpy00rvg2xa8ysy";
+    };
+    propagatedBuildInputs = [ LWP XMLLibXML ];
+    buildInputs = [ TestMockObject ];
+    meta = {
+      description = "Provides an easy-to-use interface for authentication using JA-SIG's Central Authentication Service";
+    };
+  };
+
   AuthenDecHpwd = buildPerlModule {
     pname = "Authen-DecHpwd";
     version = "2.007";
@@ -6540,6 +6554,20 @@ let
       description = "lightweight yet powerful web application framework";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/PerlDancer/Dancer";
+    };
+  };
+
+  DancerMiddlewareRebase = buildPerlPackage {
+    pname = "Dancer-Middleware-Rebase";
+    version = "0.8.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PO/POLETTIX/Dancer-Middleware-Rebase-0.8.0.tar.gz";
+      sha256 = "045mcn37xqghld04xfxn0ksvr87q4gpxbnwgjgwd3591k65v7j7i";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "a Plack middleware to be used for Dancer";
+      license = with lib.licenses; [ artistic2 ];
     };
   };
 
@@ -19004,6 +19032,22 @@ let
     };
   };
 
+  PlackAuthSSO = buildPerlModule {
+    pname = "Plack-Auth-SSO";
+    version = "0.0137";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NJ/NJFRANCK/Plack-Auth-SSO-0.0137.tar.gz";
+      sha256 = "1vrvrf7vwxvgrgnlrqd2jb6mmi0cpvm5sqx2h477qna9gsg8bpm9";
+    };
+    propagatedBuildInputs = [ AuthenCASClient Clone DataUUID DataUtil LWPProtocolHttps PlackMiddlewareSession WWWORCID ];
+    buildInputs = [ DancerMiddlewareRebase DevelCover TestException ];
+    meta = {
+      description = "role for Single Sign On (SSO) authentication";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-Auth-SSO";
+    };
+  };
+
   PlackBuilderConditionals = buildPerlModule {
     pname = "Plack-Builder-Conditionals";
     version = "0.05";
@@ -29082,6 +29126,22 @@ let
     meta = {
       description = "automate the Chrome browser";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  WWWORCID = buildPerlModule {
+    pname = "WWW-ORCID";
+    version = "0.0402";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NICS/WWW-ORCID-0.0402.tar.gz";
+      sha256 = "0z1znwxzyqyf1wafvf6671180h38hdymsf9s4qm2pxn3bgirby7i";
+    };
+    propagatedBuildInputs = [ ClassLoad JSON LWP LogAny Moo namespaceclean ];
+    buildInputs = [ TestDeep TestException TestPod ];
+    meta = {
+      description = "A client for the ORCID 2.0 API";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/WWW-ORCID";
     };
   };
 
