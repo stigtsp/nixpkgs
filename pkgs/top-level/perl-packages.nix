@@ -21205,6 +21205,21 @@ let
     };
   };
 
+  PlackMiddlewareAcmeYadaYada = buildPerlModule {
+    pname = "Plack-Middleware-Acme-YadaYada";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Middleware-Acme-YadaYada-0.01.tar.gz";
+      sha256 = "0v1wbh8r5v3sl0rr1dhm9dq4wiizd5g4cmgcmhgmv9zhwbw5p5ch";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Middleware that handles the Yada Yada operator";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/hoelzro/plack-middleware-acme-yadayada";
+    };
+  };
+
   PlackMiddlewareActiveMirror = buildPerlPackage {
     pname = "Plack-Middleware-ActiveMirror";
     version = "0.02";
