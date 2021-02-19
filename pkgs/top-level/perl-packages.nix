@@ -24062,6 +24062,20 @@ let
     };
   };
 
+  PlackMiddlewareReverseProxyPath = buildPerlPackage {
+    pname = "Plack-Middleware-ReverseProxyPath";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BO/BOWMANBS/Plack-Middleware-ReverseProxyPath-0.04.tar.gz";
+      sha256 = "12563bbrzdiw6zg31sn90r3kx6923cnkh40nb125fap507mblqh0";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "adjust proxied env to match client-facing";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareReviseEnv = buildPerlModule {
     pname = "Plack-Middleware-ReviseEnv";
     version = "0.004";
