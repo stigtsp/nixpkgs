@@ -22163,6 +22163,20 @@ let
     };
   };
 
+  PlackMiddlewareDirIndex = buildPerlPackage {
+    pname = "Plack-Middleware-DirIndex";
+    version = "1.00";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LL/LLAP/Plack-Middleware-DirIndex-1.00.tar.gz";
+      sha256 = "0fyqy6w7gfr0b8m60h2zpsbiayydilan21hlylwyyp3qhzgxaa0q";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Append an index file to request PATH's ending with a /";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDispatchGP = buildPerlPackage {
     pname = "Plack-Middleware-Dispatch-GP";
     version = "0.01";
