@@ -17365,6 +17365,22 @@ let
     };
   };
 
+  PlackMiddlewareTrailingSlashKiller = buildPerlModule {
+    pname = "Plack-Middleware-TrailingSlashKiller";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BL/BLOM/Plack-Middleware-TrailingSlashKiller-0.01.tar.gz";
+      sha256 = "1d5x897mn6wpmjzicxjcppc7szbhik7hzqg69gz7yc0idj68fk9v";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Dealing with that pesky trailing slash/";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/b10m/p5-Plack-Middleware-TrailingSlashKiller";
+    };
+  };
+
   PlackMiddlewareXSLT = buildPerlPackage {
     pname = "Plack-Middleware-XSLT";
     version = "0.30";
