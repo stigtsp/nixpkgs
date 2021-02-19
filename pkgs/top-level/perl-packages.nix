@@ -12163,6 +12163,36 @@ let
     };
   };
 
+  ImagerFileGIF = buildPerlPackage {
+    pname = "Imager-File-GIF";
+    version = "0.96";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TONYC/Imager-File-GIF-0.96.tar.gz";
+      sha256 = "12y0v35ap1mcw11cp4fvqyl0wcgi79g248k6j2hszn7a50gb51f4";
+    };
+    propagatedBuildInputs = [ Imager ];
+    meta = {
+      description = "GIF Image file support for Imager";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://imager.perl.org/";
+    };
+  };
+
+  ImagerFileJPEG = buildPerlPackage {
+    pname = "Imager-File-JPEG";
+    version = "0.94";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TONYC/Imager-File-JPEG-0.94.tar.gz";
+      sha256 = "1q5rlvaizc3d0k2p0g932dv7vbd3hml3zif4qm5awkdiml1pn8ws";
+    };
+    propagatedBuildInputs = [ Imager ];
+    meta = {
+      description = "JPEG Image file support for Imager";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://imager.perl.org/";
+    };
+  };
+
   ImagerFilePNG = buildPerlPackage {
     pname = "Imager-File-PNG";
     version = "0.95";
@@ -22985,6 +23015,21 @@ let
     propagatedBuildInputs = [ NetIPMatchTrie NetIPXS Plack ];
     meta = {
       description = "查找指定 IP (CIDR) 所对应的标签 LABEL";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareImageDummy = buildPerlModule {
+    pname = "Plack-Middleware-Image-Dummy";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GU/GUNYA/Plack-Middleware-Image-Dummy-0.05.tar.gz";
+      sha256 = "055xvcwxjabagpb655f0bwr3z1ba60wwdwdwa0n41l0kffs0h0sn";
+    };
+    propagatedBuildInputs = [ ImagerFileGIF ImagerFileJPEG ImagerFilePNG Plack ];
+    buildInputs = [ TestException TestRequires ];
+    meta = {
+      description = "Dummy image responser for Plack";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
