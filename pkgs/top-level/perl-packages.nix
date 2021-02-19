@@ -17169,6 +17169,21 @@ let
     };
   };
 
+  PlackHandlerSCGI = buildPerlPackage {
+    pname = "Plack-Handler-SCGI";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-SCGI-0.02.tar.gz";
+      sha256 = "04592kg0fqzisj5la8m1dq4wkgxr0rfkk0s6arl12dm22zsd5k19";
+    };
+    propagatedBuildInputs = [ Plack SCGI ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "PSGI handler on SCGI daemon";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAuthBrowserID = buildPerlPackage {
     pname = "Plack-Middleware-Auth-BrowserID";
     version = "0.0.7";
