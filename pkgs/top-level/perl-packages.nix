@@ -17733,6 +17733,20 @@ let
     };
   };
 
+  PlackMiddlewareCompile = buildPerlPackage {
+    pname = "Plack-Middleware-Compile";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRODWITH/Plack-Middleware-Compile-0.01.tar.gz";
+      sha256 = "0p3jgk24s0sycsd8ayc3n1dcpsxzmpq9zwh539gyqxm7cxwmafnw";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Compile HAML/SASS/Coffeescript/whatever on demand";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareConsoleLogger = buildPerlModule {
      pname = "Plack-Middleware-ConsoleLogger";
      version = "0.05";
