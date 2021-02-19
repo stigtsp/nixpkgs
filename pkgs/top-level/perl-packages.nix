@@ -16131,6 +16131,35 @@ let
     };
   };
 
+  NetIPMatchTrie = buildPerlModule {
+    pname = "Net-IP-Match-Trie";
+    version = "1.00";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HI/HIROSE/Net-IP-Match-Trie-1.00.tar.gz";
+      sha256 = "0933jfdjjhp62pm4x57z7adahnhnv1a8yyylg0fiv9k97x4q9vz1";
+    };
+    buildInputs = [ DevelCover ModuleBuildTiny PathClass TestBase TestRequires ];
+    meta = {
+      description = "Efficiently match IP addresses against IP ranges with Trie (prefix tree)";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/hirose31/p5-net-ip-match-trie";
+    };
+  };
+
+  NetIPXS = buildPerlPackage {
+    pname = "Net-IP-XS";
+    version = "0.21";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOMHRR/Net-IP-XS-0.21.tar.gz";
+      sha256 = "0y1y28s4pbllv5cyvz1m3px6rdklcvnv2x946h60bvns388994df";
+    };
+    propagatedBuildInputs = [ IOCapture TieSimple ];
+    meta = {
+      description = "IPv4/IPv6 address library";
+      license = with lib.licenses; [ free ];
+    };
+  };
+
   NetIPv4Addr = buildPerlPackage {
     pname = "Net-IPv4Addr";
     version = "0.10";
@@ -18855,6 +18884,20 @@ let
       description = "Simple IP address access control middleware";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://github.com/rintaro/Plack-Middleware-IPAddressFilter/tree";
+    };
+  };
+
+  PlackMiddlewareIPMatch = buildPerlPackage {
+    pname = "Plack-Middleware-IPMatch";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FU/FUKAI/Plack-Middleware-IPMatch-0.04.tar.gz";
+      sha256 = "0l5s8qpa7b9n5lwn74227fl053py2bn35l5dh2hbrqksiai98wah";
+    };
+    propagatedBuildInputs = [ NetIPMatchTrie NetIPXS Plack ];
+    meta = {
+      description = "查找指定 IP (CIDR) 所对应的标签 LABEL";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
