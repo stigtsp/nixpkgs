@@ -15615,6 +15615,20 @@ let
     };
   };
 
+  NetIPAddrRanges = buildPerlPackage {
+    pname = "Net-IP-AddrRanges";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RI/RINTARO/Net-IP-AddrRanges-0.01.tar.gz";
+      sha256 = "1ficmapsrfgh4f7j1a5p8ki03b2baal7jd2yrb42sh3hxdg61l32";
+    };
+    meta = {
+      description = "IP address ranges to match";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/rintaro/Net-IP-AddrRanges/tree";
+    };
+  };
+
   NetIPLite = buildPerlPackage {
     pname = "Net-IP-Lite";
     version = "0.03";
@@ -17833,6 +17847,21 @@ let
        description = "modify HTTP response headers";
        license = with lib.licenses; [ artistic1 gpl1Plus ];
      };
+  };
+
+  PlackMiddlewareIPAddressFilter = buildPerlPackage {
+    pname = "Plack-Middleware-IPAddressFilter";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RI/RINTARO/Plack-Middleware-IPAddressFilter-0.02.tar.gz";
+      sha256 = "0zydjfwnkvk0pqml22iw9i76y6icxs559r677vd044fpd28fa9mp";
+    };
+    propagatedBuildInputs = [ NetIPAddrRanges Plack ];
+    meta = {
+      description = "Simple IP address access control middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/rintaro/Plack-Middleware-IPAddressFilter/tree";
+    };
   };
 
   PlackMiddlewareInflater = buildPerlPackage {
