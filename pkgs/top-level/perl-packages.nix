@@ -20466,6 +20466,20 @@ let
     };
   };
 
+  PlackMiddlewareTrafficLog = buildPerlModule {
+    pname = "Plack-Middleware-TrafficLog";
+    version = "0.0401";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DE/DEXTER/Plack-Middleware-TrafficLog-0.0401.tar.gz";
+      sha256 = "0m0gpza0h4c6wsgxvyppvsm6gr2ys6h6s7ka2pp97kxsxbfqjrax";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Log headers and body of HTTP traffic";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
