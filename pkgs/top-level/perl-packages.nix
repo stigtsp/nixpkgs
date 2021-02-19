@@ -17199,6 +17199,21 @@ let
     };
   };
 
+  PlackMiddlewareAcmeAAHTTPHeader = buildPerlModule {
+    pname = "Plack-Middleware-Acme-AAHTTPHeader";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Acme-AAHTTPHeader-0.01.tar.gz";
+      sha256 = "0l7vpd93a6zarg8nr4g2jd8vkwn3ya3b14v3vakaaw3igcdrwfq1";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile TestArrow ];
+    meta = {
+      description = "Add ASCII Art into HTTP Header";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareAuthBrowserID = buildPerlPackage {
     pname = "Plack-Middleware-Auth-BrowserID";
     version = "0.0.7";
@@ -20982,6 +20997,21 @@ let
     };
   };
 
+  TestArrow = buildPerlModule {
+    pname = "Test-Arrow";
+    version = "0.20";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Test-Arrow-0.20.tar.gz";
+      sha256 = "196zgfa2n0al9y4g4wh714zxlwk8d5l7qvb8mls41zk4abi7z3m9";
+    };
+    propagatedBuildInputs = [ TextMatchedPosition ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile TestNameFromLine ];
+    meta = {
+      description = "Object-Oriented testing library";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
 
   TestBase = buildPerlPackage {
     pname = "Test-Base";
@@ -21750,6 +21780,22 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ TestDeep TestDifferences TestException TestWarn ];
+  };
+
+  TestNameFromLine = buildPerlModule {
+    pname = "Test-Name-FromLine";
+    version = "0.13";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SA/SATOH/Test-Name-FromLine-0.13.tar.gz";
+      sha256 = "0y33bjf0wg3n4bwi6gv832cgf3bl9snhn4rp8kz3fvzlyqccrrnf";
+    };
+    propagatedBuildInputs = [ FileSlurp ];
+    buildInputs = [ TestDifferences TestFatal ];
+    meta = {
+      description = "Auto fill test names from caller line";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/cho45/Test-Name-FromLine";
+    };
   };
 
   Testmysqld = buildPerlModule {
@@ -22798,6 +22844,19 @@ let
       sha256 = "06y79lla8adkqhrs41xdddqjs81dcrh266b50mfbg37bxkawd4f1";
     };
     buildInputs = [ ListMoreUtils TestDifferences TestException ];
+  };
+
+  TextMatchedPosition = buildPerlModule {
+    pname = "Text-MatchedPosition";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Text-MatchedPosition-0.03.tar.gz";
+      sha256 = "16jz2qlsf12v756y2v4kbqa2p565lkqrq3nbd4sbcg1mwlvssmy2";
+    };
+    meta = {
+      description = "find the matched position in a text";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   TestMinimumVersion = buildPerlPackage {
