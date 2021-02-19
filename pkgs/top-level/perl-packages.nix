@@ -19245,6 +19245,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugDancerTemplateVariables = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Dancer-TemplateVariables";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TM/TMUELLER/Plack-Middleware-Debug-Dancer-TemplateVariables-0.002.tar.gz";
+      sha256 = "07iay6zlm24wp4l9nhpfhmxnp2dqq5aq637azpb4pqw5wbvgxjcy";
+    };
+    propagatedBuildInputs = [ Dancer PlackMiddlewareDebug ];
+    meta = {
+      description = "Debug and inspect your template variables for Dancer";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugHTMLMason = buildPerlPackage {
     pname = "Plack-Middleware-Debug-HTML-Mason";
     version = "0.3";
