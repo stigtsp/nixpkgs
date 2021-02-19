@@ -21355,6 +21355,21 @@ let
     };
   };
 
+  PlackMiddlewareAxsLog = buildPerlModule {
+    pname = "Plack-Middleware-AxsLog";
+    version = "0.21";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-AxsLog-0.21.tar.gz";
+      sha256 = "1bknkbyx05mzzx7skm11lwzrdg61ffpldcpjbra7pf9f9mimbiaj";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Yet another AccessLog Middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Plack-Middleware-AxsLog";
+    };
+  };
+
   PlackMiddlewareBasicStyle = buildPerlPackage {
     pname = "Plack-Middleware-BasicStyle";
     version = "0.001001";
