@@ -4716,6 +4716,21 @@ let
     };
   };
 
+  CSSPacker = buildPerlPackage {
+    pname = "CSS-Packer";
+    version = "2.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/CSS-Packer-2.07.tar.gz";
+      sha256 = "1zqh5jvzh9pgqdbcv77780558548dxqixdsnr436h90s9smpkrp5";
+    };
+    propagatedBuildInputs = [ RegexpRegGrp ];
+    buildInputs = [ TestFileContents ];
+    meta = {
+      description = "Another CSS minifier";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   CSSSquish = buildPerlPackage {
     pname = "CSS-Squish";
     version = "0.10";
@@ -10006,6 +10021,20 @@ let
     };
   };
 
+  HTMLPacker = buildPerlPackage {
+    pname = "HTML-Packer";
+    version = "2.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/HTML-Packer-2.10.tar.gz";
+      sha256 = "1nffyhcshsdcjkc9363nlwcink4h1y0z4zd7bd197283rxcyb93h";
+    };
+    propagatedBuildInputs = [ CSSPacker JavaScriptPacker ];
+    meta = {
+      description = "Another HTML code cleaner";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   HTMLParser = buildPerlPackage {
     pname = "HTML-Parser";
     version = "3.75";
@@ -11369,6 +11398,20 @@ let
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC";
     meta = {
       description = "XS based JavaScript minifier";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  JavaScriptPacker = buildPerlPackage {
+    pname = "JavaScript-Packer";
+    version = "2.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/JavaScript-Packer-2.06.tar.gz";
+      sha256 = "0hc0nfd2qr19mbpca6jhsfxcl7ks7ig5f4cr64rdkqnqr04lwjpd";
+    };
+    propagatedBuildInputs = [ RegexpRegGrp ];
+    meta = {
+      description = "Perl version of Dean Edwards' Packer.js";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -18615,6 +18658,20 @@ let
     };
   };
 
+  PlackMiddlewareHTMLMinify = buildPerlModule {
+    pname = "Plack-Middleware-HTMLMinify";
+    version = "1.0.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSLIN/Plack-Middleware-HTMLMinify-1.0.0.tar.gz";
+      sha256 = "0bd54ykzm1bdp8j0q5l0w6a3jly1f86ajv61s20cgy8pl25013m0";
+    };
+    propagatedBuildInputs = [ HTMLPacker Plack ];
+    meta = {
+      description = "Plack middleware to minify HTML on-the-fly";
+      license = with lib.licenses; [ bsd3 ];
+    };
+  };
+
   PlackMiddlewareHTMLify = buildPerlModule {
     pname = "Plack-Middleware-HTMLify";
     version = "0.1.1";
@@ -20426,6 +20483,19 @@ let
     meta = {
       homepage = "https://github.com/toddr/Regexp-Parser";
       description = "Base class for parsing regexes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  RegexpRegGrp = buildPerlPackage {
+    pname = "Regexp-RegGrp";
+    version = "2.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/Regexp-RegGrp-2.01.tar.gz";
+      sha256 = "138nnw1qc01lilpnc2hvg751gw1rwhq91iw5nmnag7zhwwvq6482";
+    };
+    meta = {
+      description = "Groups a regular expressions collection";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
