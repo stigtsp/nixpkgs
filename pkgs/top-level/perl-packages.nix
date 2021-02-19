@@ -17571,6 +17571,21 @@ let
     };
   };
 
+  PathRouter = buildPerlPackage {
+    pname = "Path-Router";
+    version = "0.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NE/NEILB/Path-Router-0.15.tar.gz";
+      sha256 = "06ibdbabpbvda61yr35q0lb9rmiabjl9wpm3rnrhdvbirfvb59an";
+    };
+    propagatedBuildInputs = [ ClonePP EvalClosure Moo SubExporter TypeTiny namespaceclean ];
+    buildInputs = [ TestDeep TestFatal ];
+    meta = {
+      description = "A tool for routing paths";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PathTiny = buildPerlPackage {
     pname = "Path-Tiny";
     version = "0.118";
@@ -18242,6 +18257,20 @@ let
       description = "execute PHP script as CGI";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-App-PHPCGI";
+    };
+  };
+
+  PlackAppPathRouter = buildPerlPackage {
+    pname = "Plack-App-Path-Router";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Plack-App-Path-Router-0.08.tar.gz";
+      sha256 = "1sa6rsk8m0z4jnchqzff4gf2098rzba4ydsa8cnb90rz0h310mnh";
+    };
+    propagatedBuildInputs = [ MooseXNonMoose PathRouter Plack ];
+    meta = {
+      description = "A Plack component for dispatching with Path::Router";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
