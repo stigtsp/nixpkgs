@@ -20148,6 +20148,16 @@ let
     };
   };
 
+  PlackMiddlewareOptionsOK = buildPerlPackage {
+    pname = "Plack-Middleware-OptionsOK";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LL/LLAP/Plack-Middleware-OptionsOK-0.02.tar.gz";
+      sha256 = "0jcxy8bmch3hwkvd1da1scr5pxk8v3v7yzcjqspdmapa9nb8922d";
+    };
+    propagatedBuildInputs = [ Plack ];
+  };
+
   PlackMiddlewarePjax = buildPerlPackage {
     pname = "Plack-Middleware-Pjax";
     version = "1.114400";
