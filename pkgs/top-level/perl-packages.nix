@@ -17137,6 +17137,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugHTMLMason = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-HTML-Mason";
+    version = "0.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CR/CREIN/Plack-Middleware-Debug-HTML-Mason-0.3.tar.gz";
+      sha256 = "0kib20942x856dbdjk3s0gajghf4hn3avq5ndlb3fzpkwwhfmfk5";
+    };
+    propagatedBuildInputs = [ HTMLMason JSON PlackMiddlewareDebug ];
+    meta = {
+      description = "Debug info for old HTML::Mason apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/ctriv/perl-Plack-Middleware-Debug-HTML-Mason";
+    };
+  };
+
   PlackMiddlewareDebugTraceENV = buildPerlModule {
     pname = "Plack-Middleware-Debug-TraceENV";
     version = "0.043";
