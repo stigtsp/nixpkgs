@@ -18650,6 +18650,20 @@ let
     };
   };
 
+  PlackBuilderConditionals = buildPerlModule {
+    pname = "Plack-Builder-Conditionals";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Builder-Conditionals-0.05.tar.gz";
+      sha256 = "12vhzbb1kz8x6ds8hs84qk2njhkmsk9rqbxy9jgbxir6k6dv4k2d";
+    };
+    propagatedBuildInputs = [ ListMoreUtils NetCIDRLite Plack ];
+    meta = {
+      description = "Plack::Builder extension";
+      homepage = "https://github.com/kazeburo/Plack-Builder-Conditionals";
+    };
+  };
+
   PlackClient = buildPerlPackage {
     pname = "Plack-Client";
     version = "0.06";
