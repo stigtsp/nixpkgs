@@ -20523,6 +20523,20 @@ let
     };
   };
 
+  PlackAppHostname = buildPerlPackage {
+    pname = "Plack-App-Hostname";
+    version = "1.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Plack-App-Hostname-1.001.tar.gz";
+      sha256 = "1714qnxm23lv2n2xmj66d1rfzalsfrbikdwnk0nzxd8rl31sx9an";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Run multiple apps dispatched by the request Host header";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppImageMagick = buildPerlModule {
     pname = "Plack-App-ImageMagick";
     version = "1.110990";
