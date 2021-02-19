@@ -6248,6 +6248,22 @@ let
     };
   };
 
+  Dancer = buildPerlPackage {
+    pname = "Dancer";
+    version = "1.3513";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BI/BIGPRESH/Dancer-1.3513.tar.gz";
+      sha256 = "0bhk2m5njj85mpb14x77d2i8984h7czbjamjl04zi4cpk7cnd9mk";
+    };
+    propagatedBuildInputs = [ HTTPBody HTTPServerSimplePSGI HashMergeSimple MIMETypes ModuleRuntime TryTiny ];
+    buildInputs = [ DataDump DevelHide HTTPCookieJar JSON Plack TestNoWarnings ];
+    meta = {
+      description = "lightweight yet powerful web application framework";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/PerlDancer/Dancer";
+    };
+  };
+
   DataBinary = buildPerlPackage {
     pname = "Data-Binary";
     version = "0.01";
@@ -18019,6 +18035,20 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Show log of ajax requests/responses";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareDebugDancerTemplateTimer = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Dancer-TemplateTimer";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SY/SYSPETE/Plack-Middleware-Debug-Dancer-TemplateTimer-0.001.tar.gz";
+      sha256 = "0n8xarig2q7096573d0bqpx63di66hs4mp2kcrc99k9qjyzpm2f9";
+    };
+    propagatedBuildInputs = [ Dancer PlackMiddlewareDebug ];
+    meta = {
+      description = "Template and layout rendering timer for Dancer";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
