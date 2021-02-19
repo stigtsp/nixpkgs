@@ -18599,6 +18599,21 @@ let
     };
   };
 
+  PlackMiddlewareRewriteQuery = buildPerlPackage {
+    pname = "Plack-Middleware-Rewrite-Query";
+    version = "0.1.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Rewrite-Query-0.1.1.tar.gz";
+      sha256 = "0lm06wbc90cvq8i8i7fip7cgj5lg1iqb14zx690ghfzbahbqj8n6";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Safely modify the QUERY_STRING of a PSGI request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-Rewrite-Query";
+    };
+  };
+
   PlackMiddlewareSSI = buildPerlPackage {
     pname = "Plack-Middleware-SSI";
     version = "0.14";
