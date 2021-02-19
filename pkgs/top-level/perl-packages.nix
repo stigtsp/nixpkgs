@@ -19088,6 +19088,20 @@ let
     };
   };
 
+  PlackMiddlewareDispatchGP = buildPerlPackage {
+    pname = "Plack-Middleware-Dispatch-GP";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PA/PALIK/Plack-Middleware-Dispatch-GP-0.01.tar.gz";
+      sha256 = "1hkkm657rnmb3syiwzn2sw5l1b7w3kh9fb8v2mzqxn6in1yxswq1";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "dispatcher middleware for general purposes handling";
+    };
+  };
+
   PlackMiddlewareEasyHooks = buildPerlPackage {
     pname = "Plack-Middleware-EasyHooks";
     version = "0.02";
