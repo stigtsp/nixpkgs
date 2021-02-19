@@ -20204,6 +20204,20 @@ let
     };
   };
 
+  PlackMiddlewareTestStashWarnings = buildPerlPackage {
+    pname = "Plack-Middleware-Test-StashWarnings";
+    version = "0.08";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AL/ALEXMV/Plack-Middleware-Test-StashWarnings-0.08.tar.gz";
+      sha256 = "0cz5i0jy93z9848wwmijvmv8bjmxavi3apygjk7dydsp8cjbpkw9";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Test your application's warnings";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTextMinify = buildPerlPackage {
     pname = "Plack-Middleware-Text-Minify";
     version = "v0.1.4";
