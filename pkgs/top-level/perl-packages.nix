@@ -19457,6 +19457,22 @@ let
     };
   };
 
+  PlackMiddlewareDebugGitStatus = buildPerlModule {
+    pname = "Plack-Middleware-Debug-GitStatus";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MANNI/Plack-Middleware-Debug-GitStatus-0.04.tar.gz";
+      sha256 = "0fi1c6m4z96a0zhsbi6gd09lcx86c69w32kj9ybcp8v3kh5scl8r";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug ];
+    buildInputs = [ TestMockObject TestMost ];
+    meta = {
+      description = "Display git status information about the directory from which you run your development server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/mannih/Plack-Middleware-Debug-GitStatus";
+    };
+  };
+
   PlackMiddlewareDebugHTMLMason = buildPerlPackage {
     pname = "Plack-Middleware-Debug-HTML-Mason";
     version = "0.3";
