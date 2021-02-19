@@ -16975,6 +16975,20 @@ let
      };
   };
 
+  PlackMiddlewareDetectMobileBrowsers = buildPerlPackage {
+    pname = "Plack-Middleware-DetectMobileBrowsers";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HJ/HJANSEN/Plack-Middleware-DetectMobileBrowsers-0.05.tar.gz";
+      sha256 = "1vbpia48ysaxjzrps93402j012aviyni3ijwg5lql2ga3xvpc6zk";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Automatically set a flag in the environment if a mobile client is detected";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareFixMissingBodyInRedirect = buildPerlPackage {
     pname = "Plack-Middleware-FixMissingBodyInRedirect";
     version = "0.12";
