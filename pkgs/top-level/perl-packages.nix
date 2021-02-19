@@ -19472,6 +19472,21 @@ let
     };
   };
 
+  PlackMiddlewareTMT = buildPerlModule {
+    pname = "Plack-Middleware-TMT";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-TMT-0.04.tar.gz";
+      sha256 = "1hczrbmf5c3pla53a8g2kh659ai70ygdglh93sf95ksb66wnm8f7";
+    };
+    propagatedBuildInputs = [ Plack TextMicroTemplate ];
+    buildInputs = [ LWP ];
+    meta = {
+      description = "Text::MicroTemplate on the Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTextMinify = buildPerlPackage {
     pname = "Plack-Middleware-Text-Minify";
     version = "v0.1.4";
