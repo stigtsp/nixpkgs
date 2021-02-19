@@ -22880,6 +22880,20 @@ let
     };
   };
 
+  PlackMiddlewareProfilerNYTProf = buildPerlPackage {
+    pname = "Plack-Middleware-Profiler-NYTProf";
+    version = "0.17";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KI/KITANO/Plack-Middleware-Profiler-NYTProf-0.17.tar.gz";
+      sha256 = "0jz0v543gbz1aqdkl9p6y62lnrqdj1ls9a0r3s0n5ray9q6hq7v0";
+    };
+    propagatedBuildInputs = [ DevelNYTProf Plack ];
+    meta = {
+      description = "Middleware for Profiling a Plack App";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePrometheusRequestTimes = buildPerlPackage {
     pname = "Plack-Middleware-Prometheus-RequestTimes";
     version = "0.0001";
