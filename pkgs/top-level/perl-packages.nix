@@ -17737,6 +17737,21 @@ let
     };
   };
 
+  PlackMiddlewareLowerUrl = buildPerlPackage {
+    pname = "Plack-Middleware-LowerUrl";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LO/LOGIE/Plack-Middleware-LowerUrl-0.01.tar.gz";
+      sha256 = "18jncn6qzb117sp8y6zxzj2z2088jinncwgwfi61j6zh9sg465wz";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Make everything lower!";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareMethodOverride = buildPerlPackage {
     pname = "Plack-Middleware-MethodOverride";
     version = "0.20";
