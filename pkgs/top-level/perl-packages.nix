@@ -18251,6 +18251,21 @@ let
     };
   };
 
+  PlackMiddlewareAccessLogStructured = buildPerlModule {
+    pname = "Plack-Middleware-AccessLog-Structured";
+    version = "0.001002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MS/MSTOCK/Plack-Middleware-AccessLog-Structured-0.001002.tar.gz";
+      sha256 = "1a757bcg68qmwk3gy6vyvnf2zxfkn5dnnprjqw3wrd10n8jvj5kn";
+    };
+    propagatedBuildInputs = [ DateTime JSON Plack ];
+    buildInputs = [ TestClass TestDeep TestException ];
+    meta = {
+      description = "Access log middleware which creates structured log messages";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAcmeAAHTTPHeader = buildPerlModule {
     pname = "Plack-Middleware-Acme-AAHTTPHeader";
     version = "0.01";
