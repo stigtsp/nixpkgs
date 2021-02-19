@@ -7026,6 +7026,21 @@ let
     propagatedBuildInputs = [ DBI ];
   };
 
+  DBIxDisconnectAll = buildPerlModule {
+    pname = "DBIx-DisconnectAll";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/DBIx-DisconnectAll-0.03.tar.gz";
+      sha256 = "1i7791rx7pxc72fdyqvrmwlimrp1d1ysannb4msap4d8jrxjm51v";
+    };
+    propagatedBuildInputs = [ DBDSQLite ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "disconnect all databases";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DBIxFunctionalAPI = buildPerlPackage {
     pname = "DBIx-FunctionalAPI";
     version = "0.09";
@@ -21525,6 +21540,21 @@ let
       description = "Expose a DBIC QueryLog Instance in Middleware";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://search.cpan.org/dist/Plack-Middleware-DBIC-QueryLog/";
+    };
+  };
+
+  PlackMiddlewareDBIxDisconnectAll = buildPerlModule {
+    pname = "Plack-Middleware-DBIx-DisconnectAll";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZEBURO/Plack-Middleware-DBIx-DisconnectAll-0.02.tar.gz";
+      sha256 = "1jjrns4slh5dv45wjgs5zczmcq0a8qflym14p4f8wski2vi7diwh";
+    };
+    propagatedBuildInputs = [ DBIxDisconnectAll Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Disconnect all database connection at end of request";
+      homepage = "https://github.com/kazeburo/Plack-Middleware-DBIx-DisconnectAll";
     };
   };
 
