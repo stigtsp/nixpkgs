@@ -24726,6 +24726,21 @@ let
     };
   };
 
+  PlackMiddlewareStatsd = buildPerlPackage {
+    pname = "Plack-Middleware-Statsd";
+    version = "v0.4.5";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RR/RRWO/Plack-Middleware-Statsd-v0.4.5.tar.gz";
+      sha256 = "11vm9x0g75a9m2yfrgyijxwacq0mpmw9p5jdv4mxq440cc8wr1mq";
+    };
+    propagatedBuildInputs = [ Plack RefUtil ];
+    buildInputs = [ TestDifferences TestMockObject TestMost TestWarnings ];
+    meta = {
+      description = "send statistics to statsd";
+      license = with lib.licenses; [ artistic2 ];
+    };
+  };
+
   PlackMiddlewareStatus = buildPerlModule {
     pname = "Plack-Middleware-Status";
     version = "1.101150";
