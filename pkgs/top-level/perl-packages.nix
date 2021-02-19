@@ -20620,6 +20620,22 @@ let
     };
   };
 
+  PlackUtilLoad = buildPerlModule {
+    pname = "Plack-Util-Load";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Util-Load-0.1.tar.gz";
+      sha256 = "0i0zssaxdzw7rmnsnq5rsywn9v9ln23078wwqk8p4f16alnpfw67";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "load PSGI application from class, file, or URL";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Util-Load";
+    };
+  };
+
   Po4a = callPackage ../development/perl-modules/Po4a { };
 
   POE = buildPerlPackage {
