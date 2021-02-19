@@ -427,6 +427,20 @@ let
     };
   };
 
+  AnyEventReverseHTTP = buildPerlPackage {
+    pname = "AnyEvent-ReverseHTTP";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/AnyEvent-ReverseHTTP-0.05.tar.gz";
+      sha256 = "1w5m61zsfabpxr9cj1xwrr0hmghdzhsqkzq35qx1giwg3lxn2nsh";
+    };
+    propagatedBuildInputs = [ AnyEventHTTP AnyMoose HTTPMessage ];
+    meta = {
+      description = "reversehttp for AnyEvent";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyMoose = buildPerlPackage {
     pname = "Any-Moose";
     version = "0.27";
@@ -17372,6 +17386,20 @@ let
     buildInputs = [ TestTCP ];
     meta = {
       description = "abstract interface to remote web servers and local PSGI apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerAnyEventReverseHTTP = buildPerlPackage {
+    pname = "Plack-Handler-AnyEvent-ReverseHTTP";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Handler-AnyEvent-ReverseHTTP-0.04.tar.gz";
+      sha256 = "17gidrpjb1m4xq2pzx4rgjf1izkk5ch5464ichpx9pmxrayi6sfn";
+    };
+    propagatedBuildInputs = [ AnyEventReverseHTTP Plack ];
+    meta = {
+      description = "reversehttp gateway for PSGI application";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
