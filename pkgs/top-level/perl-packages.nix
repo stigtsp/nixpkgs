@@ -18920,6 +18920,20 @@ let
     };
   };
 
+  PlackMiddlewareFirebugLite = buildPerlModule {
+    pname = "Plack-Middleware-Firebug-Lite";
+    version = "0.2.3";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GS/GSLIN/Plack-Middleware-Firebug-Lite-0.2.3.tar.gz";
+      sha256 = "0yh7qwjj75jgyx56cprk5qhyr5c87vi40qahipchdqqvs2mfiyzk";
+    };
+    propagatedBuildInputs = [ HTMLParser Plack ];
+    meta = {
+      description = "Plack middleware to insert Firebug Lite code into HTML";
+      license = with lib.licenses; [ bsd3 ];
+    };
+  };
+
   PlackMiddlewareFixMissingBodyInRedirect = buildPerlPackage {
     pname = "Plack-Middleware-FixMissingBodyInRedirect";
     version = "0.12";
