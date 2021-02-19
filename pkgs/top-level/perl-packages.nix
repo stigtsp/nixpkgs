@@ -20189,6 +20189,22 @@ let
     };
   };
 
+  PlackAppEventSource = buildPerlModule {
+    pname = "Plack-App-EventSource";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTI/Plack-App-EventSource-0.03.tar.gz";
+      sha256 = "0pjd6p88mpmbk6cby97b28g0lmwffi9nydfqjws1zdnxari5l95r";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "EventSource/SSE for Plack";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "https://github.com/vti/plack-app-eventsource";
+    };
+  };
+
   PlackAppFCGIDispatcher = buildPerlPackage {
     pname = "Plack-App-FCGIDispatcher";
     version = "0.10";
