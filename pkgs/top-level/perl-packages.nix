@@ -17106,6 +17106,22 @@ let
     };
   };
 
+  PlackAppGitHubWebHook = buildPerlModule {
+    pname = "Plack-App-GitHub-WebHook";
+    version = "0.9";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-App-GitHub-WebHook-0.9.tar.gz";
+      sha256 = "1cpr1h4di5k1fkq3zvp6gq8148nqdfcp29ngvbkbkq7lswl4vp43";
+    };
+    propagatedBuildInputs = [ JSON PlackMiddlewareAccess ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "GitHub WebHook receiver as Plack application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-App-GitHub-WebHook";
+    };
+  };
+
   PlackAppHostMap = buildPerlModule {
     pname = "Plack-App-HostMap";
     version = "0.007";
@@ -17255,6 +17271,21 @@ let
     meta = {
       description = "PSGI handler on SCGI daemon";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareAccess = buildPerlPackage {
+    pname = "Plack-Middleware-Access";
+    version = "0.4";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TA/TADAM/Plack-Middleware-Access-0.4.tar.gz";
+      sha256 = "13y4vc70jffym05728ddgr55v6gh5cdwxwxkdy9hjnnz0iizr15j";
+    };
+    propagatedBuildInputs = [ NetIP Plack ];
+    meta = {
+      description = "Restrict access depending on remote ip or other parameters";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tadam/Plack-Middleware-Access";
     };
   };
 
