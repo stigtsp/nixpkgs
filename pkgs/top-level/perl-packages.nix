@@ -19518,6 +19518,21 @@ let
      };
   };
 
+  PlackMiddlewareIEnosniff = buildPerlModule {
+    pname = "Plack-Middleware-IEnosniff";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-IEnosniff-0.02.tar.gz";
+      sha256 = "06ff2i6yal02vw5139npcq5iahmfg3x06k063p4qhlczirx676g5";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ LWP ];
+    meta = {
+      description = "added HTTP Header 'X-Content-Type-Options: nosniff'";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareIPAddressFilter = buildPerlPackage {
     pname = "Plack-Middleware-IPAddressFilter";
     version = "0.02";
