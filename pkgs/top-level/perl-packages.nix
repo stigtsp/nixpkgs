@@ -18528,6 +18528,21 @@ let
     };
   };
 
+  PlackAppOpenVPNStatus = buildPerlPackage {
+    pname = "Plack-App-OpenVPN-Status";
+    version = "0.16";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CH/CHIM/Plack-App-OpenVPN-Status-0.16.tar.gz";
+      sha256 = "1616f37llgqb7ja3l9cj45jcwnx4czmnin4n6rxvdha6ikdil6v2";
+    };
+    propagatedBuildInputs = [ Plack TextMicroTemplate ];
+    buildInputs = [ PodCoverageTrustPod TestCPANMeta TestPod ];
+    meta = {
+      description = "Plack application to display the sessions of OpenVPN server";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppPHPCGI = buildPerlModule {
     pname = "Plack-App-PHPCGI";
     version = "0.05";
