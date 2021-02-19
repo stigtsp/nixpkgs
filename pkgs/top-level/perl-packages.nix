@@ -388,6 +388,21 @@ let
     };
   };
 
+  AnyEventFilesysNotify = buildPerlModule {
+    pname = "AnyEvent-Filesys-Notify";
+    version = "1.23";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MG/MGRIMES/AnyEvent-Filesys-Notify-1.23.tar.gz";
+      sha256 = "0w1c347dng20nwqdhawhpdgmnnv06yv5mpyvln93q70jhfhakaq2";
+    };
+    propagatedBuildInputs = [ AnyEvent MacFSEvents MooXTypesMooseLike MooXlate PathIteratorRule namespaceautoclean ];
+    buildInputs = [ DataDump TestException TestWithoutModule ];
+    meta = {
+      description = "An AnyEvent compatible module to monitor files/directories for changes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   AnyEventHTTP = buildPerlPackage {
     pname = "AnyEvent-HTTP";
     version = "2.25";
@@ -15291,6 +15306,19 @@ let
     };
   };
 
+  MacFSEvents = buildPerlPackage {
+    pname = "Mac-FSEvents";
+    version = "0.14";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Mac-FSEvents-0.14.tar.gz";
+      sha256 = "0620xj6aqr99fjgwcnc1rb63h1syr72bhrcjlwadj7dgw8rha6r3";
+    };
+    meta = {
+      description = "Monitor a directory structure for changes";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   MusicBrainzDiscID = buildPerlPackage {
     pname = "MusicBrainz-DiscID";
     version = "0.06";
@@ -17799,6 +17827,21 @@ let
     propagatedBuildInputs = [ OAuthLite Plack ];
     meta = {
       description = "OAuth signature validation middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareAutoRefresh = buildPerlModule {
+    pname = "Plack-Middleware-AutoRefresh";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MG/MGRIMES/Plack-Middleware-AutoRefresh-0.09.tar.gz";
+      sha256 = "0zfl9crg61xxh83vc6vacj37wvhhlcpb4ajwkqsscfrv4qkwzpvs";
+    };
+    propagatedBuildInputs = [ AnyEventFilesysNotify FileSlurp JSONAny Plack Readonly ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Reload pages in browsers when files are modified";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
