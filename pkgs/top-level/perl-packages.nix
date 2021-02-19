@@ -20045,6 +20045,21 @@ let
     };
   };
 
+  PlackMiddlewareImageScale = buildPerlPackage {
+    pname = "Plack-Middleware-Image-Scale";
+    version = "0.011";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PN/PNU/Plack-Middleware-Image-Scale-0.011.tar.gz";
+      sha256 = "05zi9kdzsw63whdzhfnmbrnbg86pcncn3c0p575y72cimrqqwx2l";
+    };
+    propagatedBuildInputs = [ ImageScale Moose Plack ];
+    buildInputs = [ FileSlurp Imager ];
+    meta = {
+      description = "Resize jpeg and png images on the fly";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareInflater = buildPerlPackage {
     pname = "Plack-Middleware-Inflater";
     version = "0.001";
