@@ -16960,6 +16960,20 @@ let
     };
   };
 
+  PlackMiddlewareDebugTraceENV = buildPerlModule {
+    pname = "Plack-Middleware-Debug-TraceENV";
+    version = "0.043";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Debug-TraceENV-0.043.tar.gz";
+      sha256 = "01mc7k8hl5jjzavmvlhj7c0x7nxgfks1l0b56lp4kylw9s4vjvv4";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug ];
+    meta = {
+      description = "debug panel for tracing %ENV";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDeflater = buildPerlPackage {
      pname = "Plack-Middleware-Deflater";
      version = "0.12";
