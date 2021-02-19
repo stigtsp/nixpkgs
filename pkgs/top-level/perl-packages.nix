@@ -18146,6 +18146,20 @@ let
     };
   };
 
+  PlackAppApacheActionWrapper = buildPerlPackage {
+    pname = "Plack-App-Apache-ActionWrapper";
+    version = "0.31.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RO/ROBINS/Plack-App-Apache-ActionWrapper-0.31.0.tar.gz";
+      sha256 = "1rwpn7cqibv18sggvf0j1klh768v718qld1kmx2irvr3pprn3kfd";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Wrapper for Apache2 Action directive for running PSGI apps on shared hosting with FastCGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppCLI = buildPerlPackage {
     pname = "Plack-App-CLI";
     version = "0.1";
