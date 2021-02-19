@@ -17273,6 +17273,21 @@ let
     };
   };
 
+  PlackMiddlewareDebugAjax = buildPerlPackage {
+    pname = "Plack-Middleware-Debug-Ajax";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VI/VINCENT/Plack-Middleware-Debug-Ajax-0.02.tar.gz";
+      sha256 = "1nnybmr2bqifmiqr53mhcvq90q0428559l2czc4h60404l1dxxp5";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareDebug ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Show log of ajax requests/responses";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareDebugHTMLMason = buildPerlPackage {
     pname = "Plack-Middleware-Debug-HTML-Mason";
     version = "0.3";
