@@ -17108,6 +17108,21 @@ let
     };
   };
 
+  PlackMiddlewareHTMLify = buildPerlModule {
+    pname = "Plack-Middleware-HTMLify";
+    version = "0.1.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/I/IO/IONCACHE/Plack-Middleware-HTMLify-0.1.1.tar.gz";
+      sha256 = "12fjdmxih09lj4sy1yim26r0rrmrld7r7rqmahpadg1jxhdcbayd";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ DataDump ];
+    meta = {
+      description = "Transform a non-html page into html";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareHeader = buildPerlPackage {
      pname = "Plack-Middleware-Header";
      version = "0.04";
