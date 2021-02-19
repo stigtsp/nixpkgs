@@ -17940,6 +17940,22 @@ let
     };
   };
 
+  PlackAppGitSmartHttp = buildPerlModule {
+    pname = "Plack-App-GitSmartHttp";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YA/YAMAMOTO/Plack-App-GitSmartHttp-0.07.tar.gz";
+      sha256 = "07nk2rdgvljj49v7s7yjlgz69yf61pzrzngkhqr2lfkkvxzpszpb";
+    };
+    propagatedBuildInputs = [ FileWhich Filechdir Plack ];
+    buildInputs = [ FileCopyRecursive ];
+    meta = {
+      description = "Git Smart HTTP Server PSGI(Plack) Implementation";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/dragon3/Plack-App-GitSmartHttp";
+    };
+  };
+
   PlackAppGraphQL = buildPerlPackage {
     pname = "Plack-App-GraphQL";
     version = "0.003";
