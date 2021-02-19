@@ -21472,6 +21472,21 @@ let
     };
   };
 
+  PlackMiddlewareCacheCHI = buildPerlPackage {
+    pname = "Plack-Middleware-Cache-CHI";
+    version = "0.102";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/P/PN/PNU/Plack-Middleware-Cache-CHI-0.102.tar.gz";
+      sha256 = "1hdns44ydl11sbdbipzs4xmr62ys4ph3ngfrix0khsp51ap78565";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ CHI ];
+    meta = {
+      description = "Caching Reverse Proxy for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCached = buildPerlPackage {
     pname = "Plack-Middleware-Cached";
     version = "0.15";
