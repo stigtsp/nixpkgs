@@ -21404,6 +21404,20 @@ let
     };
   };
 
+  PlackMiddlewareAuthAccessToken = buildPerlPackage {
+    pname = "Plack-Middleware-Auth-AccessToken";
+    version = "0.11";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VO/VOJ/Plack-Middleware-Auth-AccessToken-0.11.tar.gz";
+      sha256 = "1mn25k032vgg7xiq169hyrffn42lmna49wrm0cx31zhnq8icclav";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Secret access token (aka OAuth Bearer) authentification";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAuthBitcard = buildPerlPackage {
     pname = "Plack-Middleware-Auth-Bitcard";
     version = "0.002";
