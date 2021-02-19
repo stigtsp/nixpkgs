@@ -11949,6 +11949,22 @@ let
     };
   };
 
+  JSONRPCSpec = buildPerlModule {
+    pname = "JSON-RPC-Spec";
+    version = "v1.0.7";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NQ/NQOUNET/JSON-RPC-Spec-v1.0.7.tar.gz";
+      sha256 = "15z750s7mqzwh3yf05gbdndf1x6shv8qdzdz2x6mbc2qcjaa5jd7";
+    };
+    propagatedBuildInputs = [ JSONMaybeXS Moo RouterSimple namespaceclean ];
+    buildInputs = [ ModuleBuildTiny TestFatal ];
+    meta = {
+      description = "Yet another JSON-RPC 2.0 Implementation";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nqounet/p5-json-rpc-spec";
+    };
+  };
+
   JSONValidator = buildPerlPackage {
     pname = "JSON-Validator";
     version = "4.13";
@@ -18674,6 +18690,22 @@ let
       description = "Create and manipulate images with Image::Magick";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
       homepage = "http://search.cpan.org/dist/Plack-App-ImageMagick";
+    };
+  };
+
+  PlackAppJSONRPC = buildPerlModule {
+    pname = "Plack-App-JSONRPC";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NQ/NQOUNET/Plack-App-JSONRPC-0.02.tar.gz";
+      sha256 = "1ifyagkwqv16nvyqh3132xicqhw5ssg0pxxx2ipziw6pi3ncg08y";
+    };
+    propagatedBuildInputs = [ JSONRPCSpec Plack ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "(DEPRECATED) Yet another JSON-RPC 2.0 psgi application";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/nqounet/p5-plack-app-jsonrpc";
     };
   };
 
