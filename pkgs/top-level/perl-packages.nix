@@ -5359,6 +5359,21 @@ let
     };
   };
 
+  DataDumpStreamer = buildPerlModule {
+    pname = "Data-Dump-Streamer";
+    version = "2.40";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YV/YVES/Data-Dump-Streamer-2.40.tar.gz";
+      sha256 = "0d8x14gr1lfbgiqklprpazy7fyxkwnq0f1nbbp3fj3f275p3bgi4";
+    };
+    propagatedBuildInputs = [ BUtils ];
+    buildInputs = [ ExtUtilsDepends ];
+    meta = {
+      description = "Accurately serialize a data structure as Perl code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   DataDumperConcise = buildPerlPackage {
     pname = "Data-Dumper-Concise";
     version = "2.023";
@@ -7448,6 +7463,21 @@ let
     };
   };
 
+  DevelStackTraceWithLexicals = buildPerlPackage {
+    pname = "Devel-StackTrace-WithLexicals";
+    version = "2.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SA/SARTAK/Devel-StackTrace-WithLexicals-2.01.tar.gz";
+      sha256 = "1ijmchzhsy78fdsiw81ry6rpn4nhmdaqadyji193p0vpgmy6wgb9";
+    };
+    propagatedBuildInputs = [ DevelStackTrace PadWalker ];
+    meta = {
+      description = "Devel::StackTrace + PadWalker";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/sartak/Devel-StackTrace-WithLexicals/tree";
+    };
+  };
+
   DevelStrictMode = buildPerlPackage {
     pname = "Devel-StrictMode";
     version = "0.003";
@@ -8581,6 +8611,20 @@ let
     buildInputs = [ TestFatal TestRequires ];
     meta = {
       description = "Safely and cleanly create closures via string eval";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  EvalWithLexicals = buildPerlPackage {
+    pname = "Eval-WithLexicals";
+    version = "1.003006";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Eval-WithLexicals-1.003006.tar.gz";
+      sha256 = "0x09mq0q745cxkw3xgr0h7dil7p1pdq3l5299kj3mk2ijkk2gwb6";
+    };
+    propagatedBuildInputs = [ Moo strictures ];
+    meta = {
+      description = "pure perl eval with persistent lexical variables";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -22536,6 +22580,21 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Anonymous Plack::Middlewares";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareInteractiveDebugger = buildPerlPackage {
+    pname = "Plack-Middleware-InteractiveDebugger";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Middleware-InteractiveDebugger-0.01.tar.gz";
+      sha256 = "1h1nm5b4llhqsq1qhv0x4x4izn9sd4145wrh8z84k1vhqia82iqc";
+    };
+    propagatedBuildInputs = [ DataDumpStreamer DevelStackTraceWithLexicals EvalWithLexicals Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "Awesome Interactive Debugger ala Werkzeug";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
