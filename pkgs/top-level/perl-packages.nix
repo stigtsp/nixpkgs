@@ -18970,6 +18970,21 @@ let
     };
   };
 
+  PlackMiddlewareCustomErrorDocument = buildPerlPackage {
+    pname = "Plack-Middleware-CustomErrorDocument";
+    version = "0.004";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MJ/MJEMMESON/Plack-Middleware-CustomErrorDocument-0.004.tar.gz";
+      sha256 = "0mbamjxm0dnzwm0cs6zd1c20pjdyad6a592l2d2k9185ff3gvrb8";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "dynamically select error documents based on HTTP status code";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/mjemmeson/Plack-Middleware-CustomErrorDocument";
+    };
+  };
+
   PlackMiddlewareDBICQueryLog = buildPerlPackage {
     pname = "Plack-Middleware-DBIC-QueryLog";
     version = "0.05";
