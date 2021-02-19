@@ -17491,6 +17491,15 @@ let
     };
   };
 
+  PlackAppCLI = buildPerlPackage {
+    pname = "Plack-App-CLI";
+    version = "0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOUGLISH/Plack-App-CLI-0.1.tar.gz";
+      sha256 = "0p0kkzw5pw4wpvqj047gan25hjnnl6jbkb3w4038a510ryq1jy84";
+    };
+  };
+
   PlackAppCatmanduBag = buildPerlModule {
     pname = "Plack-App-Catmandu-Bag";
     version = "0.0102";
