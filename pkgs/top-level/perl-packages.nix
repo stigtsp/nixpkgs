@@ -9939,6 +9939,15 @@ let
     };
   };
 
+  I18NAcceptLanguage = buildPerlPackage {
+    pname = "I18N-AcceptLanguage";
+    version = "1.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CG/CGILMORE/I18N-AcceptLanguage-1.04.tar.gz";
+      sha256 = "0283yhhaf6pl7w8dj1l5wgdzfhhgh8ly2zqydy7lrz4ijlb42bii";
+    };
+  };
+
   HTMLClean = buildPerlPackage {
     pname = "HTML-Clean";
     version = "1.4";
@@ -18546,6 +18555,22 @@ let
     };
   };
 
+  PlackI18N = buildPerlModule {
+    pname = "Plack-I18N";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTI/Plack-I18N-0.04.tar.gz";
+      sha256 = "0afpxkhf8vrs58hakhxd9bq1wcja22cfdl3218afwn1j5hlpjs52";
+    };
+    propagatedBuildInputs = [ I18NAcceptLanguage LocaleMaketextLexicon Plack ];
+    buildInputs = [ ModuleBuildTiny TestFatal TestLib TestMonkeyMock TestRequires ];
+    meta = {
+      description = "I18N for Plack";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "https://github.com/vti/plack-i18n";
+    };
+  };
+
   PlackMiddlewareAccess = buildPerlPackage {
     pname = "Plack-Middleware-Access";
     version = "0.4";
@@ -24579,6 +24604,19 @@ let
     };
   };
 
+  TestLib = buildPerlPackage {
+    pname = "Test-Lib";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Test-Lib-0.002.tar.gz";
+      sha256 = "04aznd79l00nlm2zx20l71kqd7vhk46cij3511h9626zhc2avbhl";
+    };
+    meta = {
+      description = "Use libraries from a t/lib directory";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TestLoadAllModules = buildPerlPackage {
     pname = "Test-LoadAllModules";
     version = "0.022";
@@ -24763,6 +24801,21 @@ let
       homepage = "https://github.com/creaktive/Test-Mojibake";
       description = "Check your source for encoding misbehavior";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestMonkeyMock = buildPerlModule {
+    pname = "Test-MonkeyMock";
+    version = "0.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTI/Test-MonkeyMock-0.12.tar.gz";
+      sha256 = "0gvhjknhi7lww380h8k73p7f464mims90ylgqncpbm1ssjfj0dv9";
+    };
+    buildInputs = [ ModuleBuildTiny TestFatal ];
+    meta = {
+      description = "Usable mock class";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/vti/test-monkeymock";
     };
   };
 
