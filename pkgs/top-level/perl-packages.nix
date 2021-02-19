@@ -24597,6 +24597,22 @@ let
     };
   };
 
+  PlackSessionStoreCatmandu = buildPerlModule {
+    pname = "Plack-Session-Store-Catmandu";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NI/NICS/Plack-Session-Store-Catmandu-0.03.tar.gz";
+      sha256 = "11a63mylmam1v8c8lqgrw1ax16cnc1pnqiz8gvjf7mzhvra0lx9f";
+    };
+    propagatedBuildInputs = [ Catmandu PlackMiddlewareSession ];
+    buildInputs = [ ModuleBuildTiny TestPod ];
+    meta = {
+      description = "Plack session store backed by a Catmandu::Store";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/LibreCat/Plack-Session-Store-Catmandu";
+    };
+  };
+
   PlackSessionStoreEcho = buildPerlPackage {
     pname = "Plack-Session-Store-Echo";
     version = "1.00";
