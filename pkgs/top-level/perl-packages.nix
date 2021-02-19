@@ -569,6 +569,16 @@ let
     };
   };
 
+  Apache2ModSSL = buildPerlPackage {
+    pname = "Apache2-ModSSL";
+    version = "0.10";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OP/OPI/Apache2-ModSSL-0.10.tar.gz";
+      sha256 = "0qy29c9pl2m97zg8l6lyhhdbj4g08w44myajw06l2y50zabn1wvv";
+    };
+    propagatedBuildInputs = [ CryptSSLeay mod_perl2 ];
+  };
+
   ApacheAuthCookie = buildPerlPackage {
     pname = "Apache-AuthCookie";
     version = "3.30";
@@ -20912,6 +20922,20 @@ let
       description = "Prevent bots from submitting forms";
       license = with lib.licenses; [ artistic2 ];
       homepage = "https://github.com/vti/plack-middleware-antibot";
+    };
+  };
+
+  PlackMiddlewareApache2ModSSL = buildPerlPackage {
+    pname = "Plack-Middleware-Apache2-ModSSL";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Plack-Middleware-Apache2-ModSSL-0.002.tar.gz";
+      sha256 = "0hhyll80x7g5sf988sz8jxx05rnwdprhzw0i6s0slm4v1bv3jbk7";
+    };
+    propagatedBuildInputs = [ Apache2ModSSL Plack ];
+    meta = {
+      description = "a module that does something-or-other";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
