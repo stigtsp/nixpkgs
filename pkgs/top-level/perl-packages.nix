@@ -3419,6 +3419,21 @@ let
     propagatedBuildInputs = [ ClassISA ];
   };
 
+  ClassRefresh = buildPerlPackage {
+    pname = "Class-Refresh";
+    version = "0.07";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Class-Refresh-0.07.tar.gz";
+      sha256 = "1cxyshgxpk98icwws2jpgix6m53qsn43c8izxqm5mcybam9h7c73";
+    };
+    propagatedBuildInputs = [ ClassLoad ClassUnload DevelOverrideGlobalRequire ];
+    buildInputs = [ TestFatal TestRequires ];
+    meta = {
+      description = "refresh your classes during runtime";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   ClassStd = buildPerlModule {
     pname = "Class-Std";
     version = "0.013";
@@ -7351,6 +7366,19 @@ let
        description = "introspect overloaded operators";
        license = with lib.licenses; [ artistic1 gpl1Plus ];
      };
+  };
+
+  DevelOverrideGlobalRequire = buildPerlPackage {
+    pname = "Devel-OverrideGlobalRequire";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAGOLDEN/Devel-OverrideGlobalRequire-0.001.tar.gz";
+      sha256 = "1yayg0838b58dqg8acahhw885s0yvchjyf2fm7s2ladfwcnqk487";
+    };
+    meta = {
+      description = "Override CORE::GLOBAL::require safely";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
   };
 
   DevelPartialDump = buildPerlPackage {
@@ -21317,6 +21345,20 @@ let
     buildInputs = [ JSON LWP ];
     meta = {
       description = "The Chrome Logger Middleware for Plack";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareClassRefresh = buildPerlPackage {
+    pname = "Plack-Middleware-Class-Refresh";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DO/DOY/Plack-Middleware-Class-Refresh-0.01.tar.gz";
+      sha256 = "1bv2h6q39lrjlwlx10ymw1h72619ywcqhdia6y07h1i98wvkmsxp";
+    };
+    propagatedBuildInputs = [ ClassRefresh Plack ];
+    meta = {
+      description = "Refresh your app classes with Class::Refresh before requests";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
