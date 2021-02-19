@@ -19552,6 +19552,22 @@ let
     };
   };
 
+  PlackMiddlewareFixIEXDomainRequestBug = buildPerlPackage {
+    pname = "Plack-Middleware-FixIEXDomainRequestBug";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JJ/JJNAPIORK/Plack-Middleware-FixIEXDomainRequestBug-0.001.tar.gz";
+      sha256 = "03csswq4mz2v1a3zmbiblq8a0pb65xb55kjkcy3lkgzsq7wmbwjm";
+    };
+    propagatedBuildInputs = [ Plack ];
+    buildInputs = [ TestMost ];
+    meta = {
+      description = "Solve the IE8 / IE9 XDomainRequest Missing or Invalid Content-Type Bug";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/jjn1056/Plack-Middleware-FixIEXDomainRequestBug";
+    };
+  };
+
   PlackMiddlewareFixMissingBodyInRedirect = buildPerlPackage {
     pname = "Plack-Middleware-FixMissingBodyInRedirect";
     version = "0.12";
