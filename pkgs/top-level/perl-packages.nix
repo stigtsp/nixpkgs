@@ -21497,6 +21497,21 @@ let
     };
   };
 
+  PlackMiddlewareCurlizer = buildPerlModule {
+    pname = "Plack-Middleware-Curlizer";
+    version = "0.03";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/Plack-Middleware-Curlizer-0.03.tar.gz";
+      sha256 = "0s2qrazxq9akzxz8fzg7wkc8lz58h8adwnqs0hds2agf28r1p39s";
+    };
+    propagatedBuildInputs = [ Plack ShellQuoteAny ];
+    buildInputs = [ LWP ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "Building Curl Command from Plack Request";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareCustomErrorDocument = buildPerlPackage {
     pname = "Plack-Middleware-CustomErrorDocument";
     version = "0.004";
@@ -26797,6 +26812,21 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/F/FL/FLORA/Shell-Command-0.06.tar.gz";
       sha256 = "1lgc2rb3b5a4lxvbq0cbg08qk0n2i88srxbsz93bwi3razpxxr7k";
+    };
+  };
+
+  ShellQuoteAny = buildPerlModule {
+    pname = "ShellQuote-Any";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/B/BA/BAYASHI/ShellQuote-Any-0.04.tar.gz";
+      sha256 = "1w03m509nyxscvi4mh04h6k6y4bicqfgnbh9kgmq68jsa3anc69y";
+    };
+    propagatedBuildInputs = [ StringShellQuote Win32ShellQuote ];
+    buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
+    meta = {
+      description = "escape strings for the shell on Linux, UNIX or MSWin32";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
