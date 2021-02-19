@@ -19817,6 +19817,22 @@ let
     };
   };
 
+  PlackAppCGIBinStreaming = buildPerlModule {
+    pname = "Plack-App-CGIBin-Streaming";
+    version = "0.06";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/O/OP/OPI/Plack-App-CGIBin-Streaming-0.06.tar.gz";
+      sha256 = "152aagmwm8ajq0kas64ll44qfazbg9xbd0l8by15pvr8npak9sih";
+    };
+    propagatedBuildInputs = [ CGICompile Plack ];
+    buildInputs = [ ModuleBuildTiny Starman ];
+    meta = {
+      description = "allow old style CGI applications to use the plack streaming protocol";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "https://github.com/binary-com/perl-Plack-App-CGIBin-Streaming";
+    };
+  };
+
   PlackAppCLI = buildPerlPackage {
     pname = "Plack-App-CLI";
     version = "0.1";
