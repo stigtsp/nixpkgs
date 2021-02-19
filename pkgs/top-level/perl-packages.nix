@@ -20622,6 +20622,20 @@ let
     };
   };
 
+  PlackMiddlewareAddDefaultCharset = buildPerlPackage {
+    pname = "Plack-Middleware-AddDefaultCharset";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KAZUHO/Plack-Middleware-AddDefaultCharset-0.02.tar.gz";
+      sha256 = "1xrijpqn6b3rzrwrmvirya1zy6wx1r3rf9cmpy5xx7gnicn043q1";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "a port of Apache2's AddDefaultCharset";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareAppStoreReceipt = buildPerlPackage {
     pname = "Plack-Middleware-AppStoreReceipt";
     version = "0.003";
