@@ -17835,6 +17835,21 @@ let
     };
   };
 
+  PlackMiddlewareLogDispatchouli = buildPerlPackage {
+    pname = "Plack-Middleware-LogDispatchouli";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TS/TSIBLEY/Plack-Middleware-LogDispatchouli-0.01.tar.gz";
+      sha256 = "1lhdbndy5rsjh9bhvky105c1fsybfsvzb3rm8fj4bv29w789z0nh";
+    };
+    propagatedBuildInputs = [ LogDispatchouli Plack ];
+    buildInputs = [ TestDeep ];
+    meta = {
+      description = "Uses Log::Dispatchouli to configure the PSGI logger";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogMinimal = buildPerlPackage {
     pname = "Plack-Middleware-Log-Minimal";
     version = "0.06";
