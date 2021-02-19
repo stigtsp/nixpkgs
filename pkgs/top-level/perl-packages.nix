@@ -174,6 +174,20 @@ let
     propagatedBuildInputs = [ AlgorithmDiff ];
   };
 
+  AlienActiveMQ = buildPerlPackage {
+    pname = "Alien-ActiveMQ";
+    version = "0.00005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LO/LOKI/Alien-ActiveMQ-0.00005.tar.gz";
+      sha256 = "1imm4m1rzaxd98m4w5zqb4abhmy227kxxym4dfq91fsqgnlsldwx";
+    };
+    propagatedBuildInputs = [ ArchiveExtract ConstFast FileCopyRecursive FileShareDir IPCRun LWP MethodSignaturesSimple MooseXGetopt MooseXTypesPathClass NetStomp ScopeGuard SortVersions ];
+    buildInputs = [ TestMockModule ];
+    meta = {
+      description = "Manages installs of versions of Apache ActiveMQ, and provides a standard";
+    };
+  };
+
   AlienBuild = buildPerlPackage {
     pname = "Alien-Build";
     version = "2.38";
@@ -12246,6 +12260,21 @@ let
     };
   };
 
+  LogAnyAdapterTAP = buildPerlPackage {
+    pname = "Log-Any-Adapter-TAP";
+    version = "0.003003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NE/NERDVANA/Log-Any-Adapter-TAP-0.003003.tar.gz";
+      sha256 = "1h1107yrq8rvw3qlhry8lybds4gqm3nwc54p8hqinaxlna4hc7qk";
+    };
+    propagatedBuildInputs = [ LogAny TryTiny ];
+    meta = {
+      description = "Logger suitable for use with TAP test files";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/silverdirk/perl-Log-Any-Adapter-TAP";
+    };
+  };
+
   LogContextual = buildPerlPackage {
     pname = "Log-Contextual";
     version = "0.008001";
@@ -16352,6 +16381,51 @@ let
     };
   };
 
+  NetStomp = buildPerlModule {
+    pname = "Net-Stomp";
+    version = "0.60";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAKKAR/Net-Stomp-0.60.tar.gz";
+      sha256 = "19lysz7fy4pwkc0ahmz7r5zr7f9yls2kq37ny95iifb7vxi63l66";
+    };
+    propagatedBuildInputs = [ ClassAccessor LogAny ];
+    buildInputs = [ LogAnyAdapterTAP TestDeep TestFatal TestNiceDump ];
+    meta = {
+      description = "A Streaming Text Orientated Messaging Protocol Client";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  NetStompMooseHelpers = buildPerlPackage {
+    pname = "Net-Stomp-MooseHelpers";
+    version = "3.0";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAKKAR/Net-Stomp-MooseHelpers-3.0.tar.gz";
+      sha256 = "09r9bkdg407kla90rrcya3rihb9rncrnihqnc2kx8b7l2jll2iyl";
+    };
+    propagatedBuildInputs = [ MooseXRoleWithOverloading MooseXTypesCommon MooseXTypesPathClass MooseXTypesStructured NetStomp Throwable ];
+    buildInputs = [ DataPrinter TestDeep TestFatal ];
+    meta = {
+      description = "set of helper roles and types to deal with Net::Stomp";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  NetStompProducer = buildPerlPackage {
+    pname = "Net-Stomp-Producer";
+    version = "2.005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAKKAR/Net-Stomp-Producer-2.005.tar.gz";
+      sha256 = "133cl6xng9sb0yb7f7lv8ayav6vvp7hvxm3hznj0kxlmcav4994x";
+    };
+    propagatedBuildInputs = [ DataDump NetStompMooseHelpers ];
+    buildInputs = [ DataPrinter JSONXS TestDeep TestFatal TestWarn ];
+    meta = {
+      description = "helper object to send messages via Net::Stomp";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   NetTelnet = buildPerlPackage {
     pname = "Net-Telnet";
     version = "3.04";
@@ -17915,6 +17989,21 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "PSGI handler on SCGI daemon";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackHandlerStomp = buildPerlPackage {
+    pname = "Plack-Handler-Stomp";
+    version = "1.15";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAKKAR/Plack-Handler-Stomp-1.15.tar.gz";
+      sha256 = "17rnp7jj1msvl149hazw3lri0jnxmyh1ykmglnqvypnb0rbk8ysm";
+    };
+    propagatedBuildInputs = [ FileChangeNotify NetStompMooseHelpers Plack ];
+    buildInputs = [ AlienActiveMQ DataPrinter JSONXS NetStompProducer TestDeep TestFatal TestMost TestRoutine ];
+    meta = {
+      description = "Plack handler for the STOMP protocol";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
@@ -23259,6 +23348,20 @@ let
     };
     meta = {
       description = "Skip tests when modules not available";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  TestNiceDump = buildPerlPackage {
+    pname = "Test-NiceDump";
+    version = "1.0.1";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/D/DA/DAKKAR/Test-NiceDump-1.0.1.tar.gz";
+      sha256 = "0qxsskn08blvhdrvm3qrh09y5jcixks9z2bzdpmk507nd8kpfa0j";
+    };
+    propagatedBuildInputs = [ DataDump SafeIsa ];
+    meta = {
+      description = "let's have a nice and human readable dump of our objects!";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
