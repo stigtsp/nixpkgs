@@ -17022,6 +17022,20 @@ let
     };
   };
 
+  PlackServerAnyEvent = buildPerlPackage {
+    pname = "Plack-Server-AnyEvent";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/Plack-Server-AnyEvent-0.04.tar.gz";
+      sha256 = "0ia330ffsyp190bkkcah6mlcfzbjiyqs9p21icprpvbqdg2fpzlr";
+    };
+    propagatedBuildInputs = [ AnyEvent Plack namespaceclean ];
+    meta = {
+      description = "DEPRECATED. Use Twiggy";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackTestExternalServer = buildPerlPackage {
     pname = "Plack-Test-ExternalServer";
     version = "0.02";
