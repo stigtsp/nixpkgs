@@ -9996,6 +9996,22 @@ let
      };
   };
 
+  HTTPThrowable = buildPerlPackage {
+    pname = "HTTP-Throwable";
+    version = "0.027";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/HTTP-Throwable-0.027.tar.gz";
+      sha256 = "0n93wnzag4czldsdaas8bwcybpp40dvfm8ybg90mqln7i28pnx7i";
+    };
+    propagatedBuildInputs = [ MooXStrictConstructor PackageVariant Plack SubExporter Throwable TypeTiny namespaceclean ];
+    buildInputs = [ TestDeep TestFatal ];
+    meta = {
+      description = "a set of strongly-typed, PSGI-friendly HTTP 1.1 exception libraries";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/rjbs/HTTP-Throwable";
+    };
+  };
+
   HTTPTinyCache = buildPerlPackage {
     pname = "HTTP-Tiny-Cache";
     version = "0.002";
@@ -16765,6 +16781,21 @@ let
        license = with lib.licenses; [ artistic1 gpl1Plus ];
        homepage = "https://github.com/miyagawa/Plack-Middleware-Auth-Digest";
      };
+  };
+
+  PlackMiddlewareComboLoader = buildPerlPackage {
+    pname = "Plack-Middleware-ComboLoader";
+    version = "0.04";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JS/JSHIRLEY/Plack-Middleware-ComboLoader-0.04.tar.gz";
+      sha256 = "1k9y0g3w164fld4z6rlh1fccwnihv0x33dldrjhhan5zkkpmyxd7";
+    };
+    propagatedBuildInputs = [ HTTPThrowable PathClass ];
+    meta = {
+      description = "Handle combination loading and processing of on-disk resources";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/jshirley/Plack-Middleware-ComboLoader";
+    };
   };
 
   PlackMiddlewareConsoleLogger = buildPerlModule {
