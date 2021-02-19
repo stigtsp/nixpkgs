@@ -23104,6 +23104,21 @@ let
     };
   };
 
+  PlackMiddlewareLightProfile = buildPerlPackage {
+    pname = "Plack-Middleware-LightProfile";
+    version = "0.002";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/C/CO/COLINK/Plack-Middleware-LightProfile-0.002.tar.gz";
+      sha256 = "10hv2n5zpck6rc34cqwbvyb19p2ql82c9ds8xb3cz0w44gvslqgk";
+    };
+    propagatedBuildInputs = [ LogAny ProcessSizeLimitCore ];
+    buildInputs = [ HTTPMessage Plack ];
+    meta = {
+      description = "A small, lightweight profiler for time and memory as Plack middleware";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareLogAny = buildPerlPackage {
     pname = "Plack-Middleware-LogAny";
     version = "0.001";
