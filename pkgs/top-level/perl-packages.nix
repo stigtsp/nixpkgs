@@ -19443,6 +19443,20 @@ let
     };
   };
 
+  PlackMiddlewarePrometheusRequestTimes = buildPerlPackage {
+    pname = "Plack-Middleware-Prometheus-RequestTimes";
+    version = "0.0001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/N/NE/NEWELLC/Plack-Middleware-Prometheus-RequestTimes-0.0001.tar.gz";
+      sha256 = "1yyf14qwizxzpc4v43bs83zfm753svcgc1114yy42r5ib7mmvg7i";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "record response times with a prometheus histogram";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareProxyByHeader = buildPerlModule {
     pname = "Plack-Middleware-Proxy-ByHeader";
     version = "0.01";
