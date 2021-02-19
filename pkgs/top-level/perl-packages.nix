@@ -21421,6 +21421,21 @@ let
     };
   };
 
+  PlackSessionStoreRedis = buildPerlPackage {
+    pname = "Plack-Session-Store-Redis";
+    version = "0.05";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/L/LE/LEEDO/Plack-Session-Store-Redis-0.05.tar.gz";
+      sha256 = "1y9x58fgccq0881xn4by09kqjn8spb8q3ysy61j89wz3zvdhk7wn";
+    };
+    propagatedBuildInputs = [ JSON PlackMiddlewareSession Redis ];
+    buildInputs = [ TestException ];
+    meta = {
+      description = "Redis based session store for Plack apps";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackSessionStoreRedisFast = buildPerlModule {
     pname = "Plack-Session-Store-RedisFast";
     version = "0.05";
