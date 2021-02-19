@@ -21711,6 +21711,21 @@ let
     };
   };
 
+  PlackMiddlewareBetterStackTrace = buildPerlModule {
+    pname = "Plack-Middleware-BetterStackTrace";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/G/GU/GUNYA/Plack-Middleware-BetterStackTrace-0.02.tar.gz";
+      sha256 = "0ig28b63ik1hgxd0mzlk8mf0ypnr8z6jhwaiwlikq4cf450ir38l";
+    };
+    propagatedBuildInputs = [ DevelStackTraceWithLexicals JSON Plack TextXslate ];
+    buildInputs = [ PerlTidy ];
+    meta = {
+      description = "Displays better stack trace when your app dies";
+      homepage = "https://github.com/gunyarakun/Plack-Middleware-BetterStackTrace";
+    };
+  };
+
   PlackMiddlewareBlockHeaderInjection = buildPerlPackage {
     pname = "Plack-Middleware-BlockHeaderInjection";
     version = "v1.0.1";
