@@ -19941,6 +19941,20 @@ let
     };
   };
 
+  PlackMiddlewareTimeout = buildPerlPackage {
+    pname = "Plack-Middleware-Timeout";
+    version = "0.09";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/T/TJ/TJMC/Plack-Middleware-Timeout-0.09.tar.gz";
+      sha256 = "13pzd5qglx2sxl4m33pv4yfiph26w83a91vslksmgyw6n74iv6cq";
+    };
+    propagatedBuildInputs = [ Plack ScopeGuard ];
+    meta = {
+      description = "Timeout long running requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
