@@ -19345,6 +19345,21 @@ let
     };
   };
 
+  PlackMiddlewareAppStoreReceipt = buildPerlPackage {
+    pname = "Plack-Middleware-AppStoreReceipt";
+    version = "0.003";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Z/ZD/ZDK/Plack-Middleware-AppStoreReceipt-0.003.tar.gz";
+      sha256 = "1ri769mbch6vfpq9022mwq5z4iwmlf4492nz146mk79xa7d06fgr";
+    };
+    propagatedBuildInputs = [ Furl JSON Plack ];
+    meta = {
+      description = "The Plack::Middleware that verifies Apple App Store Receipts for In-App Purchases";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/zdk/plack-middleware-appstorereceipt";
+    };
+  };
+
   PlackMiddlewareAssets = buildPerlModule {
     pname = "Plack-Middleware-Assets";
     version = "1.0.0";
