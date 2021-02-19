@@ -18228,6 +18228,21 @@ let
     };
   };
 
+  PlackMiddlewareThrottle = buildPerlPackage {
+    pname = "Plack-Middleware-Throttle";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FR/FRANCKC/Plack-Middleware-Throttle-0.01.tar.gz";
+      sha256 = "0f0agwkqcm0mpw83v6z83dnxxj2kzrrj07mbhil80v8jfk49g71h";
+    };
+    propagatedBuildInputs = [ DateTime Moose Plack ];
+    buildInputs = [ TestRequires ];
+    meta = {
+      description = "A Plack Middleware for rate-limiting incoming HTTP requests";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareTrailingSlashKiller = buildPerlModule {
     pname = "Plack-Middleware-TrailingSlashKiller";
     version = "0.01";
