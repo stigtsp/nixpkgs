@@ -20171,6 +20171,21 @@ let
     };
   };
 
+  PlackAppDBIGofer = buildPerlModule {
+    pname = "Plack-App-DBI-Gofer";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/J/JW/JWRIGHT/Plack-App-DBI-Gofer-0.001.tar.gz";
+      sha256 = "0206j4ayhrvbp6vla771d6l5a6hbjnwavrm6qbmyqiv8vjja4faw";
+    };
+    propagatedBuildInputs = [ DBI Plack SafeIsa ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "server side http transport for DBI-Gofer using PSGI";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackAppDataSection = buildPerlModule {
     pname = "Plack-App-DataSection";
     version = "0.05";
