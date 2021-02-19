@@ -20810,6 +20810,22 @@ let
     };
   };
 
+  PlackMiddlewareAntibot = buildPerlModule {
+    pname = "Plack-Middleware-Antibot";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/V/VT/VTI/Plack-Middleware-Antibot-0.02.tar.gz";
+      sha256 = "1gv1nsiks4z1b2lqpl9ndy2v0msygqs6675i0m518qvci5xvpp2n";
+    };
+    propagatedBuildInputs = [ PlackMiddlewareSession ];
+    buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Prevent bots from submitting forms";
+      license = with lib.licenses; [ artistic2 ];
+      homepage = "https://github.com/vti/plack-middleware-antibot";
+    };
+  };
+
   PlackMiddlewareAppStoreReceipt = buildPerlPackage {
     pname = "Plack-Middleware-AppStoreReceipt";
     version = "0.003";
