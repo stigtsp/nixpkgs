@@ -20595,6 +20595,20 @@ let
     };
   };
 
+  PlackMiddlewareOptions = buildPerlModule {
+    pname = "Plack-Middleware-Options";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/R/RH/RHOELZ/Plack-Middleware-Options-0.01.tar.gz";
+      sha256 = "1wq7mrinnnpl6wq4jz12vj6j3g7i0aiq2plg2w95j1lfhxmqf62b";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Implements OPTIONS and filters out unknown methods";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareOptionsOK = buildPerlPackage {
     pname = "Plack-Middleware-OptionsOK";
     version = "0.02";
