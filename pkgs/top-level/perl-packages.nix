@@ -19962,6 +19962,20 @@ let
     };
   };
 
+  PlackMiddlewareNoMultipleSlashes = buildPerlModule {
+    pname = "Plack-Middleware-NoMultipleSlashes";
+    version = "0.001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/X/XS/XSAWYERX/Plack-Middleware-NoMultipleSlashes-0.001.tar.gz";
+      sha256 = "1qrf2n5wfpwf8xgj0wva6p6d3hyhfc8dy894izvmnvjmi487zhxx";
+    };
+    propagatedBuildInputs = [ Plack ];
+    meta = {
+      description = "Remove multiple slashes in your paths automatically";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewarePostErrorToSlack = buildPerlModule {
     pname = "Plack-Middleware-PostErrorToSlack";
     version = "0.01";
