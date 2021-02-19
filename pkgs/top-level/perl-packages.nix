@@ -3007,6 +3007,20 @@ let
     };
   };
 
+  ClassNull = buildPerlPackage {
+    pname = "Class-Null";
+    version = "2.110730";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MARCEL/Class-Null-2.110730.tar.gz";
+      sha256 = "0dynshhqgqaji3hrarbgjdi2p0wi04snwmg7fbpfsqca2nrlcfsw";
+    };
+    meta = {
+      description = "Implements the Null Class design pattern";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/Class-Null/";
+    };
+  };
+
   ClassReturnValue = buildPerlPackage {
     pname = "Class-ReturnValue";
     version = "0.55";
@@ -9865,6 +9879,36 @@ let
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     propagatedBuildInputs = [ TimeDate ];
+  };
+
+  HTTPEngine = buildPerlPackage {
+    pname = "HTTP-Engine";
+    version = "0.03005";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/Y/YA/YAPPO/HTTP-Engine-0.03005.tar.gz";
+      sha256 = "01bly3nvkhgcdh49kczjmr6zww07ipczsvdvmd2w9jk6s86m34d2";
+    };
+    propagatedBuildInputs = [ CGISimple HTTPBody HTTPHeadersFast HTTPServerSimple MouseXTypes ];
+    buildInputs = [ HTTPRequestAsCGI YAML ];
+    meta = {
+      description = "Web Server Gateway Interface and HTTP Server Engine Drivers";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  HTTPEngineFirePHP = buildPerlPackage {
+    pname = "HTTP-Engine-FirePHP";
+    version = "0.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MA/MARCEL/HTTP-Engine-FirePHP-0.02.tar.gz";
+      sha256 = "0sfh703za3gxd5q41ivljhxwbi62xbd5g6v3kbyl92n0rl39nh6x";
+    };
+    propagatedBuildInputs = [ HTTPEngine UNIVERSALrequire ];
+    meta = {
+      description = "Log to FirePHP from within HTTP::Engine";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://search.cpan.org/dist/HTTP-Engine-FirePHP/";
+    };
   };
 
   HTTPEntityParser = buildPerlModule {
@@ -17148,6 +17192,20 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Automatically set a flag in the environment if a mobile client is detected";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
+  PlackMiddlewareFirePHP = buildPerlPackage {
+    pname = "Plack-Middleware-FirePHP";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/F/FL/FLORIAN/Plack-Middleware-FirePHP-0.01.tar.gz";
+      sha256 = "0lycdwcl936s6an0r0cf51xd3kqr46sg2jjns54712sg4xd5ixhj";
+    };
+    propagatedBuildInputs = [ ClassNull HTTPEngineFirePHP Plack ];
+    meta = {
+      description = "Middleware for FirePHP::Dispatcher";
       license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
