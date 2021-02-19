@@ -18755,6 +18755,20 @@ let
     };
   };
 
+  PlackMiddlewareBasicStyle = buildPerlPackage {
+    pname = "Plack-Middleware-BasicStyle";
+    version = "0.001001";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/M/MG/MGV/Plack-Middleware-BasicStyle-0.001001.tar.gz";
+      sha256 = "104p8xg2ywqibipdl03s87yj7gvlhmax5ryyggny6wf3hcq2alg7";
+    };
+    propagatedBuildInputs = [ HTMLParser Plack ];
+    meta = {
+      description = "Add a basic <style> element to pages that don't have one";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   PlackMiddlewareBootstrap = buildPerlModule {
     pname = "Plack-Middleware-Bootstrap";
     version = "0.08";
