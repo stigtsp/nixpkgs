@@ -14,7 +14,7 @@
 # cpan2nix assumes that perl-packages.nix will be used only with perl 5.30.3 or above
 assert lib.versionAtLeast perl.version "5.30.3";
 let
-  inherit (lib) maintainers teams;
+  inherit (lib) maintainers platforms licenses teams;
   self = _self // (overrides pkgs);
   _self = with self; {
 
@@ -109,10 +109,10 @@ let
     # tests fails on nixos and hydra because of different purity issues
     doCheck = false;
 
-    meta = with lib; {
-      description = "A grep-like tool tailored to working with large trees of source code";
-      homepage    = "https://beyondgrep.com";
-      license     = licenses.artistic2;
+    meta = {
+      description = "A grep-like program for searching source code";
+      license = licenses.artistic2;
+      homepage = "https://beyondgrep.com/";
       maintainers = with maintainers; [ lovek323 ];
     };
   };
@@ -136,7 +136,8 @@ let
     };
     meta = {
       description = "A module for merging hierarchies using the C3 algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Algorithm-C3";
     };
   };
 
@@ -171,7 +172,6 @@ let
     };
     propagatedBuildInputs = [ AlgorithmDiff ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -184,7 +184,7 @@ let
       sha256 = "01n0qsirv7zy8pl0m6l8vmcjijpr7gjna359q5jv74r00knynzj3";
     };
     meta = {
-      license = with lib.licenses; [ wtfpl ];
+      license = licenses.wtfpl;
     };
   };
 
@@ -223,7 +223,8 @@ let
     buildInputs = [ DevelHide Test2Suite ];
     meta = {
       description = "Build external dependencies for use in CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/PerlAlien/Alien-Build";
     };
   };
 
@@ -237,8 +238,9 @@ let
     propagatedBuildInputs = [ AlienBuild ];
     buildInputs = [ pkgs.gmp Alienm4 DevelChecklib IOSocketSSL MojoDOM58 NetSSLeay SortVersions Test2Suite URI ];
     meta = {
-      description = "Alien package for the GNU Multiple Precision library.";
-      license = with lib.licenses; [ lgpl3Plus ];
+      description = "Alien package for the GNU Multiple Precision library";
+      license = licenses.lgpl3Plus;
+      homepage = "https://github.com/Perl5-Alien/Alien-GMP";
     };
   };
 
@@ -253,7 +255,8 @@ let
     buildInputs = [ pkgs.libxml2 MojoDOM58 SortVersions Test2Suite URI ];
     meta = {
       description = "Install the C libxml2 library on your system";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/PerlAlien/Alien-Libxml2";
     };
   };
 
@@ -265,6 +268,11 @@ let
       sha256 = "1syyqzy462501kn5ma9gl6xbmcahqcn4qpafhsmpz0nd0x2m4l63";
     };
     buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Use shorter versions of class names";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/aliased";
+    };
   };
 
   asa = buildPerlPackage {
@@ -275,9 +283,10 @@ let
        sha256 = "0pk783s1h2f45zbmm6a62yfgy71w4sqh8ppgs4cyxfikwxs3p0z5";
      };
      meta = {
-       description = "Lets your class/object say it works like something else";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Lets your class/object say it works like something else";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/asa";
+    };
   };
 
   AlienSDL = buildPerlModule {
@@ -297,7 +306,8 @@ let
 
     meta = {
       description = "Get, Build and Use SDL libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/PerlGameDev/Alien-SDL";
     };
   };
 
@@ -312,6 +322,11 @@ let
     buildInputs = [ ArchiveExtract ];
     TIDYP_DIR = pkgs.tidyp;
     propagatedBuildInputs = [ FileShareDir ];
+    meta = {
+      description = "Building, finding and using tidyp library - L<http://www.tidyp.com>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/kmx/alien-tidyp";
+    };
   };
 
   AlienWxWidgets = buildPerlModule {
@@ -323,6 +338,11 @@ let
     };
     propagatedBuildInputs = [ pkgs.pkg-config pkgs.gtk2 pkgs.wxGTK30 ModulePluggable ];
     buildInputs = [ LWPProtocolHttps ];
+    meta = {
+      description = "building, finding and using wxWidgets binaries";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.wxperl.it/";
+    };
   };
 
   Alienm4 = buildPerlPackage {
@@ -336,7 +356,8 @@ let
     buildInputs = [ pkgs.gnum4 Alienpatch IOSocketSSL MojoDOM58 NetSSLeay SortVersions Test2Suite URI ];
     meta = {
       description = "Find or build GNU m4";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl5-Alien/Alien-m4";
     };
   };
 
@@ -351,7 +372,8 @@ let
     buildInputs = [ IOSocketSSL MojoDOM58 NetSSLeay SortVersions Test2Suite URI ];
     meta = {
       description = "Find or build patch";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl5-Alien/Alien-patch";
     };
   };
 
@@ -364,9 +386,9 @@ let
     };
     propagatedBuildInputs = [ ClassLoader ConvertASCIIArmour DataBuffer DigestMD2 MathBigIntGMP MathPrimeUtil SortVersions TieEncryptedHash ];
     meta = {
-      homepage = "https://github.com/danaj/Alt-Crypt-RSA-BigInt";
       description = "RSA public-key cryptosystem, using Math::BigInt";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/danaj/Alt-Crypt-RSA-BigInt";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -379,9 +401,7 @@ let
       sha256 = "50beea689c098fe4aaeb83806c40b9fe7f946d5769acf99f849f099091a4b985";
     };
     buildInputs = [ CanaryStability ];
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   AnyEventAIO = buildPerlPackage {
@@ -394,7 +414,6 @@ let
     propagatedBuildInputs = [ AnyEvent IOAIO ];
     meta = {
       description = "Truly asynchronous file and directory I/O";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -408,9 +427,9 @@ let
     propagatedBuildInputs = [ AnyEvent ];
     doCheck = false; # does an DNS lookup
     meta = {
-      homepage = "https://github.com/potyl/perl-AnyEvent-CacheDNS";
       description = "Simple DNS resolver with caching";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/potyl/perl-AnyEvent-CacheDNS";
     };
   };
 
@@ -425,7 +444,8 @@ let
     buildInputs = [ ModuleBuildPrereqsFromCPANfile TestTCP ];
     meta = {
       description = "tcp_connect with transparent proxy handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/debug-ito/AnyEvent-Connector";
     };
   };
 
@@ -446,8 +466,7 @@ let
       sha256 = "0b3ha864nw0qk22ybhzfgz0r0p69iyj01bi500x9hp6kga7ip4p5";
     };
     propagatedBuildInputs = [ AnyEvent commonsense ];
-    meta = {
-    };
+
   };
 
   AnyEventFilesysNotify = buildPerlModule {
@@ -461,7 +480,8 @@ let
     buildInputs = [ DataDump TestException TestWithoutModule ];
     meta = {
       description = "An AnyEvent compatible module to monitor files/directories for changes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/mvgrimes/AnyEvent-Filesys-Notify";
     };
   };
 
@@ -485,7 +505,7 @@ let
     propagatedBuildInputs = [ AnyEventHTTP ObjectEvent URI ];
     meta = {
       description = "A simple lightweight event based web (application) server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -500,7 +520,8 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     meta = {
       description = "client/server UDP handles for AnyEvent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/anyevent-handle-udp";
     };
   };
 
@@ -513,8 +534,8 @@ let
     };
     propagatedBuildInputs = [ AnyEvent JSONXS ];
     meta = {
-      description = "Communicate with the i3 window manager";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "communicate with the i3 window manager";
+      license = licenses.gpl1Plus;
     };
   };
 
@@ -529,7 +550,8 @@ let
     propagatedBuildInputs = [ AnyEvent DevelGlobalDestruction FileShareDir ListMoreUtils NetAMQP Readonly namespaceclean ];
     meta = {
       description = "An asynchronous and multi channel Perl AMQP client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bobtfish/AnyEvent-RabbitMQ";
     };
   };
 
@@ -543,7 +565,7 @@ let
     propagatedBuildInputs = [ AnyEventHTTP AnyMoose HTTPMessage ];
     meta = {
       description = "reversehttp for AnyEvent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -557,7 +579,7 @@ let
     propagatedBuildInputs = [ AnyEvent ];
     meta = {
       description = "Event based SCGI server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -572,7 +594,8 @@ let
     buildInputs = [ Test2Suite ];
     meta = {
       description = "WebSocket client for AnyEvent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/AnyEvent-WebSocket-Client";
     };
   };
 
@@ -587,7 +610,8 @@ let
     buildInputs = [ ModuleBuildPrereqsFromCPANfile TestMemoryCycle TestRequires ];
     meta = {
       description = "WebSocket server for AnyEvent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/debug-ito/AnyEvent-WebSocket-Server";
     };
   };
 
@@ -599,6 +623,11 @@ let
       sha256 = "0dc55mpayrixwx8dwql0vj0jalg4rlb3k64rprc84bl0z8vkx9m8";
     };
     propagatedBuildInputs = [ Moose Mouse ];
+    meta = {
+      description = "(DEPRECATED) use Moo instead!";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Any-Moose";
+    };
   };
 
   AnyURIEscape = buildPerlPackage {
@@ -639,9 +668,9 @@ let
     doCheck = !stdenv.isLinux;
 
     meta = {
-      homepage = "https://github.com/mschout/apache-authcookie";
       description = "Perl Authentication and Authorization via cookies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mschout/apache-authcookie";
     };
   };
 
@@ -667,9 +696,9 @@ let
     # We cannot change the timezone on the fly.
     prePatch = "rm t/04_tz.t";
     meta = {
-      homepage = "https://github.com/kazeburo/Apache-LogFormat-Compiler";
       description = "Compile a log format string to perl-code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Apache-LogFormat-Compiler";
     };
   };
 
@@ -683,7 +712,8 @@ let
     buildInputs = [ TestDeep TestException ];
     meta = {
       description = "A persistence framework for session data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chorny/Apache-Session";
     };
   };
 
@@ -697,7 +727,6 @@ let
     doCheck = false;
     meta = {
       description = "Test.pm wrapper with helpers for testing Apache";
-      license = lib.licenses.asl20;
     };
   };
 
@@ -710,6 +739,11 @@ let
     };
     propagatedBuildInputs = [ CaptureTiny ClassLoad ];
     buildInputs = [ TestKwalitee TestPod ];
+    meta = {
+      description = "Dispatcher module for command line interface programs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/paultcochrane/app-cli";
+    };
   };
 
   AppCerberusclient = buildPerlPackage {
@@ -722,7 +756,8 @@ let
     propagatedBuildInputs = [ AnyURIEscape JSON ListMoreUtils ];
     meta = {
       description = "A multi-server client for speaking to App::Cerebrus";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/clintongormley/App-Cerberus-Client";
     };
   };
 
@@ -746,9 +781,9 @@ let
          --replace 'sed' '${pkgs.gnused}/bin/sed'
     '';
     meta = {
-      description = "A container for functions of the ClusterSSH programs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "https://github.com/duncs/clusterssh/wiki";
+      description = "Cluster administration tool";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/duncs/clusterssh/wiki";
     };
   };
 
@@ -762,9 +797,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ CaptureTiny ClassLoad GetoptLongDescriptive IOTieCombine ModulePluggable StringRewritePrefix ];
     meta = {
+      description = "write command line apps with less suffering";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/App-Cmd";
-      description = "Write command line apps with less suffering";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -776,7 +811,9 @@ let
       sha256 = "03vvi3mk4833mx2c6dkm9zhvakf02mb2b7wz9pk9xc7c4mq04xqi";
     };
     meta = {
-      description = "A bundle of Perl5 modules for reading configuration files and parsing command line arguments";
+      description = "a bundle of Perl5 modules for reading configuration files and parsing command line arguments";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/AppConfig";
     };
     buildInputs = [ TestPod ];
   };
@@ -789,9 +826,10 @@ let
        sha256 = "1kzcbpsf1p7ww45d9fl2w0nfn5jj5pz0r0c649c1lrj5r1nv778j";
      };
      meta = {
-       description = "pack your dependencies onto your script file";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "pack your dependencies onto your script file";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/App-FatPacker.git";
+    };
   };
 
   Appcpanminus = buildPerlPackage {
@@ -802,9 +840,9 @@ let
       sha256 = "9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3";
     };
     meta = {
+      description = "get, unpack, build and install modules from CPAN";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/miyagawa/cpanminus";
-      description = "Get, unpack, build and install modules from CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -822,9 +860,9 @@ let
       shortenPerlShebang $out/bin/cpm
     '';
     meta = {
+      description = "a fast CPAN module installer";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/skaji/cpm";
-      description = "A fast CPAN module installer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -837,9 +875,9 @@ let
       sha256 = "0y644rr7gl49awn27xj556q9i86fddkkn26gnfn52wm19d7aa94a";
     };
     meta = {
-      homepage = "https://github.com/jhthorsen/applify";
       description = "Write object oriented scripts with ease";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/applify";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -875,7 +913,8 @@ let
     };
     meta = {
       description = "Abstraction for Packagers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sciurius/perl-App-Packager";
     };
   };
 
@@ -892,8 +931,9 @@ let
     doCheck = false;
 
     meta = {
-      description = "Manage perl installations in your $HOME";
-      license = lib.licenses.mit;
+      description = "Manage perl installations in your C<$HOME>";
+      license = licenses.mit;
+      homepage = "https://github.com/gugod/App-perlbrew";
     };
   };
 
@@ -907,9 +947,10 @@ let
      propagatedBuildInputs = [ ArchiveZip ];
      buildInputs = [ ExtUtilsMakeMakerCPANfile TestUseAllModules ];
      meta = {
-       description = "simple CPAN package extractor";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "simple CPAN package extractor";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/archive-any-lite";
+    };
   };
 
   AppSqitch = buildPerlModule {
@@ -923,9 +964,9 @@ let
     propagatedBuildInputs = [ Clone ConfigGitLike DBI DateTime EncodeLocale HashMerge IOPager IPCRun3 IPCSystemSimple ListMoreUtils PathClass PerlIOutf8_strict PodParser StringFormatter StringShellQuote TemplateTiny Throwable TypeTiny URIdb libintl_perl ];
     doCheck = false;  # Can't find home directory.
     meta = {
+      description = "Sensible database change management";
+      license = licenses.mit;
       homepage = "https://sqitch.org/";
-      description = "Sane database change management";
-      license = lib.licenses.mit;
     };
   };
 
@@ -960,7 +1001,8 @@ let
     doCheck = false;
     meta = {
       description = "Define validation through subroutine attributes";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Attribute-Params-Validate";
     };
   };
 
@@ -974,6 +1016,11 @@ let
 
     buildInputs = [ TestNoWarnings ];
     propagatedBuildInputs = [ Moo TypeTiny ];
+    meta = {
+      description = "Perl extension for comparing arrays";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/davorg/array-compare";
+    };
   };
 
   ArrayDiff = buildPerlPackage {
@@ -985,9 +1032,10 @@ let
      };
      propagatedBuildInputs = [ AlgorithmDiff ClassAccessor ];
      meta = {
-       description = "Find the differences between two arrays";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Find the differences between two arrays";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/array-diff-perl";
+    };
   };
 
   ArrayFIFO = buildPerlPackage {
@@ -1000,9 +1048,9 @@ let
     buildInputs = [ TestDeep TestSpec TestTrap ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/dwburke/perl-Array-FIFO";
       description = "A Simple limitable FIFO array, with sum and average methods";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/dwburke/perl-Array-FIFO";
     };
   };
 
@@ -1024,7 +1072,7 @@ let
     };
     meta = {
       description = "ping a huge number of servers in several seconds";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
     };
   };
 
@@ -1036,9 +1084,7 @@ let
       sha256 = "246fb31669764e78336b2191134122e07c44f2d82dc4f37d552ab28f8668bed3";
     };
     meta = {
-      description = "Module for manipulations of cpio archives";
-      # See https://rt.cpan.org/Public/Bug/Display.html?id=43597#txn-569710
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "module for manipulations of cpio archives";
     };
   };
 
@@ -1051,7 +1097,8 @@ let
     };
     meta = {
       description = "Generic archive extracting mechanism";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/archive-extract";
     };
   };
 
@@ -1064,7 +1111,8 @@ let
     };
     meta = {
       description = "Manipulates TAR archives";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/archive-tar-new";
     };
   };
 
@@ -1077,8 +1125,10 @@ let
      };
      propagatedBuildInputs = [ FileWhich IPCRun LogLog4perl ];
      meta = {
-       description = "API wrapper around the 'tar' utility";
-     };
+      description = "API wrapper around the 'tar' utility";
+      license = licenses.gpl3Plus;
+      homepage = "https://github.com/glasswalk3r/archive-tar-wrapper-perl";
+    };
   };
 
   ArchiveZip = buildPerlPackage {
@@ -1091,7 +1141,8 @@ let
     buildInputs = [ TestMockModule ];
     meta = {
       description = "Provide an interface to ZIP archive files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/redhotpenguin/perl-Archive-Zip";
     };
   };
 
@@ -1103,9 +1154,9 @@ let
       sha256 = "530d59ef0c0935f9862d187187a2d7583b12c639bb67db14f983322b161892d9";
     };
     meta = {
-      homepage = "https://github.com/timj/perl-Astro-FITS-Header/tree/master";
       description = "Object-oriented interface to FITS HDUs";
-      license = lib.licenses.free;
+      license = [ licenses.free licenses.gpl1Plus ];
+      homepage = "http://github.com/timj/perl-Astro-FITS-Header/tree/master";
     };
   };
 
@@ -1121,7 +1172,7 @@ let
     NIX_CFLAGS_LINK = "-L${pkgs.zlib.out}/lib -lz";
     meta = {
       description = "Fast C metadata and tag reader for all common audio file formats";
-      license = lib.licenses.gpl2;
+      license = licenses.gpl2Plus;
     };
   };
 
@@ -1135,7 +1186,7 @@ let
     propagatedBuildInputs = [ ClassErrorHandler JSON LWPProtocolHttps ];
     meta = {
       description = "Bitcard authentication verification";
-      homepage = "http://search.cpan.org/dist/Authen-Bitcard/";
+      homepage = "http://git.develooper.com/bitcard-perl-api.git";
     };
   };
 
@@ -1164,7 +1215,7 @@ let
     propagatedBuildInputs = [ DataInteger DigestCRC ScalarString ];
     meta = {
       description = "DEC VMS password hashing";
-      license = lib.licenses.gpl1Plus;
+      license = licenses.gpl2Plus;
     };
   };
 
@@ -1178,7 +1229,7 @@ let
     propagatedBuildInputs = [ ClassAccessor CryptPasswdMD5 DigestSHA1 IOLockedFile ];
     meta = {
       description = "Interface to read and modify Apache .htpasswd files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1193,7 +1244,8 @@ let
     propagatedBuildInputs = [ pkgs.libkrb5 ];
     meta = {
       description = "XS bindings for Kerberos 5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sophos/p5-Krb5";
     };
     buildInputs = [ DevelChecklib FileWhich PkgConfig ];
   };
@@ -1222,7 +1274,7 @@ let
     '';
     meta = {
       description = "Perl extension for MIT Kerberos 5 admin interface";
-      license = lib.licenses.bsd3;
+      license = licenses.bsd3;
     };
   };
 
@@ -1241,7 +1293,7 @@ let
     '';
     meta = {
       description = "Generate Tickets (Signed HTTP Cookies) for mod_auth_pubtkt protected websites";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1255,9 +1307,9 @@ let
     buildInputs = [ TestNeeds ];
     propagatedBuildInputs = [ DigestHMAC Moo TypeTiny ];
     meta = {
-      homepage = "https://github.com/oalders/authen-oath";
       description = "OATH One Time Passwords";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/oalders/authen-oath";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -1271,8 +1323,8 @@ let
     };
     propagatedBuildInputs = [ AuthenDecHpwd CryptDES CryptEksblowfish CryptMySQL CryptPasswdMD5 CryptUnixCryptXS DataEntropy DigestMD4 ModuleRuntime ];
     meta = {
-      description = "Hashed passwords/passphrases as objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "hashed passwords/passphrases as objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1286,8 +1338,7 @@ let
     buildInputs = [ TestNoWarnings ];
     propagatedBuildInputs = [ DataHexDump NetIP ];
     meta = {
-      description = "Provide simple Radius client facilities  ";
-      license = with lib.licenses; [ artistic2 ];
+      description = "Provide simple Radius client facilities";
     };
   };
 
@@ -1301,7 +1352,8 @@ let
     propagatedBuildInputs = [ DigestHMAC ];
     meta = {
       description = "SASL Authentication framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gbarr/perl-authen-sasl";
     };
   };
 
@@ -1316,7 +1368,7 @@ let
     propagatedBuildInputs = [ UnicodeStringprep ];
     meta = {
       description = "A Stringprep Profile for User Names and Passwords (RFC 4013)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -1331,9 +1383,9 @@ let
     buildInputs = [ TestFailWarnings TestFatal ];
     propagatedBuildInputs = [ AuthenSASLSASLprep CryptURandom Moo PBKDF2Tiny TypeTiny namespaceclean ];
     meta = {
-      homepage = "https://github.com/dagolden/Authen-SCRAM";
       description = "Salted Challenge Response Authentication Mechanism (RFC 5802)";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Authen-SCRAM";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -1348,7 +1400,8 @@ let
     propagatedBuildInputs = [ ClassAccessor ClassDataInheritable CryptPasswdMD5 ParamsValidate ];
     meta = {
       description = "Simple Authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chansen/p5-authen-simple";
     };
   };
 
@@ -1361,9 +1414,9 @@ let
      };
      propagatedBuildInputs = [ AuthenSimple ];
      meta = {
-       description = "Simple Passwd authentication";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Simple Passwd authentication";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   autobox = buildPerlPackage {
@@ -1375,8 +1428,9 @@ let
     };
     propagatedBuildInputs = [ ScopeGuard ];
     meta = {
-      description = "Call methods on native types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "call methods on native types";
+      license = licenses.artistic2;
+      homepage = "https://github.com/chocolateboy/autobox";
     };
     buildInputs = [ IPCSystemSimple TestFatal ];
   };
@@ -1392,21 +1446,7 @@ let
 
     meta = {
       description = "AutoDia, create UML diagrams from source code";
-
-      longDescription = ''
-        AutoDia is a modular application that parses source code, XML or data
-        and produces an XML document in Dia format (or images via graphviz
-        and vcg).  Its goal is to be a UML / DB Schema diagram autocreation
-        package.  The diagrams its creates are standard UML diagrams showing
-        dependencies, superclasses, packages, classes and inheritances, as
-        well as the methods, etc of each class.
-
-        AutoDia supports any language that a Handler has been written for,
-        which includes C, C++, Java, Perl, Python, and more.
-      '';
-
       homepage = "http://www.aarontrevena.co.uk/opensource/autodia/";
-      license = lib.licenses.gpl2Plus;
     };
 
   };
@@ -1420,7 +1460,8 @@ let
     };
     meta = {
       description = "Lexically disable autovivification";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.profvince.com/?p=perl%2Fmodules%2Fautovivification.git";
     };
   };
 
@@ -1433,9 +1474,9 @@ let
     };
     propagatedBuildInputs = [ BFlags IPCRun Opcodes ];
     meta = {
-      homepage = "https://github.com/rurban/perl-compiler";
       description = "Perl compiler";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/perl-compiler";
     };
     doCheck = false; /* test fails */
   };
@@ -1449,7 +1490,8 @@ let
     };
     meta = {
       description = "B::COW additional B helpers to check COW status";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/atoomic/B-COW.git";
     };
   };
 
@@ -1462,7 +1504,7 @@ let
     };
     meta = {
       description = "print debug info about ops";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1475,6 +1517,8 @@ let
     };
     meta = {
       description = "Friendlier flags for B";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rurban/b-flags";
     };
   };
 
@@ -1488,7 +1532,8 @@ let
     propagatedBuildInputs = [ ClassAccessor YAMLSyck ];
     meta = {
       description = "Client to communicate with beanstalkd server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gbarr/perl-beanstalk-client";
     };
   };
 
@@ -1505,6 +1550,11 @@ let
       echo "LIB = ${pkgs.db.out}/lib" > config.in
       echo "INCLUDE = ${pkgs.db.dev}/include" >> config.in
     '';
+    meta = {
+      description = "Perl extension for Berkeley DB version 2, 3, 4, 5 or 6";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pmqs/BerkeleyDB";
+    };
   };
 
   BHooksEndOfScope = buildPerlPackage {
@@ -1517,7 +1567,8 @@ let
     propagatedBuildInputs = [ ModuleImplementation SubExporterProgressive ];
     meta = {
       description = "Execute code after a scope finished compilation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/B-Hooks-EndOfScope";
     };
   };
 
@@ -1531,7 +1582,8 @@ let
     propagatedBuildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "annotate and delegate hooked OPs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chocolateboy/B-Hooks-OP-Annotation";
     };
   };
 
@@ -1545,7 +1597,8 @@ let
     buildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "Wrap OP check callbacks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/B-Hooks-OP-Check";
     };
   };
 
@@ -1559,7 +1612,7 @@ let
     buildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "Hook into opcode execution";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/B-Hooks-OP-PPAddr";
     };
   };
@@ -1583,7 +1636,8 @@ let
     };
     meta = {
       description = "Lists of reserved barewords and symbol names";
-      license = with lib.licenses; [ artistic1 gpl2 ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rurban/b-keywords";
     };
   };
 
@@ -1598,7 +1652,7 @@ let
     buildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "PL_check hacks using Perl callbacks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/B-OPCheck";
     };
   };
@@ -1611,9 +1665,9 @@ let
       sha256 = "95c088085c3e83bf680fe6ce16d8264ec26310490f7d1680e416ea7a118f156a";
     };
     meta = {
-      homepage = "https://github.com/ingydotnet/boolean-pm";
       description = "Boolean support for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/boolean-pm";
     };
   };
 
@@ -1630,6 +1684,10 @@ let
     ];
     perlPreHook = "export LD=$CC";
     buildInputs = [ ExtUtilsCppGuess ExtUtilsTypemapsDefault ExtUtilsXSpp ModuleBuildWithXSpp ];
+    meta = {
+      description = "Bindings for the Boost Geometry library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   BorderStyleBase = buildPerlPackage {
@@ -1642,7 +1700,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "A suitable base class for most BorderStyle::* modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-BorderStyleBase";
     };
   };
 
@@ -1656,7 +1715,8 @@ let
     propagatedBuildInputs = [ BorderStyleBase ];
     meta = {
       description = "A standard collection of border styles";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-BorderStyles-Standard";
     };
   };
 
@@ -1670,9 +1730,9 @@ let
     buildInputs = [ FileSlurp ];
     propagatedBuildInputs = [ DirSelf FileShareDir ModulePluggable MooseXGetopt ];
     meta = {
-      homepage = "https://metacpan.org/release/Bot-Training";
-      description = "Plain text training material for bots like Hailo and AI::MegaHAL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Plain text training material for bots like L<Hailo> and L<AI::MegaHAL>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/avar/bot-training";
     };
   };
 
@@ -1686,9 +1746,9 @@ let
     buildInputs = [ FileShareDirInstall ];
     propagatedBuildInputs = [ BotTraining ];
     meta = {
-      homepage = "https://metacpan.org/release/Bot-Training-MegaHAL";
-      description = "Provide megahal.trn via Bot::Training";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Provide F<megahal.trn> via L<Bot::Training>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/avar/bot-training-megahal";
     };
   };
 
@@ -1702,9 +1762,9 @@ let
     buildInputs = [ FileShareDirInstall ];
     propagatedBuildInputs = [ BotTraining ];
     meta = {
-      homepage = "https://metacpan.org/release/Bot-Training-StarCraft";
-      description = "Provide starcraft.trn via Bot::Training";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Provide F<starcraft.trn> via L<Bot::Training>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/avar/bot-training-starcraft";
     };
   };
 
@@ -1716,9 +1776,8 @@ let
       sha256 = "0g8c7825ng2m0yz5sy6838rvfdl8j3vm29524wjgf66ccfhgn74x";
     };
     meta = {
-      maintainers = teams.deshaw.members;
       description = "BSD process resource limit and priority functions";
-      license = lib.licenses.artistic2;
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -1733,7 +1792,7 @@ let
     buildInputs = [ JSONMaybeXS PathTiny TestDeep TestFatal ];
     meta = {
       description = "BSON serialization and deserialization (EOL)";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/mongodb-labs/mongo-perl-bson";
     };
   };
@@ -1746,7 +1805,7 @@ let
       sha256 = "0valpz913vzc7zkxy5bb8v4dzyp41kavzp53z1raa41xy438i2n5";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1760,9 +1819,10 @@ let
      propagatedBuildInputs = [ TaskWeaken ];
      buildInputs = [ ExtUtilsDepends ];
      meta = {
-       description = "Helper functions for op tree manipulation";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Helper functions for op tree manipulation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jbenjore/b-utils";
+    };
   };
 
   BusinessHours = buildPerlPackage {
@@ -1787,8 +1847,9 @@ let
     };
     propagatedBuildInputs = [ BusinessISBNData ];
     meta = {
-      description = "Parse and validate ISBNs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "work with International Standard Book Numbers";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/business-isbn";
     };
   };
 
@@ -1800,8 +1861,9 @@ let
       sha256 = "15qja3bb397i7lbvd89wc8h478njizix35pjdbxyq3qk4pmmnifl";
     };
     meta = {
-      description = "Data pack for Business::ISBN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "data pack for Business::ISBN";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/business-isbn-data";
     };
   };
 
@@ -1814,8 +1876,9 @@ let
     };
     propagatedBuildInputs = [ TieCycle ];
     meta = {
-      description = "Work with International Standard Music Numbers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "work with International Standard Music Numbers";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/business-ismn";
     };
   };
 
@@ -1827,8 +1890,9 @@ let
       sha256 = "97ecab15d24d11e2852bf0b28f84c8798bd38402a0a69e17be0e6689b272715e";
     };
     meta = {
-      description = "Work with International Standard Serial Numbers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl extension for International Standard Serial Numbers";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/business-issn";
     };
   };
 
@@ -1842,7 +1906,7 @@ let
     propagatedBuildInputs = [ CryptRandomSeed MathRandomISAAC ];
     meta = {
       description = "Perl extension to generate cryptographically-secure random bytes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -1856,7 +1920,8 @@ let
     };
     meta = {
       description = "A tiny Perl extension to generate cryptographically-secure random bytes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/daoswald/Bytes-Random-Secure-Tiny";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -1880,6 +1945,11 @@ let
       sha256 = "0n91dd8i9pd6szvwx16rdwyk8kpxg55i0ds71zvfjxn8mh6szv4b";
     };
     buildInputs = [ TestDeep ];
+    meta = {
+      description = "Uses an mmap'ed file to act as a shared memory interprocess cache";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/robmueller/cache-fastmmap";
+    };
   };
 
   CacheKyotoTycoon = buildPerlModule {
@@ -1893,7 +1963,8 @@ let
     buildInputs = [ FileWhich TestRequires TestSharedFork TestTCP ];
     meta = {
       description = "KyotoTycoon client library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Cache-KyotoTycoon";
     };
   };
 
@@ -1907,7 +1978,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "a simple, fast implementation of LRU cache in pure perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1922,7 +1993,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "can set an expiration for the Cache::LRU";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1935,6 +2006,9 @@ let
       sha256 = "1aa2mjn5767b13063nnsrwcikrnbspby7j1c5q007bzaq0gcbcri";
     };
     propagatedBuildInputs = [ StringCRC32 ];
+    meta = {
+      description = "client library for memcached (memory cache daemon)";
+    };
   };
 
   CacheMemcachedFast = buildPerlPackage {
@@ -1945,8 +2019,9 @@ let
       sha256 = "16m0xafidycrlcvbv3zmbr5pzvqyqyr2qb0khpry99nc4bcld3jy";
     };
     meta = {
-      description = "Perl client for B<memcached>, in C language";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl client for memcached, in C language";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/JRaspass/Cache-Memcached-Fast";
     };
   };
 
@@ -1959,6 +2034,11 @@ let
     };
     propagatedBuildInputs = [ DBFile FileNFSLock HeapFibonacci IOString TimeDate ];
     doCheck = false; # can time out
+    meta = {
+      description = "Provide a generic Cache mechanism";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://bitbucket.org/shlomif/web-cpan";
+    };
   };
 
   CacheMemorySimple = buildPerlModule {
@@ -1971,7 +2051,7 @@ let
     buildInputs = [ TestTime ];
     meta = {
       description = "Yet another on memory cache";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Cache-Memory-Simple";
     };
   };
@@ -1985,7 +2065,7 @@ let
     };
     meta = {
       description = "A lightweight cache with timed expiration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -1998,9 +2078,9 @@ let
     };
     buildInputs = [ pkgs.cairo ];
     meta = {
-      homepage = "http://gtk2-perl.sourceforge.net/";
-      description = "Perl interface to the cairo 2D vector graphics library";
-      license = lib.licenses.lgpl21Plus;
+      description = "Perl interface to the cairo 2d vector graphics library";
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
     propagatedBuildInputs = [ ExtUtilsDepends ExtUtilsPkgConfig ];
   };
@@ -2015,7 +2095,8 @@ let
     buildInputs = [ pkgs.cairo ];
     meta = {
       description = "Integrate Cairo into the Glib type system";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net/";
     };
     propagatedBuildInputs = [ Cairo Glib ];
   };
@@ -2029,7 +2110,8 @@ let
     };
     meta = {
       description = "Sanity-check calling context";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FGasper/p5-Call-Context";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -2042,6 +2124,10 @@ let
       sha256 = "12dv5ssf3y7yjz9mrrqnfzx8nf4ydk1qijf5fx59495671zzqsp7";
     };
     propagatedBuildInputs = [ CryptRC4 TextPDF ];
+    meta = {
+      description = "PDF manipulation library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   capitalization = buildPerlPackage {
@@ -2052,8 +2138,7 @@ let
        sha256 = "0g7fpckydzxsf8mjkfbyj0pv42dzym4hwbizqahnh7wlfbaicdgi";
      };
      propagatedBuildInputs = [ DevelSymdump ];
-     meta = {
-     };
+
   };
 
   CanaryStability = buildPerlPackage {
@@ -2063,9 +2148,7 @@ let
       url = "mirror://cpan/authors/id/M/ML/MLEHMANN/Canary-Stability-2013.tar.gz";
       sha256 = "a5c91c62cf95fcb868f60eab5c832908f6905221013fea2bce3ff57046d7b6ea";
     };
-    meta = {
-      license = lib.licenses.gpl1Plus;
-    };
+
   };
 
   CaptchaReCAPTCHA = buildPerlPackage {
@@ -2076,6 +2159,10 @@ let
       sha256 = "14j3lk6fhfzda5d3d7z6f373ng3fzxazzwpjyziysrhic1v3b4mq";
     };
     propagatedBuildInputs = [ HTMLTiny LWP ];
+    meta = {
+      description = "A Perl implementation of the reCAPTCHA API";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   CaptureTiny = buildPerlPackage {
@@ -2087,7 +2174,8 @@ let
     };
     meta = {
       description = "Capture STDOUT and STDERR from Perl, XS or external programs";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Capture-Tiny";
     };
   };
 
@@ -2100,7 +2188,8 @@ let
     };
     meta = {
       description = "Warns and dies noisily with stack backtraces";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aferreira/cpan-Carp-Always";
     };
     buildInputs = [ TestBase ];
   };
@@ -2113,6 +2202,8 @@ let
       sha256 = "0km5fc6r6whxh6h5yd7g1j0bi96sgk0gkda6cardicrw9qmqwkwj";
     };
     meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/schwern/Carp-Assert";
     };
   };
 
@@ -2125,7 +2216,7 @@ let
     };
     propagatedBuildInputs = [ CarpAssert ];
     meta = {
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
     };
     buildInputs = [ TestException ];
   };
@@ -2139,7 +2230,8 @@ let
     };
     meta = {
       description = "Report errors from perspective of caller of a \"clan\" of modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Carp-Clan";
     };
   };
 
@@ -2154,7 +2246,8 @@ let
     buildInputs = [ TestExpect ];
     meta = {
       description = "read-eval-print-loop on die and/or warn";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bestpractical/carp-repl";
     };
   };
 
@@ -2167,9 +2260,9 @@ let
     };
     propagatedBuildInputs = [ MenloLegacy PathTiny TryTiny ];
     meta = {
-      homepage = "https://github.com/perl-carton/carton";
       description = "Perl module dependency manager (aka Bundler for Perl)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-carton/carton";
     };
   };
 
@@ -2183,7 +2276,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime DataVisitor ];
     meta = {
       description = "Sensible default end action";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Action-RenderView/trunk/";
     };
     buildInputs = [ HTTPRequestAsCGI ];
   };
@@ -2199,7 +2293,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime URIFind ];
     meta = {
       description = "Automated REST Method Dispatching";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2213,8 +2307,9 @@ let
     buildInputs = [ ModuleBuildTiny TestException TestMockObject TestNeeds ];
     propagatedBuildInputs = [ CatalystPluginAuthentication ClassAccessor DataUUID StringEscape ];
     meta = {
-      description = "HTTP Basic and Digest authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "HTTP Basic and Digest authentication for Catalyst";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Catalyst-Authentication-Credential-HTTP";
     };
   };
 
@@ -2227,6 +2322,11 @@ let
     };
     buildInputs = [ ModuleBuildTiny TestLongString TestSimple13 TestWWWMechanize TestWWWMechanizeCatalyst ];
     propagatedBuildInputs = [ AuthenHtpasswd CatalystPluginAuthentication ];
+    meta = {
+      description = "Authen::Htpasswd based user storage/authentication";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Catalyst-Authentication-Store-Htpasswd";
+    };
   };
 
   CatalystAuthenticationStoreDBIxClass = buildPerlPackage {
@@ -2239,7 +2339,7 @@ let
     propagatedBuildInputs = [ CatalystModelDBICSchema CatalystPluginAuthentication ];
     meta = {
       description = "A storage class for Catalyst Authentication using DBIx::Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ TestWarn ];
   };
@@ -2254,8 +2354,8 @@ let
     propagatedBuildInputs = [ CatalystPluginAuthentication ClassAccessor perlldap ];
     buildInputs = [ NetLDAPServerTest TestException TestMockObject ];
     meta = {
-      description= "Authentication from an LDAP Directory";
-      license = with lib.licenses; [ artistic1 ];
+      description = "Authenticate Users against LDAP Directories";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2269,7 +2369,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime ];
     meta = {
       description = "Moose role to create only one instance of component per context";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2284,7 +2384,8 @@ let
     propagatedBuildInputs = [ CatalystComponentInstancePerContext HTMLFormFuMultiForm RegexpAssemble ];
     meta = {
       description = "Catalyst integration for HTML::FormFu";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FormFu/Catalyst-Controller-HTML-FormFu";
     };
     doCheck = false; /* fails with 'open3: exec of .. perl .. failed: Argument list too long at .../TAP/Parser/Iterator/Process.pm line 165.' */
   };
@@ -2300,7 +2401,7 @@ let
     propagatedBuildInputs = [ CatalystPluginStaticSimple ClassAccessor FileSlurp JSONXS ListMoreUtils PodPOMViewTOC XMLSimple ];
     meta = {
       description = "Serves PODs right from your Catalyst application";
-      license = lib.licenses.bsd3;
+      license = licenses.bsd3;
     };
   };
 
@@ -2314,9 +2415,9 @@ let
     buildInputs = [ FileShareDirInstall TestFatal ];
     propagatedBuildInputs = [ CatalystActionRenderView CatalystPluginConfigLoader CatalystPluginStaticSimple ConfigGeneral FileChangeNotify FileCopyRecursive ModuleInstall TemplateToolkit ];
     meta = {
-      homepage = "http://wiki.catalystframework.org/wiki/";
       description = "Catalyst Development Tools";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/";
     };
   };
 
@@ -2330,7 +2431,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime ];
     meta = {
       description = "Regex DispatchType";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/mvgrimes/catalyst-dispatch-regex";
     };
   };
 
@@ -2343,7 +2445,8 @@ let
     };
     meta = {
       description = "The Catalyst developer's manual";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Catalyst-Manual";
     };
   };
 
@@ -2358,7 +2461,7 @@ let
     propagatedBuildInputs = [ CatalystComponentInstancePerContext CatalystXComponentTraits DBIxClassSchemaLoader MooseXMarkAsMethods MooseXNonMoose MooseXTypesLoadableClass TieIxHash ];
     meta = {
       description = "DBIx::Class::Schema Model Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2372,9 +2475,9 @@ let
     buildInputs = [ TestFatal TypeTiny ];
     propagatedBuildInputs = [ CGISimple CGIStruct ClassC3AdoptNEXT DataDump HTTPBody ModulePluggable MooseXEmulateClassAccessorFast MooseXGetopt MooseXMethodAttributes PathClass PerlIOutf8_strict PlackMiddlewareFixMissingBodyInRedirect PlackMiddlewareMethodOverride PlackMiddlewareRemoveRedundantBody PlackMiddlewareReverseProxy PlackTestExternalServer SafeIsa StringRewritePrefix TaskWeaken TextSimpleTable TreeSimpleVisitorFactory URIws ];
     meta = {
-      homepage = "http://wiki.catalystframework.org/wiki/";
       description = "The Catalyst Framework Runtime";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/";
     };
   };
 
@@ -2388,7 +2491,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime DateTime ];
     meta = {
       description = "Request logging from within Catalyst";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2403,7 +2506,7 @@ let
     propagatedBuildInputs = [ CatalystPluginSession ];
     meta = {
       description = "Infrastructure plugin for the Catalyst authentication framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2416,6 +2519,11 @@ let
     };
     propagatedBuildInputs = [ CatalystRuntime ClassThrowable ];
     buildInputs = [ CatalystPluginAuthentication CatalystPluginAuthorizationRoles CatalystPluginSession CatalystPluginSessionStateCookie TestWWWMechanizeCatalyst ];
+    meta = {
+      description = "ACL support for Catalyst applications";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/catalyst-plugin-authorization-acl";
+    };
   };
 
   CatalystPluginAuthorizationRoles = buildPerlPackage {
@@ -2429,7 +2537,8 @@ let
     propagatedBuildInputs = [ CatalystPluginAuthentication SetObject UNIVERSALisa ];
     meta = {
       description = "Role based authorization for Catalyst based on Catalyst::Plugin::Authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Plugin-Authorization-Roles/";
     };
   };
 
@@ -2444,7 +2553,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime ];
     meta = {
       description = "Flexible caching support for Catalyst";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2459,7 +2568,7 @@ let
     propagatedBuildInputs = [ ClassAccessor HTTPMessage MROCompat ];
     meta = {
       description = "HTTP/1.1 cache validators for Catalyst";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2472,7 +2581,7 @@ let
     };
     propagatedBuildInputs = [ CatalystPluginSession GDSecurityImage ];
     meta = {
-      description = "Create and validate Captcha for Catalyst";
+      description = "create and validate Captcha for Catalyst";
     };
   };
 
@@ -2484,6 +2593,11 @@ let
       sha256 = "0w8r3bbxqnlykvra6sx3sh3wh8ylkj914xg5ql6nw11ddy56jaly";
     };
     propagatedBuildInputs = [ CatalystRuntime ConfigAny DataVisitor ];
+    meta = {
+      description = "Load config files of various types";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=catagits/Catalyst-Plugin-ConfigLoader.git";
+    };
   };
 
   CatalystPluginFormValidator = buildPerlPackage {
@@ -2496,7 +2610,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime DataFormValidator ];
     meta = {
       description = "Data::FormValidator";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2508,9 +2622,7 @@ let
       sha256 = "486c6a0e8f410fd017279f4804ab9e35ba46321d33a0a9721fe1e08a391de7a0";
     };
     propagatedBuildInputs = [ CatalystPluginFormValidator FormValidatorSimple ];
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   CatalystPluginLogHandler = buildPerlModule {
@@ -2523,7 +2635,7 @@ let
     propagatedBuildInputs = [ ClassAccessor LogHandler MROCompat ];
     meta = {
       description = "Catalyst Plugin for Log::Handler";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2538,7 +2650,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime ObjectSignature ];
     meta = {
       description = "Generic Session plugin - ties together server side storage and client side state required to maintain session data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2551,8 +2663,9 @@ let
     };
     propagatedBuildInputs = [ CatalystPluginSession ];
     meta = {
-      description = "Per-session custom expiry times";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "per-session custom expiry times";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/trunk/Catalyst-Plugin-Session-DynamicExpiry/";
     };
   };
 
@@ -2564,6 +2677,11 @@ let
       sha256 = "1skvw3i9wv02kz1bz937zh7wfxvhf54i8zppln3ly6bcp6rcgcg9";
     };
     propagatedBuildInputs = [ CatalystPluginSession ];
+    meta = {
+      description = "Maintain session IDs using cookies";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=catagits/Catalyst-Plugin-Session-State-Cookie.git";
+    };
   };
 
   CatalystPluginSessionStoreFastMmap = buildPerlPackage {
@@ -2586,7 +2704,8 @@ let
     propagatedBuildInputs = [ CacheCache CatalystPluginSession ClassDataInheritable ];
     meta = {
       description = "File storage backend for session data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Plugin-Session-Store-File/trunk/";
     };
   };
 
@@ -2601,7 +2720,8 @@ let
     buildInputs = [ CatalystActionREST TestWarnings TimeOut URISmartURI ];
     meta = {
       description = "Configurable URIs for Catalyst";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/catalyst-plugin-smarturi";
     };
   };
 
@@ -2615,7 +2735,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime ];
     meta = {
       description = "Display a stack trace on the debug screen";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/trunk/Catalyst-Plugin-StackTrace/";
     };
   };
 
@@ -2630,7 +2751,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime MIMETypes MooseXTypes ];
     meta = {
       description = "Make serving static pages painless";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2643,8 +2764,8 @@ let
     };
     propagatedBuildInputs = [ CatalystRuntime strictures ];
     meta = {
-      description = "Handle passing of status messages between screens of a web application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Handle passing of status (success and error) messages between screens of a web application";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2659,7 +2780,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime TextCSV ];
     meta = {
       description = "CSV view class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2672,7 +2793,7 @@ let
     };
     buildInputs = [ CatalystRuntime TestLongString TestSimple13 TestWWWMechanize TestWWWMechanizeCatalyst TextCSV XMLSimple ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2686,7 +2807,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime ];
     meta = {
       description = "JSON view for your data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Catalyst-View-JSON";
     };
   };
 
@@ -2700,7 +2822,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime ClassAccessor TemplateTimer ];
     meta = {
       description = "Template View Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Catalyst-View-TT";
     };
   };
 
@@ -2712,6 +2835,11 @@ let
       sha256 = "0iq4ci8m6g2c4g01fvdl568y7pjz28f3widk986v3pyhr7ll8j88";
     };
     propagatedBuildInputs = [ CatalystRuntime MooseXTraitsPluggable ];
+    meta = {
+      description = "Automatic Trait Loading and Resolution for Catalyst Components";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/catalystx-component-traits";
+    };
   };
 
   CatalystXRoleApplicator = buildPerlPackage {
@@ -2722,6 +2850,10 @@ let
       sha256 = "0vwaapxn8g5hs2xp63c4dwv9jmapmji4272fakssvgc9frklg3p2";
     };
     propagatedBuildInputs = [ CatalystRuntime MooseXRelatedClassRoles ];
+    meta = {
+      description = "apply roles to your Catalyst application-related classes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   CatalystTraitForRequestProxyBase = buildPerlPackage {
@@ -2735,7 +2867,7 @@ let
     propagatedBuildInputs = [ Moose URI namespaceautoclean ];
     meta = {
       description = "Replace request base with value passed by HTTP proxy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2754,7 +2886,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime MooseXTypes PodParser Starman ];
     meta = {
       description = "Replace the development server with Starman";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2766,9 +2898,9 @@ let
       sha256 = "0jzbm59b9q51k00djr1b8c4vjvjkwb577r946vi5s09rasfq8r45";
     };
     meta = {
-      homepage = "https://github.com/toddr/CDB_File";
       description = "Perl extension for access to cdb databases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/toddr/CDB_File";
     };
     buildInputs = [ TestFatal TestWarnings ];
     propagatedBuildInputs = [ BCOW ];
@@ -2785,7 +2917,7 @@ let
     buildInputs = [ LogAnyAdapterLog4perl LogLog4perl TestDeep TestException TestLWPUserAgent TestPod ];
     meta = {
       description = "a data toolkit";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Catmandu";
     };
   };
@@ -2798,8 +2930,7 @@ let
       sha256 = "1jfrwvfasylcafbvb0jjm94ad4v6k99a7rf5i4qwzhg4m0gvmk5x";
     };
     meta = {
-      description = "Get the CDDB info for an audio cd";
-      license = lib.licenses.artistic1;
+      description = "This module/script gets the CDDB info for an audio cd";
       maintainers = [ maintainers.endgame ];
     };
   };
@@ -2813,7 +2944,6 @@ let
     };
     meta = {
       description = "Parse a CDDB/freedb data file";
-      license = lib.licenses.artistic1;
     };
   };
 
@@ -2829,7 +2959,8 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "Handle Common Gateway Interface requests and responses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/CGI.pm";
     };
   };
 
@@ -2843,10 +2974,10 @@ let
      propagatedBuildInputs = [ Filepushd SubName ];
      buildInputs = [ CGI CaptureTiny ModuleBuildTiny SubIdentify Switch TestNoWarnings TestRequires TryTiny ];
      meta = {
-       description = "Compile .cgi scripts to a code reference like ModPerl::Registry";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/CGI-Compile";
-     };
+      description = "Compile .cgi scripts to a code reference like ModPerl::Registry";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/CGI-Compile";
+    };
   };
 
   CGICookieXS = buildPerlPackage {
@@ -2855,6 +2986,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/A/AG/AGENT/CGI-Cookie-XS-0.18.tar.gz";
       sha256 = "1iixvnm0l1q24vdlnayb4vd8fns2bdlhm6zb7fpi884ppm5cp6a6";
+    };
+    meta = {
+      description = "HTTP Cookie parser in pure C";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/agentzh/cookiexs/tree/master";
     };
   };
 
@@ -2868,9 +3004,9 @@ let
     buildInputs = [ TestRequires ];
     propagatedBuildInputs = [ CGI ];
     meta = {
-      homepage = "https://github.com/tokuhirom/p5-cgi-emulate-psgi";
       description = "PSGI adapter for CGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/p5-cgi-emulate-psgi";
     };
   };
 
@@ -2882,7 +3018,8 @@ let
       sha256 = "1ad48nd067j5irjampxpw3zvzpg8wpnpan6szkdc5h64wccd30kf";
     };
     meta = {
-      description = "Convert flat hash to nested data using TT2's dot convention";
+      description = "convert flat hash to nested data using TT2's dot convention";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ TestException ];
   };
@@ -2897,7 +3034,8 @@ let
     propagatedBuildInputs = [ CGI FCGI ];
     doCheck = false;
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/cgi-fast";
     };
   };
 
@@ -2910,6 +3048,9 @@ let
     };
 
     propagatedBuildInputs = [ CGI ];
+    meta = {
+      description = "Easily generate and process stateful forms";
+    };
   };
 
   CGIMinimal = buildPerlModule {
@@ -2921,7 +3062,8 @@ let
     };
     meta = {
       description = "A lightweight CGI form processing package";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.mit;
+      homepage = "https://github.com/JerilynFranz/perl-CGI-Minimal";
     };
   };
 
@@ -2935,7 +3077,7 @@ let
     propagatedBuildInputs = [ CGI ];
     meta = {
       description = "Adapt CGI.pm to the PSGI protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -2947,6 +3089,11 @@ let
       sha256 = "1xsl2pz1jrh127pq0b01yffnj4mnp9nvkp88h5mndrscq9hn8xa6";
     };
     propagatedBuildInputs = [ CGI ];
+    meta = {
+      description = "Persistent session data in CGI applications";
+      license = licenses.artistic1;
+      homepage = "http://github.com/cromedome/cgi-session";
+    };
   };
 
   CGISimple = buildPerlModule {
@@ -2959,7 +3106,8 @@ let
     propagatedBuildInputs = [ IOStringy ];
     meta = {
       description = "A Simple totally OO CGI interface that is CGI.pm compliant";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/manwar/CGI--Simple";
     };
     buildInputs = [ TestException TestNoWarnings ];
   };
@@ -2974,7 +3122,7 @@ let
     buildInputs = [ TestDeep ];
     meta = {
       description = "Build structures from CGI data";
-      license = lib.licenses.bsd2;
+      license = licenses.bsd3;
     };
   };
 
@@ -2993,7 +3141,8 @@ let
     propagatedBuildInputs = [ CarpAssert ClassLoad DataUUID DigestJHash HashMoreUtils JSONMaybeXS ListMoreUtils LogAny Moo MooXTypesMooseLikeNumeric StringRewritePrefix TaskWeaken TimeDuration TimeDurationParse ];
     meta = {
       description = "Unified cache handling interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jonswar/perl-chi";
     };
   };
 
@@ -3006,8 +3155,7 @@ let
     };
     propagatedBuildInputs = [ GD ];
     meta = {
-        description = "A series of charting modules";
-        license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "A series of charting modules";
     };
   };
 
@@ -3020,7 +3168,6 @@ let
     };
     meta = {
       description = "Package for creating Cisco IPPhone XML objects";
-      license = with lib.licenses; [ artistic1 ];
     };
   };
 
@@ -3032,9 +3179,8 @@ let
       sha256 = "c5185620815701b3fec21314ccd8c5693e6bfd519431527da3370a8164220671";
     };
     meta = {
-      homepage = "https://metacpan.org/pod/CLASS";
       description = "Alias for __PACKAGE__";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -3047,7 +3193,7 @@ let
       sha256 = "07215zzr4ydf49832vn54i3gf2q5b97lydkv8j56wb2svvjs64mz";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3059,6 +3205,9 @@ let
       sha256 = "1lilrjy1s0q5hyr0888kf0ifxjyl2iyk4vxil4jsv0sgh39lkgx5";
     };
     propagatedBuildInputs = [ ClassAccessor ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ClassAccessorGrouped = buildPerlPackage {
@@ -3072,7 +3221,8 @@ let
     propagatedBuildInputs = [ ModuleRuntime ];
     meta = {
       description = "Lets you build groups of accessors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Class-Accessor-Grouped";
     };
   };
 
@@ -3084,8 +3234,9 @@ let
       sha256 = "75b3b8ec8efe687677b63f0a10eef966e01f60735c56656ce75cbb44caba335a";
     };
     meta = {
-      description = "A minimalistic variant of Class::Accessor";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a minimalistic variant of Class::Accessor";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazuho/p5-Class-Accessor-Lite";
     };
   };
 
@@ -3098,7 +3249,8 @@ let
     };
     meta = {
       description = "Run-time load a class the first time you call a method in it";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://svn.ali.as/cpan/trunk/Class-Autouse";
     };
   };
 
@@ -3110,6 +3262,11 @@ let
       sha256 = "117dmsrb30a09zlrv919fb5h5rg8r4asa24i99k04n2habgbv9g1";
     };
     propagatedBuildInputs = [ Clone ];
+    meta = {
+      description = "useful base class for deriving other modules";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/yanick/Class-Base";
+    };
   };
 
   ClassC3 = buildPerlPackage {
@@ -3122,7 +3279,8 @@ let
     propagatedBuildInputs = [ AlgorithmC3 ];
     meta = {
       description = "A pragma to use the C3 method resolution order algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Class-C3";
     };
   };
 
@@ -3136,8 +3294,9 @@ let
     buildInputs = [ ModuleBuildTiny TestException ];
     propagatedBuildInputs = [ MROCompat ];
     meta = {
-      description = "Make NEXT suck less";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "make NEXT suck less";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Class-C3-Adopt-NEXT";
     };
   };
 
@@ -3151,7 +3310,9 @@ let
     buildInputs = [ TestException ];
     propagatedBuildInputs = [ ClassC3 ClassInspector MROCompat ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Load mix-ins or components to your C3-based class";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Class-C3-Componentised";
     };
   };
 
@@ -3174,7 +3335,7 @@ let
     propagatedBuildInputs = [ ParamsValidate ];
     meta = {
       description = "Glues object frameworks together transparently";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3185,6 +3346,10 @@ let
       url = "mirror://cpan/authors/id/C/CL/CLACO/Class-Data-Accessor-0.04004.tar.gz";
       sha256 = "0578m3rplk41059rkkjy1009xrmrdivjnv8yxadwwdk1vzidc8n1";
     };
+    meta = {
+      description = "Inheritable, overridable class and instance data accessor creation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ClassDataInheritable = buildPerlPackage {
@@ -3193,6 +3358,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/T/TM/TMTM/Class-Data-Inheritable-0.08.tar.gz";
       sha256 = "0jpi38wy5xh6p1mg2cbyjjw76vgbccqp46685r27w8hmxb7gwrwr";
+    };
+    meta = {
+      description = "Inheritable, overridable class data";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3206,7 +3375,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "a minimalistic class accessors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Songmu/Class-Data-Lite";
     };
   };
@@ -3220,7 +3389,7 @@ let
     };
     meta = {
       description = "Base class for hierarchally ordered objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = teams.deshaw.members;
     };
   };
@@ -3234,7 +3403,7 @@ let
     };
     meta = {
       description = "Base class for error handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Class-ErrorHandler";
     };
   };
@@ -3257,7 +3426,7 @@ let
     };
     meta = {
       description = "Provide utility methods for factory classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3270,7 +3439,7 @@ let
     };
     meta = {
       description = "another class and object builder";
-      license = with lib.licenses; [ artistic1 ];
+      license = licenses.artistic1;
     };
   };
 
@@ -3283,7 +3452,8 @@ let
     };
     meta = {
       description = "Get information about a class and its structure";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/Class-Inspector";
     };
   };
 
@@ -3303,8 +3473,7 @@ let
       url = "mirror://cpan/authors/id/T/TE/TEXMEC/Class-Iterator-0.3.tar.gz";
       sha256 = "db1ba87ca9107f161fe9c1e9e7e267c0026defc26fe3e73bcad8ab8ffc18ef9d";
     };
-    meta = {
-    };
+
   };
 
   ClassLoader = buildPerlPackage rec {
@@ -3316,7 +3485,6 @@ let
     };
     meta = {
       description = "Load modules and create objects on demand";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -3355,8 +3523,8 @@ let
     # Remove unnecessary, non-autoconf, configure script.
     prePatch = "rm configure";
     meta = {
-      description = "A module for creating generic methods";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a module for creating generic methods";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3369,9 +3537,9 @@ let
     };
     buildInputs = [ TestFatal TestNeeds ];
     meta = {
-      homepage = "https://github.com/moose/Class-Method-Modifiers";
       description = "Provides Moose-like method modifiers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Class-Method-Modifiers";
     };
   };
 
@@ -3384,8 +3552,8 @@ let
     };
     propagatedBuildInputs = [ ParamsClassify ];
     meta = {
-      description = "Dynamic class mixing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "dynamic class mixing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3398,8 +3566,7 @@ let
     };
     meta = {
       description = "Implements the Null Class design pattern";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Class-Null/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3413,7 +3580,7 @@ let
     propagatedBuildInputs = [ DevelStackTrace ];
     meta = {
       description = "A smart return value object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3424,6 +3591,11 @@ let
       url = "mirror://cpan/authors/id/S/SH/SHAY/Class-Singleton-1.6.tar.gz";
       sha256 = "1942j9g0b4c88nvs3jghh3y31mlhbpwrx35xdcb2jaaiv7q17fi7";
     };
+    meta = {
+      description = "Implementation of a \"Singleton\" class";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/steve-m-hay/Class-Singleton";
+    };
   };
 
   ClassThrowable = buildPerlPackage {
@@ -3432,6 +3604,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/K/KM/KMX/Class-Throwable-0.13.tar.gz";
       sha256 = "1kmwzdxvp9ca2z44vl0ygkfygdbxqkilzjd8vqhc4vdmvbh136nw";
+    };
+    meta = {
+      homepage = "https://github.com/kmx/perl-Class-Throwable";
     };
   };
 
@@ -3443,10 +3618,10 @@ let
        sha256 = "05anh4hn8va46xwbdx7rqxnhb8i1lingb614lywzr89gj5iql1gf";
      };
      meta = {
-       description = "Minimalist class construction";
-       license = with lib.licenses; [ asl20 ];
-       homepage = "https://github.com/dagolden/Class-Tiny";
-     };
+      description = "Minimalist class construction";
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Class-Tiny";
+    };
   };
 
   ClassLoad = buildPerlPackage {
@@ -3459,9 +3634,9 @@ let
     buildInputs = [ TestFatal TestNeeds ];
     propagatedBuildInputs = [ DataOptList PackageStash ];
     meta = {
-      homepage = "https://github.com/moose/Class-Load";
       description = "A working (require \"Class::Name\") and more";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Class-Load";
     };
   };
 
@@ -3475,9 +3650,9 @@ let
     buildInputs = [ TestFatal TestNeeds ];
     propagatedBuildInputs = [ ClassLoad ];
     meta = {
-      homepage = "https://github.com/moose/Class-Load-XS";
       description = "XS implementation of parts of Class::Load";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/moose/Class-Load-XS";
     };
   };
 
@@ -3489,6 +3664,11 @@ let
       sha256 = "0zpiswdhlyvw0pq46q7lv8na9ag4j7v9h1gd0z7myyf383ih2cwh";
     };
     propagatedBuildInputs = [ ClassISA ];
+    meta = {
+      description = "Allow other classes and objects to respond to events in yours";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Class-Observable";
+    };
   };
 
   ClassRefresh = buildPerlPackage {
@@ -3502,7 +3682,8 @@ let
     buildInputs = [ TestFatal TestRequires ];
     meta = {
       description = "refresh your classes during runtime";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/class-refresh";
     };
   };
 
@@ -3514,8 +3695,9 @@ let
       sha256 = "bcd6d82f6c8af0fe069fced7dd165a4795b0b6e92351c7d4e5a1ab9a14fc35c6";
     };
     meta = {
-      description = "Support for creating standard 'inside-out' classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Support for creating standard \"inside-out\" classes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chorny/Class-Std";
     };
   };
 
@@ -3528,9 +3710,9 @@ let
     };
     propagatedBuildInputs = [ ClassStd ];
     checkInputs = [ TestPod TestPodCoverage ];
-    meta = with lib; {
-      description = "Faster but less secure than Class::Std";
-      license = with licenses; [ artistic1 gpl1Plus ];
+    meta = {
+      description = "faster but less secure than Class::Std";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3543,6 +3725,11 @@ let
     };
     propagatedBuildInputs = [ ClassInspector ];
     buildInputs = [ TestRequires ];
+    meta = {
+      description = "Unload a class";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ilmari/Class-Unload";
+    };
   };
 
   ClassUtils = buildPerlPackage {
@@ -3556,7 +3743,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Class utilities";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/tupinek/Class-Utils";
     };
   };
@@ -3571,7 +3758,8 @@ let
     propagatedBuildInputs = [ CarpAssert ClassDataInheritable ClassISA ];
     meta = {
       description = "Base class for virtual base classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/schwern/Class-Virtual";
     };
   };
 
@@ -3584,7 +3772,7 @@ let
     };
     meta = {
       description = "Generate fast XS accessors without runtime compilation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -3598,9 +3786,9 @@ let
     buildInputs = [ PodCoverageTrustPod TestPerlCritic ];
     propagatedBuildInputs = [ CaptureTiny RefUtil TermReadKey YAML ];
     meta = {
-      homepage = "https://github.com/reyjrar/CLI-Helpers";
       description = "Subroutines for making simple command line scripts";
-      license = lib.licenses.bsd3;
+      license = licenses.bsd3;
+      homepage = "https://github.com/reyjrar/CLI-Helpers";
     };
   };
 
@@ -3612,8 +3800,9 @@ let
       sha256 = "886ae43dc8538f9bfc4e07fdbcf09b7fbd6ee59c31f364618c859de14953c58a";
     };
     meta = {
-      description = "Clipboard - Copy and Paste with any OS";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Copy and paste with any OS";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/Clipboard";
     };
     propagatedBuildInputs = [ CGI ];
     # Disable test on darwin because MacPasteboard fails when not logged in interactively.
@@ -3632,8 +3821,9 @@ let
       sha256 = "1rm9g68fklni63jdkrlgqq6yfj95fm33p2bq90p475gsi8sfxdnb";
     };
     meta = {
-      description = "Recursively copy Perl datatypes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "recursively copy Perl datatypes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/garu/Clone";
     };
     buildInputs = [ BCOW ];
   };
@@ -3647,9 +3837,10 @@ let
      };
      buildInputs = [ Clone ClonePP TestWithoutModule ];
      meta = {
-       description = "Choose appropriate clone utility";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Choose appropriate clone utility";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/Clone-Choose";
+    };
   };
 
   ClonePP = buildPerlPackage {
@@ -3660,8 +3851,9 @@ let
        sha256 = "0y7m25fksiavzg4xj4cm9zkz8rmnk4iqy7lm01m4nmyqlna3082p";
      };
      meta = {
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Clone-PP";
+    };
   };
 
   CodeTidyAll = buildPerlPackage {
@@ -3674,9 +3866,10 @@ let
      propagatedBuildInputs = [ CaptureTiny ConfigINI FileWhich Filepushd IPCRun3 IPCSystemSimple ListCompare ListSomeUtils LogAny Moo ScopeGuard SpecioLibraryPathTiny TextDiff TimeDate TimeDurationParse ];
      buildInputs = [ TestClass TestClassMost TestDeep TestDifferences TestException TestFatal TestMost TestWarn TestWarnings librelative ];
      meta = {
-       description = "Engine for tidyall, your all-in-one code tidier and validator";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Engine for tidyall, your all-in-one code tidier and validator";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/perl-code-tidyall";
+    };
   };
 
   CodeTidyAllPluginPerlAlignMooseAttributes = buildPerlPackage {
@@ -3688,9 +3881,10 @@ let
      };
      propagatedBuildInputs = [ CodeTidyAll TextAligner ];
      meta = {
-       description = "TidyAll plugin to sort and align Moose-style attributes";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "TidyAll plugin to sort and align Moose-style attributes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jonswar/perl-code-tidyall-plugin-perl-alignmooseattributes";
+    };
   };
 
   ColorANSIUtil = buildPerlPackage {
@@ -3703,7 +3897,8 @@ let
     propagatedBuildInputs = [ ColorRGBUtil ];
     meta = {
       description = "Routines for dealing with ANSI colors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Color-ANSI-Util";
     };
   };
 
@@ -3717,7 +3912,8 @@ let
     buildInputs = [ TestException TestRandomResult ];
     meta = {
       description = "Utilities related to RGB colors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-SHARYANTO-Color-Util";
     };
   };
 
@@ -3732,7 +3928,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Base class for color theme modules with static list of items (from object's colors key)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-ColorThemeBase-Static";
     };
   };
 
@@ -3746,7 +3943,8 @@ let
     propagatedBuildInputs = [ ColorANSIUtil ];
     meta = {
       description = "Utility routines related to color themes and ANSI code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-ColorThemeUtil-ANSI";
     };
   };
 
@@ -3760,7 +3958,8 @@ let
     propagatedBuildInputs = [ ColorThemeBaseStatic ];
     meta = {
       description = "A standard collection of generic color themes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-ColorThemes-Standard";
     };
   };
 
@@ -3774,9 +3973,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ CaptureTiny StringShellQuote Win32ShellQuote ];
     meta = {
+      description = "run external commands and Perl code refs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/skaji/Command-Runner";
-      description = "Run external commands and Perl code refs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -3792,7 +3991,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Completion routines for bash shell";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Bash";
     };
   };
 
@@ -3805,7 +4005,8 @@ let
     };
     meta = {
       description = "Common stuffs for completion routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Common";
     };
   };
 
@@ -3819,7 +4020,8 @@ let
     propagatedBuildInputs = [ CompleteUtil ];
     meta = {
       description = "Completion routines related to environment variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Env";
     };
   };
 
@@ -3834,7 +4036,8 @@ let
     buildInputs = [ Filechdir ];
     meta = {
       description = "Completion routines related to files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-File";
     };
   };
 
@@ -3849,7 +4052,8 @@ let
     buildInputs = [ CompleteBash Filechdir ];
     meta = {
       description = "Complete command-line argument using Getopt::Long specification";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Getopt-Long";
     };
   };
 
@@ -3863,7 +4067,8 @@ let
     propagatedBuildInputs = [ CompleteUtil ];
     meta = {
       description = "Complete path";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Path";
     };
   };
 
@@ -3878,7 +4083,8 @@ let
     buildInputs = [ SahSchemasInt TestException ];
     meta = {
       description = "Sah-related completion routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Sah";
     };
   };
 
@@ -3892,7 +4098,8 @@ let
     propagatedBuildInputs = [ CompleteUtil SetCrossProduct ];
     meta = {
       description = "Complete string from a sequence of choices";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Sequence";
     };
   };
 
@@ -3906,7 +4113,8 @@ let
     propagatedBuildInputs = [ CompleteCommon Logger ];
     meta = {
       description = "General completion routine";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Complete-Util";
     };
   };
 
@@ -3919,7 +4127,6 @@ let
     };
     meta = {
       description = "Implements some sane defaults for Perl programs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -3932,7 +4139,8 @@ let
     };
     meta = {
       description = "Interface to Bzip2 compression library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Compress-Bzip2";
     };
   };
 
@@ -3951,7 +4159,8 @@ let
 
     meta = {
       description = "Low-Level Interface to bzip2 compression library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pmqs/Compress-Raw-Bzip2";
     };
   };
 
@@ -3977,7 +4186,8 @@ let
     doCheck = !stdenv.isDarwin;
 
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pmqs/Compress-Raw-Zlib";
     };
   };
 
@@ -3987,6 +4197,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/F/FE/FERREIRA/Compress-unLZMA-0.05.tar.gz";
       sha256 = "1f0pcpcjjj60whqc5sc5jd0dd7z3si4fnp268w4ykmcjini03s2d";
+    };
+    meta = {
+      description = "Interface to LZMA decompression library";
+      homepage = "http://github.com/aferreira/cpan-Compress-unLZMA";
     };
   };
 
@@ -4000,7 +4214,8 @@ let
     propagatedBuildInputs = [ ModulePluggable ];
     meta = {
       description = "Load configuration from different file formats, transparently";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Config-Any.git;a=summary";
     };
   };
 
@@ -4014,7 +4229,8 @@ let
     propagatedBuildInputs = [ CaptureTiny ];
     meta = {
       description = "A module to implement some of AutoConf macros in pure perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ambs/Config-AutoConf";
     };
   };
 
@@ -4026,7 +4242,8 @@ let
       sha256 = "1bbg3wp0xcpj04cmm86j1x0j5968jqi5s2c87qs7dgmap1vzk6qa";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Config-General/trunk/";
     };
   };
 
@@ -4040,8 +4257,9 @@ let
     buildInputs = [ TestException ];
     propagatedBuildInputs = [ Moo MooXTypesMooseLike ];
     meta = {
-      description = "Git-compatible config file parsing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "git-compatible config file parsing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bestpractical/config-gitlike";
     };
   };
 
@@ -4053,9 +4271,9 @@ let
       sha256 = "a8b3a3a2c9c8c43b92dc401bf2709d6514f15b467fd4f72c48d356335771d6e3";
     };
     meta = {
-      homepage = "https://github.com/schweikert/Config-Grammar";
       description = "A grammar-based, user-friendly config parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/schweikert/Config-Grammar";
     };
   };
 
@@ -4068,9 +4286,9 @@ let
     };
     propagatedBuildInputs = [ MixinLinewise ];
     meta = {
+      description = "simple .ini-file format";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Config-INI";
-      description = "Simple .ini-file format";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -4084,10 +4302,10 @@ let
      propagatedBuildInputs = [ FileHomeDir IPCRun ];
      buildInputs = [ TestDeep ];
      meta = {
-       description = "Load (and optionally decrypt via GnuPG) user/pass identity information ";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/dagolden/Config-Identity";
-     };
+      description = "Load (and optionally decrypt via GnuPG) user/pass identity information";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dagolden/Config-Identity";
+    };
   };
 
   ConfigIniFiles = buildPerlModule {
@@ -4100,7 +4318,8 @@ let
     propagatedBuildInputs = [ IOStringy ];
     meta = {
       description = "A module for reading .ini-style configuration files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-Config-IniFiles";
       maintainers = teams.deshaw.members;
     };
   };
@@ -4115,8 +4334,9 @@ let
     buildInputs = [ YAML ];
     propagatedBuildInputs = [ ConfigAny ];
     meta = {
-      description = "Load a configuration directory tree containing YAML, JSON, XML, Perl, INI or Config::General files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "load a configuration directory tree containing YAML, JSON, XML, Perl, INI or Config::General files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/clintongormley/ConfigMerge";
     };
   };
 
@@ -4131,7 +4351,8 @@ let
     buildInputs = [ TestException YAML ];
     meta = {
       description = "Layered configuration, because configs are like ogres";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dsheroh/Config-Onion";
     };
   };
 
@@ -4145,9 +4366,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ ModulePluggable MooseXOneArgNew RoleHasMessage RoleIdentifiable Throwable TieIxHash ];
     meta = {
+      description = "multivalue-property package-oriented configuration";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Config-MVP";
-      description = "Multivalue-property package-oriented configuration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -4160,9 +4381,9 @@ let
     };
     propagatedBuildInputs = [ ConfigINI ConfigMVP ];
     meta = {
+      description = "an MVP config reader for .ini files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Config-MVP-Reader-INI";
-      description = "An MVP config reader for .ini files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -4175,7 +4396,7 @@ let
     };
     meta = {
       description = "Read and write property files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/salva/p5-Config-Properties";
     };
   };
 
@@ -4212,6 +4433,11 @@ let
       sha256 = "0pyggn3yq9ffjnw3i1n5r9kg4b90jw926apbvzxq8y7cpa8k5dc3";
     };
 
+    meta = {
+      description = "Read/Write .ini style files with as little code as possible";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Config-Tiny";
+    };
   };
 
   ConfigVersioned = buildPerlPackage {
@@ -4225,7 +4451,7 @@ let
     doCheck = false;
     meta = {
       description = "Simple, versioned access to configuration data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4244,8 +4470,9 @@ let
       rm t/01-proxy-proc-safeexec.t
     '';
     meta = {
-      description = "A generic connection to a hierarchical-structured data set";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a generic connection to a hierarchical-structured data set";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mrscotty/connector";
     };
   };
 
@@ -4259,9 +4486,10 @@ let
      propagatedBuildInputs = [ SubExporterProgressive ];
      buildInputs = [ ModuleBuildTiny TestFatal ];
      meta = {
-       description = "Facility for creating read-only scalars, arrays, and hashes";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Facility for creating read-only scalars, arrays, and hashes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/const-fast";
+    };
   };
 
   ConvertASCIIArmour = buildPerlPackage {
@@ -4273,7 +4501,6 @@ let
     };
     meta = {
       description = "Convert binary octets into ASCII armoured messages";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4284,6 +4511,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/G/GB/GBARR/Convert-ASN1-0.27.tar.gz";
       sha256 = "12nmsca6hzgxq57sx7dp8yq6zxqhl41z5a6018877sf5w25ag93l";
+    };
+    meta = {
+      description = "Convert between perl data structures and ASN.1 encoded packets";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/gbarr/perl-Convert-ASN1";
     };
   };
 
@@ -4296,9 +4528,7 @@ let
     };
     buildInputs = [ TestException ];
     meta = {
-      homepage = "https://metacpan.org/pod/Convert::Base32";
       description = "Encoding and decoding of base32 strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4312,7 +4542,6 @@ let
     };
     meta = {
       description = "Functions for converting to/from bencoded strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -4326,8 +4555,8 @@ let
     buildInputs = [ TestNumberDelta ];
     propagatedBuildInputs = [ ListUtilsBy ModulePluggable ];
     meta = {
-      description = "Color space conversions and named lookups";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "color space conversions and named lookups";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4340,7 +4569,7 @@ let
     };
     meta = {
       description = "Perl module for uuencode and uudecode";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4352,6 +4581,11 @@ let
       sha256 = "1s8gxfg4xqp543aqanv5lbp64vqqyw6ic4x3fm4imkk1h3amjb6d";
     };
     propagatedBuildInputs = [ SymbolUtil ];
+    meta = {
+      description = "Define TRUE and FALSE constants";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dexter-cpan.googlecode.com/svn/constant-boolean";
+    };
   };
 
   curry = buildPerlPackage {
@@ -4362,9 +4596,9 @@ let
        sha256 = "1m2n3w67cskh8ic6vf6ik0fmap9zma875kr5rhyznr1041wn064b";
      };
      meta = {
-       description = "Create automatic curried method call closures for any class or object";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Create automatic curried method call closures for any class or object";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   constant-defer = buildPerlPackage {
@@ -4373,6 +4607,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/K/KR/KRYDE/constant-defer-6.tar.gz";
       sha256 = "1ykgk0rd05p7kyrdxbv047fj7r0b4ix9ibpkzxp6h8nak0qjc8bv";
+    };
+    meta = {
+      description = "Constant subs with deferred value calculation";
+      license = [ licenses.gpl1Plus licenses.gpl3Plus ];
+      homepage = "http://user42.tuxfamily.org/constant-defer/index.html";
     };
   };
 
@@ -4384,6 +4623,11 @@ let
       sha256 = "07zxgmb11bn4zj3w9g1zwbb9iv4jyk5q7hc0nv59knvv5i64m489";
     };
     buildInputs = [ TestException TestSimple13 ];
+    meta = {
+      description = "Run code after a subroutine call, preserving the context the subroutine would have seen if it were the last statement in the caller";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Context-Preserve";
+    };
   };
 
   ContextualReturn = buildPerlPackage {
@@ -4396,7 +4640,7 @@ let
     propagatedBuildInputs = [ Want ];
     meta = {
       description = "Create context-sensitive return values";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4410,9 +4654,9 @@ let
     buildInputs = [ ModuleBuildTiny TestTime ];
     propagatedBuildInputs = [ URI ];
     meta = {
-      homepage = "https://github.com/kazeburo/Cookie-Baker";
       description = "Cookie string generator / parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Cookie-Baker";
     };
   };
 
@@ -4424,6 +4668,10 @@ let
       sha256 = "1616rcn2qn1cwiv3rxb8mq5fmwxpj4gya1lxxxq2w952h03p3fd3";
     };
     propagatedBuildInputs = [ CGICookieXS ];
+    meta = {
+      description = "HTTP Cookie parser in C (Please use CGI::Cookie::XS instead)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   Coro = buildPerlPackage {
@@ -4435,8 +4683,7 @@ let
      };
      propagatedBuildInputs = [ AnyEvent Guard commonsense ];
      buildInputs = [ CanaryStability ];
-     meta = {
-     };
+
   };
 
   Corona = buildPerlPackage {
@@ -4449,9 +4696,9 @@ let
      propagatedBuildInputs = [ NetServerCoro Plack ];
      buildInputs = [ TestSharedFork TestTCP ];
      meta = {
-       description = "Coro based PSGI web server";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Coro based PSGI web server";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   CPAN = buildPerlPackage {
@@ -4463,8 +4710,9 @@ let
     };
     propagatedBuildInputs = [ ArchiveZip CPANChecksums CPANPerlReleases Expect FileHomeDir LWP LogLog4perl ModuleBuild TermReadKey YAML YAMLLibYAML YAMLSyck ];
     meta = {
-      description = "Query, download and build perl modules from CPAN sites";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "query, download and build perl modules from CPAN sites";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/andk/cpanpm";
     };
   };
 
@@ -4482,9 +4730,9 @@ let
     '';
 
     meta = {
+      description = "create a minimal mirror of CPAN";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/CPAN-Mini";
-      description = "Create a minimal mirror of CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4497,8 +4745,9 @@ let
       sha256 = "061940vyj9y3rzwq47z2a3f5i5rfpa90ccz7fgz228zr7njkvfpr";
     };
     meta = {
-      description = "CPanel fork of JSON::XS, fast and correct serializing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "cPanel fork of JSON::XS, fast and correct serializing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Cpanel-JSON-XS";
     };
     buildInputs = [ CPANChanges ClassXSAccessor JSON JSONXS ListMoreUtils Mojolicious PerlMinimumVersion PodSpellCommonMistakes TestCPANMeta TestCheckChanges TestKwalitee TestLeakTrace TestMinimumVersion TestPod TestPodCoverage TestSpelling TextCSV_XS commonsense ];
   };
@@ -4512,7 +4761,8 @@ let
     };
     meta = {
       description = "Read and write Changes files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/CPAN-API/CPAN-Changes";
     };
   };
 
@@ -4525,7 +4775,7 @@ let
     };
     propagatedBuildInputs = [ CompressBzip2 DataCompare ModuleSignature ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4539,9 +4789,9 @@ let
     buildInputs = [ TestDeep TestFailWarnings TestFatal ];
     propagatedBuildInputs = [ CPANDistnameInfo ClassTiny TieHandleOffset URI ];
     meta = {
-      homepage = "https://github.com/Perl-Toolchain-Gang/CPAN-Common-Index";
       description = "Common library for searching CPAN modules, authors and distributions";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/Perl-Toolchain-Gang/CPAN-Common-Index";
     };
   };
 
@@ -4553,9 +4803,10 @@ let
        sha256 = "0d94kx596w7k328cvq4y96z1gz12hdhn3z1mklkbrb7fyzlzn91g";
      };
      meta = {
-       description = "Extract distribution name and version from a distribution filename";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Extract distribution name and version from a distribution filename";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gbarr/CPAN-DistnameInfo";
+    };
   };
 
   CPANMetaCheck = buildPerlPackage {
@@ -4568,7 +4819,8 @@ let
     buildInputs = [ TestDeep ];
     meta = {
       description = "Verify requirements in a CPAN::Meta object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/cpan-meta-check";
     };
   };
 
@@ -4580,9 +4832,9 @@ let
       sha256 = "1cag7v602mlmrv6zcpixzaz24qvsj2k9x6wr1lzdjk4h6hm8bywq";
     };
     meta = {
-      homepage = "https://github.com/bingos/cpan-perl-releases";
       description = "Mapping Perl releases on CPAN to the location of the tarballs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/cpan-perl-releases";
     };
   };
 
@@ -4595,9 +4847,9 @@ let
     };
     propagatedBuildInputs = [ ArchiveExtract ModulePluggable ObjectAccessor PackageConstants TermUI ];
     meta = {
-      homepage = "https://github.com/jib/cpanplus-devel";
       description = "Ameliorated interface to the CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/cpanplus-devel";
     };
   };
 
@@ -4610,9 +4862,9 @@ let
     };
     propagatedBuildInputs = [ FileHomeDir GetoptLongDescriptive LWPProtocolHttps TermReadKey ];
     meta = {
-      homepage = "https://github.com/rjbs/cpan-uploader";
-      description = "Upload things to the CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "upload things to the CPAN";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/CPAN-Uploader";
     };
   };
 
@@ -4626,7 +4878,8 @@ let
     buildInputs = [ TestDifferences ];
     meta = {
       description = "Perl extension for CSS minification";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sbertrang/css-compressor.git";
     };
   };
 
@@ -4648,7 +4901,6 @@ let
     };
     meta = {
       description = "CAST5 block cipher in pure Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4678,7 +4930,8 @@ let
     ];
     meta = {
       description = "Generate shared secret using elliptic-curve Diffie-Hellman function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ajgb/crypt-curve25519";
     };
   };
 
@@ -4701,7 +4954,6 @@ let
     propagatedBuildInputs = [ CryptDES ];
     meta = {
       description = "Triple-DES EDE encryption/decryption";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4714,6 +4966,11 @@ let
       sha256 = "0pvzlgwpx8fzdy64ki15155vhsj30i9zxmw6i4p7irh17d1g7368";
     };
     propagatedBuildInputs = [ MathBigIntGMP ];
+    meta = {
+      description = "Diffie-Hellman key exchange system";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/wchristian/crypt-dh/tree";
+    };
   };
 
   CryptDHGMP = buildPerlPackage {
@@ -4726,6 +4983,11 @@ let
     buildInputs = [ pkgs.gmp DevelChecklib TestRequires ];
     NIX_CFLAGS_COMPILE = "-I${pkgs.gmp.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.gmp.out}/lib -lgmp";
+    meta = {
+      description = "Crypt::DH Using GMP Directly";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/lestrrat/Crypt-DH-GMP";
+    };
   };
 
   CryptDSA = buildPerlPackage {
@@ -4738,7 +5000,8 @@ let
     propagatedBuildInputs = [ DataBuffer DigestSHA1 FileWhich ];
     meta = {
       description = "DSA Signatures and Key Generation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://svn.ali.as/cpan/trunk/Crypt-DSA";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4750,9 +5013,9 @@ let
       url = "mirror://cpan/authors/id/A/AP/APPEL/Crypt-ECB-2.22.tar.gz";
       sha256 = "f5af62e908cd31a34b2b813135a0718016fd003ffa0021ffbdd84c50158267aa";
     };
-    meta = with lib; {
+    meta = {
       description = "Use block ciphers using ECB mode";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -4765,6 +5028,10 @@ let
     };
     propagatedBuildInputs = [ ClassMix ];
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC";
+    meta = {
+      description = "the Eksblowfish block cipher";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   CryptFormat = buildPerlPackage {
@@ -4777,7 +5044,8 @@ let
     buildInputs = [ TestException TestFailWarnings ];
     meta = {
       description = "Conversion utilities for encryption applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FGasper/p5-Crypt-Format";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4801,7 +5069,8 @@ let
     propagatedBuildInputs = [ CryptX JSON ];
     meta = {
       description = "JSON Web Token";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/DCIT/perl-Crypt-JWT";
     };
   };
 
@@ -4811,6 +5080,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RS/RSAVAGE/Crypt-PasswdMD5-1.41.tgz";
       sha256 = "0fh8hcf1fx72jvmvy7lwyc4wzvzr4zyak711p18sfc9n6cir2dhz";
+    };
+    meta = {
+      description = "Provide interoperable MD5-based crypt() functions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Crypt-PasswdMD5";
     };
   };
 
@@ -4824,7 +5098,9 @@ let
     buildInputs = [ pkgs.unzip ModuleBuildTiny ];
     propagatedBuildInputs = [ ConvertASN1 ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "parse PKCS #10 certificate requests";
+      license = licenses.gpl1Plus;
+      homepage = "https://github.com/openxpki/Crypt-PKCS10";
     };
   };
 
@@ -4837,9 +5113,9 @@ let
     };
     propagatedBuildInputs = [ CryptRandomTESHA2 ];
     meta = {
-      homepage = "https://github.com/danaj/Crypt-Random-Seed";
       description = "Provide strong randomness for seeding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/danaj/Crypt-Random-Seed";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4854,7 +5130,6 @@ let
     propagatedBuildInputs = [ ClassLoader MathPari StatisticsChiSquare ];
     meta = {
       description = "Interface to /dev/random and /dev/urandom";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -4869,7 +5144,8 @@ let
     propagatedBuildInputs = [ CaptureTiny ModuleFind Moo SubExporter TypeTiny namespaceclean ];
     meta = {
       description = "Get weak or strong random data from pluggable sources";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Crypt-Random-Source";
     };
   };
 
@@ -4881,9 +5157,9 @@ let
       sha256 = "a0912b42c52be173da528d5527e40d967324bc04ac78d9fc2ddc91ff16fe9633";
     };
     meta = {
-      homepage = "https://github.com/danaj/Crypt-Random-TESHA2";
       description = "Random numbers using timer/schedule entropy, aka userspace voodoo entropy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/danaj/Crypt-Random-TESHA2";
     };
   };
 
@@ -4903,6 +5179,10 @@ let
       url = "mirror://cpan/authors/id/N/NE/NEILB/Crypt-RandPasswd-0.06.tar.gz";
       sha256 = "0ca8544371wp4vvqsa19lnhl02hczpkbwkgsgm65ziwwim3r1gdi";
     };
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Crypt-RandPasswd";
+    };
   };
 
   CryptRIPEMD160 = buildPerlPackage {
@@ -4913,9 +5193,9 @@ let
       sha256 = "0cmj620kfg08yvh81bq1sbabdyyc3g9pc6vlngxdxjgn0xvcil9l";
     };
     meta = {
-      homepage = "https://wiki.github.com/toddr/Crypt-RIPEMD160";
       description = "Perl extension for the RIPEMD-160 Hash function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://wiki.github.com/toddr/Crypt-RIPEMD160";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4938,6 +5218,11 @@ let
       url = "mirror://cpan/authors/id/L/LE/LEONT/Crypt-Rijndael-1.15.tar.gz";
       sha256 = "0qs1b6ma4sj0ip5d8544fzgc1bbankc4qlmznp8hay8dk5arp650";
     };
+    meta = {
+      description = "Crypt::CBC compliant Rijndael encryption module";
+      license = licenses.free;
+      homepage = "https://github.com/leont/crypt-rijndael";
+    };
   };
 
   CryptUnixCryptXS = buildPerlPackage {
@@ -4946,6 +5231,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/B/BO/BORISZ/Crypt-UnixCrypt_XS-0.11.tar.gz";
       sha256 = "1ajg3x6kwxy4x9p3nw1j36qjxpjvdpi9wkca5gfd86y9q8939sv2";
+    };
+    meta = {
+      description = "perl xs interface for a portable traditional F<crypt> function";
     };
   };
 
@@ -4958,7 +5246,7 @@ let
     };
     meta = {
       description = "Provide non blocking randomness";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -4974,7 +5262,7 @@ let
     perlPreHook = "export LD=$CC";
     meta = {
       description = "Scrypt password based key derivation function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/DCIT/perl-Crypt-ScryptKDF";
       maintainers = [ maintainers.sgo ];
     };
@@ -4999,9 +5287,8 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.libsodium.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.libsodium.out}/lib -lsodium";
     meta = {
-      homepage = "https://metacpan.org/release/Crypt-Sodium";
-      description = "Perl bindings for libsodium (NaCL)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl bindings for libsodium (NaCL) https://github.com/jedisct1/libsodium";
+      homepage = "https://github.com/jedisct1/libsodium";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5015,7 +5302,6 @@ let
     };
     meta = {
       description = "The Twofish Encryption Algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5040,9 +5326,9 @@ let
     '';
 
     meta = {
-      homepage = "https://github.com/btrott/Crypt-OpenPGP";
       description = "Pure-Perl OpenPGP implementation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/btrott/Crypt-OpenPGP";
       maintainers = [ maintainers.sgo ];
     };
     doCheck = false; /* test fails with 'No random source available!' */
@@ -5057,9 +5343,8 @@ let
     };
     NIX_CFLAGS_COMPILE = "-I${pkgs.openssl.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.openssl.out}/lib -lcrypto";
-    meta = with lib; {
+    meta = {
       description = "Perl wrapper around OpenSSL's AES library";
-      license = with licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -5072,6 +5357,11 @@ let
     };
     NIX_CFLAGS_COMPILE = "-I${pkgs.openssl.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.openssl.out}/lib -lcrypto";
+    meta = {
+      description = "OpenSSL's multiprecision integer arithmetic";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kmx/perl-Crypt-OpenSSL-Bignum";
+    };
   };
 
   CryptOpenSSLGuess = buildPerlPackage {
@@ -5082,10 +5372,10 @@ let
        sha256 = "0rvi9l4ljcbhwwvspq019nfq2h2v746dk355h2nwnlmqikiihsxa";
      };
      meta = {
-       description = "Guess OpenSSL include path";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/akiym/Crypt-OpenSSL-Guess";
-     };
+      description = "Guess OpenSSL include path";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/akiym/Crypt-OpenSSL-Guess";
+    };
   };
 
   CryptOpenSSLRandom = buildPerlPackage {
@@ -5098,6 +5388,10 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.openssl.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.openssl.out}/lib -lcrypto";
     buildInputs = [ CryptOpenSSLGuess ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Crypt-OpenSSL-Random";
+    };
   };
 
   CryptOpenSSLRSA = buildPerlPackage {
@@ -5111,6 +5405,11 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.openssl.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.openssl.out}/lib -lcrypto";
     buildInputs = [ CryptOpenSSLGuess ];
+    meta = {
+      description = "RSA encoding and decoding, using the openSSL libraries";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/Crypt-OpenSSL-RSA";
+    };
   };
 
   CryptOpenSSLX509 = buildPerlPackage rec {
@@ -5123,9 +5422,9 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.openssl.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.openssl.out}/lib -lcrypto";
     meta = {
-      homepage = "https://github.com/dsully/perl-crypt-openssl-x509";
       description = "Perl extension to OpenSSL's X509 API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dsully/perl-crypt-openssl-x509";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5140,9 +5439,8 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ DigestHMAC DigestSHA3 Moo TypeTiny namespaceautoclean strictures ];
     meta = {
-      homepage = "https://metacpan.org/release/Crypt-PBKDF2";
       description = "The PBKDF2 password hash algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5159,7 +5457,8 @@ let
     propagatedBuildInputs = [ ClassAccessor ConvertASN1 CryptFormat MathProvablePrime SymbolGet TryTiny ];
     meta = {
       description = "Cryptography in pure Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FGasper/p5-Crypt-Perl";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5176,7 +5475,6 @@ let
 
     meta = {
       description = "Minimal Ed25519 bindings";
-      license = lib.licenses.artistic2;
       maintainers = [ maintainers.thoughtpolice ];
     };
     buildInputs = [ CanaryStability ];
@@ -5203,6 +5501,10 @@ let
       sha256 = "09phb6c9czpcp9imq06khm54kspsx6hnvfrjxramx663ygmpifb5";
     };
     propagatedBuildInputs = [ Clone ];
+    meta = {
+      description = "Document Object Model for Cascading Style Sheets";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   CSSLESSp = buildPerlPackage {
@@ -5225,7 +5527,8 @@ let
     buildInputs = [ TestDiagINC ];
     meta = {
       description = "XS based CSS minifier";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bleargh45/CSS-Minifier-XS";
     };
   };
 
@@ -5240,7 +5543,8 @@ let
     buildInputs = [ TestFileContents ];
     meta = {
       description = "Another CSS minifier";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/css-packer-perl";
     };
   };
 
@@ -5269,7 +5573,7 @@ let
     buildInputs = [ FileObject TestNoWarnings TestOutput ];
     meta = {
       description = "Struct oriented CSS manipulation";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/CSS-Struct";
     };
   };
@@ -5285,7 +5589,7 @@ let
     buildInputs = [ FileObject TestNoWarnings TestOutput ];
     meta = {
       description = "Indent printing 'CSS::Struct' structure to CSS code";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/CSS-Struct-Output-Indent";
     };
   };
@@ -5301,7 +5605,6 @@ let
     NIX_CFLAGS_LINK = "-lncurses";
     meta = {
       description = "Perl bindings to ncurses";
-      license = lib.licenses.artistic1;
     };
   };
 
@@ -5313,8 +5616,8 @@ let
       sha256 = "1bqf4h8z70f78nzqq5yj4ahvsbhxxal6bc2g301l9qdn2fjjgf0a";
     };
     meta = {
-      description = "curses based OO user interface framework";
-      license = lib.licenses.artistic1;
+      description = "A curses based OO user interface framework";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     propagatedBuildInputs = [ Curses TermReadKey ];
   };
@@ -5327,8 +5630,9 @@ let
       sha256 = "b5503a35046a973174234a823dba63403b080957c4a370d60d66aa7c7587d850";
     };
     meta = {
-      description = "Crypto toolkit";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Cryptographic toolkit";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/DCIT/perl-CryptX";
     };
   };
 
@@ -5354,7 +5658,8 @@ let
     };
     meta = {
       description = "Temporary changing working directory (chdir)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/Cwd-Guard";
     };
     buildInputs = [ TestRequires ];
   };
@@ -5369,7 +5674,7 @@ let
     propagatedBuildInputs = [ CarpClan DataValidateURI DateTimeFormatDuration IOStringy JSON LWP XMLLibXMLSimple ];
     meta = {
       description = "Document Availability Information API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/DAIA";
     };
   };
@@ -5384,7 +5689,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Polymorphic data cloning";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5396,6 +5701,10 @@ let
       sha256 = "1gg8rqbv3x6a1lrpabv6vnlab53zxmpwz2ygad9fcx4gygqj12l1";
     };
     propagatedBuildInputs = [ Clone FileFindRule ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl2Plus ];
+      homepage = "https://github.com/DrHyde/perl-modules-Data-Compare";
+    };
   };
 
   DataDenter = buildPerlPackage {
@@ -5416,7 +5725,7 @@ let
     };
     meta = {
       description = "Ultra special pretty cute diff generator Mark II";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Data-Difflet";
     };
   };
@@ -5431,7 +5740,8 @@ let
     propagatedBuildInputs = [ RegexpStringify ];
     meta = {
       description = "Dump Perl data structures as Perl code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Dmp";
     };
   };
 
@@ -5444,7 +5754,8 @@ let
     };
     meta = {
       description = "Pretty printing of data structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/data-dump";
     };
   };
 
@@ -5458,7 +5769,8 @@ let
     propagatedBuildInputs = [ DataDmp ];
     meta = {
       description = "Dump data structures as single-line strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Dump-OneLine";
     };
   };
 
@@ -5472,7 +5784,8 @@ let
     propagatedBuildInputs = [ DataDump ];
     meta = {
       description = "Dump data structure compactly and potentially partially";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Data-Dump-Partial";
     };
   };
 
@@ -5487,7 +5800,8 @@ let
     buildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "Accurately serialize a data structure as Perl code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/demerphq/Data-Dump-Streamer";
     };
   };
 
@@ -5500,7 +5814,8 @@ let
     };
     meta = {
       description = "Less indentation and newlines plus sub deparsing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Data-Dumper-Concise";
     };
   };
 
@@ -5512,6 +5827,10 @@ let
       sha256 = "2611c4a1a3038594d79ea4ed14d9e15a9af8f77105f51667795fe4f8a53427e4";
     };
     propagatedBuildInputs = [ CryptRijndael DataFloat HTTPLite ParamsClassify ];
+    meta = {
+      description = "entropy (randomness) management";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   DataFloat = buildPerlModule {
@@ -5520,6 +5839,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Data-Float-0.013.tar.gz";
       sha256 = "e2b1523d858930b8bbdbd196f08235f5e678b84919ba87712e26313b9c27518a";
+    };
+    meta = {
+      description = "details of the floating point data type";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5533,7 +5856,8 @@ let
     propagatedBuildInputs = [ DateCalc EmailValid FileMMagic ImageSize MIMETypes RegexpCommon ];
     meta = {
       description = "Validates user input (usually from an HTML form) based on input profile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dnmfarrell/Data-FormValidator";
     };
     buildInputs = [ CGI ];
   };
@@ -5549,8 +5873,8 @@ let
     buildInputs = [ DataFormatPrettyJSON ];
     meta = {
       description = "Pretty-print data structure";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Data-Format-Pretty/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/sharyanto/perl-Data-Format-Pretty";
     };
   };
 
@@ -5565,7 +5889,8 @@ let
     buildInputs = [ DataDumpPartial DataUnixish ];
     meta = {
       description = "Pretty-print data structure for console output";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Format-Pretty-Console";
     };
   };
 
@@ -5580,7 +5905,8 @@ let
     buildInputs = [ DataDumpPartial ];
     meta = {
       description = "Pretty-print data structure for HTML output";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Format-Pretty-HTML";
     };
   };
 
@@ -5594,7 +5920,8 @@ let
     propagatedBuildInputs = [ JSONColor JSONMaybeXS StringLineNumber ];
     meta = {
       description = "Pretty-print data structure as JSON";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Format-Pretty-JSON";
     };
   };
 
@@ -5607,9 +5934,9 @@ let
     };
     propagatedBuildInputs = [ DataUUID SubExporter ];
     meta = {
+      description = "globally unique identifiers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Data-GUID";
-      description = "Globally unique identifiers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -5635,7 +5962,6 @@ let
     };
     meta = {
       description = "Make binary data human-readable";
-      license = with lib.licenses; [ artistic1 gpl2 ];
     };
   };
 
@@ -5660,7 +5986,7 @@ let
     propagatedBuildInputs = [ ClassReturnValue TextvFileasData ];
     meta = {
       description = "Generates iCalendar (RFC 2445) calendar files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5674,7 +6000,8 @@ let
     buildInputs = [ TestBits ];
     meta = {
       description = "Pack and unpack big-endian IEEE754 floats and doubles";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/maxmind/Data-IEEE754";
     };
   };
 
@@ -5684,6 +6011,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Data-Integer-0.006.tar.gz";
       sha256 = "0m53zxhx9sn49yqh7azlpyy9m65g54v8cd2ha98y77337gg7xdv3";
+    };
+    meta = {
+      description = "details of the native integer data type";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5697,9 +6028,9 @@ let
     buildInputs = [ ModuleBuildXSUtil TestRequires ];
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      homepage = "https://github.com/msgpack/msgpack-perl";
       description = "MessagePack serializing/deserializing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/msgpack/msgpack-perl";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -5715,7 +6046,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Merge two nested data structures, with merging modes and options";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-ModeMerge";
     };
   };
 
@@ -5729,7 +6061,8 @@ let
     buildInputs = [ TestWarnings ];
     meta = {
       description = "various utility functions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mauke/Data-Munge";
     };
   };
 
@@ -5742,9 +6075,9 @@ let
     };
     propagatedBuildInputs = [ ParamsUtil SubInstall ];
     meta = {
-      homepage = "https://github.com/rjbs/data-optlist";
-      description = "Parse and validate simple name/value option pairs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "parse and validate simple name/value option pairs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Data-OptList";
     };
   };
 
@@ -5757,6 +6090,11 @@ let
     };
     propagatedBuildInputs = [ ClassAccessorChained ];
     buildInputs = [ TestException ];
+    meta = {
+      description = "help when paging through sets of results";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Data-Page";
+    };
   };
 
   DataPagePageset = buildPerlModule {
@@ -5769,7 +6107,7 @@ let
     buildInputs = [ ClassAccessor DataPage TestException ];
     meta = {
       description = "change long page list to be shorter and well navigate";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5792,9 +6130,9 @@ let
     buildInputs = [ TestDeep TestFatal TestOutput ];
     propagatedBuildInputs = [ ClassMethodModifiers ListMoreUtils ModuleRuntime RoleTiny strictures ];
     meta = {
-      homepage = "https://github.com/mattp-/Data-Perl";
       description = "Base classes wrapping fundamental Perl data types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/Data-Perl";
     };
   };
 
@@ -5808,7 +6146,8 @@ let
     propagatedBuildInputs = [ ClonePP FileHomeDir PackageStash SortNaturally ];
     meta = {
       description = "colored pretty-print of Perl data structures and objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/garu/Data-Printer";
     };
   };
 
@@ -5821,9 +6160,9 @@ let
     };
     propagatedBuildInputs = [ MROCompat SubExporter ];
     meta = {
-      homepage = "https://github.com/rjbs/data-section";
-      description = "Read multiple hunks of data out of your DATA section";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "read multiple hunks of data out of your DATA section";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Data-Section";
     };
     buildInputs = [ TestFailWarnings ];
   };
@@ -5838,7 +6177,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Read data from __DATA__";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/miyagawa/Data-Section-Simple";
     };
   };
@@ -5852,7 +6191,7 @@ let
     };
     meta = {
       description = "Modules that serialize data structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5866,7 +6205,7 @@ let
     buildInputs = [ TestDeep ];
     propagatedBuildInputs = [ ClassAccessor ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5881,7 +6220,8 @@ let
     buildInputs = [ Sah TestException TestNoWarnings TestWarn libfilter ];
     meta = {
       description = "Fast and featureful data structure validation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah";
     };
   };
 
@@ -5896,7 +6236,8 @@ let
     buildInputs = [ TestException TestNeeds ];
     meta = {
       description = "Coercion rules for Data::Sah";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah-Coerce";
     };
   };
 
@@ -5911,7 +6252,8 @@ let
     buildInputs = [ TestException TestNeeds ];
     meta = {
       description = "Filtering for Data::Sah";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah-Filter";
     };
   };
 
@@ -5925,7 +6267,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Normalize Sah schema";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah-Normalize";
     };
   };
 
@@ -5940,7 +6283,8 @@ let
     buildInputs = [ SahSchemasExamples SahSchemasInt TestException TestNeeds ];
     meta = {
       description = "Resolve Sah schema";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah-Resolve";
     };
   };
 
@@ -5954,7 +6298,8 @@ let
     propagatedBuildInputs = [ DataSahNormalize ];
     meta = {
       description = "Utility functions related to types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Sah-Util-Type";
     };
   };
 
@@ -5967,7 +6312,7 @@ let
     };
     propagatedBuildInputs = [ DataPage MathRound ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5982,7 +6327,7 @@ let
     propagatedBuildInputs = [ Moose PathClass namespaceclean ];
     meta = {
       description = "N at a time iteration API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -5996,7 +6341,8 @@ let
     buildInputs = [ TestPod ];
     meta = {
       description = "Change nature of data within a structure";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/AndyA/Data--Structure--Util";
     };
   };
 
@@ -6019,9 +6365,8 @@ let
     };
     propagatedBuildInputs = [ DateTime EncodeBase32GMP MathRandomSecure ];
     meta = {
-      homepage = "https://metacpan.org/release/Data-ULID";
       description = "Universally Unique Lexicographically Sortable Identifier";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -6045,7 +6390,8 @@ let
     propagatedBuildInputs = [ FileWhich JSONMaybeXS NumberFormat NumberFormatMetric PackageUtilLite SortSub StringPad StringShellQuote SyntaxFeatureEachOnArray TextANSIWideUtil Textsprintfn TieSimple ];
     meta = {
       description = "Implementation for Unixish, a data transformation framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Unixish";
     };
   };
 
@@ -6060,7 +6406,7 @@ let
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
       description = "A selection of utilities for data and data types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/gfx/Perl-Data-Util";
     };
   };
@@ -6072,9 +6418,7 @@ let
       url = "mirror://cpan/authors/id/R/RH/RHANDOM/Data-URIEncode-0.11.tar.gz";
       sha256 = "51c9efbf8423853616eaa24841e4d1996b2db0036900617fb1dbc76c75a1f360";
     };
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   DataUUID = buildPerlPackage {
@@ -6083,6 +6427,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RJ/RJBS/Data-UUID-1.226.tar.gz";
       sha256 = "0lv4k4ibxwkw7zz9hw97s34za9nvjxb4kbmgmx5sj4fll3zmfg89";
+    };
+    meta = {
+      description = "Globally/Universally Unique Identifiers (GUIDs/UUIDs)";
+      license = licenses.bsd3;
+      homepage = "https://github.com/rjbs/Data-UUID";
     };
   };
 
@@ -6097,7 +6446,8 @@ let
     propagatedBuildInputs = [ MathRandomMTAuto ];
     meta = {
       description = "Fast random UUID generator using the Mersenne Twister algorithm";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/data-uuid-mt";
     };
   };
 
@@ -6112,7 +6462,8 @@ let
     propagatedBuildInputs = [ NetDomainTLD ];
     meta = {
       description = "Domain and host name validation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/Data-Validate-Domain";
     };
   };
 
@@ -6127,7 +6478,8 @@ let
     propagatedBuildInputs = [ NetAddrIP ];
     meta = {
       description = "IPv4 and IPv6 validation methods";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/Data-Validate-IP";
     };
   };
 
@@ -6141,7 +6493,6 @@ let
     propagatedBuildInputs = [ DataValidateDomain DataValidateIP ];
     meta = {
       description = "Common URL validation methods";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -6154,6 +6505,11 @@ let
     };
     buildInputs = [ TestNeeds ];
     propagatedBuildInputs = [ Moose TieToObject namespaceclean ];
+    meta = {
+      description = "Visitor style traversal of Perl data structures";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Data-Visitor";
+    };
   };
 
   DateCalc = buildPerlPackage {
@@ -6165,6 +6521,10 @@ let
     };
     propagatedBuildInputs = [ BitVector ];
     doCheck = false; # some of the checks rely on the year being <2015
+    meta = {
+      description = "Gregorian calendar date calculations";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   DateExtract = buildPerlPackage {
@@ -6176,6 +6536,10 @@ let
     };
     buildInputs = [ TestMockTime ];
     propagatedBuildInputs = [ DateTimeFormatNatural ];
+    meta = {
+      description = "extract probable dates from strings";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   DateManip = buildPerlPackage {
@@ -6192,6 +6556,8 @@ let
     doCheck = !stdenv.isi686; # build freezes during tests on i686
     meta = {
       description = "Date manipulation routines";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/SBECK-github/Date-Manip";
     };
     buildInputs = [ TestInter ];
   };
@@ -6203,9 +6569,7 @@ let
       url = "mirror://cpan/authors/id/I/IZ/IZUT/Date-Simple-3.03.tar.gz";
       sha256 = "29a1926314ce1681a312d6155c29590c771ddacf91b7485873ce449ef209dd04";
     };
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl2Plus ];
-    };
+
   };
 
   DateTime = buildPerlPackage {
@@ -6218,8 +6582,9 @@ let
     buildInputs = [ CPANMetaCheck TestFatal TestWarnings ];
     propagatedBuildInputs = [ DateTimeLocale DateTimeTimeZone ];
     meta = {
-      description = "A date and time object";
-      license = lib.licenses.artistic2;
+      description = "A date and time object for Perl";
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/DateTime.pm";
     };
   };
 
@@ -6231,8 +6596,9 @@ let
       sha256 = "1zf7hnnisgdcx6y92ivbgwn286cn059ns3b4wd5y4r77bm76bh1l";
     };
     meta = {
-      description = "Dates in the Julian calendar";
-      license = lib.licenses.artistic2;
+      description = "DateTime object in the Julian calendar";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/trwyant/perl-DateTime-Calendar-Julian";
     };
     propagatedBuildInputs = [ DateTime ];
   };
@@ -6247,7 +6613,7 @@ let
     propagatedBuildInputs = [ DateTimeEventRecurrence ];
     meta = {
       description = "DateTime rfc2445 recurrences";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/fglock/DateTime-Event-ICal";
     };
   };
 
@@ -6259,6 +6625,10 @@ let
       sha256 = "f9408789a461107766ca1a232bb3ec1e702eec7ca8167401ea6ec3f4b6d0b5a5";
     };
     propagatedBuildInputs = [ DateTimeSet ];
+    meta = {
+      description = "DateTime base recurrences";
+      homepage = "https://github.com/fglock/DateTime-Event-Recurrence";
+    };
   };
 
   DateTimeFormatBuilder = buildPerlPackage {
@@ -6271,7 +6641,8 @@ let
     propagatedBuildInputs = [ DateTimeFormatStrptime ParamsValidate ];
     meta = {
       description = "Create DateTime parser classes and objects";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/DateTime-Format-Builder";
     };
   };
 
@@ -6285,7 +6656,7 @@ let
     propagatedBuildInputs = [ DateTime TimeDate ];
     meta = {
       description = "Parses Date::Parse compatible formats";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6299,7 +6670,7 @@ let
     propagatedBuildInputs = [ DateTime ParamsValidate ];
     meta = {
       description = "Format and parse DateTime::Durations";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/DateTime-Format-Duration";
     };
   };
@@ -6313,8 +6684,8 @@ let
     };
     propagatedBuildInputs = [ DateTimeFormatBuilder ListMoreUtils ModulePluggable ];
     meta = {
-      description = "Flexibly parse strings and turn them into DateTime objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "DateTime::Format::Flexible - Flexibly parse strings and turn them into DateTime objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ TestException TestMockTime TestNoWarnings ];
   };
@@ -6329,7 +6700,7 @@ let
     propagatedBuildInputs = [ DateTime HTTPDate ];
     meta = {
       description = "Date conversion routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6343,7 +6714,7 @@ let
     propagatedBuildInputs = [ DateTimeEventICal ];
     meta = {
       description = "Parse and format iCal datetime and duration strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6357,7 +6728,8 @@ let
     propagatedBuildInputs = [ DateTimeFormatBuilder ];
     meta = {
       description = "Parses ISO8601 formats";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/DateTime-Format-ISO8601";
     };
     buildInputs = [ Test2Suite ];
   };
@@ -6372,7 +6744,8 @@ let
     propagatedBuildInputs = [ DateTime ParamsValidate ];
     meta = {
       description = "Convert between DateTime and RFC2822/822 formats";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/DateTime-Format-Mail";
     };
   };
 
@@ -6386,8 +6759,9 @@ let
     buildInputs = [ ModuleUtil TestMockTime ];
     propagatedBuildInputs = [ Clone DateTime ListMoreUtils ParamsValidate boolean ];
     meta = {
-      description = "Create machine readable date/time with natural parsing logic";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Parse informal natural language date/time strings";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/stsc/DateTime-Format-Natural";
     };
   };
 
@@ -6401,7 +6775,7 @@ let
     propagatedBuildInputs = [ DateTimeFormatBuilder ];
     meta = {
       description = "Parse and format MySQL dates and times";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6415,7 +6789,8 @@ let
     propagatedBuildInputs = [ DateTimeFormatBuilder ];
     meta = {
       description = "Parse and format PostgreSQL dates and times";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/lestrrat/DateTime-Format-Pg";
     };
     buildInputs = [ ModuleBuildTiny ];
   };
@@ -6431,7 +6806,8 @@ let
     propagatedBuildInputs = [ DateTime ];
     meta = {
       description = "Parse and format strp and strf time patterns";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/DateTime-Format-Strptime";
     };
   };
 
@@ -6445,7 +6821,7 @@ let
     propagatedBuildInputs = [ DateTimeFormatBuilder ];
     meta = {
       description = "Parse and format SQLite dates and times";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6459,7 +6835,8 @@ let
     propagatedBuildInputs = [ DateTime ];
     meta = {
       description = "Parse and format W3CDTF datetime strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kasei/datetime-format-w3cdtf";
     };
   };
 
@@ -6474,7 +6851,8 @@ let
     propagatedBuildInputs = [ FileShareDir ParamsValidationCompiler Specio namespaceautoclean ];
     meta = {
       description = "Localization support for DateTime.pm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/DateTime-Locale";
     };
   };
 
@@ -6488,7 +6866,7 @@ let
     propagatedBuildInputs = [ DateTime ParamsValidate SetInfinite ];
     meta = {
       description = "DateTime set objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/fglock/DateTime-Set";
     };
   };
 
@@ -6503,7 +6881,8 @@ let
     propagatedBuildInputs = [ ClassSingleton ParamsValidationCompiler Specio namespaceautoclean ];
     meta = {
       description = "Time zone object base class and factory";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/DateTime-TimeZone";
     };
   };
 
@@ -6519,7 +6898,7 @@ let
     doCheck = false;
     meta = {
       description = "Parse a date/time string using the best method available";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6532,8 +6911,8 @@ let
     };
     propagatedBuildInputs = [ ClassISA DevelStackTrace StringUtil TermReadKey TextTabularDisplay TieIxHash ];
     meta = {
-      description = "A collection of handy debugging routines for displaying the values of variables with a minimum of coding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Debug::ShowStuff - A collection of handy debugging routines for displaying the values of variables with a minimum of coding";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6546,8 +6925,8 @@ let
     };
     propagatedBuildInputs = [ PadWalker ];
     meta = {
-      description = "Meatier versions of C<caller>";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "meatier versions of C<caller>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6560,7 +6939,8 @@ let
     };
     propagatedBuildInputs = [ HashStoredIterator JSONXS PadWalker ];
     meta = {
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
+      homepage = "https://github.com/hurricup/Perl5-IDEA-Debugger";
     };
   };
 
@@ -6572,10 +6952,10 @@ let
        sha256 = "1r735yzgvsxkj4m6ks34xva5m21cfzp9qiis2d4ivv99kjskszqm";
      };
      meta = {
-       description = "check that a command is available";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/tokuhirom/Devel-CheckBin";
-     };
+      description = "check that a command is available";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Devel-CheckBin";
+    };
   };
 
   DevelCheckCompiler = buildPerlModule {
@@ -6587,10 +6967,10 @@ let
      };
      buildInputs = [ ModuleBuildTiny ];
      meta = {
-       description = "Check the compiler's availability";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/tokuhirom/Devel-CheckCompiler";
-     };
+      description = "Check the compiler's availability";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Devel-CheckCompiler";
+    };
   };
 
   DevelChecklib = buildPerlPackage {
@@ -6601,6 +6981,11 @@ let
       sha256 = "15621qh5gaan1sgmk9y9svl70nm8viw17x5h1kf0zknkk8lmw77j";
     };
     buildInputs = [ CaptureTiny MockConfig ];
+    meta = {
+      description = "check that a library is available";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/mattn/p5-Devel-CheckLib";
+    };
   };
 
   DevelCover = buildPerlPackage {
@@ -6613,7 +6998,7 @@ let
     propagatedBuildInputs = [ BDebug HTMLParser ];
     meta = {
       description = "Code coverage metrics for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://www.pjcj.net/perl.html";
     };
   };
@@ -6626,6 +7011,10 @@ let
       sha256 = "1jjqwrx8mydyhqwwjlgimribz0yq0b6q66xnr6mgvyn63pdajhvg";
     };
     propagatedBuildInputs = [ FileFindRule ];
+    meta = {
+      license = licenses.free;
+      homepage = "https://github.com/DrHyde/perl-modules-Devel-CheckOS";
+    };
   };
 
   DevelLeak = buildPerlPackage rec {
@@ -6636,9 +7025,7 @@ let
       sha256 = "0lkj2xwc3lhxv7scl43r8kfmls4am0b98sqf5vmf7d72257w6hkg";
     };
     meta = {
-      homepage = "https://metacpan.org/release/Devel-Leak";
       description = "Utility for looking for perl objects that are not reclaimed";
-      license = with lib.licenses; [ artistic1 gpl1Plus ]; # According to Debian
     };
   };
 
@@ -6652,7 +7039,7 @@ let
     propagatedBuildInputs = [ DevelCaller ];
     meta = {
       description = "alias lexical variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6665,9 +7052,9 @@ let
     };
     propagatedBuildInputs = [ Filepushd ModulePluggable ];
     meta = {
-      homepage = "https://github.com/bingos/devel-patchperl";
       description = "Patch perl source a la Devel::PPPort's buildperl.pl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/devel-patchperl";
     };
   };
 
@@ -6682,7 +7069,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "A modern perl interactive shell";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/p5sagit/Devel-REPL";
     };
   };
@@ -6697,7 +7084,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "obtain the REFCNT value of a referent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -6710,7 +7097,8 @@ let
     };
     meta = {
       description = "Perl/Pollution/Portability";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Dual-Life/Devel-PPPort";
     };
   };
 
@@ -6723,7 +7111,6 @@ let
     };
     meta = {
       description = "Print out each line before it is executed (like sh -x)";
-      license = lib.licenses.publicDomain;
     };
   };
 
@@ -6737,7 +7124,8 @@ let
     propagatedBuildInputs = [ ClassAccessorChained DevelStackTrace FileWhich ModulePluggable PadWalker ProcBackground StringKoremutake YAML ];
     meta = {
       description = "A simple, extensible Perl debugger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/Devel-ebug";
     };
   };
 
@@ -6752,7 +7140,7 @@ let
     propagatedBuildInputs = [ DeviceOUI Moose ];
     meta = {
       description = "Handle hardware MAC Addresses (EUI-48 and EUI-64)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -6769,7 +7157,7 @@ let
     propagatedBuildInputs = [ ClassAccessorGrouped LWP SubExporter ];
     meta = {
       description = "Resolve an Organizationally Unique Identifier";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -6782,6 +7170,11 @@ let
       sha256 = "1vw7y8r8rgcl8cgq2pbglv04ianxx2bicgjzryrxf51v8l8gf9kc";
     };
     propagatedBuildInputs = [ DBI SQLStatement TextCSV_XS ];
+    meta = {
+      description = "DBI driver for CSV files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-dbi/DBD-CSV";
+    };
   };
 
   DBDMock = buildPerlModule {
@@ -6793,6 +7186,11 @@ let
     };
     propagatedBuildInputs = [ DBI ];
     buildInputs = [ ModuleBuildTiny TestException ];
+    meta = {
+      description = "Mock database driver for testing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://gitlab.com/scrapheap/DBD-Mock";
+    };
   };
 
   DBDSQLite = buildPerlPackage {
@@ -6821,9 +7219,10 @@ let
 
     preCheck = "rm t/65_db_config.t"; # do not run failing tests
 
-    meta = with lib; {
+    meta = {
       description = "Self Contained SQLite RDBMS in a DBI Driver";
-      license = with licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/DBD-SQLite/DBD-SQLite";
       platforms = platforms.unix;
     };
   };
@@ -6838,9 +7237,9 @@ let
     buildInputs = [ pkgs.mariadb-connector-c DevelChecklib TestDeep TestDistManifest TestPod ];
     propagatedBuildInputs = [ DBI ];
     meta = {
-      homepage = "https://github.com/gooddata/DBD-MariaDB";
       description = "MariaDB and MySQL driver for the Perl5 Database Interface (DBI)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/gooddata/DBD-MariaDB";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -6860,6 +7259,11 @@ let
     doCheck = false;
 
   #  makeMakerFlags = "MYSQL_HOME=${mysql}";
+    meta = {
+      description = "A MySQL driver for the Perl5 Database Interface (DBI)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dbi.perl.org/";
+    };
   };
 
   DBDOracle = buildPerlPackage {
@@ -6879,6 +7283,10 @@ let
     postBuild = lib.optionalString stdenv.isDarwin ''
       install_name_tool -add_rpath "${pkgs.oracle-instantclient.lib}/lib" blib/arch/auto/DBD/Oracle/Oracle.bundle
     '';
+    meta = {
+      description = "Oracle database driver for the DBI module";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   DBDPg = buildPerlPackage {
@@ -6900,8 +7308,9 @@ let
 
     meta = {
       description = "DBI PostgreSQL interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.unix;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bucardo/dbdpg";
+      platforms = platforms.unix;
     };
   };
 
@@ -6920,6 +7329,9 @@ let
     propagatedBuildInputs = [ DBI ];
 
     doCheck = false;
+    meta = {
+      description = "DBI driver for Sybase datasources";
+    };
   };
 
   DBFile = buildPerlPackage {
@@ -6939,6 +7351,11 @@ let
       INCLUDE = ${pkgs.db.dev}/include
       EOF
     '';
+    meta = {
+      description = "Perl5 access to Berkeley DB version 1.x";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pmqs/DB_File";
+    };
   };
 
   DBGpClient = buildPerlPackage {
@@ -6952,7 +7369,8 @@ let
     buildInputs = [ TestDBGp ];
     meta = {
       description = "simple client for the DBGp debugger protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbarbon/dbgp-client";
     };
   };
 
@@ -7002,9 +7420,9 @@ let
       EOF
     '';
     meta = {
-      homepage = "https://dbi.perl.org/";
       description = "Database independent interface for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dbi.perl.org/";
     };
   };
 
@@ -7018,9 +7436,8 @@ let
     buildInputs = [ DBIxClass TestSimple13 ];
     propagatedBuildInputs = [ DBDSQLite SQLTranslator ];
     meta = {
-      homepage = "https://metacpan.org/pod/DBICx::TestDatabase";
-      description = "Create a temporary database from a DBIx::Class::Schema";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "create a temporary database from a DBIx::Class::Schema";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7035,9 +7452,9 @@ let
     buildInputs = [ DBDSQLite TestDeep TestException TestWarn ];
     propagatedBuildInputs = [ ClassAccessorGrouped ClassC3Componentised ConfigAny ContextPreserve DBI DataDumperConcise DataPage DevelGlobalDestruction ModuleFind PathClass SQLAbstract ScopeGuard SubName namespaceclean ];
     meta = {
-      homepage = "https://metacpan.org/pod/DBIx::Class";
       description = "Extensible and flexible object <-> relational mapper";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl5/DBIx-Class";
     };
   };
 
@@ -7051,9 +7468,9 @@ let
     buildInputs = [ TestDeep TestFatal ];
     propagatedBuildInputs = [ DBIxClass LinguaENInflect SubExporter ];
     meta = {
-      homepage = "https://github.com/frioux/DBIx-Class-Candy";
       description = "Sugar for your favorite ORM, DBIx::Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/DBIx-Class-Candy";
     };
   };
 
@@ -7067,8 +7484,8 @@ let
     buildInputs = [ CacheCache DBDSQLite ];
     propagatedBuildInputs = [ CarpClan DBIxClass ];
     meta = {
-      description = "Cursor class with built-in caching support";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "cursor class with built-in caching support";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7082,9 +7499,8 @@ let
     buildInputs = [ DBICxTestDatabase ];
     propagatedBuildInputs = [ DBIxClass ];
     meta = {
-      homepage = "https://metacpan.org/pod/DBIx::Class::DynamicDefault";
       description = "Automatically set and update fields";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7110,9 +7526,9 @@ let
     propagatedBuildInputs = [ CarpClan DBIxClassCandy DBIxIntrospector SafeIsa TextBrew ];
     preCheck = "rm t/Schema/LintContents.t"; # Failed test 'No tests run for subtest "fk_check_source_auto"'
     meta = {
-      homepage = "https://github.com/frioux/DBIx-Class-Helpers";
       description = "Simplify the common case stuff for DBIx::Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/DBIx-Class-Helpers";
     };
   };
 
@@ -7126,9 +7542,9 @@ let
     buildInputs = [ DBDSQLite TestException ];
     propagatedBuildInputs = [ DBIxClass JSONMaybeXS YAML ];
     meta = {
-      homepage = "https://metacpan.org/pod/DBIx::Class::InflateColumn::Serializer";
       description = "Inflators to serialize data structures for DBIx::Class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miquelruiz/DBIx-Class-InflateColumn-Serializer";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7143,7 +7559,7 @@ let
     propagatedBuildInputs = [ DBIxClass ];
     meta = {
       description = "Introspect many-to-many relationships";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7157,7 +7573,7 @@ let
     propagatedBuildInputs = [ DBIxClass TypeTiny ];
     meta = {
       description = "Log queries for later analysis";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/frioux/DBIx-Class-QueryLog";
     };
   };
@@ -7173,7 +7589,8 @@ let
     propagatedBuildInputs = [ CarpClan ClassUnload DBIxClass DataDump StringToIdentifierEN curry ];
     meta = {
       description = "Create a DBIx::Class::Schema based on a database";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dbsrgits/dbix-class-schema-loader";
     };
   };
 
@@ -7188,7 +7605,8 @@ let
     propagatedBuildInputs = [ DBI ];
     meta = {
       description = "Fast, safe DBI connection and transaction management";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/theory/dbix-connector";
     };
   };
 
@@ -7213,7 +7631,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "disconnect all databases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7227,7 +7645,8 @@ let
     propagatedBuildInputs = [ CompleteUtil ListMoreUtils ];
     meta = {
       description = "Some functions to expose your database as an API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-DBIx-FunctionalAPI";
     };
   };
 
@@ -7242,7 +7661,7 @@ let
     propagatedBuildInputs = [ CacheSimpleTimedExpiry ClassAccessor ClassReturnValue Clone DBIxDBSchema Want capitalization ];
     meta = {
       description = "Encapsulate SQL queries and rows in simple perl objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7270,7 +7689,7 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     meta = {
       description = "Easy tracer for DBI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/DBIx-Tracer";
     };
   };
@@ -7286,7 +7705,7 @@ let
     buildInputs = [ DataDump DevelHide HTTPCookieJar JSON Plack TestNoWarnings ];
     meta = {
       description = "lightweight yet powerful web application framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/PerlDancer/Dancer";
     };
   };
@@ -7302,7 +7721,7 @@ let
     buildInputs = [ FileShareDirInstall HTTPCookies TestCPANMeta TestEOL TestFatal ];
     meta = {
       description = "Lightweight yet powerful web application framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://perldancer.org/";
     };
   };
@@ -7317,7 +7736,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "a Plack middleware to be used for Dancer";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
     };
   };
 
@@ -7331,7 +7750,7 @@ let
     propagatedBuildInputs = [ AnyMoose DateTime UNIVERSALrequire XMLLibXML ];
     meta = {
       description = "serialize / deserialize AMF data";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7344,7 +7763,7 @@ let
     };
     meta = {
       description = "Simple detection of binary versus text in strings";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
     };
   };
 
@@ -7357,7 +7776,6 @@ let
     };
     meta = {
       description = "Read/write buffer class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7373,7 +7791,8 @@ let
     buildInputs = [ DateTime TestException ];
     meta = {
       description = "Clean data structure";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Clean";
     };
   };
 
@@ -7388,7 +7807,8 @@ let
     buildInputs = [ DateTime TestException TestNeeds ];
     meta = {
       description = "Clean data so it is safe to output to JSON";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Clean-ForJSON";
     };
   };
 
@@ -7403,7 +7823,8 @@ let
     buildInputs = [ DateTime TestException TestNeeds ];
     meta = {
       description = "(DEPRECATED) Clean data so it is safe to output to JSON";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Data-Clean-JSON";
     };
   };
 
@@ -7417,6 +7838,11 @@ let
 
     propagatedBuildInputs = [ DBI Moo ];
     buildInputs = [ DBDSQLite TestFatal TestRoo ];
+    meta = {
+      description = "Detect what database you are connected to";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/DBIx-Introspector";
+    };
   };
 
   DevelCycle = buildPerlPackage {
@@ -7441,7 +7867,8 @@ let
     buildInputs = [ DBGpClient TestDBGp ];
     meta = {
       description = "Perl DBGp debugger (derived from Komodo remote debugging helper)";
-      license = with lib.licenses; [ artistic1 ];
+      license = licenses.artistic1;
+      homepage = "https://github.com/mbarbon/perl-remote-debugging-client";
     };
   };
 
@@ -7455,8 +7882,9 @@ let
     buildInputs = [ ExtUtilsDepends TestRequires ];
     propagatedBuildInputs = [ BHooksEndOfScope BHooksOPCheck SubName ];
     meta = {
-      description = "Adding keywords to perl, in perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) Adding keywords to perl, in perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Devel-Declare";
     };
   };
 
@@ -7469,7 +7897,8 @@ let
     };
     meta = {
       description = "Find the path to your perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/devel-findperl";
     };
   };
 
@@ -7483,7 +7912,7 @@ let
     buildInputs = [ PadWalker ];
     meta = {
       description = "Walk Perl's arena";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Devel-Gladiator";
     };
   };
@@ -7497,7 +7926,9 @@ let
     };
     propagatedBuildInputs = [ SubExporterProgressive ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Provides function returning the equivalent of C<\${^GLOBAL_PHASE} eq 'DESTRUCT'> for older perls";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Devel-GlobalDestruction.git";
     };
   };
 
@@ -7509,9 +7940,10 @@ let
        sha256 = "1x9jzy3l7gwikj57swzl94qsq03j9na9h1m69azzs7d7ghph58wd";
      };
      meta = {
-       description = "Detect perl's global phase on older perls.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Detect perl's global phase on older perls";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/haarg/Devel-GlobalPhase";
+    };
   };
 
   DevelHide = buildPerlPackage {
@@ -7520,6 +7952,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DC/DCANTRELL/Devel-Hide-0.0013.tar.gz";
       sha256 = "1jvyy3yasiwyjsn9ay9sja3ch4wcjc4wk5l22vjsclq29z7vphvg";
+    };
+    meta = {
+      description = "Forces the unavailability of specified Perl modules (for testing)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aferreira/cpan-Devel-Hide";
     };
   };
 
@@ -7534,7 +7971,7 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     meta = {
       description = "Simple profiler";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/onishi/perl5-devel-kytprof";
     };
   };
@@ -7548,9 +7985,9 @@ let
     };
     propagatedBuildInputs = [ FileWhich JSONMaybeXS ];
     meta = {
-      homepage = "https://github.com/timbunce/devel-nytprof";
       description = "Powerful fast feature-rich Perl source code profiler";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://code.google.com/p/perl-devel-nytprof/";
     };
     buildInputs = [ TestDifferences ];
     nativeBuildInputs = lib.optional stdenv.isDarwin shortenPerlShebang;
@@ -7569,9 +8006,10 @@ let
      propagatedBuildInputs = [ MROCompat PackageStash SubIdentify ];
      buildInputs = [ TestFatal ];
      meta = {
-       description = "introspect overloaded operators";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "introspect overloaded operators";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ilmari/Devel-OverloadInfo";
+    };
   };
 
   DevelOverrideGlobalRequire = buildPerlPackage {
@@ -7583,7 +8021,8 @@ let
     };
     meta = {
       description = "Override CORE::GLOBAL::require safely";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Devel-OverrideGlobalRequire.git;a=summary";
     };
   };
 
@@ -7596,6 +8035,11 @@ let
     };
     propagatedBuildInputs = [ ClassTiny SubExporter namespaceclean ];
     buildInputs = [ TestSimple13 TestWarnings ];
+    meta = {
+      description = "Partial dumping of data structures, optimized for argument printing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Devel-PartialDump";
+    };
   };
 
   DevelStackTrace = buildPerlPackage {
@@ -7607,7 +8051,8 @@ let
     };
     meta = {
       description = "An object representing a stack trace";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Devel-StackTrace";
     };
   };
 
@@ -7621,7 +8066,8 @@ let
     propagatedBuildInputs = [ DevelStackTrace ];
     meta = {
       description = "Displays stack trace in HTML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Devel-StackTrace-AsHTML";
     };
   };
 
@@ -7635,7 +8081,8 @@ let
     propagatedBuildInputs = [ DevelStackTrace ];
     meta = {
       description = "Extract a stack trace from an exception object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/Devel-StackTrace-Extract";
     };
   };
 
@@ -7649,7 +8096,7 @@ let
     propagatedBuildInputs = [ DevelStackTrace PadWalker ];
     meta = {
       description = "Devel::StackTrace + PadWalker";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/sartak/Devel-StackTrace-WithLexicals/tree";
     };
   };
@@ -7663,7 +8110,8 @@ let
     };
     meta = {
       description = "determine whether strict (but slow) tests should be enabled";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-devel-strictmode";
     };
   };
 
@@ -7675,8 +8123,8 @@ let
       sha256 = "826f81a107f5592a2516766ed43beb47e10cc83edc9ea48090b02a36040776c0";
     };
     meta = {
-      description = "Dump symbol names or the symbol table";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "dump symbol names or the symbol table";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7703,7 +8151,6 @@ let
     };
     meta = {
       description = "Module that calculates CRC sums of all sorts";
-      license = lib.licenses.publicDomain;
     };
   };
 
@@ -7716,7 +8163,7 @@ let
     };
     meta = {
       description = "Keyed-Hashing for Message Authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7729,7 +8176,8 @@ let
     };
     meta = {
       description = "Perl extension for 32 bit Jenkins Hashing Algorithm";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/shlomif/perl-Digest-JHash.git";
     };
   };
 
@@ -7742,7 +8190,6 @@ let
     };
     meta = {
       description = "Perl interface to the MD2 Algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7778,7 +8225,6 @@ let
     };
     meta = {
       description = "Perl Implementation of Rivest's MD5 algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -7791,7 +8237,7 @@ let
     };
     meta = {
       description = "Perl interface to the SHA-1 algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -7803,9 +8249,8 @@ let
       sha256 = "4a68b67c5034f40fbb1344b304cd66caaa5e320eb523005201cc24f76d470c14";
     };
     meta = {
-      homepage = "https://metacpan.org/release/Digest-SHA3";
       description = "Perl extension for SHA-3";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -7820,7 +8265,8 @@ let
     propagatedBuildInputs = [ Moo PathTiny ];
     meta = {
       description = "treat a directory and a manifest file as a hash/dictionary of keys to texts or blobs";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/Dir-Manifest";
     };
   };
 
@@ -7832,9 +8278,9 @@ let
       sha256 = "e251a51abc7d9ba3e708f73c2aa208e09d47a0c528d6254710fa78cc8d6885b5";
     };
     meta = {
+      description = "a __DIR__ constant for the directory your source file is in";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mauke/Dir-Self";
-      description = "A __DIR__ constant for the directory your source file is in";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -7848,7 +8294,8 @@ let
     propagatedBuildInputs = [ ExporterTiny ];
     meta = {
       description = "dispatch on the type (class) of an argument";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mauke/Dispatch-Class";
     };
   };
 
@@ -7862,8 +8309,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ ModuleRuntime ];
     meta = {
-      description = "Declare version conflicts for your dist";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "declare version conflicts for your dist";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/dist-checkconflicts";
     };
   };
 
@@ -7877,9 +8325,9 @@ let
     buildInputs = [ CPANMetaCheck TestDeep TestFailWarnings TestFatal TestFileShareDir ];
     propagatedBuildInputs = [ AppCmd CPANUploader ConfigMVPReaderINI DateTime FileCopyRecursive FileFindRule FileShareDirInstall Filepushd LogDispatchouli MooseXLazyRequire MooseXSetOnce MooseXTypesPerl PathTiny PerlPrereqScanner SoftwareLicense TermEncoding TermUI YAMLTiny ];
     meta = {
+      description = "distribution builder; installer not included!";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://dzil.org/";
-      description = "Distribution builder; installer not included!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     doCheck = false;
   };
@@ -7894,8 +8342,9 @@ let
     buildInputs = [ MooseAutobox TestCPANMeta TestPerlCritic TestVersion ];
     propagatedBuildInputs = [ DistZillaPluginMojibakeTests DistZillaPluginTestCPANChanges DistZillaPluginTestCPANMetaJSON DistZillaPluginTestCompile DistZillaPluginTestDistManifest DistZillaPluginTestEOL DistZillaPluginTestKwalitee DistZillaPluginTestMinimumVersion DistZillaPluginTestNoTabs DistZillaPluginTestPerlCritic DistZillaPluginTestPodLinkCheck DistZillaPluginTestPortability DistZillaPluginTestSynopsis DistZillaPluginTestUnusedVars DistZillaPluginTestVersion PodCoverageTrustPod ];
     meta = {
-      description = "Test your dist with every testing plugin conceivable";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "test your dist with every testing plugin conceivable";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doherty/Dist-Zilla-PluginBundle-TestingMania";
     };
     doCheck = false; /* fails with 'open3: exec of .. perl .. failed: Argument list too long at .../TAP/Parser/Iterator/Process.pm line 165.' */
   };
@@ -7910,7 +8359,8 @@ let
     propagatedBuildInputs = [ DistZilla ];
     meta = {
       description = "Dist::Zilla with Changes check";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/fayland/dist-zilla-plugin-checkchangelog";
     };
     buildInputs = [ PathClass PodCoverage PodCoverageTrustPod PodMarkdown TestDeep TestException TestPod TestPodCoverage ];
   };
@@ -7924,9 +8374,9 @@ let
     };
     propagatedBuildInputs = [ DistZilla ];
     meta = {
+      description = "Author tests for source encoding";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/creaktive/Dist-Zilla-Plugin-MojibakeTests";
-      description = "Release tests for source encoding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ TestMojibake ];
   };
@@ -7940,9 +8390,9 @@ let
     };
     propagatedBuildInputs = [ DistZilla PodElementalPerlMunger PodWeaver ];
     meta = {
+      description = "weave your Pod together from configuration and Dist::Zilla";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Dist-Zilla-Plugin-PodWeaver";
-      description = "Weave your Pod together from configuration and Dist::Zilla";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -7956,9 +8406,9 @@ let
     buildInputs = [ TestDeep TestDifferences TestException TestFatal TestMost TestRequires TestSharedFork TestWarn ];
     propagatedBuildInputs = [ DistZillaRoleFileWatcher MooseXHasSugar PodMarkdownGithub ];
     meta = {
-      homepage = "https://github.com/DarwinAwardWinner/Dist-Zilla-Plugin-ReadmeAnyFromPod";
       description = "Automatically convert POD to a README in any format for Dist::Zilla";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/DarwinAwardWinner/Dist-Zilla-Plugin-ReadmeAnyFromPod";
     };
   };
 
@@ -7972,9 +8422,9 @@ let
     buildInputs = [ TestDeep TestDifferences TestException TestMost TestWarn ];
     propagatedBuildInputs = [ DistZillaPluginReadmeAnyFromPod ];
     meta = {
-      homepage = "https://github.com/DarwinAwardWinner/Dist-Zilla-Plugin-ReadmeMarkdownFromPod";
       description = "Automatically convert POD to a README.mkdn for Dist::Zilla";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/DarwinAwardWinner/Dist-Zilla-Plugin-ReadmeMarkdownFromPod";
     };
   };
 
@@ -7988,8 +8438,9 @@ let
     buildInputs = [ CPANChanges TestDeep ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release tests for your changelog";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "release tests for your changelog";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doherty/Dist-Zilla-Plugin-Test-CPAN-Changes";
     };
   };
 
@@ -8003,9 +8454,9 @@ let
     buildInputs = [ MooseAutobox TestCPANMetaJSON TestDeep ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
+      description = "release tests for your META.json";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://p3rl.org/Dist::Zilla::Plugin::Test::CPAN::Meta::JSON";
-      description = "Release tests for your META.json";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8019,9 +8470,9 @@ let
     buildInputs = [ CPANMetaCheck ModuleBuildTiny TestDeep TestMinimumVersion TestWarnings ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
+      description = "Common tests to check syntax of your modules, using only core modules";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-Compile";
-      description = "Common tests to check syntax of your modules, only using core modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8036,7 +8487,8 @@ let
     propagatedBuildInputs = [ DistZilla ];
     meta = {
       description = "Release tests for the manifest";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doherty/Dist-Zilla-Plugin-Test-DistManifest";
     };
   };
 
@@ -8051,7 +8503,8 @@ let
     propagatedBuildInputs = [ DistZilla ];
     meta = {
       description = "Author tests making sure correct line endings are used";
-      license = lib.licenses.artistic2;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-EOL";
     };
   };
 
@@ -8065,8 +8518,9 @@ let
     buildInputs = [ ModuleBuildTiny TestDeep TestFatal TestKwalitee ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release tests for kwalitee";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Author tests for kwalitee";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-Kwalitee";
     };
   };
 
@@ -8080,8 +8534,9 @@ let
     buildInputs = [ ModuleBuildTiny TestDeep TestMinimumVersion TestOutput ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release tests for minimum required versions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Author tests for minimum required versions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-MinimumVersion";
     };
   };
 
@@ -8095,10 +8550,10 @@ let
      propagatedBuildInputs = [ DistZilla ];
      buildInputs = [ ModuleBuildTiny TestDeep TestNoTabs TestRequires ];
      meta = {
-       description = "Author tests that ensure hard tabs are not used";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-NoTabs";
-     };
+      description = "Author tests that ensure hard tabs are not used";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-NoTabs";
+    };
   };
 
   DistZillaPluginTestPerlCritic = buildPerlModule {
@@ -8112,7 +8567,8 @@ let
     propagatedBuildInputs = [ DistZilla ];
     meta = {
       description = "Tests to check your code against best practices";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-Perl-Critic";
     };
   };
 
@@ -8126,9 +8582,9 @@ let
 #    buildInputs = [ TestPodLinkCheck ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
+      description = "Add author tests for POD links";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rwstauner/Dist-Zilla-Plugin-Test-Pod-LinkCheck";
-      description = "Add release tests for POD links";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     buildInputs = [ TestPodLinkCheck ];
   };
@@ -8143,8 +8599,9 @@ let
     buildInputs = [ ModuleBuildTiny TestDeep TestPortabilityFiles TestWarnings ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release tests for portability";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Author tests for portability";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Plugin-Test-Portability";
     };
   };
 
@@ -8158,8 +8615,9 @@ let
     buildInputs = [ TestDeep TestOutput TestSynopsis ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release tests for synopses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Author tests for synopses";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doherty/Dist-Zilla-Plugin-Test-Synopsis";
     };
   };
 
@@ -8174,7 +8632,8 @@ let
     propagatedBuildInputs = [ DistZilla ];
     meta = {
       description = "Release tests for unused variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doherty/Dist-Zilla-Plugin-Test-UnusedVars";
     };
   };
 
@@ -8188,8 +8647,9 @@ let
     buildInputs = [ Filechdir TestDeep TestEOL TestNoTabs TestScript TestVersion ];
     propagatedBuildInputs = [ DistZilla ];
     meta = {
-      description = "Release Test::Version tests";
-      license = lib.licenses.artistic2;
+      description = "Author Test::Version tests";
+      license = licenses.artistic2;
+      homepage = "https://github.com/plicease/dist-zilla-plugin-test-version";
     };
   };
 
@@ -8203,10 +8663,10 @@ let
      propagatedBuildInputs = [ DistZilla SafeIsa ];
      buildInputs = [ ModuleBuildTiny TestDeep TestFatal ];
      meta = {
-       description = "Receive notification when something changes a file's contents";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/karenetheridge/Dist-Zilla-Role-FileWatcher";
-     };
+      description = "Receive notification when something changes a file's contents";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Dist-Zilla-Role-FileWatcher";
+    };
   };
 
   DomainPublicSuffix = buildPerlPackage {
@@ -8219,7 +8679,7 @@ let
     propagatedBuildInputs = [ ClassAccessor NetIDNEncode ];
     meta = {
       description = "Parse a domain down to root";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nmelnick/domain-publicsuffix";
     };
   };
@@ -8235,7 +8695,8 @@ let
     propagatedBuildInputs = [ PathTiny ];
     meta = {
       description = "Support for C<dotenv> in Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/Dotenv";
     };
   };
 
@@ -8249,7 +8710,7 @@ let
     propagatedBuildInputs = [ CaptureTiny ClassXSAccessor DevelCheckOS NumberWithError StatisticsCaseResampling ];
     meta = {
       description = "More reliable benchmarking with the least amount of thinking";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/briandfoy/dumbbench";
     };
   };
@@ -8263,9 +8724,9 @@ let
     };
     propagatedBuildInputs = [ EmailSimple MROCompat ModulePluggable ];
     meta = {
+      description = "unified interface to mail representations";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-Abstract";
-      description = "Unified interface to mail representations";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8277,8 +8738,9 @@ let
       sha256 = "1vzr0vx4zsw4zbc9xdffc31wnkc1raqmyfiyws06fbyck197i8qg";
     };
     meta = {
-      description = "RFC 2822 Address Parsing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "RFC 2822 Address Parsing and Creation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-Address";
     };
   };
 
@@ -8293,7 +8755,7 @@ let
     propagatedBuildInputs = [ EmailAddress ];
     meta = {
       description = "RFC close address list parsing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -8305,9 +8767,10 @@ let
        sha256 = "0gjrrl81z3sfwavgx5kwjd87gj44mlnbbqsm3dgdv1xllw26spwr";
      };
      meta = {
-       description = "Parse and format RFC 2822 email addresses and groups";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Parse and format RFC 5322 email addresses and groups";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pali/Email-Address-XS";
+    };
   };
 
   EmailDateFormat = buildPerlPackage {
@@ -8318,9 +8781,9 @@ let
       sha256 = "579c617e303b9d874411c7b61b46b59d36f815718625074ae6832e7bb9db5104";
     };
     meta = {
+      description = "produce RFC 2822 date strings";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-Date-Format";
-      description = "Produce RFC 2822 date strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8333,8 +8796,9 @@ let
     };
     propagatedBuildInputs = [ EmailAbstract EmailAddress EmailMIME ];
     meta = {
-      description = "Reply to an email message";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "reply to an email message";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Email-Project/Email-Reply";
     };
   };
 
@@ -8347,7 +8811,8 @@ let
     };
     meta = {
       description = "Generate world unique message-ids";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-MessageID";
     };
   };
 
@@ -8360,9 +8825,9 @@ let
     };
     propagatedBuildInputs = [ EmailAddressXS EmailMIMEContentType EmailMIMEEncodings EmailMessageID EmailSimple MIMETypes ModuleRuntime ];
     meta = {
+      description = "easy MIME message handling";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-MIME";
-      description = "Easy MIME message handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8377,8 +8842,9 @@ let
         sha256 = "dcb98b09dc3e8f757ec3882a4234548108bb2d12e3cfadf95a26cef381a9e789";
     };
     meta = {
-        description = "Strip the attachments from an email";
-        license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "strip the attachments from an email";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-MIME-Attachment-Stripper";
     };
   };
 
@@ -8390,9 +8856,9 @@ let
       sha256 = "0zahm69cz36g3nqfan4ra6wwhvp6xrlzcaw1v9zqwfx9nwq1jjbl";
     };
     meta = {
+      description = "Parse and build a MIME Content-Type or Content-Disposition Header";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-MIME-ContentType";
-      description = "Parse a MIME Content-Type Header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     propagatedBuildInputs = [ TextUnidecode ];
   };
@@ -8406,9 +8872,9 @@ let
     };
     buildInputs = [ CaptureTiny ];
     meta = {
-      homepage = "https://github.com/rjbs/Email-MIME-Encodings";
       description = "A unified interface to MIME encoding and decoding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-MIME-Encodings";
     };
   };
 
@@ -8421,9 +8887,9 @@ let
     };
     propagatedBuildInputs = [ EmailAbstract EmailAddress ReturnValue ];
     meta = {
-      homepage = "https://github.com/rjbs/Email-Send";
       description = "Simply Sending Email";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-Send";
     };
     buildInputs = [ MIMETools MailTools ];
   };
@@ -8437,10 +8903,10 @@ let
     };
     propagatedBuildInputs = [ EmailMIME EmailSender IOAll IOString OLEStorage_Lite ];
     preCheck = "rm t/internals.t t/plain_jpeg_attached.t"; # these tests expect EmailMIME version 1.946 and fail with 1.949 (the output difference in benign)
-    meta = with lib; {
-      homepage = "https://www.matijs.net/software/msgconv/";
-      description = "A .MSG to mbox converter";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    meta = {
+      description = "Read Outlook .msg files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mvz/email-outlook-message-perl";
       maintainers = with maintainers; [ peterhoeg ];
     };
   };
@@ -8462,9 +8928,9 @@ let
       shortenPerlShebang util/sendmail
     '';
     meta = {
+      description = "a library for sending email";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-Sender";
-      description = "A library for sending email";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
     doCheck = false; /* test fails */
   };
@@ -8478,9 +8944,9 @@ let
     };
     propagatedBuildInputs = [ EmailDateFormat ];
     meta = {
+      description = "simple parsing of RFC2822 message format and headers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Email-Simple";
-      description = "Simple parsing of RFC2822 message format and headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -8494,9 +8960,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ EmailMIME EmailSender ];
     meta = {
-      homepage = "https://github.com/rjbs/Email-Stuffer";
       description = "A more casual approach to creating and sending Email:: emails";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Email-Stuffer";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -8510,6 +8976,11 @@ let
     };
     propagatedBuildInputs = [ IOCaptureOutput MailTools NetDNS NetDomainTLD ];
     doCheck = false;
+    meta = {
+      description = "Check validity of Internet email addresses";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Email-Project/Email-Valid";
+    };
   };
 
   EmailValidLoose = buildPerlPackage {
@@ -8520,9 +8991,7 @@ let
       sha256 = "e718e76eddee240251c999e139c8cbe6f2cc80192da5af875cbd12fa8ab93a59";
     };
     propagatedBuildInputs = [ EmailValid ];
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   Enbugger = buildPerlPackage {
@@ -8534,9 +9003,8 @@ let
     };
     propagatedBuildInputs = [ BUtils ];
     meta = {
-      description = "\"Enables the debugger at runtime\"";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Enbugger";
+      description = "Enables the debugger at runtime";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -8548,8 +9016,9 @@ let
       sha256 = "0nvvs5a7sz2x38isr5na31fa6ja85cpvmbn07qx0l50ss00ks1pd";
     };
     meta = {
-      description = "Character encodings in Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "character encodings in Perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dankogai/p5-encode";
     };
   };
 
@@ -8563,9 +9032,8 @@ let
     buildInputs = [ TestBase ];
     propagatedBuildInputs = [ MathGMPz ];
     meta = {
-      homepage = "https://metacpan.org/release/Encode-Base32-GMP";
       description = "High speed Base32 encoding using GMP with BigInt and MD5 support";
-      license = lib.licenses.mit;
+      license = licenses.mit;
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -8580,7 +9048,7 @@ let
     nativeBuildInputs = [ pkgs.ld-is-cc-hook ];
     meta = {
       description = "An Encode::Encoding subclass that detects the encoding of data";
-      license = lib.licenses.free;
+      license = licenses.mpl11;
     };
   };
 
@@ -8594,8 +9062,9 @@ let
     };
     outputs = [ "out" ];
     meta = {
-      description = "EucJP-ascii - An eucJP-open mapping";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "eucJP-ascii - An eucJP-open mapping";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://hatuka.nezumi.nu/repos/Encode-EUCJPASCII/";
     };
   };
 
@@ -8608,7 +9077,7 @@ let
     };
     meta = {
       description = "Extra sets of Chinese encodings";
-      license = lib.licenses.mit;
+      license = licenses.mit;
     };
   };
 
@@ -8620,8 +9089,7 @@ let
       sha256 = "1ec84d72db39deb4dad6fca95acfcc21033f45a24d347c20f9a1a696896c35cc";
     };
     outputs = [ "out" ];
-    meta = {
-    };
+
   };
 
   EncodeJPEmoji = buildPerlPackage {
@@ -8653,7 +9121,7 @@ let
     propagatedBuildInputs = [ EncodeJPEmoji EncodeJPMobile ];
     meta = {
       description = "Unicode Emoji mapping for Encode::JP::Mobile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -8671,7 +9139,8 @@ let
     '' else null;
     meta = {
       description = "Determine the locale encoding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/encode-locale";
     };
   };
 
@@ -8683,10 +9152,10 @@ let
        sha256 = "1gipd3wnma28w5gjbzycfkpi6chksy14lhxkp4hwizf8r351zcrl";
      };
      meta = {
-       description = "Normalize line ending sequences";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/Encode-Newlines";
-     };
+      description = "Normalize line ending sequences";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Encode-Newlines";
+    };
   };
 
   enum = buildPerlPackage {
@@ -8697,7 +9166,8 @@ let
       sha256 = "d2f36b5015f1e35f640159867b60bf5d5cd66b56cd5e42d33f531be68e5eee35";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/enum";
     };
   };
 
@@ -8709,8 +9179,9 @@ let
       sha256 = "d94a3d412df246afdc31a2199cbd8ae915167a3f4684f7b7014ce1200251ebb0";
     };
     meta = {
-      description = "Perl module that imports environment variables as scalars or arrays";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "perl module that imports environment variables as scalars or arrays";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rafl/env";
     };
   };
 
@@ -8732,7 +9203,7 @@ let
     };
     meta = {
       description = "Lexically scoped sanctification of %ENV";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/bingos/env-sanctify";
     };
   };
@@ -8743,6 +9214,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Error-0.17029.tar.gz";
       sha256 = "1p3spyarrh8y14d3j9s71xcndjlr70x3f8c3nvaddbij628zf8qs";
+    };
+    meta = {
+      description = "Error/exception handling in an OO-ish way";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-error.pm";
     };
   };
 
@@ -8757,7 +9233,7 @@ let
     buildInputs = [ IOCaptureOutput TestNoWarnings ];
     meta = {
       description = "Perl module for structured errors";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Error-Pure";
     };
   };
@@ -8773,7 +9249,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Output text subroutines for Error::Pure";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/tupinek/Error-Pure-Output-Text";
     };
   };
@@ -8787,9 +9263,7 @@ let
     };
     buildInputs = [ CanaryStability ];
     propagatedBuildInputs = [ commonsense ];
-    meta = {
-      license = lib.licenses.gpl1Plus;
-    };
+
   };
 
   EvalClosure = buildPerlPackage {
@@ -8801,8 +9275,9 @@ let
     };
     buildInputs = [ TestFatal TestRequires ];
     meta = {
-      description = "Safely and cleanly create closures via string eval";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "safely and cleanly create closures via string eval";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/eval-closure";
     };
   };
 
@@ -8816,7 +9291,8 @@ let
     propagatedBuildInputs = [ Moo strictures ];
     meta = {
       description = "pure perl eval with persistent lexical variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Eval-WithLexicals.git";
     };
   };
 
@@ -8830,7 +9306,8 @@ let
     buildInputs = [ TestUnitLite ];
     meta = {
       description = "Lightweight exceptions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Exception-Base";
     };
   };
 
@@ -8842,6 +9319,11 @@ let
       sha256 = "03gf4cdgrjnljgrlxkvbh2cahsyzn0zsh2zcli7b1lrqn7wgpwrk";
     };
     propagatedBuildInputs = [ ClassDataInheritable DevelStackTrace ];
+    meta = {
+      description = "A module that allows you to declare real exception classes in Perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/Exception-Class";
+    };
   };
 
   ExceptionDied = buildPerlModule {
@@ -8853,6 +9335,11 @@ let
     };
     buildInputs = [ TestAssert TestUnitLite ];
     propagatedBuildInputs = [ ExceptionBase constantboolean ];
+    meta = {
+      description = "Convert simple die into real exception object";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dexter-cpan.googlecode.com/svn/Exception-Died";
+    };
   };
 
   ExceptionWarning = buildPerlModule {
@@ -8864,6 +9351,11 @@ let
     };
     buildInputs = [ TestAssert TestUnitLite ];
     propagatedBuildInputs = [ ExceptionBase ];
+    meta = {
+      description = "Convert simple warn into real exception object";
+      license = licenses.lgpl21Plus;
+      homepage = "http://dexter-cpan.googlecode.com/svn/Exception-Warning";
+    };
   };
 
   ExporterDeclare = buildPerlModule {
@@ -8876,9 +9368,9 @@ let
     buildInputs = [ FennecLite TestException ];
     propagatedBuildInputs = [ MetaBuilder aliased ];
     meta = {
-      homepage = "https://metacpan.org/release/Exporter-Declare";
       description = "Exporting done right";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://open-exodus.net/projects/Exporter-Declare";
     };
   };
 
@@ -8890,7 +9382,8 @@ let
       sha256 = "1hns15imih8z2h6zv3m1wwmv9fiysacsb52y94v6zf2cmw4kjny0";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Exporter-Lite";
     };
   };
 
@@ -8902,8 +9395,9 @@ let
       sha256 = "00f0b95716b18157132c6c118ded8ba31392563d19e490433e9a65382e707101";
     };
     meta = {
-      description = "An exporter with the features of Sub::Exporter but only core dependencies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "an exporter with the features of Sub::Exporter but only core dependencies";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-exporter-tiny";
     };
   };
 
@@ -8916,8 +9410,8 @@ let
     };
     meta = {
       description = "Compile and link C code for Perl modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "https://metacpan.org/release/ExtUtils-CBuilder";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/Perl-Toolchain-Gang/ExtUtils-CBuilder";
     };
   };
 
@@ -8930,8 +9424,9 @@ let
     };
     propagatedBuildInputs = [ IOTty ];
     meta = {
-      description = "Automate interactions with command line programs that expose a text terminal interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "automate interactions with command line programs that expose a text terminal interface";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/jacoby/expect.pm";
     };
   };
 
@@ -8944,8 +9439,8 @@ let
     };
     propagatedBuildInputs = [ Expect ];
     meta = {
-      description = "Wrapper around the Expect module";
-      license = lib.licenses.free;
+      description = "wrapper around the Expect module";
+      license = licenses.gpl1Plus;
     };
   };
 
@@ -8958,8 +9453,8 @@ let
     };
     buildInputs = [ TestFatal ];
     meta = {
-      description = "Configure-time utilities for using C headers,";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "configure-time utilities for using C headers,";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -8972,7 +9467,8 @@ let
     };
     meta = {
       description = "A wrapper for perl's configuration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/extutils-config";
     };
   };
 
@@ -8995,6 +9491,10 @@ let
     nativeBuildInputs = [ pkgs.ld-is-cc-hook ];
     propagatedBuildInputs = [ CaptureTiny ];
     buildInputs = [ ModuleBuild ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tsee/extutils-cppguess";
+    };
   };
 
   ExtUtilsDepends = buildPerlPackage {
@@ -9005,7 +9505,8 @@ let
       sha256 = "165y1cjirbq64w39svkz82cb5jjqkjm8f4c0wqi2lk6050hzf3vq";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
   };
 
@@ -9018,8 +9519,9 @@ let
     };
     buildInputs = [ pkgs.gfortran ];
     meta = {
-      description = "A simple interface to F77 libs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a simple interface to F77 libs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/PDLPorters/extutils-f77";
     };
     propagatedBuildInputs = [ FileWhich ];
   };
@@ -9033,7 +9535,8 @@ let
     };
     meta = {
       description = "Various portability utilities for module builders";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/extutils-helpers";
     };
   };
 
@@ -9045,8 +9548,9 @@ let
       sha256 = "0j4ihbfcx5p1p09r1b308wi5byvp49d7s0qyv05a3c4lmg2z38d4";
     };
     meta = {
-      description = "Install files from here to there";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "install files from here to there";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/ExtUtils-Install";
     };
   };
 
@@ -9060,7 +9564,8 @@ let
     propagatedBuildInputs = [ ExtUtilsConfig ];
     meta = {
       description = "Build.PL install path logic made easy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/extutils-installpaths";
     };
   };
 
@@ -9074,7 +9579,8 @@ let
     perlPreHook = "export LD=$CC";
     meta = {
       description = "A tool to build C libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/ambs/ExtUtils-LibBuilder";
     };
   };
 
@@ -9087,7 +9593,8 @@ let
     };
     meta = {
       description = "Create a module Makefile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/ExtUtils-MakeMaker";
     };
   };
 
@@ -9100,9 +9607,10 @@ let
      };
      propagatedBuildInputs = [ ModuleCPANfile ];
      meta = {
-       description = "cpanfile support for EUMM";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "cpanfile support for EUMM";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/ExtUtils-MakeMaker-CPANfile";
+    };
   };
 
   ExtUtilsPkgConfig = buildPerlPackage {
@@ -9116,9 +9624,9 @@ let
     propagatedBuildInputs = [ pkgs.pkg-config ];
     doCheck = false; # expects test_glib-2.0.pc in PKG_CONFIG_PATH
     meta = {
-      homepage = "http://gtk2-perl.sourceforge.net";
       description = "Simplistic interface to pkg-config";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
   };
 
@@ -9140,6 +9648,9 @@ let
       url = "mirror://cpan/authors/id/S/SM/SMUELLER/ExtUtils-Typemap-1.00.tar.gz";
       sha256 = "1iqz0xlscg655gnwb2h1wrjj70llblps1zznl29qn1mv5mvibc5i";
     };
+    meta = {
+      description = "Read/Write/Modify Perl/XS typemap files";
+    };
   };
 
   ExtUtilsTypemapsDefault = buildPerlModule {
@@ -9148,6 +9659,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SM/SMUELLER/ExtUtils-Typemaps-Default-1.05.tar.gz";
       sha256 = "1phmha0ks95kvzl00r1kgnd5hvg7qb1q9jmzjmw01p5zgs1zbyix";
+    };
+    meta = {
+      description = "A set of useful typemaps";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -9169,6 +9684,10 @@ let
       sha256 = "1zx84f93lkymqz7qa4d63gzlnhnkxm5i3gvsrwkvvqr9cxjasxli";
     };
     buildInputs = [ TestBase TestDifferences ];
+    meta = {
+      description = "XS for C++";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   FatalException = buildPerlModule {
@@ -9180,6 +9699,10 @@ let
     };
     buildInputs = [ ExceptionWarning TestAssert TestUnitLite ];
     propagatedBuildInputs = [ ExceptionDied ];
+    meta = {
+      description = "Succeed or throw exception";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   Feersum = buildPerlPackage {
@@ -9193,7 +9716,7 @@ let
     buildInputs = [ AnyEvent Guard TestFatal TestLeakTrace TestSharedFork TestTCP ];
     meta = {
       description = "A PSGI engine for Perl based on EV/libev";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -9207,6 +9730,10 @@ let
     postPatch = lib.optionalString (stdenv.hostPlatform != stdenv.buildPlatform) ''
       sed -i '/use IO::File/d' Makefile.PL
     '';
+    meta = {
+      description = "Fast CGI module";
+      homepage = "https://github.com/perl-catalyst/FCGI";
+    };
   };
 
   FCGIClient = buildPerlModule {
@@ -9218,9 +9745,10 @@ let
      };
      propagatedBuildInputs = [ Moo TypeTiny ];
      meta = {
-       description = "client library for fastcgi protocol";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "client library for fastcgi protocol";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/p5-fcgi-client";
+    };
     buildInputs = [ ModuleBuildTiny ];
   };
 
@@ -9235,7 +9763,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Implement FastCGI protocol for use in EV-based applications";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
       homepage = "https://github.com/powerman/perl-FCGI-EV";
     };
   };
@@ -9262,7 +9790,8 @@ let
     buildInputs = [ Test2Suite ];
     meta = {
       description = "Check that a library is available for FFI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl5-FFI/FFI-CheckLib";
     };
   };
 
@@ -9276,7 +9805,8 @@ let
     propagatedBuildInputs = [ CaptureTiny FFICheckLib ];
     meta = {
       description = "Write Perl bindings to non-Perl libraries with FFI. No XS required";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/PerlFFI/FFI-Platypus";
     };
   };
 
@@ -9288,9 +9818,9 @@ let
       sha256 = "dce28e3932762c2ff92aa52d90405c06e898e81cb7b164ccae8966ae77f1dcab";
     };
     meta = {
-      homepage = "https://metacpan.org/release/Fennec-Lite";
       description = "Minimalist Fennec, the commonly used bits";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://open-exodus.net/projects/Fennec-Lite";
     };
   };
 
@@ -9303,9 +9833,10 @@ let
     };
     buildInputs = [ Test2Suite TestRequires TestWithoutModule ];
     propagatedBuildInputs = [ ModulePluggable Moo TypeTiny namespaceautoclean ];
-    meta = with lib; {
+    meta = {
       description = "Watch for changes to files, cross-platform style";
       license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/File-ChangeNotify";
     };
   };
 
@@ -9315,6 +9846,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DA/DAGOLDEN/File-chdir-0.1010.tar.gz";
       sha256 = "009b8p2fzj4nhl03fpkhrn0rsh7myxqbrf69iqpzd86p1gs23hgg";
+    };
+    meta = {
+      description = "a more sensible way to change directories";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dagolden/File-chdir";
     };
   };
 
@@ -9331,6 +9867,10 @@ let
     '';
     propagatedBuildInputs = [ IPCSystemSimple ];
     buildInputs = [ FileWhich ];
+    meta = {
+      description = "Use the Freedesktop.org base directory specification";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   FileBOM = buildPerlModule {
@@ -9344,7 +9884,8 @@ let
     propagatedBuildInputs = [ Readonly ];
     meta = {
       description = "Utilities for handling Byte Order Marks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mattlaw/File-BOM.git";
     };
   };
 
@@ -9356,8 +9897,9 @@ let
       sha256 = "66fb417f8ff8a5e5b7ea25606156e70e204861c59fa8c3831925b4dd3f155f8a";
     };
     meta = {
-      description = "Run many filetest checks on a tree";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "run many filetest checks on a tree";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rafl/file-checktree";
     };
   };
 
@@ -9369,6 +9911,11 @@ let
       sha256 = "0mqivx4nbzagl3s2kxka72050sfb75xvn25j8a0f6ic3ibvir5yk";
     };
     buildInputs = [ PathTiny TestDeep TestFatal TestFile TestWarnings ];
+    meta = {
+      description = "Perl extension for recursively copying files and directories";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/drmuey/p5-File-Copy-Recursive";
+    };
   };
 
   FileCopyRecursiveReduced = buildPerlPackage {
@@ -9380,10 +9927,10 @@ let
      };
      buildInputs = [ CaptureTiny PathTiny ];
      meta = {
-       description = "Recursive copying of files and directories within Perl 5 toolchain";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "http://thenceforward.net/perl/modules/File-Copy-Recursive-Reduced/";
-     };
+      description = "Recursive copying of files and directories within Perl 5 toolchain";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://thenceforward.net/perl/modules/File-Copy-Recursive-Reduced/";
+    };
   };
 
   FileCountLines = buildPerlModule {
@@ -9395,7 +9942,7 @@ let
     };
     meta = {
       description = "Efficiently count the number of line breaks in a file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -9407,6 +9954,11 @@ let
       sha256 = "169c01e3dae2f629767bec1a9f1cdbd6ec6d713d1501e0b2786e4dd1235635b8";
     };
     propagatedBuildInputs = [ FileBaseDir URI ];
+    meta = {
+      description = "Module to handle .desktop files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbeijen/File-DesktopEntry";
+    };
   };
 
   FileFindIterator = buildPerlPackage {
@@ -9417,8 +9969,7 @@ let
       sha256 = "a2b87ab9756a2e5bb674adbd39937663ed20c28c716bf5a1095a3ca44d54ab2c";
     };
     propagatedBuildInputs = [ ClassIterator ];
-    meta = {
-    };
+
   };
 
   FileFindObject = buildPerlModule {
@@ -9431,7 +9982,8 @@ let
     propagatedBuildInputs = [ ClassXSAccessor ];
     meta = {
       description = "An object oriented File::Find replacement";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/shlomif/perl-file-find-object";
     };
   };
 
@@ -9448,9 +10000,9 @@ let
       tar xf $src */t/sample-data --strip-components=1
     '';
     meta = {
-      homepage = "https://www.shlomifish.org/open-source/projects/File-Find-Object/";
       description = "Alternative interface to File::Find::Object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.shlomifish.org/open-source/projects/File-Find-Object/";
     };
   };
 
@@ -9475,7 +10027,7 @@ let
     buildInputs = [ FilesysVirtualPlain ];
     meta = {
       description = "File::Find::Rule adapted to Filesys::Virtual";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -9489,7 +10041,8 @@ let
     propagatedBuildInputs = [ FileFindRule ParamsUtil ];
     meta = {
       description = "Common rules for searching for Perl things";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/File-Find-Rule-Perl";
     };
   };
 
@@ -9501,9 +10054,7 @@ let
       sha256 = "2ecbc19ac67a9e635c872a807a8d3eaaff5babc054f15a191d47cdfc5f176a74";
     };
     propagatedBuildInputs = [ TextGlob ];
-    meta = {
-      license = lib.licenses.free; # Same as Perl
-    };
+
   };
 
   FileFlockRetry = buildPerlPackage {
@@ -9516,7 +10067,8 @@ let
     buildInputs = [ FileSlurper Filechdir ];
     meta = {
       description = "Yet another flock module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-File-Flock-Retry";
     };
   };
 
@@ -9528,9 +10080,8 @@ let
       sha256 = "05p9m7kpmjv8bmmbs5chb5fqyshcgmskbbzq5c9qpskbx2w5894n";
     };
     meta = {
-      maintainers = teams.deshaw.members;
       description = "simple filename and pathname matching";
-      license = lib.licenses.free; # Same as Perl
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -9556,9 +10107,9 @@ let
     };
     buildInputs = [ FileSlurper TestCompile UNIVERSALrequire URI ];
     meta = {
-      homepage = "https://github.com/coppit/filehandle-unget/";
       description = "FileHandle which supports multi-byte unget";
-      license = lib.licenses.gpl2;
+      license = licenses.gpl2Plus;
+      homepage = "https://github.com/coppit/filehandle-unget/";
       maintainers = with maintainers; [ romildo ];
     };
   };
@@ -9573,7 +10124,8 @@ let
     propagatedBuildInputs = [ FileWhich ];
     meta = {
       description = "Find your home and other directories on any platform";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/File-HomeDir";
     };
     preCheck = "export HOME=$TMPDIR";
     doCheck = !stdenv.isDarwin;
@@ -9587,6 +10139,9 @@ let
       sha256 = "c30c688027a52ff4f58cd69d6d8ef35472a7cf106d4ce94eb73a796ba7c7ffa7";
     };
     propagatedBuildInputs = [ CryptRijndael ];
+    meta = {
+      description = "Interface to KeePass V1 and V2 database files";
+    };
   };
 
   Filelchown = buildPerlModule {
@@ -9599,8 +10154,8 @@ let
     buildInputs = [ ExtUtilsCChecker ];
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      description = "Modify attributes of symlinks without dereferencing them";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "modify attributes of symlinks without dereferencing them";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -9619,7 +10174,8 @@ let
     '';
     meta = {
       description = "Determine MIME types of data or files using libmagic";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/File-LibMagic";
     };
   };
 
@@ -9631,6 +10187,11 @@ let
       sha256 = "1zs8gfngqsd6jbsqajf95kql3bshsis1nf16y8v4l5i33s3s9cqm";
     };
     propagatedBuildInputs = [ HTTPDate ];
+    meta = {
+      description = "Parse directory listing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/PerlAlien/File-Listing";
+    };
   };
 
   FileLoadLines = buildPerlPackage {
@@ -9643,7 +10204,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Load lines from file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sciurius/perl-File-LoadLines";
     };
   };
 
@@ -9656,6 +10218,11 @@ let
     };
     doCheck = false; # Failed test 'desktop file is the right one'
     buildInputs = [ EncodeLocale FileBaseDir FileDesktopEntry ];
+    meta = {
+      description = "Determine file types";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbeijen/File-MimeInfo";
+    };
   };
 
   FileMMagic = buildPerlPackage {
@@ -9667,7 +10234,6 @@ let
     };
     meta = {
       description = "Guess file type from contents";
-      license = lib.licenses.free; # Some form of BSD4/Apache mix.
     };
   };
 
@@ -9682,8 +10248,9 @@ let
     buildInputs = [ TestFatal TestWarnings ];
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      description = "Memory mapping made simple and safe.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Memory mapping made simple and safe";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/file-map";
     };
   };
 
@@ -9695,9 +10262,9 @@ let
       sha256 = "6b50b1aab6ec6998a017f6403c2735b3bc1e1cf46187bd134d7eb6df3fc45144";
     };
     meta = {
+      description = "checks intelligently if files have changed";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/neilbowers/File-Modified";
-      description = "Checks intelligently if files have changed";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -9707,6 +10274,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/P/PE/PETDANCE/File-Next-1.18.tar.gz";
       sha256 = "1vy2dqpc1nbjrnga08xr2hcxxfzifc5s2lfam5lf3djya0wwn07r";
+    };
+    meta = {
+      description = "File-finding iterator";
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "http://github.com/petdance/file-next/tree/master";
     };
   };
 
@@ -9721,7 +10293,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Object system for filesystem paths";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/tupinek/File-Object";
     };
   };
@@ -9732,6 +10304,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/B/BB/BBB/File-NFSLock-1.29.tar.gz";
       sha256 = "0dzssj15faz9cn1w3xi7jwm64gyjyazapv4bkgglw5l1njcibm31";
+    };
+    meta = {
+      description = "perl module to do NFS (or not) locking";
     };
   };
 
@@ -9744,7 +10319,8 @@ let
     };
     meta = {
       description = "Create or remove directory trees";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jkeenan/File-Path";
     };
   };
 
@@ -9762,7 +10338,6 @@ let
     })];
     propagatedBuildInputs = [ ClassAccessor ];
     meta = {
-      license = lib.licenses.free; # Same as Perl
       description = "Pid File Manipulation";
       maintainers = teams.deshaw.members;
     };
@@ -9776,8 +10351,9 @@ let
       sha256 = "d73a7f09442983b098260df3df7a832a5f660773a313ca273fa8b56665f97cdc";
     };
     meta = {
-      description = "Change directory temporarily for a limited scope";
-      license = lib.licenses.asl20;
+      description = "change directory temporarily for a limited scope";
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/File-pushd";
     };
   };
 
@@ -9790,7 +10366,6 @@ let
     };
     meta = {
       description = "Read a file backwards by lines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -9800,6 +10375,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SH/SHLOMIF/File-Remove-1.60.tar.gz";
       sha256 = "19lc9xr8w38i4bq3mbr0hadmyjm1dgyh6587gmlxbipdzx02lvp8";
+    };
+    meta = {
+      description = "Remove files and directories";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/File-Remove";
     };
   };
 
@@ -9812,9 +10392,9 @@ let
     };
     propagatedBuildInputs = [ FileShareDir ];
     meta = {
-      homepage = "https://github.com/ingydotnet/file-share-pm";
       description = "Extend File::ShareDir to Local Libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/file-share-pm";
     };
   };
 
@@ -9828,7 +10408,8 @@ let
     propagatedBuildInputs = [ ClassInspector ];
     meta = {
       description = "Locate per-dist and per-module shared files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/File-ShareDir";
     };
     buildInputs = [ FileShareDirInstall ];
   };
@@ -9842,7 +10423,8 @@ let
     };
     meta = {
       description = "Install shared files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/File-ShareDir-Install";
     };
   };
 
@@ -9857,8 +10439,8 @@ let
     buildInputs = [ TestFileShareDir ];
     meta = {
       description = "Deal transparently with shared files distributed as tarballs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/File-ShareDir-Tarball/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/yanick/File-ShareDir-Tarball";
     };
   };
 
@@ -9870,8 +10452,7 @@ let
       sha256 = "fe89cbb427e0e05f1cd97c2dd6d3866ac6b21bc7a85734ede159bdc35479552a";
     };
     meta = {
-      description = "Perl extension for filesystem disk space information.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl extension for filesystem disk space information";
     };
   };
 
@@ -9893,7 +10474,8 @@ let
     };
     meta = {
       description = "Simple and dumb file system watcher";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Filesys-Notify-Simple";
     };
     buildInputs = [ TestSharedFork ];
   };
@@ -9927,7 +10509,8 @@ let
     buildInputs = [ TestWarn ];
     meta = {
       description = "Estimate file space usage (similar to `du`)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/manwar/Filesys-DiskUsage";
     };
   };
 
@@ -9940,7 +10523,8 @@ let
     };
     meta = {
       description = "Simple and Efficient Reading/Writing/Modifying of Complete Files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perhunter/slurp";
     };
   };
 
@@ -9954,7 +10538,8 @@ let
     buildInputs = [ TestWarnings ];
     meta = {
       description = "A simple, sane and efficient module to slurp a file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/file-slurp-sane";
     };
   };
 
@@ -9967,7 +10552,8 @@ let
     };
     meta = {
       description = "A simple, sane and efficient file slurper [DISCOURAGED]";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/file-slurp-tiny";
     };
   };
 
@@ -9980,7 +10566,7 @@ let
     };
     meta = {
       description = "Perl extension for reading from continously updated files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = teams.deshaw.members;
     };
   };
@@ -10002,9 +10588,9 @@ let
       sha256 = "e379a5ff89420cf39906e5ceff309b8ce958f99f9c3e57ad52b5002a3982d93c";
     };
     meta = {
+      description = "update file access and modification times, optionally creating files if needed";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/neilb/File-Touch";
-      description = "Update file access and modification times, optionally creating files if needed";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = teams.deshaw.members;
     };
   };
@@ -10017,8 +10603,8 @@ let
       sha256 = "0hfkaafp6wb0nw19x47wc6wc9mwlw8s2rxiii3ylvzapxxgxjp6k";
     };
     meta = {
-      description = "File::Type uses magic numbers (typically at the start of a file) to determine the MIME type of that file.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "File::Type uses magic numbers (typically at the start of a file) to determine the MIME type of that file";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10031,9 +10617,9 @@ let
     };
     buildInputs = [ TestNoWarnings ];
     meta = {
-      homepage = "https://github.com/tommybutler/file-util/wiki";
       description = "Easy, versatile, portable file handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tommybutler/file-util/wiki";
     };
   };
 
@@ -10046,9 +10632,9 @@ let
     };
     buildInputs = [ Perlosnames TestException ];
     meta = {
-      homepage = "https://metacpan.org/release/File-Util-Tempdir";
       description = "Cross-platform way to get system-wide & user private temporary directory";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-File-Util-Tempdir";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -10061,9 +10647,9 @@ let
       sha256 = "b79dc2244b2d97b6f27167fc3b7799ef61a179040f3abd76ce1e0a3b0bc4e078";
     };
     meta = {
-      homepage = "https://metacpan.org/release/File-Which";
       description = "Perl implementation of the which utility as an API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/File-Which";
     };
   };
 
@@ -10078,7 +10664,8 @@ let
     buildInputs = [ FileSlurper Filechdir MonkeyPatchAction TaintRuntime TestException TestWarnings tainting ];
     meta = {
       description = "Write to files that archive/rotate themselves";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-File-Write-Rotate";
     };
   };
 
@@ -10090,9 +10677,9 @@ let
        sha256 = "16v61rn0yimpv5kp6b20z2f1c93n5kpsyjvr0gq4w2dc43gfvc8w";
      };
      meta = {
-       description = "Extended globs.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Extended globs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   Filter = buildPerlPackage {
@@ -10104,7 +10691,8 @@ let
     };
     meta = {
       description = "Source Filters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Filter";
     };
   };
 
@@ -10117,7 +10705,8 @@ let
     };
     meta = {
       description = "very simplistic signatures for Perl < 5.20";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/Filter-signatures";
     };
   };
 
@@ -10129,10 +10718,10 @@ let
       sha256 = "0lxz9fsm4ld3l900zxh2w91wjygk0ifn4miw6q5k4mm67d2c9nwm";
     };
     propagatedBuildInputs = [ CGI DateTimeFormatStrptime HTMLTableExtract JSON JSONParse LWPProtocolHttps StringUtil TextTemplate ];
-    meta = with lib; {
-      homepage = "http://finance-quote.sourceforge.net/";
+    meta = {
       description = "Get stock and mutual fund quotes from various exchanges";
-      license = licenses.gpl2;
+      license = licenses.gpl2Plus;
+      homepage = "http://finance-quote.sourceforge.net/";
     };
     buildInputs = [ TestPod ];
   };
@@ -10146,7 +10735,7 @@ let
     };
     propagatedBuildInputs = [ FileCopyRecursiveReduced ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10157,9 +10746,8 @@ let
       url = "mirror://cpan/authors/id/Y/YA/YANNK/Find-Lib-1.04.tar.gz";
       sha256 = "0lg88v0sqfpq4d3jwvk6c9blqnpxbz8f4s22zr3b1qb160g94wqx";
     };
-    meta = with lib; {
+    meta = {
       description = "Helper to smartly find libs to use in the filesystem tree";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -10181,7 +10769,8 @@ let
     };
     meta = {
       description = "TTF font support for Perl";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/silnrsi/font-ttf";
     };
     buildInputs = [ IOString ];
   };
@@ -10195,8 +10784,8 @@ let
     };
     doCheck = false;
     meta = {
-      description = "Extensions and convenience methods to manage background processes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "extensions and convenience methods to manage background processes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     propagatedBuildInputs = [ URI ];
   };
@@ -10210,8 +10799,8 @@ let
     };
     propagatedBuildInputs = [ ClassAccessor ClassDataAccessor DateCalc DateTimeFormatStrptime EmailValidLoose ListMoreUtils TieIxHash UNIVERSALrequire YAML ];
     meta = {
-      description = "Validation with simple chains of constraints";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "validation with simple chains of constraints";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ CGI ];
   };
@@ -10236,7 +10825,8 @@ let
     propagatedBuildInputs = [ ClonePP ];
     meta = {
       description = "Functions that use non-core XS module but provide pure-Perl/core fallback";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Function-Fallback-CoreOrPP";
     };
   };
 
@@ -10250,7 +10840,8 @@ let
     buildInputs = [ DirSelf TestFatal ];
     meta = {
       description = "define functions and methods with parameter lists (\"subroutine signatures\")";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mauke/Function-Parameters";
     };
   };
 
@@ -10263,7 +10854,7 @@ let
     };
     meta = {
       description = "helper tools for light-weight functional programming";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10278,7 +10869,8 @@ let
     buildInputs = [ HTTPCookieJar HTTPProxy ModuleBuildTiny Plack Starlet TestFakeHTTPD TestRequires TestSharedFork TestTCP TestValgrind URI ];
     meta = {
       description = "Lightning-fast URL fetcher";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Furl";
     };
   };
 
@@ -10292,7 +10884,7 @@ let
     buildInputs = [ TestFatal TestIdentity TestRefcount ];
     meta = {
       description = "represent an operation awaiting completion";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10307,8 +10899,8 @@ let
     propagatedBuildInputs = [ Future XSParseSublike ];
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      description = "Deferred subroutine syntax for futures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "deferred subroutine syntax for futures";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -10324,7 +10916,8 @@ let
     buildInputs = [ TestHTTPLocalServer ];
     meta = {
       description = "provide the most appropriate HTTP client with a Future API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/Future-HTTP";
     };
   };
 
@@ -10338,8 +10931,9 @@ let
     buildInputs = [ DirManifest TestDifferences ];
     propagatedBuildInputs = [ ClassXSAccessor ExceptionClass PathTiny ];
     meta = {
-      description = "Verify solutions for solitaire games";
-      license = lib.licenses.mit;
+      description = "verify solutions for solitaire games";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/fc-solve";
     };
   };
 
@@ -10354,7 +10948,8 @@ let
     buildInputs = [ CaptureTiny FileSlurper ];
     meta = {
       description = "Generate a test function for a function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Gen-Test-Rinci-FuncResult";
     };
   };
 
@@ -10372,6 +10967,11 @@ let
     hardeningDisable = [ "format" ];
 
     makeMakerFlags = "--lib_png_path=${pkgs.libpng.out} --lib_jpeg_path=${pkgs.libjpeg.out} --lib_zlib_path=${pkgs.zlib.out} --lib_ft_path=${pkgs.freetype.out} --lib_fontconfig_path=${pkgs.fontconfig.lib} --lib_xpm_path=${pkgs.xorg.libXpm.out}";
+    meta = {
+      description = "Perl interface to the gd2 graphics library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/lstein/Perl-GD";
+    };
   };
 
   GDGraph = buildPerlPackage {
@@ -10384,8 +10984,9 @@ let
     propagatedBuildInputs = [ GDText ];
     buildInputs = [ CaptureTiny TestException ];
     meta = {
-      description = "Graph Plotting Module for Perl 5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Produces charts with GD";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ruz/GDGraph";
     };
   };
 
@@ -10399,7 +11000,8 @@ let
     propagatedBuildInputs = [ GD ];
     meta = {
       description = "Security image (captcha) generator";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/burak/CPAN-GD-SecurityImage";
     };
   };
 
@@ -10425,6 +11027,11 @@ let
     };
     makeMakerFlags = "LIBS=-L${pkgs.geoip}/lib INC=-I${pkgs.geoip}/include";
     doCheck = false; # seems to access the network
+    meta = {
+      description = "Look up location and network information by IP Address";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/geoip-api-perl";
+    };
   };
 
   GeoIP2 = buildPerlPackage {
@@ -10438,7 +11045,8 @@ let
     buildInputs = [ PathClass TestFatal TestNumberDelta ];
     meta = {
       description = "Perl API for MaxMind's GeoIP2 web services and databases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/GeoIP2-perl";
     };
   };
 
@@ -10450,7 +11058,7 @@ let
       sha256 = "3709aa513ce6fd71d1a55a02e34d2f090017d5350a9bd447005653c9b0835b22";
     };
     meta = {
-      license = lib.licenses.artistic1;
+      license = licenses.artistic1;
       maintainers = [ maintainers.pSub ];
     };
   };
@@ -10461,6 +11069,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/J/JV/JV/Getopt-Long-2.52.tar.gz";
       sha256 = "1yh5fykxrw68pvdvhvjh3wfs7a1s29xqwm5fxw2mqg9mfg1sgiwx";
+    };
+    meta = {
+      description = "Module to handle parsing command line options";
+      homepage = "https://github.com/sciurius/perl-Getopt-Long";
     };
   };
 
@@ -10474,9 +11086,9 @@ let
     buildInputs = [ CPANMetaCheck TestFatal TestWarnings ];
     propagatedBuildInputs = [ ParamsValidate SubExporter ];
     meta = {
-      homepage = "https://github.com/rjbs/Getopt-Long-Descriptive";
       description = "Getopt::Long, but simpler and more powerful";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Getopt-Long-Descriptive";
     };
   };
 
@@ -10489,7 +11101,8 @@ let
     };
     meta = {
       description = "Better negation of boolean option names";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Getopt-Long-Negate-EN";
     };
   };
 
@@ -10502,7 +11115,8 @@ let
     };
     meta = {
       description = "Utilities for Getopt::Long";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Getopt-Long-Util";
     };
   };
 
@@ -10524,9 +11138,9 @@ let
     };
     propagatedBuildInputs = [ Error ];
     meta = {
-      maintainers = teams.deshaw.members;
       description = "This is the Git.pm, plus the other files in the perl/Git directory, from github's git/git";
-      license = lib.licenses.free;
+      license = licenses.gpl1Plus;
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -10538,9 +11152,10 @@ let
       sha256 = "1q7im0zj238k5agwi7d1mz26a8r0wrxwfwp1l8n5k777gx3b5xhp";
     };
     meta = {
+      description = "create fixup commits for topic branches";
+      license = licenses.artistic2;
+      homepage = "https://github.com/torbiak/git-autofixup";
       maintainers = [ maintainers.DamienCassou ];
-      description = "Create fixup commits for topic branches";
-      license = lib.licenses.artistic2;
     };
   };
 
@@ -10556,7 +11171,7 @@ let
     doCheck = false;
     meta = {
       description = "A Pure Perl interface to Git repositories";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10571,7 +11186,8 @@ let
     propagatedBuildInputs = [ GitVersionCompare SystemCommand namespaceclean ];
     meta = {
       description = "Perl interface to Git repositories";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/book/Git-Repository";
     };
   };
 
@@ -10585,7 +11201,8 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Functions to compare Git versions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/Git-Version-Compare";
     };
   };
 
@@ -10599,9 +11216,9 @@ let
     buildInputs = [ pkgs.glib ];
     doCheck = false; # tests failing with glib 2.60 https://rt.cpan.org/Public/Bug/Display.html?id=128165
     meta = {
-      homepage = "http://gtk2-perl.sourceforge.net/";
       description = "Perl wrappers for the GLib utility and Object libraries";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
     propagatedBuildInputs = [ ExtUtilsDepends ExtUtilsPkgConfig ];
   };
@@ -10616,12 +11233,10 @@ let
     checkInputs = [ pkgs.cairo ];
     propagatedBuildInputs = [ pkgs.gobject-introspection Glib ];
     meta = {
-      broken = true; # TODO: tests failing because "failed to load libregress.so"
-      # see https://github.com/NixOS/nixpkgs/pull/68115
-      # and https://github.com/NixOS/nixpkgs/issues/68116
-      # adding pkgs.gnome3.gjs does not fix it
       description = "Dynamically create Perl language bindings";
-      license = lib.licenses.lgpl2Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
+      broken = true;
     };
   };
 
@@ -10635,9 +11250,9 @@ let
     buildInputs = [ ExtUtilsDepends ExtUtilsPkgConfig Glib Gnome2Canvas Gnome2VFS Gtk2 ];
     propagatedBuildInputs = [ pkgs.gnome2.libgnomeui ];
     meta = {
+      description = "(DEPRECATED) Perl interface to the 2.x series of the GNOME libraries";
+      license = licenses.lgpl21Plus;
       homepage = "http://gtk2-perl.sourceforge.net";
-      description = "Perl interface to the 2.x series of the GNOME libraries";
-      license = lib.licenses.lgpl21Plus;
     };
   };
 
@@ -10650,7 +11265,7 @@ let
     };
     buildInputs = [ pkgs.gnome2.libgnomecanvas ];
     meta = {
-      license = lib.licenses.lgpl2Plus;
+      description = "(DEPRECATED) A structured graphics canvas";
     };
     propagatedBuildInputs = [ Gtk2 ];
   };
@@ -10664,8 +11279,7 @@ let
     };
     propagatedBuildInputs = [ pkgs.gnome2.gnome_vfs Glib ];
     meta = {
-      description = "Perl interface to the 2.x series of the GNOME VFS library";
-      license = lib.licenses.lgpl21Plus;
+      description = "(DEPRECATED) Perl interface to the 2.x series of the GNOME VFS";
     };
   };
 
@@ -10679,8 +11293,7 @@ let
     buildInputs = [ pkgs.libwnck pkgs.glib pkgs.gtk2 ];
     propagatedBuildInputs = [ Gtk2 ];
     meta = {
-      description = "Perl interface to the Window Navigator Construction Kit";
-      license = lib.licenses.lgpl21Plus;
+      description = "(DEPRECATED) Perl interface to the Window Navigator";
     };
   };
 
@@ -10706,8 +11319,8 @@ let
     propagatedBuildInputs = [ MooXHandlesVia MooXlate ];
     doCheck = false;
     meta = {
-      description = "Supply object methods for interacting with GnuPG";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "supply object methods for interacting with GnuPG";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -10735,7 +11348,6 @@ let
     propagatedBuildInputs = [ pkgs.goocanvas pkgs.gtk2 Gtk2 ];
     meta = {
       description = "Perl interface to the GooCanvas";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -10750,7 +11362,6 @@ let
     propagatedBuildInputs = [ pkgs.goocanvas2 Gtk3 ];
     meta = {
       description = "Perl binding for GooCanvas2 widget using Glib::Object::Introspection";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -10765,8 +11376,9 @@ let
     patches =
       [ ../development/perl-modules/Google-ProtocolBuffers-multiline-comments.patch ];
     meta = {
-      description = "Simple interface to Google Protocol Buffers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "simple interface to Google Protocol Buffers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/csirtgadgets/google-protocolbuffers-perl";
     };
   };
 
@@ -10778,6 +11390,10 @@ let
       sha256 = "14n4pfg05ly3hw4ivnxqk1vha5jkkx1ssg9iln56qfdjs7h0p58i";
     };
     propagatedBuildInputs = [ HeapFibonacci SetObject ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/graphviz-perl/Graph";
+    };
   };
 
   GraphEasy = buildPerlModule {
@@ -10789,7 +11405,8 @@ let
     };
     meta = {
       description = "Convert or render graphs (as ASCII, HTML, SVG or via Graphviz)";
-      license = with lib.licenses; [ gpl1Plus ];
+      license = licenses.gpl1Plus;
+      homepage = "https://bitbucket.org/shlomif/perl-graph-easy";
     };
   };
 
@@ -10804,7 +11421,8 @@ let
     buildInputs = [ TestDeep TestException ];
     meta = {
       description = "Perl implementation of GraphQL";
-      license = with lib.licenses; [ artistic1 gpl1Plus artistic2 ];
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/graphql-perl/graphql-perl";
     };
   };
 
@@ -10820,9 +11438,10 @@ let
     buildInputs = [ pkgs.graphviz TestPod ];
     propagatedBuildInputs = [ FileWhich IPCRun ParseRecDescent XMLTwig XMLXPath ];
 
-    meta = with lib; {
-      description = "Perl interface to the GraphViz graphing tool";
-      license = licenses.artistic2;
+    meta = {
+      description = "Interface to AT&T's GraphViz. Deprecated. See GraphViz2";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/GraphViz";
     };
   };
 
@@ -10835,7 +11454,8 @@ let
     };
     meta = {
       description = "WWW color names and equivalent RGB values (lite version)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Graphics-ColorNamesLite-WWW";
     };
   };
 
@@ -10850,9 +11470,9 @@ let
     propagatedBuildInputs = [ MailMboxMessageParser TimeDate ];
     outputs = [ "out" ];
     meta = {
+      description = "search mailboxes for mail matching a regular expression";
+      license = licenses.gpl2Plus;
       homepage = "https://github.com/coppit/grepmail";
-      description = "Search mailboxes for mail matching a regular expression";
-      license = lib.licenses.gpl2;
       maintainers = with maintainers; [ romildo ];
     };
   };
@@ -10866,6 +11486,11 @@ let
     };
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ CryptCBC DataUUID ];
+    meta = {
+      description = "Perl implementation of GNTP Protocol (Client Part)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mattn/p5-Growl-GNTP";
+    };
   };
 
   GSSAPI = buildPerlPackage {
@@ -10877,9 +11502,8 @@ let
     };
     propagatedBuildInputs = [ pkgs.krb5Full.dev ];
     meta = {
-      maintainers = teams.deshaw.members;
       description = "Perl extension providing access to the GSSAPIv2 library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      maintainers = teams.deshaw.members;
     };
     makeMakerFlags = "--gssapiimpl ${pkgs.krb5Full.dev}";
   };
@@ -10896,9 +11520,9 @@ let
     # doCheck = !stdenv.isDarwin;
     doCheck = false;
     meta = {
-      homepage = "http://gtk2-perl.sourceforge.net/";
       description = "Perl interface to the 2.x series of the Gimp Toolkit library";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
     propagatedBuildInputs = [ Pango ];
   };
@@ -10912,8 +11536,7 @@ let
     };
     propagatedBuildInputs = [ pkgs.gnome2.libglade pkgs.gtk2 Gtk2 ];
     meta = {
-      description = "Create user interfaces directly from Glade XML files";
-      license = lib.licenses.lgpl2Plus;
+      description = "(DEPRECATED) Create user interfaces directly from Glade XML";
     };
   };
 
@@ -10926,7 +11549,7 @@ let
     };
     propagatedBuildInputs = [ pkgs.gtk2 Pango ];
     meta = {
-      license = lib.licenses.gpl2;
+      description = "(DEPRECATED) Perl interface to the EggTrayIcon library";
     };
     buildInputs = [ Gtk2 ];
   };
@@ -10944,7 +11567,6 @@ let
     doCheck = false;
     meta = {
       description = "Perl extension for libappindicator";
-      license = lib.licenses.artistic1;
     };
   };
 
@@ -10963,7 +11585,7 @@ let
     doCheck = false;
     meta = {
       description = "Perl bindings for the GtkImageView widget";
-      license = lib.licenses.free;
+      license = licenses.lgpl21Plus;
     };
   };
 
@@ -10976,8 +11598,7 @@ let
     };
     propagatedBuildInputs = [ pkgs.libunique pkgs.gtk2 Gtk2 ];
     meta = {
-      description = "Use single instance applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) Use single instance applications";
     };
   };
 
@@ -10990,8 +11611,9 @@ let
     };
     propagatedBuildInputs = [ pkgs.gtk3 CairoGObject GlibObjectIntrospection ];
     meta = {
-      description = "Perl interface to the 3.x series of the GTK toolkit";
-      license = lib.licenses.lgpl21Plus;
+      description = "Perl interface to the 3.x series of the gtk+ toolkit";
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
   };
 
@@ -11004,7 +11626,8 @@ let
     };
     meta = {
       description = "A simple interface to Gtk3's complex MVC list widget";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.free;
+      homepage = "https://github.com/soig/Gtk3-SimpleList";
     };
     propagatedBuildInputs = [ Gtk3 ];
   };
@@ -11026,10 +11649,10 @@ let
       sha256 = "e01b455d46f44710dbcf21b6fa843f09358ce60eee1c4141bc74e0a204d3a020";
     };
     propagatedBuildInputs = [ DateCalc ];
-    meta = with lib; {
+    meta = {
       description = "Finnish APRS Parser (Fabulous APRS Parser)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = with maintainers; [ andrew-d ];
-      license = with licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -11050,9 +11673,9 @@ let
       shortenPerlShebang $out/bin/hailo
     '';
     meta = {
-      homepage = "https://github.com/hailo/hailo";
       description = "A pluggable Markov engine analogous to MegaHAL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://hailo.org";
     };
   };
 
@@ -11066,8 +11689,9 @@ let
     propagatedBuildInputs = [ HashMerge ];
 
     meta = {
-      license = with lib.licenses; [ artistic1 ];
       description = "Return difference between two hashes as a hash";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bolav/hash-diff";
     };
     buildInputs = [ TestSimple13 ];
   };
@@ -11082,7 +11706,7 @@ let
     buildInputs = [ TestLeakTrace ];
     meta = {
       description = "Lightweight field hash for inside-out objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/gfx/p5-Hash-FieldHash";
     };
   };
@@ -11098,6 +11722,9 @@ let
     };
     buildInputs = [ TestAssertions ];
     propagatedBuildInputs = [ LogTrace ];
+    meta = {
+      description = "flatten/unflatten complex data hashes";
+    };
   };
 
   HashMatch = buildPerlPackage {
@@ -11111,7 +11738,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "match contents of a hash against rules";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Hash-Match";
     };
   };
 
@@ -11125,6 +11753,8 @@ let
     propagatedBuildInputs = [ CloneChoose ];
     meta = {
       description = "Merges arbitrarily deep hashes into a single hash";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/Hash-Merge";
     };
     buildInputs = [ Clone ClonePP ];
   };
@@ -11140,7 +11770,7 @@ let
     propagatedBuildInputs = [ Clone ];
     meta = {
       description = "Recursively merge two or more hashes, simply";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11153,7 +11783,8 @@ let
     };
     meta = {
       description = "Provide the stuff missing in Hash::Util";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/Hash-MoreUtils";
     };
   };
 
@@ -11167,7 +11798,7 @@ let
     propagatedBuildInputs = [ provide ];
     meta = {
       description = "Pairwise list manipulators";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/belden/perl-hash-mostutils";
     };
   };
@@ -11181,7 +11812,8 @@ let
     };
     meta = {
       description = "Store multiple values per key";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Hash-MultiValue";
     };
   };
 
@@ -11195,7 +11827,8 @@ let
     buildInputs = [ Test2Suite ];
     meta = {
       description = "Functions for accessing a hashes internal iterator";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/exodist/Hash-StoredIterator";
     };
   };
 
@@ -11205,6 +11838,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/E/ET/ETHER/Hash-Util-FieldHash-Compat-0.11.tar.gz";
       sha256 = "06vlygjyk7rkkw0di3252mma141w801qn3xk40aa2yskbfklcbk4";
+    };
+    meta = {
+      description = "Use Hash::Util::FieldHash or ties, depending on availability";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Hash-Util-FieldHash-Compat";
     };
   };
 
@@ -11218,7 +11856,8 @@ let
     buildInputs = [ Test2Suite TestStrict ];
     meta = {
       description = "A health check for your code";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/GrantStreetGroup/p5-HealthCheck";
     };
   };
 
@@ -11240,9 +11879,9 @@ let
     };
     buildInputs = [ pkgs.unzip ];
     meta = {
-      homepage = "https://github.com/chorny/Hook-LexWrap";
       description = "Lexically scoped subroutine wrappers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Hook-LexWrap";
     };
   };
 
@@ -11263,8 +11902,9 @@ let
       sha256 = "01l7g2hr0kjbh1wk7cv03ijmpjlbm1vm661m99mkrz2ilyyllzd6";
     };
     meta = {
-      description = "Cleans up HTML code for web browsers, not humans";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "HTML::Clean - Cleans up HTML code for web browsers, not humans";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/poizon/HTML-Clean";
     };
   };
 
@@ -11301,7 +11941,7 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "Determine the encoding of HTML/XML/XHTML documents";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11315,9 +11955,9 @@ let
     buildInputs = [ ModuleBuildPluggablePPPort TestRequires ];
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      homepage = "https://github.com/tokuhirom/HTML-Escape";
       description = "Extremely fast HTML escaping";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/HTML-Escape";
     };
   };
 
@@ -11329,8 +11969,7 @@ let
       sha256 = "21776345ed701b2c04c7b09380af943f9984cc7f99624087aea45db5fc09c359";
     };
     propagatedBuildInputs = [ HTMLParser TermVT102Boundless ];
-    meta = {
-    };
+
   };
 
   HTMLHTML5Entities = buildPerlPackage {
@@ -11342,7 +11981,8 @@ let
     };
     meta = {
       description = "drop-in replacement for HTML::Entities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-html-html5-entities";
     };
   };
 
@@ -11356,7 +11996,8 @@ let
     propagatedBuildInputs = [ HTMLHTML5Entities IOHTML TryTiny URI XMLLibXML ];
     meta = {
       description = "parse HTML reliably";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://goddamn.co.uk/svn-web/perlmods/browse/HTML-HTML5-Parser/";
     };
   };
 
@@ -11370,7 +12011,8 @@ let
     propagatedBuildInputs = [ HTMLHTML5Entities XMLLibXML ];
     meta = {
       description = "output a DOM as HTML5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://bitbucket.org/tobyink/p5-html-html5-writer";
     };
   };
 
@@ -11384,8 +12026,8 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "check for HTML errors in a string or file";
-      license = with lib.licenses; [ artistic2 ];
-      homepage = "http://search.cpan.org/dist/html-lint";
+      license = licenses.artistic2;
+      homepage = "https://github.com/petdance/html-lint";
     };
   };
 
@@ -11400,7 +12042,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "plugin system for HTML::Lint";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karupanerura/p5-HTML-Lint-Pluggable";
     };
   };
@@ -11415,7 +12057,8 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "Class that represents an HTML form element";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/HTML-Form";
     };
   };
 
@@ -11430,7 +12073,8 @@ let
     propagatedBuildInputs = [ FontAFM HTMLTree ];
     meta = {
       description = "Base class for HTML formatters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nigelm/html-formatter";
     };
   };
 
@@ -11444,7 +12088,8 @@ let
     propagatedBuildInputs = [ HTMLFormatter ];
     meta = {
       description = "HTML to text conversion with links as footnotes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/struan/html-formattext-withlinks";
     };
   };
 
@@ -11458,7 +12103,8 @@ let
     propagatedBuildInputs = [ HTMLFormatTextWithLinks ];
     meta = {
       description = "Converts HTML to Text with tables intact";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/daleevans/HTML-FormatText-WithLinks-AndTables";
     };
   };
 
@@ -11473,7 +12119,8 @@ let
     propagatedBuildInputs = [ ConfigAny DataVisitor DateTimeFormatBuilder DateTimeFormatNatural EmailValid HTMLScrubber HTMLTokeParserSimple HashFlatten JSONMaybeXS MooseXAliases MooseXAttributeChained NumberFormat PathClass Readonly RegexpCommon TaskWeaken YAMLLibYAML ];
     meta = {
       description = "HTML Form Creation, Rendering and Validation Framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FormFu/HTML-FormFu";
     };
   };
 
@@ -11486,10 +12133,10 @@ let
      };
      propagatedBuildInputs = [ CryptCBC CryptDES HTMLFormFu ];
      meta = {
-       description = "Handle multi-page/stage forms with FormFu";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/FormFu/HTML-FormFu-MultiForm";
-     };
+      description = "Handle multi-page/stage forms with FormFu";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FormFu/HTML-FormFu-MultiForm";
+    };
   };
 
   HTMLFormHandler = buildPerlPackage {
@@ -11505,7 +12152,8 @@ let
     propagatedBuildInputs = [ CryptBlowfish CryptCBC DataClone DateTimeFormatStrptime EmailValid HTMLTree JSONMaybeXS MooseXGetopt MooseXTypesCommon MooseXTypesLoadableClass aliased ];
     meta = {
       description = "HTML forms using Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gshank/html-formhandler";
     };
   };
 
@@ -11520,7 +12168,8 @@ let
     propagatedBuildInputs = [ CGI CacheCache ClassContainer ExceptionClass LogAny ];
     meta = {
       description = "High-performance, dynamic web site authoring system";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/HTML-Mason";
     };
   };
 
@@ -11535,7 +12184,8 @@ let
     propagatedBuildInputs = [ CGIPSGI HTMLMason ];
     meta = {
       description = "PSGI handler for HTML::Mason";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ruz/HTML-Mason-PSGIHandler";
     };
   };
 
@@ -11549,7 +12199,8 @@ let
     propagatedBuildInputs = [ CSSPacker JavaScriptPacker ];
     meta = {
       description = "Another HTML code cleaner";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/html-packer-perl";
     };
   };
 
@@ -11563,7 +12214,8 @@ let
     propagatedBuildInputs = [ HTMLTagset HTTPMessage ];
     meta = {
       description = "HTML parser class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/html-parser";
     };
   };
 
@@ -11576,7 +12228,7 @@ let
     };
     meta = {
       description = "Generate An HTML Tag Cloud";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11589,8 +12241,8 @@ let
     };
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
-      description = "Extract structure of quoted HTML mail message";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "extract structure of quoted HTML mail message";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11603,8 +12255,8 @@ let
     };
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
-      description = "Concise attribute rewriting";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "concise attribute rewriting";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11616,6 +12268,11 @@ let
       sha256 = "1qbad8ayffpx7wj76ip05p6rh9p1lkir6qknpl76zy679ghlsp8s";
     };
     buildInputs = [ TestBase ];
+    meta = {
+      description = "CSS Selector to XPath compiler";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/HTML-Selector-XPath";
+    };
   };
 
   HTMLStickyQuery = buildPerlPackage {
@@ -11628,7 +12285,7 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "add sticky QUERY_STRING";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11642,7 +12299,7 @@ let
     propagatedBuildInputs = [ HTMLStickyQuery ];
     meta = {
       description = "add guid query for DoCoMo imode";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/yappo/p5-HTML-StickyQuery-DoCoMoGUID/tree";
     };
   };
@@ -11656,6 +12313,11 @@ let
     };
     propagatedBuildInputs = [ HTMLParser ];
     buildInputs = [ TestDifferences TestMemoryCycle ];
+    meta = {
+      description = "Perl extension for scrubbing/sanitizing HTML";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nigelm/html-scrubber";
+    };
   };
 
   HTMLStripScripts = buildPerlPackage {
@@ -11667,7 +12329,8 @@ let
     };
     meta = {
       description = "Strip scripting constructs out of HTML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/clintongormley/perl-html-stripscripts";
     };
   };
 
@@ -11681,7 +12344,7 @@ let
     propagatedBuildInputs = [ HTMLParser HTMLStripScripts ];
     meta = {
       description = "XSS filter using HTML::Parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11706,6 +12369,9 @@ let
       url = "mirror://cpan/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz";
       sha256 = "1qh8249wgr4v9vgghq77zh1d2zs176bir223a8gh3k9nksn7vcdd";
     };
+    meta = {
+      description = "data tables useful in parsing HTML";
+    };
   };
 
   HTMLTemplate = buildPerlPackage {
@@ -11717,6 +12383,10 @@ let
     };
     propagatedBuildInputs = [ CGI ];
     buildInputs = [ TestPod ];
+    meta = {
+      description = "Perl module to use HTML-like templating language";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   HTMLTidy = buildPerlPackage {
@@ -11732,6 +12402,11 @@ let
       sed -i "s#/usr/lib#${pkgs.tidyp}/lib#" Makefile.PL
     '';
     buildInputs = [ TestException ];
+    meta = {
+      description = "(X)HTML validation in a Perl object";
+      license = licenses.artistic2;
+      homepage = "http://github.com/petdance/html-tidy";
+    };
   };
 
   HTMLTiny = buildPerlPackage {
@@ -11743,7 +12418,7 @@ let
     };
     meta = {
       description = "Lightweight, dependency free HTML/XML generation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11755,6 +12430,11 @@ let
       sha256 = "17aa1v62sp8ycxcicwhankmj4brs6nnfclk9z7mf1rird1f164gd";
     };
     propagatedBuildInputs = [ HTMLParser SubOverride ];
+    meta = {
+      description = "Easy to use C<HTML::TokeParser> interface";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Ovid/html-tokeparser-simple";
+    };
   };
 
   HTMLTree = buildPerlModule {
@@ -11768,7 +12448,8 @@ let
     propagatedBuildInputs = [ HTMLParser ];
     meta = {
       description = "Work with HTML in a DOM-like tree structure";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kentfredric/HTML-Tree";
     };
   };
 
@@ -11781,8 +12462,8 @@ let
     };
     propagatedBuildInputs = [ HTMLTree XMLXPathEngine ];
     meta = {
-      description = "Add XPath support to HTML::TreeBuilder";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "add XPath support to HTML::TreeBuilder";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11796,6 +12477,10 @@ let
     doCheck = false;
     propagatedBuildInputs = [ ClassAccessorChained ClassDataAccessor DateCalc EmailValid HTMLScrubber HTMLTree ModulePluggableFast ];
     buildInputs = [ TestNoWarnings ];
+    meta = {
+      description = "HTML Widget And Validation Framework";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   HTTPAcceptLanguage = buildPerlModule {
@@ -11807,9 +12492,9 @@ let
     };
     buildInputs = [ ModuleBuildTiny ];
     meta = {
-      homepage = "https://github.com/yappo/p5-HTTP-AcceptLanguage";
       description = "Accept-Language header parser and find available language";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/yappo/p5-HTTP-AcceptLanguage";
     };
   };
 
@@ -11824,7 +12509,7 @@ let
     propagatedBuildInputs = [ HTTPMessage ];
     meta = {
       description = "HTTP Body Parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11838,7 +12523,7 @@ let
     buildInputs = [ HashMerge JSONPP PathTiny TestFailWarnings TestMost TestNoWarnings ];
     meta = {
       description = "Determine Web browser, version, and platform from an HTTP user agent string";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/oalders/http-browserdetect";
     };
   };
@@ -11854,7 +12539,7 @@ let
     buildInputs = [ TestDeep TestRequires URI ];
     meta = {
       description = "A minimalist HTTP user agent cookie jar";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/dagolden/HTTP-CookieJar";
     };
   };
@@ -11869,7 +12554,8 @@ let
     propagatedBuildInputs = [ HTTPMessage ];
     meta = {
       description = "HTTP cookie jars";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/HTTP-Cookies";
     };
   };
 
@@ -11882,8 +12568,9 @@ let
     };
     propagatedBuildInputs = [ HTTPMessage ];
     meta = {
-      description = "A simple http server class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a simple http server class";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/http-daemon";
     };
   };
 
@@ -11897,8 +12584,8 @@ let
     propagatedBuildInputs = [ HTTPDaemon ModulePatch ];
     meta = {
       description = "Avoid error when IO::Socket::INET6 is around";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/HTTP-Daemon-Patch-IPv6/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/sharyanto/perl-HTTP-Daemon-Patch-IPv6";
     };
   };
 
@@ -11911,7 +12598,7 @@ let
     };
     propagatedBuildInputs = [ HTTPDaemon IOSocketSSL ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11925,7 +12612,8 @@ let
     propagatedBuildInputs = [ HTTPDaemon IOHandleRecord IOSocketUNIXUtil ];
     meta = {
       description = "HTTP::Daemon over Unix sockets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-HTTP-Daemon-UNIX";
     };
   };
 
@@ -11937,8 +12625,9 @@ let
       sha256 = "0awjdbz7x0jd5pna55dwxhs3k6xp3sw6b2zg3p2yndxxvya64p9n";
     };
     meta = {
-      description = "Date conversion routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "HTTP::Date - date conversion routines";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/HTTP-Date";
     };
     propagatedBuildInputs = [ TimeDate ];
   };
@@ -11954,7 +12643,7 @@ let
     buildInputs = [ HTTPRequestAsCGI YAML ];
     meta = {
       description = "Web Server Gateway Interface and HTTP Server Engine Drivers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -11968,8 +12657,8 @@ let
     propagatedBuildInputs = [ HTTPEngine UNIVERSALrequire ];
     meta = {
       description = "Log to FirePHP from within HTTP::Engine";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/HTTP-Engine-FirePHP/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/hanekomu/http-engine-firephp/tree/master";
     };
   };
 
@@ -11983,10 +12672,10 @@ let
      propagatedBuildInputs = [ HTTPMultiPartParser HashMultiValue JSONMaybeXS StreamBuffered WWWFormUrlEncoded ];
      buildInputs = [ HTTPMessage ModuleBuildTiny ];
      meta = {
-       description = "PSGI compliant HTTP Entity Parser";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/kazeburo/HTTP-Entity-Parser";
-     };
+      description = "PSGI compliant HTTP Entity Parser";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/HTTP-Entity-Parser";
+    };
   };
 
   HTTPException = buildPerlPackage {
@@ -12000,7 +12689,8 @@ let
     buildInputs = [ TestException TestNoWarnings ];
     meta = {
       description = "throw HTTP-Errors as (Exception::Class-) Exceptions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tmueller/http_exception";
     };
   };
 
@@ -12012,7 +12702,7 @@ let
       sha256 = "0z4mgb8mc6l5nfsm3ihndjqgpk43q39x1kq9hryy6v8hxkwrscrk";
     };
     meta = {
-      description = "WebDAV client library.";
+      description = "WebDAV client library";
     };
     propagatedBuildInputs = [ XMLDOM ];
   };
@@ -12037,9 +12727,9 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     propagatedBuildInputs = [ HTTPDate ];
     meta = {
+      description = "faster implementation of HTTP::Headers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/HTTP-Headers-Fast";
-      description = "Faster implementation of HTTP::Headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12051,6 +12741,11 @@ let
       sha256 = "0z77nflj8zdcfg70kc93glq5kmd6qxn2nf7h70x4xhfg25wkvr1q";
     };
     buildInputs = [ CGI ];
+    meta = {
+      description = "Lightweight HTTP implementation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/HTTP-Lite";
+    };
   };
 
   HTTPMessage = buildPerlPackage {
@@ -12063,9 +12758,9 @@ let
     buildInputs = [ TryTiny ];
     propagatedBuildInputs = [ EncodeLocale HTTPDate IOHTML LWPMediaTypes URI ];
     meta = {
-      homepage = "https://github.com/libwww-perl/HTTP-Message";
       description = "HTTP style message (base class)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/HTTP-Message";
     };
   };
 
@@ -12078,9 +12773,10 @@ let
      };
      buildInputs = [ TestDeep ];
      meta = {
-       description = "HTTP MultiPart Parser";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "HTTP MultiPart Parser";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chansen/p5-http-multipartparser";
+    };
   };
 
   HTTPNegotiate = buildPerlPackage {
@@ -12092,8 +12788,9 @@ let
     };
     propagatedBuildInputs = [ HTTPMessage ];
     meta = {
-      description = "Choose a variant to serve";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "choose a variant to serve";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/http-negotiate";
     };
   };
 
@@ -12103,6 +12800,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/K/KA/KAZUHO/HTTP-Parser-XS-0.17.tar.gz";
       sha256 = "02d84xq1mm53c7jl33qyb7v5w4372vydp74z6qj0vc96wcrnhkkr";
+    };
+    meta = {
+      description = "a fast, primitive HTTP request parser";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazuho/p5-http-parser-xs";
     };
   };
 
@@ -12116,7 +12818,8 @@ let
     propagatedBuildInputs = [ LWP ];
     meta = {
       description = "A pure Perl HTTP proxy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/HTTP-Proxy";
     };
     # tests fail because they require network access
     doCheck = false;
@@ -12130,6 +12833,11 @@ let
       sha256 = "1smwmiarwcgq7vjdblnb6ldi2x1s5sk5p15p7xvm5byiqq3znnwl";
     };
     propagatedBuildInputs = [ ClassAccessor HTTPMessage ];
+    meta = {
+      description = "Set up a CGI environment from an HTTP::Request";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.catalyst.perl.org/repos/Catalyst/HTTP-Request-AsCGI";
+    };
   };
 
   HTTPResponseEncoding = buildPerlPackage {
@@ -12155,7 +12863,9 @@ let
     };
     doCheck = false;
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Lightweight HTTP server";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bestpractical/http-server-simple";
     };
     propagatedBuildInputs = [ CGI ];
   };
@@ -12168,9 +12878,7 @@ let
       sha256 = "2dddc8ab9dc8986980151e4ba836a6bbf091f45cf195be1768ebdb4a993ed59b";
     };
     propagatedBuildInputs = [ AuthenSimple HTTPServerSimple ];
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   HTTPServerSimpleMason = buildPerlPackage {
@@ -12183,7 +12891,7 @@ let
     propagatedBuildInputs = [ HTMLMason HTTPServerSimple HookLexWrap ];
     meta = {
       description = "A simple mason server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12196,10 +12904,10 @@ let
      };
      propagatedBuildInputs = [ HTTPServerSimple ];
      meta = {
-       description = "PSGI handler for HTTP::Server::Simple";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/HTTP-Server-Simple-PSGI";
-     };
+      description = "PSGI handler for HTTP::Server::Simple";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/HTTP-Server-Simple-PSGI";
+    };
   };
 
   HTTPThrowable = buildPerlPackage {
@@ -12213,7 +12921,7 @@ let
     buildInputs = [ TestDeep TestFatal ];
     meta = {
       description = "a set of strongly-typed, PSGI-friendly HTTP 1.1 exception libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/HTTP-Throwable";
     };
   };
@@ -12227,9 +12935,9 @@ let
     };
     propagatedBuildInputs = [ FileUtilTempdir Logger ];
     meta = {
-      homepage = "https://metacpan.org/release/HTTP-Tiny-Cache";
       description = "Cache HTTP::Tiny responses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-HTTP-Tiny-Cache";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -12243,9 +12951,9 @@ let
     };
     propagatedBuildInputs = [ FileWhich IPCRun3 ];
     meta = {
-      homepage = "https://github.com/miyagawa/HTTP-Tinyish";
       description = "HTTP::Tiny compatible HTTP client wrappers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/HTTP-Tinyish";
     };
   };
 
@@ -12257,9 +12965,7 @@ let
       sha256 = "0d7939a644a8e67017ec7239d3d9604f3986bb9a4ff80be68fe7299ebfd2270c";
     };
     propagatedBuildInputs = [ DateTimeFormatICal FreezeThaw IOString TextvFileasData ];
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   invoker = buildPerlPackage {
@@ -12273,7 +12979,7 @@ let
     buildInputs = [ ExtUtilsDepends ];
     meta = {
       description = "implicit invoker, sort of";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12286,7 +12992,8 @@ let
     };
     meta = {
       description = "C<lib> that makes relative path absolute to caller";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Mons/lib-abs";
     };
   };
 
@@ -12300,9 +13007,9 @@ let
     buildInputs = [ pkgs.freetype pkgs.fontconfig pkgs.libjpeg pkgs.libpng ];
     makeMakerFlags = "--incpath ${pkgs.libjpeg.dev}/include --libpath ${pkgs.libjpeg.out}/lib --incpath ${pkgs.libpng.dev}/include --libpath ${pkgs.libpng.out}/lib";
     meta = {
-      homepage = "http://imager.perl.org/";
       description = "Perl extension for Generating 24 bit Images";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://imager.perl.org/";
     };
   };
 
@@ -12316,7 +13023,7 @@ let
     propagatedBuildInputs = [ Imager ];
     meta = {
       description = "GIF Image file support for Imager";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://imager.perl.org/";
     };
   };
@@ -12331,7 +13038,7 @@ let
     propagatedBuildInputs = [ Imager ];
     meta = {
       description = "JPEG Image file support for Imager";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://imager.perl.org/";
     };
   };
@@ -12346,7 +13053,7 @@ let
     propagatedBuildInputs = [ Imager ];
     meta = {
       description = "PNG Image file support for Imager";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://imager.perl.org/";
     };
   };
@@ -12361,7 +13068,7 @@ let
 
     meta = {
       description = "Generate QR Code with Imager using libqrencode";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
     };
     buildInputs = [ Imager ];
@@ -12377,7 +13084,7 @@ let
     propagatedBuildInputs = [ IOStringy ];
     meta = {
       description = "Extract meta information from image files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12392,7 +13099,6 @@ let
     propagatedBuildInputs = [ ExceptionClass Readonly ];
     meta = {
       description = "Perl extension for the SANE (Scanner Access Now Easy) Project";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12408,7 +13114,8 @@ let
     makeMakerFlags = "--with-jpeg-includes=${pkgs.libjpeg.dev}/include --with-jpeg-libs=${pkgs.libjpeg.out}/lib --with-png-includes=${pkgs.libpng.dev}/include --with-png-libs=${pkgs.libpng.out}/lib";
     meta = {
       description = "Fast, high-quality fixed-point image resizing";
-      license = lib.licenses.gpl2Plus;
+      license = licenses.gpl2Plus;
+      homepage = "https://github.com/andygrundman/Image-Scale";
     };
   };
 
@@ -12421,8 +13128,9 @@ let
     };
     buildInputs = [ ModuleBuild ];
     meta = {
-      description = "Read the dimensions of an image in several popular formats";
-      license = with lib.licenses; [ artistic1 lgpl21Plus ];
+      description = "A library to extract height/width from images";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rjray/image-size";
     };
   };
 
@@ -12445,7 +13153,8 @@ let
     };
     meta = {
       description = "Alternative but compatible interface to modules that export symbols";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/exodist/Importer/";
     };
   };
 
@@ -12460,7 +13169,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Classes for indent handling";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Indent";
     };
   };
@@ -12475,7 +13184,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Write and read InfluxDB LineProtocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/InfluxDB-LineProtocol";
     };
   };
@@ -12490,7 +13199,8 @@ let
     propagatedBuildInputs = [ ModuleRuntime ];
     meta = {
       description = "Import packages into other packages";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Import-Into.git";
     };
   };
 
@@ -12504,7 +13214,8 @@ let
     doCheck = false;
     meta = {
       description = "Perl core IO modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl/perl5/tree/blead/dist/IO";
     };
   };
 
@@ -12523,7 +13234,6 @@ let
     '';
     meta = {
       description = "Asynchronous/Advanced Input/Output";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12535,9 +13245,9 @@ let
       sha256 = "0nsd9knlbd7if2v6zwj4q978axq0w5hk8ymp61z14a821hjivqjl";
     };
     meta = {
+      description = "IO::All to Larry Wall!";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/io-all-pm";
-      description = "IO::All of it to Graham and Damian!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12553,7 +13263,7 @@ let
     buildInputs = [ TestFatal TestIdentity TestMetricsAny TestRefcount ];
     meta = {
       description = "Asynchronous event-driven programming";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12567,8 +13277,8 @@ let
     buildInputs = [ TestIdentity ];
     propagatedBuildInputs = [ IOAsync IOSocketSSL ];
     meta = {
-      description = "Use SSL/TLS with IO::Async";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "use SSL/TLS with L<IO::Async>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -12580,9 +13290,7 @@ let
       url = "mirror://cpan/authors/id/R/RE/REYNOLDS/IO-Capture-0.05.tar.gz";
       sha256 = "c2c15a254ca74fb8c57d25d7b6cbcaff77a3b4fb5695423f1f80bb423abffea9";
     };
-    meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   IOCaptureOutput = buildPerlPackage {
@@ -12593,9 +13301,9 @@ let
       sha256 = "ae99009fca1273800f169ecb82f4ed1cc6c76795f156bee5c0093005d572f487";
     };
     meta = {
+      description = "(DEPRECATED) capture STDOUT and STDERR from Perl code, subprocesses or XS";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/dagolden/IO-CaptureOutput";
-      description = "Capture STDOUT and STDERR from Perl code, subprocesses or XS";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -12609,7 +13317,8 @@ let
     propagatedBuildInputs = [ CompressRawBzip2 CompressRawZlib ];
     meta = {
       description = "IO Interface to compressed data files/buffers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pmqs/IO-Compress";
     };
     # Same as CompressRawZlib
     doCheck = false && !stdenv.isDarwin;
@@ -12623,6 +13332,10 @@ let
       sha256 = "14kz7z4xw179aya3116wxac29l4y2wmwrba087lya4v2gxdgiz4g";
     };
     propagatedBuildInputs = [ PerlIOviadynamic ];
+    meta = {
+      description = "Calculate digests while reading or writing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   IOHTML = buildPerlPackage {
@@ -12634,7 +13347,8 @@ let
     };
     meta = {
       description = "Open an HTML file with automatic charset detection";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/madsen/io-html";
     };
   };
 
@@ -12661,7 +13375,10 @@ let
      };
      propagatedBuildInputs = [ IOString SubExporter asa ];
      meta = {
-     };
+      description = "Functions for working with L<IO::Handle> like objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/IO-Handle-Util";
+    };
     buildInputs = [ ModuleBuildTiny TestSimple13 ];
   };
 
@@ -12674,7 +13391,8 @@ let
     };
     meta = {
       description = "Utilities for interactive I/O";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/io-interactive";
     };
   };
 
@@ -12694,6 +13412,9 @@ let
       url = "mirror://cpan/authors/id/B/BB/BBB/IO-Multiplex-1.16.tar.gz";
       sha256 = "74d22c44b5ad2e7190e2786e8a17d74bbf4cef89b4d1157ba33598b5a2720dad";
     };
+    meta = {
+      description = "Manage IO on many file handles";
+    };
   };
 
   IOPager = buildPerlPackage {
@@ -12704,6 +13425,9 @@ let
       sha256 = "15dimh3i61y6kybhbap91kwh9837xfww072rh95h7j40sb1did5w";
     };
     propagatedBuildInputs = [ pkgs.more FileWhich TermReadKey ]; # `more` used in tests
+    meta = {
+      description = "Select a pager (possibly perl-based) & pipe it text if a TTY";
+    };
   };
 
   IOPrompt = buildPerlModule {
@@ -12730,7 +13454,7 @@ let
     propagatedBuildInputs = [ ContextualReturn ];
     meta = {
       description = "Prompt for input, read it, clean it, return it";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12756,6 +13480,11 @@ let
     };
     propagatedBuildInputs = [ Socket6 ];
     doCheck = false;
+    meta = {
+      description = "Object interface for AF_INET/AF_INET6 domain sockets";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://bitbucket.org/shlomif/perl-io-socket-inet6";
+    };
   };
 
   IOSocketSSL = buildPerlPackage {
@@ -12772,9 +13501,9 @@ let
         --replace "\$openssldir/cert.pem" "/etc/ssl/certs/ca-certificates.crt"
     '';
     meta = {
-      homepage = "https://github.com/noxxi/p5-io-socket-ssl";
       description = "Nearly transparent SSL encapsulation for IO::Socket::INET";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/noxxi/p5-io-socket-ssl";
     };
     doCheck = false; # tries to connect to facebook.com etc.
   };
@@ -12790,7 +13519,7 @@ let
     propagatedBuildInputs = [ PerlIOviaTimeout ];
     meta = {
       description = "IO::Socket with read/write timeout";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12803,7 +13532,8 @@ let
     };
     meta = {
       description = "Unix domain socket utilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-SHARYANTO-IO-Socket-Utils";
     };
   };
 
@@ -12818,7 +13548,7 @@ let
     buildInputs = [ ModuleBuildTiny TestDifferences TestException ];
     meta = {
       description = "ease non-blocking I/O streams based on EV";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
       homepage = "https://github.com/powerman/perl-IO-Stream";
     };
   };
@@ -12839,6 +13569,11 @@ let
       url = "mirror://cpan/authors/id/C/CA/CAPOEIRAB/IO-Stringy-2.113.tar.gz";
       sha256 = "0kpycb56l6ilvmdx9swx9wpj1x3vfnqdflfjd6dn6spnz750y8ji";
     };
+    meta = {
+      description = "I/O on in-core objects like strings and arrays";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/genio/IO-Stringy";
+    };
   };
 
   IOTee = buildPerlPackage {
@@ -12847,6 +13582,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/N/NE/NEILB/IO-Tee-0.66.tar.gz";
       sha256 = "1q2jhp02rywrbyhvl2lv6qp70dcv5cfalrx3cc4c7y8nclhfg71d";
+    };
+    meta = {
+      description = "Multiplex output to multiple output handles";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/IO-Tee";
     };
   };
 
@@ -12858,9 +13598,9 @@ let
       sha256 = "1bv9ampayf4bvyxg4ivy18l8k79jvq55x6gl68b2fg8b62w4sba0";
     };
     meta = {
-      homepage = "https://github.com/rjbs/io-tiecombine";
-      description = "Produce tied (and other) separate but combined variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "produce tied (and other) separate but combined variables";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/IO-TieCombine";
     };
   };
 
@@ -12872,6 +13612,11 @@ let
       sha256 = "1pcl281fd84hqc5lr48vk66xs223yzkz40zrbmlxr2kkf300j6lg";
     };
     doCheck = !stdenv.isDarwin;  # openpty fails in the sandbox
+    meta = {
+      description = "Pseudo ttys and constants";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/toddr/IO-Tty";
+    };
   };
 
   IPCountry = buildPerlPackage {
@@ -12883,8 +13628,7 @@ let
     };
     propagatedBuildInputs = [ GeographyCountries ];
     meta = {
-      description = "Fast lookup of country codes from IP addresses";
-      license = lib.licenses.mit;
+      description = "fast lookup of country codes from IP addresses";
     };
   };
 
@@ -12897,7 +13641,7 @@ let
     };
     meta = {
       description = "2-letter, 3-letter, and numerical codes for countries";
-      license = lib.licenses.mit;
+      license = licenses.mit;
     };
   };
 
@@ -12912,7 +13656,8 @@ let
     buildInputs = [ CryptSSLeay ];
     meta = {
       description = "PSGI server with built-in HTTPS support, Unix sockets, preforking";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Gepok";
     };
   };
 
@@ -12926,8 +13671,9 @@ let
     };
     doCheck = false; /* attempts a network connection to localhost */
     meta = {
-      description = "System() and background procs w/ piping, redirs, ptys (Unix, Win32)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "system() and background procs w/ piping, redirs, ptys (Unix, Win32)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/toddr/IPC-Run";
     };
     propagatedBuildInputs = [ IOTty ];
     buildInputs = [ Readonly ];
@@ -12940,6 +13686,11 @@ let
       url = "mirror://cpan/authors/id/R/RJ/RJBS/IPC-Run3-0.048.tar.gz";
       sha256 = "0r9m8q78bg7yycpixd7738jm40yz71p2q7inm766kzsw3g6c709x";
     };
+    meta = {
+      description = "run a subprocess with input/ouput redirection";
+      license = licenses.free;
+      homepage = "http://github.com/rjbs/IPC-Run3/";
+    };
   };
 
   IPCShareLite = buildPerlPackage {
@@ -12948,6 +13699,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/A/AN/ANDYA/IPC-ShareLite-0.17.tar.gz";
       sha256 = "1gz7dbwxrzbzdsjv11kb49jlf9q6lci2va6is0hnavd93nwhdm0l";
+    };
+    meta = {
+      description = "Lightweight interface to shared memory";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12960,7 +13715,8 @@ let
     };
     meta = {
       description = "Run commands simply, with detailed diagnostics";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://thenceforward.net/perl/modules/IPC-System-Simple/";
     };
   };
 
@@ -12973,7 +13729,7 @@ let
     };
     meta = {
       description = "System V IPC constants and system calls";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -12988,7 +13744,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Perl's system(), readpipe()/qx, IPC::Run's run(), start() (with more options)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-IPC-System-Options";
     };
   };
 
@@ -13000,9 +13757,8 @@ let
       sha256 = "c7d6311eb6c79e983833c9e6b4e8d426d07a9874d20f4bc641b313b99c9bc8a0";
     };
     meta = {
-      homepage = "https://metacpan.org/release/IRC-Utils";
       description = "Common utilities for IRC-related tasks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -13018,8 +13774,8 @@ let
     buildInputs = [ TryTiny URI ];
     meta = {
       description = "Internationalized Resource Identifiers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/IRI/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/kasei/perl-iri/";
     };
   };
 
@@ -13046,24 +13802,10 @@ let
       shortenPerlShebang $out/bin/exiftool
     '';
 
-    meta = with lib; {
-      description = "A tool to read, write and edit EXIF meta information";
+    meta = {
+      description = "Read and write meta information";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://exiftool.org/";
-
-      longDescription = ''
-        ExifTool is a platform-independent Perl library plus a command-line
-        application for reading, writing and editing meta information in a wide
-        variety of files. ExifTool supports many different metadata formats
-        including EXIF, GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop
-        IRB, FlashPix, AFCP and ID3, as well as the maker notes of many digital
-        cameras by Canon, Casio, DJI, FLIR, FujiFilm, GE, GoPro, HP,
-        JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Motorola, Nikon,
-        Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One,
-        Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
-      '';
-
-      license = with licenses; [ gpl1Plus /* or */ artistic2 ];
-
       maintainers = [ maintainers.kiloreux ];
     };
   };
@@ -13077,15 +13819,9 @@ let
     };
     buildInputs = [ TestWarn ];
     meta = {
-      homepage = "https://github.com/ingydotnet/inline-pm";
       description = "Write Perl Subroutines in Other Programming Languages";
-      longDescription = ''
-        The Inline module allows you to put source code from other
-        programming languages directly "inline" in a Perl script or
-        module. The code is automatically compiled as needed, and then loaded
-        for immediate access from Perl.
-      '';
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/inline-pm";
     };
   };
 
@@ -13104,9 +13840,9 @@ let
       rm -f t/28autowrap.t
     '';
     meta = {
-      homepage = "https://github.com/ingydotnet/inline-c-pm";
       description = "C Language Support for Inline";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/inline-c-pm";
     };
   };
 
@@ -13128,17 +13864,9 @@ let
     doCheck = false;
 
     meta = {
-      description = "Inline::Java -- Write Perl classes in Java";
-
-      longDescription = ''
-        The Inline::Java module allows you to put Java source code directly
-        "inline" in a Perl script or module.  A Java compiler is launched and
-        the Java code is compiled.  Then Perl asks the Java classes what
-        public methods have been defined.  These classes and methods are
-        available to the Perl program as if they had been written in Perl.
-      '';
-
-      license = lib.licenses.artistic2;
+      description = "Write Perl classes in Java";
+      license = licenses.artistic2;
+      homepage = "https://github.com/ingydotnet/Inline-Java";
     };
   };
 
@@ -13162,7 +13890,8 @@ let
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC";
     meta = {
       description = "XS based JavaScript minifier";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bleargh45/JavaScript-Minifier-XS";
     };
   };
 
@@ -13176,7 +13905,8 @@ let
     propagatedBuildInputs = [ RegexpRegGrp ];
     meta = {
       description = "Perl version of Dean Edwards' Packer.js";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/javascript-packer-perl";
     };
   };
 
@@ -13188,10 +13918,10 @@ let
        sha256 = "1p5365lvnax8kbcfrj169lx05af3i3qi5wg5x9mizqgd10vxmjws";
      };
      meta = {
-       description = "Avoid XSS with JavaScript value interpolation";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/kazeburo/JavaScript-Value-Escape";
-     };
+      description = "Avoid XSS with JavaScript value interpolation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/JavaScript-Value-Escape";
+    };
   };
 
   JSON = buildPerlPackage {
@@ -13208,7 +13938,8 @@ let
     buildInputs = [ TestPod ];
     meta = {
       description = "JSON (JavaScript Object Notation) encoder/decoder";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/makamaka/JSON";
     };
   };
 
@@ -13220,8 +13951,9 @@ let
       sha256 = "1hspg6khjb38syn59cysnapc1q77qgavfym3fqr6l2kiydf7ajdf";
     };
     meta = {
-      description = "Wrapper Class for the various JSON classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) Wrapper Class for the various JSON classes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/JSON-Any";
     };
     buildInputs = [ TestFatal TestRequires TestWarnings TestWithoutModule ];
   };
@@ -13236,7 +13968,8 @@ let
     propagatedBuildInputs = [ ColorANSIUtil ColorThemeBaseStatic GraphicsColorNamesLiteWWW ModuleLoadUtil RoleTiny ];
     meta = {
       description = "Encode to colored JSON";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-JSON-Color";
     };
   };
 
@@ -13249,7 +13982,8 @@ let
     };
     meta = {
       description = "Use L<Cpanel::JSON::XS> with a fallback to L<JSON::XS> and L<JSON::PP>";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/JSON-MaybeXS";
     };
     buildInputs = [ TestNeeds ];
   };
@@ -13263,7 +13997,8 @@ let
     };
     meta = {
       description = "JSON::XS compatible pure-Perl module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/makamaka/JSON-PP";
     };
   };
 
@@ -13276,7 +14011,8 @@ let
     };
     meta = {
       description = "Helper module in using JSON::PP in Perl 5.6";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/makamaka/JSON";
     };
   };
 
@@ -13288,8 +14024,9 @@ let
       sha256 = "01i87xnbbakigsbssb52c44r01d620fn7bwn5sxcp6zg1gkmb3nf";
     };
     meta = {
-      description = "Read JSON into a Perl variable";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Parse JSON";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/benkasminbullock/JSON-Parse";
     };
   };
 
@@ -13304,7 +14041,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     meta = {
       description = "Yet another JSON-RPC 2.0 Implementation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nqounet/p5-json-rpc-spec";
     };
   };
@@ -13319,9 +14056,9 @@ let
     buildInputs = [ TestDeep ];
     propagatedBuildInputs = [ DataValidateDomain DataValidateIP Mojolicious NetIDNEncode YAMLLibYAML YAMLPP ];
     meta = {
-      homepage = "https://github.com/mojolicious/json-validator";
       description = "Validate data against a JSON schema";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://mojolicious.org";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -13336,9 +14073,9 @@ let
     buildInputs = [ TestMockGuard TestRequires ];
     propagatedBuildInputs = [ JSON ModuleRuntime ];
     meta = {
-      homepage = "https://github.com/xaicron/p5-JSON-WebToken";
       description = "JSON Web Token (JWT) implementation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/xaicron/p5-JSON-WebToken";
     };
   };
 
@@ -13362,7 +14099,7 @@ let
     };
     propagatedBuildInputs = [ JSONXS ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -13376,7 +14113,7 @@ let
     propagatedBuildInputs = [ ClassAccessor ClassDataInheritable FileSlurp JSON JavaScriptMinifier ];
     meta = {
       description = "A JavaScript Preprocessor designed for large scale javascript development";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -13389,7 +14126,7 @@ let
     };
     meta = {
       description = "Perl extension for minifying JavaScript code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -13399,6 +14136,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/M/MA/MARKOV/Object-Realize-Later-0.21.tar.gz";
       sha256 = "1nfqssld7pcdw9sj4mkfnh75w51wl14i1h7npj9fld4fri09cywg";
+    };
+    meta = {
+      description = "Delayed realization of objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/markov2/perl5-Object-Realize-Later";
     };
   };
 
@@ -13412,8 +14154,8 @@ let
     propagatedBuildInputs = [ DevelLexAlias ];
     meta = {
       description = "Persistent lexical variable values for arbitrary calls";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Lexical-Persistence/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rcaputo/lexical-persistence";
     };
   };
 
@@ -13426,7 +14168,7 @@ let
     };
     meta = {
       description = "prevent leakage of lexical hints";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -13451,8 +14193,9 @@ let
       done
     '';
     meta = {
-      description = "Transforms TeX and LaTeX into XML/HTML/MathML";
-      license = lib.licenses.free;
+      description = "transforms TeX and LaTeX into XML/HTML/MathML";
+      license = licenses.free;
+      homepage = "https://github.com/brucemiller/LaTeXML";
     };
   };
 
@@ -13467,7 +14210,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Simple minilanguage for use in expression";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Language-Expr";
     };
   };
 
@@ -13525,7 +14269,7 @@ let
     '';
     doCheck = false; # test would need to start apache httpd
     meta = {
-      license = lib.licenses.asl20;
+      license = licenses.free;
     };
   };
 
@@ -13539,7 +14283,8 @@ let
     buildInputs = [ ModulePathMore TestNeeds ];
     meta = {
       description = "Allow/disallow loading modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-lib-filter";
     };
   };
 
@@ -13549,6 +14294,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/G/GU/GUIDO/libintl-perl-1.32.tar.gz";
       sha256 = "19gbbh9w3rl805mv6mg1q80fsrg610h098qhf7ycnkjnyac84440";
+    };
+    meta = {
+      description = "High-Level Interface to Uniforum Message Translation";
+      homepage = "http://www.guido-flohr.net/en/projects/";
     };
   };
 
@@ -13561,7 +14310,8 @@ let
     };
     meta = {
       description = "Collection of network protocol modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/steve-m-hay/perl-libnet";
     };
   };
 
@@ -13573,10 +14323,10 @@ let
        sha256 = "1mvcdl87d3kyrdx4y6x79k3n5qdd1x5m1hp8lwjxvgfqbw0cgq6z";
      };
      meta = {
-       description = "Add paths relative to the current file to @INC";
-       license = with lib.licenses; [ artistic2 ];
-       homepage = "https://github.com/Grinnz/lib-relative";
-     };
+      description = "Add paths relative to the current file to @INC";
+      license = licenses.artistic2;
+      homepage = "https://github.com/Grinnz/lib-relative";
+    };
   };
 
   libxml_perl = buildPerlPackage {
@@ -13598,9 +14348,9 @@ let
     };
     propagatedBuildInputs = [ LinguaENWords2Nums ];
     meta = {
-      homepage = "https://github.com/neilbowers/Lingua-EN-FindNumber";
       description = "Locate (written) numbers in English text";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Lingua-EN-FindNumber";
     };
   };
 
@@ -13612,8 +14362,7 @@ let
       sha256 = "15ij4rk1nznnd9hyg2hzy1ydpi9h1cdii8hdlq9j6mrf931rxhh5";
     };
     meta = {
-      description = "Convert singular to plural. Select 'a' or 'an'";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Convert singular to plural. Select \"a\" or \"an\"";
     };
   };
 
@@ -13626,9 +14375,9 @@ let
     };
     propagatedBuildInputs = [ LinguaENInflect ];
     meta = {
-      homepage = "https://github.com/neilbowers/Lingua-EN-Inflect-Number";
       description = "Force number of words to singular or plural";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Lingua-EN-Inflect-Number";
     };
   };
 
@@ -13643,7 +14392,8 @@ let
     propagatedBuildInputs = [ LinguaENInflectNumber LinguaENNumberIsOrdinal LinguaENTagger ];
     meta = {
       description = "Inflect short English Phrases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/lingua-en-inflect-phrase";
     };
   };
 
@@ -13657,8 +14407,9 @@ let
     buildInputs = [ TestFatal TryTiny ];
     propagatedBuildInputs = [ LinguaENFindNumber ];
     meta = {
-      description = "Detect if English number is ordinal or cardinal";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "detect if English number is ordinal or cardinal";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/lingua-en-number-isordinal";
     };
   };
 
@@ -13671,7 +14422,7 @@ let
     };
     meta = {
       description = "go from cardinal number (3) to ordinal (\"3rd\")";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/neilbowers/Lingua-EN-Numbers-Ordinate";
     };
   };
@@ -13685,7 +14436,7 @@ let
     };
     meta = {
       description = "change an English plural to a singular";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://prepan.org/module/3Yz7PYrBN8";
     };
   };
@@ -13700,7 +14451,7 @@ let
     propagatedBuildInputs = [ HTMLParser LinguaStem MemoizeExpireLRU ];
     meta = {
       description = "Part-of-speech tagger for English natural language processing";
-      license = lib.licenses.gpl3;
+      license = licenses.gpl3Plus;
     };
   };
 
@@ -13712,7 +14463,7 @@ let
       sha256 = "686556797cd2a4eaa066f19bbf03ab25c06278292c9ead2f187dfd9031ea1d85";
     };
     meta = {
-      description = "Convert English text to numbers";
+      description = "convert English text to numbers";
     };
   };
 
@@ -13724,10 +14475,10 @@ let
        sha256 = "17c48sfbgwd2ivlgf59sr6jdhwa3aim8750f8pyzz7xpi8gz0var";
      };
      meta = {
-       description = "Portuguese language stemming";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/Lingua-PT-Stemmer";
-     };
+      description = "Portuguese language stemming";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Lingua-PT-Stemmer";
+    };
   };
 
   LinguaStem = buildPerlModule {
@@ -13739,6 +14490,11 @@ let
     };
     doCheck = false;
     propagatedBuildInputs = [ LinguaPTStemmer LinguaStemFr LinguaStemIt LinguaStemRu LinguaStemSnowballDa SnowballNorwegian SnowballSwedish TextGerman ];
+    meta = {
+      description = "Stemming of words";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/JerilynFranz/perl-Lingua-Stem";
+    };
   };
 
   LinguaStemFr = buildPerlPackage {
@@ -13748,8 +14504,7 @@ let
        url = "mirror://cpan/authors/id/S/SD/SDP/Lingua-Stem-Fr-0.02.tar.gz";
        sha256 = "0vyrspwzaqjxm5mqshf4wvwa3938mkajd1918d9ii2l9m2rn8kwx";
      };
-     meta = {
-     };
+
   };
 
   LinguaStemIt = buildPerlPackage {
@@ -13759,8 +14514,7 @@ let
        url = "mirror://cpan/authors/id/A/AC/ACALPINI/Lingua-Stem-It-0.02.tar.gz";
        sha256 = "1207r183s5hlh4mfwa6p46vzm0dhvrs2dnss5s41a0gyfkxp7riq";
      };
-     meta = {
-     };
+
   };
 
   LinguaStemRu = buildPerlPackage {
@@ -13771,10 +14525,10 @@ let
        sha256 = "0a2jmdz7jn32qj5hyiw5kbv8fvlpmws8i00a6xcbkzb48yvwww0j";
      };
      meta = {
-       description = "Porter's stemming algorithm for Russian (KOI8-R only)";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/Lingua-Stem-Ru";
-     };
+      description = "Porter's stemming algorithm for Russian (KOI8-R only)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Lingua-Stem-Ru";
+    };
   };
 
   LinguaStemSnowballDa = buildPerlPackage {
@@ -13784,8 +14538,7 @@ let
        url = "mirror://cpan/authors/id/C/CI/CINE/Lingua-Stem-Snowball-Da-1.01.tar.gz";
        sha256 = "0mm0m7glm1s6i9f6a78jslw6wh573208arxhq93yriqmw17bwf9f";
      };
-     meta = {
-     };
+
   };
 
   LinguaTranslit = buildPerlPackage {
@@ -13796,6 +14549,10 @@ let
       sha256 = "113f91d8fc2c630437153a49fb7a52b023af8f6278ed96c070b1f60824b8eae1";
     };
     doCheck = false;
+    meta = {
+      description = "transliterates text between writing systems";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LinkEmbedder = buildPerlPackage {
@@ -13808,9 +14565,9 @@ let
 
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
-      homepage = "https://github.com/jhthorsen/linkembedder";
       description = "Embed / expand oEmbed resources and other URL / links";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/linkembedder";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -13825,9 +14582,8 @@ let
     buildInputs = [ pkgs.acl ];
     NIX_CFLAGS_LINK = "-L${pkgs.acl.out}/lib -lacl";
     meta = {
-      maintainers = teams.deshaw.members;
       description = "Perl extension for reading and setting Access Control Lists for files by libacl linux library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -13839,9 +14595,9 @@ let
       sha256 = "60377a74fba90fa465200ee1c7430dbdde69d454d85f9ee101c039803a07e5f5";
     };
     meta = {
-      homepage = "https://github.com/trizen/Linux-DesktopFiles";
       description = "Fast parsing of the Linux desktop files";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/trizen/Linux-DesktopFiles";
     };
   };
 
@@ -13857,8 +14613,9 @@ let
     doCheck = false;
     meta = {
       description = "Perl extension to detect on which Linux distribution we are running";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.linux;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chorny/Linux-Distribution";
+      platforms = platforms.linux;
     };
   };
 
@@ -13874,8 +14631,9 @@ let
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
       description = "Linux specific special filehandles";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.linux;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/linux-fd";
+      platforms = platforms.linux;
     };
   };
 
@@ -13890,8 +14648,7 @@ let
 
     meta = {
       description = "Scalable directory/file change notification for Perl on Linux";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.linux;
+      platforms = platforms.linux;
     };
   };
 
@@ -13904,8 +14661,9 @@ let
     };
     propagatedBuildInputs = [ ListSomeUtils ListUtilsBy ];
     meta = {
-      description = "Combines List::Util and List::MoreUtils in one bite-sized package";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Combines List::Util, List::SomeUtils and List::UtilsBy in one bite-sized package";
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/List-AllUtils";
     };
   };
 
@@ -13915,6 +14673,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DA/DAVIDO/List-BinarySearch-0.25.tar.gz";
       sha256 = "0ap8y9rsjxg75887klgij90mf459f8dwy0dbx1g06h30pmqk04f8";
+    };
+    meta = {
+      description = "Binary Search within a sorted array";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/daoswald/List-BinarySearch";
     };
   };
 
@@ -13927,9 +14690,9 @@ let
     };
     buildInputs = [ CaptureTiny ];
     meta = {
-      homepage = "http://thenceforward.net/perl/modules/List-Compare/";
       description = "Compare elements of two or more lists";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://thenceforward.net/perl/modules/List-Compare/";
     };
   };
 
@@ -13943,7 +14706,8 @@ let
     propagatedBuildInputs = [ ExporterTiny ListMoreUtilsXS ];
     meta = {
       description = "Provide the stuff missing in List::Util";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.asl20;
+      homepage = "https://github.com/perl5-utils/List-MoreUtils";
     };
     buildInputs = [ TestLeakTrace ];
   };
@@ -13959,9 +14723,10 @@ let
        export LD=$CC
      '';
      meta = {
-       description = "Provide the stuff missing in List::Util in XS";
-       license = with lib.licenses; [ asl20 ];
-     };
+      description = "Provide the stuff missing in List::Util in XS";
+      license = licenses.asl20;
+      homepage = "https://github.com/perl5-utils/List-MoreUtils-XS";
+    };
   };
 
   ListSomeUtils = buildPerlPackage {
@@ -13975,7 +14740,8 @@ let
     propagatedBuildInputs = [ ModuleImplementation ];
     meta = {
       description = "Provide the stuff missing in List::Util";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/List-SomeUtils";
     };
   };
 
@@ -13985,6 +14751,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/P/PE/PEVANS/List-UtilsBy-0.11.tar.gz";
       sha256 = "0nkpylkqccxanr8wc7j9wg6jdrizybjjd6p8q3jbh7f29cxz9pgs";
+    };
+    meta = {
+      description = "higher-order list utility functions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -13996,8 +14766,9 @@ let
       sha256 = "1rspbig3zb7l7s1mlsk9n0rrisy8qrzwn0ix6a7sd372arnwvylr";
     };
     meta = {
-      description = "A distribution of modules to handle locale codes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a distribution of modules to handle locale codes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/SBECK-github/Locale-Codes";
     };
     buildInputs = [ TestInter ];
   };
@@ -14011,6 +14782,11 @@ let
       sha256 = "05cwqjxxary11di03gg3fm6j9lbvg1dr2wpr311c1rwp8salg7ch";
     };
     LANG="C";
+    meta = {
+      description = "Perl bindings for POSIX i18n gettext functions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/vandry/Perl-Locale-gettext";
+    };
   };
 
   LocaleMOFile = buildPerlPackage {
@@ -14023,9 +14799,9 @@ let
      propagatedBuildInputs = [ ConstFast MooXStrictConstructor MooXTypesMooseLike ParamsValidate namespaceautoclean ];
      buildInputs = [ TestDifferences TestException TestHexDifferences TestNoWarnings ];
      meta = {
-       description = "Locale::MO::File - Write or read gettext MO files.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::MO::File - Write or read gettext MO files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LocaleMaketextFuzzy = buildPerlPackage {
@@ -14037,7 +14813,7 @@ let
     };
     meta = {
       description = "Maketext from already interpolated strings";
-      license = "unrestricted";
+      license = licenses.wtfpl;
     };
   };
 
@@ -14050,7 +14826,8 @@ let
     };
     meta = {
       description = "Use other catalog formats in Maketext";
-      license = "mit";
+      license = licenses.mit;
+      homepage = "https://github.com/clintongormley/locale-maketext-lexicon";
     };
   };
 
@@ -14063,7 +14840,7 @@ let
     };
     meta = {
       description = "Compile .po files to .mo files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -14090,9 +14867,9 @@ let
      propagatedBuildInputs = [ ClassLoad Clone JSON LocaleMOFile LocalePO LocaleTextDomainOOUtil LocaleUtilsPlaceholderBabelFish LocaleUtilsPlaceholderMaketext LocaleUtilsPlaceholderNamed MooXSingleton PathTiny TieSub ];
      buildInputs = [ TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Locale::TextDomain::OO - Perl OO Interface to Uniforum Message Translation";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::TextDomain::OO - Perl OO Interface to Uniforum Message Translation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LocaleTextDomainOOUtil = buildPerlPackage {
@@ -14105,9 +14882,9 @@ let
      propagatedBuildInputs = [ namespaceautoclean ];
      buildInputs = [ TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Locale::TextDomain::OO::Util - Lexicon utils";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::TextDomain::OO::Util - Lexicon utils";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LocaleUtilsPlaceholderBabelFish = buildPerlPackage {
@@ -14120,9 +14897,9 @@ let
      propagatedBuildInputs = [ HTMLParser MooXStrictConstructor MooXTypesMooseLike namespaceautoclean ];
      buildInputs = [ TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Locale::Utils::PlaceholderBabelFish - Utils to expand BabelFish palaceholders";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::Utils::PlaceholderBabelFish - Utils to expand BabelFish palaceholders";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LocaleUtilsPlaceholderMaketext = buildPerlPackage {
@@ -14135,9 +14912,9 @@ let
      propagatedBuildInputs = [ MooXStrictConstructor MooXTypesMooseLike namespaceautoclean ];
      buildInputs = [ TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Locale::Utils::PlaceholderMaketext - Utils to expand maketext placeholders";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::Utils::PlaceholderMaketext - Utils to expand maketext placeholders";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LocaleUtilsPlaceholderNamed = buildPerlPackage {
@@ -14150,9 +14927,9 @@ let
      propagatedBuildInputs = [ MooXStrictConstructor MooXTypesMooseLike namespaceautoclean ];
      buildInputs = [ TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Locale::Utils::PlaceholderNamed - Utils to expand named placeholders";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Locale::Utils::PlaceholderNamed - Utils to expand named placeholders";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   locallib = buildPerlPackage {
@@ -14163,8 +14940,9 @@ let
       sha256 = "01cav7m6qc1x96wna1viiw6n212f94ks7cik4vj1a1lasixr36rf";
     };
     meta = {
-      description = "Create and use a local lib/ for perl modules with PERL5LIB";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "create and use a local lib/ for perl modules with PERL5LIB";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/local-lib";
     };
     propagatedBuildInputs = [ ModuleBuild ];
   };
@@ -14179,7 +14957,7 @@ let
     propagatedBuildInputs = [ MethodSignaturesSimple invoker namespacesweep true ];
     meta = {
       description = "Provide method syntax and sweep namespaces";
-      license = with lib.licenses; [ wtfpl ];
+      license = licenses.wtfpl;
       homepage = "https://github.com/audreyt/methods/tree";
     };
   };
@@ -14203,9 +14981,9 @@ let
     # Syslog test fails.
     preCheck = "rm t/syslog.t";
     meta = {
-      homepage = "https://github.com/preaction/Log-Any";
       description = "Bringing loggers and listeners together";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/preaction/Log-Any";
     };
   };
 
@@ -14219,7 +14997,7 @@ let
     propagatedBuildInputs = [ LogAny LogLog4perl ];
     meta = {
       description = "Log::Any adapter for Log::Log4perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/preaction/Log-Any-Adapter-Log4perl";
     };
   };
@@ -14234,7 +15012,7 @@ let
     propagatedBuildInputs = [ LogAny TryTiny ];
     meta = {
       description = "Logger suitable for use with TAP test files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/silverdirk/perl-Log-Any-Adapter-TAP";
     };
   };
@@ -14249,9 +15027,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ DataDumperConcise ExporterDeclare Moo ];
     meta = {
-      homepage = "https://github.com/frioux/Log-Contextual";
       description = "Simple logging interface with a contextual log";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/Log-Contextual";
     };
   };
 
@@ -14265,7 +15043,8 @@ let
     propagatedBuildInputs = [ DevelGlobalDestruction ParamsValidationCompiler Specio namespaceautoclean ];
     meta = {
       description = "Dispatches messages to one or more outputs";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Log-Dispatch";
     };
     buildInputs = [ IPCRun3 TestFatal TestNeeds ];
   };
@@ -14280,7 +15059,8 @@ let
     propagatedBuildInputs = [ DateManip LogDispatch ];
     meta = {
       description = "Log to Files that Archive/Rotate Themselves";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mschout/perl-log-dispatch-filerotate";
     };
     buildInputs = [ PathTiny TestWarn ];
   };
@@ -14293,9 +15073,9 @@ let
       sha256 = "16kgbaly09j48ad44b7i0s66bx885vrb26j6141z5m15rh6zk3b0";
     };
     meta = {
-      homepage = "https://metacpan.org/release/Log-ger";
       description = "A lightweight, flexible logging framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Log-ger";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -14310,7 +15090,8 @@ let
     buildInputs = [ Logger ];
     meta = {
       description = "Send logs to a subroutine";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Log-ger-Output-Callback";
     };
   };
 
@@ -14324,7 +15105,7 @@ let
     propagatedBuildInputs = [ ParamsValidate ];
     meta = {
       description = "Log messages to several outputs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -14337,7 +15118,7 @@ let
     };
     meta = {
       description = "Powerful and flexible message logging mechanism";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -14350,9 +15131,9 @@ let
      };
      propagatedBuildInputs = [ LogMessage ];
      meta = {
-       description = "Simplified interface to Log::Message";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Simplified interface to Log::Message";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   LogMinimal = buildPerlModule {
@@ -14364,7 +15145,7 @@ let
     };
     meta = {
       description = "Minimal but customizable logger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Log-Minimal";
     };
   };
@@ -14386,10 +15167,10 @@ let
        sha256 = "1l6khsmwzfr88xb81kdvmdskxgz3pm4yz2ybxkbml4bmhh0y62fq";
      };
      meta = {
-       description = "Many-Core Engine for Perl providing parallel processing capabilities";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/marioroy/mce-perl";
-     };
+      description = "Many-Core Engine for Perl providing parallel processing capabilities";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/marioroy/mce-perl";
+    };
   };
 
   LogLog4perl = buildPerlPackage {
@@ -14400,9 +15181,9 @@ let
       sha256 = "1gpa08vd71lm24mzzkgzphfbsnymh6z5gfb6fsja7njc7cny9axv";
     };
     meta = {
-      homepage = "https://mschilli.github.io/log4perl/";
       description = "Log4j implementation for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://mschilli.github.io/log4perl/";
     };
   };
 
@@ -14416,9 +15197,9 @@ let
     buildInputs = [ TestDeep ];
     propagatedBuildInputs = [ LogDispatch ];
     meta = {
-      homepage = "https://github.com/rjbs/log-dispatch-array";
-      description = "Log events to an array (reference)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "log events to an array (reference)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Log-Dispatch-Array";
     };
   };
 
@@ -14432,9 +15213,9 @@ let
     buildInputs = [ TestDeep TestFatal ];
     propagatedBuildInputs = [ LogDispatchArray StringFlogger SubExporterGlobExporter ];
     meta = {
+      description = "a simple wrapper around Log::Dispatch";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Log-Dispatchouli";
-      description = "A simple wrapper around Log::Dispatch";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -14453,7 +15234,8 @@ let
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
       description = "Send messages to a systemd journal";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/lkundrak/perl-Log-Journald";
     };
   };
 
@@ -14467,7 +15249,6 @@ let
     propagatedBuildInputs = [ IOLockedFile ];
     meta = {
       description = "Helps us create simple logs for our application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -14484,9 +15265,10 @@ let
       substituteInPlace Makefile.PL --replace 'if has_module' 'if 0; #'
     '';
     doCheck = !stdenv.isDarwin;
-    meta = with lib; {
+    meta = {
       description = "The World-Wide Web library for Perl";
-      license = with licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/libwww-perl";
     };
     buildInputs = [ TestFatal TestNeeds TestRequiresInternet ];
   };
@@ -14500,8 +15282,7 @@ let
     };
     propagatedBuildInputs = [ LWP ];
     meta = {
-      description = "Generate signed OAuth requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "generate signed OAuth requests";
     };
   };
 
@@ -14513,8 +15294,9 @@ let
       sha256 = "1n8rg6csv3dsvymg06cmxipimr6cb1g9r903ghm1qsmiv89cl6wg";
     };
     meta = {
-      description = "Guess media type for a file or a URL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "guess media type for a file or a URL";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/lwp-mediatypes";
     };
     buildInputs = [ TestFatal ];
   };
@@ -14530,7 +15312,8 @@ let
     propagatedBuildInputs = [ LWPProtocolHttps ];
     meta = {
       description = "Provides HTTP/CONNECT proxy support for LWP::UserAgent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/benningm/LWP-Protocol-connect.git";
     };
   };
 
@@ -14546,7 +15329,8 @@ let
     doCheck = false; # tries to connect to https://www.apache.org/.
     meta = {
       description = "Provide https support for LWP::UserAgent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/LWP-Protocol-https";
     };
     buildInputs = [ TestRequiresInternet ];
   };
@@ -14560,9 +15344,10 @@ let
      };
      propagatedBuildInputs = [ LWP ];
      meta = {
-       description = "Legacy HTTP/1.0 support for LWP";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Legacy HTTP/1.0 support for LWP";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/lwp-protocol-http10";
+    };
   };
 
   LWPProtocolhttpSocketUnixAlt = buildPerlPackage {
@@ -14575,7 +15360,8 @@ let
     propagatedBuildInputs = [ LWP ];
     meta = {
       description = "Speak HTTP through Unix sockets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-LWP-Protocol-http-SocketUnixAlt";
     };
   };
 
@@ -14590,7 +15376,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFakeHTTPD TestSharedFork TestTCP TestUseAllModules ];
     meta = {
       description = "Override LWP HTTP/HTTPS request's host like /etc/hosts";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/masaki/p5-LWP-UserAgent-DNS-Hosts";
     };
   };
@@ -14604,7 +15390,7 @@ let
     };
     propagatedBuildInputs = [ LWP ];
     meta = {
-      description = "A virtual browser that retries errors";
+      description = "a virtual browser that retries errors";
     };
   };
 
@@ -14621,6 +15407,11 @@ let
     # which doesn't look like it will get fixed anytime soon.
     doCheck = false;
     buildInputs = [ ModuleBuildTiny TestRequiresInternet ];
+    meta = {
+      description = "Permits recording, and later playing back of LWP requests";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mjemmeson/lwp-useragent-mockable";
+    };
   };
 
   LWPxParanoidAgent = buildPerlPackage {
@@ -14632,6 +15423,10 @@ let
     };
     doCheck = false; # 3 tests fail, probably because they try to connect to the network
     propagatedBuildInputs = [ LWP NetDNS ];
+    meta = {
+      description = "subclass of LWP::UserAgent that protects you from harm";
+      homepage = "https://github.com/csirtgadgets/LWPx-ParanoidAgent";
+    };
   };
 
   LWPxProfile = buildPerlPackage {
@@ -14645,7 +15440,7 @@ let
     buildInputs = [ TestDeep TestSpec TestVCRLWP ];
     meta = {
       description = "Basic Timing of HTTP Requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ctriv/perl-LWPx-Profile";
     };
   };
@@ -14677,7 +15472,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Object Oriented Authentication-Results Headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     propagatedBuildInputs = [ JSON ];
   };
@@ -14702,6 +15497,11 @@ let
     doCheck = false;
 
     propagatedBuildInputs = [ DevelGlobalDestruction FileRemove Later MailTransport ];
+    meta = {
+      description = "complete E-mail handling suite";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
+    };
   };
 
   MailMboxMessageParser = buildPerlPackage {
@@ -14714,9 +15514,9 @@ let
     buildInputs = [ FileSlurper TestCompile TestPod TestPodCoverage TextDiff UNIVERSALrequire URI ];
     propagatedBuildInputs = [ FileHandleUnget ];
     meta = {
-      homepage = "https://github.com/coppit/mail-mbox-messageparser";
       description = "A fast and simple mbox folder reader";
-      license = lib.licenses.gpl2;
+      license = licenses.gpl2Plus;
+      homepage = "https://github.com/coppit/mail-mbox-messageparser";
       maintainers = with maintainers; [ romildo ];
     };
   };
@@ -14730,9 +15530,10 @@ let
      };
      propagatedBuildInputs = [ IOStringy MIMETypes MailTools URI UserIdentity ];
      meta = {
-       description = "Processing MIME messages";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Processing MIME messages";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
+    };
   };
 
   MailDKIM = buildPerlPackage {
@@ -14745,6 +15546,11 @@ let
     propagatedBuildInputs = [ CryptOpenSSLRSA MailAuthenticationResults MailTools NetDNS ];
     doCheck = false; # tries to access the domain name system
     buildInputs = [ NetDNSResolverMock TestRequiresInternet YAMLLibYAML ];
+    meta = {
+      description = "Signs/verifies Internet mail with DKIM/DomainKey signatures";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/fastmail/mail-dkim/";
+    };
   };
 
   MailIMAPClient = buildPerlPackage {
@@ -14755,6 +15561,11 @@ let
       sha256 = "0znf035ikaxyfishv507qq6g691xvbnziqlcwfikkj2l1kan88hw";
     };
     propagatedBuildInputs = [ ParseRecDescent ];
+    meta = {
+      description = "IMAP4 client library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://sourceforge.net/projects/mail-imapclient/";
+    };
   };
 
   MailPOP3Client = buildPerlPackage {
@@ -14766,7 +15577,8 @@ let
     };
     meta = {
       description = "Perl 5 module to talk to a POP3 (RFC1939) server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ssdowd/mail-pop3client";
     };
   };
 
@@ -14787,9 +15599,9 @@ let
       sha256 = "4413eb49f520a8318151811ccb05a8d542973aada20aa503ad32f9ffc98a39bf";
     };
     meta = {
-      homepage = "https://github.com/Perl-Email-Project/Mail-Sender";
       description = "(DEPRECATED) module for sending mails with attachments through an SMTP server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Email-Project/Mail-Sender";
     };
   };
 
@@ -14808,9 +15620,10 @@ let
       perl -I blib/lib -MMail::Sendmail -e 'print "1..1\nok 1\n"'
     '';
     meta = {
-      maintainers = teams.deshaw.members;
       description = "Simple platform independent mailer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Mail-Sendmail";
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -14845,8 +15658,9 @@ let
     };
     propagatedBuildInputs = [ TimeDate ];
     meta = {
-      description = "Various e-mail related modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Various ancient e-mail related modules";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
     };
   };
 
@@ -14859,9 +15673,10 @@ let
      };
      propagatedBuildInputs = [ MailMessage ];
      meta = {
-       description = "Email message exchange";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Email message exchange";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
+    };
   };
 
   MarpaR2 = buildPerlModule {
@@ -14875,7 +15690,7 @@ let
     buildInputs = [ ConfigAutoConf ];
     meta = {
       description = "Release 2 of Marpa";
-      license = with lib.licenses; [ lgpl3Plus free ];
+      license = [ licenses.free licenses.lgpl3Plus ];
       homepage = "http://savage.net.au/Marpa.html";
     };
   };
@@ -14889,7 +15704,8 @@ let
     };
     meta = {
       description = "Perl extension for base 85 numbers, as referenced by RFC 1924";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/paultcochrane/Math-Base85";
     };
   };
 
@@ -14920,9 +15736,9 @@ let
     };
     buildInputs = [ TestNeeds ];
     meta = {
-      homepage = "https://github.com/Grinnz/Math-Calc-Parser";
       description = "Parse and evaluate mathematical expressions";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/Grinnz/Math-Calc-Parser";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -14936,7 +15752,6 @@ let
     };
     meta = {
       description = "Human-readable unit-aware calculator";
-      license = with lib.licenses; [ artistic1 gpl2 ];
     };
   };
 
@@ -14949,7 +15764,8 @@ let
     };
     meta = {
       description = "Arbitrary size integer/float math package";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pjacklam/p5-Math-BigInt";
     };
   };
 
@@ -14965,6 +15781,10 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.gmp.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.gmp.out}/lib -lgmp";
     propagatedBuildInputs = [ MathBigInt ];
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pjacklam/p5-Math-BigInt-GMP";
+    };
   };
 
   MathBigIntLite = buildPerlPackage {
@@ -14976,8 +15796,9 @@ let
      };
 
      meta = {
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pjacklam/p5-Math-BigInt-Lite";
+    };
   };
 
   MathClipper = buildPerlModule {
@@ -14989,6 +15810,10 @@ let
     };
     nativeBuildInputs = [ pkgs.ld-is-cc-hook ];
     buildInputs = [ ExtUtilsCppGuess ExtUtilsTypemapsDefault ExtUtilsXSpp ModuleBuildWithXSpp TestDeep ];
+    meta = {
+      description = "Polygon clipping in 2D";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   MathConvexHullMonotoneChain = buildPerlPackage {
@@ -14997,6 +15822,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SM/SMUELLER/Math-ConvexHull-MonotoneChain-0.01.tar.gz";
       sha256 = "1xcl7cz62ydddji9qzs4xsfxss484jqjlj4iixa4aci611cw92r8";
+    };
+    meta = {
+      description = "Andrew's monotone chain algorithm for finding a convex hull in 2D";
     };
   };
 
@@ -15012,7 +15840,8 @@ let
     NIX_CFLAGS_LINK = "-L${pkgs.gmp.out}/lib -lgmp";
     meta = {
       description = "High speed arbitrary size integer math";
-      license = with lib.licenses; [ lgpl21Plus ];
+      license = licenses.lgpl21Plus;
+      homepage = "https://github.com/turnstep/Math-GMP";
     };
   };
 
@@ -15026,9 +15855,9 @@ let
     buildInputs = [ pkgs.gmp ];
     NIX_CFLAGS_LINK = "-L${pkgs.gmp.out}/lib -lgmp";
     meta = {
-      homepage = "https://github.com/sisyphus/math-gmpz";
       description = "Perl interface to the GMP integer functions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sisyphus/math-gmpz";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -15053,8 +15882,9 @@ let
     propagatedBuildInputs = [ MathInt64 ];
     meta = {
       description = "Manipulate 128 bits integers in Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      broken = stdenv.is32bit; # compiler doesn't support a 128-bit integer type
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/salva/p5-Math-Int128";
+      broken = stdenv.is32bit;
     };
   };
 
@@ -15067,7 +15897,8 @@ let
     };
     meta = {
       description = "Manipulate 64 bits integers in Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/salva/p5-Math-Int64";
     };
   };
 
@@ -15088,7 +15919,7 @@ let
     };
     meta = {
       description = "Perl interface to PARI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus licenses.gpl2Plus ];
     };
   };
 
@@ -15101,6 +15932,11 @@ let
     };
     propagatedBuildInputs = [ MathLibm constant-defer ];
     buildInputs = [ DataFloat MathBigIntLite NumberFraction ];
+    meta = {
+      description = "Mathematical paths through the 2-D plane";
+      license = [ licenses.gpl1Plus licenses.gpl3Plus ];
+      homepage = "http://user42.tuxfamily.org/math-planepath/index.html";
+    };
   };
 
   MathPrimeUtil = buildPerlPackage {
@@ -15112,9 +15948,9 @@ let
     };
     propagatedBuildInputs = [ MathPrimeUtilGMP ];
     meta = {
-      homepage = "https://github.com/danaj/Math-Prime-Util";
       description = "Utilities related to prime numbers, including fast sieves and factoring";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/danaj/Math-Prime-Util";
       maintainers = [ maintainers.sgo ];
     };
     buildInputs = [ TestWarn ];
@@ -15131,9 +15967,9 @@ let
     NIX_CFLAGS_COMPILE = "-I${pkgs.gmp.dev}/include";
     NIX_CFLAGS_LINK = "-L${pkgs.gmp.out}/lib -lgmp";
     meta = {
-      homepage = "https://github.com/danaj/Math-Prime-Util-GMP";
       description = "Utilities related to prime numbers, using GMP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/danaj/Math-Prime-Util-GMP";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15149,7 +15985,8 @@ let
     propagatedBuildInputs = [ BytesRandomSecureTiny ];
     meta = {
       description = "Generate a provable prime number, in pure Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FGasper/p5-Math-ProvablePrime";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15161,8 +15998,7 @@ let
       url = "mirror://cpan/authors/id/G/GR/GROMMEL/Math-Random-0.72.tar.gz";
       sha256 = "0k15pk2qx9wrp5xqzhymm1ph4nb314ysrsyr0pjnvn8ii0r241dy";
     };
-    meta = {
-    };
+
   };
 
   MathRandomISAAC = buildPerlPackage {
@@ -15175,7 +16011,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Perl interface to the ISAAC PRNG algorithm";
-      license = with lib.licenses; [ publicDomain mit artistic2 gpl3 ];
+      license = licenses.wtfpl;
     };
   };
 
@@ -15189,7 +16025,7 @@ let
     propagatedBuildInputs = [ ObjectInsideOut ];
     meta = {
       description = "Auto-seeded Mersenne Twister PRNGs";
-      license = "unrestricted";
+      license = licenses.wtfpl;
     };
   };
 
@@ -15204,7 +16040,8 @@ let
     propagatedBuildInputs = [ CryptRandomSource MathRandomISAAC ];
     meta = {
       description = "Cryptographically-secure, cross-platform replacement for rand()";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/frioux/Math-Random-Secure";
     };
   };
 
@@ -15236,7 +16073,8 @@ let
     propagatedBuildInputs = [ DataDumperConcise DateTime ListAllUtils MooXStrictConstructor ];
     meta = {
       description = "Code shared by the MaxMind DB reader and writer modules";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/maxmind/MaxMind-DB-Common-perl";
     };
   };
 
@@ -15251,7 +16089,8 @@ let
     buildInputs = [ PathClass TestBits TestFatal TestNumberDelta TestRequires ];
     meta = {
       description = "Read MaxMind DB files and look up IP addresses";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/maxmind/MaxMind-DB-Reader-perl";
     };
   };
 
@@ -15266,7 +16105,8 @@ let
     buildInputs = [ NetWorks PathClass TestFatal TestNumberDelta TestRequires ];
     meta = {
       description = "Fast XS implementation of MaxMind DB reader";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/maxmind/MaxMind-DB-Reader-XS";
     };
   };
 
@@ -15282,7 +16122,8 @@ let
     hardeningDisable = [ "format" ];
     meta = {
       description = "Create MaxMind DB database files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/MaxMind-DB-Writer-perl";
     };
   };
 
@@ -15296,7 +16137,7 @@ let
     propagatedBuildInputs = [ InfluxDBLineProtocol ModuleRuntime ];
     meta = {
       description = "Log::Any for Stats";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/Measure-Everything";
     };
   };
@@ -15318,10 +16159,10 @@ let
        sha256 = "1xnp3jqabl4il5kfadlqimbxhzsbm7gpwrgw0m5s5fdsrc0n70zf";
      };
      meta = {
-       description = "Expiry plug-in for Memoize that adds LRU cache expiration";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/Memoize-ExpireLRU";
-     };
+      description = "Expiry plug-in for Memoize that adds LRU cache expiration";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Memoize-ExpireLRU";
+    };
   };
 
   Menlo = buildPerlPackage {
@@ -15333,9 +16174,9 @@ let
     };
     propagatedBuildInputs = [ CPANCommonIndex CPANMetaCheck CaptureTiny ExtUtilsHelpers ExtUtilsInstallPaths Filepushd HTTPTinyish ModuleCPANfile ParsePMFile StringShellQuote Win32ShellQuote locallib ];
     meta = {
-      homepage = "https://github.com/miyagawa/cpanminus";
       description = "A CPAN client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/cpanminus";
     };
   };
 
@@ -15348,9 +16189,9 @@ let
     };
     propagatedBuildInputs = [ Menlo ];
     meta = {
-      homepage = "https://github.com/miyagawa/cpanminus";
       description = "Legacy internal and client support for Menlo";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/cpanminus";
     };
   };
 
@@ -15364,7 +16205,8 @@ let
     propagatedBuildInputs = [ AnyEventHandleUDP ConfigAny DateTime JSONMaybeXS MooXOptions MooXTypesMooseLike PackageVariant StringRewritePrefix SysHostnameLong TaskWeaken ];
     meta = {
       description = "a simple way of doing messaging";
-      license = with lib.licenses; [ lgpl21Plus lgpl3Plus ];
+      license = [ licenses.lgpl21Plus licenses.lgpl3Plus ];
+      homepage = "https://github.com/suretec/Message-Passing/";
     };
   };
 
@@ -15391,7 +16233,8 @@ let
     buildInputs = [ FennecLite TestException ];
     meta = {
       description = "Tools for creating Meta objects to track custom metrics";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/exodist/Meta-Builder";
     };
   };
 
@@ -15413,9 +16256,9 @@ let
     buildInputs = [ LWPProtocolHttps TestFatal TestNeeds ];
     propagatedBuildInputs = [ IOSocketSSL JSONMaybeXS Moo RefUtil SafeIsa TypeTiny URI ];
     meta = {
-      homepage = "https://github.com/metacpan/metacpan-client";
       description = "A comprehensive, DWIM-featured client to the MetaCPAN API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/metacpan/metacpan-client";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -15431,7 +16274,8 @@ let
     buildInputs = [ TestException TestWarn ];
     meta = {
       description = "method and function declarations with signatures and no source filter";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/evalEmpire/method-signatures";
     };
   };
 
@@ -15445,7 +16289,8 @@ let
     propagatedBuildInputs = [ DevelDeclare ];
     meta = {
       description = "Basic method declarations with signatures, without source filters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rhesa/method-signatures-simple";
     };
   };
 
@@ -15459,7 +16304,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "abstract collection of monitoring metrics";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -15496,7 +16341,8 @@ let
     };
     meta = {
       description = "Charset Information for MIME";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hatukanezumi/MIME-Charset.git";
     };
   };
 
@@ -15520,9 +16366,7 @@ let
     };
     propagatedBuildInputs = [ MIMECharset ];
     meta = {
-      homepage = "https://metacpan.org/pod/MIME::EncWords";
-      description = "Deal with RFC 2047 encoded words (improved)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "deal with RFC 2047 encoded words (improved)";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15537,7 +16381,8 @@ let
     propagatedBuildInputs = [ EmailDateFormat ];
     meta = {
       description = "Low-calorie MIME generator (DEPRECATED)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rjbs/MIME-Lite";
     };
   };
 
@@ -15552,7 +16397,6 @@ let
     propagatedBuildInputs = [ LWP MIMELite ];
     meta = {
       description = "Provide routine to transform a HTML page in a MIME-Lite mail";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -15566,8 +16410,8 @@ let
     propagatedBuildInputs = [ MailTools ];
     buildInputs = [ TestDeep ];
     meta = {
-      description = "class for parsed-and-decoded MIME message";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Tools to manipulate MIME messages";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -15580,7 +16424,8 @@ let
     };
     meta = {
       description = "Definition of MIME types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
     };
   };
 
@@ -15593,9 +16438,9 @@ let
     };
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
-      homepage = "https://github.com/mojolicious/minion";
-      description = "A high performance job queue for Perl";
-      license = lib.licenses.artistic2;
+      description = "Job queue";
+      license = licenses.artistic2;
+      homepage = "https://mojolicious.org";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15610,9 +16455,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ Minion MojoSQLite ];
     meta = {
-      homepage = "https://github.com/Grinnz/Minion-Backend-SQLite";
       description = "SQLite backend for Minion job queue";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/Grinnz/Minion-Backend-SQLite";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15627,9 +16472,9 @@ let
     buildInputs = [ Testmysqld ];
     propagatedBuildInputs = [ Minion Mojomysql ];
     meta = {
+      description = "MySQL backend";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/preaction/Minion-Backend-mysql";
-      description = "MySQL backend for Minion job queue";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -15643,9 +16488,9 @@ let
     };
     propagatedBuildInputs = [ PerlIOutf8_strict SubExporter ];
     meta = {
-      homepage = "https://github.com/rjbs/mixin-linewise";
-      description = "Write your linewise code for handles; this does the rest";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "write your linewise code for handles; this does the rest";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Mixin-Linewise";
     };
   };
 
@@ -15657,8 +16502,9 @@ let
       sha256 = "586880ed0c20801abbf6734747e13e0203edefece6ebc4f20ddb5059f02a17a2";
     };
     meta = {
-      description = "Store multi-level Perl hash structure in single level tied hash";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "store multi-level Perl hash structure in single level tied hash";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chorny/MLDBM/";
     };
   };
 
@@ -15672,10 +16518,10 @@ let
        sha256 = "1fff81awg9agfawf3wxx0gpf6vgav8w920rmxsbjg30z75943lli";
      };
      meta = {
-       description = "Micro Objects. Mo is less.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/ingydotnet/mo-pm";
-     };
+      description = "Micro Objects. Mo is less";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/mo-pm";
+    };
   };
 
   MockConfig = buildPerlPackage {
@@ -15686,9 +16532,10 @@ let
        sha256 = "06q0xkg5cwdwafzmb9rkaa305ddv7vli9gpm6n9jnkyaaxbk9f55";
      };
      meta = {
-       description = "temporarily set Config or XSConfig values";
-       license = with lib.licenses; [ artistic1 gpl1Plus artistic2 ];
-     };
+      description = "temporarily set Config or XSConfig values";
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl11/Mock-Config";
+    };
   };
 
   ModernPerl = buildPerlPackage {
@@ -15700,9 +16547,9 @@ let
       sha256 = "da1c83cee84fab9edb9e31d7f7abac43e1337b2e66015191ec4b6da59298c480";
     };
     meta = {
+      description = "enable all of the features of Modern Perl with one import";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/chromatic/Modern-Perl";
-      description = "Enable all of the features of Modern Perl with one import";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -15715,7 +16562,8 @@ let
     };
     meta = {
       description = "Build and install Perl modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/Module-Build";
     };
   };
 
@@ -15729,7 +16577,8 @@ let
     doCheck = false;
     meta = {
       description = "A collection of modules removed from Module-Build";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/module-build-deprecated";
     };
   };
 
@@ -15742,9 +16591,8 @@ let
     };
     propagatedBuildInputs = [ ClassAccessorLite ClassMethodModifiers DataOptList ];
     meta = {
-      homepage = "https://github.com/tokuhirom/Module-Build-Pluggable";
       description = "Module::Build meets plugins";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Module-Build-Pluggable";
     };
     buildInputs = [ TestSharedFork ];
   };
@@ -15775,7 +16623,7 @@ let
     propagatedBuildInputs = [ ModuleBuildPluggable ];
     meta = {
       description = "Generate ppport.h";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -15789,7 +16637,8 @@ let
     propagatedBuildInputs = [ ModuleCPANfile ];
     meta = {
       description = "construct prereq parameters of Module::Build from cpanfile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/debug-ito/Module-Build-Prereqs-FromCPANfile";
     };
   };
 
@@ -15804,7 +16653,8 @@ let
     propagatedBuildInputs = [ ExtUtilsHelpers ExtUtilsInstallPaths ];
     meta = {
       description = "A tiny replacement for Module::Build";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/module-build-tiny";
     };
   };
 
@@ -15816,6 +16666,10 @@ let
       sha256 = "0d39fjg9c0n820bk3fb50vvlwhdny4hdl69xmlyzql5xzp4cicsk";
     };
     propagatedBuildInputs = [ ExtUtilsCppGuess ExtUtilsXSpp ];
+    meta = {
+      description = "XS++ enhanced flavour of Module::Build";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ModuleBuildXSUtil = buildPerlModule {
@@ -15830,7 +16684,8 @@ let
     perlPreHook = "export LD=$CC";
     meta = {
       description = "A Module::Build class for building XS modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hideo55/Module-Build-XSUtil";
     };
   };
 
@@ -15843,9 +16698,9 @@ let
     };
     propagatedBuildInputs = [ CaptureTiny DigestSHA1 ];
     meta = {
-      homepage = "https://github.com/ingydotnet/module-compile-pm";
       description = "Perl Module Compilation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/module-compile-pm";
     };
   };
 
@@ -15859,10 +16714,10 @@ let
      propagatedBuildInputs = [ ArchiveAnyLite ArrayDiff DataBinary FileFindObject PerlPrereqScannerNotQuiteLite SoftwareLicense ];
      buildInputs = [ ExtUtilsMakeMakerCPANfile TestFailWarnings ];
      meta = {
-       description = "Generate Kwalitee ratings for a distribution";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://cpants.cpanauthors.org";
-     };
+      description = "Generate Kwalitee ratings for a distribution";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://cpants.cpanauthors.org";
+    };
   };
 
   ModuleCPANfile = buildPerlPackage {
@@ -15873,10 +16728,10 @@ let
        sha256 = "08a9a5mybf0llwlfvk7n0q7az6lrrzgzwc3432mcwbb4k8pbxvw8";
      };
      meta = {
-       description = "Parse cpanfile";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/cpanfile";
-     };
+      description = "Parse cpanfile";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/cpanfile";
+    };
     buildInputs = [ Filepushd ];
   };
 
@@ -15890,9 +16745,10 @@ let
      propagatedBuildInputs = [ ParseRecDescent PodStrip ];
      buildInputs = [ TestDeep TestNoWarnings ];
      meta = {
-       description = "Find out what modules are used";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Find out what modules are used";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/domm/Module-ExtractUse";
+    };
   };
 
   ModuleFind = buildPerlPackage {
@@ -15904,7 +16760,8 @@ let
     };
     meta = {
       description = "Find and use installed modules in a (sub)category";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/crenz/Module-Find";
     };
   };
 
@@ -15919,7 +16776,8 @@ let
     propagatedBuildInputs = [ ModuleRuntime TryTiny ];
     meta = {
       description = "Loads one of several alternate underlying implementations for a module";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/autarch/Module-Implementation";
     };
   };
 
@@ -15933,7 +16791,7 @@ let
     buildInputs = [ TestPod TestPodCoverage ];
     meta = {
       description = "Information about Perl modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     propagatedBuildInputs = [ BUtils ];
   };
@@ -15948,7 +16806,8 @@ let
     propagatedBuildInputs = [ FileRemove ModuleBuild ModuleScanDeps YAMLTiny ];
     meta = {
       description = "Standalone, extensible Perl module installer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/Module-Install.git";
     };
   };
 
@@ -15961,8 +16820,8 @@ let
     };
     propagatedBuildInputs = [ ModuleInstall ];
     meta = {
-      description = "Declare author-only dependencies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "declare author-only dependencies";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -15975,8 +16834,8 @@ let
     };
     propagatedBuildInputs = [ ModuleInstall ];
     meta = {
-      description = "Designate tests only run by module authors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "designate tests only run by module authors";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -15990,9 +16849,9 @@ let
     buildInputs = [ CaptureTiny ];
     propagatedBuildInputs = [ ModuleInstall ];
     meta = {
-      homepage = "https://github.com/bingos/module-install-githubmeta/";
       description = "A Module::Install extension to include GitHub meta information in META.yml";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/module-install-githubmeta/";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16007,9 +16866,9 @@ let
     buildInputs = [ CaptureTiny TestInDistDir ];
     propagatedBuildInputs = [ IOAll ModuleInstall PodMarkdown ];
     meta = {
-      homepage = "https://github.com/bingos/module-install-readmefrompod/";
       description = "A Module::Install extension to automatically convert POD to a README";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/module-install-readmefrompod/";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16024,9 +16883,9 @@ let
 
     propagatedBuildInputs = [ ModuleInstall PodMarkdown ];
     meta = {
-      homepage = "http://search.cpan.org/dist/Module-Install-ReadmeMarkdownFromPod/";
-      description = "Create README.mkdn from POD";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "create README.mkdn from POD";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mattn/p5-Module-Install-ReadmeMarkdownFromPod";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16041,7 +16900,7 @@ let
     buildInputs = [ PathClass ];
     meta = {
       description = "Automatically sets repository URL from svn/svk/Git checkout";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16056,7 +16915,8 @@ let
     buildInputs = [ TestNeeds ];
     meta = {
       description = "Check if a module is installed, with as little code as possible";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Module-Installed-Tiny";
     };
   };
 
@@ -16069,7 +16929,7 @@ let
     };
     meta = {
       description = "module `directory' listing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16082,7 +16942,8 @@ let
     };
     meta = {
       description = "Load modules in a DWIM style";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/module-load";
     };
   };
 
@@ -16097,7 +16958,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Some utility routines related to module loading";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Module-Load-Util";
     };
   };
 
@@ -16112,7 +16974,8 @@ let
     propagatedBuildInputs = [ ParamsUtil ];
     meta = {
       description = "Parse and examine a Perl distribution MANIFEST file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Module-Manifest";
     };
   };
 
@@ -16127,7 +16990,8 @@ let
     buildInputs = [ CaptureTiny TestException ];
     meta = {
       description = "Patch package with a set of patches";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Module-Patch";
     };
   };
 
@@ -16140,9 +17004,9 @@ let
     };
     buildInputs = [ DevelFindPerl ];
     meta = {
+      description = "get the full path to a locally installed module";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/neilbowers/Module-Path";
-      description = "Get the full path to a locally installed module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -16156,7 +17020,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Get path to locally installed Perl module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Module-Path-More";
     };
   };
 
@@ -16172,8 +17037,9 @@ let
       ../development/perl-modules/module-pluggable.patch
     ];
     meta = {
-      description = "Automatically give your module the ability to have plugins";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "automatically give your module the ability to have plugins";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/simonwistow/Module-Pluggable";
     };
     buildInputs = [ AppFatPacker ];
   };
@@ -16198,7 +17064,7 @@ let
     buildInputs = [ PathClass ];
     meta = {
       description = "Refresh %INC files when updated on disk";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16210,8 +17076,8 @@ let
       sha256 = "097hy2czwkxlppri32m599ph0xfvfsbf0a5y23a4fdc38v32wc38";
     };
     meta = {
-      description = "Runtime module handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "runtime module handling";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16224,9 +17090,9 @@ let
     };
     propagatedBuildInputs = [ DistCheckConflicts ];
     meta = {
-      homepage = "https://github.com/karenetheridge/Module-Runtime-Conflicts";
       description = "Provide information on conflicts for Module::Runtime";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Module-Runtime-Conflicts";
     };
   };
 
@@ -16240,7 +17106,8 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Recursively scan Perl code for dependencies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rschupp/Module-ScanDeps";
     };
   };
 
@@ -16254,7 +17121,8 @@ let
     buildInputs = [ IPCRun ];
     meta = {
       description = "Module signature file manipulation";
-      license = lib.licenses.cc0;
+      license = licenses.wtfpl;
+      homepage = "http://github.com/audreyt/module-signature";
     };
   };
 
@@ -16269,7 +17137,7 @@ let
     buildInputs = [ TestDeep ];
     meta = {
       description = "Find modules loaded by Perl code without running it";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16282,7 +17150,7 @@ let
     };
     meta = {
       description = "Module name tools and transformations";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16304,8 +17172,8 @@ let
       sha256 = "a3261d0d84b17678d8c4fd55eb0f892f5144d81ca53ea9a38d75d1a00ad9796a";
     };
     meta = {
-      description = "Report versions of all modules in memory";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "report versions of all modules in memory";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16318,7 +17186,7 @@ let
     };
     meta = {
       description = "Minimalistic HTML/XML DOM parser with CSS selectors";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/Grinnz/Mojo-DOM58";
     };
   };
@@ -16335,7 +17203,6 @@ let
     doCheck = false; # would try to start Apache HTTP server
     meta = {
       description = "Embed a Perl interpreter in the Apache HTTP server";
-      license = lib.licenses.asl20;
     };
   };
 
@@ -16347,9 +17214,9 @@ let
       sha256 = "118y2264f89bbp5ly2dh36xjq25jk85s2ssxa3y4gsgsk6sjzzk1";
     };
     meta = {
-      homepage = "https://mojolicious.org";
       description = "Real-time web framework";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://mojolicious.org";
       maintainers = with maintainers; [ thoughtpolice sgo ];
     };
   };
@@ -16363,9 +17230,9 @@ let
     };
     propagatedBuildInputs = [ FileWhich IPCRun3 Mojolicious ];
     meta = {
-      homepage = "https://github.com/jhthorsen/mojolicious-plugin-assetpack";
       description = "Compress and convert css, less, sass, javascript and coffeescript files";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/mojolicious-plugin-assetpack";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -16380,7 +17247,7 @@ let
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
       description = "Globally Recognized Avatars for Mojolicious";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -16394,9 +17261,9 @@ let
     };
     propagatedBuildInputs = [ MIMEEncWords MIMELite Mojolicious ];
     meta = {
-      homepage = "https://github.com/sharifulin/Mojolicious-Plugin-Mail";
       description = "Mojolicious Plugin for send mail";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/sharifulin/Mojolicious-Plugin-Mail";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16410,9 +17277,9 @@ let
     };
     propagatedBuildInputs = [ JSONValidator ];
     meta = {
-      homepage = "https://github.com/jhthorsen/mojolicious-plugin-openapi";
       description = "OpenAPI / Swagger plugin for Mojolicious";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/mojolicious-plugin-openapi";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16426,9 +17293,9 @@ let
     };
     propagatedBuildInputs = [ BSDResource FileMap Mojolicious Sereal ];
     meta = {
-      homepage = "https://github.com/mojolicious/mojo-status";
-      description = "Mojolicious server status plugin";
-      license = with lib.licenses; [ artistic2 ];
+      description = "Mojolicious server status";
+      license = licenses.artistic2;
+      homepage = "https://mojolicious.org";
       maintainers = [ maintainers.thoughtpolice ];
     };
   };
@@ -16442,9 +17309,9 @@ let
     };
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
-      homepage = "https://github.com/marcusramberg/mojolicious-plugin-textexceptions";
       description = "Render exceptions as text in command line user agents";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/marcusramberg/mojolicious-plugin-textexceptions";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16458,9 +17325,9 @@ let
     };
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
+      description = "Mojolicious ♥ Webpack";
+      license = licenses.artistic2;
       homepage = "https://github.com/jhthorsen/mojolicious-plugin-webpack";
-      description = "Mojolicious <3 Webpack";
-      license = lib.licenses.artistic2;
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -16474,9 +17341,9 @@ let
     };
     propagatedBuildInputs = [ Mojolicious ProtocolRedisFaster ];
     meta = {
-      homepage = "https://github.com/jhthorsen/mojo-redis";
       description = "Redis driver based on Mojo::IOLoop";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/mojo-redis";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16492,7 +17359,8 @@ let
     propagatedBuildInputs = [ CryptOpenSSLRSA CryptOpenSSLX509 DataGUID Mojolicious XMLCanonicalizeXML ];
     meta = {
       description = "A SAML2 toolkit using the Mojo toolkit";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/jberger/Mojo-SAML";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16507,9 +17375,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ DBDSQLite Mojolicious SQLAbstract URIdb ];
     meta = {
-      homepage = "https://github.com/Grinnz/Mojo-SQLite";
       description = "A tiny Mojolicious wrapper for SQLite";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/Grinnz/Mojo-SQLite";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16524,9 +17392,9 @@ let
     propagatedBuildInputs = [ DBDmysql Mojolicious SQLAbstract ];
     buildInputs = [ TestDeep ];
     meta = {
-      homepage = "https://github.com/jhthorsen/mojo-mysql";
       description = "Mojolicious and Async MySQL/MariaDB";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/mojo-mysql";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16542,7 +17410,7 @@ let
     buildInputs = [ JSONMaybeXS PathTiny TestDeep TestFatal ];
     meta = {
       description = "Official MongoDB Driver for Perl (EOL)";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/mongodb-labs/mongo-perl-driver";
     };
   };
@@ -16556,8 +17424,9 @@ let
     };
     propagatedBuildInputs = [ IOPipely Mojolicious ];
     meta = {
-      description = "Run blocking functions asynchronously by forking";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) run blocking functions asynchronously by forking";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jberger/Mojo-IOLoop-ForkCall";
     };
   };
 
@@ -16571,9 +17440,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ Mojolicious ];
     meta = {
-      homepage = "https://github.com/jberger/Mojo-JWT";
       description = "JSON Web Token the Mojo way";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/jberger/Mojo-JWT";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16588,9 +17457,9 @@ let
     propagatedBuildInputs = [ DBDPg Mojolicious SQLAbstract ];
     buildInputs = [ TestDeep ];
     meta = {
-      homepage = "https://github.com/mojolicious/mojo-pg";
-      description = "Mojolicious <3 PostgreSQL";
-      license = lib.licenses.artistic2;
+      description = "Mojolicious ♥ PostgreSQL";
+      license = licenses.artistic2;
+      homepage = "https://mojolicious.org";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16606,9 +17475,9 @@ let
     propagatedBuildInputs = [ AlgorithmLCSS CHI DataSerializer DevelStackTrace Mojolicious Readonly StringTruncate ];
     doCheck = !stdenv.isDarwin;
     meta = {
-      homepage = "https://github.com/nicomen/mojo-useragent-cached";
       description = "Caching, Non-blocking I/O HTTP, Local file and WebSocket user agent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nicomen/mojo-useragent-cached";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -16622,11 +17491,9 @@ let
     };
     propagatedBuildInputs = [ ClassAccessor ConfigTiny MathCalcUnits ParamsValidate ];
     meta = {
-      description = ''
-        A family of perl modules to streamline writing Naemon,
-        Nagios, Icinga or Shinken (and compatible) plugins
-      '';
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "A family of perl modules to streamline writing Naemon, Nagios, Icinga or Shinken (and compatible) plugins";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/monitoring-plugins/monitoring-plugin-perl";
     };
   };
 
@@ -16640,7 +17507,8 @@ let
     propagatedBuildInputs = [ SubDelete ];
     meta = {
       description = "Wrap/add/replace/delete subs from other package (with restore)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Monkey-Patch-Action";
     };
   };
 
@@ -16652,8 +17520,9 @@ let
       sha256 = "e33b6cf5cb2b46ee308513f51e623987a50a89901e81bf19701dce35179f2e74";
     };
     meta = {
-      description = "Portably create pipe() or pipe-like handles";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Portably create pipe() or pipe-like handles, one way or another";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rcaputo/io-pipely";
     };
   };
 
@@ -16668,7 +17537,8 @@ let
     propagatedBuildInputs = [ ClassMethodModifiers RoleTiny SubQuote ];
     meta = {
       description = "Minimalist Object Orientation (with Moose compatibility)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Moo";
     };
   };
 
@@ -16685,9 +17555,9 @@ let
       export LD=$CC
     '';
     meta = {
-      homepage = "http://moose.perl.org/";
       description = "A postmodern object system for Perl 5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://moose.perl.org/";
       maintainers = [ maintainers.eelco ];
     };
   };
@@ -16703,7 +17573,8 @@ let
     propagatedBuildInputs = [ DataPerl Moo ];
     meta = {
       description = "NativeTrait-like behavior for Moo";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/MooX-HandlesVia";
     };
   };
 
@@ -16716,9 +17587,10 @@ let
      };
      propagatedBuildInputs = [ Moo ];
      meta = {
-       description = "provide API used in translator modules without translating";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "provide API used in translator modules without translating";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rehsack/MooX-Locale-Passthrough";
+    };
   };
 
   MooXLocaleTextDomainOO = buildPerlPackage {
@@ -16730,9 +17602,10 @@ let
      };
      propagatedBuildInputs = [ LocaleTextDomainOO MooXLocalePassthrough ];
      meta = {
-       description = "provide API used in translator modules without translating";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "provide API used in translator modules without translating";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rehsack/MooX-Locale-TextDomain-OO";
+    };
   };
 
   MooXOptions = buildPerlPackage {
@@ -16746,9 +17619,10 @@ let
      buildInputs = [ Mo MooXCmd MooXLocaleTextDomainOO Moose TestTrap ];
      preCheck = "rm t/16-namespace_clean.t"; # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=942275
      meta = {
-       description = "Explicit Options eXtension for Object Class";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Explicit Options eXtension for Object Class";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/celogeek/MooX-Options";
+    };
   };
 
   MooXSingleton = buildPerlModule {
@@ -16761,9 +17635,10 @@ let
      propagatedBuildInputs = [ RoleTiny ];
      buildInputs = [ Moo ];
      meta = {
-       description = "turn your Moo class into singleton";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "turn your Moo class into singleton";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ajgb/moox-singleton";
+    };
   };
 
   MooXStrictConstructor = buildPerlPackage {
@@ -16776,9 +17651,10 @@ let
      propagatedBuildInputs = [ Moo strictures ];
      buildInputs = [ TestFatal ];
      meta = {
-       description = "Make your Moo-based object constructors blow up on unknown attributes.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Make your Moo-based object constructors blow up on unknown attributes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hartzell/moox-strictconstructor";
+    };
   };
 
   MooXThunking = buildPerlPackage {
@@ -16792,7 +17668,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Allow Moo attributes to be \"thunked\"";
-      license = with lib.licenses; [ artistic1 gpl1Plus artistic2 ];
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/mohawk2/moox-thunking";
     };
   };
 
@@ -16805,6 +17682,11 @@ let
     };
     propagatedBuildInputs = [ ModuleRuntime ];
     buildInputs = [ Moo TestFatal ];
+    meta = {
+      description = "some Moosish types and a type builder";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mateu/MooX-Types-MooseLike";
+    };
   };
 
   MooXTypesMooseLikeNumeric = buildPerlPackage {
@@ -16818,7 +17700,7 @@ let
     propagatedBuildInputs = [ MooXTypesMooseLike ];
     meta = {
       description = "Moo types for numbers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16833,7 +17715,8 @@ let
     propagatedBuildInputs = [ ListMoreUtils Moose SyntaxKeywordJunction autobox namespaceautoclean ];
     meta = {
       description = "Autoboxed wrappers for Native Perl datatypes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Moose-Autobox";
     };
   };
 
@@ -16847,8 +17730,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ Moose ];
     meta = {
-      description = "Abstract base classes for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "abstract base classes for Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/moosex-abc";
     };
   };
 
@@ -16861,6 +17745,11 @@ let
     };
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "easy aliasing of methods and attributes in Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/moosex-aliases";
+    };
   };
 
   MooseXAppCmd = buildPerlModule {
@@ -16873,9 +17762,9 @@ let
     buildInputs = [ ModuleBuildTiny MooseXConfigFromFile TestOutput YAML ];
     propagatedBuildInputs = [ AppCmd MooseXGetopt MooseXNonMoose ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-App-Cmd";
       description = "Mashes up MooseX::Getopt and App::Cmd";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-App-Cmd";
     };
   };
 
@@ -16889,7 +17778,8 @@ let
     propagatedBuildInputs = [ Moose ];
     meta = {
       description = "blessed arrayrefs with Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-moosex-arrayref";
     };
   };
 
@@ -16902,9 +17792,9 @@ let
     };
     propagatedBuildInputs = [ DataOptList ImportInto Moo ];
     meta = {
-      homepage = "https://github.com/Getty/p5-moox";
       description = "Using Moo and MooX:: packages the most lazy way";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Getty/p5-moox";
     };
   };
 
@@ -16919,7 +17809,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "easy aliasing of methods and attributes in Moo";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/haarg/MooX-Aliases";
     };
   };
 
@@ -16933,9 +17824,10 @@ let
      propagatedBuildInputs = [ ListMoreUtils ModulePluggable Moo PackageStash ParamsUtil RegexpCommon ];
      buildInputs = [ CaptureTiny ];
      meta = {
-       description = "Giving an easy Moo style way to make command organized CLI apps";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Giving an easy Moo style way to make command organized CLI apps";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Getty/p5-moox-cmd";
+    };
   };
 
   MooXlate = buildPerlPackage {
@@ -16948,8 +17840,9 @@ let
     buildInputs = [ TestFatal TestRequires ];
     propagatedBuildInputs = [ ModuleRuntime Moo SubHandlesVia ];
     meta = {
-      description = "Easily translate Moose code to Moo";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "easily translate Moose code to Moo";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-moox-late";
     };
   };
 
@@ -16963,7 +17856,7 @@ let
     propagatedBuildInputs = [ ConfigAny MouseXConfigFromFile ];
     meta = {
       description = "A Mouse role for setting attributes from a simple configfile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -16975,8 +17868,9 @@ let
       sha256 = "a71f2fe8b96ab8bfc2760aa1d3135ea049a5b20dcb105457b769a1195c7a2509";
     };
     meta = {
-      description = "Do use_ok() for all the MANIFESTed modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "do use_ok() for all the MANIFESTed modules";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/test-useallmodules";
     };
   };
 
@@ -16991,7 +17885,7 @@ let
     buildInputs = [ SubName TestException TestFileContents TestSpec ];
     meta = {
       description = "Record and playback LWP interactions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ctriv/perl-Test-VCR-LWP";
     };
   };
@@ -17005,9 +17899,9 @@ let
     };
     propagatedBuildInputs = [ EnvSanctify FileHomeDir PerlDestructLevel XMLTwig ];
     meta = {
-      description = "Generate suppressions, analyse and test any command with valgrind.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Test-Valgrind/";
+      description = "Generate suppressions, analyse and test any command with valgrind";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.profvince.com/?p=perl%2Fmodules%2FTest-Valgrind.git";
     };
   };
 
@@ -17022,7 +17916,7 @@ let
     propagatedBuildInputs = [ MouseXTypes PathClass ];
     meta = {
       description = "A Path::Class type library for Mouse";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -17037,7 +17931,7 @@ let
     propagatedBuildInputs = [ AnyMoose ];
     meta = {
       description = "Organize your Mouse types in libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -17052,7 +17946,7 @@ let
     propagatedBuildInputs = [ MouseXTypesPathClass ];
     meta = {
       description = "An abstract Mouse role for setting attributes from a configfile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -17066,9 +17960,9 @@ let
     buildInputs = [ ModuleBuildTiny MouseXConfigFromFile MouseXSimpleConfig TestException TestWarn ];
     propagatedBuildInputs = [ GetoptLongDescriptive Mouse ];
     meta = {
-      homepage = "https://github.com/gfx/mousex-getopt";
       description = "A Mouse role for processing command line options";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/gfx/mousex-getopt";
     };
   };
 
@@ -17080,6 +17974,10 @@ let
       sha256 = "0kjydmkxh8hpkbbmsgd5wrkhgq7w69lgfg6lx4s5g2xpqfkqmqz7";
     };
     propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "Attribute that returns the instance to allow for chaining";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   MooseXAttributeHelpers = buildPerlModule {
@@ -17092,8 +17990,9 @@ let
     buildInputs = [ ModuleBuildTiny TestException ];
     propagatedBuildInputs = [ Moose ];
     meta = {
-      description = "Extend your attribute interfaces (deprecated)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) Extend your attribute interfaces";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-AttributeHelpers";
     };
   };
 
@@ -17106,6 +18005,11 @@ let
     };
     propagatedBuildInputs = [ DataVisitor HashUtilFieldHashCompat namespaceautoclean ];
     buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "Fine-grained cloning support for Moose objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Clone";
+    };
   };
 
   MooseXConfigFromFile = buildPerlModule {
@@ -17118,9 +18022,9 @@ let
     buildInputs = [ ModuleBuildTiny TestDeep TestFatal TestRequires TestWithoutModule ];
     propagatedBuildInputs = [ MooseXTypesPathTiny ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-ConfigFromFile";
       description = "An abstract Moose role for setting attributes from a configfile";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-ConfigFromFile";
     };
   };
 
@@ -17134,9 +18038,9 @@ let
     buildInputs = [ DevelCheckOS ModuleBuildTiny TestFatal ];
     propagatedBuildInputs = [ MooseXGetopt MooseXTypesPathClass ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Daemonize";
       description = "Role for daemonizing your Moose based application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Daemonize";
     };
   };
 
@@ -17151,7 +18055,8 @@ let
     propagatedBuildInputs = [ Moose namespaceclean ];
     meta = {
       description = "Emulate Class::Accessor::Fast behavior using Moose attributes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Emulate-Class-Accessor-Fast";
     };
   };
 
@@ -17165,9 +18070,9 @@ let
     buildInputs = [ ModuleBuildTiny MooseXStrictConstructor PathTiny TestDeep TestFatal TestNeeds TestTrap TestWarnings ];
     propagatedBuildInputs = [ GetoptLongDescriptive MooseXRoleParameterized ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Getopt";
       description = "A Moose role for processing command line options";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Getopt";
     };
   };
 
@@ -17181,9 +18086,9 @@ let
     buildInputs = [ Moose TestDeep TestDifferences TestException TestMost TestWarn namespaceautoclean ];
     propagatedBuildInputs = [ ClassLoad ListMoreUtils StringRewritePrefix ];
     meta = {
-      homepage = "https://github.com/pshangov/moosex-has-options";
       description = "Succinct options for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/pshangov/moosex-has-options";
     };
   };
 
@@ -17197,9 +18102,9 @@ let
     buildInputs = [ TestFatal namespaceclean ];
     propagatedBuildInputs = [ SubExporterProgressive ];
     meta = {
-      homepage = "https://github.com/kentfredric/MooseX-Has-Sugar";
       description = "Sugar Syntax for moose 'has' fields";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kentnl/MooseX-Has-Sugar";
     };
   };
 
@@ -17213,9 +18118,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     propagatedBuildInputs = [ Moose aliased namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-LazyRequire";
       description = "Required attributes which fail only when trying to use them";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-LazyRequire";
     };
   };
 
@@ -17229,7 +18134,8 @@ let
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
       description = "Mark overload code symbols as methods";
-      license = lib.licenses.lgpl21;
+      license = licenses.lgpl21Plus;
+      homepage = "https://github.com/RsrchBoy/moosex-markasmethods";
     };
   };
 
@@ -17243,9 +18149,9 @@ let
     buildInputs = [ MooseXRoleParameterized TestFatal TestNeeds ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/karenetheridge/moosex-methodattributes";
       description = "Code attribute introspection";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-MethodAttributes";
     };
   };
 
@@ -17259,8 +18165,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ ListMoreUtils Moose ];
     meta = {
-      description = "Easy subclassing of non-Moose classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "easy subclassing of non-Moose classes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/moosex-nonmoose";
     };
   };
 
@@ -17275,7 +18182,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     meta = {
       description = "Make your classes pluggable";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/moose/MooseX-Object-Pluggable";
     };
   };
@@ -17289,9 +18196,9 @@ let
     };
     propagatedBuildInputs = [ MooseXRoleParameterized ];
     meta = {
-      homepage = "https://github.com/rjbs/moosex-oneargnew";
-      description = "Teach ->new to accept single, non-hashref arguments";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "teach ->new to accept single, non-hashref arguments";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/MooseX-OneArgNew";
     };
   };
 
@@ -17303,6 +18210,10 @@ let
       sha256 = "17vynkf6m5d039qkr4in1c9lflr8hnwp1fgzdwhj4q6jglipmnrh";
     };
     propagatedBuildInputs = [ MooseXRoleParameterized ];
+    meta = {
+      description = "Apply roles to a class related to yours";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   MooseXParamsValidate = buildPerlPackage {
@@ -17315,8 +18226,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ DevelCaller Moose ParamsValidate ];
     meta = {
-      description = "An extension of Params::Validate using Moose's types";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "an extension of Params::Validate using Moose's types";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Params-Validate";
     };
   };
 
@@ -17330,9 +18242,9 @@ let
     buildInputs = [ CPANMetaCheck ModuleBuildTiny TestFatal TestNeeds ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
+      description = "Moose roles with composition parameters";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/moose/MooseX-Role-Parameterized";
-      description = "Roles with composition parameters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17345,8 +18257,9 @@ let
     };
     propagatedBuildInputs = [ Moose aliased namespaceautoclean ];
     meta = {
-      description = "Roles which support overloading";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "(DEPRECATED) Roles which support overloading";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Role-WithOverloading";
     };
   };
 
@@ -17360,9 +18273,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal TestSimple13 TestTableDriven ];
     propagatedBuildInputs = [ ListSomeUtils MooseXTypesPathTiny ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Runnable";
       description = "Tag a class as a runnable application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Runnable";
     };
   };
 
@@ -17374,6 +18287,11 @@ let
       sha256 = "1mdil9ckgmgr78z59p8wfa35ixn5855ndzx14y01dvfxpiv5gf55";
     };
     propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "Name your accessors foo() and set_foo()";
+      license = licenses.artistic2;
+      homepage = "https://github.com/moose/MooseX-SemiAffordanceAccessor";
+    };
   };
 
   MooseXSetOnce = buildPerlPackage {
@@ -17385,6 +18303,11 @@ let
     };
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "write-once, read-many attributes for Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/MooseX-SetOnce";
+    };
   };
 
   MooseXSingleton = buildPerlModule {
@@ -17396,6 +18319,11 @@ let
     };
     buildInputs = [ ModuleBuildTiny TestFatal TestRequires TestWarnings ];
     propagatedBuildInputs = [ Moose ];
+    meta = {
+      description = "Turn your Moose class into a singleton";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Singleton";
+    };
   };
 
   MooseXStrictConstructor = buildPerlPackage {
@@ -17409,7 +18337,8 @@ let
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
       description = "Make your object constructors blow up on unknown attributes";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/moose/MooseX-StrictConstructor";
     };
   };
 
@@ -17423,9 +18352,9 @@ let
     buildInputs = [ ModuleBuildTiny MooseXRoleParameterized TestFatal TestRequires TestSimple13 ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Traits";
       description = "Automatically apply roles at object creation time";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Traits";
     };
   };
 
@@ -17438,6 +18367,11 @@ let
     };
     buildInputs = [ TestException ];
     propagatedBuildInputs = [ ListMoreUtils Moose namespaceautoclean ];
+    meta = {
+      description = "trait loading and resolution for Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/moosex-traits-pluggable";
+    };
   };
 
   MooseXTypes = buildPerlModule {
@@ -17450,9 +18384,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal TestRequires ];
     propagatedBuildInputs = [ CarpClan Moose SubExporterForMethods namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Types";
       description = "Organise your Moose types in libraries";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types";
     };
   };
 
@@ -17466,9 +18400,9 @@ let
     buildInputs = [ ModuleBuildTiny TestDeep TestWarnings ];
     propagatedBuildInputs = [ MooseXTypes ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Types-Common";
       description = "A library of commonly used type constraints";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types-Common";
     };
   };
 
@@ -17482,9 +18416,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal TestSimple13 ];
     propagatedBuildInputs = [ DateTime MooseXTypes ];
     meta = {
+      description = "L<DateTime> related constraints and coercions for Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/moose/MooseX-Types-DateTime";
-      description = "DateTime related constraints and coercions for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17498,9 +18432,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal TestSimple13 ];
     propagatedBuildInputs = [ DateTimeXEasy MooseXTypesDateTime TimeDurationParse ];
     meta = {
+      description = "Extensions to L<MooseX::Types::DateTime>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/moose/MooseX-Types-DateTime-MoreCoercions";
-      description = "Extensions to MooseX::Types::DateTime";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17514,9 +18448,9 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     propagatedBuildInputs = [ MooseXTypes ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Types-LoadableClass";
       description = "ClassName type constraint with coercion to load the class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types-LoadableClass";
     };
   };
 
@@ -17530,7 +18464,8 @@ let
     propagatedBuildInputs = [ MooseXTypes PathClass ];
     meta = {
       description = "A Path::Class type library for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types-Path-Class";
     };
     buildInputs = [ ModuleBuildTiny TestNeeds ];
   };
@@ -17545,9 +18480,9 @@ let
     buildInputs = [ Filepushd ModuleBuildTiny TestFatal ];
     propagatedBuildInputs = [ MooseXGetopt MooseXTypesStringlike PathTiny ];
     meta = {
-      homepage = "https://github.com/karenetheridge/moosex-types-path-tiny";
       description = "Path::Tiny types and coercions for Moose";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/moose/MooseX-Types-Path-Tiny";
     };
   };
 
@@ -17561,7 +18496,8 @@ let
     propagatedBuildInputs = [ MooseXTypes ];
     meta = {
       description = "Moose types that check against Perl syntax";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/MooseX-Types-Perl";
     };
   };
 
@@ -17574,9 +18510,9 @@ let
     };
     propagatedBuildInputs = [ MooseXTypes ];
     meta = {
-      homepage = "https://github.com/dagolden/moosex-types-stringlike";
       description = "Moose type constraints for strings or string-like objects";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/MooseX-Types-Stringlike";
     };
   };
 
@@ -17590,8 +18526,9 @@ let
     buildInputs = [ DateTime ModuleBuildTiny MooseXTypesDateTime TestFatal TestNeeds ];
     propagatedBuildInputs = [ DevelPartialDump MooseXTypes ];
     meta = {
-      description = "MooseX::Types::Structured - Structured Type Constraints for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Structured Type Constraints for Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types-Structured";
     };
   };
 
@@ -17605,9 +18542,9 @@ let
     buildInputs = [ ModuleBuildTiny TestSimple13 ];
     propagatedBuildInputs = [ MooseXTypesPathClass URIFromHash ];
     meta = {
-      homepage = "https://github.com/moose/MooseX-Types-URI";
       description = "URI related types and coercions for Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MooseX-Types-URI";
     };
   };
 
@@ -17620,7 +18557,7 @@ let
     };
     meta = {
       description = "Manipulate / fetch info from MP3 audio files";
-      license = with lib.licenses; [ artistic1 ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -17642,7 +18579,6 @@ let
     outputs = [ "out" ];
     meta = {
       description = "Module for reading tags of MP3 audio files";
-      license = with lib.licenses; [ artistic1 ];
     };
   };
 
@@ -17657,6 +18593,11 @@ let
     perlPreHook = "export LD=$CC";
     NIX_CFLAGS_COMPILE = lib.optionalString stdenv.isi686 "-fno-stack-protector";
     hardeningDisable = lib.optional stdenv.isi686 "stackprotector";
+    meta = {
+      description = "Moose minus the antlers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/xslate/p5-Mouse";
+    };
   };
 
   MouseXNativeTraits = buildPerlPackage {
@@ -17669,8 +18610,8 @@ let
     buildInputs = [ AnyMoose TestFatal ];
     propagatedBuildInputs = [ Mouse ];
     meta = {
-      description = "Extend attribute interfaces for Mouse";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Extend your attribute interfaces for Mouse";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -17688,7 +18629,7 @@ let
 
     meta = {
       description = "Mozilla's CA cert bundle in PEM format";
-      license = lib.licenses.mpl20;
+      homepage = "http://github.com/gisle/mozilla-ca";
     };
   };
 
@@ -17702,8 +18643,9 @@ let
       sha256 = "1y547lr6zccf7919vx01v22zsajy528psanhg5aqschrrin3nb4a";
     };
     meta = {
-      description = "Mro::* interface compatibility for Perls < 5.9.5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "mro::* interface compatibility for Perls < 5.9.5";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/MRO-Compat";
     };
   };
 
@@ -17716,7 +18658,8 @@ let
     };
     meta = {
       description = "Monitor a directory structure for changes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hoelzro/Mac-FSEvents";
     };
   };
 
@@ -17734,6 +18677,11 @@ let
     nativeBuildInputs = [ pkgs.pkg-config ];
     propagatedBuildInputs = [ pkgs.libdiscid ];
     buildInputs = [ TestPod ];
+    meta = {
+      description = "Perl interface for the MusicBrainz libdiscid library";
+      license = licenses.mit;
+      homepage = "https://github.com/njh/perl-musicbrainz-discid";
+    };
   };
 
   MusicBrainz = buildPerlModule {
@@ -17745,6 +18693,10 @@ let
     };
     propagatedBuildInputs = [ Mojolicious ];
     doCheck = false; # Test performs network access.
+    meta = {
+      description = "Web service API to MusicBrainz database";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   MustacheSimple = buildPerlPackage {
@@ -17757,7 +18709,6 @@ let
     propagatedBuildInputs = [ YAMLLibYAML ];
     meta = {
       description = "A simple Mustache Renderer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17770,9 +18721,9 @@ let
     };
     propagatedBuildInputs = [ pkgs.mysql-client FileSlurp StringShellQuote ];
     meta = {
-      homepage = "https://github.com/estrabd/mysqldiff";
       description = "Generates a database upgrade instruction set";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/estrabd/mysqldiff";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -17787,9 +18738,9 @@ let
     buildInputs = [ TestNeeds ];
     propagatedBuildInputs = [ SubIdentify namespaceclean ];
     meta = {
-      homepage = "https://github.com/moose/namespace-autoclean";
       description = "Keep imports out of your namespace";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/namespace-autoclean";
     };
   };
 
@@ -17803,7 +18754,8 @@ let
     propagatedBuildInputs = [ BHooksEndOfScope PackageStash ];
     meta = {
       description = "Keep imports and functions out of your namespace";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/namespace-clean";
     };
   };
 
@@ -17818,7 +18770,8 @@ let
     buildInputs = [ SubName ];
     meta = {
       description = "Sweep up imported subs in your classes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/friedo/perl-namespace-sweep";
     };
   };
 
@@ -17845,9 +18798,9 @@ let
       sha256 = "2e5bd58b01c2a66e8049a2f8d9c93e1b5f6dce53e0ee3a481ce6a6f411f2c8f8";
     };
     meta = {
-      homepage = "https://github.com/toddr/Net-Ident";
       description = "Lookup the username on the remote end of a TCP/IP connection";
-      license = lib.licenses.mit;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/Net-Ident";
     };
   };
 
@@ -17860,7 +18813,6 @@ let
     };
     meta = {
       description = "Manages IPv4 and IPv6 addresses and subnets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -17887,8 +18839,9 @@ let
     propagatedBuildInputs = [ LWPProtocolHttps Moose ParamsValidate XMLSimple ];
     buildInputs = [ TestException ];
     meta = {
-      description = "Perl interface to the Amazon Elastic Compute Cloud (EC2) environment.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl interface to the Amazon Elastic Compute Cloud (EC2) environment";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mrallen1/net-amazon-ec2";
     };
   };
 
@@ -17903,6 +18856,9 @@ let
       [ ../development/perl-modules/net-amazon-mechanicalturk.patch ];
     propagatedBuildInputs = [ DigestHMAC LWPProtocolHttps XMLParser ];
     doCheck = false; /* wants network */
+    meta = {
+      description = "Amazon Mechanical Turk SDK for Perl";
+    };
   };
 
   NetAmazonS3 = buildPerlPackage {
@@ -17916,7 +18872,8 @@ let
     propagatedBuildInputs = [ DataStreamBulk DateTimeFormatHTTP DigestHMAC DigestMD5File FileFindRule LWPUserAgentDetermined MIMETypes MooseXRoleParameterized MooseXStrictConstructor MooseXTypesDateTimeMoreCoercions RefUtil RegexpCommon SafeIsa SubOverride TermEncoding TermProgressBarSimple XMLLibXML ];
     meta = {
       description = "Use the Amazon S3 - Simple Storage Service";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rustyconover/net-amazon-s3";
     };
   };
 
@@ -17929,8 +18886,7 @@ let
     };
     propagatedBuildInputs = [ JSON ];
     meta = {
-      description = "Manage Amazon S3 policies for HTTP POST forms";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "manage Amazon S3 policies for HTTP POST forms";
     };
   };
 
@@ -17949,8 +18905,8 @@ let
       rm -f t/90rt75615.t t/90rt75616.t t/90rt93232.t
     '';
     meta = {
-      description = "Use HTTP with IO::Async";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "use HTTP with C<IO::Async>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -17967,7 +18923,7 @@ let
     preCheck = "rm t/icmp_ps.t t/icmpv6_ps.t"; # ping socket tests fail
     meta = {
       description = "asyncronously check remote host for reachability";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/frioux/Net-Async-Ping";
     };
   };
@@ -17985,8 +18941,8 @@ let
       rm -f t/02server.t t/03cross.t
     '';
     meta = {
-      description = "Use WebSockets with IO::Async";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "use WebSockets with C<IO::Async>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -18003,7 +18959,7 @@ let
     propagatedBuildInputs = [ ClassAccessor ClassDataInheritable XMLLibXML ];
     meta = {
       description = "Advanced Message Queue Protocol (de)serialization and representation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18016,7 +18972,7 @@ let
     };
     meta = {
       description = "Manipulate IPv4/IPv6 netblocks in CIDR notation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.bjornfor ];
     };
   };
@@ -18043,9 +18999,9 @@ let
     buildInputs = [ FileFindRule ];
     propagatedBuildInputs = [ JSONAny LWP Moose namespaceautoclean ];
     meta = {
-      homepage = "https://github.com/metabrainz/CoverArtArchive";
       description = "Query the coverartarchive.org";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/metabrainz/CoverArtArchive";
     };
   };
 
@@ -18081,9 +19037,9 @@ let
     '';
 
     meta = {
-      homepage = "http://www.freedesktop.org/wiki/Software/dbus";
       description = "Extension for the DBus bindings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.freedesktop.org/wiki/Software/dbus";
     };
   };
 
@@ -18098,7 +19054,7 @@ let
     makeMakerFlags = "--noonline-tests";
     meta = {
       description = "Perl Interface to the Domain Name System";
-      license = lib.licenses.mit;
+      license = licenses.mit;
     };
   };
 
@@ -18111,9 +19067,9 @@ let
      };
      propagatedBuildInputs = [ NetDNS ];
      meta = {
-       description = "Mock a DNS Resolver object for testing";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Mock a DNS Resolver object for testing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
     buildInputs = [ TestException ];
   };
 
@@ -18125,8 +19081,7 @@ let
       sha256 = "4c37f811184d68ac4179d48c10ea31922dd5fca2c1bffcdcd95c5a2a3b4002ee";
     };
     meta = {
-      description = "Work with TLD names";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Net::Domain::TLD - Work with TLD names";
     };
   };
 
@@ -18139,9 +19094,10 @@ let
      };
      buildInputs = [ TestException TestHexString ];
      meta = {
-       description = "FastCGI Toolkit";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "FastCGI Toolkit";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chansen/p5-net-fastcgi";
+    };
   };
 
   NetFrame = buildPerlModule {
@@ -18155,7 +19111,7 @@ let
     preCheck = "rm t/13-gethostsubs.t"; # it performs DNS queries
     meta = {
       description = "the base framework for frame crafting";
-      license = with lib.licenses; [ artistic1 ];
+      license = licenses.artistic1;
     };
   };
 
@@ -18169,7 +19125,7 @@ let
     propagatedBuildInputs = [ NetFrame ];
     meta = {
       description = "Internet Protocol v6 layer object";
-      license = with lib.licenses; [ artistic1 ];
+      license = licenses.artistic1;
     };
   };
 
@@ -18183,8 +19139,7 @@ let
     buildInputs = [ TestDeep TestDifferences TestException TestMost TestWarn ];
     propagatedBuildInputs = [ CDDBFile Moo ];
     meta = {
-      description = "Perl interface to freedb server(s)";
-      license = with lib.licenses; [ artistic1 ];
+      description = "OOP Interface to FreeDB Server(s)";
     };
   };
 
@@ -18198,9 +19153,9 @@ let
     propagatedBuildInputs = [ URI ];
     __darwinAllowLocalNetworking = true;
     meta = {
-      homepage = "https://github.com/libwww-perl/Net-HTTP";
       description = "Low-level HTTP connection (client)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/Net-HTTP";
     };
     doCheck = false; /* wants network */
   };
@@ -18214,9 +19169,9 @@ let
     };
     propagatedBuildInputs = [ IOSocketSSL NetHTTP ];
     meta = {
-      homepage = "https://github.com/olegwtf/p5-Net-HTTPS-NB";
       description = "Non-blocking HTTPS client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/olegwtf/p5-Net-HTTPS-NB";
     };
   };
 
@@ -18230,7 +19185,9 @@ let
     buildInputs = [ TestNoWarnings ];
     perlPreHook = "export LD=$CC";
     meta = {
-      description = "Internationalizing Domain Names in Applications (IDNA)";
+      description = "Internationalizing Domain Names in Applications (UTS #46)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/cfaerber/Net-IDN-Encode";
     };
   };
 
@@ -18268,7 +19225,7 @@ let
     };
     meta = {
       description = "IP address ranges to match";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/rintaro/Net-IP-AddrRanges/tree";
     };
   };
@@ -18282,9 +19239,7 @@ let
     };
     buildInputs = [ TestException ];
     meta = {
-      homepage = "https://metacpan.org/pod/Net::IP::Lite";
       description = "Perl extension for manipulating IPv4/IPv6 addresses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -18299,7 +19254,7 @@ let
     buildInputs = [ DevelCover ModuleBuildTiny PathClass TestBase TestRequires ];
     meta = {
       description = "Efficiently match IP addresses against IP ranges with Trie (prefix tree)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hirose31/p5-net-ip-match-trie";
     };
   };
@@ -18314,7 +19269,8 @@ let
     propagatedBuildInputs = [ IOCapture TieSimple ];
     meta = {
       description = "IPv4/IPv6 address library";
-      license = with lib.licenses; [ free ];
+      license = licenses.free;
+      homepage = "https://github.com/tomhrr/p5-Net-IP-XS";
     };
   };
 
@@ -18325,8 +19281,7 @@ let
       url = "mirror://cpan/authors/id/F/FR/FRAJULAC/Net-IPv4Addr-0.10.tar.gz";
       sha256 = "1zk3591822dg187sgkwjjvg18qmvkn3yib1c34mq8z5i617xwi9q";
     };
-    meta = {
-    };
+
   };
 
   NetIPv6Addr = buildPerlPackage {
@@ -18339,7 +19294,8 @@ let
     propagatedBuildInputs = [ MathBase85 NetIPv4Addr ];
     meta = {
       description = "Check and manipulate IPv6 addresses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/benkasminbullock/net-ipv6addr";
     };
   };
 
@@ -18353,7 +19309,7 @@ let
     propagatedBuildInputs = [ perlldap ];
     meta = {
       description = "LDAP server side protocol handling";
-      license = with lib.licenses; [ artistic1 ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18365,8 +19321,9 @@ let
       sha256 = "1mnnpkmj8kpb7qw50sm8h4sd8py37ssy2xi5hhxzr5whcx0cvhm8";
     };
     meta = {
-      description= "Active Directory Security Identifier manipulation";
-      license = with lib.licenses; [ artistic2 ];
+      description = "Active Directory Security Identifier manipulation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karpet/net-ldap-sid";
     };
   };
 
@@ -18379,8 +19336,9 @@ let
     };
     propagatedBuildInputs = [ DataDump NetLDAPSID NetLDAPServer ];
     meta = {
-      description= "test Net::LDAP code";
-      license = with lib.licenses; [ artistic1 ];
+      description = "test Net::LDAP code";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karpet/net-ldap-server-test";
     };
   };
 
@@ -18393,7 +19351,9 @@ let
     };
     buildInputs = [ Test2Suite TestUseAllModules ];
     meta = {
-      description = "Parse, manipulate and lookup IP network blocks";
+      description = "Understand and manipulate IP netmasks";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jmaslak/Net-Netmask";
     };
   };
 
@@ -18408,7 +19368,7 @@ let
     propagatedBuildInputs = [ ClassAccessor ClassDataInheritable DigestHMAC DigestSHA1 LWP ];
     meta = {
       description = "An implementation of the OAuth protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18430,7 +19390,9 @@ let
       sha256 = "04bxfglhxvffbwcg32rm1bzv54h183jyazhih5apqppdpdcqjami";
     };
     meta = {
-      description = "Check a remote host for reachability";
+      description = "check a remote host for reachability";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Net-Ping";
     };
     buildInputs = [ TestCPANMeta TestKwalitee TestPod TestPodCoverage ];
   };
@@ -18444,8 +19406,9 @@ let
     };
     propagatedBuildInputs = [ NetDNS ];
     meta = {
-      description = "Programmable DNS resolver class for offline emulation of DNS";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "programmable DNS resolver class for offline emulation of DNS";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bigpresh/Net-DNS-Resolver-Programmable";
     };
   };
 
@@ -18460,7 +19423,7 @@ let
     buildInputs = [ HTTPMessage TestFatal ];
     meta = {
       description = "export monitoring metrics for F<prometheus>";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18476,8 +19439,7 @@ let
       sed -i 's|$scp = "scp";|$scp = "${pkgs.openssh}/bin/scp";|' SCP.pm
     '';
     meta = {
-      description = "Simple wrappers around ssh and scp commands.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Simple wrappers around ssh and scp commands";
     };
 
   };
@@ -18491,7 +19453,8 @@ let
     };
     doCheck = false; # seems to hang waiting for connections
     meta = {
-      description = "Extensible, general Perl server engine";
+      description = "Extensible Perl internet server";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18508,7 +19471,8 @@ let
     '';
     meta = {
       description = "Secure File Transfer Protocol client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/salva/p5-Net-SFTP-Foreign";
     };
   };
 
@@ -18521,9 +19485,9 @@ let
      };
      propagatedBuildInputs = [ Coro NetServer ];
      meta = {
-       description = "A co-operative multithreaded server using Coro";
-       license = with lib.licenses; [ mit ];
-     };
+      description = "A co-operative multithreaded server using Coro";
+      license = licenses.mit;
+    };
   };
 
   NetServerSSPrefork = buildPerlPackage {
@@ -18552,6 +19516,9 @@ let
       sha256 = "001a6dcfahf7kkyirqkc8jd4fh4fkal7n7vm9c4dblqrvmdc8abv";
     };
     propagatedBuildInputs = [ IOSocketSSL ];
+    meta = {
+      description = "SSL support for Net::SMTP";
+    };
   };
 
   NetSMTPTLS = buildPerlPackage {
@@ -18572,6 +19539,11 @@ let
       sha256 = "0vi5cv7f9i96hgp3q3jpxzn1ysn802kh5xc304f8b7apf67w15bb";
     };
     propagatedBuildInputs = [ DigestHMAC IOSocketSSL ];
+    meta = {
+      description = "An SMTP client supporting TLS and AUTH (DEPRECATED, use Net::SMTPS instead)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/fayland/Net-SMTP-TLS";
+    };
   };
 
   NetSNMP = buildPerlModule {
@@ -18582,6 +19554,10 @@ let
       sha256 = "0hdpn1cw52x8cw24m9ayzpf4rwarm0khygn1sv3wvwxkrg0pphql";
     };
     doCheck = false; # The test suite fails, see https://rt.cpan.org/Public/Bug/Display.html?id=85799
+    meta = {
+      description = "Object oriented interface to SNMP";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   NetSNPP = buildPerlPackage rec {
@@ -18595,7 +19571,6 @@ let
     doCheck = false;
     meta = {
       description = "Simple Network Pager Protocol Client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -18611,8 +19586,7 @@ let
       sed -i 's|$ssh = "ssh";|$ssh = "${pkgs.openssh}/bin/ssh";|' SSH.pm
     '';
     meta = {
-      description = "Simple wrappers around ssh commands.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Simple wrappers around ssh commands";
     };
   };
 
@@ -18626,8 +19600,8 @@ let
     propagatedBuildInputs = [ CryptCurve25519 CryptIDEA CryptX FileHomeDir MathGMP StringCRC32 ];
     preCheck = "export HOME=$TMPDIR";
     meta = {
-      description = "Perl client Interface to SSH";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl client interface to SSH";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18649,7 +19623,8 @@ let
     '';
     meta = {
       description = "Perl extension for using OpenSSL";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/radiator-software/p5-net-ssleay";
     };
   };
 
@@ -18661,8 +19636,9 @@ let
       sha256 = "63e453603da165bc6d1c4ca0b55eda3d2204f040c59304a47782c5aa7886565c";
     };
     meta = {
-      description = "Sends statistics to the stats daemon over UDP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl client for Etsy's statsd daemon";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/cosimo/perl5-net-statsd";
     };
   };
 
@@ -18677,7 +19653,7 @@ let
     buildInputs = [ LogAnyAdapterTAP TestDeep TestFatal TestNiceDump ];
     meta = {
       description = "A Streaming Text Orientated Messaging Protocol Client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18692,7 +19668,8 @@ let
     buildInputs = [ DataPrinter TestDeep TestFatal ];
     meta = {
       description = "set of helper roles and types to deal with Net::Stomp";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dakkar/Net-Stomp-MooseHelpers";
     };
   };
 
@@ -18707,7 +19684,8 @@ let
     buildInputs = [ DataPrinter JSONXS TestDeep TestFatal TestWarn ];
     meta = {
       description = "helper object to send messages via Net::Stomp";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dakkar/Net-Stomp-Producer";
     };
   };
 
@@ -18720,7 +19698,6 @@ let
     };
     meta = {
       description = "Interact with TELNET port or other TCP ports";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -18734,7 +19711,7 @@ let
     propagatedBuildInputs = [ ClassAccessor NetTelnet ];
     meta = {
       description = "interact with a Gearman server through its telnet interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18749,9 +19726,9 @@ let
     propagatedBuildInputs = [ JSON LWPProtocolHttps ];
     doCheck = false;
     meta = {
-      homepage = "https://github.com/semifor/Net-Twitter-Lite";
-      description = "A perl interface to the Twitter API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "A perl API library for the Twitter API";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/semifor/net-twitter-lite";
     };
   };
 
@@ -18765,7 +19742,7 @@ let
     propagatedBuildInputs = [ ExceptionClass JSON LWP Moo Plack ];
     meta = {
       description = "Client for the ScientiaMobile cloud webservice";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18796,7 +19773,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "Sane APIs for IP addresses and networks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/Net-Works";
     };
   };
 
@@ -18810,7 +19788,8 @@ let
     buildInputs = [ ExtUtilsXSpp ];
     meta = {
       description = "Perl Agent for NewRelic APM";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aanari/NewRelic-Agent";
     };
   };
 
@@ -18825,7 +19804,8 @@ let
     buildInputs = [ FileSlurper Filechdir ];
     meta = {
       description = "Utilities related to Node.js";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Nodejs-Util";
     };
   };
 
@@ -18835,6 +19815,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/F/FE/FERREIRA/Number-Bytes-Human-0.11.tar.gz";
       sha256 = "0b3gprpbcrdwc2gqalpys5m2ngilh5injhww8y0gf3dln14rrisz";
+    };
+    meta = {
+      description = "Convert byte count to human readable format";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aferreira/cpan-Number-Bytes-Human";
     };
   };
 
@@ -18856,7 +19841,8 @@ let
     };
     meta = {
       description = "Perl extension for formatting numbers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/billward/number-format-perl.git";
     };
   };
 
@@ -18869,7 +19855,8 @@ let
     };
     meta = {
       description = "Format number with metric prefix";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Number-Format-Metric";
     };
   };
 
@@ -18883,7 +19870,8 @@ let
     propagatedBuildInputs = [ Moo MooXTypesMooseLike ];
     meta = {
       description = "Perl extension to model fractions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5-number-fraction/number-fraction";
     };
     buildInputs = [ TestWarn ];
   };
@@ -18896,9 +19884,9 @@ let
        sha256 = "1n4ivj4ydplanwbxn3jbsfyfcl91ngn2d0addzqrq1hac26bdfbp";
      };
      meta = {
-       description = "Number::Misc - handy utilities for numbers";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Number::Misc - handy utilities for numbers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   NumberWithError = buildPerlPackage {
@@ -18912,7 +19900,7 @@ let
     buildInputs = [ TestLectroTest ];
     meta = {
       description = "Numbers with error propagation and scientific rounding";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18926,7 +19914,7 @@ let
     propagatedBuildInputs = [ ClassAccessor ClassDataAccessor ClassErrorHandler CryptOpenSSLRSA LWP ListMoreUtils UNIVERSALrequire ];
     meta = {
       description = "OAuth framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18939,7 +19927,7 @@ let
     };
     propagatedBuildInputs = [ DigestHMAC ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.pSub ];
     };
   };
@@ -18953,7 +19941,8 @@ let
     };
     meta = {
       description = "Per object accessors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/object-accessor";
     };
   };
 
@@ -18967,7 +19956,7 @@ let
     propagatedBuildInputs = [ AnyEvent commonsense ];
     meta = {
       description = "A class that provides an event callback interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -18994,7 +19983,7 @@ let
     propagatedBuildInputs = [ ExceptionClass ];
     meta = {
       description = "Comprehensive inside-out object support module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -19007,7 +19996,8 @@ let
     };
     meta = {
       description = "Generate cryptographic signatures for objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Object-Signature";
     };
   };
 
@@ -19022,8 +20012,9 @@ let
     # The testing mechanism is erorrneous upstream. See http://matrix.cpantesters.org/?dist=Ogg-Vorbis-Header-PurePerl+1.0
     doCheck = false;
     meta = {
-      description = "An object-oriented interface to Ogg Vorbis information and comment fields";
-      license = with lib.licenses; [ artistic1 ];
+      description = "access Ogg Vorbis info and comment fields";
+      license = licenses.free;
+      homepage = "https://github.com/davorg/perl-ogg-vorbis-header-pureperl";
     };
   };
 
@@ -19036,7 +20027,6 @@ let
     };
     meta = {
       description = "Read and write OLE storage files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -19049,7 +20039,8 @@ let
     };
     meta = {
       description = "More Opcodes information from opnames.h and opcode.h";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rurban/Opcodes";
     };
   };
 
@@ -19062,9 +20053,9 @@ let
     };
     propagatedBuildInputs = [ MojoliciousPluginOpenAPI ];
     meta = {
-      homepage = "https://github.com/jhthorsen/openapi-client";
       description = "A client for talking to an Open API powered server";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/jhthorsen/openapi-client";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -19092,6 +20083,10 @@ let
     '';
 
     doCheck = false;
+    meta = {
+      description = "Perl bindings to the OpenGL API, GLU, and GLUT/FreeGLUT";
+      homepage = "http://sourceforge.net/projects/pogl/";
+    };
   };
 
   NetOpenIDCommon = buildPerlPackage {
@@ -19102,6 +20097,11 @@ let
       sha256 = "1jdbkp18ka2m4akjp9b0dbw2lqnzgwpq435cnh6hwwa79bbrfkmb";
     };
     propagatedBuildInputs = [ CryptDHGMP XMLSimple ];
+    meta = {
+      description = "Libraries shared between Net::OpenID::Consumer and Net::OpenID::Server";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://groups.google.com/group/openid-perl";
+    };
   };
 
   NetOpenIDConsumer = buildPerlPackage {
@@ -19113,6 +20113,11 @@ let
     };
     propagatedBuildInputs = [ JSON NetOpenIDCommon ];
     buildInputs = [ CGI ];
+    meta = {
+      description = "Library for consumers of OpenID identities";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://groups.google.com/group/openid-perl";
+    };
   };
 
   NetOpenSSH = buildPerlPackage {
@@ -19124,7 +20129,8 @@ let
     };
     meta = {
       description = "Perl SSH client package implemented on top of OpenSSH";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/salva/p5-Net-OpenSSH";
     };
   };
 
@@ -19169,7 +20175,7 @@ let
     };
     meta = {
       description = "List constants defined in a package";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -19184,7 +20190,8 @@ let
     propagatedBuildInputs = [ PackageStash ParamsUtil SubInstall SubName ];
     meta = {
       description = "Manage deprecation warnings for your distribution";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/moose/Package-DeprecationManager";
     };
   };
 
@@ -19197,7 +20204,8 @@ let
     };
     meta = {
       description = "Package-related utilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Package-MoreUtil";
     };
   };
 
@@ -19210,7 +20218,6 @@ let
     };
     meta = {
       description = "Utilities to read and manipulate patches and CVS";
-      license = with lib.licenses; [ artistic1 ];
     };
   };
 
@@ -19225,7 +20232,8 @@ let
     propagatedBuildInputs = [ DistCheckConflicts ModuleImplementation ];
     meta = {
       description = "Routines for manipulating stashes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Package-Stash";
     };
   };
 
@@ -19238,8 +20246,9 @@ let
     };
     buildInputs = [ TestFatal TestRequires ];
     meta = {
-      description = "Faster and more correct implementation of the Package::Stash API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "faster and more correct implementation of the Package::Stash API";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Package-Stash-XS";
     };
   };
 
@@ -19252,7 +20261,8 @@ let
     };
     meta = {
       description = "Package-related utilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Package-Util-Lite";
     };
   };
 
@@ -19266,9 +20276,9 @@ let
     buildInputs = [ pkgs.pango ];
     propagatedBuildInputs = [ Cairo Glib ];
     meta = {
-      homepage = "http://gtk2-perl.sourceforge.net/";
       description = "Layout and render international text";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://gtk2-perl.sourceforge.net";
     };
   };
 
@@ -19281,9 +20291,9 @@ let
     };
     buildInputs = [ TestWarn ];
     meta = {
-      homepage = "https://github.com/dluxhu/perl-parallel-forkmanager";
       description = "A simple parallel processing fork manager";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dluxhu/perl-parallel-forkmanager";
     };
     propagatedBuildInputs = [ Moo ];
   };
@@ -19297,9 +20307,9 @@ let
     };
     buildInputs = [ ModuleBuildTiny ];
     meta = {
+      description = "parallel processing using pipe(2) for communication and synchronization";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/skaji/Parallel-Pipes";
-      description = "Parallel processing using pipe(2) for communication and synchronization";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -19315,7 +20325,7 @@ let
     propagatedBuildInputs = [ ClassAccessorLite ListMoreUtils ProcWait3 ScopeGuard SignalMask ];
     meta = {
       description = "A simple prefork server framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -19329,7 +20339,8 @@ let
     propagatedBuildInputs = [ ClassAccessorLite HTMLParser JSON ];
     meta = {
       description = "a scoreboard for monitoring status of many workers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazuho/p5-Parallel-Scoreboard";
     };
   };
 
@@ -19341,6 +20352,10 @@ let
       sha256 = "052r198xyrsv8wz21gijdigz2cgnidsa37nvyfzdiz4rv1fc33ir";
     };
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
+    meta = {
+      description = "argument type classification";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ParamsUtil = buildPerlPackage {
@@ -19352,7 +20367,8 @@ let
     };
     meta = {
       description = "Simple, compact and correct param-checking functions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-utils/Params-Util";
     };
     buildInputs = [ TestLeakTrace ];
   };
@@ -19369,7 +20385,8 @@ let
     perlPreHook = "export LD=$CC";
     meta = {
       description = "Validate method/function parameters";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Params-Validate";
     };
   };
 
@@ -19383,9 +20400,10 @@ let
      propagatedBuildInputs = [ EvalClosure ExceptionClass ];
      buildInputs = [ Specio Test2PluginNoWarnings Test2Suite TestWithoutModule ];
      meta = {
-       description = "Build an optimized subroutine parameter validator once, use it forever";
-       license = with lib.licenses; [ artistic2 ];
-     };
+      description = "Build an optimized subroutine parameter validator once, use it forever";
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Params-ValidationCompiler";
+    };
   };
 
   Paranoid = buildPerlPackage {
@@ -19403,7 +20421,7 @@ let
     '';
     meta = {
       description = "General function library for safer, more secure programming";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = teams.deshaw.members;
     };
   };
@@ -19417,6 +20435,8 @@ let
     };
     meta = {
       description = "Create and manipulate PAR distributions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rschupp/PAR-Dist";
     };
   };
 
@@ -19430,10 +20450,10 @@ let
      propagatedBuildInputs = [ FileHomeDir HTTPDate MooXOptions TimeDurationParse ];
      buildInputs = [ PathTiny ];
      meta = {
-       description = "interface to PAUSE's module permissions file (06perms.txt)";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/PAUSE-Permissions";
-     };
+      description = "interface to PAUSE's module permissions file (06perms.txt)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/PAUSE-Permissions";
+    };
   };
 
   Parent = buildPerlPackage {
@@ -19442,6 +20462,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/C/CO/CORION/parent-0.238.tar.gz";
       sha256 = "1lfjqjxsvgpsn6ycah4z0qygkykj4v8ca3cdki61k2p2ygg8zx9q";
+    };
+    meta = {
+      description = "Establish an ISA relationship with base classes at compile time";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/parent";
     };
   };
 
@@ -19453,9 +20478,7 @@ let
       sha256 = "0ad78qri4sg9agghqdm83xsjgks94yvffs23kppy7mqjy8gwwjxn";
     };
     propagatedBuildInputs = [ IOStringy LWP ];
-    meta = with lib; {
-      license = with licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   ParseIRC = buildPerlPackage {
@@ -19466,9 +20489,9 @@ let
       sha256 = "457b09897f37d38a7054f9563247365427fe24101622ed4c7f054723a45b58d5";
     };
     meta = {
-      homepage = "https://github.com/bingos/parse-irc";
       description = "A parser for the IRC protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/parse-irc";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -19483,9 +20506,10 @@ let
      propagatedBuildInputs = [ ParsePMFile ];
      buildInputs = [ ExtUtilsMakeMakerCPANfile TestUseAllModules ];
      meta = {
-       description = "parses local .pm files as PAUSE does";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "parses local .pm files as PAUSE does";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/Parse-LocalDistribution";
+    };
   };
 
   ParseMethodSignatures = buildPerlPackage {
@@ -19499,7 +20523,7 @@ let
     buildInputs = [ TestDifferences TestException aliased ];
     meta = {
       description = "Perl6 like method signature parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/ashb/Parse-Method-Signatures/tree/master";
     };
   };
@@ -19514,7 +20538,8 @@ let
     buildInputs = [ FileShareDirInstall FileSlurper ];
     meta = {
       description = "Parse the output of \"netstat\" command";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Parse-Netstat";
     };
   };
 
@@ -19528,7 +20553,7 @@ let
     propagatedBuildInputs = [ ClassEHierarchy Paranoid ];
     meta = {
       description = "Parser/Generator of human-readable conf files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = teams.deshaw.members;
     };
   };
@@ -19542,9 +20567,10 @@ let
      };
      buildInputs = [ ExtUtilsMakeMakerCPANfile ];
      meta = {
-       description = "parses .pm file as PAUSE does";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "parses .pm file as PAUSE does";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/Parse-PMFile";
+    };
   };
 
   ParseRecDescent = buildPerlModule {
@@ -19556,7 +20582,8 @@ let
     };
     meta = {
       description = "Generate Recursive-Descent Parsers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jtbraun/Parse-RecDescent";
     };
   };
 
@@ -19578,7 +20605,8 @@ let
     };
     meta = {
       description = "Routines to parse variable name";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Parse-VarName";
     };
   };
 
@@ -19592,7 +20620,7 @@ let
     propagatedBuildInputs = [ FileSlurpTiny ];
     meta = {
       description = "build simple recursive-descent parsers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -19605,7 +20633,6 @@ let
     };
     meta = {
       description = "Perl extension for generating and using LALR parsers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -19618,7 +20645,7 @@ let
     };
     meta = {
       description = "Cross-platform path specification manipulation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -19633,7 +20660,7 @@ let
     buildInputs = [ Filepushd PathTiny TestDeep TestFilename ];
     meta = {
       description = "Iterative, recursive file finder";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/dagolden/Path-Iterator-Rule";
     };
   };
@@ -19649,7 +20676,8 @@ let
     buildInputs = [ TestDeep TestFatal ];
     meta = {
       description = "A tool for routing paths";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/stevan/Path-Router";
     };
   };
 
@@ -19662,7 +20690,8 @@ let
     };
     meta = {
       description = "File path utility";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Path-Tiny";
     };
     preConfigure =
       ''
@@ -19684,6 +20713,11 @@ let
       url = "mirror://cpan/authors/id/X/XS/XSAWYERX/PathTools-3.75.tar.gz";
       sha256 = "a558503aa6b1f8c727c0073339081a77888606aa701ada1ad62dd9d8c3f945a2";
     };
+    meta = {
+      description = "Tools for working with directory and file names";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dev.perl.org/";
+    };
   };
 
   PBKDF2Tiny = buildPerlPackage {
@@ -19694,9 +20728,9 @@ let
       sha256 = "b4e21dc59b30265eaaa41b705087ec03447d9c655a14ac40ff46e4de29eabf8e";
     };
     meta = {
-      homepage = "https://github.com/dagolden/PBKDF2-Tiny";
       description = "Minimalist PBKDF2 (RFC 2898) with HMAC-SHA1 or HMAC-SHA2";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/PBKDF2-Tiny";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -19714,9 +20748,8 @@ let
     # tests fail; look unfinished
     doCheck = false;
     meta = {
-      homepage = "http://ludovic.rousseau.free.fr/softwares/pcsc-perl/";
       description = "Communicate with a smart card using PC/SC";
-      license = lib.licenses.gpl2Plus;
+      homepage = "http://ludovic.rousseau.free.fr/softwares/pcsc-perl/";
       maintainers = with maintainers; [ abbradar ];
     };
   };
@@ -19732,7 +20765,8 @@ let
     propagatedBuildInputs = [ FontTTF ];
     meta = {
       description = "Facilitates the creation and modification of PDF files";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "https://github.com/ssimms/pdfapi2";
     };
   };
 
@@ -19761,10 +20795,10 @@ let
     propagatedBuildInputs = [ AstroFITSHeader ConvertUU FileMap InlineC ListMoreUtils ModuleCompile OpenGL PodParser TermReadKey ];
 
     meta = {
-      homepage = "http://pdl.perl.org/";
       description = "Perl Data Language";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.linux;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://pdl.perl.org/";
+      platforms = platforms.linux;
     };
   };
 
@@ -19777,9 +20811,9 @@ let
     };
     buildInputs = [ TestPod TieIxHash ];
     meta = {
-      homepage = "https://github.com/ingydotnet/pegex-pm";
       description = "Acmeist PEG Parser Framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/pegex-pm";
     };
     propagatedBuildInputs = [ FileShareDirInstall XXX ];
   };
@@ -19794,7 +20828,8 @@ let
     propagatedBuildInputs = [ URI ];
     meta = {
       description = "Base class for all Perinci Riap clients";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Perinci-Access-Base";
     };
   };
 
@@ -19808,7 +20843,8 @@ let
     propagatedBuildInputs = [ JSONMaybeXS LWPProtocolhttpSocketUnixAlt Logger PerinciAccessBase PerinciAccessUtil ];
     meta = {
       description = "Riap::HTTP client";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Perinci-Access-HTTP-Client";
     };
   };
 
@@ -19823,7 +20859,8 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "PSGI application to implement Riap::HTTP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Perinci-Access-HTTP-Server";
     };
   };
 
@@ -19838,7 +20875,8 @@ let
     buildInputs = [ MonkeyPatchAction PerinciExamples TestException ];
     meta = {
       description = "Access Perl module, functions, variables through Riap";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Access-Perl";
     };
   };
 
@@ -19851,7 +20889,8 @@ let
     };
     meta = {
       description = "Utility module for Riap client/server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-AccessUtil-Check";
     };
   };
 
@@ -19865,7 +20904,8 @@ let
     propagatedBuildInputs = [ Logger PerinciObject PerinciSubPropertyargcmdline PerinciSubUtil ScalarUtilNumeric ];
     meta = {
       description = "Various examples of Rinci metadata";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Examples";
     };
   };
 
@@ -19879,7 +20919,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Object-oriented interface for Rinci metadata";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Object";
     };
   };
 
@@ -19893,7 +20934,8 @@ let
     propagatedBuildInputs = [ DataCleanJSON DataDumpOneLine DataFormatPretty DataFormatPrettyJSON ];
     meta = {
       description = "Format envelope result";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Perinci-Result-Format";
     };
   };
 
@@ -19908,7 +20950,8 @@ let
     buildInputs = [ CompleteBash MonkeyPatchAction PerinciExamples SahSchemasInt ];
     meta = {
       description = "Complete command-line argument using Rinci metadata";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-Complete";
     };
   };
 
@@ -19922,7 +20965,8 @@ let
     propagatedBuildInputs = [ FileWhich ];
     meta = {
       description = "Check dependencies from 'deps' property";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-DepChecker";
     };
   };
 
@@ -19937,7 +20981,8 @@ let
     buildInputs = [ DataCleanJSON DataSah TestDeep TestNeeds ];
     meta = {
       description = "Get subroutine arguments from command line arguments (@ARGV)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-GetArgs-Argv";
     };
   };
 
@@ -19951,7 +20996,8 @@ let
     propagatedBuildInputs = [ PerinciSubNormalize ];
     meta = {
       description = "Get subroutine arguments (%args) from array";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-GetArgs-Array";
     };
   };
 
@@ -19966,7 +21012,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Normalize Rinci function metadata";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-Normalize";
     };
   };
 
@@ -19980,7 +21027,8 @@ let
     propagatedBuildInputs = [ SahSchemasRinci ];
     meta = {
       description = "Utility routines for Perinci::Sub::Property::* modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-Perinci-Sub-PropertyUtil";
     };
   };
 
@@ -19994,7 +21042,8 @@ let
     propagatedBuildInputs = [ PerinciSubNormalize PerinciSubPropertyUtil ];
     meta = {
       description = "Specify command-line-related attributes in argument specification";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-Property-arg-cmdline";
     };
   };
 
@@ -20009,7 +21058,8 @@ let
     buildInputs = [ GenTestRinciFuncResult ];
     meta = {
       description = "Helper when writing functions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-Util";
     };
   };
 
@@ -20024,7 +21074,8 @@ let
     buildInputs = [ SubIterator TestException ];
     meta = {
       description = "A multi-purpose subroutine wrapping framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perinci-Sub-Wrapper";
     };
   };
 
@@ -20048,7 +21099,8 @@ let
     };
     meta = {
       description = "List possible $^O ($OSNAME) values, with description";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Perl-osnames";
     };
   };
 
@@ -20062,9 +21114,9 @@ let
     buildInputs = [ TestDeep ];
     propagatedBuildInputs = [ BKeywords ConfigTiny FileWhich ListMoreUtils ModulePluggable PPIxQuoteLike PPIxRegexp PPIxUtilities PerlTidy PodSpell StringFormat ];
     meta = {
-      homepage = "http://perlcritic.com";
       description = "Critique Perl source code for best-practices";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perlcritic.com";
     };
   };
 
@@ -20078,7 +21130,8 @@ let
     propagatedBuildInputs = [ PerlCritic namespaceautoclean ];
     meta = {
       description = "Policies for Perl::Critic concerned with using Moose";
-      license = lib.licenses.artistic1;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Perl-Critic-Moose";
     };
   };
 
@@ -20089,8 +21142,7 @@ let
       url = "mirror://cpan/authors/id/R/RG/RGARCIA/Perl-Destruct-Level-0.02.tar.gz";
       sha256 = "0fyiysrq874ncscgdjg522fs29gvqads6ynyhwxwwq1b545srd20";
     };
-    meta = {
-    };
+
   };
 
   PerlIOLayers = buildPerlModule {
@@ -20102,7 +21154,8 @@ let
     };
     meta = {
       description = "Querying your filehandle's capabilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/perlio-layers";
     };
   };
 
@@ -20112,6 +21165,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SH/SHLOMIF/PerlIO-eol-0.17.tar.gz";
       sha256 = "1fayp27vcmypqyzcd4003036h3g5zy6jk1ia25frdca58pzcpk6f";
+    };
+    meta = {
+      description = "PerlIO layer for normalizing line endings";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/PerlIO-eol";
     };
   };
 
@@ -20126,7 +21184,7 @@ let
     NIX_CFLAGS_LINK = "-L${pkgs.zlib.out}/lib -lz";
     meta = {
       description = "Perl extension to provide a PerlIO layer to gzip/gunzip";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20152,7 +21210,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Fast and correct UTF-8 IO";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/perlio-utf8_strict";
     };
   };
 
@@ -20180,6 +21239,10 @@ let
       # causes build failure for perl5.18+
       rm -r  inc
     '';
+    meta = {
+      description = "PerlIO layer for symlinks";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PerlIOviaTimeout = buildPerlModule {
@@ -20191,8 +21254,8 @@ let
     };
     buildInputs = [ ModuleBuildTiny TestSharedFork TestTCP ];
     meta = {
-      description = "A PerlIO layer that adds read & write timeout to a handle";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a PerlIO layer that adds read & write timeout to a handle";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20206,9 +21269,9 @@ let
     buildInputs = [ TextSoundex ];
     propagatedBuildInputs = [ ConvertASN1 ];
     meta = {
-      homepage = "http://ldap.perl.org/";
       description = "LDAP client library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://ldap.perl.org/";
       maintainers = teams.deshaw.members;
     };
   };
@@ -20236,8 +21299,9 @@ let
       sha256 = "17qqvass1n726ff1bkl8pc8yijhjy9vlm3wcc1xaykjxmz76cxi0";
     };
     meta = {
-      description = "Indent and reformat perl scripts";
-      license = lib.licenses.gpl2Plus;
+      description = "indent and reformat perl scripts";
+      license = licenses.gpl2Plus;
+      homepage = "https://github.com/perltidy/perltidy";
     };
     nativeBuildInputs = lib.optional stdenv.isDarwin shortenPerlShebang;
     postInstall = lib.optionalString stdenv.isDarwin ''
@@ -20253,7 +21317,7 @@ let
       sha256 = "0yphqsgg7zrar2ywk2j2fnjxmi9rq32yf0p5ln8m9fmfx4kd84mr";
     };
     meta = {
-      description = "Simple flexible means of converting the output of PHP's serialize() into the equivalent Perl memory structure, and vice versa";
+      description = "simple flexible means of converting the output of PHP's serialize() into the equivalent Perl memory structure, and vice versa";
     };
   };
 
@@ -20266,7 +21330,8 @@ let
     };
     meta = {
       description = "Pure-Perl Core-Only replacement for pkg-config";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/PerlPkgConfig/perl-PkgConfig";
       maintainers = teams.deshaw.members;
     };
   };
@@ -20281,9 +21346,9 @@ let
     buildInputs = [ AuthenSimplePasswd CGIEmulatePSGI FileShareDirInstall HTTPRequestAsCGI HTTPServerSimplePSGI IOHandleUtil LWP LWPProtocolhttp10 LogDispatchArray MIMETypes TestMockTimeHiRes TestRequires TestSharedFork TestTCP ];
     propagatedBuildInputs = [ ApacheLogFormatCompiler CookieBaker DevelStackTraceAsHTML FileShareDir FilesysNotifySimple HTTPEntityParser HTTPHeadersFast HTTPMessage TryTiny ];
     meta = {
-      homepage = "https://github.com/plack/Plack";
       description = "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plack/Plack";
     };
   };
 
@@ -20297,7 +21362,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Wrapper for Apache2 Action directive for running PSGI apps on shared hosting with FastCGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/robinsmidsrod/Plack-App-Apache-ActionWrapper";
     };
   };
 
@@ -20312,7 +21378,7 @@ let
     buildInputs = [ ArchiveExtract DevelCheckBin FileShareDirInstall ModuleBuildTiny TestFileShareDir ];
     meta = {
       description = "A web application that provides access to Beanstalk statistics and tools";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Plack-App-BeanstalkConsole";
     };
   };
@@ -20328,7 +21394,7 @@ let
     buildInputs = [ ModuleBuildTiny Starman ];
     meta = {
       description = "allow old style CGI applications to use the plack streaming protocol";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/binary-com/perl-Plack-App-CGIBin-Streaming";
     };
   };
@@ -20352,7 +21418,7 @@ let
     propagatedBuildInputs = [ Catmandu JSON Plack RouterSimple ];
     meta = {
       description = "Wrap a REST API around a Catmandu::Bag";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-App-Catmandu-Bag";
     };
   };
@@ -20367,7 +21433,7 @@ let
     propagatedBuildInputs = [ PlackAppProxy Starlet opts ];
     meta = {
       description = "proxy requests and replace by local file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20382,7 +21448,7 @@ let
     buildInputs = [ FileShareDirInstall TestJSONEntails TestWarn ];
     meta = {
       description = "DAIA Server as Plack application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-DAIA";
     };
   };
@@ -20397,7 +21463,7 @@ let
     propagatedBuildInputs = [ FilesysVirtualPlain NetDAVServer Plack ];
     meta = {
       description = "simple DAV server for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20412,7 +21478,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "server side http transport for DBI-Gofer using PSGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20441,7 +21507,7 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "Serve static files from document root with directory index using Apaxy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/keedi/Plack-App-Directory-Apaxy";
     };
   };
@@ -20456,7 +21522,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Serve static files from document root with an index file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/davorg/plack-app-directoryindex";
     };
   };
 
@@ -20471,7 +21538,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Serve translated HTML from markdown files from document root with directory index";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Songmu/p5-Plack-App-Directory-Markdown";
     };
   };
@@ -20487,7 +21554,7 @@ let
     buildInputs = [ FileObject TagsOutputIndent TestNoWarnings ];
     meta = {
       description = "Plack PYX directory application";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Plack-App-Directory-PYX";
     };
   };
@@ -20503,7 +21570,7 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "Serve static files from document root with directory index template";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-Directory-Template";
     };
   };
@@ -20518,7 +21585,7 @@ let
     propagatedBuildInputs = [ Plack TextXslate ];
     meta = {
       description = "Serve static files and Text::Xslate template files from document root with directory index";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karupanerura/p5-Plack-App-Directory-Xslate";
     };
   };
@@ -20533,7 +21600,8 @@ let
     propagatedBuildInputs = [ ImageEmpty Imager Plack ];
     meta = {
       description = "generate dummy box image for web development";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-App-DummyBox";
     };
   };
 
@@ -20548,7 +21616,7 @@ let
     buildInputs = [ ErrorPure FileObject TestNoWarnings ];
     meta = {
       description = "Plack env dump application";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Plack-App-Env";
     };
   };
@@ -20564,7 +21632,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "EventSource/SSE for Plack";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/vti/plack-app-eventsource";
     };
   };
@@ -20580,7 +21648,7 @@ let
     buildInputs = [ TestRequires TestTCP ];
     meta = {
       description = "Dispatch requests to FCGI servers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20594,7 +21662,8 @@ let
     propagatedBuildInputs = [ CGIEmulatePSGI MooXHandlesVia Plack TypeTiny mod_perl2 ];
     meta = {
       description = "Wrapping mod_perl2 applications in Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/singingfish/plack-app-wrapapachereq";
     };
   };
 
@@ -20609,7 +21678,8 @@ let
     buildInputs = [ DataPrinter FindBinlibs PodCoverageTrustPod TestDeep TestException TestKwalitee TestNoTabs TestPod TestPodCoverage TestUseAllModules ];
     meta = {
       description = "Perl distro to aid in mod_perl1->PSGI migration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chiselwright/plack-app-fakeapache1";
     };
   };
 
@@ -20623,7 +21693,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Serve static files with case insensitive paths";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/frioux/Plack-App-File-CaseInsensitive";
     };
   };
@@ -20639,7 +21709,7 @@ let
     buildInputs = [ FileObject TagsOutputIndent TestNoWarnings ];
     meta = {
       description = "Plack PYX file application";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Plack-App-File-PYX";
     };
   };
@@ -20655,7 +21725,8 @@ let
     buildInputs = [ TestClass TestException TestTCP ];
     meta = {
       description = "Plack application to display the status of Gearman job servers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mstock/Plack-App-Gearman-Status";
     };
   };
 
@@ -20670,7 +21741,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "GitHub WebHook receiver as Plack application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-GitHub-WebHook";
     };
   };
@@ -20686,7 +21757,7 @@ let
     buildInputs = [ FileCopyRecursive ];
     meta = {
       description = "Git Smart HTTP Server PSGI(Plack) Implementation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/dragon3/Plack-App-GitSmartHttp";
     };
   };
@@ -20702,7 +21773,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "The ASCII Graph Application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-App-GraphEasy";
     };
   };
 
@@ -20717,7 +21789,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Serve GraphQL from Plack / PSGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/jjn1056/Plack-App-GraphQL";
     };
   };
@@ -20732,7 +21804,7 @@ let
     propagatedBuildInputs = [ ArrayRefElem Plack ];
     meta = {
       description = "Serve up the contents of a hash as a website";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/ap/Plack-App-Hash";
     };
   };
@@ -20748,7 +21820,7 @@ let
     buildInputs = [ DataPrinter ];
     meta = {
       description = "HipChat WebHook Plack Application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20763,7 +21835,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Map multiple Plack apps by host";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/srchulo/Plack--App--HostMap";
     };
   };
@@ -20778,7 +21850,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Run multiple apps dispatched by the request Host header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Plack-App-Hostname";
     };
   };
 
@@ -20793,8 +21866,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Create and manipulate images with Image::Magick";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-App-ImageMagick";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20809,7 +21881,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "(DEPRECATED) Yet another JSON-RPC 2.0 psgi application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nqounet/p5-plack-app-jsonrpc";
     };
   };
@@ -20824,7 +21896,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Javascript PSGI apps via JSP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/pdonelan/Plack-App-JSP";
     };
   };
 
@@ -20839,7 +21912,7 @@ let
     buildInputs = [ CSSStructOutputIndent TagsOutputIndent TestNoWarnings ];
     meta = {
       description = "Plack login application";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Plack-App-Login";
     };
   };
@@ -20854,8 +21927,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Minify, Compress, Cache-control and Serve static files from Plack applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-App-MCCS";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ido50/Plack-App-MCCS";
     };
   };
 
@@ -20870,7 +21943,8 @@ let
     buildInputs = [ PodCoverageTrustPod TestCPANMeta TestPod ];
     meta = {
       description = "Plack application to display the sessions of OpenVPN server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-App-OpenVPN-Status";
     };
   };
 
@@ -20885,7 +21959,7 @@ let
     buildInputs = [ DevelCheckBin ];
     meta = {
       description = "execute PHP script as CGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-App-PHPCGI";
     };
   };
@@ -20900,7 +21974,8 @@ let
     propagatedBuildInputs = [ MooseXNonMoose PathRouter Plack ];
     meta = {
       description = "A Plack component for dispatching with Path::Router";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/stevan/plack-app-path-router";
     };
   };
 
@@ -20914,7 +21989,7 @@ let
     propagatedBuildInputs = [ DBDPg DBIxConnector JSONXS Plack RouterResource TieIxHash methods ];
     meta = {
       description = "http://postgre.st/";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20928,7 +22003,7 @@ let
     propagatedBuildInputs = [ JSON Plack ];
     meta = {
       description = "Proxy plack requests to a rack application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -20943,7 +22018,8 @@ let
     buildInputs = [ CHI Test2Suite Test2ToolsHTTP TestDifferences ];
     meta = {
       description = "a simple prerendering proxy for Plack";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/perl-Plack-App-Prerender";
     };
   };
 
@@ -20957,9 +22033,9 @@ let
      propagatedBuildInputs = [ AnyEventHTTP LWP Plack ];
      buildInputs = [ TestRequires TestSharedFork TestTCP ];
      meta = {
-       description = "proxy requests";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "proxy requests";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PlackAppProxyBackendHTTPTiny = buildPerlModule {
@@ -20972,7 +22048,8 @@ let
     propagatedBuildInputs = [ PlackAppProxy ];
     meta = {
       description = "backend for Plack::App::Proxy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Plack-App-Proxy-Backend-HTTP-Tiny";
     };
   };
 
@@ -20986,7 +22063,7 @@ let
     propagatedBuildInputs = [ PathClass PlackAppProxy RegexpCommon ];
     meta = {
       description = "Proxy app that serves selected paths from local dir";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21000,7 +22077,7 @@ let
     propagatedBuildInputs = [ HTTPParserXS PlackAppProxy namespaceclean ];
     meta = {
       description = "proxy HTTP and WebSocket connections";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/chazmcgarvey/p5-Plack-App-Proxy-WebSocket";
     };
   };
@@ -21016,7 +22093,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "PubSubHubbub subscriber implementation as a Plack App";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21031,7 +22108,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "serve RDF data from files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-RDF-Files";
     };
   };
@@ -21047,7 +22124,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Perl PSGI App that just call http method from object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/vasekd/Plack-App-REST";
     };
   };
@@ -21063,7 +22140,7 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "SeeAlso Server as PSGI application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-SeeAlso";
     };
   };
@@ -21079,7 +22156,7 @@ let
     buildInputs = [ TestMockModule TestMockObject ];
     meta = {
       description = "Check and report status of various services needed by your app";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/Plack-App-ServiceStatus";
     };
   };
@@ -21095,7 +22172,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "The Source Code Viewer for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-App-SourceViewer";
     };
   };
 
@@ -21109,7 +22187,7 @@ let
     propagatedBuildInputs = [ Plack TextXslate ];
     meta = {
       description = "Serve static files from document root with directory index";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kaare/Plack-App-TemplatedDirectory";
     };
   };
@@ -21124,7 +22202,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Map multiple apps in different paths";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/cv-library/Plack-App-URLHashMap";
     };
   };
 
@@ -21138,7 +22217,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Map multiple applications in defferent url path";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21153,7 +22232,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Simple virtual host implementation on Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://git@github.com/karupanerura/Plack-App-Vhost";
     };
   };
@@ -21168,7 +22247,8 @@ let
     propagatedBuildInputs = [ CGICompile CGIEmulatePSGI DBDmysql FileShare ModuleBuildPluggableCPANfile PlackAppMCCS ];
     meta = {
       description = "WebMySQL web application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/thedumbterminal/Plack-App-WebMySQL";
     };
   };
 
@@ -21183,7 +22263,8 @@ let
     buildInputs = [ ModuleBuildPrereqsFromCPANfile TestRequires TestTCP ];
     meta = {
       description = "WebSocket server as a PSGI application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/debug-ito/Plack-App-WebSocket";
     };
   };
 
@@ -21198,7 +22279,8 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "Export DBI database as HTTP API (Riap::HTTP)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Plack-App-dbi2http";
     };
   };
 
@@ -21212,7 +22294,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Serve via unAPI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-App-unAPI";
     };
   };
@@ -21228,7 +22310,7 @@ let
     buildInputs = [ DancerMiddlewareRebase DevelCover TestException ];
     meta = {
       description = "role for Single Sign On (SSO) authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-Auth-SSO";
     };
   };
@@ -21258,7 +22340,7 @@ let
     buildInputs = [ TestTCP ];
     meta = {
       description = "abstract interface to remote web servers and local PSGI apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21273,7 +22355,8 @@ let
     buildInputs = [ FileShareDirInstall PathClass TestFatal TestWarn UUIDTiny ];
     meta = {
       description = "Debugging tool for Plack web applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/stevan/p5-plack-debugger.git";
     };
   };
 
@@ -21287,7 +22370,8 @@ let
     propagatedBuildInputs = [ PlackDebugger PlackMiddlewareDBICQueryLog TextMicroTemplate ];
     meta = {
       description = "DBIC query log panel for Plack::Debugger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/SysPete/Plack-Debugger-Panel-DBIC-QueryLog.git";
     };
   };
 
@@ -21301,7 +22385,7 @@ let
     propagatedBuildInputs = [ DBI PlackDebugger ];
     meta = {
       description = "A DBI::Profile panel for Plack::Debugger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/davebaird/plack-debugger-panel-dbiprofile";
     };
   };
@@ -21317,7 +22401,7 @@ let
     buildInputs = [ Dancer2 PathClass ];
     meta = {
       description = "Plack Debugger Panel for displaying Dancer2 Version";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mrmaloof/Plack-Debugger-Panel-Dancer2-Version";
     };
   };
@@ -21333,7 +22417,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Asynchronous FCGI handler for PSGI using AnyEvent::FCGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21348,7 +22432,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Plack handler to run PSGI apps on AnyEvent::HTTPD";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21362,7 +22446,7 @@ let
     propagatedBuildInputs = [ AnyEventReverseHTTP Plack ];
     meta = {
       description = "reversehttp gateway for PSGI application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21377,7 +22461,7 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     meta = {
       description = "PSGI handler on AnyEvent::SCGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/miyagawa/Plack-Handler-AnyEvent-SCGI";
     };
   };
@@ -21408,7 +22492,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "PSGI handler for FCGI::EV";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21422,7 +22506,7 @@ let
     propagatedBuildInputs = [ Feersum ServerStarter ];
     meta = {
       description = "Server::Starter adapter for Feersum Plack handler";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21436,7 +22520,8 @@ let
     propagatedBuildInputs = [ NetFastCGI Plack ];
     meta = {
       description = "FastCGI handler for Plack using Net::FastCGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chansen/p5-plack-handler-net-fastcgi";
     };
   };
 
@@ -21451,7 +22536,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "PSGI handler on SCGI daemon";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21466,7 +22551,8 @@ let
     buildInputs = [ AlienActiveMQ DataPrinter JSONXS NetStompProducer TestDeep TestFatal TestMost TestRoutine ];
     meta = {
       description = "Plack handler for the STOMP protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dakkar/Plack-Handler-Stomp";
     };
   };
 
@@ -21481,7 +22567,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal TestLib TestMonkeyMock TestRequires ];
     meta = {
       description = "I18N for Plack";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/vti/plack-i18n";
     };
   };
@@ -21496,7 +22582,7 @@ let
     propagatedBuildInputs = [ DataAMF Plack ];
     meta = {
       description = "The great new Plack::Middleware::AMF!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21510,7 +22596,7 @@ let
     propagatedBuildInputs = [ NetIP Plack ];
     meta = {
       description = "Restrict access depending on remote ip or other parameters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tadam/Plack-Middleware-Access";
     };
   };
@@ -21526,7 +22612,8 @@ let
     buildInputs = [ TestClass TestDeep TestException ];
     meta = {
       description = "Access log middleware which creates structured log messages";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mstock/Plack-Middleware-AccessLog-Structured";
     };
   };
 
@@ -21541,7 +22628,8 @@ let
     buildInputs = [ TestClass TestDeep TestTCP ];
     meta = {
       description = "Access log middleware which passes structured log messages into ZeroMQ";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mstock/Plack-Middleware-AccessLog-Structured-ZeroMQ";
     };
   };
 
@@ -21556,7 +22644,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile TestArrow ];
     meta = {
       description = "Add ASCII Art into HTTP Header";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "http://github.com/bayashi/Plack-Middleware-Acme-AAHTTPHeader";
     };
   };
 
@@ -21570,7 +22659,8 @@ let
     propagatedBuildInputs = [ DataSection Plack ];
     meta = {
       description = "Implement PHP's best features with PSGI!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/frioux/Plack-Middleware-Acme-PHPE9568F34-D428-11d2-A769-00AA001ACF42";
     };
   };
 
@@ -21584,7 +22674,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Middleware that handles the Yada Yada operator";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/hoelzro/plack-middleware-acme-yadayada";
     };
   };
@@ -21599,7 +22689,7 @@ let
     propagatedBuildInputs = [ CHI WebRequest ];
     meta = {
       description = "mirror parts of your app e.g. for offline hacking";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21614,7 +22704,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Let you use a filehandle in the response body that has ->read but not ->getline";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/jjn1056/Plack-Middleware-AdaptFilehandleRead";
     };
   };
@@ -21629,7 +22719,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "a port of Apache2's AddDefaultCharset";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21644,7 +22734,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Prevent bots from submitting forms";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/vti/plack-middleware-antibot";
     };
   };
@@ -21659,7 +22749,8 @@ let
     propagatedBuildInputs = [ Apache2ModSSL Plack ];
     meta = {
       description = "a module that does something-or-other";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-plack-middleware-apache2-modssl";
     };
   };
 
@@ -21673,7 +22764,7 @@ let
     propagatedBuildInputs = [ Furl JSON Plack ];
     meta = {
       description = "The Plack::Middleware that verifies Apple App Store Receipts for In-App Purchases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/zdk/plack-middleware-appstorereceipt";
     };
   };
@@ -21688,7 +22779,8 @@ let
     propagatedBuildInputs = [ CSSMinifierXS JavaScriptMinifierXS Plack ];
     meta = {
       description = "Concatenate and minify JavaScript and CSS files";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
+      homepage = "https://github.com/monken/p5-plack-middleware-assets";
     };
   };
 
@@ -21717,7 +22809,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Secret access token (aka OAuth Bearer) authentification";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21731,7 +22823,8 @@ let
     propagatedBuildInputs = [ AuthenBitcard Plack ];
     meta = {
       description = "Bitcard authentication for Plack, which I suppose is what you might have guessed from the name";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-plack-middleware-auth-bitcard";
     };
   };
 
@@ -21746,7 +22839,8 @@ let
     buildInputs = [ TestCompile ];
     meta = {
       description = "Plack Middleware to integrate with Mozilla Persona (Auth by email)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jbolila/Plack-Middleware-Auth-BrowserID";
     };
   };
 
@@ -21761,7 +22855,8 @@ let
     buildInputs = [ DBDSQLite ];
     meta = {
       description = "Feature-rich authentication system";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://git.ieval.ro/?p=plack-middleware-auth-complex.git";
     };
   };
 
@@ -21775,10 +22870,10 @@ let
      propagatedBuildInputs = [ DigestHMAC Plack ];
      buildInputs = [ LWP ModuleBuildTiny TestSharedFork TestTCP ];
      meta = {
-       description = "Digest authentication";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/Plack-Middleware-Auth-Digest";
-     };
+      description = "Digest authentication";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Plack-Middleware-Auth-Digest";
+    };
   };
 
   PlackMiddlewareAuthFCGI = buildPerlPackage {
@@ -21791,7 +22886,7 @@ let
     propagatedBuildInputs = [ FCGIClient Plack ];
     meta = {
       description = "authentication middleware that query remote FastCGI server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21806,7 +22901,7 @@ let
     buildInputs = [ TestWWWMechanizePSGI ];
     meta = {
       description = "Form Based Authentication for Plack (think L<CatalystX::SimpleLogin> but on Plack level)";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
     };
   };
 
@@ -21820,7 +22915,7 @@ let
     propagatedBuildInputs = [ AuthenHtpasswd PathClass Plack ];
     meta = {
       description = "http basic authentication through apache-style .htpasswd files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21834,7 +22929,7 @@ let
     propagatedBuildInputs = [ CryptJWT Plack ];
     meta = {
       description = "Token-based Auth (aka Bearer Token) using JSON Web Tokens (JWT)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/Plack-Middleware-Auth-JWT";
     };
   };
@@ -21850,7 +22945,8 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Negotiate authentication middleware (SPNEGO)";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
+      homepage = "https://github.com/sophos/Plack-Middleware-Auth-Negotiate";
     };
   };
 
@@ -21864,7 +22960,7 @@ let
     propagatedBuildInputs = [ OAuthLite Plack ];
     meta = {
       description = "OAuth signature validation middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21878,7 +22974,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "simple query string authentication";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21893,7 +22989,8 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Reload pages in browsers when files are modified";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/mvgrimes/Plack-Middleware-AutoRefresh";
     };
   };
 
@@ -21907,8 +23004,8 @@ let
     propagatedBuildInputs = [ Plack ];
     buildInputs = [ TestRequires ];
     meta = {
-      description = "Enables CSS Refreshing without\nReloading Whole Page";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Enables CSS Refreshing without Reloading Whole Page";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -21922,7 +23019,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Yet another AccessLog Middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-AxsLog";
     };
   };
@@ -21937,7 +23034,8 @@ let
     propagatedBuildInputs = [ HTMLParser Plack ];
     meta = {
       description = "Add a basic <style> element to pages that don't have one";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://git.ieval.ro/?p=plack-middleware-basicstyle.git";
     };
   };
 
@@ -21967,7 +23065,8 @@ let
     buildInputs = [ TestDifferences ];
     meta = {
       description = "block header injections in responses";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Plack-Middleware-BlockHeaderInjection";
     };
   };
 
@@ -21982,7 +23081,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "A Plack Middleware to prettify simple HTML with Bootstrap design template";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hitode909/Plack-Middleware-Bootstrap";
     };
   };
@@ -21998,7 +23097,8 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Plack middleware to identify bots and spiders";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chromatic/Plack-Middleware-BotDetector";
     };
   };
 
@@ -22012,7 +23112,7 @@ let
     propagatedBuildInputs = [ HTTPBrowserDetect Plack ];
     meta = {
       description = "Plack middleware to identify browsers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22027,7 +23127,7 @@ let
     buildInputs = [ PlackMiddlewareSession ];
     meta = {
       description = "Block CSRF Attacks with minimal changes to your app";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22054,7 +23154,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Use Cached Responses of Certain URIs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/plack-middleware-cache-pm";
     };
   };
@@ -22070,7 +23170,8 @@ let
     buildInputs = [ CHI ];
     meta = {
       description = "Caching Reverse Proxy for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/pnu/Plack-Middleware-Cache-CHI";
     };
   };
 
@@ -22085,7 +23186,7 @@ let
     buildInputs = [ Clone ];
     meta = {
       description = "Glues a cache to your PSGI application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-Cached";
     };
   };
@@ -22100,7 +23201,8 @@ let
     propagatedBuildInputs = [ DevelCamelcadedb Plack ];
     meta = {
       description = "interactive debugging for Plack applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbarbon/plack-middleware-camelcadedb.git";
     };
   };
 
@@ -22114,7 +23216,8 @@ let
     propagatedBuildInputs = [ AppCerberusclient Plack ];
     meta = {
       description = "Include geo, time zone, user-agent and throttling from App::Cerberus";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/clintongormley/Plack-Middleware-Cerberus";
     };
   };
 
@@ -22128,7 +23231,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "injects Google Chrome Frame into IE";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gray/plack-middleware-chromeframe";
     };
   };
 
@@ -22143,7 +23247,8 @@ let
     buildInputs = [ JSON LWP ];
     meta = {
       description = "The Chrome Logger Middleware for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-ChromeLogger";
     };
   };
 
@@ -22157,7 +23262,7 @@ let
     propagatedBuildInputs = [ ClassRefresh Plack ];
     meta = {
       description = "Refresh your app classes with Class::Refresh before requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22171,7 +23276,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Run cleanup code after request completion";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22185,7 +23290,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Parse a client certificate and put details in the env";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kcaran/Plack-Middleware-ClientCert";
     };
   };
@@ -22200,7 +23305,7 @@ let
     propagatedBuildInputs = [ HTTPThrowable PathClass ];
     meta = {
       description = "Handle combination loading and processing of on-disk resources";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/jshirley/Plack-Middleware-ComboLoader";
     };
   };
@@ -22215,7 +23320,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Compile HAML/SASS/Coffeescript/whatever on demand";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22229,10 +23334,10 @@ let
      propagatedBuildInputs = [ JavaScriptValueEscape Plack ];
      buildInputs = [ ModuleBuildTiny TestRequires ];
      meta = {
-       description = "Write logs to Firebug or Webkit Inspector";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/Plack-Middleware-ConsoleLogger";
-     };
+      description = "Write logs to Firebug or Webkit Inspector";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Plack-Middleware-ConsoleLogger";
+    };
   };
 
   PlackMiddlewareCookieMonster = buildPerlModule {
@@ -22246,7 +23351,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Eats all your (session) cookies in case Plack::Middleware::StrackTrace ate your HTTP headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mannih/Plack-Middleware-CookieMonster";
     };
   };
@@ -22261,7 +23366,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Adds headers to allow Cross-Origin Resource Sharing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/haarg/Plack-Middleware-CrossOrigin";
     };
   };
 
@@ -22276,7 +23382,8 @@ let
     buildInputs = [ LWP ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "Building Curl Command from Plack Request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-Curlizer";
     };
   };
 
@@ -22290,7 +23397,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "dynamically select error documents based on HTTP status code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mjemmeson/Plack-Middleware-CustomErrorDocument";
     };
   };
@@ -22306,7 +23413,8 @@ let
     buildInputs = [ DBGpClient HTTPCookieJar TestDBGp ];
     meta = {
       description = "interactive debugging for Plack applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbarbon/plack-middleware-dbgp.git";
     };
   };
 
@@ -22321,8 +23429,7 @@ let
     buildInputs = [ DataDump PlackMiddlewareDebug TestFatal ];
     meta = {
       description = "Expose a DBIC QueryLog Instance in Middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-Middleware-DBIC-QueryLog/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22351,7 +23458,7 @@ let
     propagatedBuildInputs = [ NetDNS Plack ];
     meta = {
       description = "An IPv4 DNS Blacklist middleware for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22365,9 +23472,9 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     propagatedBuildInputs = [ ClassMethodModifiers DataDump DataDumperConcise Plack TextMicroTemplate ];
     meta = {
+      description = "display information about the current request/response";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/miyagawa/Plack-Middleware-Debug";
-      description = "Display information about the current request/response";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -22382,7 +23489,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Show log of ajax requests/responses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22396,7 +23503,7 @@ let
     propagatedBuildInputs = [ CatalystPluginCache PlackMiddlewareDebug ];
     meta = {
       description = "Panel for monitoring Catalyst::Plugin::Cache's";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/timbunce/Plack-Middleware-Debug-CatalystPluginCache/tree";
     };
   };
@@ -22424,7 +23531,8 @@ let
     propagatedBuildInputs = [ CatalystRuntime PlackMiddlewareDebug ];
     meta = {
       description = "Debug panel to inspect the Catalyst Stash";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/markwellis/plack-middleware-debug-catalyststash.git";
     };
   };
 
@@ -22439,8 +23547,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "DBIC Query Log and Query Analyzer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-Middleware-Debug-DBIC-QueryLog/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22454,7 +23561,7 @@ let
     propagatedBuildInputs = [ DBI PlackMiddlewareDebug ];
     meta = {
       description = "DBI::Profile panel";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/timbunce/Plack--Middleware--Debug--DBIProfile/tree";
     };
   };
@@ -22469,7 +23576,8 @@ let
     propagatedBuildInputs = [ Dancer PlackMiddlewareDebug ];
     meta = {
       description = "Template and layout rendering timer for Dancer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/SysPete/Plack-Middleware-Debug-Dancer-TemplateTimer.git";
     };
   };
 
@@ -22483,7 +23591,7 @@ let
     propagatedBuildInputs = [ Dancer PlackMiddlewareDebug ];
     meta = {
       description = "Debug and inspect your template variables for Dancer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22498,7 +23606,7 @@ let
     buildInputs = [ TestMockObject TestMost ];
     meta = {
       description = "Display git status information about the directory from which you run your development server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mannih/Plack-Middleware-Debug-GitStatus";
     };
   };
@@ -22513,7 +23621,7 @@ let
     propagatedBuildInputs = [ HTMLMason JSON PlackMiddlewareDebug ];
     meta = {
       description = "Debug info for old HTML::Mason apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ctriv/perl-Plack-Middleware-Debug-HTML-Mason";
     };
   };
@@ -22528,7 +23636,7 @@ let
     propagatedBuildInputs = [ LWPxProfile PlackMiddlewareDebug ];
     meta = {
       description = "LWP Profiling Panel";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ctriv/perl-Plack-Middleware-Debug-LWP";
     };
   };
@@ -22543,7 +23651,8 @@ let
     propagatedBuildInputs = [ PlackMiddlewareDebug ];
     meta = {
       description = "debug panel for Lazy Load Modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-Debug-LazyLoadModules";
     };
   };
 
@@ -22556,7 +23665,7 @@ let
     };
     propagatedBuildInputs = [ LogLog4perl PlackMiddlewareDebug ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22571,7 +23680,7 @@ let
     buildInputs = [ TestLongString ];
     meta = {
       description = "Catalyst style console debugging for plack apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/mattp-/Plack-Middleware-DebugLogging";
     };
   };
@@ -22587,7 +23696,8 @@ let
     buildInputs = [ TestMockObject TestPod ];
     meta = {
       description = "Extend Plack::Middleware::Debug with MongoDB panels";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-Middleware-Debug-Mongo";
     };
   };
 
@@ -22602,7 +23712,7 @@ let
     buildInputs = [ FileTempdir ModuleBuildTiny TestMockModule TestMockObject TestMost ];
     meta = {
       description = "Abuse the plack debug panel and keep your todo list in it";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com//";
     };
   };
@@ -22617,7 +23727,7 @@ let
     propagatedBuildInputs = [ DevelNYTProf PlackMiddlewareDebug ];
     meta = {
       description = "Runs NYTProf on your app";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22632,7 +23742,8 @@ let
     buildInputs = [ TestMockObject TestPod ];
     meta = {
       description = "Extend Plack::Middleware::Debug with Redis panels";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-Middleware-Debug-Redis";
     };
   };
 
@@ -22647,7 +23758,8 @@ let
     buildInputs = [ CaptureTiny ];
     meta = {
       description = "Reference count debugging for Plack apps";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/GrantStreetGroup/Plack-Middleware-Debug-RefCounts";
     };
   };
 
@@ -22676,6 +23788,7 @@ let
     propagatedBuildInputs = [ PlackMiddlewareDebug ];
     meta = {
       description = "storing profiling information on template use";
+      homepage = "https://github.com/mysociety/Plack-Middleware-Debug-Template";
     };
   };
 
@@ -22690,7 +23803,7 @@ let
     buildInputs = [ ModuleInstall TestCheckManifest TestPod TestPodCoverage ];
     meta = {
       description = "An Event Log Debug Panel";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22704,7 +23817,8 @@ let
     propagatedBuildInputs = [ PlackMiddlewareDebug ];
     meta = {
       description = "debug panel for tracing %ENV";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-Debug-TraceENV";
     };
   };
 
@@ -22718,7 +23832,7 @@ let
     propagatedBuildInputs = [ PlackMiddlewareDebug WebServiceValidatorHTMLW3C XMLXPath ];
     meta = {
       description = "Validate your Response Content";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22732,7 +23846,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Return default document with '200' instead of '404' error";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22746,9 +23860,9 @@ let
      propagatedBuildInputs = [ Plack ];
      buildInputs = [ TestRequires TestSharedFork TestTCP ];
      meta = {
-       description = "Compress response body with Gzip or Deflate";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Compress response body with Gzip or Deflate";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PlackMiddlewareDelay = buildPerlModule {
@@ -22762,7 +23876,7 @@ let
     buildInputs = [ AnyEventHTTP TestTCP Twiggy ];
     meta = {
       description = "Put delays on your requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/hoelzro/plack-middleware-delay";
     };
   };
@@ -22777,7 +23891,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Automatically set a flag in the environment if a mobile client is detected";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/heikojansen/plack-middleware-detectmobilebrowsers";
     };
   };
 
@@ -22791,7 +23906,8 @@ let
     propagatedBuildInputs = [ Plack RegexpAssemble ];
     meta = {
       description = "Automatically set a flag in the environment if a robot client is detected";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/heikojansen/plack-middleware-detectrobots";
     };
   };
 
@@ -22805,7 +23921,7 @@ let
     propagatedBuildInputs = [ Imager Plack ];
     meta = {
       description = "Shows gray favicon for development env";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/gfx/Plack-Middleware-DevFavicon";
     };
   };
@@ -22820,7 +23936,8 @@ let
     propagatedBuildInputs = [ Imager Plack ];
     meta = {
       description = "filter a content for detecting environment";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-DevFilter";
     };
   };
 
@@ -22835,7 +23952,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "emulate a run-down server for development";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-Devel-ForceResponse";
     };
   };
 
@@ -22849,7 +23967,8 @@ let
     propagatedBuildInputs = [ PathClass Plack TemplateToolkit ];
     meta = {
       description = "Show a 500 error page if you die";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/arcanez/Plack-Middleware-DiePretty";
     };
   };
 
@@ -22863,7 +23982,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Append an index file to request PATH's ending with a /";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ranguard/plack-middleware-dirindex";
     };
   };
 
@@ -22892,7 +24012,7 @@ let
     buildInputs = [ HTMLTreeBuilderXPath ModuleInstallReadmeFromPod TestLoadAllModules ];
     meta = {
       description = "combine DoCoMoGUID::RedirectFilter and DoCoMoGUID::HTMLStickyQuery";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22906,7 +24026,7 @@ let
     propagatedBuildInputs = [ LWP Plack ];
     meta = {
       description = "PSGI middleware for Edge Side Includes (ESI)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -22920,8 +24040,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Adds automatically an ETag header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/perldoc?Plack::Middleware::ETag";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/franckcuny/plack-middleware-etag";
     };
   };
 
@@ -22935,7 +24055,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Writing PSGI Middleware using simple hooks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/One-com/plack-middleware-easyhooks/tree";
     };
   };
@@ -22951,7 +24071,8 @@ let
     buildInputs = [ CaptureTiny ];
     meta = {
       description = "The Plack middleware for tracing %ENV";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-EnvTracer";
     };
   };
 
@@ -22965,7 +24086,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "mod_expires for plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-Expires";
     };
   };
@@ -22980,7 +24101,8 @@ let
     propagatedBuildInputs = [ Plack RPCExtDirect ];
     meta = {
       description = "RPC::ExtDirect gateway for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nohuhu/Plack-Middleware-ExtDirect";
     };
   };
 
@@ -22995,7 +24117,7 @@ let
     buildInputs = [ TestNoWarnings TestWarn ];
     meta = {
       description = "Cuts off language tags out of the request's PATH_INFO to simplify internationalization route handlers";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "http://p3rl.org/Plack::Middleware::ExtractUriLanguage";
     };
   };
@@ -23011,7 +24133,8 @@ let
     buildInputs = [ ExceptionClass ];
     meta = {
       description = "Displays stack trace from your exception objects when your app dies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maxmind/Plack-Middleware-ExtractedStackTrace";
     };
   };
 
@@ -23025,7 +24148,8 @@ let
     propagatedBuildInputs = [ Imager Plack ];
     meta = {
       description = "deliver common favicon images";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-Favicon";
     };
   };
 
@@ -23040,7 +24164,7 @@ let
     buildInputs = [ DevelCover TestRequires ];
     meta = {
       description = "compile LESS templates into CSS stylesheets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23054,7 +24178,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Sass and SCSS support for all Plack frameworks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23068,7 +24192,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Wrap file with headers/footers in Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23082,7 +24206,7 @@ let
     propagatedBuildInputs = [ ClassNull HTTPEngineFirePHP Plack ];
     meta = {
       description = "Middleware for FirePHP::Dispatcher";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23096,7 +24220,8 @@ let
     propagatedBuildInputs = [ HTMLParser Plack ];
     meta = {
       description = "Plack middleware to insert Firebug Lite code into HTML";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
+      homepage = "https://github.com/gslin/plack-middleware-firebug-lite-perl.git";
     };
   };
 
@@ -23111,7 +24236,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Solve the IE8 / IE9 XDomainRequest Missing or Invalid Content-Type Bug";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/jjn1056/Plack-Middleware-FixIEXDomainRequestBug";
     };
   };
@@ -23125,9 +24250,9 @@ let
     };
     propagatedBuildInputs = [ HTMLParser Plack ];
     meta = {
-      homepage = "https://github.com/Sweet-kid/Plack-Middleware-FixMissingBodyInRedirect";
       description = "Plack::Middleware which sets body for redirect response, if it's not already set";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Sweet-kid/Plack-Middleware-FixMissingBodyInRedirect";
     };
   };
 
@@ -23141,7 +24266,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Force set environment variables for testing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23156,7 +24281,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Format output struct by Accept header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/vasekd/Plack-Middleware-FormatOutput";
     };
   };
@@ -23171,7 +24296,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Adds automatically an X-Clacks-Overhead header";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com///github.com/peczenyj/Plack-Middleware-Pratchett";
     };
   };
@@ -23186,7 +24311,8 @@ let
     propagatedBuildInputs = [ GeoIP GeoIP2 Plack ];
     meta = {
       description = "Find country and city of origin of a web request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sherwind/Plack-Middleware-GeoIP.git";
     };
   };
 
@@ -23201,7 +24327,8 @@ let
     buildInputs = [ CryptSSLeay ];
     meta = {
       description = "roughly compatible with Plack::Middleware::Apache2::ModSSL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-plack-middleware-gepokx-modssl";
     };
   };
 
@@ -23216,7 +24343,7 @@ let
     buildInputs = [ FileSlurp GitRepository ];
     meta = {
       description = "Middleware that appends git revision information to html";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23245,7 +24372,7 @@ let
     propagatedBuildInputs = [ Moo Plack TextMicroTemplate ];
     meta = {
       description = "Middleware to apply Google Anlytics javascript code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23260,7 +24387,7 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     meta = {
       description = "check syntax with HTML::Lint for PSGI application's response HTML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karupanerura/p5-Plack-Middleware-HTMLLint";
     };
   };
@@ -23275,7 +24402,8 @@ let
     propagatedBuildInputs = [ HTMLPacker Plack ];
     meta = {
       description = "Plack middleware to minify HTML on-the-fly";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
+      homepage = "https://github.com/gslin/plack-middleware-htmlminify-perl.git";
     };
   };
 
@@ -23290,7 +24418,8 @@ let
     buildInputs = [ DataDump ];
     meta = {
       description = "Transform a non-html page into html";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/ioncache/Plack-Middleware-HTMLify";
     };
   };
 
@@ -23305,7 +24434,7 @@ let
     buildInputs = [ ModuleBuildTiny TestBase TestMockGuard ];
     meta = {
       description = "provide a login endpoint for Hatena OAuth";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hatena/Plack-Middleware-HatenaOAuth";
     };
   };
@@ -23319,9 +24448,9 @@ let
      };
      propagatedBuildInputs = [ Plack ];
      meta = {
-       description = "modify HTTP response headers";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "modify HTTP response headers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PlackMiddlewareHeaders = buildPerlPackage {
@@ -23334,7 +24463,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "modify HTTP response headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-Headers";
     };
   };
@@ -23350,7 +24479,8 @@ let
     buildInputs = [ HealthCheck TestException ];
     meta = {
       description = "A health check endpoint for your Plack app";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/GrantStreetGroup/p5-Plack-Middleware-HealthCheck";
     };
   };
 
@@ -23365,7 +24495,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Validating payloads from GitHub";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Songmu/p5-Plack-Middleware-HubSignature";
     };
   };
@@ -23381,7 +24511,8 @@ let
     buildInputs = [ LWP ];
     meta = {
       description = "added HTTP Header 'X-Content-Type-Options: nosniff'";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-IEnosniff";
     };
   };
 
@@ -23395,7 +24526,7 @@ let
     propagatedBuildInputs = [ NetIPAddrRanges Plack ];
     meta = {
       description = "Simple IP address access control middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/rintaro/Plack-Middleware-IPAddressFilter/tree";
     };
   };
@@ -23410,7 +24541,8 @@ let
     propagatedBuildInputs = [ NetIPMatchTrie NetIPXS Plack ];
     meta = {
       description = "查找指定 IP (CIDR) 所对应的标签 LABEL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/iakuf/Plack-Middleware-IPMatch.git";
     };
   };
 
@@ -23425,7 +24557,7 @@ let
     buildInputs = [ TestException TestRequires ];
     meta = {
       description = "Dummy image responser for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23440,7 +24572,8 @@ let
     buildInputs = [ FileSlurp Imager ];
     meta = {
       description = "Resize jpeg and png images on the fly";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/pnu/Plack-Middleware-Image-Scale";
     };
   };
 
@@ -23454,7 +24587,8 @@ let
     propagatedBuildInputs = [ IOStringy Plack ];
     meta = {
       description = "Inflate gzipped PSGI requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/weborama/Plack-Middleware-Inflater";
     };
   };
 
@@ -23468,7 +24602,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Anonymous Plack::Middlewares";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23483,7 +24617,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Awesome Interactive Debugger ala Werkzeug";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23497,7 +24631,7 @@ let
     propagatedBuildInputs = [ IPCRun3 Plack ];
     meta = {
       description = "Concatenate javascripts";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23511,7 +24645,8 @@ let
     propagatedBuildInputs = [ JSONXS Plack ];
     meta = {
       description = "给输出内容转换成 JSON, 并且自动兼容 JSONP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/iakuf/Plack-Middleware-JSON.git";
     };
   };
 
@@ -23526,7 +24661,8 @@ let
     buildInputs = [ TestClass ];
     meta = {
       description = "Plack middleware which turns application/json responses into HTML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mstock/Plack-Middleware-JSON-ForBrowsers";
     };
   };
 
@@ -23540,7 +24676,7 @@ let
     propagatedBuildInputs = [ JSON Plack ];
     meta = {
       description = "Wraps JSON response with HTTP headers in JSONP";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-JSONP-Headers";
     };
   };
@@ -23555,7 +24691,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "It's new $module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/yosuke-furukawa/Plack-Middleware-JSONParser";
     };
   };
@@ -23569,7 +24705,7 @@ let
     };
     propagatedBuildInputs = [ JavaScriptEctype Plack ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23583,7 +24719,7 @@ let
     propagatedBuildInputs = [ Plack SOAPLite ];
     meta = {
       description = "Middleware to provide LemonLDAP support for Plack applications";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "http://github.com/reneeb/Plack-Middleware-LemonLDAP-BasicAuth";
     };
   };
@@ -23599,7 +24735,7 @@ let
     buildInputs = [ HTTPMessage Plack ];
     meta = {
       description = "A small, lightweight profiler for time and memory as Plack middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23613,7 +24749,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "HTTP Request Limitation for Plack apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nipotan/Plack-Middleware-LimitRequest";
     };
   };
 
@@ -23627,7 +24764,7 @@ let
     propagatedBuildInputs = [ LogAny Plack ];
     meta = {
       description = "Use Log::Any to handle logging from your Plack app";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23642,7 +24779,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "integrate Log::Contextual with Plack/PSGI logger middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23657,7 +24794,7 @@ let
     buildInputs = [ TestDeep ];
     meta = {
       description = "Uses Log::Dispatchouli to configure the PSGI logger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23672,7 +24809,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     meta = {
       description = "Map psgi.errors to psgix.logger or other logger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Plack-Middleware-LogErrors";
     };
   };
@@ -23687,7 +24824,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "modify log output";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/memememomo/Plack-Middleware-LogFilter";
     };
   };
@@ -23703,7 +24840,8 @@ let
     buildInputs = [ CaptureTiny ];
     meta = {
       description = "log when a process is killed";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/robrwo/Plack-Middleware-LogHarakiri";
     };
   };
 
@@ -23717,7 +24855,7 @@ let
     propagatedBuildInputs = [ LogMinimal Plack ];
     meta = {
       description = "Log::Minimal middleware to prints to psgi.errors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23732,7 +24870,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "Everything printed to STDERR sent to psgix.logger or other logger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/amalek215/Plack-Middleware-LogStderr";
     };
   };
@@ -23757,7 +24895,8 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Make everything lower!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/logie17/plack-middleware-lowerurl";
     };
   };
 
@@ -23772,7 +24911,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "a middleware to track usage information with Matomo";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/vpeil/Plack-Middleware-Matomo";
     };
   };
@@ -23787,7 +24926,7 @@ let
     propagatedBuildInputs = [ DateTimeFormatHTTP Plack ];
     meta = {
       description = "Enable the Memento protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-Middleware-Memento";
     };
   };
@@ -23802,7 +24941,7 @@ let
     propagatedBuildInputs = [ Catmandu DateTimeFormatISO8601 PlackMiddlewareMemento ];
     meta = {
       description = "Connect Plack::App::Catmandu::Bag to Plack::Middleware::Memento";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-Middleware-Memento-Handler-Catmandu-Bag";
     };
   };
@@ -23817,7 +24956,7 @@ let
     propagatedBuildInputs = [ BSize2 DevelSymdump Plack ];
     meta = {
       description = "for measuring process memory";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23831,7 +24970,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Override REST methods to Plack apps via POST";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plack/plack-middleware-methodoverride";
     };
   };
 
@@ -23845,7 +24985,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Save responses to disk to mirror a site";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/rwstauner/Plack-Middleware-Mirror";
     };
   };
@@ -23860,7 +25000,8 @@ let
     propagatedBuildInputs = [ IOSocketSSL Plack ];
     meta = {
       description = "virtualhost-aware PSGI app developer tool";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Plack-Middleware-MockProxyFrontend";
     };
   };
 
@@ -23874,7 +25015,8 @@ let
     propagatedBuildInputs = [ ModuleInfo NetCIDRLite Plack YAML ];
     meta = {
       description = "show the perl module information";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-ModuleInfo";
     };
   };
 
@@ -23889,7 +25031,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Apply HTTP content negotiation as Plack middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-Negotiate";
     };
   };
@@ -23904,7 +25046,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "set expiration headers far in the future";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/ap/Plack-Middleware-NeverExpire";
     };
   };
@@ -23919,7 +25061,8 @@ let
     propagatedBuildInputs = [ CHI MethodSignatures NewRelicAgent Plack ];
     meta = {
       description = "Plack middleware for NewRelic APM instrumentation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aanari/Plack-Middleware-NewRelic";
     };
   };
 
@@ -23933,7 +25076,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Prevent content from being deflated";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/oalders/Plack-Middleware-NoDeflate";
     };
   };
 
@@ -23947,7 +25091,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Remove multiple slashes in your paths automatically";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/xsawyerx/plack-middleware-nomultipleslashes";
     };
   };
 
@@ -23974,7 +25119,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Implements OPTIONS and filters out unknown methods";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -23998,7 +25143,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Add standard (or custom) P3P header to response";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://bitbucket.org/hstaugaard/plack-middleware-p3p";
     };
   };
@@ -24014,7 +25159,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Parse content of input data by Content-Type header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/vasekd/Plack-Middleware-ParseContent";
     };
   };
@@ -24030,7 +25175,7 @@ let
     buildInputs = [ JSON ];
     meta = {
       description = "Prepend converted PATH_INFO to QUERY_STRING";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24044,7 +25189,8 @@ let
     propagatedBuildInputs = [ MarpaR2 Plack ];
     meta = {
       description = "PJAX for your Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mattp-/Plack-Middleware-Pjax";
     };
   };
 
@@ -24058,7 +25204,8 @@ let
     propagatedBuildInputs = [ Plack PodPOM ];
     meta = {
       description = "render POD files as HTML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/plack-middleware-pod";
     };
   };
 
@@ -24073,7 +25220,7 @@ let
     buildInputs = [ ModuleBuildTiny TestMockGuard ];
     meta = {
       description = "Post error message to Slack when you app dies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hitode909/Plack-Middleware-PostErrorToSlack";
     };
   };
@@ -24088,7 +25235,7 @@ let
     propagatedBuildInputs = [ ArrayRefElem Plack ];
     meta = {
       description = "serve pre-gzipped content to compression-enabled clients";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/ap/Plack-Middleware-Precompressed";
     };
   };
@@ -24104,7 +25251,7 @@ let
     buildInputs = [ HTTPThrowable ];
     meta = {
       description = "Capture exceptions and present them as HTML or JSON";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/Plack-Middleware-PrettyException";
     };
   };
@@ -24119,7 +25266,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Include process times of a request in the Plack env";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/frioux/Plack-Middleware-ProcessTimes";
     };
   };
@@ -24134,7 +25281,7 @@ let
     propagatedBuildInputs = [ DevelKYTProf Plack ];
     meta = {
       description = "Profile psgi app with KYTProf";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24148,7 +25295,7 @@ let
     propagatedBuildInputs = [ DevelNYTProf Plack ];
     meta = {
       description = "Middleware for Profiling a Plack App";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24162,7 +25309,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "record response times with a prometheus histogram";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/OpusVL/Plack-Middleware-Prometheus-RequestTimes";
     };
   };
 
@@ -24176,7 +25324,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "choose remote host by header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24190,7 +25338,8 @@ let
     propagatedBuildInputs = [ PlackAppProxy ];
     meta = {
       description = "CONNECT method";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Plack-Middleware-Proxy-Connect-IO";
     };
   };
 
@@ -24204,7 +25353,7 @@ let
     propagatedBuildInputs = [ PlackAppProxy ];
     meta = {
       description = "Proxy Various URLs to Various Remotes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/plack-middleware-proxymap-pm";
     };
   };
@@ -24219,7 +25368,8 @@ let
     propagatedBuildInputs = [ PlackAppProxy ];
     meta = {
       description = "Forward proxy server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Plack-Middleware-Proxy-Requests";
     };
   };
 
@@ -24233,7 +25383,8 @@ let
     propagatedBuildInputs = [ Plack Pye ];
     meta = {
       description = "Use Pye as a Plack logger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ido50/Plack-Middleware-PyeLogger";
     };
   };
 
@@ -24247,7 +25398,7 @@ let
     propagatedBuildInputs = [ Imager ImagerQRCode ];
     meta = {
       description = "Mount QRCode Image service on your Plack application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24262,7 +25413,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "query counter per request middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/acidlemon/p5-Plack-Middleware-QueryCounter";
     };
   };
@@ -24277,7 +25428,8 @@ let
     propagatedBuildInputs = [ Plack RDFFlow ];
     meta = {
       description = "Serve RDF as Linked Data for RDF::Flow";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nichtich/Plack-Middleware-RDF-Flow";
     };
   };
 
@@ -24292,7 +25444,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "REPL when your application throws errors or warnings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24307,7 +25459,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Route PSGI requests for RESTful web applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-REST";
     };
   };
@@ -24323,7 +25475,8 @@ let
     buildInputs = [ TestClass TestDeep TestException TestMockModule ];
     meta = {
       description = "wrap around psgi application to send stuff to raygun.io";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/heytrav/plack-middleware-raygun";
     };
   };
 
@@ -24337,7 +25490,8 @@ let
     propagatedBuildInputs = [ NetNetmask Plack ];
     meta = {
       description = "Override client IP with header value provided by proxy/load balancer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sherwind/Plack-Middleware-RealIP.git";
     };
   };
 
@@ -24352,7 +25506,7 @@ let
     buildInputs = [ HTMLTree TestException TestTCP ];
     meta = {
       description = "Plack middleware that records your client-server interactions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hoelzro/plack-middleware-recorder";
     };
   };
@@ -24367,7 +25521,7 @@ let
     buildInputs = [ ModuleBuildTiny Plack ];
     meta = {
       description = "A simple redirector";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/okazu-dm/p5-plack-middleware-redirect";
     };
   };
@@ -24382,7 +25536,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "force all requests to use in-/secure connections";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Plack-Middleware-RedirectSSL";
     };
   };
 
@@ -24396,7 +25551,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "check referer for defensive CSRF attack.(DEPRECATED)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24409,9 +25564,9 @@ let
     };
     propagatedBuildInputs = [ Plack ];
     meta = {
-      homepage = "https://github.com/Sweet-kid/Plack-Middleware-RemoveRedundantBody";
-      description = "Plack::Middleware which sets removes body for HTTP response if it's not required";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Plack::Middleware which removes body for HTTP response if it's not required";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/upasana-me/Plack-Middleware-RemoveRedundantBody";
     };
   };
 
@@ -24439,7 +25594,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "modify HTTP request headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/wreis/Plack-Middleware-RequestHeaders";
     };
   };
@@ -24455,7 +25610,8 @@ let
     buildInputs = [ LWP ];
     meta = {
       description = "generate the request id";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-RequestId";
     };
   };
 
@@ -24470,7 +25626,7 @@ let
     buildInputs = [ TestMost ];
     meta = {
       description = "Use Return::MultiLevel as PSGI Middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/jjn1056/Plack-Middleware-Return-MultiLevel";
     };
   };
@@ -24485,7 +25641,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Supports app to run as a reverse proxy backend";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/lopnor/Plack-Middleware-ReverseProxy";
     };
   };
 
@@ -24499,7 +25656,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "adjust proxied env to match client-facing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24514,7 +25671,7 @@ let
     buildInputs = [ ModuleBuildTiny PathTiny TestException ];
     meta = {
       description = "Revise request environment at will";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "https://github.com/polettix/Plack-Middleware-ReviseEnv";
     };
   };
@@ -24530,7 +25687,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Serves an endpoint returns application's C<REVISION>";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
       homepage = "https://github.com/astj/p5-Plack-Middleware-RevisionPlate";
     };
   };
@@ -24545,7 +25702,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "mod_rewrite for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Plack-Middleware-Rewrite";
     };
   };
 
@@ -24559,7 +25717,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Safely modify the QUERY_STRING of a PSGI request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-Rewrite-Query";
     };
   };
@@ -24574,8 +25732,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "PSGI middleware for server side include content";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-Middleware-SSI";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24604,7 +25761,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Global Cache and Option per Request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24619,7 +25776,7 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "Scrutinize your [psgi] app with an [inline] debugger";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24634,7 +25791,8 @@ let
     buildInputs = [ HTTPException LogDispatch LogDispatchArray ];
     meta = {
       description = "A simple security filter for Plack";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Plack-Middleware-Security-Simple";
     };
   };
 
@@ -24649,7 +25807,7 @@ let
     buildInputs = [ TestTCP ];
     meta = {
       description = "sets/fakes the name of the webserver processing the requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24664,7 +25822,7 @@ let
     buildInputs = [ LWP ModuleBuildTiny Starlet TestBase TestRequires TestTCP ];
     meta = {
       description = "manually set server status";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tarao/perl5-Plack-Middleware-ServerStatus-Availability";
     };
   };
@@ -24680,7 +25838,7 @@ let
     buildInputs = [ CaptureTiny LWP Starman TestSharedFork TestTCP ];
     meta = {
       description = "show server status like Apache's mod_status";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-ServerStatus-Lite";
     };
   };
@@ -24696,7 +25854,7 @@ let
     buildInputs = [ ModuleBuildTiny TestCheckDeps TestDeep TestDeepUnorderedPairs TestFatal TestWarnings ];
     meta = {
       description = "tiny middleware for providing server status information";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Plack-Middleware-ServerStatus-Tiny";
     };
   };
@@ -24712,7 +25870,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Performance metrics in Server-Timing header";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/akiym/Plack-Middleware-ServerTiming";
     };
   };
@@ -24727,10 +25885,10 @@ let
      propagatedBuildInputs = [ DigestHMAC Plack ];
      buildInputs = [ HTTPCookies LWP ModuleBuildTiny TestFatal TestRequires TestSharedFork TestTCP ];
      meta = {
-       description = "Middleware for session management";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/plack/Plack-Middleware-Session";
-     };
+      description = "Middleware for session management";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plack/Plack-Middleware-Session";
+    };
   };
 
   PlackMiddlewareSessionRemoveCookies = buildPerlPackage {
@@ -24743,7 +25901,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "remove cookies from the requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/wreis/Plack-Middleware-Session-RemoveCookies";
     };
   };
@@ -24768,7 +25926,7 @@ let
     buildInputs = [ CacheMemorySimple HTTPCookieJar ModuleBuildTiny TestRequires TestTCP ];
     meta = {
       description = "Make Session Simple";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-Session-Simple";
     };
   };
@@ -24784,7 +25942,7 @@ let
     buildInputs = [ CacheMemorySimple HTTPCookieJar ModuleBuildTiny TestRequires TestTCP ];
     meta = {
       description = "Session::Simple with JWS(JSON Web Sigmature) Cookie";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ritou/p5-plack-middleware-session-simple-jwscookie";
     };
   };
@@ -24800,7 +25958,7 @@ let
     buildInputs = [ TestException TestXML ];
     meta = {
       description = "Sets the Accept header based on the suffix or query params of a request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://github.com/hoelzro/plack-middleware-setaccept";
     };
   };
@@ -24815,7 +25973,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Set environment variables from the values of request headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24830,7 +25988,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Set localized environment variables from the value of PSGI environment";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/fujiwara/Plack-Middleware-SetLocalEnv";
     };
   };
@@ -24846,7 +26004,8 @@ let
     buildInputs = [ HTTPCookies ];
     meta = {
       description = "accept only server-minted cookies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ap/Plack-Middleware-SignedCookies";
     };
   };
 
@@ -24861,7 +26020,7 @@ let
     buildInputs = [ FileSlurp ModuleBuildTiny ];
     meta = {
       description = "a base class for Plack implementations of the L<Signposting|https://signposting.org> protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-Middleware-Signposting";
     };
   };
@@ -24876,7 +26035,7 @@ let
     propagatedBuildInputs = [ Plack ProcessSizeLimitCore ];
     meta = {
       description = "Terminate processes if they grow too large";
-      license = with lib.licenses; [ wtfpl ];
+      license = licenses.wtfpl;
       homepage = "https://github.com/audreyt/plack-middleware-sizelimit/tree";
     };
   };
@@ -24891,7 +26050,8 @@ let
     propagatedBuildInputs = [ AnyEvent JSON Plack ProtocolWebSocket ];
     meta = {
       description = "Socket.IO Plack middleware";
-      license = with lib.licenses; [ artistic2 artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "http://github.com/vti/plack-middleware-socketio";
     };
   };
 
@@ -24906,7 +26066,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "Adding links to library source codes in stacktrace";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-StackTrace-LinkedSource";
     };
   };
 
@@ -24921,7 +26082,7 @@ let
     buildInputs = [ ModuleBuildTiny TestRequires ];
     meta = {
       description = "Display the original stack trace for rethrown errors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tarao/perl5-Plack-Middleware-StackTrace-RethrowFriendly";
     };
   };
@@ -24936,7 +26097,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Serve multiple static files combined";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-Static-Combine";
     };
   };
@@ -24951,7 +26112,7 @@ let
     propagatedBuildInputs = [ CSSMinifierXS JavaScriptMinifierXS Plack ];
     meta = {
       description = "serves static files and minify CSS and JavaScript";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -24965,7 +26126,7 @@ let
     propagatedBuildInputs = [ CacheLRUWithExpires Plack ];
     meta = {
       description = "Plack::Middleware::Static with open file cache";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazeburo/Plack-Middleware-Static-OpenFileCache";
     };
   };
@@ -24980,7 +26141,7 @@ let
     propagatedBuildInputs = [ PerlIOsubfile Plack ];
     meta = {
       description = "Serve static files with support for Range requests";
-      license = with lib.licenses; [ wtfpl ];
+      license = licenses.wtfpl;
       homepage = "http://github.com/audreyt/plack-middleware-static-range/tree";
     };
   };
@@ -24996,7 +26157,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "concat some static files to one resource";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/cho45/Plack-Middleware-StaticShared";
     };
   };
@@ -25011,7 +26172,7 @@ let
     propagatedBuildInputs = [ LogAny MeasureEverything Plack ];
     meta = {
       description = "Measure HTTP stats on each request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/domm/Plack-Middleware-StatsPerRequest";
     };
   };
@@ -25027,7 +26188,8 @@ let
     buildInputs = [ TestDifferences TestMockObject TestMost TestWarnings ];
     meta = {
       description = "send statistics to statsd";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Plack-Middleware-Statsd";
     };
   };
 
@@ -25041,7 +26203,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Plack Middleware for mapping urls to status code-driven responses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/pdonelan/Plack-Middleware-Status";
     };
   };
 
@@ -25055,7 +26218,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Return HTTP Status code 200 for errors on request";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Middleware-SuppressResponseCodes";
     };
   };
@@ -25071,7 +26234,8 @@ let
     buildInputs = [ LWP ];
     meta = {
       description = "Text::MicroTemplate on the Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-TMT";
     };
   };
 
@@ -25086,7 +26250,8 @@ let
     buildInputs = [ TestMockObject ];
     meta = {
       description = "transform xml documents by applying xsl stylesheets on the fly";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mdom/Plack-Middleware-TazXSLT";
     };
   };
 
@@ -25101,7 +26266,8 @@ let
     buildInputs = [ TestWarn ];
     meta = {
       description = "Serve files with Template Toolkit and Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ranguard/Plack-Middleware-TemplateToolkit";
     };
   };
 
@@ -25115,7 +26281,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Test your application's warnings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bestpractical/plack-middleware-test-stashwarnings";
     };
   };
 
@@ -25130,7 +26297,8 @@ let
     buildInputs = [ TestDifferences TestMost ];
     meta = {
       description = "minify text responses on the fly";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Plack-Middleware-Text-Minify";
     };
   };
 
@@ -25145,7 +26313,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "A Plack Middleware for rate-limiting incoming HTTP requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25160,7 +26328,8 @@ let
     buildInputs = [ TestException TestPod ];
     meta = {
       description = "Requests throttling for Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-Middleware-Throttle-Lite";
     };
   };
 
@@ -25175,7 +26344,8 @@ let
     buildInputs = [ TestException TestPod ];
     meta = {
       description = "Memcache-driven storage backend for Throttle-Lite";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-Middleware-Throttle-Lite-Backend-Memcached";
     };
   };
 
@@ -25190,7 +26360,8 @@ let
     buildInputs = [ TestException TestPod ];
     meta = {
       description = "Redis-driven storage backend for Throttle-Lite";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Wu-Wu/Plack-Middleware-Throttle-Lite-Backend-Redis";
     };
   };
 
@@ -25205,7 +26376,8 @@ let
     buildInputs = [ PathTiny TestMost ];
     meta = {
       description = "time over HTTP middleware";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Plack-Middleware-TimeOverHTTP";
     };
   };
 
@@ -25220,7 +26392,8 @@ let
     buildInputs = [ CaptureTiny ];
     meta = {
       description = "Plack Timing Statistics Middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Plack-Middleware-TimeStats";
     };
   };
 
@@ -25235,7 +26408,7 @@ let
     buildInputs = [ DataDump ModuleInstall TestCheckManifest TestEasy TestException TestPod TestPodCoverage ];
     meta = {
       description = "Expose a Timed::Logger Instance in Middleware";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25249,7 +26422,7 @@ let
     propagatedBuildInputs = [ Plack ScopeGuard ];
     meta = {
       description = "Timeout long running requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25263,7 +26436,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Log headers and body of HTTP traffic";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Plack-Middleware-TrafficLog";
     };
   };
 
@@ -25277,7 +26451,8 @@ let
     propagatedBuildInputs = [ HTMLParser Moose Plack namespaceautoclean ];
     meta = {
       description = "Append a trailing slash to GET requests whenever it is missing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/okko/Plack-Middleware-TrailingSlash";
     };
   };
 
@@ -25292,7 +26467,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Dealing with that pesky trailing slash/";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/b10m/p5-Plack-Middleware-TrailingSlashKiller";
     };
   };
@@ -25308,7 +26483,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "unicode pictogram fallback to html";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25323,7 +26498,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Translates PSGI application by using WOVN.io";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
       homepage = "https://github.com/masiuchi/p5-Plack-Middleware-WOVN";
     };
   };
@@ -25352,7 +26527,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Add watermark to response body";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25367,7 +26542,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Set woothee information based on User-Agent";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Songmu/p5-Plack-Middleware-Woothee";
     };
   };
@@ -25382,7 +26557,8 @@ let
     propagatedBuildInputs = [ NetIP Plack ];
     meta = {
       description = "Plack middleware to handle X-Forwarded-For headers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gbarr/Plack-Middleware-XForwardedFor";
     };
   };
 
@@ -25396,7 +26572,7 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Plack middleware to set X-Frame-Options";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/gslin/plack-middleware-xframeoptions-all-perl";
     };
   };
@@ -25412,7 +26588,7 @@ let
     buildInputs = [ IOStringy ModuleBuildTiny ];
     meta = {
       description = "Plack middleware for AWS X-Ray tracing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/fujiwara/Plack-Middleware-XRay";
     };
   };
@@ -25428,7 +26604,8 @@ let
     buildInputs = [ FileTouch XMLLibXMLCache ];
     meta = {
       description = "XSLT transformations with Plack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/nwellnhof/Plack-Middleware-XSLT";
     };
   };
 
@@ -25443,7 +26620,8 @@ let
     buildInputs = [ FindBinlibs HTTPCookies LWP LogDispatch PlackMiddlewareSession PodCoverageTrustPod SubExporter TestKwalitee TestNoTabs TestPod TestPodCoverage TestUseAllModules ];
     meta = {
       description = "Block XSRF Attacks with minimal changes to your app";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chiselwright/plack-middleware-xsrfblock";
     };
   };
 
@@ -25457,7 +26635,8 @@ let
     propagatedBuildInputs = [ Plack TextXslate ];
     meta = {
       description = "serve static templates with Plack";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
+      homepage = "https://github.com/doy/plack-middleware-xslate";
     };
   };
 
@@ -25472,7 +26651,7 @@ let
     buildInputs = [ HTMLTidy ];
     meta = {
       description = "Make your html more iPhone friendly";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25487,7 +26666,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Subclass of L<Plack::Request> which supports encoded requests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/moznion/Plack-Request-WithEncoding";
     };
   };
@@ -25502,7 +26681,7 @@ let
     propagatedBuildInputs = [ JSON Plack ];
     buildInputs = [ TestDeep TestException ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25516,7 +26695,7 @@ let
     propagatedBuildInputs = [ AnyEvent Plack namespaceclean ];
     meta = {
       description = "DEPRECATED. Use Twiggy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25531,7 +26710,7 @@ let
     buildInputs = [ LWP TestTCP ];
     meta = {
       description = "Use AnyEvent-Based Plack Apps From Server::Starter";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25545,7 +26724,7 @@ let
     propagatedBuildInputs = [ NetServerCoro Plack ];
     meta = {
       description = "Coro cooperative multithread web server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25559,7 +26738,7 @@ let
     propagatedBuildInputs = [ HTMLStickyQuery PlackMiddlewareSession ];
     meta = {
       description = "uri-based session state";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/s-aska/p5-Plack-Session-State-URI";
     };
   };
@@ -25575,7 +26754,7 @@ let
     buildInputs = [ ModuleBuildTiny TestPod ];
     meta = {
       description = "Plack session store backed by a Catmandu::Store";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/Plack-Session-Store-Catmandu";
     };
   };
@@ -25590,7 +26769,8 @@ let
     propagatedBuildInputs = [ PlackMiddlewareSession ];
     meta = {
       description = "Echo store for Plack::Middleware::Session";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dionys/plack-session-store-echo";
     };
   };
 
@@ -25604,7 +26784,7 @@ let
     propagatedBuildInputs = [ CacheKyotoTycoon PlackMiddlewareSession ];
     meta = {
       description = "Plack::Session storage for Kyoto Tycoon";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25619,8 +26799,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "MongoDB based session store for Plack apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Plack-Session-Store-MongoDB";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ido50/Plack-Session-Store-MongoDB";
     };
   };
 
@@ -25635,7 +26815,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Redis based session store for Plack apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25650,7 +26830,7 @@ let
     buildInputs = [ JSON ModuleBuildTiny RedisFast TestFatal ];
     meta = {
       description = "Redis session store";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
       homepage = "https://github.com/akzhan/perl-Plack-Session-Store-RedisFast";
     };
   };
@@ -25665,7 +26845,7 @@ let
     buildInputs = [ PlackMiddlewareSession TestException ];
     meta = {
       description = "Session store container which provides transparent access";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/i110/p5-Plack-Session-Store-Transparent";
     };
   };
@@ -25681,7 +26861,7 @@ let
     buildInputs = [ HTTPServerSimplePSGI ModernPerl TestMemoryCycle TestRequires TestTCP TestWWWMechanize ];
     meta = {
       description = "OO interface for testing low-level Plack/PSGI apps";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/oalders/Plack-Test-Agent";
     };
   };
@@ -25697,7 +26877,7 @@ let
     buildInputs = [ TestClass ];
     meta = {
       description = "Run Plack::Test on AnyEvent-based PSGI applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/hoelzro/plack-test-anyevent";
     };
   };
@@ -25712,9 +26892,9 @@ let
     buildInputs = [ Plack TestSharedFork TestTCP ];
     propagatedBuildInputs = [ LWP ];
     meta = {
-      homepage = "https://github.com/perl-catalyst/Plack-Test-ExternalServer";
       description = "Run HTTP tests on external live servers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-catalyst/Plack-Test-ExternalServer";
     };
   };
 
@@ -25729,7 +26909,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "load PSGI application from class, file, or URL";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/nichtich/Plack-Util-Load";
     };
   };
@@ -25748,9 +26928,10 @@ let
     # not present (see below).
     propagatedBuildInputs = [ pkgs.cacert IOPipely IOTty POETestLoops ];
     meta = {
+      description = "Portable, event-loop agnostic eventy networking and multitasking";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://poe.perl.org/";
       maintainers = teams.deshaw.members;
-      description = "Portable multitasking and networking framework for any event loop";
-      license = lib.licenses.artistic2;
     };
     preCheck = ''
       set -x
@@ -25778,9 +26959,10 @@ let
       sha256 = "0yx4wsljfmdzsiv0ni98x6lw975cm82ahngbwqvzv60wx5pwkl5y";
     };
     meta = {
-      maintainers = teams.deshaw.members;
       description = "Reusable tests for POE::Loop authors";
-      license = lib.licenses.artistic2;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rcaputo/poe-test-loops";
+      maintainers = teams.deshaw.members;
     };
   };
 
@@ -25794,7 +26976,7 @@ let
     buildInputs = [ TestSharedFork ];
     meta = {
       description = "Hook registrations at fork(2)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -25813,9 +26995,9 @@ let
     preCheck = "rm t/03_document.t";
 
     meta = {
-      homepage = "https://github.com/adamkennedy/PPI";
       description = "Parse, Analyze and Manipulate Perl (without perl)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/adamkennedy/PPI";
     };
   };
 
@@ -25828,8 +27010,9 @@ let
     };
     propagatedBuildInputs = [ PPI Readonly ];
     meta = {
-      description = "Parse Perl string literals and string-literal-like things.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Parse Perl string literals and string-literal-like things";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/trwyant/perl-PPIx-QuoteLike";
     };
   };
 
@@ -25843,7 +27026,8 @@ let
     propagatedBuildInputs = [ PPI ];
     meta = {
       description = "Parse regular expressions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/trwyant/perl-PPIx-Regexp";
     };
   };
 
@@ -25858,7 +27042,8 @@ let
     propagatedBuildInputs = [ ExceptionClass PPI Readonly ];
     meta = {
       description = "Extensions to L<PPI|PPI>";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://guest@perlcritic.tigris.org/svn/perlcritic/trunk/distributions/PPIx-Utilities/";
     };
   };
 
@@ -25870,6 +27055,9 @@ let
       sha256 = "91b6a5aeb841b1c313498c78fad08e37d17595702dc6205b5ad38ef69949b7ee";
     };
     meta = {
+      description = "Run asynchronous child processes under Unix or Windows";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nrdvana/perl-proc-background";
     };
   };
 
@@ -25882,7 +27070,8 @@ let
     };
     meta = {
       description = "Explain process child error";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Proc-ChildError";
     };
   };
 
@@ -25896,7 +27085,8 @@ let
     propagatedBuildInputs = [ FileWhich ParseNetstat ];
     meta = {
       description = "Create preforking, autoreloading daemon";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-SHARYANTO-Proc-Daemon-Prefork";
     };
   };
 
@@ -25909,7 +27099,8 @@ let
     };
     meta = {
       description = "Perl extension to access the unix process table";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/jwbargsten/perl-proc-processtable";
     };
   };
 
@@ -25923,7 +27114,8 @@ let
     propagatedBuildInputs = [ ProcProcessTable ];
     meta = {
       description = "Find processes by name, PID, or some other attributes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Proc-Find";
     };
   };
 
@@ -25936,6 +27128,7 @@ let
     };
     meta = {
       description = "A module to manage PID files";
+      homepage = "https://github.com/dtikhonov/Proc-PID-File";
     };
   };
 
@@ -25956,7 +27149,7 @@ let
       sha256 = "4c8f0a924b19ad78a13da73fe0fb306d32a7b9d10a332c523087fc83a209a8c4";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "http://github.com/mschilli/proc-simple-perl";
     };
   };
 
@@ -25969,7 +27162,7 @@ let
     };
     meta = {
       description = "Perl extension for wait3 system call";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26008,7 +27201,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Record progress to any output";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Progress-Any";
     };
   };
 
@@ -26020,9 +27214,9 @@ let
       sha256 = "7ceb6bd80067c904465d4fd1f1715724388c9bdc37c6c2c003a20ce569b7f4e8";
     };
     meta = {
-      homepage = "https://github.com/und3f/protocol-redis";
       description = "Redis protocol parser/encoder with asynchronous capabilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/und3f/protocol-redis";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -26036,9 +27230,9 @@ let
     };
     propagatedBuildInputs = [ ProtocolRedis ];
     meta = {
-      homepage = "https://github.com/Grinnz/Protocol-Redis-Faster";
       description = "Optimized pure-perl Redis protocol parser/encoder";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/Grinnz/Protocol-Redis-Faster";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -26051,6 +27245,11 @@ let
       sha256 = "08jmazvrmvp8jn15p2n3c1h3f2cbkr07xjzy197jb8x724vx0dsq";
     };
     buildInputs = [ ModuleBuildTiny ];
+    meta = {
+      description = "WebSocket protocol";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/vti/protocol-websocket";
+    };
   };
 
   Pye = buildPerlPackage {
@@ -26063,7 +27262,8 @@ let
     propagatedBuildInputs = [ JSONMaybeXS RoleTiny TextSpanningTable ];
     meta = {
       description = "Session-based logging platform on top of SQL/NoSQL databases";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ido50/Pye";
     };
   };
 
@@ -26078,7 +27278,8 @@ let
     buildInputs = [ TestRDF ];
     meta = {
       description = "RDF data flow pipeline";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nichtich/RDF-Flow";
     };
   };
 
@@ -26093,8 +27294,8 @@ let
     buildInputs = [ TestDeep TestException TestJSON ];
     meta = {
       description = "An RDF Framework for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/RDF-Trine/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/kasei/perlrdf/";
     };
   };
 
@@ -26107,6 +27308,11 @@ let
       sha256 = "0jm6jq1wszjrrcypyi642m2i8wgni50wdnzh9dzfkyjazdc00sn2";
     };
     buildInputs = [ AnyEvent ModuleBuildTiny NetSSLeay TestLeakTrace TestSharedFork TestTCP ];
+    meta = {
+      description = "HTTP/2 protocol implementation (RFC 7540)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/vlet/p5-Protocol-HTTP2";
+    };
   };
 
   PSGI = buildPerlPackage {
@@ -26115,6 +27321,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/M/MI/MIYAGAWA/PSGI-1.102.tar.gz";
       sha256 = "0iqzxs8fv63510knm3zr3jr3ky4x7diwd7y24mlshzci81kl8v55";
+    };
+    meta = {
+      description = "Perl Web Server Gateway Interface Specification";
     };
   };
 
@@ -26129,7 +27338,7 @@ let
     buildInputs = [ FileObject TestNoWarnings TestOutput ];
     meta = {
       description = "A perl module for PYX handling";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/PYX";
     };
   };
@@ -26145,7 +27354,7 @@ let
     buildInputs = [ FileObject TagsOutputIndent TestNoWarnings UnicodeUTF8 ];
     meta = {
       description = "Processing PYX data or file and write as SGML via Tags";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/PYX-SGML-Tags";
     };
   };
@@ -26161,7 +27370,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "A perl module for PYX common utilities";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/PYX-Utils";
     };
   };
@@ -26182,6 +27391,10 @@ let
       url = "mirror://cpan/authors/id/C/CF/CFRANKS/Perl6-Junction-1.60000.tar.gz";
       sha256 = "0r3in9pyrm6wfrhcvxbq5w1617x8x5537lxj9hdzks4pa7l7a8yh";
     };
+    meta = {
+      description = "Perl6 style Junction operators in Perl5";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PerlMinimumVersion = buildPerlPackage {
@@ -26194,9 +27407,9 @@ let
     buildInputs = [ TestScript ];
     propagatedBuildInputs = [ FileFindRulePerl PerlCritic ];
     meta = {
-      homepage = "https://github.com/neilbowers/Perl-MinimumVersion";
       description = "Find a minimum required version of perl for Perl code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Perl-MinimumVersion";
     };
   };
 
@@ -26209,9 +27422,9 @@ let
     };
     propagatedBuildInputs = [ GetoptLongDescriptive ListMoreUtils ModulePath Moose PPI StringRewritePrefix namespaceautoclean ];
     meta = {
+      description = "a tool to scan your Perl code for its prerequisites";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Perl-PrereqScanner";
-      description = "A tool to scan your Perl code for its prerequisites";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26226,7 +27439,8 @@ let
     buildInputs = [ ExtUtilsMakeMakerCPANfile TestFailWarnings TestUseAllModules ];
     meta = {
       description = "a tool to scan your Perl code for its prerequisites";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/Perl-PrereqScanner-NotQuiteLite";
     };
   };
 
@@ -26240,7 +27454,7 @@ let
     propagatedBuildInputs = [ FileSlurpTiny ];
     meta = {
       description = "Parse and manipulate Perl version strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26253,7 +27467,8 @@ let
     };
     meta = {
       description = "return a pair only if they are both defined";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-perlx-maybe";
     };
   };
 
@@ -26267,7 +27482,6 @@ let
     propagatedBuildInputs = [ IOString PodParser TaskWeaken ];
     meta = {
       description = "An abstract, tree-based interface to perl POD documents";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26279,6 +27493,9 @@ let
       sha256 = "12559997r7wbhhs0p6cdxdzv7rzviv0nx1hq0dby8q481apn489f";
     };
     propagatedBuildInputs = [ PodSimple ];
+    meta = {
+      description = "Pod::Checker verifies POD documentation contents for compliance with the POD format specifications";
+    };
   };
 
   PodCoverage = buildPerlPackage {
@@ -26300,9 +27517,9 @@ let
     };
     propagatedBuildInputs = [ PodCoverage PodEventual ];
     meta = {
-      homepage = "https://github.com/rjbs/pod-coverage-trustpod";
-      description = "Allow a module's pod to contain Pod::Coverage hints";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "allow a module's pod to contain Pod::Coverage hints";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Pod-Coverage-TrustPod";
     };
   };
 
@@ -26316,9 +27533,9 @@ let
     buildInputs = [ TestDeep TestDifferences ];
     propagatedBuildInputs = [ MooseXTypes PodEventual StringRewritePrefix StringTruncate ];
     meta = {
+      description = "work with nestable Pod elements";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Pod-Elemental";
-      description = "Work with nestable Pod elements";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26332,9 +27549,9 @@ let
     buildInputs = [ TestDifferences ];
     propagatedBuildInputs = [ PPI PodElemental ];
     meta = {
+      description = "a thing that takes a string of Perl and rewrites its documentation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Pod-Elemental-PerlMunger";
-      description = "A thing that takes a string of Perl and rewrites its documentation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26347,8 +27564,9 @@ let
     };
     propagatedBuildInputs = [ MixinLinewise ];
     meta = {
-      description = "Read a POD document as a series of trivial events";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "read a POD document as a series of trivial events";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Pod-Eventual";
     };
     buildInputs = [ TestDeep ];
   };
@@ -26362,7 +27580,6 @@ let
     };
     meta = {
       description = "Modules for parsing/translating POD format documents";
-      license = lib.licenses.artistic1;
     };
   };
 
@@ -26375,9 +27592,9 @@ let
     };
     buildInputs = [ FileSlurper TestDifferences TextDiff ];
     meta = {
-      homepage = "https://github.com/neilb/Pod-POM";
       description = "POD Object Model";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Pod-POM";
     };
   };
 
@@ -26391,7 +27608,6 @@ let
     propagatedBuildInputs = [ PodPOM ];
     meta = {
       description = "Generate the TOC of a POD with Pod::POM";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26404,9 +27620,8 @@ let
     };
     propagatedBuildInputs = [ PodAbstract ];
     meta = {
+      description = "select specified section from Module's POD";
       homepage = "https://github.com/ktat/Pod-Section";
-      description = "Select specified section from Module's POD";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26419,9 +27634,9 @@ let
     };
     propagatedBuildInputs = [ PodParser ];
     meta = {
-      homepage = "https://github.com/timj/perl-Pod-LaTeX/tree/master";
       description = "Convert Pod data to formatted Latex";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/timj/perl-Pod-LaTeX/tree/master";
     };
   };
 
@@ -26438,7 +27653,8 @@ let
     '';
     meta = {
       description = "Convert POD data to various other formats";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://www.eyrie.org/~eagle/software/podlators/";
     };
   };
 
@@ -26451,9 +27667,9 @@ let
     };
     propagatedBuildInputs = [ FileFindIterator FileHomeDir IPCRun PodParser constant-defer libintl_perl ];
     meta = {
-      homepage = "http://user42.tuxfamily.org/podlinkcheck/index.html";
       description = "Check POD L<> link references";
-      license = lib.licenses.gpl3Plus;
+      license = [ licenses.gpl1Plus licenses.gpl3Plus ];
+      homepage = "http://user42.tuxfamily.org/podlinkcheck/index.html";
     };
   };
 
@@ -26466,7 +27682,8 @@ let
     };
     meta = {
       description = "Optimized module loading for forking or non-forking processes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/prefork";
     };
   };
 
@@ -26479,7 +27696,7 @@ let
     };
     meta = {
       description = "easily choose between different version-specific implementations";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26492,7 +27709,8 @@ let
     };
     meta = {
       description = "Look up Perl documentation in Pod format";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mrallen1/Pod-Perldoc.git";
     };
   };
 
@@ -26506,7 +27724,7 @@ let
     propagatedBuildInputs = [ PodParser ];
     meta = {
       description = "Perl extension for converting Pod to old-style Pod";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26519,9 +27737,9 @@ let
     };
     buildInputs = [ TestDifferences ];
     meta = {
-      homepage = "https://github.com/rwstauner/Pod-Markdown";
       description = "Convert POD to Markdown";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rwstauner/Pod-Markdown";
     };
     propagatedBuildInputs = [ URI ];
   };
@@ -26536,9 +27754,9 @@ let
      propagatedBuildInputs = [ PodMarkdown ];
      buildInputs = [ TestDifferences ];
      meta = {
-       description = "Convert POD to Github's specific markdown";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Convert POD to Github's specific markdown";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PodSimple = buildPerlPackage {
@@ -26547,6 +27765,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/K/KH/KHW/Pod-Simple-3.42.tar.gz";
       sha256 = "1icagrjqw1azmff82h17cbrhqgql7rg21gz64mjpiqqq0cpfpz59";
+    };
+    meta = {
+      description = "framework for parsing Pod";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-pod/pod-simple";
     };
   };
 
@@ -26559,6 +27782,11 @@ let
     };
     propagatedBuildInputs = [ ClassTiny FileShareDir LinguaENInflect PathTiny PodParser ];
     buildInputs = [ FileShareDirInstall TestDeep ];
+    meta = {
+      description = "a formatter for spellchecking Pod";
+      license = licenses.artistic2;
+      homepage = "https://github.com/perl-pod/Pod-Spell";
+    };
   };
 
   PodSpellCommonMistakes = buildPerlModule {
@@ -26572,7 +27800,7 @@ let
     buildInputs = [ ModuleBuildTiny ];
     meta = {
       description = "Catches common typos in POD";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/apocalypse/perl-pod-spell-commonmistakes";
     };
   };
@@ -26585,9 +27813,10 @@ let
        sha256 = "1kflmrs6kjzn81vn0ybwjvqadc0mpkq44kxswzpyrjm93xk6ll37";
      };
      meta = {
-       description = "Remove POD from Perl code";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Remove POD from Perl code";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/domm/Pod-Strip";
+    };
   };
 
   PodTidy = buildPerlModule {
@@ -26600,9 +27829,9 @@ let
      propagatedBuildInputs = [ EncodeNewlines IOString PodWrap TextGlob ];
      buildInputs = [ TestCmd ];
      meta = {
-       description = "a reformatting Pod Processor";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "a reformatting Pod Processor";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   PodWeaver = buildPerlPackage {
@@ -26615,9 +27844,9 @@ let
     buildInputs = [ PPI SoftwareLicense TestDifferences ];
     propagatedBuildInputs = [ ConfigMVPReaderINI DateTime ListMoreUtils LogDispatchouli PodElemental ];
     meta = {
+      description = "weave together a Pod document from an outline";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Pod-Weaver";
-      description = "Weave together a Pod document from an outline";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -26630,8 +27859,8 @@ let
      };
      propagatedBuildInputs = [ PodParser ];
      meta = {
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ProbePerl = buildPerlPackage {
@@ -26640,6 +27869,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/K/KW/KWILLIAMS/Probe-Perl-0.03.tar.gz";
       sha256 = "0c9wiaz0mqqknafr4jdr0g2gdzxnn539182z0icqaqvp5qgd5r6r";
+    };
+    meta = {
+      description = "Information about the currently running perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26653,9 +27886,9 @@ let
     # We cannot change timezones on the fly.
     prePatch = "rm t/04_tzset.t";
     meta = {
-      homepage = "https://github.com/kazeburo/POSIX-strftime-Compiler";
       description = "GNU C library compatible strftime for loggers and servers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/POSIX-strftime-Compiler";
     };
     buildInputs = [ ModuleBuildTiny ];
   };
@@ -26672,9 +27905,9 @@ let
       shortenPerlShebang $out/bin/rainbarf
     '';
     meta = {
-      homepage = "https://github.com/creaktive/rainbarf";
       description = "CPU/RAM/battery stats chart bar for tmux (and GNU screen)";
-      license = with lib.licenses; [ artistic1 gpl1Plus  ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/creaktive/rainbarf";
     };
   };
 
@@ -26687,9 +27920,9 @@ let
     };
     propagatedBuildInputs = [ DigestSHA1 URI ];
     meta = {
-      homepage = "http://razor.sourceforge.net/";
       description = "Collaborative, content-based spam filtering network agent";
-      license = lib.licenses.mit;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/Razor2-Client-Agent";
     };
   };
 
@@ -26703,9 +27936,9 @@ let
     };
     buildInputs = [ ModuleBuildTiny ];
     meta = {
-      homepage = "https://github.com/sanko/readonly";
       description = "Facility for creating read-only scalars, arrays, hashes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/sanko/readonly";
     };
   };
 
@@ -26729,9 +27962,9 @@ let
     buildInputs = [ IOString ModuleBuildTiny TestDeep TestFatal TestSharedFork TestTCP ];
     propagatedBuildInputs = [ IOSocketTimeout TryTiny ];
     meta = {
-      homepage = "https://github.com/PerlRedis/perl-redis";
       description = "Perl binding for Redis database";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/PerlRedis/perl-redis";
     };
   };
 
@@ -26746,7 +27979,7 @@ let
     buildInputs = [ FileWhich ModuleBuildXSUtil ParallelForkManager TestDeep TestFatal TestLeakTrace TestSharedFork TestTCP TestUNIXSock ];
     meta = {
       description = "Perl binding for Redis database";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/shogo82148/Redis-Fast";
     };
   };
@@ -26760,7 +27993,8 @@ let
     };
     meta = {
       description = "Utility functions for checking references";
-      license = with lib.licenses; [ mit ];
+      license = licenses.mit;
+      homepage = "https://github.com/p5pclub/ref-util";
     };
   };
 
@@ -26771,6 +28005,11 @@ let
       url = "mirror://cpan/authors/id/R/RS/RSAVAGE/Regexp-Assemble-0.38.tgz";
       sha256 = "0hp4v8mghmpflq9l9fqrkjg4cw0d3ha2nrmnsnzwjwqvmvwyfsx0";
     };
+    meta = {
+      description = "Assemble multiple Regular Expressions into a single RE";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Regexp-Assemble";
+    };
   };
 
   RegexpCommon = buildPerlPackage {
@@ -26780,9 +28019,9 @@ let
       url = "mirror://cpan/authors/id/A/AB/ABIGAIL/Regexp-Common-2017060201.tar.gz";
       sha256 = "ee07853aee06f310e040b6bf1a0199a18d81896d3219b9b35c9630d0eb69089b";
     };
-    meta = with lib; {
+    meta = {
       description = "Provide commonly requested regular expressions";
-      license = licenses.mit;
+      license = [ licenses.artistic1 licenses.artistic2 licenses.bsd3 licenses.mit ];
     };
   };
 
@@ -26795,7 +28034,7 @@ let
     };
     propagatedBuildInputs = [ RegexpCommon ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26808,7 +28047,7 @@ let
     };
     meta = {
       description = "Add grammatical parsing features to Perl 5.10 regexes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26829,9 +28068,9 @@ let
       sha256 = "f739dab8df2b06aae5c48f9971251b73704464a32d07d8d025f3c0f869544e89";
     };
     meta = {
-      homepage = "https://github.com/toddr/Regexp-Parser";
-      description = "Base class for parsing regexes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "base class for parsing regexes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://wiki.github.com/toddr/Regexp-Parser";
     };
   };
 
@@ -26844,7 +28083,8 @@ let
     };
     meta = {
       description = "Regexp patterns related to Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Regexp-Pattern-Perl";
     };
   };
 
@@ -26857,7 +28097,8 @@ let
     };
     meta = {
       description = "Groups a regular expressions collection";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/leejo/regexp-reggrp-perl";
     };
   };
 
@@ -26870,7 +28111,8 @@ let
     };
     meta = {
       description = "Stringify a Regexp object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Regexp-Stringify";
     };
   };
 
@@ -26881,8 +28123,7 @@ let
       url = "mirror://cpan/authors/id/D/DA/DANKOGAI/Regexp-Trie-0.02.tar.gz";
       sha256 = "1yn5l6x3xyic9jxw9jggqsbggcv7rc8ggj4zbnlz9hfvv17gjazv";
     };
-    meta = {
-    };
+
   };
 
   ReturnMultiLevel = buildPerlPackage {
@@ -26896,7 +28137,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "return across multiple call levels";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mauke/Return-MultiLevel";
     };
   };
 
@@ -26911,7 +28153,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "specify a return type for a function (optionally with coercion)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-return-type";
     };
   };
 
@@ -26925,7 +28168,7 @@ let
     propagatedBuildInputs = [ LWPProtocolHttps ];
     meta = {
       description = "A simple client for interacting with RESTful http/https resources";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -26938,9 +28181,9 @@ let
     };
     buildInputs = [ TestLongString TestWWWMechanize TestWWWMechanizeCGI ];
     meta = {
-      homepage = "https://jaldhar.github.io/REST-Utils/";
       description = "Utility functions for REST applications";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://jaldhar.github.com/REST-Utils";
     };
   };
 
@@ -26954,6 +28197,11 @@ let
     propagatedBuildInputs = [ ModuleLoad ScalarListUtils XMLParser ];
     doCheck = false;
     buildInputs = [ ExtUtilsMakeMaker TestSimple13 ];
+    meta = {
+      description = "Data, client and server classes for XML-RPC";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rjray/rpc-xml";
+    };
   };
 
   ReturnValue = buildPerlPackage {
@@ -26962,6 +28210,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RJ/RJBS/Return-Value-1.666005.tar.gz";
       sha256 = "1b2hfmdl19zi1z3npzv9wf6dh1g0xd88i70b4233ds9icnln08lf";
+    };
+    meta = {
+      description = "(deprecated) polymorphic return values";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Return-Value";
     };
   };
 
@@ -26974,7 +28227,8 @@ let
     };
     meta = {
       description = "Just roles. Nothing else";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Ovid/Role-Basic";
     };
   };
 
@@ -26987,8 +28241,9 @@ let
     };
     propagatedBuildInputs = [ MooseXRoleParameterized StringErrf ];
     meta = {
-      description = "A thing with a message method";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a thing with a message method";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Role-HasMessage";
     };
   };
 
@@ -27001,8 +28256,9 @@ let
     };
     propagatedBuildInputs = [ Moose ];
     meta = {
-      description = "A thing with a list of tags";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a thing with a list of tags";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Role-Identifiable";
     };
   };
 
@@ -27014,8 +28270,9 @@ let
       sha256 = "0i9b4jd4vd6w8nldyhk6y5zsiga4ari83afhaam86kwa2fgfxgfp";
     };
     meta = {
-      description = "Roles. Like a nouvelle cuisine portion size slice of Moose";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Roles: a nouvelle cuisine portion size slice of Moose";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Role-Tiny";
     };
   };
 
@@ -27029,8 +28286,8 @@ let
     propagatedBuildInputs = [ RouterSimple SubExporter ];
     meta = {
       description = "Build REST-inspired routing tables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/Router-Resource/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/theory/router-resource";
     };
   };
 
@@ -27044,7 +28301,7 @@ let
     propagatedBuildInputs = [ ClassAccessorLite ];
     meta = {
       description = "simple HTTP router";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/p5-router-simple";
     };
   };
@@ -27059,7 +28316,7 @@ let
     propagatedBuildInputs = [ AnyEvent DataSExpression ];
     meta = {
       description = "An Asynchronous Remote Procedure Stack";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27073,7 +28330,8 @@ let
     propagatedBuildInputs = [ JSON ];
     meta = {
       description = "Core Ext.Direct implementation for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nohuhu/RPC-ExtDirect";
     };
   };
 
@@ -27089,8 +28347,9 @@ let
     doCheck = false; # Tries to open /var/lib/rpm
     meta = {
       description = "Perl bindings for the RPM Package Manager API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      platforms = lib.platforms.linux;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/lkundrak/perl-RPM2.git";
+      platforms = platforms.linux;
     };
   };
 
@@ -27114,8 +28373,9 @@ let
     };
     buildInputs = [ CGI HTTPServerSimple TestException ];
     meta = {
-      description = "Talk to RT installation using REST protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Client for RT using REST API";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/RT-Client-REST/RT-Client-REST";
     };
     propagatedBuildInputs = [ DateTimeFormatDateParse Error LWP ParamsValidate ];
   };
@@ -27129,7 +28389,8 @@ let
     };
     meta = {
       description = "Call isa, can, does and DOES safely on things that may not be objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Safe-Isa";
     };
   };
 
@@ -27143,7 +28404,8 @@ let
     buildInputs = [ FileShareDirInstall ];
     meta = {
       description = "Schema for data structures (specification)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sah";
     };
   };
 
@@ -27157,7 +28419,8 @@ let
     propagatedBuildInputs = [ SahSchemasInt ];
     meta = {
       description = "Various example Sah schemas";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sah-Schemas-Examples";
     };
   };
 
@@ -27170,7 +28433,8 @@ let
     };
     meta = {
       description = "Sah schemas for various integers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sah-Schemas-Int";
     };
   };
 
@@ -27184,7 +28448,8 @@ let
     propagatedBuildInputs = [ DataSahNormalize ];
     meta = {
       description = "Sah schemas for Rinci";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sah-Schemas-Rinci";
     };
   };
 
@@ -27197,7 +28462,8 @@ let
     };
     meta = {
       description = "Common Scalar and List utility subroutines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Scalar-List-Utils/Scalar-List-Utils";
     };
   };
 
@@ -27207,6 +28473,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/Z/ZE/ZEFRAM/Scalar-String-0.003.tar.gz";
       sha256 = "f54a17c9b78713b02cc43adfadf60b49467e7634d31317e8b9e9e97c26d68b52";
+    };
+    meta = {
+      description = "string aspects of scalars";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27219,7 +28489,8 @@ let
     };
     meta = {
       description = "numeric tests for perl scalars";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chocolateboy/Scalar-Util-Numeric";
     };
   };
 
@@ -27232,7 +28503,8 @@ let
     };
     meta = {
       description = "Pure-perl drop-in replacement/approximation of Scalar::Util::Numeric";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Scalar-Util-Numeric-PP";
     };
   };
 
@@ -27245,7 +28517,7 @@ let
     };
     meta = {
       description = "scope based container";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27257,6 +28529,10 @@ let
       sha256 = "196rj47mh4fq2vlnw595q391zja5v6qg7s3sy0vy8igfyid8rdsq";
     };
     preConfigure = "export HOME=$(mktemp -d)";
+    meta = {
+      description = "SCGI server library for perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   ScopeGuard = buildPerlPackage {
@@ -27267,8 +28543,9 @@ let
       sha256 = "0y6jfzvxiz8h5yfz701shair0ilypq2mvimd7wn8wi2nbkm1p6wc";
     };
     meta = {
-      description = "Lexically-scoped resource management";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "lexically-scoped resource management";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chocolateboy/Scope-Guard";
     };
   };
 
@@ -27283,7 +28560,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "a scope based object note and option store";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27296,7 +28573,8 @@ let
     };
     meta = {
       description = "Act on upper scopes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.vpit.fr/?p=perl%2Fmodules%2FScope-Upper.git";
     };
   };
 
@@ -27313,7 +28591,8 @@ let
     propagatedBuildInputs = [ FileShareDir TieSimple ];
     meta = {
       description = "SDL bindings to Perl";
-      license = lib.licenses.lgpl21Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://github.com/PerlGameDev/SDL";
     };
   };
 
@@ -27327,7 +28606,8 @@ let
     buildInputs = [ pkgs.xapian DevelLeak ];
     meta = {
       description = "Perl XS frontend to the Xapian C++ search library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://xapian.org/";
     };
   };
 
@@ -27341,9 +28621,9 @@ let
     buildInputs = [ TestDeep TestDifferences TestLongString TestWarn ];
     preBuild = "ls";
     meta = {
-      homepage = "https://github.com/Sereal/Sereal";
       description = "Fast, compact, powerful binary deserialization";
-      license = with lib.licenses; [ artistic2 ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Sereal/Sereal";
       maintainers = [ maintainers.thoughtpolice ];
     };
   };
@@ -27357,9 +28637,9 @@ let
     };
     buildInputs = [ SerealDecoder TestDeep TestDifferences TestLongString TestWarn ];
     meta = {
+      description = "Fast, compact, powerful binary serialization";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Sereal/Sereal";
-      description = "Fast, compact, powerful binary deserialization";
-      license = with lib.licenses; [ artistic2 ];
       maintainers = [ maintainers.thoughtpolice ];
     };
   };
@@ -27374,9 +28654,9 @@ let
     buildInputs = [ TestDeep TestLongString TestMemoryGrowth TestWarn ];
     propagatedBuildInputs = [ SerealDecoder SerealEncoder ];
     meta = {
+      description = "Fast, compact, powerful binary (de-)serialization";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Sereal/Sereal";
-      description = "Fast, compact, powerful binary deserialization";
-      license = with lib.licenses; [ artistic2 ];
       maintainers = [ maintainers.thoughtpolice ];
     };
   };
@@ -27388,9 +28668,8 @@ let
       url = "mirror://cpan/authors/id/C/CO/COOK/Device-SerialPort-1.04.tar.gz";
       sha256 = "1mz9a2qzkz6fbz76wcwmp48h6ckjxpcazb70q03acklvndy5d4nk";
     };
-    meta = with lib; {
-      description = "Linux/POSIX emulation of Win32::SerialPort functions.";
-      license = with licenses; [ artistic1 gpl1Plus ];
+    meta = {
+      description = "Linux/POSIX emulation of Win32::SerialPort functions";
     };
   };
 
@@ -27403,9 +28682,9 @@ let
     };
     buildInputs = [ TestRequires TestSharedFork TestTCP ];
     meta = {
+      description = "a superdaemon for hot-deploying server programs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazuho/p5-Server-Starter";
-      description = "A superdaemon for hot-deploying server programs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -27417,9 +28696,9 @@ let
       sha256 = "32c3df96ef455c71870363acd950ddc4fbc848c594f4bc55b21b44cf979f79a1";
     };
     meta = {
-      homepage = "https://github.com/hoytech/Session-Token";
       description = "Secure, efficient, simple random session token generation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hoytech/Session-Token";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -27433,7 +28712,7 @@ let
     };
     meta = {
       description = "work with the cross product of two or more sets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/briandfoy/set-crossproduct";
     };
   };
@@ -27459,7 +28738,7 @@ let
     };
 
     meta = {
-      description = "Manages sets of integers";
+      description = "Manages sets of integers, newsrc style";
     };
   };
 
@@ -27472,7 +28751,8 @@ let
     };
     meta = {
       description = "Unordered collections (sets) of Perl Objects";
-      license = lib.licenses.artistic2;
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/rurban/Set-Object";
     };
   };
 
@@ -27484,7 +28764,8 @@ let
       sha256 = "07aiqkyi1p22drpcyrrmv7f8qq6fhrxh007achy2vryxyck1bp53";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/daoswald/Set-Scalar";
     };
   };
 
@@ -27496,9 +28777,9 @@ let
       sha256 = "dcf8a312134a7c6b82926a0115d93b692472a662d28cdc3a9bdf28984ada9ee3";
     };
     meta = {
-      homepage = "https://github.com/neilb/Smart-Comments";
       description = "Comments that do more than just sit there";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Smart-Comments";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -27522,7 +28803,8 @@ let
     propagatedBuildInputs = [ IPCSignal ];
     meta = {
       description = "Signal masks made easy";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/signal-mask";
     };
   };
 
@@ -27534,9 +28816,9 @@ let
        sha256 = "0675v45bbsh7vr7kpf36xs2q79g02iq1kmfw22h20xdk4rzqvkqx";
      };
      meta = {
-       description = "Porters stemming algorithm for norwegian.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Porters stemming algorithm for norwegian";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   SnowballSwedish = buildPerlModule {
@@ -27547,9 +28829,9 @@ let
        sha256 = "0agwc12jk5kmabnpsplw3wf4ii5w1zb159cpin44x3srb0sr5apg";
      };
      meta = {
-       description = "Porters stemming algorithm for swedish.";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Porters stemming algorithm for swedish";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   SOAPLite = buildPerlPackage {
@@ -27562,7 +28844,8 @@ let
     propagatedBuildInputs = [ ClassInspector IOSessionData LWPProtocolHttps TaskWeaken XMLParser ];
     meta = {
       description = "Perl's Web Services Toolkit";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/redhotpenguin/perl-soaplite";
     };
     buildInputs = [ TestWarn XMLParserLite ];
   };
@@ -27579,7 +28862,6 @@ let
     patches = [ ../development/perl-modules/Socket6-sv_undef.patch ];
     meta = {
       description = "IPv6 related part of the C socket.h defines and structure manipulators";
-      license = lib.licenses.bsd3;
     };
   };
 
@@ -27593,9 +28875,9 @@ let
     buildInputs = [ TryTiny ];
     propagatedBuildInputs = [ DataSection TextTemplate ];
     meta = {
+      description = "packages that provide templated software licenses";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Software-License";
-      description = "Packages that provide templated software licenses";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -27609,10 +28891,10 @@ let
      propagatedBuildInputs = [ SoftwareLicense ];
      buildInputs = [ TestCheckDeps ];
      meta = {
-       description = "Software::License pack for Creative Commons' licenses";
-       license = with lib.licenses; [ lgpl3Plus ];
-       homepage = "https://github.com/SineSwiper/Software-License-CCpack";
-     };
+      description = "Software::License pack for Creative Commons' licenses";
+      license = licenses.lgpl3Plus;
+      homepage = "https://github.com/SineSwiper/Software-License-CCpack";
+    };
   };
 
   SortKey = buildPerlPackage {
@@ -27623,8 +28905,7 @@ let
       sha256 = "1kqs10s2plj6c96srk0j8d7xj8dxk1704r7mck8rqk09mg7lqspd";
     };
     meta = {
-      description = "Sort arrays by one or multiple calculated keys";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "the fastest way to sort anything in Perl";
     };
   };
 
@@ -27634,6 +28915,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/N/NE/NEILB/Sort-Versions-1.62.tar.gz";
       sha256 = "1aifzm79ky03gi2lwxyx4mk6yky8x215j0kz4f0jbgkf803k6pxz";
+    };
+    meta = {
+      description = "a perl 5 module for sorting of revision-like numbers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Sort-Versions";
     };
   };
 
@@ -27647,9 +28933,10 @@ let
      propagatedBuildInputs = [ DevelStackTrace EvalClosure MROCompat ModuleRuntime RoleTiny SubQuote TryTiny ];
      buildInputs = [ TestFatal TestNeeds ];
      meta = {
-       description = "Type constraints and coercions for Perl";
-       license = with lib.licenses; [ artistic2 ];
-     };
+      description = "Type constraints and coercions for Perl";
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Specio";
+    };
   };
 
   SpecioLibraryPathTiny = buildPerlPackage {
@@ -27662,9 +28949,10 @@ let
      propagatedBuildInputs = [ PathTiny Specio ];
      buildInputs = [ Filepushd TestFatal ];
      meta = {
-       description = "Path::Tiny types and coercions for Specio";
-       license = with lib.licenses; [ asl20 ];
-     };
+      description = "Path::Tiny types and coercions for Specio";
+      license = licenses.asl20;
+      homepage = "https://github.com/houseabsolute/Specio-Library-Path-Tiny";
+    };
   };
 
   Spiffy = buildPerlPackage {
@@ -27673,6 +28961,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/I/IN/INGY/Spiffy-0.46.tar.gz";
       sha256 = "18qxshrjh0ibpzjm2314157mxlibh3smyg64nr4mq990hh564n4g";
+    };
+    meta = {
+      description = "Spiffy Perl Interface Framework For You";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/spiffy-pm";
     };
   };
 
@@ -27685,9 +28978,9 @@ let
     };
     propagatedBuildInputs = [ CryptRC4 DigestPerlMD5 IOStringy OLEStorage_Lite ];
     meta = {
-      homepage = "https://github.com/runrig/spreadsheet-parseexcel/";
       description = "Read information from an Excel file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/runrig/spreadsheet-parseexcel/";
     };
   };
 
@@ -27701,7 +28994,8 @@ let
     propagatedBuildInputs = [ OLEStorage_Lite ParseRecDescent ];
     meta = {
       description = "Write to a cross platform Excel binary file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/jmcnamara/spreadsheet-writeexcel";
     };
   };
 
@@ -27716,7 +29010,8 @@ let
     propagatedBuildInputs = [ HashMerge MROCompat Moo ];
     meta = {
       description = "Generate SQL from Perl data structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dbsrgits/sql-abstract";
     };
   };
 
@@ -27731,7 +29026,7 @@ let
     propagatedBuildInputs = [ SQLAbstract ];
     meta = {
       description = "Generate SQL from Perl data structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27745,6 +29040,10 @@ let
     propagatedBuildInputs = [ DBI SQLAbstract ];
     buildInputs = [ TestDeep TestException ];
     doCheck = false; /* test fails */
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/asb-capfan/SQL-Abstract-Limit";
+    };
   };
 
   SQLSplitStatement = buildPerlPackage {
@@ -27756,6 +29055,10 @@ let
     };
     buildInputs = [ TestException ];
     propagatedBuildInputs = [ ClassAccessor ListMoreUtils RegexpCommon SQLTokenizer ];
+    meta = {
+      description = "Split any SQL code into atomic statements";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   SQLStatement = buildPerlPackage {
@@ -27767,6 +29070,11 @@ let
     };
     buildInputs = [ MathBaseConvert TestDeep TextSoundex ];
     propagatedBuildInputs = [ Clone ModuleRuntime ParamsUtil ];
+    meta = {
+      description = "SQL parsing and processing engine";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl5-dbi/SQL-Statement";
+    };
   };
 
   SQLTokenizer = buildPerlPackage {
@@ -27775,6 +29083,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/I/IZ/IZUT/SQL-Tokenizer-0.24.tar.gz";
       sha256 = "1qa2dfbzdlr5qqdam9yn78z5w3al5r8577x06qan8wv58ay6ka7s";
+    };
+    meta = {
+      description = "A simple SQL tokenizer";
     };
   };
 
@@ -27789,7 +29100,8 @@ let
     propagatedBuildInputs = [ CarpClan DBI FileShareDir Moo PackageVariant ParseRecDescent TryTiny ];
     meta = {
       description = "SQL DDL transformations and more";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dbsrgits/sql-translator/";
     };
   };
 
@@ -27804,7 +29116,8 @@ let
     propagatedBuildInputs = [ ImportInto strictures ];
     meta = {
       description = "Parameterizable packages";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Package-Variant.git";
     };
   };
 
@@ -27814,6 +29127,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/B/BI/BINGOS/Sort-Naturally-1.03.tar.gz";
       sha256 = "eaab1c5c87575a7826089304ab1f8ffa7f18e6cd8b3937623e998e865ec1e746";
+    };
+    meta = {
+      description = "sort lexically, but sort numeral parts numerically";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/bingos/sort-naturally";
     };
   };
 
@@ -27827,7 +29145,8 @@ let
     propagatedBuildInputs = [ CompleteSah CompleteSequence SortNaturally ];
     meta = {
       description = "Collection of sort subroutines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sort-Sub";
     };
   };
 
@@ -27842,8 +29161,8 @@ let
     propagatedBuildInputs = [ ParallelPrefork Plack ServerStarter ];
     doCheck = !stdenv.isDarwin;
     meta = {
-      description = "A simple, high-performance PSGI/Plack HTTP server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a simple, high-performance PSGI/Plack HTTP server";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -27863,9 +29182,9 @@ let
 
     doCheck = false; # binds to various TCP ports
     meta = {
-      homepage = "https://github.com/miyagawa/Starman";
       description = "High-performance preforking PSGI/Plack web server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Starman";
     };
   };
 
@@ -27878,7 +29197,8 @@ let
     };
     propagatedBuildInputs = [ NumberFormat ];
     meta = {
-      license = "open_source";
+      license = licenses.free;
+      homepage = "http://github.com/jettero/statistics--basic";
     };
   };
 
@@ -27903,7 +29223,7 @@ let
     };
     meta = {
       description = "Implements the Chi Squared test, using pre-computed tables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/DrHyde/perl-modules-Statistics-ChiSquare";
     };
   };
 
@@ -27915,9 +29235,9 @@ let
       sha256 = "0fgrjr79ai5dn92kypslsi97y7r8iiwmd682lrd47vdz4vmdwkmh";
     };
     meta = {
-      #homepage = "http://web-cpan.berlios.de/modules/Statistics-Descriptive/"; # berlios shut down; I found no replacement
       description = "Module of basic descriptive statistical functions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-Statistics-Descriptive";
     };
     propagatedBuildInputs = [ ListMoreUtils ];
   };
@@ -27949,9 +29269,9 @@ let
       sha256 = "0fs2n9zw6isfkha2kbqrvl9mwg572x1x0jlfaps0qsyynn846bcv";
     };
     meta = {
-      homepage = "https://plackperl.org";
-      description = "Temporary buffer to save bytes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "temporary buffer to save bytes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plack/Stream-Buffered";
     };
   };
 
@@ -27963,9 +29283,9 @@ let
       sha256 = "0mwd9xqz4n8qfpi5h5581lbm33qhf7agww18h063icnilrs7km89";
     };
     meta = {
-      homepage = "http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/strictures.git";
-      description = "Turn on strict and make all warnings fatal";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Turn on strict and make most warnings fatal";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/strictures";
     };
   };
 
@@ -27978,7 +29298,8 @@ let
     };
     meta = {
       description = "Use subroutines from another module";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-subroutines";
     };
   };
 
@@ -28002,8 +29323,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Parameter expansion in strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "http://search.cpan.org/dist/String-Bash";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28013,6 +29333,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/H/HI/HIO/String-CamelCase-0.04.tar.gz";
       sha256 = "1a8i4yzv586svd0pbxls7642vvmyiwzh4x2xyij8gbnfxsydxhw9";
+    };
+    meta = {
+      description = "camelcase, de-camelcase";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28025,7 +29349,7 @@ let
     };
     meta = {
       description = "Timing side-channel protected string compare";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28035,6 +29359,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/L/LE/LEEJO/String-CRC32-2.100.tar.gz";
       sha256 = "04s7lwcpx980pfgi40ij11h7kqsq2psmhk2vscang2q65lxhj1lp";
+    };
+    meta = {
+      license = [ licenses.cc0 licenses.wtfpl ];
+      homepage = "https://github.com/leejo/string-crc32";
     };
   };
 
@@ -28054,9 +29382,9 @@ let
     buildInputs = [ CaptureTiny ModuleBuildTiny ModuleInstallGithubMeta ModuleInstallReadmeFromPod ModuleInstallReadmeMarkdownFromPod ModuleInstallRepository TestBase YAML ];
     propagatedBuildInputs = [ AlgorithmDiff ];
     meta = {
-      homepage = "https://github.com/yappo/p5-String-Diff";
       description = "Simple diff to String";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/yappo/p5-String-Diff";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -28071,8 +29399,9 @@ let
     buildInputs = [ JSONMaybeXS TimeDate ];
     propagatedBuildInputs = [ StringFormatter ];
     meta = {
-      description = "A simple sprintf-like dialect";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a simple sprintf-like dialect";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/String-Errf";
     };
   };
 
@@ -28082,6 +29411,10 @@ let
     src = fetchurl {
         url = "mirror://cpan/authors/id/E/EV/EVO/String-Escape-2010.002.tar.gz";
         sha256 = "12ls7f7847i4qcikkp3skwraqvjphjiv2zxfhl5d49326f5myr7x";
+    };
+    meta = {
+      description = "Backslash escapes, quoted phrase, word elision, etc";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28094,9 +29427,9 @@ let
     };
     propagatedBuildInputs = [ JSONMaybeXS SubExporter ];
     meta = {
+      description = "string munging for loggers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/String-Flogger";
-      description = "String munging for loggers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -28117,9 +29450,10 @@ let
       sha256 = "0mlwm0rirv46gj4h072q8gdync5zxxsxy8p028gdyrhczl942dc3";
     };
     propagatedBuildInputs = [ SubExporter ];
-    meta = with lib; {
-      description = "Build sprintf-like functions of your own";
-      license = licenses.gpl2;
+    meta = {
+      description = "build sprintf-like functions of your own";
+      license = licenses.gpl2Plus;
+      homepage = "https://github.com/rjbs/String-Formatter";
     };
   };
 
@@ -28130,10 +29464,10 @@ let
       url = "mirror://cpan/authors/id/N/NE/NEILB/String-Interpolate-0.32.tar.gz";
       sha256 = "15fwbpz3jdpdgmz794iw9hz2caxrnrw9pdwprxxkanpm92cdhaf7";
     };
-    meta = with lib; {
-      # https://metacpan.org/pod/String::Interpolate
-      description = "String::Interpolate - Wrapper for builtin the Perl interpolation engine.";
-      license = licenses.gpl1Plus;
+    meta = {
+      description = "Wrapper for builtin the Perl interpolation engine";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/String-Interpolate";
     };
     propagatedBuildInputs = [ PadWalker SafeHole ];
   };
@@ -28147,7 +29481,8 @@ let
     };
     meta = {
       description = "Interpolated named arguments in string";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sciurius/perl-String-Interpolate-Named";
     };
   };
 
@@ -28162,7 +29497,7 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Convert to/from Koremutake Memorable Random Strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28175,7 +29510,8 @@ let
     };
     meta = {
       description = "Give line number to each line of string";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-String-LineNumber";
     };
   };
 
@@ -28185,6 +29521,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/C/CG/CGRAU/String-MkPasswd-0.05.tar.gz";
       sha256 = "15lvcc8c9hp6mg3jx02wd3b85aphn8yl5db62q3pam04c0sgh42k";
+    };
+    meta = {
+      description = "random password generator";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sirhc/string-mkpasswd";
     };
   };
 
@@ -28197,7 +29538,8 @@ let
     };
     meta = {
       description = "String padding routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-String-Pad";
     };
   };
 
@@ -28210,7 +29552,8 @@ let
     };
     meta = {
       description = "Quote a string as Perl does";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-String-PerlQuote";
     };
   };
 
@@ -28220,6 +29563,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SH/SHLOMIF/String-Random-0.31.tar.gz";
       sha256 = "0p4pmf3k6c01j8clfx54167rva9mf82bkh9aj5qdrix2cgpd2jjb";
+    };
+    meta = {
+      description = "Perl module to generate random strings based on a pattern";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/string-random";
     };
   };
 
@@ -28232,8 +29580,9 @@ let
     };
     propagatedBuildInputs = [ SubExporter ];
     meta = {
-      description = "Rewrite strings based on a set of known prefixes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "rewrite strings based on a set of known prefixes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/String-RewritePrefix";
     };
   };
 
@@ -28245,10 +29594,7 @@ let
       sha256 = "0dfxhr6hxc2majkkrm0qbx3qcbykzpphbj2ms93dc86f7183c1p6";
     };
     doCheck = !stdenv.isDarwin;
-    meta = {
-      # http://cpansearch.perl.org/src/ROSCH/String-ShellQuote-1.04/README
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-    };
+
   };
 
   StringSimilarity = buildPerlPackage {
@@ -28260,7 +29606,6 @@ let
     };
     doCheck = true;
     meta = {
-      license = with lib.licenses; [ gpl2 ];
       description = "Calculate the similarity of two strings";
     };
   };
@@ -28271,6 +29616,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/F/FL/FLORA/Shell-Command-0.06.tar.gz";
       sha256 = "1lgc2rb3b5a4lxvbq0cbg08qk0n2i88srxbsz93bwi3razpxxr7k";
+    };
+    meta = {
+      description = "Cross-platform functions emulating common shell commands";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28285,7 +29634,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile ];
     meta = {
       description = "escape strings for the shell on Linux, UNIX or MSWin32";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/ShellQuote-Any";
     };
   };
 
@@ -28297,6 +29647,11 @@ let
       sha256 = "12nw7h2yiybhdw0vnnpc7bif8ylhsn6kqf6s39dsrf9h54iq9yrs";
     };
     propagatedBuildInputs = [ LinguaENInflectPhrase TextUnidecode namespaceclean ];
+    meta = {
+      description = "Convert Strings to English Program Identifiers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rkitover/string-toidentifier-en";
+    };
   };
 
   StringTruncate = buildPerlPackage {
@@ -28308,8 +29663,9 @@ let
     };
     propagatedBuildInputs = [ SubExporter ];
     meta = {
-      description = "A module for when strings are too long to be displayed in";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a module for when strings are too long to be displayed in";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/String-Truncate";
     };
   };
 
@@ -28323,8 +29679,9 @@ let
     buildInputs = [ TestException TestSimple13 TestTableDriven ];
     propagatedBuildInputs = [ PadWalker SubExporter TemplateToolkit ];
     meta = {
-      description = "Use TT to interpolate lexical variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "use TT to interpolate lexical variables";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/jrockway/string-tt.git";
     };
   };
 
@@ -28336,8 +29693,9 @@ let
       sha256 = "0vfjvy04y71f8jsjg0yll28wqlpgn7gbkcrb0i72k0qcliz9mg7v";
     };
     meta = {
-      description = "String::Util -- String processing utilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "String processing utility functions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/scottchiefbaker/String-Util";
     };
 
     buildInputs = [ ModuleBuildTiny ];
@@ -28352,7 +29710,8 @@ let
     };
     meta = {
       description = "String utilities related to matching";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-String-Util-Match";
     };
   };
 
@@ -28366,7 +29725,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Bash wildcard string routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-String-Wildcard-Bash";
     };
   };
 
@@ -28382,7 +29742,7 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "make simple lightweight record-like structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28404,9 +29764,9 @@ let
     };
     propagatedBuildInputs = [ DataOptList ];
     meta = {
-      homepage = "https://github.com/rjbs/sub-exporter";
-      description = "A sophisticated exporter for custom-built routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "a sophisticated exporter for custom-built routines";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Sub-Exporter";
     };
   };
 
@@ -28420,9 +29780,9 @@ let
     buildInputs = [ namespaceautoclean ];
     propagatedBuildInputs = [ SubExporter SubName ];
     meta = {
+      description = "helper routines for using Sub::Exporter to build methods";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Sub-Exporter-ForMethods";
-      description = "Helper routines for using Sub::Exporter to build methods";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -28435,9 +29795,9 @@ let
     };
     propagatedBuildInputs = [ SubExporter ];
     meta = {
-      homepage = "https://github.com/rjbs/sub-exporter-globexporter";
-      description = "Export shared globs with Sub::Exporter collectors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "export shared globs with Sub::Exporter collectors";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Sub-Exporter-GlobExporter";
     };
   };
 
@@ -28450,7 +29810,8 @@ let
     };
     meta = {
       description = "Only use Sub::Exporter if you need it";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/Sub-Exporter-Progressive";
     };
   };
 
@@ -28465,7 +29826,8 @@ let
     buildInputs = [ TestFatal TestRequires ];
     meta = {
       description = "alternative handles_via implementation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tobyink/p5-sub-handlesvia";
     };
   };
 
@@ -28478,7 +29840,8 @@ let
     };
     meta = {
       description = "Retrieve names of code references";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rgs/Sub-Identify";
     };
   };
 
@@ -28492,7 +29855,8 @@ let
     propagatedBuildInputs = [ Importer ];
     meta = {
       description = "Tool for inspecting subroutines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/exodist/Sub-Info/";
     };
   };
 
@@ -28504,8 +29868,9 @@ let
       sha256 = "03zgk1yh128gciyx3q77zxzxg9kf8yy2gm46gdxqi24mcykngrb1";
     };
     meta = {
-      description = "Install subroutines into packages easily";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "install subroutines into packages easily";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Sub-Install";
     };
   };
 
@@ -28519,7 +29884,8 @@ let
     buildInputs = [ Perlosnames ];
     meta = {
       description = "Generate iterator coderefs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Sub-Iterator";
     };
   };
 
@@ -28532,9 +29898,9 @@ let
     };
     buildInputs = [ BC DevelCheckBin ];
     meta = {
-      homepage = "https://github.com/p5sagit/Sub-Name";
       description = "(Re)name a sub";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/p5sagit/Sub-Name";
     };
   };
 
@@ -28546,6 +29912,10 @@ let
       sha256 = "1d955qn44brkcfif3gi0q2vvvqahny6rax0vr068x5i9yz0ng6lk";
     };
     buildInputs = [ TestFatal ];
+    meta = {
+      description = "Perl extension for easily overriding subroutines";
+      homepage = "https://github.com/Ovid/sub-override";
+    };
   };
 
   SubQuote = buildPerlPackage {
@@ -28558,7 +29928,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "Efficient generation of subroutines via string eval";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/moose/Sub-Quote";
     };
   };
 
@@ -28570,9 +29941,9 @@ let
       sha256 = "14z2xjiw931wizcx3mblmby753jspvfm321d6chs907nh0xzdwxl";
     };
     meta = {
-      homepage = "https://github.com/dagolden/sub-uplevel";
-      description = "Apparently run a function in a higher stack frame";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "apparently run a function in a higher stack frame";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/Sub-Uplevel";
     };
   };
 
@@ -28595,8 +29966,8 @@ let
     };
     meta = {
       description = "lib/Safe/Hole.pm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      homepage = "https://github.com/toddr/Safe-Hole";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/Safe-Hole";
       broken = stdenv.isDarwin;
     };
   };
@@ -28610,9 +29981,9 @@ let
     };
     propagatedBuildInputs = [ HTMLEscape HashMerge IPCRun Pegex TextAutoformat YAMLLibYAML ];
     meta = {
-      homepage = "https://github.com/ingydotnet/swim-pm";
       description = "See What I Mean?!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/swim-pm";
     };
   };
 
@@ -28624,6 +29995,11 @@ let
       sha256 = "0xbdjdgzfj9zwa4j3ipr8bfk7bcici4hk89hq5d27rhg2isljd9i";
     };
     doCheck = false;                             # FIXME: 2/293 test failures
+    meta = {
+      description = "A switch statement for Perl, do not use if you can use given/when";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chorny/Switch";
+    };
   };
 
   SymbolGet = buildPerlPackage {
@@ -28636,8 +30012,9 @@ let
     buildInputs = [ TestDeep TestException ];
     propagatedBuildInputs = [ CallContext ];
     meta = {
-      description = "Read Perl's symbol table programmatically";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Read Perl’s symbol table programmatically";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/FGasper/p5-Symbol-Get";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -28650,8 +30027,8 @@ let
       sha256 = "0f7623e9d724760aa64040222da1d82f1188586791329261cc60dad1d60d6a92";
     };
     meta = {
-      description = "Finds name and type of a global variable";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "finds name and type of a global variable";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -28661,6 +30038,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DE/DEXTER/Symbol-Util-0.0203.tar.gz";
       sha256 = "0cnwwrd5d6i80f33s7n2ak90rh4s53ss7q57wndrpkpr4bfn3djm";
+    };
+    meta = {
+      description = "Additional utils for Perl symbols manipulation";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Symbol-Util";
     };
   };
 
@@ -28674,7 +30056,8 @@ let
     propagatedBuildInputs = [ HashFieldHash syntax ];
     meta = {
       description = "Emulate each(@array) on Perl < 5.12";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/sharyanto/perl-Syntax-Feature-EachOnArray";
     };
   };
 
@@ -28689,7 +30072,7 @@ let
     buildInputs = [ TestDifferences TestWarn ];
     meta = {
       description = "a port to Perl of the syntax highlight engine of the Kate text editor";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://padre.perlide.org/";
     };
   };
@@ -28703,9 +30086,9 @@ let
     };
     propagatedBuildInputs = [ DataOptList namespaceclean ];
     meta = {
-      homepage = "https://github.com/phaylon/syntax/wiki";
       description = "Activate syntax extensions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/phaylon/syntax/wiki";
     };
   };
 
@@ -28720,7 +30103,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "Enable taint mode lexically";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sharyanto/perl-tainting";
     };
   };
 
@@ -28735,7 +30119,8 @@ let
     buildInputs = [ FunctionParameters Moo ];
     meta = {
       description = "automatically return a true value when a file is required";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/chocolateboy/true";
     };
   };
 
@@ -28749,9 +30134,9 @@ let
     buildInputs = [ TestRequires ];
     propagatedBuildInputs = [ syntax ];
     meta = {
-      homepage = "https://github.com/frioux/Syntax-Keyword-Junction";
       description = "Perl6 style Junction operators in Perl5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/frioux/Syntax-Keyword-Junction";
     };
   };
 
@@ -28762,10 +30147,11 @@ let
       url = "mirror://cpan/authors/id/T/TO/TODDR/Sys-Mmap-0.20.tar.gz";
       sha256 = "1kz22l7sh2mibliixyshc9958bqlkzsb13agcibp7azii4ncw80q";
     };
-    meta = with lib; {
-      description = "Use mmap to map in a file as a Perl variable";
+    meta = {
+      description = "uses mmap to map in a file as a Perl variable";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/Sys-Mmap/tree/master";
       maintainers = with maintainers; [ peterhoeg ];
-      license = with licenses; [ gpl2Plus ];
     };
   };
 
@@ -28779,7 +30165,6 @@ let
     meta = {
       description = "Memory informations";
       maintainers = [ maintainers.pSub ];
-      license = with lib.licenses; [ gpl2Plus ];
     };
   };
 
@@ -28814,6 +30199,11 @@ let
       sha256 = "1jv5n8jv48c1p8svjsigyxndv1ygsq8wgwj9c7ypx1vaf3rns679";
     };
     doCheck = false; # no `hostname' in stdenv
+    meta = {
+      description = "Try every conceivable way to get full hostname";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/scottp/sys-hostname-long/";
+    };
   };
 
   SysInfo = buildPerlPackage {
@@ -28827,7 +30217,8 @@ let
     buildInputs = [ TestSysInfo ];
     meta = {
       description = "Fetch information from the host system";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/burak/CPAN-Sys-Info";
     };
   };
 
@@ -28841,7 +30232,8 @@ let
     propagatedBuildInputs = [ TextTemplateSimple ];
     meta = {
       description = "Base class for Sys::Info";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/burak/CPAN-Sys-Info-Base";
     };
   };
 
@@ -28855,7 +30247,8 @@ let
     doCheck = !stdenv.isAarch64; # it hangs on Aarch64
     meta = {
       description = "Perl extension for Consistent Signal Handling";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/labaxter/sys-sigaction";
     };
   };
 
@@ -28868,7 +30261,8 @@ let
     };
     meta = {
       description = "Perl interface to the UNIX syslog(3) calls";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/maddingue/Sys-Syslog.git";
     };
   };
 
@@ -28882,7 +30276,8 @@ let
     propagatedBuildInputs = [ IPCRun ];
     meta = {
       description = "Object for running system commands";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/System-Command";
     };
     buildInputs = [ PodCoverageTrustPod TestCPANMeta TestPod TestPodCoverage ];
   };
@@ -28909,7 +30304,8 @@ let
     doCheck = !stdenv.isDarwin;
     meta = {
       description = "Stream TAP from pgTAP test scripts";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/theory/tap-parser-sourcehandler-pgtap";
     };
   };
 
@@ -28924,7 +30320,7 @@ let
     buildInputs = [ FileObject IOStringy TestNoWarnings TestWarn ];
     meta = {
       description = "Structure oriented SGML/XML/HTML/etc. elements manipulation";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Tags";
     };
   };
@@ -28940,7 +30336,7 @@ let
     buildInputs = [ CSSStruct Tags TagsOutputStructure TestNoWarnings ];
     meta = {
       description = "Tags helper for HTML page begin";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Tags-HTML-Page-Begin";
     };
   };
@@ -28956,7 +30352,7 @@ let
     buildInputs = [ FileObject Tags TagsOutputStructure TestNoWarnings TestWarn ];
     meta = {
       description = "Tags helper for HTML page end";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Tags-HTML-Page-End";
     };
   };
@@ -28972,7 +30368,7 @@ let
     buildInputs = [ FileObject IOStringy TestNoWarnings TestWarn ];
     meta = {
       description = "Indented output for Tags";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Tags-Output-Indent";
     };
   };
@@ -28988,7 +30384,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Structure class for 'Tags' output";
-      license = with lib.licenses; [ bsd3 ];
+      license = licenses.bsd3;
       homepage = "https://github.com/michal-josef-spacek/Tags-Output-Structure";
     };
   };
@@ -29012,7 +30408,7 @@ let
     propagatedBuildInputs = [ CatalystAuthenticationStoreDBIxClass CatalystControllerHTMLFormFu CatalystDevel CatalystManual CatalystPluginAuthorizationACL CatalystPluginAuthorizationRoles CatalystPluginSessionStateCookie CatalystPluginSessionStoreFastMmap CatalystPluginStackTrace CatalystViewTT ];
     meta = {
       description = "Everything you need to follow the Catalyst Tutorial";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     doCheck = false; /* fails with 'open3: exec of .. perl .. failed: Argument list too long at .../TAP/Parser/Iterator/Process.pm line 165.' */
   };
@@ -29027,8 +30423,9 @@ let
     buildInputs = [ CodeTidyAll TestDataSplit TestDifferences TestPerlTidy TestRunPluginTrimDisplayedFilenames TestRunValgrind TestTrailingSpace TestTrap ];
     propagatedBuildInputs = [ EnvPath FileWhich GamesSolitaireVerify InlineC ListMoreUtils MooX StringShellQuote TaskTestRunAllPlugins TemplateToolkit YAMLLibYAML ];
     meta = {
-      description = "Install the CPAN dependencies of the Freecell Solver test suite";
-      license = lib.licenses.mit;
+      description = "install the CPAN dependencies of the Freecell Solver test suite";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/fc-solve";
     };
   };
 
@@ -29041,6 +30438,11 @@ let
     };
     propagatedBuildInputs = [ CGICompile CGIEmulatePSGI CGIPSGI Corona FCGI FCGIClient FCGIProcManager HTTPServerSimplePSGI IOHandleUtil NetFastCGI PSGI PlackAppProxy PlackMiddlewareAuthDigest PlackMiddlewareConsoleLogger PlackMiddlewareDebug PlackMiddlewareDeflater PlackMiddlewareHeader PlackMiddlewareReverseProxy PlackMiddlewareSession Starlet Starman Twiggy ];
     buildInputs = [ ModuleBuildTiny TestSharedFork ];
+    meta = {
+      description = "Plack bundle";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Task-Plack";
+    };
   };
 
   TaskTestRunAllPlugins = buildPerlModule {
@@ -29052,9 +30454,9 @@ let
     };
     buildInputs = [ TestRun TestRunCmdLine TestRunPluginAlternateInterpreters TestRunPluginBreakOnFailure TestRunPluginColorFileVerdicts TestRunPluginColorSummary TestRunPluginTrimDisplayedFilenames ];
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
       description = "Specifications for installing all the Test::Run";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -29067,7 +30469,8 @@ let
     };
     meta = {
       description = "Ensure that a platform has weaken support";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Task-Weaken";
     };
   };
 
@@ -29080,9 +30483,9 @@ let
     };
     propagatedBuildInputs = [ TemplateToolkit TextAutoformat ];
     meta = {
-      homepage = "https://github.com/karpet/template-plugin-autoformat";
       description = "TT plugin for Text::Autoformat";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karpet/template-plugin-autoformat";
     };
   };
 
@@ -29105,9 +30508,9 @@ let
     };
     propagatedBuildInputs = [ IOAll TemplateToolkit ];
     meta = {
-      maintainers = with maintainers; [ eelco ];
       description = "Perl Template Toolkit Plugin for IO::All";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      maintainers = with maintainers; [ eelco ];
     };
   };
 
@@ -29141,7 +30544,7 @@ let
     propagatedBuildInputs = [ TemplateToolkit ];
     meta = {
       description = "Rudimentary profiling for Template Toolkit";
-      license = with lib.licenses; [ artistic2 gpl3 ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -29154,7 +30557,8 @@ let
     };
     meta = {
       description = "Template Toolkit reimplemented in as little code as possible";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Template-Tiny";
     };
   };
 
@@ -29167,8 +30571,9 @@ let
     };
     doCheck = !stdenv.isDarwin;
     meta = {
-      description = "Comprehensive template processing system";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "comprehensive template processing system";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.template-toolkit.org";
     };
     propagatedBuildInputs = [ AppConfig ];
     buildInputs = [ CGI TestLeakTrace ];
@@ -29184,7 +30589,6 @@ let
     propagatedBuildInputs = [ GD TemplateToolkit ];
     meta = {
       description = "GD plugin(s) for the Template Toolkit";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -29197,7 +30601,8 @@ let
     };
     meta = {
       description = "Detect encoding of the current terminal";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Term-Encoding";
     };
   };
 
@@ -29210,7 +30615,7 @@ let
     };
     meta = {
       description = "Color screen output using extended escape sequences";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "http://japh.se/";
     };
   };
@@ -29225,8 +30630,9 @@ let
     buildInputs = [ CaptureTiny TestException TestWarnings ];
     propagatedBuildInputs = [ ClassMethodMaker TermReadKey ];
     meta = {
-      description = "Provide a progress meter on a standard terminal";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "provide a progress meter on a standard terminal";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/manwar/Term-ProgressBar";
     };
   };
 
@@ -29239,8 +30645,7 @@ let
     };
     propagatedBuildInputs = [ IOInteractive TermProgressBar ];
     meta = {
-      description = "";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ TestMockObject ];
   };
@@ -29280,6 +30685,11 @@ let
     nativeBuildInputs = lib.optionals cross [
       buildPerl.pkgs.TermReadKey
     ];
+    meta = {
+      description = "Change terminal modes, and perform non-blocking reads";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jonathanstowe/TermReadKey";
+    };
   };
 
   TermReadLineGnu = buildPerlPackage {
@@ -29307,9 +30717,9 @@ let
     doCheck = false;
 
     meta = {
-      homepage = "https://sourceforge.net/projects/perl-trg/";
       description = "Perl extension for the GNU Readline/History Library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://sourceforge.net/projects/perl-trg/";
     };
   };
 
@@ -29324,8 +30734,9 @@ let
     outputs = [ "out" ];
 
     meta = {
-      description = "a modified version of T::RL::Perl with several new nonstandard features specific to TTYtter";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "A Term::ReadLine driver based on Term::ReadLine::Perl, with special features for microblogging and the TTYtter client (q.v)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.floodgap.com/software/ttytter/";
     };
   };
 
@@ -29341,7 +30752,6 @@ let
 
     meta = {
       description = "This module lets you ask the user for a password in the traditional way, from the keyboard, without echoing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -29353,10 +30763,10 @@ let
       sha256 = "1mrx7g74qvkdis7x7zq1zs0b7q2fsz59g4hxvg140r8bq1wzav3x";
     };
     propagatedBuildInputs = [ TermReadKey TextAutoformat ];
-    meta = with lib; {
-      homepage = "https://metacpan.org/release/Term-Shell";
+    meta = {
       description = "A simple command-line shell framework";
-      license = with licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/Term-Shell";
     };
   };
 
@@ -29378,7 +30788,8 @@ let
     };
     meta = {
       description = "Retrieve terminal size on Unix";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aferreira/cpan-Term-Size";
     };
   };
 
@@ -29392,7 +30803,7 @@ let
     propagatedBuildInputs = [ DevelHide TermSizePerl ];
     meta = {
       description = "Retrieve terminal size";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -29405,7 +30816,8 @@ let
     };
     meta = {
       description = "Perl extension for retrieving terminal size (Perl version)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/aferreira/cpan-Term-Size-Perl";
     };
   };
 
@@ -29419,7 +30831,8 @@ let
     propagatedBuildInputs = [ Importer ];
     meta = {
       description = "Format a header and rows into a table";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/exodist/Term-Table/";
     };
   };
 
@@ -29431,8 +30844,8 @@ let
       sha256 = "f2e491796061205b08688802b287792d7d803b08972339fb1070ba05612af885";
     };
     meta = {
-      description = "Perl extension for displaying a progress indicator on a terminal.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl extension for displaying a progress indicator on a terminal";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -29445,9 +30858,10 @@ let
      };
      propagatedBuildInputs = [ LogMessageSimple ];
      meta = {
-       description = "User interfaces via Term::ReadLine made easy";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "User interfaces via Term::ReadLine made easy";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jib/term-ui";
+    };
   };
 
   TermVT102 = buildPerlPackage {
@@ -29457,8 +30871,7 @@ let
       url = "mirror://cpan/authors/id/A/AJ/AJWOOD/Term-VT102-0.91.tar.gz";
       sha256 = "f954e0310941d45c0fc3eb4a40f5d3a00d68119e277d303a1e6af11ded6fbd94";
     };
-    meta = {
-    };
+
   };
 
   TermVT102Boundless = buildPerlPackage {
@@ -29481,7 +30894,6 @@ let
     propagatedBuildInputs = [ Curses ];
     meta = {
       description = "ASCII sprite animation framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -29495,7 +30907,8 @@ let
     propagatedBuildInputs = [ Moo TermAppUtilColor TermAppUtilSize ];
     meta = {
       description = "Collection of roles for terminal-based application";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Term-App-Roles";
     };
   };
 
@@ -29509,7 +30922,8 @@ let
     propagatedBuildInputs = [ TermAppUtilInteractive TermDetectSoftware ];
     meta = {
       description = "Determine color depth and whether to use color or not";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Term-App-Util-Color";
     };
   };
 
@@ -29522,7 +30936,8 @@ let
     };
     meta = {
       description = "Determine whether terminal application is running interactively";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Term-App-Util-Interactive";
     };
   };
 
@@ -29536,7 +30951,8 @@ let
     propagatedBuildInputs = [ TermSize ];
     meta = {
       description = "Determine the sane terminal size (width, height)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Term-App-Util-Size";
     };
   };
 
@@ -29550,7 +30966,8 @@ let
     propagatedBuildInputs = [ FileWhich ];
     meta = {
       description = "Detect terminal (emulator) software and its capabilities";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Term-Detect-Software";
     };
   };
 
@@ -29563,9 +30980,10 @@ let
      };
      buildInputs = [ IPCRun3 Test2Suite ];
      meta = {
-       description = "Fail if tests warn";
-       license = with lib.licenses; [ artistic2 ];
-     };
+      description = "Fail if tests warn";
+      license = licenses.artistic2;
+      homepage = "https://github.com/houseabsolute/Test2-Plugin-NoWarnings";
+    };
     propagatedBuildInputs = [ TestSimple13 ];
   };
 
@@ -29579,7 +30997,8 @@ let
     propagatedBuildInputs = [ ModulePluggable ScopeGuard SubInfo TermTable TestSimple13 ];
     meta = {
       description = "Distribution with a rich set of tools built upon the Test2 framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/Test-More/Test2-Suite/";
     };
   };
 
@@ -29594,7 +31013,8 @@ let
     buildInputs = [ Test2ToolsURL ];
     meta = {
       description = "Test HTTP / PSGI";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/Test2-Tools-HTTP";
     };
   };
 
@@ -29608,7 +31028,8 @@ let
     propagatedBuildInputs = [ Test2Suite URI ];
     meta = {
       description = "Compare a URL in your Test2 test";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/Test2-Tools-URL";
     };
   };
 
@@ -29622,10 +31043,10 @@ let
      propagatedBuildInputs = [ SubExporter ];
      buildInputs = [ TestNeeds ];
      meta = {
-       description = "subtests that you can die your way out of ... but survive";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/rjbs/Test-Abortable";
-     };
+      description = "subtests that you can die your way out of ... but survive";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjbs/Test-Abortable";
+    };
   };
 
   TestAssert = buildPerlModule {
@@ -29637,6 +31058,11 @@ let
     };
     buildInputs = [ ClassInspector TestUnitLite ];
     propagatedBuildInputs = [ ExceptionBase constantboolean ];
+    meta = {
+      description = "Assertion methods for those who like JUnit";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://dexter-cpan.googlecode.com/svn/Test-Assert";
+    };
   };
 
   TestAssertions = buildPerlPackage {
@@ -29659,8 +31085,9 @@ let
     buildInputs = [ TestMost TestNoWarnings TestTrap ];
     meta = {
       description = "Aggregate C<*.t> tests to make them run faster";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      broken = true; # This module only works with Test::More version < 1.3, but you have 1.302133
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rwstauner/test-aggregate";
+      broken = true;
     };
   };
 
@@ -29675,7 +31102,8 @@ let
     buildInputs = [ ModuleBuildPluggable ModuleBuildPluggableCPANfile TestNameFromLine ];
     meta = {
       description = "Object-Oriented testing library";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "http://github.com/bayashi/Test-Arrow";
     };
   };
 
@@ -29689,6 +31117,11 @@ let
     };
     propagatedBuildInputs = [ Spiffy ];
     buildInputs = [ AlgorithmDiff TextDiff ];
+    meta = {
+      description = "A Data Driven Testing Framework";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/test-base-pm";
+    };
   };
 
   TestBits = buildPerlPackage {
@@ -29702,7 +31135,8 @@ let
     buildInputs = [ TestFatal ];
     meta = {
       description = "Provides a bits_is() subroutine for testing binary data";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "http://git.urth.org/Test-Bits.git";
     };
   };
 
@@ -29716,7 +31150,8 @@ let
     propagatedBuildInputs = [ CPANMetaCheck ];
     meta = {
       description = "Check for presence of dependencies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Leont/test-checkdeps";
     };
   };
 
@@ -29730,7 +31165,7 @@ let
     buildInputs = [ PodCoverageTrustPod ];
     meta = {
       description = "Check if your Manifest matches your distro";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
       homepage = "http://github.com/reneeb/Test-CheckManifest";
     };
   };
@@ -29746,7 +31181,8 @@ let
     propagatedBuildInputs = [ MROCompat ModuleRuntime TryTiny ];
     meta = {
       description = "Easily create test classes in an xUnit/JUnit style";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/adrianh/test-class";
     };
   };
 
@@ -29759,9 +31195,10 @@ let
      };
      buildInputs = [ TestClass TestDeep TestDifferences TestException TestMost TestWarn ];
      meta = {
-       description = "Test Classes the easy way";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Test Classes the easy way";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/Ovid/Test-Class-Most/";
+    };
   };
 
   TestCleanNamespaces = buildPerlPackage {
@@ -29774,9 +31211,9 @@ let
     buildInputs = [ Filepushd Moo Mouse RoleTiny SubExporter TestDeep TestNeeds TestWarnings namespaceclean ];
     propagatedBuildInputs = [ PackageStash SubIdentify ];
     meta = {
-      homepage = "https://github.com/karenetheridge/Test-CleanNamespaces";
       description = "Check for uncleaned imports";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-CleanNamespaces";
     };
   };
 
@@ -29789,10 +31226,10 @@ let
      };
        doCheck = false; /* test fails */
      meta = {
-       description = "Perl module for portable testing of commands and scripts";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/neilb/Test-Cmd";
-     };
+      description = "Perl module for portable testing of commands and scripts";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Test-Cmd";
+    };
   };
 
   TestCommand = buildPerlModule {
@@ -29803,9 +31240,9 @@ let
       sha256 = "0cwm3c4d49mdrbm6vgh78b3x8mk730l0zg8i7xb9z8bkx9pzr8r8";
     };
     meta = {
+      description = "Test routines for external commands";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/danboo/perl-test-command";
-      description = "Test routines for external commands ";
-      license = with lib.licenses; [ artistic1 gpl1 ];
     };
   };
 
@@ -29819,7 +31256,8 @@ let
     propagatedBuildInputs = [ UNIVERSALrequire ];
     meta = {
       description = "Check whether Perl files compile correctly";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/egiles/test-compile";
     };
   };
 
@@ -29833,7 +31271,8 @@ let
     buildInputs = [ TestDifferences ];
     meta = {
       description = "Test helpers for debuggers using the DBGp protocol";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mbarbon/test-dbgp";
     };
   };
 
@@ -29845,8 +31284,9 @@ let
       sha256 = "f55b4f9cf6bc396d0fe8027267685cb2ac4affce897d0967a317fac6db5a8db5";
     };
     meta = {
-      description = "Validate your CPAN META.yml files";
-      license = lib.licenses.artistic2;
+      description = "Validate your CPAN META.json files";
+      license = licenses.artistic2;
+      homepage = "http://github.com/barbie/Test-CPAN-Meta";
     };
   };
 
@@ -29859,9 +31299,10 @@ let
      };
      propagatedBuildInputs = [ JSON ];
      meta = {
-       description = "Validate your CPAN META.json files";
-       license = with lib.licenses; [ artistic2 ];
-     };
+      description = "Validate your CPAN META.json files";
+      license = licenses.artistic2;
+      homepage = "http://github.com/barbie/Test-CPAN-Meta-JSON";
+    };
   };
 
   TestCheckChanges = buildPerlModule {
@@ -29873,8 +31314,8 @@ let
     };
     buildInputs = [ ModuleBuildDeprecated ];
     meta = {
-      description = "Check that the Changes file matches the distribution.";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Check that the Changes file matches the distribution";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -29888,8 +31329,9 @@ let
     buildInputs = [ TestDifferences ];
     propagatedBuildInputs = [ IOAll ListMoreUtils MooX MooXlate ];
     meta = {
-      description = "Split data-driven tests into several test scripts";
-      license = lib.licenses.mit;
+      description = "split data-driven tests into several test scripts";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/perl-Test-Data-Split";
     };
   };
 
@@ -29901,6 +31343,8 @@ let
       sha256 = "0mkw18q5agr30djxr1y68rcfw8aq20ws872hmv88f9gnynag8r20";
     };
     meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/rjbs/Test-Deep/";
     };
   };
 
@@ -29914,7 +31358,7 @@ let
     buildInputs = [ TestDeep TestFatal ];
     meta = {
       description = "A Test::Deep plugin for comparing an unordered list of tuples";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Test-Deep-UnorderedPairs";
     };
   };
@@ -29928,9 +31372,9 @@ let
     };
     buildInputs = [ CaptureTiny ];
     meta = {
-      homepage = "https://github.com/dagolden/Test-DiagINC";
       description = "List modules and versions loaded if tests fail";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Test-DiagINC";
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -29943,8 +31387,8 @@ let
       sha256 = "7332b323913eb6a2684d094755196304b2f8606f70eaab913654ca91f273eac2";
     };
     meta = {
-      description = "Test directory attributes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "test directory attributes";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -29958,7 +31402,7 @@ let
     propagatedBuildInputs = [ CaptureTiny TextDiff ];
     meta = {
       description = "Test strings and data structures and show differences if not ok";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/DrHyde/Test-Differences";
     };
   };
 
@@ -29973,7 +31417,8 @@ let
     propagatedBuildInputs = [ ModuleManifest ];
     meta = {
       description = "Author test that validates a package MANIFEST";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jawnsy/Test-DistManifest";
     };
   };
 
@@ -29986,7 +31431,8 @@ let
     };
     meta = {
       description = "Check the correct line endings in your project";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-EOL";
     };
   };
 
@@ -30001,7 +31447,7 @@ let
     buildInputs = [ TestResub ];
     meta = {
       description = "facilitates easy testing patterns";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/belden/perl-test-easy";
     };
   };
@@ -30014,6 +31460,11 @@ let
       sha256 = "0cxm7s4bg0xpxa6l6996a6iq3brr4j7p4hssnkc6dxv4fzq16sqm";
     };
     propagatedBuildInputs = [ SubUplevel ];
+    meta = {
+      description = "Test exception-based code";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Test-More/test-exception";
+    };
   };
 
   TestExpect = buildPerlModule {
@@ -30026,7 +31477,7 @@ let
     propagatedBuildInputs = [ ClassAccessorChained ExpectSimple ];
     meta = {
       description = "Automated driving and testing of terminal-based programs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30040,7 +31491,8 @@ let
     buildInputs = [ CaptureTiny ];
     meta = {
       description = "Add test failures if warnings are caught";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Test-FailWarnings";
     };
   };
 
@@ -30055,7 +31507,7 @@ let
     buildInputs = [ LWP ModuleBuildTiny TestException TestSharedFork TestTCP TestUseAllModules ];
     meta = {
       description = "a fake HTTP server";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/masaki/Test-Fake-HTTPD";
     };
   };
@@ -30069,9 +31521,9 @@ let
     };
     propagatedBuildInputs = [ TryTiny ];
     meta = {
+      description = "incredibly simple helpers for testing code with exceptions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Test-Fatal";
-      description = "Incredibly simple helpers for testing code with exceptions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -30084,8 +31536,9 @@ let
     };
     buildInputs = [ Testutf8 ];
     meta = {
-      description = "Check file attributes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "test file attributes";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/test-file";
     };
   };
 
@@ -30099,7 +31552,8 @@ let
     propagatedBuildInputs = [ TextDiff ];
     meta = {
       description = "Test routines for examining the contents of files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/theory/test-file-contents";
     };
   };
 
@@ -30113,9 +31567,9 @@ let
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ ClassTiny FileCopyRecursive FileShareDir PathTiny ScopeGuard ];
     meta = {
-      homepage = "https://github.com/kentfredric/Test-File-ShareDir";
       description = "Create a Fake ShareDir for your modules for testing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kentnl/Test-File-ShareDir";
     };
   };
 
@@ -30129,7 +31583,8 @@ let
     propagatedBuildInputs = [ PathTiny ];
     meta = {
       description = "Portable filename comparison";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/test-filename";
     };
   };
 
@@ -30142,7 +31597,8 @@ let
     };
     meta = {
       description = "test code which forks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://svn.schwern.org/repos/CPAN/Test-Fork";
     };
   };
 
@@ -30156,7 +31612,8 @@ let
     propagatedBuildInputs = [ CGI HTTPDaemon HTTPRequestAsCGI ];
     meta = {
       description = "spawn a local HTTP server for testing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/Test-HTTP-LocalServer";
     };
   };
 
@@ -30168,8 +31625,8 @@ let
       sha256 = "8b00efaa35723c1a35c8c8f5fa46a99e4bc528dfa520352b54ac418ef6d1cfa8";
     };
     meta = {
-      description = "Detailed analysis of test results";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "detailed analysis of test results";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30182,8 +31639,7 @@ let
      };
      propagatedBuildInputs = [ SubExporter TextDiff ];
      buildInputs = [ TestDifferences TestNoWarnings ];
-     meta = {
-     };
+
   };
 
   TestHexString = buildPerlModule {
@@ -30194,9 +31650,9 @@ let
        sha256 = "0h1zl2l1ljlcxsn0xvin9dwiymnhyhnfnxgzg3f9899g37f4qk3x";
      };
      meta = {
-       description = "test binary strings with hex dump diagnostics";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "test binary strings with hex dump diagnostics";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TestIdentity = buildPerlModule {
@@ -30208,7 +31664,7 @@ let
     };
     meta = {
       description = "assert the referential identity of a reference";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30234,6 +31690,10 @@ let
     };
     propagatedBuildInputs = [ JSONAny ];
     buildInputs = [ TestDifferences ];
+    meta = {
+      description = "Test JSON data";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TestJSONEntails = buildPerlPackage {
@@ -30246,7 +31706,8 @@ let
     propagatedBuildInputs = [ JSONAny ];
     meta = {
       description = "Test whether one JSON or Perl structure entails/subsumes another";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/nichtich/Test-JSON-Entails";
     };
   };
 
@@ -30260,10 +31721,10 @@ let
      propagatedBuildInputs = [ ModuleCPANTSAnalyse ];
      buildInputs = [ CPANMetaCheck TestDeep TestWarnings ];
      meta = {
-       description = "Test the Kwalitee of a distribution before you release it";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/karenetheridge/Test-Kwalitee";
-     };
+      description = "Test the Kwalitee of a distribution before you release it";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-Kwalitee";
+    };
   };
 
   TestLWPUserAgent = buildPerlPackage {
@@ -30277,7 +31738,7 @@ let
     buildInputs = [ PathTiny Plack TestDeep TestFatal TestNeeds TestRequiresInternet TestWarnings ];
     meta = {
       description = "A LWP::UserAgent suitable for simulating and testing network calls";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/karenetheridge/Test-LWP-UserAgent";
     };
   };
@@ -30291,7 +31752,8 @@ let
     };
     meta = {
       description = "Traces memory leaks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/gfx/p5-Test-LeakTrace";
     };
   };
 
@@ -30304,7 +31766,7 @@ let
     };
     meta = {
       description = "Easy, automatic, specification-based tests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30317,7 +31779,8 @@ let
     };
     meta = {
       description = "Use libraries from a t/lib directory";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/haarg/Test-Lib";
     };
   };
 
@@ -30331,7 +31794,7 @@ let
     propagatedBuildInputs = [ ListMoreUtils ModulePluggable ];
     meta = {
       description = "do use_ok for modules in search path";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30341,6 +31804,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RG/RGARCIA/Test-LongString-0.17.tar.gz";
       sha256 = "0kwp7rfr1i2amz4ckigkv13ah7jr30q6l5k4wk0vxl84myg39i5b";
+    };
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rgs/Test-LongString";
     };
   };
 
@@ -30366,7 +31833,7 @@ let
     };
     meta = {
       description = "assert that code does not cause growth in memory usage";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30380,7 +31847,7 @@ let
     propagatedBuildInputs = [ MetricsAny ];
     meta = {
       description = "assert that code produces metrics via L<Metrics::Any>";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30393,9 +31860,10 @@ let
     };
     buildInputs = [ ClassInspector TestAssert TestUnitLite ];
     propagatedBuildInputs = [ FatalException Moose namespaceclean ];
-    meta = with lib; {
+    meta = {
       description = "Simulating other classes";
-      license = licenses.lgpl2Plus;
+      license = licenses.lgpl21Plus;
+      homepage = "http://github.com/dex4er/Test-Mock-Class";
     };
   };
 
@@ -30408,9 +31876,9 @@ let
     };
     propagatedBuildInputs = [ ClassLoad ];
     meta = {
-      homepage = "https://github.com/zigorou/p5-test-mock-guard";
       description = "Simple mock test library using RAII";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/zigorou/p5-test-mock-guard";
     };
   };
 
@@ -30423,6 +31891,11 @@ let
     };
     propagatedBuildInputs = [ SUPER ];
     buildInputs = [ TestWarnings ];
+    meta = {
+      description = "Override subroutines in a module for unit testing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/geofffranks/test-mockmodule";
+    };
   };
 
   SUPER = buildPerlModule {
@@ -30434,8 +31907,9 @@ let
     };
     propagatedBuildInputs = [ SubIdentify ];
     meta = {
-      description = "Control superclass method dispatch";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "control superclass method dispatch";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chromatic/SUPER.git";
     };
   };
 
@@ -30451,7 +31925,8 @@ let
     propagatedBuildInputs = [ UNIVERSALcan UNIVERSALisa ];
     meta = {
       description = "Perl extension for emulating troublesome interfaces";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/chromatic/Test-MockObject";
     };
   };
 
@@ -30461,6 +31936,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DD/DDICK/Test-MockTime-0.17.tar.gz";
       sha256 = "1y820qsq7yf7r6smy5c6f0mpf2cis2q24vwmpim1svv0n8cf2qrk";
+    };
+    meta = {
+      description = "Replaces actual time with simulated time";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30473,10 +31952,10 @@ let
      };
      buildInputs = [ AnyEvent ModuleBuildTiny TestClass TestMockTime TestRequires ];
      meta = {
-       description = "Replaces actual time with simulated high resolution time";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/tarao/perl5-Test-MockTime-HiRes";
-     };
+      description = "Replaces actual time with simulated high resolution time";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tarao/perl5-Test-MockTime-HiRes";
+    };
   };
 
   TestModuleUsed = buildPerlModule {
@@ -30489,7 +31968,7 @@ let
     propagatedBuildInputs = [ ListMoreUtils ModuleUsed ];
     meta = {
       description = "Test required module is really used and vice versa between lib/t and META.yml";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tsucchi/Test-Module-Used";
     };
   };
@@ -30502,9 +31981,9 @@ let
       sha256 = "0cqvbwddgh0pfzmh989gkysi9apqj7dp7jkxfa428db9kgzpbzlg";
     };
     meta = {
+      description = "check your source for encoding misbehavior";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/creaktive/Test-Mojibake";
-      description = "Check your source for encoding misbehavior";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -30518,7 +31997,7 @@ let
     buildInputs = [ ModuleBuildTiny TestFatal ];
     meta = {
       description = "Usable mock class";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/vti/test-monkeymock";
     };
   };
@@ -30531,9 +32010,9 @@ let
        sha256 = "016fs77lmw8xxrcnapvp6wq4hjwgsdfi3l9ylpxgxkcpdarw9wdr";
      };
      meta = {
-       description = "Enhancing Test::More for UTF8-based projects";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Enhancing Test::More for UTF8-based projects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TestMost = buildPerlPackage {
@@ -30546,7 +32025,7 @@ let
     propagatedBuildInputs = [ ExceptionClass ];
     meta = {
       description = "Most commonly needed test functions and features";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      homepage = "https://github.com/Ovid/test--most";
     };
     buildInputs = [ TestDeep TestDifferences TestException TestWarn ];
   };
@@ -30562,7 +32041,7 @@ let
     buildInputs = [ TestDifferences TestFatal ];
     meta = {
       description = "Auto fill test names from caller line";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/cho45/Test-Name-FromLine";
     };
   };
@@ -30577,9 +32056,9 @@ let
     buildInputs = [ pkgs.which ModuleBuildTiny TestSharedFork ];
     propagatedBuildInputs = [ ClassAccessorLite DBDmysql FileCopyRecursive ];
     meta = {
+      description = "mysqld runner for tests";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/kazuho/p5-test-mysqld";
-      description = "Mysqld runner for tests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -30593,7 +32072,8 @@ let
     };
     meta = {
       description = "Skip tests when modules not available";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/haarg/Test-Needs";
     };
   };
 
@@ -30607,7 +32087,8 @@ let
     propagatedBuildInputs = [ DataDump SafeIsa ];
     meta = {
       description = "let's have a nice and human readable dump of our objects!";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://bitbucket.org/broadbean/p5-test-nicedump";
     };
   };
 
@@ -30620,7 +32101,8 @@ let
     };
     meta = {
       description = "Check the presence of tabs in your project";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-NoTabs";
     };
   };
 
@@ -30633,7 +32115,8 @@ let
     };
     meta = {
       description = "Make sure you didn't emit any warnings while testing";
-      license = lib.licenses.lgpl21;
+      license = licenses.free;
+      homepage = "http://svn.ali.as/cpan/trunk/Test-NoWarnings";
     };
   };
 
@@ -30643,6 +32126,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/E/ET/ETHER/Test-Object-0.08.tar.gz";
       sha256 = "65278964147837313f4108e55b59676e8a364d6edf01b3dc198aee894ab1d0bb";
+    };
+    meta = {
+      description = "Thoroughly testing objects via registered handlers";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-Object";
     };
   };
 
@@ -30654,6 +32142,11 @@ let
       sha256 = "0vjm62c7g3xxs3h4lba55dnpr4pg71yrhkdg5b9glxdh80klia7n";
     };
     propagatedBuildInputs = [ CaptureTiny ];
+    meta = {
+      description = "Utilities to test STDOUT and STDERR messages";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/test-output";
+    };
   };
 
   TestPAUSEPermissions = buildPerlPackage {
@@ -30666,9 +32159,10 @@ let
      propagatedBuildInputs = [ ConfigIdentity PAUSEPermissions ParseLocalDistribution ];
      buildInputs = [ ExtUtilsMakeMakerCPANfile TestUseAllModules ];
      meta = {
-       description = "tests module permissions in your distribution";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "tests module permissions in your distribution";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/charsbar/Test-PAUSE-Permissions";
+    };
   };
 
   TestPerlCritic = buildPerlModule {
@@ -30679,6 +32173,11 @@ let
       sha256 = "28f806b5412c7908b56cf1673084b8b44ce1cb54c9417d784d91428e1a04096e";
     };
     propagatedBuildInputs = [ MCE PerlCritic ];
+    meta = {
+      description = "Use Perl::Critic in test programs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perlcritic.com";
+    };
   };
 
   TestPerlTidy = buildPerlModule rec {
@@ -30690,7 +32189,9 @@ let
     };
     propagatedBuildInputs = [ PathTiny PerlTidy TextDiff ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "check that all your files are tidy";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/test-perltidy";
     };
     buildInputs = [ TestPerlCritic ];
   };
@@ -30703,8 +32204,9 @@ let
       sha256 = "1z75x1pxwp8ajwq9iazlg2c3wd7rdlim08yclpdg32qnc36dpa30";
     };
     meta = {
-      description = "Check for POD errors in files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "check for POD errors in files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perl-pod/test-pod";
     };
   };
 
@@ -30716,6 +32218,11 @@ let
       sha256 = "1m203mhgfilz7iqc8mxaw4lw02fz391mni3n25sfx7nryylwrja8";
     };
     propagatedBuildInputs = [ PodCoverage ];
+    meta = {
+      description = "Check for pod coverage in your distribution";
+      license = licenses.artistic2;
+      homepage = "https://github.com/neilbowers/Test-Pod-Coverage";
+    };
   };
 
   TestPodLinkCheck = buildPerlModule {
@@ -30729,7 +32236,8 @@ let
     propagatedBuildInputs = [ CaptureTiny Moose podlinkcheck ];
     meta = {
       description = "Tests POD for invalid links";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/apocalypse/perl-test-pod-linkcheck";
     };
   };
 
@@ -30742,8 +32250,9 @@ let
     };
     propagatedBuildInputs = [ LWP URIFind ];
     meta = {
-      description = "Checks POD for any http 404 links";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Using this test module will check your POD for any http 404 links";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/apocalypse/perl-test-pod-no404s";
     };
     buildInputs = [ ModuleBuildTiny TestPod ];
   };
@@ -30757,7 +32266,8 @@ let
     };
     meta = {
       description = "Check file names portability";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/abraxxa/Test-Portability-Files";
     };
   };
 
@@ -30771,7 +32281,8 @@ let
     propagatedBuildInputs = [ RDFTrine ];
     meta = {
       description = "Test RDF data for validity and equality";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kjetilk/Test-RDF/";
     };
   };
 
@@ -30784,7 +32295,8 @@ let
     };
     meta = {
       description = "Test that results of a running code look random";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Test-RandomResult";
     };
   };
 
@@ -30797,7 +32309,7 @@ let
     };
     meta = {
       description = "assert reference counts on objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -30810,7 +32322,8 @@ let
     };
     meta = {
       description = "Checks to see if the module can be loaded";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Test-Requires";
     };
   };
 
@@ -30824,7 +32337,8 @@ let
     propagatedBuildInputs = [ GitVersionCompare ];
     meta = {
       description = "Check your test requirements against the available version of Git";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/book/Test-Requires-Git";
     };
   };
 
@@ -30836,9 +32350,10 @@ let
        sha256 = "0gl33vpj9bb78pzyijp884b66sbw6jkh1ci0xki8rmf03hmb79xv";
      };
      meta = {
-       description = "Easily test network connectivity";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Easily test network connectivity";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mrallen1/Test-RequiresInternet";
+    };
   };
 
   TestResub = buildPerlPackage {
@@ -30864,6 +32379,11 @@ let
 
     propagatedBuildInputs = [ Moo MooXTypesMooseLike SubInstall strictures ];
     buildInputs = [ CaptureTiny ];
+    meta = {
+      description = "Composable, reusable tests with roles and Moo";
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Test-Roo";
+    };
   };
 
   TestRoutine = buildPerlPackage {
@@ -30876,9 +32396,9 @@ let
     buildInputs = [ TestAbortable TestFatal ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
     meta = {
+      description = "composable units of assertion";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Test-Routine";
-      description = "Composable units of assertion";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -30892,9 +32412,9 @@ let
     buildInputs = [ TestTrap ];
     propagatedBuildInputs = [ IPCSystemSimple ListMoreUtils MooseXStrictConstructor TextSprintfNamed UNIVERSALrequire ];
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
       description = "Base class to run standard TAP scripts";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -30909,9 +32429,9 @@ let
     propagatedBuildInputs = [ MooseXGetopt UNIVERSALrequire YAMLLibYAML ];
     doCheck = !stdenv.isDarwin;
     meta = {
-      homepage = "http://web-cpan.berlios.de/modules/Test-Run/";
       description = "Analyze tests from the command line using Test::Run";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "http://web-cpan.berlios.de/modules/Test-Run/";
     };
    };
 
@@ -30925,9 +32445,9 @@ let
     buildInputs = [ TestRun TestRunCmdLine TestTrap YAMLLibYAML ];
     propagatedBuildInputs = [ Moose ];
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
       description = "Define different interpreters for different test scripts with Test::Run";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -30941,9 +32461,9 @@ let
     buildInputs = [ TestRun TestRunCmdLine TestTrap YAMLLibYAML ];
     propagatedBuildInputs = [ Moose ];
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
-      description = "Stop processing the entire test suite";
-      license = lib.licenses.mit;
+      description = "stop processing the entire test suite";
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -30959,9 +32479,9 @@ let
     moreInputs = [ TestTrap ]; # Added because tests were failing without it
     doCheck=true;
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
-      description = "Make the file verdict ('ok', 'NOT OK')";
-      license = lib.licenses.mit;
+      description = "make the file verdict (\"ok\", \"NOT OK\")";
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -30976,9 +32496,9 @@ let
     moreInputs = [ TestTrap ]; # Added because tests were failing without it
     doCheck=true;
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
       description = "A Test::Run plugin that";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -30992,9 +32512,9 @@ let
     buildInputs = [ TestRun TestRunCmdLine TestTrap YAMLLibYAML ];
     propagatedBuildInputs = [ Moose ];
     meta = {
-      homepage = "https://web-cpan.shlomifish.org/modules/Test-Run/";
-      description = "Trim the first components";
-      license = lib.licenses.mit;
+      description = "trim the first components";
+      license = licenses.mit;
+      homepage = "http://web-cpan.shlomifish.org/modules/Test-Run/";
     };
   };
 
@@ -31008,8 +32528,9 @@ let
     buildInputs = [ TestTrap ];
     propagatedBuildInputs = [ PathTiny ];
     meta = {
-      description = "Tests that an external program is valgrind-clean";
-      license = lib.licenses.mit;
+      description = "tests that an external program is valgrind-clean";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/perl-Test-RunValgrind";
     };
   };
 
@@ -31024,6 +32545,11 @@ let
     buildInputs = [ Test2Suite ];
 
     propagatedBuildInputs = [ CaptureTiny ProbePerl ];
+    meta = {
+      description = "Basic cross-platform tests for scripts";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/plicease/Test-Script";
+    };
   };
 
   TestScriptRun = buildPerlPackage {
@@ -31035,8 +32561,8 @@ let
     };
     propagatedBuildInputs = [ IPCRun3 ];
     meta = {
-      description = "Test scripts with run";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "test scripts with run";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ TestException ];
   };
@@ -31050,9 +32576,9 @@ let
     };
     buildInputs = [ TestRequires ];
     meta = {
+      description = "fork test";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Test-SharedFork";
-      description = "Fork test";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -31065,7 +32591,8 @@ let
     };
     meta = {
       description = "Basic utilities for writing tests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/Test-More/test-more/";
     };
   };
 
@@ -31079,7 +32606,8 @@ let
     propagatedBuildInputs = [ DevelGlobalPhase PackageStash TieIxHash ];
     meta = {
       description = "Write tests in a declarative specification style";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kingpong/perl-Test-Spec";
     };
     buildInputs = [ TestDeep TestTrap ];
   };
@@ -31094,7 +32622,7 @@ let
     propagatedBuildInputs = [ IPCRun3 PodSpell ];
     meta = {
       description = "Check for spelling errors in POD files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/genio/test-spelling";
     };
   };
@@ -31109,7 +32637,8 @@ let
     buildInputs = [ IOStringy ];
     meta = {
       description = "Check syntax, presence of use strict; and test coverage";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/manwar/Test-Strict";
     };
   };
 
@@ -31121,6 +32650,11 @@ let
       sha256 = "cbc1e9b35a05e71febc13e5ef547a31c8249899bb6011dbdc9d9ff366ddab6c2";
     };
     propagatedBuildInputs = [ HookLexWrap ];
+    meta = {
+      description = "Track the number of times subs are called";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-SubCalls";
+    };
   };
 
   TestSynopsis = buildPerlPackage {
@@ -31132,7 +32666,8 @@ let
     };
     meta = {
       description = "Test your SYNOPSIS code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/test-synopsis";
     };
   };
 
@@ -31145,7 +32680,8 @@ let
     };
     meta = {
       description = "Centralized test suite for Sys::Info";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/burak/CPAN-Test-Sys-Info";
     };
   };
 
@@ -31157,8 +32693,8 @@ let
       sha256 = "16l5n6sx3yqdir1rqq21d41znpwzbs8v34gqr93y051arypphn22";
     };
     meta = {
-      description = "Write tests, not scripts that run them";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "write tests, not scripts that run them";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31171,6 +32707,7 @@ let
     };
     meta = {
       description = "Checks for taintedness of variables";
+      homepage = "https://github.com/petdance/test-taint";
     };
   };
 
@@ -31183,7 +32720,7 @@ let
     };
     meta = {
       description = "Temporary directories that stick around when tests fail";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/dagolden/Test-TempDir-Tiny";
     };
 
@@ -31197,8 +32734,9 @@ let
       sha256 = "0mvv9rqwrwlcfh8qrs0s47p85rhlnw15d4gbpyi802bddp0c6lry";
     };
     meta = {
-      description = "Testing TCP program";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "testing TCP program";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/tokuhirom/Test-TCP";
     };
     buildInputs = [ TestSharedFork ];
   };
@@ -31211,8 +32749,9 @@ let
       sha256 = "0gwgd2w16dsppmf1r6yc17ipvs8b62ybsiz2dyzwy4il236b8c1p";
     };
     meta = {
-      description = "Testing UNIX domain socket program";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "testing UNIX domain socket program";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/fujiwara/Test-UNIXSock";
     };
     buildInputs = [ ModuleBuildTiny TestSharedFork ];
     propagatedBuildInputs = [ TestTCP ];
@@ -31227,7 +32766,8 @@ let
     };
     meta = {
       description = "Overrides the time() and sleep() core functions for testing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/cho45/Test-Time";
     };
   };
 
@@ -31239,9 +32779,9 @@ let
        sha256 = "1hxx9rhvncvn7wvzhzx4sk00w0xq2scgspfhhyqwjnm1yg3va820";
      };
      meta = {
-       description = "Test::Toolbox - tools for testing";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Test::Toolbox - tools for testing";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TestTrailingSpace = buildPerlModule {
@@ -31253,8 +32793,9 @@ let
     };
     propagatedBuildInputs = [ FileFindObjectRule ];
     meta = {
-      description = "Test for trailing space in source files";
-      license = lib.licenses.mit;
+      description = "test for trailing space in source files";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/perl-test-trailingspace";
     };
   };
 
@@ -31267,7 +32808,8 @@ let
     };
     meta = {
       description = "Unit testing without external dependencies";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/dex4er/perl-Test-Unit-Lite";
     };
   };
 
@@ -31281,7 +32823,8 @@ let
     propagatedBuildInputs = [ SubUplevel ];
     meta = {
       description = "Perl extension to test methods for warnings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hanfried/test-warn";
     };
   };
 
@@ -31294,9 +32837,9 @@ let
     };
     buildInputs = [ CPANMetaCheck PadWalker ];
     meta = {
-      homepage = "https://github.com/karenetheridge/Test-Warnings";
       description = "Test for warnings and the lack of them";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Test-Warnings";
     };
   };
 
@@ -31309,7 +32852,8 @@ let
     };
     meta = {
       description = "Test fallback behaviour in absence of modules";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/test-without-module";
     };
   };
 
@@ -31323,7 +32867,7 @@ let
     propagatedBuildInputs = [ XMLSemanticDiff ];
     meta = {
       description = "Compare XML in perl tests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31337,9 +32881,9 @@ let
     buildInputs = [ TestLongString ];
     propagatedBuildInputs = [ CarpAssertMore HTTPServerSimple WWWMechanize ];
     meta = {
-      homepage = "https://github.com/petdance/test-www-mechanize";
       description = "Testing-specific WWW::Mechanize subclass";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/petdance/test-www-mechanize";
     };
   };
 
@@ -31354,7 +32898,7 @@ let
     propagatedBuildInputs = [ CatalystRuntime WWWMechanize ];
     meta = {
       description = "Test::WWW::Mechanize for Catalyst";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
     buildInputs = [ CatalystPluginSession CatalystPluginSessionStateCookie TestException TestWWWMechanize Testutf8 ];
   };
@@ -31381,7 +32925,8 @@ let
     propagatedBuildInputs = [ Plack ];
     meta = {
       description = "Test PSGI programs using WWW::Mechanize";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/acme/test-www-mechanize-psgi";
     };
   };
 
@@ -31393,6 +32938,11 @@ let
       sha256 = "1wy0488yg15kahfafnlmlhppxik7d0z00wxwj9fszrsq2h6crz6y";
     };
     propagatedBuildInputs = [ XMLLibXML ];
+    meta = {
+      description = "Test XML and HTML content and structure with XPath expressions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/manwar/Test-XPath";
+    };
   };
 
   TestYAML = buildPerlPackage {
@@ -31403,6 +32953,11 @@ let
       sha256 = "0pwrrnwi1qaiy3c5522vy0kzncxc9g02r4b056wqqaa69w1hsc0z";
     };
     buildInputs = [ TestBase ];
+    meta = {
+      description = "Testing Module for YAML Implementations";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/test-yaml-pm";
+    };
   };
 
   TextAligner = buildPerlModule {
@@ -31413,7 +32968,9 @@ let
       sha256 = "09ap457vrlqvw2544j907fbb5crs08hd7sy4syipzxc6wny7v1aw";
     };
     meta = {
-      description = "Align text in columns";
+      description = "module to align text";
+      license = licenses.free;
+      homepage = "https://github.com/shlomif/text-aligner";
     };
   };
 
@@ -31439,9 +32996,9 @@ let
     };
     propagatedBuildInputs = [ TextReform ];
     meta = {
-      homepage = "https://github.com/neilbowers/Text-Autoformat";
       description = "Automatic text wrapping and reformatting";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Text-Autoformat";
     };
   };
 
@@ -31454,7 +33011,8 @@ let
     };
     meta = {
       description = "Extract delimited text sequences from strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/steve-m-hay/Text-Balanced";
     };
   };
 
@@ -31478,8 +33036,9 @@ let
       install_name_tool -change "$oldPath" "$newPath" "$out/${perl.libPrefix}/${perl.version}/darwin"*"-2level/auto/Text/BibTeX/BibTeX.bundle"
     '';
     meta = {
-      description = "Interface to read and parse BibTeX files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "interface to read and parse BibTeX files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/ambs/Text-BibTeX";
     };
   };
 
@@ -31509,8 +33068,9 @@ let
       sha256 = "8ccbd9195805222d995844114d0e595bb24ce188f85284dbf256080311cbb2c2";
     };
     meta = {
-      description = "Comma-separated values manipulator (using XS or PurePerl)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "comma-separated values manipulator (using XS or PurePerl)";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/makamaka/Text-CSV";
     };
   };
 
@@ -31524,7 +33084,8 @@ let
     propagatedBuildInputs = [ TextCSV ];
     meta = {
       description = "Encoding aware Text::CSV";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/singingfish/Text-CSV-Encoded";
     };
   };
 
@@ -31537,7 +33098,8 @@ let
     };
     meta = {
       description = "Comma-Separated Values manipulation routines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Tux/Text-CSV_XS";
     };
   };
 
@@ -31551,7 +33113,8 @@ let
     propagatedBuildInputs = [ AlgorithmDiff ];
     meta = {
       description = "Perform diffs on files and record sets";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Text-Diff";
     };
   };
 
@@ -31563,9 +33126,9 @@ let
       sha256 = "0104z7jjv46kqh77rnx8kvmsbr5dy0s56xm01dckq4ly65br0hkx";
     };
     meta = {
-      homepage = "https://metacpan.org/release/Text-Format";
-      description = "Format text";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Various subroutines to format text";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.shlomifish.org/open-source/projects/Text-Format/";
       maintainers = with maintainers; [ bcdarwin ];
     };
   };
@@ -31580,7 +33143,7 @@ let
     propagatedBuildInputs = [ FileSlurp StringDiff ];
     meta = {
       description = "Generate a colorful HTML diff of strings/files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
     buildInputs = [ ModuleInstall ];
@@ -31593,8 +33156,7 @@ let
        url = "mirror://cpan/authors/id/U/UL/ULPFR/Text-German-0.06.tar.gz";
        sha256 = "1p87pgap99lw0nv62i3ghvsi7yg90lhn8vsa3yqp75rd04clybcj";
      };
-     meta = {
-     };
+
   };
 
   TextGlob = buildPerlPackage {
@@ -31603,6 +33165,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RC/RCLAMP/Text-Glob-0.11.tar.gz";
       sha256 = "11sj62fynfgwrlgkv5a051cq6yn0pagxqjsz27dxx8phsd4wv706";
+    };
+    meta = {
+      description = "match globbing patterns against text";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31617,7 +33183,8 @@ let
     buildInputs = [ DataVisitor PathTiny TryTiny YAML ];
     meta = {
       description = "Text::Hogan - A mustache templating engine statement-for-statement cloned from hogan.js";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/kaoru/Text-Hogan";
     };
   };
 
@@ -31638,9 +33205,9 @@ let
       sha256 = "922c5c63314f406f4cbb35ec423ac2154d2c2b71a65addb7732c9d240a83fefb";
     };
     meta = {
+      description = "test environment setup for development with IDE";
+      license = licenses.wtfpl;
       homepage = "https://github.com/wchristian/Test-InDistDir";
-      description = "Test environment setup for development with IDE";
-      license = lib.licenses.wtfpl;
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -31653,8 +33220,9 @@ let
       sha256 = "1e9f129cc1a001fb95449d385253b38afabf5b466e3b3bd33e4e430f216e177a";
     };
     meta = {
-      description = "Framework for more readable interactive test scripts";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "framework for more readable interactive test scripts";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/SBECK-github/Test-Inter";
     };
     buildInputs = [ FileFindRule TestPod TestPodCoverage ];
   };
@@ -31669,7 +33237,8 @@ let
     buildInputs = [ PDFAPI2 ];
     meta = {
       description = "Pango style markup formatting";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/sciurius/perl-Text-Layout";
     };
   };
 
@@ -31682,7 +33251,7 @@ let
     };
     meta = {
       description = "Generate random Latin looking text";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -31695,8 +33264,9 @@ let
       sha256 = "0xalw24nx3nv2f1f5w3gq7m3ajmb1jybbb9w4w0cr3in1gghkh33";
     };
     meta = {
-      description = "Interact with a t/test_manifest file";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "interact with a t/test_manifest file";
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/test-manifest";
     };
   };
 
@@ -31708,6 +33278,11 @@ let
       sha256 = "06y79lla8adkqhrs41xdddqjs81dcrh266b50mfbg37bxkawd4f1";
     };
     buildInputs = [ ListMoreUtils TestDifferences TestException ];
+    meta = {
+      description = "Convert Markdown syntax to (X)HTML";
+      license = licenses.bsd3;
+      homepage = "http://github.com/bobtfish/text-markdown/";
+    };
   };
 
   TextMatchedPosition = buildPerlModule {
@@ -31719,7 +33294,8 @@ let
     };
     meta = {
       description = "find the matched position in a text";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bayashi/Text-MatchedPosition";
     };
   };
 
@@ -31732,9 +33308,9 @@ let
     };
     propagatedBuildInputs = [ PerlMinimumVersion ];
     meta = {
+      description = "does your code require newer perl than you think?";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Test-MinimumVersion";
-      description = "Does your code require newer perl than you think?";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -31747,7 +33323,8 @@ let
     };
     meta = {
       description = "Micro template engine with Perl5 language";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazuho/p5-text-microtemplate";
     };
   };
 
@@ -31761,7 +33338,7 @@ let
     propagatedBuildInputs = [ DataSectionSimple TextMicroTemplate ];
     meta = {
       description = "Render Text::MicroTemplate from __DATA__";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31775,7 +33352,8 @@ let
     buildInputs = [ TestWarnings ];
     meta = {
       description = "Simple text minification";
-      license = with lib.licenses; [ artistic2 ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/robrwo/Text-Minify-XS";
     };
   };
 
@@ -31790,7 +33368,8 @@ let
     propagatedBuildInputs = [ HTMLParser TextMarkdown ];
     meta = {
       description = "Convert MultiMarkdown syntax to (X)HTML";
-      license = lib.licenses.bsd3;
+      license = licenses.bsd3;
+      homepage = "http://github.com/bobtfish/text-multimarkdown/";
     };
   };
 
@@ -31802,9 +33381,9 @@ let
       sha256 = "535430919e6fdf6ce55ff76e9892afccba3b7d4160db45f3ac43b0f92ffcd049";
     };
     meta = {
-      homepage = "https://github.com/dagolden/Test-Number-Delta";
       description = "Compare the difference between numbers against a given tolerance";
-      license = "apache";
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/Test-Number-Delta";
     };
   };
 
@@ -31816,7 +33395,7 @@ let
       sha256 = "c186a50256e0bedfafb17e7ce157e7c52f19503bb79e18ebf06255911f6ead1a";
     };
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31830,7 +33409,6 @@ let
     propagatedBuildInputs = [ TextDiff ];
     meta = {
       description = "Patches text with given patch";
-      license = lib.licenses.gpl2;
     };
   };
 
@@ -31840,6 +33418,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/B/BH/BHALLISSY/Text-PDF-0.31.tar.gz";
       sha256 = "0s5cimfr4wwzgv15k30x83ncg1257jwsvmbmb86lp02rw5g537yz";
+    };
+    meta = {
+      description = "PDF Manipulation and generation";
+      homepage = "https://github.com/silnrsi/text-pdf";
     };
   };
 
@@ -31853,7 +33435,7 @@ let
     propagatedBuildInputs = [ TextAutoformat ];
     meta = {
       description = "Extract the structure of a quoted mail message";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31871,6 +33453,10 @@ let
 
     propagatedBuildInputs = [ ClassAccessor IOStringy ListMoreUtils Readonly TextAutoformat ];
     buildInputs = [ TestException ];
+    meta = {
+      description = "Parse record-oriented data in a text file";
+      license = licenses.gpl1Plus;
+    };
   };
 
   TextReform = buildPerlModule {
@@ -31882,7 +33468,7 @@ let
     };
     meta = {
       description = "Manual text wrapping and reformatting";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31895,7 +33481,8 @@ let
     };
     meta = {
       description = "Allows conversion between Roman and Arabic algarisms";
-      license = lib.licenses.bsd3;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/creaktive/Text-Roman";
     };
   };
 
@@ -31909,8 +33496,9 @@ let
     propagatedBuildInputs = [ ConvertColor Readonly ];
     buildInputs = [ TryTiny ];
     meta = {
-      description = "Text-Sass - Perl implementation of http://sass-lang.com/";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Perl implementation of http://sass-lang.com/";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rmp/libtext-sass-perl";
     };
   };
 
@@ -31937,7 +33525,8 @@ let
     };
     meta = {
       description = "Simple eyecandy ASCII tables";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "http://github.com/marcusramberg/text-simpletable";
     };
     propagatedBuildInputs = [ UnicodeLineBreak ];
   };
@@ -31948,6 +33537,9 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/R/RJ/RJBS/Text-Soundex-3.05.tar.gz";
       sha256 = "f6dd55b4280b25dea978221839864382560074e1d6933395faee2510c2db60ed";
+    };
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -31960,8 +33552,8 @@ let
     };
     meta = {
       description = "ASCII tables with support for column spanning";
-      license = with lib.licenses; [ asl20 ];
-      homepage = "http://search.cpan.org/dist/Text-SpanningTable";
+      license = licenses.asl20;
+      homepage = "https://github.com/ido50/Text-SpanningTable";
     };
   };
 
@@ -31974,8 +33566,9 @@ let
     };
     buildInputs = [ TestWarn ];
     meta = {
-      description = "Sprintf-like function with named conversions";
-      license = lib.licenses.mit;
+      description = "sprintf-like function with named conversions";
+      license = licenses.mit;
+      homepage = "https://github.com/shlomif/text-sprintf-named";
     };
   };
 
@@ -31988,9 +33581,9 @@ let
     };
     propagatedBuildInputs = [ TextAligner ];
     meta = {
-      homepage = "https://www.shlomifish.org/open-source/projects/docmake/";
       description = "Organize Data in Tables";
-      license = lib.licenses.isc;
+      license = licenses.free;
+      homepage = "https://github.com/shlomif/Text-Table";
     };
   };
 
@@ -32000,6 +33593,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/D/DA/DARREN/Text-TabularDisplay-1.38.tar.gz";
       sha256 = "1s46s4pg5mpfllx3icf4vnqz9iadbbdbsr5p7pr6gdjnzbx902gb";
+    };
+    meta = {
+      description = "Display text in formatted table output";
+      license = licenses.gpl1Plus;
     };
   };
 
@@ -32011,6 +33608,11 @@ let
       sha256 = "1dd2c788c05303ed9a970e1881109642151fa93e02c7a80d4c70608276bab1ee";
     };
     buildInputs = [ TestMoreUTF8 TestWarnings ];
+    meta = {
+      description = "Expand template text with embedded Perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mschout/perl-text-template";
+    };
   };
 
   TextTemplateSimple = buildPerlPackage {
@@ -32022,7 +33624,8 @@ let
     };
     meta = {
       description = "Simple text template engine";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/burak/CPAN-Text-Template-Simple";
     };
   };
 
@@ -32037,7 +33640,7 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Parser for Test::Base format";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Text-TestBase";
     };
   };
@@ -32052,7 +33655,7 @@ let
     propagatedBuildInputs = [ DataDump ];
     meta = {
       description = "Trap exit codes, exceptions, output, etc";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32067,9 +33670,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
 
     meta = {
-      homepage = "https://github.com/gfx/p5-Test-Vars";
-      description = "Detects unused variables";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Detects unused variables in perl modules";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/p5-Test-Vars";
     };
   };
 
@@ -32084,7 +33687,8 @@ let
     propagatedBuildInputs = [ FileFindRulePerl ];
     meta = {
       description = "Check to see that version's in modules are sane";
-      license = lib.licenses.artistic2;
+      license = licenses.artistic2;
+      homepage = "https://github.com/plicease/test-version";
     };
   };
 
@@ -32096,8 +33700,9 @@ let
       sha256 = "04dap9599riz2kiyhb1x46h01g95sr6c9azndivd2g6kg688m1ym";
     };
     meta = {
-      description = "Remove leading and/or trailing whitespace from strings";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "remove leading and/or trailing whitespace from strings";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/rjt-pl/Text-Trim.git";
     };
   };
 
@@ -32122,7 +33727,7 @@ let
     propagatedBuildInputs = [ UnicodeEastAsianWidth ];
     meta = {
       description = "Create a formatted table using characters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/syohex/p5-Text-UnicodeTable-Simple";
     };
   };
@@ -32133,6 +33738,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SB/SBURKE/Text-Unidecode-1.30.tar.gz";
       sha256 = "1imii0p6wvhrxsr5z2zhazpx5vl4l4ybf1y2c5hy480xvi6z293c";
+    };
+    meta = {
+      description = "Provide plain ASCII transliterations of Unicode text";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32155,7 +33764,8 @@ let
     propagatedBuildInputs = [ UnicodeLineBreak ];
     meta = {
       description = "Routines for text containing wide characters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Text-WideChar-Util";
     };
   };
 
@@ -32167,9 +33777,9 @@ let
       sha256 = "df82f09c5940830b25a49f1c8162fa24d371e602880edef8d9a4d4bfd66b8bd7";
     };
     meta = {
-      homepage = "https://github.com/2shortplanks/Test-utf8";
-      description = "Handy utf8 tests";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "handy utf8 tests";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/2shortplanks/Test-utf8/tree";
     };
   };
 
@@ -32184,7 +33794,8 @@ let
     buildInputs = [ TestException TestNeeds ];
     meta = {
       description = "Create nice formatted tables using extended ASCII and ANSI colors";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Text-ANSITable";
     };
   };
 
@@ -32198,7 +33809,8 @@ let
     buildInputs = [ DataDump ];
     meta = {
       description = "Routines for text containing ANSI color codes";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Text-ANSI-Util";
     };
   };
 
@@ -32213,7 +33825,8 @@ let
     buildInputs = [ DataDump ];
     meta = {
       description = "Routines for text containing ANSI color codes (wide-character functions only)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Text-ANSI-WideUtil";
     };
   };
 
@@ -32226,7 +33839,7 @@ let
     };
     meta = {
       description = "Create a nice formatted table using ASCII characters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32239,7 +33852,7 @@ let
     };
     meta = {
       description = "Extract collocations and Ngrams from text";
-      license = lib.licenses.free;
+      license = licenses.free;
       maintainers = [ maintainers.bzizou ];
     };
   };
@@ -32253,8 +33866,8 @@ let
     };
     propagatedBuildInputs = [ ClassAccessorChained ];
     meta = {
-      description = "Parse vFile formatted files into data structures";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "parse vFile formatted files into data structures";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32266,6 +33879,10 @@ let
       sha256 = "0cxbgx879bsskmnhjzamgsa5862ddixyx4yr77lafmwimnaxjg74";
     };
     propagatedBuildInputs = [ URI ];
+    meta = {
+      description = "module for translating Wiki formatted text into other formats";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TextWrapI18N = buildPerlPackage {
@@ -32282,7 +33899,6 @@ let
     '';
     meta = {
       description = "Line wrapping module with support for multibyte, fullwidth, and combining characters and languages without whitespaces between words";
-      license = with lib.licenses; [ artistic1 gpl2 ];
     };
   };
 
@@ -32295,7 +33911,8 @@ let
     };
     meta = {
       description = "Word wrap text by breaking long lines";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/madsen/text-wrapper";
     };
     buildInputs = [ TestDifferences ];
   };
@@ -32311,7 +33928,7 @@ let
     buildInputs = [ FileCopyRecursive ModuleBuildXSUtil TestRequires ];
     meta = {
       description = "Scalable template engine for Perl5";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/xslate/p5-Text-Xslate";
     };
   };
@@ -32325,7 +33942,8 @@ let
     };
     meta = {
       description = "Drop-in replacement for sprintf(), with named parameter support";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Text-sprintfn";
     };
   };
 
@@ -32338,9 +33956,9 @@ let
     };
     propagatedBuildInputs = [ DevelStackTrace ModuleRuntime Moo ];
     meta = {
+      description = "a role for classes that can be thrown";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/Throwable";
-      description = "A role for classes that can be thrown";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -32363,7 +33981,8 @@ let
     propagatedBuildInputs = [ ClassVirtual enum ];
     meta = {
       description = "A Least-Recently Used cache";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/schwern/Tie-Cache-LRU";
     };
   };
 
@@ -32375,9 +33994,7 @@ let
       sha256 = "b316d849acd25f24346d55a9950d281fee0746398767c601234122159573eb9a";
     };
     propagatedBuildInputs = [ TieCacheLRU ];
-    meta = {
-      license = lib.licenses.artistic1;
-    };
+
   };
 
   TieCycle = buildPerlPackage {
@@ -32389,7 +34006,8 @@ let
     };
     meta = {
       description = "Cycle through a list of values via a scalar";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/briandfoy/tie-cycle";
     };
   };
 
@@ -32403,7 +34021,6 @@ let
     propagatedBuildInputs = [ CryptBlowfish CryptCBC CryptDES ];
     meta = {
       description = "Hashes (and objects based on hashes) with encrypting fields";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -32417,6 +34034,8 @@ let
     };
     meta = {
       description = "Access the lines of a disk file via a Perl array";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/toddr/Tie-File";
     };
   };
 
@@ -32428,8 +34047,8 @@ let
       sha256 = "0mmg9iyh42syal3z1p2pn9airq65yrkfs66cnqs9nz76jy60pfzs";
     };
     meta = {
-      description = "Ordered associative arrays for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "ordered associative arrays for Perl";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32441,9 +34060,9 @@ let
       sha256 = "ee9f39055dc695aa244a252f56ffd37f8be07209b337ad387824721206d2a89e";
     };
     meta = {
-      homepage = "https://github.com/dagolden/tie-handle-offset";
       description = "Tied handle that hides the beginning of a file";
-      license = lib.licenses.asl20;
+      license = licenses.asl20;
+      homepage = "https://github.com/dagolden/tie-handle-offset";
     };
   };
 
@@ -32465,7 +34084,8 @@ let
     };
     meta = {
       description = "Ordered hashes for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mhx/Tie-Hash-Indexed/";
     };
     doCheck = false; /* test fails on some machines */
   };
@@ -32477,6 +34097,11 @@ let
       url = "mirror://cpan/authors/id/E/ET/ETHER/Tie-RefHash-1.40.tar.gz";
       sha256 = "1mvyjab8pv1yfimvlh4gxxpm3xzny4pinymdr8hgdd9gim8izkss";
     };
+    meta = {
+      description = "Use references as hash keys";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/Tie-RefHash";
+    };
   };
 
   TieRegexpHash = buildPerlPackage {
@@ -32487,7 +34112,7 @@ let
       sha256 = "0c207850e77efb16618e0aa015507926a3425b34aad5aa6e3e40d83989a085a3";
     };
     meta = {
-      license = lib.licenses.artistic1;
+      homepage = "https://github.com/Altreus/Tie-RegexpHash";
     };
   };
 
@@ -32499,8 +34124,9 @@ let
       sha256 = "29e9e2133951046c78f205f1b3e8df62c90e114f0e08fa06b817766a0f808b12";
     };
     meta = {
-      description = "Variable ties made much easier: much, much, much easier..";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Variable ties made much easier: much, much, much easier";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/zostay/Tie-Simple";
     };
   };
 
@@ -32514,9 +34140,9 @@ let
      propagatedBuildInputs = [ ParamsValidate ];
      buildInputs = [ ModuleBuild TestDifferences TestException TestNoWarnings ];
      meta = {
-       description = "Tie::Sub - Tying a subroutine, function or method to a hash";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Tie::Sub - Tying a subroutine, function or method to a hash";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   TieToObject = buildPerlPackage {
@@ -32535,6 +34161,10 @@ let
       url = "mirror://cpan/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz";
       sha256 = "1cjyc0yi873597r7xcp9yz0l1c46ik2kxwfrn00zbrlx0d5rrdn0";
     };
+    meta = {
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/atoomic/perl-TimeDate";
+    };
   };
 
   TimeDuration = buildPerlPackage {
@@ -32545,8 +34175,9 @@ let
       sha256 = "1f59z2svfydxgd1gzrb5k3hl6d432kzmskk7jhv2dyb5hyx0wd7y";
     };
     meta = {
-      description = "Rounded or exact English expression of durations";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "rounded or exact English expression of durations";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/Time-Duration";
     };
   };
 
@@ -32561,7 +34192,8 @@ let
     propagatedBuildInputs = [ ExporterLite ];
     meta = {
       description = "Parse string that represents time duration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilb/Time-Duration-Parse";
     };
   };
 
@@ -32574,7 +34206,8 @@ let
     };
     meta = {
       description = "Parse string that represents time duration";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlancar/perl-Time-Duration-Parse-AsHash";
     };
   };
 
@@ -32587,7 +34220,7 @@ let
     };
     meta = {
       description = "High resolution alarm, sleep, gettimeofday, interval timers";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/Perl/perl5";
     };
   };
@@ -32601,7 +34234,8 @@ let
     };
     meta = {
       description = "Efficiently compute time from local and GMT time";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/houseabsolute/Time-Local";
     };
   };
 
@@ -32612,8 +34246,7 @@ let
       url = "mirror://cpan/authors/id/P/PA/PATL/Time-Out-0.11.tar.gz";
       sha256 = "1lhmx1x8j6z1k9vn32bcsw7g44cg22icshnnc37djlnlixlxm5lk";
     };
-    meta = {
-    };
+
   };
 
   TimeParseDate = buildPerlPackage {
@@ -32626,6 +34259,7 @@ let
     doCheck = false;
     meta = {
       description = "Parse and format time values";
+      homepage = "http://github.com/muir/Time-modules";
     };
   };
 
@@ -32638,7 +34272,7 @@ let
     };
     meta = {
       description = "A Perl module to deal with time periods";
-      license = lib.licenses.gpl1;
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.winpat ];
     };
   };
@@ -32652,8 +34286,8 @@ let
     };
     meta = {
       description = "Object Oriented time objects";
-      homepage = "https://metacpan.org/release/Time-Piece";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Dual-Life/Time-Piece";
       maintainers = with maintainers; [ sgo ];
     };
   };
@@ -32669,7 +34303,7 @@ let
     buildInputs = [ ModuleInstall TestCheckManifest TestEasy TestPod TestPodCoverage ];
     meta = {
       description = "store events for later analysis";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32719,7 +34353,9 @@ let
     buildInputs = [ pkgs.xorg.libX11 pkgs.libpng ];
     doCheck = false;            # Expects working X11.
     meta = {
-      license = lib.licenses.tcltk;
+      description = "a Graphical User Interface Toolkit";
+      license = licenses.wtfpl;
+      homepage = "http://github.com/eserte/perl-tk";
     };
   };
 
@@ -32732,7 +34368,8 @@ let
     };
     meta = {
       description = "An N-ary tree";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.artistic2 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Tree-DAG_Node";
     };
     propagatedBuildInputs = [ FileSlurpTiny ];
   };
@@ -32747,7 +34384,8 @@ let
     buildInputs = [ TestException ];
     meta = {
       description = "A simple tree object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Tree-Simple";
     };
   };
 
@@ -32760,6 +34398,11 @@ let
     };
     propagatedBuildInputs = [ TreeSimple ];
     buildInputs = [ TestException ];
+    meta = {
+      description = "A factory object for dispensing Visitor objects";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ronsavage/Tree-Simple-VisitorFactory";
+    };
   };
 
   TryCatch = buildPerlPackage {
@@ -32773,7 +34416,8 @@ let
     buildInputs = [ ExtUtilsDepends TestException ];
     meta = {
       description = "first class try catch semantics for Perl, without source filters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/ashb/trycatch/tree/master";
     };
   };
 
@@ -32787,7 +34431,8 @@ let
     buildInputs = [ CPANMetaCheck CaptureTiny ];
     meta = {
       description = "Minimal try/catch with proper preservation of $@";
-      license = lib.licenses.mit;
+      license = licenses.mit;
+      homepage = "https://github.com/p5sagit/Try-Tiny";
     };
   };
 
@@ -32800,7 +34445,7 @@ let
     };
     propagatedBuildInputs = [ DispatchClass TryTiny ];
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -32814,10 +34459,10 @@ let
      propagatedBuildInputs = [ AnyEvent Plack ];
      buildInputs = [ TestRequires TestSharedFork TestTCP ];
      meta = {
-       description = "AnyEvent HTTP server for PSGI (like Thin)";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/miyagawa/Twiggy";
-     };
+      description = "AnyEvent HTTP server for PSGI";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/miyagawa/Twiggy";
+    };
   };
 
   TypeTiny = buildPerlPackage {
@@ -32829,8 +34474,9 @@ let
     };
     propagatedBuildInputs = [ ExporterTiny ];
     meta = {
-      description = "Tiny, yet Moo(se)-compatible type constraint";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "tiny, yet Moo(se)-compatible type constraint";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://typetiny.toby.ink/";
     };
     buildInputs = [ TestMemoryCycle ];
   };
@@ -32843,8 +34489,7 @@ let
        sha256 = "104a7292pwwg57rswpkiaq1cgj7hcsrpf818azcy7l0l14xigizq";
      };
      propagatedBuildInputs = [ commonsense ];
-     meta = {
-     };
+
   };
 
   UNIVERSALcan = buildPerlPackage {
@@ -32855,9 +34500,9 @@ let
       sha256 = "522da9f274786fe2cba99bc77cc1c81d2161947903d7fad10bd62dfb7f11990f";
     };
     meta = {
+      description = "work around buggy code calling UNIVERSAL::can() as a function";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/chromatic/UNIVERSAL-can";
-      description = "Work around buggy code calling UNIVERSAL::can() as a function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -32869,9 +34514,9 @@ let
       sha256 = "0avzv9j32aab6l0rd63n92v0pgliz1p4yabxxjfq275hdh1mcsfi";
     };
     meta = {
-      homepage = "https://github.com/chromatic/UNIVERSAL-isa";
       description = "Attempt to recover from people calling UNIVERSAL::isa as a function";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/UNIVERSAL-isa";
     };
   };
 
@@ -32883,8 +34528,9 @@ let
       sha256 = "b2a736a87967a143dab58c8a110501d5235bcdd2c8b2a3bfffcd3c0bd06b38ed";
     };
     meta = {
-      description = "Require() modules from a variable";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "require() modules from a variable";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/neilbowers/UNIVERSAL-require";
     };
   };
 
@@ -32898,7 +34544,8 @@ let
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
       description = "Unicode case-folding for case-insensitive lookups";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/arodland/Unicode-CaseFold";
     };
   };
 
@@ -32934,7 +34581,8 @@ let
     propagatedBuildInputs = [ MIMECharset ];
     meta = {
       description = "UAX #14 Unicode Line Breaking Algorithm";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hatukanezumi/Unicode-LineBreak/";
     };
   };
 
@@ -32957,7 +34605,7 @@ let
     buildInputs = [ TestNoWarnings ];
     meta = {
       description = "Preparation of Internationalized Strings (RFC 3454)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -32971,11 +34619,11 @@ let
     };
     buildInputs = [ TestFatal ];
     meta = {
-      homepage = "https://github.com/chansen/p5-unicode-utf8";
       description = "Encoding and decoding of UTF-8 encoding form";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/chansen/p5-unicode-utf8";
       maintainers = with maintainers; [ sgo ];
-      broken = stdenv.isi686; # tests failed with "Use of code point 0x80000000 is not allowed; the permissible max is 0x7FFFFFFF at t/080_super.t line 28."
+      broken = stdenv.isi686;
     };
   };
 
@@ -32997,9 +34645,9 @@ let
     };
     buildInputs = [ TestNeeds ];
     meta = {
-      homepage = "https://github.com/libwww-perl/URI";
       description = "Uniform Resource Identifiers (absolute and relative)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/URI";
     };
   };
 
@@ -33012,7 +34660,8 @@ let
     };
     meta = {
       description = "Drop-In replacement for URI::Escape";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/dankogai/p5-uri-escape-xs";
     };
   };
 
@@ -33026,7 +34675,8 @@ let
     propagatedBuildInputs = [ URINested ];
     meta = {
       description = "Database URIs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/theory/uri-db/";
     };
   };
 
@@ -33040,7 +34690,8 @@ let
     propagatedBuildInputs = [ URI ];
     meta = {
       description = "Find URIs in arbitrary text";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/schwern/URI-Find/";
     };
   };
 
@@ -33054,7 +34705,8 @@ let
     propagatedBuildInputs = [ ParamsValidate URI ];
     meta = {
       description = "Build a URI from a set of named parameters";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = licenses.artistic2;
+      homepage = "https://github.com/autarch/URI-FromHash";
     };
     buildInputs = [ TestFatal ];
   };
@@ -33067,6 +34719,11 @@ let
       sha256 = "00hq5cpsk7sa04n0wg52qhpqf9i2849yyvw2zk83ayh1qqpc50js";
     };
     propagatedBuildInputs = [ URI ];
+    meta = {
+      description = "Generate Google Chart URIs";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/uri-googlechart";
+    };
   };
 
   UserIdentity = buildPerlPackage {
@@ -33077,9 +34734,10 @@ let
        sha256 = "0jlzishg33848qvl5x7nsrnlpnx7lfg5hr4m1qrjddzy3hkv86cj";
      };
      meta = {
-       description = "Collect information about a user";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "Collect information about a user";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
+    };
   };
 
   URIIMAP = buildPerlPackage {
@@ -33102,7 +34760,8 @@ let
     propagatedBuildInputs = [ URI ];
     meta = {
       description = "Nested URIs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/theory/uri-nested/";
     };
   };
 
@@ -33117,7 +34776,7 @@ let
     buildInputs = [ YAML ];
     meta = {
       description = "class providing URI query string manipulation";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33132,7 +34791,7 @@ let
     buildInputs = [ TestFatal TestNoWarnings ];
     meta = {
       description = "Subclassable and hostless URIs";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33146,7 +34805,8 @@ let
     propagatedBuildInputs = [ URI ];
     meta = {
       description = "Object for handling URI templates (RFC 6570)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/bricas/uri-template";
     };
   };
 
@@ -33160,7 +34820,7 @@ let
     propagatedBuildInputs = [ CPANDistnameInfo URI ];
     meta = {
       description = "URLs that refer to things on the CPAN";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/rjbs/URI-cpan";
     };
   };
@@ -33174,9 +34834,9 @@ let
     };
     propagatedBuildInputs = [ URI ];
     meta = {
-      homepage = "https://metacpan.org/release/URI-ws";
       description = "WebSocket support for URI package";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.wdlabs.com/URI-ws/";
     };
   };
 
@@ -33201,7 +34861,7 @@ let
     };
     meta = {
       description = "Pure Perl UUID Support With Functional Interface";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33215,7 +34875,7 @@ let
     propagatedBuildInputs = [ CryptURandom ];
     meta = {
       description = "UUIDs based on /dev/urandom or the Windows Crypto API";
-      license = with lib.licenses; [ asl20 ];
+      license = licenses.asl20;
       homepage = "https://github.com/dagolden/UUID-URandom";
     };
   };
@@ -33229,7 +34889,8 @@ let
     };
     meta = {
       description = "Associate user-defined magic to variables from Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://git.profvince.com/?p=perl%2Fmodules%2FVariable-Magic.git";
     };
   };
 
@@ -33242,7 +34903,8 @@ let
     };
     meta = {
       description = "Structured version objects";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl/version.pm";
     };
   };
 
@@ -33255,9 +34917,10 @@ let
     };
     outputs = [ "out" ];
     meta = {
+      description = "file manager USING vim itself";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/trapd00r/vidir";
       maintainers = [ maintainers.chreekat ];
-      description = "Edit a directory in $EDITOR";
-      license = with lib.licenses; [ gpl1 ];
     };
   };
 
@@ -33272,7 +34935,7 @@ let
     buildInputs = [ IOStringy ModuleBuildTiny Plack TestTCP ];
     meta = {
       description = "AWS X-Ray tracing library";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/fujiwara/AWS-XRay";
     };
   };
@@ -33287,7 +34950,7 @@ let
     propagatedBuildInputs = [ AnyEventCacheDNS AnyEventHTTP JSON StringApprox XMLSimple ];
     meta = {
       description = "Perl interface to Amazon EC2, Virtual Private Cloud, Elastic Load Balancing, Autoscaling, and Relational Database services";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33301,7 +34964,7 @@ let
     propagatedBuildInputs = [ DateTimeFormatISO8601 VMEC2 ];
     meta = {
       description = "Cache credentials respecting expiration time for IAM roles";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33315,9 +34978,9 @@ let
     outputs = [ "out" ];
     propagatedBuildInputs = [ CGI CSSDOM ConfigGeneral LWP LocaleCodes NetIP TermReadKey ];
     meta = {
-      homepage = "https://validator.w3.org/checklink";
-      description = "A tool to check links and anchors in Web pages or full Web sites";
-      license = lib.licenses.w3c;
+      description = "W3C Link Checker";
+      license = licenses.free;
+      homepage = "http://validator.w3.org/checklink";
     };
   };
 
@@ -33338,6 +35001,11 @@ let
     NIX_CFLAGS_COMPILE = lib.optionalString stdenv.cc.isClang "-Wno-return-type";
     buildInputs = [ pkgs.curl ];
     doCheck = false; # performs network access
+    meta = {
+      description = "Perl extension interface for libcurl";
+      license = licenses.mit;
+      homepage = "https://github.com/szbalint/WWW--Curl";
+    };
   };
 
   WWWFormUrlEncoded = buildPerlModule {
@@ -33348,10 +35016,10 @@ let
        sha256 = "1x4h5m5fkwaa0gbn6zp9mjrhr3r989w8wyrjxiii3dqm3xghnj60";
      };
      meta = {
-       description = "parser and builder for application/x-www-form-urlencoded";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-       homepage = "https://github.com/kazeburo/WWW-Form-UrlEncoded";
-     };
+      description = "parser and builder for application/x-www-form-urlencoded";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/kazeburo/WWW-Form-UrlEncoded";
+    };
   };
 
   WWWMechanize = buildPerlPackage {
@@ -33364,9 +35032,9 @@ let
     propagatedBuildInputs = [ HTMLForm HTMLTree LWP ];
     doCheck = false;
     meta = {
-      homepage = "https://github.com/libwww-perl/WWW-Mechanize";
       description = "Handy web browsing in a Perl object";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/libwww-perl/WWW-Mechanize";
     };
     buildInputs = [ CGI HTTPServerSimple PathTiny TestDeep TestException TestFatal TestMemoryCycle TestNoWarnings TestOutput TestTaint TestWarnings ];
   };
@@ -33396,7 +35064,8 @@ let
     buildInputs = [ DataDump ImageInfo TestDeep TestHTTPLocalServer TestMemoryCycle TestWithoutModule ];
     meta = {
       description = "automate the Chrome browser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Corion/WWW-Mechanize-Chrome";
     };
   };
 
@@ -33411,7 +35080,7 @@ let
     buildInputs = [ TestDeep TestException TestPod ];
     meta = {
       description = "A client for the ORCID 2.0 API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/LibreCat/WWW-ORCID";
     };
   };
@@ -33425,8 +35094,9 @@ let
     };
     propagatedBuildInputs = [ URI ];
     meta = {
-      description = "Database of robots.txt-derived permissions";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "database of robots.txt-derived permissions";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/gisle/www-robotrules";
     };
   };
 
@@ -33441,7 +35111,6 @@ let
     propagatedBuildInputs = [ LWPProtocolHttps ];
     meta = {
       description = "Accessing Twilio's REST API with Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -33466,7 +35135,7 @@ let
     propagatedBuildInputs = [ JSONXS ];
     meta = {
       description = "ChromeLogger for Perl";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/tokuhirom/Web-ChromeLogger";
     };
   };
@@ -33482,7 +35151,8 @@ let
     buildInputs = [ IOString ];
     meta = {
       description = "common request class for web frameworks";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/doy/web-request";
     };
   };
 
@@ -33495,7 +35165,8 @@ let
     };
     meta = {
       description = "Quote argument lists for Win32";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/haarg/Win32-ShellQuote";
     };
   };
 
@@ -33509,7 +35180,7 @@ let
     buildInputs = [ FileFindRule ModuleBuildTiny PathClass YAML ];
     meta = {
       description = "multi-language user-agent strings parsers (perl implementation)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/woothee/woothee-perl";
     };
   };
@@ -33524,9 +35195,9 @@ let
     buildInputs = [ DBDMock ListMoreUtils PodCoverageTrustPod TestException TestKwalitee TestPod TestPodCoverage ];
     propagatedBuildInputs = [ ClassAccessor ClassFactory DBI DataUUID DateTimeFormatStrptime FileSlurp LogLog4perl XMLSimple ];
     meta = {
-      homepage = "https://github.com/jonasbn/perl-workflow";
       description = "Simple, flexible system to implement workflows";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/jonasbn/perl-workflow";
     };
   };
 
@@ -33542,6 +35213,11 @@ let
     #   Error: Unable to initialize GTK, is DISPLAY set properly?"
     doCheck = false;
     buildInputs = [ ExtUtilsXSpp ];
+    meta = {
+      description = "interface to the wxWidgets cross-platform GUI toolkit";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://www.wxperl.it/";
+    };
   };
 
   WxGLCanvas = buildPerlPackage {
@@ -33553,6 +35229,10 @@ let
     };
     propagatedBuildInputs = [ pkgs.libGLU Wx ];
     doCheck = false;
+    meta = {
+      description = "interface to wxWidgets' OpenGL canvas";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+    };
   };
 
   X11IdleTime = buildPerlPackage {
@@ -33567,6 +35247,7 @@ let
     patchPhase = "sed -ie 's,-L/usr/X11R6/lib/,-L${pkgs.xorg.libX11.out}/lib/ -L${pkgs.xorg.libXext.out}/lib/ -L${pkgs.xorg.libXScrnSaver}/lib/,' IdleTime.pm";
     meta = {
       description = "Get the idle time of X11";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33592,8 +35273,8 @@ let
     propagatedBuildInputs = [ X11Protocol ];
     buildInputs = [ EncodeHanExtra ModuleUtil ];
     meta = {
-      description = "Miscellaneous helpers for X11::Protocol connections.";
-      license = with lib.licenses; [ gpl1Plus gpl3Plus ];
+      description = "Miscellaneous helpers for X11::Protocol connections";
+      license = [ licenses.gpl1Plus licenses.gpl3Plus ];
       homepage = "http://user42.tuxfamily.org/x11-protocol-other/index.html";
     };
   };
@@ -33608,6 +35289,11 @@ let
     buildInputs = [ pkgs.xlibsWrapper pkgs.xorg.libXtst pkgs.xorg.libXi ];
     NIX_CFLAGS_LINK = "-lX11 -lXext -lXtst";
     doCheck = false; # requires an X server
+    meta = {
+      description = "Collection of functions for X11 GUI testing/interaction";
+      license = licenses.gpl2Plus;
+      homepage = "https://x11guitest.svn.sourceforge.net/svnroot/x11guitest";
+    };
   };
 
   X11XCB = buildPerlPackage {
@@ -33623,8 +35309,8 @@ let
     NIX_CFLAGS_LINK = "-lxcb -lxcb-util -lxcb-xinerama -lxcb-icccm";
     doCheck = false; # requires an X server
     meta = {
-      description = "XCB bindings for X";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "perl bindings for libxcb";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33638,7 +35324,6 @@ let
     buildInputs = [ pkgs.libxml2 ];
     meta = {
       description = "Perl extension for inclusive (1.0 and 1.1) and exclusive canonicalization of XML using libxml2";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
       maintainers = [ maintainers.sgo ];
     };
   };
@@ -33653,7 +35338,7 @@ let
     propagatedBuildInputs = [ XMLNamespaceFactory ];
     meta = {
       description = "A list of commonly used namespaces";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33668,7 +35353,7 @@ let
     propagatedBuildInputs = [ XMLTokeParser ];
     meta = {
       description = "Recursive descent XML parsing";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -33692,7 +35377,8 @@ let
     propagatedBuildInputs = [ XMLTreePP ];
     meta = {
       description = "Parse/write/merge/edit RSS/RDF/Atom syndication feeds";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
     };
   };
 
@@ -33770,6 +35456,11 @@ let
     SKIP_SAX_INSTALL = 1;
     buildInputs = [ AlienBuild AlienLibxml2 ];
     propagatedBuildInputs = [ XMLSAX ];
+    meta = {
+      description = "Interface to Gnome libxml2 xml parsing and DOM library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-XML-LibXML";
+    };
   };
 
   XMLLibXMLCache = buildPerlPackage {
@@ -33783,7 +35474,8 @@ let
     buildInputs = [ FileTouch TestDeep XMLLibXSLT ];
     meta = {
       description = "Document cache for XML::LibXML";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/nwellnhof/XML-LibXML-Cache";
     };
   };
 
@@ -33796,8 +35488,9 @@ let
     };
     propagatedBuildInputs = [ XMLLibXML ];
     meta = {
-      description = "XML::LibXML based XML::Simple clone";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "XML::LibXML alternative to XML::Simple::XMLin()";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://perl.overmeer.net/CPAN/";
     };
   };
 
@@ -33811,7 +35504,10 @@ let
     buildInputs = [ pkgs.pkg-config pkgs.zlib pkgs.libxml2 pkgs.libxslt ];
     propagatedBuildInputs = [ XMLLibXML ];
     meta = {
-      broken = stdenv.isi686; # tests failed
+      description = "Interface to GNOME libxslt library";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-XML-LibXSLT";
+      broken = stdenv.isi686;
     };
   };
 
@@ -33822,9 +35518,7 @@ let
       url = "mirror://cpan/authors/id/P/PD/PDEEGAN/XML-Mini-1.38.tar.gz";
       sha256 = "af803d38036a3184e124a682e5466f1bc107f48a89ef35b0c7647e11a073fe2d";
     };
-    meta = {
-      license = "unknown";
-    };
+
   };
 
   XMLNamespace = buildPerlPackage {
@@ -33845,7 +35539,7 @@ let
     };
     meta = {
       description = "Simple factory objects for SAX namespaced names";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/perigrin/xml-namespacefactory";
     };
   };
@@ -33856,6 +35550,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz";
       sha256 = "1vz5pbi4lm5fhq2slrs2hlp6bnk29863abgjlcx43l4dky2rbsa7";
+    };
+    meta = {
+      description = "A simple generic namespace processor";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perigrin/xml-namespacesupport";
     };
   };
 
@@ -33874,6 +35573,11 @@ let
     '';
     makeMakerFlags = "EXPATLIBPATH=${pkgs.expat.out}/lib EXPATINCPATH=${pkgs.expat.dev}/include";
     propagatedBuildInputs = [ LWP ];
+    meta = {
+      description = "A perl module for parsing XML documents";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/toddr/XML-Parser";
+    };
   };
 
   XMLParserEasyTree = buildPerlPackage {
@@ -33895,7 +35599,8 @@ let
     buildInputs = [ TestRequires ];
     meta = {
       description = "Lightweight pure-perl XML Parser (based on regexps)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/redhotpenguin/perl-XML-Parser-Lite";
     };
   };
 
@@ -33909,8 +35614,9 @@ let
     buildInputs = [ PathTiny ];
     propagatedBuildInputs = [ XMLParser ];
     meta = {
-      description = "Modules for parsing and evaluating XPath statements";
-      license = lib.licenses.artistic2;
+      description = "Parse and evaluate XPath statements";
+      license = licenses.artistic2;
+      homepage = "https://github.com/manwar/XML-XPath";
     };
   };
 
@@ -33922,7 +35628,7 @@ let
       sha256 = "0r72na14bmsxfd16s9nlza155amqww0k8wsa9x2a3sqbpp5ppznj";
     };
     meta = {
-      description = "A re-usable XPath engine for DOM-like trees";
+      description = "a re-usable XPath engine for DOM-like trees";
     };
   };
 
@@ -33946,8 +35652,7 @@ let
     # disable tests that require network
     preCheck = "rm t/{26-xmlrpc.t,37-mod_xmlrpc.t}";
     meta = {
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
-      description = "Client and server implementation of XML-RPC protocol";
+      description = "client and server implementation of XML-RPC protocol";
     };
   };
 
@@ -33960,9 +35665,9 @@ let
     };
     propagatedBuildInputs = [ DateTimeFormatMail DateTimeFormatW3CDTF XMLParser ];
     meta = {
-      homepage = "http://perl-rss.sourceforge.net/";
-      description = "Creates and updates RSS files";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "creates and updates RSS files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-XML-RSS";
     };
   };
 
@@ -33977,6 +35682,9 @@ let
     postInstall = ''
       perl -MXML::SAX -e "XML::SAX->add_parser(q(XML::SAX::PurePerl))->save_parsers()"
       '';
+    meta = {
+      homepage = "https://github.com/grantm/xml-sax";
+    };
   };
 
   XMLSAXBase = buildPerlPackage {
@@ -33988,8 +35696,8 @@ let
     };
     meta = {
       description = "Base class for SAX Drivers and Filters";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/grantm/XML-SAX-Base";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -34004,9 +35712,10 @@ let
      # Avoid creating perllocal.pod, which contains a timestamp
      installTargets = [ "pure_install" ];
      meta = {
-       description = "SAX Driver for Expat";
-       license = with lib.licenses; [ artistic1 gpl1Plus ];
-     };
+      description = "SAX Driver for Expat";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/hoehrmann/XML-SAX-Expat";
+    };
   };
 
   XMLSAXWriter = buildPerlPackage {
@@ -34018,9 +35727,9 @@ let
     };
     propagatedBuildInputs = [ XMLFilterBufferText XMLNamespaceSupport XMLSAXBase ];
     meta = {
-      homepage = "https://github.com/perigrin/xml-sax-writer";
       description = "SAX2 XML Writer";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perigrin/xml-sax-writer";
     };
   };
 
@@ -34032,6 +35741,11 @@ let
       sha256 = "1xd00821y795fy2rag8aizb5wsbbzfxgmdf9qwpvdxn3pgpyzz85";
     };
     propagatedBuildInputs = [ XMLParser ];
+    meta = {
+      description = "Perl extension for comparing XML documents";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/shlomif/perl-XML-SemanticDiff";
+    };
   };
 
   XMLSimple = buildPerlPackage {
@@ -34042,6 +35756,11 @@ let
       sha256 = "1y6vh328zrh085d40852v4ij2l4g0amxykswxd1nfhd2pspds7sk";
     };
     propagatedBuildInputs = [ XMLSAXExpat ];
+    meta = {
+      description = "An API for simple XML files";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/grantm/xml-simple";
+    };
   };
 
   XMLTokeParser = buildPerlPackage {
@@ -34054,7 +35773,6 @@ let
     propagatedBuildInputs = [ XMLParser ];
     meta = {
       description = "Simplified interface to XML::Parser";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -34068,7 +35786,7 @@ let
     propagatedBuildInputs = [ LWP ];
     meta = {
       description = "Pure Perl implementation for parsing/writing XML documents";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
@@ -34085,6 +35803,11 @@ let
     '';
     propagatedBuildInputs = [ XMLParser ];
     doCheck = false;  # requires lots of extra packages
+    meta = {
+      description = "XML, The Perl Way";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "http://github.com/mirod/xmltwig";
+    };
   };
 
   XMLValidatorSchema = buildPerlPackage {
@@ -34096,7 +35819,7 @@ let
     };
     propagatedBuildInputs = [ TreeDAGNode XMLFilterBufferText XMLSAX ];
     meta = {
-      description = "Validate XML against a subset of W3C XML Schema";
+      description = "validate XML against a subset of W3C XML Schema";
     };
   };
 
@@ -34106,6 +35829,10 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/J/JO/JOSEPHW/XML-Writer-0.900.tar.gz";
       sha256 = "07qd806kcs7si7qakx3x5p68xq2jdmkxdrns987kaayg7syzbj3k";
+    };
+    meta = {
+      description = "Easily generate well-formed, namespace-aware XML";
+      license = licenses.wtfpl;
     };
   };
 
@@ -34118,8 +35845,9 @@ let
     };
     buildInputs = [ ExtUtilsDepends TestFatal TestSimple13 ];
     meta = {
-      description = "XS pointer backed objects using sv_magic";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "Opaque, extensible XS pointer backed objects using C<sv_magic>";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/karenetheridge/XS-Object-Magic";
     };
   };
 
@@ -34133,8 +35861,8 @@ let
     buildInputs = [ TestFatal ];
     perlPreHook = lib.optionalString (stdenv.isi686 || stdenv.isDarwin) "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
     meta = {
-      description = "XS functions to assist in parsing sub-like syntax";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "XS functions to assist in parsing C<sub>-like syntax";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       maintainers = [ maintainers.zakame ];
     };
   };
@@ -34149,7 +35877,7 @@ let
     propagatedBuildInputs = [ YAMLPP ];
     meta = {
       description = "See Your Data in the Nude";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/xxx-pm";
     };
   };
@@ -34165,9 +35893,9 @@ let
     buildInputs = [ TestBase TestDeep TestYAML ];
 
     meta = {
+      description = "YAML Ain't Markup Language™";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/yaml-pm";
-      description = "YAML Ain't Markup Language (tm)";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
     };
   };
 
@@ -34181,7 +35909,8 @@ let
     perlPreHook = lib.optionalString stdenv.isDarwin "export LD=$CC";
     meta = {
       description = "Fast, lightweight YAML loader and dumper";
-      license = lib.licenses.mit;
+      license = [ licenses.artistic1 licenses.gpl1Plus licenses.mit ];
+      homepage = "http://github.com/toddr/YAML-Syck";
     };
   };
 
@@ -34191,6 +35920,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/E/ET/ETHER/YAML-Tiny-1.73.tar.gz";
       sha256 = "0i3p4nz8ysrsrs6vlzc6gkjcfpcaf05xjc7lwbjkw7lg5shmycdw";
+    };
+    meta = {
+      description = "Read/Write YAML files with as little code as possible";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/Perl-Toolchain-Gang/YAML-Tiny";
     };
   };
 
@@ -34205,7 +35939,8 @@ let
     buildInputs = [ AnyEvent SubOverride SysSigAction TestDeep TestException TestNoWarnings TestWarnings ];
     meta = {
       description = "version agnostic Perl bindings for zeromq using ffi";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/calid/zmq-ffi";
     };
   };
 
@@ -34215,6 +35950,11 @@ let
     src = fetchurl {
       url = "mirror://cpan/authors/id/T/TI/TINITA/YAML-LibYAML-0.82.tar.gz";
       sha256 = "0j7yhxkaasccynl5iq1cqpf4x253p4bi5wsq6qbwwv2wjsiwgd02";
+    };
+    meta = {
+      description = "Perl YAML Serialization using XS and libyaml";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/ingydotnet/yaml-libyaml-pm";
     };
   };
 
@@ -34228,7 +35968,7 @@ let
     buildInputs = [ TestYAML ];
     meta = {
       description = "Old YAML.pm Legacy Code";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
       homepage = "https://github.com/ingydotnet/yaml-old-pm";
     };
   };
@@ -34242,8 +35982,9 @@ let
     };
     buildInputs = [ TestDeep TestWarn ];
     meta = {
-      description = "YAML Framework";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      description = "YAML 1.2 Processor";
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/perlpunk/YAML-PP-p5";
     };
   };
 
@@ -34257,9 +35998,9 @@ let
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ JSON LWPProtocolHttps ];
     meta = {
-      homepage = "https://github.com/mikegrb/WebService-Linode";
       description = "Perl Interface to the Linode.com API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/mikegrb/WebService-Linode";
     };
   };
 
@@ -34274,7 +36015,8 @@ let
     buildInputs = [ Moose TestClass TestDeep TestException ];
     meta = {
       description = "Connect to the Raygun.io API";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
+      homepage = "https://github.com/heytrav/raygun4perl";
     };
   };
 
@@ -34288,7 +36030,7 @@ let
     propagatedBuildInputs = [ ClassAccessor LWP ];
     meta = {
       description = "Access the W3Cs online HTML validator";
-      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      license = [ licenses.artistic1 licenses.gpl1Plus ];
     };
   };
 
