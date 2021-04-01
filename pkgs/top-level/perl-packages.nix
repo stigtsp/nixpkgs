@@ -12910,6 +12910,22 @@ let
     };
   };
 
+  Minilla = buildPerlModule {
+    pname = "Minilla";
+    version = "3.1.12";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/S/SK/SKAJI/Minilla-v3.1.12.tar.gz";
+      sha256 = "1ll1k6qhmijspvmv56q0n9m9ndqxbznz3954pp0k7kyrchsxnggp";
+    };
+    buildInputs = [ FileCopyRecursive JSON ModuleBuildTiny TestOutput TestRequires ];
+    propagatedBuildInputs = [ Appcpanminus ConfigIdentity DataSectionSimple FileWhich Filepushd ModuleCPANfile ModuleRuntime Moo PodMarkdown TOML TextMicroTemplate TryTiny URI ];
+    meta = {
+      homepage = "https://github.com/tokuhirom/Minilla";
+      description = "CPAN module authoring tool";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   Minion = buildPerlPackage {
     pname = "Minion";
     version = "10.14";
