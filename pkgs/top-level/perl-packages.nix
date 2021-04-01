@@ -22519,6 +22519,22 @@ let
     };
   };
 
+  TOML = buildPerlModule {
+    pname = "TOML";
+    version = "0.97";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/TOML-0.97.tar.gz";
+      sha256 = "0dqwslnzx8afvgq1c9f79x02bq4vph58szhspams437c80hx1mbz";
+    };
+    buildInputs = [ ModuleBuildTiny ];
+    propagatedBuildInputs = [ TOMLParser ];
+    meta = {
+      homepage = "https://github.com/karupanerura/toml";
+      description = "Parser for Tom's Obvious, Minimal Language";
+      license = lib.licenses.gpl2Plus;
+    };
+  };
+
   TreeDAGNode = buildPerlPackage {
     pname = "Tree-DAG_Node";
     version = "1.31";
