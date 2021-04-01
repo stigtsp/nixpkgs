@@ -22535,6 +22535,22 @@ let
     };
   };
 
+  TOMLParser = buildPerlModule {
+    pname = "TOML-Parser";
+    version = "0.91";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/TOML-Parser-0.91.tar.gz";
+      sha256 = "13lsm8vprp36vmcc6080jsyrdzzlfvk0p496wz5f0xz30jwi719a";
+    };
+    buildInputs = [ ModuleBuildTiny TestDeep TestDeepFuzzy ];
+    propagatedBuildInputs = [ TypesSerialiser ];
+    meta = {
+      homepage = "https://github.com/karupanerura/TOML-Parser";
+      description = "Simple toml parser";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TreeDAGNode = buildPerlPackage {
     pname = "Tree-DAG_Node";
     version = "1.31";
