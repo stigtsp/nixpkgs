@@ -20242,6 +20242,22 @@ let
     };
   };
 
+  TestDeepFuzzy = buildPerlModule {
+    pname = "Test-Deep-Fuzzy";
+    version = "0.01";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/K/KA/KARUPA/Test-Deep-Fuzzy-0.01.tar.gz";
+      sha256 = "1bsd7607ahpd5sb52qhkbp6x5208dfc5cx99gqc0f3bbhgflzjgm";
+    };
+    buildInputs = [ ModuleBuildTiny ];
+    propagatedBuildInputs = [ MathRound TestDeep ];
+    meta = {
+      homepage = "https://github.com/karupanerura/Test-Deep-Fuzzy";
+      description = "Fuzzy number comparison with Test::Deep";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+    };
+  };
+
   TestDir = buildPerlPackage {
     pname = "Test-Dir";
     version = "1.16";
