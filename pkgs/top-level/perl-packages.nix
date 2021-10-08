@@ -12195,6 +12195,21 @@ let
     };
   };
 
+  LogSyslogFast = buildPerlPackage {
+    pname = "Log-Syslog-Fast";
+    version = "0.67";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AT/ATHOMASON/Log-Syslog-Fast-0.67.tar.gz";
+      sha256 = "1fsq9qlnni8w849mljh2a5bgbx2qr6ypr4qcdzjligc1xmy0n2n0";
+    };
+    propagatedBuildInputs = [ LogSyslogConstants ];
+    meta = {
+      description = "Perl extension for sending syslog messages over TCP, UDP, or UNIX sockets with minimal CPU overhead";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      maintainers = with maintainers; [ sgo ];
+    };
+  };
+
   LogTrace = buildPerlPackage {
     pname = "Log-Trace";
     version = "1.070";
