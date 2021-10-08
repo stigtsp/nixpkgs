@@ -12181,6 +12181,20 @@ let
      };
   };
 
+  LogSyslogConstants = buildPerlPackage {
+    pname = "Log-Syslog-Constants";
+    version = "1.02";
+    src = fetchurl {
+      url = "mirror://cpan/authors/id/A/AT/ATHOMASON/Log-Syslog-Constants-1.02.tar.gz";
+      sha256 = "0wzrp2w1sps5x24yssdbflx5l5n5jwnjq1ivq71ij763sym0s5s0";
+    };
+    meta = {
+      description = "Perl extension containing syslog priority constants as";
+      license = with lib.licenses; [ artistic1 gpl1Plus ];
+      maintainers = with maintainers; [ sgo ];
+    };
+  };
+
   LogTrace = buildPerlPackage {
     pname = "Log-Trace";
     version = "1.070";
