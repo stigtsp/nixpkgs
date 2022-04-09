@@ -5484,10 +5484,10 @@ let
 
   DataValidateDomain = buildPerlPackage {
     pname = "Data-Validate-Domain";
-    version = "0.14";
+    version = "0.15";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Data-Validate-Domain-0.14.tar.gz";
-      sha256 = "4470f253b8d2720a4dd3fa3ae550995417c2269f3be7ff030e01afa04a3a9421";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Data-Validate-Domain-0.15.tar.gz";
+      sha256 = "sha256-PJ95GHsNPHGt0fj1WbgN8VmTAKbSA+CxYcvhjhdqqzY=";
     };
     buildInputs = [ Test2Suite ];
     propagatedBuildInputs = [ NetDomainTLD ];
