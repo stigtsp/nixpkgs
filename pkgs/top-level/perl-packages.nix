@@ -3759,10 +3759,10 @@ let
 
   ConfigMVPReaderINI = buildPerlPackage {
     pname = "Config-MVP-Reader-INI";
-    version = "2.101463";
+    version = "2.101464";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Config-MVP-Reader-INI-2.101463.tar.gz";
-      sha256 = "0iflnsh0sgihff3ra8sr7awiiscmqvrp1anaskkwksqi6yzidab9";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Config-MVP-Reader-INI-2.101464.tar.gz";
+      sha256 = "sha256-OZSwXkFEFqwGmCo/r0KWxT+5bzDIUaGC9C3U4890gcA=";
     };
     propagatedBuildInputs = [ ConfigINI ConfigMVP ];
     meta = {
