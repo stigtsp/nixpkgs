@@ -19483,10 +19483,10 @@ let
 
   Sereal = buildPerlPackage {
     pname = "Sereal";
-    version = "4.018";
+    version = "4.023";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/Y/YV/YVES/Sereal-4.018.tar.gz";
-      sha256 = "0pqygrl88jp2w73jd9cw4k22fhvh5vcwqbiwl9wpxm67ql95cwwa";
+      url = "mirror://cpan/authors/id/Y/YV/YVES/Sereal-4.023.tar.gz";
+      sha256 = "sha256-zQPyYjPfGjO+MT+mX5wY/vs7/ScMW2+Ugg/F0zd72ts=";
     };
     buildInputs = [ TestDeep TestLongString TestMemoryGrowth TestWarn ];
     propagatedBuildInputs = [ SerealDecoder SerealEncoder ];
