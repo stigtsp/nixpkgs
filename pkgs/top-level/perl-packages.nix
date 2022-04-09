@@ -9428,10 +9428,10 @@ let
 
   Gnome2 = buildPerlPackage {
     pname = "Gnome2";
-    version = "1.047";
+    version = "1.048";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/X/XA/XAOC/Gnome2-1.047.tar.gz";
-      sha256 = "ccc85c5dc3c14f915ed1a186d238681d83fef3d17eed1c20001499ff56b6390c";
+      url = "mirror://cpan/authors/id/X/XA/XAOC/Gnome2-1.048.tar.gz";
+      sha256 = "sha256-ZPzDgnFKvY1XaSrDdjKMOiDGy8i81zKwB9FMv5ooLd0=";
     };
     buildInputs = [ ExtUtilsDepends ExtUtilsPkgConfig Glib Gnome2Canvas Gnome2VFS Gtk2 ];
     propagatedBuildInputs = [ pkgs.gnome2.libgnomeui ];
