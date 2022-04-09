@@ -5112,10 +5112,10 @@ let
 
   DataHexDump = buildPerlPackage {
     pname = "Data-HexDump";
-    version = "0.02";
+    version = "0.04";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/F/FT/FTASSIN/Data-HexDump-0.02.tar.gz";
-      sha256 = "1a9d843e7f667c1c6f77c67af5d77e7462ff23b41937cb17454d03535cd9be70";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/Data-HexDump-0.04.tar.gz";
+      sha256 = "sha256-vDb0BEOKw2rSuSlVOSJ9Nvmc0WI/HjR693xZTEDMvPg=";
     };
     meta = {
       description = "Hexadecimal Dumper";
