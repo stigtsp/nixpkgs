@@ -2827,10 +2827,10 @@ let
 
   Chart = buildPerlPackage {
     pname = "Chart";
-    version = "2.4.10";
+    version = "2.401.1";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/C/CH/CHARTGRP/Chart-2.4.10.tar.gz";
-      sha256 = "84bd99a1a0ce72477b15e35881e6120398bb3f553aeeb5e8d72b088520e4f6bf";
+      url = "mirror://cpan/authors/id/L/LI/LICHTKIND/Chart-v2.401.1.tar.gz";
+      sha256 = "sha256-SDQQn3rgO8gwJelnTjRgoDEZieyMaH/E87JsUrYfrfA=";
     };
     propagatedBuildInputs = [ GD ];
     meta = {
