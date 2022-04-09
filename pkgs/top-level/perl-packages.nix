@@ -6967,10 +6967,10 @@ let
 
   DistZilla = buildPerlPackage {
     pname = "Dist-Zilla";
-    version = "6.017";
+    version = "6.024";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Dist-Zilla-6.017.tar.gz";
-      sha256 = "1vkg5cyazhy2kdffwlcr2k52awlyfzxgr0vggs9mx2xc6g7313aw";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Dist-Zilla-6.024.tar.gz";
+      sha256 = "sha256-8GOmg5wUWjqvzw2NnsVRlgHQwPYdAXSu1CQpf2W5KKg=";
     };
     buildInputs = [ CPANMetaCheck TestDeep TestFailWarnings TestFatal TestFileShareDir ];
     propagatedBuildInputs = [ AppCmd CPANUploader ConfigMVPReaderINI DateTime FileCopyRecursive FileFindRule FileShareDirInstall Filepushd LogDispatchouli MooseXLazyRequire MooseXSetOnce MooseXTypesPerl PathTiny PerlPrereqScanner SoftwareLicense TermEncoding TermUI YAMLTiny ];
