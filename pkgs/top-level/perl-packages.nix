@@ -9631,10 +9631,10 @@ let
 
   GraphicsTIFF = buildPerlPackage {
     pname = "Graphics-TIFF";
-    version = "16";
+    version = "18";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RA/RATCLIFFE/Graphics-TIFF-9.tar.gz";
-      sha256 = "Kv0JTCBGnvp8+cMmDjzuqd4Qw9r+BjOo0eJC405OOdg=";
+      url = "mirror://cpan/authors/id/R/RA/RATCLIFFE/Graphics-TIFF-18.tar.gz";
+      sha256 = "sha256-bQcARQl96qnHcGyVirho0LjmYiIYvwarc30IXIZZpRQ=";
     };
     buildInputs = [ pkgs.libtiff ExtUtilsDepends ExtUtilsPkgConfig ];
     propagatedBuildInputs = [ Readonly ];
