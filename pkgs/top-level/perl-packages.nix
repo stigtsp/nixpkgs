@@ -14147,10 +14147,10 @@ let
 
   ModuleExtractUse = buildPerlModule {
      pname = "Module-ExtractUse";
-     version = "0.343";
+     version = "0.344";
      src = fetchurl {
-       url = "mirror://cpan/authors/id/D/DO/DOMM/Module-ExtractUse-0.343.tar.gz";
-       sha256 = "00hcggwnqk953s4zbvkcabd5mfidg60hawlqsw6146in91dlclj8";
+       url = "mirror://cpan/authors/id/D/DO/DOMM/Module-ExtractUse-0.344.tar.gz";
+       sha256 = "sha256-2zj+dyTwL8+L28u8uKR12KJ66bp8kfPkfIpkaoZr07w=";
      };
      propagatedBuildInputs = [ ParseRecDescent PodStrip ];
      buildInputs = [ TestDeep TestNoWarnings ];
