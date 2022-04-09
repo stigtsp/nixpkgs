@@ -19436,10 +19436,10 @@ let
 
   SearchXapian = buildPerlPackage rec {
     pname = "Search-Xapian";
-    version = "1.2.25.4";
+    version = "1.2.25.5";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/O/OL/OLLY/Search-Xapian-1.2.25.4.tar.gz";
-      sha256 = "1pbl8pbgmbs3i8yik4p63g4pd9bhn0dp3d7l667dkvw0kccl66c7";
+      url = "mirror://cpan/authors/id/O/OL/OLLY/Search-Xapian-1.2.25.5.tar.gz";
+      sha256 = "sha256-IE+9xxLWcR/6tmjB9M/AB7Y5qftkrX4ZyyD8EKkQuos=";
     };
     buildInputs = [ pkgs.xapian DevelLeak ];
     meta = {
