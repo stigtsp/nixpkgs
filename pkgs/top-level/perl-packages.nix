@@ -5022,10 +5022,10 @@ let
 
   DataDump = buildPerlPackage {
     pname = "Data-Dump";
-    version = "1.23";
+    version = "1.25";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/G/GA/GAAS/Data-Dump-1.23.tar.gz";
-      sha256 = "0r9ba52b7p8nnn6nw0ygm06lygi8g68piri78jmlqyrqy5gb0lxg";
+      url = "mirror://cpan/authors/id/G/GA/GARU/Data-Dump-1.25.tar.gz";
+      sha256 = "sha256-pKpuDdvznVrUm93+D4nZ2oZOO8APYnEl0bxYBHL1P70=";
     };
     meta = {
       description = "Pretty printing of data structures";
