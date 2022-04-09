@@ -13068,10 +13068,10 @@ let
 
   MailIMAPClient = buildPerlPackage {
     pname = "Mail-IMAPClient";
-    version = "3.42";
+    version = "3.43";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PL/PLOBBES/Mail-IMAPClient-3.42.tar.gz";
-      sha256 = "0znf035ikaxyfishv507qq6g691xvbnziqlcwfikkj2l1kan88hw";
+      url = "mirror://cpan/authors/id/P/PL/PLOBBES/Mail-IMAPClient-3.43.tar.gz";
+      sha256 = "sha256-CTyX+sFbR6j+TSk27y3zd6v3fMirdAktISi7lF0ftG8=";
     };
     propagatedBuildInputs = [ ParseRecDescent ];
   };
