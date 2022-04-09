@@ -24169,10 +24169,10 @@ let
 
   UNIVERSALrequire = buildPerlPackage {
     pname = "UNIVERSAL-require";
-    version = "0.18";
+    version = "0.19";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/UNIVERSAL-require-0.18.tar.gz";
-      sha256 = "b2a736a87967a143dab58c8a110501d5235bcdd2c8b2a3bfffcd3c0bd06b38ed";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/UNIVERSAL-require-0.19.tar.gz";
+      sha256 = "sha256-1GfNJuBsjDsgP9O8B5aubIN6xeMQCTyCJn/134UPGgM=";
     };
     meta = {
       description = "Require() modules from a variable";
