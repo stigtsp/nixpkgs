@@ -5831,10 +5831,10 @@ let
 
   DateTimeLocale = buildPerlPackage {
     pname = "DateTime-Locale";
-    version = "1.28";
+    version = "1.34";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/DateTime-Locale-1.28.tar.gz";
-      sha256 = "6c604d8c5c9c2739b78e0538a402283b82b1df419e60bef20b04843e4584bade";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/DateTime-Locale-1.34.tar.gz";
+      sha256 = "sha256-s8TbfQr7qXYjFTefHmTXmP8h/Jn5h+jP7cB6L3zyA0A=";
     };
     buildInputs = [ CPANMetaCheck FileShareDirInstall IPCSystemSimple PathTiny Test2PluginNoWarnings Test2Suite TestFileShareDir ];
     propagatedBuildInputs = [ FileShareDir ParamsValidationCompiler Specio namespaceautoclean ];
