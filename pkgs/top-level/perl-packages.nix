@@ -24100,10 +24100,10 @@ let
 
   TypeTiny = buildPerlPackage {
     pname = "Type-Tiny";
-    version = "1.012000";
+    version = "1.012004";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Type-Tiny-1.012000.tar.gz";
-      sha256 = "147axzi07g5akpzbzd2npvdyh9pmzv22a8la1dmylahw2qh15nyk";
+      url = "mirror://cpan/authors/id/T/TO/TOBYINK/Type-Tiny-1.012004.tar.gz";
+      sha256 = "sha256-dc0GthLRgwrp9LIimLUGs/8EUY+nRT9IfCSM1iqQais=";
     };
     propagatedBuildInputs = [ ExporterTiny ];
     meta = {
