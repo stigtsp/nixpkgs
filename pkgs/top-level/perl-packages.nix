@@ -7907,10 +7907,10 @@ let
 
   ExporterLite = buildPerlPackage {
     pname = "Exporter-Lite";
-    version = "0.08";
+    version = "0.09";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/Exporter-Lite-0.08.tar.gz";
-      sha256 = "1hns15imih8z2h6zv3m1wwmv9fiysacsb52y94v6zf2cmw4kjny0";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/Exporter-Lite-0.09.tar.gz";
+      sha256 = "sha256-edixT9UBOSLGPoUPFb9RBZ8lAkBFNetmkO8jYSwqGY0=";
     };
     meta = {
       license = with lib.licenses; [ artistic1 gpl1Plus ];
