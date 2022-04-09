@@ -13969,10 +13969,10 @@ let
 
   Modulecpmfile = buildPerlModule {
     pname = "Module-cpmfile";
-    version = "0.002";
+    version = "0.006";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SK/SKAJI/Module-cpmfile-0.002.tar.gz";
-      sha256 = "18dxc5wgds1way0dvd6dx5rhc2siyaa38nhpy4gb5v7ldnj3yjc8";
+      url = "mirror://cpan/authors/id/S/SK/SKAJI/Module-cpmfile-0.006.tar.gz";
+      sha256 = "sha256-G8l24pN3JIlsn26unl3KmB4n+YQwuS3icO41FP0ArA8=";
     };
     buildInputs = [ ModuleBuildTiny ModuleCPANfile Test2Suite ];
     propagatedBuildInputs = [ YAMLPP ];
