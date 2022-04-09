@@ -9010,10 +9010,10 @@ let
 
   FinanceQuote = buildPerlPackage {
     pname = "Finance-Quote";
-    version = "1.49";
+    version = "1.51";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/EC/ECOCODE/Finance-Quote-1.49.tar.gz";
-      sha256 = "0lxz9fsm4ld3l900zxh2w91wjygk0ifn4miw6q5k4mm67d2c9nwm";
+      url = "mirror://cpan/authors/id/B/BP/BPSCHUCK/Finance-Quote-1.51.tar.gz";
+      sha256 = "sha256-9EHt1Hdyrf0YgK90/Icii9cE4nOVTA+txwBoRCVKiVY=";
     };
     propagatedBuildInputs = [ CGI DateTimeFormatStrptime HTMLTableExtract JSON JSONParse LWPProtocolHttps StringUtil TextTemplate ];
     meta = with lib; {
