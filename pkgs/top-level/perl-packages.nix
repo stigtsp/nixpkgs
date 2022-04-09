@@ -24003,10 +24003,10 @@ let
 
   Tk = buildPerlPackage {
     pname = "Tk";
-    version = "804.035";
+    version = "804.036";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SR/SREZIC/Tk-804.035.tar.gz";
-      sha256 = "4d2b80291ba6de34d8ec886a085a6dbd2b790b926035a087e99025614c5ffdd4";
+      url = "mirror://cpan/authors/id/S/SR/SREZIC/Tk-804.036.tar.gz";
+      sha256 = "sha256-Mqpycaa9/twzMBGbOCXa3dCqS1yTb4StdOq7kyogCl4=";
     };
     makeMakerFlags = "X11INC=${pkgs.xorg.libX11.dev}/include X11LIB=${pkgs.xorg.libX11.out}/lib";
     buildInputs = [ pkgs.xorg.libX11 pkgs.libpng ];
