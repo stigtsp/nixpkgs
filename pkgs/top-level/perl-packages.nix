@@ -21000,10 +21000,10 @@ let
 
   TemplateToolkit = buildPerlPackage {
     pname = "Template-Toolkit";
-    version = "3.009";
+    version = "3.010";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.009.tar.gz";
-      sha256 = "1dpmy62x1yshf7kwslj85sc8bcgw1m30dh0szmfrp99pysxj7bfn";
+      url = "mirror://cpan/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.010.tar.gz";
+      sha256 = "sha256-9LZekzZAiKqFCIeCBlLkZ7C84Uk3YP02kCaFILN9gsw=";
     };
     doCheck = !stdenv.isDarwin;
     meta = {
