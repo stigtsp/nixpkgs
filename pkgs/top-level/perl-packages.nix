@@ -8251,10 +8251,10 @@ let
 
   FFICheckLib = buildPerlPackage {
     pname = "FFI-CheckLib";
-    version = "0.27";
+    version = "0.28";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PL/PLICEASE/FFI-CheckLib-0.27.tar.gz";
-      sha256 = "0x1dk4hlhvcbgwivf345phbqz0v5hawxxnby21h8bkagq93jfi4d";
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/FFI-CheckLib-0.28.tar.gz";
+      sha256 = "sha256-zzd85zWzMsQfYAymxeh68w22w3h/m2fVCiRdHr5vw1A=";
     };
     buildInputs = [ Test2Suite ];
     meta = {
