@@ -8010,10 +8010,10 @@ let
 
   ExtUtilsCppGuess = buildPerlPackage {
     pname = "ExtUtils-CppGuess";
-    version = "0.21";
+    version = "0.23";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETJ/ExtUtils-CppGuess-0.21.tar.gz";
-      sha256 = "0ls1y9bb2nff9djli91s86541r7ajcjp22gqhcdmj7hs69w92qpz";
+      url = "mirror://cpan/authors/id/E/ET/ETJ/ExtUtils-CppGuess-0.23.tar.gz";
+      sha256 = "sha256-+WxImE622O+32TOzTzYdDIs4M14+U4LprszAqlGaACw=";
     };
     nativeBuildInputs = [ pkgs.ld-is-cc-hook ];
     propagatedBuildInputs = [ CaptureTiny ];
