@@ -2059,10 +2059,10 @@ let
 
   CatalystAuthenticationStoreLDAP = buildPerlPackage {
     pname = "Catalyst-Authentication-Store-LDAP";
-    version = "1.016";
+    version = "1.017";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/I/IL/ILMARI/Catalyst-Authentication-Store-LDAP-1.016.tar.gz";
-      sha256 = "0cm399vxqqf05cjgs1j5v3sk4qc6nmws5nfhf52qvpbwc4m82mq8";
+      url = "mirror://cpan/authors/id/I/IL/ILMARI/Catalyst-Authentication-Store-LDAP-1.017.tar.gz";
+      sha256 = "sha256-keW4vd/XOGYqNh6/6nPYQrO6Me1wne2xqE7DRB3O7sU=";
     };
     propagatedBuildInputs = [ perlldap CatalystPluginAuthentication ClassAccessor ];
     buildInputs = [ TestMockObject TestException NetLDAPServerTest ];
