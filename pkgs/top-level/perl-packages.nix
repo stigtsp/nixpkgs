@@ -21173,10 +21173,10 @@ let
 
   TermShell = buildPerlModule {
     pname = "Term-Shell";
-    version = "0.12";
+    version = "0.13";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Term-Shell-0.12.tar.gz";
-      sha256 = "1mrx7g74qvkdis7x7zq1zs0b7q2fsz59g4hxvg140r8bq1wzav3x";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Term-Shell-0.13.tar.gz";
+      sha256 = "sha256-U6C9smVokcUIpHDZPLfhz+qzjuqeWClWCn2LX2APa/I=";
     };
     propagatedBuildInputs = [ TermReadKey TextAutoformat ];
     meta = with lib; {
