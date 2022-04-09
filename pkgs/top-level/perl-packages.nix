@@ -4482,10 +4482,10 @@ let
 
   CryptPKCS10 = buildPerlModule {
     pname = "Crypt-PKCS10";
-    version = "2.001";
+    version = "2.003";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MR/MRSCOTTY/Crypt-PKCS10-2.001.tar.gz";
-      sha256 = "f7945b76a2d8f4d8ecf627b2eb8ea4f41d001e6a915efe82e71d6b97fea3ffa9";
+      url = "mirror://cpan/authors/id/M/MR/MRSCOTTY/Crypt-PKCS10-2.003.tar.gz";
+      sha256 = "sha256-DcMN6FJMLAa8n262iIjMVok4FyI9BE/XxmBsJyCXnRk=";
     };
     buildInputs = [ pkgs.unzip ModuleBuildTiny ];
     propagatedBuildInputs = [ ConvertASN1 ];
