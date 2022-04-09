@@ -18453,10 +18453,10 @@ let
 
   PrometheusTiny = buildPerlPackage {
     pname = "Prometheus-Tiny";
-    version = "0.008";
+    version = "0.010";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RO/ROBN/Prometheus-Tiny-0.008.tar.gz";
-      sha256 = "17d7b69chkcq8fprww6m15glndyb0lms2l0xjbnbw04q7f8ncskk";
+      url = "mirror://cpan/authors/id/R/RO/ROBN/Prometheus-Tiny-0.010.tar.gz";
+      sha256 = "sha256-1MqgFH0YqFj5Oe0ZYd02Dhi3dPqtQdYtKBMzIcPqwiA=";
     };
     buildInputs = [ HTTPMessage Plack TestException ];
     meta = {
