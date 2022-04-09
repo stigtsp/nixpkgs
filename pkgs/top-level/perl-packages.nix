@@ -16608,10 +16608,10 @@ let
 
   NetServer = buildPerlPackage {
     pname = "Net-Server";
-    version = "2.009";
+    version = "2.010";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RH/RHANDOM/Net-Server-2.009.tar.gz";
-      sha256 = "0gw1k9gcw7habbkxvsfa2gz34brlbwcidk6khgsf1qjm0dbccrw2";
+      url = "mirror://cpan/authors/id/R/RH/RHANDOM/Net-Server-2.010.tar.gz";
+      sha256 = "sha256-lfw4Crwy6u+EQG7MSwFhLHIV9jdTGP25WQG+G6vRpuE=";
     };
     doCheck = false; # seems to hang waiting for connections
     meta = {
