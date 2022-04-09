@@ -22193,10 +22193,10 @@ let
 
   TestNeeds = buildPerlPackage {
     pname = "Test-Needs";
-    version = "0.002006";
+    version = "0.002009";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/H/HA/HAARG/Test-Needs-0.002006.tar.gz";
-      sha256 = "77f9fff0c96c5e09f34d0416b3533c3319f7cd0bb1f7fe8f8072ad59f433f0e5";
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Test-Needs-0.002009.tar.gz";
+      sha256 = "sha256-VxwhGTrRYZXfWLBrJoeYeWo5GzmMRDJxch0swPt8SsM=";
     };
     meta = {
       description = "Skip tests when modules not available";
