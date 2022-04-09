@@ -2449,10 +2449,10 @@ let
 
   CatalystPluginStaticSimple = buildPerlPackage {
     pname = "Catalyst-Plugin-Static-Simple";
-    version = "0.36";
+    version = "0.37";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/I/IL/ILMARI/Catalyst-Plugin-Static-Simple-0.36.tar.gz";
-      sha256 = "0m4l627p2fvzr4i6sgdxhdvsx4wpa6qmaibsbxlg5x5yjs7k7drn";
+      url = "mirror://cpan/authors/id/I/IL/ILMARI/Catalyst-Plugin-Static-Simple-0.37.tar.gz";
+      sha256 = "sha256-Wk2Fo1iM1Og/GwAlgUEufXG31X9mBW5dh6Nvk9icnnw=";
     };
     patches = [ ../development/perl-modules/catalyst-plugin-static-simple-etag.patch ];
     propagatedBuildInputs = [ CatalystRuntime MIMETypes MooseXTypes ];
