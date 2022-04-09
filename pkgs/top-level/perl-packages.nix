@@ -21769,10 +21769,10 @@ let
 
   TestFile = buildPerlPackage {
     pname = "Test-File";
-    version = "1.443";
+    version = "1.992";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-File-1.443.tar.gz";
-      sha256 = "61b4a6ab8f617c8c7b5975164cf619468dc304b6baaaea3527829286fa58bcd5";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-File-1.992.tar.gz";
+      sha256 = "sha256-d8V8R6QN8R5V0yZGCHA6eVc/kJtvmJ7xodF/kWVoD3c=";
     };
     buildInputs = [ Testutf8 ];
     meta = {
