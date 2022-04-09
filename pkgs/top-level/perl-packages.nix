@@ -5499,10 +5499,10 @@ let
 
   DataValidateIP = buildPerlPackage {
     pname = "Data-Validate-IP";
-    version = "0.27";
+    version = "0.30";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.27.tar.gz";
-      sha256 = "e1aa92235dcb9c6fd9b6c8cda184d1af73537cc77f4f83a0f88207a8bfbfb7d6";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Data-Validate-IP-0.30.tar.gz";
+      sha256 = "sha256-/i92Y+GLcNVRBSnCL0X90rvbSlrbJtZckFDFuWluihw=";
     };
     buildInputs = [ TestRequires ];
     propagatedBuildInputs = [ NetAddrIP ];
