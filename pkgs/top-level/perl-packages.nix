@@ -21949,10 +21949,10 @@ let
 
   TestLeakTrace = buildPerlPackage {
     pname = "Test-LeakTrace";
-    version = "0.16";
+    version = "0.17";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEEJO/Test-LeakTrace-0.16.tar.gz";
-      sha256 = "00z4hcjra5nk700f3fgpy8fs036d7ry7glpn8g3wh7jzj7nrw22z";
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/Test-LeakTrace-0.17.tar.gz";
+      sha256 = "sha256-d31k0pOPXqWGMA7vl+8D6stD1MGFPJw7EJHrMxFGeXA=";
     };
     meta = {
       description = "Traces memory leaks";
