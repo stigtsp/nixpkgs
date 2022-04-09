@@ -3256,10 +3256,10 @@ let
 
   ClassObservable = buildPerlPackage {
     pname = "Class-Observable";
-    version = "1.04";
+    version = "2.000";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/C/CW/CWINTERS/Class-Observable-1.04.tar.gz";
-      sha256 = "3ef18733a0f03c113f3bcf8ac50476e09ca1fe6234f4aaacaa24dfca95168094";
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/Class-Observable-2.000.tar.gz";
+      sha256 = "sha256-kDMB40DDeV/PB+0FmPaR5KmkLNr0YEPwBXx7ChvX8X4=";
     };
     propagatedBuildInputs = [ ClassISA ];
   };
