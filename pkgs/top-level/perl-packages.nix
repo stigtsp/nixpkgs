@@ -18208,10 +18208,10 @@ let
 
   PLS = buildPerlPackage {
     pname = "PLS";
-    version = "0.897";
+    version = "0.899";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MR/MREISNER/PLS-0.897.tar.gz";
-      sha256 = "0278anidj7bgassj32g20cbki2kkqakkr3axyq4k90nj4snw7p6x";
+      url = "mirror://cpan/authors/id/M/MR/MREISNER/PLS-0.899.tar.gz";
+      sha256 = "sha256-d7aRQweet2ARZxZrHseEev1oZxJw1ELeiZnSg5NVKOM=";
     };
     propagatedBuildInputs = [ Future IOAsync PPI PPR PathTiny PerlCritic PerlTidy PodMarkdown URI ];
     nativeBuildInputs = lib.optional stdenv.isDarwin shortenPerlShebang;
