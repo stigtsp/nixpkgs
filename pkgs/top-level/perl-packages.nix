@@ -5203,10 +5203,10 @@ let
 
   DataOptList = buildPerlPackage {
     pname = "Data-OptList";
-    version = "0.110";
+    version = "0.112";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Data-OptList-0.110.tar.gz";
-      sha256 = "1hzmgr2imdg1fc3hmwx0d56fhsdfyrgmgx7jb4jkyiv6575ifq9n";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Data-OptList-0.112.tar.gz";
+      sha256 = "sha256-YsYMyq6I1TOa42vMiUCwM4jPhK2/J4KLH4swAwcQO6s=";
     };
     propagatedBuildInputs = [ ParamsUtil SubInstall ];
     meta = {
