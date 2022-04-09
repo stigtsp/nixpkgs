@@ -14413,10 +14413,10 @@ let
 
   ModuleScanDeps = buildPerlPackage {
     pname = "Module-ScanDeps";
-    version = "1.29";
+    version = "1.31";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RS/RSCHUPP/Module-ScanDeps-1.29.tar.gz";
-      sha256 = "0kl8p0006j52vq4bd59fyv7pm3yyv0h7pwaalrkn4brs6n8wxc7f";
+      url = "mirror://cpan/authors/id/R/RS/RSCHUPP/Module-ScanDeps-1.31.tar.gz";
+      sha256 = "sha256-/E2Y0rABV0XztVtR3fREWnOwaa0Mt+w22Op4HWEHTZ0=";
     };
     buildInputs = [ TestRequires ];
     meta = {
