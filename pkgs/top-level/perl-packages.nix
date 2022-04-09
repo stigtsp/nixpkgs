@@ -7859,10 +7859,10 @@ let
 
   ExceptionClass = buildPerlPackage {
     pname = "Exception-Class";
-    version = "1.44";
+    version = "1.45";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Exception-Class-1.44.tar.gz";
-      sha256 = "03gf4cdgrjnljgrlxkvbh2cahsyzn0zsh2zcli7b1lrqn7wgpwrk";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Exception-Class-1.45.tar.gz";
+      sha256 = "sha256-VIKnfvAnyh+fOeH0jFWDVulUk2/I+73ubIEcUScBskk=";
     };
     propagatedBuildInputs = [ ClassDataInheritable DevelStackTrace ];
   };
