@@ -1693,10 +1693,10 @@ let
 
   BusinessISSN = buildPerlPackage {
     pname = "Business-ISSN";
-    version = "1.004";
+    version = "1.005";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Business-ISSN-1.004.tar.gz";
-      sha256 = "97ecab15d24d11e2852bf0b28f84c8798bd38402a0a69e17be0e6689b272715e";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Business-ISSN-1.005.tar.gz";
+      sha256 = "sha256-OwmwJn8KZmD7krb1DEx3lu9qJjtirTu+qgcYmgx8ObM=";
     };
     meta = {
       description = "Work with International Standard Serial Numbers";
