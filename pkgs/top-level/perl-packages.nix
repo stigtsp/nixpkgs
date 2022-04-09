@@ -4971,10 +4971,10 @@ let
 
   CryptX509 = buildPerlPackage {
     pname = "Crypt-X509";
-    version = "0.53";
+    version = "0.54";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MR/MRSCOTTY/Crypt-X509-0.53.tar.gz";
-      sha256 = "d2ff614f9457dc87ab277b81bced3532c3ed309b73b9a61aaefbe9488c9e660f";
+      url = "mirror://cpan/authors/id/M/MR/MRSCOTTY/Crypt-X509-0.54.tar.gz";
+      sha256 = "sha256-KW0BiQcW33HazRyCevRbz5LAxbrrF+mX670SeRYLlyg=";
     };
     propagatedBuildInputs = [ ConvertASN1 ];
     meta = {
