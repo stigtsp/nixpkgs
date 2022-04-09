@@ -16884,10 +16884,10 @@ let
 
   NumberFraction = buildPerlModule {
     pname = "Number-Fraction";
-    version = "3.0.3";
+    version = "3.0.4";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DA/DAVECROSS/Number-Fraction-v3.0.3.tar.gz";
-      sha256 = "1vqhd6ngrxhfykf4qz358divjhcnp9v688fp3zi6n5757x1sl01v";
+      url = "mirror://cpan/authors/id/D/DA/DAVECROSS/Number-Fraction-v3.0.4.tar.gz";
+      sha256 = "sha256-xkGcird4/XKbENfmp487ewf8CJV8H3nlZm3Ny01iwIU=";
     };
     propagatedBuildInputs = [ Moo MooXTypesMooseLike ];
     meta = {
