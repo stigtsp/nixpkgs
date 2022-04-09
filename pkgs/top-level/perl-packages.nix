@@ -6256,11 +6256,11 @@ let
 
   DBFile = buildPerlPackage {
     pname = "DB_File";
-    version = "1.855";
+    version = "1.857";
 
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PM/PMQS/DB_File-1.855.tar.gz";
-      sha256 = "0q599h7g4jkzks5dxf1zifx9k7l9vif26r2dlgkzxkg6bfif5zyr";
+      url = "mirror://cpan/authors/id/P/PM/PMQS/DB_File-1.857.tar.gz";
+      sha256 = "sha256-dSjq7knM094mjZNYImxsdhfQ19h4b8wx10AsVNVwo5Q=";
     };
 
     preConfigure = ''
