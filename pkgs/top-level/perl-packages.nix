@@ -9459,10 +9459,10 @@ let
 
   Gnome2VFS = buildPerlPackage {
     pname = "Gnome2-VFS";
-    version = "1.083";
+    version = "1.084";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/X/XA/XAOC/Gnome2-VFS-1.083.tar.gz";
-      sha256 = "eca974669df4e7f21b4fcedb96c8a328422369c68b8c2cd99b9ce9cc5d7a7979";
+      url = "mirror://cpan/authors/id/X/XA/XAOC/Gnome2-VFS-1.084.tar.gz";
+      sha256 = "sha256-PI2Mlca2XCN9ueiJx57bK7gIvzfAhKvfu9mFn+93h8w=";
     };
     propagatedBuildInputs = [ pkgs.gnome2.gnome_vfs Glib ];
     meta = {
