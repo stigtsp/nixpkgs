@@ -24018,10 +24018,10 @@ let
 
   TreeDAGNode = buildPerlPackage {
     pname = "Tree-DAG_Node";
-    version = "1.31";
+    version = "1.32";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-1.31.tgz";
-      sha256 = "016kr76azxzfcpxjkhqp2piyyl6529shjis20mc3g2snfabsd2qw";
+      url = "mirror://cpan/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-1.32.tgz";
+      sha256 = "sha256-ItnePW5vSv2J5tglxmT5SCh4vUninLgTQqcHr0BULT0=";
     };
     meta = {
       description = "An N-ary tree";
