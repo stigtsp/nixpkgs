@@ -15802,10 +15802,10 @@ let
 
   MooseXTypesURI = buildPerlModule {
     pname = "MooseX-Types-URI";
-    version = "0.08";
+    version = "0.09";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETHER/MooseX-Types-URI-0.08.tar.gz";
-      sha256 = "d310d20fa361fe2dff758236df87949cc7bf98e5cf3a7c79115365eccde6ccc1";
+      url = "mirror://cpan/authors/id/E/ET/ETHER/MooseX-Types-URI-0.09.tar.gz";
+      sha256 = "sha256-Jxd1Ta25EIbhHSH+oGy6qaEuYBtB0VRDFQ7dfZUI7+g=";
     };
     buildInputs = [ ModuleBuildTiny TestSimple13 ];
     propagatedBuildInputs = [ MooseXTypesPathClass URIFromHash ];
