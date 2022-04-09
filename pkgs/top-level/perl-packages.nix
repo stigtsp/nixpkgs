@@ -570,10 +570,10 @@ let
 
   ApacheAuthCookie = buildPerlPackage {
     pname = "Apache-AuthCookie";
-    version = "3.30";
+    version = "3.31";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MS/MSCHOUT/Apache-AuthCookie-3.30.tar.gz";
-      sha256 = "1f71b94d3d55a950a4b32dae4e90f6e76c8157508a7e2aee50621b179aadb1fb";
+      url = "mirror://cpan/authors/id/M/MS/MSCHOUT/Apache-AuthCookie-3.31.tar.gz";
+      sha256 = "sha256-ByhnLrmLzWZSWWenXXxNYXwLTEEWIBOsmkzv5G99/3w=";
     };
     buildInputs = [ ApacheTest ];
     propagatedBuildInputs = [ ClassLoad HTTPBody HashMultiValue WWWFormUrlEncoded ];
