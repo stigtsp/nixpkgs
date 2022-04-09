@@ -23205,10 +23205,10 @@ let
 
   TestManifest = buildPerlPackage {
     pname = "Test-Manifest";
-    version = "2.021";
+    version = "2.023";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-Manifest-2.021.tar.gz";
-      sha256 = "a47aaad71c580e16e6e63d8c037cdddcd919876754beb2c95d9a88682dd332d9";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-Manifest-2.023.tar.gz";
+      sha256 = "sha256-0k5SVT58uc2oH5L/6MkrPkNGcY5HEIAaWzW38lGnceI=";
     };
     meta = {
       description = "Interact with a t/test_manifest file";
