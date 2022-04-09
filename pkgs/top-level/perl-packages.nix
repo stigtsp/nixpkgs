@@ -20423,10 +20423,10 @@ let
 
   SubExporterForMethods = buildPerlPackage {
     pname = "Sub-Exporter-ForMethods";
-    version = "0.100052";
+    version = "0.100054";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-ForMethods-0.100052.tar.gz";
-      sha256 = "421fbba4f6ffcf13c4335f2c20630d709e6fa659c07545d094dbc5a558ad3006";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-ForMethods-0.100054.tar.gz";
+      sha256 = "sha256-7vYclCFoi7OnvqynFiPfEcinSTB65Cir2rxVbiv6/D4=";
     };
     buildInputs = [ namespaceautoclean ];
     propagatedBuildInputs = [ SubExporter SubName ];
