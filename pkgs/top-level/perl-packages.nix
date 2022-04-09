@@ -12622,10 +12622,10 @@ let
 
   LogDispatchFileRotate = buildPerlPackage {
     pname = "Log-Dispatch-FileRotate";
-    version = "1.36";
+    version = "1.38";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MS/MSCHOUT/Log-Dispatch-FileRotate-1.36.tar.gz";
-      sha256 = "0vlmi17p7fky3x58rs7r5mdxi6l5jla8zhlb55kvssxc1w5v2b27";
+      url = "mirror://cpan/authors/id/M/MS/MSCHOUT/Log-Dispatch-FileRotate-1.38.tar.gz";
+      sha256 = "sha256-tV1s7ePwoGQmSI+/pVT0VhMgsBTBAjiTztKVCOW85Ow=";
     };
     propagatedBuildInputs = [ DateManip LogDispatch ];
     meta = {
