@@ -8911,10 +8911,10 @@ let
 
   FileTouch = buildPerlPackage {
     pname = "File-Touch";
-    version = "0.11";
+    version = "0.12";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/File-Touch-0.11.tar.gz";
-      sha256 = "e379a5ff89420cf39906e5ceff309b8ce958f99f9c3e57ad52b5002a3982d93c";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/File-Touch-0.12.tar.gz";
+      sha256 = "sha256-KgTcQk30jpjFRVbGBFyrAmpJ43N6qUohz0l3YbDy5Zw=";
     };
     meta = {
       homepage = "https://github.com/neilb/File-Touch";
