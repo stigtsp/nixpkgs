@@ -5773,10 +5773,10 @@ let
 
   DateTimeFormatPg = buildPerlModule {
     pname = "DateTime-Format-Pg";
-    version = "0.16013";
+    version = "0.16014";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DM/DMAKI/DateTime-Format-Pg-0.16013.tar.gz";
-      sha256 = "16siw0f3a0ilzv5fnfas5s9n92drjy271yf6qvmmpm0vwnjjx1kz";
+      url = "mirror://cpan/authors/id/D/DM/DMAKI/DateTime-Format-Pg-0.16014.tar.gz";
+      sha256 = "sha256-OLuWZlJNw4TDNm9jQsuWVsULrA+XFqPUTxz1Usy+Drk=";
     };
     propagatedBuildInputs = [ DateTimeFormatBuilder ];
     meta = {
