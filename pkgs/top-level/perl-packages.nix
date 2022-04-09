@@ -20226,10 +20226,10 @@ let
 
   StringInterpolateNamed = buildPerlPackage {
     pname = "String-Interpolate-Named";
-    version = "1.00";
+    version = "1.03";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/J/JV/JV/String-Interpolate-Named-1.00.tar.gz";
-      sha256 = "727299fa69258b604770e059ec4da906bfde71861fdd1e3e89e30677371c5a80";
+      url = "mirror://cpan/authors/id/J/JV/JV/String-Interpolate-Named-1.03.tar.gz";
+      sha256 = "sha256-on13VgcnX2jtkqQT85SsAJLn3hzZPWJHnUf7pwF6Jtw=";
     };
     meta = {
       description = "Interpolated named arguments in string";
