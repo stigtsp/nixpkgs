@@ -13897,10 +13897,10 @@ let
 
   MixinLinewise = buildPerlPackage {
     pname = "Mixin-Linewise";
-    version = "0.108";
+    version = "0.110";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Mixin-Linewise-0.108.tar.gz";
-      sha256 = "7df20678474c0973930a472b0c55e3f8e85b7790b68ab18ef618f9c453c8aef2";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Mixin-Linewise-0.110.tar.gz";
+      sha256 = "sha256-p/Egt6qC37GlrRqhGr0zIysmorCcZU5knpejwhKLHYs=";
     };
     propagatedBuildInputs = [ PerlIOutf8_strict SubExporter ];
     meta = {
