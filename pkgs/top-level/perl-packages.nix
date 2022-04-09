@@ -11525,10 +11525,10 @@ let
 
   InlineC = buildPerlPackage {
     pname = "Inline-C";
-    version = "0.81";
+    version = "0.82";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/T/TI/TINITA/Inline-C-0.81.tar.gz";
-      sha256 = "f185258d9050d7f79b4f00f12625cc469c2f700ff62d3e831cb18d80d2c87aac";
+      url = "mirror://cpan/authors/id/E/ET/ETJ/Inline-C-0.82.tar.gz";
+      sha256 = "sha256-EPvPHhWNHI134d2TTjeRZbEmpFwTZFrQvp3AfRUd0Mw=";
     };
     buildInputs = [ FileCopyRecursive TestWarn YAMLLibYAML ];
     propagatedBuildInputs = [ Inline ParseRecDescent Pegex ];
