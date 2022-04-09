@@ -20248,10 +20248,10 @@ let
 
   StringRandom = buildPerlModule {
     pname = "String-Random";
-    version = "0.31";
+    version = "0.32";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/String-Random-0.31.tar.gz";
-      sha256 = "0p4pmf3k6c01j8clfx54167rva9mf82bkh9aj5qdrix2cgpd2jjb";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/String-Random-0.32.tar.gz";
+      sha256 = "sha256-nZPGeaNP+ibTtPoIN8rtHNLmfXZXKBi5HpfepzRwUkY=";
     };
   };
 
