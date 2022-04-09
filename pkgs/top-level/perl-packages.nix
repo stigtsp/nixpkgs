@@ -10995,10 +10995,10 @@ let
 
   IO = buildPerlPackage {
     pname = "IO";
-    version = "1.42";
+    version = "1.48";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/T/TO/TODDR/IO-1.42.tar.gz";
-      sha256 = "eec5cc33a6cddba8b5d2425b60752882add7e4d41b7431a0ea4dcd73cc1f8cca";
+      url = "mirror://cpan/authors/id/T/TO/TODDR/IO-1.48.tar.gz";
+      sha256 = "sha256-wnG1GOKLqbyVvAgktonbjjUAYhnrLAPx7Dlb0IklNlg=";
     };
     doCheck = false;
     meta = {
