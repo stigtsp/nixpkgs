@@ -17771,10 +17771,10 @@ let
 
   PerlCriticCommunity = buildPerlModule {
     pname = "Perl-Critic-Community";
-    version = "1.0.0";
+    version = "1.0.2";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DB/DBOOK/Perl-Critic-Community-v1.0.0.tar.gz";
-      sha256 = "311b775da4193e9de94cf5225e993cc54dd096ae1e7ef60738cdae1d9b8854e7";
+      url = "mirror://cpan/authors/id/D/DB/DBOOK/Perl-Critic-Community-v1.0.2.tar.gz";
+      sha256 = "sha256-rr5lIDjyucQT6gsgh63IndLompTItGQMDZt8g7w01t0=";
     };
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ PPI PathTiny PerlCritic PerlCriticPolicyVariablesProhibitLoopOnHash PerlCriticPulp ];
