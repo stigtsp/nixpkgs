@@ -6669,10 +6669,10 @@ let
 
   DevelNYTProf = buildPerlPackage {
     pname = "Devel-NYTProf";
-    version = "6.10";
+    version = "6.11";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/J/JK/JKEENAN/Devel-NYTProf-6.10.tar.gz";
-      sha256 = "24ac4174f1f01322063fa4e119b247d371d3260ddca6e778c6c1a0e3f905f58e";
+      url = "mirror://cpan/authors/id/J/JK/JKEENAN/Devel-NYTProf-6.11.tar.gz";
+      sha256 = "sha256-ux6yBlp4UlfgProvAasnrxS6P6dQxf0Kp6a5ekZKxe4=";
     };
     propagatedBuildInputs = [ FileWhich JSONMaybeXS ];
     meta = {
