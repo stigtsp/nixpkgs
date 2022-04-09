@@ -18468,10 +18468,10 @@ let
 
   PrometheusTinyShared = buildPerlPackage {
     pname = "Prometheus-Tiny-Shared";
-    version = "0.024";
+    version = "0.026";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RO/ROBN/Prometheus-Tiny-Shared-0.024.tar.gz";
-      sha256 = "02w24r4amk8dqlavg6abxap48hzxrbda48f1pmrqypgx1cz59g4g";
+      url = "mirror://cpan/authors/id/R/RO/ROBN/Prometheus-Tiny-Shared-0.026.tar.gz";
+      sha256 = "sha256-IUJjzVazIa0q4NxSlJnkDOHrJsH8I5uLkJg2x6DrYLg=";
     };
     buildInputs = [ DataRandom HTTPMessage Plack TestDifferences TestException ];
     propagatedBuildInputs = [ HashSharedMem JSONXS PrometheusTiny ];
