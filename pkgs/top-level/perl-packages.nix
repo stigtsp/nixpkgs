@@ -19189,10 +19189,10 @@ let
 
   RESTClient = buildPerlPackage {
     pname = "REST-Client";
-    version = "273";
+    version = "281";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/K/KK/KKANE/REST-Client-273.tar.gz";
-      sha256 = "a8652a2214308faff2c68be5ce64c904dcccc5e86be7f32376c1590869d01844";
+      url = "mirror://cpan/authors/id/A/AK/AKHUETTEL/REST-Client-281.tar.gz";
+      sha256 = "sha256-+hDSGgA35oJgHv5mc4p1j/dSEJSqASKek8iIpnmyyPY=";
     };
     propagatedBuildInputs = [ LWPProtocolHttps ];
     meta = {
