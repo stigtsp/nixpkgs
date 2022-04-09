@@ -687,10 +687,10 @@ let
 
   AppCmd = buildPerlPackage {
     pname = "App-Cmd";
-    version = "0.331";
+    version = "0.334";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/App-Cmd-0.331.tar.gz";
-      sha256 = "4a5d3df0006bd278880d01f4957aaa652a8f91fe8f66e93adf70fba0c3ecb680";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/App-Cmd-0.334.tar.gz";
+      sha256 = "sha256-IuMeD497jEMDrWKwqx+UH89ZjKbjoUa35ILlhw1tWNM=";
     };
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ CaptureTiny ClassLoad GetoptLongDescriptive IOTieCombine ModulePluggable StringRewritePrefix ];
