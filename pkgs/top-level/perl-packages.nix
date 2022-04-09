@@ -11261,10 +11261,10 @@ let
 
   IOSocketSSL = buildPerlPackage {
     pname = "IO-Socket-SSL";
-    version = "2.068";
+    version = "2.074";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SU/SULLR/IO-Socket-SSL-2.068.tar.gz";
-      sha256 = "4420fc0056f1827b4dd1245eacca0da56e2182b4ef6fc078f107dc43c3fb8ff9";
+      url = "mirror://cpan/authors/id/S/SU/SULLR/IO-Socket-SSL-2.074.tar.gz";
+      sha256 = "sha256-Nkhra+SdpNApgZz3Bpp7Qe1IrwyH4jvg+Oaroj0IqDI=";
     };
     propagatedBuildInputs = [ MozillaCA NetSSLeay ];
     # Fix path to default certificate store.
