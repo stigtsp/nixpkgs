@@ -23699,10 +23699,10 @@ let
 
   TieCycle = buildPerlPackage {
     pname = "Tie-Cycle";
-    version = "1.225";
+    version = "1.227";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Tie-Cycle-1.225.tar.gz";
-      sha256 = "0i9xq2qm50p2ih24265jndp2x8hfq7ap0d88nrlv5yaad4hxhc7k";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Tie-Cycle-1.227.tar.gz";
+      sha256 = "sha256-eDgzV5HnGjszuKGd4wUpSeGJCkgj3vY5eCPJkiL6Hdg=";
     };
     meta = {
       description = "Cycle through a list of values via a scalar";
