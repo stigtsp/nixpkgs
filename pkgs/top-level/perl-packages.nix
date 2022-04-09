@@ -21300,10 +21300,10 @@ let
 
   Test2Harness = buildPerlPackage {
     pname = "Test2-Harness";
-    version = "1.000042";
+    version = "1.000124";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/EX/EXODIST/Test2-Harness-1.000042.tar.gz";
-      sha256 = "aaf231a68af1a6ffd6a11188875fcf572e373e43c8285945227b9d687b43db2d";
+      url = "mirror://cpan/authors/id/E/EX/EXODIST/Test2-Harness-1.000124.tar.gz";
+      sha256 = "sha256-Uf9t8DQ76bjUbpEtOFC3iA9tNP1L/JbQA1eWGZGVdr0=";
     };
 
     checkPhase = ''
