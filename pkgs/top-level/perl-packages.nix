@@ -8970,10 +8970,10 @@ let
 
   FileWhich = buildPerlPackage {
     pname = "File-Which";
-    version = "1.23";
+    version = "1.27";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PL/PLICEASE/File-Which-1.23.tar.gz";
-      sha256 = "b79dc2244b2d97b6f27167fc3b7799ef61a179040f3abd76ce1e0a3b0bc4e078";
+      url = "mirror://cpan/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz";
+      sha256 = "sha256-MgHxpg4/FkhAguYEXIloQiYfw0Xen7LmIP0qLHrzqTo=";
     };
     meta = {
       homepage = "https://metacpan.org/release/File-Which";
