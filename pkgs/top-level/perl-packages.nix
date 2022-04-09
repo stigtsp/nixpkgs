@@ -7932,10 +7932,10 @@ let
 
   ExtUtilsCBuilder = buildPerlPackage {
     pname = "ExtUtils-CBuilder";
-    version = "0.280234";
+    version = "0.280236";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/A/AM/AMBS/ExtUtils-CBuilder-0.280234.tar.gz";
-      sha256 = "1hzixkg85mys94a2i658pdr28xhzyrisvknsps691d183zm9a06q";
+      url = "mirror://cpan/authors/id/A/AM/AMBS/ExtUtils-CBuilder-0.280236.tar.gz";
+      sha256 = "sha256-q8IYJ+uKUTFxv3/ezvzplFEyy3bblFA2UYKR9gexSR8=";
     };
     meta = {
       description = "Compile and link C code for Perl modules";
