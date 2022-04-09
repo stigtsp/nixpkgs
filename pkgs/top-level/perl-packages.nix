@@ -6235,11 +6235,11 @@ let
 
   DBDsybase = buildPerlPackage {
     pname = "DBD-Sybase";
-    version = "1.16";
+    version = "1.19";
 
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/ME/MEWP/DBD-Sybase-1.16.tar.gz";
-      sha256 = "1k6n261nrrcll9wxn5xwi4ibpavqv1il96687k62mbpznzl2gx37";
+      url = "mirror://cpan/authors/id/M/ME/MEWP/DBD-Sybase-1.19.tar.gz";
+      sha256 = "sha256-Hu6oPFBdCn+QC5UrZgKuM9Fk/XIB0cmo3Mxzu4xqhYU=";
     };
 
     SYBASE = pkgs.freetds;
