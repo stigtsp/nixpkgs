@@ -17112,10 +17112,10 @@ let
 
   NetOpenSSH = buildPerlPackage {
     pname = "Net-OpenSSH";
-    version = "0.80";
+    version = "0.82";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SA/SALVA/Net-OpenSSH-0.80.tar.gz";
-      sha256 = "1cxfipxfmgzfwpn1i0gf39gbrr56i2aqb0i9593n3czjgmjr7q7y";
+      url = "mirror://cpan/authors/id/S/SA/SALVA/Net-OpenSSH-0.82.tar.gz";
+      sha256 = "sha256-1BqiTdU0ZnUyCfWmfGOS5vP6WZcJFpNCy8xfSHHZfoM=";
     };
     meta = {
       description = "Perl SSH client package implemented on top of OpenSSH";
