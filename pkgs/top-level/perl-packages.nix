@@ -7328,10 +7328,10 @@ let
 
   Dumbbench = buildPerlPackage {
     pname = "Dumbbench";
-    version = "0.111";
+    version = "0.501";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Dumbbench-0.111.tar.gz";
-      sha256 = "1ixjb9y9d0k1vd4mzbi4sgvr99ay4z9jkgychf0r5gbjsskkq7fk";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Dumbbench-0.501.tar.gz";
+      sha256 = "sha256-CWkPXx4Bcow5ZRAH3XSe+vY6yPLsMb4d2NoMZkGhUjg=";
     };
     propagatedBuildInputs = [ CaptureTiny ClassXSAccessor DevelCheckOS NumberWithError StatisticsCaseResampling ];
     meta = {
