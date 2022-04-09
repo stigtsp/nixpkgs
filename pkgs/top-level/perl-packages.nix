@@ -3667,10 +3667,10 @@ let
 
   ConfigINI = buildPerlPackage {
     pname = "Config-INI";
-    version = "0.025";
+    version = "0.027";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Config-INI-0.025.tar.gz";
-      sha256 = "628bf76d5b91f89dde22d4813ec033026ebf71b772bb61ccda909da00c869732";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Config-INI-0.027.tar.gz";
+      sha256 = "sha256-EuuLfUOrE9tEOzxxEMi3CiZMGfeP8Gq4gj4R+GpPMw4=";
     };
     propagatedBuildInputs = [ MixinLinewise ];
     meta = {
