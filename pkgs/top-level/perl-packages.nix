@@ -20377,10 +20377,10 @@ let
 
   StringUtil = buildPerlModule {
     pname = "String-Util";
-    version = "1.31";
+    version = "1.32";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BA/BAKERSCOT/String-Util-1.31.tar.gz";
-      sha256 = "0vfjvy04y71f8jsjg0yll28wqlpgn7gbkcrb0i72k0qcliz9mg7v";
+      url = "mirror://cpan/authors/id/B/BA/BAKERSCOT/String-Util-1.32.tar.gz";
+      sha256 = "sha256-TymZKjoB/JHLHDZuhap8SVF2IBeyA2UPwzwubqLZlP8=";
     };
     meta = {
       description = "String::Util -- String processing utilities";
