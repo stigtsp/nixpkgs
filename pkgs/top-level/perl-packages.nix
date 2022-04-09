@@ -23177,10 +23177,10 @@ let
 
   TextLayout = buildPerlPackage {
     pname = "Text-Layout";
-    version = "0.019";
+    version = "0.029";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/J/JV/JV/Text-Layout-0.019.tar.gz";
-      sha256 = "a043f2a89e113b29c523a9efa71fa8398ed75edd482193901b38d08dd4a4108e";
+      url = "mirror://cpan/authors/id/J/JV/JV/Text-Layout-0.029.tar.gz";
+      sha256 = "sha256-1x0eDsxjwjk7zhDbLv11uPMzYv1YgGohAUM+qy/EWMs=";
     };
     buildInputs = [ PDFAPI2 ];
     meta = {
