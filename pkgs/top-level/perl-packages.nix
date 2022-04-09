@@ -1746,10 +1746,10 @@ let
 
   CacheFastMmap = buildPerlPackage {
     pname = "Cache-FastMmap";
-    version = "1.54";
+    version = "1.57";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RO/ROBM/Cache-FastMmap-1.54.tar.gz";
-      sha256 = "0lkrsr582h714jpmh5dv4szz5f7rm466xqxbavj7l9w0p40f4him";
+      url = "mirror://cpan/authors/id/R/RO/ROBM/Cache-FastMmap-1.57.tar.gz";
+      sha256 = "sha256-4Es6KNmJ7bj7lur6zcK4f57MuE8EfrLifLJqp9CMx7g=";
     };
     buildInputs = [ TestDeep ];
   };
