@@ -752,10 +752,10 @@ let
 
   Appcpm = buildPerlModule {
     pname = "App-cpm";
-    version = "0.997006";
+    version = "0.997009";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SK/SKAJI/App-cpm-0.997006.tar.gz";
-      sha256 = "1mh4bg141qbch0vdvir2l9533zzm3k8hnqx36iwciwzhvpd9hl9s";
+      url = "mirror://cpan/authors/id/S/SK/SKAJI/App-cpm-0.997009.tar.gz";
+      sha256 = "sha256-eyJ5Wk7IZur4HbtmtosE30iBz8pPTw+CRYnzCDueVaY=";
     };
     buildInputs = [ ModuleBuildTiny ];
     propagatedBuildInputs = [ CPAN02PackagesSearch CPANCommonIndex CPANDistnameInfo ClassTiny CommandRunner ExtUtilsInstall ExtUtilsInstallPaths FileCopyRecursive Filepushd HTTPTinyish MenloLegacy Modulecpmfile ModuleCPANfile ParsePMFile ParallelPipes locallib ];
