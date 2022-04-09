@@ -12746,10 +12746,10 @@ let
 
   LogDispatchouli = buildPerlPackage {
     pname = "Log-Dispatchouli";
-    version = "2.022";
+    version = "2.023";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Log-Dispatchouli-2.022.tar.gz";
-      sha256 = "2a2a4176adafb85a1eb9c9dc389052919e8c2c9df99aaba538c06b8da964a5df";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Log-Dispatchouli-2.023.tar.gz";
+      sha256 = "sha256-xKxBuXKbcUOWgrNN0ncrBAta254aYR0wMiwB9GCODPI=";
     };
     buildInputs = [ TestDeep TestFatal ];
     propagatedBuildInputs = [ LogDispatchArray StringFlogger SubExporterGlobExporter ];
