@@ -8619,10 +8619,10 @@ let
 
   FileLoadLines = buildPerlPackage {
     pname = "File-LoadLines";
-    version = "1.01";
+    version = "1.021";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/J/JV/JV/File-LoadLines-1.01.tar.gz";
-      sha256 = "1lar8s1mc4d36lhxgqyk3hpwdc1bk6j6dfdzzacbjz4zlim6x33f";
+      url = "mirror://cpan/authors/id/J/JV/JV/File-LoadLines-1.021.tar.gz";
+      sha256 = "sha256-mOQS98aSYRNPNLh4W926sxVrj0UlU9u1tWytaDuG//A=";
     };
     buildInputs = [ TestException ];
     meta = {
