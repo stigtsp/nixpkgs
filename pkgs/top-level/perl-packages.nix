@@ -990,10 +990,10 @@ let
 
   ArchiveTar = buildPerlPackage {
     pname = "Archive-Tar";
-    version = "2.38";
+    version = "2.40";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BI/BINGOS/Archive-Tar-2.38.tar.gz";
-      sha256 = "c5e48f53514288185830ced93bf3e16fbdf5cddce97ded1d1d8a9b0a21ea287b";
+      url = "mirror://cpan/authors/id/B/BI/BINGOS/Archive-Tar-2.40.tar.gz";
+      sha256 = "sha256-LT41fWqZT6afeynXgkZNCm4CrGYAg35UdPp3Dd68lUE=";
     };
     meta = {
       description = "Manipulates TAR archives";
