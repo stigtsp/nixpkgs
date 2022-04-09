@@ -10306,10 +10306,10 @@ let
 
   HTMLSelectorXPath = buildPerlPackage {
     pname = "HTML-Selector-XPath";
-    version = "0.25";
+    version = "0.26";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/C/CO/CORION/HTML-Selector-XPath-0.25.tar.gz";
-      sha256 = "1qbad8ayffpx7wj76ip05p6rh9p1lkir6qknpl76zy679ghlsp8s";
+      url = "mirror://cpan/authors/id/C/CO/CORION/HTML-Selector-XPath-0.26.tar.gz";
+      sha256 = "sha256-PfgKgShNHjddnR9v7BbpbDGywwlFG0uoLl/R2yOsHyQ=";
     };
     buildInputs = [ TestBase ];
   };
