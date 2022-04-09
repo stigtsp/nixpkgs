@@ -13834,10 +13834,10 @@ let
 
   MIMETypes = buildPerlPackage {
     pname = "MIME-Types";
-    version = "2.18";
+    version = "2.22";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MA/MARKOV/MIME-Types-2.18.tar.gz";
-      sha256 = "1glml03gyj5xkadn3vcxzm06bvi343j1jg6ksz69is9a3yj3bjii";
+      url = "mirror://cpan/authors/id/M/MA/MARKOV/MIME-Types-2.22.tar.gz";
+      sha256 = "sha256-wlReswsJTpQoYP+ERPD2y1RkHKqPfThqqi2SXaSwJAA=";
     };
     meta = {
       description = "Definition of MIME types";
