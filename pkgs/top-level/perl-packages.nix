@@ -8478,10 +8478,10 @@ let
 
   FileFindRulePerl = buildPerlPackage {
     pname = "File-Find-Rule-Perl";
-    version = "1.15";
+    version = "1.16";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETHER/File-Find-Rule-Perl-1.15.tar.gz";
-      sha256 = "9a48433f86e08ce18e03526e2982de52162eb909d19735460f07eefcaf463ea6";
+      url = "mirror://cpan/authors/id/E/ET/ETHER/File-Find-Rule-Perl-1.16.tar.gz";
+      sha256 = "sha256-rhiGBQ2cohIjwHPihwq9yA3DDj9VKJoRw32jggqDIf8=";
     };
     propagatedBuildInputs = [ FileFindRule ParamsUtil ];
     meta = {
