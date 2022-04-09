@@ -16256,10 +16256,10 @@ let
 
   NetDNS = buildPerlPackage {
     pname = "Net-DNS";
-    version = "1.29";
+    version = "1.33";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NL/NLNETLABS/Net-DNS-1.29.tar.gz";
-      sha256 = "1ia35l9bdnwic6fb5knkvn6bl939np5q2r824d1023cggvl6wbc5";
+      url = "mirror://cpan/authors/id/N/NL/NLNETLABS/Net-DNS-1.33.tar.gz";
+      sha256 = "sha256-WkDnz1JOS9LDPPA7grR9Uwi3Egg6pe4YCwta9Uxx+9I=";
     };
     propagatedBuildInputs = [ DigestHMAC ];
     makeMakerFlags = "--noonline-tests";
