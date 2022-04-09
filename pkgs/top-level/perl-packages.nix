@@ -16184,10 +16184,10 @@ let
 
   NetCIDR = buildPerlPackage {
     pname = "Net-CIDR";
-    version = "0.20";
+    version = "0.21";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MR/MRSAM/Net-CIDR-0.20.tar.gz";
-      sha256 = "c75edc6818bb360d71c139169fd64ad65c35fff6d2b9fac7b9f9e6c467f187b5";
+      url = "mirror://cpan/authors/id/M/MR/MRSAM/Net-CIDR-0.21.tar.gz";
+      sha256 = "sha256-MPMDwHNZSNozNw3sx+h8+mi8QwqkS4HRj42CO20av78=";
     };
     meta = {
       description = "Manipulate IPv4/IPv6 netblocks in CIDR notation";
