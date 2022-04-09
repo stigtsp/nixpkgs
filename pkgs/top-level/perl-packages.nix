@@ -4512,10 +4512,10 @@ let
 
   CryptRandom = buildPerlPackage rec {
     pname = "Crypt-Random";
-    version = "1.52";
+    version = "1.54";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/V/VI/VIPUL/Crypt-Random-1.52.tar.gz";
-      sha256 = "a93c06de409e6f2eb2e9868ea6d4e653d99f2f7900b2c1831e1f65ace0c4ef84";
+      url = "mirror://cpan/authors/id/V/VI/VIPUL/Crypt-Random-1.54.tar.gz";
+      sha256 = "sha256-1m+OF+3Dh3zHl/3VneU045kGNvjxpecmBiFZr35n2sw=";
     };
     propagatedBuildInputs = [ ClassLoader MathPari StatisticsChiSquare ];
     meta = {
