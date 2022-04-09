@@ -11250,10 +11250,10 @@ let
 
   IOSocketInet6 = buildPerlModule {
     pname = "IO-Socket-INET6";
-    version = "2.72";
+    version = "2.73";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-2.72.tar.gz";
-      sha256 = "1fqypz6qa5rw2d5y2zq7f49frwra0aln13nhq5gi514j2zx21q45";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-2.73.tar.gz";
+      sha256 = "sha256-ttp0aFMlPVtKxDGRtPaaRxlZXuE6fKZ2qAVM825tFrs=";
     };
     propagatedBuildInputs = [ Socket6 ];
     doCheck = false;
