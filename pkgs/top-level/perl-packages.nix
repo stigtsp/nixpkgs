@@ -4228,10 +4228,10 @@ let
 
   CPANUploader = buildPerlPackage {
     pname = "CPAN-Uploader";
-    version = "0.103015";
+    version = "0.103016";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/CPAN-Uploader-0.103015.tar.gz";
-      sha256 = "1idvkxqzc53hjs808gc6z6873bg4gn6zz499df0wppi56vz7w24f";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/CPAN-Uploader-0.103016.tar.gz";
+      sha256 = "sha256-KRQZrWRz9A6LD76iEOaO6B+H7/dUNgKc2fCyRxzexN8=";
     };
     propagatedBuildInputs = [ FileHomeDir GetoptLongDescriptive LWPProtocolHttps TermReadKey ];
     meta = {
