@@ -13318,10 +13318,10 @@ let
 
   MathGMP = buildPerlPackage {
     pname = "Math-GMP";
-    version = "2.20";
+    version = "2.25";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Math-GMP-2.20.tar.gz";
-      sha256 = "0psmpj3j8cw02b5bzb7qnkd4rcpxm82891rwpdi2hx2jxy0mznhn";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/Math-GMP-2.25.tar.gz";
+      sha256 = "sha256-OCtx5Udi9jnppCqbBpNBUZh7pX0Ru3DTXjvsiNUEUM4=";
     };
     buildInputs = [ pkgs.gmp AlienGMP ];
     NIX_CFLAGS_COMPILE = "-I${pkgs.gmp.dev}/include";
