@@ -10251,10 +10251,10 @@ let
 
   HTMLParser = buildPerlPackage {
     pname = "HTML-Parser";
-    version = "3.75";
+    version = "3.78";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/C/CA/CAPOEIRAB/HTML-Parser-3.75.tar.gz";
-      sha256 = "1ack2799azfciyiw3vccq126gaxrbz2927i0hm4gaynzm0jmwsxc";
+      url = "mirror://cpan/authors/id/O/OA/OALDERS/HTML-Parser-3.78.tar.gz";
+      sha256 = "sha256-IlZAAvIGr5TB3YU18CsNlzUSXZ6+id0P+c1sAA4pwp0=";
     };
     propagatedBuildInputs = [ HTMLTagset HTTPMessage ];
     meta = {
