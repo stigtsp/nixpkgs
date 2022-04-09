@@ -908,10 +908,10 @@ let
 
   ArrayCompare = buildPerlModule {
     pname = "Array-Compare";
-    version = "3.0.7";
+    version = "3.0.8";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DA/DAVECROSS/Array-Compare-v3.0.7.tar.gz";
-      sha256 = "1p2kv4p2p5i6a665ax4b8iq1wal4x0g259yv32cc2ypbk7v11qs4";
+      url = "mirror://cpan/authors/id/D/DA/DAVECROSS/Array-Compare-v3.0.8.tar.gz";
+      sha256 = "sha256-MEc7XpEBU4QNJDHqlGO55W5SPN56PFBhadaaK5dC2DQ=";
     };
 
     buildInputs = [ TestNoWarnings ];
