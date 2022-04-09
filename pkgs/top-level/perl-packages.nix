@@ -23191,10 +23191,10 @@ let
 
   TextLorem = buildPerlModule {
     pname = "Text-Lorem";
-    version = "0.3";
+    version = "0.34";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/A/AD/ADEOLA/Text-Lorem-0.3.tar.gz";
-      sha256 = "64bb636fb21213101a646b414ecbdc1b55edf905cbcdc7f5d24774ec5061fe2d";
+      url = "mirror://cpan/authors/id/A/AD/ADEOLA/Text-Lorem-0.34.tar.gz";
+      sha256 = "sha256-DOajwZkXsjI0JKGqdC2YiwY8OUQEJ6MQGkzsbb2EcVc=";
     };
     meta = {
       description = "Generate random Latin looking text";
