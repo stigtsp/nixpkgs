@@ -1030,10 +1030,10 @@ let
 
   AstroFITSHeader = buildPerlModule rec {
     pname = "Astro-FITS-Header";
-    version = "3.07";
+    version = "3.08";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/T/TJ/TJENNESS/${pname}-${version}.tar.gz";
-      sha256 = "530d59ef0c0935f9862d187187a2d7583b12c639bb67db14f983322b161892d9";
+      url = "mirror://cpan/authors/id/G/GS/GSB/Astro-FITS-Header-3.08.tar.gz";
+      sha256 = "sha256-J5JVO31ofXModo1DGkhfrYsJHBbqlRt45B/e06NlcZk=";
     };
     meta = {
       homepage = "https://github.com/timj/perl-Astro-FITS-Header/tree/master";
