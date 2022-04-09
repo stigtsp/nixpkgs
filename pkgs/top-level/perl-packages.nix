@@ -20408,10 +20408,10 @@ let
 
   SubExporter = buildPerlPackage {
     pname = "Sub-Exporter";
-    version = "0.987";
+    version = "0.988";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-0.987.tar.gz";
-      sha256 = "1ml3n1ck4ln9qjm2mcgkczj1jb5n1fkscz9c4x23v4db0glb4g2l";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-0.988.tar.gz";
+      sha256 = "sha256-IzJIh9bFkPFFcC8HfYykLxsvJqO3bwjWbCweIeYGBAw=";
     };
     propagatedBuildInputs = [ DataOptList ];
     meta = {
