@@ -21658,10 +21658,10 @@ let
 
   TestDifferences = buildPerlPackage {
     pname = "Test-Differences";
-    version = "0.67";
+    version = "0.69";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DC/DCANTRELL/Test-Differences-0.67.tar.gz";
-      sha256 = "c88dbbb48b934b069284874f33abbaaa438aa31204aa3fa73bfc2f4aeac878da";
+      url = "mirror://cpan/authors/id/D/DC/DCANTRELL/Test-Differences-0.69.tar.gz";
+      sha256 = "sha256-GPZE/dSh/vk+8/f2ffjpW1k9gRiZ80vLurpNcXIi9Y8=";
     };
     propagatedBuildInputs = [ CaptureTiny TextDiff ];
     meta = {
