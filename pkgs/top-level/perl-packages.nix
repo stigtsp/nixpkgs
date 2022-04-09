@@ -3612,10 +3612,10 @@ let
 
   ConfigAutoConf = buildPerlPackage {
     pname = "Config-AutoConf";
-    version = "0.319";
+    version = "0.320";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RE/REHSACK/Config-AutoConf-0.319.tar.gz";
-      sha256 = "0gm3l0qyrgiia67lsmzjfb6ihgbdx1lidli7w47lq9jk4v66ckrh";
+      url = "mirror://cpan/authors/id/A/AM/AMBS/Config-AutoConf-0.320.tar.gz";
+      sha256 = "sha256-u1epWO9J0/cWInba4Up71a9D/R2FEyMa811mVFlFQCM=";
     };
     propagatedBuildInputs = [ CaptureTiny ];
     meta = {
