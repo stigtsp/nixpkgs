@@ -4564,10 +4564,10 @@ let
 
   CryptRandPasswd = buildPerlPackage {
     pname = "Crypt-RandPasswd";
-    version = "0.06";
+    version = "0.07";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/Crypt-RandPasswd-0.06.tar.gz";
-      sha256 = "0ca8544371wp4vvqsa19lnhl02hczpkbwkgsgm65ziwwim3r1gdi";
+      url = "mirror://cpan/authors/id/J/JA/JANITOR/Crypt-RandPasswd-0.07.tar.gz";
+      sha256 = "sha256-bd26Sdx+DwBRr6oKvhbxN4OiRM0eu1+B2qEay2KKSWE=";
     };
   };
 
