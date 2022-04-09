@@ -17495,10 +17495,10 @@ let
 
   ParserMGC = buildPerlModule {
     pname = "Parser-MGC";
-    version = "0.16";
+    version = "0.21";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PE/PEVANS/Parser-MGC-0.16.tar.gz";
-      sha256 = "14bv2fwg59q4s3kv0vf11hh222anlm181ig87cph2f68y32n2i3l";
+      url = "mirror://cpan/authors/id/P/PE/PEVANS/Parser-MGC-0.21.tar.gz";
+      sha256 = "sha256-DmGIpydqn5B1fGIEc98W08mGGRO6viWvIJz0RhWgKk8=";
     };
     propagatedBuildInputs = [ FileSlurpTiny ];
     meta = {
