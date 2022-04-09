@@ -19688,10 +19688,10 @@ let
 
   SoftwareLicense = buildPerlPackage {
     pname = "Software-License";
-    version = "0.103014";
+    version = "0.104001";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEONT/Software-License-0.103014.tar.gz";
-      sha256 = "eb45ea602d75006683789fbba57a01c0a1f7037371de95ea54b91577535d1789";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Software-License-0.104001.tar.gz";
+      sha256 = "sha256-UThv3uV95NOBh60//XxUgkMRI7v4g/erwo4JKftGw4c=";
     };
     buildInputs = [ TryTiny ];
     propagatedBuildInputs = [ DataSection TextTemplate ];
