@@ -6780,10 +6780,10 @@ let
 
   DigestHMAC = buildPerlPackage {
     pname = "Digest-HMAC";
-    version = "1.03";
+    version = "1.04";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/G/GA/GAAS/Digest-HMAC-1.03.tar.gz";
-      sha256 = "0naavabbm1c9zgn325ndy66da4insdw9l3mrxwxdfi7i7xnjrirv";
+      url = "mirror://cpan/authors/id/A/AR/ARODLAND/Digest-HMAC-1.04.tar.gz";
+      sha256 = "sha256-1ryBVqonXETXlLfBj0TNrEpYFAJFyVnmsZssODiwjtQ=";
     };
     meta = {
       description = "Keyed-Hashing for Message Authentication";
