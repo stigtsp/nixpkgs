@@ -4393,10 +4393,10 @@ let
 
   CryptFormat = buildPerlPackage {
     pname = "Crypt-Format";
-    version = "0.10";
+    version = "0.12";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/F/FE/FELIPE/Crypt-Format-0.10.tar.gz";
-      sha256 = "89ddc010a6c91d5be7a1874a528eed6eda39f2c401c18e63d80ddfbf7127e2dd";
+      url = "mirror://cpan/authors/id/F/FE/FELIPE/Crypt-Format-0.12.tar.gz";
+      sha256 = "sha256-p1cdS+9XeOGln0O2XPLVaAtJ+nu78z89IfRSL0Pmp9o=";
     };
     buildInputs = [ TestException TestFailWarnings ];
     meta = {
