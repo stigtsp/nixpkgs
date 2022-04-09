@@ -22219,10 +22219,10 @@ let
 
   TestNoWarnings = buildPerlPackage {
     pname = "Test-NoWarnings";
-    version = "1.04";
+    version = "1.06";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/A/AD/ADAMK/Test-NoWarnings-1.04.tar.gz";
-      sha256 = "0v385ch0hzz9naqwdw2az3zdqi15gka76pmiwlgsy6diiijmg2k3";
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Test-NoWarnings-1.06.tar.gz";
+      sha256 = "sha256-wtxRFDt+tjIxIQ4n3yDSyDk3cuCjM1R+yLeiBe1i9zc=";
     };
     meta = {
       description = "Make sure you didn't emit any warnings while testing";
