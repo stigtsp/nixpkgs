@@ -6829,10 +6829,10 @@ let
 
   DigestMD5 = buildPerlPackage rec {
     pname = "Digest-MD5";
-    version = "2.55";
+    version = "2.58";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/G/GA/GAAS/${pname}-${version}.tar.gz";
-      sha256 = "03b198a2d14425d951e5e50a885d3818c3162c8fe4c21e18d7798a9a179d0e3c";
+      url = "mirror://cpan/authors/id/T/TO/TODDR/Digest-MD5-2.58.tar.gz";
+      sha256 = "sha256-fQIBl3p2rTkKf7zOHxWSeFmdyzTeEjJGvqDGM43X9xQ=";
     };
     meta = {
       description = "Perl interface to the MD-5 algorithm";
