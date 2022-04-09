@@ -8212,10 +8212,10 @@ let
 
   FCGI = buildPerlPackage {
     pname = "FCGI";
-    version = "0.79";
+    version = "0.82";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETHER/FCGI-0.79.tar.gz";
-      sha256 = "1r1lzd74lzzdl2brcanw4n70m37nd8n6gv9clb55m3gv2hdlxylc";
+      url = "mirror://cpan/authors/id/E/ET/ETHER/FCGI-0.82.tar.gz";
+      sha256 = "sha256-TH1g4m2iwH8Fik40UCHpJQUnOzPJVCIVl34IRhHwns8=";
     };
     postPatch = lib.optionalString (stdenv.hostPlatform != stdenv.buildPlatform) ''
       sed -i '/use IO::File/d' Makefile.PL
