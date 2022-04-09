@@ -5431,10 +5431,10 @@ let
 
   DataUtil = buildPerlModule {
     pname = "Data-Util";
-    version = "0.66";
+    version = "0.67";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SY/SYOHEX/Data-Util-0.66.tar.gz";
-      sha256 = "1x662pqjg9p0wcigi7pwf969b2ymk66ncm2vd5dfm5i08pdkjpf3";
+      url = "mirror://cpan/authors/id/S/SY/SYOHEX/Data-Util-0.67.tar.gz";
+      sha256 = "sha256-tVypHHafgTN8xrCrIMMmg4eOWyZj8cwljFEamZpd/dM=";
     };
     buildInputs = [ HashUtilFieldHashCompat ModuleBuildXSUtil ScopeGuard TestException ];
     perlPreHook = lib.optionalString stdenv.isi686 "export LD=$CC"; # fix undefined reference to `__stack_chk_fail_local'
