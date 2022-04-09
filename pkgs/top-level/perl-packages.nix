@@ -7035,10 +7035,10 @@ let
 
   DistZillaPluginPodWeaver = buildPerlPackage {
     pname = "Dist-Zilla-Plugin-PodWeaver";
-    version = "4.008";
+    version = "4.009";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Dist-Zilla-Plugin-PodWeaver-4.008.tar.gz";
-      sha256 = "0ff1i26s54z292j8w8vm3gw3p7w1yq35wi8g978c84ia7y1y7n8z";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Dist-Zilla-Plugin-PodWeaver-4.009.tar.gz";
+      sha256 = "sha256-tYeuBCCiUTXmZSryWt2zGW7GQ16kRdSrNqJv+btn9R8=";
     };
     propagatedBuildInputs = [ DistZilla PodElementalPerlMunger PodWeaver ];
     meta = {
