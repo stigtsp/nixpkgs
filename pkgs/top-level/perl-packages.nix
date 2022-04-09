@@ -5788,10 +5788,10 @@ let
 
   DateTimeFormatStrptime = buildPerlPackage {
     pname = "DateTime-Format-Strptime";
-    version = "1.77";
+    version = "1.79";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-1.77.tar.gz";
-      sha256 = "2fa43c838ecf5356f221a91a41c81dba22e7860c5474b4a61723259898173e4a";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/DateTime-Format-Strptime-1.79.tar.gz";
+      sha256 = "sha256-cB5GgCyG7U2IaVwabay76QszkL7reU84fnx5IwADdXk=";
     };
     buildInputs = [ TestFatal TestWarnings ];
     propagatedBuildInputs = [ DateTime ];
