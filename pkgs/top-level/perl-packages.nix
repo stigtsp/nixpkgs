@@ -6487,10 +6487,10 @@ let
 
   DBIxConnector = buildPerlModule {
     pname = "DBIx-Connector";
-    version = "0.56";
+    version = "0.57";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DW/DWHEELER/DBIx-Connector-0.56.tar.gz";
-      sha256 = "57c08d2c1951486cb95cfb83f518f462a3dbf20d353f3eee4f46af44fa19c359";
+      url = "mirror://cpan/authors/id/A/AR/ARISTOTLE/DBIx-Connector-0.57.tar.gz";
+      sha256 = "sha256-0pxOkUors7T9kEKKj00KXvDWkQhrd990vXtfG0Fj0/Y=";
     };
     buildInputs = [ TestMockModule ];
     propagatedBuildInputs = [ DBI ];
