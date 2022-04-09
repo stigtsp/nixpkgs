@@ -6689,10 +6689,10 @@ let
 
   DevelOverloadInfo = buildPerlPackage {
      pname = "Devel-OverloadInfo";
-     version = "0.005";
+     version = "0.007";
      src = fetchurl {
-       url = "mirror://cpan/authors/id/I/IL/ILMARI/Devel-OverloadInfo-0.005.tar.gz";
-       sha256 = "1rx6g8pyhi7lx6z130b7vlf8syzrq92w9ky8mpw4d6bwlkzy5zcb";
+       url = "mirror://cpan/authors/id/I/IL/ILMARI/Devel-OverloadInfo-0.007.tar.gz";
+       sha256 = "sha256-IaGEFjuQ+R8G/8f13guWg1ZUaum0AKnXXFc8lYwkYiI=";
      };
      propagatedBuildInputs = [ MROCompat PackageStash SubIdentify ];
      buildInputs = [ TestFatal ];
