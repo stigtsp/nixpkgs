@@ -5606,10 +5606,10 @@ let
 
   DateTimeCalendarJulian = buildPerlPackage {
     pname = "DateTime-Calendar-Julian";
-    version = "0.102";
+    version = "0.107";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/W/WY/WYANT/DateTime-Calendar-Julian-0.102.tar.gz";
-      sha256 = "0j95dhma66spjyb04zi6rwy7l33hibnrx02mn0znd9m89aiq52s6";
+      url = "mirror://cpan/authors/id/W/WY/WYANT/DateTime-Calendar-Julian-0.107.tar.gz";
+      sha256 = "sha256-/LK0JIRLsTvK1GsceqI5taCbqyVW9TvR8n+tkMJg0z0=";
     };
     meta = {
       description = "Dates in the Julian calendar";
