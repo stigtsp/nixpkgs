@@ -17666,10 +17666,10 @@ let
 
   PDL = buildPerlPackage rec {
     pname = "PDL";
-    version = "2.025";
+    version = "2.077";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETJ/PDL-2.025.tar.gz";
-      sha256 = "1mlab95ij5a4q5pkrmgfas8x46cms2vqwzyjvaajsxr7mmz1cnhv";
+      url = "mirror://cpan/authors/id/E/ET/ETJ/PDL-2.077.tar.gz";
+      sha256 = "sha256-/4+Ul3Dl4nuTg3Y/30EqImqNUuXpTuRPSjaIGLaDzsU=";
     };
     patchPhase = ''
       substituteInPlace perldl.conf \
