@@ -4431,10 +4431,10 @@ let
 
   CryptPassphrase = buildPerlPackage {
     pname = "Crypt-Passphrase";
-    version = "0.003";
+    version = "0.004";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEONT/Crypt-Passphrase-0.003.tar.gz";
-      sha256 = "685aa090f8179a86d6896212ccf8ccfde7a79cce857199bb14e2277a10d240ad";
+      url = "mirror://cpan/authors/id/L/LE/LEONT/Crypt-Passphrase-0.004.tar.gz";
+      sha256 = "sha256-XXXEIz0F0DwRu3jN31YUYgkQ7T0xhsM94e2E8k/XLvI=";
     };
     meta = {
       description = "A module for managing passwords in a cryptographically agile manner";
