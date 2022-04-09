@@ -7343,10 +7343,10 @@ let
 
   EmailAbstract = buildPerlPackage {
     pname = "Email-Abstract";
-    version = "3.008";
+    version = "3.009";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Email-Abstract-3.008.tar.gz";
-      sha256 = "fc7169acb6c43df7f005e7ef6ad08ee8ca6eb6796b5d1604593c997337cc8240";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Email-Abstract-3.009.tar.gz";
+      sha256 = "sha256-BAtykuIuVIFenm382/rJ2HR0GTCiB0T/WzaRR93iAfw=";
     };
     propagatedBuildInputs = [ EmailSimple MROCompat ModulePluggable ];
     meta = {
