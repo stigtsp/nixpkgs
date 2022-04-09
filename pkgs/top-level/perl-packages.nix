@@ -13185,10 +13185,10 @@ let
 
   MathBase85 = buildPerlPackage {
     pname = "Math-Base85";
-    version = "0.4";
+    version = "0.5";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/P/PT/PTC/Math-Base85-0.4.tar.gz";
-      sha256 = "03cbp5ls98zcj183wjzlzjcrhbc96mw3p1hagzy1yplj1xh5ia4y";
+      url = "mirror://cpan/authors/id/P/PT/PTC/Math-Base85-0.5.tar.gz";
+      sha256 = "sha256-CwX3+2UKh5ezktjqkPLnK/uNCFBcmi4LlV39RacqNOU=";
     };
     meta = {
       description = "Perl extension for base 85 numbers, as referenced by RFC 1924";
