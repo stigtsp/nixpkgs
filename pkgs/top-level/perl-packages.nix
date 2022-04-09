@@ -19055,10 +19055,10 @@ let
 
   Redis = buildPerlModule {
     pname = "Redis";
-    version = "1.998";
+    version = "1.999";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DA/DAMS/Redis-1.998.tar.gz";
-      sha256 = "59f3bb176c3a7a54cb3779497b89a7bae1fb217565c68711d585fc1f09d79c87";
+      url = "mirror://cpan/authors/id/D/DA/DAMS/Redis-1.999.tar.gz";
+      sha256 = "sha256-cKg6NvRNjyw4CRq6FCMR/2Wmqoy2dGf55T1Go7XaNaU=";
     };
     buildInputs = [ IOString ModuleBuildTiny TestDeep TestFatal TestSharedFork TestTCP ];
     propagatedBuildInputs = [ IOSocketTimeout TryTiny ];
