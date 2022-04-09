@@ -18371,10 +18371,10 @@ let
 
   ProcBackground = buildPerlPackage {
     pname = "Proc-Background";
-    version = "1.21";
+    version = "1.30";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NERDVANA/Proc-Background-1.21.tar.gz";
-      sha256 = "91b6a5aeb841b1c313498c78fad08e37d17595702dc6205b5ad38ef69949b7ee";
+      url = "mirror://cpan/authors/id/N/NE/NERDVANA/Proc-Background-1.30.tar.gz";
+      sha256 = "sha256-5lT289+gRxwn+o3YK5pkPfYEy59GTXhgjcwi89Wv9/4=";
     };
     meta = {
     };
