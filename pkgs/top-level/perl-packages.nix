@@ -20197,10 +20197,10 @@ let
 
   StringFormatter = buildPerlPackage {
     pname = "String-Formatter";
-    version = "0.102084";
+    version = "1.234";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/String-Formatter-0.102084.tar.gz";
-      sha256 = "0mlwm0rirv46gj4h072q8gdync5zxxsxy8p028gdyrhczl942dc3";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/String-Formatter-1.234.tar.gz";
+      sha256 = "sha256-UNxQiidqh3hU8nI+VLvcDgtrCMUl2q1PbQy/Jiuz8U0=";
     };
     propagatedBuildInputs = [ SubExporter ];
     meta = with lib; {
