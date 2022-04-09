@@ -4280,10 +4280,10 @@ let
 
   CryptCBC = buildPerlPackage {
     pname = "Crypt-CBC";
-    version = "2.33";
+    version = "3.04";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LD/LDS/Crypt-CBC-2.33.tar.gz";
-      sha256 = "0ig698lmpjz7fslnznxm0609lvlnvf4f3s370082nzycnqhxww3a";
+      url = "mirror://cpan/authors/id/L/LD/LDS/Crypt-CBC-3.04.tar.gz";
+      sha256 = "sha256-QCbFfQ2/ZJbA1WGibxYbdj07jt81ETnAc0kuIbX7zgc=";
     };
   };
 
