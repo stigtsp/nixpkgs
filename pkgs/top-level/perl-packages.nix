@@ -4065,10 +4065,10 @@ let
 
   CPAN = buildPerlPackage {
     pname = "CPAN";
-    version = "2.29";
+    version = "2.33";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/A/AN/ANDK/CPAN-2.29.tar.gz";
-      sha256 = "1f55672efd505a9baacfa1924d115362120aa6bf8efab7a17c7cb090b17ccc41";
+      url = "mirror://cpan/authors/id/A/AN/ANDK/CPAN-2.33.tar.gz";
+      sha256 = "sha256-NxjZJ8KD0WfDkkAR4Fb9Jaosu2deqZgP4y3Z+7Ax0n0=";
     };
     propagatedBuildInputs = [ ArchiveZip CPANChecksums CPANPerlReleases CompressBzip2 Expect FileHomeDir FileWhich LWP LogLog4perl ModuleSignature TermReadKey TextGlob YAML YAMLLibYAML YAMLSyck IOSocketSSL ];
     meta = {
