@@ -6767,10 +6767,10 @@ let
 
   DigestCRC = buildPerlPackage {
     pname = "Digest-CRC";
-    version = "0.22.2";
+    version = "0.23";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/O/OL/OLIMAUL/Digest-CRC-0.22.2.tar.gz";
-      sha256 = "112b50f7fbc6f6baf5d4584ee97f542ced6c9ec03a3147f7902c84b8b26778cb";
+      url = "mirror://cpan/authors/id/O/OL/OLIMAUL/Digest-CRC-0.23.tar.gz";
+      sha256 = "sha256-oUhSjhmnyLo/7COngVASER9HVOlBuddnlDJw2KXFxNg=";
     };
     meta = {
       description = "Module that calculates CRC sums of all sorts";
