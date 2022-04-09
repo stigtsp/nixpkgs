@@ -23004,10 +23004,10 @@ let
 
   TextCSV = buildPerlPackage {
     pname = "Text-CSV";
-    version = "2.00";
+    version = "2.01";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/I/IS/ISHIGAKI/Text-CSV-2.00.tar.gz";
-      sha256 = "8ccbd9195805222d995844114d0e595bb24ce188f85284dbf256080311cbb2c2";
+      url = "mirror://cpan/authors/id/I/IS/ISHIGAKI/Text-CSV-2.01.tar.gz";
+      sha256 = "sha256-KpCl7qPyLEC4eTKpKWIWgGCatfa4dKd8QTTIoE6450s=";
     };
     meta = {
       description = "Comma-separated values manipulator (using XS or PurePerl)";
