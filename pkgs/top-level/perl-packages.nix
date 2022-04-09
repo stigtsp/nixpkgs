@@ -12988,10 +12988,10 @@ let
 
   MailAuthenticationResults = buildPerlPackage {
     pname = "Mail-AuthenticationResults";
-    version = "1.20200824.1";
+    version = "2.20210915";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MB/MBRADSHAW/Mail-AuthenticationResults-1.20200824.1.tar.gz";
-      sha256 = "16hyl631yk1d5g3jns0n4mkjawlzqnf003brnk6qc3mbkziaifik";
+      url = "mirror://cpan/authors/id/M/MB/MBRADSHAW/Mail-AuthenticationResults-2.20210915.tar.gz";
+      sha256 = "sha256-wpe8m7GvKjcgHbmSDhy14vWBAkcT9cWxNfQUAuyU4Q8=";
     };
     buildInputs = [ TestException ];
     meta = {
