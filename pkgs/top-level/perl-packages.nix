@@ -8435,10 +8435,10 @@ let
 
   FileFindObject = buildPerlModule {
     pname = "File-Find-Object";
-    version = "0.3.5";
+    version = "0.3.6";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/File-Find-Object-0.3.5.tar.gz";
-      sha256 = "dc4124abe64dc1274e8e8a5e5bf9e17a2a9269debace458115b57469f1e16a91";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/File-Find-Object-0.3.6.tar.gz";
+      sha256 = "sha256-GueX0SNIkg2LsN0AMKlqpSNShaleND6O2HN+76xTVpU=";
     };
     propagatedBuildInputs = [ ClassXSAccessor ];
     meta = {
