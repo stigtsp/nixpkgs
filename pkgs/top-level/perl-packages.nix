@@ -17344,10 +17344,10 @@ let
 
   Paranoid = buildPerlPackage {
     pname = "Paranoid";
-    version = "2.07";
+    version = "2.10";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/C/CO/CORLISS/Paranoid/Paranoid-2.07.tar.gz";
-      sha256 = "b55cfd8c6d5f181e218efd012f711a50cd14e4dbc8804650b95477178f43b7fc";
+      url = "mirror://cpan/authors/id/C/CO/CORLISS/Paranoid/Paranoid-2.10.tar.gz";
+      sha256 = "sha256-vvS25l1cmk72C8qjF0hvOg0jm/2rRQqnEgLCl5i4dSk=";
     };
     patches = [ ../development/perl-modules/Paranoid-blessed-path.patch ];
     preConfigure = ''
