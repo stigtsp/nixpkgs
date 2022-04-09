@@ -23490,10 +23490,10 @@ let
 
   TestVars = buildPerlModule {
     pname = "Test-Vars";
-    version = "0.014";
+    version = "0.015";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/Test-Vars-0.014.tar.gz";
-      sha256 = "0qr8q0ksr925ycwbsyxjwgz4p9r7a8vkxpn33vy23zbijwpa3xx7";
+      url = "mirror://cpan/authors/id/G/GF/GFUJI/Test-Vars-0.015.tar.gz";
+      sha256 = "sha256-4Y3RWCcuTsmTnh37M8dDGrTnXGtAsoDDi16AT9pHGlQ=";
     };
 
     buildInputs = [ ModuleBuildTiny ];
