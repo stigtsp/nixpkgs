@@ -11912,7 +11912,7 @@ let
 
   libnet = buildPerlPackage {
     pname = "libnet";
-    version = "3.12";
+    version = "3.13";
     src = fetchurl {
       url = "mirror://cpan/authors/id/S/SH/SHAY/libnet-3.13.tar.gz";
       sha256 = "sha256-WjX7Hy1KopFoDrGvOImfq0U8IsKOcffHvTdHtaPbNIw=";
@@ -11920,8 +11920,8 @@ let
     patches = [
       (fetchpatch {
         name = "deterministic-libnet.cfg";
-        url = "https://github.com/steve-m-hay/perl-libnet/commit/7d076c4352f67ee4ed64092cfad3963a2321bd53.patch";
-        sha256 = "0pg9w2m08janqn5nrp4x9w5hbcsyxz87hfskd21zzfrzjk8z28qv";
+        url = "mirror://cpan/authors/id/S/SH/SHAY/libnet-3.13.tar.gz";
+        sha256 = "sha256-WjX7Hy1KopFoDrGvOImfq0U8IsKOcffHvTdHtaPbNIw=";
       })
     ];
     meta = {
