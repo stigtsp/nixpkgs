@@ -5097,10 +5097,10 @@ let
 
   DataGUID = buildPerlPackage {
     pname = "Data-GUID";
-    version = "0.049";
+    version = "0.050";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Data-GUID-0.049.tar.gz";
-      sha256 = "0yx7d4qwsr9n85gslip0y3mdwr5fkncfbwxz7si2a17x95yl7bxq";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Data-GUID-0.050.tar.gz";
+      sha256 = "sha256-TyXZQFzXP3Ro9NZbBweN4DpD4echaUT5f7RK3FqYB6w=";
     };
     propagatedBuildInputs = [ DataUUID SubExporter ];
     meta = {
