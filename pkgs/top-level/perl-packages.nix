@@ -4815,10 +4815,10 @@ let
 
   CryptPerl = buildPerlPackage {
     pname = "Crypt-Perl";
-    version = "0.34";
+    version = "0.37";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/F/FE/FELIPE/Crypt-Perl-0.34.tar.gz";
-      sha256 = "0e1cb223df0041f6d9b010f11e6f97a97ab55a118a273938eb4fe85d403f1b11";
+      url = "mirror://cpan/authors/id/F/FE/FELIPE/Crypt-Perl-0.37.tar.gz";
+      sha256 = "sha256-vvOlXCaaI6hQUTQT6E6B3jyufymC4hZ2pGzbYx72hLY=";
     };
     checkInputs = [ pkgs.openssl MathBigIntGMP ];
     buildInputs = [ CallContext FileSlurp FileWhich TestClass TestDeep TestException TestFailWarnings TestNoWarnings ];
