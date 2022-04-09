@@ -7745,10 +7745,10 @@ let
 
   enum = buildPerlPackage {
     pname = "enum";
-    version = "1.11";
+    version = "1.12";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/enum-1.11.tar.gz";
-      sha256 = "d2f36b5015f1e35f640159867b60bf5d5cd66b56cd5e42d33f531be68e5eee35";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/enum-1.12.tar.gz";
+      sha256 = "sha256-aaeokc04iO2LAsXpmh9In5KmLsNRwLx4lP1719FEfqk=";
     };
     meta = {
       license = with lib.licenses; [ artistic1 gpl1Plus ];
