@@ -12218,10 +12218,10 @@ let
 
   LinuxInotify2 = buildPerlPackage {
     pname = "Linux-Inotify2";
-    version = "2.2";
+    version = "2.3";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/ML/MLEHMANN/Linux-Inotify2-2.2.tar.gz";
-      sha256 = "0crlxmaa4lsgdjm5p9ib8rdxiy70qj1s68za3q3v57v8ll6s4hfx";
+      url = "mirror://cpan/authors/id/M/ML/MLEHMANN/Linux-Inotify2-2.3.tar.gz";
+      sha256 = "sha256-y5kVD5/6UdvDvl7pjY6RyYzf6uIuuI5xjyzzZ78nDRc=";
     };
     propagatedBuildInputs = [ commonsense ];
 
