@@ -22241,10 +22241,10 @@ let
 
   TestOutput = buildPerlPackage {
     pname = "Test-Output";
-    version = "1.031";
+    version = "1.033";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-Output-1.031.tar.gz";
-      sha256 = "193y1xjvgc1p9pdgdwps2127knvpz9wc1xh6gmr74y3ihmqz7f7q";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Test-Output-1.033.tar.gz";
+      sha256 = "sha256-9qhIJ0CwdfrSKq9NmH0475J8bStFLUrg0L2Pd5gwVW4=";
     };
     propagatedBuildInputs = [ CaptureTiny ];
   };
