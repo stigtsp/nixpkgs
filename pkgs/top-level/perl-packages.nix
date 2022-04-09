@@ -15065,10 +15065,10 @@ let
 
   MooseXAppCmd = buildPerlModule {
     pname = "MooseX-App-Cmd";
-    version = "0.32";
+    version = "0.34";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/ET/ETHER/MooseX-App-Cmd-0.32.tar.gz";
-      sha256 = "2e3bbf7283a4bee72d91d26eb204436030992bbe55cbd35ec33a546f16f973ff";
+      url = "mirror://cpan/authors/id/E/ET/ETHER/MooseX-App-Cmd-0.34.tar.gz";
+      sha256 = "sha256-9eLy7xKcOI8qPjb1PeWYBErxtyLofXEFKdBcwl0jesI=";
     };
     buildInputs = [ ModuleBuildTiny MooseXConfigFromFile TestOutput YAML ];
     propagatedBuildInputs = [ AppCmd MooseXGetopt MooseXNonMoose ];
