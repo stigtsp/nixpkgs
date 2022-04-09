@@ -14795,10 +14795,10 @@ let
 
   MojoUserAgentCached = buildPerlPackage {
     pname = "Mojo-UserAgent-Cached";
-    version = "1.16";
+    version = "1.18";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NI/NICOMEN/Mojo-UserAgent-Cached-1.16.tar.gz";
-      sha256 = "17gp1kn97s1wv973w0g92alx13lmcvdan794471sfq2is6s6v1qd";
+      url = "mirror://cpan/authors/id/N/NI/NICOMEN/Mojo-UserAgent-Cached-1.18.tar.gz";
+      sha256 = "sha256-3Du3Njm30gVtgeKXSa8mRg07iIERQrrXxEAKjnfRfLI=";
     };
     buildInputs = [ ModuleInstall ];
     propagatedBuildInputs = [ AlgorithmLCSS CHI DataSerializer DevelStackTrace Mojolicious Readonly StringTruncate ];
