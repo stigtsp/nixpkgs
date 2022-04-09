@@ -8870,10 +8870,10 @@ let
 
   FileSlurper = buildPerlPackage {
     pname = "File-Slurper";
-    version = "0.012";
+    version = "0.013";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEONT/File-Slurper-0.012.tar.gz";
-      sha256 = "4efb2ea416b110a1bda6f8133549cc6ea3676402e3caf7529fce0313250aa578";
+      url = "mirror://cpan/authors/id/L/LE/LEONT/File-Slurper-0.013.tar.gz";
+      sha256 = "sha256-4vakAppqJC1QBUBE8fuGdwubXMTa6xqWf5H/tCcWqMU=";
     };
     buildInputs = [ TestWarnings ];
     meta = {
