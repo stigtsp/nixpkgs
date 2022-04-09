@@ -13272,10 +13272,10 @@ let
 
   MathBigIntLite = buildPerlPackage {
      pname = "Math-BigInt-Lite";
-     version = "0.19";
+     version = "0.24";
      src = fetchurl {
-       url = "mirror://cpan/authors/id/P/PJ/PJACKLAM/Math-BigInt-Lite-0.19.tar.gz";
-       sha256 = "06hm4vgihxr7m4jrq558phnnxy4am6ifba447j0h4p6jym5h7xih";
+       url = "mirror://cpan/authors/id/P/PJ/PJACKLAM/Math-BigInt-Lite-0.24.tar.gz";
+       sha256 = "sha256-EjDIuFTYePxaph4YWyj7NPf+R14Uwx93Kaxif7qgD+4=";
      };
      propagatedBuildInputs = [ MathBigInt ];
      meta = {
