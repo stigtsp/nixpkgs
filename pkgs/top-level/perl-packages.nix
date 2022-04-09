@@ -20211,10 +20211,10 @@ let
 
   StringInterpolate = buildPerlPackage {
     pname = "String-Interpolate";
-    version = "0.32";
+    version = "0.33";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/String-Interpolate-0.32.tar.gz";
-      sha256 = "15fwbpz3jdpdgmz794iw9hz2caxrnrw9pdwprxxkanpm92cdhaf7";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/String-Interpolate-0.33.tar.gz";
+      sha256 = "sha256-qH7Qk4kH0xr32qltc6BjL1xko40d4N6HxLRCWDEpxBM=";
     };
     meta = with lib; {
       # https://metacpan.org/pod/String::Interpolate
