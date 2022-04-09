@@ -23873,10 +23873,10 @@ let
 
   TimeDurationParse = buildPerlPackage {
     pname = "Time-Duration-Parse";
-    version = "0.15";
+    version = "0.16";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/Time-Duration-Parse-0.15.tar.gz";
-      sha256 = "10g39bbrxkabbsfq4rv7f5b5x7h3jba08j4pg8gwr0b9iqx19n31";
+      url = "mirror://cpan/authors/id/N/NE/NEILB/Time-Duration-Parse-0.16.tar.gz";
+      sha256 = "sha256-EISmRj7ieQ+ZIVvXaxNcpFr+K/ppmPpv1UcLaeG6vBI=";
     };
     buildInputs = [ TimeDuration ];
     propagatedBuildInputs = [ ExporterLite ];
