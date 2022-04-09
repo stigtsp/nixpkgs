@@ -20117,10 +20117,10 @@ let
 
   StringCRC32 = buildPerlPackage {
     pname = "String-CRC32";
-    version = "2";
+    version = "2.100";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEEJO/String-CRC32-2.tar.gz";
-      sha256 = "0bfrpnkgfakd4apv366p63z4vzypzvhj3yyqaw9dg7zca2pgxdzd";
+      url = "mirror://cpan/authors/id/L/LE/LEEJO/String-CRC32-2.100.tar.gz";
+      sha256 = "sha256-lwYJOy0Gi2cV01tMWPUVWON5YAgyAhKfuwClfhmnRxM=";
     };
   };
 
