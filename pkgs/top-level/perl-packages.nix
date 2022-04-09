@@ -15901,10 +15901,10 @@ let
 
   MROCompat = buildPerlPackage {
     pname = "MRO-Compat";
-    version = "0.13";
+    version = "0.15";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/H/HA/HAARG/MRO-Compat-0.13.tar.gz";
-      sha256 = "1y547lr6zccf7919vx01v22zsajy528psanhg5aqschrrin3nb4a";
+      url = "mirror://cpan/authors/id/H/HA/HAARG/MRO-Compat-0.15.tar.gz";
+      sha256 = "sha256-DUU1+I5Dur2Eq2BIZiFfxNBDmL1Nt7IYUtSjGxwV72E=";
     };
     meta = {
       description = "Mro::* interface compatibility for Perls < 5.9.5";
