@@ -18293,10 +18293,10 @@ let
 
   PPI = buildPerlPackage {
     pname = "PPI";
-    version = "1.270";
+    version = "1.272";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MI/MITHALDU/PPI-1.270.tar.gz";
-      sha256 = "622a698c781bb85d2bdf7bbfe040fe70d33b79774c9ae01fce2375dc73faf457";
+      url = "mirror://cpan/authors/id/O/OA/OALDERS/PPI-1.272.tar.gz";
+      sha256 = "sha256-8QJR22Cr9VhT5Yj46HwfzMZeiGfpMAs3emOkIB3+Rvk=";
     };
     buildInputs = [ ClassInspector TestDeep TestNoWarnings TestObject TestSubCalls ];
     propagatedBuildInputs = [ Clone IOString ParamsUtil TaskWeaken ];
