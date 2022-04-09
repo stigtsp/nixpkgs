@@ -5268,10 +5268,10 @@ let
 
   DataPrinter = buildPerlPackage {
     pname = "Data-Printer";
-    version = "0.40";
+    version = "1.000004";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/G/GA/GARU/Data-Printer-0.40.tar.gz";
-      sha256 = "0njjh8zp5afc4602jrnmg89icj7gfsil6i955ypcqxc2gl830sb0";
+      url = "mirror://cpan/authors/id/G/GA/GARU/Data-Printer-1.000004.tar.gz";
+      sha256 = "sha256-TybOlyIwfT/ok47LOeM/+2IupXdyGth2YWTBYy5jkBQ=";
     };
     propagatedBuildInputs = [ ClonePP FileHomeDir PackageStash SortNaturally ];
     meta = {
