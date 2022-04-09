@@ -2854,10 +2854,10 @@ let
 
   CLASS = buildPerlPackage {
     pname = "CLASS";
-    version = "1.00";
+    version = "1.1.7";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MS/MSCHWERN/CLASS-1.00.tar.gz";
-      sha256 = "c5185620815701b3fec21314ccd8c5693e6bfd519431527da3370a8164220671";
+      url = "mirror://cpan/authors/id/J/JD/JDEGUEST/CLASS-v1.1.7.tar.gz";
+      sha256 = "sha256-ThWfLsZGplQTXsfejr7tRyyZzxDXQPKH2853MLliK2U=";
     };
     meta = {
       homepage = "https://metacpan.org/pod/CLASS";
