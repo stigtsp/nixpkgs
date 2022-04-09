@@ -22421,10 +22421,10 @@ let
 
   TestRoutine = buildPerlPackage {
     pname = "Test-Routine";
-    version = "0.027";
+    version = "0.028";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Test-Routine-0.027.tar.gz";
-      sha256 = "0n6k310v2py787lkvhzrn8vndws9icdf8mighgl472k0x890xm5s";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Test-Routine-0.028.tar.gz";
+      sha256 = "sha256-CNtorP3vGMsPAf/so3FU4xWb+RW2Z1lVsfonqZEuXhA=";
     };
     buildInputs = [ TestAbortable TestFatal ];
     propagatedBuildInputs = [ Moose namespaceautoclean ];
