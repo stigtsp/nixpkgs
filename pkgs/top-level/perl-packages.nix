@@ -8449,10 +8449,10 @@ let
 
   FileFindObjectRule = buildPerlModule {
     pname = "File-Find-Object-Rule";
-    version = "0.0312";
+    version = "0.0313";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/File-Find-Object-Rule-0.0312.tar.gz";
-      sha256 = "3e0b6c8dadf6362e65f2310530b1be637ed6aac113399d10c6f9129e734afff9";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/File-Find-Object-Rule-0.0313.tar.gz";
+      sha256 = "sha256-gZQPKZ1khySPvzDY8ft99sajSz35RApWIbE1yONPz/I=";
     };
     propagatedBuildInputs = [ FileFindObject NumberCompare TextGlob ];
     # restore t/sample-data which is corrupted by patching shebangs
