@@ -14859,10 +14859,10 @@ let
 
   Moo = buildPerlPackage {
     pname = "Moo";
-    version = "2.004004";
+    version = "2.005004";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/H/HA/HAARG/Moo-2.004004.tar.gz";
-      sha256 = "0ii2rzzs0wfc697d7v3s76fi1y3kl7p1hvxbv330i1vq2nqpfjvi";
+      url = "mirror://cpan/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz";
+      sha256 = "sha256-4wMLgL1VSmb2s8J/1TsbWQnRKvBcTBHs6aWPjR5HiSg=";
     };
     buildInputs = [ TestFatal ];
     propagatedBuildInputs = [ ClassMethodModifiers ModuleRuntime RoleTiny SubQuote ];
