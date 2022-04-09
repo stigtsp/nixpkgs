@@ -7440,10 +7440,10 @@ let
 
   EmailMIME = buildPerlPackage {
     pname = "Email-MIME";
-    version = "1.949";
+    version = "1.952";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/Email-MIME-1.949.tar.gz";
-      sha256 = "3b0adf6bb413cfe51d75f8ba79aca80deafc98dc1179aa7b2d7a79aff5a6ab9c";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/Email-MIME-1.952.tar.gz";
+      sha256 = "sha256-apYLuDUV23gCgQF9tuBFi+CYHR4uZuhoj4JImx3L0oo=";
     };
     propagatedBuildInputs = [ EmailAddressXS EmailMIMEContentType EmailMIMEEncodings EmailMessageID EmailSimple MIMETypes ModuleRuntime ];
     meta = {
