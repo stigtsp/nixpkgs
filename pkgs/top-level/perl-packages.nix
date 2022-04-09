@@ -4458,10 +4458,10 @@ let
 
   CryptPassphraseBcrypt = buildPerlPackage {
     pname = "Crypt-Passphrase-Bcrypt";
-    version = "0.001";
+    version = "0.003";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/L/LE/LEONT/Crypt-Passphrase-Bcrypt-0.001.tar.gz";
-      sha256 = "sha256-M44nA4RH/eAjznyaC1dPR+4zeQRKDAgxrJRx8UMNxMU=";
+      url = "mirror://cpan/authors/id/L/LE/LEONT/Crypt-Passphrase-Bcrypt-0.003.tar.gz";
+      sha256 = "sha256-VTjc3vxpKJ/rTvgwJydgBWP7LSHdfc2kYEL0SW5QmQk=";
     };
     propagatedBuildInputs = [ CryptEksblowfish CryptPassphrase ];
     meta = {
