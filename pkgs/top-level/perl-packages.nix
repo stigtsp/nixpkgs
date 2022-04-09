@@ -7613,10 +7613,10 @@ let
 
   Encode = buildPerlPackage {
     pname = "Encode";
-    version = "3.08";
+    version = "3.17";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DA/DANKOGAI/Encode-3.08.tar.gz";
-      sha256 = "0nvvs5a7sz2x38isr5na31fa6ja85cpvmbn07qx0l50ss00ks1pd";
+      url = "mirror://cpan/authors/id/D/DA/DANKOGAI/Encode-3.17.tar.gz";
+      sha256 = "sha256-tEy/fdYOxhKOxXXdNISEl1CGUiYRvHWAz9MFoJX6ptI=";
     };
     meta = {
       description = "Character encodings in Perl";
