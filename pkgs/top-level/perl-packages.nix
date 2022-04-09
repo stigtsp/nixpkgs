@@ -24402,10 +24402,10 @@ let
 
   URIcpan = buildPerlPackage {
     pname = "URI-cpan";
-    version = "1.007";
+    version = "1.008";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/R/RJ/RJBS/URI-cpan-1.007.tar.gz";
-      sha256 = "1lsjw7m9c3vyq1h9pqzngww18yq23mn4jxv9d7i4a2ifcsa16nhj";
+      url = "mirror://cpan/authors/id/R/RJ/RJBS/URI-cpan-1.008.tar.gz";
+      sha256 = "sha256-oU8ij0NbDkGLvWSq6v/ehJ19QwMEc49C8i9ETiZ7xhk=";
     };
     propagatedBuildInputs = [ CPANDistnameInfo URI ];
     meta = {
