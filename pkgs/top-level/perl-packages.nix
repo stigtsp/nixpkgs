@@ -12522,10 +12522,10 @@ let
 
   locallib = buildPerlPackage {
     pname = "local-lib";
-    version = "2.000024";
+    version = "2.000028";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/H/HA/HAARG/local-lib-2.000024.tar.gz";
-      sha256 = "01cav7m6qc1x96wna1viiw6n212f94ks7cik4vj1a1lasixr36rf";
+      url = "mirror://cpan/authors/id/H/HA/HAARG/local-lib-2.000028.tar.gz";
+      sha256 = "sha256-QIMX1npZ+fkeI+MAC4LeT1Kc+c8IluIo86J9b2B7/j0=";
     };
     meta = {
       description = "Create and use a local lib/ for perl modules with PERL5LIB";
