@@ -8022,10 +8022,10 @@ let
 
   ExtUtilsDepends = buildPerlPackage {
     pname = "ExtUtils-Depends";
-    version = "0.8000";
+    version = "0.8001";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz";
-      sha256 = "165y1cjirbq64w39svkz82cb5jjqkjm8f4c0wqi2lk6050hzf3vq";
+      url = "mirror://cpan/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8001.tar.gz";
+      sha256 = "sha256-ZzxDh+eJbBohYJnB+7P6qndj1/X5WhpWpgoqKQbBMcU=";
     };
     meta = {
       license = with lib.licenses; [ artistic1 gpl1Plus ];
