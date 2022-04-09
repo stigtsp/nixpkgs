@@ -12248,10 +12248,10 @@ let
 
   ListAllUtils = buildPerlPackage {
     pname = "List-AllUtils";
-    version = "0.18";
+    version = "0.19";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DR/DROLSKY/List-AllUtils-0.18.tar.gz";
-      sha256 = "b7c4bf80090b281c4a1560c76a1a819094c3a1294302f77afb8c60ca4862ecf9";
+      url = "mirror://cpan/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz";
+      sha256 = "sha256-MKgUarIad4e4xW1YKc+afysVJ207P8oHM2rDjTAC/7w=";
     };
     propagatedBuildInputs = [ ListSomeUtils ListUtilsBy ];
     meta = {
