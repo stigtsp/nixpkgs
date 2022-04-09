@@ -24949,10 +24949,10 @@ let
 
   XMLLibXSLT = buildPerlPackage {
     pname = "XML-LibXSLT";
-    version = "1.99";
+    version = "2.000000";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.99.tar.gz";
-      sha256 = "1w7pn0wb88nma6biy4h05ak3j4ykma6vz1wbkrxy8qgvfyl1fzhj";
+      url = "mirror://cpan/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.000000.tar.gz";
+      sha256 = "sha256-VT4isRC6dFbuljRa9kk180SJHTMl3WiiOEl3xgjcZRQ=";
     };
     buildInputs = [ pkgs.pkg-config pkgs.zlib pkgs.libxml2 pkgs.libxslt ];
     propagatedBuildInputs = [ XMLLibXML ];
