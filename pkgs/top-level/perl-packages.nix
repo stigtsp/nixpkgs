@@ -5186,10 +5186,10 @@ let
 
   DataMessagePack = buildPerlModule {
     pname = "Data-MessagePack";
-    version = "1.01";
+    version = "1.02";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SY/SYOHEX/Data-MessagePack-1.01.tar.gz";
-      sha256 = "8fa0ed0101d04e661821a7b78e8d62ce3e19b299275bbfed178e2ba8912663ea";
+      url = "mirror://cpan/authors/id/S/SY/SYOHEX/Data-MessagePack-1.02.tar.gz";
+      sha256 = "sha256-wz20R5CqjSVBR4guI3jf/pcK1gMxNQveBi0XlTSCsbc=";
     };
     buildInputs = [ ModuleBuildXSUtil TestRequires ];
     meta = {
