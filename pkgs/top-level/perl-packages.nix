@@ -1679,10 +1679,10 @@ let
 
   BusinessISMN = buildPerlPackage {
     pname = "Business-ISMN";
-    version = "1.201";
+    version = "1.202";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/B/BD/BDFOY/Business-ISMN-1.201.tar.gz";
-      sha256 = "1cpcfyaz1fl6fnm076jx2jsphw147wj6aszj2yzqrgsncjhk2cja";
+      url = "mirror://cpan/authors/id/B/BD/BDFOY/Business-ISMN-1.202.tar.gz";
+      sha256 = "sha256-yo25JT3dqQa0fVBo50W58qA3VFiUVf/PJrBwbIGU2yY=";
     };
     propagatedBuildInputs = [ TieCycle ];
     meta = {
