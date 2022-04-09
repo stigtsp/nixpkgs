@@ -21110,10 +21110,10 @@ let
 
   TermReadLineGnu = buildPerlPackage {
     pname = "Term-ReadLine-Gnu";
-    version = "1.36";
+    version = "1.42";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-1.36.tar.gz";
-      sha256 = "9a08f7a4013c9b865541c10dbba1210779eb9128b961250b746d26702bab6925";
+      url = "mirror://cpan/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-1.42.tar.gz";
+      sha256 = "sha256-PF8SgdomZnd68PNN4CiVZOb6qCOupU85RcdMmOlaXnM=";
     };
     buildInputs = [ pkgs.readline pkgs.ncurses ];
     NIX_CFLAGS_LINK = "-lreadline -lncursesw";
