@@ -2478,10 +2478,10 @@ let
 
   CatalystViewCSV = buildPerlPackage {
     pname = "Catalyst-View-CSV";
-    version = "1.7";
+    version = "1.8";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/M/MC/MCB/Catalyst-View-CSV-1.7.tar.gz";
-      sha256 = "e41326b6099891f244b432921ed10096ac619f32b8c4f8b41633313bd54662db";
+      url = "mirror://cpan/authors/id/J/JM/JMREIN/Catalyst-View-CSV-1.8.tar.gz";
+      sha256 = "sha256-vKcEaDzDXEevuJrDjHFRAu2+gIF57gcz0qDrMRojbN8=";
     };
     buildInputs = [ CatalystActionRenderView CatalystModelDBICSchema CatalystPluginConfigLoader CatalystXComponentTraits ConfigGeneral DBDSQLite DBIxClass TestException ];
     propagatedBuildInputs = [ CatalystRuntime TextCSV ];
