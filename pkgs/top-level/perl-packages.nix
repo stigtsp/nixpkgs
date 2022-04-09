@@ -24529,10 +24529,10 @@ let
 
   W3CLinkChecker = buildPerlPackage {
     pname = "W3C-LinkChecker";
-    version = "4.81";
+    version = "5.0.0";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/S/SC/SCOP/W3C-LinkChecker-4.81.tar.gz";
-      sha256 = "6239f61b20d91dce7b21e4d4f626ab93a8f1e2f207da5015590d508cf6c66a65";
+      url = "mirror://cpan/authors/id/D/DH/DHM/W3C-LinkChecker-5.0.0.tar.gz";
+      sha256 = "sha256-CvdY0ZUMswTdqvqnoDmHaHTYjC/teL2KYx6zkG5U+6Y=";
     };
     outputs = [ "out" ];
     propagatedBuildInputs = [ CGI CSSDOM ConfigGeneral LWP LocaleCodes NetIP TermReadKey ];
