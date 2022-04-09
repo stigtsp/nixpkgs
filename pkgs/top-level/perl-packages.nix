@@ -19866,10 +19866,10 @@ let
 
   SQLSplitStatement = buildPerlPackage {
     pname = "SQL-SplitStatement";
-    version = "1.00020";
+    version = "1.00023";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/E/EM/EMAZEP/SQL-SplitStatement-1.00020.tar.gz";
-      sha256 = "0bqg45k4c9qkb2ypynlwhpvzsl4ssfagmsalys18s5c79ps30z7p";
+      url = "mirror://cpan/authors/id/V/VE/VEESH/SQL-SplitStatement-1.00023.tar.gz";
+      sha256 = "sha256-GnSEIM0q00HCUk7xGFt273Fylp8XqeS6tvQ3bw3p814=";
     };
     buildInputs = [ TestException ];
     propagatedBuildInputs = [ ClassAccessor ListMoreUtils RegexpCommon SQLTokenizer ];
