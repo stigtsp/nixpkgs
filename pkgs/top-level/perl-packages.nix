@@ -14477,10 +14477,10 @@ let
 
   MojoDOM58 = buildPerlPackage {
     pname = "Mojo-DOM58";
-    version = "2.000";
+    version = "3.001";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/D/DB/DBOOK/Mojo-DOM58-2.000.tar.gz";
-      sha256 = "1wsy0j6jpd06gc1ay6isyzqh5cdc834g5w0amslqcjgvf4snlk46";
+      url = "mirror://cpan/authors/id/D/DB/DBOOK/Mojo-DOM58-3.001.tar.gz";
+      sha256 = "sha256-GLJtVB5TFEFa3d8xQ2nZQMi6BrESNMpQb9vmzyJPV5Y=";
     };
     meta = {
       description = "Minimalistic HTML/XML DOM parser with CSS selectors";
