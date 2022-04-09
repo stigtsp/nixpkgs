@@ -25283,10 +25283,10 @@ let
 
   XXX = buildPerlPackage {
     pname = "XXX";
-    version = "0.35";
+    version = "0.38";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/I/IN/INGY/XXX-0.35.tar.gz";
-      sha256 = "1azk2h3d2vxc84zpa34gr0dvhvf5qkwbaidy3ks0gkkx9463crm6";
+      url = "mirror://cpan/authors/id/I/IN/INGY/XXX-0.38.tar.gz";
+      sha256 = "sha256-0QUQ6gD2Gav0erKZ8Ui9WzYM+gfcDtUYE4t87HJpLSo=";
     };
     propagatedBuildInputs = [ YAMLPP ];
     meta = {
