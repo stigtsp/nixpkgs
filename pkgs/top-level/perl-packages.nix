@@ -18563,10 +18563,10 @@ let
 
   PerlMinimumVersion = buildPerlPackage {
     pname = "Perl-MinimumVersion";
-    version = "1.38";
+    version = "1.40";
     src = fetchurl {
-      url = "mirror://cpan/authors/id/N/NE/NEILB/Perl-MinimumVersion-1.38.tar.gz";
-      sha256 = "478b5824791b87fc74c94a892180682bd06ad2cdf34034b1a4b859273927802a";
+      url = "mirror://cpan/authors/id/D/DB/DBOOK/Perl-MinimumVersion-1.40.tar.gz";
+      sha256 = "sha256-dYmleMtg1wykdVw5WzWStECgzWobB05OzqyTsDGhvpA=";
     };
     buildInputs = [ TestScript ];
     propagatedBuildInputs = [ FileFindRulePerl PerlCritic ];
