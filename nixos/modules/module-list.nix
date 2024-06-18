@@ -1083,6 +1083,7 @@
   ./services/networking/mxisd.nix
   ./services/networking/mycelium.nix
   ./services/networking/namecoind.nix
+  ./services/networking/n3n.nix
   ./services/networking/nar-serve.nix
   ./services/networking/nat.nix
   ./services/networking/nat-iptables.nix
