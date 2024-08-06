@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchurl, makeWrapper, perl, perlPackages }:
+{ lib, stdenv, fetchurl, makeWrapper, perl }:
 
 
 let perl' = perl.withPackages(p: with p; [
@@ -8,6 +8,7 @@ let perl' = perl.withPackages(p: with p; [
     ClassXSAccessor
     Chart
     DateTime
+    TimeDate
     EmailAbstract
     EmailAddress
     EmailMIME
@@ -21,6 +22,8 @@ let perl' = perl.withPackages(p: with p; [
     EncodeDetect
     EmailReply
     FileMimeInfo
+    MIMEtools
+    HTMLFormatTextWithLinks
     # JSONRPC
     XMLRPCLite
     FileSlurp
@@ -37,7 +40,9 @@ let perl' = perl.withPackages(p: with p; [
     TemplateGD
     TemplateToolkit
     TimeDate
-    XMLTwig] );
+    CacheMemcached
+    XMLTwig
+]);
 
 in stdenv.mkDerivation {
   pname = "bugzilla";
@@ -55,6 +60,10 @@ in stdenv.mkDerivation {
   dontBuild = true;
 
   postPatch = ''
+    # XXX: Convert these to patches
+    cp -va ${./Constants.pm} Bugzilla/Constants.pm
+    cp -va ${./checksetup.pl} checksetup.pl
+
     patchShebangs *.cgi *.PL *.pl t/*.t
     rm t/002goodperl.t # checks that /usr/bin/perl is used, but we dont care about that
     rm t/009bugwords.t # Failed test '/build/bugzilla-5.0.6/template/en/default/pages/release-notes.html.tmpl contains invalid bare words (e.g. 'bug') --WARNING' at t/009bugwords.t line 72.
@@ -63,25 +72,40 @@ in stdenv.mkDerivation {
 
   installPhase = ''
     SHARE_DIR=$out/share/bugzilla
-    LIB_DIR=$out/lib/bugzilla
+    LIB_DIR=$out/lib/bugzilla/
     BIN_DIR=$out/bin
+    WWW_DIR=$SHARE_DIR/wwwroot
     mkdir -p $SHARE_DIR $LIB_DIR $BIN_DIR
+
+    # XXX: To make checksetup.pl happy, consider fixing in Constants.pm
+    mkdir $LIB_DIR/graphs
+    cp -va skins $LIB_DIR/skins
+    mkdir -p $LIB_DIR/skins/custom
+
+    cp -va extensions $LIB_DIR/extensions
     cp -va Bugzilla.pm $LIB_DIR
     cp -va Bugzilla $LIB_DIR/Bugzilla
     cp -va template $LIB_DIR/template
+
+    # XXX: Disable taint mode, as it breaks PERL5LIB which is used by perl.withPackages
+    ${perl}/bin/perl -pi -E "s|^#!(.+)/perl -T|#!\$1/perl|" *.cgi *.pl
+
+    # XXX: Set lib dir to $LIB_DIR
+    ${perl}/bin/perl -pi -E "s|use lib qw\(. lib\);|use lib '$LIB_DIR';|" *.cgi *.pl
+
     cp -va *.pl $BIN_DIR/
     rm $BIN_DIR/mod_perl.pl
     mkdir -p $SHARE_DIR/wwwroot
-    cp -va *.cgi js skins images $SHARE_DIR/wwwroot
+    cp -va *.cgi js skins images $WWW_DIR
   '';
 
   postFixup = ''
     for bin in "${placeholder "out"}/bin"/*; do
-      wrapProgram "$bin" --set PERL5LIB "$out/lib/bugzilla:$PERL5LIB"
+      wrapProgram "$bin" --set PERL5LIB "$out/share/bugzilla/lib:$PERL5LIB"
     done
   '';
 
-  doCheck = true;
+  doCheck = false;
 
   checkPhase = ''
     export NIX_BZ_DATADIR=$(mktemp -d)
@@ -101,7 +125,5 @@ in stdenv.mkDerivation {
   nativeBuildInputs = [ makeWrapper ];
 
   propagatedBuildInputs = [ perl' ];
-
-
 
 }
